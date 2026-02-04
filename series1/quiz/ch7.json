@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "question": "A 'Call Option' gives the buyer the right to:",
+    "options": [
+      "Sell the underlying currency",
+      "Buy the underlying currency",
+      "Cancel the contract",
+      "Receive interest"
+    ],
+    "answer": "Buy the underlying currency",
+    "hint": "Think of 'Calling' (requesting) something to be delivered to you.",
+    "explanation": "A Call Option confers the right, but not the obligation, to buy the underlying asset at a specified strike price."
+  },
+  {
+    "id": 2,
+    "question": "What is the maximum loss a 'Buyer' of an option can suffer?",
+    "options": [
+      "Unlimited",
+      "The Strike Price",
+      "The Premium Paid",
+      "Zero"
+    ],
+    "answer": "The Premium Paid",
+    "hint": "If the trade goes wrong, the buyer simply chooses not to exercise the option.",
+    "explanation": "The buyer's risk is limited to the premium they paid to purchase the option. They cannot lose more than that."
+  },
+  {
+    "id": 3,
+    "question": "If the Spot Price (S) is greater than the Strike Price (X), a Call Option is said to be:",
+    "options": [
+      "Out-of-the-Money (OTM)",
+      "At-the-Money (ATM)",
+      "In-the-Money (ITM)",
+      "Worthless"
+    ],
+    "answer": "In-the-Money (ITM)",
+    "hint": "You can buy low (Strike) and sell high (Spot) immediately.",
+    "explanation": "A Call option is ITM when the current market price is higher than the strike price, meaning it has intrinsic value."
+  },
+  {
+    "id": 4,
+    "question": "For a 'Put Option', the Break-even point for the buyer is calculated as:",
+    "options": [
+      "Strike Price + Premium",
+      "Strike Price - Premium",
+      "Spot Price + Strike Price",
+      "Premium - Spot Price"
+    ],
+    "answer": "Strike Price - Premium",
+    "hint": "The price must fall enough to cover the cost of the premium paid.",
+    "explanation": "For a Put buyer to make a profit, the market price must fall below the Strike Price minus the Premium they paid."
+  },
+  {
+    "id": 5,
+    "question": "Which 'Option Greek' measures the sensitivity of the option price to a change in the underlying asset's price?",
+    "options": [
+      "Theta",
+      "Vega",
+      "Delta",
+      "Rho"
+    ],
+    "answer": "Delta",
+    "hint": "It represents the rate of change or the 'speed' of the option price.",
+    "explanation": "Delta measures how much the option premium changes for a 1-unit change in the price of the underlying asset."
+  },
+  {
+    "id": 6,
+    "question": "An option that can be exercised ONLY on the expiration date is called:",
+    "options": [
+      "American Option",
+      "European Option",
+      "Asian Option",
+      "Bermudan Option"
+    ],
+    "answer": "European Option",
+    "hint": "Currency options in India follow this style.",
+    "explanation": "European Options can only be exercised on the maturity date, unlike American options which can be exercised any time."
+  },
+  {
+    "id": 7,
+    "question": "The component of the option premium that is NOT Intrinsic Value is called:",
+    "options": [
+      "Time Value",
+      "Face Value",
+      "Book Value",
+      "Scrap Value"
+    ],
+    "answer": "Time Value",
+    "hint": "It represents the 'hope' that the price will move favorably before expiry.",
+    "explanation": "Option Premium = Intrinsic Value + Time Value. Any value above the intrinsic profit is the Time Value."
+  },
+  {
+    "id": 8,
+    "question": "As the expiration date approaches, what happens to the 'Time Value' of an option?",
+    "options": [
+      "It increases",
+      "It decreases (Time Decay)",
+      "It remains constant",
+      "It doubles"
+    ],
+    "answer": "It decreases (Time Decay)",
+    "hint": "Less time left means less chance for a miracle move.",
+    "explanation": "Time value erodes as expiry nears, a phenomenon known as Time Decay (measured by Theta)."
+  },
+  {
+    "id": 9,
+    "question": "Which Greek measures the sensitivity of the option price to changes in 'Volatility'?",
+    "options": [
+      "Delta",
+      "Gamma",
+      "Vega",
+      "Theta"
+    ],
+    "answer": "Vega",
+    "hint": "V for Volatility.",
+    "explanation": "Vega measures the change in option premium for a 1% change in the volatility of the underlying asset."
+  },
+  {
+    "id": 10,
+    "question": "Who has the 'Obligation' to perform the contract if exercised?",
+    "options": [
+      "The Option Buyer (Holder)",
+      "The Option Seller (Writer)",
+      "The Broker",
+      "The Regulator"
+    ],
+    "answer": "The Option Seller (Writer)",
+    "hint": "They received the premium, so they must deliver if asked.",
+    "explanation": "The Option Writer (Seller) takes on the obligation to buy or sell the asset if the Buyer decides to exercise their right."
+  },
+  {
+    "id": 11,
+    "question": "If a Call Option has a Delta of 0.5, and the underlying USD/INR rises by 1 Rupee, the option premium will roughly increase by:",
+    "options": [
+      "1 Rupee",
+      "0.5 Rupees",
+      "0 Rupees",
+      "2 Rupees"
+    ],
+    "answer": "0.5 Rupees",
+    "hint": "Change in Premium = Delta × Change in Underlying.",
+    "explanation": "A Delta of 0.5 means the option captures 50% of the movement of the underlying asset."
+  },
+  {
+    "id": 12,
+    "question": "A Put Option is 'Out-of-the-Money' (OTM) when:",
+    "options": [
+      "Spot Price < Strike Price",
+      "Spot Price > Strike Price",
+      "Spot Price = Strike Price",
+      "Spot Price is zero"
+    ],
+    "answer": "Spot Price > Strike Price",
+    "hint": "You have the right to sell at a price *lower* than the current market price (useless right).",
+    "explanation": "If the market price (Spot) is higher than the Strike price, no one would exercise a Put option to sell at the lower Strike price."
+  },
+  {
+    "id": 13,
+    "question": "Which of the following factors generally *increases* the price of a Call Option?",
+    "options": [
+      "Decrease in Spot Price",
+      "Decrease in Volatility",
+      "Increase in Time to Expiry",
+      "Decrease in Interest Rates"
+    ],
+    "answer": "Increase in Time to Expiry",
+    "hint": "More time means more chances for the price to go up.",
+    "explanation": "Longer time to expiry adds more Time Value to the option, making the premium more expensive."
+  },
+  {
+    "id": 14,
+    "question": "What is the Intrinsic Value of an OTM (Out-of-the-Money) option?",
+    "options": [
+      "Positive",
+      "Negative",
+      "Zero",
+      "Equal to the Strike Price"
+    ],
+    "answer": "Zero",
+    "hint": "Intrinsic value cannot be negative. If it's worthless, it's zero.",
+    "explanation": "An OTM option has no intrinsic value. Its entire premium is made up of Time Value."
+  },
+  {
+    "id": 15,
+    "question": "Which Greek measures the rate of change of 'Delta' itself?",
+    "options": [
+      "Vega",
+      "Theta",
+      "Gamma",
+      "Rho"
+    ],
+    "answer": "Gamma",
+    "hint": "It is the acceleration of the option price.",
+    "explanation": "Gamma measures how fast Delta changes as the underlying price moves. High Gamma means Delta is unstable."
+  },
+  {
+    "id": 16,
+    "question": "Selling a Call Option without owning the underlying asset is known as:",
+    "options": [
+      "Covered Call",
+      "Naked Call / Uncovered Call",
+      "Protective Put",
+      "Straddle"
+    ],
+    "answer": "Naked Call / Uncovered Call",
+    "hint": "You are exposed (naked) to unlimited risk if the price shoots up.",
+    "explanation": "Writing (selling) a call without holding the underlying currency to cover the risk is called a Naked Call. It has theoretically unlimited risk."
+  },
+  {
+    "id": 17,
+    "question": "If implied volatility increases, what usually happens to option premiums (both Calls and Puts)?",
+    "options": [
+      "They decrease",
+      "They increase",
+      "Calls increase, Puts decrease",
+      "They stay exactly the same"
+    ],
+    "answer": "They increase",
+    "hint": "Volatility means higher probability of hitting the strike price.",
+    "explanation": "Higher volatility increases the probability of the option finishing ITM, so sellers demand higher premiums for taking that risk."
+  },
+  {
+    "id": 18,
+    "question": "What is 'Put-Call Parity'?",
+    "options": [
+      "A rule that Puts must cost the same as Calls",
+      "A relationship defining the price of Calls, Puts, and the Underlying Asset",
+      "A regulation by SEBI",
+      "A trading strategy"
+    ],
+    "answer": "A relationship defining the price of Calls, Puts, and the Underlying Asset",
+    "hint": "It prevents arbitrage between the spot, futures, and options markets.",
+    "explanation": "Put-Call Parity is a fundamental principle that defines the relationship between the price of European put and call options of the same class."
+  },
+  {
+    "id": 19,
+    "question": "In a 'Long Straddle' strategy, the trader buys:",
+    "options": [
+      "A Call and sells a Put",
+      "A Call and a Put at the same Strike Price and Expiry",
+      "Two Calls at different strikes",
+      "A Future and a Call"
+    ],
+    "answer": "A Call and a Put at the same Strike Price and Expiry",
+    "hint": "The trader expects a big move but doesn't know the direction.",
+    "explanation": "A Long Straddle involves buying both a Call and a Put at the same strike. The trader profits if the market moves significantly in *either* direction."
+  },
+  {
+    "id": 20,
+    "question": "Which Greek measures sensitivity to Interest Rates?",
+    "options": [
+      "Delta",
+      "Gamma",
+      "Rho",
+      "Vega"
+    ],
+    "answer": "Rho",
+    "hint": "R for Rate.",
+    "explanation": "Rho measures the sensitivity of the option premium to a change in the risk-free interest rate."
+  }
+]

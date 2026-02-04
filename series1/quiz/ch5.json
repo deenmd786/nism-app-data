@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "question": "Which system is used for trading currency derivatives on Indian exchanges?",
+    "options": [
+      "Open Outcry System",
+      "Automated Screen Based Trading System",
+      "Physical Token System",
+      "Telephonic Manual System"
+    ],
+    "answer": "Automated Screen Based Trading System",
+    "hint": "It ensures transparency, anonymity, and nationwide access via computers.",
+    "explanation": "Indian exchanges use a fully automated screen-based trading system (like NEAT on NSE or BOLT on BSE) where orders are matched electronically."
+  },
+  {
+    "id": 2,
+    "question": "In the trading system, what is the 'Price-Time Priority' rule?",
+    "options": [
+      "Newer orders get priority over older ones",
+      "Best price gets priority; if prices are same, the earlier order gets priority",
+      "Larger orders get priority over smaller ones",
+      "Institutional orders get priority over retail"
+    ],
+    "answer": "Best price gets priority; if prices are same, the earlier order gets priority",
+    "hint": "Who offers the best deal first wins.",
+    "explanation": "The matching engine first prioritizes the best price (highest buy/lowest sell). If two orders have the same price, the one that arrived first is executed first."
+  },
+  {
+    "id": 3,
+    "question": "What is a 'Limit Order'?",
+    "options": [
+      "An order to buy/sell at the current market price",
+      "An order to buy/sell at a specified price or better",
+      "An order that gets cancelled automatically",
+      "An order with no price limit"
+    ],
+    "answer": "An order to buy/sell at a specified price or better",
+    "hint": "You set the 'Limit' of how much you are willing to pay or accept.",
+    "explanation": "A Limit Order allows the trader to define a specific price. The trade will only happen at that price or a better one (lower for buy, higher for sell)."
+  },
+  {
+    "id": 4,
+    "question": "What does 'IOC' stand for in order types?",
+    "options": [
+      "Indian Oil Corporation",
+      "Immediate or Cancel",
+      "Interest on Capital",
+      "Internal Order Code"
+    ],
+    "answer": "Immediate or Cancel",
+    "hint": "It's a 'now or never' order.",
+    "explanation": "An IOC order demands that the order be executed immediately (fully or partially). Any portion not executed instantly is cancelled."
+  },
+  {
+    "id": 5,
+    "question": "What is the standard 'Contract Size' (Lot Size) for USD/INR futures on Indian exchanges?",
+    "options": [
+      "USD 100",
+      "USD 1,000",
+      "USD 10,000",
+      "USD 100,000"
+    ],
+    "answer": "USD 1,000",
+    "hint": "It is a relatively small size to encourage retail participation.",
+    "explanation": "The standard contract size for USD/INR currency futures in India is USD 1,000 per lot."
+  },
+  {
+    "id": 6,
+    "question": "Every person trading on the exchange must be identified by a unique code called:",
+    "options": [
+      "PAN Card",
+      "Unique Client Code (UCC)",
+      "Adhaar Number",
+      "Bank Account Number"
+    ],
+    "answer": "Unique Client Code (UCC)",
+    "hint": "This code is mandatory to map the order to the specific end-client.",
+    "explanation": "The Unique Client Code (UCC) is mandatory for all clients to trade. Brokers must upload these codes to the exchange to track limits and positions."
+  },
+  {
+    "id": 7,
+    "question": "What is the 'Tick Size' for USD/INR currency futures?",
+    "options": [
+      "0.0100",
+      "0.2500",
+      "0.0025",
+      "1.0000"
+    ],
+    "answer": "0.0025",
+    "hint": "Also known as a 'quarter paisa'.",
+    "explanation": "The minimum price movement (tick size) allowed for USD/INR futures is 0.0025 INR."
+  },
+  {
+    "id": 8,
+    "question": "A 'Market Order' guarantees:",
+    "options": [
+      "The Price but not Execution",
+      "Execution but not the specific Price",
+      "Both Price and Execution",
+      "Neither Price nor Execution"
+    ],
+    "answer": "Execution but not the specific Price",
+    "hint": "You are telling the broker: 'Get me in right now, I don't care about the exact cost.'",
+    "explanation": "A Market Order matches immediately with the best available counter-order. You get the trade done, but the price might slip if liquidity is low."
+  },
+  {
+    "id": 9,
+    "question": "If a trader enters a 'Stop Loss' Buy order, the trigger price should be:",
+    "options": [
+      "Lower than the current market price",
+      "Higher than the current market price",
+      "Exactly the current market price",
+      "Zero"
+    ],
+    "answer": "Higher than the current market price",
+    "hint": "You use this to stop losses if the market breaks out upwards (for a short position).",
+    "explanation": "A Stop Loss Buy is placed above the current price. It becomes a market buy order only if the price rises to touch that trigger level (usually to cover a short position)."
+  },
+  {
+    "id": 10,
+    "question": "Which entity is responsible for 'clearing' trades (guaranteeing settlement) in India?",
+    "options": [
+      "The Broker",
+      "The Clearing Corporation (e.g., NCL/ICCL)",
+      "The RBI",
+      "The SEBI"
+    ],
+    "answer": "The Clearing Corporation (e.g., NCL/ICCL)",
+    "hint": "They stand between the buyer and seller.",
+    "explanation": "The Clearing Corporation acts as the central counterparty, ensuring that if one party defaults, the other still gets their money/settlement."
+  },
+  {
+    "id": 11,
+    "question": "What are the typical trading hours for Currency Derivatives in India (as of standard timings)?",
+    "options": [
+      "10:00 AM to 3:30 PM",
+      "9:00 AM to 5:00 PM",
+      "9:15 AM to 3:30 PM",
+      "9:00 AM to 5:00 PM (extends for cross-currency)"
+    ],
+    "answer": "9:00 AM to 5:00 PM",
+    "hint": "The currency market opens earlier and closes later than the equity market.",
+    "explanation": "Standard currency derivative trading hours in India are usually 9:00 AM to 5:00 PM."
+  },
+  {
+    "id": 12,
+    "question": "What happens if a user inputs a price that is outside the 'Operating Range' (Circuit Limits) of the day?",
+    "options": [
+      "The order is accepted but pending",
+      "The order is rejected by the system",
+      "The order is converted to a Market Order",
+      "The user is fined"
+    ],
+    "answer": "The order is rejected by the system",
+    "hint": "The system prevents 'fat finger' errors or extreme volatility.",
+    "explanation": "Orders placed outside the dynamic price bands (DPR) are immediately rejected by the exchange's trading system."
+  },
+  {
+    "id": 13,
+    "question": "Who is a 'Trading Member'?",
+    "options": [
+      "A person who trades for themselves",
+      "A member of the exchange who can trade for themselves and clients but cannot clear trades",
+      "A bank that only clears trades",
+      "A software provider"
+    ],
+    "answer": "A member of the exchange who can trade for themselves and clients but cannot clear trades",
+    "hint": "They have access to the terminal but need a Clearing Member to settle the accounts.",
+    "explanation": "A Trading Member (TM) has rights to execute trades on the exchange platform but must go through a Clearing Member (CM) to settle those trades."
+  },
+  {
+    "id": 14,
+    "question": "What is the 'Best Bid' in the Market Watch window?",
+    "options": [
+      "The lowest price a seller is asking",
+      "The highest price a buyer is willing to pay",
+      "The last traded price",
+      "The closing price of yesterday"
+    ],
+    "answer": "The highest price a buyer is willing to pay",
+    "hint": "If you want to sell 'Now', you sell to the Best Bid.",
+    "explanation": "The Best Bid is the highest Buy order currently sitting in the system. It represents the best exit price for a seller."
+  },
+  {
+    "id": 15,
+    "question": "What is the status of an order that has been placed but not yet matched?",
+    "options": [
+      "Traded",
+      "Open / Outstanding",
+      "Cancelled",
+      "Frozen"
+    ],
+    "answer": "Open / Outstanding",
+    "hint": "It is waiting in the order book.",
+    "explanation": "An order that is in the system waiting for a counter-party is called an Open or Outstanding order."
+  },
+  {
+    "id": 16,
+    "question": "The 'Last Traded Price' (LTP) represents:",
+    "options": [
+      "The average price of the day",
+      "The price at which the most recent trade was executed",
+      "The best buy price",
+      "The best sell price"
+    ],
+    "answer": "The price at which the most recent trade was executed",
+    "hint": "It is the most current historical data point.",
+    "explanation": "LTP shows the price of the most recently successfully matched trade."
+  },
+  {
+    "id": 17,
+    "question": "When does a standard USD/INR futures contract expire?",
+    "options": [
+      "Last day of the month",
+      "Two working days prior to the last business day of the expiry month",
+      "15th of every month",
+      "Every Friday"
+    ],
+    "answer": "Two working days prior to the last business day of the expiry month",
+    "hint": "This timing allows for the RBI reference rate to be used for settlement.",
+    "explanation": "Currency contracts usually expire two working days before the last business day of the month (e.g., if the month ends on Friday the 31st, expiry is likely Wednesday the 29th)."
+  },
+  {
+    "id": 18,
+    "question": "Can a 'Trading Member' also be a 'Clearing Member'?",
+    "options": [
+      "No, never",
+      "Yes, this is called a Self-Clearing Member (SCM) or PCM",
+      "Only if they are a bank",
+      "Only if they are foreign"
+    ],
+    "answer": "Yes, this is called a Self-Clearing Member (SCM) or PCM",
+    "hint": "Larger brokers often do both.",
+    "explanation": "Yes, a member can be both. A Trading cum Clearing Member (TCM) or Professional Clearing Member (PCM) can trade and settle."
+  },
+  {
+    "id": 19,
+    "question": "Which key serves to confirm an order in most trading terminals (like NEAT)?",
+    "options": [
+      "Enter",
+      "Control + F1",
+      "Control + Enter",
+      "Escape"
+    ],
+    "answer": "Control + Enter",
+    "hint": "This is a safety step to prevent accidental orders.",
+    "explanation": "In many standard trading terminals used in India, pressing 'Control + Enter' is the final step to submit an order."
+  },
+  {
+    "id": 20,
+    "question": "A 'Disclosed Quantity' order allows a trader to:",
+    "options": [
+      "Hide their identity",
+      "Show only a fraction of their total order quantity to the market",
+      "Trade without margin",
+      "Disclose their strategy to the public"
+    ],
+    "answer": "Show only a fraction of their total order quantity to the market",
+    "hint": "Like an iceberg, only the tip is visible.",
+    "explanation": "Disclosed Quantity allows large traders to reveal only a portion of their order (e.g., show 100 lots while actually buying 1,000) to avoid startling the market."
+  }
+]

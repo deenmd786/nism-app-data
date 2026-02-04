@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "question": "What is the primary function of the 'Clearing Corporation' in the derivatives market?",
+    "options": [
+      "To provide trading terminals",
+      "To act as a legal counterparty to every trade (Novation)",
+      "To advise clients on which currency to buy",
+      "To issue foreign currency notes"
+    ],
+    "answer": "To act as a legal counterparty to every trade (Novation)",
+    "hint": "They become the buyer to every seller and seller to every buyer.",
+    "explanation": "Through the process of Novation, the Clearing Corporation guarantees the settlement of all trades, removing the risk that the other trader might default."
+  },
+  {
+    "id": 2,
+    "question": "Which software is widely used to calculate 'Initial Margin' requirements based on portfolio risk?",
+    "options": [
+      "Tally",
+      "SPAN (Standard Portfolio Analysis of Risk)",
+      "MS Excel",
+      "NEAT"
+    ],
+    "answer": "SPAN (Standard Portfolio Analysis of Risk)",
+    "hint": "It measures the worst possible loss for a portfolio.",
+    "explanation": "SPAN (developed by CME) is the standard system used by exchanges to calculate the initial margin required to cover the worst probable one-day loss."
+  },
+  {
+    "id": 3,
+    "question": "When is 'Mark-to-Market' (MTM) settlement collected?",
+    "options": [
+      "At the end of the contract expiry",
+      "Weekly",
+      "Daily (T+1 basis)",
+      "Monthly"
+    ],
+    "answer": "Daily (T+1 basis)",
+    "hint": "Profits and losses are calculated every evening and settled the next morning.",
+    "explanation": "MTM settlement happens daily. If you made a loss today, you must pay it in cash by the next working day before trading starts."
+  },
+  {
+    "id": 4,
+    "question": "In Indian Currency Derivatives, the 'Final Settlement Price' for USD/INR futures is based on:",
+    "options": [
+      "The last traded price on the exchange",
+      "The RBI Reference Rate",
+      "The Federal Reserve Rate",
+      "The average of the last 30 minutes of trading"
+    ],
+    "answer": "The RBI Reference Rate",
+    "hint": "The central bank decides the official rate used for closing contracts.",
+    "explanation": "The Final Settlement Price on the expiry day is the RBI Reference Rate for that specific currency pair."
+  },
+  {
+    "id": 5,
+    "question": "What is 'Extreme Loss Margin' (ELM)?",
+    "options": [
+      "Margin for administrative costs",
+      "Margin collected to cover risks not captured by SPAN",
+      "The penalty for losing money",
+      "The broker's commission"
+    ],
+    "answer": "Margin collected to cover risks not captured by SPAN",
+    "hint": "It covers the 'tail risk' or situations where the market moves wildly beyond normal expectations.",
+    "explanation": "ELM is an additional margin collected to cover losses in situations where price movements are more extreme than the SPAN model predicts."
+  },
+  {
+    "id": 6,
+    "question": "If a Clearing Member defaults, which fund is used as the last resort to settle claims?",
+    "options": [
+      "Investor Protection Fund",
+      "Settlement Guarantee Fund (SGF)",
+      "Prime Minister's Relief Fund",
+      "SEBI General Fund"
+    ],
+    "answer": "Settlement Guarantee Fund (SGF)",
+    "hint": "A 'pool' of money contributed by members to guarantee trades.",
+    "explanation": "The SGF is a corpus maintained by the Clearing Corporation to ensure settlement obligations are met even if a member defaults."
+  },
+  {
+    "id": 7,
+    "question": "All currency futures contracts in India are settled in:",
+    "options": [
+      "US Dollars",
+      "Euros",
+      "Indian Rupees (Cash Settled)",
+      "Physical Delivery of Gold"
+    ],
+    "answer": "Indian Rupees (Cash Settled)",
+    "hint": "You don't get the actual dollars; you get the profit/loss difference.",
+    "explanation": "Indian currency derivatives are cash-settled in INR. The difference between the buy/sell price is paid or received in Rupees."
+  },
+  {
+    "id": 8,
+    "question": "Who determines the 'Daily Settlement Price' (DSP) for marking to market?",
+    "options": [
+      "The Broker",
+      "The Clearing Corporation",
+      "The Trader",
+      "The RBI"
+    ],
+    "answer": "The Clearing Corporation",
+    "hint": "It is usually the closing price (weighted average of the last 30 mins).",
+    "explanation": "The Clearing Corporation calculates the DSP (usually the weighted average price of the last half hour) to calculate daily MTM obligations."
+  },
+  {
+    "id": 9,
+    "question": "What is 'Novation'?",
+    "options": [
+      "Creating a new contract",
+      "Substituting the Clearing Corporation as the counterparty for every trade",
+      "Cancelling a trade",
+      "Increasing the margin"
+    ],
+    "answer": "Substituting the Clearing Corporation as the counterparty for every trade",
+    "hint": "It turns a bilateral agreement into a centralized guarantee.",
+    "explanation": "Novation is the legal process where the Clearing Corporation steps in between the buyer and seller, becoming the counterparty to both."
+  },
+  {
+    "id": 10,
+    "question": "A 'Calendar Spread' margin benefit is given because:",
+    "options": [
+      "The risk is higher",
+      "The risk is lower than two naked positions",
+      "The exchange wants to encourage long-term holding",
+      "It is tax-free"
+    ],
+    "answer": "The risk is lower than two naked positions",
+    "hint": "Being Long July and Short August cancels out most market direction risk.",
+    "explanation": "Since the two positions (Long near month, Short far month) offset each other's risk, the margin required is significantly lower."
+  },
+  {
+    "id": 11,
+    "question": "Who is responsible for collecting margins from the end Client?",
+    "options": [
+      "The Clearing Corporation directly",
+      "The Clearing Member / Trading Member",
+      "The RBI",
+      "The Bank"
+    ],
+    "answer": "The Clearing Member / Trading Member",
+    "hint": "The Exchange talks to the Member; the Member talks to the Client.",
+    "explanation": "The Clearing Corporation collects margins from Clearing Members, who in turn must collect margins from their respective clients."
+  },
+  {
+    "id": 12,
+    "question": "What happens if a client fails to pay a 'Margin Call'?",
+    "options": [
+      "The broker pays on their behalf indefinitely",
+      "The position may be squared off (closed) by the broker",
+      "The client is arrested",
+      "Nothing happens"
+    ],
+    "answer": "The position may be squared off (closed) by the broker",
+    "hint": "If you don't add money to cover the risk, the broker removes the risk.",
+    "explanation": "If a client cannot meet the margin requirement, the broker has the right to close the client's open positions to prevent further losses."
+  },
+  {
+    "id": 13,
+    "question": "Which entity imposes 'Position Limits' on market participants?",
+    "options": [
+      "SEBI / Stock Exchanges",
+      "The Income Tax Department",
+      "The Forex Association",
+      "The World Bank"
+    ],
+    "answer": "SEBI / Stock Exchanges",
+    "hint": "To prevent one person from cornering or manipulating the market.",
+    "explanation": "Regulators and exchanges set limits on the maximum number of contracts a single client or member can hold to ensure market integrity."
+  },
+  {
+    "id": 14,
+    "question": "The 'Initial Margin' must be paid:",
+    "options": [
+      "After the profit is booked",
+      "Before or at the time of placing the trade",
+      "Only if you lose",
+      "At the end of the year"
+    ],
+    "answer": "Before or at the time of placing the trade",
+    "hint": "It is the upfront deposit.",
+    "explanation": "Initial margin is an upfront requirement. The system checks for available margin before accepting the order."
+  },
+  {
+    "id": 15,
+    "question": "In the context of clearing, what is a 'Clearing Bank'?",
+    "options": [
+      "Any bank in India",
+      "A bank designated by the Clearing Corporation for funds settlement",
+      "The Reserve Bank of India",
+      "A foreign bank"
+    ],
+    "answer": "A bank designated by the Clearing Corporation for funds settlement",
+    "hint": "Members must open accounts here to transfer money to the exchange.",
+    "explanation": "Clearing Banks act as the conduit for transferring funds between Clearing Members and the Clearing Corporation."
+  },
+  {
+    "id": 16,
+    "question": "What happens to the 'Open Interest' when a trade is settled/squared off?",
+    "options": [
+      "It increases",
+      "It decreases",
+      "It remains the same",
+      "It doubles"
+    ],
+    "answer": "It decreases",
+    "hint": "Open Interest is the number of active contracts. Closing a contract removes it.",
+    "explanation": "When a trader exits a position (squares off), the number of outstanding contracts in the market reduces, lowering the Open Interest."
+  },
+  {
+    "id": 17,
+    "question": "The 'Value at Risk' (VaR) methodology is primarily used for:",
+    "options": [
+      "Calculating brokerage",
+      "Calculating Initial Margin",
+      "Determining the exchange rate",
+      "Auditing accounts"
+    ],
+    "answer": "Calculating Initial Margin",
+    "hint": "It estimates how much a portfolio could lose with a certain confidence level.",
+    "explanation": "VaR is a statistical technique used (within SPAN) to measure the risk of loss on a portfolio, determining the margin required."
+  },
+  {
+    "id": 18,
+    "question": "Can a Clearing Member clear trades for other Trading Members?",
+    "options": [
+      "No, only for themselves",
+      "Yes, if they are a Professional Clearing Member (PCM) or TCM",
+      "Only if they are related",
+      "Yes, but only for retail clients"
+    ],
+    "answer": "Yes, if they are a Professional Clearing Member (PCM) or TCM",
+    "hint": "Some members specialize only in clearing and settling for others.",
+    "explanation": "Yes, Clearing Members can clear and settle trades executed by other Trading Members who do not have clearing rights."
+  },
+  {
+    "id": 19,
+    "question": "If the Final Settlement Price is INR 83.00 and you are Long at 82.50, what is the cash settlement?",
+    "options": [
+      "Pay 0.50 INR",
+      "Receive 0.50 INR",
+      "Receive 83.00 INR",
+      "Pay 82.50 INR"
+    ],
+    "answer": "Receive 0.50 INR",
+    "hint": "Buy Low (82.50), Sell High (83.00) = Profit.",
+    "explanation": "Since the settlement price is higher than your buy price, you make a profit. You receive the difference: 83.00 - 82.50 = 0.50 per dollar."
+  },
+  {
+    "id": 20,
+    "question": "What is the primary goal of 'Risk Management' in clearing?",
+    "options": [
+      "To maximize broker profits",
+      "To prevent market failure and ensuring financial integrity",
+      "To increase tax revenue",
+      "To stop people from trading"
+    ],
+    "answer": "To prevent market failure and ensuring financial integrity",
+    "hint": "It prevents a domino effect of defaults.",
+    "explanation": "The main goal is to ensure that one person's default does not cause a chain reaction that crashes the market or harms other innocent participants."
+  }
+]
