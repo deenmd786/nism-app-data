@@ -1,0 +1,61 @@
+{
+  "title": "Chapter 5: Clearing, Settlement & Risk Management",
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "5.1 The Clearing Corporation"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Clearing Corporation (e.g., NSCCL for NSE) acts as the central counterparty to all trades. It guarantees that every trade will be settled, eliminating counterparty risk."
+    },
+    {
+      "type": "highlight_box",
+      "text": "Novation: The legal process where the Clearing Corporation replaces the original buyer and seller to become the buyer to every seller and seller to every buyer."
+    },
+    {
+      "type": "heading",
+      "text": "5.2 Types of Members"
+    },
+    {
+      "type": "paragraph",
+      "text": "Not everyone can clear trades. Members are categorized based on their rights:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Trading Member (TM): Can trade for themselves and clients but CANNOT clear/settle trades. They must link to a Clearing Member.",
+        "Trading cum Clearing Member (TCM): Can trade and clear their own trades and their clients' trades.",
+        "Professional Clearing Member (PCM): They do not trade but only clear and settle trades for other Trading Members (usually Banks/Custodians)."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "5.3 The Margin System"
+    },
+    {
+      "type": "paragraph",
+      "text": "Margins are funds collected by the exchange to cover potential losses. This is the backbone of risk management."
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Initial Margin (SPAN): Calculated based on volatility (worst-case loss in 1 day). Must be paid BEFORE trading.",
+        "Extreme Loss Margin (ELM): A fixed percentage collected over and above SPAN margin to cover extreme situations.",
+        "Calendar Spread Margin: Lower margin benefit given when you buy one month and sell another month."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "5.4 Mark-to-Market (MTM) Settlement"
+    },
+    {
+      "type": "paragraph",
+      "text": "MTM is the process of adjusting the daily profits and losses. If you make a loss today, you must pay it to the exchange immediately."
+    },
+    {
+      "type": "highlight_box",
+      "text": "Critical Rule: MTM losses must be paid in CASH by the next working day (T+1). Initial margins can be non-cash (securities/FDs), but MTM is always cash."
+    }
+  ]
+}

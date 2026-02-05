@@ -1,0 +1,68 @@
+{
+  "title": "Chapter 6: Exchange Traded Currency Options",
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "6.1 Basics of Options"
+    },
+    {
+      "type": "paragraph",
+      "text": "An Option is a contract that gives the buyer the RIGHT, but not the OBLIGATION, to buy or sell the underlying currency at a specific price on a specific date."
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Buyer (Holder): Pays the premium. Has the right to exercise. Maximum loss is the premium paid.",
+        "Seller (Writer): Receives the premium. Has the obligation to fulfill the contract if the buyer exercises. Maximum loss is potentially unlimited."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "6.2 Types of Options"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Call Option (CE): The right to BUY. You buy a Call if you expect the currency rate to RISE.",
+        "Put Option (PE): The right to SELL. You buy a Put if you expect the currency rate to FALL.",
+        "European Style: Can be exercised ONLY on the expiry date (followed in India for currency options).",
+        "American Style: Can be exercised ANY time before expiry."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "6.3 Moneyness of Options"
+    },
+    {
+      "type": "paragraph",
+      "text": "Moneyness describes the relationship between the Spot Price (S) and the Strike Price (X)."
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "In-The-Money (ITM): The option has profit. (Call: Spot > Strike | Put: Spot < Strike).",
+        "At-The-Money (ATM): Spot Price is equal to Strike Price.",
+        "Out-Of-The-Money (OTM): The option has zero intrinsic value. (Call: Spot < Strike | Put: Spot > Strike)."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "6.4 Option Pricing & Greeks"
+    },
+    {
+      "type": "paragraph",
+      "text": "The price of an option (Premium) = Intrinsic Value + Time Value. Several factors ('Greeks') affect this price:"
+    },
+    {
+      "type": "highlight_box",
+      "text": "Delta: Measures how much the option price changes when the underlying currency price changes."
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Theta (Time Decay): Measures how much value the option loses as time passes.",
+        "Vega: Measures sensitivity to Volatility. Higher volatility = Higher option premium."
+      ]
+    }
+  ]
+}
