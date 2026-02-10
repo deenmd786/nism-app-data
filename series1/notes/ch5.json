@@ -1,61 +1,43 @@
 {
-  "title": "Chapter 5: Clearing, Settlement & Risk Management",
-  "blocks": [
-    {
-      "type": "heading",
-      "text": "5.1 The Clearing Corporation"
-    },
-    {
-      "type": "paragraph",
-      "text": "The Clearing Corporation (e.g., NSCCL for NSE) acts as the central counterparty to all trades. It guarantees that every trade will be settled, eliminating counterparty risk."
-    },
-    {
-      "type": "highlight_box",
-      "text": "Novation: The legal process where the Clearing Corporation replaces the original buyer and seller to become the buyer to every seller and seller to every buyer."
-    },
-    {
-      "type": "heading",
-      "text": "5.2 Types of Members"
-    },
-    {
-      "type": "paragraph",
-      "text": "Not everyone can clear trades. Members are categorized based on their rights:"
-    },
-    {
-      "type": "bullet_list",
-      "items": [
-        "Trading Member (TM): Can trade for themselves and clients but CANNOT clear/settle trades. They must link to a Clearing Member.",
-        "Trading cum Clearing Member (TCM): Can trade and clear their own trades and their clients' trades.",
-        "Professional Clearing Member (PCM): They do not trade but only clear and settle trades for other Trading Members (usually Banks/Custodians)."
-      ]
-    },
-    {
-      "type": "heading",
-      "text": "5.3 The Margin System"
-    },
-    {
-      "type": "paragraph",
-      "text": "Margins are funds collected by the exchange to cover potential losses. This is the backbone of risk management."
-    },
-    {
-      "type": "bullet_list",
-      "items": [
-        "Initial Margin (SPAN): Calculated based on volatility (worst-case loss in 1 day). Must be paid BEFORE trading.",
-        "Extreme Loss Margin (ELM): A fixed percentage collected over and above SPAN margin to cover extreme situations.",
-        "Calendar Spread Margin: Lower margin benefit given when you buy one month and sell another month."
-      ]
-    },
-    {
-      "type": "heading",
-      "text": "5.4 Mark-to-Market (MTM) Settlement"
-    },
-    {
-      "type": "paragraph",
-      "text": "MTM is the process of adjusting the daily profits and losses. If you make a loss today, you must pay it to the exchange immediately."
-    },
-    {
-      "type": "highlight_box",
-      "text": "Critical Rule: MTM losses must be paid in CASH by the next working day (T+1). Initial margins can be non-cash (securities/FDs), but MTM is always cash."
-    }
-  ]
+  "unit_no": 5,
+  "unit_name": "Strategies using Exchange Traded Currency Derivatives",
+  "weightage": "10%",
+  "notes": {
+    "introduction": [
+      "🔹 **Purpose of Strategies:** Market participants use currency derivatives (futures and options) to achieve specific financial goals based on their risk appetite and market view.",
+      "🔹 **The Three Main Motives:** The strategies are broadly classified into three categories: Hedging (risk reduction), Speculation (profit seeking through directional views), and Arbitrage (riskless profit from price inefficiencies).",
+      "👉 **Market View:** Before deploying any strategy, a participant must have a clear view of the market—whether they expect the currency to appreciate (Bullish), depreciate (Bearish), or stay range-bound (Neutral)."
+    ],
+    "key_concepts": [
+      "🔸 **1. Hedging Strategies:** Designed to protect existing business cash flows from adverse exchange rate movements. Exporters hedge against a falling foreign currency; importers hedge against a rising foreign currency.",
+      "🔸 **2. Speculative Strategies:** Involves taking naked (unhedged) positions. If you are bullish on USD/INR, you go 'Long' (buy futures or call options). If you are bearish, you go 'Short' (sell futures or buy put options).",
+      "🔸 **3. Arbitrage:** The simultaneous buying and selling of the same or similar asset in different markets to profit from temporary price differences. It theoretically involves zero risk and zero net investment.",
+      "🔸 **4. Spread Trading:** Involves simultaneously taking opposing positions in two different but related contracts to profit from the changing price difference (spread) between them, rather than the absolute price movement.",
+      "🔸 **5. Calendar Spread:** A popular spread strategy where you buy a contract for one expiration month and sell a contract for a different expiration month on the exact same underlying currency pair."
+    ],
+    "important_terms": [
+      "📌 **Long Position:** Buying a derivative contract with the expectation that the underlying currency will rise in value.",
+      "📌 **Short Position:** Selling a derivative contract with the expectation that the underlying currency will fall in value.",
+      "📌 **Cash and Carry Arbitrage:** Buying the underlying currency in the spot market and simultaneously selling it in the futures market when the futures price is incorrectly priced higher than its fair value.",
+      "📌 **Reverse Cash and Carry Arbitrage:** Selling the underlying currency in the spot market and buying in the futures market when the futures price is incorrectly priced lower than its fair value.",
+      "📌 **Cost of Carry:** The cost incurred to hold a position over time, including interest rates and storage costs (though storage doesn't apply to currencies, interest rate differentials are key)."
+    ],
+    "exam_points": [
+      "⚠️ **Importer vs. Exporter Actions:** This is critical for the exam. An **Importer** (needs to pay foreign currency) will **Buy Futures** or **Buy Call Options** to hedge. An **Exporter** (receives foreign currency) will **Sell Futures** or **Buy Put Options** to hedge.",
+      "✅ **Arbitrage Rule:** Remember the basic principle of arbitrage: 'Buy Low, Sell High' simultaneously across different markets (like Spot vs. Futures) to lock in a risk-free profit.",
+      "✅ **Risk in Spreads:** Spread trading is generally considered lower risk than outright speculation because the two legs of the trade often move in the same direction, partially offsetting each other.",
+      "💡 **Interest Rate Parity (IRP):** Understand that the theoretical futures price is determined by the spot price and the difference in interest rates between the two countries involved."
+    ],
+    "examples": [
+      "👉 **Example 1 - Exporter Hedging with Futures:** An Indian IT company expects to receive $100,000 in 3 months. Current spot is 83.00, but they fear USD will drop to 82.00. They *sell* USD/INR futures at 83.20. If spot drops to 82.00 in 3 months, they lose ₹1 on the physical cash flow but gain ₹1.20 on the futures, effectively locking in a rate of 83.20.",
+      "👉 **Example 2 - Importer Hedging with Options:** An importer needs to pay $50,000 next month and fears the USD will rise. They *buy* a USD/INR Call Option at a strike of 83.50 by paying a premium. If USD shoots to 84.50, they exercise the right to buy at 83.50, saving ₹1.00 per dollar (minus premium). If USD falls to 82.50, they ignore the option and buy from the market at 82.50, losing only the premium.",
+      "👉 **Example 3 - Calendar Spread:** A trader believes the price difference between the 1-month USD/INR future and the 2-month USD/INR future will widen. They buy the 1-month contract and sell the 2-month contract simultaneously."
+    ],
+    "summary": [
+      "✅ **Key Takeaway 1:** Strategies are tailored to the user's objective: Hedgers seek certainty, Speculators seek profit from risk, and Arbitrageurs seek risk-free anomalies.",
+      "✅ **Key Takeaway 2:** Choosing between futures and options for hedging depends on whether the user wants a fixed obligation (Futures) or flexibility for a premium cost (Options).",
+      "✅ **Key Takeaway 3:** Arbitrage keeps the spot and futures markets aligned; whenever prices deviate from fair value based on interest rates, arbitrageurs step in to correct it.",
+      "💡 **Final Tip:** For exam scenario questions, immediately identify if the person is an Importer (wants price to stay low) or Exporter (wants price to stay high) before selecting the correct strategy."
+    ]
+  }
 }

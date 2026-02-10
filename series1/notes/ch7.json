@@ -1,43 +1,43 @@
 {
-  "title": "Chapter 7: Regulatory Framework",
-  "blocks": [
-    {
-      "type": "heading",
-      "text": "7.1 Regulatory Bodies"
-    },
-    {
-      "type": "paragraph",
-      "text": "The currency derivatives market in India is regulated by a hybrid model involving both RBI and SEBI."
-    },
-    {
-      "type": "bullet_list",
-      "items": [
-        "RBI (Reserve Bank of India): Regulates the underlying currency market and foreign exchange policies (FEMA).",
-        "SEBI (Securities and Exchange Board of India): Regulates the exchanges (NSE/BSE), brokers, and the trading platform where derivatives are traded."
-      ]
-    },
-    {
-      "type": "heading",
-      "text": "7.2 FEMA (Foreign Exchange Management Act, 1999)"
-    },
-    {
-      "type": "paragraph",
-      "text": "FEMA is the primary law governing forex in India. It divides transactions into two categories:"
-    },
-    {
-      "type": "bullet_list",
-      "items": [
-        "Current Account Transactions: Trade in goods/services (e.g., travel, imports). Freely permitted unless restricted.",
-        "Capital Account Transactions: Alter assets/liabilities outside India (e.g., buying property abroad). Restricted unless permitted."
-      ]
-    },
-    {
-      "type": "heading",
-      "text": "7.3 Participation Limits"
-    },
-    {
-      "type": "highlight_box",
-      "text": "Important Limit: Resident Indians and NRIs can take positions in USD-INR up to USD 100 Million without underlying exposure documentation. Above this limit, they must prove they have actual export/import exposure."
-    }
-  ]
+  "unit_no": 7,
+  "unit_name": "Clearing, Settlement and Risk Management in ETCD",
+  "weightage": "10%",
+  "notes": {
+    "introduction": [
+      "🔹 **The Clearing Corporation (CC):** The unsung hero of the derivatives market. While the Exchange handles trading, the Clearing Corporation handles all post-trade activities (clearing, settlement, and risk management).",
+      "🔹 **Novation:** This is the most critical concept. Once a trade is matched, the CC steps in between the buyer and seller. It becomes the legal buyer to every seller and the legal seller to every buyer. This completely eliminates counterparty risk.",
+      "👉 **Cash Settlement:** Remember, all currency derivatives in India are settled purely in cash (INR). No physical delivery of foreign currency ever takes place."
+    ],
+    "key_concepts": [
+      "🔸 **1. Clearing Members (CM):** They are the financial backbone. Trading Members execute trades, but Clearing Members take the financial responsibility to settle them with the CC. There are Professional CMs (clear for others, don't trade themselves) and Trading-cum-Clearing Members.",
+      "🔸 **2. Settlement Types:** There are two types: Daily Settlement (Mark-to-Market or MTM) which happens every day, and Final Settlement which happens on the expiry date of the contract.",
+      "🔸 **3. Mark-to-Market (MTM) Process:**  At the end of every trading day, all open positions are revalued using the daily closing price. Profits are credited and losses are debited from the margin accounts.",
+      "🔸 **4. Margining System:** The primary tool for risk management. Margins are deposits collected upfront to cover potential future losses.",
+      "🔸 **5. Types of Margins:** **Initial Margin (IM)** is calculated using a Value at Risk (VaR) model to cover 99% of worst-case daily price drops. **Extreme Loss Margin (ELM)** is an extra buffer. **Calendar Spread Margin** is charged for spread positions (which are lower risk)."
+    ],
+    "important_terms": [
+      "📌 **Novation:** The legal substitution of the CC as the counterparty to every trade.",
+      "📌 **Value at Risk (VaR):** A statistical technique used to measure and quantify the level of financial risk within a firm or investment portfolio over a specific time frame.",
+      "📌 **Settlement Price:** The official price determined by the exchange at the end of the day (for daily MTM) or at expiry (for final settlement, usually based on the RBI reference rate).",
+      "📌 **Core Settlement Guarantee Fund (SGF):** A massive pool of money maintained by the CC to guarantee settlement even if a major Clearing Member defaults.",
+      "📌 **Liquid Net Worth:** The required minimum capital that a Clearing Member must maintain at all times to ensure they can meet their obligations."
+    ],
+    "exam_points": [
+      "⚠️ **Novation Definition:** Be absolutely clear on what Novation means. It's the reason why Exchange Traded derivatives have negligible counterparty risk compared to OTC forwards.",
+      "✅ **Settlement Timing:** Daily MTM is settled on a T+1 basis (the working day following the trade). Final settlement is also T+1 (the working day following the expiry day).",
+      "✅ **Margin Collection:** Understand the flow: Client pays margin to Trading Member -> TM pays to Clearing Member -> CM pays to Clearing Corporation.",
+      "💡 **Portfolio Based Margining:** SPAN (Standard Portfolio Analysis of Risk) is the system used. It calculates margins at a portfolio level, giving margin benefits if opposing positions hedge each other's risk."
+    ],
+    "examples": [
+      "👉 **Example 1 - Novation in Action:** You buy 10 lots of USDINR from Seller X. The CC instantly steps in. Legally, you bought from the CC, and Seller X sold to the CC. If Seller X goes bankrupt tomorrow, you still get your profits because the CC guarantees it.",
+      "👉 **Example 2 - Daily MTM:** You are long 1 lot USDINR at ₹83.00. Day 1 closing price is ₹82.50. You made a loss of ₹0.50 per dollar. This loss is debited from your margin account that evening. If your margin falls too low, you get a 'Margin Call'.",
+      "👉 **Example 3 - Final Settlement:** You hold a USDINR futures contract till expiry. The RBI Reference rate on expiry day is ₹83.45. Your position is automatically squared off at ₹83.45, and the final profit/loss is cash-settled into your account on T+1."
+    ],
+    "summary": [
+      "✅ **Key Takeaway 1:** The Clearing Corporation guarantees every trade through Novation, removing counterparty risk.",
+      "✅ **Key Takeaway 2:** Daily Mark-to-Market (MTM) prevents the accumulation of large unseen losses.",
+      "✅ **Key Takeaway 3:** Robust risk management relies on collecting adequate upfront margins (IM + ELM) calculated using sophisticated VaR/SPAN models.",
+      "💡 **Final Tip:** For exam questions, focus heavily on the difference between Trading Members (execution) and Clearing Members (financial responsibility/settlement)."
+    ]
+  }
 }

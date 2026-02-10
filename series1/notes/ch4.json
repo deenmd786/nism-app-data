@@ -1,59 +1,43 @@
 {
-  "title": "Chapter 4: Strategies Using Currency Futures",
-  "blocks": [
-    {
-      "type": "heading",
-      "text": "4.1 Hedging Strategies (Risk Reduction)"
-    },
-    {
-      "type": "paragraph",
-      "text": "Hedging is used to reduce or eliminate the risk of price fluctuation. It involves taking an opposite position in the futures market to what you have in the spot market."
-    },
-    {
-      "type": "bullet_list",
-      "items": [
-        "Long Hedge (Buy Futures): Used by IMPORTERS. If you have to pay dollars in the future, you fear the dollar price will go up. You buy futures today to lock in the price.",
-        "Short Hedge (Sell Futures): Used by EXPORTERS. If you will receive dollars in the future, you fear the dollar price will fall. You sell futures today to lock in the profit."
-      ]
-    },
-    {
-      "type": "heading",
-      "text": "4.2 Speculation Strategies (Profit Motive)"
-    },
-    {
-      "type": "paragraph",
-      "text": "Speculators take risks to make profits based on their market view. They do not have an underlying exposure like importers/exporters."
-    },
-    {
-      "type": "bullet_list",
-      "items": [
-        "Bullish View: If you expect the USD/INR rate to rise, you BUY Currency Futures.",
-        "Bearish View: If you expect the USD/INR rate to fall, you SELL Currency Futures."
-      ]
-    },
-    {
-      "type": "heading",
-      "text": "4.3 Arbitrage Strategies"
-    },
-    {
-      "type": "paragraph",
-      "text": "Arbitrage involves making risk-free profit by exploiting price differences between the Spot market and the Futures market."
-    },
-    {
-      "type": "highlight_box",
-      "text": "Cash & Carry Arbitrage: When Futures are 'overpriced', you Buy Spot and Sell Futures simultaneously to lock in the difference."
-    },
-    {
-      "type": "heading",
-      "text": "4.4 Spread Trading"
-    },
-    {
-      "type": "paragraph",
-      "text": "Spread trading involves buying one contract and selling another contract of a different maturity (e.g., Buy January Future + Sell February Future)."
-    },
-    {
-      "type": "highlight_box",
-      "text": "Key Benefit: Spread trades have lower risk compared to naked positions, so exchanges charge lower margins for them."
-    }
-  ]
+  "unit_no": 4,
+  "unit_name": "Exchange Traded Currency Options",
+  "weightage": "20%",
+  "notes": {
+    "introduction": [
+      "🔹 **What is a Currency Option?** It is a derivative contract that gives the buyer the right, but not the obligation, to buy or sell a specific currency pair at a fixed price on or before a specific date.",
+      "🔹 **The Premium:** To acquire this right, the buyer pays a non-refundable upfront fee to the seller, known as the 'Premium'.",
+      "👉 **Buyer vs. Seller:** The buyer of an option has limited risk (maximum loss is the premium paid) and unlimited profit potential. The seller (or writer) has unlimited risk and limited profit potential (maximum profit is the premium received)."
+    ],
+    "key_concepts": [
+      "🔸 **1. Types of Options:** There are two main types. A 'Call Option' gives the right to BUY the underlying currency. A 'Put Option' gives the right to SELL the underlying currency.",
+      "🔸 **2. European vs. American Options:** European options can only be exercised on the expiry date. American options can be exercised at any time before or on the expiry date. In India, currency options traded on exchanges are generally European style.",
+      "🔸 **3. Moneyness of an Option:** This describes the relationship between the current market price (Spot price) and the option's Strike price. It tells you if the option currently has any intrinsic value.",
+      "🔸 **4. In-The-Money (ITM):** An option that would result in a positive cash flow if exercised immediately. (Call: Spot > Strike | Put: Spot < Strike).",
+      "🔸 **5. At-The-Money (ATM):** An option where the Spot price is exactly equal to the Strike price. (Call: Spot = Strike | Put: Spot = Strike).",
+      "🔸 **6. Out-Of-The-Money (OTM):** An option that would result in a negative cash flow if exercised immediately, so it is not exercised. (Call: Spot < Strike | Put: Spot > Strike)."
+    ],
+    "important_terms": [
+      "📌 **Strike Price (Exercise Price):** The pre-agreed exchange rate at which the option can be exercised.",
+      "📌 **Intrinsic Value:** The actual tangible value of an option if it were exercised right now. Only ITM options have intrinsic value. OTM and ATM options have zero intrinsic value.",
+      "📌 **Time Value:** The portion of the premium that is based on the amount of time left until expiry. Premium = Intrinsic Value + Time Value.",
+      "📌 **Option Writer:** The person who sells the option. They collect the premium but take on the obligation to fulfill the contract if the buyer exercises it.",
+      "📌 **Assignment:** When an option buyer exercises their right, the exchange randomly 'assigns' an option writer to fulfill the obligation."
+    ],
+    "exam_points": [
+      "⚠️ **Crucial Formula:** Always remember: Option Premium = Intrinsic Value + Time Value. At expiry, Time Value becomes zero, so Premium = Intrinsic Value.",
+      "✅ **Risk Profile:** Be very clear for the exam: Option Buyer = Limited Risk (Premium), Unlimited Reward. Option Seller = Unlimited Risk, Limited Reward (Premium). ",
+      "✅ **Moneyness Rules:** Memorize the ITM/ATM/OTM conditions for both Calls and Puts. Expect direct scenario questions asking you to identify the moneyness of a given strike price.",
+      "💡 **Margin Requirements:** Option buyers only pay the premium; they do not pay margin. Option sellers (writers) must pay initial and extreme loss margins because they carry unlimited risk."
+    ],
+    "examples": [
+      "👉 **Example 1 - Call Option:** You expect USD to strengthen against INR. You buy a 1-month USDINR Call Option with a Strike Price of 83.00, paying a premium of ₹0.20. If at expiry, USDINR is 83.50, your option is ITM. You exercise the right to buy at 83.00. Your gross profit is 0.50. Net profit = 0.50 - 0.20 (premium) = ₹0.30 per dollar.",
+      "👉 **Example 2 - Put Option:** An exporter expects to receive USD and fears the rate will fall. They buy a USDINR Put Option at a Strike of 83.00, paying ₹0.15 premium. If the rate falls to 82.00, they exercise the option to sell at the higher 83.00 rate, protecting their revenue. If the rate rises to 84.00, they let the option expire OTM and sell in the open market at 84.00, losing only the ₹0.15 premium."
+    ],
+    "summary": [
+      "✅ **Key Takeaway 1:** Options provide a right without an obligation for the buyer, acting like an insurance policy against adverse currency movements.",
+      "✅ **Key Takeaway 2:** The premium paid is determined by intrinsic value (based on current price vs. strike price) and time value (time left to expiry).",
+      "✅ **Key Takeaway 3:** Understanding the contrasting risk/reward profiles of option buyers versus option sellers is fundamental to mastering this heavily weighted unit.",
+      "💡 **Final Tip:** Practice drawing simple payoff diagrams for buying a Call and buying a Put. Visualizing the maximum loss and breakeven points will make solving exam questions much faster."
+    ]
+  }
 }
