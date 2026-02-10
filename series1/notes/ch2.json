@@ -1,69 +1,43 @@
 {
-  "title": "Chapter 2: Foreign Exchange Derivatives",
-  "blocks": [
-    {
-      "type": "heading",
-      "text": "2.1 What are Derivatives?"
-    },
-    {
-      "type": "paragraph",
-      "text": "A derivative is a financial contract whose value is derived from an underlying asset. In currency derivatives, the underlying asset is the exchange rate between two currencies (e.g., USD/INR)."
-    },
-    {
-      "type": "heading",
-      "text": "2.2 Forward Contracts (OTC)"
-    },
-    {
-      "type": "paragraph",
-      "text": "A forward contract is an agreement to buy or sell a currency at a future date at a price decided today. These are traded in the Over-the-Counter (OTC) market."
-    },
-    {
-      "type": "bullet_list",
-      "items": [
-        "Customized: Tailor-made for specific amounts and dates.",
-        "Counterparty Risk: High risk of default as there is no exchange guarantee.",
-        "Settlement: Usually settled by physical delivery at the end of the contract."
-      ]
-    },
-    {
-      "type": "heading",
-      "text": "2.3 Futures Contracts (Exchange Traded)"
-    },
-    {
-      "type": "paragraph",
-      "text": "Currency Futures are standardized contracts traded on an exchange (like NSE or BSE) to buy or sell currency at a future date."
-    },
-    {
-      "type": "highlight_box",
-      "text": "Key Difference: Unlike Forwards, Futures are standardized (fixed lot sizes/dates), have zero counterparty risk (guaranteed by the Clearing Corporation), and are marked-to-market daily."
-    },
-    {
-      "type": "heading",
-      "text": "2.4 Options (Call & Put)"
-    },
-    {
-      "type": "paragraph",
-      "text": "Options give the buyer the RIGHT but not the OBLIGATION to buy or sell currency at a specific price."
-    },
-    {
-      "type": "bullet_list",
-      "items": [
-        "Call Option: Right to BUY.",
-        "Put Option: Right to SELL.",
-        "Premium: The price paid by the buyer to the seller to acquire this right."
-      ]
-    },
-    {
-      "type": "heading",
-      "text": "2.5 Interest Rate Parity (IRP)"
-    },
-    {
-      "type": "paragraph",
-      "text": "Pricing of currency futures is primarily based on Interest Rate Parity. It states that the difference between the forward rate and spot rate depends on the interest rate differential between the two countries."
-    },
-    {
-      "type": "highlight_box",
-      "text": "Formula Concept: If Indian interest rates are higher than US rates, the USD/INR Future price is generally higher than the Spot price (Premium)."
-    }
-  ]
+  "unit_no": 2,
+  "unit_name": "Foreign Exchange Derivatives",
+  "weightage": "5%",
+  "notes": {
+    "introduction": [
+      "🔹 **What is a Derivative?** A derivative is a financial instrument or contract whose value is derived from the performance of an underlying asset. In this context, the underlying asset is a foreign currency or an exchange rate.",
+      "🔹 **Purpose of Forex Derivatives:** They are primarily used for two main reasons: hedging (to protect against the risk of adverse currency movements) and speculation (to profit from anticipated currency movements).",
+      "👉 **Market Types:** Derivatives can be traded Over-The-Counter (OTC), which involves custom contracts between two parties, or on Exchanges, which involve standardized contracts."
+    ],
+    "key_concepts": [
+      "🔸 **1. Forward Contracts:** An agreement between two parties to exchange a specific amount of one currency for another at a predetermined exchange rate on a specific future date. These are heavily customized OTC contracts.",
+      "🔸 **2. Futures Contracts:** Similar to forwards, but these are highly standardized contracts traded on a regulated exchange. They specify standard contract sizes, maturity dates, and require daily settlement of gains and losses (Mark-to-Market).",
+      "🔸 **3. Options Contracts:** These give the buyer the *right*, but not the *obligation*, to buy (Call option) or sell (Put option) a currency at a specified price (Strike price) on or before a specific date. The buyer pays a premium for this right.",
+      "🔸 **4. Currency Swaps:** An agreement between two parties to exchange principal and interest payments in different currencies over a specified period. Often used by companies operating internationally to secure better borrowing rates."
+    ],
+    "important_terms": [
+      "📌 **Underlying Asset:** The specific currency pair upon which the derivative contract's value is based (e.g., USD/INR).",
+      "📌 **Notional Value:** The total face value of the derivative contract, representing the amount of currency being controlled.",
+      "📌 **Premium:** The price paid by the buyer of an option to the seller (writer) for the rights conveyed by the option contract.",
+      "📌 **Strike Price (Exercise Price):** The predetermined exchange rate at which an option contract can be exercised.",
+      "📌 **Mark-to-Market (MTM):** The daily settlement of gains and losses in futures contracts based on the closing market price. This drastically reduces counterparty risk.",
+      "📌 **Counterparty Risk:** The risk that the other party in a contract will default on their obligations. It is high in OTC forwards but almost zero in exchange-traded futures."
+    ],
+    "exam_points": [
+      "⚠️ **Forwards vs. Futures:** This is a classic exam question. Remember: Forwards = OTC, Custom, Settled at maturity, High counterparty risk. Futures = Exchange-traded, Standardized, Daily MTM, Negligible counterparty risk.",
+      "✅ **Options Basics:** Be absolutely clear that the buyer of an option has the right but no obligation, while the seller (writer) has an obligation if the buyer decides to exercise the option.",
+      "✅ **Call vs. Put:** A 'Call' option gives the right to buy; a 'Put' option gives the right to sell. Think: 'Call up' to buy, 'Put down' to sell.",
+      "💡 **Margin in Futures:** In futures trading, participants must deposit an initial margin (a fraction of contract value) and maintain a maintenance margin to cover potential daily losses."
+    ],
+    "examples": [
+      "👉 **Example 1 - Forward Contract:** An Indian importer needs to pay €100,000 to a German supplier in 3 months. To fix the cost, the importer enters an OTC forward contract today with a bank to buy €100,000 at 90.00 INR/EUR, regardless of the actual market rate in 3 months.",
+      "👉 **Example 2 - Options Contract:** A speculator buys a Call option on USD/INR with a strike price of 84.00, paying a premium of ₹0.50 per dollar. If the market rate reaches 85.00, they exercise the right to buy at 84.00, gaining ₹1.00 (minus the 0.50 premium, net profit = 0.50). If the rate drops to 83.00, they don't exercise, losing only the premium.",
+      "👉 **Example 3 - Margin Call (Futures):** A trader buys a USD/INR futures contract. At the end of the day, the price drops. Through MTM, money is deducted from their margin account. If the balance falls below the maintenance margin level, they receive a 'margin call' to deposit more funds."
+    ],
+    "summary": [
+      "✅ **Key Takeaway 1:** Forex derivatives (Forwards, Futures, Options, Swaps) derive their value from underlying currency exchange rates.",
+      "✅ **Key Takeaway 2:** They are essential tools for managing exchange rate risk (hedging) but are also widely used for speculation due to leverage.",
+      "✅ **Key Takeaway 3:** Understanding the difference between customized OTC products (Forwards) and standardized Exchange-traded products (Futures) is vital for understanding market structure and risk.",
+      "💡 **Final Tip:** For exam scenarios, focus on what risk the party is trying to avoid (e.g., risk of currency rising or falling) to determine which derivative instrument (buy/sell futures, call/put options) is appropriate."
+    ]
+  }
 }

@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following best describes a 'Long Hedge' using futures?",
+    "options": [
+      "Buying futures to protect against a price rise",
+      "Selling futures to protect against a price fall",
+      "Buying futures to speculate",
+      "Selling futures to arbitrage"
+    ],
+    "answer": "Buying futures to protect against a price rise",
+    "hint": "Long means buy; hedge means protect.",
+    "explanation": "A long hedge involves buying futures contracts to lock in a purchase price for an asset needed in the future, protecting against potential price increases."
+  },
+  {
+    "id": 2,
+    "question": "Which of the following best describes a 'Short Hedge' using futures?",
+    "options": [
+      "Buying futures to protect against a price rise",
+      "Selling futures to protect against a price fall",
+      "Selling futures to speculate",
+      "Buying call options"
+    ],
+    "answer": "Selling futures to protect against a price fall",
+    "hint": "Short means sell; hedge protects your inventory.",
+    "explanation": "A short hedge involves selling futures contracts to lock in a sale price for an asset already owned, protecting against potential price decreases."
+  },
+  {
+    "id": 3,
+    "question": "A portfolio manager holds a diversified equity portfolio with a Beta of 1.2. To hedge against a market crash, the manager should:",
+    "options": [
+      "Buy Index Futures",
+      "Sell Index Futures",
+      "Buy Call Options",
+      "Sell Put Options"
+    ],
+    "answer": "Sell Index Futures",
+    "hint": "Beta > 1 means high sensitivity; you need to short the market.",
+    "explanation": "To hedge a long portfolio, one must take a short position in index futures. The number of contracts depends on the portfolio Beta."
+  },
+  {
+    "id": 4,
+    "question": "What is 'Arbitrage' in the context of futures?",
+    "options": [
+      "Risk-free profit from price discrepancies between Spot and Futures markets",
+      "High-risk trading",
+      "Long-term investing",
+      "Illegal trading"
+    ],
+    "answer": "Risk-free profit from price discrepancies between Spot and Futures markets",
+    "hint": "Free money.",
+    "explanation": "Arbitrage exploits the mispricing between the Spot and Futures markets to generate risk-free profits (Cash-and-Carry)."
+  },
+  {
+    "id": 5,
+    "question": "Which strategy involves Buying a Call and Selling a Call with a higher Strike Price (same expiry)?",
+    "options": [
+      "Bull Call Spread",
+      "Bear Put Spread",
+      "Long Straddle",
+      "Short Strangle"
+    ],
+    "answer": "Bull Call Spread",
+    "hint": "You are bullish but capping the upside to reduce cost.",
+    "explanation": "A Bull Call Spread involves buying an ITM/ATM Call and selling an OTM Call. This limits profit but reduces the cost of the trade."
+  },
+  {
+    "id": 6,
+    "question": "Which strategy involves Buying a Put and Selling a Put with a lower Strike Price (same expiry)?",
+    "options": [
+      "Bear Put Spread",
+      "Bull Call Spread",
+      "Long Strangle",
+      "Short Straddle"
+    ],
+    "answer": "Bear Put Spread",
+    "hint": "You are bearish but capping the downside profit.",
+    "explanation": "A Bear Put Spread involves buying an ITM/ATM Put and selling an OTM Put. This profits from a decline in price but limits maximum profit."
+  },
+  {
+    "id": 7,
+    "question": "A 'Long Straddle' is profitable when:",
+    "options": [
+      "The market is highly volatile (big move in either direction)",
+      "The market is stagnant",
+      "The market moves slightly up",
+      "The market moves slightly down"
+    ],
+    "answer": "The market is highly volatile (big move in either direction)",
+    "hint": "Straddling means you win both ways if movement is huge.",
+    "explanation": "A Long Straddle (Buy Call + Buy Put at same strike) profits from significant price movement in either direction, overcoming the combined premiums paid."
+  },
+  {
+    "id": 8,
+    "question": "A 'Short Straddle' is profitable when:",
+    "options": [
+      "The market is range-bound / low volatility",
+      "The market crashes",
+      "The market rallies",
+      "Implied Volatility increases"
+    ],
+    "answer": "The market is range-bound / low volatility",
+    "hint": "Selling means you want stability.",
+    "explanation": "A Short Straddle (Sell Call + Sell Put at same strike) profits from time decay (Theta) when the stock price remains close to the strike price."
+  },
+  {
+    "id": 9,
+    "question": "Which strategy involves Buying a Call and Buying a Put at DIFFERENT Strike Prices (Put Strike < Call Strike)?",
+    "options": [
+      "Long Strangle",
+      "Long Straddle",
+      "Short Strangle",
+      "Butterfly Spread"
+    ],
+    "answer": "Long Strangle",
+    "hint": "Strangle has a wider 'neck' than Straddle.",
+    "explanation": "A Long Strangle is cheaper than a Straddle because both options are typically OTM. It requires a larger move to be profitable."
+  },
+  {
+    "id": 10,
+    "question": "A 'Covered Call' strategy involves:",
+    "options": [
+      "Buying Stock + Selling Call",
+      "Buying Stock + Buying Put",
+      "Selling Stock + Buying Call",
+      "Buying Call + Selling Put"
+    ],
+    "answer": "Buying Stock + Selling Call",
+    "hint": "Cover the short call with long stock.",
+    "explanation": "Covered Call writing generates income (premium) from a stock holding. It offers limited downside protection (to the extent of premium) and caps upside potential."
+  },
+  {
+    "id": 11,
+    "question": "A 'Protective Put' strategy involves:",
+    "options": [
+      "Buying Stock + Buying Put",
+      "Buying Stock + Selling Call",
+      "Selling Stock + Selling Put",
+      "Buying Call + Selling Put"
+    ],
+    "answer": "Buying Stock + Buying Put",
+    "hint": "Buying insurance for your stock.",
+    "explanation": "A Protective Put acts as insurance. You hold the stock and buy a Put to limit losses if the stock price crashes."
+  },
+  {
+    "id": 12,
+    "question": "The maximum loss in a 'Bull Call Spread' is:",
+    "options": [
+      "Net Premium Paid",
+      "Strike Difference - Net Premium",
+      "Unlimited",
+      "Strike Price"
+    ],
+    "answer": "Net Premium Paid",
+    "hint": "You paid money to enter; that's the max you lose.",
+    "explanation": "Since it is a debit spread (you pay more than you receive), the maximum loss is limited to the net premium paid."
+  },
+  {
+    "id": 13,
+    "question": "The maximum profit in a 'Bull Call Spread' is:",
+    "options": [
+      "Difference in Strike Prices - Net Premium Paid",
+      "Unlimited",
+      "Net Premium Paid",
+      "Strike Price"
+    ],
+    "answer": "Difference in Strike Prices - Net Premium Paid",
+    "hint": "Capped upside.",
+    "explanation": "The profit is capped at the higher strike. Max Profit = (Higher Strike - Lower Strike) - Net Premium Paid."
+  },
+  {
+    "id": 14,
+    "question": "Which strategy is also known as a 'Zero Cost Collar'?",
+    "options": [
+      "Buying a Put and Selling a Call to finance the Put",
+      "Buying a Call and Selling a Put",
+      "Buying a Future",
+      "Selling a Future"
+    ],
+    "answer": "Buying a Put and Selling a Call to finance the Put",
+    "hint": "Collar protects downside and caps upside.",
+    "explanation": "A Collar involves holding the stock, buying a protective Put, and selling a Covered Call. If the premiums match, it is 'Zero Cost'."
+  },
+  {
+    "id": 15,
+    "question": "A 'Butterfly Spread' typically involves:",
+    "options": [
+      "3 Strike Prices",
+      "2 Strike Prices",
+      "1 Strike Price",
+      "4 Strike Prices"
+    ],
+    "answer": "3 Strike Prices",
+    "hint": "Body in the middle, wings on the sides.",
+    "explanation": "A Butterfly Spread uses 3 strikes: Buy 1 ITM Call, Sell 2 ATM Calls, Buy 1 OTM Call (or using Puts). It profits from low volatility."
+  },
+  {
+    "id": 16,
+    "question": "In a 'Cash and Carry Arbitrage', the arbitrageur:",
+    "options": [
+      "Buys Spot, Sells Future",
+      "Sells Spot, Buys Future",
+      "Buys Call, Sells Put",
+      "Sells Call, Buys Put"
+    ],
+    "answer": "Buys Spot, Sells Future",
+    "hint": "Carry the cash asset.",
+    "explanation": "When Futures are overpriced, you buy the underlying asset (Spot) and sell the Future to lock in the difference."
+  },
+  {
+    "id": 17,
+    "question": "Which strategy has 'Unlimited Risk'?",
+    "options": [
+      "Short Straddle",
+      "Long Straddle",
+      "Bull Call Spread",
+      "Protective Put"
+    ],
+    "answer": "Short Straddle",
+    "hint": "Selling naked options.",
+    "explanation": "A Short Straddle involves selling naked Calls and Puts. If the market moves significantly in either direction, losses can be unlimited."
+  },
+  {
+    "id": 18,
+    "question": "If you are 'Moderately Bullish', which strategy is most appropriate?",
+    "options": [
+      "Bull Call Spread",
+      "Long Call",
+      "Long Put",
+      "Short Straddle"
+    ],
+    "answer": "Bull Call Spread",
+    "hint": "You want upside but want to reduce cost.",
+    "explanation": "A Bull Call Spread reduces the cost of trade compared to a plain Long Call, making it suitable for moderate bullish views where unlimited upside is not expected."
+  },
+  {
+    "id": 19,
+    "question": "To hedge a portfolio of Rs. 10 Lakhs with a Beta of 1.5 using Nifty Futures (Value = 5 Lakhs per lot), how many lots should you Sell?",
+    "options": [
+      "3 Lots",
+      "2 Lots",
+      "1 Lot",
+      "1.5 Lots"
+    ],
+    "answer": "3 Lots",
+    "hint": "Hedge Ratio = (Beta * Portfolio Value) / Contract Value.",
+    "explanation": "Number of Contracts = (1.5 * 10,00,000) / 5,00,000 = 15,00,000 / 5,00,000 = 3 Lots."
+  },
+  {
+    "id": 20,
+    "question": "A 'Calendar Spread' is a strategy based on:",
+    "options": [
+      "Time Decay (Theta) differences",
+      "Price differences only",
+      "Volatility skew",
+      "Arbitrage"
+    ],
+    "answer": "Time Decay (Theta) differences",
+    "hint": "Near month decays faster than far month.",
+    "explanation": "Calendar Spreads (Horizontal Spreads) exploit the faster time decay of near-month options compared to far-month options."
+  },
+  {
+    "id": 21,
+    "question": "Buying a Call option provides leverage because:",
+    "options": [
+      "Premium is small compared to stock price",
+      "It is risk-free",
+      "It guarantees profit",
+      "It is tax-free"
+    ],
+    "answer": "Premium is small compared to stock price",
+    "hint": "Small down payment, big exposure.",
+    "explanation": "Options offer high leverage as a small premium controls a large value of the underlying asset."
+  },
+  {
+    "id": 22,
+    "question": "Which of these is a 'Delta Neutral' strategy?",
+    "options": [
+      "Long Straddle (at initiation)",
+      "Long Call",
+      "Short Put",
+      "Bull Call Spread"
+    ],
+    "answer": "Long Straddle (at initiation)",
+    "hint": "Delta of Call (+0.5) + Delta of Put (-0.5) = 0.",
+    "explanation": "An ATM Straddle is delta neutral initially because the positive delta of the call offsets the negative delta of the put."
+  },
+  {
+    "id": 23,
+    "question": "If Implied Volatility (IV) is very low, which strategy is generally recommended?",
+    "options": [
+      "Long Straddle / Long Strangle",
+      "Short Straddle / Short Strangle",
+      "Covered Call",
+      "Selling Puts"
+    ],
+    "answer": "Long Straddle / Long Strangle",
+    "hint": "Buy low, sell high (volatility).",
+    "explanation": "When IV is low, premiums are cheap. Buying options (Straddle/Strangle) is favorable as you expect volatility to revert to the mean (increase)."
+  },
+  {
+    "id": 24,
+    "question": "If Implied Volatility (IV) is very high, which strategy is generally recommended?",
+    "options": [
+      "Short Straddle / Short Strangle",
+      "Long Straddle",
+      "Long Call",
+      "Long Put"
+    ],
+    "answer": "Short Straddle / Short Strangle",
+    "hint": "Sell expensive premium.",
+    "explanation": "When IV is high, premiums are expensive. Selling options (Short Straddle/Strangle) allows you to capture this high premium as volatility decreases."
+  },
+  {
+    "id": 25,
+    "question": "A 'Synthetic Future Long' is created by:",
+    "options": [
+      "Buying a Call and Selling a Put (ATM)",
+      "Buying a Put and Selling a Call",
+      "Buying a Call and Buying a Put",
+      "Selling a Call and Selling a Put"
+    ],
+    "answer": "Buying a Call and Selling a Put (ATM)",
+    "hint": "Positive Delta + Positive Delta (from short put).",
+    "explanation": "Long Call (+Delta) + Short Put (+Delta) creates a payoff profile identical to Long Futures."
+  },
+  {
+    "id": 26,
+    "question": "Which strategy profits if the market stays between two specific prices?",
+    "options": [
+      "Short Strangle / Iron Condor",
+      "Long Strangle",
+      "Long Straddle",
+      "Bull Call Spread"
+    ],
+    "answer": "Short Strangle / Iron Condor",
+    "hint": "Range-bound profit.",
+    "explanation": "Selling options (Short Strangle or Iron Condor) profits from theta decay as long as the price stays within the range defined by the strike prices."
+  },
+  {
+    "id": 27,
+    "question": "The 'Iron Condor' is a combination of:",
+    "options": [
+      "Bull Put Spread + Bear Call Spread",
+      "Bull Call Spread + Bear Put Spread",
+      "Long Straddle + Short Straddle",
+      "Two Long Calls"
+    ],
+    "answer": "Bull Put Spread + Bear Call Spread",
+    "hint": "A bird with four wings (legs).",
+    "explanation": "An Iron Condor involves 4 options (selling an OTM Put and OTM Call, and buying further OTM Put and Call for protection). It is a limited risk, non-directional strategy."
+  },
+  {
+    "id": 28,
+    "question": "What is the primary objective of a 'Covered Call'?",
+    "options": [
+      "Income Generation (Yield Enhancement)",
+      "Speculation on a crash",
+      "Arbitrage",
+      "Leverage"
+    ],
+    "answer": "Income Generation (Yield Enhancement)",
+    "hint": "Rental income on stocks.",
+    "explanation": "Investors use Covered Calls to earn extra income (premium) from stocks they already plan to hold, boosting the overall yield."
+  },
+  {
+    "id": 29,
+    "question": "Which of the following is a 'Directional Strategy'?",
+    "options": [
+      "Bull Call Spread",
+      "Long Straddle",
+      "Short Straddle",
+      "Iron Condor"
+    ],
+    "answer": "Bull Call Spread",
+    "hint": "It has 'Bull' in the name.",
+    "explanation": "A Bull Call Spread requires the market to go up (Directional). Straddles and Condors are Volatility (Non-directional) strategies."
+  },
+  {
+    "id": 30,
+    "question": "In a 'Bear Put Spread', you:",
+    "options": [
+      "Buy a Higher Strike Put and Sell a Lower Strike Put",
+      "Buy a Lower Strike Put and Sell a Higher Strike Put",
+      "Buy a Call and Sell a Put",
+      "Sell a Call and Sell a Put"
+    ],
+    "answer": "Buy a Higher Strike Put and Sell a Lower Strike Put",
+    "hint": "Buy ITM/ATM Put, Sell OTM Put.",
+    "explanation": "You buy the expensive Put (High strike) to profit from the fall and sell the cheap Put (Low strike) to fund the trade."
+  },
+  {
+    "id": 31,
+    "question": "A 'Ratio Spread' typically involves:",
+    "options": [
+      "Buying and selling unequal numbers of options",
+      "Buying equal numbers of options",
+      "Trading only futures",
+      "Trading only stocks"
+    ],
+    "answer": "Buying and selling unequal numbers of options",
+    "hint": "The name 'Ratio' implies inequality.",
+    "explanation": "e.g., Buy 1 Call, Sell 2 Calls. This reduces cost (or creates a credit) but introduces unlimited risk if the market moves too far."
+  },
+  {
+    "id": 32,
+    "question": "Arbitrage is possible when the 'Cost of Carry' implied in the futures price is:",
+    "options": [
+      "Different from the actual cost of carry",
+      "Equal to the actual cost of carry",
+      "Zero",
+      "Negative"
+    ],
+    "answer": "Different from the actual cost of carry",
+    "hint": "Mispricing creates opportunity.",
+    "explanation": "If the theoretical price (Spot + Cost of Carry) differs from the actual Market Futures Price, arbitrage is possible."
+  },
+  {
+    "id": 33,
+    "question": "The 'Max Loss' for a Long Straddle is:",
+    "options": [
+      "Total Premium Paid",
+      "Unlimited",
+      "Strike Price",
+      "Zero"
+    ],
+    "answer": "Total Premium Paid",
+    "hint": "You are a buyer.",
+    "explanation": "As an option buyer, your risk is limited to the premium you paid."
+  },
+  {
+    "id": 34,
+    "question": "Which strategy allows you to buy a stock cheaper than the current market price?",
+    "options": [
+      "Selling Cash-Secured Puts",
+      "Buying Calls",
+      "Buying Futures",
+      "Buying Puts"
+    ],
+    "answer": "Selling Cash-Secured Puts",
+    "hint": "Get paid to wait to buy.",
+    "explanation": "By selling a Put at a strike lower than the current price, you collect a premium. If the price falls to the strike, you are obligated to buy, effectively buying at (Strike - Premium)."
+  },
+  {
+    "id": 35,
+    "question": "If you are 'Long Gamma', you generally want:",
+    "options": [
+      "High Volatility / Large Moves",
+      "Low Volatility / No Moves",
+      "Time decay to help you",
+      "Interest rates to fall"
+    ],
+    "answer": "High Volatility / Large Moves",
+    "hint": "Gamma accelerates your gains.",
+    "explanation": "Long option positions (Long Straddle/Strangle) are Long Gamma. They benefit from explosive moves in the underlying."
+  },
+  {
+    "id": 36,
+    "question": "Which strategy is best for a market where you expect a 'Breakout' but don't know the direction?",
+    "options": [
+      "Long Straddle",
+      "Short Straddle",
+      "Covered Call",
+      "Bull Call Spread"
+    ],
+    "answer": "Long Straddle",
+    "hint": "Betting on movement, any movement.",
+    "explanation": "A Long Straddle profits from large moves in either direction, making it ideal for breakouts (e.g., before an earnings announcement)."
+  },
+  {
+    "id": 37,
+    "question": "What is the 'Breakeven Point' for a Covered Call strategy (ignoring stock gain)?",
+    "options": [
+      "Stock Purchase Price - Call Premium Received",
+      "Stock Purchase Price + Call Premium Received",
+      "Strike Price + Premium",
+      "Strike Price - Premium"
+    ],
+    "answer": "Stock Purchase Price - Call Premium Received",
+    "hint": "Premium lowers your cost basis.",
+    "explanation": "The premium received acts as a buffer, lowering the effective purchase price of the stock."
+  },
+  {
+    "id": 38,
+    "question": "In a 'Bull Call Spread', the lower strike call is _________ and the higher strike call is _________.",
+    "options": [
+      "Bought, Sold",
+      "Sold, Bought",
+      "Bought, Bought",
+      "Sold, Sold"
+    ],
+    "answer": "Bought, Sold",
+    "hint": "Buy the main one, sell the cheap one.",
+    "explanation": "You buy the ITM/ATM call (Lower strike) for profit and sell the OTM call (Higher strike) to reduce cost."
+  },
+  {
+    "id": 39,
+    "question": "A strategy using options to mimic a short futures position is:",
+    "options": [
+      "Synthetic Short (Long Put + Short Call)",
+      "Synthetic Long",
+      "Covered Call",
+      "Protective Put"
+    ],
+    "answer": "Synthetic Short (Long Put + Short Call)",
+    "hint": "Bearish setup.",
+    "explanation": "Buying a Put and Selling a Call (at the same strike) creates a payoff identical to Shorting a Future."
+  },
+  {
+    "id": 40,
+    "question": "Which strategy has the highest probability of profit but limited returns?",
+    "options": [
+      "Iron Condor / Short Strangle",
+      "Long Straddle",
+      "Buying OTM Calls",
+      "Buying OTM Puts"
+    ],
+    "answer": "Iron Condor / Short Strangle",
+    "hint": "Selling premium has high win rate.",
+    "explanation": "Selling options (credit strategies) generally has a high probability of profit because the market tends to stay within ranges, but the profit is limited to the premium."
+  },
+  {
+    "id": 41,
+    "question": "The margin requirement for a 'Bull Call Spread' is generally ___________ than a Naked Call Write.",
+    "options": [
+      "Lower",
+      "Higher",
+      "Same",
+      "Zero"
+    ],
+    "answer": "Lower",
+    "hint": "Defined risk = defined margin.",
+    "explanation": "Since a spread has defined/limited risk, the margin required is significantly lower than writing naked options which have unlimited risk."
+  },
+  {
+    "id": 42,
+    "question": "Hedging with options instead of futures allows the holder to:",
+    "options": [
+      "Preserve the upside potential while limiting downside risk",
+      "Eliminate all costs",
+      "Guarantee a profit",
+      "Avoid taxes"
+    ],
+    "answer": "Preserve the upside potential while limiting downside risk",
+    "hint": "Options are 'optional'.",
+    "explanation": "Unlike futures (which lock in a price), buying a Put option (Protective Put) protects against the fall but allows participation if the price rises."
+  },
+  {
+    "id": 43,
+    "question": "If you sell a 'Deep ITM Call' on a stock you don't own, you are:",
+    "options": [
+      "Highly Bearish",
+      "Highly Bullish",
+      "Neutral",
+      "Hedging"
+    ],
+    "answer": "Highly Bearish",
+    "hint": "Naked selling of ITM calls.",
+    "explanation": "This is a very aggressive bearish strategy with high risk."
+  },
+  {
+    "id": 44,
+    "question": "What is the risk in 'Reverse Cash and Carry Arbitrage'?",
+    "options": [
+      "Inability to short sell the underlying asset (in India)",
+      "Futures price rising",
+      "Spot price falling",
+      "Interest rates rising"
+    ],
+    "answer": "Inability to short sell the underlying asset (in India)",
+    "hint": "Spot market restrictions.",
+    "explanation": "Reverse arbitrage requires selling the Spot asset. In India, retail investors cannot hold short positions in the Spot market overnight (SLB mechanism exists but is complex)."
+  },
+  {
+    "id": 45,
+    "question": "A 'Box Spread' is primarily used for:",
+    "options": [
+      "Arbitrage (Risk-free interest rate capture)",
+      "Directional trading",
+      "Volatility trading",
+      "Hedging"
+    ],
+    "answer": "Arbitrage (Risk-free interest rate capture)",
+    "hint": "Boxed in profit.",
+    "explanation": "A Box Spread combines a Bull Call Spread and a Bear Put Spread. It should theoretically yield the risk-free interest rate. Any deviation is an arbitrage opportunity."
+  },
+  {
+    "id": 46,
+    "question": "Which option strategy benefits most from 'Theta Decay'?",
+    "options": [
+      "Short Straddle",
+      "Long Straddle",
+      "Long Call",
+      "Long Put"
+    ],
+    "answer": "Short Straddle",
+    "hint": "Sellers love time decay.",
+    "explanation": "A Short Straddle consists of two short options (Call and Put). Both decay with time, benefiting the seller."
+  },
+  {
+    "id": 47,
+    "question": "Which of these is a 'Credit Spread'?",
+    "options": [
+      "Bull Put Spread",
+      "Bull Call Spread",
+      "Bear Put Spread",
+      "Long Straddle"
+    ],
+    "answer": "Bull Put Spread",
+    "hint": "Selling the expensive one, buying the cheap one.",
+    "explanation": "In a Bull Put Spread, you sell a higher strike Put (expensive) and buy a lower strike Put (cheap), resulting in a net credit (money received)."
+  },
+  {
+    "id": 48,
+    "question": "In a 'Butterfly Spread', the maximum profit occurs at:",
+    "options": [
+      "The middle strike price",
+      "The highest strike price",
+      "The lowest strike price",
+      "Infinity"
+    ],
+    "answer": "The middle strike price",
+    "hint": "The body of the butterfly.",
+    "explanation": "A Butterfly spread is most profitable if the stock price closes exactly at the middle strike price (where you sold two options) at expiry."
+  },
+  {
+    "id": 49,
+    "question": "Which strategy involves selling a Call and selling a Put at different strikes (OTM)?",
+    "options": [
+      "Short Strangle",
+      "Short Straddle",
+      "Long Strangle",
+      "Bull Spread"
+    ],
+    "answer": "Short Strangle",
+    "hint": "Strangling a wider range.",
+    "explanation": "Selling OTM Call and OTM Put is a Short Strangle. It profits if the market stays between the two strikes."
+  },
+  {
+    "id": 50,
+    "question": "To convert a 'Long Future' position into a 'Synthetic Long Call', you should:",
+    "options": [
+      "Buy a Put Option",
+      "Sell a Call Option",
+      "Buy a Call Option",
+      "Sell a Put Option"
+    ],
+    "answer": "Buy a Put Option",
+    "hint": "Future + Put = Call.",
+    "explanation": "Long Future + Long Put = Long Call payoff profile. The Put limits the downside of the Future, mimicking a Call."
+  }
+]

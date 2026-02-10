@@ -1,262 +1,402 @@
 [
   {
     "id": 1,
-    "question": "What is the primary function of the 'Clearing Corporation' in the derivatives market?",
-    "options": [
-      "To provide trading terminals",
-      "To act as a legal counterparty to every trade (Novation)",
-      "To advise clients on which currency to buy",
-      "To issue foreign currency notes"
-    ],
-    "answer": "To act as a legal counterparty to every trade (Novation)",
-    "hint": "They become the buyer to every seller and seller to every buyer.",
-    "explanation": "Through the process of Novation, the Clearing Corporation guarantees the settlement of all trades, removing the risk that the other trader might default."
+    "question": "The trading system for currency derivatives in India follows which mechanism?",
+    "options": ["Quote-driven system", "Order-driven system", "Floor-based shouting system", "Bilateral negotiation"],
+    "answer": "Order-driven system",
+    "hint": "Prices are determined by supply and demand orders.",
+    "explanation": "Indian exchanges use an anonymous, order-driven system where the system matches buy and sell orders based on specific priority rules."
   },
   {
     "id": 2,
-    "question": "Which software is widely used to calculate 'Initial Margin' requirements based on portfolio risk?",
-    "options": [
-      "Tally",
-      "SPAN (Standard Portfolio Analysis of Risk)",
-      "MS Excel",
-      "NEAT"
-    ],
-    "answer": "SPAN (Standard Portfolio Analysis of Risk)",
-    "hint": "It measures the worst possible loss for a portfolio.",
-    "explanation": "SPAN (developed by CME) is the standard system used by exchanges to calculate the initial margin required to cover the worst probable one-day loss."
+    "question": "In the order matching engine, what is the primary priority for matching orders?",
+    "options": ["Quantity Priority", "Time Priority", "Price Priority", "Client Category Priority"],
+    "answer": "Price Priority",
+    "hint": "The best price always comes first.",
+    "explanation": "Price is the first priority. A buy order at a higher price is better than a buy order at a lower price; a sell order at a lower price is better than a sell order at a higher price."
   },
   {
     "id": 3,
-    "question": "When is 'Mark-to-Market' (MTM) settlement collected?",
-    "options": [
-      "At the end of the contract expiry",
-      "Weekly",
-      "Daily (T+1 basis)",
-      "Monthly"
-    ],
-    "answer": "Daily (T+1 basis)",
-    "hint": "Profits and losses are calculated every evening and settled the next morning.",
-    "explanation": "MTM settlement happens daily. If you made a loss today, you must pay it in cash by the next working day before trading starts."
+    "question": "If two orders are placed at the same price, which order will be executed first?",
+    "options": ["The larger order", "The order from a Clearing Member", "The order that entered the system first", "The order with the lower client code"],
+    "answer": "The order that entered the system first",
+    "hint": "Think of a queue.",
+    "explanation": "When prices are equal, the system follows 'Time Priority,' matching the order that was logged in the system earlier."
   },
   {
     "id": 4,
-    "question": "In Indian Currency Derivatives, the 'Final Settlement Price' for USD/INR futures is based on:",
-    "options": [
-      "The last traded price on the exchange",
-      "The RBI Reference Rate",
-      "The Federal Reserve Rate",
-      "The average of the last 30 minutes of trading"
-    ],
-    "answer": "The RBI Reference Rate",
-    "hint": "The central bank decides the official rate used for closing contracts.",
-    "explanation": "The Final Settlement Price on the expiry day is the RBI Reference Rate for that specific currency pair."
+    "question": "What does 'Anonymity' in the trading mechanism mean?",
+    "options": ["Brokers don't know their own clients", "The identity of the counterparty is not revealed to the traders", "The Exchange doesn't know who is trading", "Tax authorities cannot see the trades"],
+    "answer": "The identity of the counterparty is not revealed to the traders",
+    "hint": "Hidden identity.",
+    "explanation": "In electronic trading, buyers and sellers do not know who they are trading with; the Clearing Corporation stands in between to manage risk."
   },
   {
     "id": 5,
-    "question": "What is 'Extreme Loss Margin' (ELM)?",
-    "options": [
-      "Margin for administrative costs",
-      "Margin collected to cover risks not captured by SPAN",
-      "The penalty for losing money",
-      "The broker's commission"
-    ],
-    "answer": "Margin collected to cover risks not captured by SPAN",
-    "hint": "It covers the 'tail risk' or situations where the market moves wildly beyond normal expectations.",
-    "explanation": "ELM is an additional margin collected to cover losses in situations where price movements are more extreme than the SPAN model predicts."
+    "question": "What is the 'Tick Size' for USDINR Futures?",
+    "options": ["0.0100", "0.0050", "0.0025", "0.0500"],
+    "answer": "0.0025",
+    "hint": "One-fourth of a paisa.",
+    "explanation": "The tick size is the minimum price increment. For USDINR, it is 0.25 paise or 0.0025 INR."
   },
   {
     "id": 6,
-    "question": "If a Clearing Member defaults, which fund is used as the last resort to settle claims?",
-    "options": [
-      "Investor Protection Fund",
-      "Settlement Guarantee Fund (SGF)",
-      "Prime Minister's Relief Fund",
-      "SEBI General Fund"
-    ],
-    "answer": "Settlement Guarantee Fund (SGF)",
-    "hint": "A 'pool' of money contributed by members to guarantee trades.",
-    "explanation": "The SGF is a corpus maintained by the Clearing Corporation to ensure settlement obligations are met even if a member defaults."
+    "question": "A 'Market Order' is an order to buy or sell at:",
+    "options": ["A specific price only", "The best available price in the market", "The closing price", "The average price of the day"],
+    "answer": "The best available price in the market",
+    "hint": "Immediate execution.",
+    "explanation": "Market orders do not have a price limit and are executed immediately at the best price currently available in the order book."
   },
   {
     "id": 7,
-    "question": "All currency futures contracts in India are settled in:",
-    "options": [
-      "US Dollars",
-      "Euros",
-      "Indian Rupees (Cash Settled)",
-      "Physical Delivery of Gold"
-    ],
-    "answer": "Indian Rupees (Cash Settled)",
-    "hint": "You don't get the actual dollars; you get the profit/loss difference.",
-    "explanation": "Indian currency derivatives are cash-settled in INR. The difference between the buy/sell price is paid or received in Rupees."
+    "question": "What happens to the unexecuted portion of an 'Immediate or Cancel' (IOC) order?",
+    "options": ["It stays in the order book until the end of the day", "It is automatically cancelled by the system", "It is converted to a Limit Order", "It is executed at the next day's opening"],
+    "answer": "It is automatically cancelled by the system",
+    "hint": "The name says it all.",
+    "explanation": "An IOC order must be executed instantly. If it cannot be fully filled, the remaining part is immediately removed from the system."
   },
   {
     "id": 8,
-    "question": "Who determines the 'Daily Settlement Price' (DSP) for marking to market?",
-    "options": [
-      "The Broker",
-      "The Clearing Corporation",
-      "The Trader",
-      "The RBI"
-    ],
-    "answer": "The Clearing Corporation",
-    "hint": "It is usually the closing price (weighted average of the last 30 mins).",
-    "explanation": "The Clearing Corporation calculates the DSP (usually the weighted average price of the last half hour) to calculate daily MTM obligations."
+    "question": "A 'Limit Order' ensures that:",
+    "options": ["The trade is executed immediately", "The trade happens at the specified price or better", "The trade happens only at the closing bell", "No margin is required"],
+    "answer": "The trade happens at the specified price or better",
+    "hint": "A price boundary.",
+    "explanation": "A limit order gives the trader control over the price, ensuring they don't buy for more or sell for less than their target."
   },
   {
     "id": 9,
-    "question": "What is 'Novation'?",
-    "options": [
-      "Creating a new contract",
-      "Substituting the Clearing Corporation as the counterparty for every trade",
-      "Cancelling a trade",
-      "Increasing the margin"
-    ],
-    "answer": "Substituting the Clearing Corporation as the counterparty for every trade",
-    "hint": "It turns a bilateral agreement into a centralized guarantee.",
-    "explanation": "Novation is the legal process where the Clearing Corporation steps in between the buyer and seller, becoming the counterparty to both."
+    "question": "The 'Best Bid' refers to:",
+    "options": ["The lowest sell price", "The highest buy price", "The average of all orders", "The price of the last trade"],
+    "answer": "The highest buy price",
+    "hint": "The buyer willing to pay the most.",
+    "explanation": "The Bid is the buy side. The 'Best Bid' is the most competitive (highest) price a buyer is offering."
   },
   {
     "id": 10,
-    "question": "A 'Calendar Spread' margin benefit is given because:",
-    "options": [
-      "The risk is higher",
-      "The risk is lower than two naked positions",
-      "The exchange wants to encourage long-term holding",
-      "It is tax-free"
-    ],
-    "answer": "The risk is lower than two naked positions",
-    "hint": "Being Long July and Short August cancels out most market direction risk.",
-    "explanation": "Since the two positions (Long near month, Short far month) offset each other's risk, the margin required is significantly lower."
+    "question": "The 'Best Ask' (or Offer) refers to:",
+    "options": ["The highest sell price", "The lowest sell price", "The best profit margin", "The broker's commission"],
+    "answer": "The lowest sell price",
+    "hint": "The seller willing to accept the least.",
+    "explanation": "The Ask is the sell side. The 'Best Ask' is the most competitive (lowest) price a seller is offering."
   },
   {
     "id": 11,
-    "question": "Who is responsible for collecting margins from the end Client?",
-    "options": [
-      "The Clearing Corporation directly",
-      "The Clearing Member / Trading Member",
-      "The RBI",
-      "The Bank"
-    ],
-    "answer": "The Clearing Member / Trading Member",
-    "hint": "The Exchange talks to the Member; the Member talks to the Client.",
-    "explanation": "The Clearing Corporation collects margins from Clearing Members, who in turn must collect margins from their respective clients."
+    "question": "What is the 'Spread' in the trading screen?",
+    "options": ["The total volume of trades", "The difference between Best Bid and Best Ask", "The brokerage fee", "The daily price range"],
+    "answer": "The difference between Best Bid and Best Ask",
+    "hint": "The gap between buy and sell.",
+    "explanation": "The bid-ask spread is a measure of liquidity. A tighter spread usually indicates a more liquid market."
   },
   {
     "id": 12,
-    "question": "What happens if a client fails to pay a 'Margin Call'?",
-    "options": [
-      "The broker pays on their behalf indefinitely",
-      "The position may be squared off (closed) by the broker",
-      "The client is arrested",
-      "Nothing happens"
-    ],
-    "answer": "The position may be squared off (closed) by the broker",
-    "hint": "If you don't add money to cover the risk, the broker removes the risk.",
-    "explanation": "If a client cannot meet the margin requirement, the broker has the right to close the client's open positions to prevent further losses."
+    "question": "A 'Stop Loss' order becomes a Market Order when:",
+    "options": ["The broker manually approves it", "The market price hits the Trigger Price", "The exchange closes", "The client loses 50% of margin"],
+    "answer": "The market price hits the Trigger Price",
+    "hint": "A threshold is reached.",
+    "explanation": "Once the 'Trigger Price' is touched or breached by the market, the Stop Loss order is activated and sent to the matching engine."
   },
   {
     "id": 13,
-    "question": "Which entity imposes 'Position Limits' on market participants?",
-    "options": [
-      "SEBI / Stock Exchanges",
-      "The Income Tax Department",
-      "The Forex Association",
-      "The World Bank"
-    ],
-    "answer": "SEBI / Stock Exchanges",
-    "hint": "To prevent one person from cornering or manipulating the market.",
-    "explanation": "Regulators and exchanges set limits on the maximum number of contracts a single client or member can hold to ensure market integrity."
+    "question": "What is 'Market Depth'?",
+    "options": ["The total number of members in the exchange", "The display of the best 5 buy and sell orders", "The total value of the RBI's reserves", "The time it takes to execute a trade"],
+    "answer": "The display of the best 5 buy and sell orders",
+    "hint": "Visible layers of orders.",
+    "explanation": "Market depth shows the liquidity available at different price levels, typically showing the top 5 bids and asks."
   },
   {
     "id": 14,
-    "question": "The 'Initial Margin' must be paid:",
-    "options": [
-      "After the profit is booked",
-      "Before or at the time of placing the trade",
-      "Only if you lose",
-      "At the end of the year"
-    ],
-    "answer": "Before or at the time of placing the trade",
-    "hint": "It is the upfront deposit.",
-    "explanation": "Initial margin is an upfront requirement. The system checks for available margin before accepting the order."
+    "question": "Which entity provides the trading platform (the software and network)?",
+    "options": ["The Clearing Corporation", "The Stock Exchange (e.g., NSE/BSE)", "The RBI", "The SEBI"],
+    "answer": "The Stock Exchange (e.g., NSE/BSE)",
+    "hint": "The venue for trading.",
+    "explanation": "The Stock Exchange acts as the technology provider and regulator of the trading floor/platform."
   },
   {
     "id": 15,
-    "question": "In the context of clearing, what is a 'Clearing Bank'?",
-    "options": [
-      "Any bank in India",
-      "A bank designated by the Clearing Corporation for funds settlement",
-      "The Reserve Bank of India",
-      "A foreign bank"
-    ],
-    "answer": "A bank designated by the Clearing Corporation for funds settlement",
-    "hint": "Members must open accounts here to transfer money to the exchange.",
-    "explanation": "Clearing Banks act as the conduit for transferring funds between Clearing Members and the Clearing Corporation."
+    "question": "An order with 'Disclosed Quantity' functionality is used to:",
+    "options": ["Hide the client's name", "Show only a part of the total order size to the market", "Avoid paying taxes", "Ensure the trade is not taxed"],
+    "answer": "Show only a part of the total order size to the market",
+    "hint": "Iceberg order.",
+    "explanation": "Large orders can be placed with a 'Disclosed Quantity' (e.g., show 100 lots when the total is 1000) to avoid impacting the market price immediately."
   },
   {
     "id": 16,
-    "question": "What happens to the 'Open Interest' when a trade is settled/squared off?",
-    "options": [
-      "It increases",
-      "It decreases",
-      "It remains the same",
-      "It doubles"
-    ],
-    "answer": "It decreases",
-    "hint": "Open Interest is the number of active contracts. Closing a contract removes it.",
-    "explanation": "When a trader exits a position (squares off), the number of outstanding contracts in the market reduces, lowering the Open Interest."
+    "question": "The status of an order that has been entered but not yet matched is:",
+    "options": ["Executed", "Pending / Open", "Rejected", "Cancelled"],
+    "answer": "Pending / Open",
+    "hint": "Waiting in the book.",
+    "explanation": "Orders that are in the system but haven't found a counterparty are considered 'Open' or 'Passive' orders."
   },
   {
     "id": 17,
-    "question": "The 'Value at Risk' (VaR) methodology is primarily used for:",
-    "options": [
-      "Calculating brokerage",
-      "Calculating Initial Margin",
-      "Determining the exchange rate",
-      "Auditing accounts"
-    ],
-    "answer": "Calculating Initial Margin",
-    "hint": "It estimates how much a portfolio could lose with a certain confidence level.",
-    "explanation": "VaR is a statistical technique used (within SPAN) to measure the risk of loss on a portfolio, determining the margin required."
+    "question": "What is the 'Daily Price Range' (DPR)?",
+    "options": ["The total volume traded", "The operating range within which prices can move for the day", "The difference between today and yesterday's close", "The average interest rate"],
+    "answer": "The operating range within which prices can move for the day",
+    "hint": "Circuit filters.",
+    "explanation": "DPR is a safety mechanism that prevents extreme price volatility by setting limits on how much a price can move in a single day."
   },
   {
     "id": 18,
-    "question": "Can a Clearing Member clear trades for other Trading Members?",
-    "options": [
-      "No, only for themselves",
-      "Yes, if they are a Professional Clearing Member (PCM) or TCM",
-      "Only if they are related",
-      "Yes, but only for retail clients"
-    ],
-    "answer": "Yes, if they are a Professional Clearing Member (PCM) or TCM",
-    "hint": "Some members specialize only in clearing and settling for others.",
-    "explanation": "Yes, Clearing Members can clear and settle trades executed by other Trading Members who do not have clearing rights."
+    "question": "Who can cancel an open order in the system?",
+    "options": ["Only the Exchange", "Only the SEBI", "The user who placed the order (or their broker)", "No one can cancel once entered"],
+    "answer": "The user who placed the order (or their broker)",
+    "hint": "User control.",
+    "explanation": "A trader can modify or cancel any order as long as it has not yet been matched/executed."
   },
   {
     "id": 19,
-    "question": "If the Final Settlement Price is INR 83.00 and you are Long at 82.50, what is the cash settlement?",
-    "options": [
-      "Pay 0.50 INR",
-      "Receive 0.50 INR",
-      "Receive 83.00 INR",
-      "Pay 82.50 INR"
-    ],
-    "answer": "Receive 0.50 INR",
-    "hint": "Buy Low (82.50), Sell High (83.00) = Profit.",
-    "explanation": "Since the settlement price is higher than your buy price, you make a profit. You receive the difference: 83.00 - 82.50 = 0.50 per dollar."
+    "question": "What does 'Price Improvement' mean in an order-driven market?",
+    "options": ["When the broker gives a discount", "Executing an order at a better price than the limit price specified", "When the market goes up", "When taxes are reduced"],
+    "answer": "Executing an order at a better price than the limit price specified",
+    "hint": "Getting a better deal.",
+    "explanation": "If you place a limit buy at 83.10 but a seller is available at 83.05, the system will execute your trade at 83.05, 'improving' your price."
   },
   {
     "id": 20,
-    "question": "What is the primary goal of 'Risk Management' in clearing?",
-    "options": [
-      "To maximize broker profits",
-      "To prevent market failure and ensuring financial integrity",
-      "To increase tax revenue",
-      "To stop people from trading"
-    ],
-    "answer": "To prevent market failure and ensuring financial integrity",
-    "hint": "It prevents a domino effect of defaults.",
-    "explanation": "The main goal is to ensure that one person's default does not cause a chain reaction that crashes the market or harms other innocent participants."
+    "question": "Which of the following represents a 'Passive Order'?",
+    "options": ["A Market Order", "An order that stays in the book and provides liquidity", "An order that is immediately cancelled", "An order that executes against existing orders"],
+    "answer": "An order that stays in the book and provides liquidity",
+    "hint": "It waits for others to come.",
+    "explanation": "Passive orders are limit orders that do not match immediately and sit in the order book, creating market depth."
+  },
+  {
+    "id": 21,
+    "question": "A 'Day Order' is valid for:",
+    "options": ["24 hours exactly", "Until the end of the current trading session", "Until the user cancels it, even if it takes weeks", "Only for 1 hour"],
+    "answer": "Until the end of the current trading session",
+    "hint": "Ends when the market closes.",
+    "explanation": "By default, orders in the currency segment are 'Day' orders, meaning they expire at the end of the trading day if not filled."
+  },
+  {
+    "id": 22,
+    "question": "What is the 'Order Log'?",
+    "options": ["A list of all brokers", "A record of every order activity (entry, modification, cancellation, execution)", "The contract note", "The profit and loss statement"],
+    "answer": "A record of every order activity (entry, modification, cancellation, execution)",
+    "hint": "Audit trail.",
+    "explanation": "The order log is a chronological record used for audits and resolving disputes regarding trade execution."
+  },
+  {
+    "id": 23,
+    "question": "What is the primary currency used for quoting USDINR contracts?",
+    "options": ["US Dollars", "Indian Rupees", "Euro", "Special Drawing Rights"],
+    "answer": "Indian Rupees",
+    "hint": "It is quoted in Paise.",
+    "explanation": "Currency contracts in India are quoted in terms of INR per unit (or 100 units for JPY) of the foreign currency."
+  },
+  {
+    "id": 24,
+    "question": "The trading system matches an 'Active' Buy order against:",
+    "options": ["The Highest Bid", "The Lowest Ask", "The Average Price", "The Last Traded Price"],
+    "answer": "The Lowest Ask",
+    "hint": "Buy from the cheapest seller.",
+    "explanation": "An incoming (active) buy order will always match with the lowest available selling price (Best Ask) to ensure the best execution."
+  },
+  {
+    "id": 25,
+    "question": "What happens when the 'Price Circuit' limit is reached?",
+    "options": ["Trading is permanently stopped", "Trading is halted for a 'cool-off' period or limits are relaxed", "All orders are cancelled", "The broker is penalized"],
+    "answer": "Trading is halted for a 'cool-off' period or limits are relaxed",
+    "hint": "A temporary pause.",
+    "explanation": "Circuit filters are designed to stop panic. When reached, the exchange may pause trading and then reopen with wider limits."
+  },
+  {
+    "id": 26,
+    "question": "What is 'Trade-to-Trade' settlement?",
+    "options": ["Netting all trades at the end of the day", "Settling each trade individually without netting (not common in ETCD)", "Trading only on Tuesdays", "Trading without any margin"],
+    "answer": "Settling each trade individually without netting (not common in ETCD)",
+    "hint": "Gross settlement.",
+    "explanation": "In derivatives, trades are generally netted, but 'Trade-to-Trade' refers to gross settlement of every transaction."
+  },
+  {
+    "id": 27,
+    "question": "What is the purpose of the 'Trade Verification' facility provided by exchanges?",
+    "options": ["To let investors check if their trades were actually executed on the exchange", "To check the broker's bank balance", "To see the RBI's daily rates", "To calculate the next day's profit"],
+    "answer": "To let investors check if their trades were actually executed on the exchange",
+    "hint": "Investor protection tool.",
+    "explanation": "Exchanges provide a tool where clients can enter their trade details to ensure the broker didn't execute a 'dabba' (fake) trade."
+  },
+  {
+    "id": 28,
+    "question": "A 'GTC' (Good Till Cancelled) order (where permitted) stays in the system until:",
+    "options": ["The end of the day", "The user cancels it or the contract expires", "The broker closes it", "It makes 10% profit"],
+    "answer": "The user cancels it or the contract expires",
+    "hint": "Stays for a long time.",
+    "explanation": "GTC orders remain active across multiple days, unlike Day orders which expire daily."
+  },
+  {
+    "id": 29,
+    "question": "In the symbol 'USDINR26FEB2026', what does the date represent?",
+    "options": ["The day the trade was made", "The expiry date of the contract", "The date the profit is paid", "The date the RBI was founded"],
+    "answer": "The expiry date of the contract",
+    "hint": "When the contract ends.",
+    "explanation": "Every derivative contract is identified by its underlying asset and its specific expiration date."
+  },
+  {
+    "id": 30,
+    "question": "What is the impact of high liquidity on the trading mechanism?",
+    "options": ["Wider spreads and slower execution", "Narrower spreads and faster execution", "Higher taxes", "Fewer trading members"],
+    "answer": "Narrower spreads and faster execution",
+    "hint": "Easy to buy and sell.",
+    "explanation": "High liquidity means there are many orders in the book, making it easy to trade large volumes without moving the price significantly."
+  },
+  {
+    "id": 31,
+    "question": "What is 'Self-Trade' prevention?",
+    "options": ["Preventing a trader from trading with themselves using two different IDs", "Preventing trading on holidays", "Preventing the broker from taking profit", "Preventing a trade from being cancelled"],
+    "answer": "Preventing a trader from trading with themselves using two different IDs",
+    "hint": "Illegal volume inflation.",
+    "explanation": "Exchanges have mechanisms to prevent a single entity from being both the buyer and seller in the same trade, which is a form of manipulation."
+  },
+  {
+    "id": 32,
+    "question": "The 'Opening Price' of the day is usually determined through:",
+    "options": ["The first trade made at 9:00 AM", "A pre-open call auction mechanism", "The RBI's opening quote", "The previous day's average"],
+    "answer": "A pre-open call auction mechanism",
+    "hint": "Price discovery before the start.",
+    "explanation": "The exchange uses a 'Call Auction' to match orders before the regular market opens to find an equilibrium starting price."
+  },
+  {
+    "id": 33,
+    "question": "A 'GTD' (Good Till Date) order is valid until:",
+    "options": ["The end of the year", "A specific date chosen by the trader", "The next holiday", "The end of the day"],
+    "answer": "A specific date chosen by the trader",
+    "hint": "Expires on a set day.",
+    "explanation": "GTD allows a trader to specify exactly how many days the order should remain active in the book."
+  },
+  {
+    "id": 34,
+    "question": "If a trader enters a Buy order at 83.50 and a Sell order is already at 83.40, the trade happens at:",
+    "options": ["83.50", "83.40", "83.45", "The trade is rejected"],
+    "answer": "83.40",
+    "hint": "Active matches with Passive.",
+    "explanation": "In an order-driven market, the incoming order matches with the 'resting' (passive) order's price. Here, the resting sell price is 83.40."
+  },
+  {
+    "id": 35,
+    "question": "What is the 'Order Book'?",
+    "options": ["A physical diary kept by brokers", "The electronic database of all pending buy and sell orders", "The manual for exchange rules", "The RBI's ledger"],
+    "answer": "The electronic database of all pending buy and sell orders",
+    "hint": "The heart of the matching engine.",
+    "explanation": "The matching engine uses the order book to pair buyers and sellers based on price and time."
+  },
+  {
+    "id": 36,
+    "question": "An 'At-the-Opening' (ATO) order:",
+    "options": ["Is executed at the day's average", "Is meant to be executed during the market opening", "Is only for banks", "Is executed at the end of the day"],
+    "answer": "Is meant to be executed during the market opening",
+    "hint": "Start of the day.",
+    "explanation": "ATO orders are specifically designed to participate in the opening price discovery process."
+  },
+  {
+    "id": 37,
+    "question": "Which of the following can lead to an 'Order Rejection'?",
+    "options": ["Insufficient margin in the account", "Price being outside the DPR", "Contract being expired", "All of the above"],
+    "answer": "All of the above",
+    "hint": "Multiple failure points.",
+    "explanation": "The exchange's risk management system checks for funds, price limits, and contract validity before accepting an order."
+  },
+  {
+    "id": 38,
+    "question": "A 'FOK' (Fill or Kill) order is:",
+    "options": ["An order to execute fully immediately or not at all", "An order to kill the broker", "An order to wait until the price is better", "An order to trade only at 3:30 PM"],
+    "answer": "An order to execute fully immediately or not at all",
+    "hint": "All or nothing, right now.",
+    "explanation": "FOK requires that the entire quantity be filled instantly. If even one lot cannot be filled, the whole order is cancelled."
+  },
+  {
+    "id": 39,
+    "question": "What is the 'Last Traded Price' (LTP)?",
+    "options": ["The price of the very first trade of the day", "The most recent price at which a trade was executed", "The average price of the day", "The RBI's reference rate"],
+    "answer": "The most recent price at which a trade was executed",
+    "hint": "Current market price.",
+    "explanation": "LTP is the price of the most recent transaction and is often what people refer to as the 'current market price'."
+  },
+  {
+    "id": 40,
+    "question": "What is the primary role of the 'Matching Engine'?",
+    "options": ["To calculate taxes", "To pair buy and sell orders based on rules", "To provide margin to clients", "To print contract notes"],
+    "answer": "To pair buy and sell orders based on rules",
+    "hint": "The matchmaker.",
+    "explanation": "The matching engine is the core software of the exchange that finds a seller for every buyer and vice versa."
+  },
+  {
+    "id": 41,
+    "question": "What is the 'Order Book' color coding (conventionally)?",
+    "options": ["Blue for Buy, Red for Sell", "Green for Buy, Red for Sell", "Yellow for Profit, White for Loss", "No specific colors"],
+    "answer": "Blue for Buy, Red for Sell",
+    "hint": "Standard terminal view (NSE).",
+    "explanation": "Conventionally on Indian trading terminals, Buy orders/quantities are shown in Blue and Sell in Red."
+  },
+  {
+    "id": 42,
+    "question": "What is the maximum quantity per order limit?",
+    "options": ["Unlimited", "Set by the exchange to prevent system errors and manipulation", "100 lots only", "Decided by the client"],
+    "answer": "Set by the exchange to prevent system errors and manipulation",
+    "hint": "A safety cap.",
+    "explanation": "To prevent 'Fat Finger' errors or market destabilization, exchanges limit the maximum size of a single order."
+  },
+  {
+    "id": 43,
+    "question": "Which order type is best for a trader who wants to hide their entry from the market depth?",
+    "options": ["Limit Order", "Market Order", "Disclosed Quantity Order", "Stop Loss Order"],
+    "answer": "Disclosed Quantity Order",
+    "hint": "Partial visibility.",
+    "explanation": "By disclosing only a small part of the order, the trader hides the true scale of their position from other participants."
+  },
+  {
+    "id": 44,
+    "question": "What is 'Slippage'?",
+    "options": ["When the broker forgets to trade", "The difference between the expected price and the actual execution price", "When the market closes early", "A technical glitch in the app"],
+    "answer": "The difference between the expected price and the actual execution price",
+    "hint": "Cost of speed.",
+    "explanation": "Slippage often occurs with market orders in volatile markets where the price moves before the order can be matched."
+  },
+  {
+    "id": 45,
+    "question": "In a currency pair 'Base/Quote', which currency's quantity is standardized in the contract?",
+    "options": ["The Quote currency", "The Base currency", "Both", "The Indian Rupee"],
+    "answer": "The Base currency",
+    "hint": "The first currency in the pair.",
+    "explanation": "In a USDINR contract, the lot size (1,000) refers to the Base currency (USD)."
+  },
+  {
+    "id": 46,
+    "question": "What is 'After Market Order' (AMO)?",
+    "options": ["An order that trades only at night", "An order placed outside market hours that gets sent to the exchange when it opens", "An order to trade after the client retires", "An illegal trade"],
+    "answer": "An order placed outside market hours that gets sent to the exchange when it opens",
+    "hint": "Pre-scheduled entry.",
+    "explanation": "AMOs allow traders who are busy during the day to queue their orders for the next day's opening."
+  },
+  {
+    "id": 47,
+    "question": "What is a 'Trade Modification'?",
+    "options": ["Changing the price of a trade after it is done", "Correcting an error (like client code) after the trade is executed", "Deleting a trade", "Changing the profit amount"],
+    "answer": "Correcting an error (like client code) after the trade is executed",
+    "hint": "Fixing a mistake.",
+    "explanation": "Once a trade is done, price or quantity cannot be changed, but administrative errors like the wrong client ID can be modified within a specific window."
+  },
+  {
+    "id": 48,
+    "question": "What is 'Algorithmic Trading'?",
+    "options": ["Trading based on math books", "Trading using automated computer programs with pre-defined rules", "Trading only on calculators", "Manual high-speed trading"],
+    "answer": "Trading using automated computer programs with pre-defined rules",
+    "hint": "Bot trading.",
+    "explanation": "Algos use speed and logic to place and manage orders much faster than humans can."
+  },
+  {
+    "id": 49,
+    "question": "The 'Volume Weighted Average Price' (VWAP) is used for:",
+    "options": ["Determining the Daily Settlement Price", "Calculating the broker's fee", "Determining the RBI's wealth", "None of the above"],
+    "answer": "Determining the Daily Settlement Price",
+    "hint": "Closing price calculation.",
+    "explanation": "The exchange calculates the average price based on the volume of trades near the end of the day to set the daily settlement rate."
+  },
+  {
+    "id": 50,
+    "question": "What is the primary benefit of a 'Limit Order' over a 'Market Order'?",
+    "options": ["Guaranteed execution", "Price certainty", "Lower taxes", "No margin required"],
+    "answer": "Price certainty",
+    "hint": "You know your cost.",
+    "explanation": "A limit order guarantees you won't pay more (or receive less) than your target price, whereas a market order could execute at an unfavorable price."
   }
 ]

@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following derivatives instruments is primarily used by banks to manage interest rate risk on their loan portfolios?",
+    "options": [
+      "Interest Rate Swaps (IRS)",
+      "Stock Options",
+      "Commodity Futures",
+      "Currency Forwards"
+    ],
+    "answer": "Interest Rate Swaps (IRS)",
+    "hint": "Exchange of cash flows.",
+    "explanation": "Banks use Interest Rate Swaps to exchange fixed interest rate payments for floating rate payments (or vice versa) to manage the interest rate risk inherent in their lending and borrowing activities."
+  },
+  {
+    "id": 2,
+    "question": "The 'Notional Principal' in an Interest Rate Swap is:",
+    "options": [
+      "Exchanged at the start of the contract.",
+      "Exchanged at the end of the contract.",
+      "Never exchanged; only used for calculating interest.",
+      "Paid to the exchange."
+    ],
+    "answer": "Never exchanged; only used for calculating interest.",
+    "hint": "Reference amount.",
+    "explanation": "In an IRS, the principal amount is notional, meaning it is only used as a reference to calculate the interest payments to be exchanged. It is never physically swapped."
+  },
+  {
+    "id": 3,
+    "question": "In a 'Plain Vanilla' Interest Rate Swap, one party pays a fixed rate and the other pays:",
+    "options": [
+      "A floating rate (e.g., MIBOR).",
+      "The inflation rate.",
+      "The stock market return.",
+      "A fixed rate in another currency."
+    ],
+    "answer": "A floating rate (e.g., MIBOR).",
+    "hint": "Fixed for Floating.",
+    "explanation": "A standard (plain vanilla) swap involves exchanging a fixed interest rate for a floating interest rate benchmark, such as MIBOR or SOFR."
+  },
+  {
+    "id": 4,
+    "question": "The primary purpose of a 'Currency Swap' is to:",
+    "options": [
+      "Exchange interest payments in the same currency.",
+      "Exchange principal and interest payments in different currencies.",
+      "Speculate on stock prices.",
+      "Hedge commodity prices."
+    ],
+    "answer": "Exchange principal and interest payments in different currencies.",
+    "hint": "Two currencies involved.",
+    "explanation": "Currency swaps involve exchanging principal and interest payments in one currency for principal and interest payments in another currency, often to hedge foreign currency debt."
+  },
+  {
+    "id": 5,
+    "question": "Which of the following is an example of an 'Exotic Option'?",
+    "options": [
+      "European Call Option",
+      "American Put Option",
+      "Barrier Option",
+      "Nifty Futures"
+    ],
+    "answer": "Barrier Option",
+    "hint": "Complex features.",
+    "explanation": "Barrier options are exotic options because their payoff depends on whether the underlying asset's price reaches a certain level (barrier) during the option's life, unlike standard European or American options."
+  },
+  {
+    "id": 6,
+    "question": "A 'Knock-In' option becomes active only when:",
+    "options": [
+      "The underlying price touches a specific barrier level.",
+      "The option is exercised.",
+      "The expiry date is reached.",
+      "The volatility drops."
+    ],
+    "answer": "The underlying price touches a specific barrier level.",
+    "hint": "Dormant until trigger.",
+    "explanation": "A Knock-In option is initially inactive and only comes into existence (becomes active) if the underlying asset price hits a pre-specified barrier level."
+  },
+  {
+    "id": 7,
+    "question": "The risk that a swap counterparty defaults on their payment obligation is known as:",
+    "options": [
+      "Market Risk",
+      "Basis Risk",
+      "Counterparty Credit Risk",
+      "Liquidity Risk"
+    ],
+    "answer": "Counterparty Credit Risk",
+    "hint": "OTC nature.",
+    "explanation": "Since swaps are typically OTC contracts, they carry significant counterparty credit risk—the risk that the other party will fail to make the agreed payments."
+  },
+  {
+    "id": 8,
+    "question": "Which of the following is a 'Credit Derivative'?",
+    "options": [
+      "Credit Default Swap (CDS)",
+      "Interest Rate Future",
+      "Currency Option",
+      "Equity Index Future"
+    ],
+    "answer": "Credit Default Swap (CDS)",
+    "hint": "Insurance against default.",
+    "explanation": "A Credit Default Swap (CDS) is a derivative contract that allows an investor to swap or offset their credit risk with that of another investor, acting like insurance against default."
+  },
+  {
+    "id": 9,
+    "question": "In a Credit Default Swap (CDS), the 'Protection Buyer' pays a periodic fee to the 'Protection Seller' in exchange for:",
+    "options": [
+      "A fixed interest rate.",
+      "A floating interest rate.",
+      "Compensation if a 'Credit Event' (default) occurs.",
+      "The principal amount immediately."
+    ],
+    "answer": "Compensation if a 'Credit Event' (default) occurs.",
+    "hint": "Like insurance premium.",
+    "explanation": "The protection buyer pays a premium (spread) to the seller. If the reference entity defaults (Credit Event), the seller compensates the buyer for the loss."
+  },
+  {
+    "id": 10,
+    "question": "The 'VIX' index measures:",
+    "options": [
+      "Stock market returns.",
+      "Interest rate volatility.",
+      "Expected near-term market volatility (implied volatility).",
+      "Credit risk."
+    ],
+    "answer": "Expected near-term market volatility (implied volatility).",
+    "hint": "Fear gauge.",
+    "explanation": "The VIX (Volatility Index) represents the market's expectation of 30-day forward-looking volatility, derived from S&P 500 (or Nifty in India) option prices."
+  },
+  {
+    "id": 11,
+    "question": "If the VIX is high, it generally indicates:",
+    "options": [
+      "Market complacency.",
+      "High investor fear and uncertainty.",
+      "Stable market conditions.",
+      "Low option premiums."
+    ],
+    "answer": "High investor fear and uncertainty.",
+    "hint": "High volatility = High risk.",
+    "explanation": "A high VIX suggests that investors expect significant price swings, reflecting fear, uncertainty, or high risk in the market."
+  },
+  {
+    "id": 12,
+    "question": "Which of the following strategies benefits from an INCREASE in volatility?",
+    "options": [
+      "Short Straddle",
+      "Long Straddle",
+      "Covered Call",
+      "Short Put"
+    ],
+    "answer": "Long Straddle",
+    "hint": "Buying options = Long Vega.",
+    "explanation": "A Long Straddle (Buy Call + Buy Put) has positive Vega. It profits when volatility rises because both option premiums increase."
+  },
+  {
+    "id": 13,
+    "question": "The 'Skew' in volatility refers to:",
+    "options": [
+      "The difference in IV between OTM Puts and OTM Calls.",
+      "The difference between Historical and Implied Volatility.",
+      "The change in volatility over time.",
+      "The error in the model."
+    ],
+    "answer": "The difference in IV between OTM Puts and OTM Calls.",
+    "hint": "Smirk shape.",
+    "explanation": "Volatility Skew (or Smirk) describes the phenomenon where OTM Puts typically have higher implied volatility than OTM Calls (in equity markets) due to crash fear."
+  },
+  {
+    "id": 14,
+    "question": "A 'Calendar Spread' is also known as a:",
+    "options": [
+      "Horizontal Spread",
+      "Vertical Spread",
+      "Diagonal Spread",
+      "Ratio Spread"
+    ],
+    "answer": "Horizontal Spread",
+    "hint": "Across time (horizon).",
+    "explanation": "A Calendar Spread involves options/futures with the same strike but different expiry dates, spreading horizontally across time."
+  },
+  {
+    "id": 15,
+    "question": "Which Greek is most relevant for a Calendar Spread?",
+    "options": [
+      "Delta",
+      "Gamma",
+      "Theta",
+      "Rho"
+    ],
+    "answer": "Theta",
+    "hint": "Time decay difference.",
+    "explanation": "Calendar Spreads profit from the difference in time decay (Theta) between the near-month (fast decay) and far-month (slow decay) options."
+  },
+  {
+    "id": 16,
+    "question": "A 'Vertical Spread' involves:",
+    "options": [
+      "Buying and Selling options of different strikes but same expiry.",
+      "Buying and Selling options of same strike but different expiry.",
+      "Buying Call and Put of same strike.",
+      "Buying Stock and Selling Future."
+    ],
+    "answer": "Buying and Selling options of different strikes but same expiry.",
+    "hint": "Up and down strikes.",
+    "explanation": "Vertical Spreads (Bull/Bear spreads) involve options on the same underlying with the same expiry but different strike prices."
+  },
+  {
+    "id": 17,
+    "question": "Which strategy mimics a 'Long Stock' position?",
+    "options": [
+      "Synthetic Long (Long Call + Short Put)",
+      "Synthetic Short (Long Put + Short Call)",
+      "Protective Put",
+      "Covered Call"
+    ],
+    "answer": "Synthetic Long (Long Call + Short Put)",
+    "hint": "Delta 1.",
+    "explanation": "Buying a Call and Selling a Put at the same strike creates a synthetic position that behaves almost identically to owning the stock (Delta ≈ 1)."
+  },
+  {
+    "id": 18,
+    "question": "The 'Put-Call Ratio' (PCR) based on Volume is calculated as:",
+    "options": [
+      "Put Volume / Call Volume",
+      "Call Volume / Put Volume",
+      "Put OI / Call OI",
+      "Call OI / Put OI"
+    ],
+    "answer": "Put Volume / Call Volume",
+    "hint": "Ratio of trading activity.",
+    "explanation": "PCR (Volume) is simply the total volume of Puts traded divided by the total volume of Calls traded on a given day."
+  },
+  {
+    "id": 19,
+    "question": "A PCR (Open Interest) of 0.5 suggests:",
+    "options": [
+      "Bullish sentiment (Oversold Puts)",
+      "Bearish sentiment (Too many Calls bought)",
+      "Neutral market",
+      "High volatility"
+    ],
+    "answer": "Bearish sentiment (Too many Calls bought)",
+    "hint": "More Calls than Puts.",
+    "explanation": "A low PCR (< 0.7) means Call OI is much higher than Put OI. This excessive bullishness (crowded long trade) is often a contrarian bearish signal."
+  },
+  {
+    "id": 20,
+    "question": "The 'Max Pain' theory suggests that on expiry, the stock price will gravitate towards:",
+    "options": [
+      "The strike price where option writers (sellers) suffer the least loss.",
+      "The highest strike price.",
+      "The lowest strike price.",
+      "The historical average price."
+    ],
+    "answer": "The strike price where option writers (sellers) suffer the least loss.",
+    "hint": "Sellers win.",
+    "explanation": "Max Pain theory posits that market manipulators (smart money/sellers) will drive the price to a level where the maximum number of options expire worthless, minimizing their payout."
+  },
+  {
+    "id": 21,
+    "question": "Which of the following is a 'Mean Reversion' strategy?",
+    "options": [
+      "Buying on breakouts.",
+      "Selling when RSI is overbought.",
+      "Following the trend.",
+      "Momentum trading."
+    ],
+    "answer": "Selling when RSI is overbought.",
+    "hint": "Betting it will return to average.",
+    "explanation": "Mean reversion strategies assume that prices will revert to their historical average. Selling when an indicator like RSI is high (overbought) bets on this pullback."
+  },
+  {
+    "id": 22,
+    "question": "A 'Butterfly Spread' is profitable when:",
+    "options": [
+      "Volatility is high.",
+      "Volatility is low (Price stays near center strike).",
+      "Market crashes.",
+      "Market rallies strongly."
+    ],
+    "answer": "Volatility is low (Price stays near center strike).",
+    "hint": "Pin the strike.",
+    "explanation": "A Long Butterfly is a neutral strategy that profits most if the stock closes exactly at the center (body) strike price at expiry."
+  },
+  {
+    "id": 23,
+    "question": "An 'Iron Condor' is constructed using:",
+    "options": [
+      "A Bull Put Spread and a Bear Call Spread.",
+      "A Bull Call Spread and a Bear Put Spread.",
+      "Two Straddles.",
+      "Four Calls."
+    ],
+    "answer": "A Bull Put Spread and a Bear Call Spread.",
+    "hint": "Wide neutral zone.",
+    "explanation": "An Iron Condor combines two credit spreads: Selling an OTM Put spread (Bull Put) and Selling an OTM Call spread (Bear Call) to profit from range-bound markets."
+  },
+  {
+    "id": 24,
+    "question": "The 'Margin of Safety' in a Covered Call comes from:",
+    "options": [
+      "The premium received.",
+      "The stock appreciation.",
+      "The dividends.",
+      "The broker."
+    ],
+    "answer": "The premium received.",
+    "hint": "Cushion.",
+    "explanation": "The premium received from selling the Call acts as a cushion, lowering the effective break-even cost of the stock, thus providing a margin of safety."
+  },
+  {
+    "id": 25,
+    "question": "Which strategy allows you to buy a stock at a discount to the current market price?",
+    "options": [
+      "Selling Cash Secured Puts.",
+      "Buying Calls.",
+      "Buying Futures.",
+      "Buying Puts."
+    ],
+    "answer": "Selling Cash Secured Puts.",
+    "hint": "Get paid to wait.",
+    "explanation": "By selling a Put at a lower strike, you collect a premium. If the stock falls to that strike, you are obligated to buy, but your effective cost is Strike - Premium (a discount)."
+  },
+  {
+    "id": 26,
+    "question": "The 'Gamma' of an option is always:",
+    "options": [
+      "Positive for Long positions (Buyers).",
+      "Negative for Long positions.",
+      "Zero.",
+      "Constant."
+    ],
+    "answer": "Positive for Long positions (Buyers).",
+    "hint": "Convexity.",
+    "explanation": "Gamma is positive for option buyers (Long Calls/Puts) because Delta increases as the market moves in your favor, accelerating profits."
+  },
+  {
+    "id": 27,
+    "question": "Which Greek measures the change in Vega with respect to Volatility?",
+    "options": [
+      "Volga (or Vomma)",
+      "Vanna",
+      "Charm",
+      "Color"
+    ],
+    "answer": "Volga (or Vomma)",
+    "hint": "Volatility of Volatility.",
+    "explanation": "Volga (or Vomma) measures the rate of change of Vega for a change in implied volatility (second-order Greek)."
+  },
+  {
+    "id": 28,
+    "question": "If you are 'Delta Neutral', it means:",
+    "options": [
+      "Your portfolio value does not change with small price movements.",
+      "You have zero risk.",
+      "You are not invested.",
+      "Your Gamma is zero."
+    ],
+    "answer": "Your portfolio value does not change with small price movements.",
+    "hint": "Insulated from direction.",
+    "explanation": "Delta Neutral strategies are constructed so that the net Delta is zero, making the portfolio immune to small directional moves in the underlying asset."
+  },
+  {
+    "id": 29,
+    "question": "To make a Delta Neutral portfolio 'Gamma Neutral', you must:",
+    "options": [
+      "Trade options to offset the net Gamma.",
+      "Trade Futures.",
+      "Buy Stock.",
+      "Sell Cash."
+    ],
+    "answer": "Trade options to offset the net Gamma.",
+    "hint": "Futures have zero Gamma.",
+    "explanation": "Since stocks and futures have zero Gamma, you can only adjust portfolio Gamma by buying or selling options."
+  },
+  {
+    "id": 30,
+    "question": "A 'Ratio Spread' involves:",
+    "options": [
+      "Buying and Selling uneven numbers of options (e.g., Buy 1 Call, Sell 2 Calls).",
+      "Buying 1 Call, Selling 1 Call.",
+      "Buying 1 Put, Buying 1 Call.",
+      "Buying Stock, Selling Future."
+    ],
+    "answer": "Buying and Selling uneven numbers of options (e.g., Buy 1 Call, Sell 2 Calls).",
+    "hint": "Ratio like 1:2.",
+    "explanation": "A Ratio Spread involves buying a certain number of options and selling a larger number of OTM options to finance the trade (or generate credit)."
+  },
+  {
+    "id": 31,
+    "question": "Which of the following is a 'Debit Spread'?",
+    "options": [
+      "Bull Call Spread",
+      "Bull Put Spread",
+      "Bear Call Spread",
+      "Short Straddle"
+    ],
+    "answer": "Bull Call Spread",
+    "hint": "You pay to enter.",
+    "explanation": "In a Bull Call Spread (Buy Low Strike Call, Sell High Strike Call), the premium paid for the lower strike is higher than the premium received, resulting in a net debit."
+  },
+  {
+    "id": 32,
+    "question": "Which of the following is a 'Credit Spread'?",
+    "options": [
+      "Bull Put Spread",
+      "Bull Call Spread",
+      "Bear Put Spread",
+      "Long Straddle"
+    ],
+    "answer": "Bull Put Spread",
+    "hint": "You receive money.",
+    "explanation": "In a Bull Put Spread (Sell High Strike Put, Buy Low Strike Put), the premium received is higher than paid, resulting in a net credit."
+  },
+  {
+    "id": 33,
+    "question": "The 'Breakeven' for a Bull Call Spread is:",
+    "options": [
+      "Lower Strike + Net Debit",
+      "Higher Strike + Net Debit",
+      "Lower Strike - Net Debit",
+      "Higher Strike - Net Debit"
+    ],
+    "answer": "Lower Strike + Net Debit",
+    "hint": "Cost recovery.",
+    "explanation": "The stock must rise enough to cover the net cost (debit) paid for the spread. BEP = Long Call Strike + Net Premium Paid."
+  },
+  {
+    "id": 34,
+    "question": "If you hold a Short Straddle and the market moves significantly, you face:",
+    "options": [
+      "Unlimited Loss",
+      "Limited Loss",
+      "Unlimited Profit",
+      "Zero Risk"
+    ],
+    "answer": "Unlimited Loss",
+    "hint": "Naked options.",
+    "explanation": "Since a Short Straddle involves a Short Call (unlimited risk) and Short Put (substantial risk), a large move in either direction can cause unlimited/huge losses."
+  },
+  {
+    "id": 35,
+    "question": "What is 'Rolling Down' a hedge?",
+    "options": [
+      "Closing a higher strike Short Call and selling a lower strike Short Call.",
+      "Closing a position.",
+      "Increasing position size.",
+      "Buying Puts."
+    ],
+    "answer": "Closing a higher strike Short Call and selling a lower strike Short Call.",
+    "hint": "Following the price down.",
+    "explanation": "If the market falls, a trader might 'roll down' their Short Call by closing the existing one and selling a new one at a lower strike to collect more premium."
+  },
+  {
+    "id": 36,
+    "question": "Which indicator is commonly used to measure 'Momentum' in derivatives trading?",
+    "options": [
+      "RSI (Relative Strength Index)",
+      "P/E Ratio",
+      "Dividend Yield",
+      "Book Value"
+    ],
+    "answer": "RSI (Relative Strength Index)",
+    "hint": "Strength of trend.",
+    "explanation": "RSI is a momentum oscillator that measures the speed and change of price movements."
+  },
+  {
+    "id": 37,
+    "question": "Algorithmic Trading (Algo Trading) primarily relies on:",
+    "options": [
+      "Computer programs executing pre-defined strategies.",
+      "Manual execution by brokers.",
+      "Tips from TV anchors.",
+      "Intuition."
+    ],
+    "answer": "Computer programs executing pre-defined strategies.",
+    "hint": "Automated rules.",
+    "explanation": "Algo trading uses computer algorithms to automatically execute trades based on pre-set rules (price, timing, volume) at speeds humans cannot match."
+  },
+  {
+    "id": 38,
+    "question": "What is 'High Frequency Trading' (HFT)?",
+    "options": [
+      "A subset of Algo Trading characterized by extremely short holding periods and high speeds.",
+      "Trading once a year.",
+      "Trading only high value stocks.",
+      "Manual day trading."
+    ],
+    "answer": "A subset of Algo Trading characterized by extremely short holding periods and high speeds.",
+    "hint": "Microseconds.",
+    "explanation": "HFT involves executing thousands of orders in fractions of a second to capture tiny price discrepancies."
+  },
+  {
+    "id": 39,
+    "question": "The 'Co-location' facility offered by exchanges allows brokers to:",
+    "options": [
+      "Place their servers in the exchange premises for faster execution (low latency).",
+      "Share office space.",
+      "Reduce taxes.",
+      "Access free internet."
+    ],
+    "answer": "Place their servers in the exchange premises for faster execution (low latency).",
+    "hint": "Speed advantage.",
+    "explanation": "Co-location involves placing the broker's trading servers physically inside the exchange's data center to minimize network latency."
+  },
+  {
+    "id": 40,
+    "question": "Which of the following is a 'Volatility Strategy'?",
+    "options": [
+      "Long Straddle",
+      "Long Stock",
+      "Short Future",
+      "Cash and Carry"
+    ],
+    "answer": "Long Straddle",
+    "hint": "Betting on movement, not direction.",
+    "explanation": "A Long Straddle profits from increased volatility (large moves) regardless of direction."
+  },
+  {
+    "id": 41,
+    "question": "If you are 'Long Vega', you want Implied Volatility to:",
+    "options": [
+      "Rise",
+      "Fall",
+      "Stay Zero",
+      "Disappear"
+    ],
+    "answer": "Rise",
+    "hint": "Long option = Long volatility.",
+    "explanation": "Vega measures sensitivity to volatility. A positive (Long) Vega position profits when implied volatility increases."
+  },
+  {
+    "id": 42,
+    "question": "Which option has the highest Vega?",
+    "options": [
+      "ATM Options with long time to expiry.",
+      "OTM Options near expiry.",
+      "ITM Options near expiry.",
+      "Deep ITM Options."
+    ],
+    "answer": "ATM Options with long time to expiry.",
+    "hint": "Uncertainty + Time.",
+    "explanation": "Vega is highest for ATM options and increases with time to expiry (longer duration options are more sensitive to volatility changes)."
+  },
+  {
+    "id": 43,
+    "question": "In a 'Diagonal Spread', you combine:",
+    "options": [
+      "Different Strikes AND Different Expiries.",
+      "Same Strike, Different Expiry.",
+      "Different Strike, Same Expiry.",
+      "Same Strike, Same Expiry."
+    ],
+    "answer": "Different Strikes AND Different Expiries.",
+    "hint": "Diagonal on the matrix.",
+    "explanation": "A Diagonal Spread involves entering a Long and Short position with different strike prices AND different expiration dates."
+  },
+  {
+    "id": 44,
+    "question": "The 'Risk-Reversal' strategy involves:",
+    "options": [
+      "Buying a Call and Selling a Put (or vice versa) to skew directional exposure.",
+      "Buying a Call and Buying a Put.",
+      "Selling a Call and Selling a Put.",
+      "Buying a Future."
+    ],
+    "answer": "Buying a Call and Selling a Put (or vice versa) to skew directional exposure.",
+    "hint": "Swapping risk.",
+    "explanation": "A Risk Reversal typically involves buying an OTM Call and selling an OTM Put (or vice versa) to bet on direction while funding the premium."
+  },
+  {
+    "id": 45,
+    "question": "Which of the following creates a 'Synthetic Short Stock' position?",
+    "options": [
+      "Long Put + Short Call (Same Strike)",
+      "Long Call + Short Put",
+      "Short Put only",
+      "Long Call only"
+    ],
+    "answer": "Long Put + Short Call (Same Strike)",
+    "hint": "Delta -1.",
+    "explanation": "Buying a Put (-Delta) and Selling a Call (-Delta) creates a combined Delta of approx -1, mimicking a Short Stock position."
+  },
+  {
+    "id": 46,
+    "question": "The 'Carry' in a currency pair refers to:",
+    "options": [
+      "The interest rate differential.",
+      "The transport cost.",
+      "The tax difference.",
+      "The exchange fee."
+    ],
+    "answer": "The interest rate differential.",
+    "hint": "Carry trade.",
+    "explanation": "In FX, 'Carry' is the interest earned or paid for holding a currency pair overnight, based on the interest rate difference between the two countries."
+  },
+  {
+    "id": 47,
+    "question": "If you 'Write' an option, you are:",
+    "options": [
+      "Selling the option (Shorting).",
+      "Buying the option.",
+      "Exercising the option.",
+      "Assigning the option."
+    ],
+    "answer": "Selling the option (Shorting).",
+    "hint": "Writer = Seller.",
+    "explanation": "Writing an option is the industry term for Selling (Shorting) an option contract."
+  },
+  {
+    "id": 48,
+    "question": "Margin Trading Funding (MTF) allows investors to:",
+    "options": [
+      "Buy stocks by paying only a fraction of the value (Margin) and borrowing the rest.",
+      "Trade without money.",
+      "Get free shares.",
+      "Avoid SEBI rules."
+    ],
+    "answer": "Buy stocks by paying only a fraction of the value (Margin) and borrowing the rest.",
+    "hint": "Leverage in cash market.",
+    "explanation": "MTF allows investors to buy delivery shares by paying a margin (e.g., 25%) and borrowing the remaining amount from the broker at an interest rate."
+  },
+  {
+    "id": 49,
+    "question": "The 'Haircut' on liquid assets (like Cash equivalents) for margin pledging is typically:",
+    "options": [
+      "Low (e.g., 10%)",
+      "High (e.g., 50%)",
+      "100%",
+      "Zero"
+    ],
+    "answer": "Low (e.g., 10%)",
+    "hint": "Safe asset.",
+    "explanation": "Liquid assets (Cash, Govt Bonds, Liquid ETFs) are stable, so the Haircut (risk discount) applied by the clearing corp is low (approx 10%)."
+  },
+  {
+    "id": 50,
+    "question": "Which of the following is a 'Non-Linear' payoff?",
+    "options": [
+      "Long Call Option",
+      "Long Futures",
+      "Short Futures",
+      "Spot Trade"
+    ],
+    "answer": "Long Call Option",
+    "hint": "Curved graph.",
+    "explanation": "Options have non-linear payoffs (asymmetric risk/reward), whereas Futures and Spot have linear (1:1) payoffs."
+  },
+  {
+    "id": 51,
+    "question": "A 'Guts' spread involves:",
+    "options": [
+      "Buying ITM Call and Buying ITM Put.",
+      "Buying OTM Call and Buying OTM Put.",
+      "Selling ITM Call and Selling OTM Put.",
+      "Buying Stock."
+    ],
+    "answer": "Buying ITM Call and Buying ITM Put.",
+    "hint": "Expensive Strangle.",
+    "explanation": "A Long Guts strategy involves buying an ITM Call and an ITM Put. It is expensive but profits from volatility."
+  },
+  {
+    "id": 52,
+    "question": "The 'Terminal Value' of a derivative is:",
+    "options": [
+      "Its value at expiration.",
+      "Its value at inception.",
+      "Its volatility.",
+      "Its margin."
+    ],
+    "answer": "Its value at expiration.",
+    "hint": "The end.",
+    "explanation": "Terminal value is the final payoff or value of the contract when it expires."
+  },
+  {
+    "id": 53,
+    "question": "Which formula is used to price European Options?",
+    "options": [
+      "Black-Scholes-Merton Model",
+      "Binomial Model (American)",
+      "Monte Carlo",
+      "Cost of Carry"
+    ],
+    "answer": "Black-Scholes-Merton Model",
+    "hint": "The classic formula.",
+    "explanation": "The Black-Scholes-Merton model is the standard mathematical model for pricing European-style options."
+  },
+  {
+    "id": 54,
+    "question": "If you hold a stock and buy a Put, you have:",
+    "options": [
+      "Capped your downside.",
+      "Capped your upside.",
+      "Increased your risk.",
+      "Doubled your profit."
+    ],
+    "answer": "Capped your downside.",
+    "hint": "Insurance floor.",
+    "explanation": "Buying a Put (Protective Put) sets a floor price, capping your maximum loss while leaving the upside potential open."
+  },
+  {
+    "id": 55,
+    "question": "The 'Open Interest' usually drops significantly:",
+    "options": [
+      "Near Expiry (Rollover/Squaring off).",
+      "At the start of the series.",
+      "During a bull run.",
+      "When volatility is low."
+    ],
+    "answer": "Near Expiry (Rollover/Squaring off).",
+    "hint": "Contracts dying.",
+    "explanation": "As expiry approaches, traders close their positions or roll them over to the next month, causing OI in the near-month contract to drop."
+  },
+  {
+    "id": 506,
+    "question": "A trader constructs a 'Short Iron Condor'. Which of the following positions constitutes this strategy?",
+    "options": [
+      "Sell 1 Lower Strike Put, Buy 1 Lower-Middle Strike Put, Buy 1 Higher-Middle Strike Call, Sell 1 Higher Strike Call",
+      "Buy 1 Lower Strike Put, Sell 1 Lower-Middle Strike Put, Sell 1 Higher-Middle Strike Call, Buy 1 Higher Strike Call",
+      "Buy 1 Lower Strike Put, Buy 1 Higher Strike Call",
+      "Sell 1 Lower Strike Put, Sell 1 Higher Strike Call"
+    ],
+    "answer": "Sell 1 Lower Strike Put, Buy 1 Lower-Middle Strike Put, Buy 1 Higher-Middle Strike Call, Sell 1 Higher Strike Call",
+    "hint": "This is a debit strategy betting on high volatility (breakout).",
+    "explanation": "A Short Iron Condor (or Reverse Iron Condor) is the opposite of the standard Long Iron Condor. You Sell the OTM wings (to fund the trade partly) and Buy the inner strikes. It is a net debit strategy that profits if the underlying price breaks out significantly in either direction (high volatility)."
+  },
+  {
+    "id": 507,
+    "question": "Mr. Roy holds a diversified equity portfolio of ₹20 Lakhs with a Beta of 1.5. To completely hedge this portfolio using Nifty Futures (Index Value = 20,000, Lot Size = 50), what should he do?",
+    "options": [
+      "Sell 3 Lots of Nifty Futures",
+      "Buy 3 Lots of Nifty Futures",
+      "Sell 2 Lots of Nifty Futures",
+      "Sell 1 Lot of Nifty Futures"
+    ],
+    "answer": "Sell 3 Lots of Nifty Futures",
+    "hint": "Hedge Value = Portfolio Value × Beta.",
+    "explanation": "Target Hedge Value = 20,00,000 × 1.5 = ₹30,00,000. Contract Value of 1 Lot = 20,000 × 50 = ₹10,00,000. Number of Lots = 30,00,000 / 10,00,000 = 3 Lots. To hedge (protect from fall), he must Sell."
+  },
+  {
+    "id": 508,
+    "question": "Which strategy represents a 'Bear Call Ladder'?",
+    "options": [
+      "Sell 1 ITM Call, Buy 1 ATM Call, Buy 1 OTM Call",
+      "Buy 1 ITM Call, Sell 1 ATM Call, Sell 1 OTM Call",
+      "Sell 1 Lower Strike Call, Buy 1 Middle Strike Call, Buy 1 Higher Strike Call",
+      "Buy 1 Lower Strike Call, Sell 1 Higher Strike Call"
+    ],
+    "answer": "Sell 1 ITM Call, Buy 1 ATM Call, Buy 1 OTM Call",
+    "hint": "Selling the expensive ITM call to finance two cheaper calls.",
+    "explanation": "A Bear Call Ladder involves selling a lower strike (ITM) Call and buying two higher strike Calls (e.g., 1 ATM, 1 OTM or 2 OTM). It is a bearish strategy but can suffer losses if the stock rallies massively beyond the higher strikes."
+  },
+  {
+    "id": 509,
+    "question": "A 'Calendar Spread' is most profitable when:",
+    "options": [
+      "Implied Volatility (IV) increases",
+      "Implied Volatility (IV) decreases",
+      "The market crashes",
+      "Interest rates fall to zero"
+    ],
+    "answer": "Implied Volatility (IV) increases",
+    "hint": "Vega is positive.",
+    "explanation": "In a Long Calendar Spread (Sell Near Month, Buy Far Month), the position has positive Vega because the far-month option is more sensitive to volatility. Therefore, an increase in IV benefits the strategy."
+  },
+  {
+    "id": 510,
+    "question": "If you Sell a Put Option, your view on the market is:",
+    "options": [
+      "Bearish",
+      "Bullish to Neutral",
+      "Highly Volatile",
+      "Neutral only"
+    ],
+    "answer": "Bullish to Neutral",
+    "hint": "You want the price to stay above the strike.",
+    "explanation": "Selling a Put obligates you to buy if the price falls. You profit if the price rises or stays flat (above the strike), making the Put expire worthless. Hence, the view is Bullish to Neutral."
+  },
+  {
+    "id": 511,
+    "question": "Which Greek represents the 'Time Decay' of an option?",
+    "options": [
+      "Delta",
+      "Gamma",
+      "Vega",
+      "Theta"
+    ],
+    "answer": "Theta",
+    "hint": "T for Time.",
+    "explanation": "Theta measures the rate at which an option's value declines as time passes, assuming all other factors remain constant."
+  },
+  {
+    "id": 512,
+    "question": "A 'Synthetic Short Stock' position can be created by:",
+    "options": [
+      "Short Call + Long Put",
+      "Long Call + Short Put",
+      "Long Call + Long Put",
+      "Short Call + Short Put"
+    ],
+    "answer": "Short Call + Long Put",
+    "hint": "Bearish option + Bearish obligation.",
+    "explanation": "Selling a Call (Bearish) and Buying a Put (Bearish) at the same strike creates a linear payoff profile identical to shorting the stock."
+  },
+  {
+    "id": 513,
+    "question": "What is the maximum loss for a buyer of a Call Option?",
+    "options": [
+      "Unlimited",
+      "The Strike Price",
+      "The Premium Paid",
+      "Zero"
+    ],
+    "answer": "The Premium Paid",
+    "hint": "Buyers have rights, not obligations.",
+    "explanation": "An option buyer can simply choose not to exercise the option if it is out of the money. Therefore, the maximum loss is limited to the premium paid to buy the option."
+  },
+  {
+    "id": 514,
+    "question": "Which of the following strategies involves selling a Call and a Put at the same strike price?",
+    "options": [
+      "Long Straddle",
+      "Short Straddle",
+      "Short Strangle",
+      "Long Strangle"
+    ],
+    "answer": "Short Straddle",
+    "hint": "Straddle involves the same strike.",
+    "explanation": "Selling a Call and a Put at the same strike price and expiry is a Short Straddle. It is a neutral strategy that profits from time decay and low volatility."
+  },
+  {
+    "id": 515,
+    "question": "The 'Delta' of a Deep Out-of-the-Money (OTM) Call option approaches:",
+    "options": [
+      "1",
+      "0.5",
+      "0",
+      "-1"
+    ],
+    "answer": "0",
+    "hint": "Low probability of profit.",
+    "explanation": "A deep OTM Call has a very low probability of expiring in-the-money. It is not sensitive to small price changes in the underlying, so its Delta approaches 0."
+  },
+  {
+    "id": 516,
+    "question": "In the F&O segment, what is the 'Stipulated Time' for entering an order during the Pre-Open session?",
+    "options": [
+      "9:00 AM to 9:15 AM",
+      "9:00 AM to 9:08 AM",
+      "9:15 AM to 9:30 AM",
+      "No Pre-Open session for F&O"
+    ],
+    "answer": "No Pre-Open session for F&O",
+    "hint": "Pre-open is primarily for Cash.",
+    "explanation": "Currently, there is no pre-open session for the Derivatives (F&O) segment. Normal trading starts directly at 9:15 AM."
+  },
+  {
+    "id": 517,
+    "question": "A 'Good Till Date' (GTD) order allows the trader to:",
+    "options": [
+      "Keep an order active until a specific date specified by the trader",
+      "Execute the order immediately",
+      "Cancel the order if not executed today",
+      "Trade only on expiry date"
+    ],
+    "answer": "Keep an order active until a specific date specified by the trader",
+    "hint": "Validity > 1 Day.",
+    "explanation": "A GTD order remains in the system (managed by the broker usually, as exchanges are Day-validity mostly) until the date specified by the client or until it is executed."
+  },
+  {
+    "id": 518,
+    "question": "If a member enters an order with a 'Cli' code, it means:",
+    "options": [
+      "It is a Client trade",
+      "It is a Clearing Member trade",
+      "It is a Closed trade",
+      "It is a Computer trade"
+    ],
+    "answer": "It is a Client trade",
+    "hint": "Opposite of Pro.",
+    "explanation": "The 'Cli' flag indicates that the order is being placed on behalf of a client, whereas 'Pro' stands for Proprietary (Broker's own) trade."
+  },
+  {
+    "id": 519,
+    "question": "The 'Circuit Filter' limits for Index Options are:",
+    "options": [
+      "10%, 15%, 20%",
+      "Dynamic Operating Ranges only (No fixed circuits)",
+      "5% flat",
+      "No limits at all"
+    ],
+    "answer": "Dynamic Operating Ranges only (No fixed circuits)",
+    "hint": "Derivatives need to move freely.",
+    "explanation": "Derivative contracts (Futures & Options) do not have fixed circuit breakers (halt points) like stocks. Instead, they have dynamic operating ranges to prevent erroneous orders."
+  },
+  {
+    "id": 520,
+    "question": "What is the consequence of 'Self-Trading' (Wash Trading)?",
+    "options": [
+      "It is a valid volume generator",
+      "The order is rejected by the system (STP Mechanism)",
+      "It attracts a tax rebate",
+      "It is allowed for market makers"
+    ],
+    "answer": "The order is rejected by the system (STP Mechanism)",
+    "hint": "Prevention mechanism.",
+    "explanation": "Self-Trade Prevention (STP) mechanisms on the exchange ensure that if a buy and sell order from the same client code match, the passive or active order is cancelled to prevent artificial volume."
+  },
+  {
+    "id": 521,
+    "question": "A 'Stop Loss Sell' order is placed:",
+    "options": [
+      "Below the current market price",
+      "Above the current market price",
+      "At the market price",
+      "Anywhere"
+    ],
+    "answer": "Below the current market price",
+    "hint": "To limit loss on a long position.",
+    "explanation": "If you are Long at 100, you place a Stop Loss Sell at 95 (below CMP) to exit if the price drops."
+  },
+  {
+    "id": 522,
+    "question": "Who determines the 'Final Settlement Price' for Stock Futures?",
+    "options": [
+      "The Exchange, based on the closing price of the underlying stock in Cash segment",
+      "The Clearing Corporation, based on Futures LTP",
+      "SEBI",
+      "The Broker"
+    ],
+    "answer": "The Exchange, based on the closing price of the underlying stock in Cash segment",
+    "hint": "Convergence concept.",
+    "explanation": "On expiry day, the Futures price must converge with the Spot price. Hence, the Final Settlement Price is the closing price of the underlying stock in the Capital Market."
+  },
+  {
+    "id": 523,
+    "question": "The 'Bulk Deal' window for reporting trades opens:",
+    "options": [
+      "Only once at market close",
+      "Twice: Morning and Afternoon sessions",
+      "Any time during market hours",
+      "Only on Fridays"
+    ],
+    "answer": "Twice: Morning and Afternoon sessions",
+    "hint": "Specific reporting windows.",
+    "explanation": "Bulk deals (> ₹10 Cr block window or >0.5% bulk) generally have specific reporting/execution windows or immediate reporting requirements depending on the type."
+  },
+  {
+    "id": 524,
+    "question": "What is 'Colocation'?",
+    "options": [
+      "Brokers sharing an office",
+      "Hosting the trading server in the Exchange premises for low latency",
+      "Trading from home",
+      "Using mobile apps"
+    ],
+    "answer": "Hosting the trading server in the Exchange premises for low latency",
+    "hint": "Speed advantage.",
+    "explanation": "Colocation is a service where members rent rack space within the exchange's data center to locate their trading servers, minimizing network latency."
+  },
+  {
+    "id": 525,
+    "question": "If a stock enters the 'F&O Ban Period', existing positions can be:",
+    "options": [
+      "Increased",
+      "Rolled over to new strikes",
+      "Squared off / Reduced only",
+      "Converted to delivery"
+    ],
+    "answer": "Squared off / Reduced only",
+    "hint": "No new open interest.",
+    "explanation": "In the ban period (MWPL > 95%), participants can only trade to reduce their open positions. Increasing open interest attracts a penalty."
+  },
+  {
+    "id": 526,
+    "question": "Which margin covers the 'Daily Volatility' (99% confidence)?",
+    "options": [
+      "SPAN Margin",
+      "Extreme Loss Margin",
+      "Mark to Market Margin",
+      "Delivery Margin"
+    ],
+    "answer": "SPAN Margin",
+    "hint": "Standard Portfolio Analysis of Risk.",
+    "explanation": "SPAN Margin acts as the initial margin calculated based on VaR to cover the probable worst-case loss in one day with 99% confidence."
+  },
+  {
+    "id": 527,
+    "question": "In 'Physical Settlement', if a client has a Long Put (ITM), their obligation is to:",
+    "options": [
+      "Receive Shares",
+      "Deliver Shares",
+      "Pay Cash",
+      "Receive Cash"
+    ],
+    "answer": "Deliver Shares",
+    "hint": "Put = Right to Sell.",
+    "explanation": "Exercising a Put option gives the right to sell. In physical settlement, the holder must Deliver the shares and receive the strike price."
+  },
+  {
+    "id": 528,
+    "question": "If a Clearing Member defaults, the 'Waterfall Mechanism' uses which fund immediately after the defaulter's own assets?",
+    "options": [
+      "Core Settlement Guarantee Fund (SGF)",
+      "Investor Protection Fund",
+      "Exchange Profits",
+      "Insurance"
+    ],
+    "answer": "Core Settlement Guarantee Fund (SGF)",
+    "hint": "The central pool.",
+    "explanation": "The Core SGF is the primary resource used by the Clearing Corporation to fulfill settlement obligations after exhausting the defaulting member's margins and deposits."
+  },
+  {
+    "id": 529,
+    "question": "What is 'Marking of Lien'?",
+    "options": [
+      "Selling shares",
+      "Pledging shares in favor of the broker/CC for margin benefit",
+      "Transferring shares to a friend",
+      "Freezing the account"
+    ],
+    "answer": "Pledging shares in favor of the broker/CC for margin benefit",
+    "hint": "Using shares as collateral.",
+    "explanation": "Marking a lien (Pledge/Re-pledge) allows the client to use their demat holdings as collateral for trading margins without transferring ownership, unless invoked due to default."
+  },
+  {
+    "id": 530,
+    "question": "The 'Short Option Minimum Margin' (SOMM) is levied to:",
+    "options": [
+      "Ensure option writers pay a floor margin even if SPAN is low (for deep OTM)",
+      "Discourage option buying",
+      "Cover delivery risk",
+      "Tax the profit"
+    ],
+    "answer": "Ensure option writers pay a floor margin even if SPAN is low (for deep OTM)",
+    "hint": "Minimum floor.",
+    "explanation": "For deep OTM options, SPAN requirements can be negligible. SOMM ensures a minimum percentage (e.g., 3% or 5%) is collected to cover the inherent risk of shorting."
+  },
+  {
+    "id": 531,
+    "question": "If a client fails to pay the MTM loss by T+1, the broker must:",
+    "options": [
+      "Report to SEBI",
+      "Liquidate/Square off positions to the extent of default",
+      "Pay from own pocket",
+      "Wait for 5 days"
+    ],
+    "answer": "Liquidate/Square off positions to the extent of default",
+    "hint": "Risk mitigation.",
+    "explanation": "Regulations mandate that if a client fails to meet margin/MTM obligations, the broker must close out open positions to prevent further risk accumulation."
+  },
+  {
+    "id": 532,
+    "question": "Who acts as the 'Central Counterparty' for clearing F&O trades?",
+    "options": [
+      "The Stock Exchange",
+      "The Clearing Corporation (NSCCL/ICCL)",
+      "SEBI",
+      "The Depository"
+    ],
+    "answer": "The Clearing Corporation (NSCCL/ICCL)",
+    "hint": "Novation.",
+    "explanation": "The Clearing Corporation interposes itself between the buyer and seller, becoming the counterparty to both sides (Novation) to guarantee settlement."
+  },
+  {
+    "id": 533,
+    "question": "Can a 'Custodial Participant' (CP) trade directly on the exchange?",
+    "options": [
+      "Yes",
+      "No, they must trade through a Trading Member",
+      "Yes, if they have a special license",
+      "Yes, for indices only"
+    ],
+    "answer": "No, they must trade through a Trading Member",
+    "hint": "Institutions need a broker for execution.",
+    "explanation": "CPs (like FIIs/MFs) settle through a Custodian but must execute their trades through a registered Trading Member (Broker)."
+  },
+  {
+    "id": 534,
+    "question": "Which of the following is considered 'Cash Equivalent' collateral?",
+    "options": [
+      "Bank Guarantee",
+      "Real Estate",
+      "Physical Gold",
+      "Penny Stocks"
+    ],
+    "answer": "Bank Guarantee",
+    "hint": "Liquidity.",
+    "explanation": "Cash, Fixed Deposits, and Bank Guarantees (BGs) are considered Cash Equivalents for the liquid component of the margin."
+  },
+  {
+    "id": 535,
+    "question": "The 'Client Margin Reporting' penalty is levied on:",
+    "options": [
+      "The Client",
+      "The Trading Member / Clearing Member",
+      "The Exchange",
+      "The Bank"
+    ],
+    "answer": "The Trading Member / Clearing Member",
+    "hint": "Compliance responsibility.",
+    "explanation": "The obligation to collect and report margin lies with the broker. Failure leads to penalties on the broker (though they may recover it from the client if stipulated)."
+  },
+  {
+    "id": 536,
+    "question": "Which Act governs the legality of Derivative contracts in India?",
+    "options": [
+      "SCRA, 1956",
+      "Companies Act",
+      "RBI Act",
+      "Contract Act"
+    ],
+    "answer": "SCRA, 1956",
+    "hint": "Securities Contracts Regulation Act.",
+    "explanation": "Section 18A of the SCRA, 1956 specifically validates derivative contracts traded on recognized stock exchanges."
+  },
+  {
+    "id": 537,
+    "question": "What is the penalty for 'Insider Trading'?",
+    "options": [
+      "Minimum ₹10 Lakhs, up to ₹25 Crores or 3 times the profit made",
+      "₹5,000",
+      "Warning letter",
+      "Suspension for 1 day"
+    ],
+    "answer": "Minimum ₹10 Lakhs, up to ₹25 Crores or 3 times the profit made",
+    "hint": "Severe financial penalty.",
+    "explanation": "Insider trading attracts massive penalties: Min ₹10 Lakhs, Max ₹25 Crores or 3x the profit, plus potential imprisonment."
+  },
+  {
+    "id": 538,
+    "question": "Under PMLA, records of client identity (KYC) must be maintained for:",
+    "options": [
+      "5 years after the relationship has ended",
+      "1 year",
+      "10 years",
+      "Permanent"
+    ],
+    "answer": "5 years after the relationship has ended",
+    "hint": "Retention period.",
+    "explanation": "Intermediaries must keep KYC records and transaction logs for 5 years after the closure of the account/relationship."
+  },
+  {
+    "id": 539,
+    "question": "An appeal against a SEBI order must be filed with SAT within:",
+    "options": [
+      "45 days",
+      "30 days",
+      "60 days",
+      "90 days"
+    ],
+    "answer": "45 days",
+    "hint": "1.5 months.",
+    "explanation": "The limitation period for appealing to the Securities Appellate Tribunal (SAT) is 45 days from the receipt of the SEBI order."
+  },
+  {
+    "id": 540,
+    "question": "Which of the following constitutes 'Front Running'?",
+    "options": [
+      "A broker buying shares for their own account ahead of a large client order",
+      "Running a race",
+      "Buying IPOs",
+      "Selling at the top"
+    ],
+    "answer": "A broker buying shares for their own account ahead of a large client order",
+    "hint": "Unethical use of order info.",
+    "explanation": "Front Running is the illegal practice of a broker/dealer executing orders on their own account before executing a large client order to profit from the anticipated price movement."
+  },
+  {
+    "id": 541,
+    "question": "Calculate the STT on the SALE of 1 Lot of Nifty Futures (Value ₹10 Lakhs) at 0.02%.",
+    "options": [
+      "₹200",
+      "₹20",
+      "₹2,000",
+      "₹100"
+    ],
+    "answer": "₹200",
+    "hint": "0.02% of Contract Value.",
+    "explanation": "10,00,000 × 0.0002 = ₹200."
+  },
+  {
+    "id": 542,
+    "question": "F&O losses can be carried forward for set-off for how many years?",
+    "options": [
+      "8 Assessment Years",
+      "4 Assessment Years",
+      "Indefinite",
+      "Cannot be carried forward"
+    ],
+    "answer": "8 Assessment Years",
+    "hint": "Business loss rule.",
+    "explanation": "As F&O loss is a Non-Speculative Business Loss, it can be carried forward for up to 8 assessment years."
+  },
+  {
+    "id": 543,
+    "question": "Is 'Stamp Duty' on derivatives uniform across India?",
+    "options": [
+      "Yes, w.e.f July 2020",
+      "No, varies by state",
+      "No, varies by broker",
+      "No stamp duty on derivatives"
+    ],
+    "answer": "Yes, w.e.f July 2020",
+    "hint": "Centralized collection.",
+    "explanation": "The Stamp Duty regime was unified in 2020. It is now collected centrally by the Exchange at uniform rates across all states."
+  },
+  {
+    "id": 544,
+    "question": "Turnover for Tax Audit in F&O is calculated as:",
+    "options": [
+      "Sum of Absolute Profit and Absolute Loss",
+      "Total Sales Value",
+      "Total Premium",
+      "Net Profit"
+    ],
+    "answer": "Sum of Absolute Profit and Absolute Loss",
+    "hint": "Magnitude of P&L.",
+    "explanation": "Turnover = Absolute Profit + Absolute Loss. It represents the volume of risk taken, not the contract value."
+  },
+  {
+    "id": 545,
+    "question": "Income from F&O trading is taxable under which head?",
+    "options": [
+      "Profits and Gains of Business or Profession",
+      "Capital Gains",
+      "Income from Other Sources",
+      "Salary"
+    ],
+    "answer": "Profits and Gains of Business or Profession",
+    "hint": "It's a business.",
+    "explanation": "F&O trading is considered a business activity, and the income is taxed as Business Income (Non-Speculative)."
+  },
+  {
+    "id": 546,
+    "question": "The 'Risk Disclosure Document' (RDD) must be provided to the client:",
+    "options": [
+      "Before opening the account (part of KYC)",
+      "After the first loss",
+      "Annually",
+      "Upon request"
+    ],
+    "answer": "Before opening the account (part of KYC)",
+    "hint": "Warning comes first.",
+    "explanation": "The RDD is a mandatory part of the Client Registration process and must be signed/acknowledged before the account is opened."
+  },
+  {
+    "id": 547,
+    "question": "What is 'Churning'?",
+    "options": [
+      "Excessive trading in a client's account to generate brokerage",
+      "Mixing funds",
+      "Closing an account",
+      "Transferring shares"
+    ],
+    "answer": "Excessive trading in a client's account to generate brokerage",
+    "hint": "Unethical commission generation.",
+    "explanation": "Churning is an unethical practice where a broker executes excessive trades in a client's account solely to generate commission/brokerage."
+  },
+  {
+    "id": 548,
+    "question": "If a client has a dispute with the broker, they should first approach:",
+    "options": [
+      "The Broker's Grievance Redressal Cell",
+      "SEBI",
+      "The Police",
+      "The Court"
+    ],
+    "answer": "The Broker's Grievance Redressal Cell",
+    "hint": "Internal resolution first.",
+    "explanation": "The first step is to lodge a complaint with the broker. If unresolved, the client can escalate to the Exchange or SCORES."
+  },
+  {
+    "id": 549,
+    "question": "The 'Rights and Obligations' document is:",
+    "options": [
+      "Mandatory for all clients",
+      "Voluntary",
+      "Optional for HNIs",
+      "Required only for commodities"
+    ],
+    "answer": "Mandatory for all clients",
+    "hint": "Standard legal framework.",
+    "explanation": "This document outlines the mandatory terms and conditions and must be executed by all clients opening a trading account."
+  },
+  {
+    "id": 550,
+    "question": "What is 'In-Person Verification' (IPV)?",
+    "options": [
+      "Physical verification of the client by the broker to prevent identity theft",
+      "Verifying bank details",
+      "Verifying email",
+      "Verifying phone number"
+    ],
+    "answer": "Physical verification of the client by the broker to prevent identity theft",
+    "hint": "Face to face.",
+    "explanation": "IPV involves the broker (or agent) meeting the client (physically or via video) to verify that the person opening the account is the same as in the documents."
+  }
+]

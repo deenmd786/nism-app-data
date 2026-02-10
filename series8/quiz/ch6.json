@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "The trading system used by the National Stock Exchange (NSE) is called:",
+    "options": [
+      "BOLT",
+      "NEAT (National Exchange for Automated Trading)",
+      "ODIN",
+      "KITE"
+    ],
+    "answer": "NEAT (National Exchange for Automated Trading)",
+    "hint": "Think 'Neat and Tidy'.",
+    "explanation": "NEAT is the fully automated screen-based trading system of the NSE. (BOLT is used by BSE)."
+  },
+  {
+    "id": 2,
+    "question": "The trading system used by the Bombay Stock Exchange (BSE) is called:",
+    "options": [
+      "NEAT",
+      "BOLT (BSE On-Line Trading)",
+      "SPEED",
+      "FAST"
+    ],
+    "answer": "BOLT (BSE On-Line Trading)",
+    "hint": "Like a lightning bolt.",
+    "explanation": "BOLT is the screen-based trading system used by the BSE."
+  },
+  {
+    "id": 3,
+    "question": "F&O trading on Indian exchanges is:",
+    "options": [
+      "Floor-based (Open Outcry)",
+      "Screen-based and Order-Driven",
+      "Quote-Driven",
+      "Manual"
+    ],
+    "answer": "Screen-based and Order-Driven",
+    "hint": "Computers match orders.",
+    "explanation": "Indian exchanges use an anonymous, order-driven market where buy and sell orders are matched by the system computer."
+  },
+  {
+    "id": 4,
+    "question": "In an 'Order-Driven' market, the price is determined by:",
+    "options": [
+      "Market Makers",
+      "The Exchange",
+      "Matching of Buy and Sell orders",
+      "The Government"
+    ],
+    "answer": "Matching of Buy and Sell orders",
+    "hint": "Buyers meet sellers.",
+    "explanation": "Prices are discovered through the interaction of buy and sell orders from all market participants."
+  },
+  {
+    "id": 5,
+    "question": "The order matching rule used by Indian exchanges is:",
+    "options": [
+      "Price-Time Priority",
+      "Time-Price Priority",
+      "Size-Time Priority",
+      "Random Matching"
+    ],
+    "answer": "Price-Time Priority",
+    "hint": "Best price first, then first come first served.",
+    "explanation": "The system first matches the best price (Highest Buy, Lowest Sell). If prices are equal, it matches the order that came in earlier (Time priority)."
+  },
+  {
+    "id": 6,
+    "question": "A 'Limit Order' allows the trader to:",
+    "options": [
+      "Buy or sell at the best available market price",
+      "Specify the maximum price to buy or minimum price to sell",
+      "Cancel the trade immediately",
+      "Trade after market hours"
+    ],
+    "answer": "Specify the maximum price to buy or minimum price to sell",
+    "hint": "Setting a limit.",
+    "explanation": "A Limit Order sets a specific price boundary. The trade will only execute at that price or better."
+  },
+  {
+    "id": 7,
+    "question": "A 'Market Order' allows the trader to:",
+    "options": [
+      "Buy or sell immediately at the best available price",
+      "Wait for a specific price",
+      "Trade only at the closing price",
+      "Trade with a specific counterparty"
+    ],
+    "answer": "Buy or sell immediately at the best available price",
+    "hint": "I want it NOW.",
+    "explanation": "Market orders prioritize speed over price, executing immediately against the best available orders in the book."
+  },
+  {
+    "id": 8,
+    "question": "What is a 'Stop Loss' order?",
+    "options": [
+      "An order to stop trading for the day",
+      "An order placed to limit a loss on an existing position",
+      "An order to lock in profit",
+      "An order to buy at the lowest price"
+    ],
+    "answer": "An order placed to limit a loss on an existing position",
+    "hint": "Stopping the bleeding.",
+    "explanation": "A Stop Loss order becomes a market/limit order once a specific 'Trigger Price' is crossed, helping to cap losses."
+  },
+  {
+    "id": 9,
+    "question": "An 'Immediate or Cancel' (IOC) order means:",
+    "options": [
+      "The order must be executed fully immediately, or the unexecuted part is cancelled",
+      "The order stays valid for the whole day",
+      "The order is cancelled if the price moves",
+      "The order is executed at the closing price"
+    ],
+    "answer": "The order must be executed fully immediately, or the unexecuted part is cancelled",
+    "hint": "Do it now or forget it.",
+    "explanation": "IOC orders try to match immediately. Any portion that cannot be matched instantly is cancelled rather than staying in the book."
+  },
+  {
+    "id": 10,
+    "question": "What is the 'Market Lot' for derivative contracts?",
+    "options": [
+      "1 share",
+      "100 shares",
+      "The minimum number of units that can be traded",
+      "The maximum number of units that can be traded"
+    ],
+    "answer": "The minimum number of units that can be traded",
+    "hint": "A bundle.",
+    "explanation": "Derivatives are traded in lots. The Market Lot is the standardized quantity (e.g., 50 or 75 shares for Nifty) set by the exchange."
+  },
+  {
+    "id": 11,
+    "question": "The 'Operating Range' or 'Price Band' for F&O stocks is primarily intended to:",
+    "options": [
+      "Prevent trading",
+      "Prevent erroneous orders and sudden extreme volatility",
+      "Fix the price",
+      "Calculate taxes"
+    ],
+    "answer": "Prevent erroneous orders and sudden extreme volatility",
+    "hint": "Keeps the price within a sensible range.",
+    "explanation": "Dynamic price bands (operating ranges) prevent fat-finger errors and manage extreme volatility by rejecting orders outside the range."
+  },
+  {
+    "id": 12,
+    "question": "Do F&O contracts have fixed daily price bands (Circuit Breakers) like cash market stocks?",
+    "options": [
+      "Yes, always 10%",
+      "No, they have dynamic operating ranges that can be relaxed",
+      "Yes, always 20%",
+      "No, there are no limits at all"
+    ],
+    "answer": "No, they have dynamic operating ranges that can be relaxed",
+    "hint": "Derivatives need to move freely.",
+    "explanation": "Unlike cash stocks which halt at circuits, F&O contracts have dynamic bands that are flexed (widened) by the exchange if the market hits the limit, to allow continuity."
+  },
+  {
+    "id": 13,
+    "question": "Which entity decides the list of stocks eligible for F&O trading?",
+    "options": [
+      "The Broker",
+      "SEBI",
+      "The Exchange (based on SEBI criteria)",
+      "The Companies themselves"
+    ],
+    "answer": "SEBI",
+    "hint": "The regulator sets the rules.",
+    "explanation": "SEBI sets the eligibility criteria (e.g., top 500, median quarter sigma, etc.), and exchanges select stocks that meet these criteria."
+  },
+  {
+    "id": 14,
+    "question": "A 'Trading Member' (TM) is:",
+    "options": [
+      "An investor",
+      "A member of the exchange who can execute trades",
+      "A clearing bank",
+      "A depository"
+    ],
+    "answer": "A member of the exchange who can execute trades",
+    "hint": "The broker who connects to the exchange.",
+    "explanation": "A Trading Member is a member of the stock exchange with the right to trade on its system on their own account or for clients."
+  },
+  {
+    "id": 15,
+    "question": "A 'Clearing Member' (CM) is:",
+    "options": [
+      "Responsible for settling trades and maintaining margins",
+      "Only responsible for executing trades",
+      "An investor",
+      "A regulator"
+    ],
+    "answer": "Responsible for settling trades and maintaining margins",
+    "hint": "They 'clear' the mess.",
+    "explanation": "Clearing Members are responsible for settling trades (funds and securities) and paying margins to the Clearing Corporation."
+  },
+  {
+    "id": 16,
+    "question": "Can a Trading Member also be a Clearing Member?",
+    "options": [
+      "No, never",
+      "Yes, known as a Self-Clearing Member (SCM) or Trading Cum Clearing Member (TCM)",
+      "Only for individuals",
+      "Only for banks"
+    ],
+    "answer": "Yes, known as a Self-Clearing Member (SCM) or Trading Cum Clearing Member (TCM)",
+    "hint": "Wearing two hats.",
+    "explanation": "Many large brokers are both Trading and Clearing members. Smaller brokers (Trading Members) may clear their trades through a Professional Clearing Member (PCM)."
+  },
+  {
+    "id": 17,
+    "question": "What is a 'Professional Clearing Member' (PCM)?",
+    "options": [
+      "A member who trades but does not clear",
+      "A member who clears trades for others but does not trade",
+      "A member who only trades for FIIs",
+      "A regulator"
+    ],
+    "answer": "A member who clears trades for others but does not trade",
+    "hint": "Cleaning up for others.",
+    "explanation": "PCMs (often banks or custodians) do not trade themselves but clear and settle trades for other Trading Members (TMs) and custodial participants."
+  },
+  {
+    "id": 18,
+    "question": "The unique code assigned to every client by the broker is:",
+    "options": [
+      "PAN Card",
+      "Client ID / UCC (Unique Client Code)",
+      "ISIN",
+      "Trade ID"
+    ],
+    "answer": "Client ID / UCC (Unique Client Code)",
+    "hint": "Unique to the client.",
+    "explanation": "UCC (Unique Client Code) is mandatory for all clients trading on exchanges to track their activity."
+  },
+  {
+    "id": 19,
+    "question": "In the NEAT system, a 'Buy' order is usually displayed in which color?",
+    "options": [
+      "Red",
+      "Blue",
+      "Green",
+      "Yellow"
+    ],
+    "answer": "Blue",
+    "hint": "Standard convention on NEAT.",
+    "explanation": "On the NSE NEAT terminal, Buy orders are typically Blue, and Sell orders are Red."
+  },
+  {
+    "id": 20,
+    "question": "The 'Best Buy Price' is the:",
+    "options": [
+      "Lowest price a buyer is willing to pay",
+      "Highest price a buyer is willing to pay",
+      "Last traded price",
+      "Opening price"
+    ],
+    "answer": "Highest price a buyer is willing to pay",
+    "hint": "Sellers want the best deal, which is the highest offer.",
+    "explanation": "The Best Buy Price is the highest bid available in the market at that moment."
+  },
+  {
+    "id": 21,
+    "question": "The 'Best Sell Price' is the:",
+    "options": [
+      "Highest price a seller is asking",
+      "Lowest price a seller is asking",
+      "Last traded price",
+      "Closing price"
+    ],
+    "answer": "Lowest price a seller is asking",
+    "hint": "Buyers want the best deal, which is the cheapest offer.",
+    "explanation": "The Best Sell Price is the lowest ask/offer available in the market at that moment."
+  },
+  {
+    "id": 22,
+    "question": "The difference between the Best Buy and Best Sell price is called:",
+    "options": [
+      "Spread (Bid-Ask Spread)",
+      "Margin",
+      "Premium",
+      "Brokerage"
+    ],
+    "answer": "Spread (Bid-Ask Spread)",
+    "hint": "The gap between them.",
+    "explanation": "The Bid-Ask Spread represents the cost of liquidity. A narrower spread indicates higher liquidity."
+  },
+  {
+    "id": 23,
+    "question": "If a user enters a 'Market Order' to Buy, it will be executed at:",
+    "options": [
+      "The Best Buy Price",
+      "The Best Sell Price (Ask)",
+      "The Last Traded Price",
+      "The Opening Price"
+    ],
+    "answer": "The Best Sell Price (Ask)",
+    "hint": "You buy from a seller.",
+    "explanation": "A market buy order matches against the best available sell order (Ask price) in the system."
+  },
+  {
+    "id": 24,
+    "question": "What happens if a Stop Loss Buy order is triggered?",
+    "options": [
+      "It is cancelled",
+      "It becomes a Market or Limit Buy order",
+      "It becomes a Sell order",
+      "It waits for the next day"
+    ],
+    "answer": "It becomes a Market or Limit Buy order",
+    "hint": "The trigger activates it.",
+    "explanation": "Once the market price touches the trigger price, the Stop Loss order is activated and enters the system as a regular buy order."
+  },
+  {
+    "id": 25,
+    "question": "A 'Disclosed Quantity' order allows a trader to:",
+    "options": [
+      "Hide the entire order quantity",
+      "Reveal only a part of the order quantity to the market",
+      "Show double the quantity",
+      "Cancel the order automatically"
+    ],
+    "answer": "Reveal only a part of the order quantity to the market",
+    "hint": "Iceberg order.",
+    "explanation": "Traders use disclosed quantity (Iceberg orders) to buy/sell large amounts without revealing the full size, to avoid panicking the market. (Note: Only a portion is shown, the rest is hidden)."
+  },
+  {
+    "id": 26,
+    "question": "The 'Strike Price' intervals for option contracts are decided by:",
+    "options": [
+      "The Broker",
+      "The Exchange",
+      "The Buyer",
+      "The Seller"
+    ],
+    "answer": "The Exchange",
+    "hint": "Standardization.",
+    "explanation": "The Exchange determines the step intervals (e.g., every 50 points for Nifty, or Rs 10 for stocks) for strike prices."
+  },
+  {
+    "id": 27,
+    "question": "When a new F&O contract is introduced, what is the minimum tenure available?",
+    "options": [
+      "1 month (Near month)",
+      "2 months",
+      "3 months",
+      "1 year"
+    ],
+    "answer": "3 months",
+    "hint": "Near, Next, Far.",
+    "explanation": "Normally, 3 monthly contracts are always available: Near Month, Next Month, and Far Month."
+  },
+  {
+    "id": 28,
+    "question": "If a stock pays a dividend of more than 5% of its market value (Extraordinary Dividend), option strikes are:",
+    "options": [
+      "Not adjusted",
+      "Adjusted to reflect the drop in price",
+      "Cancelled",
+      "Doubled"
+    ],
+    "answer": "Adjusted to reflect the drop in price",
+    "hint": "Fairness.",
+    "explanation": "For extraordinary dividends (usually >2% or 5% depending on current regulations), the exchange adjusts the Strike Prices to ensure option holders are not unfairly penalized by the price drop."
+  },
+  {
+    "id": 29,
+    "question": "If a company announces a 1:1 Bonus Issue, what happens to the F&O Lot Size?",
+    "options": [
+      "It remains same",
+      "It is halved",
+      "It is doubled",
+      "It becomes zero"
+    ],
+    "answer": "It is doubled",
+    "hint": "Price halves, so quantity doubles.",
+    "explanation": "To keep the contract value (Notional Value) roughly the same, if the price halves due to a 1:1 bonus, the Lot Size is doubled."
+  },
+  {
+    "id": 30,
+    "question": "Who provides the 'Counterparty Guarantee' for all F&O trades?",
+    "options": [
+      "The Broker",
+      "The Exchange / Clearing Corporation",
+      "SEBI",
+      "The RBI"
+    ],
+    "answer": "The Exchange / Clearing Corporation",
+    "hint": "Novation.",
+    "explanation": "The Clearing Corporation (e.g., NCL for NSE) acts as the central counterparty, guaranteeing settlement even if one party defaults."
+  },
+  {
+    "id": 31,
+    "question": "An 'Algo Trading' (Algorithmic Trading) facility allows:",
+    "options": [
+      "Manual trading only",
+      "Computer programs to generate and execute orders based on pre-defined strategies",
+      "Trading without money",
+      "Trading on holidays"
+    ],
+    "answer": "Computer programs to generate and execute orders based on pre-defined strategies",
+    "hint": "Robots trading.",
+    "explanation": "Algo trading uses software to execute strategies automatically at high speeds."
+  },
+  {
+    "id": 32,
+    "question": "Which of the following is strictly prohibited for F&O trading?",
+    "options": [
+      "Short Selling",
+      "Insider Trading",
+      "Hedging",
+      "Arbitrage"
+    ],
+    "answer": "Insider Trading",
+    "hint": "Trading on secret info.",
+    "explanation": "Trading based on Unpublished Price Sensitive Information (UPSI) is illegal and punishable."
+  },
+  {
+    "id": 33,
+    "question": "The time stamp on an order is important for:",
+    "options": [
+      "Calculating brokerage",
+      "Price-Time Priority matching",
+      "Tax purposes",
+      "Identifying the client"
+    ],
+    "answer": "Price-Time Priority matching",
+    "hint": "Who came first?",
+    "explanation": "The exact time the order hits the exchange server determines its priority in the queue if prices are identical."
+  },
+  {
+    "id": 34,
+    "question": "A 'Day Order' is valid until:",
+    "options": [
+      "The end of the trading session",
+      "The end of the week",
+      "It is executed",
+      "Forever"
+    ],
+    "answer": "The end of the trading session",
+    "hint": "Just for the day.",
+    "explanation": "A Day Order remains in the system until the market closes. If not executed by then, it is automatically cancelled."
+  },
+  {
+    "id": 35,
+    "question": "The 'Contract Period' or 'Expiration Day' for Indian equity derivatives is:",
+    "options": [
+      "Last Friday of the month",
+      "Last Thursday of the month",
+      "1st of the month",
+      "15th of the month"
+    ],
+    "answer": "Last Thursday of the month",
+    "hint": "Thursday Rule.",
+    "explanation": "Contracts expire on the last Thursday. If it is a holiday, they expire on the previous trading day (Wednesday)."
+  },
+  {
+    "id": 36,
+    "question": "Which ID allows a broker to trade on their own account?",
+    "options": [
+      "Client ID",
+      "Pro (Proprietary) Code",
+      "Institutional ID",
+      "Retail ID"
+    ],
+    "answer": "Pro (Proprietary) Code",
+    "hint": "Professional/Proprietary.",
+    "explanation": "Trades executed for the broker's own account are flagged as 'Pro' (Proprietary) trades, distinct from 'Cli' (Client) trades."
+  },
+  {
+    "id": 37,
+    "question": "Which mechanism halts trading in the ENTIRE market if the index falls by 10%, 15%, or 20%?",
+    "options": [
+      "Scrip-wise Price Band",
+      "Market-wide Circuit Breaker",
+      "Stop Loss",
+      "Margin Call"
+    ],
+    "answer": "Market-wide Circuit Breaker",
+    "hint": "Breaks the whole circuit.",
+    "explanation": "Market-wide circuit breakers stop trading across all equity and equity derivative markets to cool down panic."
+  },
+  {
+    "id": 38,
+    "question": "If a stock is in the 'Ban Period' in F&O, what activity is allowed?",
+    "options": [
+      "Creating new positions",
+      "Only reducing (squaring off) existing positions",
+      "Buying Calls only",
+      "Selling Puts only"
+    ],
+    "answer": "Only reducing (squaring off) existing positions",
+    "hint": "You can leave, but you can't enter.",
+    "explanation": "When open interest crosses 95% of the Market Wide Position Limit (MWPL), the stock enters a Ban Period. Traders can only exit/square off; new positions are penalized."
+  },
+  {
+    "id": 39,
+    "question": "The 'Market Wide Position Limit' (MWPL) is usually set at:",
+    "options": [
+      "20% of the number of shares held by non-promoters (Free Float)",
+      "50% of total shares",
+      "100% of promoter shares",
+      "Unlimited"
+    ],
+    "answer": "20% of the number of shares held by non-promoters (Free Float)",
+    "hint": "A limit on total speculation.",
+    "explanation": "The MWPL restricts the total OI in a stock to prevent excessive speculation relative to the actual free-float shares available."
+  },
+  {
+    "id": 40,
+    "question": "What is 'DMA' (Direct Market Access)?",
+    "options": [
+      "Trading directly with the CEO",
+      "Institutional clients placing orders directly into the exchange system through broker infrastructure",
+      "Retail clients visiting the exchange",
+      "Trading without a broker"
+    ],
+    "answer": "Institutional clients placing orders directly into the exchange system through broker infrastructure",
+    "hint": "Direct pipe for big players.",
+    "explanation": "DMA allows institutional investors to use their own software to place orders directly, bypassing the broker's manual dealer terminal, though still routed through the broker's ID."
+  },
+  {
+    "id": 41,
+    "question": "In the context of order matching, 'Best Price' for a Seller is:",
+    "options": [
+      "The highest possible price",
+      "The lowest possible price",
+      "The opening price",
+      "The closing price"
+    ],
+    "answer": "The highest possible price",
+    "hint": "Sellers want more money.",
+    "explanation": "While the system matches against the lowest *available* sell order (Ask) for a buyer, the seller *wants* the highest possible price."
+  },
+  {
+    "id": 42,
+    "question": "If a trader enters a Limit Buy Order at 100, and the Best Sell (Ask) is 98, what happens?",
+    "options": [
+      "Order is pending at 100",
+      "Order is executed at 98 (Best Price)",
+      "Order is rejected",
+      "Order is executed at 100"
+    ],
+    "answer": "Order is executed at 98 (Best Price)",
+    "hint": "The system gives you the better deal.",
+    "explanation": "Since the limit (100) is higher than the available price (98), the system executes it immediately at the better price of 98."
+  },
+  {
+    "id": 43,
+    "question": "Which facility allows members to test their software before deploying it on the live market?",
+    "options": [
+      "Mock Trading",
+      "Paper Trading",
+      "Live Trading",
+      "Insider Trading"
+    ],
+    "answer": "Mock Trading",
+    "hint": "A rehearsal.",
+    "explanation": "Exchanges conduct monthly Mock Trading sessions (usually on Saturdays) to allow members to test systems and contingencies."
+  },
+  {
+    "id": 44,
+    "question": "To become a Clearing Member, an entity must meet strictly defined:",
+    "options": [
+      "Net Worth and Deposit requirements",
+      "Political connections",
+      "Age requirements",
+      "Educational qualifications only"
+    ],
+    "answer": "Net Worth and Deposit requirements",
+    "hint": "Money talks.",
+    "explanation": "Clearing members handle risk, so they must have high net worth and maintain significant deposits with the exchange."
+  },
+  {
+    "id": 45,
+    "question": "Order confirmation slips must be maintained by the broker for:",
+    "options": [
+      "1 year",
+      "5 years",
+      "Forever",
+      "1 month"
+    ],
+    "answer": "5 years",
+    "hint": "Standard audit trail period.",
+    "explanation": "SEBI regulations generally require brokers to maintain records of orders and trades for a minimum of 5 years."
+  },
+  {
+    "id": 46,
+    "question": "Can a 'Good Till Cancelled' (GTC) order be placed in the derivative segment of NSE?",
+    "options": [
+      "Yes, always",
+      "No, only Day Orders and IOC are typically supported in F&O",
+      "Yes, for 1 year",
+      "Yes, for 1 week"
+    ],
+    "answer": "No, only Day Orders and IOC are typically supported in F&O",
+    "hint": "Derivatives are short term.",
+    "explanation": "Historically, Indian F&O segments have supported Day and IOC orders. While GTC exists in some systems, standard equity derivatives usually reset daily (Day orders)."
+  },
+  {
+    "id": 47,
+    "question": "A 'Spread Order' allows a trader to:",
+    "options": [
+      "Buy and Sell two different contracts simultaneously as a single strategy",
+      "Spread rumors",
+      "Buy shares slowly",
+      "Pay brokerage in installments"
+    ],
+    "answer": "Buy and Sell two different contracts simultaneously as a single strategy",
+    "hint": "Trading the difference.",
+    "explanation": "Spread orders allow entering complex strategies (like Calendar Spreads) in a single combination order to reduce execution risk."
+  },
+  {
+    "id": 48,
+    "question": "What is the primary role of the 'Clearing Corporation'?",
+    "options": [
+      "To provide trading tips",
+      "To guarantee settlement and manage risk",
+      "To issue IPOs",
+      "To audit companies"
+    ],
+    "answer": "To guarantee settlement and manage risk",
+    "hint": "Risk manager.",
+    "explanation": "The Clearing Corp (NSCCL/NCL) ensures that every trade is settled financially, even if a broker defaults."
+  },
+  {
+    "id": 49,
+    "question": "If a client wants to trade, they must sign which mandatory document with the broker?",
+    "options": [
+      "Member-Client Agreement",
+      "Partnership Deed",
+      "Will",
+      "Non-Disclosure Agreement"
+    ],
+    "answer": "Member-Client Agreement",
+    "hint": "The contract between you and the broker.",
+    "explanation": "The Member-Client Agreement outlines the rights and responsibilities of both the investor and the broker."
+  },
+  {
+    "id": 50,
+    "question": "Corporate actions (like Dividends, Splits) are adjusted in F&O contracts to ensure:",
+    "options": [
+      "The contract value remains neutral/fair",
+      "The buyer makes a profit",
+      "The seller makes a profit",
+      "The exchange earns fees"
+    ],
+    "answer": "The contract value remains neutral/fair",
+    "hint": "No free lunch, no unfair loss.",
+    "explanation": "Adjustments are made so that the economic value of the position remains unchanged before and after the corporate action."
+  }
+]

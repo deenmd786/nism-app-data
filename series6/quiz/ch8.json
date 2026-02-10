@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "question": "What is the settlement cycle currently followed in the Indian equity spot market?",
+    "options": ["T+0", "T+1", "T+2", "T+5"],
+    "answer": "T+1",
+    "hint": "Moved from T+2 recently.",
+    "explanation": "Indian stock exchanges have moved to the T+1 rolling settlement cycle, where trades are settled on the next working day."
+  },
+  {
+    "id": 2,
+    "question": "The process of delivering securities to the Clearing Corporation to fulfill a sale obligation is called:",
+    "options": ["Pay-in of Securities", "Pay-out of Securities", "Auction", "Bad Delivery"],
+    "answer": "Pay-in of Securities",
+    "hint": "Putting in shares.",
+    "explanation": "Pay-in is the process where the seller delivers securities to the Clearing Corporation (CC) on the settlement day."
+  },
+  {
+    "id": 3,
+    "question": "The process of receiving securities from the Clearing Corporation against a purchase is called:",
+    "options": ["Pay-in", "Pay-out", "Rectification", "Transmission"],
+    "answer": "Pay-out",
+    "hint": "Taking out shares.",
+    "explanation": "Pay-out is when the Clearing Corporation releases the securities to the buying broker/investor."
+  },
+  {
+    "id": 4,
+    "question": "Which account is used by a Clearing Member to receive securities from clients for Pay-in?",
+    "options": ["Beneficiary Account", "Pool Account / Settlement Account", "Suspense Account", "Current Account"],
+    "answer": "Pool Account / Settlement Account",
+    "hint": "A temporary holding area.",
+    "explanation": "The Clearing Member uses their Pool Account (or Principal Account) to collect shares from selling clients before delivering them to the CC."
+  },
+  {
+    "id": 5,
+    "question": "The instruction given by an investor to their DP to transfer shares is called:",
+    "options": ["Cheque", "Delivery Instruction Slip (DIS)", "Debit Note", "Contract Note"],
+    "answer": "Delivery Instruction Slip (DIS)",
+    "hint": "Like a cheque for shares.",
+    "explanation": "The DIS is the standard form used by investors to authorize a debit of securities from their demat account."
+  },
+  {
+    "id": 6,
+    "question": "A trade executed between two investors without involving the stock exchange mechanism is called:",
+    "options": ["On-market trade", "Off-market trade", "Illegal trade", "Insider trade"],
+    "answer": "Off-market trade",
+    "hint": "Direct transfer.",
+    "explanation": "Off-market trades are transactions settled directly between two parties (e.g., gift, private transfer) without going through the stock exchange clearing corporation."
+  },
+  {
+    "id": 7,
+    "question": "To execute an Off-market transfer, the investor must specify:",
+    "options": ["The Settlement Number", "The Target Client ID and DP ID", "The Stock Exchange Name", "The Broker Code"],
+    "answer": "The Target Client ID and DP ID",
+    "hint": "Where is it going?",
+    "explanation": "For an off-market transfer, the sender must provide the Target Client ID and Target DP ID of the receiver."
+  },
+  {
+    "id": 8,
+    "question": "Which market type is used for normal trading on the stock exchange?",
+    "options": ["Rolling Settlement", "Auction Market", "Block Deal Window", "Odd Lot Market"],
+    "answer": "Rolling Settlement",
+    "hint": "Every day is a settlement day.",
+    "explanation": "The Rolling Settlement market is the primary market where normal buying and selling takes place on a continuous basis."
+  },
+  {
+    "id": 9,
+    "question": "What is the 'Execution Date' on a Delivery Instruction Slip?",
+    "options": ["The date when the trade happened", "The date when the transfer should take place", "The date when the slip was printed", "The date of account opening"],
+    "answer": "The date when the transfer should take place",
+    "hint": "Future dated instructions.",
+    "explanation": "The Execution Date is the date on which the instruction is to be executed (processed) by the DP."
+  },
+  {
+    "id": 10,
+    "question": "If a seller fails to deliver shares for Pay-in, it results in:",
+    "options": ["Shortage / Failure to Deliver", "Surplus", "Penalty only", "Trade Cancellation"],
+    "answer": "Shortage / Failure to Deliver",
+    "hint": "Auction follows.",
+    "explanation": "Failure to deliver securities by the deadline results in a shortage, leading to an auction by the Clearing Corporation."
+  },
+  {
+    "id": 11,
+    "question": "The auction to buy shares for a shortage is conducted by:",
+    "options": ["The Depository", "The Clearing Corporation / Stock Exchange", "The Seller", "The Buyer"],
+    "answer": "The Clearing Corporation / Stock Exchange",
+    "hint": "Central counterparty responsibility.",
+    "explanation": "The Clearing Corporation conducts an auction in the specific market to purchase shares on behalf of the defaulting seller to deliver to the buyer."
+  },
+  {
+    "id": 12,
+    "question": "What is 'Inter-Depository Transfer'?",
+    "options": ["Transfer between two accounts within NSDL", "Transfer between NSDL and CDSL accounts", "Transfer between two brokers", "Transfer between Equity and Debt"],
+    "answer": "Transfer between NSDL and CDSL accounts",
+    "hint": "Across different depositories.",
+    "explanation": "An Inter-Depository Transfer (IDT) involves transferring securities from an account in one depository (e.g., NSDL) to an account in another depository (e.g., CDSL)."
+  },
+  {
+    "id": 13,
+    "question": "For an On-market trade, the DIS must mention the:",
+    "options": ["Target Client ID only", "Market Type and Settlement Number", "Price of the share", "Bank Account Number"],
+    "answer": "Market Type and Settlement Number",
+    "hint": "Linking to the specific trade cycle.",
+    "explanation": "For market trades, the DIS must specify the Market Type (e.g., Rolling) and the unique Settlement Number to identify which trade obligation is being met."
+  },
+  {
+    "id": 14,
+    "question": "What is 'Auto Pay-in' facility?",
+    "options": ["Automatic debit of shares from client account to broker's pool", "Automatic selling of shares", "Automatic buying of shares", "Automatic dividend payment"],
+    "answer": "Automatic debit of shares from client account to broker's pool",
+    "hint": "Reduces manual DIS submission.",
+    "explanation": "Auto Pay-in allows the DP to automatically debit the client's account and credit the broker's pool account based on the trade details provided by the broker (via POA)."
+  },
+  {
+    "id": 15,
+    "question": "In the T+1 cycle, by what time must the investor deliver shares to the broker?",
+    "options": ["By T+2 morning", "By T+1 morning (or usually T evening)", "By T+5", "Anytime"],
+    "answer": "By T+1 morning (or usually T evening)",
+    "hint": "Before the market pay-in deadline.",
+    "explanation": "To meet the pay-in deadline on T+1, investors typically need to provide the DIS or have shares available by the evening of T day or very early T+1."
+  },
+  {
+    "id": 16,
+    "question": "What is 'Direct Pay-out'?",
+    "options": ["Shares go from CC to Broker's Pool", "Shares go from CC directly to Client's Beneficiary Account", "Shares go to the RTA", "Shares go to the Bank"],
+    "answer": "Shares go from CC directly to Client's Beneficiary Account",
+    "hint": "Skipping the broker's pool.",
+    "explanation": "In Direct Pay-out, the Clearing Corporation credits the payout of securities directly to the buying client's beneficiary account, bypassing the broker's pool."
+  },
+  {
+    "id": 17,
+    "question": "If a client buys shares on Monday (T), when can they sell them?",
+    "options": ["Only after T+2", "Only after receiving delivery (T+1)", "Immediately (BTST - Buy Today Sell Tomorrow)", "After 1 year"],
+    "answer": "Immediately (BTST - Buy Today Sell Tomorrow)",
+    "hint": "Selling before delivery.",
+    "explanation": "Investors can sell shares they have bought even before receiving delivery (BTST), but they bear the risk if the purchase results in a short delivery."
+  },
+  {
+    "id": 18,
+    "question": "The deadline for Pay-in of securities and funds is set by:",
+    "options": ["The Broker", "The Depository", "The Clearing Corporation", "The Investor"],
+    "answer": "The Clearing Corporation",
+    "hint": "The central settler.",
+    "explanation": "The Clearing Corporation sets the strict timelines (e.g., 10:30 AM on T+1) by which members must complete pay-in."
+  },
+  {
+    "id": 19,
+    "question": "Which instruction is used to transfer shares from a Clearing Member's Pool Account to a Client's account?",
+    "options": ["Receipt Instruction", "Delivery Instruction", "Pledge Instruction", "Remat Request"],
+    "answer": "Delivery Instruction",
+    "hint": "Moving out.",
+    "explanation": "The Clearing Member issues a delivery instruction to move shares from their Pool Account to the Client's Beneficiary Account (Pay-out)."
+  },
+  {
+    "id": 20,
+    "question": "Can a DIS be used for both On-market and Off-market trades?",
+    "options": ["No, separate booklets are used", "Yes, the same slip format is used, just checkboxes differ", "Yes, but Off-market requires a stamp", "No, Off-market is verbal"],
+    "answer": "Yes, the same slip format is used, just checkboxes differ",
+    "hint": "Standard form.",
+    "explanation": "The standard DIS booklet can be used for both. The investor ticks 'Market' or 'Off-Market' and fills the relevant details (Settlement No. vs Target ID)."
+  },
+  {
+    "id": 21,
+    "question": "The 'Deadline Time' for submitting a DIS to the DP is usually:",
+    "options": ["48 hours before execution", "Specifically mentioned by the DP (e.g., 4 PM on T day)", "After the market closes", "Any time"],
+    "answer": "Specifically mentioned by the DP (e.g., 4 PM on T day)",
+    "hint": "To allow processing time.",
+    "explanation": "DPs set a deadline (e.g., 4 PM or 6 PM) for accepting DIS for next-day execution to ensure they have time to enter it into the system."
+  },
+  {
+    "id": 22,
+    "question": "What is 'SLB'?",
+    "options": ["Securities Lending and Borrowing", "Stock Listing Board", "Securities Liquidity Bond", "Short Long Board"],
+    "answer": "Securities Lending and Borrowing",
+    "hint": "Legal short selling mechanism.",
+    "explanation": "SLB is a mechanism that allows investors to lend their idle securities to earn a fee, or borrow securities to meet delivery obligations."
+  },
+  {
+    "id": 23,
+    "question": "In an SLB transaction, who guarantees the return of securities?",
+    "options": ["The Borrower", "The Lender", "The Clearing Corporation", "The Broker"],
+    "answer": "The Clearing Corporation",
+    "hint": "Central counterparty guarantee.",
+    "explanation": "The Clearing Corporation acts as the central counterparty for SLB transactions, guaranteeing the return of securities to the lender."
+  },
+  {
+    "id": 24,
+    "question": "A 'Block Deal' is a single trade having a value of more than:",
+    "options": ["Rs. 1 Crore", "Rs. 5 Crores", "Rs. 10 Crores", "Rs. 100 Crores"],
+    "answer": "Rs. 10 Crores",
+    "hint": "High value single transaction.",
+    "explanation": "Block deals are trades with a value greater than Rs. 10 Crores executed in a separate window."
+  },
+  {
+    "id": 25,
+    "question": "Does an Off-market trade attract Stamp Duty?",
+    "options": ["No", "Yes, it is levied by the Depository", "Only if it is a gift", "Only if value > 1 Lakh"],
+    "answer": "Yes, it is levied by the Depository",
+    "hint": "Transfer of ownership.",
+    "explanation": "Since July 2020, stamp duty is applicable on off-market transfers for consideration and is collected by the Depository."
+  },
+  {
+    "id": 26,
+    "question": "The 'Settlement Number' is a unique identifier for:",
+    "options": ["A specific client", "A specific security", "A specific settlement cycle/period", "A specific broker"],
+    "answer": "A specific settlement cycle/period",
+    "hint": "e.g., 2023051.",
+    "explanation": "The Settlement Number (e.g., N2023123) identifies a specific trading period and settlement cycle on the exchange."
+  },
+  {
+    "id": 27,
+    "question": "If a client sells shares but the broker forgets to execute the pay-in, what happens?",
+    "options": ["Nothing", "Short delivery -> Auction -> Penalty", "The broker pays from their pocket", "The client is fined"],
+    "answer": "Short delivery -> Auction -> Penalty",
+    "hint": "Systematic failure.",
+    "explanation": "If shares are not delivered to the CC, it results in a short delivery. The CC conducts an auction, and the price difference + penalty is recovered from the broker (who may recover from the client)."
+  },
+  {
+    "id": 28,
+    "question": "Can shares be transferred from NSDL to CDSL?",
+    "options": ["No", "Yes, using Inter-Depository Transfer", "Only if the company allows", "Only via physical certificates"],
+    "answer": "Yes, using Inter-Depository Transfer",
+    "hint": "Connectivity exists.",
+    "explanation": "Yes, shares can be moved between depositories using the Inter-Depository Transfer instruction."
+  },
+  {
+    "id": 29,
+    "question": "What is 'Margin Pledge'?",
+    "options": ["Selling shares to pay margin", "Pledging shares in favor of the Broker/CC to meet margin requirements", "Borrowing money", "Freezing shares"],
+    "answer": "Pledging shares in favor of the Broker/CC to meet margin requirements",
+    "hint": "Using shares as collateral for trading limits.",
+    "explanation": "Investors can pledge their securities in favor of the Trading Member (Broker) or Clearing Member to meet margin requirements for trading."
+  },
+  {
+    "id": 30,
+    "question": "In the case of 'Early Pay-in', the shares are transferred to the CC:",
+    "options": ["On settlement day", "Before the settlement day", "After settlement day", "Never"],
+    "answer": "Before the settlement day",
+    "hint": "Early.",
+    "explanation": "Early Pay-in involves delivering securities to the Clearing Corporation before the scheduled pay-in time, often to get margin benefits."
+  },
+  {
+    "id": 31,
+    "question": "Who provides the 'Transaction Statement' showing the debits and credits?",
+    "options": ["The Broker", "The Depository Participant (DP)", "The Exchange", "The Bank"],
+    "answer": "The Depository Participant (DP)",
+    "hint": "The account keeper.",
+    "explanation": "The DP provides the Transaction Statement (SOT) to the client, detailing all transfers (pay-in, pay-out, off-market)."
+  },
+  {
+    "id": 32,
+    "question": "Is it possible to cancel a DIS instruction?",
+    "options": ["No, once submitted it is final", "Yes, before the execution date/time", "Yes, even after execution", "Only with court order"],
+    "answer": "Yes, before the execution date/time",
+    "hint": "Before the action happens.",
+    "explanation": "An unexecuted instruction can be cancelled by the client by submitting a cancellation instruction before the execution deadline."
+  },
+  {
+    "id": 33,
+    "question": "The 'CM Pool Account' generally has a zero balance:",
+    "options": ["At the end of every settlement cycle", "Always", "Never", "Only on Sundays"],
+    "answer": "At the end of every settlement cycle",
+    "hint": "It's a transit account.",
+    "explanation": "The Pool Account is a transit account. Shares received from clients are paid-in to CC; shares received from CC are paid-out to clients. It should ideally be zero after settlement."
+  },
+  {
+    "id": 34,
+    "question": "What is 'Speed-e' (NSDL) or 'Easiest' (CDSL)?",
+    "options": ["Fast trading platforms", "Internet-based facilities for submitting DIS electronically", "Banking apps", "Gaming apps"],
+    "answer": "Internet-based facilities for submitting DIS electronically",
+    "hint": "Online instructions.",
+    "explanation": "These are web-based facilities provided by NSDL and CDSL allowing clients to submit delivery instructions online, eliminating physical DIS."
+  },
+  {
+    "id": 35,
+    "question": "If a client buys shares but does not pay the broker, the broker can:",
+    "options": ["Keep the shares in their own account (Client Unpaid Securities Account - CUSA)", "Sell the shares to recover dues", "Both A and B", "Nothing"],
+    "answer": "Both A and B",
+    "hint": "Broker protection.",
+    "explanation": "The broker can hold the shares in a specific 'Client Unpaid Securities Account' (CUSA) and, if payment is not made within 5 days, sell them to recover dues."
+  },
+  {
+    "id": 36,
+    "question": "Which of the following is required for an 'Off-market' transfer between two NSDL accounts?",
+    "options": ["Inter-Depository Instruction", "Intra-Depository Instruction", "Market Instruction", "Pledge Instruction"],
+    "answer": "Intra-Depository Instruction",
+    "hint": "Within the same depository.",
+    "explanation": "Transfer within the same depository (NSDL to NSDL) is an Intra-Depository transfer."
+  },
+  {
+    "id": 37,
+    "question": "The 'Record Date' is important for:",
+    "options": ["Determining the price", "Determining who gets corporate benefits (dividend/bonus)", "Determining the broker", "Determining the tax"],
+    "answer": "Determining who gets corporate benefits (dividend/bonus)",
+    "hint": "Snapshot date.",
+    "explanation": "The Record Date is the cut-off date. Investors whose names appear in the depository records (Benpos) on this date are eligible for benefits."
+  },
+  {
+    "id": 38,
+    "question": "Can a client give a 'Standing Instruction' to receiving credits automatically?",
+    "options": ["Yes", "No", "Only for IPOs", "Only for Debentures"],
+    "answer": "Yes",
+    "hint": "Convenience.",
+    "explanation": "Yes, clients can give a one-time standing instruction to automatically accept all credits into their account, avoiding the need for receipt instructions."
+  },
+  {
+    "id": 39,
+    "question": "If a DIS is lost in transit by the client:",
+    "options": ["Anyone can use it", "The client must inform the DP to 'Stop' the series", "The DP is responsible", "Nothing happens"],
+    "answer": "The client must inform the DP to 'Stop' the series",
+    "hint": "Blocking the lost cheque.",
+    "explanation": "The client must immediately inform the DP to stop the specific serial numbers of the lost DIS booklet to prevent misuse."
+  },
+  {
+    "id": 40,
+    "question": "In a 'Delivery versus Payment' (DVP) scenario (usually institutional), the settlement of funds and securities happens:",
+    "options": ["Separately", "Simultaneously", "Randomly", "Never"],
+    "answer": "Simultaneously",
+    "hint": "Risk mitigation.",
+    "explanation": "DVP ensures that delivery of securities happens only if payment is made (and vice versa), reducing settlement risk."
+  },
+  {
+    "id": 41,
+    "question": "What is the penalty for 'Short Delivery' in the auction market?",
+    "options": ["No penalty", "Only the price difference", "Price difference + Penalty charge", "Jail term"],
+    "answer": "Price difference + Penalty charge",
+    "hint": "It is punitive.",
+    "explanation": "The defaulting seller has to pay the difference if the auction price is higher, plus a penalty charge to the Clearing Corporation."
+  },
+  {
+    "id": 42,
+    "question": "Can a client transfer shares to their own account in another DP?",
+    "options": ["No", "Yes, it is an Off-market transfer", "Yes, it is a Market transfer", "Only if the broker agrees"],
+    "answer": "Yes, it is an Off-market transfer",
+    "hint": "Moving your own assets.",
+    "explanation": "Transferring shares between two accounts belonging to the same person (with different DPs) is an off-market transfer."
+  },
+  {
+    "id": 43,
+    "question": "The 'Market Type' code for normal rolling settlement is usually:",
+    "options": ["N or Rolling", "A or Auction", "TT or Trade for Trade", "Z or Block"],
+    "answer": "N or Rolling",
+    "hint": "Normal.",
+    "explanation": "Market types are coded. 'N' usually stands for Normal Rolling Settlement."
+  },
+  {
+    "id": 44,
+    "question": "What happens if the 'Execution Date' on the DIS is a holiday?",
+    "options": ["It is executed on the holiday", "It is executed on the next working day", "It is rejected", "It is cancelled"],
+    "answer": "It is executed on the next working day",
+    "hint": "Systems don't work on holidays.",
+    "explanation": "Instructions with an execution date falling on a holiday are processed on the next working day."
+  },
+  {
+    "id": 45,
+    "question": "For an Inter-Depository Transfer, does the client need to submit DIS to both DPs?",
+    "options": ["Yes", "No, only to the delivering DP", "No, only to the receiving DP", "No, the exchange handles it"],
+    "answer": "No, only to the delivering DP",
+    "hint": "Only the sender initiates.",
+    "explanation": "The sender submits the instruction to their DP (delivering DP). The receiving DP just receives the credit."
+  },
+  {
+    "id": 46,
+    "question": "Securities in the 'Suspense Account' of the company are those:",
+    "options": ["That are suspended from trading", "Pending for demat due to mismatch (e.g. IPO)", "That are fake", "That are pledged"],
+    "answer": "Pending for demat due to mismatch (e.g. IPO)",
+    "hint": "Unclaimed/Pending.",
+    "explanation": "In an IPO, if the demat account details are incorrect, shares may be credited to a suspense account until the investor corrects the details."
+  },
+  {
+    "id": 47,
+    "question": "Can a broker use a client's securities for their own purpose?",
+    "options": ["Yes, always", "No, strict segregation is required", "Yes, if they need money", "Only for 1 day"],
+    "answer": "No, strict segregation is required",
+    "hint": "SEBI rule.",
+    "explanation": "Brokers are strictly prohibited from misusing client securities. They must segregate client assets from proprietary assets."
+  },
+  {
+    "id": 48,
+    "question": "Pay-in of Funds is the responsibility of:",
+    "options": ["The Depository", "The Clearing Member (Broker)", "The RTA", "The Government"],
+    "answer": "The Clearing Member (Broker)",
+    "hint": "Money leg.",
+    "explanation": "The Clearing Member is responsible for transferring funds to the Clearing Corporation's bank account for pay-in."
+  },
+  {
+    "id": 49,
+    "question": "Who acts as the counterparty for all trades in the 'Rolling Settlement'?",
+    "options": ["The Broker", "The Clearing Corporation", "The Buyer/Seller directly", "The Depository"],
+    "answer": "The Clearing Corporation",
+    "hint": "Novation.",
+    "explanation": "The Clearing Corporation uses the process of 'Novation' to become the buyer to every seller and seller to every buyer, guaranteeing settlement."
+  },
+  {
+    "id": 50,
+    "question": "If a DIS is rejected by the system due to 'Insufficient Balance':",
+    "options": ["The DP pays the difference", "The instruction fails and is not executed", "The system waits for balance", "The account is closed"],
+    "answer": "The instruction fails and is not executed",
+    "hint": "You can't transfer what you don't have.",
+    "explanation": "If the free balance is insufficient on the execution date, the instruction fails."
+  }
+]

@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1,
+    "question": "A large textile exporter expects to receive a payment of $1 million in three months. To protect against the risk of the USD depreciating against the INR, the exporter enters into a forward contract to sell USD. What role is the exporter playing in the derivatives market?",
+    "options": [
+      "Speculator",
+      "Arbitrageur",
+      "Hedger",
+      "Market Maker"
+    ],
+    "answer": "Hedger",
+    "hint": "The primary intent is risk reduction, not profit from price movement.",
+    "explanation": "Hedgers use derivatives to reduce or eliminate the risk associated with price movements in an asset they own or expect to own. The exporter is locking in a rate to mitigate currency risk."
+  },
+  {
+    "id": 2,
+    "question": "Which of the following statements strictly differentiates an Over-the-Counter (OTC) derivative from an Exchange-Traded Derivative (ETD)?",
+    "options": [
+      "OTC contracts are standardized while ETD contracts are customized.",
+      "OTC contracts carry counterparty risk, whereas ETD contracts are guaranteed by the Clearing Corporation.",
+      "OTC contracts have high liquidity compared to ETD contracts.",
+      "ETD contracts are privately negotiated between two parties."
+    ],
+    "answer": "OTC contracts carry counterparty risk, whereas ETD contracts are guaranteed by the Clearing Corporation.",
+    "hint": "Think about who guarantees the settlement of the trade.",
+    "explanation": "OTC trades happen directly between parties and carry the risk that one party defaults. ETDs are settled by a Clearing Corporation, which acts as the counterparty to every trade, eliminating counterparty risk."
+  },
+  {
+    "id": 3,
+    "question": "Mr. Sharma observes that the price of Reliance Industries futures is trading at a significant discount to the spot price, which implies a risk-free profit opportunity. He buys the futures and sells the spot simultaneously. What is this strategy called?",
+    "options": [
+      "Directional Trading",
+      "Arbitrage",
+      "Hedging",
+      "Spreading"
+    ],
+    "answer": "Arbitrage",
+    "hint": "It involves simultaneous buying and selling to profit from price misalignments.",
+    "explanation": "Arbitrage involves locking in a risk-free profit by simultaneously entering into transactions in two or more markets to exploit price inefficiencies."
+  },
+  {
+    "id": 4,
+    "question": "In the context of the Indian derivatives market, which of the following is NOT a feature of a Futures contract?",
+    "options": [
+      "Standardized contract terms",
+      "Daily Mark-to-Market settlement",
+      "Customizable expiry dates",
+      "Availability of a central counterparty"
+    ],
+    "answer": "Customizable expiry dates",
+    "hint": "Can you choose any random date for a Futures expiry on the NSE?",
+    "explanation": "Futures contracts are standardized, meaning their expiry dates are fixed by the exchange (e.g., last Thursday of the month). They cannot be customized like OTC Forwards."
+  },
+  {
+    "id": 5,
+    "question": "Derivatives are often criticized for their high leverage. If a trader pays a 10% margin to take a position worth ₹10,00,000, what is the leverage multiplier?",
+    "options": [
+      "5x",
+      "10x",
+      "20x",
+      "100x"
+    ],
+    "answer": "10x",
+    "hint": "Leverage = Contract Value / Margin Paid.",
+    "explanation": "Leverage allows a trader to control a large contract value with a small margin. Here, ₹10,00,000 / ₹1,00,000 (10%) = 10x leverage."
+  },
+  {
+    "id": 6,
+    "question": "Which of the following is the underlying asset for an Interest Rate Derivative?",
+    "options": [
+      "Equity Index",
+      "Treasury Bond or T-Bill",
+      "Gold",
+      "Currency Pair"
+    ],
+    "answer": "Treasury Bond or T-Bill",
+    "hint": "Interest rates are directly tied to debt instruments.",
+    "explanation": "Interest rate derivatives derive their value from an underlying debt instrument like a bond, T-Bill, or a benchmark interest rate (like MIBOR)."
+  },
+  {
+    "id": 7,
+    "question": "An investor owns a portfolio of blue-chip stocks worth ₹50 Lakhs. He is worried about a market crash due to upcoming election results but does not want to sell his holdings. What is the most appropriate action?",
+    "options": [
+      "Sell Index Futures",
+      "Buy Index Futures",
+      "Buy Call Options on individual stocks",
+      "Do nothing"
+    ],
+    "answer": "Sell Index Futures",
+    "hint": "He needs to protect the portfolio value against a decline (short hedge).",
+    "explanation": "This is a 'Short Hedge'. By selling Index Futures, any loss in the portfolio value due to a market fall will be offset by profits from the short futures position."
+  },
+  {
+    "id": 8,
+    "question": "The spot price of Gold is ₹60,000. The 1-year Forward price is ₹65,000. If the risk-free rate is 6% and storage costs are negligible, is there an arbitrage opportunity?",
+    "options": [
+      "No, the price is fair.",
+      "Yes, by buying Spot and selling Forward.",
+      "Yes, by selling Spot and buying Forward.",
+      "Cannot be determined without storage cost data."
+    ],
+    "answer": "Yes, by buying Spot and selling Forward.",
+    "hint": "Calculate Fair Forward Price = Spot * (1 + r).",
+    "explanation": "Fair Price = 60,000 * 1.06 = ₹63,600. The market forward is ₹65,000 (overpriced). The arbitrageur should Buy Spot (Cheaper) and Sell Forward (Expensive) to lock in a profit."
+  },
+  {
+    "id": 9,
+    "question": "Which entity is responsible for the risk management and settlement of trades executed on the National Stock Exchange (NSE) derivatives segment?",
+    "options": [
+      "SEBI",
+      "NSDL",
+      "NSE Clearing Limited (NCL)",
+      "RBI"
+    ],
+    "answer": "NSE Clearing Limited (NCL)",
+    "hint": "It was formerly known as NSCCL.",
+    "explanation": "NSE Clearing Limited (NCL) is the clearing corporation for NSE that handles settlement and risk management, acting as the central counterparty."
+  },
+  {
+    "id": 10,
+    "question": "In a 'Cash Settled' derivative contract, what happens on the expiry date?",
+    "options": [
+      "Physical delivery of the asset is mandatory.",
+      "The contract is extended automatically.",
+      "The difference between the entry price and settlement price is paid/received in cash.",
+      "The contract becomes void."
+    ],
+    "answer": "The difference between the entry price and settlement price is paid/received in cash.",
+    "hint": "Index futures in India are always settled this way.",
+    "explanation": "Cash settlement involves netting the financial difference between the trade price and the final settlement price, without the physical exchange of goods or shares."
+  },
+  {
+    "id": 11,
+    "question": "Nifty 50 is an example of which type of index construction method?",
+    "options": [
+      "Full Market Capitalization Weighted",
+      "Price Weighted",
+      "Free-Float Market Capitalization Weighted",
+      "Equal Weighted"
+    ],
+    "answer": "Free-Float Market Capitalization Weighted",
+    "hint": "It only considers shares available for trading, not promoter holdings.",
+    "explanation": "The Nifty 50 index is computed using the free-float market capitalization method, where the level of the index reflects the total free-float market value of all the stocks in the index relative to a base period."
+  },
+  {
+    "id": 12,
+    "question": "A stock has a Beta of 1.5. If the Nifty 50 index rises by 2%, how much is the stock expected to rise theoretically?",
+    "options": [
+      "1.5%",
+      "2%",
+      "3%",
+      "0.5%"
+    ],
+    "answer": "3%",
+    "hint": "Expected Return = Beta * Market Return.",
+    "explanation": "Beta measures sensitivity. 1.5 * 2% = 3%. The stock is expected to move 1.5 times the market movement."
+  },
+  {
+    "id": 13,
+    "question": "While executing a large order for a Nifty Index stock, the difference between the best buy price and the best sell price increases significantly. What is this cost known as?",
+    "options": [
+      "Transaction Tax",
+      "Impact Cost",
+      "Opportunity Cost",
+      "Brokerage"
+    ],
+    "answer": "Impact Cost",
+    "hint": "It represents the liquidity of the stock.",
+    "explanation": "Impact cost represents the cost of executing a transaction in a given security, specifically the bid-ask spread and the price slippage caused by low liquidity."
+  },
+  {
+    "id": 14,
+    "question": "Why is 'Impact Cost' a critical metric for an Index Fund Manager?",
+    "options": [
+      "It determines the dividend yield.",
+      "It affects the tracking error of the fund.",
+      "It decides the entry load for investors.",
+      "It is mandated by SEBI for tax purposes."
+    ],
+    "answer": "It affects the tracking error of the fund.",
+    "hint": "High trading costs make it hard to replicate the index perfectly.",
+    "explanation": "If impact costs are high, the fund manager cannot buy/sell stocks at the exact index prices, leading to a deviation in returns compared to the index (Tracking Error)."
+  },
+  {
+    "id": 15,
+    "question": "Which of the following events would strictly require an adjustment to the Nifty Index divisor?",
+    "options": [
+      "Market price fluctuation of a constituent stock",
+      "A constituent stock declaring a normal cash dividend",
+      "Replacement of a stock in the index (Change in constituents)",
+      "Increase in trading volume"
+    ],
+    "answer": "Replacement of a stock in the index (Change in constituents)",
+    "hint": "The index value shouldn't jump just because a new stock is added.",
+    "explanation": "When a stock is replaced or corporate actions like rights issues occur, the base market capitalization changes. To keep the index value continuous, the divisor is adjusted."
+  },
+  {
+    "id": 16,
+    "question": "Spot Price of ABC Ltd is ₹1000. Risk-free interest rate is 6% p.a. What is the theoretical 3-month Futures price? (Use simple interest, non-dividend paying).",
+    "options": [
+      "₹1060",
+      "₹1015",
+      "₹1005",
+      "₹1000"
+    ],
+    "answer": "₹1015",
+    "hint": "F = S * (1 + r * t/12).",
+    "explanation": "Cost of Carry model: F = 1000 * (1 + 0.06 * 3/12) = 1000 * (1 + 0.015) = ₹1015."
+  },
+  {
+    "id": 17,
+    "question": "If the Futures price is GREATER than the Spot price, the market is said to be in:",
+    "options": [
+      "Backwardation",
+      "Contango",
+      "Equilibrium",
+      "Discount"
+    ],
+    "answer": "Contango",
+    "hint": "Cost of carry is positive.",
+    "explanation": "When Futures > Spot, it implies a positive cost of carry, and the market is in Contango. If Futures < Spot, it is Backwardation."
+  },
+  {
+    "id": 18,
+    "question": "A trader buys 1 lot of Nifty Futures at 18,000. The lot size is 50. The next day, the settlement price is 17,900. What is the Mark-to-Market (MTM) impact on his account?",
+    "options": [
+      "Credit of ₹5,000",
+      "Debit of ₹5,000",
+      "Debit of ₹10,000",
+      "No change until expiry"
+    ],
+    "answer": "Debit of ₹5,000",
+    "hint": "Loss = (New Price - Old Price) * Lot Size.",
+    "explanation": "Loss = (17,900 - 18,000) * 50 = -100 * 50 = -₹5,000. This amount is debited from the margin account."
+  },
+  {
+    "id": 19,
+    "question": "What is 'Initial Margin' in a Futures contract primarily intended to cover?",
+    "options": [
+      "The brokerage fees of the exchange.",
+      "The worst-case one-day loss (Value at Risk).",
+      "The total value of the contract.",
+      "Interest payments on borrowed funds."
+    ],
+    "answer": "The worst-case one-day loss (Value at Risk).",
+    "hint": "It protects the clearing corporation if a client defaults.",
+    "explanation": "Initial Margin is based on VAR (Value at Risk) to cover the largest potential loss a position could face in a single day with a high confidence level (e.g., 99%)."
+  },
+  {
+    "id": 20,
+    "question": "On expiry day, the Futures price of any asset MUST theoretically equal:",
+    "options": [
+      "The Strike Price",
+      "The Spot Price",
+      "The Forward Price of next month",
+      "Zero"
+    ],
+    "answer": "The Spot Price",
+    "hint": "This is called Convergence.",
+    "explanation": "On expiry, the cost of carry becomes zero (time = 0). Therefore, the Futures price must converge to the Spot price."
+  },
+  {
+    "id": 21,
+    "question": "Stock A pays a dividend of ₹10. The Spot Price is ₹500. Risk-free rate is 8%. Time to expiry is 6 months. What is the fair Futures price?",
+    "options": [
+      "₹520",
+      "₹510",
+      "₹530",
+      "More information needed"
+    ],
+    "answer": "₹510",
+    "hint": "F = S + Cost of Carry - Dividend.",
+    "explanation": "Interest Cost = 500 * 0.08 * 6/12 = ₹20. Fair Futures = Spot + Interest - Dividend = 500 + 20 - 10 = ₹510."
+  },
+  {
+    "id": 22,
+    "question": "A trader sells a Futures contract. He is expecting the market to:",
+    "options": [
+      "Rise significantly",
+      "Remain volatile",
+      "Fall",
+      "Stay exactly flat"
+    ],
+    "answer": "Fall",
+    "hint": "Short Futures makes money when prices drop.",
+    "explanation": "Selling a Future (Shorting) is a bearish strategy. The trader profits if the price goes down."
+  },
+  {
+    "id": 23,
+    "question": "What is 'Open Interest' (OI) in the context of Futures trading?",
+    "options": [
+      "The total number of contracts traded in a day.",
+      "The number of contracts that have not yet been settled or squared off.",
+      "The interest rate charged on margin funding.",
+      "The number of new buyers entering the market."
+    ],
+    "answer": "The number of contracts that have not yet been settled or squared off.",
+    "hint": "It represents positions still 'open' overnight.",
+    "explanation": "Open Interest is the total number of outstanding contracts held by market participants at the end of the day."
+  },
+  {
+    "id": 24,
+    "question": "If the price of a Future rises and Open Interest also rises significantly, it is generally interpreted as:",
+    "options": [
+      "Short Covering",
+      "Long Buildup",
+      "Long Unwinding",
+      "Short Buildup"
+    ],
+    "answer": "Long Buildup",
+    "hint": "New money is entering to buy.",
+    "explanation": "Price Up + OI Up indicates new buyers are entering the market aggressively, creating new long positions (Long Buildup)."
+  },
+  {
+    "id": 25,
+    "question": "You have a short position in July Futures. To close this position before expiry, what order must you place?",
+    "options": [
+      "Sell July Futures",
+      "Buy August Futures",
+      "Buy July Futures",
+      "Sell Cash Market Shares"
+    ],
+    "answer": "Buy July Futures",
+    "hint": "Squaring off a short requires the opposite transaction.",
+    "explanation": "To square off a Short position, you must execute a Buy order for the same contract (same expiry)."
+  },
+  {
+    "id": 26,
+    "question": "What is the primary difference between Forwards and Futures regarding settlement?",
+    "options": [
+      "Forwards are daily settled; Futures are settled at maturity.",
+      "Futures are daily settled (MTM); Forwards are settled at maturity.",
+      "Both are daily settled.",
+      "Both are settled only at maturity."
+    ],
+    "answer": "Futures are daily settled (MTM); Forwards are settled at maturity.",
+    "hint": "Think about margin calls.",
+    "explanation": "Futures have daily Mark-to-Market (MTM) settlement where profits/losses are adjusted daily. Forwards settle only on the final date."
+  },
+  {
+    "id": 27,
+    "question": "Which term describes the number of shares contained in one contract of a derivative?",
+    "options": [
+      "Tick Size",
+      "Lot Size",
+      "Basis",
+      "Open Interest"
+    ],
+    "answer": "Lot Size",
+    "hint": "It is the contract multiplier.",
+    "explanation": "The Lot Size (or contract multiplier) specifies the quantity of the underlying asset covered by one derivative contract."
+  },
+  {
+    "id": 28,
+    "question": "A trader goes long on 1 lot of Tata Steel Futures at ₹110. He sets a Stop Loss at ₹105. What is his maximum loss per share if the Stop Loss triggers?",
+    "options": [
+      "₹5",
+      "₹110",
+      "Unlimited",
+      "₹10"
+    ],
+    "answer": "₹5",
+    "hint": "Loss = Buy Price - Sell Price.",
+    "explanation": "Loss per share = Entry (110) - Stop Loss (105) = ₹5. (Total loss would be ₹5 * Lot Size)."
+  },
+  {
+    "id": 29,
+    "question": "Who sets the daily price bands (circuit limits) for Futures contracts on individual stocks in India?",
+    "options": [
+      "The Broker",
+      "SEBI",
+      "The Exchange (based on SEBI guidelines)",
+      "The Reserve Bank of India"
+    ],
+    "answer": "The Exchange (based on SEBI guidelines)",
+    "hint": "Usually starts at 10%.",
+    "explanation": "The Exchange sets operating ranges or price bands (typically 10%) to manage volatility. However, for F&O stocks, these bands are flexible and can be relaxed once hit."
+  },
+  {
+    "id": 30,
+    "question": "Which of the following creates a 'Synthetic Long' position?",
+    "options": [
+      "Long Future + Short Call",
+      "Long Spot + Short Future",
+      "Long Call + Short Put (same strike/expiry)",
+      "Short Put only"
+    ],
+    "answer": "Long Call + Short Put (same strike/expiry)",
+    "hint": "Put-Call Parity.",
+    "explanation": "According to Put-Call Parity, buying a Call and selling a Put at the same strike mimics the payoff of buying the underlying Future (Synthetic Long)."
+  },
+  {
+    "id": 31,
+    "question": "A calendar spread in Futures involves:",
+    "options": [
+      "Buying Spot and Selling Future.",
+      "Buying a Future of one expiry and Selling a Future of a different expiry.",
+      "Buying a Call and Selling a Put.",
+      "Buying Nifty Future and Selling Bank Nifty Future."
+    ],
+    "answer": "Buying a Future of one expiry and Selling a Future of a different expiry.",
+    "hint": "Spread across time.",
+    "explanation": "A Calendar Spread involves taking opposite positions in futures contracts of the same underlying but different expiry months (e.g., Long Jan Future, Short Feb Future)."
+  },
+  {
+    "id": 32,
+    "question": "Calculate the Basis if Spot Price = 1500 and Futures Price = 1520.",
+    "options": [
+      "20",
+      "-20",
+      "1500",
+      "1.01"
+    ],
+    "answer": "-20",
+    "hint": "Basis = Spot - Future.",
+    "explanation": "Basis is defined as Spot Price minus Futures Price. 1500 - 1520 = -20. (Negative basis implies Contango)."
+  },
+  {
+    "id": 33,
+    "question": "Which margin is collected to handle 'fat tail' risks or extreme market movements beyond the normal VAR limits?",
+    "options": [
+      "Span Margin",
+      "Exposure Margin",
+      "Maintenance Margin",
+      "Premium Margin"
+    ],
+    "answer": "Exposure Margin",
+    "hint": "It is charged over and above SPAN.",
+    "explanation": "Exposure Margin is an additional margin charged over the SPAN margin to cover risks that may arise from extreme market volatility (black swan events)."
+  },
+  {
+    "id": 34,
+    "question": "If a clearing member defaults, what is the first layer of defense used by the Clearing Corporation?",
+    "options": [
+      "Trade Guarantee Fund",
+      "Defaulting member's margins and deposits",
+      "Assets of the Exchange",
+      "Insurance Policy"
+    ],
+    "answer": "Defaulting member's margins and deposits",
+    "hint": "Whose money is used first?",
+    "explanation": "The first line of defense is always the defaulting member's own margins and security deposits held with the Clearing Corporation."
+  },
+  {
+    "id": 35,
+    "question": "In the Indian market, Equity Futures expire on:",
+    "options": [
+      "Last Friday of the month",
+      "Last Thursday of the month",
+      "First Thursday of the month",
+      "Third Friday of the month"
+    ],
+    "answer": "Last Thursday of the month",
+    "hint": "If Thursday is a holiday, it's the previous trading day.",
+    "explanation": "Equity Derivatives in India expire on the last Thursday of the contract month."
+  },
+  {
+    "id": 36,
+    "question": "A buyer of a Call Option has:",
+    "options": [
+      "The obligation to buy the asset.",
+      "The right, but not the obligation, to buy the asset.",
+      "The obligation to sell the asset.",
+      "The right, but not the obligation, to sell the asset."
+    ],
+    "answer": "The right, but not the obligation, to buy the asset.",
+    "hint": "Call = Buy, Option = Choice.",
+    "explanation": "A Call Option gives the holder the right to buy the underlying asset at a specified strike price, but they are not forced to do so."
+  },
+  {
+    "id": 37,
+    "question": "Mr. X sells a Put Option with Strike ₹500 for a Premium of ₹20. What is his maximum possible profit?",
+    "options": [
+      "Unlimited",
+      "₹500",
+      "₹480",
+      "₹20"
+    ],
+    "answer": "₹20",
+    "hint": "The seller's gain is limited to what he receives upfront.",
+    "explanation": "An option seller's maximum profit is limited to the premium received. In this case, ₹20."
+  },
+  {
+    "id": 38,
+    "question": "Spot Price = ₹900. Strike Price = ₹950. For a Call Option, this position is:",
+    "options": [
+      "In the Money (ITM)",
+      "At the Money (ATM)",
+      "Out of the Money (OTM)",
+      "Deep ITM"
+    ],
+    "answer": "Out of the Money (OTM)",
+    "hint": "Would you exercise the right to buy at 950 if market price is 900?",
+    "explanation": "For a Call Option, if Spot < Strike, it is Out of the Money. Buying at 950 when market is 900 makes no sense, so it has no intrinsic value."
+  },
+  {
+    "id": 39,
+    "question": "Calculate the Intrinsic Value of a Put Option if Spot = ₹200 and Strike = ₹240.",
+    "options": [
+      "₹0",
+      "₹40",
+      "-₹40",
+      "₹200"
+    ],
+    "answer": "₹40",
+    "hint": "Put Intrinsic Value = Max(Strike - Spot, 0).",
+    "explanation": "Intrinsic Value for Put = Strike - Spot = 240 - 200 = ₹40."
+  },
+  {
+    "id": 40,
+    "question": "Which Option Greek measures the sensitivity of the option premium to changes in the price of the underlying asset?",
+    "options": [
+      "Theta",
+      "Vega",
+      "Delta",
+      "Rho"
+    ],
+    "answer": "Delta",
+    "hint": "Change in Premium / Change in Underlying.",
+    "explanation": "Delta measures how much the option price changes for a 1-unit change in the underlying asset's price."
+  },
+  {
+    "id": 41,
+    "question": "An option contract that can be exercised ONLY on the expiry date is called:",
+    "options": [
+      "American Option",
+      "European Option",
+      "Asian Option",
+      "Bermudan Option"
+    ],
+    "answer": "European Option",
+    "hint": "Indian Index options follow this style.",
+    "explanation": "European Options can only be exercised on the maturity date. American options can be exercised any time before maturity."
+  },
+  {
+    "id": 42,
+    "question": "What is the 'Time Value' of an option that is deeply Out of the Money (OTM) near expiry?",
+    "options": [
+      "Very High",
+      "Equal to Strike Price",
+      "Close to Zero",
+      "Negative"
+    ],
+    "answer": "Close to Zero",
+    "hint": "Time decay accelerates near expiry.",
+    "explanation": "As expiry approaches, the probability of an OTM option becoming profitable decreases, eroding its Time Value to near zero."
+  },
+  {
+    "id": 43,
+    "question": "If you expect the market volatility to increase significantly but are unsure of the direction (up or down), which strategy should you deploy?",
+    "options": [
+      "Short Straddle",
+      "Long Straddle",
+      "Covered Call",
+      "Protective Put"
+    ],
+    "answer": "Long Straddle",
+    "hint": "Buy both Call and Put.",
+    "explanation": "A Long Straddle involves buying a Call and a Put at the same strike. You profit if the market moves massively in EITHER direction (high volatility)."
+  },
+  {
+    "id": 44,
+    "question": "A trader buys a Call Option at Strike 100 for Premium 10. The break-even point for the trader is:",
+    "options": [
+      "90",
+      "100",
+      "110",
+      "120"
+    ],
+    "answer": "110",
+    "hint": "Strike + Premium.",
+    "explanation": "For a Call Buyer, Break-even = Strike Price + Premium Paid = 100 + 10 = 110."
+  },
+  {
+    "id": 45,
+    "question": "Which of the following factors affects the Option Premium?",
+    "options": [
+      "Spot Price of Underlying",
+      "Volatility",
+      "Time to Expiry",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "hint": "Black-Scholes model inputs.",
+    "explanation": "Option pricing depends on Spot price, Strike price, Volatility, Time to expiry, and Risk-free interest rate."
+  },
+  {
+    "id": 46,
+    "question": "As time passes, holding all other factors constant, the value of an option decreases. Which Greek represents this time decay?",
+    "options": [
+      "Delta",
+      "Gamma",
+      "Theta",
+      "Vega"
+    ],
+    "answer": "Theta",
+    "hint": "Time -> Theta.",
+    "explanation": "Theta measures the rate of decline in the value of an option due to the passage of time (Time Decay)."
+  },
+  {
+    "id": 47,
+    "question": "You sold a Call Option. The Delta of this option is likely to be:",
+    "options": [
+      "Positive (0 to 1)",
+      "Negative (-1 to 0)",
+      "Always 1",
+      "Always -1"
+    ],
+    "answer": "Negative (-1 to 0)",
+    "hint": "Selling a call is bearish.",
+    "explanation": "A Long Call has positive Delta. Therefore, a Short Call (Selling a Call) has negative Delta. You lose money if the market rises."
+  },
+  {
+    "id": 48,
+    "question": "What is the maximum loss for a buyer of a Put Option?",
+    "options": [
+      "Strike Price",
+      "Spot Price",
+      "Premium Paid",
+      "Unlimited"
+    ],
+    "answer": "Premium Paid",
+    "hint": "Buyers have limited risk.",
+    "explanation": "For an option buyer (Call or Put), the loss is strictly limited to the Premium paid to purchase the option."
+  },
+  {
+    "id": 49,
+    "question": "If Volatility (Vega) increases, what happens to the price of both Call and Put options usually?",
+    "options": [
+      "Both increase",
+      "Both decrease",
+      "Call increases, Put decreases",
+      "Call decreases, Put increases"
+    ],
+    "answer": "Both increase",
+    "hint": "Higher uncertainty commands a higher premium.",
+    "explanation": "Higher volatility increases the probability of the option ending up ITM. Thus, both Call and Put premiums increase."
+  },
+  {
+    "id": 50,
+    "question": "A 'Covered Call' strategy involves:",
+    "options": [
+      "Buying Stock + Buying Put",
+      "Buying Stock + Selling Call",
+      "Selling Stock + Buying Call",
+      "Selling Stock + Selling Put"
+    ],
+    "answer": "Buying Stock + Selling Call",
+    "hint": "You 'cover' the risk of the call sold with the stock you own.",
+    "explanation": "Covered Call involves holding the underlying stock (Long Stock) and selling a Call Option (Short Call) to generate income from the premium."
+  },
+  {
+    "id": 51,
+    "question": "Strike Price = 100, Spot Price = 100. This option is termed as:",
+    "options": [
+      "ITM",
+      "OTM",
+      "ATM",
+      "CTM"
+    ],
+    "answer": "ATM",
+    "hint": "At The Money.",
+    "explanation": "When Strike = Spot, the option is At The Money (ATM)."
+  },
+  {
+    "id": 52,
+    "question": "Which Greek is highest for At-The-Money (ATM) options?",
+    "options": [
+      "Delta",
+      "Vega",
+      "Theta",
+      "Rho"
+    ],
+    "answer": "Vega",
+    "hint": "ATM options are most sensitive to volatility changes.",
+    "explanation": "Vega (sensitivity to volatility) is typically highest for ATM options because a small change in volatility has the biggest impact on the probability of them finishing ITM."
+  },
+  {
+    "id": 53,
+    "question": "The relationship 'Spot Price - Strike Price' defines the Intrinsic Value for:",
+    "options": [
+      "Call Option",
+      "Put Option",
+      "Both",
+      "Neither"
+    ],
+    "answer": "Call Option",
+    "hint": "Call is the right to buy.",
+    "explanation": "Intrinsic Value of Call = Max(Spot - Strike, 0). For Put, it is Max(Strike - Spot, 0)."
+  },
+  {
+    "id": 54,
+    "question": "If you Buy a Call and Buy a Put at the same Strike and Expiry, but the Call Strike is HIGHER than the Put Strike, this is NOT a straddle. What is it?",
+    "options": [
+      "Strangle",
+      "Straddle",
+      "It is an invalid strategy",
+      "Reverse Strangle (Guts)"
+    ],
+    "answer": "Reverse Strangle (Guts)",
+    "hint": "Usually, Long Strangle buys OTM (Call Strike > Spot > Put Strike).",
+    "explanation": "Normally a Long Strangle buys an OTM Call (Higher Strike) and OTM Put (Lower Strike). If you buy a Higher Strike Call and Lower Strike Put, it's a strangle. If you buy ITM options (Call Strike < Put Strike), it is a Guts spread. However, based on standard NISM curriculum context, buying different strikes is broadly a 'Strangle' mechanism, but technically buying High Call + Low Put is the standard Long Strangle definition."
+  },
+  {
+    "id": 55,
+    "question": "Which of the following options has a Delta of approximately 0.5?",
+    "options": [
+      "Deep ITM Call",
+      "Deep OTM Call",
+      "ATM Call",
+      "Deep ITM Put"
+    ],
+    "answer": "ATM Call",
+    "hint": "50% probability of expiring ITM.",
+    "explanation": "At-The-Money (ATM) options have a Delta of approximately 0.5, implying a 50% chance of expiring In-The-Money."
+  },
+  {
+    "id": 56,
+    "question": "A trader is moderately bullish on ABC Ltd., which is currently trading at ₹1,000. He buys a Call option with a strike price of ₹1,000 at a premium of ₹30 and sells a Call option with a strike price of ₹1,050 at a premium of ₹10. What is this strategy called and what is the maximum profit potential?",
+    "options": [
+      "Bull Call Spread; Maximum Profit: ₹30",
+      "Bear Call Spread; Maximum Profit: ₹20",
+      "Bull Call Spread; Maximum Profit: ₹30",
+      "Bull Call Spread; Maximum Profit: ₹30 (Strike Diff - Net Premium)"
+    ],
+    "answer": "Bull Call Spread; Maximum Profit: ₹30",
+    "hint": "This strategy involves buying a lower strike call and selling a higher strike call to reduce cost.",
+    "explanation": "This is a Bull Call Spread. The net premium paid is ₹30 - ₹10 = ₹20. The maximum profit occurs if the stock closes at or above the higher strike (1050). Max Profit = (Difference in Strikes) - Net Premium Paid = (1050 - 1000) - 20 = ₹30."
+  },
+  {
+    "id": 57,
+    "question": "Mr. Sharma holds a portfolio of equity shares worth ₹50 Lakhs. He is worried about a short-term market crash but wants to hold his long-term portfolio. The Nifty index is at 18,000 and the beta of his portfolio is 1.2. How can he hedge his position using Nifty Futures?",
+    "options": [
+      "Buy Nifty Futures worth ₹60 Lakhs",
+      "Sell Nifty Futures worth ₹50 Lakhs",
+      "Sell Nifty Futures worth ₹60 Lakhs",
+      "Buy Put Options for individual stocks"
+    ],
+    "answer": "Sell Nifty Futures worth ₹60 Lakhs",
+    "hint": "Hedge value = Portfolio Value × Beta.",
+    "explanation": "To hedge completely, the value of the futures position should be Portfolio Value × Beta. ₹50,00,000 × 1.2 = ₹60,00,000. Since he needs to protect against a fall, he should Sell (Short) Nifty Futures."
+  },
+  {
+    "id": 58,
+    "question": "A trader expects significant volatility in the market due to an upcoming election result but is unsure of the direction. The Nifty is at 22,000. He buys a 22,000 Call for ₹150 and a 22,000 Put for ₹150. What are the breakeven points for this strategy?",
+    "options": [
+      "21,700 and 22,300",
+      "21,850 and 22,150",
+      "22,000 and 22,300",
+      "21,850 and 22,000"
+    ],
+    "answer": "21,700 and 22,300",
+    "hint": "This is a Long Straddle. Breakevens are Strike ± Total Premium.",
+    "explanation": "Total premium paid = 150 + 150 = 300. Upper Breakeven = Strike + Total Premium = 22,000 + 300 = 22,300. Lower Breakeven = Strike - Total Premium = 22,000 - 300 = 21,700."
+  },
+  {
+    "id": 59,
+    "question": "A speculator sells a 'Straddle' on Stock X. This implies that the speculator expects:",
+    "options": [
+      "The stock price to rise sharply",
+      "The stock price to fall sharply",
+      "The stock price to remain range-bound with low volatility",
+      "The volatility to increase significantly"
+    ],
+    "answer": "The stock price to remain range-bound with low volatility",
+    "hint": "Selling options benefits from time decay and lack of movement.",
+    "explanation": "A Short Straddle involves selling both a Call and a Put at the same strike. The trader profits if the stock stays close to the strike price, meaning they expect low volatility and a range-bound market."
+  },
+  {
+    "id": 60,
+    "question": "Which of the following strategies is considered a 'Synthetic Long Call'?",
+    "options": [
+      "Long Future + Long Put",
+      "Long Future + Short Call",
+      "Short Future + Long Call",
+      "Long Call + Short Put"
+    ],
+    "answer": "Long Future + Long Put",
+    "hint": "Combine a linear bullish instrument with a bearish protection.",
+    "explanation": "Buying a Future (bullish) and buying a Put (protection against downside) creates a payoff diagram similar to a Long Call option. This is known as a Synthetic Long Call."
+  },
+  {
+    "id": 61,
+    "question": "An investor has sold a deep Out-of-the-Money (OTM) Put option. What is the primary risk faced by this investor?",
+    "options": [
+      "Limited loss limited to the premium received",
+      "Unlimited profit potential",
+      "Huge losses if the market falls drastically",
+      "Loss of time value"
+    ],
+    "answer": "Huge losses if the market falls drastically",
+    "hint": "Selling a Put obligates you to buy the asset.",
+    "explanation": "Selling a Put involves an obligation to buy the underlying asset. If the market crashes significantly below the strike price, the seller faces substantial losses, theoretically up to the strike price minus premium (as the stock can go to zero)."
+  },
+  {
+    "id": 62,
+    "question": "A trader executes a 'Covered Call' strategy. Under what market scenario is this strategy most beneficial?",
+    "options": [
+      "Strongly Bullish",
+      "Strongly Bearish",
+      "Neutral to Moderately Bullish",
+      "Highly Volatile"
+    ],
+    "answer": "Neutral to Moderately Bullish",
+    "hint": "You hold the stock and sell a call against it.",
+    "explanation": "A Covered Call involves holding the stock and selling a Call option. It generates income (premium) which provides a small cushion against falls, but caps the upside. It works best when the stock is expected to remain flat or rise slightly (moderately bullish)."
+  },
+  {
+    "id": 63,
+    "question": "Identify the 'Calendar Spread' from the following trades:",
+    "options": [
+      "Buy Nifty Dec Futures, Sell Nifty Jan Futures",
+      "Buy Nifty Dec 18000 Call, Sell Nifty Dec 18500 Call",
+      "Buy Nifty Dec 18000 Call, Sell Nifty Jan 18000 Call",
+      "Buy Reliance Dec Call, Sell Infosys Dec Call"
+    ],
+    "answer": "Buy Nifty Dec 18000 Call, Sell Nifty Jan 18000 Call",
+    "hint": "Same underlying, same strike, different expiry.",
+    "explanation": "A Calendar (or Horizontal) Spread involves taking positions in options of the same underlying and same strike price but with different expiration months."
+  },
+  {
+    "id": 64,
+    "question": "A trader enters a 'Short Strangle' by selling a 17000 Put and selling an 18000 Call when Nifty is at 17500. The net premium received is ₹200. What is the upper breakeven point?",
+    "options": [
+      "18,000",
+      "18,200",
+      "17,800",
+      "17,200"
+    ],
+    "answer": "18,200",
+    "hint": "Upper Breakeven for a short strangle is the Call Strike + Net Premium.",
+    "explanation": "The trader loses money on the Call side only if the market goes above the Call Strike plus the total cushion (premium) collected. Upper BEP = Call Strike + Net Premium = 18,000 + 200 = 18,200."
+  },
+  {
+    "id": 65,
+    "question": "Arbitrage using 'Cash and Carry' involves:",
+    "options": [
+      "Buying in Cash Market and selling in Futures Market when Futures are at a premium",
+      "Buying in Futures Market and selling in Cash Market when Futures are at a discount",
+      "Buying Call and Selling Put",
+      "Selling in both Cash and Futures markets"
+    ],
+    "answer": "Buying in Cash Market and selling in Futures Market when Futures are at a premium",
+    "hint": "Exploiting the cost-of-carry difference.",
+    "explanation": "Cash and Carry arbitrage is executed when the Futures price is theoretically overpriced (higher than Fair Value). The arbitrageur buys the asset in the spot market and simultaneously sells the futures contract to lock in the risk-free spread."
+  },
+  {
+    "id": 66,
+    "question": "A trader places a 'Limit Order' to buy 100 shares of XYZ at ₹500. The current market price is ₹505. What will happen?",
+    "options": [
+      "The order will be executed immediately at ₹505",
+      "The order will stay in the order book until the price drops to ₹500 or lower",
+      "The order will be cancelled immediately",
+      "The order will be executed at the best available seller price"
+    ],
+    "answer": "The order will stay in the order book until the price drops to ₹500 or lower",
+    "hint": "A Buy Limit order sets the maximum price the buyer is willing to pay.",
+    "explanation": "Since the market price (₹505) is higher than the limit price (₹500), the order cannot be matched immediately. It will remain pending in the system until a seller is available at ₹500 or lower."
+  },
+  {
+    "id": 67,
+    "question": "In the context of the trading mechanism, what does 'Time Priority' mean?",
+    "options": [
+      "Older orders are executed before newer orders at the same price",
+      "Larger orders are executed before smaller orders",
+      "Market orders are executed after Limit orders",
+      "Orders placed during the pre-open session are executed last"
+    ],
+    "answer": "Older orders are executed before newer orders at the same price",
+    "hint": "FIFO (First In, First Out) principle.",
+    "explanation": "The matching engine follows 'Price-Time Priority'. If two orders have the same price, the one that entered the system earlier (Time Priority) gets executed first."
+  },
+  {
+    "id": 68,
+    "question": "A client places an 'Immediate or Cancel' (IOC) order to buy 1000 shares. Only 400 shares are available at the limit price. What happens to the remaining 600 shares?",
+    "options": [
+      "They remain as a pending order",
+      "They are cancelled instantly",
+      "They are converted to a Market Order",
+      "The entire order of 1000 is cancelled"
+    ],
+    "answer": "They are cancelled instantly",
+    "hint": "IOC orders do not stay in the book.",
+    "explanation": "An IOC order demands immediate execution of as much quantity as possible. Any unmatched portion (in this case, 600 shares) is immediately cancelled and does not enter the order book."
+  },
+  {
+    "id": 69,
+    "question": "If the index hits the 10% circuit breaker before 1:00 PM, what is the duration of the market halt?",
+    "options": [
+      "15 minutes",
+      "45 minutes",
+      "Market is halted for the rest of the day",
+      "No halt, only a warning"
+    ],
+    "answer": "45 minutes",
+    "hint": "SEBI rules for circuit breakers define halts based on time of day.",
+    "explanation": "For a 10% trigger before 1:00 PM, there is a 45-minute trading halt followed by a 15-minute pre-open session."
+  },
+  {
+    "id": 70,
+    "question": "Who determines the 'Settlement Price' for F&O contracts on the expiry day?",
+    "options": [
+      "The Exchange, based on the closing price of the underlying spot market",
+      "The Clearing Corporation, based on the last traded price of the future",
+      "SEBI",
+      "The Broker"
+    ],
+    "answer": "The Exchange, based on the closing price of the underlying spot market",
+    "hint": "Derivatives settle based on the asset they derive value from.",
+    "explanation": "On the expiry day, the Final Settlement Price for equity derivatives is the closing price of the underlying asset (stock or index) in the Cash (Spot) segment."
+  },
+  {
+    "id": 71,
+    "question": "A 'Stop Loss Buy' order is typically used to:",
+    "options": [
+      "Limit losses on a short position",
+      "Limit losses on a long position",
+      "Enter a new short position",
+      "Buy at a price lower than the current market price"
+    ],
+    "answer": "Limit losses on a short position",
+    "hint": "Stop loss buys are placed above the current market price.",
+    "explanation": "If a trader has sold (shorted) a stock, they lose money if the price rises. To protect against this, they place a Stop Loss Buy order at a higher price to cover the position if the market moves against them."
+  },
+  {
+    "id": 72,
+    "question": "In the NEAT system, an active buy order matches with the best passive sell order. This matching is based on:",
+    "options": [
+      "Passive Order Price",
+      "Active Order Price",
+      "Average Price",
+      "Closing Price"
+    ],
+    "answer": "Passive Order Price",
+    "hint": "The order already sitting in the book dictates the match price.",
+    "explanation": "When an active order (incoming) matches with a passive order (sitting in the book), the trade takes place at the price of the passive order."
+  },
+  {
+    "id": 73,
+    "question": "A generic risk disclosure requirement implies that the Trading Member must ensure clients understand that:",
+    "options": [
+      "Derivatives trading is risk-free",
+      "Profits are guaranteed in the long run",
+      "There is a possibility of losing the entire capital and even more",
+      "The Exchange protects them from all losses"
+    ],
+    "answer": "There is a possibility of losing the entire capital and even more",
+    "hint": "Leverage is a double-edged sword.",
+    "explanation": "The Risk Disclosure Document highlights that due to leverage, losses in derivatives can exceed the initial margin deposited."
+  },
+  {
+    "id": 74,
+    "question": "Under the 'Client Identity' requirement, the Trading Member must enter which unique code for every order?",
+    "options": [
+      "PAN Number",
+      "Unique Client Code (UCC)",
+      "Aadhar Number",
+      "Bank Account Number"
+    ],
+    "answer": "Unique Client Code (UCC)",
+    "hint": "A code assigned by the broker and uploaded to the Exchange.",
+    "explanation": "Every order entered into the trading system must be tagged with the Unique Client Code (UCC) to identify the end client and manage risk/surveillance."
+  },
+  {
+    "id": 75,
+    "question": "What is the primary function of the 'Clearing Member' (CM) in the trading mechanism?",
+    "options": [
+      "To execute trades on the terminal",
+      "To provide investment advice",
+      "To settle the funds and securities obligations with the Clearing Corporation",
+      "To issue contract notes"
+    ],
+    "answer": "To settle the funds and securities obligations with the Clearing Corporation",
+    "hint": "Clearing involves responsibility for the trade's financial settlement.",
+    "explanation": "Trading Members execute trades, but Clearing Members (who may also be TMs) are responsible for settling the trades (funds and securities) with the Clearing Corporation (NSCCL/ICCL)."
+  },
+  {
+    "id": 76,
+    "question": "On Day 1, a trader buys Nifty Futures at 22,000. The closing price on Day 1 is 21,900. What is the Mark-to-Market (MTM) impact?",
+    "options": [
+      "Profit of 100 points, credited to account",
+      "Loss of 100 points, debited from account",
+      "No impact until expiry",
+      "Loss of 100 points, but deducted only on expiry"
+    ],
+    "answer": "Loss of 100 points, debited from account",
+    "hint": "Futures are cash-settled daily.",
+    "explanation": "Futures are marked-to-market daily. Since the price fell by 100 points (22,000 - 21,900), the buyer suffers a loss, which is debited from their margin account immediately (T+1 basis)."
+  },
+  {
+    "id": 77,
+    "question": "Which margin covers the 'Worst Case Loss' scenario in a single day?",
+    "options": [
+      "Span Margin",
+      "Extreme Loss Margin (ELM)",
+      "Mark to Market Margin",
+      "Exposure Margin"
+    ],
+    "answer": "Extreme Loss Margin (ELM)",
+    "hint": "This is collected over and above the SPAN margin.",
+    "explanation": "The Extreme Loss Margin (ELM) aims to cover losses in situations that lie outside the statistical confidence interval of the VaR (SPAN) margin."
+  },
+  {
+    "id": 78,
+    "question": "In the context of clearing, what is 'Novation'?",
+    "options": [
+      "The process of creating a new contract",
+      "The Clearing Corporation becoming the buyer to every seller and seller to every buyer",
+      "The calculation of daily losses",
+      "The expiration of a contract"
+    ],
+    "answer": "The Clearing Corporation becoming the buyer to every seller and seller to every buyer",
+    "hint": "It eliminates counterparty risk between traders.",
+    "explanation": "Novation is the legal process where the Clearing Corporation interposes itself between the two trading parties, guaranteeing the settlement of the trade even if one party defaults."
+  },
+  {
+    "id": 79,
+    "question": "A Clearing Member (CM) has 5 clients. Client A is Long 100 Nifty. Client B is Short 100 Nifty. What is the 'Net' open position for the Clearing Member towards the Clearing Corporation?",
+    "options": [
+      "200 Nifty (Gross)",
+      "0 Nifty",
+      "100 Nifty Long",
+      "100 Nifty Short"
+    ],
+    "answer": "0 Nifty",
+    "hint": "Clearing Corporation looks at the CM's net obligation.",
+    "explanation": "For the Clearing Corporation, the settlement obligation is netted at the CM level. Long 100 and Short 100 results in a Net position of 0 for settlement purposes (though margins are calculated on a Gross basis across clients)."
+  },
+  {
+    "id": 80,
+    "question": "If a client fails to pay the MTM loss by the next day, what action is the broker required to take?",
+    "options": [
+      "Pay from their own pocket indefinitely",
+      "Close out/Square off the position to the extent of the default",
+      "Wait for 5 days",
+      "File a police complaint"
+    ],
+    "answer": "Close out/Square off the position to the extent of the default",
+    "hint": "Risk management requires immediate action.",
+    "explanation": "Regulations require that if a client fails to meet margin requirements (MTM or Initial), the broker must liquidate (square off) the position to limit further risk."
+  },
+  {
+    "id": 81,
+    "question": "Which of the following forms the 'Initial Margin'?",
+    "options": [
+      "SPAN Margin + Extreme Loss Margin",
+      "SPAN Margin only",
+      "MTM Margin only",
+      "Exposure Margin + MTM Margin"
+    ],
+    "answer": "SPAN Margin + Extreme Loss Margin",
+    "hint": "Total upfront margin required to enter a trade.",
+    "explanation": "The Initial Margin required to open a position consists of the SPAN Margin (Portfolio VaR) plus the Extreme Loss Margin (ELM)."
+  },
+  {
+    "id": 82,
+    "question": "Margins in the F&O segment are generally collected in the form of:",
+    "options": [
+      "Only Cash",
+      "Only Fixed Deposits",
+      "Cash and Approved Securities (with haircut)",
+      "Real Estate properties"
+    ],
+    "answer": "Cash and Approved Securities (with haircut)",
+    "hint": "Liquidity is key, but not just cash.",
+    "explanation": "Clearing members can deposit margins in the form of cash, fixed deposits, bank guarantees, or approved securities (shares/bonds) after applying a 'haircut' (valuation discount)."
+  },
+  {
+    "id": 83,
+    "question": "Client A buys an option. Does Client A need to pay margins?",
+    "options": [
+      "Yes, both SPAN and Exposure",
+      "No, only the Premium is paid",
+      "Yes, but only Exposure Margin",
+      "Yes, MTM margin daily"
+    ],
+    "answer": "No, only the Premium is paid",
+    "hint": "Buyers have rights, not obligations (risk is limited to premium).",
+    "explanation": "The buyer of an option has limited risk (the premium paid). Therefore, they pay the full premium upfront but are not required to pay SPAN or MTM margins. (Note: Sellers/Writers MUST pay margins)."
+  },
+  {
+    "id": 84,
+    "question": "What is the settlement cycle for F&O trades in India?",
+    "options": [
+      "T+2",
+      "T+1",
+      "T+0",
+      "T+3"
+    ],
+    "answer": "T+1",
+    "hint": "India moved to this faster cycle recently.",
+    "explanation": "The settlement cycle for the derivatives segment (Mark-to-Market and Final Settlement) is T+1 (Trade day + 1 working day)."
+  },
+  {
+    "id": 85,
+    "question": "Who manages the Trade Guarantee Fund (TGF)?",
+    "options": [
+      "SEBI",
+      "The Clearing Corporation",
+      "The RBI",
+      "The Brokers Association"
+    ],
+    "answer": "The Clearing Corporation",
+    "hint": "It is the central counterparty's safety net.",
+    "explanation": "The Trade Guarantee Fund (also called Settlement Guarantee Fund) is maintained and managed by the Clearing Corporation to ensure settlement is honoured even in case of member default."
+  },
+  {
+    "id": 86,
+    "question": "Under SEBI regulations, 'Circular Trading' is considered:",
+    "options": [
+      "A valid hedging strategy",
+      "A fraudulent and unfair trade practice",
+      "A form of arbitrage",
+      "Permitted only for institutional investors"
+    ],
+    "answer": "A fraudulent and unfair trade practice",
+    "hint": "It creates false volume without change of ownership.",
+    "explanation": "Circular trading involves orders matching between a group of entities to create artificial volume or manipulate prices. It is strictly prohibited under SEBI (Prohibition of Fraudulent and Unfair Trade Practices) Regulations."
+  },
+  {
+    "id": 87,
+    "question": "Which entity acts as the primary regulator for the Equity Derivatives market in India?",
+    "options": [
+      "RBI",
+      "SEBI",
+      "Ministry of Finance",
+      "AMFI"
+    ],
+    "answer": "SEBI",
+    "hint": "Securities and Exchange Board of India.",
+    "explanation": "SEBI (Securities and Exchange Board of India) is the regulatory body for the securities market, including equity derivatives."
+  },
+  {
+    "id": 88,
+    "question": "A stock broker is required to maintain a 'Client Bank Account' separate from their 'Own Bank Account'. Why?",
+    "options": [
+      "To calculate taxes easily",
+      "To prevent commingling of client funds with proprietary funds",
+      "To get better interest rates",
+      "It is optional, not mandatory"
+    ],
+    "answer": "To prevent commingling of client funds with proprietary funds",
+    "hint": "Client money protection is paramount.",
+    "explanation": "SEBI regulations strictly mandate the segregation of client funds from the broker's own funds to prevent misuse. Client funds can only be used for client-related obligations."
+  },
+  {
+    "id": 89,
+    "question": "According to SCRA, a derivative contract is legal and valid only if:",
+    "options": [
+      "It is settled in cash",
+      "It is traded on a recognized stock exchange",
+      "It is between two friends",
+      "It is written on a stamp paper"
+    ],
+    "answer": "It is traded on a recognized stock exchange",
+    "hint": "OTC derivatives in equities are generally not valid under SCRA.",
+    "explanation": "Under the Securities Contracts (Regulation) Act, equity derivative contracts are valid only if they are traded on a recognized stock exchange and settled through its clearing house."
+  },
+  {
+    "id": 90,
+    "question": "Can a sub-broker issue contract notes to clients?",
+    "options": [
+      "Yes, always",
+      "No, only a registered Trading Member can issue contract notes",
+      "Yes, if authorized by the broker",
+      "Yes, for small trades only"
+    ],
+    "answer": "No, only a registered Trading Member can issue contract notes",
+    "hint": "The contract is legally between the Member and the Client.",
+    "explanation": "Only a registered Trading Member of the exchange is authorized to issue contract notes. Sub-brokers cannot issue contract notes in their own name."
+  },
+  {
+    "id": 91,
+    "question": "As per the revised rates (w.e.f Oct 1, 2024), calculate the Securities Transaction Tax (STT) for selling 1 lot of Nifty Futures (Value ₹10 Lakhs).",
+    "options": [
+      "₹100",
+      "₹200",
+      "₹1,000",
+      "₹1,250"
+    ],
+    "answer": "₹200",
+    "hint": "The new rate for Sale of Futures is 0.02%.",
+    "explanation": "STT on Sale of Futures is 0.02% of the value. ₹10,00,000 × 0.02% = ₹200."
+  },
+  {
+    "id": 92,
+    "question": "A trader sells an Option contract. The premium received is ₹50,000. What is the STT payable on this transaction (Post Oct 2024 rates)?",
+    "options": [
+      "₹50",
+      "₹100",
+      "₹31.25",
+      "₹10"
+    ],
+    "answer": "₹50",
+    "hint": "The new rate for Sale of Options is 0.1% of the Premium.",
+    "explanation": "STT on Sale of Options is charged on the Premium value at 0.1% (revised from 0.0625%). ₹50,00,000 is not the premium, 50,000 is. ₹50,000 × 0.1% = ₹50."
+  },
+  {
+    "id": 93,
+    "question": "How is the profit from Equity F&O trading treated for Income Tax purposes for an individual trader?",
+    "options": [
+      "Capital Gains",
+      "Income from Other Sources",
+      "Business Income (Non-Speculative)",
+      "Speculative Business Income"
+    ],
+    "answer": "Business Income (Non-Speculative)",
+    "hint": "Since 2005-06, exchange-traded derivatives are not 'speculative' for tax.",
+    "explanation": "Profits/Losses from exchange-traded derivatives are treated as 'Non-Speculative Business Income'. This allows losses to be set off against other business income (excluding salary)."
+  },
+  {
+    "id": 94,
+    "question": "At the end of the financial year, a trader has an open futures position with a 'debit' balance in the Mark-to-Market account (unrealized loss). How is this treated in accounting?",
+    "options": [
+      "Ignored until realized",
+      "Provision for loss is created in the P&L account",
+      "Treated as an asset",
+      "Subtracted from Turnover"
+    ],
+    "answer": "Provision for loss is created in the P&L account",
+    "hint": "Prudence concept of accounting.",
+    "explanation": "Based on the Prudence concept, anticipated losses (unrealized MTM losses) must be provided for in the Profit & Loss account, whereas unrealized profits are generally ignored."
+  },
+  {
+    "id": 95,
+    "question": "Mr. A exercises a Call Option on expiry. Who pays the STT on the exercise of the option?",
+    "options": [
+      "The Seller",
+      "The Purchaser (Mr. A)",
+      "Both equally",
+      "No STT on exercise"
+    ],
+    "answer": "The Purchaser (Mr. A)",
+    "hint": "On exercise, the buyer is taking delivery/settlement.",
+    "explanation": "When an option is exercised, the STT is payable by the Purchaser. The rate is 0.125% on the settlement price."
+  },
+  {
+    "id": 96,
+    "question": "Which of the following documents must be signed by the client during the registration process?",
+    "options": [
+      "Contract Note",
+      "Risk Disclosure Document (RDD)",
+      "Daily Margin Statement",
+      "Research Report"
+    ],
+    "answer": "Risk Disclosure Document (RDD)",
+    "hint": "It informs the client about the risks of trading.",
+    "explanation": "The Risk Disclosure Document (RDD) is a mandatory part of the KYC/Client Registration booklet. It details the risks involved in trading on the exchanges."
+  },
+  {
+    "id": 97,
+    "question": "A 'Politically Exposed Person' (PEP) falls under which category for KYC purposes?",
+    "options": [
+      "Low Risk Client",
+      "Clients of Special Categories (CSC) - High Risk",
+      "Institutional Client",
+      "Exempt Client"
+    ],
+    "answer": "Clients of Special Categories (CSC) - High Risk",
+    "hint": "They require enhanced due diligence.",
+    "explanation": "PEPs are classified as Clients of Special Categories (CSC). Intermediaries must perform enhanced due diligence (EDD) before onboarding them due to higher money laundering risks."
+  },
+  {
+    "id": 98,
+    "question": "What is 'Churning' in the context of sales practices?",
+    "options": [
+      "Moving funds between accounts",
+      "Excessive trading in a client's account by a broker to generate commissions",
+      "Mixing client funds",
+      "Delaying payments"
+    ],
+    "answer": "Excessive trading in a client's account by a broker to generate commissions",
+    "hint": "It benefits the broker (fees) but hurts the client.",
+    "explanation": "Churning is an unethical practice where a broker executes excessive trades in a client's account primarily to generate brokerage commissions, disregarding the client's investment objectives."
+  },
+  {
+    "id": 99,
+    "question": "If an investor is not satisfied with the grievance redressal by the Stock Exchange, what is the next step available?",
+    "options": [
+      "File a case in the Supreme Court directly",
+      "Arbitration",
+      "Write to the Prime Minister",
+      "Close the account"
+    ],
+    "answer": "Arbitration",
+    "hint": "A quasi-judicial process provided by the Exchange.",
+    "explanation": "If the investor's complaint is not resolved administratively by the Exchange (IGRC), the next formal step is to file for Arbitration, which is a quasi-judicial process."
+  },
+  {
+    "id": 100,
+    "question": "What is the limitation period for filing an arbitration reference with the Stock Exchange?",
+    "options": [
+      "1 year from the date of dispute",
+      "3 years from the date of dispute",
+      "6 months from the date of dispute",
+      "No time limit"
+    ],
+    "answer": "3 years from the date of dispute",
+    "hint": "It aligns with the Limitation Act.",
+    "explanation": "As per the Limitation Act, 1963, and Exchange bye-laws, an arbitration reference must be filed within 3 years from the date when the dispute arose."
+  }
+]

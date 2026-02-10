@@ -1,0 +1,952 @@
+[
+  {
+    "id": 1,
+    "question": "An investor is confused about the difference between primary and secondary markets. Which of the following best explains the secondary market?",
+    "options": ["Where new securities are issued", "Where existing securities are traded", "Where IPO applications are processed", "Where government bonds are printed"],
+    "answer": "Where existing securities are traded",
+    "hint": "Already issued securities.",
+    "explanation": "The secondary market deals with trading of existing securities among investors."
+  },
+  {
+    "id": 2,
+    "question": "A client submits a physical share certificate for dematerialization. After 7 days, they have not received confirmation. What should the DP do?",
+    "options": ["Ignore", "Check status with the depository", "Return certificate immediately", "Ask investor to sell shares"],
+    "answer": "Check status with the depository",
+    "hint": "Follow up step.",
+    "explanation": "DP should track the dematerialization request with the depository and update the investor."
+  },
+  {
+    "id": 3,
+    "question": "A client provides fake identity proof during account opening. What is the DP's responsibility?",
+    "options": ["Accept it", "Report to SEBI", "Reject & maintain record", "Close account immediately without record"],
+    "answer": "Reject & maintain record",
+    "hint": "KYC compliance.",
+    "explanation": "DP must reject invalid documents and maintain a record for regulatory purposes."
+  },
+  {
+    "id": 4,
+    "question": "Investor receives a corporate action email but is unsure how it affects holdings. Who should they consult?",
+    "options": ["Stock Exchange", "DP", "Registrar", "SEBI directly"],
+    "answer": "DP",
+    "hint": "Account manager.",
+    "explanation": "The DP is the point of contact for clarifying corporate action impacts."
+  },
+  {
+    "id": 5,
+    "question": "During settlement, a security delivery fails. What mechanism corrects this?",
+    "options": ["Buy-in process", "Account freeze", "Penalty by SEBI", "Manual transfer"],
+    "answer": "Buy-in process",
+    "hint": "Corrective action.",
+    "explanation": "The exchange initiates a buy-in if securities are not delivered by settlement date."
+  },
+  {
+    "id": 6,
+    "question": "Which regulation governs depositories and their participants in India?",
+    "options": ["Companies Act", "SEBI Depositories Regulations", "RBI Act", "Income Tax Act"],
+    "answer": "SEBI Depositories Regulations",
+    "hint": "Regulator rules.",
+    "explanation": "SEBI (Depositories & Participants) Regulations provide the legal framework for depositories and DPs."
+  },
+  {
+    "id": 7,
+    "question": "A client notices a wrong debit in their account. What is the first action for the DP?",
+    "options": ["Reverse immediately", "Investigate & report to depository", "Charge penalty", "Freeze account permanently"],
+    "answer": "Investigate & report to depository",
+    "hint": "Investigate first.",
+    "explanation": "DP must first verify the transaction and notify the depository before taking corrective action."
+  },
+  {
+    "id": 8,
+    "question": "A company declares a rights issue. How does the investor know the entitlement?",
+    "options": ["Directly from the company", "Through the DP", "Stock Exchange announcement only", "Registrar notice only"],
+    "answer": "Through the DP",
+    "hint": "DP communicates entitlements.",
+    "explanation": "DP passes information received from the depository to the investor regarding rights issue entitlement."
+  },
+  {
+    "id": 9,
+    "question": "Regulatory freeze on an account is generally due to:",
+    "options": ["Late fee payment", "Court order or SEBI directive", "Inactive account", "Investor request for holiday"],
+    "answer": "Court order or SEBI directive",
+    "hint": "Legal action required.",
+    "explanation": "Freezes are applied due to legal or regulatory requirements, not inactivity."
+  },
+  {
+    "id": 10,
+    "question": "To pledge shares, the investor must instruct:",
+    "options": ["Issuer", "DP", "Depository", "Broker only"],
+    "answer": "DP",
+    "hint": "Intermediary role.",
+    "explanation": "The DP acts on investor instructions to mark the pledge in the depository."
+  },
+  {
+    "id": 11,
+    "question": "Which document is used to verify investor’s signature at account opening?",
+    "options": ["PAN", "Aadhaar", "Bank Statement", "Passport"],
+    "answer": "PAN",
+    "hint": "Signature proof.",
+    "explanation": "PAN card is used to verify the investor’s signature during demat account opening."
+  },
+  {
+    "id": 12,
+    "question": "The main role of a DP is:",
+    "options": ["Hold physical certificates", "Intermediary between depository and investor", "Regulate market", "Issue securities"],
+    "answer": "Intermediary between depository and investor",
+    "hint": "Connector function.",
+    "explanation": "DP connects investors with the depository for account management and transactions."
+  },
+  {
+    "id": 13,
+    "question": "Investor has multiple demat accounts with same DP. DP should:",
+    "options": ["Merge accounts", "Keep accounts separate", "Close old accounts automatically", "Transfer holdings to another DP"],
+    "answer": "Keep accounts separate",
+    "hint": "Each account is unique.",
+    "explanation": "Demat accounts are unique; multiple accounts can be maintained separately."
+  },
+  {
+    "id": 14,
+    "question": "Which is required for dematerialization of shares?",
+    "options": ["Delivery Instruction Slip (DIS)", "DP verification", "Stock Exchange approval", "Issuer approval"],
+    "answer": "DP verification",
+    "hint": "Conversion process.",
+    "explanation": "DP verifies physical certificates before initiating dematerialization."
+  },
+  {
+    "id": 15,
+    "question": "DP must protect client information as per:",
+    "options": ["ISO standards", "SEBI regulations", "Internal policies only", "Registrar rules"],
+    "answer": "SEBI regulations",
+    "hint": "Regulatory mandate.",
+    "explanation": "SEBI regulations require DPs to safeguard client data."
+  },
+  {
+    "id": 16,
+    "question": "After receiving DIS, DP should:",
+    "options": ["Process directly", "Verify details & process", "Send to issuer", "Ignore errors"],
+    "answer": "Verify details & process",
+    "hint": "Check before action.",
+    "explanation": "Verification ensures correct transfer instructions before execution."
+  },
+  {
+    "id": 17,
+    "question": "IPO shares are credited to demat account by:",
+    "options": ["Registrar", "DP", "Depository", "Stock Exchange"],
+    "answer": "Depository",
+    "hint": "Central record.",
+    "explanation": "The depository updates the investor account with newly allotted shares."
+  },
+  {
+    "id": 18,
+    "question": "Investor wants to transfer account to a new DP. What is needed?",
+    "options": ["Closure form", "Transfer form", "New DP agreement", "Both transfer form & agreement"],
+    "answer": "Both transfer form & agreement",
+    "hint": "Migration process.",
+    "explanation": "Investor must submit a transfer form and sign new DP agreement."
+  },
+  {
+    "id": 19,
+    "question": "If a DP does not update holdings correctly, investor can complain to:",
+    "options": ["Depository", "SEBI", "Stock Exchange", "Registrar"],
+    "answer": "SEBI",
+    "hint": "Regulator involvement.",
+    "explanation": "SEBI is the regulator for grievances against DPs."
+  },
+  {
+    "id": 20,
+    "question": "When a corporate action occurs, the update flow is:",
+    "options": ["DP only", "Depository only", "DP → Depository → Investor", "Registrar → DP → Depository"],
+    "answer": "DP → Depository → Investor",
+    "hint": "Information path.",
+    "explanation": "DP coordinates with the depository to update investor accounts."
+  },
+  {
+    "id": 21,
+    "question": "Investor wants to freeze certain securities. DP should:",
+    "options": ["Block trading on exchange", "Send freeze instruction to depository", "Sell immediately", "Mark pledge"],
+    "answer": "Send freeze instruction to depository",
+    "hint": "Temporary restriction.",
+    "explanation": "DP sends freeze instructions to restrict specific holdings."
+  },
+  {
+    "id": 22,
+    "question": "Which is not a depository function?",
+    "options": ["Settlement", "Custody", "Loan disbursement", "Corporate actions processing"],
+    "answer": "Loan disbursement",
+    "hint": "Depositories don’t lend.",
+    "explanation": "Depositories manage settlement and custody but do not provide loans."
+  },
+  {
+    "id": 23,
+    "question": "DP must retain client records for:",
+    "options": ["Audit & compliance", "Marketing", "Fee collection", "Client convenience"],
+    "answer": "Audit & compliance",
+    "hint": "Regulatory requirement.",
+    "explanation": "Record retention ensures audit and regulatory compliance."
+  },
+  {
+    "id": 24,
+    "question": "Dematerialization benefits include:",
+    "options": ["Faster settlement", "Physical handling", "Higher costs", "Manual entry"],
+    "answer": "Faster settlement",
+    "hint": "Efficiency.",
+    "explanation": "Electronic form allows faster and safer settlement."
+  },
+  {
+    "id": 25,
+    "question": "Client updates address. DP should:",
+    "options": ["Update immediately", "Update annually", "Update later", "Ignore"],
+    "answer": "Update immediately",
+    "hint": "Timely KYC update.",
+    "explanation": "DP must promptly update KYC details."
+  },
+  {
+    "id": 26,
+    "question": "Who ensures safety of securities in electronic form?",
+    "options": ["Depository", "Stock Broker", "Registrar", "SEBI"],
+    "answer": "Depository",
+    "hint": "Custodian role.",
+    "explanation": "Depository holds and safeguards electronic securities."
+  },
+  {
+    "id": 27,
+    "question": "Client MASTER list is used for:",
+    "options": ["DP internal KYC listing", "Trade summary", "Registrar list", "Exchange report"],
+    "answer": "DP internal KYC listing",
+    "hint": "Client reference.",
+    "explanation": "It maintains investor KYC reference for DP operations."
+  },
+  {
+    "id": 28,
+    "question": "Nomination facility can be provided:",
+    "options": ["Any time", "Only at account opening", "Annually", "Never"],
+    "answer": "Any time",
+    "hint": "Investor choice.",
+    "explanation": "Nomination details can be updated anytime by the investor."
+  },
+  {
+    "id": 29,
+    "question": "If client fails to pay DP charges, DP can:",
+    "options": ["Deactivate services", "Sell holdings", "Report to SEBI immediately", "Freeze account permanently"],
+    "answer": "Deactivate services",
+    "hint": "Service suspension.",
+    "explanation": "DP can suspend services for non-payment, but cannot sell holdings."
+  },
+  {
+    "id": 30,
+    "question": "Before opening an account, DP verifies:",
+    "options": ["KYC, address, ID", "Only address", "Only ID", "Nothing"],
+    "answer": "KYC, address, ID",
+    "hint": "Mandatory checks.",
+    "explanation": "DP verifies complete KYC, proof of identity and address."
+  },
+  {
+    "id": 31,
+    "question": "Securities transfer between accounts is processed by:",
+    "options": ["DP", "Depository", "Stock Exchange", "Registrar"],
+    "answer": "DP",
+    "hint": "Executes instructions.",
+    "explanation": "DP processes transfer instructions between investor accounts."
+  },
+  {
+    "id": 32,
+    "question": "Demat account closure is allowed:",
+    "options": ["Anytime after dues cleared", "Only yearly", "After 5 years", "Never"],
+    "answer": "Anytime after dues cleared",
+    "hint": "Investor right.",
+    "explanation": "Account can be closed once charges are cleared."
+  },
+  {
+    "id": 33,
+    "question": "Why are audit checks needed for DP operations?",
+    "options": ["Minimize errors", "Marketing", "Revenue", "Fee calculation"],
+    "answer": "Minimize errors",
+    "hint": "Quality control.",
+    "explanation": "Audits ensure compliance and accuracy in DP operations."
+  },
+  {
+    "id": 34,
+    "question": "What is a DIS book?",
+    "options": ["Delivery Instruction Slip series", "Client register", "Audit record", "List of issuers"],
+    "answer": "Delivery Instruction Slip series",
+    "hint": "Transfer instructions.",
+    "explanation": "DIS contains slips used to send delivery instructions for demat account transactions."
+  },
+  {
+    "id": 35,
+    "question": "Instant credit of corporate action shares is ensured by:",
+    "options": ["Depository interface", "Registrar alone", "Issuer alone", "DP alone"],
+    "answer": "Depository interface",
+    "hint": "System automation.",
+    "explanation": "Depository system ensures timely credit for corporate actions."
+  },
+  {
+    "id": 36,
+    "question": "For changing DP, investor must provide:",
+    "options": ["Transfer form & new DP agreement", "Only closure request", "Only new agreement", "Only transfer form"],
+    "answer": "Transfer form & new DP agreement",
+    "hint": "Required steps.",
+    "explanation": "Both documents are mandatory to switch DP."
+  },
+  {
+    "id": 37,
+    "question": "DP classifies complaints as:",
+    "options": ["Resolved, Pending, Escalated", "Only Resolved", "Only Pending", "Unclassified"],
+    "answer": "Resolved, Pending, Escalated",
+    "hint": "Tracking mechanism.",
+    "explanation": "Categorization helps monitor complaint resolution."
+  },
+  {
+    "id": 38,
+    "question": "T+2 settlement cycle means:",
+    "options": ["Trade plus 2 days", "Trade plus 2 hours", "Trade plus 20 days", "Same-day settlement"],
+    "answer": "Trade plus 2 days",
+    "hint": "Settlement timeline.",
+    "explanation": "Settlement happens 2 business days after trade date."
+  },
+  {
+    "id": 39,
+    "question": "Investor pledges shares for a loan. Flow is:",
+    "options": ["Investor → DP → Depository", "DP → Depository → Investor", "Registrar → DP → Depository", "Stock Exchange → DP"],
+    "answer": "Investor → DP → Depository",
+    "hint": "Instruction path.",
+    "explanation": "Investor instructs DP, who coordinates with depository for pledge."
+  },
+  {
+    "id": 40,
+    "question": "Ms. Kapoor wants to open a joint demat account with her husband. Which documents will the DP require?",
+    "options": [
+      "PAN and address proof of both holders",
+      "PAN of the primary holder only",
+      "Address proof of primary holder only",
+      "No documents are required"
+    ],
+    "answer": "PAN and address proof of both holders",
+    "hint": "KYC applies to all account holders.",
+    "explanation": "DPs require PAN and address proof for all individuals holding a joint demat account to comply with KYC regulations."
+  },
+  {
+    "id": 41,
+    "question": "Scenario: Mr. Verma wants to nominate his brother for his demat account. Which is TRUE about nomination?",
+    "options": [
+      "Nomination can be changed anytime",
+      "Nomination is mandatory and cannot be changed",
+      "Nomination is only for corporate accounts",
+      "Nomination cannot be done after account opening"
+    ],
+    "answer": "Nomination can be changed anytime",
+    "hint": "Flexible nomination rules.",
+    "explanation": "Account holders can nominate or modify a nominee for their demat account anytime by submitting the required forms."
+  },
+  {
+    "id": 42,
+    "question": "Scenario: Mr. Sharma holds 500 physical shares and wants to sell them on the stock exchange. Which step must he take first?",
+    "options": [
+      "Dematerialisation",
+      "Transmission",
+      "Pledging",
+      "Nomination"
+    ],
+    "answer": "Dematerialisation",
+    "hint": "Physical to electronic conversion required for trading.",
+    "explanation": "Shares must be converted to electronic form via dematerialisation to trade on the stock exchange."
+  },
+  {
+    "id": 43,
+    "question": "Mr. Jain executed a trade today. The settlement will happen as per T+2 cycle. If trade is executed on Monday, when is settlement expected?",
+    "options": [
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "answer": "Wednesday",
+    "hint": "Standard equity settlement.",
+    "explanation": "T+2 means two business days after the trade date. Trade on Monday settles on Wednesday."
+  },
+  {
+    "id": 44,
+    "question": "Scenario: A client passed away, leaving a nominee. Which documents will the DP need to transfer securities?",
+    "options": [
+      "Death certificate and nominee’s ID proof",
+      "Only death certificate",
+      "Only PAN of nominee",
+      "No documents"
+    ],
+    "answer": "Death certificate and nominee’s ID proof",
+    "hint": "Transmission requires verification.",
+    "explanation": "DPs need death certificate of the deceased and identity proof of the nominee to transfer securities."
+  },
+  {
+    "id": 45,
+    "question": "Mr. Rao wants to pledge his shares with a bank as loan security. Which function of DP is involved?",
+    "options": [
+      "Dematerialisation",
+      "Trading",
+      "Pledging",
+      "Nomination"
+    ],
+    "answer": "Pledging",
+    "hint": "Collateral facility.",
+    "explanation": "Pledging allows shares to be blocked in demat as collateral for loans."
+  },
+  {
+    "id": 46,
+    "question": "Scenario: Ms. Singh wants to sell shares immediately in a volatile market. Which order type should she place?",
+    "options": [
+      "Limit order",
+      "Market order",
+      "Stop loss order",
+      "GTC order"
+    ],
+    "answer": "Market order",
+    "hint": "Immediate execution.",
+    "explanation": "Market order executes immediately at the prevailing price, suitable for urgent sales."
+  },
+  {
+    "id": 47,
+    "question": "Mr. Verma wants to transfer shares to his friend’s demat account. What information is essential for the DP?",
+    "options": [
+      "Client IDs of both sender and receiver",
+      "PAN of sender only",
+      "PAN of receiver only",
+      "No info required"
+    ],
+    "answer": "Client IDs of both sender and receiver",
+    "hint": "Transfer requires identification.",
+    "explanation": "To ensure accuracy and security, DP requires Client IDs of both parties during transfer."
+  },
+  {
+    "id": 48,
+    "question": "Scenario: A client wants to consolidate two demat accounts. Which DP service will he use?",
+    "options": [
+      "Dematerialisation",
+      "Transmission",
+      "Account Transfer",
+      "Trading"
+    ],
+    "answer": "Account Transfer",
+    "hint": "Combine accounts.",
+    "explanation": "DPs provide account transfer services to consolidate multiple demat accounts into one."
+  },
+  {
+    "id": 49,
+    "question": "Scenario: Mr. Mehta holds demat shares and the company declares bonus shares. Which DP function ensures he receives them?",
+    "options": [
+      "Trading",
+      "Dematerialisation",
+      "Corporate Action Processing",
+      "Transmission"
+    ],
+    "answer": "Corporate Action Processing",
+    "hint": "DP handles company events.",
+    "explanation": "DPs process corporate actions like bonus issues, dividends, and rights issues for demat account holders."
+  },
+  {
+    "id": 50,
+    "question": "Scenario: Client notices wrong address in demat account. Which DP service resolves this?",
+    "options": [
+      "Dematerialisation",
+      "Updation of Client Details",
+      "Transmission",
+      "Trading"
+    ],
+    "answer": "Updation of Client Details",
+    "hint": "Correcting errors in account info.",
+    "explanation": "DPs allow clients to update or correct personal information such as address or bank details."
+  },
+  {
+    "id": 51,
+    "question": "Mr. Reddy wants to sell physical shares immediately. Which step is required before selling?",
+    "options": [
+      "Dematerialisation",
+      "Transmission",
+      "Pledging",
+      "Nomination"
+    ],
+    "answer": "Dematerialisation",
+    "hint": "Convert to electronic form first.",
+    "explanation": "Shares must be dematerialised before they can be sold on the exchange."
+  },
+  {
+    "id": 52,
+    "question": "DP sends statements to clients. Why are these statements important?",
+    "options": [
+      "For marketing purposes",
+      "To provide transaction and holding details",
+      "To share market tips",
+      "To enforce penalties"
+    ],
+    "answer": "To provide transaction and holding details",
+    "hint": "Statements track holdings.",
+    "explanation": "Statements help clients track holdings, debits, credits, and corporate actions for transparency."
+  },
+  {
+    "id": 53,
+    "question": "Scenario: Mr. Mehta died leaving a nominee. Which documents does the DP need to transfer shares?",
+    "options": [
+      "Death certificate and proof of nominee identity",
+      "Only death certificate",
+      "Only PAN of nominee",
+      "No documents required"
+    ],
+    "answer": "Death certificate and proof of nominee identity",
+    "hint": "Verification required.",
+    "explanation": "Transmission requires death certificate and nominee’s identity proof for legal transfer."
+  },
+  {
+    "id": 54,
+    "question": "Scenario: Client wants dematerialisation of bonds. Which DP function applies?",
+    "options": [
+      "Dematerialisation",
+      "Trading",
+      "Pledging",
+      "Nomination"
+    ],
+    "answer": "Dematerialisation",
+    "hint": "Convert physical to electronic.",
+    "explanation": "Dematerialisation applies to shares, bonds, and other securities for electronic holdings."
+  },
+  {
+    "id": 55,
+    "question": "Scenario: Trade executed but settlement failed due to fund shortage. Which DP function is impacted?",
+    "options": [
+      "Trading",
+      "Settlement",
+      "Dematerialisation",
+      "Transmission"
+    ],
+    "answer": "Settlement",
+    "hint": "Funds and securities exchange.",
+    "explanation": "Settlement ensures delivery of securities and funds; failures affect settlement process."
+  },
+  {
+    "id": 56,
+    "question": "Client wants to sell shares only at ₹500. Which order is correct?",
+    "options": [
+      "Market order",
+      "Limit order",
+      "Stop loss order",
+      "GTC order"
+    ],
+    "answer": "Limit order",
+    "hint": "Price-specific execution.",
+    "explanation": "Limit order executes only at the specified price or better."
+  },
+  {
+    "id": 57,
+    "question": "Scenario: Shares of deceased client to multiple heirs. Which process is used?",
+    "options": [
+      "Dematerialisation",
+      "Transmission",
+      "Corporate Action",
+      "Trading"
+    ],
+    "answer": "Transmission",
+    "hint": "Inheritance process.",
+    "explanation": "Transmission transfers securities from deceased holder to legal heirs or nominees."
+  },
+  {
+    "id": 58,
+    "question": "Mr. Jain pledged shares but wants to sell them. What happens?",
+    "options": [
+      "He can sell immediately",
+      "DP blocks pledged shares",
+      "Shares sold automatically",
+      "Bank transfers ownership"
+    ],
+    "answer": "DP blocks pledged shares",
+    "hint": "Pledged shares are frozen.",
+    "explanation": "Shares under pledge cannot be sold until released by the lender."
+  },
+  {
+    "id": 59,
+    "question": "Scenario: Wrong dividend credited. Which DP function resolves this?",
+    "options": [
+      "Transmission",
+      "Corporate Action Processing",
+      "Dematerialisation",
+      "Trading"
+    ],
+    "answer": "Corporate Action Processing",
+    "hint": "Corporate events affect holdings.",
+    "explanation": "DPs correct errors in corporate actions such as dividend credits."
+  },
+  {
+    "id": 60,
+    "question": "Client wants to open demat for minor child. What is required?",
+    "options": [
+      "Joint account with guardian",
+      "Child cannot have account",
+      "Nominate another adult",
+      "Pledge shares to child"
+    ],
+    "answer": "Joint account with guardian",
+    "hint": "Guardian required for minors.",
+    "explanation": "Minors can hold demat accounts through a guardian in a joint account."
+  },
+  {
+    "id": 61,
+    "question": "Scenario: Ms. Rao wants to avoid physical certificates. Which function helps?",
+    "options": [
+      "Dematerialisation",
+      "Transmission",
+      "Trading",
+      "Pledging"
+    ],
+    "answer": "Dematerialisation",
+    "hint": "Electronic holdings.",
+    "explanation": "Dematerialisation enables holding securities electronically instead of physical certificates."
+  },
+  {
+    "id": 62,
+    "question": "Client transfers shares from one DP to another. Which document is needed?",
+    "options": [
+      "Delivery instruction slip (DIS)",
+      "PAN card only",
+      "Client ID of sender only",
+      "None"
+    ],
+    "answer": "Delivery instruction slip (DIS)",
+    "hint": "Electronic transfer requires instruction.",
+    "explanation": "DIS instructs DP to debit shares from sender and credit to receiver."
+  },
+  {
+    "id": 63,
+    "question": "Scenario: Sold shares but no payment received due to system error. Which DP function handles it?",
+    "options": [
+      "Trading",
+      "Settlement",
+      "Dematerialisation",
+      "Nomination"
+    ],
+    "answer": "Settlement",
+    "hint": "Funds and securities exchange.",
+    "explanation": "Settlement ensures completion of trade and resolves errors in payment or delivery."
+  },
+  {
+    "id": 64,
+    "question": "Client wants to update mobile number in demat account. Which DP service is used?",
+    "options": [
+      "Dematerialisation",
+      "Account Updation",
+      "Transmission",
+      "Trading"
+    ],
+    "answer": "Account Updation",
+    "hint": "Updating details.",
+    "explanation": "DPs allow clients to update personal details like mobile, email, and bank information."
+  },
+  {
+    "id": 65,
+    "question": "Mr. Das receives bonus shares. What changes in his holding?",
+    "options": [
+      "Number of shares increases",
+      "Market price remains same",
+      "Nomination changes",
+      "Shares pledged automatically"
+    ],
+    "answer": "Number of shares increases",
+    "hint": "Bonus shares add to holdings.",
+    "explanation": "Bonus shares increase total shares held by the shareholder."
+  },
+  {
+    "id": 66,
+    "question": "Client wants to trade using DP's online platform. Which function applies?",
+    "options": [
+      "Trading and Settlement",
+      "Dematerialisation only",
+      "Transmission only",
+      "Nomination"
+    ],
+    "answer": "Trading and Settlement",
+    "hint": "Online trading services.",
+    "explanation": "DPs provide trading and settlement services enabling electronic buying/selling."
+  },
+  {
+    "id": 67,
+    "question": "Client finds wrong corporate action credits. First step?",
+    "options": [
+      "Ignore error",
+      "Contact DP",
+      "Contact another client",
+      "Transfer shares"
+    ],
+    "answer": "Contact DP",
+    "hint": "DP resolves corporate actions.",
+    "explanation": "DPs correct errors related to corporate actions in client accounts."
+  },
+  {
+    "id": 68,
+    "question": "Client pledges shares for loan. What does DP do?",
+    "options": [
+      "Blocks shares",
+      "Transfers to bank",
+      "Cancels shares",
+      "Sells shares"
+    ],
+    "answer": "Blocks shares",
+    "hint": "Pledged shares frozen.",
+    "explanation": "DP blocks pledged shares until loan closure."
+  },
+  {
+    "id": 69,
+    "question": "Mr. Roy wants to check if he has enough shares before selling. Which service helps?",
+    "options": [
+      "Account statement",
+      "Dematerialisation",
+      "Transmission",
+      "Corporate Action Processing"
+    ],
+    "answer": "Account statement",
+    "hint": "Check holdings.",
+    "explanation": "Account statements show updated holdings before executing trades."
+  },
+  {
+    "id": 70,
+    "question": "A client wants to pledge shares for a loan but is worried about price volatility. What should the broker advise?",
+    "options": ["Maintain extra collateral to cover market fluctuations", "No additional collateral is needed", "Sell shares immediately", "Wait for SEBI approval"],
+    "answer": "Maintain extra collateral to cover market fluctuations",
+    "hint": "Consider market risk on pledged securities.",
+    "explanation": "Brokers often recommend keeping extra collateral to mitigate risk if the market value of pledged shares declines."
+  },
+  {
+    "id": 71,
+    "question": "An investor’s pledged securities were sold by the bank due to default. Which statement is true?",
+    "options": ["Investor loses ownership but may be liable for shortfall", "Investor retains ownership automatically", "Bank cannot sell pledged securities", "Investor receives compensation from SEBI"],
+    "answer": "Investor loses ownership but may be liable for shortfall",
+    "hint": "Understand consequences of default on pledge.",
+    "explanation": "If pledged securities fall below maintenance margin and are sold, the investor loses ownership and may owe the difference if proceeds are insufficient."
+  },
+  {
+    "id": 72,
+    "question": "A company declares a 1:1 bonus issue. An investor holds 200 shares. What happens?",
+    "options": ["Investor receives 200 additional shares", "Investor gets cash bonus", "Investor must apply for bonus shares", "No change in shareholding"],
+    "answer": "Investor receives 200 additional shares",
+    "hint": "Bonus issue increases number of shares.",
+    "explanation": "A 1:1 bonus doubles the shares held. No application is needed; shares are credited automatically."
+  },
+  {
+    "id": 73,
+    "question": "An investor bought a corporate bond with a call option. The issuer redeems early. What should the investor expect?",
+    "options": ["Receive principal plus accrued interest", "Continue receiving coupon until original maturity", "Bond converts to equity", "Loss of entire investment"],
+    "answer": "Receive principal plus accrued interest",
+    "hint": "Callable bond payout.",
+    "explanation": "Callable bonds allow issuers to redeem early; investors receive principal plus accrued interest up to call date."
+  },
+  {
+    "id": 74,
+    "question": "An FPI plans to invest in Indian equities through an intermediary. Which compliance is essential?",
+    "options": ["FPI registration with SEBI and KYC compliance", "No registration needed", "Approval from RBI only", "Report only after selling shares"],
+    "answer": "FPI registration with SEBI and KYC compliance",
+    "hint": "Foreign investment regulations.",
+    "explanation": "FPIs must be registered with SEBI and comply with KYC norms before investing in Indian securities."
+  },
+  {
+    "id": 75,
+    "question": "A client wants to hypothecate shares for margin. Which is correct?",
+    "options": ["Ownership remains with client; broker has charge", "Broker owns shares", "Shares are sold immediately", "Hypothecation is illegal in India"],
+    "answer": "Ownership remains with client; broker has charge",
+    "hint": "Hypothecation vs pledge.",
+    "explanation": "Hypothecation allows the client to retain ownership while giving the broker a charge to secure the loan."
+  },
+  {
+    "id": 76,
+    "question": "During an IPO, a client asks whether applying below the price band affects allocation. What should the broker say?",
+    "options": ["Only applications at cut-off price are considered for maximum allocation", "Lower applications get preference", "All applications are treated equally", "Allocation is random"],
+    "answer": "Only applications at cut-off price are considered for maximum allocation",
+    "hint": "IPO application strategy.",
+    "explanation": "Applying at cut-off price ensures maximum chance of allocation in book-built IPOs."
+  },
+  {
+    "id": 77,
+    "question": "An investor wants to pledge government securities. What is key for lender acceptance?",
+    "options": ["High liquidity and low default risk", "Company dividend record", "Investor tax history", "Stock exchange listing rules"],
+    "answer": "High liquidity and low default risk",
+    "hint": "Collateral quality matters.",
+    "explanation": "Government securities are ideal collateral due to liquidity and negligible credit risk."
+  },
+  {
+    "id": 78,
+    "question": "Pledged shares fall below maintenance margin. Broker’s responsibility?",
+    "options": ["Issue a margin call to client", "Wait for client to act", "Sell unrelated securities", "Report to SEBI only"],
+    "answer": "Issue a margin call to client",
+    "hint": "Margin maintenance rule.",
+    "explanation": "The broker must request additional collateral to maintain the agreed loan-to-value ratio."
+  },
+  {
+    "id": 79,
+    "question": "FPI earns interest on Indian corporate bonds. How is it taxed?",
+    "options": ["Subject to TDS as per Indian laws", "Exempt from tax", "Taxable only in foreign country", "No TDS if invested via broker"],
+    "answer": "Subject to TDS as per Indian laws",
+    "hint": "Tax rules for foreign investors.",
+    "explanation": "Interest income earned by FPIs in India is subject to TDS unless a treaty provides exemption."
+  },
+  {
+    "id": 80,
+    "question": "Difference between pledge and hypothecation?",
+    "options": ["Pledge transfers possession; hypothecation retains possession", "Both transfer ownership", "Pledge is illegal", "Hypothecation only for banks"],
+    "answer": "Pledge transfers possession; hypothecation retains possession",
+    "hint": "Key distinction.",
+    "explanation": "In a pledge, the lender takes possession; in hypothecation, possession remains with borrower but lender has a charge."
+  },
+  {
+    "id": 81,
+    "question": "Investor missed subscribing to rights issue. Options?",
+    "options": ["Sell rights in market", "Apply after deadline", "Ignore issue", "Apply for bonus shares instead"],
+    "answer": "Sell rights in market",
+    "hint": "Rights are transferable.",
+    "explanation": "Rights entitlements can be sold to other investors if missed subscription."
+  },
+  {
+    "id": 82,
+    "question": "Investor wants to redeem government bonds early. Consideration?",
+    "options": ["Market liquidity and prevailing price", "Issuer dividend record", "Broker fee only", "SEBI approval"],
+    "answer": "Market liquidity and prevailing price",
+    "hint": "Secondary market matters.",
+    "explanation": "Government bonds can be sold before maturity in the secondary market at market price."
+  },
+  {
+    "id": 83,
+    "question": "Corporate debenture with callable feature. What does investor face?",
+    "options": ["Issuer may redeem early", "Investor redeems anytime", "Bond converts to equity", "No change in terms"],
+    "answer": "Issuer may redeem early",
+    "hint": "Callable bond risk.",
+    "explanation": "Issuer can redeem bond early, affecting cash flow and reinvestment options for investor."
+  },
+  {
+    "id": 84,
+    "question": "FPI plans to sell Indian shares. Primary requirement?",
+    "options": ["Compliance with SEBI FPI regulations", "RBI approval optional", "No compliance", "Foreign tax authority approval"],
+    "answer": "Compliance with SEBI FPI regulations",
+    "hint": "Regulatory compliance is key.",
+    "explanation": "FPIs must follow SEBI regulations, including reporting and limits, before selling securities."
+  },
+  {
+    "id": 85,
+    "question": "Client wants to reuse pledged shares for another loan. Correct?",
+    "options": ["Cannot re-use without release", "Can reuse immediately", "Broker decides", "SEBI allows automatic reuse"],
+    "answer": "Cannot re-use without release",
+    "hint": "Pledge rights.",
+    "explanation": "Securities already pledged cannot be re-pledged unless the original pledge is released."
+  },
+  {
+    "id": 86,
+    "question": "Investor receives corporate action info late. Risk?",
+    "options": ["Missed subscription or bonus", "Stock exchange penalty", "No risk", "Government fine"],
+    "answer": "Missed subscription or bonus",
+    "hint": "Timing affects rights.",
+    "explanation": "Delayed information may cause investor to miss subscription deadlines for corporate actions."
+  },
+  {
+    "id": 87,
+    "question": "Client wants a loan against government bonds. Recommendation?",
+    "options": ["Use bonds as collateral with bank", "Sell bonds immediately", "Borrow from another investor", "Wait for maturity"],
+    "answer": "Use bonds as collateral with bank",
+    "hint": "Collateral finance.",
+    "explanation": "Government securities are widely accepted as collateral for loans due to low credit risk."
+  },
+  {
+    "id": 88,
+    "question": "Stock split announced. Broker explains to investor?",
+    "options": ["Shareholding increases; market value adjusts", "Cash received", "No change", "Investor must apply"],
+    "answer": "Shareholding increases; market value adjusts",
+    "hint": "Stock split effect.",
+    "explanation": "Number of shares increases proportionally; total investment value remains the same."
+  },
+  {
+    "id": 89,
+    "question": "FPI holds both equity and debt. Reporting required?",
+    "options": ["Periodic reports to SEBI", "No reporting", "Report to RBI only", "Report to exchange only"],
+    "answer": "Periodic reports to SEBI",
+    "hint": "Regulatory reporting.",
+    "explanation": "FPIs must submit periodic reports to SEBI to comply with investment limits and regulations."
+  },
+  {
+    "id": 90,
+    "question": "Hypothecation of shares for margin trading. True statement?",
+    "options": ["Ownership stays with client; broker has charge", "Ownership transfers", "Shares sold immediately", "Hypothecation not allowed"],
+    "answer": "Ownership stays with client; broker has charge",
+    "hint": "Hypothecation principle.",
+    "explanation": "Client retains ownership while broker holds a legal claim in case of default."
+  },
+  {
+    "id": 91,
+    "question": "Client wants maximum IPO allocation. Strategy?",
+    "options": ["Apply at cut-off price", "Apply below band", "Wait for listing", "Apply after IPO closes"],
+    "answer": "Apply at cut-off price",
+    "hint": "Maximizes allocation.",
+    "explanation": "Applications at cut-off price get maximum chance in book-built IPOs."
+  },
+  {
+    "id": 92,
+    "question": "Floating rate corporate bond sees interest rate hike. Impact?",
+    "options": ["Interest income increases", "Principal decreases", "Bond converts to equity", "No effect"],
+    "answer": "Interest income increases",
+    "hint": "Floating rate adjusts with market.",
+    "explanation": "Interest on floating rate bonds adjusts with benchmark, increasing income when rates rise."
+  },
+  {
+    "id": 93,
+    "question": "Client missed rights issue but sold rights. Outcome?",
+    "options": ["Receives cash", "No benefit", "Convert to bonus shares", "SEBI compensates"],
+    "answer": "Receives cash",
+    "hint": "Rights are transferable.",
+    "explanation": "Rights can be sold, providing cash to the investor even if they do not subscribe."
+  },
+  {
+    "id": 94,
+    "question": "Pledged shares below margin. Immediate action?",
+    "options": ["Issue margin call", "Wait for recovery", "Sell other assets", "Inform SEBI only"],
+    "answer": "Issue margin call",
+    "hint": "Protect lender rights.",
+    "explanation": "Broker must request additional collateral to maintain loan-to-value ratio."
+  },
+  {
+    "id": 95,
+    "question": "Corporate bond with call option. Investor expectation?",
+    "options": ["Issuer may redeem early", "Investor redeems anytime", "Bond converts to equity", "Interest unchanged"],
+    "answer": "Issuer may redeem early",
+    "hint": "Callable bond.",
+    "explanation": "Issuer can redeem bond early, affecting cash flow and reinvestment options."
+  },
+  {
+    "id": 96,
+    "question": "FPI receives dividends from Indian equities. Tax treatment?",
+    "options": ["Subject to TDS", "No tax", "Tax in foreign country only", "SEBI deducts tax"],
+    "answer": "Subject to TDS",
+    "hint": "Dividend taxation.",
+    "explanation": "Dividends paid to FPIs are subject to Indian TDS."
+  },
+  {
+    "id": 97,
+    "question": "Client wants to pledge same securities to multiple lenders. Correct?",
+    "options": ["Cannot re-pledge without release", "Can pledge to multiple lenders", "Auto divided", "No restriction"],
+    "answer": "Cannot re-pledge without release",
+    "hint": "Pledge law.",
+    "explanation": "Securities cannot be re-pledged until original pledge is released."
+  },
+  {
+    "id": 98,
+    "question": "Investor seeks liquidity in government bonds. Option?",
+    "options": ["Sell in secondary market", "Wait for maturity", "Convert to equity", "Bank FD"],
+    "answer": "Sell in secondary market",
+    "hint": "Government securities are liquid.",
+    "explanation": "Bonds can be sold before maturity in secondary market."
+  },
+  {
+    "id": 99,
+    "question": "FPI asks about tax on corporate bond interest. Correct info?",
+    "options": ["TDS applies unless treaty", "Tax-free", "Exempt after 5 years", "SEBI pays tax"],
+    "answer": "TDS applies unless treaty",
+    "hint": "Foreign investor tax.",
+    "explanation": "Interest earned by FPIs is subject to TDS unless tax treaty provides relief."
+  },
+  {
+    "id": 100,
+    "question": "Debt instrument has call and put options. Broker’s advice?",
+    "options": ["Understand terms of call/put, maturity, interest", "Ignore options", "Buy without research", "Apply after listing"],
+    "answer": "Understand terms of call/put, maturity, interest",
+    "hint": "Risk management.",
+    "explanation": "Debt instruments with options require understanding features to manage risk effectively."
+  }
+]

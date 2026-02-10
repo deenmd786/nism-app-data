@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following best describes a 'Forward Contract'?",
+    "options": [
+      "A standardized contract traded on an exchange",
+      "An agreement to buy or sell an asset at a future date for a price agreed upon today",
+      "A contract that gives the right but not the obligation to buy",
+      "An agreement settled immediately in cash"
+    ],
+    "answer": "An agreement to buy or sell an asset at a future date for a price agreed upon today",
+    "hint": "It's a private agreement for the future.",
+    "explanation": "A forward contract is a customized, private agreement between two parties to exchange an asset at a specified future date for a price determined at the time of the contract."
+  },
+  {
+    "id": 2,
+    "question": "What is the primary risk associated with Forward Contracts that is minimized in Futures Contracts?",
+    "options": [
+      "Market Risk",
+      "Counterparty (Credit) Risk",
+      "Inflation Risk",
+      "Interest Rate Risk"
+    ],
+    "answer": "Counterparty (Credit) Risk",
+    "hint": "The risk that the other guy won't pay.",
+    "explanation": "Since forwards are bilateral OTC contracts without a central clearinghouse, there is a significant risk that one party may default on their obligation."
+  },
+  {
+    "id": 3,
+    "question": "Futures contracts are:",
+    "options": [
+      "Customized and traded OTC",
+      "Standardized and traded on an exchange",
+      "Non-binding agreements",
+      "Always settled by physical delivery"
+    ],
+    "answer": "Standardized and traded on an exchange",
+    "hint": "Exchange traded = Standardized.",
+    "explanation": "Futures are standardized contracts (in terms of size, expiry, etc.) traded on organized exchanges, which ensures liquidity and safety."
+  },
+  {
+    "id": 4,
+    "question": "If you buy a futures contract, your view on the underlying asset is:",
+    "options": [
+      "Bearish",
+      "Bullish",
+      "Neutral",
+      "Volatile"
+    ],
+    "answer": "Bullish",
+    "hint": "You profit if prices go up.",
+    "explanation": "Buying a future (going Long) means you agree to buy the asset later at a fixed price. You profit if the market price rises above your purchase price."
+  },
+  {
+    "id": 5,
+    "question": "If you sell a futures contract, your view on the underlying asset is:",
+    "options": [
+      "Bullish",
+      "Bearish",
+      "Neutral",
+      "Optimistic"
+    ],
+    "answer": "Bearish",
+    "hint": "You profit if prices go down.",
+    "explanation": "Selling a future (going Short) means you agree to sell the asset later at a fixed price. You profit if the market price falls below your selling price."
+  },
+  {
+    "id": 6,
+    "question": "The theoretical price of a future is calculated using which model?",
+    "options": [
+      "Black-Scholes Model",
+      "Cost of Carry Model",
+      "Binomial Model",
+      "Monte Carlo Simulation"
+    ],
+    "answer": "Cost of Carry Model",
+    "hint": "The cost to 'carry' the asset to the future date.",
+    "explanation": "The Cost of Carry model calculates the fair price of a future by adding the cost of holding the asset (interest, storage) to the spot price and subtracting any yield (dividends)."
+  },
+  {
+    "id": 7,
+    "question": "According to the Cost of Carry model, Fair Futures Price (F) =",
+    "options": [
+      "Spot Price + Cost of Carry",
+      "Spot Price - Cost of Carry",
+      "Spot Price / Cost of Carry",
+      "Spot Price * Cost of Carry"
+    ],
+    "answer": "Spot Price + Cost of Carry",
+    "hint": "Spot plus the cost to hold it.",
+    "explanation": "F = S + C, where S is Spot Price and C is the Cost of Carry (Interest - Dividend)."
+  },
+  {
+    "id": 8,
+    "question": "If the Futures price is higher than the Spot price, the market is said to be in:",
+    "options": [
+      "Backwardation",
+      "Contango",
+      "Discount",
+      "Recession"
+    ],
+    "answer": "Contango",
+    "hint": "The curve goes 'Up'.",
+    "explanation": "Contango is the normal market condition where the Futures price is higher than the Spot price, usually due to the cost of carry."
+  },
+  {
+    "id": 9,
+    "question": "If the Futures price is lower than the Spot price, the market is said to be in:",
+    "options": [
+      "Contango",
+      "Backwardation",
+      "Premium",
+      "Inflation"
+    ],
+    "answer": "Backwardation",
+    "hint": "The curve goes 'Back' or down.",
+    "explanation": "Backwardation occurs when the Futures price is lower than the Spot price, often due to a high dividend expectation or shortage of the physical asset."
+  },
+  {
+    "id": 10,
+    "question": "What happens to the difference between Spot and Futures prices as the expiration date approaches?",
+    "options": [
+      "It widens",
+      "It remains constant",
+      "It converges to zero",
+      "It becomes negative"
+    ],
+    "answer": "It converges to zero",
+    "hint": "On expiry, a future IS the spot.",
+    "explanation": "As the contract nears expiry, the cost of carry decreases. On the expiration day, the Futures price must equal the Spot price (Convergence)."
+  },
+  {
+    "id": 11,
+    "question": "What is 'Tick Size'?",
+    "options": [
+      "The total value of the contract",
+      "The minimum price fluctuation allowed",
+      "The commission charged",
+      "The number of shares in a lot"
+    ],
+    "answer": "The minimum price fluctuation allowed",
+    "hint": "The smallest step a price can take.",
+    "explanation": "Tick size is the minimum price movement allowed by the exchange (e.g., 0.05 paisa)."
+  },
+  {
+    "id": 12,
+    "question": "The 'Contract Cycle' for equity derivatives in India typically consists of:",
+    "options": [
+      "1 month contracts only",
+      "Near month, Next month, and Far month contracts",
+      "Weekly contracts only",
+      "Yearly contracts only"
+    ],
+    "answer": "Near month, Next month, and Far month contracts",
+    "hint": "Three consecutive months.",
+    "explanation": "At any point in time, there are three monthly contracts available for trading: Near Month (current), Next Month, and Far Month."
+  },
+  {
+    "id": 13,
+    "question": "When does a standard monthly equity derivative contract expire in India?",
+    "options": [
+      "Last day of the month",
+      "Last Thursday of the month",
+      "First Monday of the month",
+      "15th of the month"
+    ],
+    "answer": "Last Thursday of the month",
+    "hint": "Thursday is the key day.",
+    "explanation": "Monthly contracts expire on the last Thursday of the expiry month. If that day is a holiday, it expires on the previous trading day."
+  },
+  {
+    "id": 14,
+    "question": "Payoff for a buyer of a futures contract is:",
+    "options": [
+      "Limited Profit, Unlimited Loss",
+      "Unlimited Profit, Limited Loss",
+      "Unlimited Profit, Unlimited Loss",
+      "Limited Profit, Limited Loss"
+    ],
+    "answer": "Unlimited Profit, Unlimited Loss",
+    "hint": "Linear payoff.",
+    "explanation": "A long futures position has a linear payoff. You gain dollar-for-dollar as price rises (theoretically unlimited) and lose dollar-for-dollar as it falls (potentially to zero)."
+  },
+  {
+    "id": 15,
+    "question": "Which of the following creates a 'Synthetic Long' position?",
+    "options": [
+      "Buying a Call and Selling a Put (same strike)",
+      "Buying a Put and Selling a Call",
+      "Buying a Future",
+      "Selling a Future"
+    ],
+    "answer": "Buying a Call and Selling a Put (same strike)",
+    "hint": "Call is bullish, Short Put is bullish.",
+    "explanation": "Long Call + Short Put creates a payoff profile identical to buying the underlying asset (or future). This is called a Synthetic Long."
+  },
+  {
+    "id": 16,
+    "question": "What is 'Cash and Carry Arbitrage'?",
+    "options": [
+      "Buying Spot and Selling Futures when Futures are overpriced",
+      "Selling Spot and Buying Futures when Futures are overpriced",
+      "Buying only Futures",
+      "Selling only Spot"
+    ],
+    "answer": "Buying Spot and Selling Futures when Futures are overpriced",
+    "hint": "Carry the cash asset.",
+    "explanation": "If the Futures price is theoretically too high (expensive), an arbitrageur buys the asset in the Spot market and sells the Future to lock in a risk-free profit."
+  },
+  {
+    "id": 17,
+    "question": "What is 'Reverse Cash and Carry Arbitrage'?",
+    "options": [
+      "Buying Spot and Selling Futures",
+      "Selling Spot and Buying Futures when Futures are underpriced",
+      "Buying Call Options",
+      "Selling Put Options"
+    ],
+    "answer": "Selling Spot and Buying Futures when Futures are underpriced",
+    "hint": "Reverse of the standard arbitrage.",
+    "explanation": "If Futures are trading at a discount to fair value, an arbitrageur sells the underlying asset (Spot) and buys the Future."
+  },
+  {
+    "id": 18,
+    "question": "The 'Basis' is defined as:",
+    "options": [
+      "Futures Price - Spot Price",
+      "Spot Price - Futures Price",
+      "Strike Price - Spot Price",
+      "Spot Price - Strike Price"
+    ],
+    "answer": "Spot Price - Futures Price",
+    "hint": "Spot comes first in the standard definition.",
+    "explanation": "Basis = Spot Price - Futures Price. In a normal market (Contango), basis is negative. In Backwardation, basis is positive."
+  },
+  {
+    "id": 19,
+    "question": "If you hold a Short Futures position and the price rises, you make a:",
+    "options": [
+      "Profit",
+      "Loss",
+      "No change",
+      "Dividend"
+    ],
+    "answer": "Loss",
+    "hint": "Short sellers want prices to fall.",
+    "explanation": "A short seller loses money when the price increases because they have agreed to sell at a lower price than the current market value."
+  },
+  {
+    "id": 20,
+    "question": "A stock pays a dividend of Rs. 10. The Spot price is Rs. 100. Interest rate is 10% p.a. Time to expiry is 1 year. What is the Fair Futures Price? (Simple interest)",
+    "options": [
+      "100",
+      "110",
+      "120",
+      "100"
+    ],
+    "answer": "100",
+    "hint": "F = S + Interest - Dividend.",
+    "explanation": "Cost of Carry = Interest - Dividend. Interest = 10% of 100 = 10. Dividend = 10. F = 100 + 10 - 10 = 100."
+  },
+  {
+    "id": 21,
+    "question": "The margin calculated based on the worst-case scenario loss of a portfolio is called:",
+    "options": [
+      "Span Margin",
+      "Exposure Margin",
+      "Premium Margin",
+      "Mark-to-Market Margin"
+    ],
+    "answer": "Span Margin",
+    "hint": "Standard Portfolio Analysis of Risk.",
+    "explanation": "SPAN (Standard Portfolio Analysis of Risk) margin is calculated by the exchange to cover the worst possible loss for a portfolio over a one-day period."
+  },
+  {
+    "id": 22,
+    "question": "Initial Margin in futures is collected from:",
+    "options": [
+      "Buyer only",
+      "Seller only",
+      "Both Buyer and Seller",
+      "Neither"
+    ],
+    "answer": "Both Buyer and Seller",
+    "hint": "Both have obligations.",
+    "explanation": "Unlike options where only the seller pays margin, in futures, both parties have an obligation to perform, so both must pay the Initial Margin."
+  },
+  {
+    "id": 23,
+    "question": "What is 'Mark-to-Market' (MTM)?",
+    "options": [
+      "The final settlement at expiry",
+      "The daily adjustment of profits and losses against the margin account",
+      "The marketing of the exchange",
+      "The process of selecting stocks for the index"
+    ],
+    "answer": "The daily adjustment of profits and losses against the margin account",
+    "hint": "Marking the value daily.",
+    "explanation": "MTM is the process where the contract value is adjusted to the current market price daily, and profits/losses are credited/debited to the trader's account."
+  },
+  {
+    "id": 24,
+    "question": "If an investor has a long position in a stock and fears a price fall, they can hedge by:",
+    "options": [
+      "Buying Futures",
+      "Selling Futures",
+      "Buying Shares",
+      "Doing nothing"
+    ],
+    "answer": "Selling Futures",
+    "hint": "Offset the long asset with a short derivative.",
+    "explanation": "To hedge a long position in the cash market, the investor should take a short position (Sell) in the Futures market."
+  },
+  {
+    "id": 25,
+    "question": "If an investor plans to buy shares in the future and fears a price rise, they can hedge by:",
+    "options": [
+      "Buying Futures (Long Hedge)",
+      "Selling Futures (Short Hedge)",
+      "Selling Shares",
+      "Selling Call Options"
+    ],
+    "answer": "Buying Futures (Long Hedge)",
+    "hint": "Lock in the buy price now.",
+    "explanation": "A Long Hedge involves buying futures now to lock in a purchase price, protecting against a rise in the asset's price."
+  },
+  {
+    "id": 26,
+    "question": "The leverage in a futures contract comes from:",
+    "options": [
+      "Paying the full contract value upfront",
+      "Paying only a margin (percentage) of the contract value",
+      "Borrowing from the broker",
+      "High volatility"
+    ],
+    "answer": "Paying only a margin (percentage) of the contract value",
+    "hint": "Control 100% with 15% cash.",
+    "explanation": "Futures allow traders to control a large contract value by depositing a relatively small margin, providing leverage."
+  },
+  {
+    "id": 27,
+    "question": "Which of these is NOT a characteristic of Futures?",
+    "options": [
+      "Standardized",
+      "Exchange Traded",
+      "Central Counterparty Clearing",
+      "High Counterparty Risk"
+    ],
+    "answer": "High Counterparty Risk",
+    "hint": "The Clearing House removes this risk.",
+    "explanation": "Futures have negligible counterparty risk because the Clearing Corporation guarantees the trade. Forwards have high counterparty risk."
+  },
+  {
+    "id": 28,
+    "question": "For an index with a Spot price of 1000 and a risk-free rate of 6%, what is the 1-month Futures price? (Assume no dividends, use simple interest)",
+    "options": [
+      "1000",
+      "1005",
+      "1060",
+      "1006"
+    ],
+    "answer": "1005",
+    "hint": "1 month is 1/12 of a year.",
+    "explanation": "Cost of Carry = 1000 * 6% * (1/12) = 1000 * 0.06 / 12 = 5. Futures Price = 1000 + 5 = 1005."
+  },
+  {
+    "id": 29,
+    "question": "Dividends are a ____________ to the Cost of Carry.",
+    "options": [
+      "Benefit (Negative Cost)",
+      "Cost (Positive Cost)",
+      "Neutral factor",
+      "Tax"
+    ],
+    "answer": "Benefit (Negative Cost)",
+    "hint": "They reduce the cost of holding.",
+    "explanation": "While interest is a cost you pay to hold an asset, dividends are a benefit you receive. Therefore, they reduce the net Cost of Carry."
+  },
+  {
+    "id": 30,
+    "question": "Beta measures the sensitivity of a stock to:",
+    "options": [
+      "Interest Rates",
+      "Market Index movements",
+      "Inflation",
+      "Company Earnings"
+    ],
+    "answer": "Market Index movements",
+    "hint": "Stock vs Market.",
+    "explanation": "Beta indicates how much a stock's price moves in relation to the overall market index."
+  },
+  {
+    "id": 31,
+    "question": "To hedge a portfolio perfectly using Index Futures, the number of contracts required depends on:",
+    "options": [
+      "Portfolio Value only",
+      "Beta of the Portfolio only",
+      "Portfolio Value, Beta, and Contract Value",
+      "The broker's advice"
+    ],
+    "answer": "Portfolio Value, Beta, and Contract Value",
+    "hint": "Hedge Ratio formula.",
+    "explanation": "Number of Contracts = (Beta of Portfolio * Value of Portfolio) / Value of one Futures Contract."
+  },
+  {
+    "id": 32,
+    "question": "If you are 'Long' on a stock and 'Short' on a future of the same stock, your net position is effectively:",
+    "options": [
+      "Neutral / Hedged",
+      "Double Long",
+      "Double Short",
+      "Speculative"
+    ],
+    "answer": "Neutral / Hedged",
+    "hint": "Plus one, Minus one.",
+    "explanation": "The gain in one position offsets the loss in the other, making the position neutral or hedged."
+  },
+  {
+    "id": 33,
+    "question": "Which of the following describes 'Convenience Yield'?",
+    "options": [
+      "The benefit or premium associated with holding the physical underlying asset rather than the derivative",
+      "The yield from dividends",
+      "The interest rate",
+      "The profit from arbitrage"
+    ],
+    "answer": "The benefit or premium associated with holding the physical underlying asset rather than the derivative",
+    "hint": "It's convenient to have the actual goods.",
+    "explanation": "Convenience yield is the non-monetary benefit of physically holding an asset (like oil or wheat) during a shortage, often causing Backwardation."
+  },
+  {
+    "id": 34,
+    "question": "Can you exit a Futures position before the expiry date?",
+    "options": [
+      "No, you must wait until expiry",
+      "Yes, by entering into an opposing transaction",
+      "Yes, by calling the company",
+      "Only if you make a profit"
+    ],
+    "answer": "Yes, by entering into an opposing transaction",
+    "hint": "Square it off.",
+    "explanation": "You can exit a futures position anytime during trading hours by taking an equal and opposite position (e.g., selling if you are long)."
+  },
+  {
+    "id": 35,
+    "question": "Settlement of a futures contract at expiry usually happens at:",
+    "options": [
+      "The strike price",
+      "The opening price of the expiry day",
+      "The closing Spot price of the underlying on the expiry day",
+      "The previous day's closing price"
+    ],
+    "answer": "The closing Spot price of the underlying on the expiry day",
+    "hint": "Spot rules at the end.",
+    "explanation": "On expiry, the Final Settlement Price is the closing price of the underlying asset (Spot market)."
+  },
+  {
+    "id": 36,
+    "question": "A 'Calendar Spread' in futures involves:",
+    "options": [
+      "Buying a future and selling a future with the same expiry",
+      "Buying a future of one expiry and selling a future of a different expiry on the same underlying",
+      "Buying a stock and selling an index",
+      "Buying a call and selling a put"
+    ],
+    "answer": "Buying a future of one expiry and selling a future of a different expiry on the same underlying",
+    "hint": "Spread across the calendar.",
+    "explanation": "A calendar spread involves taking simultaneous long and short positions in futures contracts of the same underlying but with different expiration months."
+  },
+  {
+    "id": 37,
+    "question": "If the risk-free interest rate increases, the theoretical Futures price (in Contango) will generally:",
+    "options": [
+      "Increase",
+      "Decrease",
+      "Stay the same",
+      "Become zero"
+    ],
+    "answer": "Increase",
+    "hint": "Higher cost of carry.",
+    "explanation": "Since Cost of Carry = Interest - Dividend, a higher interest rate increases the cost of carry, thus increasing the futures price."
+  },
+  {
+    "id": 38,
+    "question": "Which of these participants ensures the financial integrity of the futures market?",
+    "options": [
+      "The Broker",
+      "The Clearing Corporation",
+      "The Market Maker",
+      "The Speculator"
+    ],
+    "answer": "The Clearing Corporation",
+    "hint": "The central guarantor.",
+    "explanation": "The Clearing Corporation collects margins and acts as the central counterparty, ensuring that winning parties get paid even if losing parties default."
+  },
+  {
+    "id": 39,
+    "question": "The 'Open Interest' in a futures contract increases when:",
+    "options": [
+      "A new buyer meets a new seller",
+      "An existing buyer sells to an existing seller",
+      "An existing buyer sells to a new buyer",
+      "An existing seller buys from an existing buyer"
+    ],
+    "answer": "A new buyer meets a new seller",
+    "hint": "Both are opening new positions.",
+    "explanation": "Open Interest increases only when a new long position and a new short position are created. If old positions are closed, OI decreases."
+  },
+  {
+    "id": 40,
+    "question": "Shorting a stock in the Cash (Spot) market is usually restricted because:",
+    "options": [
+      "You cannot sell what you do not own for long periods (settlement cycle constraints)",
+      "It is illegal",
+      "It requires too much money",
+      "Exchanges don't allow selling"
+    ],
+    "answer": "You cannot sell what you do not own for long periods (settlement cycle constraints)",
+    "hint": "Spot market requires delivery.",
+    "explanation": "In the Indian spot market, you generally cannot hold a short position beyond the settlement cycle (intra-day shorting is allowed, but not carrying overnight). Futures allow holding short positions for months."
+  },
+  {
+    "id": 41,
+    "question": "What is 'Churning'?",
+    "options": [
+      "Making butter",
+      "Excessive trading by a broker to generate commissions",
+      "Holding a position for a long time",
+      "Hedging a portfolio"
+    ],
+    "answer": "Excessive trading by a broker to generate commissions",
+    "hint": "Spinning the account for fees.",
+    "explanation": "Churning is an unethical practice where a broker executes excessive trades in a client's account solely to generate brokerage commissions."
+  },
+  {
+    "id": 42,
+    "question": "In a futures contract, the 'Lot Size' is determined by:",
+    "options": [
+      "The Buyer",
+      "The Seller",
+      "The Exchange / Regulator",
+      "The Broker"
+    ],
+    "answer": "The Exchange / Regulator",
+    "hint": "It's part of standardization.",
+    "explanation": "The Exchange (with SEBI guidelines) determines the Lot Size to ensure the contract value stays within a certain range."
+  },
+  {
+    "id": 43,
+    "question": "If you buy 1 lot of Nifty Futures at 10,000 and sell at 10,100 (Lot size = 75), your profit is:",
+    "options": [
+      "100",
+      "7500",
+      "1000",
+      "750"
+    ],
+    "answer": "7500",
+    "hint": "Price difference * Quantity.",
+    "explanation": "Profit = (Selling Price - Buying Price) * Lot Size = (10100 - 10000) * 75 = 100 * 75 = 7500."
+  },
+  {
+    "id": 44,
+    "question": "Futures prices are usually quoted:",
+    "options": [
+      "Per Lot",
+      "Per Unit (Per Share)",
+      "Per 100 Shares",
+      "Inclusive of Tax"
+    ],
+    "answer": "Per Unit (Per Share)",
+    "hint": "Like the stock price.",
+    "explanation": "Even though you trade in lots, the price quoted on the screen is per unit (per share) of the underlying asset."
+  },
+  {
+    "id": 45,
+    "question": "The relationship between futures prices of different expiry months is called:",
+    "options": [
+      "Term Structure",
+      "Price Action",
+      "Volatility Skew",
+      "Beta"
+    ],
+    "answer": "Term Structure",
+    "hint": "Structure over time.",
+    "explanation": "The term structure of futures prices refers to the relationship between futures prices of the same underlying with different maturities (Contango vs Backwardation)."
+  },
+  {
+    "id": 46,
+    "question": "Which of the following is an example of an underlying asset that cannot be delivered physically?",
+    "options": [
+      "Gold",
+      "Wheat",
+      "Stock Index (e.g., Nifty 50)",
+      "Reliance Shares"
+    ],
+    "answer": "Stock Index (e.g., Nifty 50)",
+    "hint": "It's a mathematical number.",
+    "explanation": "An index is a statistical number derived from many stocks. You cannot physically deliver 'the index'; it must be cash-settled."
+  },
+  {
+    "id": 47,
+    "question": "When a futures contract is cash-settled, the settlement amount is based on:",
+    "options": [
+      "The difference between the entry price and the settlement price",
+      "The full value of the contract",
+      "The initial margin",
+      "The brokerage fee"
+    ],
+    "answer": "The difference between the entry price and the settlement price",
+    "hint": "Netting the profit/loss.",
+    "explanation": "Cash settlement involves paying or receiving the net price difference, rather than exchanging the full asset value."
+  },
+  {
+    "id": 48,
+    "question": "Speculators provide _________ to the market.",
+    "options": [
+      "Risk",
+      "Liquidity",
+      "Regulation",
+      "Insurance"
+    ],
+    "answer": "Liquidity",
+    "hint": "They are always ready to trade.",
+    "explanation": "By being willing to take the other side of hedgers' trades, speculators provide depth and liquidity to the market."
+  },
+  {
+    "id": 49,
+    "question": "If you hold a futures contract until expiry, the price you effectively pay for the underlying is:",
+    "options": [
+      "The Spot price on expiry",
+      "The Futures price at which you entered the contract",
+      "The average price of the month",
+      "The highest price of the day"
+    ],
+    "answer": "The Futures price at which you entered the contract",
+    "hint": "That was the agreement.",
+    "explanation": "Although settled at the Spot price, the daily MTM adjustments ensure that your net cost/proceeds equal the original Futures price you locked in."
+  },
+  {
+    "id": 50,
+    "question": "Electronic trading systems used for derivatives in India provide:",
+    "options": [
+      "Anonymity and Time/Price Priority",
+      "Negotiation capabilities",
+      "Physical meeting place",
+      "Unlimited credit"
+    ],
+    "answer": "Anonymity and Time/Price Priority",
+    "hint": "Computers match best price and first time.",
+    "explanation": "Modern exchanges use order-matching software where orders are matched based on Price (best price first) and Time (first come first served), while keeping trader identity anonymous."
+  }
+]

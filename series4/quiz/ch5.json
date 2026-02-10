@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "A corporate treasurer plans to issue bonds in 3 months. To protect against rising interest rates, they should:",
+    "options": [
+      "Buy (Long) Interest Rate Futures",
+      "Sell (Short) Interest Rate Futures",
+      "Buy (Long) Bonds in the spot market",
+      "Do nothing"
+    ],
+    "answer": "Sell (Short) Interest Rate Futures",
+    "hint": "Rising rates = Falling bond prices.",
+    "explanation": "If rates rise, the cost of borrowing increases. By shorting futures, the treasurer makes a profit from falling bond prices, which offsets the higher interest cost on the new bond issuance."
+  },
+  {
+    "id": 2,
+    "question": "An investor expects to receive a large cash inflow in 1 month to invest in G-Secs. They fear interest rates will fall (bond prices rise) before then. They should:",
+    "options": [
+      "Sell (Short) Interest Rate Futures",
+      "Buy (Long) Interest Rate Futures",
+      "Sell their current bond portfolio",
+      "Buy Put Options"
+    ],
+    "answer": "Buy (Long) Interest Rate Futures",
+    "hint": "Long Hedge.",
+    "explanation": "This is a 'Long Hedge'. By buying futures now, the investor locks in the current price/yield. If prices rise, the profit on the futures offsets the higher price they must pay for the bonds later."
+  },
+  {
+    "id": 3,
+    "question": "Which strategy is suitable if you are 'Bullish' on bond prices (expecting interest rates to fall)?",
+    "options": [
+      "Short Futures",
+      "Long Futures",
+      "Buy Put Option",
+      "Sell Call Option"
+    ],
+    "answer": "Long Futures",
+    "hint": "Buy low, sell high.",
+    "explanation": "If interest rates fall, bond prices rise. A Long Futures position allows you to profit from this price increase."
+  },
+  {
+    "id": 4,
+    "question": "Which strategy is suitable if you are 'Bearish' on bond prices (expecting interest rates to rise)?",
+    "options": [
+      "Short Futures",
+      "Long Futures",
+      "Buy Call Option",
+      "Sell Put Option"
+    ],
+    "answer": "Short Futures",
+    "hint": "Profit from the fall.",
+    "explanation": "If interest rates rise, bond prices fall. A Short Futures position profits from the decline in prices."
+  },
+  {
+    "id": 5,
+    "question": "To hedge a portfolio of bonds against interest rate risk, the Hedge Ratio is calculated as:",
+    "options": [
+      "BPV of Portfolio / BPV of Futures Contract",
+      "BPV of Futures Contract / BPV of Portfolio",
+      "Market Value of Portfolio / Market Value of Futures",
+      "Duration of Portfolio * Duration of Futures"
+    ],
+    "answer": "BPV of Portfolio / BPV of Futures Contract",
+    "hint": "Matching the sensitivity.",
+    "explanation": "The optimal number of contracts (Hedge Ratio) is found by dividing the Basis Point Value (BPV) or PV01 of the portfolio by the BPV/PV01 of a single futures contract."
+  },
+  {
+    "id": 6,
+    "question": "Cash and Carry Arbitrage is executed when:",
+    "options": [
+      "Futures Price < Spot Price + Cost of Carry (Futures are cheap)",
+      "Futures Price > Spot Price + Cost of Carry (Futures are expensive)",
+      "Futures Price = Spot Price",
+      "Market is volatile"
+    ],
+    "answer": "Futures Price > Spot Price + Cost of Carry (Futures are expensive)",
+    "hint": "Sell the expensive thing.",
+    "explanation": "If the Futures price is theoretically too high (overpriced), an arbitrageur Buys Spot and Sells Futures to lock in a risk-free profit."
+  },
+  {
+    "id": 7,
+    "question": "Reverse Cash and Carry Arbitrage involves:",
+    "options": [
+      "Buying Spot and Selling Futures",
+      "Selling Spot (Shorting) and Buying Futures",
+      "Buying both Spot and Futures",
+      "Selling both Spot and Futures"
+    ],
+    "answer": "Selling Spot (Shorting) and Buying Futures",
+    "hint": "Futures are cheap.",
+    "explanation": "When Futures are underpriced relative to Spot, the arbitrageur Sells the Spot asset (invests the proceeds) and Buys the cheap Futures contract."
+  },
+  {
+    "id": 8,
+    "question": "A 'Calendar Spread' strategy in IRF involves:",
+    "options": [
+      "Buying a near-month contract and Selling a far-month contract (or vice versa)",
+      "Buying a G-Sec Future and Selling a T-Bill Future",
+      "Buying a Call and Selling a Put",
+      "Trading only on Mondays"
+    ],
+    "answer": "Buying a near-month contract and Selling a far-month contract (or vice versa)",
+    "hint": "Spreading across time.",
+    "explanation": "A calendar spread exploits price differences between contracts of the same underlying asset but with different expiry months."
+  },
+  {
+    "id": 9,
+    "question": "If the yield curve is expected to 'Steepen' (Long-term rates rise more than Short-term rates), a trader should:",
+    "options": [
+      "Buy Long-term Futures, Sell Short-term Futures",
+      "Sell Long-term Futures, Buy Short-term Futures",
+      "Buy both",
+      "Sell both"
+    ],
+    "answer": "Sell Long-term Futures, Buy Short-term Futures",
+    "hint": "Long-term prices will crash more.",
+    "explanation": "Rising long-term rates mean falling long-term bond prices (Short Long-term Futures). Stable/falling short-term rates mean stable/rising short-term prices (Buy Short-term Futures)."
+  },
+  {
+    "id": 10,
+    "question": "If the yield curve is expected to 'Flatten' (Long-term rates fall relative to Short-term rates), a trader should:",
+    "options": [
+      "Buy Long-term Futures, Sell Short-term Futures",
+      "Sell Long-term Futures, Buy Short-term Futures",
+      "Sell Call Options",
+      "Do nothing"
+    ],
+    "answer": "Buy Long-term Futures, Sell Short-term Futures",
+    "hint": "Long-term prices will rise.",
+    "explanation": "Falling long-term rates mean rising long-term bond prices (Buy Long-term Futures). Rising/stable short-term rates mean falling/stable short-term prices (Sell Short-term Futures)."
+  },
+  {
+    "id": 11,
+    "question": "BPV (Basis Point Value) or PV01 measures:",
+    "options": [
+      "The change in price for a 1 basis point (0.01%) change in yield",
+      "The change in yield for a 1 Rupee change in price",
+      "The total value of the bond",
+      "The coupon payment"
+    ],
+    "answer": "The change in price for a 1 basis point (0.01%) change in yield",
+    "hint": "Sensitivity measure.",
+    "explanation": "BPV/PV01 is a key metric for hedging. It tells you exactly how much money a portfolio gains or loses if interest rates move by 0.01%."
+  },
+  {
+    "id": 12,
+    "question": "To reduce the duration of a bond portfolio without selling the bonds, a fund manager can:",
+    "options": [
+      "Buy Interest Rate Futures",
+      "Sell Interest Rate Futures",
+      "Buy longer maturity bonds",
+      "Sell Put Options"
+    ],
+    "answer": "Sell Interest Rate Futures",
+    "hint": "Shorting futures adds negative duration.",
+    "explanation": "Selling futures creates a position with negative duration. When combined with a long bond portfolio (positive duration), the net duration of the portfolio decreases."
+  },
+  {
+    "id": 13,
+    "question": "A 'Long Straddle' (Buy Call + Buy Put) is profitable when:",
+    "options": [
+      "The market is stable with low volatility",
+      "The market moves significantly in either direction (High Volatility)",
+      "Interest rates rise slowly",
+      "Interest rates fall slowly"
+    ],
+    "answer": "The market moves significantly in either direction (High Volatility)",
+    "hint": "You need a big move to cover two premiums.",
+    "explanation": "Since you pay premiums for both options, you need the underlying price to move drastically (up or down) to recover costs and make a profit."
+  },
+  {
+    "id": 14,
+    "question": "A 'Short Straddle' (Sell Call + Sell Put) is profitable when:",
+    "options": [
+      "The market is highly volatile",
+      "The market is range-bound (Low Volatility)",
+      "The market crashes",
+      "The market rallies"
+    ],
+    "answer": "The market is range-bound (Low Volatility)",
+    "hint": "You want both options to expire worthless.",
+    "explanation": "The seller collects premiums from both sides. If the price stays close to the strike price (low volatility), they keep the premiums as profit."
+  },
+  {
+    "id": 15,
+    "question": "Buying a Call Option is a suitable substitute for:",
+    "options": [
+      "Buying the underlying bond (Long Futures)",
+      "Selling the underlying bond (Short Futures)",
+      "Selling a Put",
+      "Shorting the market"
+    ],
+    "answer": "Buying the underlying bond (Long Futures)",
+    "hint": "Bullish view.",
+    "explanation": "Buying a Call is a bullish strategy, similar to buying the asset, but with limited downside risk (premium only) compared to futures."
+  },
+  {
+    "id": 16,
+    "question": "The 'Cost of Carry' for an interest rate future is primarily determined by:",
+    "options": [
+      "Repo Rate (Financing Cost) - Coupon Income (Yield)",
+      "Coupon Income - Repo Rate",
+      "Inflation Rate",
+      "GDP Growth"
+    ],
+    "answer": "Repo Rate (Financing Cost) - Coupon Income (Yield)",
+    "hint": "Cost - Income.",
+    "explanation": "Cost of Carry = Financing Cost (Repo Rate) to buy the bond minus the Income (Coupon) earned from holding the bond."
+  },
+  {
+    "id": 17,
+    "question": "If Cost of Carry is negative (Coupon > Repo Rate), the Futures price will be:",
+    "options": [
+      "Higher than Spot Price (Premium)",
+      "Lower than Spot Price (Discount)",
+      "Equal to Spot Price",
+      "Unrelated to Spot Price"
+    ],
+    "answer": "Lower than Spot Price (Discount)",
+    "hint": "Backwardation.",
+    "explanation": "If you earn more from holding the bond than it costs to borrow money, the Spot price is more attractive, pushing Futures below Spot."
+  },
+  {
+    "id": 18,
+    "question": "Which strategy has 'Unlimited Risk'?",
+    "options": [
+      "Long Call",
+      "Long Put",
+      "Short (Naked) Call",
+      "Protective Put"
+    ],
+    "answer": "Short (Naked) Call",
+    "hint": "If the market rallies, you are in trouble.",
+    "explanation": "Selling a Call option without owning the underlying asset exposes the seller to unlimited risk if the asset price rises indefinitely."
+  },
+  {
+    "id": 19,
+    "question": "A 'Protective Put' is constructed by:",
+    "options": [
+      "Long Underlying Asset + Long Put Option",
+      "Long Underlying Asset + Short Call Option",
+      "Short Underlying Asset + Long Call Option",
+      "Short Underlying Asset + Short Put Option"
+    ],
+    "answer": "Long Underlying Asset + Long Put Option",
+    "hint": "Asset + Insurance.",
+    "explanation": "This strategy protects the value of an existing portfolio (Long Asset) by buying a Put option (Insurance) to limit downside risk."
+  },
+  {
+    "id": 20,
+    "question": "A 'Covered Call' is constructed by:",
+    "options": [
+      "Long Underlying Asset + Short Call Option",
+      "Long Underlying Asset + Long Put Option",
+      "Short Underlying Asset + Short Put Option",
+      "Long Call + Long Put"
+    ],
+    "answer": "Long Underlying Asset + Short Call Option",
+    "hint": "Income generation.",
+    "explanation": "The investor owns the asset and sells a Call option against it. If the price doesn't rise, they keep the premium as extra income."
+  },
+  {
+    "id": 21,
+    "question": "What is 'Beta' in the context of hedging?",
+    "options": [
+      "The sensitivity of a portfolio relative to the market/index",
+      "The volatility of the portfolio",
+      "The correlation coefficient",
+      "The duration"
+    ],
+    "answer": "The sensitivity of a portfolio relative to the market/index",
+    "hint": "Used in equity, but concept applies to correlation-based hedging.",
+    "explanation": "Beta measures how much the portfolio moves for a 1% move in the benchmark/market. Hedge Ratio often includes Beta to adjust for this sensitivity."
+  },
+  {
+    "id": 22,
+    "question": "If a portfolio has a Beta of 1.2 relative to the futures contract, the Hedge Ratio should be:",
+    "options": [
+      "Increased by 20% (1.2x)",
+      "Decreased by 20%",
+      "Kept at 1.0",
+      "Zero"
+    ],
+    "answer": "Increased by 20% (1.2x)",
+    "hint": "More volatile portfolio needs more hedge.",
+    "explanation": "Since the portfolio is 20% more volatile than the futures, you need 1.2 times the number of contracts to fully hedge the risk."
+  },
+  {
+    "id": 23,
+    "question": "Arbitrage opportunities in IRF markets typically disappear quickly due to:",
+    "options": [
+      "High transaction costs",
+      "Algorithmic and High-Frequency Trading (HFT)",
+      "Market holidays",
+      "Regulatory bans"
+    ],
+    "answer": "Algorithmic and High-Frequency Trading (HFT)",
+    "hint": "Computers are fast.",
+    "explanation": "Computerized trading systems detect and exploit price discrepancies in milliseconds, closing the arbitrage window almost instantly."
+  },
+  {
+    "id": 24,
+    "question": "To hedge against a decline in the value of a bond portfolio, a 'Bear Put Spread' can be used instead of a simple Put to:",
+    "options": [
+      "Increase the profit potential",
+      "Reduce the upfront cost (Premium) of the hedge",
+      "Make the hedge risk-free",
+      "Avoid paying taxes"
+    ],
+    "answer": "Reduce the upfront cost (Premium) of the hedge",
+    "hint": "Cheaper insurance, but with a deductible.",
+    "explanation": "By buying a Put and selling a lower strike Put, the premium received from the sale offsets the cost of the bought Put, making the hedge cheaper (though capping protection)."
+  },
+  {
+    "id": 25,
+    "question": "If you hold a bond and expect interest rates to remain stable, selling a Call Option (Covered Call) allows you to:",
+    "options": [
+      "Enhance yield through premium collection",
+      "Double your capital",
+      "Eliminate all risk",
+      "Convert the bond to equity"
+    ],
+    "answer": "Enhance yield through premium collection",
+    "hint": "Extra income.",
+    "explanation": "In a sideways market, the bond price doesn't move much. Selling the Call earns premium income, effectively increasing the yield on the portfolio."
+  },
+  {
+    "id": 26,
+    "question": "A 'Butterfly Spread' using Call options involves:",
+    "options": [
+      "Buying 1 Low Strike Call, Selling 2 Middle Strike Calls, Buying 1 High Strike Call",
+      "Buying 1 Call, Selling 1 Put",
+      "Buying 1 Call, Selling 1 Call",
+      "Buying 3 Calls"
+    ],
+    "answer": "Buying 1 Low Strike Call, Selling 2 Middle Strike Calls, Buying 1 High Strike Call",
+    "hint": "Wings and a body.",
+    "explanation": "A Butterfly spread is a neutral strategy with limited risk and limited profit, designed to profit from low volatility at a specific price point."
+  },
+  {
+    "id": 27,
+    "question": "What is 'Basis Risk' in a hedging strategy?",
+    "options": [
+      "The risk that the Futures price and Spot price do not move in perfect sync",
+      "The risk of the exchange defaulting",
+      "The risk of interest rates not changing",
+      "The risk of losing the basis points"
+    ],
+    "answer": "The risk that the Futures price and Spot price do not move in perfect sync",
+    "hint": "Imperfect correlation.",
+    "explanation": "Basis risk arises when the hedging instrument (Future) and the asset being hedged (Spot) do not move exactly together, leading to a less-than-perfect hedge."
+  },
+  {
+    "id": 28,
+    "question": "If you are 'Long the Basis' (Long Spot, Short Futures), you profit if:",
+    "options": [
+      "The Basis strengthens (Spot outperforms Futures)",
+      "The Basis weakens (Spot underperforms Futures)",
+      "The Basis remains zero",
+      "Both prices fall"
+    ],
+    "answer": "The Basis strengthens (Spot outperforms Futures)",
+    "hint": "Basis = Spot - Futures.",
+    "explanation": "Long Basis means you own the Spot and Short the Future. You want Spot to rise more than Futures, or fall less than Futures (Basis increases)."
+  },
+  {
+    "id": 29,
+    "question": "Synthetic Long Bond position can be created by:",
+    "options": [
+      "Buying a Call Option + Selling a Put Option (same strike)",
+      "Buying a Put Option + Selling a Call Option",
+      "Buying a Call + Buying a Put",
+      "Selling a Call + Selling a Put"
+    ],
+    "answer": "Buying a Call Option + Selling a Put Option (same strike)",
+    "hint": "Synthetic Futures.",
+    "explanation": "According to Put-Call Parity, Long Call + Short Put behaves exactly like a Long Futures/Forward position (Synthetic Long)."
+  },
+  {
+    "id": 30,
+    "question": "Synthetic Short Bond position can be created by:",
+    "options": [
+      "Buying a Put Option + Selling a Call Option (same strike)",
+      "Buying a Call Option + Selling a Put Option",
+      "Buying a Put + Buying a Call",
+      "Selling a Put + Selling a Call"
+    ],
+    "answer": "Buying a Put Option + Selling a Call Option (same strike)",
+    "hint": "Bearish synthetic.",
+    "explanation": "Long Put + Short Call behaves like a Short Futures position."
+  },
+  {
+    "id": 31,
+    "question": "The primary objective of 'Immunization' in bond portfolio management is to:",
+    "options": [
+      "Maximize returns",
+      "Match the duration of assets and liabilities to protect against rate changes",
+      "Avoid all taxes",
+      "Invest only in T-Bills"
+    ],
+    "answer": "Match the duration of assets and liabilities to protect against rate changes",
+    "hint": "Immune to rate changes.",
+    "explanation": "Immunization safeguards a portfolio so that its value matches future liability obligations regardless of how interest rates change."
+  },
+  {
+    "id": 32,
+    "question": "If a trader expects volatility to decrease, they should:",
+    "options": [
+      "Buy a Straddle",
+      "Sell a Straddle (Short Straddle)",
+      "Buy a Call",
+      "Buy a Put"
+    ],
+    "answer": "Sell a Straddle (Short Straddle)",
+    "hint": "Selling volatility.",
+    "explanation": "Selling a Straddle (selling both Call and Put) is a short volatility strategy. It profits if the market remains calm and premiums decay."
+  },
+  {
+    "id": 33,
+    "question": "Which of the following is a 'Directional' strategy?",
+    "options": [
+      "Long Call",
+      "Long Straddle",
+      "Short Straddle",
+      "Butterfly Spread"
+    ],
+    "answer": "Long Call",
+    "hint": "You need the market to go UP.",
+    "explanation": "A Long Call bets on the market going up. The others are volatility or neutral strategies."
+  },
+  {
+    "id": 34,
+    "question": "Inter-Commodity Spreads in IRF might involve trading:",
+    "options": [
+      "10-Year G-Sec Futures vs 91-Day T-Bill Futures",
+      "Gold vs Silver",
+      "G-Sec Futures vs Nifty Futures",
+      "USD-INR vs EUR-USD"
+    ],
+    "answer": "10-Year G-Sec Futures vs 91-Day T-Bill Futures",
+    "hint": "Different interest rate instruments.",
+    "explanation": "An inter-commodity spread involves taking opposite positions in derivatives of different but related underlying assets (e.g., Long Term vs Short Term rates)."
+  },
+  {
+    "id": 35,
+    "question": "When hedging with futures, if the underlying bond is different from the deliverable bond of the futures contract, you must adjust for:",
+    "options": [
+      "Conversion Factor and Beta (Yield Beta)",
+      "The broker's commission",
+      "The weather",
+      "The stock market index"
+    ],
+    "answer": "Conversion Factor and Beta (Yield Beta)",
+    "hint": "Cross hedging.",
+    "explanation": "In a cross-hedge, you must adjust the hedge ratio using the Conversion Factor (to align prices) and Beta (to align yield sensitivities)."
+  },
+  {
+    "id": 36,
+    "question": "Cheapest-to-Deliver (CTD) bond behavior implies that:",
+    "options": [
+      "The Futures price will track the CTD bond price most closely",
+      "The Futures price tracks the most expensive bond",
+      "The Futures price tracks the average of all bonds",
+      "The Futures price is random"
+    ],
+    "answer": "The Futures price will track the CTD bond price most closely",
+    "hint": "Sellers will always deliver the cheapest option.",
+    "explanation": "Since sellers have the option to deliver the CTD bond, the futures price is theoretically driven by the price behavior of the CTD bond."
+  },
+  {
+    "id": 37,
+    "question": "If a trader performs a 'Cash and Carry' arbitrage but interest rates rise unexpectedly, the result is:",
+    "options": [
+      "A loss",
+      "Still a risk-free profit (locked in at start)",
+      "A reduced profit",
+      "An increased profit"
+    ],
+    "answer": "Still a risk-free profit (locked in at start)",
+    "hint": "Arbitrage is 'risk-free'.",
+    "explanation": "True arbitrage locks in the profit at the moment of trade execution. Subsequent market moves do not affect the locked-in spread."
+  },
+  {
+    "id": 38,
+    "question": "A 'Bull Spread' using Puts involves:",
+    "options": [
+      "Buying a Low Strike Put and Selling a High Strike Put",
+      "Buying a High Strike Put and Selling a Low Strike Put",
+      "Buying a Call and Selling a Put",
+      "Selling a Call and Buying a Put"
+    ],
+    "answer": "Buying a Low Strike Put and Selling a High Strike Put",
+    "hint": "You want the market to go up, so you sell the expensive ITM/ATM Put.",
+    "explanation": "A Bull Put Spread (Credit Spread) involves selling a higher strike Put (expensive) and buying a lower strike Put (cheap). It profits if the market stays up."
+  },
+  {
+    "id": 39,
+    "question": "The 'Convergence' of Spot and Futures prices at maturity ensures that:",
+    "options": [
+      "Hedging is effective",
+      "Arbitrage is impossible at expiry",
+      "Basis becomes zero",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "hint": "Spot = Futures.",
+    "explanation": "At expiry, Spot equals Futures (Basis = 0). This eliminates arbitrage opportunities and ensures the hedge converges."
+  },
+  {
+    "id": 40,
+    "question": "Which strategy benefits from 'Theta Decay' (Time Decay)?",
+    "options": [
+      "Option Buyers (Long Call/Put)",
+      "Option Sellers (Short Call/Put)",
+      "Futures Buyers",
+      "Futures Sellers"
+    ],
+    "answer": "Option Sellers (Short Call/Put)",
+    "hint": "Time is the enemy of the buyer, friend of the seller.",
+    "explanation": "Option sellers collect premium. As time passes, the option value erodes (Theta decay), benefiting the seller who can buy it back cheaper or let it expire."
+  },
+  {
+    "id": 41,
+    "question": "Dynamic Hedging involves:",
+    "options": [
+      "Setting a hedge once and leaving it",
+      "Continuously adjusting the hedge ratio as market conditions change",
+      "Hedging only 50% of the portfolio",
+      "Using only Options"
+    ],
+    "answer": "Continuously adjusting the hedge ratio as market conditions change",
+    "hint": "It moves.",
+    "explanation": "Dynamic hedging requires rebalancing the hedge (e.g., Delta hedging) frequently because sensitivities (Delta, Gamma) change as the market moves."
+  },
+  {
+    "id": 42,
+    "question": "A 'Box Spread' is an arbitrage strategy that combines:",
+    "options": [
+      "A Bull Call Spread and a Bear Put Spread",
+      "A Long Straddle and a Short Straddle",
+      "Four Calls",
+      "Four Puts"
+    ],
+    "answer": "A Bull Call Spread and a Bear Put Spread",
+    "hint": "Locks in a risk-free return.",
+    "explanation": "A Box Spread combines a Bull Call Spread and a Bear Put Spread with the same strikes to create a risk-free position that should earn the risk-free rate."
+  },
+  {
+    "id": 43,
+    "question": "If you hedge a 5-year bond with a 10-year G-Sec future, you are exposed to:",
+    "options": [
+      "Currency Risk",
+      "Yield Curve Risk (Twist Risk)",
+      "Inflation Risk",
+      "Default Risk"
+    ],
+    "answer": "Yield Curve Risk (Twist Risk)",
+    "hint": "The curve might not move in parallel.",
+    "explanation": "Since the maturities differ, the spread between 5-year and 10-year yields might change (curve steepening/flattening), affecting the hedge efficiency."
+  },
+  {
+    "id": 44,
+    "question": "The primary risk of a 'Short Hedge' (Selling Futures) is:",
+    "options": [
+      "Basis Risk (Basis weakening)",
+      "Unlimited loss on the futures leg",
+      "The underlying asset defaulting",
+      "Margin calls if the market rallies"
+    ],
+    "answer": "Margin calls if the market rallies",
+    "hint": "Cash flow risk.",
+    "explanation": "While the hedge protects value, if the market rallies (prices rise), the short futures position loses money daily. The trader must have cash for margin calls, even if the underlying asset gains value."
+  },
+  {
+    "id": 45,
+    "question": "Which of the following is an advantage of using Options for hedging over Futures?",
+    "options": [
+      "Zero cost",
+      "Linear payoff",
+      "Retaining the potential for upside profit",
+      "No expiration"
+    ],
+    "answer": "Retaining the potential for upside profit",
+    "hint": "Insurance vs Lock-in.",
+    "explanation": "Futures lock in a price (eliminating both loss and gain). Options (like Protective Puts) protect against loss but allow participation if the market moves favorably."
+  },
+  {
+    "id": 46,
+    "question": "If implied volatility is extremely high, buying options for hedging is:",
+    "options": [
+      "Expensive and potentially unattractive",
+      "Cheap and attractive",
+      "Neutral",
+      "Mandatory"
+    ],
+    "answer": "Expensive and potentially unattractive",
+    "hint": "High IV = High Premium.",
+    "explanation": "High volatility inflates option premiums. Buying options becomes very expensive, making other hedging strategies (like futures) potentially more attractive."
+  },
+  {
+    "id": 47,
+    "question": "A 'Ratio Spread' involves:",
+    "options": [
+      "Buying and Selling unequal numbers of options",
+      "Buying 1 Call and Selling 1 Call",
+      "Buying equal numbers of Calls and Puts",
+      "Trading based on PE ratio"
+    ],
+    "answer": "Buying and Selling unequal numbers of options",
+    "hint": "The ratio is not 1:1.",
+    "explanation": "A Ratio Spread involves buying X options and selling Y options (where Y > X) to finance the position or create a specific payoff profile."
+  },
+  {
+    "id": 48,
+    "question": "To hedge floating rate borrowing, a corporate can:",
+    "options": [
+      "Buy an Interest Rate Cap",
+      "Buy an Interest Rate Floor",
+      "Sell an Interest Rate Cap",
+      "Sell Futures"
+    ],
+    "answer": "Buy an Interest Rate Cap",
+    "hint": "Cap the interest payment.",
+    "explanation": "A Cap places a ceiling on the interest rate the borrower has to pay, protecting them if floating rates rise too high."
+  },
+  {
+    "id": 49,
+    "question": "To hedge floating rate investments (lending), an investor can:",
+    "options": [
+      "Buy an Interest Rate Floor",
+      "Buy an Interest Rate Cap",
+      "Sell an Interest Rate Floor",
+      "Buy Futures"
+    ],
+    "answer": "Buy an Interest Rate Floor",
+    "hint": "Floor the returns.",
+    "explanation": "A Floor guarantees a minimum interest rate return for the lender, protecting them if market floating rates drop too low."
+  },
+  {
+    "id": 50,
+    "question": "Algorithmic trading strategies in IRF often utilize:",
+    "options": [
+      "Technical indicators and statistical arbitrage signals",
+      "Gut feeling",
+      "News headlines only",
+      "Manual order entry"
+    ],
+    "answer": "Technical indicators and statistical arbitrage signals",
+    "hint": "Math and stats.",
+    "explanation": "Algos rely on mathematical models, statistical mean reversion, and technical indicators to execute trades at high speed and volume."
+  }
+]

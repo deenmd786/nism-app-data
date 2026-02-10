@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "Which entity acts as the central counterparty for all trades executed on the F&O segment of NSE?",
+    "options": [
+      "NSE Clearing Limited (NCL) / NSCCL",
+      "SEBI",
+      "RBI",
+      "The Broker"
+    ],
+    "answer": "NSE Clearing Limited (NCL) / NSCCL",
+    "hint": "The clearing arm of the exchange.",
+    "explanation": "NCL (formerly NSCCL) is the clearing corporation that guarantees the settlement of all trades by acting as the buyer to every seller and seller to every buyer."
+  },
+  {
+    "id": 2,
+    "question": "The process of the Clearing Corporation stepping in between the buyer and seller to guarantee the trade is called:",
+    "options": [
+      "Novation",
+      "Arbitration",
+      "Adjudication",
+      "Allocation"
+    ],
+    "answer": "Novation",
+    "hint": "New contract replaces old.",
+    "explanation": "Novation is the legal mechanism where the single contract between buyer and seller is replaced by two contracts: one between buyer and CCP, and another between seller and CCP."
+  },
+  {
+    "id": 3,
+    "question": "In the F&O segment, 'Settlement' refers to:",
+    "options": [
+      "Matching of orders",
+      "Payment of funds and delivery of securities",
+      "Placing of orders",
+      "Cancelling of orders"
+    ],
+    "answer": "Payment of funds and delivery of securities",
+    "hint": "Settling the account.",
+    "explanation": "Settlement is the final process where the obligations of the trading members (funds/securities) are discharged."
+  },
+  {
+    "id": 4,
+    "question": "Mark-to-Market (MTM) settlement happens on a ___________ basis.",
+    "options": [
+      "Weekly",
+      "Daily (T+1)",
+      "Monthly",
+      "Quarterly"
+    ],
+    "answer": "Daily (T+1)",
+    "hint": "Every single day.",
+    "explanation": "MTM profits and losses are calculated at the end of every trading day and settled (paid/collected) by the next day (T+1)."
+  },
+  {
+    "id": 5,
+    "question": "The 'Final Settlement' of equity index derivatives (like Nifty 50) is done in:",
+    "options": [
+      "Cash",
+      "Physical Delivery of shares",
+      "Gold",
+      "Bonds"
+    ],
+    "answer": "Cash",
+    "hint": "You can't deliver an index.",
+    "explanation": "Index derivatives are always cash-settled based on the difference between the entry price and the settlement price."
+  },
+  {
+    "id": 6,
+    "question": "Stock derivatives in India are currently settled by:",
+    "options": [
+      "Cash Settlement only",
+      "Physical Settlement",
+      "Both Cash and Physical depending on the stock",
+      "Mutual agreement"
+    ],
+    "answer": "Physical Settlement",
+    "hint": "Mandatory delivery upon expiry.",
+    "explanation": "Since October 2019, all stock derivatives contracts are mandatorily settled physically if held to expiry (meaning shares must be delivered or received)."
+  },
+  {
+    "id": 7,
+    "question": "The 'Daily Settlement Price' for futures is:",
+    "options": [
+      "Closing price of the futures contract",
+      "Opening price of the futures contract",
+      "Weighted average price of the last 30 mins of the futures contract",
+      "Closing price of the underlying spot"
+    ],
+    "answer": "Weighted average price of the last 30 mins of the futures contract",
+    "hint": "Not just the last tick.",
+    "explanation": "The Daily Settlement Price is usually the VWAP (Volume Weighted Average Price) of the last 30 minutes of trading in that specific futures contract."
+  },
+  {
+    "id": 8,
+    "question": "The 'Final Settlement Price' for Index Futures on the expiry day is based on:",
+    "options": [
+      "Closing price of the Index Futures",
+      "Closing price of the Underlying Index in the Spot Market",
+      "Opening price of the Index",
+      "Average price of the Index"
+    ],
+    "answer": "Closing price of the Underlying Index in the Spot Market",
+    "hint": "Spot rules at the end.",
+    "explanation": "On the expiry day, the futures price must converge with the spot price. Thus, the final settlement is based on the closing value of the underlying index in the cash segment."
+  },
+  {
+    "id": 9,
+    "question": "Initial Margin is collected by the Clearing Corporation from:",
+    "options": [
+      "Clearing Members",
+      "Clients directly",
+      "SEBI",
+      "Banks"
+    ],
+    "answer": "Clearing Members",
+    "hint": "Chain of command.",
+    "explanation": "The Clearing Corporation collects margins from Clearing Members (CMs). CMs, in turn, collect margins from Trading Members and Clients."
+  },
+  {
+    "id": 10,
+    "question": "Which software is used to calculate Initial Margins for F&O trades?",
+    "options": [
+      "NEAT",
+      "SPAN (Standard Portfolio Analysis of Risk)",
+      "BOLT",
+      "TALLY"
+    ],
+    "answer": "SPAN (Standard Portfolio Analysis of Risk)",
+    "hint": "It spans the portfolio.",
+    "explanation": "SPAN is a risk management system that calculates margin requirements by analyzing the portfolio's risk under various market scenarios."
+  },
+  {
+    "id": 11,
+    "question": "Total Initial Margin = ___________ + ___________.",
+    "options": [
+      "SPAN Margin + Exposure Margin",
+      "SPAN Margin + Premium Margin",
+      "Exposure Margin + Premium Margin",
+      "Mark-to-Market + Premium"
+    ],
+    "answer": "SPAN Margin + Exposure Margin",
+    "hint": "The standard risk + the extra buffer.",
+    "explanation": "The total upfront margin required to take a position consists of SPAN Margin (for normal volatility) and Exposure Margin (for extreme events)."
+  },
+  {
+    "id": 12,
+    "question": "Does an Option Buyer have to pay Initial Margin?",
+    "options": [
+      "Yes, always",
+      "No, they only pay the Premium",
+      "Yes, if ITM",
+      "Yes, if OTM"
+    ],
+    "answer": "No, they only pay the Premium",
+    "hint": "Buyers have limited risk.",
+    "explanation": "Option buyers only pay the full premium upfront. They do not have margin obligations because their maximum loss is limited to the premium paid."
+  },
+  {
+    "id": 13,
+    "question": "Does an Option Seller (Writer) have to pay Initial Margin?",
+    "options": [
+      "No, they receive Premium",
+      "Yes, similar to Futures",
+      "Only Exposure Margin",
+      "Only if they lose"
+    ],
+    "answer": "Yes, similar to Futures",
+    "hint": "Sellers have unlimited risk.",
+    "explanation": "Since option sellers face unlimited risk, they must pay Initial Margin (SPAN + Exposure) just like futures traders."
+  },
+  {
+    "id": 14,
+    "question": "The 'Assignment Margin' is applicable to:",
+    "options": [
+      "Option Buyers",
+      "Option Sellers (Writers) of assigned contracts",
+      "Futures Buyers",
+      "Futures Sellers"
+    ],
+    "answer": "Option Sellers (Writers) of assigned contracts",
+    "hint": "When you are assigned a duty.",
+    "explanation": "Assignment Margin is levied on option sellers who have been assigned an exercise notice, to ensure they fulfill the obligation."
+  },
+  {
+    "id": 15,
+    "question": "Margins collected from clients must be reported to the Exchange/Clearing Corporation:",
+    "options": [
+      "Daily",
+      "Weekly",
+      "Monthly",
+      "Never"
+    ],
+    "answer": "Daily",
+    "hint": "Strict monitoring.",
+    "explanation": "Brokers must report the margins collected from clients daily. Shortfall in collection attracts a penalty."
+  },
+  {
+    "id": 16,
+    "question": "Which of these assets can be accepted as collateral for margins by Clearing Members?",
+    "options": [
+      "Cash only",
+      "Cash, Fixed Deposits (FDRs), Bank Guarantees, and Approved Securities",
+      "Real Estate",
+      "Jewelry"
+    ],
+    "answer": "Cash, Fixed Deposits (FDRs), Bank Guarantees, and Approved Securities",
+    "hint": "Liquid assets.",
+    "explanation": "Clearing Corporations accept liquid assets like Cash, FDRs, Bank Guarantees, Government Securities, and select Demat shares (with a haircut)."
+  },
+  {
+    "id": 17,
+    "question": "What is a 'Haircut' in the context of collateral?",
+    "options": [
+      "A visit to the barber",
+      "The percentage reduction in the value of securities accepted as collateral",
+      "A penalty for late payment",
+      "A tax deduction"
+    ],
+    "answer": "The percentage reduction in the value of securities accepted as collateral",
+    "hint": "Trimming the value for safety.",
+    "explanation": "A haircut is the safety margin deducted from the market value of a security to account for potential price drops when calculating collateral value."
+  },
+  {
+    "id": 18,
+    "question": "The 'Settlement Guarantee Fund' (SGF) is maintained by:",
+    "options": [
+      "Trading Members",
+      "The Clearing Corporation",
+      "SEBI",
+      "RBI"
+    ],
+    "answer": "The Clearing Corporation",
+    "hint": "The insurance pot.",
+    "explanation": "The SGF is a corpus maintained by the Clearing Corporation to guarantee settlement in case a member defaults."
+  },
+  {
+    "id": 19,
+    "question": "If a Clearing Member defaults, the Clearing Corporation uses funds in which order?",
+    "options": [
+      "Defaulter's own margin -> Defaulter's contribution to SGF -> General SGF",
+      "General SGF -> Defaulter's margin",
+      "SEBI's funds -> Defaulter's margin",
+      "Client's funds -> SGF"
+    ],
+    "answer": "Defaulter's own margin -> Defaulter's contribution to SGF -> General SGF",
+    "hint": "Defaulter pays first.",
+    "explanation": "The defaulter's own assets (margins and deposits) are used first. If insufficient, the SGF is utilized to ensure the system doesn't fail."
+  },
+  {
+    "id": 20,
+    "question": "What is the penalty for 'Short Collection' of margins from clients?",
+    "options": [
+      "0.5% to 5% of the shortfall per day",
+      "No penalty",
+      "Suspension of trading immediately",
+      "Jail time"
+    ],
+    "answer": "0.5% to 5% of the shortfall per day",
+    "hint": "Monetary fine.",
+    "explanation": "SEBI mandates a penalty structure (typically 0.5% or 1% per day initially) for failure to collect required margins from clients."
+  },
+  {
+    "id": 21,
+    "question": "Which margin is specifically designed to cover 'Tail Risk' or extreme market events?",
+    "options": [
+      "SPAN Margin",
+      "Exposure Margin",
+      "Premium Margin",
+      "Assignment Margin"
+    ],
+    "answer": "Exposure Margin",
+    "hint": "Exposure to the unknown.",
+    "explanation": "Exposure Margin is an additional buffer over and above SPAN margin to cover risks from extreme market volatility (tail events)."
+  },
+  {
+    "id": 22,
+    "question": "A 'Custodial Participant' (CP) settles their trades through:",
+    "options": [
+      "The Trading Member",
+      "A Clearing Member (Custodian)",
+      "Directly with the Exchange",
+      "Themselves"
+    ],
+    "answer": "A Clearing Member (Custodian)",
+    "hint": "Institutions use Custodians.",
+    "explanation": "Institutional clients (CPs) execute trades through a broker but settle them (pay/receive funds) through a Professional Clearing Member (Custodian)."
+  },
+  {
+    "id": 23,
+    "question": "The process of 'Give-up' and 'Take-up' refers to:",
+    "options": [
+      "Surrendering a license",
+      "Transferring a trade from a Trading Member to a Clearing Member for settlement",
+      "Giving up on a loss",
+      "Taking up a new strategy"
+    ],
+    "answer": "Transferring a trade from a Trading Member to a Clearing Member for settlement",
+    "hint": "Giving the responsibility to clear.",
+    "explanation": "A Trading Member 'Gives up' the trade details to the Clearing Member, who then 'Takes up' the responsibility for settling it."
+  },
+  {
+    "id": 24,
+    "question": "If a client buys an Option, the Premium must be paid:",
+    "options": [
+      "On T day (Trade Day)",
+      "On T+1 day",
+      "On Expiry",
+      "In monthly installments"
+    ],
+    "answer": "On T+1 day",
+    "hint": "Standard settlement.",
+    "explanation": "The buyer must pay the full premium to the broker, who pays it to the Clearing Corp, typically settled by T+1."
+  },
+  {
+    "id": 25,
+    "question": "Netting of positions for margin calculation is allowed at the:",
+    "options": [
+      "Client Level",
+      "Broker Level (across all clients)",
+      "Exchange Level only",
+      "It is not allowed"
+    ],
+    "answer": "Client Level",
+    "hint": "You can't offset my loss with your gain.",
+    "explanation": "Positions can be netted (Long vs Short) only within a single client's account. A broker cannot net Client A's Long against Client B's Short to pay less margin."
+  },
+  {
+    "id": 26,
+    "question": "In a Calendar Spread (Buying Near Month, Selling Far Month), the margin benefit is provided because:",
+    "options": [
+      "The risk is lower due to correlation",
+      "The exchange wants to encourage trading",
+      "The broker pays the difference",
+      "It is risk-free"
+    ],
+    "answer": "The risk is lower due to correlation",
+    "hint": "Hedged positions.",
+    "explanation": "Since the two contracts are on the same underlying, their prices move together. The net risk is low, so the exchange charges a much lower 'Spread Margin'."
+  },
+  {
+    "id": 27,
+    "question": "The 'Client Margin Reporting' format must be signed by:",
+    "options": [
+      "The Compliance Officer",
+      "The Dealer",
+      "The Client",
+      "The Security Guard"
+    ],
+    "answer": "The Compliance Officer",
+    "hint": "Regulatory responsibility.",
+    "explanation": "The authorized person or Compliance Officer of the broker must certify the accuracy of the margin reporting."
+  },
+  {
+    "id": 28,
+    "question": "What is 'Crystallization' of loss?",
+    "options": [
+      "When a paper loss becomes a realized loss",
+      "Freezing the account",
+      "Turning assets into cash",
+      "Closing the exchange"
+    ],
+    "answer": "When a paper loss becomes a realized loss",
+    "hint": "Booking the loss.",
+    "explanation": "In MTM settlement, daily losses are debited from the account, effectively crystallizing the loss daily."
+  },
+  {
+    "id": 29,
+    "question": "For physical settlement of stock derivatives, the 'Delivery Margin' is applicable:",
+    "options": [
+      "From the expiry day",
+      "From 4 days before expiry (staggered)",
+      "Never",
+      "Only for buyers"
+    ],
+    "answer": "From 4 days before expiry (staggered)",
+    "hint": "Ramping up to expiry.",
+    "explanation": "To ensure safe physical delivery, margins are increased gradually (e.g., 10% per day) starting a few days before expiry for ITM positions."
+  },
+  {
+    "id": 30,
+    "question": "An 'Exercise Notice' can be tendered by an option buyer:",
+    "options": [
+      "Only on Expiry Day (for European Options)",
+      "Any time",
+      "Only if in profit",
+      "Only to the broker"
+    ],
+    "answer": "Only on Expiry Day (for European Options)",
+    "hint": "India uses European style mostly.",
+    "explanation": "Since Indian options (Index and Stock) are generally European, exercise happens automatically only on the expiry day if ITM."
+  },
+  {
+    "id": 31,
+    "question": "Corporate Actions like Dividends are adjusted in Futures price by:",
+    "options": [
+      "Reducing the futures price by the dividend amount",
+      "Increasing the futures price",
+      "No adjustment",
+      "Changing the lot size"
+    ],
+    "answer": "No adjustment",
+    "hint": "Ordinary dividends are pre-factored.",
+    "explanation": "For ordinary dividends (below a threshold, usually 2% or 5%), the market discounts it naturally. Official 'adjustments' (changing strike/base price) usually happen only for extraordinary dividends."
+  },
+  {
+    "id": 32,
+    "question": "If a member fails to pay MTM loss by the stipulated time:",
+    "options": [
+      "The Clearing Corporation disables their trading terminal",
+      "They are given a warning",
+      "They pay double the next day",
+      "Nothing happens"
+    ],
+    "answer": "The Clearing Corporation disables their trading terminal",
+    "hint": "Immediate action.",
+    "explanation": "Non-payment of MTM is a default. The trading facility is withdrawn immediately to prevent further risk."
+  },
+  {
+    "id": 33,
+    "question": "Clearing Banks act as an intermediary between:",
+    "options": [
+      "Clearing Members and Clearing Corporation",
+      "Investors and Brokers",
+      "SEBI and RBI",
+      "Banks and Customers"
+    ],
+    "answer": "Clearing Members and Clearing Corporation",
+    "hint": "Moving the money.",
+    "explanation": "Clearing Members maintain accounts with designated Clearing Banks to transfer funds to/from the Clearing Corporation."
+  },
+  {
+    "id": 34,
+    "question": "Which of these is NOT a role of the Clearing Member?",
+    "options": [
+      "Executing trades",
+      "Collecting margins",
+      "Settling funds",
+      "Guaranteeing trades to the Clearing Corp"
+    ],
+    "answer": "Executing trades",
+    "hint": "That's a Trading Member's job.",
+    "explanation": "While many entities are both, the *role* of Clearing is distinct from Execution. A Professional Clearing Member (PCM) clears but does not trade."
+  },
+  {
+    "id": 35,
+    "question": "For 'Mark-to-Market' calculation, if the contract was not traded on a day, the theoretical price is derived using:",
+    "options": [
+      "Closing price of underlying + Cost of Carry",
+      "Last traded price of previous day",
+      "Zero",
+      "Opening price"
+    ],
+    "answer": "Closing price of underlying + Cost of Carry",
+    "hint": "Theoretical fair value.",
+    "explanation": "If a contract is illiquid and didn't trade, the exchange calculates a theoretical price based on the spot price and interest rates (Cost of Carry) for MTM."
+  },
+  {
+    "id": 36,
+    "question": "The 'Client-wise Position Limit' for Index options is:",
+    "options": [
+      "5% of Total Open Interest or Rs. 500 Crores (whichever is higher)",
+      "10% of Total OI",
+      "Unlimited",
+      "1000 Contracts"
+    ],
+    "answer": "5% of Total Open Interest or Rs. 500 Crores (whichever is higher)",
+    "hint": "The big limit.",
+    "explanation": "Individual clients have a cap on how much exposure they can take in index derivatives to prevent market dominance."
+  },
+  {
+    "id": 37,
+    "question": "The margin percentage for a specific stock depends primarily on its:",
+    "options": [
+      "Price",
+      "Volatility (Sigma)",
+      "Market Cap",
+      "Sector"
+    ],
+    "answer": "Volatility (Sigma)",
+    "hint": "Risk = Volatility.",
+    "explanation": "SPAN margins are calculated based on the historical volatility (Sigma) of the stock. Higher volatility = Higher Margin."
+  },
+  {
+    "id": 38,
+    "question": "Securities Transaction Tax (STT) is levied on:",
+    "options": [
+      "Sell side of Futures and Options (on premium)",
+      "Buy side only",
+      "Both Buy and Sell side",
+      "Only physical settlement"
+    ],
+    "answer": "Sell side of Futures and Options (on premium)",
+    "hint": "Tax on the exit/writing.",
+    "explanation": "In Indian F&O, STT is typically charged on the Sell side. (For exercised options, it is charged on the purchaser on the settlement price)."
+  },
+  {
+    "id": 39,
+    "question": "Real-time monitoring of client positions to prevent margin shortfall is the responsibility of:",
+    "options": [
+      "The Broker (Trading Member)",
+      "SEBI",
+      "The Bank",
+      "The Client"
+    ],
+    "answer": "The Broker (Trading Member)",
+    "hint": "Risk management desk.",
+    "explanation": "Brokers use RMS (Risk Management Systems) to monitor client limits and margins in real-time and square off positions if limits are breached."
+  },
+  {
+    "id": 40,
+    "question": "What is the consequence of 'Exercising' an In-The-Money (ITM) Stock Option on expiry?",
+    "options": [
+      "You receive cash difference",
+      "You must take or give physical delivery of shares",
+      "The contract is renewed",
+      "You pay a fine"
+    ],
+    "answer": "You must take or give physical delivery of shares",
+    "hint": "Physical settlement regime.",
+    "explanation": "Under the physical settlement mechanism, exercising a stock option results in a delivery obligation (buying shares for Calls, selling shares for Puts)."
+  },
+  {
+    "id": 41,
+    "question": "Which form of margin is collected to offset the risk of 'Intraday' price movements?",
+    "options": [
+      "Extreme Loss Margin",
+      "Initial Margin",
+      "Mark-to-Market Margin",
+      "Profit Margin"
+    ],
+    "answer": "Initial Margin",
+    "hint": "Upfront payment.",
+    "explanation": "Initial margin is collected *before* the trade to cover potential intraday and overnight losses."
+  },
+  {
+    "id": 42,
+    "question": "Depositories (NSDL/CDSL) are involved in F&O Settlement when:",
+    "options": [
+      "Cash settlement happens",
+      "Physical Settlement of shares happens",
+      "Margins are paid in cash",
+      "Never"
+    ],
+    "answer": "Physical Settlement of shares happens",
+    "hint": "Moving shares.",
+    "explanation": "Depositories transfer the actual electronic shares between Demat accounts during physical settlement or when pledging shares for margin."
+  },
+  {
+    "id": 43,
+    "question": "Arbitration mechanisms provided by the stock exchange are used for:",
+    "options": [
+      "Resolving disputes between Members and Clients",
+      "Setting prices",
+      "Calculating margins",
+      "Hiring staff"
+    ],
+    "answer": "Resolving disputes between Members and Clients",
+    "hint": "Legal resolution.",
+    "explanation": "If a client has a complaint against a broker (e.g., unauthorized trading), they can approach the exchange's arbitration panel."
+  },
+  {
+    "id": 44,
+    "question": "A 'Self-Clearing Member' (SCM) can clear trades for:",
+    "options": [
+      "Themselves and their clients only",
+      "Other brokers",
+      "Anyone",
+      "Banks only"
+    ],
+    "answer": "Themselves and their clients only",
+    "hint": "Self means self.",
+    "explanation": "SCMs can clear their own proprietary trades and their clients' trades, but cannot clear for other Trading Members."
+  },
+  {
+    "id": 45,
+    "question": "Who calculates the Daily Settlement Price?",
+    "options": [
+      "The Clearing Corporation / Exchange",
+      "The Broker",
+      "The Market Maker",
+      "The Buyer"
+    ],
+    "answer": "The Clearing Corporation / Exchange",
+    "hint": "The central authority.",
+    "explanation": "The exchange/clearing corp calculates and disseminates the official settlement prices used for MTM."
+  },
+  {
+    "id": 46,
+    "question": "Which of these reduces the 'Initial Margin' requirement?",
+    "options": [
+      "Hedged positions (e.g., Spread)",
+      "Naked positions",
+      "High Volatility",
+      "Leaving positions open"
+    ],
+    "answer": "Hedged positions (e.g., Spread)",
+    "hint": "Less risk = Less margin.",
+    "explanation": "The SPAN system recognizes that hedged positions (like spreads) have lower risk than naked positions and reduces the margin requirement accordingly."
+  },
+  {
+    "id": 47,
+    "question": "Funds pay-in (payment from member to exchange) usually happens by:",
+    "options": [
+      "T+1 morning (e.g., 10:30 AM)",
+      "T+1 evening",
+      "T+2",
+      "T+0"
+    ],
+    "answer": "T+1 morning (e.g., 10:30 AM)",
+    "hint": "Before the market heats up.",
+    "explanation": "Clearing members must pay the MTM debit amounts to the Clearing Corp by the specified time on T+1 morning."
+  },
+  {
+    "id": 48,
+    "question": "The 'Investor Protection Fund' (IPF) is used to:",
+    "options": [
+      "Compensate investors if a broker defaults",
+      "Pay broker salaries",
+      "Pay exchange electricity bills",
+      "Subsidize trading"
+    ],
+    "answer": "Compensate investors if a broker defaults",
+    "hint": "Protecting the little guy.",
+    "explanation": "IPF compensates clients for genuine claims against defaulting brokers, up to a certain limit."
+  },
+  {
+    "id": 49,
+    "question": "In 'Physical Settlement', if a Put Option Buyer exercises his right, he must:",
+    "options": [
+      "Deliver (Sell) the shares",
+      "Receive (Buy) the shares",
+      "Pay Cash",
+      "Receive Cash"
+    ],
+    "answer": "Deliver (Sell) the shares",
+    "hint": "Put = Right to Sell.",
+    "explanation": "The Put holder has the right to sell. Upon exercise, he must deliver the shares to the Put seller and receive the strike price."
+  },
+  {
+    "id": 50,
+    "question": "Margins are revised by the exchange:",
+    "options": [
+      "Dynamically based on market conditions (Intraday possible)",
+      "Once a year",
+      "Only on expiry",
+      "Never"
+    ],
+    "answer": "Dynamically based on market conditions (Intraday possible)",
+    "hint": "Risk never sleeps.",
+    "explanation": "While standard files are generated daily, exchanges can and do increase margins intraday during periods of high volatility."
+  }
+]

@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "question": "What is the first step an investor must take to dematerialize physical shares?",
+    "options": ["Send certificates directly to SEBI", "Submit a Demat Request Form (DRF) and physical certificates to the DP", "Email the RTA", "Sell the shares on the stock exchange"],
+    "answer": "Submit a Demat Request Form (DRF) and physical certificates to the DP",
+    "hint": "The DP is your primary point of contact.",
+    "explanation": "To initiate demat, the investor must surrender their physical certificates along with a DRF to their Depository Participant."
+  },
+  {
+    "id": 2,
+    "question": "Within how many days of receiving a DRF must a DP generate the Demat Request Number (DRN) on the system?",
+    "options": ["7 days", "24 hours", "7 working days", "15 days"],
+    "answer": "7 days",
+    "hint": "Internal processing time for the DP.",
+    "explanation": "The DP must enter the request into the depository system and generate a DRN within 7 days of receiving the physical documents."
+  },
+  {
+    "id": 3,
+    "question": "After generating the DRN, the DP must dispatch the physical certificates to the ______.",
+    "options": ["Depository", "SEBI", "RTA / Issuer Company", "Stock Exchange"],
+    "answer": "RTA / Issuer Company",
+    "hint": "The RTA verifies the authenticity of paper shares.",
+    "explanation": "The RTA is the only entity that can verify if the physical certificates are genuine before the depository credits the electronic balance."
+  },
+  {
+    "id": 4,
+    "question": "What is the total maximum timeline for the completion of a demat request from the date the RTA receives the documents?",
+    "options": ["7 days", "15 days", "30 days", "45 days"],
+    "answer": "15 days",
+    "hint": "Standard SEBI mandated turnaround time.",
+    "explanation": "SEBI requires the RTA to confirm or reject a demat request within 15 days of receiving the physical certificates."
+  },
+  {
+    "id": 5,
+    "question": "If a demat request is rejected due to a signature mismatch, who informs the investor?",
+    "options": ["The RTA", "The Depository", "The DP", "The Company Secretary"],
+    "answer": "The DP",
+    "hint": "The entity where the account is held.",
+    "explanation": "The RTA sends the rejection reason to the DP via the system, and the DP is responsible for communicating this to the client."
+  },
+  {
+    "id": 6,
+    "question": "In the 'Rematerialization' process, which form is used by the investor?",
+    "options": ["DRF", "RRF", "DIS", "TIF"],
+    "answer": "RRF",
+    "hint": "Remat Request Form.",
+    "explanation": "An investor wishing to convert electronic holdings back to paper certificates must submit a Remat Request Form to the DP."
+  },
+  {
+    "id": 7,
+    "question": "During the Remat process, the electronic balance in the investor's account is ______ immediately.",
+    "options": ["Sold", "Transferred to a bank", "Frozen/Blocked", "Doubled"],
+    "answer": "Frozen/Blocked",
+    "hint": "Ensures the shares aren't sold while the paper is being printed.",
+    "explanation": "To prevent double-counting or selling of the same shares, the electronic balance is blocked the moment the remat request is entered."
+  },
+  {
+    "id": 8,
+    "question": "Who is responsible for printing the new physical certificates in a Remat process?",
+    "options": ["The Depository", "The DP", "The RTA / Issuer Company", "The Printing Press of India"],
+    "answer": "The RTA / Issuer Company",
+    "hint": "Registrars manage the physical inventory of shares.",
+    "explanation": "The RTA receives the request via the depository system and prints/dispatches the new certificates to the investor."
+  },
+  {
+    "id": 9,
+    "question": "What is 'Transmission' in depository terms?",
+    "options": ["Sending data via internet", "Transfer of shares due to death or insolvency by operation of law", "Selling shares to a family member", "Merging two accounts"],
+    "answer": "Transfer of shares due to death or insolvency by operation of law",
+    "hint": "Legal inheritance of shares.",
+    "explanation": "Transmission does not require a transfer deed or DIS; it is processed based on a death certificate and succession documents."
+  },
+  {
+    "id": 10,
+    "question": "For transmission of shares in a joint account where one holder dies, the shares are transferred to:",
+    "options": ["The legal heir", "The nominee", "The surviving joint holder(s)", "The Government"],
+    "answer": "The surviving joint holder(s)",
+    "hint": "Survivorship principle.",
+    "explanation": "In a joint demat account, the surviving holders have primary rights over the securities upon the death of one holder."
+  },
+  {
+    "id": 11,
+    "question": "In a 'Pledge' process, the investor is called the ______ and the lender is called the ______.",
+    "options": ["Pledgor, Pledgee", "Buyer, Seller", "Lender, Borrower", "Beneficiary, Trustee"],
+    "answer": "Pledgor, Pledgee",
+    "hint": "Common legal terms for collateral.",
+    "explanation": "The Pledgor (investor) creates a charge on their shares in favor of the Pledgee (bank/lender)."
+  },
+  {
+    "id": 12,
+    "question": "Who must 'Confirm' the creation of a pledge in the depository system?",
+    "options": ["The RTA", "The Pledgee (Lender)", "The SEBI", "The Stock Exchange"],
+    "answer": "The Pledgee (Lender)",
+    "hint": "The bank must agree to accept those shares as collateral.",
+    "explanation": "A pledge is only 'created' once the lender (Pledgee) accepts the request in the depository system."
+  },
+  {
+    "id": 13,
+    "question": "What happens if a Pledgor defaults on a loan?",
+    "options": ["The shares are deleted", "The Pledgee can 'Invoke' the pledge to transfer shares to their own account", "The RTA takes the shares", "The account is closed"],
+    "answer": "The Pledgee can 'Invoke' the pledge to transfer shares to their own account",
+    "hint": "Invoking is the act of seizing collateral.",
+    "explanation": "Upon default, the lender (Pledgee) has the right to invoke the pledge and sell or transfer the shares to recover the loan amount."
+  },
+  {
+    "id": 14,
+    "question": "What is the 'Account Closure' process if there are still shares in the account?",
+    "options": ["The account is deleted immediately", "The account cannot be closed until the balance is zero", "The shares are gifted to the DP", "The shares are sold automatically"],
+    "answer": "The account cannot be closed until the balance is zero",
+    "hint": "Clean the house before leaving.",
+    "explanation": "An investor must either sell the shares, rematerialize them, or transfer them to another demat account before a closure request is processed."
+  },
+  {
+    "id": 15,
+    "question": "What is an 'Off-Market' trade settlement?",
+    "options": ["Trading after 3:30 PM", "A trade between two people settled directly between their DPs without a clearing corporation", "An illegal trade", "Trading on a Sunday"],
+    "answer": "A trade between two people settled directly between their DPs without a clearing corporation",
+    "hint": "Used for gifts or legacy transfers.",
+    "explanation": "Off-market trades use Delivery Instruction Slips (DIS) but do not go through the stock exchange's matching engine."
+  },
+  {
+    "id": 16,
+    "question": "What is 'Account Freezing'?",
+    "options": ["Closing the account forever", "Blocking debits and/or credits in the account for a specific period", "Selling all shares", "A technical glitch"],
+    "answer": "Blocking debits and/or credits in the account for a specific period",
+    "hint": "A security lock.",
+    "explanation": "Investors can freeze their accounts to prevent any movement of shares, usually as a safeguard against fraud."
+  },
+  {
+    "id": 17,
+    "question": "In the case of a 'Bonus Issue', how are shares credited to the demat account?",
+    "options": ["Investor must fill a form", "Automatic credit based on instructions from the RTA to the Depository", "Sent via post", "Bought at a discount"],
+    "answer": "Automatic credit based on instructions from the RTA to the Depository",
+    "hint": "It is a corporate action.",
+    "explanation": "The RTA identifies the eligible shareholders on the record date and coordinates with the depository for a direct electronic credit."
+  },
+  {
+    "id": 18,
+    "question": "What is the 'Demat Request Number' (DRN)?",
+    "options": ["The investor's phone number", "A unique number generated by the system to track a demat request", "The company's tax ID", "The share price"],
+    "answer": "A unique number generated by the system to track a demat request",
+    "hint": "Used for tracking the workflow.",
+    "explanation": "The DRN is the reference ID used by the DP, RTA, and Depository to monitor the progress of a dematerialization request."
+  },
+  {
+    "id": 19,
+    "question": "Which of the following can lead to a 'Demat Rejection' by the RTA?",
+    "options": ["Wrong certificates attached", "Signature mismatch", "Certificates already dematted (duplicate)", "All of the above"],
+    "answer": "All of the above",
+    "hint": "RTAs perform thorough verification.",
+    "explanation": "Technical and material discrepancies result in the rejection of a demat request."
+  },
+  {
+    "id": 20,
+    "question": "If an investor wants to transfer shares from NSDL to CDSL, it is called an:",
+    "options": ["Intra-depository transfer", "Inter-depository transfer", "In-market transfer", "Off-shore transfer"],
+    "answer": "Inter-depository transfer",
+    "hint": "Between two different depositories.",
+    "explanation": "Inter-depository transfers allow the movement of securities between the two different depository systems in India."
+  },
+  {
+    "id": 21,
+    "question": "Which document is required for the 'Transmission' of shares if no nominee was appointed and the value is high?",
+    "options": ["A simple letter", "Succession Certificate or Letter of Administration", "The investor's will (unnotarized)", "A phone call"],
+    "answer": "Succession Certificate or Letter of Administration",
+    "hint": "Court-approved documents.",
+    "explanation": "For high-value transmissions without nomination, legal proof from a court is mandatory to determine the rightful heir."
+  },
+  {
+    "id": 22,
+    "question": "What is 'Transposition'?",
+    "options": ["Changing the price of a share", "Changing the order of names of joint holders to match the demat account", "Selling shares to a bank", "Deleting a joint holder"],
+    "answer": "Changing the order of names of joint holders to match the demat account",
+    "hint": "Order of names matters for demat matching.",
+    "explanation": "If names are A & B on the certificate but B & A on the demat account, a transposition form is used to align them without needing a transfer deed."
+  },
+  {
+    "id": 23,
+    "question": "The 'Investor Identification' in the depository system is based on:",
+    "options": ["Aadhaar only", "PAN", "Passport Number", "Bank Account Number"],
+    "answer": "PAN",
+    "hint": "The primary tax ID for financial transactions.",
+    "explanation": "PAN is the unique identifier used across all depositories to track an investor's holdings and prevent duplicate accounts."
+  },
+  {
+    "id": 24,
+    "question": "What is 'Corporate Action' in the context of depositories?",
+    "options": ["A company party", "Events like Dividend, Bonus, or Split initiated by the issuer", "Hiring a new CEO", "Opening a branch"],
+    "answer": "Events like Dividend, Bonus, or Split initiated by the issuer",
+    "hint": "Material changes to the shares.",
+    "explanation": "Corporate actions are events that affect all shareholders and require data from the depository for execution."
+  },
+  {
+    "id": 25,
+    "question": "Which entity provides the 'Beneficiary Position' (BenPos) data to the RTA?",
+    "options": ["The Bank", "The Depository", "The Stock Exchange", "The Investor"],
+    "answer": "The Depository",
+    "hint": "The 'Bank' of shares knows who the owners are.",
+    "explanation": "On the record date, the Depository sends the BenPos file to the RTA to identify which investors are entitled to dividends or bonus shares."
+  },
+  {
+    "id": 26,
+    "question": "What is the 'Consolidated Account Statement' (CAS)?",
+    "options": ["A statement of company profits", "A single statement combining all investments (Shares, MF, etc.) based on PAN", "A tax bill", "A listing of all brokers"],
+    "answer": "A single statement combining all investments (Shares, MF, etc.) based on PAN",
+    "hint": "A unified view of wealth.",
+    "explanation": "CAS is sent to investors monthly to give them a 360-degree view of their electronic financial assets."
+  },
+  {
+    "id": 27,
+    "question": "In a 'Market Trade', the DP must receive the DIS (Delivery Instruction Slip) before the ______ deadline.",
+    "options": ["Listing", "Pay-in", "Pay-out", "Expiry"],
+    "answer": "Pay-in",
+    "hint": "The time you must deliver shares to the exchange.",
+    "explanation": "Pay-in is the deadline by which the seller must deliver securities to the Clearing Corporation to complete the trade."
+  },
+  {
+    "id": 28,
+    "question": "What is 'Digitally Signed' DIS?",
+    "options": ["A signature on a tablet", "An electronic instruction using a secure digital signature (e-DIS)", "A photo of a signature", "A scanned copy"],
+    "answer": "An electronic instruction using a secure digital signature (e-DIS)",
+    "hint": "Paperless transfer.",
+    "explanation": "E-DIS allows investors to authorize share transfers via their broker's portal/app without physical paperwork."
+  },
+  {
+    "id": 29,
+    "question": "Which of the following is NOT a service provided by a Depository?",
+    "options": ["Dematerialization", "Granting loans to investors", "Pledge and Hypothecation", "Processing Corporate Actions"],
+    "answer": "Granting loans to investors",
+    "hint": "Depositories are record keepers, not lenders.",
+    "explanation": "While they facilitate pledging for loans, depositories themselves do not lend money."
+  },
+  {
+    "id": 30,
+    "question": "What is the 'ISIN' (International Securities Identification Number)?",
+    "options": ["A 12-digit unique code for each security", "The company's office number", "The investor's password", "A tax code"],
+    "answer": "A 12-digit unique code for each security",
+    "hint": "Unique ID for a stock.",
+    "explanation": "Every specific security (Equity of Reliance, Debt of SBI) has a unique ISIN to distinguish it in the electronic system."
+  },
+  {
+    "id": 31,
+    "question": "Can an investor have multiple demat accounts?",
+    "options": ["No, only one per PAN", "Yes, with different DPs", "Only with RBI permission", "Only if they are NRIs"],
+    "answer": "Yes, with different DPs",
+    "hint": "Just like multiple bank accounts.",
+    "explanation": "An investor can open multiple demat accounts with various Depository Participants as long as they provide their PAN for each."
+  },
+  {
+    "id": 32,
+    "question": "What is 'Beneficial Owner ID' (BO ID)?",
+    "options": ["The broker's ID", "A unique 8 or 16 digit number identifying the investor's demat account", "The company's registration number", "The share certificate number"],
+    "answer": "A unique 8 or 16 digit number identifying the investor's demat account",
+    "hint": "Your electronic account 'address'.",
+    "explanation": "The BO ID is your specific account number within the depository system."
+  },
+  {
+    "id": 33,
+    "question": "Who must deface the physical certificate during demat?",
+    "options": ["The Investor", "The DP", "The RTA", "The Depository"],
+    "answer": "The DP",
+    "hint": "Done at the point of document submission.",
+    "explanation": "The DP must deface the certificates (usually by punching a hole and marking 'Surrendered for Demat') before sending them to the RTA."
+  },
+  {
+    "id": 34,
+    "question": "A 'Joint' demat account can be opened with a maximum of ______ holders?",
+    "options": ["2", "3", "5", "10"],
+    "answer": "3",
+    "hint": "Standard limit for joint financial accounts in India.",
+    "explanation": "Up to three individuals can jointly hold a demat account."
+  },
+  {
+    "id": 35,
+    "question": "What is the role of the 'Clearing Member' in the depository process?",
+    "options": ["To buy shares for everyone", "To facilitate the movement of shares to the clearing corporation for settlement", "To print share certificates", "To regulate the RTA"],
+    "answer": "To facilitate the movement of shares to the clearing corporation for settlement",
+    "hint": "Link between the broker and the exchange's settlement arm.",
+    "explanation": "Clearing members ensure the correct number of shares reach the exchange to fulfill market obligations."
+  },
+  {
+    "id": 36,
+    "question": "What is 'Remat Request Number' (RRN)?",
+    "options": ["A tracking ID for rematerialization", "A phone number", "The investor's age", "The price of the certificate"],
+    "answer": "A tracking ID for rematerialization",
+    "hint": "Similar to DRN but for the reverse process.",
+    "explanation": "RRN is generated when a remat request is entered into the system."
+  },
+  {
+    "id": 37,
+    "question": "Can shares under 'Pledge' be sold by the investor?",
+    "options": ["Yes, anytime", "No, they are blocked until the pledge is released or invoked", "Only on Fridays", "Only if the market is up"],
+    "answer": "No, they are blocked until the pledge is released or invoked",
+    "hint": "The lender has a 'hold' on the property.",
+    "explanation": "Pledged shares cannot be moved or sold by the investor unless the lender (Pledgee) releases the pledge."
+  },
+  {
+    "id": 38,
+    "question": "What is 'In-Market' transfer?",
+    "options": ["Gifting shares", "Transfer of shares for a trade done on a recognized stock exchange", "Buying shares from a friend", "Inheriting shares"],
+    "answer": "Transfer of shares for a trade done on a recognized stock exchange",
+    "hint": "Standard stock market transaction.",
+    "explanation": "In-market transfers are the daily movements of shares from sellers to buyers through the exchange settlement system."
+  },
+  {
+    "id": 39,
+    "question": "Who bears the risk of loss of physical certificates during transit from DP to RTA?",
+    "options": ["The Investor", "The DP", "The RTA", "The Depository"],
+    "answer": "The DP",
+    "hint": "They are the ones responsible for safe dispatch.",
+    "explanation": "The DP is responsible for the safe delivery of documents to the RTA. If lost in transit, the DP must coordinate for duplicates."
+  },
+  {
+    "id": 40,
+    "question": "A 'Minor' account is operated by the ______.",
+    "options": ["Minor", "Guardian", "Broker", "Company"],
+    "answer": "Guardian",
+    "hint": "Minors are not legally eligible to sign contracts.",
+    "explanation": "The natural or legal guardian manages the minor's demat account until the minor attains majority (18 years)."
+  },
+  {
+    "id": 41,
+    "question": "What is 'Redemption' in the context of debt instruments in demat?",
+    "options": ["Buying more bonds", "The process where the company pays back the principal and the electronic bonds are cancelled", "A type of bonus", "Selling bonds to a friend"],
+    "answer": "The process where the company pays back the principal and the electronic bonds are cancelled",
+    "hint": "Paying off the debt.",
+    "explanation": "Upon maturity of debentures or bonds, the RTA/Issuer pays the money and instructs the depository to debit (extinguish) the bonds from demat accounts."
+  },
+  {
+    "id": 42,
+    "question": "What is 'E-Voting'?",
+    "options": ["Voting for elections", "Online voting on company resolutions by shareholders", "A survey", "None of the above"],
+    "answer": "Online voting on company resolutions by shareholders",
+    "hint": "Digital democracy for companies.",
+    "explanation": "Depositories provide e-voting platforms to enable shareholders to vote on corporate decisions without physically attending the meeting."
+  },
+  {
+    "id": 43,
+    "question": "A 'Nominee' in a demat account receives the shares:",
+    "options": ["As the absolute owner", "As a trustee for the legal heirs (subject to legal challenges)", "Automatically on the investor's birthday", "Never"],
+    "answer": "As a trustee for the legal heirs (subject to legal challenges)",
+    "hint": "Nomination makes transfer easy, but doesn't override succession laws.",
+    "explanation": "A nominee helps in the smooth transfer of shares upon death, but legal heirs can still claim rights under succession law."
+  },
+  {
+    "id": 44,
+    "question": "What is 'Speed-e' (NSDL) / 'Easiest' (CDSL)?",
+    "options": ["A high-speed internet plan", "Portals to view and manage demat accounts online", "A new stock exchange", "A marketing agency"],
+    "answer": "Portals to view and manage demat accounts online",
+    "hint": "User-friendly web interfaces.",
+    "explanation": "These facilities allow investors to submit transfer instructions and view balances without needing to visit the DP's office."
+  },
+  {
+    "id": 45,
+    "question": "Which of the following is a 'Static' detail of an investor?",
+    "options": ["Number of shares held", "Bank Account Number / Address", "Last traded price", "Profit made today"],
+    "answer": "Bank Account Number / Address",
+    "hint": "Info that doesn't change every day.",
+    "explanation": "Static details like bank info and address are stored in the depository system and used by the RTA for sending dividends or communications."
+  },
+  {
+    "id": 46,
+    "question": "What is 'Demat Request Confirmation'?",
+    "options": ["A text message from the broker", "The final electronic credit of shares into the account by the depository after RTA approval", "A certificate of profit", "A tax receipt"],
+    "answer": "The final electronic credit of shares into the account by the depository after RTA approval",
+    "hint": "The end of the demat process.",
+    "explanation": "Confirmation happens when the RTA verifies the physical shares and the depository updates the electronic balance."
+  },
+  {
+    "id": 47,
+    "question": "Who provides the 'Dematerialization' software to the RTAs?",
+    "options": ["SEBI", "The Depositories (NSDL/CDSL)", "The Issuer Company", "Private vendors only"],
+    "answer": "The Depositories (NSDL/CDSL)",
+    "hint": "Connectivity software.",
+    "explanation": "Depositories provide the DPM (for NSDL) or CDAS (for CDSL) software to RTAs and DPs for processing instructions."
+  },
+  {
+    "id": 48,
+    "question": "What is 'Corporate Action Audit'?",
+    "options": ["Auditing the company party", "Verifying that the correct number of shares were credited during a bonus/rights issue", "Checking employee attendance", "Auditing the bank"],
+    "answer": "Verifying that the correct number of shares were credited during a bonus/rights issue",
+    "hint": "Ensuring the math was right.",
+    "explanation": "Regulators and auditors check the corporate action process to ensure no excess shares were created or credited incorrectly."
+  },
+  {
+    "id": 49,
+    "question": "If physical shares are in the name of 'A' but the demat account is in names of 'A and B', can demat happen?",
+    "options": ["Yes", "No, account holder names must match certificate names exactly", "Only if A is the first holder", "Only with SEBI permission"],
+    "answer": "No, account holder names must match certificate names exactly",
+    "hint": "Standard protocol for registry matching.",
+    "explanation": "For demat to occur, the name(s) and their order on the physical certificate must be identical to the names on the demat account."
+  },
+  {
+    "id": 50,
+    "question": "What is the primary goal of the 'Depository System'?",
+    "options": ["To make shares expensive", "To eliminate the risks of paper-based trading and improve efficiency", "To hire more brokers", "To increase taxes"],
+    "answer": "To eliminate the risks of paper-based trading and improve efficiency",
+    "hint": "The reason why we have digital shares.",
+    "explanation": "Digital shares prevent loss, theft, forgery, and bad delivery while enabling T+1 settlement cycles."
+  }
+]

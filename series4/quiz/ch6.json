@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "Which system is primarily used for trading Interest Rate Derivatives on NSE?",
+    "options": [
+      "BOLT (BSE On-Line Trading)",
+      "NEAT (National Exchange for Automated Trading)",
+      "NDS-OM",
+      "CORE Banking Solution"
+    ],
+    "answer": "NEAT (National Exchange for Automated Trading)",
+    "hint": "NSE's electronic trading system.",
+    "explanation": "NEAT is the fully automated screen-based trading system used by the National Stock Exchange (NSE) for all its segments, including IRDs."
+  },
+  {
+    "id": 2,
+    "question": "The trading system matches orders based on:",
+    "options": [
+      "Price-Time Priority",
+      "Volume-Time Priority",
+      "Counterparty Identity",
+      "Broker Preference"
+    ],
+    "answer": "Price-Time Priority",
+    "hint": "Best price first, then first come first serve.",
+    "explanation": "The system matches orders first by the best price (highest buy, lowest sell) and then by time (who entered the order first at that price)."
+  },
+  {
+    "id": 3,
+    "question": "Which of the following is a 'Limit Order'?",
+    "options": [
+      "An order to buy/sell at the best available market price",
+      "An order to buy/sell at a specified price or better",
+      "An order to cancel a trade",
+      "An order that expires in 5 minutes"
+    ],
+    "answer": "An order to buy/sell at a specified price or better",
+    "hint": "You set a limit.",
+    "explanation": "A Limit Order specifies the maximum price a buyer is willing to pay or the minimum price a seller is willing to accept."
+  },
+  {
+    "id": 4,
+    "question": "A 'Market Order' executes at:",
+    "options": [
+      "The best available price currently in the order book",
+      "The closing price of the previous day",
+      "A price determined by the exchange",
+      "The limit price"
+    ],
+    "answer": "The best available price currently in the order book",
+    "hint": "Immediate execution.",
+    "explanation": "A Market Order does not specify a price; it is executed immediately at the best price available in the market (Ask for buy, Bid for sell)."
+  },
+  {
+    "id": 5,
+    "question": "What is a 'Stop Loss' order?",
+    "options": [
+      "An order to stop trading",
+      "An order that becomes a Market/Limit order once a specific 'Trigger Price' is reached",
+      "An order to book profit",
+      "An order to freeze the account"
+    ],
+    "answer": "An order that becomes a Market/Limit order once a specific 'Trigger Price' is reached",
+    "hint": "It waits for a trigger.",
+    "explanation": "A Stop Loss order remains dormant until the market price reaches the specified Trigger Price, at which point it is activated as a regular limit or market order to limit losses."
+  },
+  {
+    "id": 6,
+    "question": "An 'Immediate or Cancel' (IOC) order:",
+    "options": [
+      "Must be executed immediately in full or part, and the unfilled portion is cancelled",
+      "Must be executed in full immediately or cancelled completely",
+      "Stays in the system for the day",
+      "Is valid until cancelled by the trader"
+    ],
+    "answer": "Must be executed immediately in full or part, and the unfilled portion is cancelled",
+    "hint": "Whatever you can get now, take it. Forget the rest.",
+    "explanation": "IOC orders allow partial execution. Any portion not immediately matched is cancelled instantly and not stored in the order book."
+  },
+  {
+    "id": 7,
+    "question": "Which entity provides the trading platform for IRDs?",
+    "options": [
+      "SEBI",
+      "Stock Exchanges (NSE/BSE/MSEI)",
+      "Clearing Corporation",
+      "RBI"
+    ],
+    "answer": "Stock Exchanges (NSE/BSE/MSEI)",
+    "hint": "Where buyers and sellers meet.",
+    "explanation": "The exchanges (NSE, BSE, MSEI) provide the electronic infrastructure and platform where trading takes place."
+  },
+  {
+    "id": 8,
+    "question": "The trading hours for Interest Rate Futures (IRF) usually align with:",
+    "options": [
+      "Equity Market (9:15 AM - 3:30 PM)",
+      "Money Market / G-Sec Market (9:00 AM - 5:00 PM)",
+      "Commodity Market (9:00 AM - 11:30 PM)",
+      "24 hours"
+    ],
+    "answer": "Money Market / G-Sec Market (9:00 AM - 5:00 PM)",
+    "hint": "Synchronized with the underlying.",
+    "explanation": "To ensure efficient price discovery and arbitrage, IRF trading hours are typically 9:00 AM to 5:00 PM to match the underlying G-Sec market."
+  },
+  {
+    "id": 9,
+    "question": "A 'Spread Order' involves:",
+    "options": [
+      "Buying one contract and Selling another contract simultaneously",
+      "Buying shares in different companies",
+      "Selling shares to multiple buyers",
+      "Buying bonds at a discount"
+    ],
+    "answer": "Buying one contract and Selling another contract simultaneously",
+    "hint": "Trading the difference.",
+    "explanation": "Spread orders allow a trader to enter two opposing positions (e.g., Buy Near Month, Sell Far Month) in a single transaction to trade the price difference."
+  },
+  {
+    "id": 10,
+    "question": "The 'Client Code' in an order is mandatory to:",
+    "options": [
+      "Identify the broker",
+      "Identify the specific client for whom the order is placed",
+      "Identify the exchange",
+      "Calculate taxes"
+    ],
+    "answer": "Identify the specific client for whom the order is placed",
+    "hint": "KYC linkage.",
+    "explanation": "Every order must be tagged with a unique Client Code to ensure proper tracking, margining, and settlement for the correct investor."
+  },
+  {
+    "id": 11,
+    "question": "What happens if a 'Limit Buy Order' is placed at a price higher than the current best seller?",
+    "options": [
+      "It is rejected",
+      "It sits in the order book",
+      "It is executed immediately at the best seller's price (better price for buyer)",
+      "It is executed at the limit price"
+    ],
+    "answer": "It is executed immediately at the best seller's price (better price for buyer)",
+    "hint": "You get a better deal.",
+    "explanation": "If you are willing to pay Rs. 100 but the seller is asking Rs. 99, the system executes the trade at Rs. 99, giving you a better price."
+  },
+  {
+    "id": 12,
+    "question": "Market participants access the trading system through:",
+    "options": [
+      "Direct wire to SEBI",
+      "Trading Members (Brokers)",
+      "Clearing Banks",
+      "Post Offices"
+    ],
+    "answer": "Trading Members (Brokers)",
+    "hint": "Intermediaries.",
+    "explanation": "Investors cannot access the exchange directly; they must route their orders through registered Trading Members (Brokers)."
+  },
+  {
+    "id": 13,
+    "question": "A 'Day Order' is valid:",
+    "options": [
+      "For 24 hours",
+      "Until the end of the trading session on that day",
+      "For one week",
+      "Until cancelled by the user"
+    ],
+    "answer": "Until the end of the trading session on that day",
+    "hint": "Standard validity.",
+    "explanation": "Unless specified otherwise (like IOC), standard orders are valid only for the trading day they are placed. If not executed, they are cancelled at market close."
+  },
+  {
+    "id": 14,
+    "question": "Price Bands (Circuit Breakers) in IRF are designed to:",
+    "options": [
+      "Guarantee profits",
+      "Prevent extreme volatility and erroneous trades",
+      "Limit the number of trades",
+      "Fix the interest rate"
+    ],
+    "answer": "Prevent extreme volatility and erroneous trades",
+    "hint": "Cooling off mechanism.",
+    "explanation": "Price bands prevent orders from being placed at prices significantly far from the current market price, preventing fat-finger errors and flash crashes."
+  },
+  {
+    "id": 15,
+    "question": "Typically, the initial dynamic price band for G-Sec Futures is:",
+    "options": [
+      "+/- 10%",
+      "+/- 3% or similar small range",
+      "Unlimited",
+      "+/- 20%"
+    ],
+    "answer": "+/- 3% or similar small range",
+    "hint": "Bonds are less volatile than stocks.",
+    "explanation": "Since G-Secs are generally less volatile than equities, the price bands are tighter (e.g., +/- 3% of the base price), though they can be relaxed if needed."
+  },
+  {
+    "id": 16,
+    "question": "Which ID is required for all clients to trade in the derivatives market?",
+    "options": [
+      "Aadhaar Number",
+      "UCC (Unique Client Code)",
+      "Passport Number",
+      "Voter ID"
+    ],
+    "answer": "UCC (Unique Client Code)",
+    "hint": "Assigned by the broker.",
+    "explanation": "The broker assigns a Unique Client Code (UCC) to each client, which is mapped to their PAN, to track all their trades."
+  },
+  {
+    "id": 17,
+    "question": "The 'Base Price' for determining price bands on the first day of a new contract is:",
+    "options": [
+      "Zero",
+      "The theoretical price derived from the underlying bond price",
+      "Rs. 100",
+      "The price of the previous month's contract"
+    ],
+    "answer": "The theoretical price derived from the underlying bond price",
+    "hint": "Fair value.",
+    "explanation": "For a new contract, the exchange calculates a theoretical price based on the spot price of the underlying bond and cost of carry."
+  },
+  {
+    "id": 18,
+    "question": "A trade execution confirmation slip (Contract Note) must be issued by the broker to the client within:",
+    "options": [
+      "24 hours of the trade",
+      "1 week",
+      "1 month",
+      "Before the trade"
+    ],
+    "answer": "24 hours of the trade",
+    "hint": "Standard regulatory requirement.",
+    "explanation": "SEBI regulations mandate that brokers must issue a physical or digital Contract Note to the client within 24 hours of the trade execution."
+  },
+  {
+    "id": 19,
+    "question": "Who sets the daily settlement price?",
+    "options": [
+      "The Broker",
+      "The Buyer and Seller",
+      "The Clearing Corporation / Exchange",
+      "RBI"
+    ],
+    "answer": "The Clearing Corporation / Exchange",
+    "hint": "Official closing price.",
+    "explanation": "The Exchange or Clearing Corporation determines the daily settlement price (usually weighted average of last 30 mins) for MTM calculations."
+  },
+  {
+    "id": 20,
+    "question": "Algorithmic Trading (Algo Trading) refers to:",
+    "options": [
+      "Manual trading by experts",
+      "Using computer programs to generate and execute orders based on pre-defined parameters",
+      "Trading in algorithms",
+      "Trading based on rumors"
+    ],
+    "answer": "Using computer programs to generate and execute orders based on pre-defined parameters",
+    "hint": "Automated speed.",
+    "explanation": "Algo trading uses software to execute orders at high speed based on specific instructions (timing, price, quantity) without human intervention."
+  },
+  {
+    "id": 21,
+    "question": "Co-location services offered by exchanges allow members to:",
+    "options": [
+      "Place their servers in the exchange premises to reduce latency",
+      "Share office space",
+      "Have lunch together",
+      "Trade after hours"
+    ],
+    "answer": "Place their servers in the exchange premises to reduce latency",
+    "hint": "Speed advantage.",
+    "explanation": "Co-location involves placing the member's trading servers in the same building as the exchange's matching engine to minimize data transmission time (latency)."
+  },
+  {
+    "id": 22,
+    "question": "A 'Give-Up' trade involves:",
+    "options": [
+      "A client giving up on a trade",
+      "A trading member executing a trade and passing it to a clearing member for settlement",
+      "The exchange cancelling a trade",
+      "Surrendering profits"
+    ],
+    "answer": "A trading member executing a trade and passing it to a clearing member for settlement",
+    "hint": "Separation of execution and clearing.",
+    "explanation": "Institutional clients often use one broker to execute trades (Trading Member) and another entity to clear and settle them (Clearing Member). The trade is 'given up' to the CM."
+  },
+  {
+    "id": 23,
+    "question": "Order modification allows a trader to change:",
+    "options": [
+      "The quantity or price of an unexecuted order",
+      "The underlying asset of an executed order",
+      "The counterparty of an executed order",
+      "The trade date"
+    ],
+    "answer": "The quantity or price of an unexecuted order",
+    "hint": "You can't change a done deal.",
+    "explanation": "Only orders that are still pending (open) in the system can be modified. Once executed, no changes are possible."
+  },
+  {
+    "id": 24,
+    "question": "If an order is 'Frozen', it means:",
+    "options": [
+      "The computer crashed",
+      "The order size or price is outside standard parameters and requires exchange approval",
+      "The market is closed",
+      "The client is banned"
+    ],
+    "answer": "The order size or price is outside standard parameters and requires exchange approval",
+    "hint": "Safety check.",
+    "explanation": "Exchanges freeze orders that are unusually large or at prices far from the last trade to prevent accidental market disruption."
+  },
+  {
+    "id": 25,
+    "question": "The 'Order Book' displays:",
+    "options": [
+      "Only Buy orders",
+      "Only Sell orders",
+      "The list of all outstanding Buy and Sell orders",
+      "Executed trades only"
+    ],
+    "answer": "The list of all outstanding Buy and Sell orders",
+    "hint": "Market Depth.",
+    "explanation": "The order book shows the demand (bids) and supply (asks) currently in the market, usually displaying the top 5 best prices."
+  },
+  {
+    "id": 26,
+    "question": "What is 'Market Depth'?",
+    "options": [
+      "The history of the market",
+      "The volume of pending buy and sell orders at different price levels",
+      "The knowledge of the trader",
+      "The depth of the ocean"
+    ],
+    "answer": "The volume of pending buy and sell orders at different price levels",
+    "hint": "Liquidity indicator.",
+    "explanation": "Market depth indicates liquidity. A 'deep' market has large volumes of orders at prices close to the last traded price, allowing large trades without moving the price much."
+  },
+  {
+    "id": 27,
+    "question": "A 'Disclosed Quantity' order allows a trader to:",
+    "options": [
+      "Reveal their full identity",
+      "Show only a fraction of the total order quantity to the market",
+      "Hide the price",
+      "Trade anonymously"
+    ],
+    "answer": "Show only a fraction of the total order quantity to the market",
+    "hint": "Iceberg order.",
+    "explanation": "Traders use this to hide large orders. For example, buying 10,000 lots but showing only 1,000 at a time to avoid panicking the market."
+  },
+  {
+    "id": 28,
+    "question": "In the NEAT system, the 'Snap Quote' feature provides:",
+    "options": [
+      "Instantaneous market information (Best Bid, Ask, LTP) for a specific security",
+      "A screenshot of the screen",
+      "A news headline",
+      "The broker's phone number"
+    ],
+    "answer": "Instantaneous market information (Best Bid, Ask, LTP) for a specific security",
+    "hint": "Snapshot of current price.",
+    "explanation": "Snap Quote allows a dealer to quickly check the current market status of a specific contract."
+  },
+  {
+    "id": 29,
+    "question": "The 'Active' order in a matching transaction is:",
+    "options": [
+      "The incoming order that triggers the trade",
+      "The order already sitting in the book (Passive)",
+      "The older order",
+      "The larger order"
+    ],
+    "answer": "The incoming order that triggers the trade",
+    "hint": "The aggressor.",
+    "explanation": "The Active order is the one that enters the system and matches against an existing (Passive) order sitting in the book."
+  },
+  {
+    "id": 30,
+    "question": "Margins are collected by the Clearing Corporation from:",
+    "options": [
+      "Clients directly",
+      "Clearing Members",
+      "RBI",
+      "Stock Exchanges"
+    ],
+    "answer": "Clearing Members",
+    "hint": "Hierarchy: CC -> CM -> TM -> Client.",
+    "explanation": "The Clearing Corporation collects margins from Clearing Members. Clearing Members collect from Trading Members, who in turn collect from Clients."
+  },
+  {
+    "id": 31,
+    "question": "SPAN (Standard Portfolio Analysis of Risk) is a system used for:",
+    "options": [
+      "Matching orders",
+      "Calculating Initial Margin requirements",
+      "Sending emails",
+      "Tracking dividends"
+    ],
+    "answer": "Calculating Initial Margin requirements",
+    "hint": "Risk management tool.",
+    "explanation": "SPAN is a globally accepted methodology used by exchanges to calculate the initial margin based on the portfolio's total risk."
+  },
+  {
+    "id": 32,
+    "question": "If a client fails to pay the required margin, the broker has the right to:",
+    "options": [
+      "File a police complaint",
+      "Square off (close) the client's position",
+      "Wait indefinitely",
+      "Pay from their own pocket"
+    ],
+    "answer": "Square off (close) the client's position",
+    "hint": "Risk mitigation.",
+    "explanation": "To protect against further losses, regulations and member-client agreements allow the broker to liquidate the client's position if margin calls are not met."
+  },
+  {
+    "id": 33,
+    "question": "Mark-to-Market (MTM) settlement happens:",
+    "options": [
+      "Weekly",
+      "Monthly",
+      "Daily",
+      "Yearly"
+    ],
+    "answer": "Daily",
+    "hint": "T+0 or T+1 basis.",
+    "explanation": "Profits and losses are calculated at the end of every trading day, and the margin account is adjusted (debited/credited) daily."
+  },
+  {
+    "id": 34,
+    "question": "The 'Exposure Margin' is charged:",
+    "options": [
+      "Over and above the SPAN margin",
+      "Instead of SPAN margin",
+      "Only to foreign investors",
+      "Only on profit"
+    ],
+    "answer": "Over and above the SPAN margin",
+    "hint": "Extra layer of safety.",
+    "explanation": "Exposure margin is an additional margin collected to cover risks that might arise from extreme market moves beyond what SPAN covers."
+  },
+  {
+    "id": 35,
+    "question": "Direct Market Access (DMA) allows institutional clients to:",
+    "options": [
+      "Bypass the broker entirely",
+      "Place orders directly into the exchange trading system through the broker's infrastructure",
+      "Trade without margins",
+      "Become an exchange"
+    ],
+    "answer": "Place orders directly into the exchange trading system through the broker's infrastructure",
+    "hint": "Speed and control.",
+    "explanation": "DMA gives clients direct control over order execution, bypassing the broker's manual dealer terminal, though it still goes through the broker's risk management filters."
+  },
+  {
+    "id": 36,
+    "question": "A 'Stop Loss Buy' order is placed:",
+    "options": [
+      "Below the current market price",
+      "Above the current market price",
+      "At the current market price",
+      "At zero"
+    ],
+    "answer": "Above the current market price",
+    "hint": "To protect a short position.",
+    "explanation": "If you are Short, you lose if prices rise. You place a Stop Loss Buy above the current price to cap your loss if the market rallies."
+  },
+  {
+    "id": 37,
+    "question": "A 'Stop Loss Sell' order is placed:",
+    "options": [
+      "Below the current market price",
+      "Above the current market price",
+      "At the current market price",
+      "At infinity"
+    ],
+    "answer": "Below the current market price",
+    "hint": "To protect a long position.",
+    "explanation": "If you are Long, you lose if prices fall. You place a Stop Loss Sell below the current price to exit if the market drops."
+  },
+  {
+    "id": 38,
+    "question": "What is 'Novation' in the context of clearing?",
+    "options": [
+      "Creating a new product",
+      "The Clearing Corporation replacing the original counterparty to become the buyer to every seller and seller to every buyer",
+      "Cancelling a trade",
+      "Listing a new company"
+    ],
+    "answer": "The Clearing Corporation replacing the original counterparty to become the buyer to every seller and seller to every buyer",
+    "hint": "Substitution.",
+    "explanation": "Novation is the legal process where the CCP steps in between the two trading parties, guaranteeing the trade and netting positions."
+  },
+  {
+    "id": 39,
+    "question": "The 'Settlement Guarantee Fund' (SGF) is maintained by:",
+    "options": [
+      "SEBI",
+      "RBI",
+      "The Clearing Corporation",
+      "The Investors"
+    ],
+    "answer": "The Clearing Corporation",
+    "hint": "The ultimate safety net.",
+    "explanation": "The SGF is a corpus used to pay for settlement obligations if a member defaults, ensuring the market doesn't collapse."
+  },
+  {
+    "id": 40,
+    "question": "Insider trading regulations apply to:",
+    "options": [
+      "Only Equity markets",
+      "All securities markets including Derivatives",
+      "Only Commodity markets",
+      "Only Foreign investors"
+    ],
+    "answer": "All securities markets including Derivatives",
+    "hint": "Fair play everywhere.",
+    "explanation": "Trading on Unpublished Price Sensitive Information (UPSI) is illegal in all segments of the securities market."
+  },
+  {
+    "id": 41,
+    "question": "Self-Match Prevention (SMP) mechanisms prevent:",
+    "options": [
+      "Two different brokers from trading",
+      "Orders from the same client code matching against each other",
+      "Profitable trades",
+      "Loss making trades"
+    ],
+    "answer": "Orders from the same client code matching against each other",
+    "hint": "Wash trades.",
+    "explanation": "SMP prevents a client from buying and selling to themselves (wash trades), which can artificially inflate volume and manipulate prices."
+  },
+  {
+    "id": 42,
+    "question": "The 'Quantity Freeze' limit is:",
+    "options": [
+      "The minimum quantity one can trade",
+      "The maximum quantity allowed per single order without validation",
+      "The total volume of the exchange",
+      "The maximum loss allowed"
+    ],
+    "answer": "The maximum quantity allowed per single order without validation",
+    "hint": "Fat finger check.",
+    "explanation": "It is a risk management parameter. Any order larger than the freeze quantity is blocked or requires special approval to prevent erroneous massive trades."
+  },
+  {
+    "id": 43,
+    "question": "Proprietary Trading (Prop Trading) refers to:",
+    "options": [
+      "A broker trading for their own account",
+      "A broker trading for a client",
+      "A client trading for another client",
+      "Government trading"
+    ],
+    "answer": "A broker trading for their own account",
+    "hint": "Own money.",
+    "explanation": "Prop trading involves the member firm using its own capital to trade for profit, rather than earning commission from clients."
+  },
+  {
+    "id": 44,
+    "question": "Which type of member can clear trades for other trading members?",
+    "options": [
+      "Trading Member (TM)",
+      "Professional Clearing Member (PCM) or Self Clearing Member (SCM)",
+      "Authorized Person",
+      "Sub-broker"
+    ],
+    "answer": "Professional Clearing Member (PCM) or Self Clearing Member (SCM)",
+    "hint": "Clearing capability.",
+    "explanation": "A Trading Member may not have clearing rights. They must link with a Professional Clearing Member or be a Self Clearing Member to settle trades."
+  },
+  {
+    "id": 45,
+    "question": "Contract months available for trading are usually:",
+    "options": [
+      "Near Month, Next Month, Far Month",
+      "Current Year, Next Year",
+      "Only the current week",
+      "Any month in the next 10 years"
+    ],
+    "answer": "Near Month, Next Month, Far Month",
+    "hint": "3 month cycle.",
+    "explanation": "Exchanges typically run a 3-month cycle, offering contracts expiring in the current month (Near), the next month (Next), and the month after (Far)."
+  },
+  {
+    "id": 46,
+    "question": "A 'Good Till Cancelled' (GTC) order:",
+    "options": [
+      "Expires at the end of the day",
+      "Remains in the system for a specified number of days until executed or cancelled",
+      "Is invalid in India",
+      "Is the same as IOC"
+    ],
+    "answer": "Remains in the system for a specified number of days until executed or cancelled",
+    "hint": "Persists over multiple days.",
+    "explanation": "While true GTC is rare in Indian segments (often simulated by brokers as Good Till Date), it theoretically remains active across trading sessions until matched."
+  },
+  {
+    "id": 47,
+    "question": "If a contract expires on a trading holiday:",
+    "options": [
+      "The expiry is moved to the previous trading day",
+      "The expiry is moved to the next trading day",
+      "The contract becomes void",
+      "The expiry happens on the holiday"
+    ],
+    "answer": "The expiry is moved to the previous trading day",
+    "hint": "Prepone.",
+    "explanation": "If the expiration date falls on a holiday, the expiry is typically advanced to the immediately preceding trading day."
+  },
+  {
+    "id": 48,
+    "question": "Bulk Deals / Block Deals allow:",
+    "options": [
+      "Retail investors to trade small quantities",
+      "Large trades to be executed in a separate window or identified specifically",
+      "Trading without margins",
+      "Tax evasion"
+    ],
+    "answer": "Large trades to be executed in a separate window or identified specifically",
+    "hint": "Big players.",
+    "explanation": "Block deals are large transactions (usually defined by value or quantity) often executed in a special trading window to minimize impact on the normal market price."
+  },
+  {
+    "id": 49,
+    "question": "The 'Turnover' of an exchange refers to:",
+    "options": [
+      "The profit of the exchange",
+      "The total value of all contracts traded in a specific period",
+      "The number of members",
+      "The speed of trading"
+    ],
+    "answer": "The total value of all contracts traded in a specific period",
+    "hint": "Volume * Price.",
+    "explanation": "Turnover is the aggregate value of all trades executed on the platform during the day/month/year."
+  },
+  {
+    "id": 50,
+    "question": "Who is responsible for the final settlement of funds and securities?",
+    "options": [
+      "The Exchange",
+      "The Broker",
+      "The Clearing Corporation",
+      "The Depository"
+    ],
+    "answer": "The Clearing Corporation",
+    "hint": "Post-trade processing.",
+    "explanation": "The Clearing Corporation is the central entity that ensures funds are debited from buyers and credited to sellers (and vice versa for securities/derivatives)."
+  }
+]

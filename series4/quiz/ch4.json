@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "An 'Exchange Traded Interest Rate Option' is a contract that gives the buyer:",
+    "options": [
+      "The obligation to buy or sell an interest rate instrument",
+      "The right, but not the obligation, to buy or sell an interest rate instrument at a specified price",
+      "The right to receive a fixed interest rate forever",
+      "The obligation to pay the premium daily"
+    ],
+    "answer": "The right, but not the obligation, to buy or sell an interest rate instrument at a specified price",
+    "hint": "Options = Choice (Right).",
+    "explanation": "An option grants the holder the right to buy (Call) or sell (Put) the underlying asset, but they are not forced to do so if it is not profitable."
+  },
+  {
+    "id": 2,
+    "question": "In an Options contract, the 'Strike Price' is:",
+    "options": [
+      "The price at which the option is bought in the market",
+      "The pre-determined price at which the underlying asset can be bought or sold",
+      "The spot price of the underlying asset",
+      "The settlement price on expiry"
+    ],
+    "answer": "The pre-determined price at which the underlying asset can be bought or sold",
+    "hint": "The price you 'strike' the deal at.",
+    "explanation": "The Strike Price (or Exercise Price) is the fixed price specified in the contract at which the option holder can exercise their right."
+  },
+  {
+    "id": 3,
+    "question": "If you buy a 'Call Option' on a 10-Year G-Sec Future, you profit if:",
+    "options": [
+      "Bond prices fall",
+      "Interest rates rise",
+      "Bond prices rise above the strike price + premium",
+      "Volatility decreases to zero"
+    ],
+    "answer": "Bond prices rise above the strike price + premium",
+    "hint": "Call = Right to Buy. You want prices to go up.",
+    "explanation": "A Call Option gives the right to buy. You profit when the market price rises significantly above the strike price to cover the cost of the premium."
+  },
+  {
+    "id": 4,
+    "question": "If you buy a 'Put Option' on a 10-Year G-Sec Future, you profit if:",
+    "options": [
+      "Bond prices rise",
+      "Interest rates fall",
+      "Bond prices fall below the strike price - premium",
+      "The market remains flat"
+    ],
+    "answer": "Bond prices fall below the strike price - premium",
+    "hint": "Put = Right to Sell. You want prices to go down (yields up).",
+    "explanation": "A Put Option gives the right to sell. You profit when the market price falls significantly below the strike price."
+  },
+  {
+    "id": 5,
+    "question": "The 'Premium' in an options contract is:",
+    "options": [
+      "The profit made by the seller",
+      "The price paid by the buyer to the seller to acquire the option right",
+      "The margin money kept with the exchange",
+      "The tax paid to the government"
+    ],
+    "answer": "The price paid by the buyer to the seller to acquire the option right",
+    "hint": "The upfront cost.",
+    "explanation": "The premium is the non-refundable cost the buyer pays the seller (writer) for the rights conveyed by the option."
+  },
+  {
+    "id": 6,
+    "question": "A 'European' style option can be exercised:",
+    "options": [
+      "Any time before expiry",
+      "Only on the expiration date",
+      "Any time after the premium is paid",
+      "Only if the price is high"
+    ],
+    "answer": "Only on the expiration date",
+    "hint": "Standard for many index options.",
+    "explanation": "European options can strictly be exercised only on the maturity date, unlike American options which can be exercised any time."
+  },
+  {
+    "id": 7,
+    "question": "Which of the following describes an 'American' style option?",
+    "options": [
+      "Can be exercised only on expiry",
+      "Can be exercised on any trading day up to and including the expiry date",
+      "Can be exercised only in the US",
+      "Cannot be exercised at all"
+    ],
+    "answer": "Can be exercised on any trading day up to and including the expiry date",
+    "hint": "Maximum flexibility.",
+    "explanation": "American options offer the flexibility to exercise the right on any day during the life of the option."
+  },
+  {
+    "id": 8,
+    "question": "If the Spot Price (S) is greater than the Strike Price (K), a Call Option is:",
+    "options": [
+      "In-the-Money (ITM)",
+      "At-the-Money (ATM)",
+      "Out-of-the-Money (OTM)",
+      "Worthless"
+    ],
+    "answer": "In-the-Money (ITM)",
+    "hint": "You can buy low (Strike) and sell high (Spot).",
+    "explanation": "For a Call Option, if Market Price > Strike Price, it has intrinsic value and is In-the-Money."
+  },
+  {
+    "id": 9,
+    "question": "If the Spot Price (S) is less than the Strike Price (K), a Put Option is:",
+    "options": [
+      "In-the-Money (ITM)",
+      "At-the-Money (ATM)",
+      "Out-of-the-Money (OTM)",
+      "At a loss"
+    ],
+    "answer": "In-the-Money (ITM)",
+    "hint": "You can sell high (Strike) and buy back low (Spot).",
+    "explanation": "For a Put Option, if Market Price < Strike Price, it is profitable to exercise, so it is In-the-Money."
+  },
+  {
+    "id": 10,
+    "question": "The 'Intrinsic Value' of an Out-of-the-Money (OTM) option is:",
+    "options": [
+      "Positive",
+      "Negative",
+      "Zero",
+      "Equal to the premium"
+    ],
+    "answer": "Zero",
+    "hint": "Intrinsic value cannot be negative.",
+    "explanation": "An option only has intrinsic value if it is ITM. If it is OTM, its intrinsic value is zero (it relies entirely on Time Value)."
+  },
+  {
+    "id": 11,
+    "question": "Option Premium = ?",
+    "options": [
+      "Intrinsic Value + Time Value",
+      "Intrinsic Value - Time Value",
+      "Spot Price - Strike Price",
+      "Strike Price + Interest"
+    ],
+    "answer": "Intrinsic Value + Time Value",
+    "hint": "The two components of price.",
+    "explanation": "The total price (premium) of an option is the sum of its Intrinsic Value (current profit) and Time Value (potential for future profit)."
+  },
+  {
+    "id": 12,
+    "question": "Time Value of an option is typically highest when the option is:",
+    "options": [
+      "Deep In-the-Money",
+      "Deep Out-of-the-Money",
+      "At-the-Money (ATM)",
+      "Near Expiry"
+    ],
+    "answer": "At-the-Money (ATM)",
+    "hint": "Maximum uncertainty.",
+    "explanation": "At-the-Money options have the highest uncertainty regarding whether they will finish ITM or OTM, thus commanding the highest Time Value."
+  },
+  {
+    "id": 13,
+    "question": "As the expiration date approaches, the Time Value of an option:",
+    "options": [
+      "Increases",
+      "Decreases (Time Decay)",
+      "Remains constant",
+      "Becomes negative"
+    ],
+    "answer": "Decreases (Time Decay)",
+    "hint": "Theta effect.",
+    "explanation": "Time value erodes as maturity approaches because there is less time for the underlying asset to move in a favorable direction. This is called Time Decay."
+  },
+  {
+    "id": 14,
+    "question": "The maximum loss for the Buyer of an option is limited to:",
+    "options": [
+      "The Strike Price",
+      "Unlimited",
+      "The Premium Paid",
+      "The Spot Price"
+    ],
+    "answer": "The Premium Paid",
+    "hint": "You can just walk away.",
+    "explanation": "The buyer's risk is limited to the premium paid. If the option expires worthless, they lose only the premium."
+  },
+  {
+    "id": 15,
+    "question": "The maximum loss for the Seller (Writer) of a naked Call Option is theoretically:",
+    "options": [
+      "Limited to the Premium Received",
+      "Unlimited",
+      "The Strike Price",
+      "Zero"
+    ],
+    "answer": "Unlimited",
+    "hint": "Prices can rise to infinity.",
+    "explanation": "If the market price rises significantly, the seller must deliver the asset at the lower strike price, leading to potentially unlimited losses."
+  },
+  {
+    "id": 16,
+    "question": "Which Greek letter measures the sensitivity of the option price to a change in the price of the underlying asset?",
+    "options": [
+      "Delta",
+      "Gamma",
+      "Vega",
+      "Rho"
+    ],
+    "answer": "Delta",
+    "hint": "Change in Price / Change in Underlying.",
+    "explanation": "Delta measures how much the option premium changes for a 1-unit change in the price of the underlying asset."
+  },
+  {
+    "id": 17,
+    "question": "Which Greek letter measures the sensitivity of the option price to changes in Volatility?",
+    "options": [
+      "Delta",
+      "Theta",
+      "Vega",
+      "Rho"
+    ],
+    "answer": "Vega",
+    "hint": "V for Volatility.",
+    "explanation": "Vega measures the sensitivity of the option price to a 1% change in the implied volatility of the underlying asset."
+  },
+  {
+    "id": 18,
+    "question": "Which Greek letter measures the rate of Time Decay?",
+    "options": [
+      "Delta",
+      "Theta",
+      "Gamma",
+      "Beta"
+    ],
+    "answer": "Theta",
+    "hint": "T for Time.",
+    "explanation": "Theta represents the rate at which an option loses value as time passes (Time Decay)."
+  },
+  {
+    "id": 19,
+    "question": "What is 'Put-Call Parity'?",
+    "options": [
+      "A relationship between the prices of Put and Call options with the same strike and expiry",
+      "A rule that Puts and Calls must trade at the same price",
+      "A regulation by SEBI",
+      "A strategy to buy both Put and Call"
+    ],
+    "answer": "A relationship between the prices of Put and Call options with the same strike and expiry",
+    "hint": "Call - Put = Spot - Strike (discounted).",
+    "explanation": "Put-Call Parity defines the theoretical price relationship between European Put and Call options of the same class (same strike and expiry)."
+  },
+  {
+    "id": 20,
+    "question": "A 'Straddle' strategy involves:",
+    "options": [
+      "Buying a Call and Selling a Put",
+      "Buying a Call and Buying a Put with the same Strike and Expiry",
+      "Buying a Call and Buying a Put with different Strikes",
+      "Selling a Call and Selling a Put with different Expiries"
+    ],
+    "answer": "Buying a Call and Buying a Put with the same Strike and Expiry",
+    "hint": "Betting on high volatility in either direction.",
+    "explanation": "A Straddle involves buying both a Call and a Put at the same strike price and expiry. It profits from a large move in either direction."
+  },
+  {
+    "id": 21,
+    "question": "A 'Strangle' strategy differs from a Straddle because:",
+    "options": [
+      "It uses different strike prices (usually OTM)",
+      "It uses different expiration dates",
+      "It involves only Calls",
+      "It is risk-free"
+    ],
+    "answer": "It uses different strike prices (usually OTM)",
+    "hint": "Cheaper than a Straddle.",
+    "explanation": "A Strangle involves buying a Call and a Put with different strike prices (usually both OTM). It is cheaper than a Straddle but requires a larger move to be profitable."
+  },
+  {
+    "id": 22,
+    "question": "A 'Covered Call' involves:",
+    "options": [
+      "Buying a Call option only",
+      "Holding the underlying asset (Long) and Selling a Call option",
+      "Selling a Put option",
+      "Buying a Put option to cover risk"
+    ],
+    "answer": "Holding the underlying asset (Long) and Selling a Call option",
+    "hint": "Generating income from an asset you own.",
+    "explanation": "A Covered Call is a strategy where you hold the underlying asset and sell a Call option on it to generate income (premium) and hedge slightly against a price fall."
+  },
+  {
+    "id": 23,
+    "question": "A 'Protective Put' strategy involves:",
+    "options": [
+      "Holding the underlying asset and Buying a Put option",
+      "Selling a Put option",
+      "Buying a Call option",
+      "Selling the asset"
+    ],
+    "answer": "Holding the underlying asset and Buying a Put option",
+    "hint": "Like insurance for your asset.",
+    "explanation": "A Protective Put involves owning the asset and buying a Put option. The Put acts as insurance, limiting the downside risk if the asset price falls."
+  },
+  {
+    "id": 24,
+    "question": "The 'Break-Even Point' for a Long Call buyer is:",
+    "options": [
+      "Strike Price",
+      "Strike Price + Premium Paid",
+      "Strike Price - Premium Paid",
+      "Premium Paid"
+    ],
+    "answer": "Strike Price + Premium Paid",
+    "hint": "You need to recover the cost.",
+    "explanation": "To make a profit, the asset price must rise above the Strike Price plus the Premium paid for the option."
+  },
+  {
+    "id": 25,
+    "question": "The 'Break-Even Point' for a Long Put buyer is:",
+    "options": [
+      "Strike Price",
+      "Strike Price + Premium Paid",
+      "Strike Price - Premium Paid",
+      "Zero"
+    ],
+    "answer": "Strike Price - Premium Paid",
+    "hint": "Price must fall enough to cover cost.",
+    "explanation": "To make a profit, the asset price must fall below the Strike Price minus the Premium paid."
+  },
+  {
+    "id": 26,
+    "question": "Implied Volatility (IV) is derived from:",
+    "options": [
+      "Historical price data",
+      "The current market price of the option",
+      "The risk-free rate",
+      "The face value of the bond"
+    ],
+    "answer": "The current market price of the option",
+    "hint": "The market's expectation.",
+    "explanation": "Implied Volatility is the volatility estimate that justifies the option's current market price. It represents the market's expectation of future volatility."
+  },
+  {
+    "id": 27,
+    "question": "If Interest Rate Volatility increases, the price of both Call and Put options typically:",
+    "options": [
+      "Increases",
+      "Decreases",
+      "Remains Unchanged",
+      "Moves in opposite directions"
+    ],
+    "answer": "Increases",
+    "hint": "More volatility = Higher chance of being ITM.",
+    "explanation": "Higher volatility increases the probability of the option finishing deep in-the-money, thus increasing the value (premium) of both Calls and Puts."
+  },
+  {
+    "id": 28,
+    "question": "Rho measures the sensitivity of the option price to:",
+    "options": [
+      "Time",
+      "Volatility",
+      "Risk-Free Interest Rate",
+      "Dividend Yield"
+    ],
+    "answer": "Risk-Free Interest Rate",
+    "hint": "R for Rate.",
+    "explanation": "Rho measures the change in option price for a 1% change in the risk-free interest rate."
+  },
+  {
+    "id": 29,
+    "question": "In India, Exchange Traded Interest Rate Options are usually based on:",
+    "options": [
+      "Spot G-Sec prices directly",
+      "Interest Rate Futures (e.g., 10Y G-Sec Future)",
+      "Individual Corporate Bonds",
+      "Equity Indices"
+    ],
+    "answer": "Interest Rate Futures (e.g., 10Y G-Sec Future)",
+    "hint": "Options on Futures.",
+    "explanation": "Typically, exchange-traded interest rate options have the Interest Rate Future as the underlying asset, which simplifies delivery/settlement."
+  },
+  {
+    "id": 30,
+    "question": "If you 'Write' (Sell) an option, your potential profit is limited to:",
+    "options": [
+      "The Premium Received",
+      "Unlimited",
+      "The Strike Price",
+      "Zero"
+    ],
+    "answer": "The Premium Received",
+    "hint": "That's the only cash you get upfront.",
+    "explanation": "The maximum profit for an option writer is the premium received upfront. They hope the option expires worthless so they can keep it all."
+  },
+  {
+    "id": 31,
+    "question": "A 'Bull Call Spread' involves:",
+    "options": [
+      "Buying a lower strike Call and Selling a higher strike Call",
+      "Buying a higher strike Call and Selling a lower strike Call",
+      "Buying a Call and Buying a Put",
+      "Selling a Call"
+    ],
+    "answer": "Buying a lower strike Call and Selling a higher strike Call",
+    "hint": "Bullish, but capping upside to reduce cost.",
+    "explanation": "A Bull Call Spread is a strategy where you buy a Call (low strike) and sell another Call (high strike) to reduce the cost of the trade, while capping maximum profit."
+  },
+  {
+    "id": 32,
+    "question": "A 'Bear Put Spread' involves:",
+    "options": [
+      "Buying a higher strike Put and Selling a lower strike Put",
+      "Buying a lower strike Put and Selling a higher strike Put",
+      "Buying a Call",
+      "Selling a Put"
+    ],
+    "answer": "Buying a higher strike Put and Selling a lower strike Put",
+    "hint": "Bearish, capping downside to reduce cost.",
+    "explanation": "A Bear Put Spread involves buying a Put (high strike) and selling another Put (low strike). It profits from a decline in price but has limited risk and limited profit."
+  },
+  {
+    "id": 33,
+    "question": "What is the 'exercise style' of most Interest Rate Options traded on Indian exchanges?",
+    "options": [
+      "European",
+      "American",
+      "Asian",
+      "Bermudan"
+    ],
+    "answer": "European",
+    "hint": "Standard for cash-settled derivatives.",
+    "explanation": "Most exchange-traded interest rate options in India are European style, meaning they can only be exercised on the expiration date."
+  },
+  {
+    "id": 34,
+    "question": "If the underlying asset (G-Sec Future) is trading at 98.50 and the Call Strike is 98.00, the option has an Intrinsic Value of:",
+    "options": [
+      "0.50",
+      "0.00",
+      "-0.50",
+      "98.50"
+    ],
+    "answer": "0.50",
+    "hint": "Spot - Strike.",
+    "explanation": "Intrinsic Value for Call = Spot Price - Strike Price = 98.50 - 98.00 = 0.50."
+  },
+  {
+    "id": 35,
+    "question": "Gamma is highest for options that are:",
+    "options": [
+      "Deep In-the-Money",
+      "Deep Out-of-the-Money",
+      "At-the-Money",
+      "Far from expiry"
+    ],
+    "answer": "At-the-Money",
+    "hint": "Where Delta changes the fastest.",
+    "explanation": "Gamma measures the rate of change of Delta. It is highest for ATM options because a small price move can quickly flip the option from ITM to OTM or vice-versa."
+  },
+  {
+    "id": 36,
+    "question": "The 'Open Interest' (OI) in options represents:",
+    "options": [
+      "The total number of contracts traded today",
+      "The total number of outstanding contracts that have not been settled",
+      "The opening price of the option",
+      "The interest rate"
+    ],
+    "answer": "The total number of outstanding contracts that have not been settled",
+    "hint": "How many bets are still 'open'.",
+    "explanation": "Open Interest is the total number of option contracts that are currently held by traders and have not yet been exercised, offset, or expired."
+  },
+  {
+    "id": 37,
+    "question": "Buying a Call Option is similar to being:",
+    "options": [
+      "Long on the underlying asset (but with limited risk)",
+      "Short on the underlying asset",
+      "Neutral on the market",
+      "Short volatility"
+    ],
+    "answer": "Long on the underlying asset (but with limited risk)",
+    "hint": "You want the price to go up.",
+    "explanation": "Buying a Call is a bullish strategy similar to buying the asset, but with leverage and risk limited to the premium."
+  },
+  {
+    "id": 38,
+    "question": "Which participant acts as the guarantor for option settlements on the exchange?",
+    "options": [
+      "The Option Writer",
+      "The Broker",
+      "The Clearing Corporation",
+      "SEBI"
+    ],
+    "answer": "The Clearing Corporation",
+    "hint": "Central Counterparty.",
+    "explanation": "The Clearing Corporation guarantees the settlement of all exchange-traded options, eliminating counterparty risk between buyers and sellers."
+  },
+  {
+    "id": 39,
+    "question": "If you sell a Put option, you are:",
+    "options": [
+      "Bullish to Neutral (Expect prices to stay stable or rise)",
+      "Bearish (Expect prices to fall)",
+      "Expecting high volatility",
+      "Hedging a short position"
+    ],
+    "answer": "Bullish to Neutral (Expect prices to stay stable or rise)",
+    "hint": "You don't want the price to drop below your strike.",
+    "explanation": "Selling a Put is a bullish/neutral strategy. You profit if the price stays above the strike price (the option expires worthless) or rises."
+  },
+  {
+    "id": 40,
+    "question": "Margins are required to be paid by:",
+    "options": [
+      "Option Buyer only",
+      "Option Seller (Writer) only",
+      "Both Buyer and Seller",
+      "None"
+    ],
+    "answer": "Option Seller (Writer) only",
+    "hint": "Who has the potential for unlimited loss?",
+    "explanation": "The Option Buyer pays the full premium upfront and has no further obligation. The Option Seller faces potential large losses and must post margin to guarantee performance."
+  },
+  {
+    "id": 41,
+    "question": "A 'Deep In-the-Money' Call Option has a Delta close to:",
+    "options": [
+      "0",
+      "0.5",
+      "1.0",
+      "-1.0"
+    ],
+    "answer": "1.0",
+    "hint": "It moves almost exactly like the stock.",
+    "explanation": "A deep ITM Call behaves almost exactly like the underlying asset, so its Delta approaches 1.0."
+  },
+  {
+    "id": 42,
+    "question": "A 'Deep Out-of-the-Money' Call Option has a Delta close to:",
+    "options": [
+      "0",
+      "0.5",
+      "1.0",
+      "-1.0"
+    ],
+    "answer": "0",
+    "hint": "It is unlikely to be exercised.",
+    "explanation": "A deep OTM Call has a very low probability of becoming profitable, so its price sensitivity (Delta) approaches 0."
+  },
+  {
+    "id": 43,
+    "question": "Assignment of an option means:",
+    "options": [
+      "The seller is notified to fulfill their obligation",
+      "The buyer sells the option",
+      "The option expires",
+      "The exchange cancels the trade"
+    ],
+    "answer": "The seller is notified to fulfill their obligation",
+    "hint": "When the buyer exercises, the seller gets assigned.",
+    "explanation": "Assignment happens when the option buyer exercises their right. The Clearing House assigns the obligation to a random option seller."
+  },
+  {
+    "id": 44,
+    "question": "Which of the following affects the option premium?",
+    "options": [
+      "Spot Price of Underlying",
+      "Strike Price",
+      "Time to Expiry",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "hint": "Multiple factors.",
+    "explanation": "Option premiums are determined by the Spot Price, Strike Price, Time to Expiry, Volatility, and Interest Rates."
+  },
+  {
+    "id": 45,
+    "question": "What is the 'Lot Size'?",
+    "options": [
+      "The number of contracts traded",
+      "The number of units of the underlying asset in one contract",
+      "The total value of the trade",
+      "The tick size"
+    ],
+    "answer": "The number of units of the underlying asset in one contract",
+    "hint": "Standard quantity per contract.",
+    "explanation": "The Lot Size is the standardized quantity of the underlying asset covered by a single option contract (e.g., Rs. 2,00,000 face value)."
+  },
+  {
+    "id": 46,
+    "question": "An option that has no Intrinsic Value is:",
+    "options": [
+      "Always worthless",
+      "Out-of-the-Money or At-the-Money",
+      "In-the-Money",
+      "Illegal"
+    ],
+    "answer": "Out-of-the-Money or At-the-Money",
+    "hint": "Only ITM has intrinsic value.",
+    "explanation": "OTM and ATM options have zero intrinsic value; their entire price consists of Time Value."
+  },
+  {
+    "id": 47,
+    "question": "If you expect interest rates to be stable (low volatility), which strategy might be suitable?",
+    "options": [
+      "Long Straddle",
+      "Short Straddle",
+      "Long Call",
+      "Long Put"
+    ],
+    "answer": "Short Straddle",
+    "hint": "Selling volatility.",
+    "explanation": "A Short Straddle (selling a Call and selling a Put) profits if the price remains stable and does not move far from the strike price, as you collect premiums from both."
+  },
+  {
+    "id": 48,
+    "question": "Mark-to-Market (MTM) margin collection typically applies to:",
+    "options": [
+      "Option Buyers",
+      "Option Sellers (Writers) and Futures Traders",
+      "Everyone",
+      "None"
+    ],
+    "answer": "Option Sellers (Writers) and Futures Traders",
+    "hint": "Those with undefined risk.",
+    "explanation": "Option buyers pay full premium upfront. Option sellers (and futures traders) carry open risk and are subject to daily MTM margin adjustments."
+  },
+  {
+    "id": 49,
+    "question": "Historically, Black-Scholes model is used for pricing:",
+    "options": [
+      "European Options",
+      "American Options",
+      "Asian Options",
+      "Futures"
+    ],
+    "answer": "European Options",
+    "hint": "The classic formula.",
+    "explanation": "The standard Black-Scholes-Merton model is designed for pricing European-style options (exercisable only at maturity)."
+  },
+  {
+    "id": 50,
+    "question": "Leverage in options trading allows you to:",
+    "options": [
+      "Control a large position with a small amount of capital (Premium)",
+      "Guarantee a profit",
+      "Eliminate all risk",
+      "Buy bonds at face value"
+    ],
+    "answer": "Control a large position with a small amount of capital (Premium)",
+    "hint": "High exposure, low cost.",
+    "explanation": "Options provide leverage because the premium is a small fraction of the underlying asset's value, allowing traders to control large exposure with little capital."
+  }
+]

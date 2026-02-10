@@ -1,262 +1,402 @@
 [
   {
     "id": 1,
-    "question": "Which two regulatory bodies primarily oversee the Currency Derivatives market in India?",
-    "options": [
-      "SEBI and RBI",
-      "SEBI and IRDAI",
-      "RBI and SBI",
-      "Finance Ministry and Commerce Ministry"
-    ],
-    "answer": "SEBI and RBI",
-    "hint": "One regulates the Stock Exchanges, the other regulates the Currency/Forex market.",
-    "explanation": "The framework is a joint effort: SEBI regulates the exchange platforms and brokers, while RBI regulates the foreign exchange market and sets exposure limits."
+    "question": "A contract that gives the buyer the right, but not the obligation, to buy a specific quantity of currency at a specific price on a specific date is called a:",
+    "options": ["Call Option", "Put Option", "Futures Contract", "Swap"],
+    "answer": "Call Option",
+    "hint": "Right to Buy.",
+    "explanation": "A Call Option gives the holder the right to buy the underlying asset. They are not obligated to buy if the price is unfavorable."
   },
   {
     "id": 2,
-    "question": "Under which Act are foreign exchange transactions in India primarily governed?",
-    "options": [
-      "The Companies Act, 2013",
-      "Foreign Exchange Management Act (FEMA), 1999",
-      "Securities Contract Regulation Act (SCRA), 1956",
-      "Banking Regulation Act"
-    ],
-    "answer": "Foreign Exchange Management Act (FEMA), 1999",
-    "hint": "It replaced the stricter FERA to facilitate external trade.",
-    "explanation": "FEMA, 1999 constitutes the legal framework for all foreign exchange transactions in India, empowering the RBI to frame regulations."
+    "question": "A contract that gives the buyer the right, but not the obligation, to sell a specific quantity of currency at a specific price is called a:",
+    "options": ["Call Option", "Put Option", "Forward Contract", "Spot Trade"],
+    "answer": "Put Option",
+    "hint": "Right to Sell.",
+    "explanation": "A Put Option gives the holder the right to sell the underlying asset at the strike price."
   },
   {
     "id": 3,
-    "question": "Are Non-Resident Indians (NRIs) permitted to trade in Currency Derivatives on Indian Exchanges?",
-    "options": [
-      "No, strictly prohibited",
-      "Yes, subject to specific terms and conditions",
-      "Yes, but only in Euros",
-      "Only if they live in the USA"
-    ],
-    "answer": "Yes, subject to specific terms and conditions",
-    "hint": "They were allowed access to hedge their Rupee assets in India.",
-    "explanation": "NRIs are permitted to trade in currency derivatives on recognized stock exchanges to hedge the risk of their assets held in India, subject to limits."
+    "question": "The price at which the option holder can buy or sell the underlying currency is known as the:",
+    "options": ["Spot Price", "Strike Price (Exercise Price)", "Premium", "Future Price"],
+    "answer": "Strike Price (Exercise Price)",
+    "hint": "The fixed price in the contract.",
+    "explanation": "The Strike Price is the pre-determined price at which the option can be exercised."
   },
   {
     "id": 4,
-    "question": "Who sets the 'Position Limits' for Foreign Portfolio Investors (FPIs)?",
-    "options": [
-      "The Stock Broker",
-      "The RBI",
-      "The Clearing Corporation",
-      "The World Bank"
-    ],
-    "answer": "The RBI",
-    "hint": "Foreign money entering India is the central bank's primary concern.",
-    "explanation": "The Reserve Bank of India (RBI) determines the exposure limits for FPIs to maintain stability in the currency markets."
+    "question": "The amount paid by the buyer to the seller to acquire the option is called the:",
+    "options": ["Margin", "Premium", "Strike Price", "Brokerage"],
+    "answer": "Premium",
+    "hint": "The cost of the option.",
+    "explanation": "Premium is the upfront payment made by the option buyer to the option seller (writer) for the rights granted by the contract."
   },
   {
     "id": 5,
-    "question": "What is the role of 'FEDAI' in the forex market?",
-    "options": [
-      "Foreign Exchange Dealers Association of India - sets rules for interbank dealings",
-      "Federation of Derivatives and Artificial Intelligence",
-      "A software for trading",
-      "A government tax agency"
-    ],
-    "answer": "Foreign Exchange Dealers Association of India - sets rules for interbank dealings",
-    "hint": "It is an association of banks that deal in forex.",
-    "explanation": "FEDAI sets the rules and guidelines for day-to-day forex transactions and code of conduct for Authorized Dealers (banks) in India."
+    "question": "Currency Options traded on NSE/BSE are of which type?",
+    "options": ["American Style", "European Style", "Asian Style", "Bermudan Style"],
+    "answer": "European Style",
+    "hint": "Exercise only on expiry.",
+    "explanation": "Exchange-traded currency options in India are European Style, meaning they can only be exercised on the expiration date."
   },
   {
     "id": 6,
-    "question": "Can a 'Person Resident in India' trade in currency futures?",
-    "options": [
-      "Yes, freely",
-      "No, never",
-      "Only banks can trade",
-      "Only exporters can trade"
-    ],
-    "answer": "Yes, freely",
-    "hint": "The market was opened to the public to deepen liquidity.",
-    "explanation": "All Resident Indians (individuals, corporates, banks) are allowed to participate in the exchange-traded currency derivatives market."
+    "question": "If you buy a Call Option, your maximum loss is limited to:",
+    "options": ["Unlimited", "The Strike Price", "The Premium Paid", "The Spot Price"],
+    "answer": "The Premium Paid",
+    "hint": "Limited downside.",
+    "explanation": "The buyer can simply choose not to exercise the option if it is loss-making. Thus, the loss is limited to the premium already paid."
   },
   {
     "id": 7,
-    "question": "What constitutes a 'Client Level Position Limit' for USD-INR contracts (generic rule)?",
-    "options": [
-      "Unlimited",
-      "A specific limit (e.g., 6% of open interest or a fixed $ amount whichever is higher)",
-      "1000 Lots only",
-      "Zero"
-    ],
-    "answer": "A specific limit (e.g., 6% of open interest or a fixed $ amount whichever is higher)",
-    "hint": "Regulators don't want one person holding too much of the market.",
-    "explanation": "Clients are restricted to holding no more than a certain percentage (often 6%) of the total Open Interest or a fixed ceiling amount defined by SEBI/RBI."
+    "question": "If you Sell (Write) a Call Option, your potential loss is:",
+    "options": ["Limited to Premium", "Unlimited", "Limited to Strike Price", "Zero"],
+    "answer": "Unlimited",
+    "hint": "Market can rise indefinitely.",
+    "explanation": "If the market price rises significantly above the strike price, the call writer must sell at the lower strike price, incurring potentially unlimited losses."
   },
   {
     "id": 8,
-    "question": "For 'Hedging' purposes, if a client exceeds the standard limit, what must they provide?",
-    "options": [
-      "A letter from their parents",
-      "Proof of underlying currency exposure (Import/Export docs)",
-      "A bribe to the broker",
-      "Their passport"
-    ],
-    "answer": "Proof of underlying currency exposure (Import/Export docs)",
-    "hint": "If you want to trade big, you must prove you have a real business need.",
-    "explanation": "To exceed standard limits, clients must demonstrate valid underlying exposure (like pending imports or exports) that matches the size of their hedge."
+    "question": "A Call Option is 'In-the-Money' (ITM) when:",
+    "options": ["Spot Price > Strike Price", "Spot Price < Strike Price", "Spot Price = Strike Price", "Premium = 0"],
+    "answer": "Spot Price > Strike Price",
+    "hint": "Buying low (Strike) when market is high (Spot).",
+    "explanation": "A Call is ITM if the current market price (Spot) is higher than the Strike price, meaning it has intrinsic value."
   },
   {
     "id": 9,
-    "question": "Which entity grants the license to a Stock Exchange to offer Currency Derivatives?",
-    "options": [
-      "SEBI",
-      "The Supreme Court",
-      "The Prime Minister",
-      "The Police"
-    ],
-    "answer": "SEBI",
-    "hint": "The regulator of 'Securities' markets.",
-    "explanation": "SEBI grants recognition and permission to stock exchanges to set up currency derivative segments."
+    "question": "A Put Option is 'In-the-Money' (ITM) when:",
+    "options": ["Spot Price > Strike Price", "Spot Price < Strike Price", "Spot Price = Strike Price", "Premium is high"],
+    "answer": "Spot Price < Strike Price",
+    "hint": "Selling high (Strike) when market is low (Spot).",
+    "explanation": "A Put is ITM if the Strike Price is higher than the Spot Price, allowing the holder to sell at a price better than the market."
   },
   {
     "id": 10,
-    "question": "What is the maximum tenure for Currency Future contracts permitted in India?",
-    "options": [
-      "1 Month",
-      "12 Months",
-      "10 Years",
-      "5 Years"
-    ],
-    "answer": "12 Months",
-    "hint": "The exchange offers contracts up to 1 year ahead.",
-    "explanation": "Standard currency futures contracts on Indian exchanges have a maximum maturity of 12 months."
+    "question": "Intrinsic Value of an Out-of-the-Money (OTM) option is:",
+    "options": ["Positive", "Negative", "Zero", "Equal to Premium"],
+    "answer": "Zero",
+    "hint": "No real value.",
+    "explanation": "Intrinsic value cannot be negative. If an option is OTM, its intrinsic value is zero."
   },
   {
     "id": 11,
-    "question": "Are 'Cross Currency' derivatives (e.g., EUR-USD, GBP-USD) allowed on Indian exchanges?",
-    "options": [
-      "No, only INR pairs",
-      "Yes, specific pairs like EUR-USD, GBP-USD, USD-JPY are allowed",
-      "Only EUR-USD is allowed",
-      "Yes, but only for banks"
-    ],
-    "answer": "Yes, specific pairs like EUR-USD, GBP-USD, USD-JPY are allowed",
-    "hint": "Traders often need to trade global pairs without involving the Rupee.",
-    "explanation": "SEBI and RBI have permitted trading in major international cross-currency pairs (like EUR-USD) on Indian exchanges."
+    "question": "Option Premium = Intrinsic Value + ____________.",
+    "options": ["Time Value", "Spot Value", "Volatility Value", "Strike Value"],
+    "answer": "Time Value",
+    "hint": "Value of remaining time.",
+    "explanation": "The premium is composed of the Intrinsic Value (current profit) plus Time Value (probability of future profit)."
   },
   {
     "id": 12,
-    "question": "Who is responsible for the 'Surveillance' of the market to prevent manipulation?",
-    "options": [
-      "The Stock Exchanges and SEBI",
-      "The media",
-      "The brokers",
-      "International Monetary Fund (IMF)"
-    ],
-    "answer": "The Stock Exchanges and SEBI",
-    "hint": "They watch the screens for 'Circular Trading' or 'Pump and Dump' schemes.",
-    "explanation": "Exchanges have their own surveillance departments that monitor real-time data, reporting to SEBI to ensure market integrity."
+    "question": "Which Greek measures the sensitivity of the option premium to changes in the Spot Price?",
+    "options": ["Delta", "Gamma", "Theta", "Vega"],
+    "answer": "Delta",
+    "hint": "Change in price.",
+    "explanation": "Delta indicates how much the option price changes for a 1 unit change in the underlying asset's price."
   },
   {
     "id": 13,
-    "question": "Authorized Dealers (Category-I Banks) can become:",
-    "options": [
-      "Trading Members only",
-      "Clearing Members only",
-      "Both Trading and Clearing Members",
-      "They cannot participate"
-    ],
-    "answer": "Both Trading and Clearing Members",
-    "hint": "Banks have the capital and the infrastructure to do everything.",
-    "explanation": "Banks (AD Cat-I) are permitted to become both Trading and Clearing members of the currency derivatives segment."
+    "question": "Which Greek measures the sensitivity of the option premium to changes in Volatility?",
+    "options": ["Delta", "Gamma", "Theta", "Vega"],
+    "answer": "Vega",
+    "hint": "V for Volatility.",
+    "explanation": "Vega measures the risk of changes in implied volatility. Higher volatility usually increases option premiums."
   },
   {
     "id": 14,
-    "question": "If a Domestic Institutional Investor (DII) like a Mutual Fund wants to trade, they must:",
-    "options": [
-      "Adhere to guidelines issued by their specific sector regulator (e.g., SEBI for MFs)",
-      "Trade anonymously",
-      "Ask permission from the US Fed",
-      "Only trade on Sundays"
-    ],
-    "answer": "Adhere to guidelines issued by their specific sector regulator (e.g., SEBI for MFs)",
-    "hint": "Institutions have their own rulebooks.",
-    "explanation": "Institutional investors must follow the specific investment guidelines set by their respective regulators (SEBI for Mutual Funds, IRDAI for Insurance)."
+    "question": "Which Greek measures the time decay of an option?",
+    "options": ["Delta", "Rho", "Theta", "Gamma"],
+    "answer": "Theta",
+    "hint": "T for Time.",
+    "explanation": "Theta represents the rate at which an option loses value as time passes (Time Decay)."
   },
   {
     "id": 15,
-    "question": "Which legislation governs the 'Securities' aspect of Currency Derivatives?",
-    "options": [
-      "SCRA (Securities Contracts Regulation Act), 1956",
-      "Indian Penal Code",
-      "Motor Vehicles Act",
-      "GST Act"
-    ],
-    "answer": "SCRA (Securities Contracts Regulation Act), 1956",
-    "hint": "Currency derivatives are legally defined as 'Securities' to be traded on exchanges.",
-    "explanation": "The definition of 'Securities' in the SCRA was expanded to include currency derivatives, allowing them to be traded on stock exchanges."
+    "question": "If you expect the USDINR rate to rise moderately, which strategy is most appropriate?",
+    "options": ["Buy Put", "Sell Call", "Buy Call", "Sell Futures aggressively"],
+    "answer": "Buy Call",
+    "hint": "Bullish view.",
+    "explanation": "Buying a Call option allows you to profit from the price rise with limited risk."
   },
   {
     "id": 16,
-    "question": "The 'Risk Management Framework' for the exchange is prescribed by:",
-    "options": [
-      "The Brokers Association",
-      "SEBI",
-      "The clients",
-      "The software vendor"
-    ],
-    "answer": "SEBI",
-    "hint": "The regulator decides how safe the market must be.",
-    "explanation": "SEBI prescribes the broad risk management framework (margins, net worth requirements) which the exchanges must implement."
+    "question": "What is a 'Straddle' strategy?",
+    "options": ["Buying a Call and a Put at different strike prices", "Buying a Call and a Put at the same strike price and expiry", "Buying a Call and Selling a Put", "Selling a Call and Buying a Future"],
+    "answer": "Buying a Call and a Put at the same strike price and expiry",
+    "hint": "Betting on volatility, not direction.",
+    "explanation": "A Long Straddle involves buying both a Call and a Put at the same strike. You profit if the market moves significantly in EITHER direction."
   },
   {
     "id": 17,
-    "question": "What happens if a user violates the 'Position Limits'?",
-    "options": [
-      "They get a bonus",
-      "They may face penalties and be forced to reduce their position",
-      "Nothing happens",
-      "The exchange shuts down"
-    ],
-    "answer": "They may face penalties and be forced to reduce their position",
-    "hint": "Rules are not optional.",
-    "explanation": "Violating position limits attracts heavy penalties, and the exchange will force the closure of the excess open positions."
+    "question": "A 'Strangle' strategy involves:",
+    "options": ["Buying Call and Put at same strike", "Buying OTM Call and OTM Put at different strikes", "Selling ITM Call and Put", "Buying Futures only"],
+    "answer": "Buying OTM Call and OTM Put at different strikes",
+    "hint": "Cheaper than Straddle.",
+    "explanation": "A Long Strangle involves buying an Out-of-the-Money Call and an Out-of-the-Money Put. It requires a larger move to be profitable but costs less."
   },
   {
     "id": 18,
-    "question": "Can a client transfer their open position from one broker to another?",
-    "options": [
-      "Yes, easily",
-      "No, positions cannot be transferred",
-      "Yes, for a fee",
-      "Only on expiry day"
-    ],
-    "answer": "No, positions cannot be transferred",
-    "hint": "You have to close it here and open it there.",
-    "explanation": "In the derivatives market, open positions cannot be transferred between brokers. You must square off with Broker A and take a fresh position with Broker B."
+    "question": "The 'Break-even Point' for a Long Call strategy is:",
+    "options": ["Strike Price + Premium", "Strike Price - Premium", "Strike Price only", "Premium only"],
+    "answer": "Strike Price + Premium",
+    "hint": "You must recover the cost.",
+    "explanation": "To make a profit, the spot price must rise above the Strike Price by an amount equal to the premium paid."
   },
   {
     "id": 19,
-    "question": "The limit for 'Open Position' is monitored at:",
-    "options": [
-      "End of the day only",
-      "Real-time and End of day",
-      "End of the month only",
-      "Once a year"
-    ],
-    "answer": "Real-time and End of day",
-    "hint": "Computers watch constantly.",
-    "explanation": "Exchanges monitor position limits on a real-time basis during trading hours and verify them again at the end of the day."
+    "question": "The 'Break-even Point' for a Long Put strategy is:",
+    "options": ["Strike Price + Premium", "Strike Price - Premium", "Strike Price only", "Spot Price"],
+    "answer": "Strike Price - Premium",
+    "hint": "Price must fall below the strike and cost.",
+    "explanation": "For a Put buyer to profit, the spot price must fall below the Strike Price minus the premium paid."
   },
   {
     "id": 20,
-    "question": "Why does the RBI restrict speculative trading by banks in the currency market?",
-    "options": [
-      "To save electricity",
-      "To maintain financial stability and prevent volatility",
-      "To help foreign banks win",
-      "Banks are not smart enough"
-    ],
-    "answer": "To maintain financial stability and prevent volatility",
-    "hint": "Banks handle public money; if they gamble and lose, the economy suffers.",
-    "explanation": "Restrictions are in place to ensure banks do not take excessive risks with depositors' money and to prevent artificial volatility in the exchange rate."
+    "question": "Who pays the margin in an Option contract?",
+    "options": ["Only the Buyer", "Only the Seller (Writer)", "Both Buyer and Seller", "Neither"],
+    "answer": "Only the Seller (Writer)",
+    "hint": "Who has the risk of loss?",
+    "explanation": "The Option Buyer pays the full premium upfront and has no further obligation. The Option Seller is exposed to risk and must pay margins."
+  },
+  {
+    "id": 21,
+    "question": "An option with a Delta of 0.5 is typically:",
+    "options": ["At-the-Money (ATM)", "Deep In-the-Money", "Deep Out-of-the-Money", "Expired"],
+    "answer": "At-the-Money (ATM)",
+    "hint": "50/50 chance.",
+    "explanation": "ATM options usually have a Delta close to 0.5, meaning there is roughly a 50% probability of expiring ITM."
+  },
+  {
+    "id": 22,
+    "question": "If Volatility increases, the value of a Call Option generally:",
+    "options": ["Increases", "Decreases", "Remains same", "Becomes zero"],
+    "answer": "Increases",
+    "hint": "More chance to swing high.",
+    "explanation": "Higher volatility increases the probability of the option finishing ITM, thus increasing the premium (Vega is positive)."
+  },
+  {
+    "id": 23,
+    "question": "If Volatility increases, the value of a Put Option generally:",
+    "options": ["Increases", "Decreases", "Remains same", "Becomes zero"],
+    "answer": "Increases",
+    "hint": "More chance to swing low.",
+    "explanation": "Both Calls and Puts benefit from higher volatility as it increases the chance of large favorable moves."
+  },
+  {
+    "id": 24,
+    "question": "A 'Covered Call' involves:",
+    "options": ["Buying a Call", "Holding the underlying asset (or Long Future) and Selling a Call", "Selling a Put", "Buying a Put and a Call"],
+    "answer": "Holding the underlying asset (or Long Future) and Selling a Call",
+    "hint": "Income generation on holding.",
+    "explanation": "Covered Call writing is a strategy where you own the asset (Long Futures) and sell a Call option to earn premium income, capping your upside."
+  },
+  {
+    "id": 25,
+    "question": "The Put-Call Parity theory defines the relationship between:",
+    "options": ["Call Price, Put Price, Spot Price, Strike Price, and Interest Rate", "Call Price and Future Price only", "USD and INR", "Delta and Gamma"],
+    "answer": "Call Price, Put Price, Spot Price, Strike Price, and Interest Rate",
+    "hint": "Equation linking all variables.",
+    "explanation": "Put-Call Parity states that: Call Premium + PV(Strike) = Put Premium + Spot Price (adjusted for forwards)."
+  },
+  {
+    "id": 26,
+    "question": "Buying a Call Option is a ___________ strategy.",
+    "options": ["Bullish", "Bearish", "Neutral", "Arbitrage"],
+    "answer": "Bullish",
+    "hint": "Expecting price up.",
+    "explanation": "You buy a Call when you expect the market to go up."
+  },
+  {
+    "id": 27,
+    "question": "Buying a Put Option is a ___________ strategy.",
+    "options": ["Bullish", "Bearish", "Neutral", "Arbitrage"],
+    "answer": "Bearish",
+    "hint": "Expecting price down.",
+    "explanation": "You buy a Put when you expect the market to go down."
+  },
+  {
+    "id": 28,
+    "question": "Selling (Writing) a Call Option is a ___________ strategy.",
+    "options": ["Bullish", "Bearish / Neutral", "Volatile", "Safe"],
+    "answer": "Bearish / Neutral",
+    "hint": "Betting it won't go up.",
+    "explanation": "Selling a Call profits if the market stays flat or falls (stays below Strike + Premium)."
+  },
+  {
+    "id": 29,
+    "question": "Selling (Writing) a Put Option is a ___________ strategy.",
+    "options": ["Bullish / Neutral", "Bearish", "Volatile", "Risk-free"],
+    "answer": "Bullish / Neutral",
+    "hint": "Betting it won't go down.",
+    "explanation": "Selling a Put profits if the market stays flat or rises (stays above Strike - Premium)."
+  },
+  {
+    "id": 30,
+    "question": "The lot size for USDINR Options is:",
+    "options": ["USD 100", "USD 1,000", "USD 10,000", "USD 1 Million"],
+    "answer": "USD 1,000",
+    "hint": "Same as Futures.",
+    "explanation": "The contract size for exchange-traded USDINR options in India is USD 1,000."
+  },
+  {
+    "id": 31,
+    "question": "Currency Options are settled in:",
+    "options": ["Physical Currency", "Cash (INR)", "Gold", "Foreign Bank Transfer"],
+    "answer": "Cash (INR)",
+    "hint": "Like futures.",
+    "explanation": "Currency options on NSE/BSE are cash-settled in Indian Rupees."
+  },
+  {
+    "id": 32,
+    "question": "A 'Bull Call Spread' is created by:",
+    "options": ["Buying a Lower Strike Call and Selling a Higher Strike Call", "Buying a Higher Strike Call and Selling a Lower Strike Call", "Buying a Put and Selling a Call", "Buying two Calls"],
+    "answer": "Buying a Lower Strike Call and Selling a Higher Strike Call",
+    "hint": "Spread the cost, cap the profit.",
+    "explanation": "You buy a Call (bullish) and finance it by selling a cheaper, higher strike Call (bearish), capping your profit but reducing cost."
+  },
+  {
+    "id": 33,
+    "question": "A 'Bear Put Spread' is created by:",
+    "options": ["Buying a Higher Strike Put and Selling a Lower Strike Put", "Buying a Lower Strike Put and Selling a Higher Strike Put", "Buying a Call and Put", "Selling two Puts"],
+    "answer": "Buying a Higher Strike Put and Selling a Lower Strike Put",
+    "hint": "Buying the ITM/ATM Put, selling the OTM Put.",
+    "explanation": "You buy a Put (bearish) and sell a lower strike Put to reduce the premium cost."
+  },
+  {
+    "id": 34,
+    "question": "The time value of an option is highest when the option is:",
+    "options": ["At-the-Money (ATM)", "Deep In-the-Money", "Deep Out-of-the-Money", "Expired"],
+    "answer": "At-the-Money (ATM)",
+    "hint": "Maximum uncertainty.",
+    "explanation": "Time value is highest for ATM options because the uncertainty of whether it will finish ITM or OTM is greatest."
+  },
+  {
+    "id": 35,
+    "question": "Which of the following affects the option premium?",
+    "options": ["Spot Price", "Time to Expiry", "Volatility", "All of the above"],
+    "answer": "All of the above",
+    "hint": "Multiple factors.",
+    "explanation": "Option pricing (Black-Scholes model) depends on Spot Price, Strike Price, Time, Volatility, and Interest Rates."
+  },
+  {
+    "id": 36,
+    "question": "If you hold a Short Straddle (Sell Call + Sell Put at same strike), you expect:",
+    "options": ["High Volatility", "Low Volatility / Range Bound Market", "Market to crash", "Market to boom"],
+    "answer": "Low Volatility / Range Bound Market",
+    "hint": "You sold options, so you want quiet.",
+    "explanation": "Short Straddle profits from time decay (Theta) if the market stays stable near the strike price."
+  },
+  {
+    "id": 37,
+    "question": "Implied Volatility (IV) represents:",
+    "options": ["Historical volatility", "The market's expectation of future volatility", "The fixed volatility", "Zero volatility"],
+    "answer": "The market's expectation of future volatility",
+    "hint": "Implied by the price.",
+    "explanation": "IV is derived from the current option price and reflects what the market expects volatility to be over the option's life."
+  },
+  {
+    "id": 38,
+    "question": "An option is 'Deep In-the-Money' if it has:",
+    "options": ["High Gamma", "Delta close to 1 (for Call) or -1 (for Put)", "Delta close to 0", "Zero intrinsic value"],
+    "answer": "Delta close to 1 (for Call) or -1 (for Put)",
+    "hint": "Behaves like the future.",
+    "explanation": "Deep ITM options move almost 1-to-1 with the underlying asset, so their Delta approaches 1 (or -1)."
+  },
+  {
+    "id": 39,
+    "question": "The 'Exercise Style' of Currency Options in India is:",
+    "options": ["European", "American", "Indian", "Asian"],
+    "answer": "European",
+    "hint": "Only on expiry.",
+    "explanation": "Standardized as European Style."
+  },
+  {
+    "id": 40,
+    "question": "To protect a Long Futures position from a downside move, one should:",
+    "options": ["Buy a Call", "Buy a Put (Protective Put)", "Sell a Put", "Sell a Call"],
+    "answer": "Buy a Put (Protective Put)",
+    "hint": "Insurance against falling prices.",
+    "explanation": "Buying a Put gives the right to sell at a fixed price, protecting the Long Futures position if the market crashes."
+  },
+  {
+    "id": 41,
+    "question": "Gamma measures the rate of change of:",
+    "options": ["Premium", "Delta", "Theta", "Vega"],
+    "answer": "Delta",
+    "hint": "Acceleration.",
+    "explanation": "Gamma measures how fast Delta changes as the spot price moves. It is the 'curvature' of the option price."
+  },
+  {
+    "id": 42,
+    "question": "If interest rates (INR) rise, the Call Option premium generally:",
+    "options": ["Increases", "Decreases", "No change", "Becomes negative"],
+    "answer": "Increases",
+    "hint": "Cost of carry logic.",
+    "explanation": "Higher domestic interest rates increase the forward price, which typically increases the value of Call options (and decreases Puts)."
+  },
+  {
+    "id": 43,
+    "question": "Which strategy has 'Unlimited Risk'?",
+    "options": ["Long Call", "Long Put", "Short Straddle", "Bull Call Spread"],
+    "answer": "Short Straddle",
+    "hint": "Selling naked options.",
+    "explanation": "A Short Straddle involves selling naked Calls and Puts. If the market moves violently in either direction, losses can be unlimited."
+  },
+  {
+    "id": 44,
+    "question": "The difference between the Bid and Ask price of an option is called:",
+    "options": ["Spread", "Margin", "Haircut", "Premium"],
+    "answer": "Spread",
+    "hint": "Transaction cost.",
+    "explanation": "Bid-Ask Spread represents the liquidity cost."
+  },
+  {
+    "id": 45,
+    "question": "Options that expire 'Out-of-the-Money' are worth:",
+    "options": ["Strike Price", "Zero", "Premium paid", "Spot Price"],
+    "answer": "Zero",
+    "hint": "Worthless paper.",
+    "explanation": "If an option has no intrinsic value at expiry, it expires worthless (Zero value)."
+  },
+  {
+    "id": 46,
+    "question": "When you buy an option, you are:",
+    "options": ["Long Volatility", "Short Volatility", "Neutral", "Short Gamma"],
+    "answer": "Long Volatility",
+    "hint": "You want movement.",
+    "explanation": "Option buyers generally benefit if the market moves significantly (volatility), as their downside is limited but upside is open."
+  },
+  {
+    "id": 47,
+    "question": "Which option has a Strike Price equal to the Spot Price?",
+    "options": ["ITM", "OTM", "ATM", "Deep OTM"],
+    "answer": "ATM",
+    "hint": "At The Money.",
+    "explanation": "At-the-Money (ATM) options have a strike price closest to the current spot price."
+  },
+  {
+    "id": 48,
+    "question": "A 'Zero Cost Collar' strategy for an exporter (Long Underlying) involves:",
+    "options": ["Buying a Put and Selling a Call to offset the premium", "Buying a Call", "Selling a Put", "Buying a Future"],
+    "answer": "Buying a Put and Selling a Call to offset the premium",
+    "hint": "Protection for free.",
+    "explanation": "The exporter buys a Put for downside protection and funds it by selling a Call (capping upside), resulting in zero or low net cost."
+  },
+  {
+    "id": 49,
+    "question": "Rho measures sensitivity to:",
+    "options": ["Time", "Volatility", "Interest Rates", "Spot Price"],
+    "answer": "Interest Rates",
+    "hint": "R for Rates.",
+    "explanation": "Rho measures the change in option premium for a change in the risk-free interest rate."
+  },
+  {
+    "id": 50,
+    "question": "Can Currency Options be exercised before the expiry date in India?",
+    "options": ["Yes, anytime", "No, they are European style", "Yes, on Fridays", "Only if ITM"],
+    "answer": "No, they are European style",
+    "hint": "Wait for the end.",
+    "explanation": "Since they are European style options, they cannot be exercised early; they can only be squared off (traded) in the market or settled at expiry."
   }
 ]

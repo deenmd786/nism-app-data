@@ -1,262 +1,402 @@
 [
   {
     "id": 1,
-    "question": "What is the primary difference between a Forward Contract and a Futures Contract?",
-    "options": [
-      "Forwards are traded on exchanges; Futures are OTC",
-      "Forwards are standardized; Futures are customized",
-      "Forwards are OTC; Futures are traded on organized exchanges",
-      "There is no difference"
-    ],
-    "answer": "Forwards are OTC; Futures are traded on organized exchanges",
-    "hint": "Think about which one is a 'private' agreement and which one is 'public'.",
-    "explanation": "Forward contracts are private agreements traded Over-the-Counter (OTC), whereas Futures are standardized contracts traded on regulated stock exchanges."
+    "question": "A financial contract whose value is derived from the value of an underlying asset is known as:",
+    "options": ["Equity", "Bond", "Derivative", "Mutual Fund"],
+    "answer": "Derivative",
+    "hint": "The name itself suggests it 'derives' value.",
+    "explanation": "Derivatives are financial instruments that derive their value from an underlying asset, such as a stock, currency, commodity, or interest rate."
   },
   {
     "id": 2,
-    "question": "In a Currency Swap, what is typically exchanged at the start and end of the contract?",
-    "options": [
-      "Only interest payments",
-      "Only the principal amount",
-      "Both principal and interest payments in different currencies",
-      "Only the profit margin"
-    ],
-    "answer": "Both principal and interest payments in different currencies",
-    "hint": "Swaps are used by large companies to manage long-term debt in foreign currencies.",
-    "explanation": "A currency swap involves the exchange of principal and interest in one currency for the same in another currency."
+    "question": "Which of the following is NOT a feature of a Forward Contract?",
+    "options": ["Traded on an Exchange", "Customizable terms", "Over-the-Counter (OTC) instrument", "Counterparty risk exists"],
+    "answer": "Traded on an Exchange",
+    "hint": "Forwards are private agreements.",
+    "explanation": "Forward contracts are traded Over-the-Counter (OTC) and are customized between two parties. They are not traded on centralized exchanges."
   },
   {
     "id": 3,
-    "question": "Which of the following is an example of an 'Option' derivative?",
-    "options": [
-      "The obligation to buy a currency",
-      "The right, but not the obligation, to buy or sell a currency",
-      "A mandatory exchange of cash flows",
-      "A fixed agreement to sell at a future date"
-    ],
-    "answer": "The right, but not the obligation, to buy or sell a currency",
-    "hint": "The word 'Option' implies you have a choice at the end.",
-    "explanation": "Options provide the buyer the right to exercise the contract if the price is favorable, but they are not forced to do so."
+    "question": "In a Futures contract, the risk of counterparty default is eliminated by:",
+    "options": ["The Broker", "The Clearing Corporation", "The SEBI", "The RBI"],
+    "answer": "The Clearing Corporation",
+    "hint": "The central entity that guarantees trades.",
+    "explanation": "The Clearing Corporation acts as the central counterparty (buyer to every seller and seller to every buyer), thereby eliminating counterparty default risk in futures."
   },
   {
     "id": 4,
-    "question": "What does the 'Long' position in a Futures contract signify?",
-    "options": [
-      "The decision to sell the asset",
-      "The decision to buy the asset",
-      "Holding a contract for more than a year",
-      "Canceling a contract"
-    ],
-    "answer": "The decision to buy the asset",
-    "hint": "In trading terms, 'Short' is to sell, and 'Long' is to...",
-    "explanation": "A Long position means the trader has agreed to buy the underlying currency at a specific price in the future."
+    "question": "Standardization of contract size and expiry date is a characteristic of:",
+    "options": ["Forward Contracts", "Futures Contracts", "Swap Contracts", "OTC Options"],
+    "answer": "Futures Contracts",
+    "hint": "These are traded on exchanges like NSE/BSE.",
+    "explanation": "Futures contracts are standardized by the exchange regarding quantity, quality, and delivery dates to promote liquidity."
   },
   {
     "id": 5,
-    "question": "Who acts as the counterparty to every trade in an exchange-traded futures market?",
-    "options": [
-      "The RBI",
-      "The Clearing Corporation",
-      "The Commercial Bank",
-      "The individual seller"
-    ],
-    "answer": "The Clearing Corporation",
-    "hint": "This entity eliminates counterparty risk by becoming the buyer to every seller and seller to every buyer.",
-    "explanation": "The Clearing Corporation (NSCCL/ICCL) guarantees the settlement of all trades, acting as the central counterparty."
+    "question": "The process of adjusting the value of a futures contract to reflect the current market price daily is called:",
+    "options": ["Hedging", "Amortization", "Mark-to-Market (MTM)", "Discounting"],
+    "answer": "Mark-to-Market (MTM)",
+    "hint": "Daily profit/loss settlement.",
+    "explanation": "Mark-to-Market (MTM) is the daily settlement of profits and losses in futures trading, ensuring that the margin account reflects the current market value."
   },
   {
     "id": 6,
-    "question": "A 'Call Option' gives the buyer the right to:",
-    "options": [
-      "Sell the currency",
-      "Buy the currency",
-      "Exchange the currency",
-      "Borrow the currency"
-    ],
-    "answer": "Buy the currency",
-    "hint": "You 'Call' for something you want to get; you 'Put' away something you want to sell.",
-    "explanation": "A Call Option gives the holder the right to buy the underlying asset at a pre-determined strike price."
+    "question": "An option that gives the buyer the right to BUY the underlying asset is a:",
+    "options": ["Put Option", "Call Option", "Swap", "Forward"],
+    "answer": "Call Option",
+    "hint": "You 'call' the asset towards you.",
+    "explanation": "A Call Option gives the holder the right (but not the obligation) to buy the underlying asset at a specified strike price."
   },
   {
     "id": 7,
-    "question": "What is the 'Strike Price' in an options contract?",
-    "options": [
-      "The current market price",
-      "The price at which the option was bought",
-      "The fixed price at which the holder can buy/sell the currency",
-      "The price at which the contract expires"
-    ],
-    "answer": "The fixed price at which the holder can buy/sell the currency",
-    "hint": "This is the 'target' price written in the contract.",
-    "explanation": "The strike price (or exercise price) is the set price at which an option contract can be bought or sold."
+    "question": "An option that gives the buyer the right to SELL the underlying asset is a:",
+    "options": ["Put Option", "Call Option", "Future", "Swap"],
+    "answer": "Put Option",
+    "hint": "You 'put' the asset away to someone else.",
+    "explanation": "A Put Option gives the holder the right to sell the underlying asset at a specified strike price."
   },
   {
     "id": 8,
-    "question": "Which derivative instrument is most prone to 'Counterparty Risk'?",
-    "options": [
-      "Exchange-traded Futures",
-      "Exchange-traded Options",
-      "OTC Forwards",
-      "Standardized Swaps"
-    ],
-    "answer": "OTC Forwards",
-    "hint": "Counterparty risk is higher when there is no central exchange to guarantee the trade.",
-    "explanation": "Since Forwards are private OTC contracts, there is a risk that one party might default on their obligation."
+    "question": "The fixed price at which an option holder can buy or sell the underlying asset is known as the:",
+    "options": ["Spot Price", "Strike Price", "Forward Price", "Premium"],
+    "answer": "Strike Price",
+    "hint": "The price 'struck' in the contract.",
+    "explanation": "The Strike Price (or Exercise Price) is the pre-agreed price at which the option contract can be exercised."
   },
   {
     "id": 9,
-    "question": "The 'Premium' in an options contract is paid by:",
-    "options": [
-      "The Seller to the Buyer",
-      "The Buyer to the Seller",
-      "Both parties to the Exchange",
-      "The Exchange to the Broker"
-    ],
-    "answer": "The Buyer to the Seller",
-    "hint": "Think of it as an insurance premium; the one getting the 'right' pays the fee.",
-    "explanation": "The buyer pays a non-refundable premium to the seller (writer) to acquire the rights of the option."
+    "question": "Who has the OBLIGATION to perform in an option contract?",
+    "options": ["The Option Buyer", "The Option Writer (Seller)", "The Exchange", "The Regulator"],
+    "answer": "The Option Writer (Seller)",
+    "hint": "The person receiving the premium.",
+    "explanation": "The Option Buyer has the 'right', while the Option Writer (Seller) has the 'obligation' to fulfill the contract if the buyer exercises it."
   },
   {
     "id": 10,
-    "question": "A 'Put Option' is used when an investor expects the currency price to:",
-    "options": [
-      "Rise",
-      "Fall",
-      "Stay stable",
-      "Become volatile"
-    ],
-    "answer": "Fall",
-    "hint": "You want the right to sell at a high price if you think the market price will drop lower.",
-    "explanation": "A Put Option becomes valuable when the market price falls below the strike price."
+    "question": "The price paid by the option buyer to the option seller for acquiring the right is called:",
+    "options": ["Margin", "Strike Price", "Option Premium", "Brokerage"],
+    "answer": "Option Premium",
+    "hint": "The cost of the option.",
+    "explanation": "The Option Premium is the upfront cost paid by the buyer to the seller to purchase the option rights."
   },
   {
     "id": 11,
-    "question": "What is 'Mark-to-Market' (MTM) in the context of Futures?",
-    "options": [
-      "The process of branding a product",
-      "Daily settlement of profits and losses",
-      "A one-time payment at maturity",
-      "Adjusting for inflation"
-    ],
-    "answer": "Daily settlement of profits and losses",
-    "hint": "This happens at the end of every trading day to ensure no large defaults occur.",
-    "explanation": "MTM is the daily adjustment of a margin account based on the closing price of the futures contract."
+    "question": "Currency Futures in India are settled in:",
+    "options": ["Foreign Currency", "Cash (Indian Rupee)", "Gold", "Physical Delivery of Notes"],
+    "answer": "Cash (Indian Rupee)",
+    "hint": "You don't get actual dollars in your account.",
+    "explanation": "Currency futures in India (on exchanges like NSE/BSE) are cash-settled in Indian Rupees, based on the difference between the entry price and settlement price."
   },
   {
     "id": 12,
-    "question": "Which of the following describes a 'European Option'?",
-    "options": [
-      "Can be exercised at any time before expiry",
-      "Can only be exercised on the expiration date",
-      "Only traded in Europe",
-      "Must be settled in Euros"
-    ],
-    "answer": "Can only be exercised on the expiration date",
-    "hint": "American options can be exercised 'Any' time; European options are only at the 'End'.",
-    "explanation": "European options can only be exercised by the holder on the specific date of expiration."
+    "question": "Which of the following derivatives is legally binding on both parties to fulfill the contract?",
+    "options": ["Options", "Futures", "Rights", "Warrants"],
+    "answer": "Futures",
+    "hint": "No choice to walk away.",
+    "explanation": "In a Futures contract (and Forwards), both the buyer and the seller are legally obligated to fulfill the contract terms. In Options, only the seller is obligated."
   },
   {
     "id": 13,
-    "question": "What is the 'Underlying Asset' in a USD/INR Futures contract?",
-    "options": [
-      "The Indian Rupee",
-      "The US Dollar",
-      "Gold",
-      "The Nifty 50 Index"
-    ],
-    "answer": "The US Dollar",
-    "hint": "The derivative derives its value from this specific currency.",
-    "explanation": "In a USD/INR contract, the US Dollar is the underlying asset whose price movement determines the value of the contract."
+    "question": "If you expect the USD to depreciate against the INR, what position should you take in USDINR futures?",
+    "options": ["Long (Buy)", "Short (Sell)", "Neutral", "None of the above"],
+    "answer": "Short (Sell)",
+    "hint": "Sell high, buy low later.",
+    "explanation": "If you expect the value of the asset (USD) to fall, you should Sell (Short) the futures contract to profit from the decline."
   },
   {
     "id": 14,
-    "question": "What is 'Basis' in futures trading?",
-    "options": [
-      "The total value of the contract",
-      "The difference between the Spot price and the Futures price",
-      "The interest rate charged by brokers",
-      "The minimum margin required"
-    ],
-    "answer": "The difference between the Spot price and the Futures price",
-    "hint": "Formula: Basis = Spot Price - Futures Price.",
-    "explanation": "Basis is the price gap between the physical (spot) market and the futures market."
+    "question": "Initial Margin in futures trading is collected to:",
+    "options": ["Pay the broker's fees", "Cover the potential loss on the contract", "Pay the exchange registration fee", "Generate interest for the exchange"],
+    "answer": "Cover the potential loss on the contract",
+    "hint": "It acts as a security deposit.",
+    "explanation": "Initial Margin is a deposit required to ensure that the trader can cover potential losses and fulfill their obligations."
   },
   {
     "id": 15,
-    "question": "A 'Short' position in futures would profit if the price:",
-    "options": [
-      "Increases",
-      "Decreases",
-      "Remains the same",
-      "Fluctuates wildly"
-    ],
-    "answer": "Decreases",
-    "hint": "You have 'sold' high and hope to 'buy' back low.",
-    "explanation": "Short sellers profit from falling prices as they can buy the asset back at a lower price than they sold it for."
+    "question": "A 'European' option can be exercised:",
+    "options": ["At any time before expiry", "Only on the expiry date", "Only when in profit", "Only on weekends"],
+    "answer": "Only on the expiry date",
+    "hint": "Strict timing vs. American freedom.",
+    "explanation": "European options can only be exercised on the specific expiration date, unlike American options which can be exercised any time before expiry. (Currency options in India are European)."
   },
   {
     "id": 16,
-    "question": "What is 'Initial Margin'?",
-    "options": [
-      "The total profit made on a trade",
-      "The minimum amount required to open a futures position",
-      "The fee paid to the SEBI",
-      "The final settlement amount"
-    ],
-    "answer": "The minimum amount required to open a futures position",
-    "hint": "Think of it as a security deposit or 'earnest money' to start trading.",
-    "explanation": "Initial margin is the upfront payment required by the exchange to enter into a futures contract."
+    "question": "Which term describes an option that has intrinsic value (e.g., Call Strike < Spot Price)?",
+    "options": ["At-the-Money (ATM)", "Out-of-the-Money (OTM)", "In-the-Money (ITM)", "No-Money"],
+    "answer": "In-the-Money (ITM)",
+    "hint": "It has real value right now.",
+    "explanation": "An option is In-the-Money (ITM) if exercising it immediately would result in a gain (excluding premium paid)."
   },
   {
     "id": 17,
-    "question": "If a contract is 'In-the-Money' (ITM), it means:",
-    "options": [
-      "The holder has lost all their money",
-      "The option has intrinsic value",
-      "The option is worthless",
-      "The trader has not paid the margin"
-    ],
-    "answer": "The option has intrinsic value",
-    "hint": "Exercising the option at this stage would result in a profit relative to the market price.",
-    "explanation": "An option is ITM when exercising it would allow the holder to buy below or sell above the current market price."
+    "question": "The total number of outstanding futures contracts that have not been settled is called:",
+    "options": ["Volume", "Turnover", "Open Interest", "Liquidity"],
+    "answer": "Open Interest",
+    "hint": "Contracts that are still 'open'.",
+    "explanation": "Open Interest refers to the total number of derivative contracts that have not been settled, exercised, or closed out."
   },
   {
     "id": 18,
-    "question": "What is a 'Speculator's' main goal in the derivatives market?",
-    "options": [
-      "To hedge their business risk",
-      "To profit from price movements",
-      "To facilitate international trade",
-      "To regulate the market"
-    ],
-    "answer": "To profit from price movements",
-    "hint": "They don't have an underlying physical exposure; they just want the capital gain.",
-    "explanation": "Speculators take on risk in the hope of making a profit from favorable price changes."
+    "question": "In a currency swap, the principal amounts are usually:",
+    "options": ["Not exchanged", "Exchanged at the beginning and end", "Exchanged only at the end", "Exchanged only at the beginning"],
+    "answer": "Exchanged at the beginning and end",
+    "hint": "Swap implies trading the actual capital.",
+    "explanation": "In a standard currency swap, the principal amounts in the two currencies are exchanged at the inception and re-exchanged at the maturity."
   },
   {
     "id": 19,
-    "question": "Which of these is NOT a standard feature of a Futures contract?",
-    "options": [
-      "Expiry Date",
-      "Contract Size",
-      "Negotiable Price between buyer and seller offline",
-      "Tick Size"
-    ],
-    "answer": "Negotiable Price between buyer and seller offline",
-    "hint": "Everything in futures is fixed by the exchange except the price, which is discovered on the screen.",
-    "explanation": "Futures are standardized; you cannot negotiate contract terms like size or expiry date privately; they are set by the exchange."
+    "question": "Buying a Call option is similar to:",
+    "options": ["Buying the underlying asset but with limited downside risk", "Selling the underlying asset", "Shorting the market", "Buying a bond"],
+    "answer": "Buying the underlying asset but with limited downside risk",
+    "hint": "You profit if it goes up, but lose only the premium if it drops.",
+    "explanation": "Buying a Call allows you to profit from price increases (bullish) like owning the asset, but your maximum loss is limited to the premium paid."
   },
   {
     "id": 20,
-    "question": "When does 'Physical Delivery' happen in Indian Currency Futures?",
-    "options": [
-      "Every Friday",
-      "At the end of every day",
-      "Never, they are cash-settled in India",
-      "Only for large corporate clients"
-    ],
-    "answer": "Never, they are cash-settled in India",
-    "hint": "In India, currency derivatives on exchanges do not involve handing over actual USD notes.",
-    "explanation": "Currency futures and options on Indian exchanges are currently cash-settled in Indian Rupees (INR) based on the RBI reference rate."
+    "question": "Which Greek letter measures the sensitivity of an option's price to changes in the underlying asset's price?",
+    "options": ["Theta", "Vega", "Delta", "Rho"],
+    "answer": "Delta",
+    "hint": "Change in price.",
+    "explanation": "Delta measures how much the option price is expected to move for every 1 unit change in the underlying asset's price."
+  },
+  {
+    "id": 21,
+    "question": "OTC derivatives generally face higher ______ than exchange-traded derivatives.",
+    "options": ["Liquidity", "Transparency", "Counterparty Risk", "Regulation"],
+    "answer": "Counterparty Risk",
+    "hint": "Private contracts lack a central guarantee.",
+    "explanation": "Since OTC trades are bilateral without a clearing corporation, there is a higher risk that the other party may default (Counterparty Risk)."
+  },
+  {
+    "id": 22,
+    "question": "A currency pair is trading at 80. If you buy a Call option with Strike 82, this option is:",
+    "options": ["In-the-Money", "At-the-Money", "Out-of-the-Money", "Deep In-the-Money"],
+    "answer": "Out-of-the-Money",
+    "hint": "Strike is higher than current price for a Call.",
+    "explanation": "For a Call option, if Strike Price (82) > Spot Price (80), the option is Out-of-the-Money (OTM) because it has no intrinsic value."
+  },
+  {
+    "id": 23,
+    "question": "The 'Cost of Carry' model is used to determine the theoretical price of:",
+    "options": ["Futures", "Options", "Swaps", "Spot"],
+    "answer": "Futures",
+    "hint": "Spot price + Interest - Income.",
+    "explanation": "The fair value of a futures contract is calculated using the Cost of Carry model (Spot Price + Cost of Financing - Benefits of Holding)."
+  },
+  {
+    "id": 24,
+    "question": "An Interest Rate Swap typically involves exchanging:",
+    "options": ["Principal only", "Fixed rate interest for floating rate interest", "Equity for Debt", "Gold for Cash"],
+    "answer": "Fixed rate interest for floating rate interest",
+    "hint": "Swapping the type of interest payment.",
+    "explanation": "The most common interest rate swap involves one party paying a fixed interest rate and receiving a floating rate (like SOFR/LIBOR) from the other."
+  },
+  {
+    "id": 25,
+    "question": "Intrinsic Value + Time Value =",
+    "options": ["Strike Price", "Spot Price", "Option Premium", "Futures Price"],
+    "answer": "Option Premium",
+    "hint": "The components of the option price.",
+    "explanation": "The total price of an option (Premium) is the sum of its Intrinsic Value (real value) and Time Value (hope value)."
+  },
+  {
+    "id": 26,
+    "question": "Time decay (erosion of time value) accelerates as the option approaches:",
+    "options": ["Inception", "Expiration", "The weekend", "The beginning of the month"],
+    "answer": "Expiration",
+    "hint": "Less time for things to happen.",
+    "explanation": "As an option gets closer to its expiry date, the time value erodes faster, a phenomenon measured by 'Theta'."
+  },
+  {
+    "id": 27,
+    "question": "If you sell a Put Option, your view on the market is:",
+    "options": ["Bearish", "Bullish or Neutral", "Highly Volatile", "Bearish to Neutral"],
+    "answer": "Bullish or Neutral",
+    "hint": "You don't want the price to go down.",
+    "explanation": "Selling a Put implies you expect the price to stay above the strike price (Neutral) or go up (Bullish), so you can keep the premium."
+  },
+  {
+    "id": 28,
+    "question": "What is the maximum loss for a buyer of a Call Option?",
+    "options": ["Unlimited", "Strike Price", "The Premium Paid", "Spot Price"],
+    "answer": "The Premium Paid",
+    "hint": "You can only lose what you put in upfront.",
+    "explanation": "An option buyer can simply choose not to exercise the option. Therefore, the maximum loss is limited to the premium paid to buy it."
+  },
+  {
+    "id": 29,
+    "question": "What is the maximum profit for a seller of a Call Option?",
+    "options": ["Unlimited", "Strike Price", "The Premium Received", "Spot Price"],
+    "answer": "The Premium Received",
+    "hint": "The seller only gets the upfront payment.",
+    "explanation": "The maximum gain for an option writer (seller) is limited to the premium received. However, their potential loss is unlimited if the market moves against them."
+  },
+  {
+    "id": 30,
+    "question": "Futures contracts are usually closed out by:",
+    "options": ["Physical delivery", "Entering an offsetting (reverse) trade", "Defaulting", "Waiting for 10 years"],
+    "answer": "Entering an offsetting (reverse) trade",
+    "hint": "Squaring off.",
+    "explanation": "Most futures contracts are not held to maturity for delivery; they are 'squared off' by taking an opposite position (e.g., selling if you bought) before expiry."
+  },
+  {
+    "id": 31,
+    "question": "Which entity guarantees the settlement of trades on the stock exchange?",
+    "options": ["The Broker", "The Depository", "The Clearing Corporation/House", "The Bank"],
+    "answer": "The Clearing Corporation/House",
+    "hint": "Examples: NSCCL, ICCL.",
+    "explanation": "The Clearing Corporation guarantees the settlement of all trades executed on the exchange, managing risk through margins."
+  },
+  {
+    "id": 32,
+    "question": "A contract that gives the right to buy or sell a currency at a future date is a:",
+    "options": ["Swap", "Option", "Loan", "Bond"],
+    "answer": "Option",
+    "hint": "Key word is 'Right'.",
+    "explanation": "Only Options provide a 'right'. Forwards and Futures impose an 'obligation'."
+  },
+  {
+    "id": 33,
+    "question": "Long USDINR Future at 83.00. Settlement price at expiry is 83.50. What is the profit/loss?",
+    "options": ["Loss of 0.50", "Profit of 0.50", "No Profit No Loss", "Profit of 83.50"],
+    "answer": "Profit of 0.50",
+    "hint": "Buy low, sell high.",
+    "explanation": "You bought (Long) at 83.00 and the price went up to 83.50. Profit = 83.50 - 83.00 = 0.50."
+  },
+  {
+    "id": 34,
+    "question": "Short USDINR Future at 83.00. Settlement price is 83.50. What is the profit/loss?",
+    "options": ["Loss of 0.50", "Profit of 0.50", "Loss of 83.00", "Profit of 5.00"],
+    "answer": "Loss of 0.50",
+    "hint": "You sold, but price went up.",
+    "explanation": "You sold (Short) at 83.00, but the price rose to 83.50. Loss = 83.50 - 83.00 = 0.50."
+  },
+  {
+    "id": 35,
+    "question": "Arbitrage involves:",
+    "options": ["Taking high risk for high returns", "Risk-less profit from price discrepancies", "Long term investing", "Betting on market direction"],
+    "answer": "Risk-less profit from price discrepancies",
+    "hint": "Buying here, selling there.",
+    "explanation": "Arbitrage is the practice of taking advantage of a price difference between two or more markets to make a risk-free profit."
+  },
+  {
+    "id": 36,
+    "question": "Which of the following is an example of a derivative underlying?",
+    "options": ["Weather", "Currency", "Interest Rate", "All of the above"],
+    "answer": "All of the above",
+    "hint": "Derivatives can be based on almost anything measurable.",
+    "explanation": "Derivatives can be based on diverse variables including financial assets (currency, stocks, interest rates) and non-financial variables (weather)."
+  },
+  {
+    "id": 37,
+    "question": "Margin money is required for:",
+    "options": ["Option Buyers", "Futures Buyers and Sellers", "Spot Traders", "Mutual Fund Investors"],
+    "answer": "Futures Buyers and Sellers",
+    "hint": "Both sides have obligation.",
+    "explanation": "In Futures, both buyers and sellers have an obligation to settle, so both must post margin. (In options, only the seller posts margin)."
+  },
+  {
+    "id": 38,
+    "question": "When the Futures price is higher than the Spot price, the market is in:",
+    "options": ["Backwardation", "Contango", "Recession", "Parity"],
+    "answer": "Contango",
+    "hint": "Standard market condition with cost of carry.",
+    "explanation": "Contango is a situation where the futures price of a commodity or asset is higher than the spot price (often due to cost of carry)."
+  },
+  {
+    "id": 39,
+    "question": "When the Futures price is lower than the Spot price, the market is in:",
+    "options": ["Backwardation", "Contango", "Inflation", "Equilibrium"],
+    "answer": "Backwardation",
+    "hint": "Inverse of Contango.",
+    "explanation": "Backwardation occurs when the futures price is lower than the spot price (often due to benefit of holding the physical asset)."
+  },
+  {
+    "id": 40,
+    "question": "The expiry date of currency derivatives contracts in India is usually:",
+    "options": ["The last working day of the month", "Two working days prior to the last working day of the month", "The 15th of every month", "Every Friday"],
+    "answer": "Two working days prior to the last working day of the month",
+    "hint": "It allows for T+2 settlement.",
+    "explanation": "RBI guidelines typically set the expiry 2 working days before the last business day of the month to align with spot market settlement cycles."
+  },
+  {
+    "id": 41,
+    "question": "Using derivatives to reduce or eliminate risk is called:",
+    "options": ["Speculation", "Hedging", "Arbitrage", "Gambling"],
+    "answer": "Hedging",
+    "hint": "Like a hedge or fence for protection.",
+    "explanation": "Hedging is the primary purpose of derivatives for corporations—transferring risk to those willing to take it."
+  },
+  {
+    "id": 42,
+    "question": "Using derivatives to bet on market movements for profit is called:",
+    "options": ["Hedging", "Speculation", "Insurance", "Saving"],
+    "answer": "Speculation",
+    "hint": "Taking risk for profit.",
+    "explanation": "Speculators take on the risk that hedgers want to avoid, hoping to make a profit from price changes."
+  },
+  {
+    "id": 43,
+    "question": "The 'Notional Value' of a derivative contract refers to:",
+    "options": ["The margin paid", "The total value of the underlying assets controlled", "The brokerage fee", "The tax value"],
+    "answer": "The total value of the underlying assets controlled",
+    "hint": "Contract Size x Price.",
+    "explanation": "Notional value is the total value of the underlying asset's position that the derivative contract controls."
+  },
+  {
+    "id": 44,
+    "question": "In a USDINR option contract, the 'Underlying' is:",
+    "options": ["The US Dollar", "The Indian Rupee", "The exchange rate between USD and INR", "The interest rate"],
+    "answer": "The exchange rate between USD and INR",
+    "hint": "The variable being bet on.",
+    "explanation": "The underlying asset for a currency option is the specific exchange rate pair (Spot rate) being traded."
+  },
+  {
+    "id": 45,
+    "question": "Which order type ensures a trade is executed immediately at the best available price?",
+    "options": ["Limit Order", "Market Order", "Stop Loss Order", "GTC Order"],
+    "answer": "Market Order",
+    "hint": "Buy/Sell NOW.",
+    "explanation": "A Market Order is an instruction to buy or sell a security immediately at the current market price."
+  },
+  {
+    "id": 46,
+    "question": "Contracts that are customized to the needs of the client are usually:",
+    "options": ["Exchange Traded Funds", "Futures", "Forwards", "REITs"],
+    "answer": "Forwards",
+    "hint": "OTC flexibility.",
+    "explanation": "Forwards are OTC instruments and can be tailored (customized) regarding size, expiry, and delivery terms."
+  },
+  {
+    "id": 47,
+    "question": "At expiry, the price of a Futures contract usually converges to:",
+    "options": ["The Spot Price", "The Strike Price", "Zero", "Infinity"],
+    "answer": "The Spot Price",
+    "hint": "Convergence principle.",
+    "explanation": "As the contract approaches expiry, the time value diminishes and the futures price converges to the spot price of the underlying asset."
+  },
+  {
+    "id": 48,
+    "question": "An option with a Delta of 0.5 implies:",
+    "options": ["50% chance of expiring ITM", "Option price moves 0.50 for every 1.00 move in underlying", "Option costs 0.50", "Time decay is 0.50"],
+    "answer": "Option price moves 0.50 for every 1.00 move in underlying",
+    "hint": "Delta is the rate of change.",
+    "explanation": "Delta represents the ratio comparing the change in the price of an asset to the corresponding change in the price of its derivative."
+  },
+  {
+    "id": 49,
+    "question": "Maintenance Margin is:",
+    "options": ["The minimum balance required to keep a position open", "The fee paid to the broker", "The profit made", "The tax paid"],
+    "answer": "The minimum balance required to keep a position open",
+    "hint": "Don't drop below this line.",
+    "explanation": "If the margin account balance falls below the Maintenance Margin level, the trader receives a margin call to deposit more funds."
+  },
+  {
+    "id": 50,
+    "question": "In Option terminology, 'Writing' an option means:",
+    "options": ["Buying it", "Selling it (creating the obligation)", "Exercising it", "Expiring it"],
+    "answer": "Selling it (creating the obligation)",
+    "hint": "The writer is the seller.",
+    "explanation": "Writing an option refers to selling an option, where the writer receives the premium but takes on the obligation to fulfill the contract."
   }
 ]

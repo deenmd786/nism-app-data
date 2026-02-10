@@ -1,262 +1,402 @@
 [
   {
     "id": 1,
-    "question": "Which system is used for trading currency derivatives on Indian exchanges?",
-    "options": [
-      "Open Outcry System",
-      "Automated Screen Based Trading System",
-      "Physical Token System",
-      "Telephonic Manual System"
-    ],
-    "answer": "Automated Screen Based Trading System",
-    "hint": "It ensures transparency, anonymity, and nationwide access via computers.",
-    "explanation": "Indian exchanges use a fully automated screen-based trading system (like NEAT on NSE or BOLT on BSE) where orders are matched electronically."
+    "question": "Which strategy is most suitable for an Indian importer who needs to pay USD 100,000 after 2 months and expects the USD to appreciate?",
+    "options": ["Short Hedge (Sell Futures)", "Long Hedge (Buy Futures)", "Do nothing", "Sell Call Options"],
+    "answer": "Long Hedge (Buy Futures)",
+    "hint": "They need to BUY dollars later.",
+    "explanation": "An importer has a future liability in foreign currency. To protect against the risk of the currency rising (appreciating), they should lock in a buy price now by entering a Long Hedge (Buying Futures)."
   },
   {
     "id": 2,
-    "question": "In the trading system, what is the 'Price-Time Priority' rule?",
-    "options": [
-      "Newer orders get priority over older ones",
-      "Best price gets priority; if prices are same, the earlier order gets priority",
-      "Larger orders get priority over smaller ones",
-      "Institutional orders get priority over retail"
-    ],
-    "answer": "Best price gets priority; if prices are same, the earlier order gets priority",
-    "hint": "Who offers the best deal first wins.",
-    "explanation": "The matching engine first prioritizes the best price (highest buy/lowest sell). If two orders have the same price, the one that arrived first is executed first."
+    "question": "An exporter expects to receive EUR 50,000 in 3 months. To hedge against the risk of the Euro depreciating, the exporter should:",
+    "options": ["Buy EURINR Futures", "Sell EURINR Futures", "Buy USDINR Futures", "Sell USDINR Futures"],
+    "answer": "Sell EURINR Futures",
+    "hint": "They will be SELLING euros later.",
+    "explanation": "The exporter will have Euros to sell in the future. To lock in the selling price and protect against a fall in value, they should Sell (Short) EURINR futures today."
   },
   {
     "id": 3,
-    "question": "What is a 'Limit Order'?",
-    "options": [
-      "An order to buy/sell at the current market price",
-      "An order to buy/sell at a specified price or better",
-      "An order that gets cancelled automatically",
-      "An order with no price limit"
-    ],
-    "answer": "An order to buy/sell at a specified price or better",
-    "hint": "You set the 'Limit' of how much you are willing to pay or accept.",
-    "explanation": "A Limit Order allows the trader to define a specific price. The trade will only happen at that price or a better one (lower for buy, higher for sell)."
+    "question": "A speculator expects the USDINR rate to fall from 83.00 to 82.50. What position should they take?",
+    "options": ["Go Long (Buy Futures)", "Go Short (Sell Futures)", "Buy a Call Option", "Buy the Spot currency"],
+    "answer": "Go Short (Sell Futures)",
+    "hint": "Bearish view.",
+    "explanation": "If the view is bearish (expecting prices to fall), the speculator should Sell (Short) futures to profit from the decline."
   },
   {
     "id": 4,
-    "question": "What does 'IOC' stand for in order types?",
-    "options": [
-      "Indian Oil Corporation",
-      "Immediate or Cancel",
-      "Interest on Capital",
-      "Internal Order Code"
-    ],
-    "answer": "Immediate or Cancel",
-    "hint": "It's a 'now or never' order.",
-    "explanation": "An IOC order demands that the order be executed immediately (fully or partially). Any portion not executed instantly is cancelled."
+    "question": "Buying a near-month contract and simultaneously selling a far-month contract of the same underlying is known as:",
+    "options": ["Calendar Spread (Time Spread)", "Inter-currency Spread", "Arbitrage", "Naked Speculation"],
+    "answer": "Calendar Spread (Time Spread)",
+    "hint": "Spreading across time.",
+    "explanation": "A Calendar Spread involves taking opposite positions in futures contracts of the same underlying asset but with different expiry dates."
   },
   {
     "id": 5,
-    "question": "What is the standard 'Contract Size' (Lot Size) for USD/INR futures on Indian exchanges?",
-    "options": [
-      "USD 100",
-      "USD 1,000",
-      "USD 10,000",
-      "USD 100,000"
-    ],
-    "answer": "USD 1,000",
-    "hint": "It is a relatively small size to encourage retail participation.",
-    "explanation": "The standard contract size for USD/INR currency futures in India is USD 1,000 per lot."
+    "question": "If an arbitrageur buys the spot currency and sells the currency future, this strategy is called:",
+    "options": ["Reverse Cash and Carry Arbitrage", "Cash and Carry Arbitrage", "Scalping", "Day Trading"],
+    "answer": "Cash and Carry Arbitrage",
+    "hint": "Buy cash, carry to future.",
+    "explanation": "Cash and Carry Arbitrage involves buying the asset in the spot (cash) market and selling the futures contract to exploit pricing inefficiencies (usually when Futures is overpriced)."
   },
   {
     "id": 6,
-    "question": "Every person trading on the exchange must be identified by a unique code called:",
-    "options": [
-      "PAN Card",
-      "Unique Client Code (UCC)",
-      "Adhaar Number",
-      "Bank Account Number"
-    ],
-    "answer": "Unique Client Code (UCC)",
-    "hint": "This code is mandatory to map the order to the specific end-client.",
-    "explanation": "The Unique Client Code (UCC) is mandatory for all clients to trade. Brokers must upload these codes to the exchange to track limits and positions."
+    "question": "Reverse Cash and Carry Arbitrage is profitable when:",
+    "options": ["Futures price is significantly higher than Fair Value", "Futures price is significantly lower than Fair Value", "Spot price is equal to Futures price", "Interest rates are zero"],
+    "answer": "Futures price is significantly lower than Fair Value",
+    "hint": "Futures are 'cheap'.",
+    "explanation": "If the futures price is undervalued (lower than fair value/spot + cost of carry), an arbitrageur sells the spot and buys the future (Reverse Cash and Carry)."
   },
   {
     "id": 7,
-    "question": "What is the 'Tick Size' for USD/INR currency futures?",
-    "options": [
-      "0.0100",
-      "0.2500",
-      "0.0025",
-      "1.0000"
-    ],
-    "answer": "0.0025",
-    "hint": "Also known as a 'quarter paisa'.",
-    "explanation": "The minimum price movement (tick size) allowed for USD/INR futures is 0.0025 INR."
+    "question": "The risk that the Futures price and the Spot price do not move in perfect lockstep is called:",
+    "options": ["Credit Risk", "Basis Risk", "Liquidity Risk", "Operational Risk"],
+    "answer": "Basis Risk",
+    "hint": "The gap between spot and future varies.",
+    "explanation": "Basis Risk implies that the difference between the spot price and futures price (the basis) may widen or narrow unexpectedly, making the hedge less than perfect."
   },
   {
     "id": 8,
-    "question": "A 'Market Order' guarantees:",
-    "options": [
-      "The Price but not Execution",
-      "Execution but not the specific Price",
-      "Both Price and Execution",
-      "Neither Price nor Execution"
-    ],
-    "answer": "Execution but not the specific Price",
-    "hint": "You are telling the broker: 'Get me in right now, I don't care about the exact cost.'",
-    "explanation": "A Market Order matches immediately with the best available counter-order. You get the trade done, but the price might slip if liquidity is low."
+    "question": "If a company has a foreign currency loan that needs to be repaid in 6 months, they are exposed to:",
+    "options": ["Currency appreciation risk", "Currency depreciation risk", "Interest rate risk only", "No risk"],
+    "answer": "Currency appreciation risk",
+    "hint": "Debt becomes more expensive if the currency value goes up.",
+    "explanation": "If the foreign currency strengthens (appreciates), the company will need more domestic currency to buy the foreign currency required to repay the loan."
   },
   {
     "id": 9,
-    "question": "If a trader enters a 'Stop Loss' Buy order, the trigger price should be:",
-    "options": [
-      "Lower than the current market price",
-      "Higher than the current market price",
-      "Exactly the current market price",
-      "Zero"
-    ],
-    "answer": "Higher than the current market price",
-    "hint": "You use this to stop losses if the market breaks out upwards (for a short position).",
-    "explanation": "A Stop Loss Buy is placed above the current price. It becomes a market buy order only if the price rises to touch that trigger level (usually to cover a short position)."
+    "question": "To hedge a payable of USD 1 million using futures with a lot size of USD 1,000, how many lots should be bought?",
+    "options": ["10 lots", "100 lots", "1,000 lots", "10,000 lots"],
+    "answer": "1,000 lots",
+    "hint": "Total Exposure / Lot Size.",
+    "explanation": "Number of contracts = Total Exposure / Contract Size = 1,000,000 / 1,000 = 1,000 lots."
   },
   {
     "id": 10,
-    "question": "Which entity is responsible for 'clearing' trades (guaranteeing settlement) in India?",
-    "options": [
-      "The Broker",
-      "The Clearing Corporation (e.g., NCL/ICCL)",
-      "The RBI",
-      "The SEBI"
-    ],
-    "answer": "The Clearing Corporation (e.g., NCL/ICCL)",
-    "hint": "They stand between the buyer and seller.",
-    "explanation": "The Clearing Corporation acts as the central counterparty, ensuring that if one party defaults, the other still gets their money/settlement."
+    "question": "A 'Perfect Hedge' results in:",
+    "options": ["Maximum profit", "Elimination of all risk and potential profit/loss", "Zero transaction costs", "Guaranteed depreciation"],
+    "answer": "Elimination of all risk and potential profit/loss",
+    "hint": "You lock in the rate completely.",
+    "explanation": "A perfect hedge completely eliminates the uncertainty of price movements, meaning you avoid losses but also forego any potential gains from favorable movements."
   },
   {
     "id": 11,
-    "question": "What are the typical trading hours for Currency Derivatives in India (as of standard timings)?",
-    "options": [
-      "10:00 AM to 3:30 PM",
-      "9:00 AM to 5:00 PM",
-      "9:15 AM to 3:30 PM",
-      "9:00 AM to 5:00 PM (extends for cross-currency)"
-    ],
-    "answer": "9:00 AM to 5:00 PM",
-    "hint": "The currency market opens earlier and closes later than the equity market.",
-    "explanation": "Standard currency derivative trading hours in India are usually 9:00 AM to 5:00 PM."
+    "question": "Hedging with futures involves taking a position in the futures market that is ______ to the position in the physical market.",
+    "options": ["Identical", "Opposite", "Unrelated", "Double"],
+    "answer": "Opposite",
+    "hint": "To cancel out the risk.",
+    "explanation": "Hedging works by taking an opposite position. If you are Long in the physical market (own the asset), you go Short in futures."
   },
   {
     "id": 12,
-    "question": "What happens if a user inputs a price that is outside the 'Operating Range' (Circuit Limits) of the day?",
-    "options": [
-      "The order is accepted but pending",
-      "The order is rejected by the system",
-      "The order is converted to a Market Order",
-      "The user is fined"
-    ],
-    "answer": "The order is rejected by the system",
-    "hint": "The system prevents 'fat finger' errors or extreme volatility.",
-    "explanation": "Orders placed outside the dynamic price bands (DPR) are immediately rejected by the exchange's trading system."
+    "question": "Speculators primarily add ______ to the market.",
+    "options": ["Risk", "Liquidity", "Regulations", "Transaction costs"],
+    "answer": "Liquidity",
+    "hint": "They are willing to take the other side of the trade.",
+    "explanation": "By constantly buying and selling based on their views, speculators provide the liquidity that allows hedgers to enter and exit positions easily."
   },
   {
     "id": 13,
-    "question": "Who is a 'Trading Member'?",
-    "options": [
-      "A person who trades for themselves",
-      "A member of the exchange who can trade for themselves and clients but cannot clear trades",
-      "A bank that only clears trades",
-      "A software provider"
-    ],
-    "answer": "A member of the exchange who can trade for themselves and clients but cannot clear trades",
-    "hint": "They have access to the terminal but need a Clearing Member to settle the accounts.",
-    "explanation": "A Trading Member (TM) has rights to execute trades on the exchange platform but must go through a Clearing Member (CM) to settle those trades."
+    "question": "If an investor is 'Long' the basis (Spot - Future), they profit when:",
+    "options": ["The basis strengthens (narrows/becomes more positive)", "The basis weakens (widens/becomes more negative)", "The basis remains constant", "Spot price falls to zero"],
+    "answer": "The basis strengthens (narrows/becomes more positive)",
+    "hint": "Long means you want the value to go up.",
+    "explanation": "Being Long Basis usually means buying Spot and selling Futures. You profit if the Spot rises relative to Futures (Basis strengthens)."
   },
   {
     "id": 14,
-    "question": "What is the 'Best Bid' in the Market Watch window?",
-    "options": [
-      "The lowest price a seller is asking",
-      "The highest price a buyer is willing to pay",
-      "The last traded price",
-      "The closing price of yesterday"
-    ],
-    "answer": "The highest price a buyer is willing to pay",
-    "hint": "If you want to sell 'Now', you sell to the Best Bid.",
-    "explanation": "The Best Bid is the highest Buy order currently sitting in the system. It represents the best exit price for a seller."
+    "question": "Which of the following is a cost involved in 'Cash and Carry' arbitrage?",
+    "options": ["Interest income earned", "Cost of funding (Interest paid to borrow funds)", "Dividend received", "Premium received"],
+    "answer": "Cost of funding (Interest paid to borrow funds)",
+    "hint": "You have to buy the asset now.",
+    "explanation": "To buy the spot asset, the arbitrageur typically borrows money, incurring an interest cost (Cost of Carry)."
   },
   {
     "id": 15,
-    "question": "What is the status of an order that has been placed but not yet matched?",
-    "options": [
-      "Traded",
-      "Open / Outstanding",
-      "Cancelled",
-      "Frozen"
-    ],
-    "answer": "Open / Outstanding",
-    "hint": "It is waiting in the order book.",
-    "explanation": "An order that is in the system waiting for a counter-party is called an Open or Outstanding order."
+    "question": "An IT company in India earning revenue in USD expects the Dollar to fall. What should they do?",
+    "options": ["Buy USDINR Futures", "Sell USDINR Futures", "Buy Put options on INR", "Do nothing"],
+    "answer": "Sell USDINR Futures",
+    "hint": "Protecting export earnings.",
+    "explanation": "The exporter (IT company) wants to protect the value of their future USD receivables. If USD falls, they lose. Selling Futures hedges this risk."
   },
   {
     "id": 16,
-    "question": "The 'Last Traded Price' (LTP) represents:",
-    "options": [
-      "The average price of the day",
-      "The price at which the most recent trade was executed",
-      "The best buy price",
-      "The best sell price"
-    ],
-    "answer": "The price at which the most recent trade was executed",
-    "hint": "It is the most current historical data point.",
-    "explanation": "LTP shows the price of the most recently successfully matched trade."
+    "question": "The 'Hedge Ratio' is calculated as:",
+    "options": ["Value of Futures Position / Value of Spot Exposure", "Spot Price / Futures Price", "Strike Price / Spot Price", "100% always"],
+    "answer": "Value of Futures Position / Value of Spot Exposure",
+    "hint": "How much cover for the exposure.",
+    "explanation": "The Hedge Ratio determines the size of the futures position relative to the spot exposure. An optimal hedge ratio minimizes variance."
   },
   {
     "id": 17,
-    "question": "When does a standard USD/INR futures contract expire?",
-    "options": [
-      "Last day of the month",
-      "Two working days prior to the last business day of the expiry month",
-      "15th of every month",
-      "Every Friday"
-    ],
-    "answer": "Two working days prior to the last business day of the expiry month",
-    "hint": "This timing allows for the RBI reference rate to be used for settlement.",
-    "explanation": "Currency contracts usually expire two working days before the last business day of the month (e.g., if the month ends on Friday the 31st, expiry is likely Wednesday the 29th)."
+    "question": "If the futures price is 84.00 and the theoretical fair value is 83.50, an arbitrageur should:",
+    "options": ["Buy Futures, Sell Spot", "Sell Futures, Buy Spot", "Do nothing", "Buy both"],
+    "answer": "Sell Futures, Buy Spot",
+    "hint": "Sell the expensive thing.",
+    "explanation": "The Futures price is overvalued (84.00 > 83.50). The strategy is to Sell the expensive Futures and Buy the cheaper Spot (Cash and Carry)."
   },
   {
     "id": 18,
-    "question": "Can a 'Trading Member' also be a 'Clearing Member'?",
-    "options": [
-      "No, never",
-      "Yes, this is called a Self-Clearing Member (SCM) or PCM",
-      "Only if they are a bank",
-      "Only if they are foreign"
-    ],
-    "answer": "Yes, this is called a Self-Clearing Member (SCM) or PCM",
-    "hint": "Larger brokers often do both.",
-    "explanation": "Yes, a member can be both. A Trading cum Clearing Member (TCM) or Professional Clearing Member (PCM) can trade and settle."
+    "question": "A 'Bull Spread' using futures involves:",
+    "options": ["Buying Near Month, Selling Far Month", "Selling Near Month, Buying Far Month", "Buying both months", "Selling both months"],
+    "answer": "Buying Near Month, Selling Far Month",
+    "hint": "Bullish on the spread or near term.",
+    "explanation": "In a commodity/currency context, a Bull Spread often involves Buying the Near Month and Selling the Far Month, expecting the near term to outperform."
   },
   {
     "id": 19,
-    "question": "Which key serves to confirm an order in most trading terminals (like NEAT)?",
-    "options": [
-      "Enter",
-      "Control + F1",
-      "Control + Enter",
-      "Escape"
-    ],
-    "answer": "Control + Enter",
-    "hint": "This is a safety step to prevent accidental orders.",
-    "explanation": "In many standard trading terminals used in India, pressing 'Control + Enter' is the final step to submit an order."
+    "question": "Cross-hedging is used when:",
+    "options": ["Futures on the exact underlying asset are not available", "The trader wants double profit", "The market is closed", "Arbitrage is impossible"],
+    "answer": "Futures on the exact underlying asset are not available",
+    "hint": "Using a substitute.",
+    "explanation": "If a direct futures contract doesn't exist for a specific currency exposure, a trader might use a correlated currency's futures (e.g., hedging Singapore Dollar exposure with USD futures)."
   },
   {
     "id": 20,
-    "question": "A 'Disclosed Quantity' order allows a trader to:",
-    "options": [
-      "Hide their identity",
-      "Show only a fraction of their total order quantity to the market",
-      "Trade without margin",
-      "Disclose their strategy to the public"
-    ],
-    "answer": "Show only a fraction of their total order quantity to the market",
-    "hint": "Like an iceberg, only the tip is visible.",
-    "explanation": "Disclosed Quantity allows large traders to reveal only a portion of their order (e.g., show 100 lots while actually buying 1,000) to avoid startling the market."
+    "question": "Beta (β) in a hedging context measures:",
+    "options": ["The volatility of the portfolio relative to the market/hedging instrument", "The interest rate", "The time to expiry", "The dividend yield"],
+    "answer": "The volatility of the portfolio relative to the market/hedging instrument",
+    "hint": "Sensitivity factor.",
+    "explanation": "Beta indicates how much the spot price of the asset tends to move for a given movement in the futures price, helping calculate the Optimal Hedge Ratio."
+  },
+  {
+    "id": 21,
+    "question": "If a trader has an uncovered short position in USDINR spot, the risk is that:",
+    "options": ["USD depreciates", "USD appreciates", "INR appreciates", "Interest rates fall"],
+    "answer": "USD appreciates",
+    "hint": "Short means you sold what you don't have.",
+    "explanation": "If you are short USD (owe USD), you lose money if the price of USD goes up (appreciates) because you have to buy it back at a higher price."
+  },
+  {
+    "id": 22,
+    "question": "Scalpers are traders who:",
+    "options": ["Hold positions for weeks", "Hold positions for very short intervals to profit from small price changes", "Only trade options", "Never trade futures"],
+    "answer": "Hold positions for very short intervals to profit from small price changes",
+    "hint": "Quick in, quick out.",
+    "explanation": "Scalpers trade frequently, holding positions for minutes or seconds to capture small price ticks."
+  },
+  {
+    "id": 23,
+    "question": "Rolling over a hedge involves:",
+    "options": ["Closing a near-month position and opening a far-month position", "Increasing the position size", " defaulting on the contract", "Switching from Futures to Options"],
+    "answer": "Closing a near-month position and opening a far-month position",
+    "hint": "Moving the expiry forward.",
+    "explanation": "If the exposure continues beyond the current contract's expiry, the trader 'rolls over' by closing the expiring contract and entering a new one for a later month."
+  },
+  {
+    "id": 24,
+    "question": "An importer hedges 50% of their exposure. This is known as:",
+    "options": ["Full Hedge", "Partial Hedge", "Over Hedge", "Naked Hedge"],
+    "answer": "Partial Hedge",
+    "hint": "Not the whole thing.",
+    "explanation": "Covering only a portion of the total exposure is a Partial Hedge, leaving the rest exposed to market risk."
+  },
+  {
+    "id": 25,
+    "question": "The 'Cost of Carry' for a currency future primarily depends on:",
+    "options": ["Storage costs", "Interest rate differential between the two currencies", "Transportation costs", "Insurance costs"],
+    "answer": "Interest rate differential between the two currencies",
+    "hint": "Money has different rental costs in different countries.",
+    "explanation": "For currency futures, Cost of Carry is determined by the difference in interest rates between the domestic and foreign currency (Interest Rate Parity)."
+  },
+  {
+    "id": 26,
+    "question": "If INR interest rates rise while USD rates remain constant, the USDINR Futures premium should theoretically:",
+    "options": ["Increase", "Decrease", "Become zero", "Remain unchanged"],
+    "answer": "Increase",
+    "hint": "Higher domestic rates = higher cost to carry.",
+    "explanation": "According to Interest Rate Parity, if the domestic interest rate (INR) rises, the forward/futures premium increases (USDINR futures price rises relative to spot)."
+  },
+  {
+    "id": 27,
+    "question": "A trader buys 10 lots of USDINR Jan Futures at 83.10 and sells 10 lots of USDINR Feb Futures at 83.30. This is a:",
+    "options": ["Bull Spread", "Bear Spread", "Calendar Spread", "Butterfly Spread"],
+    "answer": "Calendar Spread",
+    "hint": "Same asset, different times.",
+    "explanation": "Buying and selling the same underlying for different expiration months is a Calendar Spread."
+  },
+  {
+    "id": 28,
+    "question": "The primary goal of an arbitrageur is:",
+    "options": ["Risk minimization", "Risk-free profit", "Speculative gain", "Market regulation"],
+    "answer": "Risk-free profit",
+    "hint": "Free lunch.",
+    "explanation": "Arbitrageurs seek to make risk-free profits by exploiting price discrepancies between markets."
+  },
+  {
+    "id": 29,
+    "question": "Over-hedging occurs when:",
+    "options": ["The futures position size exceeds the spot exposure", "The futures position size is less than spot exposure", "The hedge is done in the wrong direction", "The hedge is done using options"],
+    "answer": "The futures position size exceeds the spot exposure",
+    "hint": "You bought too much insurance.",
+    "explanation": "If you have an exposure of $10,000 but you hedge $15,000 worth of futures, you are over-hedged, creating a new speculative risk."
+  },
+  {
+    "id": 30,
+    "question": "Which of the following reduces the effectiveness of a hedge?",
+    "options": ["High correlation between Spot and Futures", "Low Basis Risk", "Maturity mismatch (Asset and Future expire at different times)", "High liquidity"],
+    "answer": "Maturity mismatch (Asset and Future expire at different times)",
+    "hint": "The timing is off.",
+    "explanation": "If the futures contract expires on a different date than when the cash flow occurs, the basis risk increases, reducing hedge effectiveness."
+  },
+  {
+    "id": 31,
+    "question": "Short Selling in futures means:",
+    "options": ["Selling a contract you do not own to buy it back later", "Selling a contract you own", "Selling only for intraday", "Selling spot currency"],
+    "answer": "Selling a contract you do not own to buy it back later",
+    "hint": "Sell first, buy later.",
+    "explanation": "Short selling involves selling a futures contract without holding the underlying, with the obligation to buy it back or settle before expiry."
+  },
+  {
+    "id": 32,
+    "question": "Day traders typically ensure that:",
+    "options": ["All positions are closed before the market closes", "Positions are held overnight", "They only trade options", "They never use leverage"],
+    "answer": "All positions are closed before the market closes",
+    "hint": "No overnight risk.",
+    "explanation": "Day traders square off all positions before the end of the trading session to avoid overnight gap risk."
+  },
+  {
+    "id": 33,
+    "question": "If a speculator expects high volatility but is unsure of the direction, they might typically use:",
+    "options": ["Futures only", "Options (Straddle/Strangle)", "Cash market", "Forwards"],
+    "answer": "Options (Straddle/Strangle)",
+    "hint": "Strategy for movement in EITHER direction.",
+    "explanation": "While this chapter focuses on Futures, speculators expecting volatility without direction prefer Options (Long Straddle). In Futures, you generally need a directional view."
+  },
+  {
+    "id": 34,
+    "question": "A 'Short Squeeze' occurs when:",
+    "options": ["Short sellers are forced to buy back positions as prices rise", "Buyers are forced to sell", "Market volume dries up", "The exchange halts trading"],
+    "answer": "Short sellers are forced to buy back positions as prices rise",
+    "hint": "Squeezing the bears.",
+    "explanation": "If prices rise sharply, short sellers rush to buy back (cover) their positions to limit losses, which fuels further price increases."
+  },
+  {
+    "id": 35,
+    "question": "Position Limits are set by exchanges to prevent:",
+    "options": ["Arbitrage", "Hedging", "Concentration of risk and manipulation", "Algorithmic trading"],
+    "answer": "Concentration of risk and manipulation",
+    "hint": "Too much power in one hand.",
+    "explanation": "Position limits restrict the number of contracts a single entity can hold to prevent them from cornering the market."
+  },
+  {
+    "id": 36,
+    "question": "The 'Convergence Property' states that:",
+    "options": ["Futures price converges to Spot price at maturity", "Spot price converges to zero", "Futures price always stays above Spot", "Futures price always stays below Spot"],
+    "answer": "Futures price converges to Spot price at maturity",
+    "hint": "At the end, they are the same thing.",
+    "explanation": "As the contract approaches expiration, the cost of carry approaches zero, and the futures price must equal the spot price."
+  },
+  {
+    "id": 37,
+    "question": "If you are an Indian student going to the USA in 3 months and need to pay fees in USD, you are:",
+    "options": ["Long INR", "Short USD", "Long USD (Need to buy USD)", "Short INR only"],
+    "answer": "Long USD (Need to buy USD)",
+    "hint": "You are like an importer.",
+    "explanation": "You have a future requirement for USD. You are effectively 'Short USD' in your personal finances until you secure it, so you need to take a Long position (Buy USD) to hedge."
+  },
+  {
+    "id": 38,
+    "question": "In a 'Bear Spread', the trader profits if:",
+    "options": ["The price difference widens or narrows in a specific way favoring the short side", "The market rises significantly", "Volatility is zero", "Interest rates skyrocket"],
+    "answer": "The price difference widens or narrows in a specific way favoring the short side",
+    "hint": "Betting on the spread.",
+    "explanation": "A Bear Spread usually involves Selling the Near month and Buying the Far month, profiting if the near month falls faster than the far month."
+  },
+  {
+    "id": 39,
+    "question": "What is the primary benefit of using Futures for hedging compared to Forwards?",
+    "options": ["Customization", "No Margin", "Liquidity and lack of counterparty risk", "Privacy"],
+    "answer": "Liquidity and lack of counterparty risk",
+    "hint": "Exchange traded benefits.",
+    "explanation": "Futures offer high liquidity and a central counterparty guarantee, whereas Forwards are illiquid and carry counterparty risk."
+  },
+  {
+    "id": 40,
+    "question": "If the Basis (Spot - Future) is negative, the market is said to be in:",
+    "options": ["Contango", "Backwardation", "Discount", "Recession"],
+    "answer": "Contango",
+    "hint": "Future > Spot.",
+    "explanation": "When Futures Price > Spot Price, Basis (Spot - Future) is negative. This is called Contango."
+  },
+  {
+    "id": 41,
+    "question": "If the Basis (Spot - Future) is positive, the market is said to be in:",
+    "options": ["Contango", "Backwardation", "Premium", "Inflation"],
+    "answer": "Backwardation",
+    "hint": "Spot > Future.",
+    "explanation": "When Spot Price > Futures Price, Basis is positive. This is called Backwardation."
+  },
+  {
+    "id": 42,
+    "question": "An exporter uses a 'Money Market Hedge'. This involves:",
+    "options": ["Borrowing in foreign currency and converting to domestic spot", "Buying Futures", "Buying Call Options", "Doing nothing"],
+    "answer": "Borrowing in foreign currency and converting to domestic spot",
+    "hint": "Using loans instead of derivatives.",
+    "explanation": "A money market hedge replicates a forward position by borrowing in foreign currency, converting it to domestic currency at spot, and investing it."
+  },
+  {
+    "id": 43,
+    "question": "Open Interest (OI) analysis helps a trader to determine:",
+    "options": ["The strength of a trend", "The exact top of the market", "The exact bottom of the market", "The fundamental value"],
+    "answer": "The strength of a trend",
+    "hint": "New money vs. old money.",
+    "explanation": "Rising prices with rising OI indicates a strong trend (new money entering). Rising prices with falling OI suggests a weak trend (short covering)."
+  },
+  {
+    "id": 44,
+    "question": "Which participant links the cash market and the futures market?",
+    "options": ["Arbitrageurs", "Hedgers", "Speculators", "Regulators"],
+    "answer": "Arbitrageurs",
+    "hint": "They exploit the gap.",
+    "explanation": "Arbitrageurs trade across both markets to exploit price inefficiencies, thereby keeping the prices linked and aligned."
+  },
+  {
+    "id": 45,
+    "question": "If an importer does not hedge, they are effectively:",
+    "options": ["Speculating on the currency direction", "Hedging naturally", "Arbitraging", "Investing"],
+    "answer": "Speculating on the currency direction",
+    "hint": "Doing nothing is also a view.",
+    "explanation": "Leaving an exposure unhedged implies the importer is betting (speculating) that the currency won't move against them."
+  },
+  {
+    "id": 46,
+    "question": "Stop-loss orders are essential for speculators to:",
+    "options": ["Maximize leverage", "Manage risk and preserve capital", "Guarantee profit", "Increase transaction speed"],
+    "answer": "Manage risk and preserve capital",
+    "hint": "Don't lose your shirt.",
+    "explanation": "Stop-loss orders exit a losing position automatically to prevent a small loss from becoming a catastrophic one."
+  },
+  {
+    "id": 47,
+    "question": "Leverage in futures trading implies:",
+    "options": ["Trading with borrowed money (margin)", "Trading only with your own full capital", "Trading with zero risk", "Trading physically"],
+    "answer": "Trading with borrowed money (margin)",
+    "hint": "Controlling a large value with a small deposit.",
+    "explanation": "Leverage allows traders to control a large contract value with a relatively small margin deposit."
+  },
+  {
+    "id": 48,
+    "question": "A trader is Long 10 Lots USDINR. To close the position, they must:",
+    "options": ["Buy 10 more Lots", "Sell 10 Lots", "Wait for expiry only", "Pay a penalty"],
+    "answer": "Sell 10 Lots",
+    "hint": "Do the opposite.",
+    "explanation": "To square off (close) a Long position, you must perform the opposite transaction: Sell the same number of lots."
+  },
+  {
+    "id": 49,
+    "question": "If the correlation between the hedging instrument and the asset is less than 1.0, the hedge will be:",
+    "options": ["Perfect", "Imperfect", "Illegal", "Profitable always"],
+    "answer": "Imperfect",
+    "hint": "They don't move exactly together.",
+    "explanation": "If correlation is not perfect (1.0), the hedge will not eliminate all risk, resulting in an Imperfect Hedge (Basis Risk)."
+  },
+  {
+    "id": 50,
+    "question": "The transaction cost in futures trading includes:",
+    "options": ["Brokerage, STT/CTT, Exchange charges, Stamp duty", "Only Brokerage", "Only Tax", "Interest only"],
+    "answer": "Brokerage, STT/CTT, Exchange charges, Stamp duty",
+    "hint": "All the fees.",
+    "explanation": "Transaction costs are the sum of brokerage fees, taxes (Securities/Commodities Transaction Tax), exchange turnover fees, and stamp duty."
   }
 ]
