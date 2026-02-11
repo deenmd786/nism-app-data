@@ -1,43 +1,68 @@
 {
-  "unit_no": 6,
-  "unit_name": "Trading Mechanism in ETCD",
-  "weightage": "10%",
-  "notes": {
-    "introduction": [
-      "🔹 **The Trading System:** Exchange Traded Currency Derivatives (ETCD) in India are traded on fully automated, screen-based trading systems (like NEAT on NSE).",
-      "🔹 **Order-Driven Market:** It is an anonymous, order-driven market where buy and sell orders from all over the country are matched by a central computer.",
-      "👉 **Transparency:** The system provides complete transparency by displaying the best buy and sell prices and total quantities available in real-time."
-    ],
-    "key_concepts": [
-      "🔸 **1. Market Intermediaries:** To trade, a client must go through a 'Trading Member' (Broker). The settlement of these trades is handled by a 'Clearing Member'. Some members act as both (Trading-cum-Clearing Members).",
-      "🔸 **2. Client Registration:** Before trading, a client must complete KYC (Know Your Customer) and sign a Member-Client Agreement. They are then assigned a Unique Client Code (UCC).",
-      "🔸 **3. Order Matching Rules:**  The exchange computer matches orders strictly on a **Price-Time Priority** basis. This means price is the first criteria, and time of entry is the second.",
-      "🔸 **4. Order Types:** Traders can place different types of orders. A 'Market Order' executes immediately at the best available current price. A 'Limit Order' specifies a exact price at which the trader wants to buy or sell.",
-      "🔸 **5. Time Conditions:** Orders can have time limits. A 'Day Order' is valid only for that trading day. An 'Immediate or Cancel (IOC)' order must execute instantly, or the unfilled part is automatically cancelled."
-    ],
-    "important_terms": [
-      "📌 **Best Bid:** The highest price any buyer in the market is currently willing to pay. This gets the highest priority for execution among buyers.",
-      "📌 **Best Ask (Offer):** The lowest price any seller in the market is currently willing to accept. This gets the highest priority among sellers.",
-      "📌 **Stop-Loss Order:** An order designed to limit an investor's loss. It stays dormant and only becomes active when the market price reaches a specified 'Trigger Price'.",
-      "📌 **Proprietary Trading (Pro-account):** When a Trading Member trades using their own money for their own firm, rather than on behalf of a client.",
-      "📌 **Contract Specifications:** The fixed rules set by the exchange for every contract, including lot size, expiry date, and tick size."
-    ],
-    "exam_points": [
-      "⚠️ **Price-Time Priority:** This is a guaranteed exam topic. Remember: The highest buy price and the lowest sell price always win. If two orders have the exact same price, the one that entered the system earlier gets matched first.",
-      "✅ **UCC Mandatory:** No trade can be placed on the exchange without a valid Unique Client Code (UCC).",
-      "✅ **Roles:** Distinguish clearly between a Trading Member (TM) who only executes trades, and a Clearing Member (CM) who takes the financial responsibility to settle those trades with the exchange.",
-      "💡 **Stop-Loss Trigger:** Understand that in a Stop-Loss order, the 'Trigger Price' is just an activation switch. Once triggered, it turns into a standard limit or market order."
-    ],
-    "examples": [
-      "👉 **Example 1 - Price Priority:** Buyer A places a limit order to buy 1 lot of USDINR at ₹83.10. Buyer B places a limit order to buy 1 lot at ₹83.15. The system will give priority to Buyer B because they are offering a better (higher) price to the sellers.",
-      "👉 **Example 2 - Time Priority:** Buyer A places an order to buy at ₹83.10 at 10:00 AM. Buyer B places an order to buy at ₹83.10 at 10:05 AM. Since the price is identical, the system executes Buyer A's order first.",
-      "👉 **Example 3 - Stop Loss:** You bought a USDINR futures contract at ₹83.50. To limit your loss if the price falls, you place a Sell Stop-Loss order with a trigger price of ₹83.20. If the market drops to ₹83.20, your order activates and sells your position, capping your loss."
-    ],
-    "summary": [
-      "✅ **Key Takeaway 1:** The ETCD trading mechanism is a highly structured, automated platform that ensures fair and anonymous matching of all trades.",
-      "✅ **Key Takeaway 2:** The core logic of the entire matching engine rests on the undeniable rule of Price-Time Priority.",
-      "✅ **Key Takeaway 3:** Investors must use designated intermediaries (Trading Members) and use specific order types (Limit, Market, Stop-loss) to express their trading intentions.",
-      "💡 **Final Tip:** For scenario questions on order matching, always rank the buy orders from highest price to lowest, and sell orders from lowest price to highest. Then apply the time rule to break any ties."
-    ]
-  }
+  "title": "Chapter 6: Exchange Traded Currency Options",
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "6.1 Basics of Options"
+    },
+    {
+      "type": "paragraph",
+      "text": "An Option is a contract that gives the buyer the RIGHT, but not the OBLIGATION, to buy or sell the underlying currency at a specific price on a specific date."
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Buyer (Holder): Pays the premium. Has the right to exercise. Maximum loss is the premium paid.",
+        "Seller (Writer): Receives the premium. Has the obligation to fulfill the contract if the buyer exercises. Maximum loss is potentially unlimited."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "6.2 Types of Options"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Call Option (CE): The right to BUY. You buy a Call if you expect the currency rate to RISE.",
+        "Put Option (PE): The right to SELL. You buy a Put if you expect the currency rate to FALL.",
+        "European Style: Can be exercised ONLY on the expiry date (followed in India for currency options).",
+        "American Style: Can be exercised ANY time before expiry."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "6.3 Moneyness of Options"
+    },
+    {
+      "type": "paragraph",
+      "text": "Moneyness describes the relationship between the Spot Price (S) and the Strike Price (X)."
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "In-The-Money (ITM): The option has profit. (Call: Spot > Strike | Put: Spot < Strike).",
+        "At-The-Money (ATM): Spot Price is equal to Strike Price.",
+        "Out-Of-The-Money (OTM): The option has zero intrinsic value. (Call: Spot < Strike | Put: Spot > Strike)."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "6.4 Option Pricing & Greeks"
+    },
+    {
+      "type": "paragraph",
+      "text": "The price of an option (Premium) = Intrinsic Value + Time Value. Several factors ('Greeks') affect this price:"
+    },
+    {
+      "type": "highlight_box",
+      "text": "Delta: Measures how much the option price changes when the underlying currency price changes."
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Theta (Time Decay): Measures how much value the option loses as time passes.",
+        "Vega: Measures sensitivity to Volatility. Higher volatility = Higher option premium."
+      ]
+    }
+  ]
 }

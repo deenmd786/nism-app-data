@@ -1,40 +1,60 @@
 {
-  "unit_no": 3,
-  "unit_name": "Exchange Traded Currency Futures",
-  "weightage": "20%",
-  "notes": {
-    "introduction": [
-      "🔹 What are Currency Futures? They are standardized, exchange-traded contracts to buy or sell a specific quantity of a currency pair at a future date at a price agreed upon today.",
-      "🔹 Regulators: In India, the currency derivatives market is jointly regulated by the Securities and Exchange Board of India (SEBI) and the Reserve Bank of India (RBI).",
-      "👉 Cash Settlement: Unlike physical delivery in some markets, all exchange-traded currency futures in India are settled in cash (in Indian Rupees). No physical foreign currency changes hands."
-    ],
-    "key_concepts": [
-      "🔸 1. Standardized Contracts: Everything is fixed by the exchange: the underlying pair (e.g., USD-INR), the contract size, the tick size, and the expiry months. You cannot customize these.",
-      "🔸 2. Trading Cycle: Contracts are available for 12 consecutive near months. For example, in January, you can trade contracts expiring in Jan, Feb, Mar, up to next Dec.",
-      "🔸 3. Expiry Date: Contracts expire on the last working day (excluding Saturdays) of the expiry month. If the last day is a trading holiday, it expires on the previous working day.",
-      "🔸 4. Settlement Price: The final settlement at expiry happens using the RBI Reference Rate declared on the last trading day."
-    ],
-    "important_terms": [
-      "📌 Contract Size (Lot Size): The minimum amount of currency that can be traded. For USD-INR, EUR-INR, and GBP-INR, it is 1,000 units of the base currency. For JPY-INR, it is 100,000 Japanese Yen.",
-      "📌 Tick Size: The minimum price movement allowed by the exchange. For INR pairs, it is 0.25 paise (₹0.0025).",
-      "📌 Mark-to-Market (MTM): The daily calculation of profits and losses. Margin accounts are adjusted at the end of every trading day based on the closing settlement price.",
-      "📌 Open Interest (OI): The total number of outstanding active contracts that have not been settled or closed out by an offsetting trade.",
-      "📌 Initial Margin (IM) & Extreme Loss Margin (ELM): IM is calculated based on Value at Risk (VaR) to cover 99% of probable daily price changes. ELM is an additional safety cushion collected by the exchange."
-    ],
-    "exam_points": [
-      "⚠️ Crucial Numbers: Memorize the contract sizes ($1,000, €1,000, £1,000, ¥100,000) and the tick size (₹0.0025) as direct numerical questions are highly likely for this 20% weightage unit.",
-      "✅ Cross Currency Pairs: Exchanges also offer cross-currency futures like EUR-USD, GBP-USD, and USD-JPY. Their tick sizes and contract values differ slightly from INR pairs.",
-      "✅ Trading Hours: Currency derivatives markets in India typically operate from 9:00 AM to 5:00 PM for INR pairs.",
-      "💡 Settlement Timing: Remember that daily MTM is settled in cash on a T+1 basis (the next working day). Final settlement upon expiry is also handled in cash."
-    ],
-    "examples": [
-      "👉 Example 1 - Tick Value Calculation: If you buy 1 lot of USD-INR ($1000). A 1-tick movement (0.0025) means a profit or loss of ₹2.50 per lot ($1000 * 0.0025).",
-      "👉 Example 2 - MTM Concept: You buy 1 lot of USD-INR at 83.0000. At the end of the day, the closing price is 83.1000. Your MTM profit is (83.1000 - 83.0000) = 0.1000. Total profit = 0.1000 * 1000 = ₹100. This ₹100 is credited to your margin account that very evening."
-    ],
-    "summary": [
-      "✅ Key Takeaway 1: Exchange-traded futures are highly standardized, tightly regulated by SEBI/RBI, and eliminate counterparty risk through the clearing corporation.",
-      "✅ Key Takeaway 2: Daily Mark-to-Market (MTM) is the backbone of the risk management system, ensuring losses do not pile up over time.",
-      "💡 Final Tip: Pay special attention to the exact contract specifications (lot sizes, tick sizes, expiry days). Understanding the mechanics of how a single trade works will help you answer scenario-based questions."
-    ]
-  }
+  "title": "Chapter 3: Exchange Traded Currency Futures",
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "3.1 Contract Standardization"
+    },
+    {
+      "type": "paragraph",
+      "text": "Unlike the OTC market where contracts are customized, Exchange Traded Currency Derivatives (ETCD) are highly standardized to ensure liquidity and safety."
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Trading Unit (Lot Size): Fixed amount per contract (e.g., USDINR = $1000).",
+        "Quotation: How the price is displayed (e.g., in Rupee terms up to 4 decimal places).",
+        "Tick Size: The minimum price movement allowed (e.g., 0.0025 INR for USDINR)."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "3.2 Trading Mechanism"
+    },
+    {
+      "type": "paragraph",
+      "text": "Trading happens electronically on the exchange platform. Orders are matched based on Price-Time Priority (Best Price gets priority; if prices are same, the earlier order gets priority)."
+    },
+    {
+      "type": "highlight_box",
+      "text": "Exam Note: The trading hours for Currency Derivatives in India are typically 9:00 AM to 5:00 PM."
+    },
+    {
+      "type": "heading",
+      "text": "3.3 Settlement Process"
+    },
+    {
+      "type": "paragraph",
+      "text": "Currency futures in India are CASH SETTLED in Indian Rupees. There is no physical delivery of Dollars or Euros."
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Daily Settlement: Profits/Losses are calculated daily (Marked-to-Market) and adjusted in the trader's account.",
+        "Final Settlement: Happens on the expiry day using the RBI Reference Rate."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "3.4 Expiry & Contract Cycle"
+    },
+    {
+      "type": "paragraph",
+      "text": "Exchanges provide contracts for 12 near calendar months. The contracts expire 2 working days prior to the last business day of the expiry month."
+    },
+    {
+      "type": "highlight_box",
+      "text": "Important: On the expiry day (usually a Friday), trading ends at 12:30 PM, not 5:00 PM."
+    }
+  ]
 }
