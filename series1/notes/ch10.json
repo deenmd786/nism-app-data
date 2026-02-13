@@ -1,48 +1,95 @@
 {
-  "title": "Chapter 10: Essential Formulas & Cheat Sheet",
-  "blocks": [
+  "course": "NISM Series I: Currency Derivatives",
+  "unit_number": 10,
+  "unit_name": "Codes of Conduct and Investor Protection Measures",
+  "weightage": "5%",
+  "overview": "This is the final chapter and acts as the 'Ethics' module for the exam. Since you are dealing with other people's money, there must be strict rules to prevent cheating. It covers how brokers should behave (Code of Conduct), how to handle client money, and how an investor can complain if something goes wrong. This unit is important for the exam because it emphasizes the 'Investor First' philosophy of SEBI.",
+  
+  "complete_concept_explanation": [
     {
-      "type": "heading",
-      "text": "10.1 Pricing Formulas"
+      "concept": "1. Code of Conduct for Brokers (Trading Members)",
+      "basic_meaning": "These are the moral and legal rules that every broker must follow to ensure the market is fair and transparent.",
+      "detailed_explanation": "Step 1: **Integrity and Fairness:** A broker must be honest and maintain high standards of integrity in all dealings.\nStep 2: **Best Execution:** When a client gives an order, the broker must try to get the best possible market price for the client, not for himself.\nStep 3: **No Front-Running:** A broker cannot buy for his own account *before* executing a huge client order (this is illegal).\nStep 4: **Confidentiality:** A broker must keep client information private and not share it with others.\nStep 5: **Disclosure of Interest:** If the broker is doing a trade where he has a personal interest, he must tell the client.",
+      "why_this_is_important": "NISM tests the 'front-running' and 'best execution' concepts. These are ethics-based questions that are very easy to answer if you think about 'fairness'.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "If a broker sees a large order to buy $10 Million from a big company, he knows the price will go up. If he buys $10,000 for himself first and then places the company's order, he has committed the crime of 'Front-Running'.",
+      "exam_traps": [
+        "Thinking a broker can prioritize his own trades over client trades. False! Client trades always come first."
+      ],
+      "memory_trick": "Broker = Bodyguard. His job is to protect the client's interests, not his own."
     },
     {
-      "type": "paragraph",
-      "text": "Use these formulas for calculation-based questions."
+      "concept": "2. Segregation of Client Funds",
+      "basic_meaning": "Brokers are strictly forbidden from mixing their own money with the money they receive from clients.",
+      "detailed_explanation": "Step 1: The broker must maintain a separate bank account called the 'Client Account'.\nStep 2: Any margin money or profit belonging to the client must stay in this account.\nStep 3: The broker cannot use Client A's money to pay for Client B's losses.\nStep 4: The broker cannot use client money to pay for the firm's office rent, salaries, or electricity.",
+      "why_this_important": "This is a major safety rule. SEBI audits this strictly. In the exam, they will ask if mixing funds is allowed. The answer is a loud NO.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "In the famous Karvy Scam, the broker used client shares/money for their own business. Since then, SEBI has made it almost impossible to move money out of the 'Client Account' for any purpose other than the client's own trades.",
+      "exam_traps": [
+        "Assuming a broker can 'borrow' client money for a few days if they pay it back. False! Even temporary mixing is a serious violation."
+      ],
+      "memory_trick": "Separate Boxes: One box for the Broker's lunch, one box for the Clients' lunch. No mixing!"
     },
     {
-      "type": "highlight_box",
-      "text": "Cost of Carry Model:\nFuture Price (F) = Spot Price (S) * (1 + r_d * t) / (1 + r_f * t)\n\nWhere:\nr_d = Domestic Interest Rate (India)\nr_f = Foreign Interest Rate (USA)\nt = Time to expiry (in years)"
+      "concept": "3. Grievance Redressal Mechanism (SCORES)",
+      "basic_meaning": "If a broker cheats you or doesn't give you your money, there is a formal way to complain and get justice.",
+      "detailed_explanation": "Step 1: First, the client should complain directly to the broker's compliance officer.\nStep 2: If the broker doesn't solve it within 15 days, the client can complain to the Exchange (NSE/BSE).\nStep 3: If still not happy, the client can go to **SEBI SCORES**. This is an online platform (SEBI Complaints Redress System) where you can track your complaint status.\nStep 4: **Arbitration:** If there is a big dispute, the exchange appoints an independent 'Arbitrator' who acts like a judge to settle the matter.",
+      "why_this_is_important": "NISM often asks for the full form of **SCORES** and the order of the complaint process.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "If your broker refuses to let you withdraw your ₹50,000 profit, you log into the SCORES website, put your PAN and UCC details, and file a complaint. SEBI will then force the broker to respond.",
+      "exam_traps": [
+        "Thinking you should go to the Police or High Court first. The correct professional path is Broker -> Exchange -> SEBI (SCORES) -> Arbitration."
+      ],
+      "memory_trick": "SCORES = SEBI's Scoreboard. It tracks how many complaints a broker has and forces them to resolve them."
     },
     {
-      "type": "heading",
-      "text": "10.2 Open Interest (OI) Analysis"
-    },
-    {
-      "type": "paragraph",
-      "text": "Interpreting market direction using Price and OI:"
-    },
-    {
-      "type": "bullet_list",
-      "items": [
-        "Price UP + OI UP = Long Buildup (Bullish)",
-        "Price DOWN + OI UP = Short Buildup (Bearish)",
-        "Price DOWN + OI DOWN = Long Unwinding (Correction)",
-        "Price UP + OI DOWN = Short Covering (Bounce back)"
-      ]
-    },
-    {
-      "type": "heading",
-      "text": "10.3 Quick Exam Tips"
-    },
-    {
-      "type": "bullet_list",
-      "items": [
-        "Lot Size: USDINR = $1000.",
-        "Tick Size: 0.0025 INR.",
-        "Final Settlement Price: RBI Reference Rate on expiry day.",
-        "Expiry Day: Two working days prior to the last business day of the month.",
-        "Trading Hours: 9:00 AM to 5:00 PM."
-      ]
+      "concept": "4. Investor Protection Fund (IPF)",
+      "basic_meaning": "This is a 'Emergency Fund' kept by the exchange to pay investors if a broker goes bankrupt (defaults) and cannot pay the clients.",
+      "detailed_explanation": "Step 1: Every exchange (like NSE) maintains an IPF.\nStep 2: If a broker is declared a 'Defaulter', the exchange uses money from this fund to compensate the innocent investors.\nStep 3: There is usually a limit per investor (e.g., up to ₹25 Lakhs) for claims from this fund.\nStep 4: This ensures that even if a broker fails, the trust in the overall market remains intact.",
+      "why_this_is_important": "NISM tests the purpose of the IPF. It is specifically for when the broker goes bankrupt.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "If 'XYZ Broking' closes down overnight and disappears with everyone's money, the NSE will use the Investor Protection Fund to give back the money to the small traders who were affected.",
+      "exam_traps": [
+        "Thinking the IPF pays you for your trading losses. False! It only pays you if the BROKER fails to pay you due to bankruptcy."
+      ],
+      "memory_trick": "IPF = Investor's Life Jacket. Only used when the ship (broker) sinks."
     }
+  ],
+
+  "important_differences": [
+    {
+      "difference_between": "Front-Running vs Insider Trading",
+      "clear_explanation": "Front-running is when a broker trades based on knowledge of a client's upcoming order. Insider Trading is when someone trades based on secret, non-public company information (like upcoming quarterly results)."
+    },
+    {
+      "difference_between": "Compliance Officer vs Arbitrator",
+      "clear_explanation": "The Compliance Officer is an employee of the broker whose job is to prevent mistakes. An Arbitrator is an independent third-party person appointed by the exchange to settle a fight between a client and a broker."
+    }
+  ],
+
+  "frequently_asked_exam_areas": [
+    "Definition of Front-Running (illegal trading before a client order).",
+    "Where should a client complain if the broker doesn't listen? (SCORES).",
+    "What is the purpose of the Investor Protection Fund (IPF)? (To pay clients of bankrupt brokers).",
+    "Can a broker use client funds for their own business? (Strictly NO).",
+    "Is it mandatory for a broker to give a Contract Note to the client? (Yes, within 24 hours)."
+  ],
+
+  "quick_revision_summary": [
+    "Client interests always come first (Best Execution).",
+    "Front-running and mixing funds are serious crimes.",
+    "The Contract Note is the legal proof of your trade; must be sent in 24 hours.",
+    "SCORES is SEBI’s online complaint portal.",
+    "Arbitration is the formal way to settle disputes outside of court.",
+    "IPF protects you if your broker goes bust.",
+    "Know Your Customer (KYC) and PAN are mandatory for all investors."
   ]
 }

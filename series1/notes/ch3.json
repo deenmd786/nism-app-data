@@ -1,60 +1,164 @@
 {
-  "title": "Chapter 3: Exchange Traded Currency Futures",
-  "blocks": [
+  "course": "NISM Series I: Currency Derivatives",
+  "unit_number": 3,
+  "unit_name": "Exchange Traded Currency Futures",
+  "weightage": "20%",
+  "overview": "This is the most critical chapter of the entire NISM Currency Derivatives exam, carrying a massive 20% weightage! In Unit 2, you learned what a futures contract is in theory. In this unit, you will learn exactly how these contracts are traded in real life on Indian stock exchanges like the NSE and BSE. You will learn the strict rules of trading (like lot sizes and tick sizes), which currency pairs are legally allowed, how prices are mathematically calculated, and how daily profit and loss are managed through a process called Mark-to-Market. Mastering this chapter is essential for passing the exam.",
+  
+  "complete_concept_explanation": [
     {
-      "type": "heading",
-      "text": "3.1 Contract Standardization"
+      "concept": "1. Contract Specifications: Lot Size and Tick Size",
+      
+      "basic_meaning": "Since futures are traded on an exchange, everything is fixed and standardized. 'Lot Size' is the minimum fixed quantity you can trade. 'Tick Size' is the minimum minimum price change allowed.",
+      
+      "detailed_explanation": "Step 1: You cannot go to the exchange and say 'I want to buy 550 Dollars'. The exchange only sells in pre-packaged boxes called 'Lots'. \nStep 2: For USDINR, EURINR, and GBPINR, the Lot Size is exactly 1,000 units of the base currency. So, 1 lot = $1,000, or €1,000, or £1,000.\nStep 3: Japan's currency (Yen/JPY) has a very small value. So, its lot size is bigger: 100,000 Yen. \nStep 4: The 'Tick Size' is the smallest step by which the price can move up or down. In Indian currency futures, the tick size is 0.25 paise, which is written in Rupees as ₹0.0025.",
+      
+      "why_this_is_important": "This is a guaranteed memory-based question in the exam. You must know these exact numbers to solve numerical questions.",
+      
+      "formula": "Profit/Loss per tick = Lot Size × Tick Size",
+      
+      "formula_explanation": "To find out how much money you make or lose when the price moves by just one smallest step, multiply the size of your box (Lot Size) by the smallest price step (Tick Size).",
+      
+      "step_by_step_calculation_example": "For USDINR:\nLot Size = 1,000\nTick Size = ₹0.0025\nProfit/Loss per tick = 1,000 × 0.0025 = ₹2.50.\nMeaning: If you buy 1 lot of USDINR and the price goes up by just one tick (e.g., from 83.0000 to 83.0025), you make exactly ₹2.50 profit.",
+      
+      "real_life_indian_example": "If an Indian student needs to pay $5,000 for US college fees, their father will buy exactly 5 lots of USDINR futures on the NSE to lock in the exchange rate.",
+      
+      "exam_traps": [
+        "Confusing 0.25 Rupees with 0.25 Paise. The tick size is 0.25 PAISE (which is ₹0.0025). Many students pick ₹0.25 in the exam and lose marks.",
+        "Forgetting the special lot size for JPYINR. It is 1,00,000 Yen, not 1,000 Yen."
+      ],
+      
+      "memory_trick": "Yen is a 'light' currency, so you need a massive shopping bag (1 Lakh units) to carry it. For the rest (USD, EUR, GBP), a normal bag (1,000 units) is enough. Tick size is a 'Quarter Paisa' (0.0025)."
     },
     {
-      "type": "paragraph",
-      "text": "Unlike the OTC market where contracts are customized, Exchange Traded Currency Derivatives (ETCD) are highly standardized to ensure liquidity and safety."
+      "concept": "2. Permitted Currency Pairs and Trading Hours",
+      
+      "basic_meaning": "The exchange strictly limits which currencies you can trade and at what time the market is open.",
+      
+      "detailed_explanation": "Step 1: You cannot trade any random currency like the Australian Dollar or Swiss Franc on Indian exchanges. \nStep 2: RBI and SEBI allow only 4 INR pairs: USD-INR, EUR-INR, GBP-INR, and JPY-INR.\nStep 3: They also allow 3 'Cross-Currency' pairs (where INR is not involved): EUR-USD, GBP-USD, and USD-JPY.\nStep 4: The market timings for Currency Derivatives are completely different from the equity (share) market. The currency market opens at 9:00 AM and closes at 5:00 PM.",
+      
+      "why_this_is_important": "Exam setters love to test if you know the difference between equity market timings and currency market timings.",
+      
+      "formula": "Not Applicable",
+      
+      "formula_explanation": "Not Applicable",
+      
+      "step_by_step_calculation_example": "Not Applicable",
+      
+      "real_life_indian_example": "A trader trading Reliance shares has to close his terminal at 3:30 PM. But if he is trading USDINR, he can comfortably sit and trade until 5:00 PM, allowing him to react to the European market openings.",
+      
+      "exam_traps": [
+        "Thinking the currency market closes at 3:30 PM (like Nifty/Sensex). It strictly closes at 5:00 PM.",
+        "Assuming Cross-Currency pairs (like EURUSD) are not allowed in India. They ARE allowed!"
+      ],
+      
+      "memory_trick": "Remember the big 4 economies: US, Europe, Britain (UK), and Japan. Only these 4 are allowed against the Rupee."
     },
     {
-      "type": "bullet_list",
-      "items": [
-        "Trading Unit (Lot Size): Fixed amount per contract (e.g., USDINR = $1000).",
-        "Quotation: How the price is displayed (e.g., in Rupee terms up to 4 decimal places).",
-        "Tick Size: The minimum price movement allowed (e.g., 0.0025 INR for USDINR)."
-      ]
+      "concept": "3. Mark-to-Market (MTM) Settlement",
+      
+      "basic_meaning": "MTM is the process where the exchange calculates your profit or loss every single evening and adds or deducts that money from your account immediately. ",
+      
+      "detailed_explanation": "Step 1: When you buy a futures contract, you pay a safety deposit (Margin). \nStep 2: The exchange does not wait until the end of the month to see if you won or lost. They settle accounts daily.\nStep 3: At 5:00 PM, the exchange looks at the 'Daily Settlement Price' (closing price). \nStep 4: If the price went up, the buyer makes a profit. The exchange instantly takes money from the seller's margin account and puts it into the buyer's margin account.\nStep 5: Tomorrow, the new base price for calculation will be today's closing price. This resets the risk to zero every day.",
+      
+      "why_this_is_important": "This daily MTM is the magic mechanism that makes Futures completely risk-free from defaults. It is the most tested practical concept in Unit 3.",
+      
+      "formula": "Daily MTM P&L = (Today's Closing Price - Yesterday's Closing Price) × Lot Size × Number of Lots",
+      
+      "formula_explanation": "You simply find the difference between today's end price and yesterday's end price, and multiply it by how much total quantity you own.",
+      
+      "step_by_step_calculation_example": "You BUY 1 lot (1,000 USD) of USDINR at ₹83.00 on Monday morning.\nMonday 5 PM Close = ₹83.10. \nYour MTM for Monday = (83.10 - 83.00) × 1,000 = ₹100 Profit. (Credited to your account).\nTuesday 5 PM Close = ₹82.90.\nYour MTM for Tuesday = (82.90 - 83.10) × 1,000 = -₹200 Loss. (Deducted from your account). Note: We calculate Tuesday's loss from Monday's close, not the original buy price!",
+      
+      "real_life_indian_example": "If you buy a house, you pay the full profit/loss after 5 years when you sell it. But in Currency Futures, it's like the broker knocks on your door every evening at 5 PM to settle the day's ₹500 profit or ₹300 loss.",
+      
+      "exam_traps": [
+        "Calculating Day 2's MTM using the original buying price. WRONG! For Day 2 MTM, you must use Day 1's closing price as the base.",
+        "Thinking MTM only happens on the expiry day. It happens DAILY."
+      ],
+      
+      "memory_trick": "MTM = Money Today Morning. You start every morning fresh because yesterday's money was settled yesterday evening."
     },
     {
-      "type": "heading",
-      "text": "3.2 Trading Mechanism"
+      "concept": "4. Pricing of Currency Futures (Cost of Carry Model)",
+      
+      "basic_meaning": "Why is the Future price (say, 3 months later) different from the Spot price (today's price)? It is simply because of the difference in interest rates between the two countries.",
+      
+      "detailed_explanation": "Step 1: If you hold US Dollars in a US bank, you get 5% interest. If you hold Indian Rupees in an Indian bank, you get 7% interest.\nStep 2: India has a HIGHER interest rate. Therefore, over time, the value of the Rupee must fall (depreciate) against the Dollar to balance things out (otherwise, everyone would just put money in Indian banks and make free riskless profit).\nStep 3: Because the Rupee will fall in the future, it means you will need MORE Rupees to buy 1 Dollar in the future. \nStep 4: Therefore, the USDINR Future Price is usually HIGHER than the Spot Price. This is called trading at a 'Premium'.\nStep 5: The formula mathematically proves this by adding the interest rate difference to the spot price.",
+      
+      "why_this_is_important": "This is the theoretical heart of currency pricing. It's called 'Interest Rate Parity'. The exam will ask theoretical questions on whether a currency will trade at a premium or discount.",
+      
+      "formula": "Future Price = Spot Price × [ (1 + Domestic Interest Rate) / (1 + Foreign Interest Rate) ]",
+      
+      "formula_explanation": "You take today's price and multiply it by a ratio of the two countries' interest rates. The country with the higher interest rate will see its currency trade at a discount (it becomes weaker) in the future.",
+      
+      "step_by_step_calculation_example": "Spot USDINR = ₹80. \nIndia Interest (Domestic) = 6%. \nUS Interest (Foreign) = 2%.\nSince India has higher interest, Rupee will weaken. Dollar will be at a premium.\nApproximate Future Price for 1 year = 80 + (80 × (6% - 2%)) = 80 + (80 × 4%) = 80 + 3.2 = ₹83.20.",
+      
+      "real_life_indian_example": "Historically, India always has higher interest rates (e.g., 6.5%) compared to the US (e.g., 2%). This is exactly why the USDINR 1-month future is always quoted roughly 10-15 paise higher than the spot price. The market expects the Rupee to depreciate slightly every month due to inflation and interest rate differences.",
+      
+      "exam_traps": [
+        "The BIGGEST trap: Students think 'High interest rate = Strong Economy = Currency will be at Premium'. FALSE! The currency with the HIGHER interest rate always trades at a DISCOUNT (it weakens) in the forward/futures market.",
+        "Confusing who is at premium. If USD trades at a Premium, it means INR is at a Discount."
+      ],
+      
+      "memory_trick": "Higher Interest = Heavier burden. A currency carrying a heavier burden will sink (trade at a discount). Lower Interest = Lighter. It will float up (trade at a premium)."
     },
     {
-      "type": "paragraph",
-      "text": "Trading happens electronically on the exchange platform. Orders are matched based on Price-Time Priority (Best Price gets priority; if prices are same, the earlier order gets priority)."
-    },
-    {
-      "type": "highlight_box",
-      "text": "Exam Note: The trading hours for Currency Derivatives in India are typically 9:00 AM to 5:00 PM."
-    },
-    {
-      "type": "heading",
-      "text": "3.3 Settlement Process"
-    },
-    {
-      "type": "paragraph",
-      "text": "Currency futures in India are CASH SETTLED in Indian Rupees. There is no physical delivery of Dollars or Euros."
-    },
-    {
-      "type": "bullet_list",
-      "items": [
-        "Daily Settlement: Profits/Losses are calculated daily (Marked-to-Market) and adjusted in the trader's account.",
-        "Final Settlement: Happens on the expiry day using the RBI Reference Rate."
-      ]
-    },
-    {
-      "type": "heading",
-      "text": "3.4 Expiry & Contract Cycle"
-    },
-    {
-      "type": "paragraph",
-      "text": "Exchanges provide contracts for 12 near calendar months. The contracts expire 2 working days prior to the last business day of the expiry month."
-    },
-    {
-      "type": "highlight_box",
-      "text": "Important: On the expiry day (usually a Friday), trading ends at 12:30 PM, not 5:00 PM."
+      "concept": "5. Open Interest (OI) vs Volume",
+      
+      "basic_meaning": "Volume is simply how many transactions happened today. Open Interest (OI) is how many contracts are currently 'alive' and have not yet been closed. ",
+      
+      "detailed_explanation": "Step 1: Imagine a new party. Rahul walks in. (Volume = 1, People inside/OI = 1).\nStep 2: Priya walks in. (Volume = 1 more, Total Volume today = 2. People inside/OI = 2).\nStep 3: Rahul leaves. (Volume = 1 more transaction happened. Total Volume today = 3. BUT people inside/OI = 1 because Rahul left). \nStep 4: In trading, 'People inside the party' is the Open Interest. It shows how much active money is locked in the market. Volume just shows how fast the revolving door is spinning today.",
+      
+      "why_this_is_important": "Traders use OI to understand market trends. If OI is increasing, it means new money is entering the market. For the exam, distinguishing between these two definitions is key.",
+      
+      "formula": "Not Applicable",
+      
+      "formula_explanation": "Not Applicable",
+      
+      "step_by_step_calculation_example": "Not Applicable",
+      
+      "real_life_indian_example": "On a Monday morning, a new USDINR monthly contract is launched. Volume will be very high as day-traders buy and sell quickly. But at the end of the day, if all day-traders close their positions before 5 PM, the Open Interest will remain very low, even if the Volume was in the millions.",
+      
+      "exam_traps": [
+        "Thinking Volume and OI are the same. Volume resets to ZERO every morning. OI carries forward to the next day until the contract expires.",
+        "If a buyer sells his existing position to a new buyer, the OI does NOT change. Only the owner changes."
+      ],
+      
+      "memory_trick": "Volume = Footfalls today (like a mall counter). OI = Occupancy right now (like a hotel room). Occupancy can carry forward to tomorrow, footfalls reset daily."
     }
+  ],
+
+  "important_differences": [
+    {
+      "difference_between": "Currency Trading Hours vs Equity Trading Hours",
+      "clear_explanation": "Equity markets (shares) in India trade from 9:15 AM to 3:30 PM. Currency derivatives markets open earlier at 9:00 AM and stay open much longer, closing at 5:00 PM to overlap with European and early US market timings."
+    },
+    {
+      "difference_between": "Volume vs Open Interest (OI)",
+      "clear_explanation": "Volume counts every single buy and sell transaction that happens during a single day. It resets to zero at midnight. OI counts only the contracts that have been opened but NOT YET closed (settled). OI carries over day by day until the expiry date."
+    },
+    {
+      "difference_between": "Premium vs Discount",
+      "clear_explanation": "If the Future Price is HIGHER than the Spot Price, the currency is trading at a Premium. If the Future Price is LOWER than the Spot Price, it is trading at a Discount. The currency of the country with lower interest rates trades at a Premium."
+    }
+  ],
+
+  "frequently_asked_exam_areas": [
+    "Numerical questions on Tick Size (0.0025) and Lot Size (1000 for USD/EUR/GBP, 100,000 for JPY).",
+    "Calculating Mark-to-Market (MTM) profit or loss over 2 or 3 days (remember to use yesterday's close, not the buy price).",
+    "Identifying that the Currency Market closes at 5:00 PM.",
+    "Cost of Carry concept: The rule that higher interest rate currency = future discount.",
+    "Definitions of Open Interest vs Volume."
+  ],
+
+  "quick_revision_summary": [
+    "USDINR, EURINR, GBPINR Lot Size = 1,000. JPYINR Lot Size = 1,00,000.",
+    "Tick Size = 0.25 paise (₹0.0025).",
+    "Market Timings: 9:00 AM to 5:00 PM.",
+    "Only 4 INR pairs and 3 Cross pairs are allowed.",
+    "MTM is done DAILY based on the closing settlement price.",
+    "Higher Interest Rate Country = Currency will trade at a Discount in futures.",
+    "Lower Interest Rate Country = Currency will trade at a Premium in futures.",
+    "Volume resets daily; Open Interest (OI) remains open until closed or expired."
   ]
 }

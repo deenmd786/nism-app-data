@@ -1,43 +1,92 @@
 {
-  "title": "Chapter 7: Regulatory Framework",
-  "blocks": [
+  "course": "NISM Series I: Currency Derivatives",
+  "unit_number": 7,
+  "unit_name": "Clearing, Settlement and Risk Management in ETCD",
+  "weightage": "10%",
+  "overview": "If Unit 6 was about the 'plumbing' of the trade, Unit 7 is about the 'policing' and the 'money transfer'. This chapter explains how the exchange ensures that if you win ₹10,000, you actually receive it, even if the person who lost refuses to pay. You will learn about the Clearing Corporation, the different types of Margins (the safety deposits you pay), and how the risk is managed so the whole market doesn't crash. For the NISM exam, focus on the different types of margins—it is a favorite topic for examiners.",
+  
+  "complete_concept_explanation": [
     {
-      "type": "heading",
-      "text": "7.1 Regulatory Bodies"
+      "concept": "1. The Clearing Corporation (CC) and Novation",
+      "basic_meaning": "The Clearing Corporation acts as a legal middleman between every buyer and every seller to guarantee that every trade is settled.",
+      "detailed_explanation": "Step 1: When Buyer A buys from Seller B, the Clearing Corporation steps in the middle. \nStep 2: It becomes the 'Seller to every Buyer' and the 'Buyer to every Seller'. This process is called **Novation**. \nStep 3: Because of Novation, you don't need to worry if the person on the other side of your computer screen is a fraud. The Clearing Corporation guarantees your money. ",
+      "why_this_is_important": "Novation is a technical term that appears frequently in the exam. It is the reason why there is zero counterparty risk in exchange-traded futures.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "When you buy 1 lot of USDINR on NSE, you don't know who sold it. It could be a bank in Mumbai or a trader in Kerala. You don't care, because the NSE Clearing Limited (NCL) is the one responsible for giving you your profit.",
+      "exam_traps": [
+        "Thinking the Exchange and the Clearing Corporation are the same. They are usually separate legal entities. The Exchange is for matching orders; the CC is for settling money and managing risk."
+      ],
+      "memory_trick": "Novation = 'No-Evasion'. No one can evade their payment because the CC stands in the middle."
     },
     {
-      "type": "paragraph",
-      "text": "The currency derivatives market in India is regulated by a hybrid model involving both RBI and SEBI."
+      "concept": "2. Initial Margin and Span Margin",
+      "basic_meaning": "Initial Margin is the 'security deposit' you must pay before you are allowed to open a trade.",
+      "detailed_explanation": "Step 1: To prevent defaults, the exchange calculates the maximum possible loss a contract could suffer in a single day. \nStep 2: They collect this amount from you upfront. This is the **Initial Margin**. \nStep 3: In India, currency derivatives use a system called **SPAN (Standard Portfolio Analysis of Risk)** to calculate this. It looks at your whole portfolio (all your buys and sells) and calculates the worst-case scenario risk.",
+      "why_this_is_important": "Exam questions often ask what the 'Upfront Margin' is called. It is the Initial Margin.",
+      "formula": "Initial Margin = SPAN Margin + Extreme Loss Margin (ELM)",
+      "formula_explanation": "The total money you block in your account is a combination of the mathematical risk (SPAN) plus a tiny extra safety buffer (ELM).",
+      "step_by_step_calculation_example": "If the SPAN margin for 1 lot of USDINR is ₹2,000 and the ELM is ₹500, you must have at least ₹2,500 in your account to click the 'Buy' button.",
+      "real_life_indian_example": "If you want to rent a flat for ₹20,000, the landlord asks for ₹1 Lakh as a security deposit. That ₹1 Lakh is like your Initial Margin. If you run away without paying rent, he uses that deposit. Similarly, the exchange uses your margin if you lose money and can't pay.",
+      "exam_traps": [
+        "Thinking you only pay margin if you lose. False! You must pay the Initial Margin *before* you even start the trade."
+      ],
+      "memory_trick": "SPAN = 'Scan'. The system scans your risk and tells you how much deposit to keep."
     },
     {
-      "type": "bullet_list",
-      "items": [
-        "RBI (Reserve Bank of India): Regulates the underlying currency market and foreign exchange policies (FEMA).",
-        "SEBI (Securities and Exchange Board of India): Regulates the exchanges (NSE/BSE), brokers, and the trading platform where derivatives are traded."
-      ]
+      "concept": "3. Extreme Loss Margin (ELM)",
+      "basic_meaning": "This is an additional safety margin collected over and above the SPAN margin to cover 'black swan' events (unexpected huge market crashes).",
+      "detailed_explanation": "Step 1: SPAN covers normal daily price movements. \nStep 2: But sometimes, a war breaks out or a major economic crisis happens, and the market moves 5% in a single minute. \nStep 3: To handle such extreme days, the exchange collects ELM. For USDINR, it is usually 1% of the gross open position.",
+      "why_this_is_important": "NISM often asks for the specific percentage of ELM or why it is collected. It's strictly for 'Extreme' situations.",
+      "formula": "ELM = 1% of the Total Contract Value (for most pairs).",
+      "formula_explanation": "A small flat percentage charged on the total value of the dollars you are controlling.",
+      "step_by_step_calculation_example": "You buy 1 lot ($1,000) at ₹80. Total Contract Value = ₹80,000. \nELM (1%) = ₹800.",
+      "real_life_indian_example": "It's like having a primary lock on your door (SPAN) and an extra 'Godrej' latch (ELM) just in case a professional thief tries to break in.",
+      "exam_traps": [
+        "Confusing ELM with MTM. ELM is a deposit kept *before* trading. MTM is the actual profit/loss settled *after* trading."
+      ],
+      "memory_trick": "ELM = 'Extra Lock Money'."
     },
     {
-      "type": "heading",
-      "text": "7.2 FEMA (Foreign Exchange Management Act, 1999)"
-    },
-    {
-      "type": "paragraph",
-      "text": "FEMA is the primary law governing forex in India. It divides transactions into two categories:"
-    },
-    {
-      "type": "bullet_list",
-      "items": [
-        "Current Account Transactions: Trade in goods/services (e.g., travel, imports). Freely permitted unless restricted.",
-        "Capital Account Transactions: Alter assets/liabilities outside India (e.g., buying property abroad). Restricted unless permitted."
-      ]
-    },
-    {
-      "type": "heading",
-      "text": "7.3 Participation Limits"
-    },
-    {
-      "type": "highlight_box",
-      "text": "Important Limit: Resident Indians and NRIs can take positions in USD-INR up to USD 100 Million without underlying exposure documentation. Above this limit, they must prove they have actual export/import exposure."
+      "concept": "4. Mark-to-Market (MTM) and Maintenance Margin",
+      "basic_meaning": "MTM is the daily settlement of profits and losses. If your account balance falls too low due to losses, you get a 'Margin Call'.",
+      "detailed_explanation": "Step 1: Every evening, your P&L is calculated. If you lost ₹1,000, it is deducted from your margin. \nStep 2: If your remaining balance falls below a certain level (Maintenance Margin), the broker will call you. \nStep 3: This is a **Margin Call**. You must bring in fresh cash to bring the balance back to the Initial Margin level before the market opens the next day. ",
+      "why_this_is_important": "Numerical questions on MTM are very common. You need to know that MTM is settled in **Cash** every single day (T+1 basis).",
+      "formula": "Net Margin Balance = Initial Margin - Accumulated MTM Losses",
+      "formula_explanation": "Your starting deposit minus the daily losses you've suffered.",
+      "step_by_step_calculation_example": "Initial Margin: ₹3,000. \nDay 1 Loss: ₹500. New Balance: ₹2,500. \nDay 2 Loss: ₹1,000. New Balance: ₹1,500. \nIf the limit is ₹2,000, you will get a Margin Call to add ₹1,500 more to bring it back to the original ₹3,000.",
+      "real_life_indian_example": "It's like a prepaid SIM card. You have ₹100 balance. Every minute you talk (market move), money is deducted. If your balance reaches ₹10, the company warns you to recharge immediately or your outgoing calls will be blocked.",
+      "exam_traps": [
+        "The exam might ask when MTM is settled. It is settled daily, and the actual cash movement happens on **T+1** (the next day)."
+      ],
+      "memory_trick": "MTM = 'Mirror The Market'. Your account balance must mirror exactly what happened in the market today."
     }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Initial Margin vs MTM",
+      "clear_explanation": "Initial Margin is a safety deposit (blocked amount) kept to cover *potential* future losses. MTM (Mark-to-Market) is the *actual* loss or profit you have already made based on today's price movement, which is settled in cash."
+    },
+    {
+      "difference_between": "SPAN Margin vs Extreme Loss Margin (ELM)",
+      "clear_explanation": "SPAN Margin is calculated based on mathematical probability of normal price moves. ELM is a fixed percentage (usually 1%) added on top to protect against rare, massive market shocks."
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Definition of Novation (Clearing Corporation becoming the counterparty).",
+    "Which system is used for margin calculation in India? (Answer: SPAN).",
+    "The components of Total Margin (Initial Margin = SPAN + ELM).",
+    "MTM settlement frequency (Daily) and the 'Margin Call' concept.",
+    "Liquid Assets: What can you give as margin? (Cash, FDs, Govt Securities, select Shares with a 'haircut')."
+  ],
+  "quick_revision_summary": [
+    "The Clearing Corporation (CC) guarantees every trade through Novation.",
+    "Initial Margin must be paid upfront before trading.",
+    "SPAN is the software/system used to calculate risk-based margin.",
+    "ELM (Extreme Loss Margin) is an extra 1% safety buffer.",
+    "MTM happens daily; losses are deducted and profits are credited in cash.",
+    "If your margin falls too low, you get a Margin Call to add more funds.",
+    "Settlement of currency derivatives in India is strictly in **Cash** (Indian Rupees), not physical delivery of dollars."
   ]
 }

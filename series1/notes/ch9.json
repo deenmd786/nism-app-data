@@ -1,42 +1,82 @@
 {
-  "title": "Chapter 9: Code of Conduct & Investor Protection",
-  "blocks": [
+  "course": "NISM Series I: Currency Derivatives",
+  "unit_number": 9,
+  "unit_name": "Accounting and Taxation of ETCD",
+  "weightage": "5%",
+  "overview": "This chapter explains how to record currency derivative trades in account books and what taxes must be paid on profits. In the NISM exam, the most important part is understanding that currency trading is considered a 'Non-Speculative Business' for tax purposes in India. This unit helps you understand the financial aftermath of your trades—how much stays in your pocket after the government takes its share.",
+  
+  "complete_concept_explanation": [
     {
-      "type": "heading",
-      "text": "9.1 Know Your Client (KYC)"
+      "concept": "1. Accounting Treatment (Initial Margin vs MTM)",
+      "basic_meaning": "When you start a trade, your money moves from your bank to the broker. Accounting rules dictate how these entries are recorded.",
+      "detailed_explanation": "Step 1: **Initial Margin:** When you pay the upfront margin, it is NOT an expense. It is an 'Asset' (Current Asset) because it is still your money; it's just blocked. It is shown in the Balance Sheet.\nStep 2: **Daily Mark-to-Market (MTM):** This is where the actual profit or loss is recorded. \nStep 3: If you have an MTM profit, it is recorded in the Profit & Loss (P&L) account as 'Other Income'. If it is a loss, it is recorded as an expense.\nStep 4: At the end of the financial year (March 31st), if you have 'Open' positions (trades not yet closed), you must value them at the market price and record the 'unrealized' profit or loss.",
+      "why_this_is_important": "NISM tests whether you know where the Initial Margin goes in a Balance Sheet. It's a deposit, not a cost.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "If you pay ₹10,000 as margin to a broker like Zerodha, your accountant will debit 'Deposit with Broker' and credit 'Bank Account'. When you make ₹2,000 profit, he will debit 'Broker' and credit 'Profit on Currency Trading'.",
+      "exam_traps": [
+        "Thinking that Initial Margin is an expense. It is a **Current Asset** (Security Deposit).",
+        "Assuming accounting only happens when the trade is closed. False. You must account for daily MTM."
+      ],
+      "memory_trick": "Margin = My Money (Asset). MTM = Monthly/Daily Meat (Profit or Loss you eat)."
     },
     {
-      "type": "paragraph",
-      "text": "Before starting to trade, a broker must complete the KYC process for the client. This includes verifying identity (PAN) and address."
+      "concept": "2. Taxation: Speculative vs. Non-Speculative Business",
+      "basic_meaning": "Income Tax rules in India categorize different types of income. Currency derivatives traded on a recognized exchange (like NSE) are treated as **Business Income**.",
+      "detailed_explanation": "Step 1: Usually, trading in things without taking 'delivery' is called 'Speculative Business' (like intraday equity trading).\nStep 2: However, Section 43(5) of the Income Tax Act makes an EXCEPTION. \nStep 3: Currency derivative trading on a recognized exchange is **Non-Speculative Business Income**.\nStep 4: This is great for traders because 'Non-Speculative' losses can be set off against any other business income and even other income sources (except Salary).",
+      "why_this_is_important": "This is a very frequent exam question. They will ask: 'Is currency trading speculative or non-speculative?' (Answer: Non-speculative).",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "If you have a cloth business and make ₹5 Lakhs profit, but lose ₹1 Lakh in USDINR trading on NSE, you only pay tax on ₹4 Lakhs. This is because both are 'Non-Speculative' business incomes.",
+      "exam_traps": [
+        "Confusing 'Speculative' and 'Non-Speculative'. In common English, trading is speculation, but in Indian Tax Law, Exchange-Traded Derivatives are specifically **Non-Speculative**."
+      ],
+      "memory_trick": "NSE = Non-Speculative Entry."
     },
     {
-      "type": "bullet_list",
-      "items": [
-        "Client Registration Form: Captures basic client details.",
-        "Member-Client Agreement: Defines the rights and responsibilities of both parties.",
-        "Risk Disclosure Document (RDD): A mandatory document that the client must sign. It warns the client that trading in derivatives carries high risk."
-      ]
-    },
-    {
-      "type": "heading",
-      "text": "9.2 Do's and Don'ts for Brokers"
-    },
-    {
-      "type": "bullet_list",
-      "items": [
-        "Do: Execute orders promptly and at the best available price.",
-        "Do: Issue a Contract Note within 24 hours of the trade.",
-        "Don't: Guarantee returns or profits to the client.",
-        "Don't: Misuse client funds for own trading."
-      ]
-    },
-    {
-      "type": "heading",
-      "text": "9.3 Investor Grievance Redressal"
-    },
-    {
-      "type": "highlight_box",
-      "text": "SCORES (SEBI Complaints Redress System): If a broker does not resolve a complaint, the investor can lodge a complaint directly with SEBI via the SCORES online platform."
+      "concept": "3. Tax Deduction at Source (TDS) and GST",
+      "basic_meaning": "Does the exchange cut tax before giving you your profit? Do you have to pay GST on the profit?",
+      "detailed_explanation": "Step 1: **TDS:** There is NO TDS on profits made from currency derivatives for resident Indians. You get the full profit in your account and pay tax later when you file your returns.\nStep 2: **GST:** You do NOT pay GST on the 'profit' amount. However, you MUST pay GST (currently 18%) on the **Brokerage** fee charged by your broker.\nStep 3: **STT (Securities Transaction Tax):** Here is a surprise—there is NO STT on currency derivatives in India. This makes currency trading cheaper than equity trading!",
+      "why_this_is_important": "NISM likes to ask about STT. Remember: No STT in Currency.",
+      "formula": "GST = Brokerage Amount × 18%",
+      "formula_explanation": "You pay 18% tax on the service fee the broker charges you, not on the dollars you trade.",
+      "step_by_step_calculation_example": "Brokerage for 1 lot = ₹20.\nGST = 18% of ₹20 = ₹3.60.\nTotal cost to trade = ₹23.60.",
+      "real_life_indian_example": "If you look at your contract note from your broker, you will see GST listed under the 'Charges' section, but you won't see an STT line like you do when buying SBI or Reliance shares.",
+      "exam_traps": [
+        "Selecting 'Yes' for STT. STT applies to Shares and Equity Derivatives, but **NOT** to Currency Derivatives."
+      ],
+      "memory_trick": "Currency is Cheaper: No TDS, No STT, GST only on Brokerage."
     }
+  ],
+
+  "important_differences": [
+    {
+      "difference_between": "Realized P&L vs Unrealized P&L",
+      "clear_explanation": "Realized P&L is the profit or loss you make when you actually close (square off) the trade. Unrealized P&L (also called Notional P&L) is the profit or loss shown on your screen for trades that are still open at the end of the day or year."
+    },
+    {
+      "difference_between": "Taxation of Equity Intraday vs Currency Trading",
+      "clear_explanation": "Equity Intraday is 'Speculative Business Income' (Losses can only be set off against speculative profits). Currency Trading (even intraday) is 'Non-Speculative Business Income' (Losses can be set off against any business profit)."
+    }
+  ],
+
+  "frequently_asked_exam_areas": [
+    "Is currency trading speculative or non-speculative? (Non-Speculative).",
+    "Where is the Initial Margin shown? (Balance Sheet as Current Asset).",
+    "Is Securities Transaction Tax (STT) applicable to Currency? (NO).",
+    "Is there TDS on profits for residents? (NO).",
+    "On which part is GST applicable? (Only on Brokerage and other service fees)."
+  ],
+
+  "quick_revision_summary": [
+    "Currency derivatives = Non-Speculative Business Income.",
+    "No STT (Securities Transaction Tax) in Currency.",
+    "No TDS for residents.",
+    "GST (18%) is charged on Brokerage, not on the profit.",
+    "Initial Margin is a Current Asset (Security Deposit).",
+    "Daily MTM is recorded in the P&L Account.",
+    "Losses can be carried forward for 8 years (Non-Speculative)."
   ]
 }

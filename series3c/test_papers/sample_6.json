@@ -1,842 +1,1302 @@
 [
   {
-    "id": 1,
-    "question": "Scenario: An investor submits KYC documents but the intermediary delays verification. Which compliance principle is at risk?",
-    "options": ["Timely KYC", "Price discovery", "Market efficiency", "Capital formation"],
-    "answer": "Timely KYC",
-    "hint": "Investor onboarding",
-    "explanation": "Delaying KYC verification violates SEBI guidelines and can expose the intermediary to AML risks."
-  },
-  {
-    "id": 2,
-    "question": "A company fails to disclose a related-party transaction in annual report. Which regulation is directly breached?",
-    "options": ["SEBI Act 1992", "FUTP Regulations", "Insider Trading Regulations", "PMLA"],
-    "answer": "FUTP Regulations",
-    "hint": "Disclosure obligation",
-    "explanation": "Non-disclosure of material related-party transactions misleads investors; prohibited under FUTP."
-  },
-  {
-    "id": 3,
-    "question": "Scenario: A stockbroker executes trades for multiple accounts to inflate volumes but does not profit directly. Violation is:",
-    "options": ["FUTP Regulations", "SEBI Act only", "PMLA", "SCRA"],
-    "answer": "FUTP Regulations",
-    "hint": "Artificial activity",
-    "explanation": "Artificially inflating trading volumes is market manipulation under FUTP, even without direct profit."
-  },
-  {
-    "id": 4,
-    "question": "Scenario: An executive plans trades during a closed window under a pre-approved plan. Is it allowed?",
-    "options": ["Yes, if plan approved before closure", "No, always prohibited", "Yes, if profits under ₹10 lakh", "No, unless disclosed after"],
-    "answer": "Yes, if plan approved before closure",
-    "hint": "Trading plan exception",
-    "explanation": "SEBI allows pre-approved trading plans to ensure compliance during trading restrictions."
-  },
-  {
-    "id": 5,
-    "question": "Scenario: A mutual fund advertises past returns without proper disclaimer. This breaches:",
-    "options": ["FUTP Regulations", "Intermediaries Regulations", "SCRA", "PMLA"],
-    "answer": "FUTP Regulations",
-    "hint": "Misleading advertisement",
-    "explanation": "SEBI prohibits communication that misleads investors regarding returns."
-  },
-
-  {
-    "id": 6,
-    "question": "Scenario: An intermediary mixes client and proprietary funds. Immediate risk is:",
-    "options": ["Breach of fiduciary duty", "Market volatility", "Investor education gap", "Liquidity reduction"],
-    "answer": "Breach of fiduciary duty",
-    "hint": "Segregation required",
-    "explanation": "Intermediaries must segregate funds to protect client assets; mixing violates regulations."
-  },
-  {
-    "id": 7,
-    "question": "Scenario: Suspicious transactions are reported late. Regulation breached is:",
-    "options": ["PMLA", "FUTP", "SCRA", "Insider Trading Regulations"],
-    "answer": "PMLA",
-    "hint": "AML reporting",
-    "explanation": "Timely filing of STRs is mandatory under PMLA; delay attracts penalties."
-  },
-  {
-    "id": 8,
-    "question": "Scenario: An investor receives UPSI but does not trade. Liability arises?",
-    "options": ["No, unless trading occurs", "Yes, possession itself is violation", "Yes, if insider tipped", "Depends on amount"],
-    "answer": "No, unless trading occurs",
-    "hint": "Action matters",
-    "explanation": "Insider trading violation requires trading or tipping based on UPSI."
-  },
-  {
-    "id": 9,
-    "question": "Scenario: A company delays financial disclosure, causing mispricing. Regulation breached:",
-    "options": ["Insider Trading Regulations", "FUTP Regulations", "Both", "SCRR"],
-    "answer": "Both",
-    "hint": "Delay + market impact",
-    "explanation": "Delayed disclosure plus potential unfair advantage violates both regulations."
-  },
-  {
-    "id": 10,
-    "question": "Scenario: Circular trades create false volumes. Immediate effect is:",
-    "options": ["Misleading investors", "Liquidity creation", "Price stabilization", "Market neutrality"],
-    "answer": "Misleading investors",
-    "hint": "False activity",
-    "explanation": "Artificial trading misleads investors, violating FUTP."
-  },
-
-  {
-    "id": 11,
-    "question": "Scenario: Executive tips UPSI to relative who trades. Who is liable?",
-    "options": ["Both tipper and tippee", "Tipper only", "Tippee only", "No one if trade small"],
-    "answer": "Both tipper and tippee",
-    "hint": "Tipping liability",
-    "explanation": "Both parties are liable under SEBI Insider Trading Regulations."
-  },
-  {
-    "id": 12,
-    "question": "Scenario: A company misreports NAV of a fund. Regulation violated:",
-    "options": ["FUTP Regulations", "Intermediaries Regulations", "PMLA", "SCRA"],
-    "answer": "FUTP Regulations",
-    "hint": "False reporting",
-    "explanation": "Misleading NAV reporting affects investors and is prohibited under FUTP."
-  },
-  {
-    "id": 13,
-    "question": "Scenario: Multiple small transactions below ₹10 lakh to avoid STR. This is:",
-    "options": ["Structuring", "Layering", "Integration", "Segregation"],
-    "answer": "Structuring",
-    "hint": "Avoid thresholds",
-    "explanation": "Splitting transactions deliberately to evade reporting is structuring under PMLA."
-  },
-  {
-    "id": 14,
-    "question": "Scenario: Broker fails to monitor high-risk clients. Compliance risk is:",
-    "options": ["Risk-based compliance failure", "Liquidity risk", "Capital inefficiency", "Market risk"],
-    "answer": "Risk-based compliance failure",
-    "hint": "Focus on risk areas",
-    "explanation": "High-risk clients require enhanced monitoring to mitigate compliance risk."
-  },
-  {
-    "id": 15,
-    "question": "Scenario: Executive trades during trading window closure without pre-approved plan. Violation is:",
-    "options": ["Insider Trading Regulations", "FUTP Regulations", "Both", "SCRR"],
-    "answer": "Insider Trading Regulations",
-    "hint": "Window rules",
-    "explanation": "Trading during restricted period without approval is insider trading."
-  },
-
-  {
-    "id": 16,
-    "question": "Scenario: An intermediary ignores audit recommendations repeatedly. Compliance risk:",
-    "options": ["Weak compliance culture", "Liquidity risk", "Capital loss", "Market inefficiency"],
-    "answer": "Weak compliance culture",
-    "hint": "Ignoring advice",
-    "explanation": "Ignoring audits reflects poor compliance governance."
-  },
-  {
-    "id": 17,
-    "question": "Scenario: Suspicious fund movements detected but not reported. Which law is applicable?",
-    "options": ["PMLA", "SEBI Act", "FUTP", "SCRR"],
-    "answer": "PMLA",
-    "hint": "Anti-money laundering",
-    "explanation": "All suspicious transactions must be reported to FIU under PMLA."
-  },
-  {
-    "id": 18,
-    "question": "Scenario: Company insider trades using UPSI of another company to influence prices. Regulation:",
-    "options": ["Both Insider Trading and FUTP", "Insider Trading only", "FUTP only", "SCRR"],
-    "answer": "Both Insider Trading and FUTP",
-    "hint": "UPSI misuse",
-    "explanation": "Misuse of UPSI to manipulate market breaches both regulations."
-  },
-  {
-    "id": 19,
-    "question": "Scenario: Fund manager trades without internal approval. Compliance principle breached:",
-    "options": ["Internal control", "Liquidity management", "Investor protection", "Price discovery"],
-    "answer": "Internal control",
-    "hint": "Approval missing",
-    "explanation": "Internal approvals mitigate operational and compliance risks."
-  },
-  {
-    "id": 20,
-    "question": "Scenario: Deliberate misleading advertisement by intermediary. Regulation breached:",
-    "options": ["FUTP Regulations", "Intermediaries Regulations", "SCRA", "PMLA"],
-    "answer": "FUTP Regulations",
-    "hint": "False info",
-    "explanation": "Misleading communication violates FUTP."
-  },
-
-  {
-    "id": 21,
-    "question": "Scenario: Company delays disclosing material info causing price distortion. Regulation violated:",
-    "options": ["Insider Trading Regulations", "FUTP Regulations", "Both", "SCRR"],
-    "answer": "Both",
-    "hint": "Delay + market impact",
-    "explanation": "Delay of disclosure plus potential unfair advantage breaches both regulations."
-  },
-  {
-    "id": 22,
-    "question": "Scenario: Circular trades executed without profit motive. Violation is:",
-    "options": ["FUTP Regulations", "Intermediaries Regulations", "PMLA", "SCRR"],
-    "answer": "FUTP Regulations",
-    "hint": "Artificial market activity",
-    "explanation": "Creating false volumes to mislead investors violates FUTP."
-  },
-  {
-    "id": 23,
-    "question": "Scenario: Client funds used without disclosure. Regulation violated:",
-    "options": ["Segregation of funds", "Liquidity planning", "Market efficiency", "Investor education"],
-    "answer": "Segregation of funds",
-    "hint": "Fiduciary duty",
-    "explanation": "Mixing client and own funds violates Intermediaries Regulations."
-  },
-  {
-    "id": 24,
-    "question": "Scenario: Structuring multiple small transactions below reporting threshold. Compliance risk:",
-    "options": ["Structuring under PMLA", "Layering", "Integration", "Segregation"],
-    "answer": "Structuring under PMLA",
-    "hint": "Avoiding detection",
-    "explanation": "Deliberate splitting to avoid STR reporting constitutes structuring."
-  },
-  {
-    "id": 25,
-    "question": "Scenario: Executive tips UPSI to friends who trade. SEBI action:",
-    "options": ["Both tipper and tippees penalized", "Tipper only", "Tippees only", "No action if trade small"],
-    "answer": "Both tipper and tippees penalized",
-    "hint": "Tipping violation",
-    "explanation": "Both parties liable under Insider Trading Regulations."
-  },
-
-  {
-    "id": 26,
-    "question": "Scenario: Deliberate delay in NAV reporting by mutual fund. Regulation violated:",
-    "options": ["FUTP Regulations", "Intermediaries Regulations", "PMLA", "SCRR"],
-    "answer": "FUTP Regulations",
-    "hint": "Misleading info",
-    "explanation": "Misreporting NAV affects investors and breaches FUTP."
-  },
-  {
-    "id": 27,
-    "question": "Scenario: STR filed late after suspicious transactions. Immediate consequence:",
-    "options": ["Regulatory penalty", "Investor loss", "Market manipulation", "Delayed settlement"],
-    "answer": "Regulatory penalty",
-    "hint": "PMLA compliance",
-    "explanation": "Late filing attracts penalties."
-  },
-  {
-    "id": 28,
-    "question": "Scenario: Insider shares UPSI and tippees trade. SEBI action:",
-    "options": ["Both penalized", "Tipper only", "Tippees only", "No action if small trade"],
-    "answer": "Both penalized",
-    "hint": "Tipping liability",
-    "explanation": "Both parties liable under Insider Trading Regulations."
-  },
-  {
-    "id": 29,
-    "question": "Scenario: Circular trading detected. Regulation violated:",
-    "options": ["FUTP Regulations", "Intermediaries Regulations", "PMLA", "SCRR"],
-    "answer": "FUTP Regulations",
-    "hint": "Artificial activity",
-    "explanation": "Creating fake volumes violates FUTP."
-  },
-  {
-    "id": 30,
-    "question": "Scenario: Broker ignores client complaints repeatedly. Compliance failure is:",
-    "options": ["Timely disclosure", "Market efficiency", "Capital formation", "Liquidity planning"],
-    "answer": "Timely disclosure",
-    "hint": "Investor protection",
-    "explanation": "Failure to address complaints violates investor protection norms."
-  },
-
-  {
-    "id": 31,
-    "question": "Scenario: Fund manager trades without compliance approval. Which principle is breached?",
-    "options": ["Internal control", "Market efficiency", "Liquidity", "Price discovery"],
-    "answer": "Internal control",
-    "hint": "Approval missing",
-    "explanation": "Internal control ensures compliance and mitigates operational risk."
-  },
-  {
-    "id": 32,
-    "question": "Scenario: Executive trades on UPSI of another company to influence prices. Regulation:",
-    "options": ["Both Insider Trading and FUTP", "Insider Trading only", "FUTP only", "SCRR"],
-    "answer": "Both Insider Trading and FUTP",
-    "hint": "UPSI misuse",
-    "explanation": "Misuse of UPSI to manipulate market breaches both regulations."
-  },
-  {
-    "id": 33,
-    "question": "Scenario: Circular trades inflate stock volume. Investor impact is:",
-    "options": ["Misleading investors", "Liquidity creation", "Price stabilization", "Market neutrality"],
-    "answer": "Misleading investors",
-    "hint": "Fake activity",
-    "explanation": "Artificial trading misleads investors."
-  },
-  {
-    "id": 34,
-    "question": "Scenario: Executive tips UPSI to multiple people who trade. SEBI action:",
-    "options": ["Both tipper and tippees penalized", "Tipper only", "Tippees only", "No action if small trade"],
-    "answer": "Both tipper and tippees penalized",
-    "hint": "Tipping violation",
-    "explanation": "Both liable under Insider Trading Regulations."
-  },
-  {
-    "id": 35,
-    "question": "Scenario: Mutual fund misreports NAV to show better performance. Regulation:",
-    "options": ["FUTP Regulations", "Intermediaries Regulations", "SCRR", "PMLA"],
-    "answer": "FUTP Regulations",
-    "hint": "Misleading info",
-    "explanation": "False reporting misleads investors."
-  },
-
-  {
-    "id": 36,
-    "question": "Scenario: STR not filed timely. Consequence:",
-    "options": ["Regulatory penalty", "Investor loss", "Market manipulation", "Delayed settlement"],
-    "answer": "Regulatory penalty",
-    "hint": "PMLA compliance",
-    "explanation": "Late reporting attracts penalty."
-  },
-  {
-    "id": 37,
-    "question": "Scenario: Client funds misused for proprietary trading. Violation:",
-    "options": ["Segregation of funds", "Liquidity management", "Price discovery", "Market efficiency"],
-    "answer": "Segregation of funds",
-    "hint": "Fiduciary duty",
-    "explanation": "Mixing funds violates SEBI Intermediaries Regulations."
-  },
-  {
-    "id": 38,
-    "question": "Scenario: Executive trades during trading window closure without plan. Regulation breached:",
-    "options": ["Insider Trading Regulations", "FUTP Regulations", "Both", "SCRR"],
-    "answer": "Insider Trading Regulations",
-    "hint": "Window rules",
-    "explanation": "Trading during restricted period without approval is insider trading."
-  },
-  {
-    "id": 39,
-    "question": "Scenario: Deliberate delay in disclosing material info. Regulations breached:",
-    "options": ["FUTP and Insider Trading Regulations", "Intermediaries Regulations", "SCRR", "None"],
-    "answer": "FUTP and Insider Trading Regulations",
-    "hint": "Delay + unfair advantage",
-    "explanation": "Delay affects market integrity; breaches both."
-  },
-  {
-    "id": 40,
-    "question": "Scenario: Circular trading inflates volumes. Primary regulatory concern:",
-    "options": ["FUTP Regulations", "Intermediaries Regulations", "PMLA", "SCRR"],
-    "answer": "FUTP Regulations",
-    "hint": "Market manipulation",
-    "explanation": "Artificial volume violates FUTP."
-  },
-
-  {
-    "id": 41,
-    "question": "Scenario: Multiple small transactions below reporting threshold to avoid STR. This is:",
-    "options": ["Structuring", "Layering", "Integration", "Segregation"],
-    "answer": "Structuring",
-    "hint": "Avoid detection",
-    "explanation": "Deliberate splitting constitutes structuring under PMLA."
-  },
-  {
-    "id": 42,
-    "question": "Scenario: Deliberate misleading advertisements by fund manager. Regulation:",
-    "options": ["FUTP Regulations", "Intermediaries Regulations", "SCRR", "PMLA"],
-    "answer": "FUTP Regulations",
-    "hint": "False information",
-    "explanation": "Misleading communication prohibited under FUTP."
-  },
-  {
-    "id": 43,
-    "question": "Scenario: STR filed late after suspicious transactions. Immediate consequence:",
-    "options": ["Regulatory penalty", "Investor loss", "Market manipulation", "Delayed settlement"],
-    "answer": "Regulatory penalty",
-    "hint": "PMLA compliance",
-    "explanation": "Late filing attracts penalties."
-  },
-  {
-    "id": 44,
-    "question": "Scenario: Insider shares UPSI and tippees trade. SEBI action:",
-    "options": ["Both tipper and tippees penalized", "Tipper only", "Tippees only", "No action if trade small"],
-    "answer": "Both tipper and tippees penalized",
-    "hint": "Tipping liability",
-    "explanation": "Both liable under Insider Trading Regulations."
-  },
-  {
-    "id": 45,
-    "question": "Scenario: Circular trading detected by SEBI. Primary effect:",
-    "options": ["Misleading investors", "Liquidity creation", "Price stabilization", "Market neutrality"],
-    "answer": "Misleading investors",
-    "hint": "Artificial activity",
-    "explanation": "Creates misleading market signals."
-  },
-  {
-    "id": 46,
-    "question": "Scenario: Client complaints ignored. Compliance breach is:",
-    "options": ["Timely disclosure", "Market efficiency", "Capital formation", "Liquidity planning"],
-    "answer": "Timely disclosure",
-    "hint": "Investor protection",
-    "explanation": "Ignoring complaints violates investor protection."
-  },
-  {
-    "id": 47,
-    "question": "Scenario: Deliberate delay in NAV reporting. Regulation breached:",
-    "options": ["FUTP Regulations", "Intermediaries Regulations", "PMLA", "SCRR"],
-    "answer": "FUTP Regulations",
-    "hint": "Misleading info",
-    "explanation": "False reporting of NAV misleads investors."
-  },
-  {
-    "id": 48,
-    "question": "Scenario: Executive trades on UPSI during closure window without plan. Regulation:",
-    "options": ["Insider Trading Regulations", "FUTP Regulations", "Both", "SCRR"],
-    "answer": "Insider Trading Regulations",
-    "hint": "Window rules",
-    "explanation": "Trading during prohibited period without plan violates Insider Trading Regulations."
-  },
-  {
-    "id": 49,
-    "question": "Scenario: Misreporting of fund NAV affects investors. Regulation violated:",
-    "options": ["FUTP Regulations", "Intermediaries Regulations", "SCRR", "PMLA"],
-    "answer": "FUTP Regulations",
-    "hint": "False reporting",
-    "explanation": "Misleading NAV breaches FUTP."
-  },
-  {
-    "id": 50,
-    "question": "Scenario: STR not filed timely after suspicious transactions. Consequence:",
-    "options": ["Regulatory penalty", "Investor loss", "Market manipulation", "Delayed settlement"],
-    "answer": "Regulatory penalty",
-    "hint": "PMLA compliance",
-    "explanation": "Late filing attracts penalties under PMLA."
-  },
-  {
-    "id": 51,
-    "question": "Scenario: Executive tips UPSI and tippees trade. SEBI action:",
-    "options": ["Both tipper and tippees penalized", "Tipper only", "Tippees only", "No action if trade small"],
-    "answer": "Both tipper and tippees penalized",
-    "hint": "Tipping violation",
-    "explanation": "Both parties liable under Insider Trading Regulations."
-  },
-  {
-    "id": 52,
-    "question": "An intermediary uploads KYC details to a KRA but fails to obtain investor consent for data sharing. Another intermediary later accesses the data. This is a violation primarily of:",
-    "options": ["Investor eligibility norms", "KRA operational guidelines", "Data confidentiality requirements", "FEMA provisions"],
-    "answer": "Data confidentiality requirements",
-    "hint": "Consent matters",
-    "explanation": "KYC data can be shared only after obtaining proper investor consent."
-  },
-  {
-    "id": 53,
-    "question": "If multiple KRAs maintain different KYC statuses for the same investor, the intermediary should:",
-    "options": ["Use the oldest record", "Use the latest verified record", "Ignore KRA data", "Ask SEBI for clarification"],
-    "answer": "Use the latest verified record",
-    "hint": "Most recent verification",
-    "explanation": "Intermediaries rely on the most recent KYC status available in the KRA system."
-  },
-  {
-    "id": 54,
-    "question": "Which of the following is NOT a responsibility of a KRA?",
-    "options": ["Secure storage of KYC data", "KYC verification", "Transaction monitoring", "Data retrieval for intermediaries"],
-    "answer": "Transaction monitoring",
-    "hint": "KYC vs AML",
-    "explanation": "Transaction monitoring is the responsibility of intermediaries, not KRAs."
-  },
-
-  {
-    "id": 55,
-    "question": "A pension fund regulated overseas invests in Indian government securities. This entity will be registered as:",
-    "options": ["FPI Category I", "FPI Category II", "FPI Category III", "FDI investor"],
-    "answer": "FPI Category I",
-    "hint": "Low-risk entity",
-    "explanation": "Pension funds regulated by foreign governments fall under Category I FPIs."
-  },
-  {
-    "id": 56,
-    "question": "Which FEMA transaction requires prior approval instead of being automatic?",
-    "options": ["Dividend remittance", "Equity investment beyond sectoral cap", "Import payment", "Interest on ECB"],
-    "answer": "Equity investment beyond sectoral cap",
-    "hint": "Limits matter",
-    "explanation": "Investments breaching sectoral caps require prior government approval."
-  },
-  {
-    "id": 57,
-    "question": "FPI investment in Indian markets is restricted mainly to:",
-    "options": ["Unlisted private companies", "Listed securities", "Partnership firms", "Sole proprietorships"],
-    "answer": "Listed securities",
-    "hint": "Portfolio nature",
-    "explanation": "FPIs are portfolio investors focusing on listed securities."
-  },
-
-  {
-    "id": 58,
-    "question": "Which risk is eliminated due to dematerialisation of securities?",
-    "options": ["Market risk", "Liquidity risk", "Bad delivery risk", "Interest rate risk"],
-    "answer": "Bad delivery risk",
-    "hint": "Settlement issue",
-    "explanation": "Demat holdings remove risks of fake, forged or mismatched certificates."
-  },
-  {
-    "id": 59,
-    "question": "A demat account holder passes away without a nomination. Securities will be transferred to:",
-    "options": ["Depository", "Issuer company", "Legal heirs", "Stock exchange"],
-    "answer": "Legal heirs",
-    "hint": "Succession",
-    "explanation": "In absence of nomination, transmission is done to legal heirs."
-  },
-
-  {
-    "id": 60,
-    "question": "Which entity is directly responsible for ensuring mutual fund NAVs are correctly computed?",
-    "options": ["Trustee", "AMC", "RTA", "SEBI"],
-    "answer": "AMC",
-    "hint": "Portfolio valuation",
-    "explanation": "AMC is responsible for accurate valuation and NAV computation."
-  },
-  {
-    "id": 61,
-    "question": "If a mutual fund invests in instruments not permitted by SEBI, accountability lies with:",
-    "options": ["Sponsor", "Trustee", "AMC", "Custodian"],
-    "answer": "AMC",
-    "hint": "Investment decision",
-    "explanation": "AMCs make investment decisions and are accountable for violations."
-  },
-  {
-    "id": 62,
-    "question": "Which document legally binds a mutual fund AMC to its scheme objectives?",
-    "options": ["KIM", "SID", "SAI", "Fact sheet"],
-    "answer": "SID",
-    "hint": "Offer document",
-    "explanation": "Scheme Information Document defines investment objectives and limits."
-  },
-
-  {
-    "id": 63,
-    "question": "An AIF investing in unlisted SMEs without leverage will be categorised as:",
-    "options": ["Category I", "Category II", "Category III", "Not an AIF"],
-    "answer": "Category II",
-    "hint": "Private equity style",
-    "explanation": "Private equity and SME-focused funds fall under Category II."
-  },
-  {
-    "id": 64,
-    "question": "Which activity is prohibited for Category I AIFs?",
-    "options": ["Long-term investment", "Leverage", "Infrastructure funding", "SME investment"],
-    "answer": "Leverage",
-    "hint": "Low-risk intent",
-    "explanation": "Category I AIFs are not permitted to employ leverage."
-  },
-  {
-    "id": 65,
-    "question": "Failure to disclose conflicts of interest in an AIF primarily violates:",
-    "options": ["Investor eligibility norms", "Disclosure and transparency norms", "FEMA provisions", "Tax regulations"],
-    "answer": "Disclosure and transparency norms",
-    "hint": "Material information",
-    "explanation": "SEBI mandates full disclosure of conflicts of interest."
-  },
-
-  {
-    "id": 66,
-    "question": "InvIT cash flow distributions are mainly sourced from:",
-    "options": ["Equity market appreciation", "Infrastructure project revenues", "Speculative trades", "Government subsidies"],
-    "answer": "Infrastructure project revenues",
-    "hint": "Operational income",
-    "explanation": "InvITs distribute cash flows generated by infrastructure assets."
-  },
-  {
-    "id": 67,
-    "question": "Which InvIT entity protects unit-holder interests through compliance oversight?",
-    "options": ["Sponsor", "Investment Manager", "Trustee", "Project SPV"],
-    "answer": "Trustee",
-    "hint": "Oversight role",
-    "explanation": "Trustee ensures regulatory compliance and protects investor interests."
-  },
-  {
-    "id": 68,
-    "question": "InvITs are restricted from investing in:",
-    "options": ["Operational assets", "Revenue-generating infrastructure", "Non-infrastructure businesses", "PPP projects"],
-    "answer": "Non-infrastructure businesses",
-    "hint": "Asset eligibility",
-    "explanation": "InvITs can invest only in infrastructure assets."
-  },
-
-  {
-    "id": 69,
-    "question": "REITs mitigate vacancy risk primarily through:",
-    "options": ["Short-term leases", "Diversified tenant base", "High leverage", "Speculation"],
-    "answer": "Diversified tenant base",
-    "hint": "Risk spread",
-    "explanation": "Diversification reduces dependency on a single tenant."
-  },
-  {
-    "id": 70,
-    "question": "Which REIT investment provides the most stable cash flows?",
-    "options": ["IT park with long-term leases", "Under-construction mall", "Land acquisition", "Speculative redevelopment"],
-    "answer": "IT park with long-term leases",
-    "hint": "Lease tenure",
-    "explanation": "Long-term leased assets provide predictable income."
-  },
-  {
-    "id": 71,
-    "question": "REIT leverage limits exist mainly to:",
-    "options": ["Maximise returns", "Reduce risk to investors", "Improve liquidity", "Avoid taxation"],
-    "answer": "Reduce risk to investors",
-    "hint": "Risk control",
-    "explanation": "Leverage caps protect investors from excessive financial risk."
-  },
-
-  {
-    "id": 72,
-    "question": "Which event requires mandatory KYC updation?",
-    "options": ["Change in email ID", "Change in residential status", "Change in nominee", "Change in bank branch"],
-    "answer": "Change in residential status",
-    "hint": "Material change",
-    "explanation": "Residential status impacts regulatory classification and must be updated."
-  },
-  {
-    "id": 73,
-    "question": "Which Act ensures legal transfer of securities without physical certificates?",
-    "options": ["SEBI Act", "Companies Act", "Depositories Act, 1996", "FEMA"],
-    "answer": "Depositories Act, 1996",
-    "hint": "Demat law",
-    "explanation": "Depositories Act governs electronic securities transfer."
-  },
-
-  {
-    "id": 74,
-    "question": "Which debt mutual fund carries the highest interest rate risk?",
-    "options": ["Liquid fund", "Ultra-short fund", "Long-duration fund", "Overnight fund"],
-    "answer": "Long-duration fund",
-    "hint": "Duration",
-    "explanation": "Longer duration increases sensitivity to interest rate movements."
-  },
-  {
-    "id": 75,
-    "question": "Which expense is charged directly to mutual fund investors and not included in TER?",
-    "options": ["Management fees", "Custody charges", "Exit load", "Audit fees"],
-    "answer": "Exit load",
-    "hint": "Investor-specific",
-    "explanation": "Exit load is borne directly by the investor."
-  },
-
-  {
-    "id": 76,
-    "question": "AIFs are regulated primarily to:",
-    "options": ["Guarantee returns", "Encourage speculation", "Ensure investor protection", "Replace mutual funds"],
-    "answer": "Ensure investor protection",
-    "hint": "Regulatory objective",
-    "explanation": "SEBI regulates AIFs to ensure transparency and protect investors."
-  },
-  {
-    "id": 77,
-    "question": "Which AIF category can use complex trading strategies?",
-    "options": ["Category I", "Category II", "Category III", "None"],
-    "answer": "Category III",
-    "hint": "Hedge fund style",
-    "explanation": "Category III AIFs may employ leverage and derivatives."
-  },
-
-  {
-    "id": 78,
-    "question": "Which common risk affects both REITs and InvITs most directly?",
-    "options": ["Market liquidity risk", "Operational risk", "Settlement risk", "Clearing risk"],
-    "answer": "Operational risk",
-    "hint": "Asset performance",
-    "explanation": "Operational efficiency of assets drives cash flows."
-  },
-  {
-    "id": 79,
-    "question": "Independent valuation in REITs and InvITs is mandated to ensure:",
-    "options": ["Higher NAVs", "Transparency and fairness", "Tax savings", "Market liquidity"],
-    "answer": "Transparency and fairness",
-    "hint": "Neutral assessment",
-    "explanation": "Independent valuation avoids conflicts of interest."
-  },
-
-  {
-    "id": 80,
-    "question": "KYC records must be preserved for a minimum of:",
-    "options": ["3 years", "5 years", "7 years", "10 years"],
+    "id": 1501,
+    "question": "Which of the following entities is responsible for 'Novation' in the securities market, thereby guaranteeing the settlement of trades even if one party defaults?",
+    "options": [
+      "The Stock Exchange (Trading Wing)",
+      "The Clearing Corporation",
+      "The Depository",
+      "The Merchant Banker"
+    ],
+    "answer": "The Clearing Corporation",
+    "hint": "It acts as the central counterparty (CCP).",
+    "explanation": "The Clearing Corporation interposes itself between the buyer and the seller (Novation), becoming the buyer to every seller and the seller to every buyer, thus guaranteeing settlement."
+  },
+  {
+    "id": 1502,
+    "question": "A company wants to raise capital via an IPO using the 'Book Building' process. Which intermediary is primarily responsible for managing this issue, determining the price band, and marketing it to investors?",
+    "options": [
+      "Registrar to the Issue",
+      "Merchant Banker (Book Running Lead Manager)",
+      "Debenture Trustee",
+      "Portfolio Manager"
+    ],
+    "answer": "Merchant Banker (Book Running Lead Manager)",
+    "hint": "They 'lead' the issue.",
+    "explanation": "Merchant Bankers (specifically Book Running Lead Managers) are the key intermediaries who manage the entire IPO process, including due diligence, pricing, and marketing."
+  },
+  {
+    "id": 1503,
+    "question": "In the context of 'Proprietary Trading', a stock broker trades:",
+    "options": [
+      "On behalf of their clients",
+      "Using their own funds for their own account",
+      "On behalf of the government",
+      "Only in foreign currency"
+    ],
+    "answer": "Using their own funds for their own account",
+    "hint": "Proprietary means 'ownership'.",
+    "explanation": "Proprietary trading (or Prop Trading) involves the broker trading in the market using their own capital for profit, rather than earning commissions from client trades."
+  },
+  {
+    "id": 1504,
+    "question": "Credit Rating Agencies (CRAs) in India are primarily regulated by SEBI. What is the main function of a CRA?",
+    "options": [
+      "To lend money to corporates",
+      "To provide an opinion on the creditworthiness of a debt instrument/issuer",
+      "To guarantee the repayment of loans",
+      "To audit the financial statements"
+    ],
+    "answer": "To provide an opinion on the creditworthiness of a debt instrument/issuer",
+    "hint": "They assign ratings like AAA, BB, etc.",
+    "explanation": "CRAs evaluate the credit risk of debt instruments and assign ratings that reflect the issuer's ability to service the debt obligations on time."
+  },
+  {
+    "id": 1505,
+    "question": "How does an 'Exchange Traded Fund' (ETF) primarily differ from a standard Open-Ended Mutual Fund in terms of trading?",
+    "options": [
+      "ETFs can only be bought from the AMC",
+      "ETFs are traded on the stock exchange like shares during market hours",
+      "ETFs have a fixed maturity date",
+      "ETFs do not track an index"
+    ],
+    "answer": "ETFs are traded on the stock exchange like shares during market hours",
+    "hint": "Real-time trading.",
+    "explanation": "Unlike standard mutual funds which are bought/sold at the end-of-day NAV, ETFs are listed on exchanges and trade at real-time prices throughout the trading day."
+  },
+  {
+    "id": 1506,
+    "question": "The 'Payment and Settlement Systems Act, 2007' empowers which authority to regulate and supervise payment systems (like UPI, NEFT, RTGS) in India?",
+    "options": [
+      "SEBI",
+      "RBI",
+      "NPCI",
+      "Ministry of Finance"
+    ],
+    "answer": "RBI",
+    "hint": "The central bank controls money flow.",
+    "explanation": "The Reserve Bank of India (RBI) is the designated authority for the regulation and supervision of payment and settlement systems in India."
+  },
+  {
+    "id": 1507,
+    "question": "The 'Securities Appellate Tribunal' (SAT) hears appeals against orders passed by SEBI. Does it also hear appeals against orders from any other regulator?",
+    "options": [
+      "No, only SEBI",
+      "Yes, IRDAI and PFRDA",
+      "Yes, RBI and MCA",
+      "Yes, Supreme Court"
+    ],
+    "answer": "Yes, IRDAI and PFRDA",
+    "hint": "It is a unified tribunal for the financial sector (excluding banking usually).",
+    "explanation": "SAT has been empowered to hear appeals against orders passed by the Insurance Regulatory and Development Authority of India (IRDAI) and the Pension Fund Regulatory and Development Authority (PFRDA) as well."
+  },
+  {
+    "id": 1508,
+    "question": "Who has the power to frame 'Rules' under the SEBI Act, 1992?",
+    "options": [
+      "SEBI Board",
+      "Central Government (Ministry of Finance)",
+      "Supreme Court",
+      "RBI"
+    ],
+    "answer": "Central Government (Ministry of Finance)",
+    "hint": "Rules are by Govt, Regulations are by Regulator.",
+    "explanation": "Under the SEBI Act, the Central Government has the power to make 'Rules', while SEBI has the power to make 'Regulations' consistent with the Act and Rules."
+  },
+  {
+    "id": 1509,
+    "question": "A 'Self-Regulatory Organization' (SRO) typically has the responsibility to:",
+    "options": [
+      "Issue currency",
+      "Regulate the conduct of its members to ensure ethical standards",
+      "Manage the country's foreign policy",
+      "Collect income tax"
+    ],
+    "answer": "Regulate the conduct of its members to ensure ethical standards",
+    "hint": "Policing their own tribe.",
+    "explanation": "SROs are non-governmental organizations that have the power to create and enforce industry regulations and standards for their members."
+  },
+  {
+    "id": 1510,
+    "question": "The 'International Financial Services Centres Authority' (IFSCA) was established to:",
+    "options": [
+      "Regulate rural cooperative banks",
+      "Act as a unified regulator for all financial services in IFSCs (like GIFT City)",
+      "Manage the Indian Railways",
+      "Audit public sector banks"
+    ],
+    "answer": "Act as a unified regulator for all financial services in IFSCs (like GIFT City)",
+    "hint": "One regulator for the special zone.",
+    "explanation": "IFSCA is the unified regulator that assumes the powers of SEBI, RBI, IRDAI, and PFRDA regarding financial services within International Financial Services Centres."
+  },
+  {
+    "id": 1511,
+    "question": "In the hierarchy of regulations, 'Bye-laws' of a Stock Exchange are:",
+    "options": [
+      "Superior to the SCRA Act",
+      "Superior to SEBI Regulations",
+      "Subordinate to the Act, Rules, and Regulations, governing day-to-day operations",
+      "Not legally binding"
+    ],
+    "answer": "Subordinate to the Act, Rules, and Regulations, governing day-to-day operations",
+    "hint": "Operational rules.",
+    "explanation": "Bye-laws are operational rules framed by the Exchange. They must be consistent with and subordinate to the SCRA, SCRR, and SEBI Regulations."
+  },
+  {
+    "id": 1512,
+    "question": "Mr. A is a Compliance Officer. He notices that the CEO is violating a regulation. If Mr. A fails to report this due to fear of losing his job, he is failing in his duty of:",
+    "options": [
+      "Profit Maximization",
+      "Independence",
+      "Marketing",
+      "Cost Cutting"
+    ],
+    "answer": "Independence",
+    "hint": "Being able to say 'No' to power.",
+    "explanation": "Independence is the ability of the compliance function to carry out its responsibilities without fear or favor. Failing to report senior management violations compromises this independence."
+  },
+  {
+    "id": 1513,
+    "question": "Which of the following constitutes 'Compliance Risk'?",
+    "options": [
+      "Risk of the market falling due to bad economic news",
+      "Risk of legal or regulatory sanctions, material financial loss, or loss to reputation due to failure to comply with laws",
+      "Risk of a computer server crashing",
+      "Risk of a borrower defaulting on a loan"
+    ],
+    "answer": "Risk of legal or regulatory sanctions, material financial loss, or loss to reputation due to failure to comply with laws",
+    "hint": "The Basel definition.",
+    "explanation": "Compliance risk is the risk of legal/regulatory sanctions, financial loss, or reputational damage arising from failure to comply with laws, regulations, and codes of conduct."
+  },
+  {
+    "id": 1514,
+    "question": "Why do firms monitor the 'Personal Trading' of their employees?",
+    "options": [
+      "To ensure employees are making enough money",
+      "To prevent conflicts of interest and insider trading",
+      "To tax their profits",
+      "To copy their trade ideas"
+    ],
+    "answer": "To prevent conflicts of interest and insider trading",
+    "hint": "Employees shouldn't use client info for self-gain.",
+    "explanation": "Monitoring personal trading is crucial to ensure that employees are not using confidential client information (Front Running) or UPSI (Insider Trading) for personal gain."
+  },
+  {
+    "id": 1515,
+    "question": "A 'Strong Compliance Culture' implies that:",
+    "options": [
+      "Only the Compliance Department is responsible for following rules",
+      "Compliance is the responsibility of every employee in the organization",
+      "Rules are followed only when SEBI is watching",
+      "The firm hires more lawyers than traders"
+    ],
+    "answer": "Compliance is the responsibility of every employee in the organization",
+    "hint": "It's in the DNA.",
+    "explanation": "A strong culture means compliance is embedded in the business processes and every employee understands their role in adhering to regulations/ethics."
+  },
+  {
+    "id": 1516,
+    "question": "Under Section 11C of the SEBI Act, if the Investigating Authority needs to search a premise and seize documents, they must first obtain an order from:",
+    "options": [
+      "The SEBI Chairman",
+      "A Magistrate of the First Class",
+      "The Police Commissioner",
+      "The Stock Exchange CEO"
+    ],
+    "answer": "A Magistrate of the First Class",
+    "hint": "Judicial permission is needed to enter private property.",
+    "explanation": "Search and seizure powers are invasive; therefore, the Act requires SEBI to obtain an application/order from a Magistrate of the First Class before conducting them."
+  },
+  {
+    "id": 1517,
+    "question": "The SEBI Board includes one member nominated by the Reserve Bank of India (RBI). This ensures:",
+    "options": [
+      "That SEBI does not spend too much money",
+      "Coordination between the monetary authority and the securities market regulator",
+      "That banks can trade freely",
+      "That interest rates remain low"
+    ],
+    "answer": "Coordination between the monetary authority and the securities market regulator",
+    "hint": "Inter-regulatory coordination.",
+    "explanation": "Having an RBI nominee on the SEBI Board facilitates coordination and policy alignment between the banking/monetary system and the capital markets."
+  },
+  {
+    "id": 1518,
+    "question": "What is the penalty under Section 15C of the SEBI Act for a listed company's failure to redress investor grievances within the specified time?",
+    "options": [
+      "₹1 Lakh flat",
+      "Min ₹1 Lakh per day, Max ₹1 Crore",
+      "₹25 Crores",
+      "Suspension of trading"
+    ],
+    "answer": "Min ₹1 Lakh per day, Max ₹1 Crore",
+    "hint": "A daily fine to force compliance.",
+    "explanation": "Section 15C imposes a penalty of ₹1 Lakh for each day during which such failure continues or ₹1 Crore, whichever is less."
+  },
+  {
+    "id": 1519,
+    "question": "Under Section 24 of the SEBI Act, a Court can take cognizance of an offence punishable under the Act only on a complaint made by:",
+    "options": [
+      "Any citizen",
+      "The SEBI Board (or authorized officer)",
+      "The Police",
+      "The Investor"
+    ],
+    "answer": "The SEBI Board (or authorized officer)",
+    "hint": "Specialized prosecution.",
+    "explanation": "Courts cannot take cognizance of SEBI Act offences based on a private complaint or police FIR alone; a complaint must be filed by the Board."
+  },
+  {
+    "id": 1520,
+    "question": "Section 11D of the SEBI Act empowers SEBI to issue a 'Cease and Desist' order. This effectively means:",
+    "options": [
+      "The entity must close its business permanently",
+      "The entity must stop committing the specific act/violation immediately",
+      "The entity must pay a fine",
+      "The entity must apologize"
+    ],
+    "answer": "The entity must stop committing the specific act/violation immediately",
+    "hint": "Stop it right now.",
+    "explanation": "A Cease and Desist order is a directive to immediately halt a specific activity or violation to prevent further harm while the investigation or inquiry proceeds."
+  },
+  {
+    "id": 1521,
+    "question": "Can an entity apply for 'Settlement' with SEBI after a final order has been passed by the Adjudicating Officer?",
+    "options": [
+      "Yes, anytime",
+      "No, generally settlement must be applied for before the final order is passed (during the proceedings)",
+      "Yes, but only if the penalty is small",
+      "Yes, if the Supreme Court allows"
+    ],
+    "answer": "No, generally settlement must be applied for before the final order is passed (during the proceedings)",
+    "hint": "You settle to avoid the order.",
+    "explanation": "Settlement is a mechanism to resolve pending proceedings. Once a final order is passed, the entity usually has to appeal, not settle (though there are complex exceptions, the general rule is settlement is for pending proceedings)."
+  },
+  {
+    "id": 1522,
+    "question": "Under Section 28A, if a defaulter tries to flee the country to avoid paying a penalty, the Recovery Officer can:",
+    "options": [
+      "Cancel their passport",
+      "Arrest and detain them in prison",
+      "Shoot them",
+      "Ignore them"
+    ],
+    "answer": "Arrest and detain them in prison",
+    "hint": "Physical detention as a last resort.",
+    "explanation": "Section 28A empowers the Recovery Officer to arrest the person and detain them in prison if they are obstructing recovery or attempting to abscond."
+  },
+  {
+    "id": 1523,
+    "question": "What is the primary implication of 'Compulsory Delisting' for a company?",
+    "options": [
+      "It saves listing fees",
+      "It is a penal measure where the company is removed from the exchange and promoters must buy back shares",
+      "It allows the company to list abroad",
+      "It is a voluntary choice"
+    ],
+    "answer": "It is a penal measure where the company is removed from the exchange and promoters must buy back shares",
+    "hint": "Forced exit.",
+    "explanation": "Compulsory delisting is a punishment for severe non-compliance. The company is removed, and promoters are obligated to provide an exit to public shareholders at fair value."
+  },
+  {
+    "id": 1524,
+    "question": "Under Rule 19A of the SCRR, listed companies must maintain a Minimum Public Shareholding (MPS) of:",
+    "options": [
+      "10%",
+      "25%",
+      "50%",
+      "75%"
+    ],
+    "answer": "25%",
+    "hint": "One quarter.",
+    "explanation": "Rule 19A mandates that every listed company shall maintain a public shareholding of at least 25%."
+  },
+  {
+    "id": 1525,
+    "question": "A 'Spot Delivery Contract' under SCRA allows for the transfer of papers and payment of price:",
+    "options": [
+      "Within 15 days",
+      "On the same day or the next day (excluding postal time)",
+      "Whenever convenient",
+      "Within T+2 days"
+    ],
+    "answer": "On the same day or the next day (excluding postal time)",
+    "hint": "Spot means immediate.",
+    "explanation": "A Spot Delivery Contract implies actual delivery and payment on the same day as the contract or on the next day."
+  },
+  {
+    "id": 1526,
+    "question": "Who has the power to 'Suspend the Business' of a recognized Stock Exchange in an emergency?",
+    "options": [
+      "The Central Government",
+      "The CEO of the Exchange",
+      "The Investor Association",
+      "The Local Court"
+    ],
+    "answer": "The Central Government",
+    "hint": "Drastic power.",
+    "explanation": "Under Section 12 of SCRA, if an emergency arises, the Central Government can suspend the business of a recognized stock exchange (typically for up to 7 days initially)."
+  },
+  {
+    "id": 1527,
+    "question": "When evaluating if an applicant is 'Fit and Proper', the 'Financial Integrity' criteria checks for:",
+    "options": [
+      "High profit margins",
+      "Absence of convictions for economic offences or recovery proceedings",
+      "Ownership of a large building",
+      "High salary of the CEO"
+    ],
+    "answer": "Absence of convictions for economic offences or recovery proceedings",
+    "hint": "Honesty in money matters.",
+    "explanation": "Financial integrity ensures the person is financially sound and has not been involved in financial crimes, defaults, or recovery proceedings."
+  },
+  {
+    "id": 1528,
+    "question": "If an intermediary acts as a 'Designated Authority' in an enquiry, their role is to:",
+    "options": [
+      "Pass the final order",
+      "Conduct the fact-finding process and submit a report/recommendation",
+      "Defend the intermediary",
+      "Audit the accounts"
+    ],
+    "answer": "Conduct the fact-finding process and submit a report/recommendation",
+    "hint": "Investigates and Recommends.",
+    "explanation": "The Designated Authority (DA) conducts the enquiry, gives the intermediary a chance to be heard, and submits a report with recommendations to the Competent Authority."
+  },
+  {
+    "id": 1529,
+    "question": "An intermediary's Code of Conduct requires them to place the 'Interest of the Investor':",
+    "options": [
+      "Below their own interest",
+      "Above their own interest",
+      "At par with their own interest",
+      "Nowhere"
+    ],
+    "answer": "Above their own interest",
+    "hint": "Fiduciary duty.",
+    "explanation": "A fundamental principle of the Code of Conduct is that the investor's interest must always take precedence over the intermediary's own interest."
+  },
+  {
+    "id": 1530,
+    "question": "SEBI will generally NOT accept a request for 'Surrender of Certificate' if:",
+    "options": [
+      "The intermediary has low profits",
+      "The intermediary has pending dues to SEBI or pending enforcement actions",
+      "The intermediary is shifting office",
+      "The intermediary is changing its name"
+    ],
+    "answer": "The intermediary has pending dues to SEBI or pending enforcement actions",
+    "hint": "You can't quit while under investigation.",
+    "explanation": "Surrender is only accepted if the intermediary has a clean slate—no pending dues, no pending investigations, and no outstanding investor grievances."
+  },
+  {
+    "id": 1531,
+    "question": "What happens if a registered intermediary is suspended by SEBI?",
+    "options": [
+      "They can trade but cannot take new clients",
+      "They cannot buy, sell, or deal in securities as an intermediary for the period of suspension",
+      "They must pay a fine and continue",
+      "They must close the company"
+    ],
+    "answer": "They cannot buy, sell, or deal in securities as an intermediary for the period of suspension",
+    "hint": "Total stop.",
+    "explanation": "Suspension effectively pauses their license; they are prohibited from acting as an intermediary during that period."
+  },
+  {
+    "id": 1532,
+    "question": "Intermediaries are required to maintain books of accounts and records for a minimum period of:",
+    "options": [
+      "1 Year",
+      "3 Years",
+      "5 Years",
+      "10 Years"
+    ],
+    "answer": "5 Years",
+    "hint": "Standard alignment with PMLA/SEBI norms.",
+    "explanation": "The general requirement under SEBI regulations (and PMLA) is to preserve records for at least 5 years."
+  },
+  {
+    "id": 1533,
+    "question": "A contractual employee (e.g., an IT support staff from a vendor) who has access to a company's financial results before they are published is considered:",
+    "options": [
+      "An Outsider",
+      "A Connected Person (and thus an Insider)",
+      "A Public Shareholder",
+      "A Regulator"
+    ],
+    "answer": "A Connected Person (and thus an Insider)",
+    "hint": "Access defines the connection.",
+    "explanation": "Any person who is associated with the company (even contractually) and has access to UPSI is a 'Connected Person' and treated as an Insider."
+  },
+  {
+    "id": 1534,
+    "question": "A 'Trading Plan' under Insider Trading regulations must be presented to the Compliance Officer for approval. Once approved, trading can commence only after:",
+    "options": [
+      "1 week",
+      "6 months from the public disclosure of the plan",
+      "1 day",
+      "Immediately"
+    ],
+    "answer": "6 months from the public disclosure of the plan",
+    "hint": "Cool-off period.",
+    "explanation": "To prevent abuse, a trading plan has a mandatory cool-off period of 6 months after public disclosure before any trade can be executed."
+  },
+  {
+    "id": 1535,
+    "question": "What is the threshold for 'Continual Disclosure' by Promoters/Directors/Designated Persons to the company?",
+    "options": [
+      "Any trade",
+      "Trades exceeding ₹10 Lakhs in value in a calendar quarter",
+      "Trades exceeding ₹1 Crore",
+      "Trades exceeding 1% of share capital"
+    ],
+    "answer": "Trades exceeding ₹10 Lakhs in value in a calendar quarter",
+    "hint": "Value based trigger.",
+    "explanation": "Disclosure is required if the value of securities traded, whether in one transaction or a series of transactions over a calendar quarter, aggregates to a traded value in excess of ₹10 Lakhs."
+  },
+  {
+    "id": 1536,
+    "question": "Information is considered 'Published' or 'Generally Available' when:",
+    "options": [
+      "It is discussed in the boardroom",
+      "It is accessible to the public on a non-discriminatory basis (e.g., Stock Exchange website)",
+      "It is sent via email to employees",
+      "It is rumored on a blog"
+    ],
+    "answer": "It is accessible to the public on a non-discriminatory basis (e.g., Stock Exchange website)",
+    "hint": "Equal access.",
+    "explanation": "Information becomes generally available only when it is disseminated on a platform (like the stock exchange) where the public accesses it on a non-discriminatory basis."
+  },
+  {
+    "id": 1537,
+    "question": "In a defense against Insider Trading, if a firm claims a 'Chinese Wall' existed, they must prove:",
+    "options": [
+      "The wall was painted white",
+      "The wall was effective and the 'public' side employee did not have access to the UPSI",
+      "The wall was built by a registered contractor",
+      "The wall was expensive"
+    ],
+    "answer": "The wall was effective and the 'public' side employee did not have access to the UPSI",
+    "hint": "Effectiveness of the barrier.",
+    "explanation": "The defense relies on proving that the information barrier (Chinese Wall) was robust and effectively prevented the leakage of UPSI to the person who traded."
+  },
+  {
+    "id": 1538,
+    "question": "If an 'Informant' voluntarily submits original information about insider trading to SEBI, SEBI guarantees:",
+    "options": [
+      "A job at SEBI",
+      "Confidentiality of the Informant's identity",
+      "Immunity from all laws",
+      "A Nobel prize"
+    ],
+    "answer": "Confidentiality of the Informant's identity",
+    "hint": "Protection.",
+    "explanation": "The regulations mandate that the identity of the informant be held in confidence by SEBI to protect them from retaliation."
+  },
+  {
+    "id": 1539,
+    "question": "A group of traders coordinate to buy a stock to drive the price up ('Pump') and then sell it ('Dump') once other investors enter. This is a violation of:",
+    "options": [
+      "PFUTP Regulations",
+      "ICDR Regulations",
+      "Listing Regulations",
+      "Depositories Act"
+    ],
+    "answer": "PFUTP Regulations",
+    "hint": "Market manipulation.",
+    "explanation": "Pump and Dump is a manipulative practice aimed at defrauding investors, strictly prohibited under the Prohibition of Fraudulent and Unfair Trade Practices (PFUTP) Regulations."
+  },
+  {
+    "id": 1540,
+    "question": "A dealer at a mutual fund knows the fund is buying a large block of Stock X. The dealer buys Stock X for his personal account *before* executing the fund's order. This is called:",
+    "options": [
+      "Tailgating",
+      "Front Running",
+      "Insider Trading",
+      "Scalping"
+    ],
+    "answer": "Front Running",
+    "hint": "Running ahead.",
+    "explanation": "Front Running is the unethical practice of a broker/dealer trading for their own account based on advance knowledge of a client's large pending order."
+  },
+  {
+    "id": 1541,
+    "question": "Which of the following acts is prohibited under PFUTP regarding 'News'?",
+    "options": [
+      "Reading news on TV",
+      "Disseminating information that is false or misleading to induce trading",
+      "Writing a factual blog",
+      "Sharing a SEBI circular"
+    ],
+    "answer": "Disseminating information that is false or misleading to induce trading",
+    "hint": "Fake news.",
+    "explanation": "Spreading false or misleading information to manipulate market sentiment or prices is a fraudulent trade practice."
+  },
+  {
+    "id": 1542,
+    "question": "Circular Trading is primarily done to:",
+    "options": [
+      "Save taxes",
+      "Create artificial volume and liquidity to lure other investors",
+      "Help the poor",
+      "Reduce transaction costs"
+    ],
+    "answer": "Create artificial volume and liquidity to lure other investors",
+    "hint": "Fake activity.",
+    "explanation": "The main goal of circular trading is to create a false appearance of high trading volume, making the stock look liquid and attractive to unsuspecting investors."
+  },
+  {
+    "id": 1543,
+    "question": "Is an intermediary liable if their client commits fraud?",
+    "options": [
+      "Never",
+      "Yes, if they failed in their 'Due Diligence' or aided the fraud",
+      "Yes, always automatically",
+      "Only if they are related"
+    ],
+    "answer": "Yes, if they failed in their 'Due Diligence' or aided the fraud",
+    "hint": "Gatekeeper responsibility.",
+    "explanation": "Intermediaries are gatekeepers. If they fail to exercise due diligence (e.g., ignoring red flags) or knowingly facilitate the client's fraud, they are liable."
+  },
+  {
+    "id": 1544,
+    "question": "The standard of proof required in SEBI proceedings for PFUTP violations is:",
+    "options": [
+      "Beyond reasonable doubt (Criminal Standard)",
+      "Preponderance of probabilities (Civil Standard)",
+      "Absolute certainty",
+      "Suspicion only"
+    ],
+    "answer": "Preponderance of probabilities (Civil Standard)",
+    "hint": "It's a civil/regulatory proceeding, not a criminal trial.",
+    "explanation": "SEBI needs to prove that it is 'more likely than not' (preponderance of probabilities) that the violation occurred, which is a lower burden than criminal law."
+  },
+  {
+    "id": 1545,
+    "question": "In Money Laundering, 'Layering' refers to:",
+    "options": [
+      "Putting money in layers of envelopes",
+      "Moving funds through complex transactions to distance them from the illegal source",
+      "Depositing cash into a bank",
+      "Buying a house"
+    ],
+    "answer": "Moving funds through complex transactions to distance them from the illegal source",
+    "hint": "Obscuring the trail.",
+    "explanation": "Layering is the stage where the money is moved around (wire transfers, shell companies) to confuse the audit trail and hide the criminal origin."
+  },
+  {
+    "id": 1546,
+    "question": "To identify the 'Beneficial Owner' of a Company (under PMLA), the ownership threshold is:",
+    "options": [
+      "10% of shares/capital",
+      "25% of shares/capital (historically, though tightened recently to 10%)",
+      "50% of shares/capital",
+      "5% of shares/capital"
+    ],
+    "answer": "10% of shares/capital",
+    "hint": "The current tighter norm.",
+    "explanation": "The threshold for determining beneficial ownership in a company has been tightened to 10% (from the earlier 25%) under PMLA rules to improve transparency."
+  },
+  {
+    "id": 1547,
+    "question": "How long must an intermediary maintain transaction records under PMLA?",
+    "options": [
+      "2 years",
+      "5 years from the date of transaction",
+      "10 years",
+      "Forever"
+    ],
+    "answer": "5 years from the date of transaction",
+    "hint": "Five years is the standard.",
+    "explanation": "Records of transactions must be maintained for 5 years from the date of the transaction."
+  },
+  {
+    "id": 1548,
+    "question": "A 'Suspicious Transaction Report' (STR) must be filed with FIU-IND within:",
+    "options": [
+      "7 working days of being satisfied that the transaction is suspicious",
+      "30 days",
+      "24 hours",
+      "1 year"
+    ],
+    "answer": "7 working days of being satisfied that the transaction is suspicious",
+    "hint": "One week rule.",
+    "explanation": "The Principal Officer must furnish the STR within 7 working days of arriving at the conclusion that the transaction is suspicious."
+  },
+  {
+    "id": 1549,
+    "question": "Money laundering involves proceeds derived from a 'Scheduled Offence'. A 'Scheduled Offence' is:",
+    "options": [
+      "A traffic violation",
+      "A crime listed in the Schedule to the PMLA (Predicate Offence)",
+      "Any crime in the world",
+      "Only tax evasion"
+    ],
+    "answer": "A crime listed in the Schedule to the PMLA (Predicate Offence)",
+    "hint": "Listed crime.",
+    "explanation": "PMLA applies to money derived from specific crimes listed in the Schedule of the Act (like drug trafficking, corruption, fraud), known as Predicate Offences."
+  },
+  {
+    "id": 1550,
+    "question": "The 'Principal Officer' appointed under PMLA acts as the liaison between:",
+    "options": [
+      "The Intermediary and the Clients",
+      "The Intermediary and FIU-IND",
+      "The Intermediary and SEBI",
+      "The Employees and HR"
+    ],
+    "answer": "The Intermediary and FIU-IND",
+    "hint": "Reporting line.",
+    "explanation": "The Principal Officer is responsible for furnishing information (STRs, CTRs) to the Director, FIU-IND."
+  },
+  {
+    "id": 1551,
+    "question": "Who has the power to provisionally 'Attach' (freeze) property believed to be proceeds of crime under PMLA?",
+    "options": [
+      "SEBI Chairman",
+      "The Director, Enforcement Directorate (ED)",
+      "The Bank Manager",
+      "The Stock Exchange"
+    ],
+    "answer": "The Director, Enforcement Directorate (ED)",
+    "hint": "The enforcement agency.",
+    "explanation": "The Enforcement Directorate (specifically the Director or Deputy Director) has the power to provisionally attach property derived from money laundering."
+  },
+  {
+    "id": 1552,
+    "question": "A KRA (KYC Registration Agency) is planning to outsource its core activity of verifying the 'Proof of Identity' documents to a third-party BPO to save costs. Is this permitted under SEBI regulations?",
+    "options": [
+      "Yes, outsourcing is standard industry practice",
+      "No, core activities like verification of documents cannot be outsourced",
+      "Yes, provided the KRA retains liability",
+      "Yes, if the BPO is also registered with SEBI"
+    ],
+    "answer": "No, core activities like verification of documents cannot be outsourced",
+    "hint": "The regulator prohibits outsourcing the 'judgment' part of the KYC process.",
+    "explanation": "KRA Regulations prohibit the outsourcing of core activities such as verification of documents. While data entry might be outsourced, the actual verification decision must remain with the KRA."
+  },
+  {
+    "id": 1553,
+    "question": "An intermediary uploads a client's KYC data to the KRA system. The KRA finds that the PAN provided is invalid/does not match Income Tax records. What status will the KRA assign to this KYC record?",
+    "options": [
+      "Verified",
+      "On Hold / Rejected",
+      "Pending Processing",
+      "Incomplete"
+    ],
+    "answer": "On Hold / Rejected",
+    "hint": "Invalid core identifiers stop the process immediately.",
+    "explanation": "If the PAN or other critical identifiers are invalid or do not match official databases, the KRA will mark the status as 'On Hold' or 'Rejected', preventing the client from transacting."
+  },
+  {
+    "id": 1554,
+    "question": "An FPI registered under the 'Voluntary Retention Route' (VRR) commits to retain a minimum percentage of its investment in India for a specific period. What is the minimum retention period usually prescribed under VRR?",
+    "options": [
+      "1 year",
+      "3 years",
+      "5 years",
+      "10 years"
+    ],
+    "answer": "3 years",
+    "hint": "VRR is designed to encourage long-term stable debt flows.",
+    "explanation": "Under the Voluntary Retention Route (VRR), FPIs must voluntarily commit to retain a required minimum percentage of their investments in India for a period of 3 years (or as decided by RBI per auction)."
+  },
+  {
+    "id": 1555,
+    "question": "Which of the following changes in an FPI's structure is considered a 'Material Change' requiring immediate intimation to the Designated Depository Participant (DDP)?",
+    "options": [
+      "Change in the back-office software",
+      "Change in jurisdiction of constitution or change in beneficial ownership",
+      "Change in the custodian bank",
+      "Change in the compliance officer's email ID"
+    ],
+    "answer": "Change in jurisdiction of constitution or change in beneficial ownership",
+    "hint": "Material changes alter the risk profile or legal standing of the entity.",
+    "explanation": "A change in jurisdiction, name, or beneficial ownership is a material change that impacts the FPI's registration eligibility and must be reported immediately."
+  },
+  {
+    "id": 1556,
+    "question": "Can a Category II FPI issue 'Participatory Notes' (P-Notes/ODIs)?",
+    "options": [
+      "Yes, freely",
+      "No, only Category I FPIs can issue ODIs",
+      "Yes, but only to other FPIs",
+      "Yes, if they are unregulated funds"
+    ],
+    "answer": "No, only Category I FPIs can issue ODIs",
+    "hint": "ODIs are high-risk instruments regarding beneficial ownership transparency; hence restricted to the safest category.",
+    "explanation": "Only Category I FPIs are permitted to issue Offshore Derivative Instruments (ODIs). Category II FPIs are prohibited from issuing them."
+  },
+  {
+    "id": 1557,
+    "question": "Mr. Roy, an Indian resident, wants to invest in a 'Foreign Currency Account' within India. Under which scheme is this account permitted for residents?",
+    "options": [
+      "NRE Account Scheme",
+      "Exchange Earner's Foreign Currency (EEFC) Account Scheme",
+      "FCNR(B) Scheme",
+      "SNRR Scheme"
+    ],
+    "answer": "Exchange Earner's Foreign Currency (EEFC) Account Scheme",
+    "hint": "This account allows exporters/earners to retain forex earnings without converting to INR.",
+    "explanation": "Residents who earn foreign exchange (like exporters) can open an EEFC account in India to hold their earnings in foreign currency. NRE and FCNR are for Non-Residents."
+  },
+  {
+    "id": 1558,
+    "question": "An Indian company wants to issue 'Rupee Denominated Bonds' (Masala Bonds) overseas. Under FEMA, who bears the currency risk in this instrument?",
+    "options": [
+      "The Indian Issuer",
+      "The Foreign Investor",
+      " The Reserve Bank of India",
+      "The Intermediary Bank"
+    ],
+    "answer": "The Foreign Investor",
+    "hint": "Since the bond is denominated in INR, the payout is fixed in Rupees.",
+    "explanation": "In Masala Bonds, the instrument is denominated in INR. The foreign investor invests in foreign currency but the repayment is linked to the INR value. If INR depreciates, the investor gets fewer Dollars/Euros back; hence the investor bears the currency risk."
+  },
+  {
+    "id": 1559,
+    "question": "A Non-Resident Indian (NRI) inherits a plantation property in India from his father (who was a resident). Is this transaction permitted under FEMA?",
+    "options": [
+      "No, NRIs cannot hold plantation property",
+      "Yes, NRIs can acquire any immovable property by way of inheritance",
+      "Yes, but he must sell it within 1 year",
+      "No, the property vests with the government"
+    ],
+    "answer": "Yes, NRIs can acquire any immovable property by way of inheritance",
+    "hint": "Inheritance is an involuntary acquisition allowed by law.",
+    "explanation": "While NRIs cannot *purchase* agricultural/plantation land, they can *acquire* it through inheritance from a person resident in India."
+  },
+  {
+    "id": 1560,
+    "question": "A resident individual wants to send USD 500 as a gift to a friend in the USA. Under which code/scheme does this remittance fall?",
+    "options": [
+      "LRS - Gift Remittance",
+      "Current Account Transaction - Trade",
+      "Capital Account Transaction - Loan",
+      "External Commercial Borrowing"
+    ],
+    "answer": "LRS - Gift Remittance",
+    "hint": "Small personal transfers fall under the Liberalised Remittance Scheme.",
+    "explanation": "Remittances for gifts and donations by resident individuals fall under the Liberalised Remittance Scheme (LRS) within the overall USD 250,000 limit."
+  },
+  {
+    "id": 1561,
+    "question": "A company is planning an IPO. It enters into an agreement with a Depository. This agreement is:" ,
+    "options": [
+      "Bipartite (Issuer and Depository)",
+      "Tripartite (Issuer, Depository, and RTA)",
+      "Quadripartite (Issuer, Depository, RTA, and SEBI)",
+      "Unilateral"
+    ],
+    "answer": "Tripartite (Issuer, Depository, and RTA)",
+    "hint": "Three parties are needed: the creator of shares, the holder of shares, and the record keeper.",
+    "explanation": "The agreement is typically Tripartite involving the Issuer Company, the Depository, and the Registrar & Transfer Agent (RTA) to coordinate the demat connectivity."
+  },
+  {
+    "id": 1562,
+    "question": "Under the Depositories Act, can a Depository Participant (DP) have a 'Lien' on the securities held in a client's account?",
+    "options": [
+      "Yes, for any debt owed by the client",
+      "No, strictly prohibited",
+      "Yes, but only for outstanding dues related to the depository services",
+      "Yes, if the client verbally agrees"
+    ],
+    "answer": "Yes, but only for outstanding dues related to the depository services",
+    "hint": "The service provider can only claim rights for their own unpaid fees.",
+    "explanation": "A DP can have a lien on the securities in the client's account only to the extent of outstanding charges/fees payable by the client to the DP for depository services."
+  },
+  {
+    "id": 1563,
+    "question": "If an investor loses their slip book (DIS booklet), what is the immediate action required?",
+    "options": [
+      "Close the account",
+      "Inform the DP immediately to stop processing instructions from that series",
+      "Inform the Stock Exchange",
+      "File an FIR with the police only"
+    ],
+    "answer": "Inform the DP immediately to stop processing instructions from that series",
+    "hint": "Prevent unauthorized transfers first.",
+    "explanation": "The investor must immediately inform the DP in writing. The DP will then freeze/cancel the specific serial numbers of the lost DIS booklet to prevent fraud."
+  },
+  {
+    "id": 1564,
+    "question": "Which of the following acts constitutes 'Churning' by a mutual fund distributor?",
+    "options": [
+      "Advising a client to switch from one scheme to another solely to earn fresh commission",
+      "Advising a client to switch from Equity to Debt due to age",
+      "Advising a client to start an SIP",
+      "Advising a client to redeem for a medical emergency"
+    ],
+    "answer": "Advising a client to switch from one scheme to another solely to earn fresh commission",
+    "hint": "Churning is unethical turnover.",
+    "explanation": "Churning refers to the unethical practice of encouraging investors to frequently buy and sell (switch) securities/schemes primarily to generate commissions for the distributor, often eroding the investor's wealth."
+  },
+  {
+    "id": 1565,
+    "question": "A Mutual Fund scheme's 'Unit Capital' is INR 100 Crore. The 'Reserves and Surplus' is INR 20 Crore. The number of units is 10 Crore. What is the NAV?",
+    "options": [
+      "INR 10",
+      "INR 12",
+      "INR 120",
+      "INR 8"
+    ],
+    "answer": "INR 12",
+    "hint": "NAV = (Unit Capital + Reserves)/Number of Units.",
+    "explanation": "Net Assets = Unit Capital + Reserves = 100 + 20 = 120 Crore. NAV = Net Assets / No. of Units = 120 Cr / 10 Cr = INR 12."
+  },
+  {
+    "id": 1566,
+    "question": "Which entity sets the valuation standards for Mutual Fund schemes in India?",
+    "options": [
+      "AMFI - Valuation Committee",
+      "SEBI (Mutual Fund) Regulations and Circulars",
+      "The Stock Exchanges",
+      "The Auditors of the Fund"
+    ],
+    "answer": "SEBI (Mutual Fund) Regulations and Circulars",
+    "hint": "The regulator defines the principles.",
+    "explanation": "SEBI prescribes the valuation norms and principles in the Regulations (Eighth Schedule) and subsequent circulars. AMFI may issue best practice guidelines, but the standards are set by SEBI."
+  },
+  {
+    "id": 1567,
+    "question": "An AMC wishes to act as a 'Investment Manager' for a Portfolio Management Service (PMS) as well. Is this allowed?",
+    "options": [
+      "No, AMCs can only manage Mutual Funds",
+      "Yes, provided there is no conflict of interest and separate records are maintained",
+      "Yes, but they must set up a separate subsidiary",
+      "No, unless the PMS is for foreign clients"
+    ],
+    "answer": "Yes, provided there is no conflict of interest and separate records are maintained",
+    "hint": "Business overlap is allowed with ring-fencing.",
+    "explanation": "An AMC can undertake other business activities like PMS, Investment Advisory, or Management of AIFs, provided these activities do not conflict with the Mutual Fund business and are arm's length."
+  },
+  {
+    "id": 1568,
+    "question": "In the context of Mutual Funds, what is 'Swing Pricing'?",
+    "options": [
+      "Giving discounts on NAV for bulk purchase",
+      "Adjusting the NAV to pass on transaction costs to investors causing large inflows/outflows",
+      "Pricing based on the swing of the stock market index",
+      "Variable exit loads based on time"
+    ],
+    "answer": "Adjusting the NAV to pass on transaction costs to investors causing large inflows/outflows",
+    "hint": "It protects existing investors from the cost of liquidity during stress.",
+    "explanation": "Swing Pricing is a mechanism to adjust the NAV of a scheme to pass on the costs of trading (impact cost, spreads) to the investors entering or exiting the scheme in large volumes, protecting long-term investors."
+  },
+  {
+    "id": 1569,
+    "question": "A 'Gilt Fund' is required to invest minimum what percentage of its assets in Government Securities?",
+    "options": [
+      "65%",
+      "80%",
+      "90%",
+      "100%"
+    ],
+    "answer": "80%",
+    "hint": "The regulatory threshold for most defined categories is 80%.",
+    "explanation": "As per SEBI categorization, a Gilt Fund must invest a minimum of 80% of its total assets in Government Securities (G-secs) across different maturities."
+  },
+  {
+    "id": 1570,
+    "question": "If a Mutual Fund scheme merges with another scheme, what option must be given to the unitholders?",
+    "options": [
+      "To vote on the merger only",
+      "To exit the scheme at prevailing NAV without exit load",
+      "To receive bonus units",
+      "To convert to a closed-ended scheme"
+    ],
+    "answer": "To exit the scheme at prevailing NAV without exit load",
+    "hint": "Merger is a fundamental change.",
+    "explanation": "A merger of schemes is considered a change in fundamental attributes. Unitholders must be provided an option to exit the scheme at the prevailing NAV without any exit load for a period of at least 30 days."
+  },
+  {
+    "id": 1571,
+    "question": "An investor complains that the AMC has not published the 'Annual Report' of the scheme. By when must the AMC publish/dispatch the Annual Report?",
+    "options": [
+      "Within 1 month of financial year end",
+      "Within 3 months of financial year end",
+      "Within 4 months of financial year end",
+      "Within 6 months of financial year end"
+    ],
+    "answer": "Within 4 months of financial year end",
+    "hint": "Auditing takes time, but not half a year.",
+    "explanation": "AMCs must publish or dispatch the scheme Annual Report (or an abridged summary) to unitholders within 4 months from the date of closure of the relevant accounts year."
+  },
+  {
+    "id": 1572,
+    "question": "What is the tax implication if an Equity Mutual Fund is held for 11 months?",
+    "options": [
+      "Long Term Capital Gains (LTCG) tax",
+      "Short Term Capital Gains (STCG) tax at 15% (plus cess)",
+      "Taxed as per slab rate",
+      "Tax free"
+    ],
+    "answer": "Short Term Capital Gains (STCG) tax at 15% (plus cess)",
+    "hint": "Equity holding < 12 months is short term.",
+    "explanation": "For equity-oriented funds, a holding period of less than 12 months is considered Short Term. STCG is taxed at a flat rate of 15% (plus applicable cess/surcharge)."
+  },
+  {
+    "id": 1573,
+    "question": "Can a Mutual Fund invest in 'Repo in Corporate Debt Securities'?",
+    "options": [
+      "No, only G-sec repos allowed",
+      "Yes, subject to RBI and SEBI guidelines",
+      "Yes, but only for liquid funds",
+      "No, it is too risky"
+    ],
+    "answer": "Yes, subject to RBI and SEBI guidelines",
+    "hint": "Corporate bond market development allows this.",
+    "explanation": "Mutual Funds are permitted to participate in Repo transactions in Corporate Debt Securities, subject to strict risk management guidelines and limits prescribed by SEBI."
+  },
+  {
+    "id": 1574,
+    "question": "The Board of Trustees of a Mutual Fund must have what proportion of 'Independent Trustees'?",
+    "options": [
+      "At least 50%",
+      "At least two-thirds (2/3rd)",
+      "At least 75%",
+      "100%"
+    ],
+    "answer": "At least two-thirds (2/3rd)",
+    "hint": "Independence is crucial for governance.",
+    "explanation": "At least two-thirds of the Trustees must be independent persons and not associated with the Sponsor in any manner."
+  },
+  {
+    "id": 1575,
+    "question": "A Category I AIF (Venture Capital Fund) wants to invest 30% of its corpus in a single company. Is this allowed?",
+    "options": [
+      "Yes, the limit is 50%",
+      "No, the maximum concentration limit is 25% of investible funds",
+      "Yes, if the company is a startup",
+      "Yes, with trustee approval"
+    ],
+    "answer": "No, the maximum concentration limit is 25% of investible funds",
+    "hint": "Cat I and II AIFs have a 25% cap per investee company.",
+    "explanation": "Category I and II AIFs cannot invest more than 25% of their investible funds in a single investee company to ensure diversification."
+  },
+  {
+    "id": 1576,
+    "question": "An AIF Manager wants to launch a 'Co-investment Portfolio' through the AIF platform. Who can invest in this?",
+    "options": [
+      "The general public",
+      "Only the investors of the AIF",
+      "Only the Manager's relatives",
+      "Only Foreign Investors"
+    ],
+    "answer": "Only the investors of the AIF",
+    "hint": "Co-investment is a right given to the fund's own Limited Partners (LPs).",
+    "explanation": "Under the new framework for Co-investment by AIF Managers (via a Portfolio Manager structure), the co-investment opportunity is typically offered to the existing investors of the AIF to double down on specific deals."
+  },
+  {
+    "id": 1577,
+    "question": "If a Category II AIF is winding up, and there are pending legal cases regarding one asset. Can the AIF keep the winding up process open indefinitely?",
+    "options": [
+      "Yes, until the case is resolved",
+      "No, it must set aside the disputed asset (liquidate/distribute others) and close the scheme within the tenure + 1 year liquidation period",
+      "Yes, up to 10 years",
+      "No, it must forfeit the asset"
+    ],
+    "answer": "No, it must set aside the disputed asset (liquidate/distribute others) and close the scheme within the tenure + 1 year liquidation period",
+    "hint": "Indefinite extension is not allowed. AIFs must close. Liquidating the remaining portfolio is priority.",
+    "explanation": "The AIF must proceed with winding up. For the disputed asset, it can potentially be side-pocketed or dealt with as per the liquidation norms (1 year liquidation period), but the scheme cannot remain active indefinitely."
+  },
+  {
+    "id": 1578,
+    "question": "Which category of AIF is 'Pass Through' for tax purposes for ALL income streams?",
+    "options": [
+      "Category I only",
+      "Category I and II",
+      "Category III",
+      "None"
+    ],
+    "answer": "Category I and II",
+    "hint": "These categories are investment vehicles, not trading vehicles.",
+    "explanation": "Category I and II AIFs have been granted pass-through status for all income (except business income, which is taxed at the fund level). Category III does not have statutory pass-through status."
+  },
+  {
+    "id": 1579,
+    "question": "What is the minimum tenure of a 'Close-Ended' AIF?",
+    "options": [
+      "1 year",
+      "3 years",
+      "5 years",
+      "7 years"
+    ],
+    "answer": "3 years",
+    "hint": "Illiquid assets need time.",
+    "explanation": "Category I and II AIFs (which are close-ended) must have a minimum tenure of 3 years."
+  },
+  {
+    "id": 1580,
+    "question": "An AIF fails to declare the 'First Close' of the scheme within 12 months of SEBI registration/PPM filing. What is the consequence?",
+    "options": [
+      "It must pay a fine",
+      "It must file a new PPM with SEBI before launching",
+      "It gets an automatic extension",
+      "It is de-registered"
+    ],
+    "answer": "It must file a new PPM with SEBI before launching",
+    "hint": "PPMs have a shelf life.",
+    "explanation": "If the AIF does not achieve first close within 12 months, the PPM is deemed invalid. They must file a fresh PPM with SEBI to launch the scheme again."
+  },
+  {
+    "id": 1581,
+    "question": "A 'Large Value Fund for Accredited Investors' (AIF) has a relaxation. It can extend its tenure beyond 2 years if:",
+    "options": [
+      "The Manager decides",
+      "Approved by two-thirds of the unit holders",
+      "Approved by 100% of the unit holders",
+      "SEBI permits"
+    ],
+    "answer": "Approved by two-thirds of the unit holders",
+    "hint": "Standard AIFs have a hard stop on extensions. Accredited Investor funds are more flexible.",
+    "explanation": "For Large Value Funds for Accredited Investors, the tenure can be extended beyond the standard 2 years if terms are approved by two-thirds of the unit holders (or as per the fund documents which may allow flexible extension)."
+  },
+  {
+    "id": 1582,
+    "question": "Who appoints the 'Investment Committee' of an AIF?",
+    "options": [
+      "The Manager",
+      "The Trustee",
+      "The SEBI",
+      "The Stock Exchange"
+    ],
+    "answer": "The Manager",
+    "hint": "The Manager is responsible for investment decisions.",
+    "explanation": "The Investment Manager constitutes the Investment Committee (IC) to approve investment decisions."
+  },
+  {
+    "id": 1583,
+    "question": "A Category III AIF has an open position in Index Futures. Does this count towards the 'Gross Exposure' limit?",
+    "options": [
+      "No, derivatives are off-balance sheet",
+      "Yes, only the premium paid",
+      "Yes, the notional value of the exposure counts",
+      "Yes, but at 50% value"
+    ],
+    "answer": "Yes, the notional value of the exposure counts",
+    "hint": "Leverage is calculated on total exposure.",
+    "explanation": "For calculating the leverage limit (2x NAV), the gross exposure including the notional value of derivatives is considered."
+  },
+  {
+    "id": 1584,
+    "question": "Which document governs the relationship between the AIF Manager and the AIF Trustee?",
+    "options": [
+      "PPM",
+      "Investment Management Agreement",
+      "Trust Deed",
+      "Subscription Agreement"
+    ],
+    "answer": "Investment Management Agreement",
+    "hint": "It delegates the management power from Trustee to Manager.",
+    "explanation": "The Investment Management Agreement (IMA) is the contract between the Trustee (representing the AIF) and the Manager, defining the Manager's powers, duties, and fees."
+  },
+  {
+    "id": 1585,
+    "question": "An InvIT wants to raise capital via 'Institutional Placement'. What is the minimum number of allottees required?",
+    "options": [
+      "2",
+      "5",
+      "10",
+      "50"
+    ],
+    "answer": "2",
+    "hint": "Institutional placements are private but cannot be single-party deals.",
+    "explanation": "For an Institutional Placement, the minimum number of allottees is 2 (if the issue size is less than INR 250 Cr) or 5 (if larger, though generally >2 is the rule of thumb for smaller placements). *Correction: Under SEBI guidelines for Institutional Placement, minimum allottees is usually 2 or 5 depending on size.* For standard exam purposes: Minimum 2 investors."
+  },
+  {
+    "id": 1586,
+    "question": "The 'Project Manager' of an InvIT is failing to perform O&M duties. Who has the authority to replace the Project Manager?",
+    "options": [
+      "The Stock Exchange",
+      "The Trustee",
+      "The Investment Manager (IM)",
+      "The Sponsor"
+    ],
+    "answer": "The Investment Manager (IM)",
+    "hint": "The IM is the executive head running the show.",
+    "explanation": "The Investment Manager is responsible for appointing and overseeing the Project Manager. Consequently, the IM has the authority to replace the Project Manager for non-performance."
+  },
+  {
+    "id": 1587,
+    "question": "Under SEBI InvIT Regulations, can a 'Public InvIT' convert into a 'Private InvIT'?",
+    "options": [
+      "No, once public always public",
+      "Yes, with unitholder approval and delisting",
+      "Yes, by just notifying SEBI",
+      "Yes, if the asset size falls below 500 Cr"
+    ],
+    "answer": "Yes, with unitholder approval and delisting",
+    "hint": "It involves taking the fund private.",
+    "explanation": "A Public InvIT can be converted to a Private InvIT (and delisted) if proper procedures like unitholder approval and providing an exit opportunity are followed."
+  },
+  {
+    "id": 1588,
+    "question": "For a Public InvIT, the 'Offer Price' is determined by:",
+    "options": [
+      "SEBI",
+      "Fixed Price method only",
+      "Book Building process or Fixed Price method",
+      "The Reserve Bank of India"
+    ],
+    "answer": "Book Building process or Fixed Price method",
+    "hint": "Similar to equity IPOs.",
+    "explanation": "The Offer Price in a public issue of an InvIT can be determined through the Book Building process or the Fixed Price method."
+  },
+  {
+    "id": 1589,
+    "question": "If an InvIT has a 'Credit Rating' of 'AAA', can it borrow more than 49% of asset value?",
+    "options": [
+      "Yes, up to 70%, with unitholder approval",
+      "No, the cap is hard 49%",
+      "Yes, up to 100%",
+      "Yes, with SEBI permission only"
+    ],
+    "answer": "Yes, up to 70%, with unitholder approval",
+    "hint": "High credit quality + Investor consent = Higher leverage allowed.",
+    "explanation": "If the aggregate consolidated borrowing exceeds 49% (up to 70%), the InvIT needs a credit rating of 'AAA' (or equivalent) AND approval of 75% of unitholders."
+  },
+  {
+    "id": 1590,
+    "question": "An InvIT invests in an SPV. The SPV distributes dividends to the InvIT. Is Dividend Distribution Tax (DDT) applicable at the SPV level?",
+    "options": [
+      "Yes, 15%",
+      "Yes, 20%",
+      "No, SPVs are exempt from DDT when paying to InvITs",
+      "Yes, 30%"
+    ],
+    "answer": "No, SPVs are exempt from DDT when paying to InvITs",
+    "hint": "This was a major tax incentive to promote InvITs (DDT was abolished generally, but even prior, this exemption existed).",
+    "explanation": "Dividends distributed by the SPV to the InvIT are exempt from DDT (Dividend Distribution Tax). *Note: DDT is now abolished for all companies, replaced by tax in the hands of the receiver, but the exemption concept remains relevant in the context of the structure's tax efficiency history.*"
+  },
+  {
+    "id": 1591,
+    "question": "The 'Valuer' of an InvIT must have a minimum experience of:",
+    "options": [
+      "2 years",
+      "3 years",
+      "5 years",
+      "10 years"
+    ],
     "answer": "5 years",
-    "hint": "Retention rule",
-    "explanation": "SEBI mandates minimum five-year record retention."
+    "hint": "Valuation of infrastructure is complex.",
+    "explanation": "The Valuer appointed by the InvIT must have a minimum experience of 5 years in valuation of infrastructure assets."
   },
-
   {
-    "id": 81,
-    "question": "Which entity audits Depository Participants?",
-    "options": ["SEBI", "Depository", "Issuer company", "Stock exchange"],
-    "answer": "Depository",
-    "hint": "DP oversight",
-    "explanation": "Depositories conduct inspections and audits of DPs."
+    "id": 1592,
+    "question": "Which of the following is an obligatory disclosure in the InvIT Annual Report?",
+    "options": [
+      "Details of all political donations",
+      "Brief details of all the assets of the InvIT",
+      "Personal details of all unitholders",
+      "Future stock price prediction"
+    ],
+    "answer": "Brief details of all the assets of the InvIT",
+    "hint": "Transparency about the portfolio is key.",
+    "explanation": "The Annual Report must contain brief details of all the assets of the InvIT, project-wise revenue, and status."
   },
-
   {
-    "id": 82,
-    "question": "Which mutual fund entity has fiduciary responsibility towards investors?",
-    "options": ["AMC", "Trustee", "Sponsor", "RTA"],
-    "answer": "Trustee",
-    "hint": "Fiduciary role",
-    "explanation": "Trustees act in fiduciary capacity for investors."
+    "id": 1593,
+    "question": "A REIT manager wants to invest in 'Mortgage Backed Securities' (MBS). Is this allowed?",
+    "options": [
+      "No",
+      "Yes, under the 80% core bucket",
+      "Yes, under the 20% remaining bucket",
+      "Yes, up to 50% of assets"
+    ],
+    "answer": "Yes, under the 20% remaining bucket",
+    "hint": "MBS are financial assets, not physical real estate.",
+    "explanation": "Investment in Mortgage Backed Securities (MBS) is permitted but falls within the 20% bucket (investment in assets other than completed rent-generating properties)."
   },
-
   {
-    "id": 83,
-    "question": "Returns from AIFs are best described as:",
-    "options": ["Guaranteed", "Assured", "Market-linked", "Fixed"],
-    "answer": "Market-linked",
-    "hint": "Risk based",
-    "explanation": "AIF returns depend on market performance."
+    "id": 1594,
+    "question": "A REIT has been listed for 2 years. The Sponsor wants to sell a portion of their holding. The Sponsor currently holds 25%. How much can they sell?",
+    "options": [
+      "They can sell everything",
+      "They can sell 10% (keeping 15%)",
+      "They cannot sell anything until 3 years are over",
+      "They can sell 5%"
+    ],
+    "answer": "They can sell 10% (keeping 15%)",
+    "hint": "Mandatory lock-in is 15% for 3 years.",
+    "explanation": "The Sponsor must hold a minimum of 15% for 3 years. Any holding *above* 15% is locked in only for 1 year. Since 2 years have passed, the Sponsor can sell the excess over 15% (i.e., 10%)."
   },
-
   {
-    "id": 84,
-    "question": "Which regulator has primary authority over REITs and InvITs?",
-    "options": ["RBI", "SEBI", "MCA", "CBDT"],
-    "answer": "SEBI",
-    "hint": "Capital markets",
-    "explanation": "SEBI regulates REITs and InvITs."
+    "id": 1595,
+    "question": "In a REIT, 'Rent Generating Property' means a property where the occupancy certificate has been received and:",
+    "options": [
+      "It is 100% leased",
+      "It has been leased/rented out",
+      "It is at least 50% leased",
+      "Construction is 90% complete"
+    ],
+    "answer": "It has been leased/rented out",
+    "hint": "Occupancy certificate + Lease = Rent Generating.",
+    "explanation": "A completed property is one for which the occupancy certificate is received. To be 'rent generating', it must have been leased/rented out (no specific % occupancy is defined in the basic definition, just that it is generating rent)."
   },
-
   {
-    "id": 85,
-    "question": "A common similarity between mutual funds and REITs is:",
-    "options": ["Assured returns", "Pooling of funds", "Private placement", "High leverage"],
-    "answer": "Pooling of funds",
-    "hint": "Collective investment",
-    "explanation": "Both pool money from multiple investors."
+    "id": 1596,
+    "question": "If a REIT decides to buy a property from the Sponsor, and the value is INR 1000 Crores (significant size). What specific approval is needed?",
+    "options": [
+      "Unitholder approval where Sponsor cannot vote",
+      "Just Board approval",
+      "Trustee approval only",
+      "SEBI approval"
+    ],
+    "answer": "Unitholder approval where Sponsor cannot vote",
+    "hint": "Related Party Transactions (RPT) of high value require minority shareholder protection.",
+    "explanation": "For material Related Party Transactions, approval of unitholders is required, and the related parties (Sponsor) cannot vote on such resolutions."
   },
-
   {
-    "id": 86,
-    "question": "Which entity maintains unitholder records for REITs and InvITs?",
-    "options": ["Investment Manager", "Trustee", "Registrar and Transfer Agent", "SEBI"],
-    "answer": "Registrar and Transfer Agent",
-    "hint": "Record keeping",
-    "explanation": "RTAs maintain investor and transaction records."
+    "id": 1597,
+    "question": "The 'NAV' of a REIT must be disclosed to the stock exchange within how many days of the end of the half-year?",
+    "options": [
+      "7 days",
+      "15 days",
+      "30 days",
+      "45 days"
+    ],
+    "answer": "15 days",
+    "hint": "Timeliness is stricter than full financial results.",
+    "explanation": "The NAV of the REIT must be calculated and disclosed to the stock exchanges within 15 days from the end of the half-year."
   },
-
   {
-    "id": 87,
-    "question": "Royalty payment to a foreign entity under FEMA is classified as:",
-    "options": ["Capital account transaction", "Current account transaction", "Prohibited transaction", "FDI"],
-    "answer": "Current account transaction",
-    "hint": "Income payment",
-    "explanation": "Royalty payments are current account transactions."
+    "id": 1598,
+    "question": "Can a REIT invest in a 'Special Economic Zone' (SEZ)?",
+    "options": [
+      "No, SEZ rules conflict with REITs",
+      "Yes, SEZ properties are permitted assets",
+      "Yes, but only if the government runs it",
+      "No, only domestic tariff areas"
+    ],
+    "answer": "Yes, SEZ properties are permitted assets",
+    "hint": "Many large IT parks (REIT staples) are in SEZs.",
+    "explanation": "REITs can invest in properties located in Special Economic Zones (SEZ) or Technology Parks, provided they are commercial/rent-generating."
   },
-
   {
-    "id": 88,
-    "question": "Which document is the primary disclosure document for AIF investors?",
-    "options": ["SID", "Placement Memorandum", "Trust deed", "Offer document"],
-    "answer": "Placement Memorandum",
-    "hint": "Key disclosures",
-    "explanation": "Placement Memorandum outlines strategy, risks and fees."
+    "id": 1599,
+    "question": "A REIT fails to invest 80% of its assets in completed properties. The auditor flags this. What is the cure period?",
+    "options": [
+      "There is no cure period; it is a violation",
+      "3 months",
+      "6 months to 1 year (typically rectified by next valuation)",
+      "3 years"
+    ],
+    "answer": "6 months to 1 year (typically rectified by next valuation)",
+    "hint": "Breaches must be rectified, usually by the next reporting cycle.",
+    "explanation": "If the investment conditions (80:20) are breached, the Manager must regularize the position, typically within 6 months or by the next valuation cycle, failing which penal provisions apply."
   },
-
   {
-    "id": 89,
-    "question": "SEBI’s investor protection mechanism works mainly through:",
-    "options": ["Return guarantees", "Disclosure and regulation", "Market intervention", "Price control"],
-    "answer": "Disclosure and regulation",
-    "hint": "Transparency",
-    "explanation": "SEBI relies on regulation and disclosures to protect investors."
-  },
-
-  {
-    "id": 90,
-    "question": "Listing of InvIT and REIT units ensures:",
-    "options": ["Higher returns", "Lower taxes", "Liquidity and price discovery", "No risk"],
-    "answer": "Liquidity and price discovery",
-    "hint": "Market access",
-    "explanation": "Listing enables trading and fair valuation."
-  },
-
-  {
-    "id": 91,
-    "question": "Which entity ensures segregation of mutual fund assets from AMC assets?",
-    "options": ["Trustee", "Custodian", "RTA", "Sponsor"],
-    "answer": "Custodian",
-    "hint": "Asset safety",
-    "explanation": "Custodians hold assets separately from AMC."
-  },
-
-  {
-    "id": 92,
-    "question": "Penalties under FEMA are primarily:",
-    "options": ["Criminal", "Civil monetary", "Imprisonment-based", "SEBI-imposed only"],
-    "answer": "Civil monetary",
-    "hint": "Decriminalised",
-    "explanation": "FEMA violations attract monetary penalties."
-  },
-
-  {
-    "id": 93,
-    "question": "Which investment vehicle is MOST suitable for income-focused conservative investors?",
-    "options": ["Small-cap MF", "Category III AIF", "REIT", "Sectoral equity fund"],
-    "answer": "REIT",
-    "hint": "Stable income",
-    "explanation": "REITs provide relatively predictable income streams."
-  },
-
-  {
-    "id": 94,
-    "question": "If an AMC fails to resolve an investor complaint, the next level is:",
-    "options": ["RBI", "SEBI SCORES", "Stock exchange", "Court"],
-    "answer": "SEBI SCORES",
-    "hint": "Escalation",
-    "explanation": "Unresolved complaints are escalated through SEBI SCORES."
-  },
-
-  {
-    "id": 95,
-    "question": "Which regulation governs REITs in India?",
-    "options": ["SEBI AIF Regulations", "SEBI MF Regulations", "SEBI REIT Regulations, 2014", "Companies Act"],
-    "answer": "SEBI REIT Regulations, 2014",
-    "hint": "REIT framework",
-    "explanation": "REITs are governed by SEBI (REIT) Regulations, 2014."
-  },
-
-  {
-    "id": 96,
-    "question": "AIF investments are typically unsuitable for:",
-    "options": ["HNIs", "Institutional investors", "Retail investors with low risk appetite", "Family offices"],
-    "answer": "Retail investors with low risk appetite",
-    "hint": "Risk suitability",
-    "explanation": "AIFs involve higher risk and complexity."
-  },
-
-  {
-    "id": 97,
-    "question": "Which principle ensures KYC data is not misused?",
-    "options": ["Public access", "Confidentiality", "Free portability", "Open disclosure"],
-    "answer": "Confidentiality",
-    "hint": "Data protection",
-    "explanation": "Confidential handling of KYC data is mandatory."
-  },
-
-  {
-    "id": 98,
-    "question": "InvIT performance is most sensitive to:",
-    "options": ["Equity market volatility", "Infrastructure usage and tariffs", "Currency movements", "Interest income"],
-    "answer": "Infrastructure usage and tariffs",
-    "hint": "Revenue driver",
-    "explanation": "Cash flows depend on asset usage and tariff structures."
-  },
-
-  {
-    "id": 99,
-    "question": "Frozen demat accounts can be reactivated after:",
-    "options": ["Automatic time lapse", "Fresh KYC compliance", "Court intervention", "SEBI approval"],
-    "answer": "Fresh KYC compliance",
-    "hint": "Compliance fix",
-    "explanation": "Accounts are unfrozen once KYC deficiencies are resolved."
-  },
-
-  {
-    "id": 100,
-    "question": "Across all SEBI-regulated collective investment products, the central objective is:",
-    "options": ["Maximising returns", "Market deepening", "Investor protection and transparency", "Tax efficiency"],
-    "answer": "Investor protection and transparency",
-    "hint": "SEBI mandate",
-    "explanation": "SEBI’s core mandate is to protect investors and ensure fair markets."
+    "id": 1600,
+    "question": "Which of the following is NOT a duty of the REIT Trustee?",
+    "options": [
+      "Ensuring assets are held in trust",
+      "Reviewing the Net Asset Value (NAV) calculation",
+      "Taking day-to-day investment decisions",
+      "Overseeing the activities of the Manager"
+    ],
+    "answer": "Taking day-to-day investment decisions",
+    "hint": "Trustees oversee; Managers manage.",
+    "explanation": "The Trustee monitors and oversees. The 'Investment Manager' is responsible for taking day-to-day investment decisions."
   }
 ]
- 

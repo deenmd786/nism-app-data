@@ -1,420 +1,1315 @@
 [
-  {"id":2101,"question":"Foreign exchange refers to:","options":["Domestic money","Foreign currency transactions","Bank deposits","Gold trading"],"answer":"Foreign currency transactions","hint":"Currency exchange","explanation":"Forex involves buying and selling of foreign currencies."},
-  {"id":2102,"question":"Which institution manages India's foreign reserves?","options":["SEBI","RBI","NSE","Ministry of Finance"],"answer":"RBI","hint":"Central bank","explanation":"RBI manages and maintains foreign reserves of India."},
-  {"id":2103,"question":"Which is a convertible currency?","options":["INR","USD","Rupee","None"],"answer":"USD","hint":"Freely exchangeable","explanation":"USD is freely convertible in international markets."},
-  {"id":2104,"question":"Forex market is:","options":["Centralized","Decentralized","Local","Government run"],"answer":"Decentralized","hint":"No single exchange","explanation":"Forex has no single central exchange."},
-  {"id":2105,"question":"Spot rate refers to:","options":["Future rate","Current rate","Bank rate","Interest rate"],"answer":"Current rate","hint":"Today’s rate","explanation":"Spot rate is the current market exchange rate."},
-  {"id":2106,"question":"If INR weakens, it is called:","options":["Appreciation","Depreciation","Stagnation","Stability"],"answer":"Depreciation","hint":"Lower value","explanation":"Depreciation means fall in currency value."},
-  {"id":2107,"question":"Which participant needs forex for imports?","options":["Exporter","Importer","Investor","Broker"],"answer":"Importer","hint":"Buying foreign goods","explanation":"Importers need foreign currency to pay for imports."},
-  {"id":2108,"question":"Exchange rate is determined by:","options":["RBI only","Market forces","SEBI","Banks only"],"answer":"Market forces","hint":"Demand-supply","explanation":"Rates move based on demand and supply of currency."},
-  {"id":2109,"question":"Forex is mainly used for:","options":["Speculation only","Risk management and trade","Fixed deposits","Insurance"],"answer":"Risk management and trade","hint":"Business use","explanation":"Mainly used for international trade and hedging."},
-  {"id":2110,"question":"Which market works 24 hours?","options":["Stock market","Forex market","Bond market","Commodity market"],"answer":"Forex market","hint":"Global trading","explanation":"Forex operates across global time zones."},
-
-  {"id":2201,"question":"Forward contract is an agreement for:","options":["Today","Future","Past","Never"],"answer":"Future","hint":"Pre-agreed","explanation":"Forwards are settled at a future date."},
-  {"id":2202,"question":"Forwards are traded in:","options":["Exchange","OTC","Both","None"],"answer":"OTC","hint":"Customized","explanation":"Forwards are over-the-counter contracts."},
-  {"id":2203,"question":"Who mainly uses forwards?","options":["Exporters","Doctors","Students","Engineers"],"answer":"Exporters","hint":"Trade risk","explanation":"Exporters hedge currency risk using forwards."},
-  {"id":2204,"question":"Main benefit of derivatives is:","options":["Gambling","Hedging","Saving","Banking"],"answer":"Hedging","hint":"Risk control","explanation":"Derivatives help manage price risk."},
-  {"id":2205,"question":"Forward contracts are:","options":["Standardized","Customized","Free","Daily"],"answer":"Customized","hint":"Flexible","explanation":"Terms are negotiated between parties."},
-
-  {"id":2301,"question":"Currency futures are traded on:","options":["NSE","BSE","MCX","All of the above"],"answer":"All of the above","hint":"Indian exchanges","explanation":"All major exchanges offer currency futures."},
-  {"id":2302,"question":"Futures are:","options":["Customized","Standardized","Free","Optional"],"answer":"Standardized","hint":"Exchange rules","explanation":"Contract terms are fixed by exchange."},
-  {"id":2303,"question":"Who guarantees settlement in futures?","options":["Trader","Clearing house","Bank","SEBI"],"answer":"Clearing house","hint":"Risk manager","explanation":"Clearing house reduces counterparty risk."},
-  {"id":2304,"question":"Daily settlement is called:","options":["Expiry","MTM","Delivery","Forward"],"answer":"MTM","hint":"Mark-to-market","explanation":"Daily profit/loss adjustment."},
-  {"id":2305,"question":"Margin acts as:","options":["Loan","Security deposit","Tax","Interest"],"answer":"Security deposit","hint":"Risk cover","explanation":"Margin protects against default."},
-  {"id":2306,"question":"Lot size is decided by:","options":["Trader","Exchange","RBI","Bank"],"answer":"Exchange","hint":"Fixed quantity","explanation":"Exchange defines contract lot size."},
-  {"id":2307,"question":"If INR falls, exporter:","options":["Gains","Loses","No effect","Depends"],"answer":"Gains","hint":"More rupees","explanation":"Weak rupee benefits exporters."},
-  {"id":2308,"question":"If INR rises, importer:","options":["Gains","Loses","No effect","Depends"],"answer":"Gains","hint":"Pays less","explanation":"Strong rupee helps importers."},
-  {"id":2309,"question":"Expiry of most contracts is:","options":["Weekly","Monthly","Yearly","Daily"],"answer":"Monthly","hint":"Last Thursday","explanation":"Most currency futures expire monthly."},
-  {"id":2310,"question":"Tick size means:","options":["Lot size","Smallest price change","Margin","Expiry"],"answer":"Smallest price change","hint":"Minimum movement","explanation":"Minimum allowed price fluctuation."},
-  {"id":2311,"question":"Long means:","options":["Buy","Sell","Deposit","Withdraw"],"answer":"Buy","hint":"Expect rise","explanation":"Long position is buying."},
-  {"id":2312,"question":"Short means:","options":["Buy","Sell","Hold","Save"],"answer":"Sell","hint":"Expect fall","explanation":"Short position is selling."},
-  {"id":2313,"question":"If price rises, long position:","options":["Gains","Loses","No effect","Zero"],"answer":"Gains","hint":"Bought earlier","explanation":"Long benefits from price rise."},
-  {"id":2314,"question":"If price falls, short position:","options":["Gains","Loses","No effect","Zero"],"answer":"Gains","hint":"Sold earlier","explanation":"Short benefits from price fall."},
-  {"id":2315,"question":"Futures are mostly:","options":["Physically settled","Cash settled","Gold settled","Barter"],"answer":"Cash settled","hint":"No delivery","explanation":"Most contracts are cash settled."},
-  {"id":2316,"question":"Final settlement price is given by:","options":["Trader","Exchange","Bank","RBI"],"answer":"Exchange","hint":"Official rate","explanation":"Exchange declares final price."},
-  {"id":2317,"question":"Futures are used for:","options":["Cooking","Hedging","Travel","Shopping"],"answer":"Hedging","hint":"Risk control","explanation":"Used to manage currency risk."},
-  {"id":2318,"question":"Most common pair in India is:","options":["USD/INR","EUR/GBP","AUD/JPY","CHF/CAD"],"answer":"USD/INR","hint":"Popular","explanation":"Widely traded pair in India."},
-  {"id":2319,"question":"Initial margin is paid:","options":["At start","At expiry","After loss","Never"],"answer":"At start","hint":"Before trading","explanation":"Paid before entering contract."},
-  {"id":2320,"question":"Maintenance margin is:","options":["Higher","Lower","Same","Zero"],"answer":"Lower","hint":"Minimum level","explanation":"Lower than initial margin."},
-
-  {"id":2401,"question":"Option gives buyer a:","options":["Right","Obligation","Penalty","Loan"],"answer":"Right","hint":"Not compulsory","explanation":"Options give right, not obligation."},
-  {"id":2402,"question":"Call option is right to:","options":["Buy","Sell","Borrow","Deposit"],"answer":"Buy","hint":"Price rise","explanation":"Call allows buying at strike price."},
-  {"id":2403,"question":"Put option is right to:","options":["Buy","Sell","Borrow","Deposit"],"answer":"Sell","hint":"Price fall","explanation":"Put allows selling at strike price."},
-  {"id":2404,"question":"Option buyer pays:","options":["Margin","Premium","Tax","Interest"],"answer":"Premium","hint":"Cost","explanation":"Premium is price of option."},
-  {"id":2405,"question":"Option seller is called:","options":["Holder","Writer","Trader","Buyer"],"answer":"Writer","hint":"Creates option","explanation":"Seller writes the option."},
-  {"id":2406,"question":"Strike price is:","options":["Market price","Fixed price","Future price","Bank rate"],"answer":"Fixed price","hint":"Agreed price","explanation":"Predetermined price."},
-  {"id":2407,"question":"In-the-money means:","options":["Profit","Loss","No value","Zero"],"answer":"Profit","hint":"Favorable","explanation":"Option has intrinsic value."},
-  {"id":2408,"question":"Out-of-the-money means:","options":["Profit","Loss","No value","Guaranteed"],"answer":"No value","hint":"Unfavorable","explanation":"No intrinsic value."},
-  {"id":2409,"question":"European option is exercised:","options":["Anytime","Only at expiry","Daily","Weekly"],"answer":"Only at expiry","hint":"Expiry only","explanation":"Exercise only on expiry date."},
-  {"id":2410,"question":"American option is exercised:","options":["Only at expiry","Anytime before expiry","After expiry","Never"],"answer":"Anytime before expiry","hint":"Flexible","explanation":"More flexible type."},
-  {"id":2411,"question":"Who gains from call when price rises?","options":["Buyer","Seller","Bank","Exchange"],"answer":"Buyer","hint":"Right to buy","explanation":"Call buyer benefits."},
-  {"id":2412,"question":"Who gains from put when price falls?","options":["Buyer","Seller","Bank","Exchange"],"answer":"Buyer","hint":"Right to sell","explanation":"Put buyer benefits."},
-  {"id":2413,"question":"Maximum loss of option buyer is:","options":["Unlimited","Limited to premium","Zero","Double"],"answer":"Limited to premium","hint":"Fixed loss","explanation":"Buyer loses only premium."},
-  {"id":2414,"question":"Maximum profit of option buyer is:","options":["Limited","Unlimited","Zero","Fixed"],"answer":"Unlimited","hint":"No cap","explanation":"Profit can be very high."},
-  {"id":2415,"question":"Option premium depends on:","options":["Time","Volatility","Interest rate","All of the above"],"answer":"All of the above","hint":"Pricing factors","explanation":"Many factors affect premium."},
-  {"id":2416,"question":"Higher volatility makes premium:","options":["Lower","Higher","Zero","Fixed"],"answer":"Higher","hint":"More risk","explanation":"Risk increases option price."},
-  {"id":2417,"question":"Expiry date is:","options":["Start","Last date","Middle","Random"],"answer":"Last date","hint":"End","explanation":"Final date of contract."},
-  {"id":2418,"question":"Options are traded on:","options":["Exchange","Bank","RBI","Company"],"answer":"Exchange","hint":"Marketplace","explanation":"Currency options are exchange traded."},
-  {"id":2419,"question":"If premium paid, buyer is:","options":["Obligated","Not obligated","Forced","Banned"],"answer":"Not obligated","hint":"Right only","explanation":"Buyer is not forced to act."},
-  {"id":2420,"question":"Main use of currency options is:","options":["Speculation","Hedging","Gambling","Saving"],"answer":"Hedging","hint":"Risk control","explanation":"Options help manage currency risk."},
   {
-    "id": 2501,
-    "question": "If USD/INR rises, who generally benefits?",
-    "options": ["Exporter", "Importer", "SEBI", "RBI"],
-    "answer": "Exporter",
-    "hint": "Receives dollars.",
-    "explanation": "Exporters gain when dollar strengthens against rupee."
+    "id": 1201,
+    "question": "If a transaction is agreed upon today (T) and the settlement takes place on the next working day (T+1), this settlement is known as:",
+    "options": [
+      "Cash / Ready",
+      "Tom (Tomorrow)",
+      "Spot",
+      "Forward"
+    ],
+    "answer": "Tom (Tomorrow)",
+    "hint": "Think of the day after today.",
+    "explanation": "In FX markets, T+0 is Cash/Ready, T+1 is TOM (Tomorrow), and T+2 is Spot."
   },
   {
-    "id": 2502,
-    "question": "A hedge is taken to:",
-    "options": ["Reduce risk", "Increase risk", "Avoid tax", "Earn fixed interest"],
-    "answer": "Reduce risk",
-    "hint": "Risk management.",
-    "explanation": "Hedging protects against adverse price movement."
+    "id": 1202,
+    "question": "Which currency quotation method is standard in India for USD/INR?",
+    "options": [
+      "American Terms",
+      "European Terms",
+      "Indirect Quote",
+      "Cross Rate"
+    ],
+    "answer": "European Terms",
+    "hint": "Variable units of domestic currency per fixed unit of foreign currency.",
+    "explanation": "Direct quotes (1 Unit of Foreign Currency = X Units of Domestic Currency) are often referred to as European Terms in the interbank market, distinguishing them from American Terms (1 Unit of Domestic = X Foreign)."
   },
   {
-    "id": 2503,
-    "question": "Importer expecting rupee depreciation should:",
-    "options": ["Buy USD futures", "Sell USD futures", "Buy shares", "Do nothing"],
-    "answer": "Buy USD futures",
-    "hint": "Lock future rate.",
-    "explanation": "Buying futures helps importer fix dollar cost."
+    "id": 1203,
+    "question": "The ISO 4217 currency code for the Great Britain Pound is:",
+    "options": [
+      "GBP",
+      "UKP",
+      "STG",
+      "LBR"
+    ],
+    "answer": "GBP",
+    "hint": "Initials of Great Britain + Pound.",
+    "explanation": "The standard ISO code for the British Pound Sterling is GBP."
   },
   {
-    "id": 2504,
-    "question": "Speculators mainly:",
-    "options": ["Take risk for profit", "Avoid risk", "Only hedge", "Only invest long term"],
-    "answer": "Take risk for profit",
-    "hint": "Profit motive.",
-    "explanation": "Speculators trade to gain from price changes."
+    "id": 1204,
+    "question": "In the USD/INR pair, USD is the ______ and INR is the ______.",
+    "options": [
+      "Base Currency; Terms Currency",
+      "Terms Currency; Base Currency",
+      "Fixed Currency; Pegged Currency",
+      "Variable Currency; Base Currency"
+    ],
+    "answer": "Base Currency; Terms Currency",
+    "hint": "The first currency is the one being bought/sold; the second is the price.",
+    "explanation": "In a currency pair (e.g., USD/INR), the first currency (USD) is the Base Currency (fixed at 1 unit), and the second (INR) is the Terms or Quote Currency."
   },
   {
-    "id": 2505,
-    "question": "Arbitrage profit arises from:",
-    "options": ["Price difference", "High risk", "Long term holding", "Dividend"],
-    "answer": "Price difference",
-    "hint": "Market mismatch.",
-    "explanation": "Arbitrage exploits mispricing between markets."
+    "id": 1205,
+    "question": "Which of the following creates a demand for foreign currency in India?",
+    "options": [
+      "Exports of IT services",
+      "Foreign Direct Investment inflows",
+      "Imports of Crude Oil",
+      "Remittances from NRIs"
+    ],
+    "answer": "Imports of Crude Oil",
+    "hint": "Money leaving the country.",
+    "explanation": "Importers need to pay for goods in foreign currency (e.g., USD), creating demand for USD and supply of INR. Exports and FDI create supply of foreign currency."
   },
   {
-    "id": 2506,
-    "question": "Cross currency pair example is:",
-    "options": ["EUR/USD", "USD/INR", "INR/INR", "RBI/INR"],
-    "answer": "EUR/USD",
-    "hint": "No INR involved.",
-    "explanation": "Cross currency pairs exclude INR."
+    "id": 1206,
+    "question": "The RBI Reference Rate is released daily around:",
+    "options": [
+      "9:00 AM",
+      "1:30 PM",
+      "3:30 PM",
+      "5:00 PM"
+    ],
+    "answer": "1:30 PM",
+    "hint": "It is released midday based on select bank quotes.",
+    "explanation": "The Financial Benchmarks India Pvt Ltd (FBIL) announces the RBI Reference Rate around 1:30 PM IST on working days."
   },
   {
-    "id": 2507,
-    "question": "Long hedge means:",
-    "options": ["Buy futures", "Sell futures", "Hold cash", "Avoid trade"],
-    "answer": "Buy futures",
-    "hint": "Lock cost.",
-    "explanation": "Used when price expected to rise."
+    "id": 1207,
+    "question": "If GBP/USD = 1.3000 and USD/JPY = 110.00, calculate GBP/JPY.",
+    "options": [
+      "143.00",
+      "84.61",
+      "111.30",
+      "1430.00"
+    ],
+    "answer": "143.00",
+    "hint": "Multiply the two rates to cancel out USD.",
+    "explanation": "GBP/JPY = (GBP/USD) * (USD/JPY) = 1.3000 * 110.00 = 143.00."
   },
   {
-    "id": 2508,
-    "question": "Short hedge means:",
-    "options": ["Sell futures", "Buy futures", "Hold cash", "Cancel trade"],
-    "answer": "Sell futures",
-    "hint": "Lock revenue.",
-    "explanation": "Used when price expected to fall."
+    "id": 1208,
+    "question": "Who are the major 'Market Makers' in the Indian forex market?",
+    "options": [
+      "Authorized Dealers (Banks)",
+      "Retail Investors",
+      "Money Changers",
+      "Exporters"
+    ],
+    "answer": "Authorized Dealers (Banks)",
+    "hint": "They provide the two-way quotes.",
+    "explanation": "Authorized Dealers (mostly Commercial Banks) act as market makers by providing two-way bid/ask quotes to clients and other banks."
   },
   {
-    "id": 2509,
-    "question": "Basis risk exists because:",
-    "options": ["Spot and futures may not move equally", "Only spot moves", "Only futures move", "No trading"],
-    "answer": "Spot and futures may not move equally",
-    "hint": "Imperfect hedge.",
-    "explanation": "Difference in movement creates basis risk."
+    "id": 1209,
+    "question": "When a currency is 'Pegged', it means:",
+    "options": [
+      "Its value is determined by market forces",
+      "Its value is fixed against a major currency or basket",
+      "It creates high volatility",
+      "It is a cryptocurrency"
+    ],
+    "answer": "Its value is fixed against a major currency or basket",
+    "hint": "Like the HKD to USD.",
+    "explanation": "A pegged exchange rate is a regime where the currency's value is fixed or tied to another major currency (like USD) or a basket of currencies."
   },
   {
-    "id": 2510,
-    "question": "Currency futures are:",
-    "options": ["Standardized contracts", "Custom contracts", "Only bank products", "Illegal"],
-    "answer": "Standardized contracts",
-    "hint": "Exchange traded.",
-    "explanation": "Exchanges define uniform contract terms."
+    "id": 1210,
+    "question": "If inflation in India is 6% and in the US is 2%, according to Purchasing Power Parity (PPP), the INR should:",
+    "options": [
+      "Appreciate by 4%",
+      "Depreciate by 4%",
+      "Remain constant",
+      "Depreciate by 8%"
+    ],
+    "answer": "Depreciate by 4%",
+    "hint": "Higher inflation erodes currency value.",
+    "explanation": "PPP suggests that the currency with higher inflation should depreciate by the differential (6% - 2% = 4%) to maintain parity in real purchasing power."
   },
   {
-    "id": 2601,
-    "question": "ETCD means:",
-    "options": ["Exchange Traded Currency Derivatives", "Equity Traded Currency Derivatives", "Electronic Trading Currency", "None"],
-    "answer": "Exchange Traded Currency Derivatives",
-    "hint": "Full form.",
-    "explanation": "Currency derivatives traded on exchanges."
+    "id": 1211,
+    "question": "Which derivative contract allows a user to lock in an exchange rate for a future date but is NOT traded on an exchange?",
+    "options": [
+      "Currency Futures",
+      "Currency Options (NSE)",
+      "Forward Contract",
+      "ETF"
+    ],
+    "answer": "Forward Contract",
+    "hint": "It is an OTC product.",
+    "explanation": "Forward contracts are Over-The-Counter (OTC) customized agreements between a bank and a client to exchange currency at a future date."
   },
   {
-    "id": 2602,
-    "question": "Trading in ETCD is:",
-    "options": ["Screen based", "Floor based", "Bank based", "Manual"],
-    "answer": "Screen based",
-    "hint": "Electronic.",
-    "explanation": "Trades are executed electronically."
+    "id": 1212,
+    "question": "The difference between the Spot Rate and the Forward Rate is primarily determined by:",
+    "options": [
+      "Supply and Demand of goods",
+      "Interest Rate Differential between the two currencies",
+      "Stock market performance",
+      "Gold prices"
+    ],
+    "answer": "Interest Rate Differential between the two currencies",
+    "hint": "Interest Rate Parity principle.",
+    "explanation": "According to Interest Rate Parity, the forward premium/discount is mathematically determined by the difference in interest rates of the two currencies involved."
   },
   {
-    "id": 2603,
-    "question": "Lot size is decided by:",
-    "options": ["Exchange", "Trader", "Broker", "Bank"],
-    "answer": "Exchange",
-    "hint": "Contract terms.",
-    "explanation": "Exchange specifies contract size."
+    "id": 1213,
+    "question": "If the 6-month forward premium is 3.00% annualized and the spot rate is 80.00, what is the approximate 6-month forward rate?",
+    "options": [
+      "81.20",
+      "82.40",
+      "80.24",
+      "83.00"
+    ],
+    "answer": "81.20",
+    "hint": "Premium for 6 months is half the annual rate.",
+    "explanation": "Annualized premium is 3%. For 6 months, the premium is roughly 1.5%. 1.5% of 80.00 is 1.20. Forward Rate = 80.00 + 1.20 = 81.20."
   },
   {
-    "id": 2604,
-    "question": "Market order gives priority to:",
-    "options": ["Speed", "Price", "Both", "None"],
-    "answer": "Speed",
-    "hint": "Immediate execution.",
-    "explanation": "Executes at best available price."
+    "id": 1214,
+    "question": "A 'Swap' transaction in the forex market is best described as:",
+    "options": [
+      "A single outright purchase of currency",
+      "A simultaneous purchase and sale of identical amounts of currency for different value dates",
+      "Exchanging currency for gold",
+      "A loan from the central bank"
+    ],
+    "answer": "A simultaneous purchase and sale of identical amounts of currency for different value dates",
+    "hint": "It combines a Spot and a Forward leg.",
+    "explanation": "An FX Swap involves two legs: buying a currency on one date (e.g., Spot) and selling it back on another date (e.g., Forward) to manage liquidity."
   },
   {
-    "id": 2605,
-    "question": "Limit order gives priority to:",
-    "options": ["Price", "Speed", "Broker", "Bank"],
-    "answer": "Price",
-    "hint": "Fixed rate.",
-    "explanation": "Executes only at specified price."
+    "id": 1215,
+    "question": "Why are Non-Deliverable Forwards (NDFs) settled in US Dollars rather than the local currency?",
+    "options": [
+      "Because the local currency is not fully convertible",
+      "Because USD is cheaper to print",
+      "Because local banks do not allow it",
+      "To avoid taxes"
+    ],
+    "answer": "Because the local currency is not fully convertible",
+    "hint": "Offshore markets cannot access onshore currency settlement.",
+    "explanation": "NDFs exist for currencies with capital controls (like INR, CNY). Since the offshore counterparties cannot settle in INR, the net profit/loss is settled in a hard currency like USD."
   },
   {
-    "id": 2606,
-    "question": "IOC means:",
-    "options": ["Immediate or Cancel", "Input or Cancel", "Immediate Only Contract", "None"],
-    "answer": "Immediate or Cancel",
-    "hint": "Order type.",
-    "explanation": "Order executes immediately or gets canceled."
+    "id": 1216,
+    "question": "Standardized contract size, specific expiry dates, and centralized clearing are features of:",
+    "options": [
+      "Forward Contracts",
+      "Exchange Traded Currency Futures",
+      "Interbank Spot Market",
+      "OTC Swaps"
+    ],
+    "answer": "Exchange Traded Currency Futures",
+    "hint": "These features eliminate counterparty risk and standardize trading.",
+    "explanation": "Exchange Traded Futures are standardized in terms of size and expiry to facilitate liquidity and trading on an exchange, unlike customized OTC forwards."
   },
   {
-    "id": 2607,
-    "question": "Open interest increases when:",
-    "options": ["New positions created", "Positions closed", "No trading", "Only settlement"],
-    "answer": "New positions created",
-    "hint": "Fresh contracts.",
-    "explanation": "OI rises with new contracts."
+    "id": 1217,
+    "question": "An investor is Long 10 lots of USD/INR futures at 82.50. The price drops to 82.40. What is the impact on his margin?",
+    "options": [
+      "Margin is credited",
+      "Margin is debited (Mark-to-Market Loss)",
+      "No impact until expiry",
+      "He receives a bonus"
+    ],
+    "answer": "Margin is debited (Mark-to-Market Loss)",
+    "hint": "Long position loses when price falls.",
+    "explanation": "Since the price fell, the Long position incurs a loss. This Mark-to-Market (MTM) loss is immediately debited from the margin account."
   },
   {
-    "id": 2608,
-    "question": "Open interest decreases when:",
-    "options": ["Positions squared off", "New trades", "More buying", "More selling"],
-    "answer": "Positions squared off",
-    "hint": "Closing positions.",
-    "explanation": "OI falls when contracts are closed."
+    "id": 1218,
+    "question": "The 'Initial Margin' requirement is calculated using which statistical method?",
+    "options": [
+      "Value at Risk (VaR) / SPAN",
+      "Moving Averages",
+      "Black-Scholes Model",
+      "Fibonacci Retracement"
+    ],
+    "answer": "Value at Risk (VaR) / SPAN",
+    "hint": "Standard Portfolio Analysis of Risk.",
+    "explanation": "Initial margins are calculated using the SPAN (Standard Portfolio Analysis of Risk) system, which is based on Value at Risk (VaR) methodology."
   },
   {
-    "id": 2609,
-    "question": "Closing price is:",
-    "options": ["Last traded price", "Highest price", "Lowest price", "Average price"],
-    "answer": "Last traded price",
-    "hint": "End of session.",
-    "explanation": "Final price of trading day."
+    "id": 1219,
+    "question": "Arbitrage using 'Cash and Carry' involves:",
+    "options": [
+      "Buying Spot, Selling Future",
+      "Selling Spot, Buying Future",
+      "Buying Call, Selling Put",
+      "Buying Spot only"
+    ],
+    "answer": "Buying Spot, Selling Future",
+    "hint": "You 'Carry' the asset to the future date.",
+    "explanation": "Cash and Carry arbitrage involves buying the asset in the Spot market (Cash), holding it (Carry), and selling the overpriced Future contract to lock in a risk-free profit."
   },
   {
-    "id": 2610,
-    "question": "Daily price limits are set by:",
-    "options": ["Exchange", "Trader", "Bank", "Broker"],
-    "answer": "Exchange",
-    "hint": "Circuit filter.",
-    "explanation": "Exchanges control extreme price movements."
+    "id": 1220,
+    "question": "If a clearing member defaults, the Clearing Corporation uses the 'Settlement Guarantee Fund' (SGF). This mechanism is known as:",
+    "options": [
+      "Novation",
+      "Mutualization of Risk",
+      "Bilateral Netting",
+      "Liquidation"
+    ],
+    "answer": "Mutualization of Risk",
+    "hint": "The fund is a pool contributed by all members.",
+    "explanation": "The SGF is a pool of funds contributed by members. If one defaults, the fund (and thus other members' contributions) covers the loss, representing mutualization of risk."
   },
   {
-    "id": 2701,
-    "question": "Clearing house acts as:",
-    "options": ["Central counterparty", "Trader", "Broker", "Bank"],
-    "answer": "Central counterparty",
-    "hint": "Guarantee settlement.",
-    "explanation": "Clearing house stands between buyer and seller."
+    "id": 1221,
+    "question": "Which of the following orders allows a trader to specify the price at which he is willing to buy or sell?",
+    "options": [
+      "Market Order",
+      "Limit Order",
+      "Stop Loss Order",
+      "IOC Order"
+    ],
+    "answer": "Limit Order",
+    "hint": "You set a 'limit' on the price.",
+    "explanation": "A Limit Order allows the trader to specify a price. The order will only execute at that price or better."
   },
   {
-    "id": 2702,
-    "question": "Initial margin is paid by:",
-    "options": ["Both buyer and seller", "Only buyer", "Only seller", "Only broker"],
-    "answer": "Both buyer and seller",
-    "hint": "Risk cover.",
-    "explanation": "Margins are collected from both sides."
+    "id": 1222,
+    "question": "A 'Stop Loss' order to Sell is placed:",
+    "options": [
+      "Below the current market price",
+      "Above the current market price",
+      "Exactly at the current market price",
+      "At the target profit price"
+    ],
+    "answer": "Below the current market price",
+    "hint": "You want to stop losses if the price falls too much.",
+    "explanation": "A Stop Loss Sell order is placed below the current market price to limit losses on a Long position if the price drops."
   },
   {
-    "id": 2703,
-    "question": "Mark-to-market is done:",
-    "options": ["Daily", "Weekly", "Monthly", "Yearly"],
-    "answer": "Daily",
-    "hint": "Daily adjustment.",
-    "explanation": "Profit/loss settled daily."
+    "id": 1223,
+    "question": "What is the tick size for EUR/INR futures?",
+    "options": [
+      "0.0100",
+      "0.0025",
+      "0.0050",
+      "0.0001"
+    ],
+    "answer": "0.0025",
+    "hint": "It is consistent with USD/INR.",
+    "explanation": "The tick size (minimum price movement) for all INR pair futures (USD, EUR, GBP, JPY) on Indian exchanges is 0.0025."
   },
   {
-    "id": 2704,
-    "question": "Variation margin covers:",
-    "options": ["Daily losses", "Initial deposit", "Only profit", "Broker fees"],
-    "answer": "Daily losses",
-    "hint": "MTM adjustment.",
-    "explanation": "Loss-making traders pay variation margin."
+    "id": 1224,
+    "question": "The Last Trading Day for currency futures contracts is:",
+    "options": [
+      "The last working day of the month",
+      "Two working days prior to the last working day of the month",
+      "The 15th of the month",
+      "The first working day of the month"
+    ],
+    "answer": "Two working days prior to the last working day of the month",
+    "hint": "Allows time for Final Settlement (T+2).",
+    "explanation": "Contracts expire two working days prior to the last business day of the expiry month, to allow for the final settlement calculation."
   },
   {
-    "id": 2705,
-    "question": "Exposure margin depends on:",
-    "options": ["Volatility", "Trader choice", "Fixed rate", "Broker decision"],
+    "id": 1225,
+    "question": "An IT company expects to receive revenue in USD. To hedge, they should:",
+    "options": [
+      "Long USD/INR Futures",
+      "Short USD/INR Futures",
+      "Buy USD/INR Call Options",
+      "Do nothing"
+    ],
+    "answer": "Short USD/INR Futures",
+    "hint": "They are Long the asset (receivable), so they need to Short the derivative.",
+    "explanation": "The company has a Long position in the underlying (receivables). To hedge the risk of USD falling, they must take a Short position in Futures."
+  },
+  {
+    "id": 1226,
+    "question": "Which ID is used to uniquely identify a client in the trading system?",
+    "options": [
+      "PAN Number",
+      "Client ID / UCC (Unique Client Code)",
+      "Aadhar Number",
+      "Bank Account Number"
+    ],
+    "answer": "Client ID / UCC (Unique Client Code)",
+    "hint": "It is mandatory for all orders.",
+    "explanation": "The Unique Client Code (UCC) is mandatory for all clients to trade and is used to track their positions and limits."
+  },
+  {
+    "id": 1227,
+    "question": "If the basis (Spot - Future) is negative, the market is in:",
+    "options": [
+      "Backwardation",
+      "Contango",
+      "Discount",
+      "Inverted"
+    ],
+    "answer": "Contango",
+    "hint": "Future > Spot.",
+    "explanation": "If Basis (Spot - Future) is negative, it means Future > Spot. This condition is called Contango, which is normal for currency markets with positive interest rate differentials."
+  },
+  {
+    "id": 1228,
+    "question": "Hedging with futures eliminates:",
+    "options": [
+      "All risks",
+      "Only the downside risk",
+      "Price uncertainty, but removes potential upside gains",
+      "Basis risk"
+    ],
+    "answer": "Price uncertainty, but removes potential upside gains",
+    "hint": "Futures lock in a specific rate.",
+    "explanation": "Futures lock in a rate. While this protects against adverse moves, it also eliminates the possibility of profiting from favorable moves (unlike options)."
+  },
+  {
+    "id": 1229,
+    "question": "The theoretical relationship between Spot and Futures prices is defined by:",
+    "options": [
+      "Cost of Carry Model",
+      "Black-Scholes Model",
+      "Technical Analysis",
+      "Dow Theory"
+    ],
+    "answer": "Cost of Carry Model",
+    "hint": "F = S * e^rt.",
+    "explanation": "The Cost of Carry model defines the fair value of a future based on the spot price and the cost of financing/holding the asset (interest rate differential)."
+  },
+  {
+    "id": 1230,
+    "question": "If a trader initiates a 'Spread' position, the margin charged is typically:",
+    "options": [
+      "Sum of margins of both legs",
+      "Lower than the sum of both legs",
+      "Higher than the sum of both legs",
+      "Zero"
+    ],
+    "answer": "Lower than the sum of both legs",
+    "hint": "Spread risk is lower.",
+    "explanation": "Since the two legs of a spread (Long Near, Short Far) offset each other's risk, the exchange provides a 'Spread Margin benefit', making it lower than the sum of individual margins."
+  },
+  {
+    "id": 1231,
+    "question": "Position limits for FPIs (Foreign Portfolio Investors) are monitored by:",
+    "options": [
+      "The Broker",
+      "The Clearing Corporation / Exchange",
+      "RBI directly",
+      "Depositories"
+    ],
+    "answer": "The Clearing Corporation / Exchange",
+    "hint": "Exchanges monitor limits real-time/end of day.",
+    "explanation": "The Exchange and Clearing Corporation monitor position limits for all categories of participants, including FPIs, to ensure compliance with SEBI/RBI norms."
+  },
+  {
+    "id": 1232,
+    "question": "In a 'Short Squeeze', what happens?",
+    "options": [
+      "Prices fall rapidly",
+      "Short sellers rush to buy back positions, driving prices up",
+      "Long buyers exit positions",
+      "Trading is halted"
+    ],
+    "answer": "Short sellers rush to buy back positions, driving prices up",
+    "hint": "Shorts are 'squeezed' out of their positions.",
+    "explanation": "A short squeeze occurs when a rising market forces short sellers to cover (buy back) their positions to limit losses, which adds more buying pressure and pushes prices even higher."
+  },
+  {
+    "id": 1233,
+    "question": "The 'Contract Value' of one USD/INR futures contract when price is 82.00 is:",
+    "options": [
+      "INR 82,000",
+      "INR 8,200",
+      "INR 820",
+      "INR 1,000"
+    ],
+    "answer": "INR 82,000",
+    "hint": "Price * Lot Size.",
+    "explanation": "Contract Value = Futures Price * Lot Size. 82.00 * 1,000 (Standard Lot) = INR 82,000."
+  },
+  {
+    "id": 1234,
+    "question": "Daily Mark-to-Market (MTM) settlement is done in:",
+    "options": [
+      "Cash (INR)",
+      "USD",
+      "Government Bonds",
+      "Bank Guarantee"
+    ],
+    "answer": "Cash (INR)",
+    "hint": "Profits and losses are adjusted in the ledger.",
+    "explanation": "MTM settlement (daily profit/loss adjustment) is always settled in Cash (INR) by debiting or crediting the margin account."
+  },
+  {
+    "id": 1235,
+    "question": "If a trader expects the USD to strengthen against INR, he is:",
+    "options": [
+      "Bearish on USD/INR",
+      "Bullish on USD/INR",
+      "Neutral",
+      "Short USD/INR"
+    ],
+    "answer": "Bullish on USD/INR",
+    "hint": "Strengthen means price goes up.",
+    "explanation": "Strengthening USD means the rate (e.g., 82 to 83) goes up. This is a Bullish view."
+  },
+  {
+    "id": 1236,
+    "question": "Which of these factors does NOT affect the price of a currency option?",
+    "options": [
+      "Spot Price",
+      "Strike Price",
+      "P/E Ratio of the stock market",
+      "Time to Expiry"
+    ],
+    "answer": "P/E Ratio of the stock market",
+    "hint": "Option pricing depends on the underlying asset's characteristics.",
+    "explanation": "The P/E ratio of the stock market has no direct impact on currency option pricing. Factors are Spot, Strike, Volatility, Time, and Interest Rates."
+  },
+  {
+    "id": 1237,
+    "question": "Buying a Call Option is equivalent to:",
+    "options": [
+      "Buying the underlying with insurance against downside",
+      "Selling the underlying",
+      "Shorting the Future",
+      "Selling a Put"
+    ],
+    "answer": "Buying the underlying with insurance against downside",
+    "hint": "You profit if it goes up, but loss is limited if it falls.",
+    "explanation": "A Long Call allows participation in upside (like buying underlying) but limits the loss to the premium paid (insurance against downside)."
+  },
+  {
+    "id": 1238,
+    "question": "If you Sell a Call Option and the market rises significantly, your potential loss is:",
+    "options": [
+      "Limited to Premium",
+      "Unlimited",
+      "Zero",
+      "Fixed"
+    ],
+    "answer": "Unlimited",
+    "hint": "You are short volatility and direction.",
+    "explanation": "A Short Call (naked) has theoretically unlimited risk because the market price can rise indefinitely above the strike price."
+  },
+  {
+    "id": 1239,
+    "question": "A Put Option with Strike 82.00 is 'At the Money' when the Spot price is:",
+    "options": [
+      "81.00",
+      "83.00",
+      "82.00",
+      "80.00"
+    ],
+    "answer": "82.00",
+    "hint": "Spot equals Strike.",
+    "explanation": "An option is At the Money (ATM) when the Spot Price is equal (or very close) to the Strike Price."
+  },
+  {
+    "id": 1240,
+    "question": "Which Greek represents the 'acceleration' of the option price (Change in Delta)?",
+    "options": [
+      "Theta",
+      "Vega",
+      "Gamma",
+      "Rho"
+    ],
+    "answer": "Gamma",
+    "hint": "Second derivative of price.",
+    "explanation": "Gamma measures the rate of change of Delta with respect to the underlying price. It represents the curvature or acceleration of the option's value."
+  },
+  {
+    "id": 1241,
+    "question": "An option with a Delta of -0.5 is most likely a:",
+    "options": [
+      "ATM Call",
+      "ATM Put",
+      "OTM Call",
+      "ITM Call"
+    ],
+    "answer": "ATM Put",
+    "hint": "Puts have negative Delta.",
+    "explanation": "Puts have negative Delta (0 to -1). An ATM Put typically has a Delta around -0.5."
+  },
+  {
+    "id": 1242,
+    "question": "If you hold a Long Call and a Long Put at the same strike, you are hoping for:",
+    "options": [
+      "Stable markets",
+      "High Volatility (Big move in either direction)",
+      "Slow time decay",
+      "Interest rates to fall"
+    ],
+    "answer": "High Volatility (Big move in either direction)",
+    "hint": "This is a Long Straddle.",
+    "explanation": "A Long Straddle profits if the market moves significantly in either direction (up or down) to cover the cost of both premiums."
+  },
+  {
+    "id": 1243,
+    "question": "The 'Break-even Point' for a Call Option Seller is:",
+    "options": [
+      "Strike Price - Premium",
+      "Strike Price + Premium",
+      "Strike Price",
+      "Premium only"
+    ],
+    "answer": "Strike Price + Premium",
+    "hint": "Seller keeps profit until price crosses Strike + Premium.",
+    "explanation": "The seller starts losing money only when the market price rises above the Strike Price plus the Premium collected."
+  },
+  {
+    "id": 1244,
+    "question": "Time Decay (Theta) works in favor of:",
+    "options": [
+      "Option Buyers",
+      "Option Writers (Sellers)",
+      "Both",
+      "Neither"
+    ],
+    "answer": "Option Writers (Sellers)",
+    "hint": "Who collects the rent/premium?",
+    "explanation": "Theta represents the loss of value over time. Since options lose value as expiry approaches, this decay benefits the Option Seller (Writer) who sold the premium."
+  },
+  {
+    "id": 1245,
+    "question": "Which strategy involves selling a Call and selling a Put at the same strike price?",
+    "options": [
+      "Long Straddle",
+      "Short Straddle",
+      "Long Strangle",
+      "Short Strangle"
+    ],
+    "answer": "Short Straddle",
+    "hint": "Collecting premium from both sides, hoping for stability.",
+    "explanation": "Selling both a Call and a Put at the same strike is a Short Straddle. The trader expects the market to remain close to the strike price."
+  },
+  {
+    "id": 1246,
+    "question": "A 'Protective Put' strategy is constructed by:",
+    "options": [
+      "Long Underlying + Long Put",
+      "Long Underlying + Short Call",
+      "Short Underlying + Long Call",
+      "Short Underlying + Short Put"
+    ],
+    "answer": "Long Underlying + Long Put",
+    "hint": "Like buying insurance for a stock portfolio.",
+    "explanation": "A Protective Put involves holding the underlying asset (Long) and buying a Put option (Long Put) to protect against a decline in value."
+  },
+  {
+    "id": 1247,
+    "question": "Volatility Smile refers to the phenomenon where:",
+    "options": [
+      "ATM options have higher IV than OTM/ITM",
+      "OTM and ITM options have higher Implied Volatility (IV) than ATM options",
+      "Volatility is constant across strikes",
+      "Call IV is higher than Put IV"
+    ],
+    "answer": "OTM and ITM options have higher Implied Volatility (IV) than ATM options",
+    "hint": "The graph looks like a smile.",
+    "explanation": "The Volatility Smile occurs when Deep OTM and Deep ITM options trade at higher implied volatilities than ATM options, reflecting tail risk fears."
+  },
+  {
+    "id": 1248,
+    "question": "The maximum loss for a Call Option Buyer is:",
+    "options": [
+      "Unlimited",
+      "The Strike Price",
+      "The Premium Paid",
+      "Zero"
+    ],
+    "answer": "The Premium Paid",
+    "hint": "You can only lose what you put in.",
+    "explanation": "The buyer of an option cannot lose more than the premium paid upfront."
+  },
+  {
+    "id": 1249,
+    "question": "If Spot = 82.00, Strike = 80.00, Call Premium = 2.50. What is the Time Value?",
+    "options": [
+      "2.00",
+      "0.50",
+      "2.50",
+      "0.00"
+    ],
+    "answer": "0.50",
+    "hint": "Premium = Intrinsic + Time.",
+    "explanation": "Intrinsic Value = 82 - 80 = 2.00. Total Premium = 2.50. Time Value = Premium - Intrinsic = 2.50 - 2.00 = 0.50."
+  },
+  {
+    "id": 1250,
+    "question": "Which of the following describes a 'Butterfly Spread'?",
+    "options": [
+      "Buy 1 Low Strike Call, Sell 2 Middle Strike Calls, Buy 1 High Strike Call",
+      "Buy 1 Call, Sell 1 Put",
+      "Buy 1 Call, Buy 1 Put",
+      "Sell 1 Call, Sell 1 Put"
+    ],
+    "answer": "Buy 1 Low Strike Call, Sell 2 Middle Strike Calls, Buy 1 High Strike Call",
+    "hint": "It has a body (2 short) and two wings (1 long each).",
+    "explanation": "A Long Butterfly Spread involves buying one lower strike option, selling two middle strike options, and buying one higher strike option. It is a neutral strategy with limited risk and profit."
+  },
+  {
+    "id": 1251,
+    "question": "According to Put-Call Parity, if Call Price increases (all else constant), Put Price should:",
+    "options": [
+      "Increase",
+      "Decrease",
+      "Remain same",
+      "Become zero"
+    ],
+    "answer": "Increase",
+    "hint": "Wait, think about the equation C - P = S - K. If C goes up, P must go up to maintain equality if S and K are constant? No. Check explanation.",
+    "explanation": "According to Put-Call Parity (C + PV(K) = P + S). If S (Spot) rises, C rises and P falls. BUT, if we talk about pure arbitrage equation adjustment *independent* of spot move (e.g. volatility rises), BOTH Call and Put prices rise together. However, usually, if Spot drives the Call up, the Put goes down."
+  },
+  {
+    "id": 1251,
+    "question": "According to Put-Call Parity, a Synthetic Long Future is created by:",
+    "options": [
+      "Long Call + Short Put (same strike)",
+      "Long Call + Long Put",
+      "Short Call + Long Put",
+      "Short Call + Short Put"
+    ],
+    "answer": "Long Call + Short Put (same strike)",
+    "hint": "C - P = Future.",
+    "explanation": "Buying a Call and Selling a Put at the same strike creates a synthetic position that mimics the payoff of a Long Future."
+  },
+  {
+    "id": 1252,
+    "question": "Vega measures the sensitivity of option premiums to:",
+    "options": [
+      "Time",
+      "Interest Rates",
+      "Volatility",
+      "Spot Price"
+    ],
     "answer": "Volatility",
-    "hint": "Risk based.",
-    "explanation": "Higher volatility = higher margin."
+    "hint": "V for Volatility.",
+    "explanation": "Vega measures the change in option price for a 1% change in Implied Volatility."
   },
   {
-    "id": 2706,
-    "question": "If margin is not paid, position is:",
-    "options": ["Squared off", "Carried forward", "Ignored", "Transferred"],
-    "answer": "Squared off",
-    "hint": "Default action.",
-    "explanation": "Broker closes the position."
+    "id": 1253,
+    "question": "If you hold an 'In the Money' option at expiry, the settlement will be:",
+    "options": [
+      "The option expires worthless",
+      "You receive the difference between Spot and Strike (Cash Settled)",
+      "You must take physical delivery",
+      "You pay a penalty"
+    ],
+    "answer": "You receive the difference between Spot and Strike (Cash Settled)",
+    "hint": "Indian currency options are cash settled.",
+    "explanation": "In India, currency options are cash-settled. If ITM, the holder receives the differential (Intrinsic Value) in INR."
   },
   {
-    "id": 2707,
-    "question": "Final settlement price is based on:",
-    "options": ["RBI reference rate", "Broker rate", "Bank rate", "Trader rate"],
-    "answer": "RBI reference rate",
-    "hint": "Official rate.",
-    "explanation": "RBI rate used for settlement."
+    "id": 1254,
+    "question": "A 'Short Put' position has a similar risk profile to:",
+    "options": [
+      "Covered Call",
+      "Long Call",
+      "Long Put",
+      "Long Future"
+    ],
+    "answer": "Covered Call",
+    "hint": "Both limit upside and have downside risk.",
+    "explanation": "A Short Put and a Covered Call (Long Stock + Short Call) both have limited upside (premium received) and significant downside risk if the asset falls. They are synthetically equivalent strategies."
   },
   {
-    "id": 2708,
-    "question": "Settlement type in ETCD is:",
-    "options": ["Cash settlement", "Physical delivery", "Share delivery", "Gold delivery"],
-    "answer": "Cash settlement",
-    "hint": "No actual currency exchange.",
-    "explanation": "Most contracts are cash settled."
+    "id": 1255,
+    "question": "If the Spot rate is 82.00 and you hold a Call with Strike 85.00 expiring today, the value of the option is:",
+    "options": [
+      "3.00",
+      "-3.00",
+      "0.00",
+      "1.00"
+    ],
+    "answer": "0.00",
+    "hint": "It is Out of the Money.",
+    "explanation": "The Call is Deep OTM (Strike 85 > Spot 82). It expires worthless with zero value."
   },
   {
-    "id": 2709,
-    "question": "Default risk is managed by:",
-    "options": ["Clearing corporation", "Trader", "Broker", "Bank"],
-    "answer": "Clearing corporation",
-    "hint": "Risk control.",
-    "explanation": "Clearing house ensures settlement."
+    "id": 1256,
+    "question": "A textile exporter has a confirmed order of USD 500,000 receivable in 3 months. The exporter is comfortable with the current rate but wants to ensure they do not lose if the USD depreciates below 82.00. However, they are willing to forego some upside if USD appreciates beyond 84.00 to reduce hedging costs. Which strategy fits best?",
+    "options": [
+      "Buy USDINR Futures",
+      "Short Straddle",
+      "Bear Put Spread",
+      "Long Call Ladder"
+    ],
+    "answer": "Bear Put Spread",
+    "hint": "Buying a Put for protection and selling a lower strike Put to reduce cost.",
+    "explanation": "To hedge receivables (Long USD), the exporter needs to buy Puts. A Bear Put Spread involves buying an ATM/OTM Put (e.g., 82.00) and selling a lower strike Put (e.g., 80.00). This protects the downside at a lower cost than a straight Long Put, though it caps the protection if the currency crashes significantly below the lower strike."
   },
   {
-    "id": 2710,
-    "question": "Margin money is kept with:",
-    "options": ["Clearing corporation", "Broker", "Trader", "Bank"],
-    "answer": "Clearing corporation",
-    "hint": "Safe custody.",
-    "explanation": "Margins are held centrally."
+    "id": 1257,
+    "question": "An arbitrageur notices the following prices: Spot USDINR = 82.00, 1-Month Futures = 82.40. The theoretical 1-month forward price based on interest rate differentials is 82.25. What is the correct arbitrage strategy?",
+    "options": [
+      "Buy Spot, Buy Future",
+      "Sell Spot, Buy Future",
+      "Buy Spot, Sell Future",
+      "Sell Spot, Sell Future"
+    ],
+    "answer": "Buy Spot, Sell Future",
+    "hint": "Cash and Carry Arbitrage: Buy Low (Spot/Fair Value), Sell High (Actual Future).",
+    "explanation": "The Futures price (82.40) is 'Overvalued' compared to its theoretical fair value (82.25). The arbitrageur should Sell the expensive asset (Future) and Buy the cheaper asset (Spot), locking in the risk-free difference."
   },
   {
-    "id": 2801,
-    "question": "Primary regulator of ETCD is:",
-    "options": ["SEBI", "RBI", "IRDA", "PFRDA"],
-    "answer": "SEBI",
-    "hint": "Securities regulator.",
-    "explanation": "SEBI regulates derivatives markets."
+    "id": 1258,
+    "question": "A trader holds a 'Short Strangle' portfolio. The market starts trending strongly in one direction. To manage the risk (Delta), the trader buys futures contracts. This adjustment is known as:",
+    "options": [
+      "Delta Hedging",
+      "Gamma Scalping",
+      "Beta Management",
+      "Theta Decay"
+    ],
+    "answer": "Delta Hedging",
+    "hint": "Neutralizing the directional risk.",
+    "explanation": "When a non-directional strategy (like a Short Strangle) becomes directional due to market movement, the trader accumulates positive/negative Delta. Buying/Selling futures to bring the net Delta back to zero is called Delta Hedging."
   },
   {
-    "id": 2802,
-    "question": "Currency derivatives fall under:",
-    "options": ["SCRA", "Income Tax Act", "Companies Act", "Banking Act"],
-    "answer": "SCRA",
-    "hint": "Legal framework.",
-    "explanation": "Securities Contracts Act applies."
+    "id": 1259,
+    "question": "Identify the strategy: Long 1 Lot USDINR Future at 83.00 and Long 1 Lot USDINR Put Option at 83.00.",
+    "options": [
+      "Synthetic Long Call",
+      "Synthetic Short Call",
+      "Covered Put",
+      "Protective Call"
+    ],
+    "answer": "Synthetic Long Call",
+    "hint": "Long Asset + Insurance (Put) = Calls payoff.",
+    "explanation": "This is a Synthetic Long Call (or Protective Put). The Long Future gives linear profit/loss. The Long Put cuts off the downside loss. The resulting payoff profile mimics a Long Call option."
   },
   {
-    "id": 2803,
-    "question": "RBI regulates:",
-    "options": ["Forex policy", "Stock trading", "Broker fees", "Tax rules"],
-    "answer": "Forex policy",
-    "hint": "Currency authority.",
-    "explanation": "RBI oversees foreign exchange matters."
+    "id": 1260,
+    "question": "A trader executes a 'Box Spread' using options. Theoretically, this strategy is equivalent to:",
+    "options": [
+      "Taking a directional bet on volatility.",
+      "Lending or borrowing money at a risk-free rate.",
+      "Speculating on a breakout.",
+      "Hedging against a market crash."
+    ],
+    "answer": "Lending or borrowing money at a risk-free rate.",
+    "hint": "Arbitrage strategy with no directional risk.",
+    "explanation": "A Box Spread combines a Bull Call Spread and a Bear Put Spread. It creates a risk-free position where the payoff is constant at expiry. It is effectively a way to lend or borrow money; if the price deviates from the present value of the payoff, arbitrage exists."
   },
   {
-    "id": 2804,
-    "question": "Only ______ can execute trades on exchange.",
-    "options": ["Registered brokers", "Anyone", "Only banks", "Only FIIs"],
-    "answer": "Registered brokers",
-    "hint": "Authorized intermediaries.",
-    "explanation": "Retail investors trade via brokers."
+    "id": 1261,
+    "question": "If an importer uses a 'Range Forward' (or Collar) strategy to hedge a payable, and the spot rate at expiry is exactly between the two strike prices, what happens?",
+    "options": [
+      "The importer exercises the Call.",
+      "The counterparty exercises the Put.",
+      "Both options expire worthless; the importer buys at Spot.",
+      "The importer must pay a penalty."
+    ],
+    "answer": "Both options expire worthless; the importer buys at Spot.",
+    "hint": "In a collar, the protection is outside the range.",
+    "explanation": "In a Range Forward (Collar), the importer buys a Call (Cap) and sells a Put (Floor). If the spot rate is between the Cap and Floor, neither option is In-the-Money. The importer simply buys the currency at the prevailing market spot rate."
   },
   {
-    "id": 2805,
-    "question": "SEBI’s main objective is:",
-    "options": ["Investor protection", "Profit guarantee", "Lower tax", "Bank lending"],
-    "answer": "Investor protection",
-    "hint": "Market safety.",
-    "explanation": "SEBI ensures fair markets."
+    "id": 1262,
+    "question": "Which Greek measures the sensitivity of the option premium to a change in the time to expiry?",
+    "options": [
+      "Delta",
+      "Gamma",
+      "Vega",
+      "Theta"
+    ],
+    "answer": "Theta",
+    "hint": "Time decay factor.",
+    "explanation": "Theta measures the rate of decline in the value of an option due to the passage of time. It is also known as time decay."
   },
   {
-    "id": 2901,
-    "question": "Profit from ETCD is taxed as:",
-    "options": ["Business income", "Salary", "Capital gain", "Dividend"],
-    "answer": "Business income",
-    "hint": "Trading nature.",
-    "explanation": "Derivatives trading treated as business income."
+    "id": 1263,
+    "question": "A trader expects the spread between USDINR Near Month and Far Month futures to widen. Which trade should they execute?",
+    "options": [
+      "Buy Near Month, Sell Far Month",
+      "Sell Near Month, Buy Far Month",
+      "Buy Near Month, Buy Far Month",
+      "Sell Near Month, Sell Far Month"
+    ],
+    "answer": "Sell Near Month, Buy Far Month",
+    "hint": "Buying the spread usually means buying the higher priced/longer duration contract.",
+    "explanation": "If the trader expects the spread (Far - Near) to widen (increase), they should buy the spread. This involves Buying the Far Month (expensive) and Selling the Near Month (cheaper). If the difference increases, the profit on the long leg exceeds the loss on the short leg."
   },
   {
-    "id": 2902,
-    "question": "MTM loss is:",
-    "options": ["Allowed deduction", "Not allowed", "Capital loss", "Ignored"],
-    "answer": "Allowed deduction",
-    "hint": "Accounting rule.",
-    "explanation": "MTM losses are recognized."
+    "id": 1264,
+    "question": "Calculate the intrinsic value of a USDINR Put Option with Strike 82.50 when the Spot price is 82.20.",
+    "options": [
+      "0",
+      "0.30",
+      "-0.30",
+      "0.50"
+    ],
+    "answer": "0.30",
+    "hint": "Put Intrinsic Value = Max(Strike - Spot, 0).",
+    "explanation": "For a Put option, Intrinsic Value is Strike Price minus Spot Price (if positive). 82.50 - 82.20 = 0.30."
   },
   {
-    "id": 2903,
-    "question": "Turnover in derivatives is based on:",
-    "options": ["Total contract value", "Only profit", "Only loss", "Only margin"],
-    "answer": "Total contract value",
-    "hint": "Tax basis.",
-    "explanation": "Turnover includes full contract value."
+    "id": 1265,
+    "question": "An investor sells a 'Covered Call' on USDINR. The market falls sharply. What is the investor's risk profile?",
+    "options": [
+      "Limited loss equal to the premium received.",
+      "Unlimited loss.",
+      "Loss on the long futures position, partially cushioned by the call premium.",
+      "No loss, as the position is hedged."
+    ],
+    "answer": "Loss on the long futures position, partially cushioned by the call premium.",
+    "hint": "The 'cover' is the long asset which loses value when market falls.",
+    "explanation": "A Covered Call is Long Future + Short Call. If the market falls, the Long Future loses money. The premium received from the Short Call provides a small buffer, but if the fall is deep, the net position will be in a loss."
   },
   {
-    "id": 2904,
-    "question": "Settlement gain is recognized:",
-    "options": ["On settlement date", "Before trade", "Never", "After year end"],
-    "answer": "On settlement date",
-    "hint": "Realization.",
-    "explanation": "Gains booked when settled."
+    "id": 1266,
+    "question": "In the context of the trading screen, what does the term 'Depth' or 'Top 5' refer to?",
+    "options": [
+      "The 5 deepest ITM options.",
+      "The best 5 Buy and best 5 Sell orders currently available.",
+      "The last 5 traded prices.",
+      "The 5 most volatile currency pairs."
+    ],
+    "answer": "The best 5 Buy and best 5 Sell orders currently available.",
+    "hint": "Market Depth shows liquidity at different price levels.",
+    "explanation": "Market Depth or the 'Top 5' window displays the best five bid prices (with quantities) and the best five ask prices (with quantities) currently pending in the order book."
   },
   {
-    "id": 2905,
-    "question": "ETCD trades must be recorded in:",
-    "options": ["Books of accounts", "Only bank", "Only broker", "Memory"],
-    "answer": "Books of accounts",
-    "hint": "Accounting record.",
-    "explanation": "Proper records are mandatory."
+    "id": 1267,
+    "question": "A 'Stop Loss Sell' order is placed at 81.50. The market is currently trading at 81.60. This order will be triggered when:",
+    "options": [
+      "The price rises to 81.70.",
+      "The price falls to or below 81.50.",
+      "Immediately at 81.60.",
+      "The price reaches 82.00."
+    ],
+    "answer": "The price falls to or below 81.50.",
+    "hint": "Stop Sell is used to protect a Long position if price drops.",
+    "explanation": "A Stop Loss Sell is placed below the current market price. It remains passive until the market price drops to the trigger price (81.50), at which point it becomes a market sell order."
   },
   {
-    "id": 3001,
-    "question": "Investor protection is ensured by:",
-    "options": ["SEBI", "Broker", "Trader", "Bank"],
-    "answer": "SEBI",
-    "hint": "Regulator role.",
-    "explanation": "SEBI frames protection measures."
+    "id": 1268,
+    "question": "If a trading member enters a Self-Trade (Buy and Sell orders matching against each other for the same client code), how does the exchange mechanism typically handle it?",
+    "options": [
+      "It executes and charges double brokerage.",
+      "It is prevented/rejected by the prevention mechanisms (Self-Trade Prevention Check).",
+      "It is allowed only in the last 30 minutes.",
+      "It is sent to the CEO for approval."
+    ],
+    "answer": "It is prevented/rejected by the prevention mechanisms (Self-Trade Prevention Check).",
+    "hint": "Wash trades are illegal/manipulative.",
+    "explanation": "Exchanges have Self-Trade Prevention mechanisms. If the matching engine detects that the resulting trade would be between the same client code (or same proprietary account), it rejects one or both orders to prevent wash trades."
   },
   {
-    "id": 3002,
-    "question": "Brokers must follow:",
-    "options": ["Code of conduct", "Client wishes", "No rules", "Only profit motive"],
-    "answer": "Code of conduct",
-    "hint": "Ethics.",
-    "explanation": "Brokers must act ethically."
+    "id": 1269,
+    "question": "What is the 'Base Price' used for calculating the price operating range (circuit limits) for a new contract introduced on the first day of trading?",
+    "options": [
+      "The Spot Price.",
+      "The theoretical price based on the previous day's spot close and interest rates.",
+      "The closing price of the near month contract.",
+      "Zero."
+    ],
+    "answer": "The theoretical price based on the previous day's spot close and interest rates.",
+    "hint": "No prior trade history exists for a new contract.",
+    "explanation": "For a newly introduced contract (e.g., a new month expiry), the Base Price is usually the theoretical futures price calculated using the underlying spot closing price and the relevant interest rate differential."
   },
   {
-    "id": 3003,
-    "question": "Misrepresentation to clients is:",
-    "options": ["Prohibited", "Allowed", "Optional", "Encouraged"],
-    "answer": "Prohibited",
-    "hint": "Fair practice.",
-    "explanation": "Brokers must give correct information."
+    "id": 1270,
+    "question": "A trader wants to modify the quantity of a pending order. Which of the following is true?",
+    "options": [
+      "Increasing the quantity retains the original time priority.",
+      "Decreasing the quantity retains the original time priority.",
+      "Any modification cancels the order.",
+      "Quantity cannot be modified."
+    ],
+    "answer": "Decreasing the quantity retains the original time priority.",
+    "hint": "Increasing size is like a new order; decreasing is just an update.",
+    "explanation": "If a trader decreases the quantity of an order, the order usually retains its original timestamp (priority). However, if the quantity is increased, it is treated as a new order and loses its original time priority, moving to the end of the queue at that price."
   },
   {
-    "id": 3004,
-    "question": "Risk disclosure is:",
-    "options": ["Mandatory", "Optional", "Not required", "Broker choice"],
-    "answer": "Mandatory",
-    "hint": "Investor awareness.",
-    "explanation": "Clients must be informed of risks."
+    "id": 1271,
+    "question": "What is the Unique Client Code (UCC)?",
+    "options": [
+      "A code assigned by the broker to their employees.",
+      "A mandatory unique identification number for every client trading on the exchange.",
+      "The password for the trading terminal.",
+      "The clearing member's registration number."
+    ],
+    "answer": "A mandatory unique identification number for every client trading on the exchange.",
+    "hint": "It maps every trade to a specific end-client (PAN based).",
+    "explanation": "SEBI mandates that every client must have a Unique Client Code (UCC) registered with the exchange. This allows regulators to track the ultimate beneficiary of every trade executed."
   },
   {
-    "id": 3005,
-    "question": "Grievance redressal protects:",
-    "options": ["Investors", "Brokers only", "Exchanges only", "Banks only"],
-    "answer": "Investors",
-    "hint": "Complaint handling.",
-    "explanation": "Investors can file complaints against intermediaries."
+    "id": 1272,
+    "question": "The 'Open Interest' (OI) figure displayed on the trading screen represents:",
+    "options": [
+      "The total number of contracts traded during the day.",
+      "The number of contracts that have not yet been squared off or settled.",
+      "The total volume of buy orders.",
+      "The profit made by the exchange."
+    ],
+    "answer": "The number of contracts that have not yet been squared off or settled.",
+    "hint": "It shows how many positions are 'live'.",
+    "explanation": "Open Interest is the total number of outstanding derivative contracts (long or short) that have not been settled or closed out. It indicates the flow of money and conviction in the market."
+  },
+  {
+    "id": 1273,
+    "question": "Which of the following entities allows a corporate manager to set trading limits for different branches or dealers?",
+    "options": [
+      "The Corporate Manager Terminal / Admin Terminal.",
+      "The RBI Portal.",
+      "The Clearing Bank.",
+      "The NSDL system."
+    ],
+    "answer": "The Corporate Manager Terminal / Admin Terminal.",
+    "hint": "Risk management tool provided by the broker's software.",
+    "explanation": "Trading software provided to members includes a Corporate Manager or Admin terminal. This allows the senior risk manager to set exposure limits, order limits, and view positions for all dealers/branches under them."
+  },
+  {
+    "id": 1274,
+    "question": "If a trader places a market order to Buy 100 lots, and the best seller has only 20 lots, what happens?",
+    "options": [
+      "The order is rejected.",
+      "20 lots are bought at the best price; the remaining 80 look for the next best sell price.",
+      "20 lots are bought; the remaining 80 are cancelled.",
+      "The system waits for 80 more lots to arrive at the same price."
+    ],
+    "answer": "20 lots are bought at the best price; the remaining 80 look for the next best sell price.",
+    "hint": "Market orders sweep the book.",
+    "explanation": "A Market Order sweeps the order book. It will fill 20 lots at the best price (L1), then move to the next best price (L2) to fill the remaining 80, potentially causing 'Impact Cost' or slippage."
+  },
+  {
+    "id": 1275,
+    "question": "Can a Trading Member (TM) who is not a Clearing Member modify a trade after execution?",
+    "options": [
+      "No, only Clearing Members can modify trades.",
+      "Yes, for the purpose of correcting genuine client code errors.",
+      "Yes, they can change the price of the trade.",
+      "No, trades are final once executed."
+    ],
+    "answer": "Yes, for the purpose of correcting genuine client code errors.",
+    "hint": "Only specific fields like client codes can be modified.",
+    "explanation": "Exchanges allow a short window for Trade Modification, strictly to correct genuine data entry errors regarding the Client Code. Price and Quantity cannot be modified after execution."
+  },
+  {
+    "id": 1276,
+    "question": "The 'Novation' process by the Clearing Corporation effectively eliminates which type of risk for the trader?",
+    "options": [
+      "Market Risk",
+      "Counterparty/Credit Risk",
+      "Liquidity Risk",
+      "Operational Risk"
+    ],
+    "answer": "Counterparty/Credit Risk",
+    "hint": "The risk that the other guy won't pay.",
+    "explanation": "By becoming the buyer to every seller and seller to every buyer, the Clearing Corporation guarantees the settlement. This eliminates Counterparty Risk (the risk that the other party defaults)."
+  },
+  {
+    "id": 1277,
+    "question": "Which component of the SPAN margin accounts for the risk of spread positions (e.g., Long Jan, Short Feb)?",
+    "options": [
+      "Scan Risk",
+      "Intra-month Spread Charge / Calendar Spread Charge",
+      "Short Option Minimum Charge",
+      "Delivery Margin"
+    ],
+    "answer": "Intra-month Spread Charge / Calendar Spread Charge",
+    "hint": "Specific charge for calendar spreads.",
+    "explanation": "While spread positions have lower risk than naked positions, they are not risk-free. SPAN calculates a 'Calendar Spread Charge' to cover the basis risk (the risk that the spread gap widens or narrows unfavorably)."
+  },
+  {
+    "id": 1278,
+    "question": "A Clearing Member has a shortage of ₹5 Lakhs in their settlement account at the scheduled pay-in time. This is termed as:",
+    "options": [
+      "Funds Shortage",
+      "Securities Shortage",
+      "Margin Call",
+      "Limit Breach"
+    ],
+    "answer": "Funds Shortage",
+    "hint": "Failure to pay cash.",
+    "explanation": "When a member fails to provide the required cash funds for settlement (MTM or Final Settlement) by the deadline, it is classified as a Funds Shortage/Default."
+  },
+  {
+    "id": 1279,
+    "question": "If a clearing member defaults, the 'waterfall mechanism' for default management uses resources in which order?",
+    "options": [
+      "SGF -> Defaulter's Margin -> Exchange Capital.",
+      "Defaulter's Margin -> Defaulter's Contribution to SGF -> SGF of other members.",
+      "Exchange Capital -> Insurance -> Margins.",
+      "Government Bailout -> SGF -> Margins."
+    ],
+    "answer": "Defaulter's Margin -> Defaulter's Contribution to SGF -> SGF of other members.",
+    "hint": "The defaulter pays first; the mutual fund pays next.",
+    "explanation": "The typical waterfall is: 1. Defaulter's own margins/collateral. 2. Defaulter's contribution to the Settlement Guarantee Fund (SGF). 3. Insurance/Exchange contribution. 4. SGF of non-defaulting members (mutualized loss)."
+  },
+  {
+    "id": 1280,
+    "question": "For calculating margins, the Clearing Corporation revalues the entire portfolio of a member at various price points and volatility levels. This simulation is done:",
+    "options": [
+      "1 time a year.",
+      "16 times (scenarios) as per SPAN standard.",
+      "Only when the market crashes.",
+      "Randomly."
+    ],
+    "answer": "16 times (scenarios) as per SPAN standard.",
+    "hint": "The standard number of scenarios in the SPAN algorithm.",
+    "explanation": "The Standard Portfolio Analysis of Risk (SPAN) methodology typically evaluates the portfolio risk under 16 different market scenarios (combinations of price changes and volatility changes) to determine the worst-case loss."
+  },
+  {
+    "id": 1281,
+    "question": "What is the 'Mark-to-Market' (MTM) price for an illiquid contract that did not trade on a particular day?",
+    "options": [
+      "The last traded price (even if old).",
+      "Zero.",
+      "Theoretical Price calculated by the Clearing Corporation.",
+      "The Spot Price."
+    ],
+    "answer": "Theoretical Price calculated by the Clearing Corporation.",
+    "hint": "If the market doesn't provide a price, the model must.",
+    "explanation": "If a contract is not traded, the Clearing Corporation uses a theoretical pricing model (usually based on spot + cost of carry) to determine the closing price for MTM and margin calculations."
+  },
+  {
+    "id": 1282,
+    "question": "Which of the following is accepted as 'Cash Component' of the collateral (Liquid Assets)?",
+    "options": [
+      "Equity Shares",
+      "Corporate Bonds",
+      "Units of Liquid Mutual Funds (specifically designated)",
+      "Real Estate"
+    ],
+    "answer": "Units of Liquid Mutual Funds (specifically designated)",
+    "hint": "Cash equivalents.",
+    "explanation": "Clearing Corporations generally accept Cash, Bank Guarantees, Fixed Deposits, and units of specific Liquid Mutual Funds (with a haircut) as the Cash/Liquid component of the collateral."
+  },
+  {
+    "id": 1283,
+    "question": "The 'Client Margin Reporting' process involves:",
+    "options": [
+      "The Exchange telling the broker how much margin to collect.",
+      "The Broker reporting to the Exchange/CC the actual margins collected from clients.",
+      "The Client reporting their income to the broker.",
+      "The Bank reporting the client's balance."
+    ],
+    "answer": "The Broker reporting to the Exchange/CC the actual margins collected from clients.",
+    "hint": "Broker confirms compliance.",
+    "explanation": "Trading/Clearing Members are required to report to the Clearing Corporation the details of margins actually collected from their clients. Short reporting attracts a penalty."
+  },
+  {
+    "id": 1284,
+    "question": "Why does the Clearing Corporation impose a 'Volatility Scan Range' (VSR)?",
+    "options": [
+      "To determine brokerage rates.",
+      "To estimate the maximum probable price change over a one-day period.",
+      "To limit the number of trades.",
+      "To prevent algorithmic trading."
+    ],
+    "answer": "To estimate the maximum probable price change over a one-day period.",
+    "hint": "It defines the 'risk' movement.",
+    "explanation": "The Price Scan Range (or Volatility Scan Range) is a key parameter in SPAN. It represents the maximum expected price movement in the underlying asset over one day, used to calculate the risk/margin."
+  },
+  {
+    "id": 1285,
+    "question": "Position Limits are monitored by the Exchange/Regulator at which levels?",
+    "options": [
+      "Only at the Broker level.",
+      "Only at the Client level.",
+      "At Client, Trading Member, and Clearing Member levels.",
+      "Only for FPIs."
+    ],
+    "answer": "At Client, Trading Member, and Clearing Member levels.",
+    "hint": "Surveillance is multi-layered.",
+    "explanation": "To prevent market manipulation and concentration risk, Open Interest (Position) limits are monitored at three levels: The individual Client, the Trading Member, and the Clearing Member (and also FPI aggregate level)."
+  },
+  {
+    "id": 1286,
+    "question": "Which Act governs the foreign exchange management and regulations in India?",
+    "options": [
+      "SCRA 1956",
+      "SEBI Act 1992",
+      "FEMA 1999",
+      "Companies Act 2013"
+    ],
+    "answer": "FEMA 1999",
+    "hint": "Foreign Exchange Management Act.",
+    "explanation": "The Foreign Exchange Management Act (FEMA), 1999, is the primary legislation that regulates all foreign exchange transactions in India, including the underlying rules for currency derivatives usage."
+  },
+  {
+    "id": 1287,
+    "question": "An Individual Resident in India can take a position in USDINR currency futures up to a specified limit (e.g., USD 100 million equivalent) without underlying documents. This facility is subject to:",
+    "options": [
+      "Providing a valid Passport.",
+      "Designating an Authorized Dealer (AD) Bank for monitoring.",
+      "Approval from the US Federal Reserve.",
+      "Having a net worth of ₹10 Crores."
+    ],
+    "answer": "Designating an Authorized Dealer (AD) Bank for monitoring.",
+    "hint": "The banking system monitors the limits.",
+    "explanation": "While residents can take positions up to the threshold without submitting documents to the broker, if they exceed certain lower thresholds or use the facility, they may need to designate an Authorized Dealer (Bank) to monitor their total utilization of limits across the market."
+  },
+  {
+    "id": 1288,
+    "question": "Can a 'Person Resident Outside India' (other than FPIs/NRIs) trade in Indian ETCD?",
+    "options": [
+      "Yes, freely.",
+      "No, generally not permitted.",
+      "Yes, via a sub-account.",
+      "Yes, if they visit India."
+    ],
+    "answer": "No, generally not permitted.",
+    "hint": "Access is restricted to specific categories like FPI/NRI.",
+    "explanation": "General foreign entities (who are not registered FPIs or NRIs) are not permitted to trade in the Exchange Traded Currency Derivatives market in India directly."
+  },
+  {
+    "id": 1289,
+    "question": "What is the primary role of the RBI in the context of Currency Derivatives?",
+    "options": [
+      "Day-to-day surveillance of the stock exchange.",
+      "Licensing of brokers.",
+      "Setting the monetary policy and defining the participants/products allowed in the FX market.",
+      "Resolving broker-client disputes."
+    ],
+    "answer": "Setting the monetary policy and defining the participants/products allowed in the FX market.",
+    "hint": "Guardian of the Currency.",
+    "explanation": "RBI regulates the foreign exchange market itself. It decides who can participate, what products can be traded, and the hedging guidelines. SEBI regulates the exchange platform and intermediaries."
+  },
+  {
+    "id": 1290,
+    "question": "Which of the following is an OTC (Over-the-Counter) product and NOT an Exchange Traded product?",
+    "options": [
+      "USDINR Futures",
+      "USDINR Options",
+      "Currency Swaps offered by a Bank",
+      "EURINR Futures"
+    ],
+    "answer": "Currency Swaps offered by a Bank",
+    "hint": "Traded directly between two parties, not on an exchange.",
+    "explanation": "Currency Swaps negotiated directly between a bank and a corporate are OTC products. Futures and Options traded on NSE/BSE are Exchange Traded products."
+  },
+  {
+    "id": 1291,
+    "question": "A trader has a turnover of ₹5 Crores from currency derivatives and a profit of ₹10 Lakhs. Is a Tax Audit mandatory under Section 44AB?",
+    "options": [
+      "Yes, because turnover > ₹1 Crore (old limit) / ₹2 Crore.",
+      "No, if he declares at least 6% profit under Presumptive Scheme (44AD).",
+      "Yes, audit is mandatory for all derivative traders.",
+      "No, derivatives are tax-free."
+    ],
+    "answer": "No, if he declares at least 6% profit under Presumptive Scheme (44AD).",
+    "hint": "Audit is avoided if you declare the presumptive profit rate.",
+    "explanation": "If the turnover is below the threshold (currently ₹2 Cr/3 Cr depending on digital receipts), the trader can opt for the Presumptive Taxation Scheme (Sec 44AD) by declaring 6% of turnover as profit. If they declare less than 6% and income exceeds the basic exemption limit, an audit becomes mandatory."
+  },
+  {
+    "id": 1292,
+    "question": "For a company, the 'Effective Portion' of a cash flow hedge is recognized in:",
+    "options": [
+      "Profit & Loss Account immediately.",
+      "Other Comprehensive Income (OCI) / Hedging Reserve.",
+      "Share Capital Account.",
+      "Suspense Account."
+    ],
+    "answer": "Other Comprehensive Income (OCI) / Hedging Reserve.",
+    "hint": "It is stored until the hedge is actualized.",
+    "explanation": "Under Hedge Accounting, the effective portion of the gain/loss on a Cash Flow Hedge is initially recognized in OCI (Equity) and transferred to P&L only when the hedged cash flow affects the P&L."
+  },
+  {
+    "id": 1293,
+    "question": "In calculating the turnover for options trading, what is considered?",
+    "options": [
+      "The Strike Price + Premium.",
+      "The sum of absolute profit and absolute loss.",
+      "Only the Premium.",
+      "Only the Intrinsic Value."
+    ],
+    "answer": "The sum of absolute profit and absolute loss.",
+    "hint": "ICAI Guidance Note on turnover.",
+    "explanation": "Turnover for options is calculated as the sum of absolute differences (Profit/Loss) for all trades. Premium received on sale is also added if not included in the P&L difference method (interpretations vary, but 'Sum of Abs Profit/Loss' is the standard answer for derivatives turnover)."
+  },
+  {
+    "id": 1294,
+    "question": "Which form is used by Non-Residents to avoid double taxation on gains made in India?",
+    "options": [
+      "Form 15G/15H",
+      "Form 10F (Tax Residency Certificate details)",
+      "Form 16",
+      "Form 26AS"
+    ],
+    "answer": "Form 10F (Tax Residency Certificate details)",
+    "hint": "Proof of being a resident of another country.",
+    "explanation": "Non-residents claiming benefits under a Double Taxation Avoidance Agreement (DTAA) typically need to provide a Tax Residency Certificate (TRC) from their home country and file Form 10F in India."
+  },
+  {
+    "id": 1295,
+    "question": "Are Stamp Duties applicable on Currency Derivatives?",
+    "options": [
+      "No, only STT is applicable.",
+      "Yes, uniform stamp duty is applicable across India.",
+      "Yes, but rates vary by state (pre-2020 era rules).",
+      "No, it is a central subject."
+    ],
+    "answer": "Yes, uniform stamp duty is applicable across India.",
+    "hint": "Recent amendments made it uniform.",
+    "explanation": "Following the amendments to the Indian Stamp Act (effective 2020), a uniform stamp duty is levied on currency derivatives (futures and options) across all states, collected by the Exchange."
+  },
+  {
+    "id": 1296,
+    "question": "The 'In-Person Verification' (IPV) of a client is mandatory during:",
+    "options": [
+      "Opening a bank account only.",
+      "Opening a trading account.",
+      "Every transaction.",
+      "Closing the account."
+    ],
+    "answer": "Opening a trading account.",
+    "hint": "Verifying the human exists.",
+    "explanation": "SEBI mandates In-Person Verification (IPV) (physical or video-based) at the time of account opening to ensure the person opening the account actually exists and matches the documents provided."
+  },
+  {
+    "id": 1297,
+    "question": "Under PMLA (Prevention of Money Laundering Act), intermediaries must maintain records of transactions for a period of:",
+    "options": [
+      "1 year.",
+      "5 years from the date of transaction/end of relationship.",
+      "10 years.",
+      "Permanently."
+    ],
+    "answer": "5 years from the date of transaction/end of relationship.",
+    "hint": "Standard record retention period.",
+    "explanation": "The PMLA requires maintaining records of transactions and identity of clients for a period of 5 years from the date of cessation of the transaction or business relationship."
+  },
+  {
+    "id": 1298,
+    "question": "Which of the following is considered a 'Suspicious Transaction'?",
+    "options": [
+      "A client making a loss.",
+      "A client trading daily.",
+      "A client whose transactions appear to have no economic rationale or bona fide purpose.",
+      "A client hedging a large export order."
+    ],
+    "answer": "A client whose transactions appear to have no economic rationale or bona fide purpose.",
+    "hint": "It doesn't make business sense.",
+    "explanation": "Transactions that have no apparent economic rationale, are inconsistent with the client's financial profile, or involve complex structures to hide the beneficial owner are classified as Suspicious Transactions."
+  },
+  {
+    "id": 1299,
+    "question": "What is 'SCORES'?",
+    "options": [
+      "A system for calculating margins.",
+      "SEBI Complaints Redress System.",
+      "RBI's foreign exchange tracking system.",
+      "The trading terminal software."
+    ],
+    "answer": "SEBI Complaints Redress System.",
+    "hint": "Online portal for investor complaints.",
+    "explanation": "SCORES (SEBI Complaints Redress System) is an online platform where investors can lodge complaints against listed companies and SEBI registered intermediaries."
+  },
+  {
+    "id": 1300,
+    "question": "If a broker defaults, the maximum compensation available to an investor from the Investor Protection Fund (IPF) is:",
+    "options": [
+      "Unlimited.",
+      "₹1 Lakh.",
+      "₹25 Lakhs per investor (subject to exchange specific limits/circulars).",
+      "₹10 Crores."
+    ],
+    "answer": "₹25 Lakhs per investor (subject to exchange specific limits/circulars).",
+    "hint": "The cap is set to protect retail investors.",
+    "explanation": "The Investor Protection Fund (IPF) provides compensation to investors if a broker defaults. The limit is typically capped (e.g., ₹25 Lakhs per investor for NSE/BSE) to ensure wider coverage."
   }
 ]

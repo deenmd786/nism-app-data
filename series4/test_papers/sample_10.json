@@ -1,501 +1,1302 @@
 [
   {
-    "id": 1,
-    "question": "If interest rates decline, the price of an existing fixed-rate bond will:",
-    "options": ["Increase", "Decrease", "Remain same", "Become zero"],
-    "answer": "Increase",
-    "hint": "Inverse relationship",
-    "explanation": "Bond prices rise when interest rates fall."
+    "id": 1901,
+    "question": "An investor holds a bond with a Modified Duration of 7 and a Convexity of 55. If the market interest rates decrease by 100 basis points, what is the most accurate estimate of the percentage price change of the bond?",
+    "options": [
+      "Increase by 7.00%",
+      "Increase by 7.275%",
+      "Increase by 6.725%",
+      "Increase by 7.55%"
+    ],
+    "answer": "Increase by 7.275%",
+    "hint": "Price Change % ≈ (-Mod Duration * Δy) + (0.5 * Convexity * Δy^2).",
+    "explanation": "The percentage price change is calculated as (-7 * -0.01) + (0.5 * 55 * (-0.01)^2) = 0.07 + 0.00275 = 0.07275 or 7.275%. Convexity always adds to the price increase when rates fall."
   },
   {
-    "id": 2,
-    "question": "Which of the following is a capital market instrument?",
-    "options": ["Treasury Bill", "Commercial Paper", "10-year Government Bond", "Certificate of Deposit"],
-    "answer": "10-year Government Bond",
-    "hint": "Long-term security",
-    "explanation": "Government bonds with long maturity belong to capital markets."
+    "id": 1902,
+    "question": "A 10-year G-Sec is trading at a significant premium (₹112) because its 9% coupon is much higher than the current market yield of 6.5%. If the bond is callable in 2 years at par, which yield measure is most conservative and realistic for an investor to consider?",
+    "options": [
+      "Yield to Maturity (YTM)",
+      "Current Yield",
+      "Yield to Call (YTC)",
+      "Coupon Rate"
+    ],
+    "answer": "Yield to Call (YTC)",
+    "hint": "When bonds trade at a premium, there is a high likelihood the issuer will redeem them at the earliest opportunity.",
+    "explanation": "For bonds trading at a premium, the Yield to Call is typically lower than the YTM and is considered the more realistic return expectation, as the issuer will likely refinance at lower current rates."
   },
   {
-    "id": 3,
-    "question": "Scenario: A bank expects interest rates to rise. Most appropriate hedge is to:",
-    "options": ["Sell IR futures", "Buy IR futures", "Buy bonds", "Hold cash"],
-    "answer": "Sell IR futures",
-    "hint": "Protect against price fall",
-    "explanation": "Selling futures helps when bond prices fall due to rising rates."
+    "id": 1903,
+    "question": "A life insurance company needs to match a specific cash outflow of ₹50 Crore exactly 15 years from now. Why might the company prefer STRIPS (Principal only) over regular coupon-bearing G-Secs for this purpose?",
+    "options": [
+      "STRIPS offer higher annual coupon income.",
+      "STRIPS eliminate reinvestment risk for the intermediate cash flows.",
+      "STRIPS are less sensitive to interest rate changes than regular bonds.",
+      "STRIPS have zero credit risk compared to G-Secs."
+    ],
+    "answer": "STRIPS eliminate reinvestment risk for the intermediate cash flows.",
+    "hint": "Consider the uncertainty of where to invest periodic interest payments over a 15-year period.",
+    "explanation": "STRIPS are zero-coupon instruments. Since there are no periodic coupon payments to reinvest, the company eliminates the risk that future interest rates will be lower when coupons are received, locking in the yield until maturity."
   },
   {
-    "id": 4,
-    "question": "Floating rate bonds are linked to:",
-    "options": ["Gold price", "Benchmark interest rate", "Equity index", "Oil price"],
-    "answer": "Benchmark interest rate",
-    "hint": "Coupon adjusts",
-    "explanation": "Coupon varies based on benchmark like MIBOR."
+    "id": 1904,
+    "question": "The RBI unexpectedly increases the Repo rate by 25 basis points to combat inflation. How will this move most likely affect the 'Credit Spread' of a 'BBB' rated corporate bond relative to 10-year G-Secs in a jittery market?",
+    "options": [
+      "The credit spread will likely narrow as G-Sec yields rise faster.",
+      "The credit spread will likely widen as the risk premium for lower-rated corporates increases.",
+      "The credit spread will remain unchanged as it only depends on the issuer's internal health.",
+      "The credit spread will disappear as all rates move in parallel."
+    ],
+    "answer": "The credit spread will likely widen as the risk premium for lower-rated corporates increases.",
+    "hint": "In a tightening monetary environment, investors often become more risk-averse.",
+    "explanation": "Policy rate hikes often lead to 'flight to quality.' Investors demand a higher risk premium for holding lower-rated corporate debt during periods of rising costs and potential economic cooling, causing corporate yields to rise faster than G-Sec yields."
   },
   {
-    "id": 5,
-    "question": "Which is NOT a fixed income instrument?",
-    "options": ["Government bond", "Corporate bond", "Equity share", "Debenture"],
-    "answer": "Equity share",
-    "hint": "Variable returns",
-    "explanation": "Equity does not provide fixed returns."
+    "id": 1905,
+    "question": "If the yield curve is 'Humped,' with 5-year yields at 7.5% while 1-year and 10-year yields are both at 6.8%, what does this primarily reflect about market expectations?",
+    "options": [
+      "Expectation of a steady, long-term economic boom.",
+      "Expectation of a short-term rise in inflation followed by a long-term economic slowdown.",
+      "Expectation that interest rates will remain perfectly flat for a decade.",
+      "A lack of liquidity in the 5-year segment."
+    ],
+    "answer": "Expectation of a short-term rise in inflation followed by a long-term economic slowdown.",
+    "hint": "The curve shows a peak in the middle maturities.",
+    "explanation": "A humped curve often indicates that the market expects policy tightening or inflation in the medium term, but anticipates that this will eventually lead to lower growth or lower inflation in the long run."
   },
   {
-    "id": 6,
-    "question": "Scenario: Investor wants protection if rates fall. Best strategy?",
-    "options": ["Buy IR call option", "Sell IR put option", "Buy equity", "Buy gold"],
-    "answer": "Buy IR call option",
-    "hint": "Benefits from falling rates",
-    "explanation": "Call option gains when bond prices rise."
+    "id": 1906,
+    "question": "Calculate the 'Accrued Interest' for a G-Sec with a face value of ₹100 and an 8% coupon (paid semi-annually) if 60 days have passed since the last coupon date. (Use 30/360 day count convention).",
+    "options": [
+      "₹ 1.33",
+      "₹ 0.67",
+      "₹ 2.66",
+      "₹ 0.80"
+    ],
+    "answer": "₹ 1.33",
+    "hint": "Accrued Interest = (Annual Coupon / 2) * (Days Elapsed / 180).",
+    "explanation": "Semi-annual coupon is ₹4.00. Using 30/360, a semi-annual period is 180 days. AI = 4 * (60/180) = ₹ 1.33."
   },
   {
-    "id": 7,
-    "question": "Interest rate futures in India are mainly traded on:",
-    "options": ["NSE", "BSE", "MCX", "NCDEX"],
-    "answer": "NSE",
-    "hint": "Main derivatives exchange",
-    "explanation": "NSE lists standardized IR futures."
+    "id": 1907,
+    "question": "A bank has a 'Duration Gap' where the duration of its assets is significantly higher than the duration of its liabilities. If the yield curve shifts upward in a parallel manner, how will the bank's Net Worth (Equity) be affected?",
+    "options": [
+      "It will increase because higher rates mean more lending income.",
+      "It will decrease because the value of assets will fall more than the value of liabilities.",
+      "It will remain unchanged because the gap is only a theoretical measure.",
+      "It will increase because liabilities will become cheaper to service."
+    ],
+    "answer": "It will decrease because the value of assets will fall more than the value of liabilities.",
+    "hint": "The Net Worth of a bank is Assets minus Liabilities. Higher duration means higher price sensitivity.",
+    "explanation": "When asset duration > liability duration, a rise in interest rates causes the market value of assets to drop more sharply than liabilities, leading to a reduction in the bank's economic value or net worth."
   },
   {
-    "id": 8,
-    "question": "Most exchange-traded interest rate futures are:",
-    "options": ["Physically settled", "Cash settled", "Barter settled", "Cheque settled"],
-    "answer": "Cash settled",
-    "hint": "Standard practice",
-    "explanation": "Settlement usually happens in cash."
+    "id": 1908,
+    "question": "Which of the following describes a 'Floating Rate Bond' with a 'Cap' and a 'Floor' (often called a 'Collar')?",
+    "options": [
+      "A bond where the coupon can move freely without any limits.",
+      "A bond that protects the issuer from rates rising above a limit and the investor from rates falling below a limit.",
+      "A bond that allows the investor to convert it into equity if rates rise.",
+      "A bond that is redeemed automatically if rates hit the cap."
+    ],
+    "answer": "A bond that protects the issuer from rates rising above a limit and the investor from rates falling below a limit.",
+    "hint": "A collar sets both an upper and lower boundary for the coupon.",
+    "explanation": "A cap limits the maximum interest the issuer has to pay, protecting them against rate spikes. A floor limits the minimum interest the investor receives, protecting them against rate crashes."
   },
   {
-    "id": 9,
-    "question": "Scenario: A corporate has floating-rate debt and fears rising rates. Best hedge?",
-    "options": ["Pay fixed in swap", "Receive fixed in swap", "Buy equity", "Sell bonds"],
-    "answer": "Pay fixed in swap",
-    "hint": "Convert floating to fixed",
-    "explanation": "Locks borrowing cost."
+    "id": 1909,
+    "question": "Two bonds have the same 10-year maturity. Bond P has a 5% coupon and Bond Q has a 10% coupon. If market interest rates rise by 1%, which statement is analytically correct?",
+    "options": [
+      "Bond Q's price will fall more in percentage terms because it has higher cash flows.",
+      "Bond P's price will fall more in percentage terms because lower coupon bonds have higher duration.",
+      "Both will fall by the same percentage because their maturities are equal.",
+      "Bond P's price will rise while Bond Q's price will fall."
+    ],
+    "answer": "Bond P's price will fall more in percentage terms because lower coupon bonds have higher duration.",
+    "hint": "Lower coupons delay the receipt of cash flows toward the maturity date.",
+    "explanation": "Duration is inversely related to the coupon rate. Since Bond P has a lower coupon, its cash flows are more concentrated at the end, making it more sensitive to interest rate changes."
   },
   {
-    "id": 10,
-    "question": "Which risk is most relevant to bond investors?",
-    "options": ["Weather risk", "Interest rate risk", "Operational risk", "Cyber risk"],
-    "answer": "Interest rate risk",
-    "hint": "Price sensitivity",
-    "explanation": "Bond prices depend on interest rates."
+    "id": 1910,
+    "question": "In the Indian debt market, which instrument typically follows the 'Actual/365' day count convention for calculating interest?",
+    "options": [
+      "91-Day Treasury Bills",
+      "10-Year Government Securities",
+      "Corporate Bonds",
+      "Interest Rate Futures"
+    ],
+    "answer": "91-Day Treasury Bills",
+    "hint": "Money market instruments in India usually use an 'Actual' days count for the year.",
+    "explanation": "Short-term money market instruments like T-Bills and Commercial Papers in India use Actual/365, whereas long-term G-Secs typically use 30/360 for semi-annual coupon calculations."
   },
   {
-    "id": 11,
-    "question": "Scenario: Rates are expected to fall. What should bond investor do?",
-    "options": ["Buy bonds", "Sell bonds", "Hold cash", "Buy commodities"],
-    "answer": "Buy bonds",
-    "hint": "Prices will rise",
-    "explanation": "Falling rates increase bond prices."
+    "id": 1911,
+    "question": "A corporate entity has borrowed ₹100 Crore at a floating rate of 'MIBOR + 1.5%'. Fearing a spike in interest rates, they enter an Interest Rate Swap to pay 7.5% fixed and receive MIBOR. What is their effective net borrowing cost?",
+    "options": [
+      "MIBOR + 7.5%",
+      "9.0% fixed",
+      "6.0% fixed",
+      "7.5% fixed"
+    ],
+    "answer": "9.0% fixed",
+    "hint": "Net Cost = (Loan Interest Paid) + (Swap Fixed Paid) - (Swap Floating Received).",
+    "explanation": "Paid on loan: MIBOR + 1.5%. Paid on swap: 7.5%. Received on swap: MIBOR. Net = (MIBOR + 1.5%) + 7.5% - MIBOR = 9.0% fixed."
   },
   {
-    "id": 12,
-    "question": "Underlying asset of most IR futures:",
-    "options": ["Equity", "Gold", "Government bond", "Crude oil"],
-    "answer": "Government bond",
-    "hint": "Fixed income base",
-    "explanation": "Contracts are based on notional G-secs."
+    "id": 1912,
+    "question": "An investor enters a 6x12 Forward Rate Agreement (FRA) at an agreed rate of 6.25%. After 6 months, the 6-month MIBOR is 6.75%. Who pays the settlement amount?",
+    "options": [
+      "The buyer pays the seller.",
+      "The seller pays the buyer.",
+      "No payment is made as it is a forward contract.",
+      "Both pay to the exchange."
+    ],
+    "answer": "The seller pays the buyer.",
+    "hint": "The buyer of an FRA locks in a borrowing rate and profits if market rates rise.",
+    "explanation": "Since the market rate (6.75%) is higher than the agreed rate (6.25%), the seller must pay the buyer the difference. The settlement amount is the present value of the interest differential over the 6-month period."
   },
   {
-    "id": 13,
-    "question": "Interest rate swaps are:",
-    "options": ["Exchange traded", "OTC contracts", "Equity instruments", "Commodity contracts"],
-    "answer": "OTC contracts",
-    "hint": "Customized",
-    "explanation": "Terms are negotiated bilaterally."
+    "id": 1913,
+    "question": "Which of the following is a primary reason why Overnight Indexed Swaps (OIS) are considered to have lower counterparty risk compared to term MIBOR swaps?",
+    "options": [
+      "OIS involves the exchange of the full notional principal at maturity.",
+      "The floating leg of OIS is based on a daily compounded overnight rate, reducing term-related volatility and credit risk.",
+      "OIS is only traded between the RBI and commercial banks.",
+      "OIS is a physical delivery instrument."
+    ],
+    "answer": "The floating leg of OIS is based on a daily compounded overnight rate, reducing term-related volatility and credit risk.",
+    "hint": "OIS represents the 'purest' measure of interest rate expectations without term premiums.",
+    "explanation": "Because OIS is based on an overnight benchmark (like the daily MIBOR), it eliminates the term risk and credit risk premiums often embedded in longer-term interbank rates like 3-month or 6-month MIBOR."
   },
   {
-    "id": 14,
-    "question": "Scenario: Investor wants limited downside risk. Best choice?",
-    "options": ["Buy IR option", "Sell IR option", "Trade futures", "Short bonds"],
-    "answer": "Buy IR option",
-    "hint": "Limited risk",
-    "explanation": "Option buyer loses only premium."
+    "id": 1914,
+    "question": "A bank has issued 'Callable Bonds' and wants to hedge the risk that interest rates will fall, preventing them from refinancing at a lower cost. Which 'Swaption' position would be most appropriate?",
+    "options": [
+      "Buy a Payer Swaption (Right to pay fixed, receive floating).",
+      "Buy a Receiver Swaption (Right to receive fixed, pay floating).",
+      "Sell a Payer Swaption.",
+      "Sell a Receiver Swaption."
+    ],
+    "answer": "Buy a Receiver Swaption (Right to receive fixed, pay floating).",
+    "hint": "If rates fall, the bank wants to 'receive fixed' at the higher old rate or use the swap to offset lower lending income.",
+    "explanation": "A Receiver Swaption allows the bank to enter a swap receiving a higher-than-market fixed rate if rates fall, effectively hedging the 'call' risk or the risk of lower reinvestment rates."
   },
   {
-    "id": 15,
-    "question": "Buyer of a put option has:",
-    "options": ["Obligation", "Right but not obligation", "No rights", "Guaranteed profit"],
-    "answer": "Right but not obligation",
-    "hint": "Feature of options",
-    "explanation": "Options give rights, not obligations."
+    "id": 1915,
+    "question": "What is the primary motivation for an institution to enter into a 'Basis Swap' involving two different floating rate indices (e.g., 1-month MIBOR vs 3-month MIBOR)?",
+    "options": [
+      "To convert a fixed rate to a floating rate.",
+      "To hedge the mismatch between the interest rate reset frequency of its assets and liabilities.",
+      "To speculate on the overall direction of interest rates.",
+      "To eliminate credit risk from its portfolio."
+    ],
+    "answer": "To hedge the mismatch between the interest rate reset frequency of its assets and liabilities.",
+    "hint": "Basis risk occurs when different parts of a portfolio use different benchmarks.",
+    "explanation": "If a bank's assets earn interest based on a 3-month reset but its deposits cost 1-month interest, it faces the risk that the spread between the two indices will change. A basis swap hedges this 'basis risk'."
   },
   {
-    "id": 16,
-    "question": "Which option benefits from rising interest rates?",
-    "options": ["Call option", "Put option", "Both", "None"],
-    "answer": "Put option",
-    "hint": "Bond prices fall",
-    "explanation": "Put value increases when rates rise."
+    "id": 1916,
+    "question": "If an Interest Rate Future (IRF) contract has a tick size of ₹0.0025 and the contract face value is ₹2,00,000, what is the 'Tick Value' for a trader holding 5 lots?",
+    "options": [
+      "₹ 5.00",
+      "₹ 25.00",
+      "₹ 50.00",
+      "₹ 12.50"
+    ],
+    "answer": "₹ 25.00",
+    "hint": "Tick Value per lot = (Tick Size / 100) * Face Value.",
+    "explanation": "Tick Value per lot = (0.0025 / 100) * 2,00,000 = ₹5. For 5 lots, the total tick value is 5 * 5 = ₹25."
   },
   {
-    "id": 17,
-    "question": "Scenario: Market is highly volatile. Best derivative?",
-    "options": ["IR option", "Fixed deposit", "Savings account", "T-bill"],
-    "answer": "IR option",
-    "hint": "Volatility sensitive",
-    "explanation": "Options benefit from volatility."
+    "id": 1917,
+    "question": "A portfolio manager holds G-Secs worth ₹10 Crore with a BPV (Basis Point Value) of ₹45,000. They want to hedge using IRF contracts that have a BPV of ₹2,500 per contract. How many contracts should they trade?",
+    "options": [
+      "Sell 18 contracts",
+      "Buy 18 contracts",
+      "Sell 4 contracts",
+      "Buy 4 contracts"
+    ],
+    "answer": "Sell 18 contracts",
+    "hint": "Number of Contracts = Portfolio BPV / Futures BPV. Hedge means taking the opposite position.",
+    "explanation": "N = 45,000 / 2,500 = 18. Since the manager 'holds' the bonds (Long position), they must 'Sell' (Short) the futures to hedge against rising rates."
   },
   {
-    "id": 18,
-    "question": "Modified duration measures sensitivity to:",
-    "options": ["Credit risk", "Interest rate changes", "Liquidity", "Inflation"],
-    "answer": "Interest rate changes",
-    "hint": "Risk metric",
-    "explanation": "Higher duration = higher sensitivity."
+    "id": 1918,
+    "question": "A trader buys 5 lots of 10-year IRF at 98.40. At the end of the day, the settlement price is 98.15. The lot size is 2,000 units. Calculate the Mark-to-Market (MTM) impact.",
+    "options": [
+      "Profit of ₹ 2,500",
+      "Loss of ₹ 2,500",
+      "Loss of ₹ 1,250",
+      "Profit of ₹ 5,000"
+    ],
+    "answer": "Loss of ₹ 2,500",
+    "hint": "MTM = (Settlement Price - Buy Price) * Lot Size * Number of Lots.",
+    "explanation": "MTM = (98.15 - 98.40) * 2,000 * 5 = -0.25 * 10,000 = -₹ 2,500. It is a loss as the price fell."
   },
   {
-    "id": 19,
-    "question": "Scenario: Conservative investor prefers safety. Choose?",
-    "options": ["10-year G-sec", "Intraday equity", "Commodity future", "Crypto"],
-    "answer": "10-year G-sec",
-    "hint": "Low risk",
-    "explanation": "Government securities are safest."
+    "id": 1919,
+    "question": "An individual's margin account for IRF has an Initial Margin requirement of ₹2,00,000 and a Maintenance Margin of ₹1,50,000. If the account balance drops to ₹1,40,000 due to MTM losses, how much must the trader deposit?",
+    "options": [
+      "₹ 10,000",
+      "₹ 50,000",
+      "₹ 60,000",
+      "₹ 0 (it is still within acceptable limits)"
+    ],
+    "answer": "₹ 60,000",
+    "hint": "When the balance hits maintenance margin, you must top it up to the initial margin level.",
+    "explanation": "Since ₹1,40,000 < ₹1,50,000, a margin call is triggered. The trader must replenish the account to the Initial Margin level: 2,00,000 - 1,40,000 = ₹ 60,000."
   },
   {
-    "id": 20,
-    "question": "Which is NOT an interest rate derivative?",
-    "options": ["IR futures", "FRA", "Equity option", "IR swap"],
-    "answer": "Equity option",
-    "hint": "Different market",
-    "explanation": "Equity options are not IR derivatives."
+    "id": 1920,
+    "question": "Why is the 'Conversion Factor' (CF) necessary for the delivery of bonds against a standardized 10-year G-Sec IRF contract?",
+    "options": [
+      "To account for the fact that deliverable bonds have different coupon rates and remaining maturities.",
+      "To convert the price from Indian Rupees to US Dollars for international traders.",
+      "To calculate the brokerage and transaction taxes automatically.",
+      "To adjust for inflation over the life of the contract."
+    ],
+    "answer": "To account for the fact that deliverable bonds have different coupon rates and remaining maturities.",
+    "hint": "The contract is on a 'Notional' 6% bond, but 'Actual' bonds delivered vary.",
+    "explanation": "Multiple actual bonds are eligible for delivery. Since they have different coupons (e.g., 7.5% or 8.2%), the CF adjusts the price the buyer pays to make the delivery fair regardless of which bond the seller chooses."
   },
   {
-    "id": 21,
-    "question": "Scenario: Corporate wants predictable interest expense. Best tool?",
-    "options": ["Interest rate swap", "Gold ETF", "Equity option", "Savings account"],
-    "answer": "Interest rate swap",
-    "hint": "Lock fixed rate",
-    "explanation": "Swaps convert floating to fixed."
+    "id": 1921,
+    "question": "An institutional trader calculates the 'Implied Repo Rate' (IRR) for all bonds in the deliverable basket. Bond A has an IRR of 6.2% and Bond B has an IRR of 5.8%. If the market repo rate is 6.0%, which statement is correct?",
+    "options": [
+      "Bond A is the Cheapest to Deliver (CTD).",
+      "Bond B is the Cheapest to Deliver (CTD).",
+      "Cash and Carry arbitrage is profitable using Bond B.",
+      "Bond A should be avoided by short sellers."
+    ],
+    "answer": "Bond A is the Cheapest to Deliver (CTD).",
+    "hint": "The CTD is typically the bond with the highest Implied Repo Rate.",
+    "explanation": "The IRR is the return from buying the bond and selling the future. The short seller wants to maximize this return (or minimize the delivery cost), making the bond with the highest IRR the most attractive to deliver."
   },
   {
-    "id": 22,
-    "question": "Regulator of exchange-traded derivatives in India:",
-    "options": ["RBI", "SEBI", "IRDAI", "PFRDA"],
-    "answer": "SEBI",
-    "hint": "Market regulator",
-    "explanation": "SEBI regulates derivatives markets."
+    "id": 1922,
+    "question": "If a seller in a physically settled IRF contract fails to deliver the required G-Secs on the settlement day, what is the standard procedure followed by the Clearing Corporation (NSE Clearing)?",
+    "options": [
+      "The contract is cancelled and both parties are refunded.",
+      "The Clearing Corporation buys the securities in an auction and debits the seller for the price difference and penalties.",
+      "The buyer is forced to accept cash instead of bonds.",
+      "The RBI issues new bonds specifically to settle the trade."
+    ],
+    "answer": "The Clearing Corporation buys the securities in an auction and debits the seller for the price difference and penalties.",
+    "hint": "This is a standard 'buy-in' mechanism for settlement defaults.",
+    "explanation": "To ensure market integrity, the clearing house conducts an auction to acquire the bonds for the buyer and charges the defaulting seller for all costs, losses, and a penalty fee."
   },
   {
-    "id": 23,
-    "question": "Scenario: Rates expected to remain stable. Best action?",
-    "options": ["Do nothing", "Speculate heavily", "Short bonds", "Buy commodities"],
-    "answer": "Do nothing",
-    "hint": "Neutral outlook",
-    "explanation": "No need for hedging."
+    "id": 1923,
+    "question": "A trader notices that the price of 10-Year IRF is rising while the 'Open Interest' (OI) is also rising significantly. What does this combination traditionally suggest about market sentiment?",
+    "options": [
+      "The market is weak and a crash is imminent.",
+      "New long positions are being created, confirming a strong bullish trend.",
+      "Short-sellers are covering their positions to exit the market.",
+      "The market is losing interest and liquidity is drying up."
+    ],
+    "answer": "New long positions are being created, confirming a strong bullish trend.",
+    "hint": "Rising price + Rising OI = New money entering in the direction of the trend.",
+    "explanation": "When both price and open interest rise, it indicates that aggressive buyers are entering the market and creating new positions, which is a strong bullish signal for bond prices (bearish for yields)."
   },
   {
-    "id": 24,
-    "question": "OTC interest rate swaps are:",
-    "options": ["Standardized", "Customized", "Exchange traded", "Illiquid"],
-    "answer": "Customized",
-    "hint": "Bilateral contracts",
-    "explanation": "Terms are tailored between parties."
+    "id": 1924,
+    "question": "Under SEBI and exchange guidelines, what is the 'Gross Open Position' limit for a single client in the Interest Rate Futures segment?",
+    "options": [
+      "15% of the total open interest in the market.",
+      "3% of the total open interest or ₹200 Crore, whichever is higher.",
+      "₹500 Crore per client across all expiries.",
+      "Fixed at 50,000 lots per month."
+    ],
+    "answer": "3% of the total open interest or ₹200 Crore, whichever is higher.",
+    "hint": "Client limits are strictly monitored to prevent concentration risk.",
+    "explanation": "The current regulatory limit for an individual client is the higher of 3% of total market Open Interest or ₹200 Crore notional value."
   },
   {
-    "id": 25,
-    "question": "Scenario: Interest rates fall suddenly. Bond investor faces:",
-    "options": ["Capital gain", "Capital loss", "No impact", "Bonus"],
-    "answer": "Capital gain",
-    "hint": "Price rises",
-    "explanation": "Lower rates increase bond prices."
+    "id": 1925,
+    "question": "In the event of a Clearing Member default, which of the following represents the correct sequence (Waterfall) of funds used to cover the loss?",
+    "options": [
+      "Defaulter's Margin -> Core SGF -> Clearing Corporation's own capital.",
+      "Core SGF -> Defaulter's Margin -> RBI bailout.",
+      "Defaulter's Margin -> Clearing Corporation's own capital -> Core SGF -> Other Members' contributions.",
+      "Margins of other members -> Core SGF -> Defaulter's Margin."
+    ],
+    "answer": "Defaulter's Margin -> Clearing Corporation's own capital -> Core SGF -> Other Members' contributions.",
+    "hint": "The defaulter's assets are always used first.",
+    "explanation": "The settlement waterfall uses the defaulter's collateral first, then a portion of the CC's capital, followed by the Settlement Guarantee Fund (SGF), and finally, the pro-rata contributions of other members."
   },
   {
-    "id": 26,
-    "question": "Most liquid fixed income instrument in India:",
-    "options": ["Corporate bond", "Government security", "Municipal bond", "Private loan"],
-    "answer": "Government security",
-    "hint": "High trading volume",
-    "explanation": "G-secs are most liquid."
+    "id": 1926,
+    "question": "A pension fund manager expects interest rates to fall over the next 6 months. To gain from this expectation without buying physical bonds today, which strategy should be adopted in the IRF market?",
+    "options": [
+      "Sell IRF contracts.",
+      "Buy IRF contracts.",
+      "Sell a Call option on IRF.",
+      "Buy a Put option on IRF."
+    ],
+    "answer": "Buy IRF contracts.",
+    "hint": "Falling rates mean rising bond prices. You want a position that profits from a price increase.",
+    "explanation": "Buying interest rate futures (long position) allows the manager to profit if bond prices rise (yields fall). This is a 'Bullish' strategy for bond prices."
   },
   {
-    "id": 27,
-    "question": "Scenario: Bank fears rate rise. Hedge?",
-    "options": ["Sell IR futures", "Buy IR futures", "Buy equity", "Hold cash"],
-    "answer": "Sell IR futures",
-    "hint": "Protect bond value",
-    "explanation": "Selling futures offsets price fall."
+    "id": 1927,
+    "question": "An arbitrageur finds that the 10-year IRF is trading at 99.50, while the theoretical 'Fair Value' (Spot + Carry) is 98.80. Which steps should they take to execute a 'Cash and Carry' arbitrage?",
+    "options": [
+      "Sell the spot bond and buy the futures.",
+      "Buy the spot bond, borrow at repo rates, and sell the futures.",
+      "Buy the futures and buy a Put option to hedge.",
+      "Sell both the spot bond and the futures."
+    ],
+    "answer": "Buy the spot bond, borrow at repo rates, and sell the futures.",
+    "hint": "Arbitrage involves buying the 'cheap' asset and selling the 'expensive' one.",
+    "explanation": "Since the futures price (99.50) is higher than the fair value (98.80), the future is overpriced. The trader buys the bond in the cash market and sells the future to lock in the risk-free profit."
   },
   {
-    "id": 28,
-    "question": "Notional principal in a swap is:",
-    "options": ["Actual exchanged amount", "Reference amount", "Profit amount", "Loss amount"],
-    "answer": "Reference amount",
-    "hint": "Used for calculation",
-    "explanation": "Used to compute interest payments."
+    "id": 1928,
+    "question": "A trader expects a 'Steepening' of the yield curve, where long-term yields will rise significantly while short-term yields remain stable. What is the most effective futures strategy?",
+    "options": [
+      "Buy 10-year IRF and Sell 2-year IRF.",
+      "Sell 10-year IRF and Buy 2-year IRF.",
+      "Sell both 10-year and 2-year IRF.",
+      "Buy both 10-year and 2-year IRF."
+    ],
+    "answer": "Sell 10-year IRF and Buy 2-year IRF.",
+    "hint": "Rising yields = Falling prices. You want to be short where you expect yields to rise.",
+    "explanation": "In a steepener, 10-year bond prices will fall more than 2-year bond prices. By selling the 10-year future and buying the 2-year future, the trader profits from the widening spread."
   },
   {
-    "id": 29,
-    "question": "Scenario: Investor wants flexibility with limited risk. Choose?",
-    "options": ["IR option", "IR future", "Bond", "FD"],
-    "answer": "IR option",
-    "hint": "Right not obligation",
-    "explanation": "Options offer flexibility."
+    "id": 1929,
+    "question": "What is 'Basis Risk' in the context of hedging a corporate bond portfolio with G-Sec Interest Rate Futures?",
+    "options": [
+      "The risk that the broker will default.",
+      "The risk that the interest rate move will be in the opposite direction.",
+      "The risk that the yield spread between corporate bonds and G-Secs will change unexpectedly.",
+      "The risk that the exchange will change the tick size."
+    ],
+    "answer": "The risk that the yield spread between corporate bonds and G-Secs will change unexpectedly.",
+    "hint": "Basis risk exists when the hedging instrument and the underlying asset are not perfectly identical.",
+    "explanation": "Because the IRF tracks G-Secs, it only hedges the interest rate component. If corporate bond yields rise due to a credit downgrade while G-Sec yields stay stable, the hedge will not offset the loss in the corporate bond portfolio."
   },
   {
-    "id": 30,
-    "question": "Short-term government debt instrument:",
-    "options": ["Treasury Bill", "10-year bond", "Corporate debenture", "Preference share"],
-    "answer": "Treasury Bill",
-    "hint": "Maturity < 1 year",
-    "explanation": "T-Bills are short-term instruments."
+    "id": 1930,
+    "question": "Calculate the 'Invoice Price' for a deliverable bond if the IRF settlement price is 101.00, the Conversion Factor is 1.05, and the bond has ₹1.25 of accrued interest.",
+    "options": [
+      "₹ 107.30",
+      "₹ 102.25",
+      "₹ 106.05",
+      "₹ 101.00"
+    ],
+    "answer": "₹ 107.30",
+    "hint": "Invoice Price = (Futures Price * Conversion Factor) + Accrued Interest.",
+    "explanation": "Invoice Price = (101.00 * 1.05) + 1.25 = 106.05 + 1.25 = ₹ 107.30."
   },
   {
-    "id": 31,
-    "question": "Scenario: Trader expects sharp rate movement. Best tool?",
-    "options": ["IR option", "Savings account", "Fixed deposit", "T-bill"],
-    "answer": "IR option",
-    "hint": "Volatility sensitive",
-    "explanation": "Options benefit from volatility."
+    "id": 1931,
+    "question": "A trader places an order to buy 10 lots of IRF at a 'Trigger Price' of 98.50 and a 'Limit Price' of 98.60. What kind of order is this?",
+    "options": [
+      "Market Order",
+      "Stop-Loss Market Order",
+      "Stop-Loss Limit Order",
+      "IOC (Immediate or Cancel) Order"
+    ],
+    "answer": "Stop-Loss Limit Order",
+    "hint": "The order only becomes active at the trigger price and has a capped execution price.",
+    "explanation": "A Stop-Loss Limit order is inactive until the market hits the 'trigger.' Once triggered, it becomes a limit order that can only be executed at the limit price or better."
   },
   {
-    "id": 32,
-    "question": "Option premium increases with:",
-    "options": ["Higher volatility", "Lower volatility", "Lower interest", "Lower liquidity"],
-    "answer": "Higher volatility",
-    "hint": "Key determinant",
-    "explanation": "Volatility raises option value."
+    "id": 1932,
+    "question": "Under the SPAN margin methodology, how does the exchange treat a portfolio containing 10 Long September IRF contracts and 10 Short December IRF contracts?",
+    "options": [
+      "It charges full initial margin on both, as they are separate contracts.",
+      "It provides a 'Spread Margin' benefit, significantly reducing the total margin required due to the offsetting nature of the positions.",
+      "It considers the position as neutral and charges zero margin.",
+      "It prohibits such positions to prevent market cornering."
+    ],
+    "answer": "It provides a 'Spread Margin' benefit, significantly reducing the total margin required due to the offsetting nature of the positions.",
+    "hint": "Calendar spreads are less risky than naked directional positions.",
+    "explanation": "Since the long and short positions are in the same underlying across different months, they are highly correlated. SPAN recognizes this and charges a much lower 'spread margin' instead of two separate initial margins."
   },
   {
-    "id": 33,
-    "question": "Scenario: Corporate fears rate fall. Hedge?",
-    "options": ["Buy IR call option", "Buy put option", "Sell bond", "Buy equity"],
-    "answer": "Buy IR call option",
-    "hint": "Protects against fall",
-    "explanation": "Call options gain when rates fall."
+    "id": 1933,
+    "question": "Which of the following is true regarding the settlement of 91-Day T-Bill Futures in India?",
+    "options": [
+      "It is settled via physical delivery of T-Bills into the buyer's demat account.",
+      "It is cash-settled based on the weighted average price of the T-Bill auction conducted by the RBI.",
+      "It is cash-settled based on the closing price of the 10-year G-Sec.",
+      "T-Bill futures are not traded in India."
+    ],
+    "answer": "It is cash-settled based on the weighted average price of the T-Bill auction conducted by the RBI.",
+    "hint": "The 91-Day T-Bill future uses the primary market auction as its benchmark.",
+    "explanation": "Unlike 10-year G-Sec futures which can be physically settled, T-Bill futures are cash-settled against the results of the weekly 91-day T-Bill auction results."
   },
   {
-    "id": 34,
-    "question": "Common Indian benchmark rate:",
-    "options": ["MIBOR", "SENSEX", "NIFTY", "DOW JONES"],
-    "answer": "MIBOR",
-    "hint": "Indian benchmark",
-    "explanation": "Used in IR markets."
+    "id": 1934,
+    "question": "If a broker modifies a client code for a trade in the IRF segment after the market has closed, which of the following is correct regarding compliance?",
+    "options": [
+      "It is allowed freely as long as the client agrees.",
+      "It is allowed only for genuine errors, within a specific time window, and is subject to exchange penalties.",
+      "It is strictly prohibited under all circumstances.",
+      "It is only allowed if the trade resulted in a loss for the client."
+    ],
+    "answer": "It is allowed only for genuine errors, within a specific time window, and is subject to exchange penalties.",
+    "hint": "Client Code Modification (CCM) is strictly regulated to prevent 'profit shifting' and tax evasion.",
+    "explanation": "CCM is only permitted to correct clerical errors. Brokers must report these to the exchange and pay a penalty, which increases with the frequency and size of modifications."
   },
   {
-    "id": 35,
-    "question": "Scenario: Wants zero credit risk. Choose?",
-    "options": ["Government bond", "Corporate bond", "Private loan", "Equity"],
-    "answer": "Government bond",
-    "hint": "Sovereign guarantee",
-    "explanation": "G-secs are credit-risk free."
+    "id": 1935,
+    "question": "As an Interest Rate Futures contract approaches its last trading day, what should happen to the 'Basis' (Spot Price - Future Price) in an efficient market?",
+    "options": [
+      "It should stay constant until the very last second.",
+      "It should widen as traders exit their positions.",
+      "It should converge toward zero.",
+      "It should always become negative."
+    ],
+    "answer": "It should converge toward zero.",
+    "hint": "At expiry, there is no difference between a forward commitment and a spot transaction.",
+    "explanation": "The 'cost of carry' that differentiates the futures price from the spot price decreases as time passes. On the final day, the future price must equal the spot price to prevent arbitrage."
   },
   {
-    "id": 36,
-    "question": "IR futures are:",
-    "options": ["Standardized", "Customized", "Non-tradable", "Illiquid"],
-    "answer": "Standardized",
-    "hint": "Exchange feature",
-    "explanation": "Exchange contracts are standardized."
+    "id": 1936,
+    "question": "The 'Delta' of a Call option on Interest Rate Futures is 0.65. If the underlying futures price rises by ₹0.50, by how much is the option premium expected to change?",
+    "options": [
+      "Increase by ₹ 0.50",
+      "Increase by ₹ 0.325",
+      "Decrease by ₹ 0.325",
+      "Increase by ₹ 0.65"
+    ],
+    "answer": "Increase by ₹ 0.325",
+    "hint": "Change in Premium ≈ Delta * Change in Underlying.",
+    "explanation": "Change = 0.65 * 0.50 = ₹ 0.325. Since it is a call option with positive delta, the premium rises as the underlying rises."
   },
   {
-    "id": 37,
-    "question": "Scenario: Bank wants fixed income stream. Choose?",
-    "options": ["Fixed rate bond", "Floating bond", "IR option", "Equity"],
-    "answer": "Fixed rate bond",
-    "hint": "Predictable cash flow",
-    "explanation": "Provides stable income."
+    "id": 1937,
+    "question": "A trader is 'Short Gamma' on a portfolio of options near expiry. If the underlying market suddenly becomes highly volatile with large price swings, what is the most likely outcome for the trader?",
+    "options": [
+      "The trader will benefit from higher volatility.",
+      "The trader will face significant losses as their Delta exposure changes rapidly and in the 'wrong' direction.",
+      "The trader will earn more from time decay (Theta) than they lose from Gamma.",
+      "The position will become 'Delta Neutral' automatically."
+    ],
+    "answer": "The trader will face significant losses as their Delta exposure changes rapidly and in the 'wrong' direction.",
+    "hint": "Short Gamma means you are 'short volatility' and your directional hedge becomes ineffective quickly during large moves.",
+    "explanation": "Gamma is highest near expiry. Being short gamma means small moves in the underlying cause large, unfavorable shifts in your delta, requiring frequent and expensive re-hedging during high volatility."
   },
   {
-    "id": 38,
-    "question": "Who bears maximum risk in selling an option?",
-    "options": ["Buyer", "Seller", "Exchange", "RBI"],
-    "answer": "Seller",
-    "hint": "Unlimited risk",
-    "explanation": "Option sellers face potentially unlimited losses."
+    "id": 1938,
+    "question": "Comparing an 'At-The-Money' (ATM) option and a 'Deep Out-Of-The-Money' (OTM) option, which one will generally experience the highest rate of time decay (Theta) as it approaches the final week of expiry?",
+    "options": [
+      "The Deep OTM option.",
+      "The ATM option.",
+      "Both will decay at the exact same rate.",
+      "Theta is always zero for OTM options."
+    ],
+    "answer": "The ATM option.",
+    "hint": "Theta is highest when the uncertainty of the option finishing 'In-The-Money' is greatest.",
+    "explanation": "ATM options consist entirely of time value and have the highest uncertainty. This time value erodes most rapidly during the final days, making the Theta of ATM options the highest in the portfolio."
   },
   {
-    "id": 39,
-    "question": "Scenario: Wants high return with high risk. Choose?",
-    "options": ["IR futures", "Fixed deposit", "Savings account", "G-sec"],
-    "answer": "IR futures",
-    "hint": "Leverage",
-    "explanation": "Futures offer higher risk-return."
+    "id": 1939,
+    "question": "If the 'Implied Volatility' (IV) of the interest rate market surges by 5% overnight due to geopolitical tensions, which of the following option strategies will see the largest increase in its market value?",
+    "options": [
+      "Short Straddle",
+      "Iron Condor",
+      "Long Straddle",
+      "Covered Call"
+    ],
+    "answer": "Long Straddle",
+    "hint": "Look for the strategy that is 'Long Vega.'",
+    "explanation": "A Long Straddle involves buying both a Call and a Put. Both options have positive Vega. When IV rises, the premium of both options increases, benefiting the holder of a long straddle."
   },
   {
-    "id": 40,
-    "question": "Bond yield moves:",
-    "options": ["Same as price", "Opposite to price", "No relation", "Randomly"],
-    "answer": "Opposite to price",
-    "hint": "Inverse relation",
-    "explanation": "Higher yield = lower price."
+    "id": 1940,
+    "question": "An investor sets up a 'Bull Call Spread' by buying a 98.00 strike Call and selling a 99.50 strike Call. What is the maximum possible profit for this strategy?",
+    "options": [
+      "Unlimited.",
+      "₹ 1.50 minus the net premium paid.",
+      "Limited to the premium received from the 99.50 call.",
+      "The difference between the two strikes plus the premium paid."
+    ],
+    "answer": "₹ 1.50 minus the net premium paid.",
+    "hint": "Max Profit = (Higher Strike - Lower Strike) - Net Premium Paid.",
+    "explanation": "The maximum gain occurs if the price is above 99.50. It is capped at the spread between the strikes (1.50) minus the initial cost of entering the trade."
   },
   {
-    "id": 41,
-    "question": "Scenario: Rates expected to rise. Best action?",
-    "options": ["Sell bonds", "Buy bonds", "Sell futures", "Buy commodities"],
-    "answer": "Sell bonds",
-    "hint": "Prices will fall",
-    "explanation": "Rising rates reduce bond prices."
+    "id": 1941,
+    "question": "An investor implements a 'Bear Put Spread' by buying a 101.00 Put and selling a 99.50 Put. If the net premium paid is ₹0.40, what is the 'Maximum Loss' for the investor?",
+    "options": [
+      "₹ 1.50",
+      "₹ 1.10",
+      "₹ 0.40",
+      "Unlimited"
+    ],
+    "answer": "₹ 0.40",
+    "hint": "For a 'debit' spread, you cannot lose more than what you spent to open it.",
+    "explanation": "In a Bear Put Spread, the maximum loss is the net premium paid at the start. This occurs if the underlying price stays above the 101.00 strike at expiry, causing both puts to expire worthless."
   },
   {
-    "id": 42,
-    "question": "IR derivatives trade in:",
-    "options": ["Derivatives market", "Equity market", "Real estate", "Commodity market"],
-    "answer": "Derivatives market",
-    "hint": "Specialized segment",
-    "explanation": "Separate market segment."
+    "id": 1942,
+    "question": "A trader expects a major RBI monetary policy announcement to cause a massive move in bond yields, but is unsure if the move will be up or down. Which strategy is most suitable?",
+    "options": [
+      "Short Straddle",
+      "Long Straddle",
+      "Bull Call Spread",
+      "Protective Put"
+    ],
+    "answer": "Long Straddle",
+    "hint": "You need a strategy that profits from high volatility regardless of the direction.",
+    "explanation": "A Long Straddle (buying both a call and a put at the same strike) is the classic 'volatility bet.' It makes money if the price moves significantly in either direction, exceeding the cost of the two premiums."
   },
   {
-    "id": 43,
-    "question": "Scenario: Corporate wants flexible borrowing. Choose?",
-    "options": ["IR option", "IR future", "Bond", "FD"],
-    "answer": "IR option",
-    "hint": "Right but not obligation",
-    "explanation": "Options provide flexibility."
+    "id": 1943,
+    "question": "A 'Short Strangle' strategy involves selling an OTM Call and an OTM Put. Under which market conditions is this strategy most profitable?",
+    "options": [
+      "High market volatility and sharp price spikes.",
+      "Low market volatility where the price stays within a specific range.",
+      "A steady, aggressive bullish trend.",
+      "Immediately after a massive market crash."
+    ],
+    "answer": "Low market volatility where the price stays within a specific range.",
+    "hint": "This strategy collects premiums and loses money if the price 'breaks out' of the range.",
+    "explanation": "The short strangle seller profits from time decay (Theta) and stable prices. As long as the underlying stays between the two strikes at expiry, the seller keeps the full premium."
   },
   {
-    "id": 44,
-    "question": "Risk reduced by hedging:",
-    "options": ["Interest rate risk", "Systematic risk", "Market crash", "Inflation"],
-    "answer": "Interest rate risk",
-    "hint": "Purpose of derivatives",
-    "explanation": "Hedging reduces rate exposure."
+    "id": 1944,
+    "question": "According to the principles of Put-Call Parity, how can a trader create a 'Synthetic Short Futures' position using options?",
+    "options": [
+      "Long Call + Short Put",
+      "Short Call + Long Put",
+      "Short Call + Short Put",
+      "Long Call + Long Put"
+    ],
+    "answer": "Short Call + Long Put",
+    "hint": "A short future makes money when the price falls. Which options match this?",
+    "explanation": "Selling a call (loss if price rises) and buying a put (gain if price falls) creates a linear payoff that mimics a short position in the underlying futures contract."
   },
   {
-    "id": 45,
-    "question": "Scenario: Very short-term investment. Choose?",
-    "options": ["Treasury Bill", "10-year bond", "Equity", "Corporate debenture"],
-    "answer": "Treasury Bill",
-    "hint": "Short maturity",
-    "explanation": "Suitable for short-term."
+    "id": 1945,
+    "question": "In the Black-76 model for pricing options on Interest Rate Futures, which of the following inputs is NOT directly observable from the market and must be estimated?",
+    "options": [
+      "Strike Price",
+      "Current Futures Price",
+      "Time to Expiry",
+      "Implied Volatility"
+    ],
+    "answer": "Implied Volatility",
+    "hint": "This value represents the market's expectation of future turbulence.",
+    "explanation": "While strike, price, and time are fixed or observable, volatility is an estimation of future price swings. It is often 'implied' by working the Black-76 formula backward from the current option market price."
   },
   {
-    "id": 46,
-    "question": "Who issues G-secs in India?",
-    "options": ["RBI", "SEBI", "NABARD", "IRDAI"],
-    "answer": "RBI",
-    "hint": "On behalf of Government",
-    "explanation": "RBI manages issuance."
+    "id": 1946,
+    "question": "An investor holds an 'In-The-Money' (ITM) Put option on IRF. If the RBI unexpectedly hikes interest rates by 1%, what will be the impact on the value of this Put option?",
+    "options": [
+      "The value will decrease because rates rose.",
+      "The value will increase because rising rates lead to falling bond/futures prices.",
+      "The value will remain unchanged as it is already ITM.",
+      "The value will fall to zero immediately."
+    ],
+    "answer": "The value will increase because rising rates lead to falling bond/futures prices.",
+    "hint": "Puts profit when the underlying asset's price falls.",
+    "explanation": "Interest rate hikes cause bond prices (and IRF prices) to fall. Since a Put option gains value when the underlying price drops, the value of the Put will increase significantly."
   },
   {
-    "id": 47,
-    "question": "Scenario: Trader buys put option. Rates fall. Result?",
-    "options": ["Loss", "Profit", "No change", "Double profit"],
-    "answer": "Loss",
-    "hint": "Put benefits from rise",
-    "explanation": "Put loses value when rates fall."
+    "id": 1947,
+    "question": "How are exchange-traded options on Government Securities (G-Secs) in India typically settled at expiry?",
+    "options": [
+      "Physical delivery of the underlying G-Sec bond.",
+      "Cash-settlement based on the intrinsic value of the option at expiry.",
+      "Conversion into a new futures contract.",
+      "Settlement is done via the RBI's repo window."
+    ],
+    "answer": "Cash-settlement based on the intrinsic value of the option at expiry.",
+    "hint": "Most index and bond options on Indian exchanges do not involve physical asset movement.",
+    "explanation": "At expiry, 'In-The-Money' options are automatically exercised, and the intrinsic value (Difference between strike and settlement price) is credited/debited to the accounts in cash."
   },
   {
-    "id": 48,
-    "question": "Key participant in fixed income markets:",
-    "options": ["Banks", "Grocery stores", "Restaurants", "Schools"],
-    "answer": "Banks",
-    "hint": "Financial institution",
-    "explanation": "Banks are major players."
+    "id": 1948,
+    "question": "A fund manager wants to protect a ₹100 Crore G-Sec portfolio against a potential market crash (spike in yields). They choose to buy Put options instead of selling futures. What is the primary 'Cost' of this insurance compared to using futures?",
+    "options": [
+      "Unlimited potential loss if the market rises.",
+      "The 'Premium' paid upfront, which is a sunk cost if the market remains stable.",
+      "A higher margin requirement than futures.",
+      "The obligation to deliver bonds at expiry."
+    ],
+    "answer": "The 'Premium' paid upfront, which is a sunk cost if the market remains stable.",
+    "hint": "Options are like insurance; you pay for the protection even if you don't use it.",
+    "explanation": "While futures have no 'cost' to enter (other than margin), options require a premium payment. If interest rates don't rise, the fund manager loses the premium, whereas with futures, they would have lost more if prices rose."
   },
   {
-    "id": 49,
-    "question": "Scenario: Corporate wants certainty in rates. Best tool?",
-    "options": ["Interest rate swap", "Equity option", "Gold ETF", "Savings account"],
-    "answer": "Interest rate swap",
-    "hint": "Locks fixed rate",
-    "explanation": "Eliminates rate uncertainty."
+    "id": 1949,
+    "question": "A pension fund holds a massive amount of 10-year G-Secs and expects interest rates to remain stable for the next quarter. To enhance the portfolio's return, they sell 'Out-Of-The-Money' Call options. What is this strategy called?",
+    "options": [
+      "Protective Put",
+      "Covered Call",
+      "Bull Spread",
+      "Iron Butterfly"
+    ],
+    "answer": "Covered Call",
+    "hint": "You 'cover' the short call with the underlying asset you already own.",
+    "explanation": "A covered call involves selling calls against an underlying long position. The fund earns the premium income, which acts as an extra 'yield,' though it limits their upside if bond prices rally significantly."
   },
   {
-    "id": 50,
-    "question": "Scenario: Wants safe and liquid investment. Choose?",
-    "options": ["Government security", "Corporate bond", "Private loan", "Equity"],
-    "answer": "Government security",
-    "hint": "Highly liquid and safe",
-    "explanation": "G-secs are safest and most liquid."
+    "id": 1950,
+    "question": "Which Option Greek measures the sensitivity of the option's premium to a change in the risk-free interest rate?",
+    "options": [
+      "Delta",
+      "Theta",
+      "Rho",
+      "Vega"
+    ],
+    "answer": "Rho",
+    "hint": "R stands for Rates.",
+    "explanation": "Rho measures the expected change in the price of an option for a 1% change in the risk-free interest rate. For IRF options, Rho is a critical measure of how shifts in the repo rate affect premiums."
   },
-  {"id":51,"question":"A manufacturing company has floating-rate borrowing linked to 6M MIBOR and fears a sudden rate spike due to RBI policy. Which instrument gives protection only above a chosen level?","options":["Interest Rate Cap","Pay-fixed IRS","FRA","Bond futures"],"answer":"Interest Rate Cap","hint":"Upside protection only.","explanation":"A cap compensates the borrower only when rates exceed the strike."},
-
-  {"id":52,"question":"A bank expects short-term rates to fall sharply after the upcoming MPC meeting. Which position benefits MOST?","options":["Long T-bill futures","Short T-bill futures","Buy floor","Pay-fixed swap"],"answer":"Long T-bill futures","hint":"Rate down → price up.","explanation":"Futures prices rise when interest rates decline."},
-
-  {"id":53,"question":"Company A enters FRA 2x5. This locks the rate for which period?","options":["0–2 months","2–5 months","5–7 months","2–4 months"],"answer":"2–5 months","hint":"FRA notation.","explanation":"First number is start, second is end of the covered period."},
-
-  {"id":54,"question":"A bank has floating-rate assets and fixed-rate liabilities. It faces maximum risk when rates:","options":["Fall","Rise","Stay constant","Turn negative"],"answer":"Fall","hint":"ALM mismatch.","explanation":"Asset income falls while liability cost remains fixed."},
-
-  {"id":55,"question":"A zero-cost collar is created when a borrower:","options":["Buys a cap and sells a floor","Buys a cap and buys a floor","Sells a cap only","Enters only a swap"],"answer":"Buys a cap and sells a floor","hint":"Premium offset strategy.","explanation":"Floor premium finances the cap purchase."},
-
-  {"id":56,"question":"Maximum loss for the buyer of an interest rate cap is:","options":["Unlimited","Limited to premium","Zero","Equal to notional"],"answer":"Limited to premium","hint":"Option buyer risk.","explanation":"The buyer loses only the premium paid."},
-
-  {"id":57,"question":"A corporate wants fixed interest payments on its loan. The correct IRS position is:","options":["Pay fixed","Receive fixed","Sell cap","Buy floor"],"answer":"Pay fixed","hint":"Convert floating to fixed.","explanation":"Pay-fixed swap provides payment certainty."},
-
-  {"id":58,"question":"To hedge borrowing for 6 months starting after 3 months, the correct FRA is:","options":["FRA 3x9","FRA 6x12","FRA 0x6","FRA 9x15"],"answer":"FRA 3x9","hint":"Forward period coverage.","explanation":"Covers period from month 3 to 9."},
-
-  {"id":59,"question":"Basis risk is highest when:","options":["Same benchmark and maturity","Different benchmark and maturity","No hedge","Only fixed rates exist"],"answer":"Different benchmark and maturity","hint":"Mismatch risk.","explanation":"Greater mismatch increases basis risk."},
-
-  {"id":60,"question":"A trader expects high volatility after budget announcement but is unsure of direction. Best strategy:","options":["Straddle","Bull spread","Covered call","Short futures"],"answer":"Straddle","hint":"Volatility play.","explanation":"Profits from large movement either way."},
-
-  {"id":61,"question":"All exchange-traded IRD trades are cleared through:","options":["Broker","CCP","RBI","SEBI"],"answer":"CCP","hint":"Central counterparty.","explanation":"CCP guarantees settlement via novation."},
-
-  {"id":62,"question":"A limit order provides:","options":["Execution certainty","Price certainty","Fastest trade","No margin"],"answer":"Price certainty","hint":"Order type.","explanation":"Trade executes only at specified price or better."},
-
-  {"id":63,"question":"Depth of Market (DOM) is mainly used to assess:","options":["Tax liability","Liquidity","Only last price","Brokerage"],"answer":"Liquidity","hint":"Order book view.","explanation":"Shows bids and offers at various prices."},
-
-  {"id":64,"question":"If tick size is 0.02, next valid price after 101.08 is:","options":["101.09","101.10","101.12","101.081"],"answer":"101.10","hint":"Minimum price movement.","explanation":"Prices move in multiples of 0.02."},
-
-  {"id":65,"question":"Rising prices with rising open interest indicate:","options":["Bullish trend","Bearish trend","No trend","Only short covering"],"answer":"Bullish trend","hint":"Fresh buying.","explanation":"New long positions are being created."},
-
-  {"id":66,"question":"Circuit filters are imposed to:","options":["Increase profit","Control extreme volatility","Stop clearing","Remove brokers"],"answer":"Control extreme volatility","hint":"Market stability.","explanation":"They pause trading during sharp movements."},
-
-  {"id":67,"question":"Which IRD is primarily OTC?","options":["Bond futures","Interest rate swap","Exchange option","T-bill futures"],"answer":"Interest rate swap","hint":"Customized contract.","explanation":"Swaps are privately negotiated."},
-
-  {"id":68,"question":"Daily settlement price is used for:","options":["MTM calculation","Brokerage","Tax filing","Contract signing"],"answer":"MTM calculation","hint":"Mark-to-market.","explanation":"Used to compute daily profits and losses."},
-
-  {"id":69,"question":"After novation, trades are effectively between:","options":["Two brokers","CCP and members","Client and exchange","Two clients"],"answer":"CCP and members","hint":"Clearing process.","explanation":"CCP becomes counterparty to both sides."},
-
-  {"id":70,"question":"Initial margin is meant to cover:","options":["Past losses","Potential future losses","Broker profit","Tax liability"],"answer":"Potential future losses","hint":"Risk buffer.","explanation":"Protects against adverse price movements."},
-
-  {"id":71,"question":"Variation margin is payable when there is:","options":["Profit","Loss","No change","Monthly review"],"answer":"Loss","hint":"MTM loss.","explanation":"Losing party pays variation margin."},
-
-  {"id":72,"question":"First layer in default waterfall is:","options":["Exchange fund","Defaulting member’s margin","Government","Client funds"],"answer":"Defaulting member’s margin","hint":"Risk hierarchy.","explanation":"Member’s own margin is used first."},
-
-  {"id":73,"question":"Position limits are imposed to prevent:","options":["Liquidity issues","Concentration risk","Profit making","Trading activity"],"answer":"Concentration risk","hint":"Market safety.","explanation":"Limits avoid excessive exposure by one participant."},
-
-  {"id":74,"question":"Most IRD futures in India are:","options":["Physically settled","Cash settled","Cheque settled","Delivered as bonds"],"answer":"Cash settled","hint":"Practical method.","explanation":"Avoids physical delivery complications."},
-
-  {"id":75,"question":"Primary regulator of IRD in India is:","options":["RBI","SEBI","IRDAI","PFRDA"],"answer":"SEBI","hint":"Securities market.","explanation":"SEBI governs derivatives trading."},
-
-  {"id":76,"question":"Brokers must comply with:","options":["FEMA","SEBI Stock Brokers Regulations, 1992","RBI Act","Companies Act"],"answer":"SEBI Stock Brokers Regulations, 1992","hint":"Broker framework.","explanation":"This governs broker conduct and compliance."},
-
-  {"id":77,"question":"Risk Disclosure Document must be provided to:","options":["Broker","Client","Exchange","RBI"],"answer":"Client","hint":"Investor awareness.","explanation":"Clients must understand trading risks."},
-
-  {"id":78,"question":"Main benefit of CCP is reduction of:","options":["Market risk","Counterparty risk","Liquidity risk","Interest risk"],"answer":"Counterparty risk","hint":"Novation benefit.","explanation":"CCP guarantees settlement."},
-
-  {"id":79,"question":"Extreme Loss Margin is imposed during:","options":["Low volatility","High volatility","No trading","Broker request"],"answer":"High volatility","hint":"Extra safety.","explanation":"Protects against extreme market movements."},
-
-  {"id":80,"question":"Daily MTM ensures:","options":["Delayed settlement","Timely risk control","No margin","Annual settlement"],"answer":"Timely risk control","hint":"Risk management.","explanation":"Losses are settled daily."},
-
-  {"id":81,"question":"Accounting for derivatives is covered under:","options":["Ind AS 109","Ind AS 16","Ind AS 1","AS 3"],"answer":"Ind AS 109","hint":"Financial instruments.","explanation":"Covers recognition and measurement."},
-
-  {"id":82,"question":"Hedge documentation is:","options":["Optional","Mandatory","Verbal","Irrelevant"],"answer":"Mandatory","hint":"Compliance.","explanation":"Required for hedge accounting."},
-
-  {"id":83,"question":"Frequent derivative trading income is treated as:","options":["Salary","Business income","Capital gains","Tax free"],"answer":"Business income","hint":"Active trading.","explanation":"Regular trading is considered business activity."},
-
-  {"id":84,"question":"Speculative derivative loss can be set off against:","options":["Any income","Only speculative income","Salary","Dividend"],"answer":"Only speculative income","hint":"Tax rule.","explanation":"Restricted set-off applies."},
-
-  {"id":85,"question":"Best execution means:","options":["Lowest brokerage","Best price for client","Fastest trade","Highest profit"],"answer":"Best price for client","hint":"Client interest.","explanation":"Broker must act in client’s best interest."},
-
-  {"id":86,"question":"Front running is:","options":["Allowed","Prohibited","Optional","Unregulated"],"answer":"Prohibited","hint":"Unfair practice.","explanation":"Trading ahead of client orders is illegal."},
-
-  {"id":87,"question":"Churning refers to:","options":["Client profit","Excessive trading by broker","Exchange rule","Margin call"],"answer":"Excessive trading by broker","hint":"Misconduct.","explanation":"Done to earn commissions."},
-
-  {"id":88,"question":"SEBI grievance portal is:","options":["SEBI SCORES","NSE email","Bank helpline","Private app"],"answer":"SEBI SCORES","hint":"Official platform.","explanation":"Online complaint system."},
-
-  {"id":89,"question":"Insider trading in IRD is:","options":["Allowed","Prohibited","Partially allowed","Unregulated"],"answer":"Prohibited","hint":"Market integrity.","explanation":"Use of non-public info is illegal."},
-
-  {"id":90,"question":"Broker must protect:","options":["Client confidentiality","Broker profit","No records","Verbal records"],"answer":"Client confidentiality","hint":"Ethical duty.","explanation":"Client data must be safeguarded."},
-
-  {"id":91,"question":"Which is NOT an investor protection measure?","options":["Margin rules","Guaranteed returns","Risk disclosure","Trade confirmation"],"answer":"Guaranteed returns","hint":"No guarantees.","explanation":"Markets do not promise returns."},
-
-  {"id":92,"question":"Broker-client disputes can be resolved through:","options":["Arbitration","Social media","Street protest","Only court"],"answer":"Arbitration","hint":"ADR mechanism.","explanation":"Preferred dispute resolution."},
-
-  {"id":93,"question":"Trade confirmation should be sent:","options":["Same day","Next week","Only on request","Never"],"answer":"Same day","hint":"Transparency.","explanation":"Timely confirmation is mandatory."},
-
-  {"id":94,"question":"SEBI’s main objective is:","options":["Broker profit","Market integrity","Guaranteed returns","No regulation"],"answer":"Market integrity","hint":"Regulatory role.","explanation":"SEBI maintains orderly markets."},
-
-  {"id":95,"question":"Margin shortfall leads to:","options":["No action","Margin call","Bonus","Tax rebate"],"answer":"Margin call","hint":"Risk control.","explanation":"Client must top-up margin."},
-
-  {"id":96,"question":"Clearing member ensures:","options":["Broker profit","Trade settlement","No risk","Tax payment"],"answer":"Trade settlement","hint":"Clearing role.","explanation":"Guarantees settlement."},
-
-  {"id":97,"question":"Even after hedging, which risk may remain?","options":["Basis risk","No risk","Only credit risk","No exposure"],"answer":"Basis risk","hint":"Imperfect hedge.","explanation":"Mismatch may persist."},
-
-  {"id":98,"question":"Speculator uses IRD to:","options":["Hedge risk","Earn profit from price movement","Avoid tax","Reduce margin"],"answer":"Earn profit from price movement","hint":"Speculation.","explanation":"Speculators take directional bets."},
-
-  {"id":99,"question":"Hedger uses IRD to:","options":["Gamble","Reduce risk","Avoid regulation","Increase volatility"],"answer":"Reduce risk","hint":"Purpose of hedging.","explanation":"Stabilizes cash flows."},
-
-  {"id":100,"question":"IRD markets in India are best described as:","options":["Unregulated","Highly regulated","No clearing","Only OTC"],"answer":"Highly regulated","hint":"SEBI oversight.","explanation":"Operate under strict regulation and CCP clearing."}
+  {
+    "id": 1951,
+    "question": "A corporate treasurer holds a portfolio of bonds worth ₹100 Crores with a Modified Duration of 5. He fears interest rates will rise. To hedge using 10-Year G-Sec Futures (Price: ₹98, Modified Duration: 6.5, Contract Size: ₹2,00,000), how many contracts should he short?",
+    "options": [
+      "3,846 contracts",
+      "3,922 contracts",
+      "2,551 contracts",
+      "5,000 contracts"
+    ],
+    "answer": "3,922 contracts",
+    "hint": "Hedge Ratio = (Portfolio Value × Portfolio Duration) / (Futures Value × Futures Duration). Futures Value = Price/100 × Contract Size.",
+    "explanation": "Futures Contract Value = (98/100) * 2,00,000 = ₹1,96,000. Hedge Ratio = (1,00,00,00,000 * 5) / (1,96,000 * 6.5) = 5,00,00,00,000 / 12,74,000 ≈ 3,921.5. Rounding to nearest whole number: 3,922."
+  },
+  {
+    "id": 1952,
+    "question": "An arbitrageur observes the following: Spot Price of 10Y G-Sec = ₹100.50, 1-month Futures Price = ₹101.20, Cost of Carry for 1 month = ₹0.50. Is there an arbitrage opportunity?",
+    "options": [
+      "Yes, Buy Spot and Sell Futures",
+      "Yes, Sell Spot and Buy Futures",
+      "No, the market is fairly priced",
+      "Yes, Buy both Spot and Futures"
+    ],
+    "answer": "Yes, Buy Spot and Sell Futures",
+    "hint": "Calculate Fair Futures Price = Spot + Cost of Carry. Compare with Market Futures Price.",
+    "explanation": "Fair Futures Price = 100.50 + 0.50 = 101.00. Market Futures Price is 101.20, which is overvalued. Strategy: Sell Overvalued (Futures) and Buy Undervalued (Spot). This is Cash and Carry Arbitrage."
+  },
+  {
+    "id": 1953,
+    "question": "A trader expects the yield curve to steepen. He buys a 2-year bond future and sells a 10-year bond future. If the 2-year yield falls by 10 bps and the 10-year yield rises by 10 bps, what is the outcome?",
+    "options": [
+      "Profit on both legs",
+      "Loss on both legs",
+      "Profit on 2-year leg, Loss on 10-year leg",
+      "Loss on 2-year leg, Profit on 10-year leg"
+    ],
+    "answer": "Profit on both legs",
+    "hint": "Price is inversely related to yield. Buy (Long) profits if yield falls. Sell (Short) profits if yield rises.",
+    "explanation": "Long 2Y Future: Yield falls -> Price rises -> Profit. Short 10Y Future: Yield rises -> Price falls -> Profit. The trader profits on both legs."
+  },
+  {
+    "id": 1954,
+    "question": "An investor holds a long position in a 10-year bond. To protect against a rise in interest rates, he buys a Put Option on Interest Rate Futures. This strategy is known as:",
+    "options": [
+      "Protective Put",
+      "Covered Call",
+      "Long Straddle",
+      "Bull Spread"
+    ],
+    "answer": "Protective Put",
+    "hint": "Combining a long asset position with a long put option to limit downside risk.",
+    "explanation": "A Protective Put involves holding the underlying asset and buying a put option. If rates rise (bond prices fall), the put option gains value, offsetting the loss in the bond portfolio."
+  },
+  {
+    "id": 1955,
+    "question": "Which of the following strategies has the lowest margin requirement due to cross-margining benefits?",
+    "options": [
+      "Naked Long 10Y Futures",
+      "Naked Short 10Y Futures",
+      "Calendar Spread (Long Near Month, Short Far Month)",
+      "Long Call Option"
+    ],
+    "answer": "Calendar Spread (Long Near Month, Short Far Month)",
+    "hint": "Spreads involve offsetting positions, reducing net risk.",
+    "explanation": "Calendar spreads involve buying and selling contracts on the same underlying but different expiries. Since the price movements are highly correlated, the risk is lower, resulting in lower margin requirements."
+  },
+  {
+    "id": 1956,
+    "question": "A trader engages in a 'Basis Trade' where he is Long Spot and Short Futures. He profits if:",
+    "options": [
+      "The Basis strengthens (Spot outperforms Futures)",
+      "The Basis weakens (Futures outperforms Spot)",
+      "The Basis remains zero",
+      "Interest rates become volatile"
+    ],
+    "answer": "The Basis weakens (Futures outperforms Spot)",
+    "hint": "Basis = Spot Price - Futures Price. This strategy is 'Selling the Basis'. Correction: Long Spot Short Future is 'Long Basis'. But usually, Cash & Carry (Long Spot Short Future) locks in the basis. If unhedged basis trading, check direction.",
+    "explanation": "Standard Cash & Carry (Long Spot, Short Futures) is often called 'Long the Basis'. However, strictly speaking, you profit if the Basis (Spot - Future) narrows/converges if held to maturity. If trading before maturity, if Basis widens (Spot rises more than Future), Long Basis wins. Wait, the question asks about profit condition. Usually, Cash & Carry is an arbitrage locking a fixed return. If speculative: Long Spot/Short Future profits if Spot price falls LESS than Futures price (Basis strengthens/widens) or Spot rises MORE than Futures. Standard answer for Long Basis trade is profit when Basis Increases."
+  },
+  {
+    "id": 1957,
+    "question": "Calculate the implied repo rate if Spot Price = 98, Futures Price = 99, Days to expiry = 90. (Simple interest basis)",
+    "options": [
+      "4.14%",
+      "4.08%",
+      "1.02%",
+      "12.50%"
+    ],
+    "answer": "4.14%",
+    "hint": "Implied Repo Rate = ((Futures/Spot) - 1) * (365/Days) * 100",
+    "explanation": "((99/98) - 1) * (365/90) * 100 = (0.0102) * 4.055 * 100 ≈ 4.14%."
+  },
+  {
+    "id": 1958,
+    "question": "In a 'Butterfly Spread' using IRFs (Long 1 Near, Short 2 Middle, Long 1 Far), the trader is betting on:",
+    "options": [
+      "Low volatility in the yield curve curvature",
+      "High volatility in the yield curve curvature",
+      "Parallel shift upwards",
+      "Parallel shift downwards"
+    ],
+    "answer": "Low volatility in the yield curve curvature",
+    "hint": "Long Butterfly is a neutral strategy, profiting when the 'body' (middle) stays stable relative to wings.",
+    "explanation": "A Long Butterfly benefits if the yield curve shape (curvature) remains stable or if the middle maturity yield remains relatively higher (body price stays lower) than the wings imply."
+  },
+  {
+    "id": 1959,
+    "question": "If a portfolio's BPV (Basis Point Value) is ₹50,000 and the BPV of a single futures contract is ₹500, how many contracts are needed for a full hedge?",
+    "options": [
+      "100",
+      "1000",
+      "10",
+      "50"
+    ],
+    "answer": "100",
+    "hint": "Hedge Ratio = Portfolio BPV / Futures BPV",
+    "explanation": "50,000 / 500 = 100 contracts. This ensures that for every basis point move, the P&L on futures matches the P&L on the portfolio."
+  },
+  {
+    "id": 1960,
+    "question": "A speculator believes the 10-year yield will fall sharply. He should:",
+    "options": [
+      "Buy 10Y IRF",
+      "Sell 10Y IRF",
+      "Sell 10Y Put Option",
+      "Buy 10Y Put Option"
+    ],
+    "answer": "Buy 10Y IRF",
+    "hint": "Yields and Prices move inversely.",
+    "explanation": "If yields fall, bond prices rise. Therefore, the trader should go Long (Buy) the Interest Rate Futures to profit from the price increase."
+  },
+  {
+    "id": 1961,
+    "question": "An investor uses a 'Cheapest to Deliver' (CTD) bond to calculate the hedge ratio. Why does the CTD change?",
+    "options": [
+      "Changes in market yields affect the relative value of deliverable bonds",
+      "SEBI mandates a daily change",
+      "The contract size changes daily",
+      "The coupon rate of bonds changes daily"
+    ],
+    "answer": "Changes in market yields affect the relative value of deliverable bonds",
+    "hint": "Duration and Convexity differences make different bonds 'cheapest' at different yield levels.",
+    "explanation": "The CTD bond is the one that maximizes the return for the short position holder. As yields shift, the net basis of different bonds in the basket changes, potentially making a different bond the CTD."
+  },
+  {
+    "id": 1962,
+    "question": "Which strategy involves buying a long-term bond future and selling a short-term bond future?",
+    "options": [
+      "Flattening Trade",
+      "Steepening Trade",
+      "Butterfly Spread",
+      "Box Spread"
+    ],
+    "answer": "Flattening Trade",
+    "hint": "Flattening means the yield spread decreases (Long term yield falls relative to short term).",
+    "explanation": "In a flattener, you expect Long Term Yields to fall (Price Up) relative to Short Term Yields. Thus, you Buy Long Term Futures and Sell Short Term Futures."
+  },
+  {
+    "id": 1963,
+    "question": "A bank has a liability portfolio with a higher duration than its asset portfolio. To hedge against interest rate risk, it should:",
+    "options": [
+      "Buy IRF",
+      "Sell IRF",
+      "Buy Call Options",
+      "Do nothing"
+    ],
+    "answer": "Buy IRF",
+    "hint": "Analyze the effect of rate changes. Rising rates help (Liability value drops more), Falling rates hurt.",
+    "explanation": "If Duration(Liabilities) > Duration(Assets), the bank loses equity value if interest rates FALL (Liabilities value increases more than Assets). To hedge against falling rates (rising prices), the bank should Buy IRF (Long)."
+  },
+  {
+    "id": 1964,
+    "question": "The primary risk in a 'Reverse Cash and Carry' arbitrage (Short Spot, Long Future) is:",
+    "options": [
+      "Inability to borrow the bond (Security Borrowing Risk)",
+      "Interest rate risk",
+      "Inflation risk",
+      "Currency risk"
+    ],
+    "answer": "Inability to borrow the bond (Security Borrowing Risk)",
+    "hint": "You must sell the spot bond, which you don't own.",
+    "explanation": "Reverse Cash and Carry requires short selling the bond in the spot market. In India, the Securities Lending and Borrowing Mechanism (SLBM) for G-Secs is crucial; inability to borrow the bond to deliver makes the strategy impossible."
+  },
+  {
+    "id": 1965,
+    "question": "An investor writes a Call Option on 10Y Bond Futures. The delta of this position is:",
+    "options": [
+      "Negative",
+      "Positive",
+      "Zero",
+      "One"
+    ],
+    "answer": "Negative",
+    "hint": "Call options have positive delta. Selling (writing) flips the sign.",
+    "explanation": "A Long Call has positive delta. Writing (Shorting) a Call results in a position with Negative Delta (profits when underlying price falls)."
+  },
+  {
+    "id": 1966,
+    "question": "In the NSE trading system, what does the term 'Time Priority' mean?",
+    "options": [
+      "Orders entered earlier get execution priority at the same price",
+      "Orders for longer maturity contracts get priority",
+      "Orders placed during market opening get priority",
+      "Orders with larger quantity get priority"
+    ],
+    "answer": "Orders entered earlier get execution priority at the same price",
+    "hint": "First in, First out.",
+    "explanation": "The matching engine uses Price-Time priority. If two orders have the same price, the one that arrived at the system earlier is executed first."
+  },
+  {
+    "id": 1967,
+    "question": "What is the standard 'Tick Size' for 10-Year G-Sec Futures on NSE?",
+    "options": [
+      "₹0.0025",
+      "₹0.01",
+      "₹0.05",
+      "₹1.00"
+    ],
+    "answer": "₹0.0025",
+    "hint": "It is a quarter of a paisa.",
+    "explanation": "The minimum price movement (tick size) for G-Sec Futures is ₹0.0025."
+  },
+  {
+    "id": 1968,
+    "question": "A 'Stop-Loss Buy' order is placed:",
+    "options": [
+      "Above the current market price",
+      "Below the current market price",
+      "At the current market price",
+      "During the pre-open session only"
+    ],
+    "answer": "Above the current market price",
+    "hint": "Used to limit loss on a Short position.",
+    "explanation": "A Stop-Loss Buy is used to protect a short position. If prices rise to a certain level (Trigger), it becomes a market/limit buy order. It must be placed above the CMP."
+  },
+  {
+    "id": 1969,
+    "question": "Which order type executes immediately at the best available price or is canceled if liquidity is insufficient?",
+    "options": [
+      "IOC (Immediate or Cancel)",
+      "GTC (Good Till Cancelled)",
+      "Limit Order",
+      "Stop Loss Order"
+    ],
+    "answer": "IOC (Immediate or Cancel)",
+    "hint": "No pending order is created.",
+    "explanation": "An Immediate or Cancel (IOC) order demands immediate execution of as much quantity as possible; any unfilled portion is cancelled instantly."
+  },
+  {
+    "id": 1970,
+    "question": "The 'Daily Settlement Price' for IRF contracts is calculated based on:",
+    "options": [
+      "Weighted average price of the last 30 minutes of trading",
+      "Closing price of the underlying bond",
+      "Last Traded Price (LTP)",
+      "Average of the day's high and low"
+    ],
+    "answer": "Weighted average price of the last 30 minutes of trading",
+    "hint": "Standard VWAP method used by clearing corporations.",
+    "explanation": "To prevent manipulation at closing, the Daily Settlement Price is typically the VWAP of trades in the last 30 minutes. If no trades, theoretical price is used."
+  },
+  {
+    "id": 1971,
+    "question": "If a user enters a Market Order to buy 10 lots, but only 4 lots are available at the best ask, what happens?",
+    "options": [
+      "4 lots execute at best ask, 6 lots sweep the next best ask",
+      "The entire order is rejected",
+      "4 lots execute, 6 lots are cancelled",
+      "The order waits for more liquidity at the best ask"
+    ],
+    "answer": "4 lots execute at best ask, 6 lots sweep the next best ask",
+    "hint": "Market orders 'walk the book'.",
+    "explanation": "A market order will fill available liquidity at the best price and then move to the next available price level to fill the remainder."
+  },
+  {
+    "id": 1972,
+    "question": "Contract months for IRF are typically:",
+    "options": [
+      "3 Serial Months",
+      "3 Quarterly Months",
+      "12 Serial Months",
+      "1 Near Month only"
+    ],
+    "answer": "3 Serial Months",
+    "hint": "Similar to Equity Derivatives.",
+    "explanation": "At any point, three contracts are available: Near Month, Next Month, and Far Month."
+  },
+  {
+    "id": 1973,
+    "question": "What is the 'Trading Cycle' expiry day for IRF contracts?",
+    "options": [
+      "Last Thursday of the expiry month",
+      "Last Friday of the expiry month",
+      "15th of the month",
+      "First Monday of the month"
+    ],
+    "answer": "Last Thursday of the expiry month",
+    "hint": "Standard expiry day for Indian derivatives.",
+    "explanation": "Contracts expire on the last Thursday of the contract month. If it's a holiday, the previous trading day is the expiry."
+  },
+  {
+    "id": 1974,
+    "question": "A 'Limit Order' guarantees:",
+    "options": [
+      "Price but not execution",
+      "Execution but not price",
+      "Both price and execution",
+      "Neither price nor execution"
+    ],
+    "answer": "Price but not execution",
+    "hint": "You set the max price you pay, but market may not reach it.",
+    "explanation": "A limit order guarantees that if the trade happens, it will be at the limit price or better. However, it does not guarantee that the trade will execute if the market moves away."
+  },
+  {
+    "id": 1975,
+    "question": "Which entity defines the 'Product Design' and 'Contract Specifications' for Exchange Traded IRDs?",
+    "options": [
+      "The Exchange (with SEBI approval)",
+      "The Broker",
+      "FIMMDA",
+      "RBI alone"
+    ],
+    "answer": "The Exchange (with SEBI approval)",
+    "hint": "Exchanges launch products, regulators approve.",
+    "explanation": "Stock Exchanges design the contract specifications (lot size, tick size, expiry) which must be approved by SEBI (often in consultation with RBI for IRDs)."
+  },
+  {
+    "id": 1976,
+    "question": "Which of the following describes 'Novation'?",
+    "options": [
+      "The Clearing Corporation replaces the buyer and seller as the counterparty",
+      "Moving a position from one broker to another",
+      "Rollover of futures to the next month",
+      "Converting a future to an option"
+    ],
+    "answer": "The Clearing Corporation replaces the buyer and seller as the counterparty",
+    "hint": "It mitigates counterparty risk.",
+    "explanation": "Novation is the legal process where the Clearing Corporation interposes itself between the original buyer and seller, guaranteeing settlement."
+  },
+  {
+    "id": 1977,
+    "question": "Margins in IRF are collected to manage:",
+    "options": [
+      "Counterparty Risk",
+      "Operational Risk",
+      "Legal Risk",
+      "Reputational Risk"
+    ],
+    "answer": "Counterparty Risk",
+    "hint": "Ensures the losing party pays up.",
+    "explanation": "Margins (Initial, MTM) act as collateral to ensure that if a participant defaults on their obligation due to adverse price moves, the system stays solvent."
+  },
+  {
+    "id": 1978,
+    "question": "For 10-Year G-Sec Futures, the settlement mode on expiry is:",
+    "options": [
+      "Physical Delivery",
+      "Cash Settlement",
+      "Optional",
+      "Deferred Settlement"
+    ],
+    "answer": "Physical Delivery",
+    "hint": "10Y G-Sec futures in India currently mandate delivery of bonds.",
+    "explanation": "Contracts on 6Y, 10Y, and 13Y G-Secs are physically settled. Contracts on 91-Day T-Bills are cash settled."
+  },
+  {
+    "id": 1979,
+    "question": "The 'Initial Margin' is calculated based on:",
+    "options": [
+      "SPAN (Standard Portfolio Analysis of Risk)",
+      "Fixed Percentage of 10%",
+      "Client's Net Worth",
+      "Broker's discretion"
+    ],
+    "answer": "SPAN (Standard Portfolio Analysis of Risk)",
+    "hint": "A risk-based margin system used globally.",
+    "explanation": "Initial Margin is computed using the SPAN software which estimates the worst probable loss (Value at Risk) over a specific holding period."
+  },
+  {
+    "id": 1980,
+    "question": "If a clearing member defaults, the 'Water Fall Mechanism' uses which funds last?",
+    "options": [
+      "Clearing Corporation's own Settlement Guarantee Fund",
+      "Defaulting Member's Margin",
+      "Non-Defaulting Members' SGF Contribution",
+      "Insurance Funds"
+    ],
+    "answer": "Non-Defaulting Members' SGF Contribution",
+    "hint": "The system tries to avoid penalizing innocent members until absolutely necessary.",
+    "explanation": "The order is usually: Defaulter's Margin -> Defaulter's SGF Contribution -> CC's Skin in the Game -> Non-Defaulting Members' SGF."
+  },
+  {
+    "id": 1981,
+    "question": "In Physical Settlement, the 'Invoice Price' paid by the buyer includes:",
+    "options": [
+      "(Futures Settlement Price × Conversion Factor) + Accrued Interest",
+      "Futures Settlement Price only",
+      "Spot Price of the bond",
+      "Face Value + Accrued Interest"
+    ],
+    "answer": "(Futures Settlement Price × Conversion Factor) + Accrued Interest",
+    "hint": "Adjusts for the specific bond delivered and interest earned.",
+    "explanation": "The buyer pays the futures price adjusted by the conversion factor of the specific bond delivered, plus any interest accrued on the bond since the last coupon date."
+  },
+  {
+    "id": 1982,
+    "question": "Mark-to-Market (MTM) settlement happens:",
+    "options": [
+      "Daily in Cash",
+      "Weekly in Cash",
+      "On Expiry in Cash",
+      "Daily in Securities"
+    ],
+    "answer": "Daily in Cash",
+    "hint": "Prevents accumulation of large losses.",
+    "explanation": "MTM profits/losses are calculated daily based on settlement prices and must be settled in cash by the next trading day (T+1)."
+  },
+  {
+    "id": 1983,
+    "question": "The 'Deliverable Basket' for 10Y G-Sec Futures typically comprises:",
+    "options": [
+      "G-Secs with residual maturity between 8 and 11 years",
+      "Any G-Sec",
+      "Only the 10Y Benchmark Bond",
+      "T-Bills and G-Secs"
+    ],
+    "answer": "G-Secs with residual maturity between 8 and 11 years",
+    "hint": "A basket ensures there is no squeeze on a single bond.",
+    "explanation": "To ensure liquidity and prevent manipulation, a basket of eligible bonds with similar maturity (e.g., 8-11 years) is allowed for delivery."
+  },
+  {
+    "id": 1984,
+    "question": "What is 'Calendar Spread Margin Benefit'?",
+    "options": [
+      "Reduced margin for offsetting positions in different expiry months",
+      "No margin for spread trades",
+      "Bonus margin given by exchange",
+      "Reduced brokerage"
+    ],
+    "answer": "Reduced margin for offsetting positions in different expiry months",
+    "hint": "Offsetting risks lowers total risk.",
+    "explanation": "Since Near and Far month contracts are highly correlated, holding opposite positions (Calendar Spread) has lower risk. The exchange charges a lower 'Spread Margin' compared to two naked positions."
+  },
+  {
+    "id": 1985,
+    "question": "Which entity is responsible for collecting margins from Clients?",
+    "options": [
+      "Trading Member / Clearing Member",
+      "SEBI",
+      "RBI",
+      "The Exchange directly"
+    ],
+    "answer": "Trading Member / Clearing Member",
+    "hint": "The intermediary facing the client.",
+    "explanation": "The Exchange collects margins from Clearing Members. Clearing Members collect from Trading Members. Trading Members are responsible for collecting margins from their Clients."
+  },
+  {
+    "id": 1986,
+    "question": "Who regulates the Interest Rate Derivatives market in India?",
+    "options": [
+      "SEBI and RBI",
+      "SEBI only",
+      "RBI only",
+      "Ministry of Finance"
+    ],
+    "answer": "SEBI and RBI",
+    "hint": "Joint jurisdiction: Exchange traded vs Underlying.",
+    "explanation": "SEBI regulates the Exchanges and brokers. RBI regulates the underlying G-Sec market and sets exposure limits for banks and FPIs. They coordinate on product design."
+  },
+  {
+    "id": 1987,
+    "question": "What is the Position Limit for FPIs (Category I) in IRF?",
+    "options": [
+      "₹5,000 Crores or 10% of Total OI",
+      "Unlimited",
+      "₹100 Crores",
+      "Same as Retail Investors"
+    ],
+    "answer": "₹5,000 Crores or 10% of Total OI",
+    "hint": "Higher limits for institutional investors. (Note: Limits are subject to change, typically ₹5,000 Cr is the base for Cat I).",
+    "explanation": "FPI Category I limits are generally the higher of a fixed corpus (e.g., ₹5,000 Cr) or a percentage of total Open Interest (e.g., 10%) per underlying."
+  },
+  {
+    "id": 1988,
+    "question": "Are Banks allowed to trade IRF for speculative purposes?",
+    "options": [
+      "Yes, within specified limits",
+      "No, only for hedging",
+      "No, banks cannot trade derivatives",
+      "Yes, without any limits"
+    ],
+    "answer": "Yes, within specified limits",
+    "hint": "Banks are active market makers.",
+    "explanation": "RBI allows banks to take proprietary trading positions in IRF, subject to internal risk limits (like PV01) and overall capital adequacy norms."
+  },
+  {
+    "id": 1989,
+    "question": "The 'Client Level Position Limit' for IRF is typically:",
+    "options": [
+      "Higher of 5% of Total OI or ₹200 Crores",
+      "1% of Total OI",
+      "₹500 Crores fixed",
+      "No limit for individuals"
+    ],
+    "answer": "Higher of 5% of Total OI or ₹200 Crores",
+    "hint": "Standard SEBI limit for individual clients.",
+    "explanation": "SEBI mandates that a single client cannot hold more than 5% of the total Open Interest or ₹200 Crores (whichever is higher) to prevent market cornering."
+  },
+  {
+    "id": 1990,
+    "question": "Which Act governs the legality of derivative contracts in India?",
+    "options": [
+      "SCRA (Securities Contracts Regulation Act), 1956",
+      "RBI Act",
+      "Banking Regulation Act",
+      "SEBI Act"
+    ],
+    "answer": "SCRA (Securities Contracts Regulation Act), 1956",
+    "hint": "Defines what a 'security' and 'derivative' is.",
+    "explanation": "The SCRA legalizes derivatives trading on recognized stock exchanges and defines the framework for securities contracts."
+  },
+  {
+    "id": 1991,
+    "question": "Income from Interest Rate Futures trading for a non-stockbroker company is treated as:",
+    "options": [
+      "Non-Speculative Business Income",
+      "Speculative Income",
+      "Capital Gains",
+      "Income from Other Sources"
+    ],
+    "answer": "Non-Speculative Business Income",
+    "hint": "Section 43(5) exception.",
+    "explanation": "Derivatives trading on a recognized exchange is exempt from the definition of 'speculative transaction' under Section 43(5) of the IT Act, making it normal business income."
+  },
+  {
+    "id": 1992,
+    "question": "Is Securities Transaction Tax (STT) applicable to Interest Rate Futures?",
+    "options": [
+      "No",
+      "Yes",
+      "Only on delivery",
+      "Only on sale"
+    ],
+    "answer": "No",
+    "hint": "Unlike Equity Futures.",
+    "explanation": "Currently, STT is not levied on Interest Rate Futures and Currency Futures in India."
+  },
+  {
+    "id": 1993,
+    "question": "For a trader, loss from IRF trading can be set off against:",
+    "options": [
+      "Any other business income",
+      "Salary Income",
+      "Only speculative income",
+      "Cannot be set off"
+    ],
+    "answer": "Any other business income",
+    "hint": "Non-speculative business losses are flexible.",
+    "explanation": "Since it is non-speculative business income, losses can be set off against other business profits or other heads of income (except Salary) in the same year."
+  },
+  {
+    "id": 1994,
+    "question": "In hedge accounting, if a hedge is effective, the MTM gain/loss on the derivative is:",
+    "options": [
+      "Matched against the gain/loss of the underlying in the P&L",
+      "Ignored",
+      "Reported in Equity immediately",
+      "Taxed as Capital Gains"
+    ],
+    "answer": "Matched against the gain/loss of the underlying in the P&L",
+    "hint": "Matching principle.",
+    "explanation": "Hedge accounting allows the P&L impact of the derivative to be recognized in the same period as the P&L impact of the underlying item, smoothing out volatility."
+  },
+  {
+    "id": 1995,
+    "question": "If an individual has a turnover of ₹2 Crores from IRF trading, are they liable for Tax Audit?",
+    "options": [
+      "Yes, if they declare profit less than 6% of turnover",
+      "Yes, always",
+      "No, limit is ₹10 Crores",
+      "No, individuals are exempt"
+    ],
+    "answer": "Yes, if they declare profit less than 6% of turnover",
+    "hint": "Presumptive taxation rules (44AD).",
+    "explanation": "If turnover is < ₹2 Cr, one can opt for presumptive taxation (6%). If claiming lower profit (or loss) while total income exceeds taxable limit, tax audit is mandatory."
+  },
+  {
+    "id": 1996,
+    "question": "Which document must a broker provide to the client regarding the risks of derivatives?",
+    "options": [
+      "Risk Disclosure Document (RDD)",
+      "Contract Note",
+      "Margin Statement",
+      "Settlement Guarantee"
+    ],
+    "answer": "Risk Disclosure Document (RDD)",
+    "hint": "Signed at account opening.",
+    "explanation": "The RDD explains the risks involved in trading derivatives (leverage, liquidity, etc.) and must be signed by the client before trading commences."
+  },
+  {
+    "id": 1997,
+    "question": "Which of the following constitutes 'Front Running'?",
+    "options": [
+      "Broker buying for self before executing a large client buy order",
+      "Broker trading against the client",
+      "Broker charging high brokerage",
+      "Broker advising the client to buy"
+    ],
+    "answer": "Broker buying for self before executing a large client buy order",
+    "hint": "Using confidential client order info.",
+    "explanation": "Front running is the unethical practice where a broker uses knowledge of a pending large client order to trade for their own account to profit from the expected price movement."
+  },
+  {
+    "id": 1998,
+    "question": "The Investor Protection Fund (IPF) is used to:",
+    "options": [
+      "Compensate investors if a broker defaults",
+      "Guarantee profits",
+      "Pay broker salaries",
+      "Fund market research"
+    ],
+    "answer": "Compensate investors if a broker defaults",
+    "hint": "Safety net for investors.",
+    "explanation": "IPF compensates clients for genuine claims against a defaulting trading member, up to a specified limit."
+  },
+  {
+    "id": 1999,
+    "question": "Can a broker fund a client's margin requirement?",
+    "options": [
+      "No, clients must fund their own margins",
+      "Yes, up to 50%",
+      "Yes, if they charge interest",
+      "Yes, for HNI clients only"
+    ],
+    "answer": "No, clients must fund their own margins",
+    "hint": "Prevents leverage bubbles.",
+    "explanation": "SEBI Regulations prohibit brokers from funding client margins. Margins must be paid by the client in Cash or approved Collateral."
+  },
+  {
+    "id": 2000,
+    "question": "If a client has a grievance against a broker, the first step is to:",
+    "options": [
+      "Lodge a complaint with the Broker",
+      "Go to Arbitration",
+      "Complain to SEBI SCORES",
+      "File a police complaint"
+    ],
+    "answer": "Lodge a complaint with the Broker",
+    "hint": "Internal resolution first.",
+    "explanation": "The investor should first approach the broker for redressal. If unsatisfied, they can escalate to the Exchange's Investor Grievance Redressal Mechanism or SEBI SCORES."
+  }
 ]

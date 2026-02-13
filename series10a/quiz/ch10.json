@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following best describes a 'Derivative'?",
+    "options": [
+      "An asset that has significant physical value like gold",
+      "A financial contract that derives its value from an underlying asset, index, or rate",
+      "A type of loan offered by banks to retail customers",
+      "A government-guaranteed fixed deposit"
+    ],
+    "answer": "A financial contract that derives its value from an underlying asset, index, or rate",
+    "hint": "It has no intrinsic value of its own; it 'derives' it.",
+    "explanation": "Derivatives are instruments whose value is dependent on an underlying asset like stocks, bonds, commodities, or currencies."
+  },
+  {
+    "id": 2,
+    "question": "The underlying asset of a derivative can be:",
+    "options": [
+      "Equities or Equity Indices",
+      "Commodities (Gold, Oil)",
+      "Currencies or Interest Rates",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "hint": "Derivatives are versatile instruments covering many markets.",
+    "explanation": "Derivatives can be based on almost any financial asset or even abstract concepts like weather or volatility."
+  },
+  {
+    "id": 3,
+    "question": "What is the primary difference between an 'Exchange-Traded' derivative and an 'Over-the-Counter' (OTC) derivative?",
+    "options": [
+      "OTC derivatives are safer than exchange-traded ones",
+      "Exchange-traded derivatives are standardized and guaranteed by a clearinghouse, while OTC derivatives are customized bilateral contracts",
+      "Only banks can trade exchange-traded derivatives",
+      "OTC derivatives have a fixed expiry date set by SEBI"
+    ],
+    "answer": "Exchange-traded derivatives are standardized and guaranteed by a clearinghouse, while OTC derivatives are customized bilateral contracts",
+    "hint": "Standardization vs. Customization.",
+    "explanation": "Exchange-traded derivatives (like Futures and Options on NSE) have fixed lot sizes and expiries, reducing counterparty risk through a central clearinghouse."
+  },
+  {
+    "id": 4,
+    "question": "A 'Forward Contract' is characterized by which of the following?",
+    "options": [
+      "It is traded on a public stock exchange",
+      "It is a non-standardized, private agreement to buy or sell an asset at a future date at a price agreed today",
+      "It requires a daily margin payment",
+      "It is highly liquid and can be sold easily"
+    ],
+    "answer": "It is a non-standardized, private agreement to buy or sell an asset at a future date at a price agreed today",
+    "hint": "It is the predecessor to Futures but is traded OTC.",
+    "explanation": "Forward contracts are customized between two parties. Their main drawback is counterparty risk (the risk that one party might default) and lack of liquidity."
+  },
+  {
+    "id": 5,
+    "question": "How does a 'Futures Contract' solve the counterparty risk found in Forward Contracts?",
+    "options": [
+      "By requiring a physical handshake",
+      "By being traded on an exchange with a Clearing Corporation acting as a central counterparty",
+      "By having no expiry date",
+      "By being only available to the government"
+    ],
+    "answer": "By being traded on an exchange with a Clearing Corporation acting as a central counterparty",
+    "hint": "The Clearing Corporation becomes the buyer to every seller and seller to every buyer.",
+    "explanation": "The exchange ensures that even if one party defaults, the other party is protected through margin collections and the clearinghouse's guarantee."
+  },
+  {
+    "id": 6,
+    "question": "What is 'Mark-to-Market' (MTM) in futures trading?",
+    "options": [
+      "The process of marketing a new stock",
+      "The daily settlement of profits and losses based on the closing market price",
+      "Buying a stock at the market price",
+      "Calculating the tax on a trade"
+    ],
+    "answer": "The daily settlement of profits and losses based on the closing market price",
+    "hint": "It prevents losses from accumulating over time.",
+    "explanation": "In futures, the profit or loss is calculated at the end of every day and adjusted in the trader's margin account. This ensures that participants can't walk away from large accumulated losses."
+  },
+  {
+    "id": 7,
+    "question": "An 'Option' contract gives the holder:",
+    "options": [
+      "The obligation to buy the asset",
+      "The right, but not the obligation, to buy or sell the underlying asset at a specific price",
+      "A guaranteed profit",
+      "Voting rights in the company"
+    ],
+    "answer": "The right, but not the obligation, to buy or sell the underlying asset at a specific price",
+    "hint": "It's a choice, not a compulsion.",
+    "explanation": "The buyer of an option pays a premium for this right. If the price doesn't move in their favor, they can simply let the option expire worthless."
+  },
+  {
+    "id": 8,
+    "question": "A 'Call Option' is purchased when an investor expects the price of the underlying asset to:",
+    "options": [
+      "Rise",
+      "Fall",
+      "Stay the same",
+      "Become zero"
+    ],
+    "answer": "Rise",
+    "hint": "You 'call' for profit when things go up.",
+    "explanation": "A call option gives you the right to buy at a lower price (the strike price) even if the market price has risen higher."
+  },
+  {
+    "id": 9,
+    "question": "A 'Put Option' is purchased when an investor expects the price of the underlying asset to:",
+    "options": [
+      "Rise",
+      "Fall",
+      "Double",
+      "Remain stable"
+    ],
+    "answer": "Fall",
+    "hint": "You 'put' your troubles away by selling high while the market is low.",
+    "explanation": "A put option gives you the right to sell at the strike price even if the market price has crashed lower."
+  },
+  {
+    "id": 10,
+    "question": "The 'Strike Price' in an option contract is:",
+    "options": [
+      "The price the stock reaches at the end of the day",
+      "The predetermined price at which the option holder can buy or sell the underlying asset",
+      "The price paid to buy the option",
+      "The highest price the stock has ever hit"
+    ],
+    "answer": "The predetermined price at which the option holder can buy or sell the underlying asset",
+    "hint": "It is the 'exercise' price.",
+    "explanation": "The strike price is fixed when the contract is created. The relationship between the strike price and the market price determines if the option is profitable."
+  },
+  {
+    "id": 11,
+    "question": "The 'Option Premium' is:",
+    "options": [
+      "The profit made at the end of the trade",
+      "The non-refundable price paid by the option buyer to the seller upfront",
+      "The interest rate on the contract",
+      "The dividend paid by the stock"
+    ],
+    "answer": "The non-refundable price paid by the option buyer to the seller upfront",
+    "hint": "It is the 'cost' of the right.",
+    "explanation": "The buyer pays the premium to the seller (writer). The premium is the maximum amount an option buyer can lose."
+  },
+  {
+    "id": 12,
+    "question": "What is 'Hedging' in the derivatives market?",
+    "options": [
+      "Taking high risks to get rich quick",
+      "A strategy used to reduce or offset the risk of price movements in an existing asset",
+      "Predicting the exact top of the market",
+      "Investing only in green companies"
+    ],
+    "answer": "A strategy used to reduce or offset the risk of price movements in an existing asset",
+    "hint": "It is like buying insurance.",
+    "explanation": "If you own 100 shares of a stock and fear the price will fall, you can buy a 'Put' option. If the price falls, the gain in the Put option offsets the loss in your shares."
+  },
+  {
+    "id": 13,
+    "question": "Using derivatives to profit from a directional view of the market while accepting high risk is called:",
+    "options": [
+      "Hedging",
+      "Speculation",
+      "Arbitrage",
+      "Diversification"
+    ],
+    "answer": "Speculation",
+    "hint": "It involves betting on price movements.",
+    "explanation": "Speculators do not own the underlying asset. They use derivatives for 'leverage'—controlling a large amount of an asset with a small amount of capital (margin)."
+  },
+  {
+    "id": 14,
+    "question": "What is 'Arbitrage'?",
+    "options": [
+      "Borrowing money to buy stocks",
+      "The simultaneous purchase and sale of an asset in different markets to profit from a price difference",
+      "Selling a stock and never buying it back",
+      "A legal dispute between two brokers"
+    ],
+    "answer": "The simultaneous purchase and sale of an asset in different markets to profit from a price difference",
+    "hint": "It's a risk-free profit from market inefficiencies.",
+    "explanation": "If a stock is Rs. 100 on BSE and Rs. 101 on NSE, an arbitrageur buys on BSE and sells on NSE simultaneously to pocket the Rs. 1 difference."
+  },
+  {
+    "id": 15,
+    "question": "Which of the following describes 'Leverage' in derivatives?",
+    "options": [
+      "The ability to control a large contract value with a relatively small amount of margin money",
+      "The level of education required to trade",
+      "The speed of the internet connection",
+      "The total profit divided by the total loss"
+    ],
+    "answer": "The ability to control a large contract value with a relatively small amount of margin money",
+    "hint": "It acts as a multiplier for both gains and losses.",
+    "explanation": "If the margin is 10%, you can control Rs. 10 Lakhs worth of futures with just Rs. 1 Lakh. While this can double your money quickly, a small 10% move against you can wipe out your entire capital."
+  },
+  {
+    "id": 16,
+    "question": "An 'In-the-Money' (ITM) call option is one where:",
+    "options": [
+      "The strike price is higher than the current market price",
+      "The strike price is lower than the current market price",
+      "The strike price is equal to the current market price",
+      "The option has expired worthless"
+    ],
+    "answer": "The strike price is lower than the current market price",
+    "hint": "You have the right to buy for 'cheaper' than the current market.",
+    "explanation": "An ITM option has intrinsic value. For a call option, it means you can exercise your right to buy the stock at a price lower than what it is currently trading for in the market."
+  },
+  {
+    "id": 17,
+    "question": "An 'Out-of-the-Money' (OTM) put option is one where:",
+    "options": [
+      "The strike price is higher than the current market price",
+      "The strike price is lower than the current market price",
+      "The strike price is equal to the current market price",
+      "The market price is zero"
+    ],
+    "answer": "The strike price is lower than the current market price",
+    "hint": "Your right to 'sell' at the strike is not useful because the market price is already higher.",
+    "explanation": "OTM options have no intrinsic value; their price consists only of 'time value'. For a put, if the market is at 100 and your strike is 90, you wouldn't use your right to sell at 90."
+  },
+  {
+    "id": 18,
+    "question": "In technical terms, the 'Writer' of an option is:",
+    "options": [
+      "The person who buys the option",
+      "The person who sells the option and receives the premium",
+      "The person who writes the contract rules",
+      "The analyst who writes reports on the stock"
+    ],
+    "answer": "The person who sells the option and receives the premium",
+    "hint": "They have the 'obligation', not the right.",
+    "explanation": "The option writer (seller) takes on a high risk in exchange for the premium. They are obligated to fulfill the contract if the buyer chooses to exercise it."
+  },
+  {
+    "id": 19,
+    "question": "What happens to the 'Time Value' of an option as it approaches the expiry date?",
+    "options": [
+      "It increases",
+      "It decreases (Time Decay)",
+      "It stays the same",
+      "It becomes infinite"
+    ],
+    "answer": "It decreases (Time Decay)",
+    "hint": "Also known as 'Theta' decay.",
+    "explanation": "As time runs out, the probability of the stock moving significantly in the buyer's favor decreases, making the option less valuable every day."
+  },
+  {
+    "id": 20,
+    "question": "In India, the most liquid and widely traded index derivatives are based on:",
+    "options": [
+      "Nifty 50 and Bank Nifty",
+      "Gold and Silver",
+      "US Dollar",
+      "Individual small-cap stocks"
+    ],
+    "answer": "Nifty 50 and Bank Nifty",
+    "hint": "These represent the 'pulse' of the Indian market.",
+    "explanation": "Index futures and options allow investors to take a view on the entire market or the banking sector rather than individual stocks."
+  },
+  {
+    "id": 21,
+    "question": "What is an 'American Option'?",
+    "options": [
+      "An option that can only be traded in the USA",
+      "An option that can be exercised at any time up to the expiry date",
+      "An option that can only be exercised on the expiry date",
+      "An option that pays in US Dollars"
+    ],
+    "answer": "An option that can be exercised at any time up to the expiry date",
+    "hint": "More flexible than European options.",
+    "explanation": "Most individual stock options in various global markets used to be American, but many have moved to the European style for standardization."
+  },
+  {
+    "id": 22,
+    "question": "What is a 'European Option'?",
+    "options": [
+      "An option traded only in Europe",
+      "An option that can be exercised only on the expiry date",
+      "An option that is cheaper than American options",
+      "An option that never expires"
+    ],
+    "answer": "An option that can be exercised only on the expiry date",
+    "hint": "In India, Nifty and Bank Nifty options are of this type.",
+    "explanation": "European options are denoted by 'CE' (Call European) and 'PE' (Put European). They can be sold (traded) anytime, but 'exercise' only happens at the end."
+  },
+  {
+    "id": 23,
+    "question": "In the context of derivatives, 'Open Interest' (OI) refers to:",
+    "options": [
+      "The total number of people interested in a stock",
+      "The total number of derivative contracts that have not yet been settled or closed",
+      "The total volume of trades in a day",
+      "The opening price of the contract"
+    ],
+    "answer": "The total number of derivative contracts that have not yet been settled or closed",
+    "hint": "It measures the amount of money 'flowing' into the market.",
+    "explanation": "Rising open interest along with rising prices is often considered a bullish signal, indicating that new money is supporting the trend."
+  },
+  {
+    "id": 24,
+    "question": "What does 'Expiration' mean for a derivative contract?",
+    "options": [
+      "The date the company goes out of business",
+      "The last day on which the contract is valid and can be traded or exercised",
+      "The date the broker takes their fees",
+      "The date the investor reaches retirement"
+    ],
+    "answer": "The last day on which the contract is valid and can be traded or exercised",
+    "hint": "In India, monthly F&O contracts usually expire on the last Thursday of the month.",
+    "explanation": "On the day of expiration, the contract is settled (either in cash or through physical delivery) and ceases to exist."
+  },
+  {
+    "id": 25,
+    "question": "A 'Swap' is a derivative contract where two parties exchange:",
+    "options": [
+      "Physical goods for cash",
+      "Cash flows or liabilities from different financial instruments (e.g., Interest Rate Swap)",
+      "Passwords for their trading accounts",
+      "Equity shares of two different companies"
+    ],
+    "answer": "Cash flows or liabilities from different financial instruments (e.g., Interest Rate Swap)",
+    "hint": "It is most common between large institutions and corporations.",
+    "explanation": "A company with a floating-rate loan might 'swap' it for a fixed-rate payment with a bank to protect itself from rising interest rates."
+  },
+  {
+    "id": 26,
+    "question": "Which Greek variable measures an option's sensitivity to changes in the price of the underlying asset?",
+    "options": [
+      "Delta",
+      "Theta",
+      "Vega",
+      "Gamma"
+    ],
+    "answer": "Delta",
+    "hint": "If it is 0.5, a Re. 1 move in the stock leads to a 0.50 move in the option.",
+    "explanation": "Delta tells you how much the option price will move for every 1-point move in the underlying stock or index."
+  },
+  {
+    "id": 27,
+    "question": "Which Greek variable measures the rate of 'Time Decay' of an option?",
+    "options": [
+      "Delta",
+      "Theta",
+      "Vega",
+      "Rho"
+    ],
+    "answer": "Theta",
+    "hint": "It is the enemy of the option buyer.",
+    "explanation": "Theta tells you how much value the option loses every single day as it gets closer to expiry, assuming everything else remains constant."
+  },
+  {
+    "id": 28,
+    "question": "The 'Intrinsic Value' of an option is:",
+    "options": [
+      "The same as the premium",
+      "The amount by which the option is In-the-Money",
+      "The future expected profit",
+      "The dividend yield"
+    ],
+    "answer": "The amount by which the option is In-the-Money",
+    "hint": "It is the 'real' value if the option were exercised today.",
+    "explanation": "If a call strike is 100 and market is 110, the intrinsic value is 10. If the market is 90, the intrinsic value is zero."
+  },
+  {
+    "id": 29,
+    "question": "A 'Short Position' in futures means the investor has:",
+    "options": [
+      "Purchased the contract",
+      "Sold the contract first with the expectation that the price will fall",
+      "Traded for a very short period of time",
+      "Lost all their money"
+    ],
+    "answer": "Sold the contract first with the expectation that the price will fall",
+    "hint": "Sell High, Buy Low (later).",
+    "explanation": "Shorting allows traders to profit from falling markets. You sell at a high price today and hope to buy it back at a lower price before expiry."
+  },
+  {
+    "id": 30,
+    "question": "What is 'Lot Size' in the Indian F&O market?",
+    "options": [
+      "The total size of the stock exchange",
+      "The fixed number of shares that make up one derivative contract",
+      "The amount of space in a broker's office",
+      "The total profit made in a lot of trades"
+    ],
+    "answer": "The fixed number of shares that make up one derivative contract",
+    "hint": "You cannot buy just 1 share in the F&O segment.",
+    "explanation": "For example, if the lot size of Nifty is 50, you must buy or sell in multiples of 50. This is done to ensure standardized trading for institutions."
+  },
+  {
+    "id": 31,
+    "question": "What is 'Physical Settlement' in the context of stock derivatives?",
+    "options": [
+      "Settling a trade through a physical fight",
+      "The actual delivery of underlying shares at the end of the contract expiry",
+      "Paying the difference in cash only",
+      "Sending physical cash through the mail"
+    ],
+    "answer": "The actual delivery of underlying shares at the end of the contract expiry",
+    "hint": "Contrasted with Cash Settlement.",
+    "explanation": "In India, SEBI has mandated physical settlement for stock derivatives. If you hold a future till expiry, you must actually take or give delivery of the shares."
+  },
+  {
+    "id": 32,
+    "question": "What is 'Cash Settlement'?",
+    "options": [
+      "Paying for a trade with physical currency",
+      "Settling the contract by paying/receiving the cash difference between the strike and market price",
+      "Only using cash from your bank account",
+      "A settlement that happens within 1 hour"
+    ],
+    "answer": "Settling the contract by paying/receiving the cash difference between the strike and market price",
+    "hint": "Most index derivatives (like Nifty) are cash-settled.",
+    "explanation": "There is no delivery of shares in an index (you can't 'deliver' an index). The profit or loss is simply adjusted in the trading account."
+  },
+  {
+    "id": 33,
+    "question": "A 'Bear Spread' is an option strategy used when an investor is:",
+    "options": [
+      "Moderately bullish",
+      "Moderately bearish",
+      "Expecting the market to stay flat",
+      "Expecting a massive market crash"
+    ],
+    "answer": "Moderately bearish",
+    "hint": "It involves buying one option and selling another to reduce cost.",
+    "explanation": "A bear spread limits both the potential profit and the potential loss, making it a controlled way to trade a falling market."
+  },
+  {
+    "id": 34,
+    "question": "A 'Bull Spread' is an option strategy used when an investor is:",
+    "options": [
+      "Moderately bullish",
+      "Very bearish",
+      "Scared of the market",
+      "Investing for 20 years"
+    ],
+    "answer": "Moderately bullish",
+    "hint": "It's the bullish version of a spread.",
+    "explanation": "By buying an ITM/ATM call and selling an OTM call, the investor reduces the total premium paid in exchange for capping the upside profit."
+  },
+  {
+    "id": 35,
+    "question": "Which of the following is a major risk of 'Writing' (Selling) uncovered options?",
+    "options": [
+      "Limited loss",
+      "Potentially unlimited loss if the market moves significantly against the position",
+      "The premium being stolen",
+      "Too many rights given to the seller"
+    ],
+    "answer": "Potentially unlimited loss if the market moves significantly against the position",
+    "hint": "The seller's loss is the buyer's (potentially infinite) gain.",
+    "explanation": "Since the stock price can theoretically rise to any level, a call seller faces unlimited risk if they don't own the underlying shares."
+  },
+  {
+    "id": 36,
+    "question": "What is a 'Straddle' strategy?",
+    "options": [
+      "Buying only Call options",
+      "Buying both a Call and a Put option with the same strike and expiry",
+      "Selling all assets and keeping cash",
+      "Investing only in two stocks"
+    ],
+    "answer": "Buying both a Call and a Put option with the same strike and expiry",
+    "hint": "Used when you expect 'huge volatility' but don't know the direction.",
+    "explanation": "If the market moves sharply in *either* direction (up or down), one option will gain more than the other loses, resulting in a profit."
+  },
+  {
+    "id": 37,
+    "question": "In derivatives trading, the 'Initial Margin' is:",
+    "options": [
+      "The profit made on the first day",
+      "The minimum amount required to be deposited with the broker to open a position",
+      "The fee paid to SEBI",
+      "The total value of the contract"
+    ],
+    "answer": "The minimum amount required to be deposited with the broker to open a position",
+    "hint": "It is like a security deposit.",
+    "explanation": "Initial margin is calculated based on the volatility of the stock. High-volatility stocks require a higher margin."
+  },
+  {
+    "id": 38,
+    "question": "What is 'Maintenance Margin'?",
+    "options": [
+      "The cost of maintaining the trading software",
+      "The minimum level at which the margin account must be maintained",
+      "The monthly fee paid to the broker",
+      "The total capital in the bank"
+    ],
+    "answer": "The minimum level at which the margin account must be maintained",
+    "hint": "If your balance falls below this, you get a 'Margin Call'.",
+    "explanation": "If losses reduce your account balance below the maintenance margin, you must add more cash immediately or the broker will close your position."
+  },
+  {
+    "id": 39,
+    "question": "A 'Commodity Future' is a contract to buy/sell which of the following?",
+    "options": [
+      "Bank stocks",
+      "Raw materials like Gold, Crude Oil, or Wheat",
+      "US Dollars",
+      "Government bonds"
+    ],
+    "answer": "Raw materials like Gold, Crude Oil, or Wheat",
+    "hint": "Traded on exchanges like MCX or NCDEX.",
+    "explanation": "Commodity derivatives help producers (like farmers) and consumers (like jewelry manufacturers) hedge against price fluctuations in raw materials."
+  },
+  {
+    "id": 40,
+    "question": "What is a 'Currency Future'?",
+    "options": [
+      "A future where you get paid in a different currency",
+      "A contract to exchange one currency for another at a specific rate in the future",
+      "Investing in a company that makes currency notes",
+      "A prediction of future inflation"
+    ],
+    "answer": "A contract to exchange one currency for another at a specific rate in the future",
+    "hint": "Commonly used for USD/INR trading.",
+    "explanation": "Exporters and importers use currency futures to lock in exchange rates, protecting their business from 'Currency Risk'."
+  },
+  {
+    "id": 41,
+    "question": "Which of the following is true for an 'Option Buyer'?",
+    "options": [
+      "Has unlimited risk and limited profit",
+      "Has limited risk (the premium paid) and potentially unlimited profit",
+      "Must pay a daily MTM margin",
+      "Has an obligation to buy the shares"
+    ],
+    "answer": "Has limited risk (the premium paid) and potentially unlimited profit",
+    "hint": "The best-case scenario is high; the worst-case is just the premium.",
+    "explanation": "This asymmetric risk-reward profile is why many retail investors are attracted to buying options, although the probability of profit is often lower than selling them."
+  },
+  {
+    "id": 42,
+    "question": "In derivatives, what does 'At-the-Money' (ATM) mean?",
+    "options": [
+      "The investor has no money left",
+      "The strike price is equal to the current market price of the underlying",
+      "The trade is currently at its maximum profit",
+      "The contract has just opened"
+    ],
+    "answer": "The strike price is equal to the current market price of the underlying",
+    "hint": "It is the middle point between ITM and OTM.",
+    "explanation": "ATM options are highly sensitive to price moves and are the most actively traded strike prices in the market."
+  },
+  {
+    "id": 43,
+    "question": "What is 'Volatility' (Sigma) in option pricing?",
+    "options": [
+      "The total volume of trades",
+      "The expected magnitude of price fluctuations in the underlying asset",
+      "The number of times the stock price changes per second",
+      "The dividend per share"
+    ],
+    "answer": "The expected magnitude of price fluctuations in the underlying asset",
+    "hint": "High volatility makes options more expensive.",
+    "explanation": "When the market expects big moves (e.g., during an election or earnings report), option premiums go up because the 'right' to buy/sell becomes more valuable."
+  },
+  {
+    "id": 44,
+    "question": "What is 'Implied Volatility' (IV)?",
+    "options": [
+      "The historical volatility of the stock",
+      "The market's expectation of future volatility, as 'implied' by the current option prices",
+      "A volatility level set by SEBI",
+      "The volatility of the US market"
+    ],
+    "answer": "The market's expectation of future volatility, as 'implied' by the current option prices",
+    "hint": "IV is a key component of the Black-Scholes model.",
+    "explanation": "When IV is high, options are 'expensive'. When IV is low, options are 'cheap'. Traders use IV to see if they should buy or sell options."
+  },
+  {
+    "id": 1,
+    "question": "Which Greek measures the change in Delta for a small change in the underlying price?",
+    "options": [
+      "Delta",
+      "Gamma",
+      "Vega",
+      "Theta"
+    ],
+    "answer": "Gamma",
+    "hint": "It measures the 'acceleration' of Delta.",
+    "explanation": "Gamma is highest for ATM options. It tells you how fast your position's risk (Delta) will change as the stock price moves."
+  },
+  {
+    "id": 46,
+    "question": "What is a 'Basis' in futures trading?",
+    "options": [
+      "The foundation of the trading building",
+      "The difference between the Spot (current) price and the Futures price",
+      "The minimum profit target",
+      "The basic fee charged by the broker"
+    ],
+    "answer": "The difference between the Spot (current) price and the Futures price",
+    "hint": "Basis = Spot Price - Futures Price.",
+    "explanation": "In a normal market, futures trade at a 'premium' to spot (Contango). In a falling market, they might trade at a 'discount' (Backwardation)."
+  },
+  {
+    "id": 47,
+    "question": "What is 'Contango'?",
+    "options": [
+      "A popular South American dance",
+      "A situation where the future price is higher than the current spot price",
+      "A market where prices are falling rapidly",
+      "A derivative that never expires"
+    ],
+    "answer": "A situation where the future price is higher than the current spot price",
+    "hint": "This is the 'normal' state for most markets due to carrying costs.",
+    "explanation": "Futures are usually higher than spot because of the 'cost of carry' (interest, storage for commodities, etc.)."
+  },
+  {
+    "id": 48,
+    "question": "What is 'Backwardation'?",
+    "options": [
+      "Moving backwards in time",
+      "A situation where the future price is lower than the current spot price",
+      "A mistake in the trading system",
+      "The last day of the month"
+    ],
+    "answer": "A situation where the future price is lower than the current spot price",
+    "hint": "Indicates an immediate shortage of the asset or a bearish outlook.",
+    "explanation": "In backwardation, investors are willing to pay a premium to have the asset *now* rather than in the future."
+  },
+  {
+    "id": 49,
+    "question": "The 'Payoff Diagram' of a long call option shows that:",
+    "options": [
+      "Profit is limited and loss is unlimited",
+      "Profit is potentially unlimited and loss is limited to the premium paid",
+      "Both profit and loss are unlimited",
+      "The investor always makes a profit"
+    ],
+    "answer": "Profit is potentially unlimited and loss is limited to the premium paid",
+    "hint": "The line stays flat at the loss level and then slopes upward indefinitely.",
+    "explanation": "This diagram is the most basic tool for understanding how an option will behave at different stock prices on expiry."
+  },
+  {
+    "id": 50,
+    "question": "Why are derivatives considered 'high-risk' for retail investors?",
+    "options": [
+      "Because the stock exchange might close down",
+      "Because of the 'leverage' involved, where small price moves can lead to 100% loss of capital",
+      "Because you have to pay a monthly subscription",
+      "Because you cannot sell them once you buy them"
+    ],
+    "answer": "Because of the 'leverage' involved, where small price moves can lead to 100% loss of capital",
+    "hint": "Leverage is a double-edged sword.",
+    "explanation": "Derivatives are complex instruments meant for sophisticated investors and hedgers. Without proper knowledge and risk management, they can lead to rapid and total financial loss."
+  }
+]

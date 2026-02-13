@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following best explains the core concept of the Time Value of Money (TVM)?",
+    "options": [
+      "Money loses its entire value over a period of 10 years.",
+      "A unit of money received today is worth more than the same unit received in the future.",
+      "The value of money remains exactly the same regardless of when it is received.",
+      "Future money is always more valuable than present money."
+    ],
+    "answer": "A unit of money received today is worth more than the same unit received in the future.",
+    "hint": "Think about earning interest and the impact of inflation.",
+    "explanation": "Money available today can be invested to earn interest, making it worth more than the same nominal amount received in the future. Inflation also erodes the purchasing power of future money."
+  },
+  {
+    "id": 2,
+    "question": "The process of calculating the future value of a cash flow by applying a specific interest rate is called:",
+    "options": [
+      "Discounting",
+      "Compounding",
+      "Amortization",
+      "Factoring"
+    ],
+    "answer": "Compounding",
+    "hint": "This process adds interest to the principal over time.",
+    "explanation": "Compounding is the process of moving a present amount of money into the future by applying a growth rate or interest rate."
+  },
+  {
+    "id": 3,
+    "question": "The process of determining the present value of a future cash flow is known as:",
+    "options": [
+      "Compounding",
+      "Capitalizing",
+      "Discounting",
+      "Annuity mapping"
+    ],
+    "answer": "Discounting",
+    "hint": "This process brings future money backward in time.",
+    "explanation": "Discounting is the reverse of compounding. It involves calculating the current worth of a future sum of money given a specific rate of return."
+  },
+  {
+    "id": 4,
+    "question": "If you earn interest only on your initial principal amount, what type of interest is this?",
+    "options": [
+      "Compound Interest",
+      "Simple Interest",
+      "Effective Interest",
+      "Nominal Interest"
+    ],
+    "answer": "Simple Interest",
+    "hint": "The interest amount remains constant every period.",
+    "explanation": "Simple interest is calculated solely on the principal sum, meaning the interest earned does not earn interest in subsequent periods."
+  },
+  {
+    "id": 5,
+    "question": "When interest is calculated on the initial principal and also on the accumulated interest of previous periods, it is called:",
+    "options": [
+      "Simple Interest",
+      "Flat Rate Interest",
+      "Compound Interest",
+      "Real Interest"
+    ],
+    "answer": "Compound Interest",
+    "hint": "It is often referred to as 'interest on interest'.",
+    "explanation": "Compound interest applies the interest rate to the principal plus any previously accumulated interest, leading to exponential growth of the investment."
+  },
+  {
+    "id": 6,
+    "question": "Which rule is used as a quick mental math shortcut to estimate how long it takes for an investment to double in value?",
+    "options": [
+      "Rule of 69",
+      "Rule of 72",
+      "Rule of 114",
+      "Rule of 144"
+    ],
+    "answer": "Rule of 72",
+    "hint": "Divide this number by the interest rate to get the years.",
+    "explanation": "The Rule of 72 is a simple formula used to estimate the number of years required to double the invested money at a given annual rate of return (72 / rate)."
+  },
+  {
+    "id": 7,
+    "question": "Using the Rule of 72, approximately how many years will it take for an investment to double if the annual interest rate is 8%?",
+    "options": [
+      "7.2 years",
+      "8 years",
+      "9 years",
+      "10 years"
+    ],
+    "answer": "9 years",
+    "hint": "Divide 72 by the interest rate.",
+    "explanation": "According to the Rule of 72, it takes approximately 72 / 8 = 9 years for the money to double."
+  },
+  {
+    "id": 8,
+    "question": "If an investor wants to know how long it will take for their money to triple, which rule of thumb should they use?",
+    "options": [
+      "Rule of 72",
+      "Rule of 114",
+      "Rule of 144",
+      "Rule of 69"
+    ],
+    "answer": "Rule of 114",
+    "hint": "This number is higher than 72 but lower than 144.",
+    "explanation": "The Rule of 114 is used to approximate the time required for an investment to triple in value (114 / rate of return)."
+  },
+  {
+    "id": 9,
+    "question": "To estimate how long it will take an investment to quadruple (grow by 4 times), which rule is applied?",
+    "options": [
+      "Rule of 72",
+      "Rule of 114",
+      "Rule of 144",
+      "Rule of 200"
+    ],
+    "answer": "Rule of 144",
+    "hint": "Double the rule used for doubling money.",
+    "explanation": "The Rule of 144 approximates the time needed for an investment to quadruple (144 / rate of return)."
+  },
+  {
+    "id": 10,
+    "question": "What is the standard formula for Future Value (FV) using compound interest, where P is principal, r is rate, and n is number of periods?",
+    "options": [
+      "FV = P * r * n",
+      "FV = P * (1 + r)^n",
+      "FV = P / (1 + r)^n",
+      "FV = P + (r * n)"
+    ],
+    "answer": "FV = P * (1 + r)^n",
+    "hint": "You are multiplying the principal by a growth factor raised to the power of time.",
+    "explanation": "The formula FV = P * (1 + r)^n calculates the future value of a present sum compounded at rate 'r' for 'n' periods."
+  },
+  {
+    "id": 11,
+    "question": "In the Present Value formula PV = FV / (1 + r)^n, what does the term (1 + r)^n represent?",
+    "options": [
+      "Discount Factor",
+      "Compounding Factor",
+      "Annuity Factor",
+      "Perpetuity Factor"
+    ],
+    "answer": "Compounding Factor",
+    "hint": "When it is in the denominator, 1 divided by it is the discount factor.",
+    "explanation": "The term (1 + r)^n itself is the compounding factor (or future value interest factor). The entire expression 1 / (1 + r)^n is the discount factor."
+  },
+  {
+    "id": 12,
+    "question": "As the discount rate increases, what happens to the Present Value of a future cash flow?",
+    "options": [
+      "It increases",
+      "It decreases",
+      "It remains unchanged",
+      "It becomes negative"
+    ],
+    "answer": "It decreases",
+    "hint": "A higher discount rate means the future money is penalized more heavily today.",
+    "explanation": "There is an inverse relationship between the discount rate and present value. A higher discount rate reduces the present value of future cash flows."
+  },
+  {
+    "id": 13,
+    "question": "If the compounding frequency changes from annual to monthly, what happens to the Future Value of the investment (assuming a positive rate)?",
+    "options": [
+      "It decreases",
+      "It increases",
+      "It remains exactly the same",
+      "It drops to zero"
+    ],
+    "answer": "It increases",
+    "hint": "More frequent compounding means you earn interest on your interest sooner.",
+    "explanation": "Increasing the compounding frequency (e.g., from annual to monthly) increases the future value because interest is calculated and added to the principal more often."
+  },
+  {
+    "id": 14,
+    "question": "What is a series of equal, periodic cash flows occurring over a specified number of periods called?",
+    "options": [
+      "Lump sum",
+      "Perpetuity",
+      "Annuity",
+      "Dividend"
+    ],
+    "answer": "Annuity",
+    "hint": "Common examples include SIPs, EMIs, and monthly pensions.",
+    "explanation": "An annuity is a sequence of equal cash flows, paid or received at regular intervals for a fixed period."
+  },
+  {
+    "id": 15,
+    "question": "If annuity payments are made at the END of each period, what is it called?",
+    "options": [
+      "Ordinary Annuity",
+      "Annuity Due",
+      "Perpetuity",
+      "Deferred Annuity"
+    ],
+    "answer": "Ordinary Annuity",
+    "hint": "This is the most standard, 'regular' type of annuity like an EMI.",
+    "explanation": "An ordinary (or regular) annuity features cash flows that occur at the end of each respective period."
+  },
+  {
+    "id": 16,
+    "question": "If annuity payments are made at the BEGINNING of each period, what is it called?",
+    "options": [
+      "Ordinary Annuity",
+      "Annuity Due",
+      "Perpetual Annuity",
+      "Arrears Annuity"
+    ],
+    "answer": "Annuity Due",
+    "hint": "Think of rent payments, which are usually 'due' at the start of the month.",
+    "explanation": "An annuity due features cash flows that occur at the beginning of each period, immediately."
+  },
+  {
+    "id": 17,
+    "question": "For the same payment amount, interest rate, and time period, which will have a higher Future Value?",
+    "options": [
+      "Ordinary Annuity",
+      "Annuity Due",
+      "Both will have the exact same Future Value",
+      "Depends on the principal amount"
+    ],
+    "answer": "Annuity Due",
+    "hint": "Payments made earlier have more time to earn interest.",
+    "explanation": "An annuity due has a higher future value because every payment is invested for one additional period compared to an ordinary annuity, thereby earning more interest."
+  },
+  {
+    "id": 18,
+    "question": "How is the Future Value of an Annuity Due related to the Future Value of an Ordinary Annuity?",
+    "options": [
+      "FV of Annuity Due = FV of Ordinary Annuity / (1 + r)",
+      "FV of Annuity Due = FV of Ordinary Annuity * (1 + r)",
+      "FV of Annuity Due = FV of Ordinary Annuity * r",
+      "FV of Annuity Due = FV of Ordinary Annuity - r"
+    ],
+    "answer": "FV of Annuity Due = FV of Ordinary Annuity * (1 + r)",
+    "hint": "You add one extra compounding period to the entire series.",
+    "explanation": "Because each cash flow in an annuity due earns one extra period of interest, you simply multiply the ordinary annuity value by (1 + r)."
+  },
+  {
+    "id": 19,
+    "question": "A Systematic Investment Plan (SIP) in a mutual fund is a classic practical example of what TVM concept?",
+    "options": [
+      "Single lump-sum Future Value",
+      "Present Value of a Perpetuity",
+      "Future Value of an Annuity",
+      "Simple Interest calculation"
+    ],
+    "answer": "Future Value of an Annuity",
+    "hint": "You are investing equal amounts periodically to build a corpus in the future.",
+    "explanation": "An SIP involves making regular, equal investments over time to accumulate a future sum, which perfectly aligns with the Future Value of an Annuity concept."
+  },
+  {
+    "id": 20,
+    "question": "An Equated Monthly Installment (EMI) on a loan is an application of which TVM concept?",
+    "options": [
+      "Future Value of a single sum",
+      "Present Value of an Annuity",
+      "Present Value of a Perpetuity",
+      "Future Value of an Annuity"
+    ],
+    "answer": "Present Value of an Annuity",
+    "hint": "The loan amount you get today is the present value of all your future EMI payments.",
+    "explanation": "A loan is the present value of a series of future EMI payments (an annuity) discounted at the loan's interest rate."
+  },
+  {
+    "id": 21,
+    "question": "What is a 'Perpetuity' in finance?",
+    "options": [
+      "An annuity that pays only for 10 years",
+      "An annuity where the cash flows continue forever",
+      "A lump sum payment made today",
+      "A bond that never pays interest"
+    ],
+    "answer": "An annuity where the cash flows continue forever",
+    "hint": "The word implies 'perpetual' or infinite.",
+    "explanation": "A perpetuity is a special type of annuity that lasts forever, providing a continuous, infinite stream of identical cash flows."
+  },
+  {
+    "id": 22,
+    "question": "What is the formula for the Present Value of a Perpetuity paying an amount 'PMT' with a discount rate 'r'?",
+    "options": [
+      "PV = PMT * r",
+      "PV = PMT / r",
+      "PV = PMT * (1+r)",
+      "PV = PMT / (1+r)"
+    ],
+    "answer": "PV = PMT / r",
+    "hint": "It is simply the payment divided by the rate.",
+    "explanation": "The present value of a perpetuity is calculated by dividing the regular cash flow amount (PMT) by the required rate of return or discount rate (r)."
+  },
+  {
+    "id": 23,
+    "question": "If a preferred stock pays a constant annual dividend of Rs. 100 forever, and your required return is 10%, what is its Present Value?",
+    "options": [
+      "Rs. 1,000",
+      "Rs. 10,000",
+      "Rs. 100",
+      "Rs. 1,100"
+    ],
+    "answer": "Rs. 1,000",
+    "hint": "Use the perpetuity formula: PV = PMT / r.",
+    "explanation": "PV = 100 / 0.10 = 1,000. The present value of this perpetual dividend stream is Rs. 1,000."
+  },
+  {
+    "id": 24,
+    "question": "The stated annual interest rate on a financial product, which does not account for intra-year compounding, is called the:",
+    "options": [
+      "Effective Annual Rate (EAR)",
+      "Nominal Interest Rate",
+      "Real Interest Rate",
+      "Discount Rate"
+    ],
+    "answer": "Nominal Interest Rate",
+    "hint": "It's the rate 'in name only'.",
+    "explanation": "The nominal rate (or stated rate) is the annual interest rate quoted by an institution without taking the effects of compounding frequency into consideration."
+  },
+  {
+    "id": 25,
+    "question": "The actual return earned or paid in a year, which takes into account the effects of compounding frequency, is called the:",
+    "options": [
+      "Nominal Rate",
+      "Simple Rate",
+      "Effective Annual Rate (EAR)",
+      "Perpetual Rate"
+    ],
+    "answer": "Effective Annual Rate (EAR)",
+    "hint": "It reflects the 'effective' reality of your returns.",
+    "explanation": "The Effective Annual Rate (EAR) represents the true annual return, accounting for the fact that interest may be compounded semi-annually, quarterly, or monthly."
+  },
+  {
+    "id": 26,
+    "question": "If a bank offers an 8% nominal interest rate compounded quarterly, the Effective Annual Rate (EAR) will be:",
+    "options": [
+      "Exactly 8%",
+      "Less than 8%",
+      "Greater than 8%",
+      "Exactly 2%"
+    ],
+    "answer": "Greater than 8%",
+    "hint": "Quarterly compounding means earning interest on interest throughout the year.",
+    "explanation": "Because compounding happens more than once a year, the effective yield will always be mathematically higher than the stated nominal rate."
+  },
+  {
+    "id": 27,
+    "question": "What is 'Inflation' in the context of Time Value of Money?",
+    "options": [
+      "The increase in the purchasing power of money",
+      "The general increase in prices and fall in the purchasing power of money",
+      "The interest rate charged by the central bank",
+      "The guaranteed return on government bonds"
+    ],
+    "answer": "The general increase in prices and fall in the purchasing power of money",
+    "hint": "Things cost more over time.",
+    "explanation": "Inflation reduces the purchasing power of money, meaning a fixed amount of money will buy fewer goods and services in the future."
+  },
+  {
+    "id": 28,
+    "question": "The 'Real Rate of Return' is best described as:",
+    "options": [
+      "The return before taxes are deducted",
+      "The nominal return adjusted for inflation",
+      "The return guaranteed by the bank",
+      "The absolute highest return possible in the market"
+    ],
+    "answer": "The nominal return adjusted for inflation",
+    "hint": "It shows your true increase in purchasing power.",
+    "explanation": "The real rate of return strips out the effects of inflation from the nominal return, revealing the actual growth in purchasing power."
+  },
+  {
+    "id": 29,
+    "question": "According to the approximate Fisher equation, how is the Real Return calculated?",
+    "options": [
+      "Real Return = Nominal Return + Inflation Rate",
+      "Real Return = Nominal Return * Inflation Rate",
+      "Real Return = Nominal Return - Inflation Rate",
+      "Real Return = Inflation Rate / Nominal Return"
+    ],
+    "answer": "Real Return = Nominal Return - Inflation Rate",
+    "hint": "You have to subtract the effect of rising prices from your gains.",
+    "explanation": "As an approximation, the real rate of return is the nominal interest rate minus the rate of inflation."
+  },
+  {
+    "id": 30,
+    "question": "If your fixed deposit earns 7% annually and the inflation rate is 5%, what is your approximate Real Rate of Return?",
+    "options": [
+      "12%",
+      "7%",
+      "2%",
+      "-2%"
+    ],
+    "answer": "2%",
+    "hint": "Subtract inflation from the nominal return.",
+    "explanation": "Using the approximate formula: 7% (Nominal) - 5% (Inflation) = 2% (Real Return)."
+  },
+  {
+    "id": 31,
+    "question": "If the inflation rate is higher than your nominal investment return, what happens to your purchasing power?",
+    "options": [
+      "It increases greatly",
+      "It remains exactly the same",
+      "It decreases",
+      "It doubles every 72 years"
+    ],
+    "answer": "It decreases",
+    "hint": "Your money is growing slower than the prices of goods are rising.",
+    "explanation": "If inflation outpaces your returns, your real rate of return is negative, meaning your wealth is losing purchasing power over time."
+  },
+  {
+    "id": 32,
+    "question": "Which of the following equations represents the exact formula for calculating the Real Rate of Return?",
+    "options": [
+      "(1 + Real Rate) = (1 + Nominal Rate) / (1 + Inflation Rate)",
+      "(1 + Real Rate) = (1 + Nominal Rate) * (1 + Inflation Rate)",
+      "Real Rate = Nominal Rate - Inflation Rate",
+      "Real Rate = (Nominal Rate / Inflation Rate) - 1"
+    ],
+    "answer": "(1 + Real Rate) = (1 + Nominal Rate) / (1 + Inflation Rate)",
+    "hint": "This is the precise Fisher equation, avoiding the approximation error.",
+    "explanation": "The exact relationship between nominal rates, real rates, and inflation is given by the Fisher equation: (1+r_real) = (1+r_nom) / (1+inflation)."
+  },
+  {
+    "id": 33,
+    "question": "When planning for retirement, why must an adviser calculate the 'Future Value' of current expenses?",
+    "options": [
+      "To show the client how much they spend today",
+      "To estimate what their living expenses will cost at retirement age due to inflation",
+      "To calculate their current tax bracket",
+      "Because past expenses dictate future returns"
+    ],
+    "answer": "To estimate what their living expenses will cost at retirement age due to inflation",
+    "hint": "Rs. 50,000 today won't buy the same lifestyle in 20 years.",
+    "explanation": "An adviser uses TVM to project current living costs into the future, accounting for inflation, to determine the actual corpus needed at retirement."
+  },
+  {
+    "id": 34,
+    "question": "What does NPV stand for in capital budgeting and financial planning?",
+    "options": [
+      "Net Principal Value",
+      "Nominal Present Value",
+      "Net Present Value",
+      "Net Perpetual Value"
+    ],
+    "answer": "Net Present Value",
+    "hint": "It assesses the profitability of an investment by comparing present values.",
+    "explanation": "NPV stands for Net Present Value. It is the difference between the present value of cash inflows and the present value of cash outflows over a period of time."
+  },
+  {
+    "id": 35,
+    "question": "If an investment has a positive Net Present Value (NPV), it generally means:",
+    "options": [
+      "The investment will lose money",
+      "The investment is expected to generate returns higher than the discount rate",
+      "The investment's cash outflows exceed inflows",
+      "The discount rate used was too high"
+    ],
+    "answer": "The investment is expected to generate returns higher than the discount rate",
+    "hint": "Positive NPV indicates value creation.",
+    "explanation": "A positive NPV indicates that the projected earnings (discounted to present value) exceed the anticipated costs, making it a theoretically good investment."
+  },
+  {
+    "id": 36,
+    "question": "What is the Internal Rate of Return (IRR)?",
+    "options": [
+      "The inflation rate of the country",
+      "The discount rate that makes the Net Present Value (NPV) of an investment equal to zero",
+      "The bank's prime lending rate",
+      "The nominal rate quoted on a bond"
+    ],
+    "answer": "The discount rate that makes the Net Present Value (NPV) of an investment equal to zero",
+    "hint": "It is the break-even discount rate.",
+    "explanation": "IRR is the specific discount rate at which the present value of all future cash inflows exactly equals the initial investment (outflow), making NPV zero."
+  },
+  {
+    "id": 37,
+    "question": "When comparing two mutual fund SIPs based on historical cash flows, which metric is most appropriate to evaluate performance?",
+    "options": [
+      "Simple Interest",
+      "Net Present Value (NPV)",
+      "Internal Rate of Return (IRR) / XIRR",
+      "Rule of 72"
+    ],
+    "answer": "Internal Rate of Return (IRR) / XIRR",
+    "hint": "SIPs have multiple cash flows at different times.",
+    "explanation": "IRR (or XIRR for irregular dates) is the standard method for calculating returns when there are multiple cash inflows and outflows over time, like in an SIP."
+  },
+  {
+    "id": 38,
+    "question": "If the required rate of return for a client is 12%, and an investment offers an IRR of 14%, should the adviser recommend the investment (ignoring other risks)?",
+    "options": [
+      "No, because the IRR is higher than required",
+      "Yes, because the IRR exceeds the required rate of return",
+      "No, because NPV will be negative",
+      "Yes, but only if it's a simple interest product"
+    ],
+    "answer": "Yes, because the IRR exceeds the required rate of return",
+    "hint": "Higher IRR means higher expected returns.",
+    "explanation": "If the Internal Rate of Return (14%) is greater than the hurdle rate or required rate of return (12%), the investment adds value and is generally recommended."
+  },
+  {
+    "id": 39,
+    "question": "What happens to the Future Value of a sum if the time horizon (n) is doubled, keeping the interest rate constant?",
+    "options": [
+      "It exactly doubles",
+      "It more than doubles due to compounding",
+      "It halves",
+      "It stays the same"
+    ],
+    "answer": "It more than doubles due to compounding",
+    "hint": "Compound interest creates an exponential, not linear, curve.",
+    "explanation": "Because of compound interest (interest earning interest), extending the time horizon exponentially increases the future value, resulting in more than a strict doubling."
+  },
+  {
+    "id": 40,
+    "question": "An individual borrows Rs. 1,00,000 today and agrees to pay it back in 5 years. What TVM factor should the lender use to determine the lump sum repayment amount?",
+    "options": [
+      "Present Value Interest Factor (PVIF)",
+      "Future Value Interest Factor (FVIF)",
+      "Present Value Interest Factor of an Annuity (PVIFA)",
+      "Future Value Interest Factor of an Annuity (FVIFA)"
+    ],
+    "answer": "Future Value Interest Factor (FVIF)",
+    "hint": "The lender wants to know the value of a single sum in the future.",
+    "explanation": "To find the repayment amount of a single initial loan sum in the future, the Future Value Interest Factor for a single sum is used."
+  },
+  {
+    "id": 41,
+    "question": "A retirement corpus intended to provide a monthly pension until the death of the investor and their spouse without depleting the principal resembles a:",
+    "options": [
+      "Growing Annuity",
+      "Perpetuity",
+      "Short-term liability",
+      "Simple Interest instrument"
+    ],
+    "answer": "Perpetuity",
+    "hint": "The principal remains untouched, generating income indefinitely.",
+    "explanation": "If the principal is never depleted and provides continuous periodic income, mathematically it functions similar to a perpetuity."
+  },
+  {
+    "id": 42,
+    "question": "Compound Annual Growth Rate (CAGR) is fundamentally an application of which TVM formula?",
+    "options": [
+      "Simple interest",
+      "Annuity due",
+      "Future Value of a single cash flow",
+      "NPV"
+    ],
+    "answer": "Future Value of a single cash flow",
+    "hint": "CAGR looks at a beginning value and an ending value over a set number of years.",
+    "explanation": "CAGR is derived from the standard compound interest formula: FV = PV * (1+r)^n. It solves for 'r' given the start value (PV), end value (FV), and time (n)."
+  },
+  {
+    "id": 43,
+    "question": "Why is a rupee received today worth more than a rupee received a year from now, assuming zero inflation?",
+    "options": [
+      "Because of the opportunity cost of lost interest",
+      "Because paper currency degrades physically",
+      "Because banks will charge you a fee",
+      "It is not worth more; it is worth exactly the same without inflation"
+    ],
+    "answer": "Because of the opportunity cost of lost interest",
+    "hint": "Even without inflation, you could have invested it.",
+    "explanation": "Even with zero inflation, money has time value because of opportunity cost. Money in hand today can be invested in a risk-free asset to earn positive interest."
+  },
+  {
+    "id": 44,
+    "question": "In financial calculators and spreadsheets, why is the Present Value (PV) often entered as a negative number when solving for Future Value (FV)?",
+    "options": [
+      "Because present value is always a loss",
+      "To represent a cash outflow (investment)",
+      "Because spreadsheets cannot handle positive numbers",
+      "To subtract taxes automatically"
+    ],
+    "answer": "To represent a cash outflow (investment)",
+    "hint": "It reflects the direction of the cash flow from your pocket.",
+    "explanation": "In standard TVM sign convention, an investment (money leaving your pocket) is treated as a negative cash flow, while the future return is a positive cash inflow."
+  },
+  {
+    "id": 45,
+    "question": "If you wish to accumulate Rs. 50 Lakhs in 15 years for a child's education, which TVM concept will help you determine the required monthly SIP?",
+    "options": [
+      "Future Value of a Lump Sum",
+      "Future Value of an Annuity",
+      "Present Value of an Annuity",
+      "Perpetuity"
+    ],
+    "answer": "Future Value of an Annuity",
+    "hint": "You want to find the periodic payment that results in a specific future sum.",
+    "explanation": "You are making regular monthly payments (annuity) to reach a target amount in the future. Solving for the payment variable in the FVA formula will give the SIP amount."
+  },
+  {
+    "id": 46,
+    "question": "Which variable is NOT required when calculating the Present Value of a single future cash flow?",
+    "options": [
+      "Future Value amount",
+      "Discount Rate",
+      "Time period",
+      "Annuity payment amount"
+    ],
+    "answer": "Annuity payment amount",
+    "hint": "The question specifies a 'single' future cash flow.",
+    "explanation": "For a single lump-sum cash flow, you do not need an annuity payment amount. You only need the FV, the rate (r), and the time (n)."
+  },
+  {
+    "id": 47,
+    "question": "Continuous compounding means that interest is calculated and added to the principal:",
+    "options": [
+      "Once a year",
+      "Every day",
+      "An infinite number of times per year",
+      "Only at maturity"
+    ],
+    "answer": "An infinite number of times per year",
+    "hint": "It uses the mathematical constant 'e'.",
+    "explanation": "Continuous compounding represents the mathematical limit where interest is compounded constantly, at infinitesimally small intervals (using the formula FV = PV * e^(rt))."
+  },
+  {
+    "id": 48,
+    "question": "A 'Deferred Annuity' is an annuity where:",
+    "options": [
+      "Payments begin immediately",
+      "Payments stop after one year",
+      "The series of payments begins at some future date",
+      "The interest rate is always zero"
+    ],
+    "answer": "The series of payments begins at some future date",
+    "hint": "The payments are delayed.",
+    "explanation": "In a deferred annuity, the initial payment or receipt is delayed or deferred until a certain period has passed (e.g., retirement pension starting at age 60)."
+  },
+  {
+    "id": 49,
+    "question": "When assessing a client's education goal for their child, which rate is most appropriate to use for inflating the current cost of education?",
+    "options": [
+      "Overall CPI inflation",
+      "Education specific inflation rate",
+      "Food inflation rate",
+      "The bank's savings account rate"
+    ],
+    "answer": "Education specific inflation rate",
+    "hint": "Different sectors inflate at different speeds.",
+    "explanation": "Education and healthcare often experience much higher inflation rates than the general Consumer Price Index (CPI). For accurate TVM planning, sector-specific inflation should be used."
+  },
+  {
+    "id": 50,
+    "question": "If a financial planner calculates that a client needs Rs. 1 Crore today to fund their entire 30-year retirement, this Rs. 1 Crore represents:",
+    "options": [
+      "Future Value of an Annuity",
+      "Present Value of an Annuity",
+      "Future Value of a Lump Sum",
+      "Nominal Value"
+    ],
+    "answer": "Present Value of an Annuity",
+    "hint": "It is the lump sum needed today to provide a series of future withdrawals.",
+    "explanation": "The retirement corpus needed at the start of retirement is the Present Value of all future expected withdrawals (the annuity) during the retirement years."
+  }
+]
