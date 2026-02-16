@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1501,
+    "question": "Which strategy involves buying a stock and simultaneously selling a Call option on it?",
+    "options": [
+      "Protective Put",
+      "Covered Call",
+      "Long Straddle",
+      "Bull Call Spread"
+    ],
+    "answer": "Covered Call",
+    "hint": "Covering the call with the stock.",
+    "explanation": "A Covered Call (Buy Stock + Sell Call) is used to generate income from the premium while holding a stock, best for neutral-to-moderately bullish views."
+  },
+  {
+    "id": 1502,
+    "question": "Which strategy involves buying a stock and simultaneously buying a Put option on it?",
+    "options": [
+      "Protective Put (Married Put)",
+      "Covered Call",
+      "Short Straddle",
+      "Bear Put Spread"
+    ],
+    "answer": "Protective Put (Married Put)",
+    "hint": "Insurance for the stock.",
+    "explanation": "A Protective Put acts as insurance. If the stock falls, the Put option gains value, offsetting the loss in the stock."
+  },
+  {
+    "id": 1503,
+    "question": "A 'Bull Call Spread' is constructed by:",
+    "options": [
+      "Buying a Lower Strike Call and Selling a Higher Strike Call",
+      "Buying a Higher Strike Call and Selling a Lower Strike Call",
+      "Buying a Put and Selling a Call",
+      "Buying both Calls"
+    ],
+    "answer": "Buying a Lower Strike Call and Selling a Higher Strike Call",
+    "hint": "Buy Low (ITM/ATM), Sell High (OTM).",
+    "explanation": "To profit from a moderate rise while reducing cost, you buy a Call (closer to spot) and sell a cheaper OTM Call."
+  },
+  {
+    "id": 1504,
+    "question": "A 'Bear Put Spread' is constructed by:",
+    "options": [
+      "Buying a Higher Strike Put and Selling a Lower Strike Put",
+      "Buying a Lower Strike Put and Selling a Higher Strike Put",
+      "Buying a Call and Selling a Put",
+      "Selling both Puts"
+    ],
+    "answer": "Buying a Higher Strike Put and Selling a Lower Strike Put",
+    "hint": "Buy High (ITM/ATM), Sell Low (OTM).",
+    "explanation": "To profit from a moderate fall, you buy a Put (closer to spot) and sell a cheaper OTM Put to reduce the cost."
+  },
+  {
+    "id": 1505,
+    "question": "A 'Long Straddle' involves:",
+    "options": [
+      "Buying a Call and Buying a Put at the same Strike and Expiry",
+      "Selling a Call and Selling a Put at the same Strike",
+      "Buying a Call and Selling a Put",
+      "Buying a Call at Strike A and Put at Strike B"
+    ],
+    "answer": "Buying a Call and Buying a Put at the same Strike and Expiry",
+    "hint": "Betting on high volatility.",
+    "explanation": "A Long Straddle profits if the market moves significantly in *either* direction. You buy both options at the same strike."
+  },
+  {
+    "id": 1506,
+    "question": "A 'Short Straddle' involves:",
+    "options": [
+      "Selling a Call and Selling a Put at the same Strike and Expiry",
+      "Buying a Call and Buying a Put",
+      "Selling a Call and Buying a Put",
+      "Buying a Future and Selling a Call"
+    ],
+    "answer": "Selling a Call and Selling a Put at the same Strike and Expiry",
+    "hint": "Betting on low volatility/stability.",
+    "explanation": "A Short Straddle profits if the market stays close to the strike price (range-bound), collecting premiums from both sides."
+  },
+  {
+    "id": 1507,
+    "question": "A 'Long Strangle' involves:",
+    "options": [
+      "Buying an OTM Call and Buying an OTM Put",
+      "Buying an ITM Call and Buying an ITM Put",
+      "Selling an OTM Call and Selling an OTM Put",
+      "Buying ATM Call and Put"
+    ],
+    "answer": "Buying an OTM Call and Buying an OTM Put",
+    "hint": "Cheaper than a Straddle.",
+    "explanation": "A Long Strangle is similar to a Straddle but uses OTM options (Lower Strike Put, Higher Strike Call), making it cheaper but requiring a larger move to profit."
+  },
+  {
+    "id": 1508,
+    "question": "The maximum loss in a 'Bull Call Spread' is limited to:",
+    "options": [
+      "Net Premium Paid",
+      "Strike Difference",
+      "Unlimited",
+      "Zero"
+    ],
+    "answer": "Net Premium Paid",
+    "hint": "Debit spread.",
+    "explanation": "Since you pay a net premium to enter the trade, the max loss occurs if both options expire worthless, limited to the net cost."
+  },
+  {
+    "id": 1509,
+    "question": "The maximum profit in a 'Bull Call Spread' is limited to:",
+    "options": [
+      "Difference in Strikes - Net Premium Paid",
+      "Net Premium Paid",
+      "Unlimited",
+      "Strike Price"
+    ],
+    "answer": "Difference in Strikes - Net Premium Paid",
+    "hint": "Capped upside.",
+    "explanation": "The profit is capped because the short call limits gains. Max Profit = (Strike 2 - Strike 1) - Net Premium."
+  },
+  {
+    "id": 1510,
+    "question": "When should you use a 'Covered Call' strategy?",
+    "options": [
+      "When you are Neutral to Moderately Bullish",
+      "When you are Extremely Bullish",
+      "When you are Bearish",
+      "When you expect high volatility"
+    ],
+    "answer": "When you are Neutral to Moderately Bullish",
+    "hint": "Income generation.",
+    "explanation": "If the stock rockets up, your upside is capped. Ideally, you want the stock to rise slightly or stay flat so you keep the premium and the stock gains."
+  },
+  {
+    "id": 1511,
+    "question": "When should you use a 'Protective Put'?",
+    "options": [
+      "When you are Bullish but fear a temporary crash",
+      "When you are Bearish",
+      "When you are Neutral",
+      "When you want to sell the stock"
+    ],
+    "answer": "When you are Bullish but fear a temporary crash",
+    "hint": "Long term bullish, short term fearful.",
+    "explanation": "You want to hold the stock for upside but buy a Put to limit losses in case of a sudden downturn."
+  },
+  {
+    "id": 1512,
+    "question": "A 'Butterfly Spread' involves how many legs (options)?",
+    "options": [
+      "4 legs (Buy 1 ITM, Sell 2 ATM, Buy 1 OTM)",
+      "2 legs",
+      "3 legs",
+      "1 leg"
+    ],
+    "answer": "4 legs (Buy 1 ITM, Sell 2 ATM, Buy 1 OTM)",
+    "hint": "Body and two wings.",
+    "explanation": "A Long Butterfly involves buying 1 Lower Call, Selling 2 Middle Calls, and Buying 1 Higher Call (1-2-1 structure)."
+  },
+  {
+    "id": 1513,
+    "question": "The risk profile of a 'Short Straddle' is:",
+    "options": [
+      "Unlimited Loss, Limited Profit",
+      "Limited Loss, Unlimited Profit",
+      "Limited Loss, Limited Profit",
+      "Unlimited Profit, Unlimited Loss"
+    ],
+    "answer": "Unlimited Loss, Limited Profit",
+    "hint": "Selling naked options.",
+    "explanation": "Because you are short two options, if the market moves massively in either direction, your losses can be unlimited. Profit is limited to premiums received."
+  },
+  {
+    "id": 1514,
+    "question": "To create a 'Synthetic Long Call', you should:",
+    "options": [
+      "Buy Stock + Buy Put",
+      "Buy Stock + Sell Call",
+      "Sell Stock + Buy Call",
+      "Sell Stock + Sell Put"
+    ],
+    "answer": "Buy Stock + Buy Put",
+    "hint": "Same payoff curve.",
+    "explanation": "A Protective Put (Long Stock + Long Put) has the same payoff profile as a Long Call option (limited loss, unlimited upside)."
+  },
+  {
+    "id": 1515,
+    "question": "Which strategy has ZERO downside risk?",
+    "options": [
+      "None of the above",
+      "Arbitrage",
+      "Bull Call Spread",
+      "Long Straddle"
+    ],
+    "answer": "None of the above",
+    "hint": "Even arbitrage has execution risk; spreads have premium risk.",
+    "explanation": "In trading strategies, there is usually some cost (premium) or risk. Even arbitrage has execution/basis risk. Strictly speaking, 'Box Spreads' are arbitrage, but standard strategies all carry risk."
+  },
+  {
+    "id": 1516,
+    "question": "A 'Calendar Spread' (Horizontal Spread) involves:",
+    "options": [
+      "Same Strike, Different Expiry",
+      "Different Strike, Same Expiry",
+      "Different Strike, Different Expiry",
+      "Same Strike, Same Expiry"
+    ],
+    "answer": "Same Strike, Different Expiry",
+    "hint": "Time spread.",
+    "explanation": "You sell a near-month option and buy a far-month option at the same strike to profit from time decay differences."
+  },
+  {
+    "id": 1517,
+    "question": "Breakeven points for a Long Straddle are:",
+    "options": [
+      "Strike +/- Total Premium",
+      "Strike +/- Net Premium",
+      "Strike + Call Premium only",
+      "Strike - Put Premium only"
+    ],
+    "answer": "Strike +/- Total Premium",
+    "hint": "Two breakevens.",
+    "explanation": "Upper BEP = Strike + Total Premium Paid. Lower BEP = Strike - Total Premium Paid."
+  },
+  {
+    "id": 1518,
+    "question": "If you expect volatility to decrease ('Vol Crush'), which strategy is best?",
+    "options": [
+      "Short Straddle / Short Strangle",
+      "Long Straddle",
+      "Long Call",
+      "Long Put"
+    ],
+    "answer": "Short Straddle / Short Strangle",
+    "hint": "Selling volatility.",
+    "explanation": "Shorting options benefits from falling volatility (Vega). A Short Straddle profits most when volatility collapses."
+  },
+  {
+    "id": 1519,
+    "question": "A 'Zero Cost Collar' involves:",
+    "options": [
+      "Buying a Put and Selling a Call such that premiums offset each other",
+      "Buying a Call and Selling a Put",
+      "Buying a Stock and doing nothing",
+      "Buying a Future"
+    ],
+    "answer": "Buying a Put and Selling a Call such that premiums offset each other",
+    "hint": "Free protection.",
+    "explanation": "To protect a stock position, you buy a Put (cost) and finance it by selling a Call (income). If premiums match, it is zero-cost."
+  },
+  {
+    "id": 1520,
+    "question": "Which strategy is also known as a 'Vertical Spread'?",
+    "options": [
+      "Bull Call Spread",
+      "Calendar Spread",
+      "Straddle",
+      "Covered Call"
+    ],
+    "answer": "Bull Call Spread",
+    "hint": "Different strikes (vertical axis).",
+    "explanation": "Vertical spreads involve buying and selling options of the same expiry but different strikes (moving vertically on the chain)."
+  },
+  {
+    "id": 1521,
+    "question": "In a 'Bear Call Spread' (Credit Spread), you:",
+    "options": [
+      "Sell a Lower Strike Call and Buy a Higher Strike Call",
+      "Buy a Lower Strike Call and Sell a Higher Strike Call",
+      "Sell a Put and Buy a Call",
+      "Buy a Put and Sell a Call"
+    ],
+    "answer": "Sell a Lower Strike Call and Buy a Higher Strike Call",
+    "hint": "Sell expensive (ITM/ATM), buy cheap protection (OTM).",
+    "explanation": "You sell a Call (closer to money) to collect premium and buy a higher strike Call to limit risk. Net credit is received."
+  },
+  {
+    "id": 1522,
+    "question": "What is the max profit in a 'Bear Call Spread'?",
+    "options": [
+      "Net Premium Received",
+      "Difference in Strikes",
+      "Unlimited",
+      "Zero"
+    ],
+    "answer": "Net Premium Received",
+    "hint": "Credit strategy.",
+    "explanation": "Since it is a credit spread, the maximum you can make is the initial net premium collected if both options expire worthless."
+  },
+  {
+    "id": 1523,
+    "question": "Which strategy benefits from Time Decay (Theta Positive)?",
+    "options": [
+      "Short Straddle",
+      "Long Straddle",
+      "Long Call",
+      "Long Put"
+    ],
+    "answer": "Short Straddle",
+    "hint": "Selling options.",
+    "explanation": "Option sellers benefit from time decay. A Short Straddle collects daily decay from both the Call and Put."
+  },
+  {
+    "id": 1524,
+    "question": "Which strategy suffers from Time Decay (Theta Negative)?",
+    "options": [
+      "Long Straddle",
+      "Short Straddle",
+      "Short Strangle",
+      "Iron Condor"
+    ],
+    "answer": "Long Straddle",
+    "hint": "Buying options.",
+    "explanation": "Option buyers lose value daily due to decay. A Long Straddle loses value from both sides if the market doesn't move."
+  },
+  {
+    "id": 1525,
+    "question": "An 'Iron Condor' is a combination of:",
+    "options": [
+      "Bull Put Spread + Bear Call Spread",
+      "Bull Call Spread + Bear Put Spread",
+      "Long Straddle + Short Straddle",
+      "Two Long Calls"
+    ],
+    "answer": "Bull Put Spread + Bear Call Spread",
+    "hint": "Selling the wings.",
+    "explanation": "An Iron Condor involves selling an OTM Put and OTM Call (body) and buying further OTM Put and Call (wings) for protection. It's a neutral strategy."
+  },
+  {
+    "id": 1526,
+    "question": "A 'Box Spread' is used for:",
+    "options": [
+      "Arbitrage (Risk-free interest)",
+      "Directional betting",
+      "Hedging against a crash",
+      "Speculating on volatility"
+    ],
+    "answer": "Arbitrage (Risk-free interest)",
+    "hint": "Locked box.",
+    "explanation": "A Box Spread combines a Bull Call Spread and Bear Put Spread to create a risk-free position that yields the risk-free interest rate."
+  },
+  {
+    "id": 1527,
+    "question": "The 'Ratio Spread' involves:",
+    "options": [
+      "Buying and Selling options in unequal numbers (e.g., Buy 1, Sell 2)",
+      "Buying 1 and Selling 1",
+      "Buying calls and puts",
+      "Selling futures"
+    ],
+    "answer": "Buying and Selling options in unequal numbers (e.g., Buy 1, Sell 2)",
+    "hint": "Ratio like 1:2.",
+    "explanation": "A Ratio Spread involves buying one option and selling multiple options (usually OTM) to finance the purchase or create a credit."
+  },
+  {
+    "id": 1528,
+    "question": "If you are 'Long' a Call Spread, you have:",
+    "options": [
+      "Paid a net debit",
+      "Received a net credit",
+      "Zero cost",
+      "Unlimited risk"
+    ],
+    "answer": "Paid a net debit",
+    "hint": "Buying the spread.",
+    "explanation": "Entering a Bull Call Spread (Long Call Spread) requires paying more for the lower strike than you receive for the higher strike, resulting in a debit."
+  },
+  {
+    "id": 1529,
+    "question": "If you are 'Short' a Put Spread (Bull Put Spread), you have:",
+    "options": [
+      "Received a net credit",
+      "Paid a net debit",
+      "Unlimited profit",
+      "Zero risk"
+    ],
+    "answer": "Received a net credit",
+    "hint": "Selling the spread.",
+    "explanation": "A Bull Put Spread involves selling a higher strike put (expensive) and buying a lower strike put (cheap), resulting in a net credit."
+  },
+  {
+    "id": 1530,
+    "question": "What is the primary risk in a 'Covered Call'?",
+    "options": [
+      "Opportunity loss (if stock rises massive) and Stock downside risk",
+      "Unlimited loss on the call",
+      "Margin call",
+      "Assignment risk only"
+    ],
+    "answer": "Opportunity loss (if stock rises massive) and Stock downside risk",
+    "hint": "You own the stock.",
+    "explanation": "If the stock crashes, you lose on the stock holdings (minus the small premium). If it skyrockets, your profit is capped, so you miss out."
+  },
+  {
+    "id": 1531,
+    "question": "In a 'Long Straddle', you make money if the market:",
+    "options": [
+      "Moves significantly in either direction",
+      "Stays flat",
+      "Moves slowly",
+      "Expires at the strike price"
+    ],
+    "answer": "Moves significantly in either direction",
+    "hint": "Explosion.",
+    "explanation": "You need the price to move far enough to cover the cost of both premiums."
+  },
+  {
+    "id": 1532,
+    "question": "Generally, strategies that involve 'Selling' options have a probability of profit that is:",
+    "options": [
+      "Higher than buying strategies",
+      "Lower than buying strategies",
+      "Equal to 50%",
+      "Zero"
+    ],
+    "answer": "Higher than buying strategies",
+    "hint": "House odds.",
+    "explanation": "Since sellers win if the market stays flat, moves slightly, or moves in their favor, they have a higher probability of profit (POP) than buyers."
+  },
+  {
+    "id": 1533,
+    "question": "Which strategy is best for a 'Black Swan' event (Market Crash)?",
+    "options": [
+      "Long Put / Protective Put",
+      "Short Put",
+      "Covered Call",
+      "Iron Condor"
+    ],
+    "answer": "Long Put / Protective Put",
+    "hint": "Put pays when market crashes.",
+    "explanation": "Buying Puts gives unlimited profit potential on the downside, offering the best protection or profit during a crash."
+  },
+  {
+    "id": 1534,
+    "question": "A 'Condor' spread is similar to a Butterfly but:",
+    "options": [
+      "The two middle strikes are different (separated)",
+      "It uses only calls",
+      "It uses only puts",
+      "It has unlimited risk"
+    ],
+    "answer": "The two middle strikes are different (separated)",
+    "hint": "Wider body.",
+    "explanation": "A Butterfly uses 3 strikes (A, B, C). A Condor uses 4 strikes (A, B, C, D) to create a wider profit zone."
+  },
+  {
+    "id": 1535,
+    "question": "Hedging with Options is different from Hedging with Futures because:",
+    "options": [
+      "Options allow participating in favorable moves (insurance), Futures lock the price (linear)",
+      "Options are free",
+      "Futures are risky",
+      "Options have no expiry"
+    ],
+    "answer": "Options allow participating in favorable moves (insurance), Futures lock the price (linear)",
+    "hint": "Right vs Obligation.",
+    "explanation": "Futures lock you in (no upside if market moves in your favor). Options protect downside but leave upside open (like insurance)."
+  },
+  {
+    "id": 1536,
+    "question": "A 'Synthetic Short Stock' position can be created by:",
+    "options": [
+      "Short Call + Long Put",
+      "Long Call + Short Put",
+      "Short Call + Short Put",
+      "Long Call + Long Put"
+    ],
+    "answer": "Short Call + Long Put",
+    "hint": "Reversing the synthetic long.",
+    "explanation": "Buying a Put and Selling a Call (at same strike) creates a payoff identical to shorting the stock."
+  },
+  {
+    "id": 1537,
+    "question": "The 'Max Pain' theory suggests that on expiry, the stock price will tend to move towards:",
+    "options": [
+      "The strike price where option sellers suffer the least loss",
+      "The highest strike",
+      "The lowest strike",
+      "Zero"
+    ],
+    "answer": "The strike price where option sellers suffer the least loss",
+    "hint": "Pain for buyers, gain for sellers.",
+    "explanation": "Max Pain is the strike price at which the total value of all open options is minimal, maximizing profit for option writers."
+  },
+  {
+    "id": 1538,
+    "question": "Which strategy is a 'Directional' strategy?",
+    "options": [
+      "Bull Call Spread",
+      "Iron Condor",
+      "Short Straddle",
+      "Long Butterfly"
+    ],
+    "answer": "Bull Call Spread",
+    "hint": "Bull means direction.",
+    "explanation": "Spreads like Bull Call or Bear Put are directional. Condors, Straddles, and Butterflies are generally neutral (volatility) strategies."
+  },
+  {
+    "id": 1539,
+    "question": "If you buy a Call at 100 Strike for 5 and Sell a Call at 110 Strike for 2, your max loss is:",
+    "options": [
+      "3",
+      "7",
+      "10",
+      "2"
+    ],
+    "answer": "3",
+    "hint": "Net Debit.",
+    "explanation": "Net Debit = 5 (Paid) - 2 (Received) = 3. This is the max loss."
+  },
+  {
+    "id": 1540,
+    "question": "In the above example (Buy 100 CE @ 5, Sell 110 CE @ 2), what is the max profit?",
+    "options": [
+      "7",
+      "3",
+      "10",
+      "Unlimited"
+    ],
+    "answer": "7",
+    "hint": "Spread width - Net Debit.",
+    "explanation": "Max Profit = (110 - 100) - 3 = 10 - 3 = 7."
+  },
+  {
+    "id": 1541,
+    "question": "The margin requirement for a 'Bull Call Spread' is:",
+    "options": [
+      "None (It is a debit strategy)",
+      "High (Like futures)",
+      "Equal to strike price",
+      "Double the premium"
+    ],
+    "answer": "None (It is a debit strategy)",
+    "hint": "You paid cash upfront.",
+    "explanation": "Since you pay the net premium upfront and have no further obligation (the short option is covered by the long option), there is usually no margin required for Long Spreads."
+  },
+  {
+    "id": 1542,
+    "question": "When implies volatility is very high, it is generally better to:",
+    "options": [
+      "Sell Options (Credit Strategies)",
+      "Buy Options (Debit Strategies)",
+      "Buy Futures",
+      "Avoid the market"
+    ],
+    "answer": "Sell Options (Credit Strategies)",
+    "hint": "Sell expensive things.",
+    "explanation": "High IV means premiums are expensive. It's better to sell (write) options to collect rich premiums and wait for IV to drop."
+  },
+  {
+    "id": 1543,
+    "question": "When implied volatility is very low, it is generally better to:",
+    "options": [
+      "Buy Options (Debit Strategies)",
+      "Sell Options (Credit Strategies)",
+      "Sell Futures",
+      "Do Iron Condors"
+    ],
+    "answer": "Buy Options (Debit Strategies)",
+    "hint": "Buy cheap things.",
+    "explanation": "Low IV means premiums are cheap. It's better to buy options (Straddles, Long Calls) and hope for a volatility expansion."
+  },
+  {
+    "id": 1544,
+    "question": "A 'Married Put' is another name for:",
+    "options": [
+      "Protective Put",
+      "Covered Call",
+      "Synthetic Long",
+      "Long Straddle"
+    ],
+    "answer": "Protective Put",
+    "hint": "Stock married to a put.",
+    "explanation": "Buying a stock and a put together is called a Married Put."
+  },
+  {
+    "id": 1545,
+    "question": "Which strategy involves selling a Put to buy a Call?",
+    "options": [
+      "Synthetic Long / Risk Reversal",
+      "Collar",
+      "Covered Call",
+      "Straddle"
+    ],
+    "answer": "Synthetic Long / Risk Reversal",
+    "hint": "Bullish shift.",
+    "explanation": "Selling a Put (Bullish) to finance buying a Call (Bullish) creates a strong bullish position, often called a Risk Reversal."
+  },
+  {
+    "id": 1546,
+    "question": "What is 'Pin Risk'?",
+    "options": [
+      "The risk that the stock closes exactly at the strike price",
+      "The risk of pin code error",
+      "The risk of password theft",
+      "The risk of low volume"
+    ],
+    "answer": "The risk that the stock closes exactly at the strike price",
+    "hint": "Pinned to the strike.",
+    "explanation": "If a stock expires exactly at the strike of a short option, the seller doesn't know if they will be assigned or not until after market close, creating uncertainty."
+  },
+  {
+    "id": 1547,
+    "question": "A 'Diagonal Spread' involves:",
+    "options": [
+      "Different Strikes AND Different Expiries",
+      "Same Strike, Different Expiry",
+      "Different Strike, Same Expiry",
+      "Same Strike, Same Expiry"
+    ],
+    "answer": "Different Strikes AND Different Expiries",
+    "hint": "Diagonal on the matrix.",
+    "explanation": "It combines elements of vertical (price) and horizontal (time) spreads."
+  },
+  {
+    "id": 1548,
+    "question": "If you hold a Deep ITM Call Option, it behaves almost like:",
+    "options": [
+      "Long Stock / Future",
+      "Short Stock",
+      "Cash",
+      "Bond"
+    ],
+    "answer": "Long Stock / Future",
+    "hint": "Delta is 1.",
+    "explanation": "Deep ITM calls have a delta near 1.0, meaning they move point-for-point with the stock."
+  },
+  {
+    "id": 1549,
+    "question": "Which of these is a 'Delta Neutral' strategy?",
+    "options": [
+      "Long Straddle (at initiation)",
+      "Long Call",
+      "Short Put",
+      "Bull Call Spread"
+    ],
+    "answer": "Long Straddle (at initiation)",
+    "hint": "Positive delta + Negative delta = 0.",
+    "explanation": "A Straddle buys an ATM Call (+0.5 Delta) and ATM Put (-0.5 Delta). Net Delta is approx zero."
+  },
+  {
+    "id": 1550,
+    "question": "Adjusting a strategy to reduce risk is called:",
+    "options": [
+      "Repairing / Adjusting",
+      "Gambling",
+      "Speculating",
+      "Churning"
+    ],
+    "answer": "Repairing / Adjusting",
+    "hint": "Fixing the trade.",
+    "explanation": "Traders often 'adjust' positions (e.g., rolling strikes, adding legs) to manage risk if the market moves against them."
+  }
+]

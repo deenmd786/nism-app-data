@@ -1,0 +1,402 @@
+[
+  {
+    "id": 4001,
+    "question": "What does a 'Call Option' give the buyer?",
+    "options": ["An obligation to buy the asset", "The right, but not the obligation, to buy the asset", "The right to sell the asset", "An obligation to sell the asset"],
+    "answer": "The right, but not the obligation, to buy the asset",
+    "hint": "Buyers of calls are 'Bullish'.",
+    "explanation": "A call option gives the holder the right to purchase the underlying commodity at a specified price within a specific time period."
+  },
+  {
+    "id": 4002,
+    "question": "What does a 'Put Option' give the buyer?",
+    "options": ["The right to buy the asset", "The right, but not the obligation, to sell the asset", "An obligation to buy the asset", "A guarantee of profit"],
+    "answer": "The right, but not the obligation, to sell the asset",
+    "hint": "Buyers of puts are 'Bearish'.",
+    "explanation": "A put option gives the holder the right to sell the underlying commodity at a specified price."
+  },
+  {
+    "id": 4003,
+    "question": "The fixed price at which the option holder can buy or sell the underlying asset is called:",
+    "options": ["Market Price", "Spot Price", "Strike Price", "Premium"],
+    "answer": "Strike Price",
+    "hint": "It is also known as the exercise price.",
+    "explanation": "The strike price is the pre-determined price set in the option contract at which the transaction will take place if the option is exercised."
+  },
+  {
+    "id": 4004,
+    "question": "What is the 'Premium' in an options contract?",
+    "options": ["The total value of the gold", "The price paid by the buyer to the seller for the rights", "The tax paid to the government", "The profit made at the end of the year"],
+    "answer": "The price paid by the buyer to the seller for the rights",
+    "hint": "It is the 'cost' of the insurance/option.",
+    "explanation": "The premium is the non-refundable fee paid upfront by the option buyer to the option seller (writer)."
+  },
+  {
+    "id": 4005,
+    "question": "Who has 'Unlimited Risk' in an options contract?",
+    "options": ["The Option Buyer", "The Option Seller (Writer)", "The Exchange", "The Warehouse Manager"],
+    "answer": "The Option Seller (Writer)",
+    "hint": "They receive a small premium but take on all the potential loss.",
+    "explanation": "Option buyers have limited risk (the premium paid), while option sellers (especially of calls) face theoretically unlimited risk if the market moves against them."
+  },
+  {
+    "id": 4006,
+    "question": "An option is 'In-the-Money' (ITM) for a Call buyer if:",
+    "options": ["Market Price > Strike Price", "Market Price < Strike Price", "Market Price = Strike Price", "The market is closed"],
+    "answer": "Market Price > Strike Price",
+    "hint": "The buyer can buy cheaper than the current market price.",
+    "explanation": "A call option is ITM when the current market price of the commodity is higher than the strike price of the option."
+  },
+  {
+    "id": 4007,
+    "question": "An option is 'Out-of-the-Money' (OTM) for a Put buyer if:",
+    "options": ["Market Price > Strike Price", "Market Price < Strike Price", "Market Price = Strike Price", "The premium is zero"],
+    "answer": "Market Price > Strike Price",
+    "hint": "The right to sell at the strike price is useless if market price is higher.",
+    "explanation": "A put option is OTM when the market price is higher than the strike price, meaning there is no immediate benefit to exercising the right to sell."
+  },
+  {
+    "id": 4008,
+    "question": "What is 'Intrinsic Value'?",
+    "options": ["The total premium", "The amount by which an option is in-the-money", "The time left for expiry", "The volatility of the market"],
+    "answer": "The amount by which an option is in-the-money",
+    "hint": "It is the 'real' value if the option were exercised today.",
+    "explanation": "Intrinsic value is the difference between the strike price and the current market price, but it can never be negative (it is zero for OTM options)."
+  },
+  {
+    "id": 4009,
+    "question": "What is 'Time Value' in an option premium?",
+    "options": ["The cost of a clock", "Premium minus Intrinsic Value", "The interest rate on a loan", "The time it takes to execute a trade"],
+    "answer": "Premium minus Intrinsic Value",
+    "hint": "It represents the probability of the option becoming more valuable before expiry.",
+    "explanation": "Time value (or extrinsic value) is the portion of the premium that exceeds the intrinsic value, reflecting the remaining time for the price to move."
+  },
+  {
+    "id": 4010,
+    "question": "Which of the following describes an 'American' style option?",
+    "options": ["Can only be exercised on the expiry date", "Can be exercised at any time before or on the expiry date", "Can only be traded in the USA", "Has no expiry date"],
+    "answer": "Can be exercised at any time before or on the expiry date",
+    "hint": "It offers more flexibility to the buyer.",
+    "explanation": "American options allow the holder to exercise their rights at any point during the life of the contract."
+  },
+  {
+    "id": 4011,
+    "question": "Which of the following describes a 'European' style option?",
+    "options": ["Can be exercised any time", "Can only be exercised on the expiry date", "Is traded only in Euros", "Always has a low premium"],
+    "answer": "Can only be exercised on the expiry date",
+    "hint": "Most index and commodity options in India follow this style.",
+    "explanation": "European options can only be exercised at the moment of expiration, although they can still be traded (sold) in the secondary market before that."
+  },
+  {
+    "id": 4012,
+    "question": "In India, 'Options on Goods' involve:",
+    "options": ["Cash settlement only", "The right to buy or sell the physical commodity directly", "Mandatory delivery for everyone", "Buying shares in a warehouse"],
+    "answer": "The right to buy or sell the physical commodity directly",
+    "hint": "This was a major regulatory shift by SEBI.",
+    "explanation": "Unlike options on futures, 'Options on Goods' settle directly into physical delivery if exercised."
+  },
+  {
+    "id": 4013,
+    "question": "What does 'Delta' measure in options?",
+    "options": ["Change in premium for a 1-unit change in underlying price", "Change in premium due to time passing", "The risk of the broker", "The total volume of trades"],
+    "answer": "Change in premium for a 1-unit change in underlying price",
+    "hint": "It is one of the 'Greeks'.",
+    "explanation": "Delta measures the sensitivity of the option's premium to changes in the price of the underlying asset."
+  },
+  {
+    "id": 4014,
+    "question": "What does 'Theta' represent?",
+    "options": ["Price sensitivity", "Time decay (loss of value as time passes)", "Volatility sensitivity", "Interest rate risk"],
+    "answer": "Time decay (loss of value as time passes)",
+    "hint": "Options are 'wasting assets'.",
+    "explanation": "Theta measures the rate at which an option's value decreases as it approaches its expiration date."
+  },
+  {
+    "id": 4015,
+    "question": "What is 'Implied Volatility' (IV)?",
+    "options": ["The past price movement of the asset", "The market's expectation of future price fluctuations", "The speed of the exchange's internet", "The number of buyers in the market"],
+    "answer": "The market's expectation of future price fluctuations",
+    "hint": "High IV usually means higher premiums.",
+    "explanation": "IV is derived from the option's price and reflects how much the market expects the price of the underlying to move in the future."
+  },
+  {
+    "id": 4016,
+    "question": "A trader who expects very low volatility would likely:",
+    "options": ["Buy a Call and a Put", "Sell (Write) options to collect premium", "Stop trading", "Only trade in physical markets"],
+    "answer": "Sell (Write) options to collect premium",
+    "hint": "They profit if the price stays within a range.",
+    "explanation": "Option sellers benefit from 'Theta decay' and stable prices, as the options they sold will likely expire worthless."
+  },
+  {
+    "id": 4017,
+    "question": "What is a 'Long Straddle' strategy?",
+    "options": ["Buying only calls", "Selling only puts", "Buying a Call and a Put with the same strike and expiry", "Buying gold in two different cities"],
+    "answer": "Buying a Call and a Put with the same strike and expiry",
+    "hint": "Used when you expect a big move but don't know the direction.",
+    "explanation": "A long straddle profits if the market moves significantly in either direction (up or down)."
+  },
+  {
+    "id": 4018,
+    "question": "At-the-Money (ATM) means:",
+    "options": ["Strike Price = Market Price", "Strike Price > Market Price", "Strike Price < Market Price", "The trader is out of cash"],
+    "answer": "Strike Price = Market Price",
+    "hint": "The option is right at the current price level.",
+    "explanation": "An option is ATM when the strike price is identical (or very close) to the current market price of the underlying commodity."
+  },
+  {
+    "id": 4019,
+    "question": "What is 'Vega'?",
+    "options": ["The change in premium due to time", "The change in premium due to a 1% change in IV", "The change in premium due to interest rates", "The name of a star"],
+    "answer": "The change in premium due to a 1% change in IV",
+    "hint": "It measures volatility risk.",
+    "explanation": "Vega tells you how much the price of an option will change when the implied volatility of the underlying asset changes."
+  },
+  {
+    "id": 4020,
+    "question": "Why is 'Time Decay' bad for option buyers?",
+    "options": ["It makes the price go up", "The option loses value every day, even if the asset price stays still", "It increases the taxes", "It makes delivery harder"],
+    "answer": "The option loses value every day, even if the asset price stays still",
+    "hint": "Buyers are 'Long Theta'.",
+    "explanation": "As time passes, the probability of the option becoming profitable decreases, causing the time value portion of the premium to shrink."
+  },
+  {
+    "id": 4021,
+    "question": "Who pays the margin in an options trade?",
+    "options": ["Only the Buyer", "Only the Seller (Writer)", "Both Buyer and Seller", "Neither"],
+    "answer": "Only the Seller (Writer)",
+    "hint": "The buyer's risk is limited to the premium already paid.",
+    "explanation": "Since the seller has potentially unlimited risk, they must deposit margins to ensure they can meet their obligations."
+  },
+  {
+    "id": 4022,
+    "question": "What is 'Open Interest' in options?",
+    "options": ["The total premium paid", "The total number of open/active option contracts", "The interest rate on margins", "The number of traders interested in options"],
+    "answer": "The total number of open/active option contracts",
+    "hint": "It indicates the depth and liquidity of the options market.",
+    "explanation": "Like futures, Open Interest in options represents the total number of outstanding contracts that have not been closed or exercised."
+  },
+  {
+    "id": 4023,
+    "question": "If a Gold Call option has a strike of 70,000 and the market is at 72,000, what is the Intrinsic Value?",
+    "options": ["0", "2,000", "72,000", "Depends on the time"],
+    "answer": "2,000",
+    "hint": "It is the 'in-the-money' amount.",
+    "explanation": "72,000 (Market) - 70,000 (Strike) = 2,000 intrinsic value."
+  },
+  {
+    "id": 4024,
+    "question": "What is 'Gamma'?",
+    "options": ["The rate of change of Delta", "The rate of change of Theta", "A type of radiation", "The final profit"],
+    "answer": "The rate of change of Delta",
+    "hint": "It measures how 'stable' the Delta is.",
+    "explanation": "Gamma measures how much the Delta of an option changes as the underlying asset's price moves."
+  },
+  {
+    "id": 4025,
+    "question": "What is the 'Maximum Loss' for an option buyer?",
+    "options": ["Unlimited", "Zero", "The premium paid", "The strike price"],
+    "answer": "The premium paid",
+    "hint": "You can only lose what you spent to buy the right.",
+    "explanation": "The primary advantage of buying options is that the downside is strictly limited to the cost of the premium."
+  },
+  {
+    "id": 4026,
+    "question": "A 'Covered Call' involves:",
+    "options": ["Buying a call and a put", "Selling a call while owning the underlying physical asset", "Selling a call with no assets", "Covering the call with a cloth"],
+    "answer": "Selling a call while owning the underlying physical asset",
+    "hint": "It is used to generate extra income from an existing holding.",
+    "explanation": "In a covered call, the seller uses their physical stock as 'cover' in case the call is exercised, reducing their risk."
+  },
+  {
+    "id": 4027,
+    "question": "What happens to the premium if Implied Volatility (IV) increases?",
+    "options": ["Premium decreases", "Premium increases", "Premium stays same", "Option expires"],
+    "answer": "Premium increases",
+    "hint": "Higher uncertainty makes the 'insurance' more expensive.",
+    "explanation": "Both calls and puts become more expensive when IV increases because there is a higher chance of a large price swing."
+  },
+  {
+    "id": 4028,
+    "question": "Options on 'Futures' (used in India) convert into what upon exercise?",
+    "options": ["Cash", "Physical goods", "A futures position", "Another option"],
+    "answer": "A futures position",
+    "hint": "The option gives you the right to enter a futures contract.",
+    "explanation": "When an option on futures is exercised, the buyer receives a long/short position in the underlying futures contract at the strike price."
+  },
+  {
+    "id": 4029,
+    "question": "What is 'Rho'?",
+    "options": ["Sensitivity to volatility", "Sensitivity to interest rates", "Sensitivity to time", "Sensitivity to moisture"],
+    "answer": "Sensitivity to interest rates",
+    "hint": "It is usually the least important Greek for short-term traders.",
+    "explanation": "Rho measures how much an option's premium will change based on a change in the risk-free interest rate."
+  },
+  {
+    "id": 4030,
+    "question": "What is an 'Option Series'?",
+    "options": ["A TV show about trading", "All options of the same class with the same strike and expiry", "A group of brokers", "A sequence of days"],
+    "answer": "All options of the same class with the same strike and expiry",
+    "hint": "It is the specific contract you pick to trade.",
+    "explanation": "An option series includes all contracts of a specific type (Calls or Puts) that share the same strike price and expiration date."
+  },
+  {
+    "id": 4031,
+    "question": "What is 'Assignment' in options?",
+    "options": ["Homework for traders", "The process where an option seller is required to fulfill their obligation", "Buying a new computer", "Signing a contract"],
+    "answer": "The process where an option seller is required to fulfill their obligation",
+    "hint": "It happens when the buyer decides to exercise.",
+    "explanation": "When an option buyer exercises their right, the clearing house 'assigns' that obligation to a random seller of the same option."
+  },
+  {
+    "id": 4032,
+    "question": "If you are 'Bullish' but want limited risk, you would:",
+    "options": ["Sell a Call", "Buy a Put", "Buy a Call", "Sell a Put"],
+    "answer": "Buy a Call",
+    "hint": "You want the price to go up, and you only want to risk the premium.",
+    "explanation": "Buying a call option allows you to profit from rising prices with a capped downside."
+  },
+  {
+    "id": 4033,
+    "question": "If you are 'Bearish' and want limited risk, you would:",
+    "options": ["Buy a Call", "Buy a Put", "Sell a Put", "Sell a Call"],
+    "answer": "Buy a Put",
+    "hint": "You want the price to fall.",
+    "explanation": "Buying a put option allows you to profit from falling prices with a capped downside."
+  },
+  {
+    "id": 4034,
+    "question": "What is 'Put-Call Parity'?",
+    "options": ["The price of a put must always equal the call", "The mathematical relationship between call and put prices", "A rule that you must buy both", "None of the above"],
+    "answer": "The mathematical relationship between call and put prices",
+    "hint": "It prevents arbitrage between calls, puts, and the underlying asset.",
+    "explanation": "Put-Call Parity is a fundamental principle that links the prices of European calls and puts with the same strike and expiry."
+  },
+  {
+    "id": 4035,
+    "question": "What is the 'Option Class'?",
+    "options": ["A training course", "All call and put options on a single underlying commodity", "The level of a trader's account", "The type of warehouse"],
+    "answer": "All call and put options on a single underlying commodity",
+    "hint": "Example: All Gold options are one class.",
+    "explanation": "An option class consists of all calls and puts associated with one specific underlying asset."
+  },
+  {
+    "id": 4036,
+    "question": "Which of these is a 'Neutral' strategy?",
+    "options": ["Long Call", "Long Put", "Short Straddle", "Long Futures"],
+    "answer": "Short Straddle",
+    "hint": "You make money if the price doesn't move much.",
+    "explanation": "A short straddle involves selling both a call and a put, profiting from time decay and low volatility."
+  },
+  {
+    "id": 4037,
+    "question": "What does 'Expiration' mean for an OTM option?",
+    "options": ["It becomes a futures contract", "It expires worthless", "The buyer gets a refund", "The seller pays a fine"],
+    "answer": "It expires worthless",
+    "hint": "There is no reason to exercise an option that has no value.",
+    "explanation": "If an option is Out-of-the-Money at expiration, it has no value and the buyer simply loses the premium paid."
+  },
+  {
+    "id": 4038,
+    "question": "What is 'Volatility Skew'?",
+    "options": ["When all options have the same IV", "When IV differs across different strike prices", "When the market is closed", "When the broker makes a mistake"],
+    "answer": "When IV differs across different strike prices",
+    "hint": "It often looks like a 'smile' or 'smirk' on a graph.",
+    "explanation": "Volatility skew reflects the market's perception that some outcomes (like a sudden crash) are more likely than others, affecting the IV of different strikes."
+  },
+  {
+    "id": 4039,
+    "question": "What is a 'Strike Price Interval'?",
+    "options": ["The time between two trades", "The difference between two consecutive strike prices", "The distance between two warehouses", "The lunch break at the exchange"],
+    "answer": "The difference between two consecutive strike prices",
+    "hint": "Example: Gold strikes at every 100 or 500 rupees.",
+    "explanation": "Exchanges set standardized gaps between strike prices (e.g., if one strike is 70,000, the next might be 70,500)."
+  },
+  {
+    "id": 4040,
+    "question": "Why do people use options for 'Hedging'?",
+    "options": ["To double their money", "To protect against price drops while still keeping the profit if prices rise", "Because they are cheaper than water", "To avoid the exchange"],
+    "answer": "To protect against price drops while still keeping the profit if prices rise",
+    "hint": "Options are like insurance with a 'deductible'.",
+    "explanation": "Unlike futures, which lock in a price, options allow a hedger to protect against losses while still benefiting if the market moves in their favor."
+  },
+  {
+    "id": 4041,
+    "question": "Which Greek is most important for a 'Day Trader' of options?",
+    "options": ["Delta", "Rho", "Theta", "All are equal"],
+    "answer": "Delta",
+    "hint": "They care about the immediate price move.",
+    "explanation": "Since day traders exit positions quickly, the impact of time (Theta) or interest rates (Rho) is less important than the price movement (Delta)."
+  },
+  {
+    "id": 4042,
+    "question": "What is 'Moneyness'?",
+    "options": ["How much money a trader has", "The relationship between the market price and the strike price", "The speed of money transfer", "The tax rate"],
+    "answer": "The relationship between the market price and the strike price",
+    "hint": "It describes if an option is ITM, ATM, or OTM.",
+    "explanation": "Moneyness is the term used to describe whether an option is currently profitable to exercise."
+  },
+  {
+    "id": 4043,
+    "question": "In a 'Short Put', the seller expects the price to:",
+    "options": ["Fall sharply", "Stay stable or rise", "Do nothing", "Go to zero"],
+    "answer": "Stay stable or rise",
+    "hint": "They want the put to expire worthless.",
+    "explanation": "A put seller is neutral-to-bullish. If the price stays above the strike, they keep the premium."
+  },
+  {
+    "id": 4044,
+    "question": "What is 'Exercising' an option?",
+    "options": ["Going to the gym", "The act of using the right to buy or sell the asset", "Canceling the contract", "Selling the option to someone else"],
+    "answer": "The act of using the right to buy or sell the asset",
+    "hint": "The buyer 'invokes' their contract rights.",
+    "explanation": "Exercise is the formal notification by the option holder to the exchange that they wish to buy/sell the underlying at the strike price."
+  },
+  {
+    "id": 4045,
+    "question": "What is the 'Net Premium' in a multi-option strategy?",
+    "options": ["The total profit", "The difference between premiums paid and premiums received", "The tax on premiums", "The brokerage fee"],
+    "answer": "The difference between premiums paid and premiums received",
+    "hint": "It is the total cost or credit to open the trade.",
+    "explanation": "In complex strategies (like spreads), you calculate the net cash flow of all premiums involved."
+  },
+  {
+    "id": 4046,
+    "question": "What happens if a Call Option seller is 'Assigned'?",
+    "options": ["They must buy the asset", "They must sell the asset at the strike price", "They get a bonus", "They are removed from the exchange"],
+    "answer": "They must sell the asset at the strike price",
+    "hint": "They must fulfill the buyer's right to buy.",
+    "explanation": "When a call is exercised, the assigned seller is obligated to deliver the asset (or the futures position/cash equivalent) at the strike price."
+  },
+  {
+    "id": 4047,
+    "question": "What is a 'Deep In-the-Money' option?",
+    "options": ["An option with zero intrinsic value", "An option where market price is very far from the strike price", "An option found at the bottom of the ocean", "An option with no expiry"],
+    "answer": "An option where market price is very far from the strike price",
+    "hint": "It behaves almost exactly like the underlying asset.",
+    "explanation": "Deep ITM options have very high intrinsic value and a Delta close to 1.0 (for calls) or -1.0 (for puts)."
+  },
+  {
+    "id": 4048,
+    "question": "The 'Black-Scholes' model is used for:",
+    "options": ["Calculating the weight of gold", "Pricing options", "Managing warehouses", "Determining rain patterns"],
+    "answer": "Pricing options",
+    "hint": "It is a famous mathematical formula.",
+    "explanation": "The Black-Scholes model (and its variations like Black-76) is the standard formula used to calculate the fair value of an option premium."
+  },
+  {
+    "id": 4049,
+    "question": "What is 'Automatic Exercise'?",
+    "options": ["A robot trading for you", "The exchange automatically exercising ITM options at expiry", "Exercising while walking", "None of the above"],
+    "answer": "The exchange automatically exercising ITM options at expiry",
+    "hint": "It prevents buyers from losing money they rightfully won.",
+    "explanation": "Most exchanges have 'STT' (Securities Transaction Tax) and exercise rules that automatically settle options that are in-the-money at expiration."
+  },
+  {
+    "id": 4050,
+    "question": "Which factor has the LEAST impact on an option with 1 day to expiry?",
+    "options": ["Price movement", "Interest rates (Rho)", "Volatility", "None"],
+    "answer": "Interest rates (Rho)",
+    "hint": "Interest is calculated over time; if there is no time, there is no impact.",
+    "explanation": "Rho is highly sensitive to the time remaining. For very short-term options, the impact of interest rate changes is negligible."
+  }
+]

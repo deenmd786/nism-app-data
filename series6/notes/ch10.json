@@ -1,0 +1,98 @@
+{
+  "course": "NISM Series VI: Depository Operations",
+  "unit_number": 10,
+  "unit_name": "Special Services- Public Offering/Corporate Actions",
+  "weightage": "7%",
+  "overview": "This chapter explains how the Depository handles 'events' that happen during the life of a security. This includes Public Offerings (like IPOs) where new shares are given to you, and Corporate Actions (like Dividends, Bonuses, or Splits) where the company gives benefits to existing shareholders. For the NISM exam, you must understand how the 'Beneficial Owner (BO)' list is used to distribute these benefits.",
+  
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Public Offering (IPO/FPO)",
+      "basic_meaning": "The process of a company offering its shares to the public for the first time (IPO) or additional times (FPO).",
+      "detailed_explanation": "When you apply for an IPO today, the process is entirely electronic.\n1. **Application:** You apply via ASBA (Application Supported by Blocked Amount) through your bank, providing your Demat account details (DP ID & Client ID).\n2. **Allotment:** If you are lucky and get shares, the Company/RTA informs the Depository.\n3. **Credit:** The Depository credits the shares directly into your Demat account.\n\nThis eliminated the old problem of 'Physical Share Certificates' being lost in the mail after an IPO.",
+      "why_this_is_important": "It is the primary way new investors enter the market. The exam often asks about the 'Mandatory Demat' rule for IPOs—you cannot get physical shares in an IPO anymore.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "When Hyundai India launched its IPO, investors applied using their UPI/Bank apps. Those who were allotted shares saw them appear in their NSDL/CDSL account automatically before the listing day.",
+      "exam_traps": [
+        "Can you apply for an IPO without a Demat account? (No. It is mandatory).",
+        "Does the Broker credit the IPO shares? (No, the Depository credits them based on instructions from the RTA)."
+      ],
+      "memory_trick": "IPO = In (to) Portfolio Online."
+    },
+    {
+      "concept": "2. Monetary Corporate Actions (Dividends)",
+      "basic_meaning": "The company giving a part of its profit to shareholders in the form of cash.",
+      "detailed_explanation": "1. **Record Date:** The company announces a 'Record Date'. Anyone who owns shares in their Demat account on this day is eligible for the dividend.\n2. **Beneficial Owner (BO) List:** The Depository sends a list of all owners as of the Record Date to the Company/RTA.\n3. **Payment:** The company directly transfers the money to the bank account linked to your Demat account via ECS (Electronic Clearing Service) or NECS.",
+      "why_this_is_important": "This is why keeping your bank details updated with your DP is crucial. The exam tests 'Who pays the dividend?'—The Company pays it, not the Depository.",
+      "formula": "Dividend Received = Number of Shares × Dividend per Share",
+      "formula_explanation": "Your total cash benefit is the amount the company decided per share multiplied by how many shares you hold on the record date.",
+      "step_by_step_calculation_example": "1. You hold 100 shares of TCS.\n2. TCS announces a dividend of ₹10 per share.\n3. Calculation: 100 × 10 = ₹1,000.\n4. Result: ₹1,000 is credited to your linked bank account.",
+      "real_life_indian_example": "If you hold Vedanta shares, you often receive cash directly in your bank account a few weeks after they announce results. This is a Monetary Corporate Action.",
+      "exam_traps": [
+        "Does the dividend come into the Demat account? (No! It goes to the Bank account).",
+        "Who provides the bank details to the company? (The Depository/DP provides the 'BO Map' to the RTA)."
+      ],
+      "memory_trick": "Monetary = Money = Bank Account."
+    },
+    {
+      "concept": "3. Non-Monetary Corporate Actions (Bonus & Rights)",
+      "basic_meaning": "Benefits given in the form of additional shares instead of cash.",
+      "detailed_explanation": "1. **Bonus Issue:** Company gives 'Free' shares to existing shareholders (e.g., 1:1 bonus means 1 free share for every 1 you own).\n2. **Rights Issue:** Company gives you the 'Right' to buy new shares at a discounted price.\n3. **Stock Split:** A ₹10 face value share is split into ten ₹1 shares. You get more shares, but the total value remains the same.",
+      "why_this_is_important": "These actions increase the number of shares in your account. The Depository handles the automatic credit of these new shares.",
+      "formula": "New Quantity (Bonus) = Old Quantity + (Old Quantity × Bonus Ratio)",
+      "formula_explanation": "The total shares you will have after a bonus is your current shares plus the extra ones calculated by the ratio.",
+      "step_by_step_calculation_example": "1. You have 50 shares of Reliance.\n2. Company announces 1:1 Bonus.\n3. Calculation: 50 + (50 × 1/1) = 100 shares.\n4. Result: Your Demat balance automatically updates from 50 to 100.",
+      "real_life_indian_example": "If a stock like IRFC does a 10:1 split, and you had 100 shares, you would suddenly see 1,000 shares in your app. The price would also drop to 1/10th.",
+      "exam_traps": [
+        "Does the total value of your investment change immediately after a Split or Bonus? (Theoretically No, because the price adjusts downwards).",
+        "Who handles the credit of Bonus shares? (The Depository, based on the RTA's list)."
+      ],
+      "memory_trick": "Non-Monetary = More Shares = Demat Account."
+    },
+    {
+      "concept": "4. Record Date vs. Ex-Date",
+      "basic_meaning": "The cut-off dates for eligibility.",
+      "detailed_explanation": "1. **Record Date:** The day the company checks its 'Register of Members' to see who owns the shares.\n2. **Ex-Date:** Usually one working day before the Record Date. To be on the record date list, you must buy the shares *before* the Ex-Date because of the T+1 settlement cycle.",
+      "why_this_is_important": "If you buy on the Record Date itself, you will NOT get the benefit because the shares won't reach your Demat account until the next day (T+1).",
+      "formula": "Ex-Date = Record Date - 1 Working Day",
+      "formula_explanation": "To be eligible, buy at least one day before the record date.",
+      "step_by_step_calculation_example": "1. Record Date is Friday.\n2. T+1 Settlement means shares take 1 day to arrive.\n3. Result: You must buy by Wednesday to have them in your account by Friday. Thursday is the 'Ex-Date'.",
+      "real_life_indian_example": "If Infosys has a record date of the 20th for a dividend, the stock price usually drops by the dividend amount on the 19th (Ex-Date).",
+      "exam_traps": [
+        "Can you sell on the Record Date and still get the dividend? (Yes, if you held them until the start of that day).",
+        "The Depository decides the Record Date. (False. The Company's Board of Directors decides it)."
+      ],
+      "memory_trick": "Record Date = The 'Snapshot' Day."
+    }
+  ],
+
+  "important_differences": [
+    {
+      "difference_between": "Monetary vs. Non-Monetary Actions",
+      "clear_explanation": "1. **Monetary:** Cash | Goes to Bank Account | Example: Dividend.\n2. **Non-Monetary:** Shares | Goes to Demat Account | Example: Bonus, Split."
+    },
+    {
+      "difference_between": "Bonus vs. Stock Split",
+      "clear_explanation": "1. **Bonus:** New shares given from company's reserves | Face Value remains same.\n2. **Stock Split:** Old shares broken into smaller pieces | Face Value decreases (e.g., from ₹10 to ₹2)."
+    }
+  ],
+
+  "frequently_asked_exam_areas": [
+    "Who pays the cash dividend to the investor? (The Issuer Company/RTA)",
+    "Where are IPO shares credited? (Directly to the Investor's Demat account)",
+    "What is the 'Record Date'? (The cut-off date to determine eligibility for corporate actions)",
+    "What happens in a Stock Split? (Number of shares increases, Face Value decreases)",
+    "Can you receive an IPO allotment in physical form? (No, mandatory demat)"
+  ],
+
+  "quick_revision_summary": [
+    "Dividends go to the Bank; Bonuses go to Demat.",
+    "Record Date is for the 'Snapshot' of owners.",
+    "Company/RTA uses the Depository's BO list to distribute benefits.",
+    "ASBA is used for IPO applications.",
+    "Bonus = Free shares; Split = Breaking existing shares.",
+    "Face Value changes in a Split, but stays same in a Bonus."
+  ]
+}

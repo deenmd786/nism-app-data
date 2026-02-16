@@ -1,0 +1,96 @@
+{
+  "course": "NISM Series XV: Research Analyst",
+  "unit_number": 10,
+  "unit_name": "Valuation Principles",
+  "weightage": "12 Marks",
+  "overview": "Valuation is the heart of research analysis. This chapter teaches you how to calculate the 'Fair Price' of a stock to decide if it is a 'Buy' or 'Sell'. It carries one of the highest weightages in the exam and is very technical. You will learn how to value a company based on its future cash (DCF) and by comparing it to its neighbors (Relative Valuation).",
+  
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Discounted Cash Flow (DCF) Valuation",
+      "basic_meaning": "DCF is like asking: 'If this company will give me ₹100 every year for the next 10 years, how much should I pay for it today?'",
+      "detailed_explanation": "DCF is an 'Intrinsic Valuation' method. It assumes a company's value is the sum of all the cash it will earn in the future, brought back to today's value using a 'Discount Rate'. \n1. **Forecast:** You predict the company's Free Cash Flows (FCF) for 5-10 years.\n2. **Terminal Value:** You estimate what the company will be worth at the end of the forecast period.\n3. **Discounting:** You use a rate (usually WACC) to shrink those future values into today's rupees.\n4. **Intrinsic Value:** The sum of all these discounted values.",
+      "why_this_is_important": "NISM tests the theory behind DCF heavily. It is the most logically sound way to value a business.",
+      "formula": "Value = [CF1 / (1+r)^1] + [CF2 / (1+r)^2] + ... + [Terminal Value / (1+r)^n]",
+      "formula_explanation": "CF = Cash Flow, r = Discount Rate, n = Year. We divide future cash by the rate to find its 'Present Value'.",
+      "step_by_step_calculation_example": "A company will give you ₹110 in 1 year. The discount rate is 10%. \nPresent Value = 110 / (1 + 0.10)^1 = ₹100. \nSo, the business is worth ₹100 today.",
+      "real_life_indian_example": "Analysts use DCF for stable companies like **HUL** or **TCS** because their future cash flows are easier to predict based on historical trends.",
+      "exam_traps": [
+        "Thinking DCF is a short-term tool. No, it is for long-term 'Intrinsic' value.",
+        "Confusing the 'Discount Rate'. If interest rates go UP, the DCF Value goes DOWN."
+      ],
+      "memory_trick": "DCF = 'D'iscounting 'C'ash from the 'F'uture."
+    },
+    {
+      "concept": "2. Relative Valuation (Multiples)",
+      "basic_meaning": "Valuing a stock by comparing it to similar companies, like comparing the price per square foot of two houses in the same colony.",
+      "detailed_explanation": "Instead of predicting the future, you look at what the market is currently paying for similar companies. Common Multiples include:\n1. **P/E Ratio (Price-to-Earnings):** Best for profitable, stable companies.\n2. **P/B Ratio (Price-to-Book):** Best for Banks and Financial companies where assets are mostly cash.\n3. **EV/EBITDA:** Best for heavy industries (Steel, Power) because it ignores debt and tax differences.\n4. **Price-to-Sales:** Used for high-growth startups that are not yet making a profit.",
+      "why_this_is_important": "The exam often asks: 'Which multiple is best for a Bank?' (Answer: P/B). Practically, this is the fastest way to spot an 'underpriced' stock.",
+      "formula": "Target Price = Industry Average Multiple * Company's Metric (e.g., EPS)",
+      "formula_explanation": "If the sector normally pays 20 times the earnings, and your company earns ₹10, its price should be ₹200.",
+      "step_by_step_calculation_example": "Company X has EPS of ₹5. Its peers (Industry) trade at a P/E of 15x. \nFair Value of Company X = 5 * 15 = ₹75.",
+      "real_life_indian_example": "If **HDFC Bank** trades at 3x Book Value and **ICICI Bank** trades at 2.5x Book Value, an analyst might say ICICI is 'relatively' cheaper.",
+      "exam_traps": [
+        "Using P/E for a company with negative earnings (Losses). You can't use P/E for losses!",
+        "Comparing companies from different industries (e.g., comparing a Tech P/E to a Steel P/E)."
+      ],
+      "memory_trick": "Relative = Comparing with 'Relatives' (Peer Group)."
+    },
+    {
+      "concept": "3. Weighted Average Cost of Capital (WACC)",
+      "basic_meaning": "The average interest rate a company pays to all its money providers (Banks and Shareholders).",
+      "detailed_explanation": "A company gets money from two sources: Debt (Loans) and Equity (Investors). \n1. **Cost of Debt:** The interest rate paid to the bank (adjusted for tax savings).\n2. **Cost of Equity:** The return shareholders expect (calculated using CAPM).\n3. **WACC:** The weighted average of these two costs. This is usually used as the 'Discount Rate' in DCF models.",
+      "why_this_is_important": "In the exam, you need to know that a higher WACC reduces the company's value.",
+      "formula": "Not Applicable (Theory focused for Unit 10)",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "A highly indebted company like **Vodafone Idea** has a very high WACC (high risk), which makes its valuation very low.",
+      "exam_traps": [
+        "Thinking WACC is only about Debt. It is the cost of BOTH Debt and Equity.",
+        "Forgetting that interest on debt is tax-deductible (Debt is cheaper than Equity)."
+      ],
+      "memory_trick": "WACC = The 'Weight' of the cost of all 'Capital'."
+    },
+    {
+      "concept": "4. CAPM (Capital Asset Pricing Model)",
+      "basic_meaning": "A formula to calculate what return a shareholder should 'fairly' expect for taking a risk.",
+      "detailed_explanation": "The expected return depends on three things:\n1. **Risk-Free Rate:** What you get from safe Govt Bonds (G-Sec).\n2. **Beta:** How wild the stock is compared to the market.\n3. **Market Risk Premium:** The extra return the whole stock market gives over safe bonds.",
+      "why_this_is_important": "Numerical questions on CAPM are very common in NISM Series XV.",
+      "formula": "Expected Return = Risk-Free Rate + Beta * (Market Return - Risk-Free Rate)",
+      "formula_explanation": "You start with the safe return and add a 'Risk Bonus' based on how volatile (Beta) the stock is.",
+      "step_by_step_calculation_example": "G-Sec Rate (Risk-Free) = 7%. Market Return = 12%. Beta of Stock = 1.2. \nExpected Return = 7 + 1.2 * (12 - 7) = 7 + (1.2 * 5) = 7 + 6 = 13%.",
+      "real_life_indian_example": "If the 10-year G-Sec yield in India is 7%, a high-beta stock like **Adani Enterprises** will require a much higher expected return in your model than a low-beta stock like **HUL**.",
+      "exam_traps": [
+        "Confusing (Market Return - Risk-Free Rate) with just Market Return. The bracket is the 'Premium'.",
+        "Thinking Beta doesn't affect the calculation. Higher Beta = Higher Expected Return."
+      ],
+      "memory_trick": "CAPM = The price for your 'Cap'ital."
+    }
+  ],
+
+  "important_differences": [
+    {
+      "difference_between": "Price vs. Value",
+      "clear_explanation": "Price is what you pay in the market (determined by demand/supply). Value is what the company is actually worth (determined by its profits and assets)."
+    },
+    {
+      "difference_between": "Intrinsic vs. Relative Valuation",
+      "clear_explanation": "Intrinsic (DCF) looks inside the company at its own cash flows. Relative (Multiples) looks outside at what others are paying for similar companies."
+    }
+  ],
+
+  "frequently_asked_exam_areas": [
+    "Numerical calculation using the CAPM formula.",
+    "Which multiple is best for specific sectors (Banks = P/B, Loss-making = P/S, Steel = EV/EBITDA).",
+    "The inverse relationship between Interest Rates and Valuation.",
+    "Definition of 'Terminal Value' in DCF."
+  ],
+
+  "quick_revision_summary": [
+    "DCF values future cash flows; uses WACC as the discount rate.",
+    "Relative Valuation uses P/E, P/B, and EV/EBITDA to compare peers.",
+    "CAPM Formula: Rf + Beta(Rm - Rf).",
+    "Higher Risk (Beta) -> Higher Discount Rate -> Lower Value.",
+    "Valuation helps find if a stock is 'Undervalued' (Buy) or 'Overvalued' (Sell)."
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "course": "NISM Series IV: Interest Rate Derivatives Certification Examination",
+  "unit_number": 6,
+  "unit_name": "Trading Mechanism in Exchange Traded IRD",
+  "weightage": "10 Marks",
+  "overview": "This chapter moves away from financial theory and focuses on the actual OPERATIONS. It explains HOW you buy and sell on the computer screen. It covers the hierarchy of the market (Who is allowed to trade?), the types of orders you can place (Limit vs. Market), and the rules the computer uses to match buyers with sellers (Price-Time Priority). This is a scoring chapter because the rules are logical and practical.",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Market Hierarchy (Who is Who?)",
+      "basic_meaning": "The chain of command in the stock market.",
+      "detailed_explanation": "You cannot go to NSE directly. You must go through an intermediary.\n\n1. **Exchange (NSE/BSE):** Provides the platform.\n2. **Trading Member (TM):** A broker (like Zerodha, Angel One) who has the right to place orders on the exchange.\n3. **Clearing Member (CM):** A bigger entity that settles the trades (handles money/margins). \n   - *Note:* A TM can also be a CM (Self-Clearing Member). If a TM is NOT a CM, they must tie up with a 'Professional Clearing Member (PCM)'.\n4. **Client (You):** The end investor.",
+      "why_this_is_important": "The exam asks who is responsible for paying margins. (Answer: The Clearing Member is responsible to the Exchange).",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "You (Client) place an order on the Kite app. Zerodha (Trading Member) sends it to NSE. If Zerodha is not a clearing member, they use a custodian bank (PCM) to handle the settlement with the Clearing Corp.",
+      "exam_traps": [
+        "Thinking a Client can trade directly on NSE. No, only a Trading Member can.",
+        "Confusing TM and CM. TM trades; CM settles (pays)."
+      ],
+      "memory_trick": "TM = Trader (Action). CM = Cashier (Money)."
+    },
+    {
+      "concept": "2. NEAT System (The Trading Screen)",
+      "basic_meaning": "National Exchange for Automated Trading. The software that runs the market.",
+      "detailed_explanation": "NSE uses a fully automated, screen-based trading system called NEAT.\n- **Anonymous:** The buyer doesn't know who the seller is, and vice versa. This prevents bias.\n- **Order Driven:** Prices are determined by the orders put in by people, not by a 'Market Maker' quoting prices.",
+      "why_this_is_important": "It ensures transparency and fairness.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "When you see the 'Market Depth' (Top 5 Bids and Asks) on your app, you are looking at the NEAT system's order book.",
+      "exam_traps": [
+        "Thinking the Exchange sets the price. The Exchange only MATCHES orders; investors set the price.",
+        "Assuming you can choose who you sell to. You cannot."
+      ],
+      "memory_trick": "NEAT = No Names (Anonymous) + Electronic + Automated."
+    },
+    {
+      "concept": "3. Price-Time Priority (The Golden Rule)",
+      "basic_meaning": "How the computer decides who gets the trade first.",
+      "detailed_explanation": "The matching engine follows two strict rules in order:\n\n1. **Price Priority:** The Best Price wins.\n   - For Buyers: HIGHEST Bid gets priority.\n   - For Sellers: LOWEST Ask gets priority.\n\n2. **Time Priority:** If prices are equal, the order that came EARLIER wins.",
+      "why_this_is_important": "This explains why your order might not get executed even if you see the price on screen (someone else was there first).",
+      "formula": "Rank = Best Price > Earliest Time",
+      "formula_explanation": "Simple sorting logic.",
+      "step_by_step_calculation_example": "Order Book for Buying Bond Future:\n- Person A: Bids Rs 100.50 at 10:00 AM.\n- Person B: Bids Rs 100.60 at 10:01 AM. (Higher Price -> Priority #1)\n- Person C: Bids Rs 100.50 at 10:02 AM. (Same Price as A, but later -> Priority #3)\n\nPriority: Person B (Best Price), then Person A (Earlier Time), then Person C.",
+      "real_life_indian_example": "If you place a limit order at the exact Last Traded Price, it might not fill immediately because 100 people are ahead of you in the queue.",
+      "exam_traps": [
+        "Thinking Time is more important than Price. Price is ALWAYS King.",
+        "Thinking a larger quantity gets priority. Quantity is irrelevant for priority."
+      ],
+      "memory_trick": "Best Price first. First Come First Served second."
+    },
+    {
+      "concept": "4. Order Types",
+      "basic_meaning": "Instructions you give to the broker.",
+      "detailed_explanation": "1. **Limit Order:** You specify the Price. ('Buy at 100'). Trade happens ONLY at 100 or better (lower). Guarantees Price, but not Execution.\n2. **Market Order:** You don't specify price. ('Buy at whatever is available'). Guarantees Execution, but not Price. Dangerous in illiquid markets.\n3. **Stop Loss Order:** An order that becomes active only after a specific 'Trigger Price' is crossed. Used to limit losses.\n4. **IOC (Immediate or Cancel):** Fill what you can right now, cancel the rest instantly.",
+      "why_this_is_important": "Using the wrong order type can cause huge losses.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Scenario: Market Price is 100.\n- Limit Buy @ 98: Will sit in system until price drops to 98.\n- Market Buy: Will buy immediately at 100 (or 101 if 100 is gone).\n- Stop Loss Sell @ 95: System does nothing. If price drops to 95, it suddenly fires a Sell order to save you from further loss.",
+      "real_life_indian_example": "Traders use 'Stop Loss Market' to ensure they get out of a losing trade no matter what the price is.",
+      "exam_traps": [
+        "Confusing Stop Loss Trigger with Limit Price.",
+        "Thinking a Limit Order will execute immediately if the market price is far away. (It will execute immediately if you buy ABOVE market price, but at the best available market price)."
+      ],
+      "memory_trick": "Limit = My Price. Market = Any Price. Stop Loss = Safety Net."
+    },
+    {
+      "concept": "5. Turnover vs. Open Interest",
+      "basic_meaning": "Turnover is 'Activity'. Open Interest is 'Commitment'.",
+      "detailed_explanation": "\n1. **Turnover (Volume):** Total value of trades today. (Buy + Sell). It resets to zero every day.\n2. **Open Interest (OI):** The number of contracts that are still 'Open' (not squared off). It accumulates over time.\n   - New Buyer + New Seller = OI Increases.\n   - Old Buyer sells to Old Seller = OI Decreases.\n   - Old Buyer sells to New Buyer = OI Unchanged.",
+      "why_this_is_important": "OI indicates the strength of a trend. High OI means money is flowing INTO the market.",
+      "formula": "Turnover = Traded Quantity * Price",
+      "formula_explanation": "Open Interest = Total Long Positions (or Total Short Positions, not both added).",
+      "step_by_step_calculation_example": "Day 1: A buys 1 lot, B sells 1 lot. Volume = 1. OI = 1.\nDay 2: C buys 1 lot from A (A exits). Volume = 1. OI = 1 (Position just transferred from A to C).\nDay 3: C sells to B (Both exit). Volume = 1. OI = 0.",
+      "real_life_indian_example": "Before RBI policy, Open Interest in Bond Futures spikes as traders build positions.",
+      "exam_traps": [
+        "Adding Longs + Shorts to calculate OI. NO! OI is just the number of contracts existing. (1 Long + 1 Short = 1 Contract OI).",
+        "Thinking Volume carries over to the next day. Volume is daily."
+      ],
+      "memory_trick": "Volume = Traffic (Cars passing). OI = Parking (Cars staying)."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Limit Order vs. Market Order",
+      "clear_explanation": "LIMIT guarantees the price you pay, but you might not get the shares. || MARKET guarantees you get the shares, but you might pay a very high price."
+    },
+    {
+      "difference_between": "Stop Loss Buy vs. Stop Loss Sell",
+      "clear_explanation": "SL BUY is placed ABOVE the current price (to catch a breakout or protect a short position). || SL SELL is placed BELOW the current price (to limit loss on a long position)."
+    },
+    {
+      "difference_between": "Active Order vs. Passive Order",
+      "clear_explanation": "ACTIVE (Market) order hits the existing orders (eats liquidity). || PASSIVE (Limit) order sits in the book waiting to be hit (provides liquidity)."
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Priority Rules: Price First, then Time.",
+    "Calculation of Open Interest changes based on buyer/seller types.",
+    "Function of the Clearing Member (Settlement & Risk Management).",
+    "Difference between IOC (Immediate or Cancel) and Day orders.",
+    "Meaning of 'Market Depth' (The list of best 5 bid/ask prices)."
+  ],
+  "quick_revision_summary": [
+    "NEAT is the trading system.",
+    "Price Priority > Time Priority.",
+    "Limit Order = Specific Price. Market Order = Best Available Price.",
+    "Stop Loss is used to limit losses.",
+    "Trading Member trades; Clearing Member settles.",
+    "Open Interest counts the number of open contracts.",
+    "Anonymous trading ensures fairness."
+  ]
+}

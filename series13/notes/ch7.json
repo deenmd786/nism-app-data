@@ -1,0 +1,124 @@
+{
+  "course": "NISM Series XIII: Common Derivatives Certification Examination",
+  "unit_number": 7,
+  "unit_name": "Introduction to Trading, Clearing, Settlement & Risk Management",
+  "weightage": "17% (25 Marks)",
+  "overview": "This is the 'Engine Room' of the stock market. It explains what happens after you click 'Buy'. How does the exchange match your order? Who guarantees your money? What happens if you make a loss? This chapter has the HIGHEST weightage (17%) because it covers the rules of the game—Margins and Settlement. If you want to pass, you must master 'Mark-to-Market' calculations.",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Trading Mechanism (The Matchmaker)",
+      "basic_meaning": "How the computer system (NEAT+) matches buyers and sellers automatically.",
+      "detailed_explanation": "The exchange uses an anonymous, order-driven system.\n\n**1. Price-Time Priority:**\n* **Rule 1 (Price):** The Best Price gets served first. (Highest Buyer and Lowest Seller).\n* **Rule 2 (Time):** If two people offer the same price, the one who came **first** gets the trade.\n\n**2. Active vs. Passive Orders:**\n* **Passive:** You place a Limit Order (e.g., Buy at 100) and wait. You provide liquidity.\n* **Active:** You place a Market Order (e.g., Buy NOW) and hit the passive order. You take liquidity.",
+      "why_this_is_important": "Understanding priority helps you know why your order didn't get executed even if the price touched your level.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "**Scenario:** \nBuyer A bids ₹100 at 10:00 AM.\nBuyer B bids ₹100 at 10:01 AM.\nBuyer C bids ₹101 at 10:02 AM.\n\n**Who wins?**\nSeller comes to sell at market price.\n1. **Buyer C** gets it first (Best Price ₹101).\n2. If shares remain, **Buyer A** gets it next (Better Time than B).",
+      "real_life_indian_example": "On NSE, you see the 'Top 5 Bid/Ask' window. This is the queue of passive orders waiting to be matched.",
+      "exam_traps": [
+        "Thinking the exchange sets the price. (No, buyers and sellers set the price; exchange just matches them).",
+        "Thinking Time priority is more important than Price. (Price is always King)."
+      ],
+      "memory_trick": "Price is King. Time is Queen. (Price first, then Time)."
+    },
+    {
+      "concept": "2. Clearing & Settlement Entities",
+      "basic_meaning": "Who handles the money and the guarantee?",
+      "detailed_explanation": "**1. Clearing Corporation (CC):** (e.g., NCL - NSE Clearing Ltd). They are the 'Guarantor'.\n* **Novation:** The moment a trade happens, the CC steps in the middle. The Buyer buys from CC, and the Seller sells to CC. This removes the risk of the other person running away.\n\n**2. Clearing Members (CM):** Big brokers/Banks who are members of the CC. Small brokers must go through a CM to settle trades.\n\n**3. Custodians:** They hold shares/money for big players (FIIs/Mutual Funds) and confirm their trades.",
+      "why_this_is_important": "The exam asks 'Who is the counterparty for all trades?' The answer is always the Clearing Corporation.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "If you buy shares and your broker defaults, the NSE Investor Protection Fund (IPF) and the Clearing Corp still ensure you get your payout.",
+      "exam_traps": [
+        "Confusing Clearing Member with Trading Member. (Trading Member = Broker. Clearing Member = Settles the money).",
+        "Thinking the Exchange (NSE) guarantees trades. (No, the Clearing Corp guarantees them)."
+      ],
+      "memory_trick": "CC = Counterparty (Guarantor)."
+    },
+    {
+      "concept": "3. Margins (The Safety Deposit)",
+      "basic_meaning": "The money blocked in your account to cover potential losses.",
+      "detailed_explanation": "Since derivatives are leveraged (you don't pay full value), the exchange needs security.\n\n**1. Initial Margin:** The total margin required to enter a trade. It has two parts:\n* **SPAN Margin:** Based on Risk (VaR - Value at Risk). Covers 99% of possible single-day losses.\n* **Exposure Margin:** The extra cushion (Ad-hoc margin) for extreme disasters (the remaining 1%).\n\n**2. Maintenance Margin:** The minimum balance you must keep.\n\n**3. Mark-to-Market (MTM) Margin:** The daily profit/loss settlement.",
+      "why_this_is_important": "If you don't pay margin, the broker will forcefully close your position (Margin Call).",
+      "formula": "Total Margin = SPAN + Exposure",
+      "formula_explanation": "You must pay BOTH to take a trade.",
+      "step_by_step_calculation_example": "**Scenario:** Buying 1 Lot of Nifty (Value ₹10 Lakhs).\n**SPAN:** Exchange calculates volatility risk = ₹1,00,000.\n**Exposure:** Exchange adds 2% extra safety = ₹20,000.\n**Total Blocked:** ₹1,20,000.\nIf you have only ₹1,10,000, the order will be rejected.",
+      "real_life_indian_example": "When volatility increases (e.g., War news), SPAN margins automatically increase, and your broker might ask for more money.",
+      "exam_traps": [
+        "Thinking Margin is fixed. (No, SPAN changes daily based on volatility).",
+        "Thinking Exposure margin is optional. (No, both are mandatory)."
+      ],
+      "memory_trick": "SPAN = Scientific (Risk based). Exposure = Extra (Safety)."
+    },
+    {
+      "concept": "4. Mark-to-Market (MTM) Settlement",
+      "basic_meaning": "Daily calculation and transfer of Profit/Loss. 'Settling the bill every evening'.",
+      "detailed_explanation": "In Futures, you don't wait for the end of the month. You settle daily.\n* If price goes **AGAINST** you: Money is deducted from your account (Debit) same day.\n* If price goes **FOR** you: Money is added to your account (Credit) next morning.\n* The next day, your buy price is reset to the previous day's closing price.",
+      "why_this_is_important": "This prevents default. Losses are collected immediately while they are small.",
+      "formula": "MTM = (Closing Price - Entry Price) * Lot Size",
+      "formula_explanation": "Difference between today's close and where you started.",
+      "step_by_step_calculation_example": "**Day 1:** Buy Nifty Future at 18,000. Lot 50.\n**Close Day 1:** 17,900. (Loss 100 points).\n**Debit:** $100 \\times 50 = 5000$. (Your account balance reduces by 5000).\n\n**Day 2:** Market starts. Your 'New Buy Price' is effectively 17,900.\n**Close Day 2:** 18,100. (Profit 200 points).\n**Credit:** $200 \\times 50 = 10,000$. (Added to your account).",
+      "real_life_indian_example": "Many beginners get a 'Margin Call' because they made a loss on Day 1 and didn't have enough cash left in the account to cover the MTM loss.",
+      "exam_traps": [
+        "Thinking you pay MTM only when you sell. (No, it is automatic every night).",
+        "Forgetting that the 'Base Price' changes every day."
+      ],
+      "memory_trick": "MTM = Daily Bill. Pay up or Get out."
+    },
+    {
+      "concept": "5. Order Types (Limit, Market, Stop Loss)",
+      "basic_meaning": "Instructions you give to the broker.",
+      "detailed_explanation": "**1. Market Order:** Buy at whatever price is available NOW. (Price uncertain, Execution certain).\n**2. Limit Order:** Buy ONLY at ₹100 or lower. (Price certain, Execution uncertain—market might not reach 100).\n**3. Stop Loss (SL):** A sleeping order. \"If price drops to 90, sell my shares to stop further loss.\"\n**4. IOC (Immediate or Cancel):** Buy what you can right now, and cancel the rest instantly.",
+      "why_this_is_important": "Using the wrong order type can cost you money (slippage).",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "**SL Trigger:** You bought at 100. You put SL-Limit at Trigger 95, Price 94.\nIf price hits 95, your order activates as a Limit Sell at 94.",
+      "real_life_indian_example": "On a crash day, Market Orders are dangerous because you might get filled at a very bad price. Limit Orders are safer.",
+      "exam_traps": [
+        "Thinking Stop Loss guarantees an exit. (No, if price jumps/gaps below your SL, you might be stuck).",
+        "Confusing Trigger Price with Limit Price."
+      ],
+      "memory_trick": "Limit = My Price. Market = Any Price."
+    },
+    {
+      "concept": "6. Corporate Actions Adjustment",
+      "basic_meaning": "What happens to your Future/Option contract if the company declares a Dividend, Bonus, or Split?",
+      "detailed_explanation": "**1. Dividends:**\n* **Small Dividend (<10%):** No adjustment. The market price drops naturally.\n* **Extraordinary Dividend (>10%):** The Strike Price is reduced by the dividend amount.\n\n**2. Bonus/Split:**\n* The contract is adjusted so the **Value remains same**.\n* **Strike Price:** Reduced (Divided by ratio).\n* **Lot Size:** Increased (Multiplied by ratio).",
+      "why_this_is_important": "If Reliance gives a 1:1 Bonus, the share price halves. If the Option Strike didn't change, everyone holding Puts would become millionaires instantly (unfairly). Adjustments prevent this.",
+      "formula": "New Strike = Old Strike / Adjustment Factor\nNew Lot Size = Old Lot Size * Adjustment Factor",
+      "formula_explanation": "Inverse relationship between Price and Quantity.",
+      "step_by_step_calculation_example": "**Scenario:** Reliance 1:1 Bonus (Ratio 2). Old Lot Size 250. Old Strike 2000.\n\n**Adjustment:**\nNew Strike = $2000 / 2 = 1000$.\nNew Lot Size = $250 \\times 2 = 500$.\n**Result:** Contract Value was $2000 \\times 250 = 5L$. New Value is $1000 \\times 500 = 5L$. (No Change in Value).",
+      "real_life_indian_example": "When ITC declares a bonus, all F&O contracts are suspended for a day and reopen with new strike prices and lot sizes.",
+      "exam_traps": [
+        "Thinking you get free shares in F&O for Bonus. (No, only the lot size increases).",
+        "Thinking small dividends cause adjustments. (Only >10% dividends do)."
+      ],
+      "memory_trick": "Price Drops -> Strike Drops -> Lot Size Pops."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Initial Margin vs MTM Margin",
+      "clear_explanation": "1. **Purpose:** Initial Margin = Entry Ticket (Security against default). MTM Margin = Daily Bill (Profit/Loss settlement).\n2. **Timing:** Initial = Paid Before trade. MTM = Paid Daily."
+    },
+    {
+      "difference_between": "Limit Order vs Market Order",
+      "clear_explanation": "1. **Control:** Limit = You control Price. Market = You control Speed.\n2. **Certainty:** Limit = Trade might not happen. Market = Trade happens immediately."
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Calculation of MTM Profit/Loss (Very High Probability).",
+    "What is Novation? (Clearing Corp becoming counterparty).",
+    "Components of Initial Margin (SPAN + Exposure).",
+    "Effect of Bonus Issue on Strike Price (Strike decreases, Lot increases).",
+    "Who settles the trade? (Clearing Corporation, not the Exchange)."
+  ],
+  "quick_revision_summary": [
+    "Clearing Corp guarantees all trades (Novation).",
+    "Best Price Order matches first; then Time Priority.",
+    "Initial Margin = SPAN (Risk) + Exposure (Safety).",
+    "MTM is calculated daily. Losses must be paid immediately.",
+    "Corporate Actions (Bonus/Split) change Strike Price and Lot Size inversely.",
+    "Stop Loss is used to limit losses."
+  ]
+}

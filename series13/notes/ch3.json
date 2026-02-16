@@ -1,0 +1,123 @@
+{
+  "course": "NISM Series XIII: Common Derivatives Certification Examination",
+  "unit_number": 3,
+  "unit_name": "Introduction to Forwards and Futures",
+  "weightage": "13% (20 Marks)",
+  "overview": "This chapter is the core of the exam. It moves from definitions to the actual mechanics of how Futures work. You will learn the difference between a private 'Forward' deal and a public 'Future' trade. It also covers the math of how Futures are priced (Cost of Carry) and how profits/losses are calculated. Expect at least 2-3 numerical questions here.",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Forward Contracts (The Private Deal)",
+      "basic_meaning": "A customized agreement between two parties to buy or sell an asset at a specified future time at a price agreed upon today.",
+      "detailed_explanation": "Imagine you want to buy a specific house 3 months from now. You talk to the owner and agree on a price of ₹50 Lakhs. This is a **Forward Contract**.\n\n**Key Features:**\n1.  **OTC (Over The Counter):** It is a private deal, not traded on the stock exchange.\n2.  **Customized:** You and the owner decide the terms (price, date, furniture included, etc.).\n3.  **Counterparty Risk:** This is the biggest problem. If property prices crash to ₹30 Lakhs, you might run away. If prices soar to ₹80 Lakhs, the owner might refuse to sell. There is no police (Exchange) to guarantee the deal.",
+      "why_this_is_important": "Understanding the 'Risk' in Forwards explains WHY we need Futures (which are safe).",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "A farmer agrees to sell 100 quintals of onions to a restaurant at ₹20/kg after 2 months. If onion prices hit ₹50/kg, the farmer might default (run away) to sell in the open market. This is Counterparty Risk.",
+      "exam_traps": [
+        "Thinking Forwards are liquid. (No, you can't easily exit a private deal).",
+        "Thinking Forwards require margin. (Usually no margin is exchanged, unlike Futures)."
+      ],
+      "memory_trick": "Forward = Friends (Informal, risky). Future = Formal (Safe)."
+    },
+    {
+      "concept": "2. Futures Contracts (The Standardized Deal)",
+      "basic_meaning": "A Forward contract that is traded on an Exchange (like NSE/BSE). The Exchange acts as the middleman to guarantee the trade.",
+      "detailed_explanation": "To solve the risk of Forwards, exchanges created Futures.\n\n**Key Features:**\n1.  **Standardized:** You cannot choose the quantity. You must buy in 'Lots' (e.g., 1 Lot of Nifty = 50 units). You cannot choose the date (Expiry is fixed, usually last Thursday).\n2.  **Exchange Traded:** Bought and sold on a screen.\n3.  **Novation (The Guarantee):** The Clearing Corporation (CC) stands between the buyer and seller. If you buy, the CC becomes the seller to you. If you sell, the CC becomes the buyer. This removes Counterparty Risk.",
+      "why_this_is_important": "This defines how the modern stock market works.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "You buy 1 Lot of Reliance Futures. You don't know who sold it (could be an FII or a retail trader). You don't care, because the NSE Clearing Corporation guarantees that you will get your profit.",
+      "exam_traps": [
+        "Confusing 'Novation' with 'Arbitrage'. Novation is the act of the Clearing Corp becoming the middleman.",
+        "Thinking you can trade 1 share in Futures. (No, only Lots)."
+      ],
+      "memory_trick": "Future = Fix (Fixed Size, Fixed Date, Fixed Rules)."
+    },
+    {
+      "concept": "3. Important Terminology (Lot Size, Tick Size, Expiry)",
+      "basic_meaning": "The dictionary of Futures trading.",
+      "detailed_explanation": "1.  **Spot Price ($S$):** The price of the asset right now in the cash market.\n2.  **Futures Price ($F$):** The price of the contract for future delivery.\n3.  **Contract Value:** Spot Price $\times$ Lot Size.\n4.  **Lot Size:** The minimum number of shares you must trade (e.g., Nifty = 75 or 50, Reliance = 250).\n5.  **Expiry Date:** The date the contract ends (Last Thursday of the month).\n6.  **Tick Size:** The minimum price movement allowed (usually ₹0.05).",
+      "why_this_is_important": "You cannot calculate profit/loss without Lot Size.",
+      "formula": "Contract Value = Futures Price × Lot Size",
+      "formula_explanation": "This tells you the total worth of the contract you are controlling.",
+      "step_by_step_calculation_example": "**Question:** Nifty Future is at 19,000. Lot size is 50. What is the Contract Value?\n\n**Answer:** \n$19,000 \\times 50 = \\text{₹9,50,000}$.\n(Note: You don't pay this full amount, you only pay Margin, which is ~15%).",
+      "real_life_indian_example": "If Reliance is ₹2500 and Lot Size is 250, you are controlling ₹6.25 Lakhs worth of shares.",
+      "exam_traps": [
+        "Confusing 'Tick Size' (0.05) with 'Lot Size' (Quantity).",
+        "Thinking Contract Value is what you pay. (No, you pay Margin)."
+      ],
+      "memory_trick": "Lot = Bundle. Tick = Step."
+    },
+    {
+      "concept": "4. Payoff Charts (Long vs Short)",
+      "basic_meaning": "How much money do you make or lose?",
+      "detailed_explanation": "1.  **Long Futures (Buy):**\n    * **View:** Bullish (Expect price to go UP).\n    * **Profit:** Unlimited (as price goes up).\n    * **Loss:** Unlimited (if price falls to zero).\n    * **Chart:**  Line goes UP from left to right.\n\n2.  **Short Futures (Sell):**\n    * **View:** Bearish (Expect price to go DOWN).\n    * **Profit:** Unlimited (if price falls to zero).\n    * **Loss:** Unlimited (if price goes up to infinity).\n    * **Chart:**  Line goes DOWN from left to right.",
+      "why_this_is_important": "Derivatives are a 'Zero Sum Game'. If Mr. A makes ₹100, Mr. B MUST lose ₹100. The total wealth remains the same.",
+      "formula": "Long Profit = (Closing Price - Buying Price) × Lot Size\nShort Profit = (Selling Price - Closing Price) × Lot Size",
+      "formula_explanation": "Simple difference multiplied by quantity.",
+      "step_by_step_calculation_example": "**Scenario:** You Short (Sell) TCS Futures at ₹3200. Lot Size 200. Price rises to ₹3300.\n\n**Calculation:**\nSelling Price = 3200\nClosing Price = 3300\nLoss = $(3300 - 3200) \\times 200 = 100 \\times 200 = \\text{₹20,000 Loss}$.",
+      "real_life_indian_example": "Short sellers in Adani stocks made huge profits when prices crashed. Long holders lost money.",
+      "exam_traps": [
+        "Thinking Shorting has limited loss. (No, if stock goes to moon, loss is infinite).",
+        "Forgetting to multiply by Lot Size."
+      ],
+      "memory_trick": "Long = Love (Want it to go up). Short = Scared (Want it to go down)."
+    },
+    {
+      "concept": "5. Pricing: Cost of Carry Model",
+      "basic_meaning": "How do we decide the fair price of a Future? Why is Future price usually higher than Spot?",
+      "detailed_explanation": "The Future Price is not random. It is calculated as:\n**Spot Price + Cost of Holding the asset**.\n\nIf you buy Gold today (Spot), you have to pay money (Interest cost) and pay for a locker (Storage cost). If you buy Gold Future, you don't pay today. So, the seller charges you that extra cost.\n\n**Cost of Carry (CoC) = Interest Cost - Income (Dividends)**.\n\nIf Cost of Carry is Positive, Future Price > Spot Price (Contango).\nIf Cost of Carry is Negative (High dividends), Future Price < Spot Price (Backwardation).",
+      "why_this_is_important": "Explains the relationship between Spot and Future prices.",
+      "formula": "$F = S + (S \\times r \\times t) - D$",
+      "formula_explanation": "$F$=Future, $S$=Spot, $r$=Interest Rate, $t$=Time to expiry, $D$=Dividend expected.",
+      "step_by_step_calculation_example": "**Given:** Spot Price = 1000. Interest Rate = 10% p.a. Time = 1 month (1/12 year). No Dividend.\n\n**Calculation:**\nCost of Carry = $1000 \\times 0.10 \\times (1/12) = 8.33$\nFair Future Price = $1000 + 8.33 = 1008.33$",
+      "real_life_indian_example": "Usually, Nifty Futures trade at a 'Premium' (higher than Nifty Spot) because of interest rates. If Infosys announces a huge dividend, Infosys Futures might trade at a 'Discount' (lower than Spot).",
+      "exam_traps": [
+        "Forgetting to convert 'Time' into years (e.g., 3 months = 3/12).",
+        "Thinking Futures are always higher. (Not if there are dividends!)."
+      ],
+      "memory_trick": "Future = Spot + Interest - Dividend."
+    },
+    {
+      "concept": "6. Convergence",
+      "basic_meaning": "On the final day (Expiry), Spot Price and Future Price become equal.",
+      "detailed_explanation": "As the expiry date comes closer, the 'Time' ($t$) in our formula becomes zero. \nSo, Cost of Carry becomes zero.\nTherefore, $F = S + 0$. \nOn Expiry day: **Future Price = Spot Price**.\n\nIf they are not equal, arbitrageurs will buy the cheap one and sell the expensive one until they become equal.",
+      "why_this_is_important": "This guarantees that the derivative market stays linked to reality.",
+      "formula": "At Expiry: F = S",
+      "formula_explanation": "No time left, so no interest cost.",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "On the last Thursday of the month at 3:30 PM, Nifty Spot is 18,200. Nifty Future will also be exactly 18,200.",
+      "exam_traps": [
+        "Thinking Convergence happens every day. (No, only on Expiry).",
+        "Thinking Future can be higher than Spot on Expiry. (Impossible due to arbitrage)."
+      ],
+      "memory_trick": "At the finish line, everyone is at the same point."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Forward vs Future (Most Important Table)",
+      "clear_explanation": "1. **Place:** Forward = OTC (Private). Future = Exchange (Public).\n2. **Risk:** Forward = High Counterparty Risk. Future = Zero Counterparty Risk (Novation).\n3. **Terms:** Forward = Customized. Future = Standardized.\n4. **Settlement:** Forward = At the end. Future = Daily (MTM)."
+    },
+    {
+      "difference_between": "Long vs Short",
+      "clear_explanation": "1. **Long:** You Buy first. You want price UP. Max Loss = Price goes to 0.\n2. **Short:** You Sell first. You want price DOWN. Max Loss = Unlimited (Price goes to infinity)."
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Identify if a contract is Forward or Future based on features (Customized vs Standardized).",
+    "Calculate the 'Fair Value' of a Future using Cost of Carry (Simple interest formula).",
+    "What happens on Expiry? (Convergence: F = S).",
+    "Who takes the Counterparty Guarantee? (Clearing Corporation)."
+  ],
+  "quick_revision_summary": [
+    "Forward = Private, Risky, Customized.",
+    "Future = Public, Safe (Novation), Standardized.",
+    "Long = Buy (Bullish). Short = Sell (Bearish).",
+    "F = S + Cost of Carry.",
+    "Cost of Carry = Interest - Dividends.",
+    "On Expiry, F = S (Convergence)."
+  ]
+}

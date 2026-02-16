@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1601,
+    "question": "A portfolio manager is analyzing a portfolio with an expected return of 18% and a standard deviation of 25%. If the risk-free rate is 7%, and the 'Market Portfolio' has a Sharpe Ratio of 0.5, where does this portfolio sit relative to the Capital Market Line (CML)?",
+    "options": [
+      "Above the CML (Superior Performance)",
+      "Below the CML (Inferior Performance)",
+      "On the CML (Efficient)",
+      "Exactly at the Risk-Free point"
+    ],
+    "answer": "Below the CML (Inferior Performance)",
+    "hint": "Calculate the Sharpe Ratio of the portfolio: (Rp - Rf) / Op.",
+    "explanation": "The Sharpe Ratio of the portfolio is (18 - 7) / 25 = 0.44. Since the CML represents the best possible Sharpe Ratio (0.5 in this case), any portfolio with a lower Sharpe Ratio (0.44) sits below the CML and is considered inefficient."
+  },
+  {
+    "id": 1602,
+    "question": "An investor is comparing a Private Equity fund to a Public Equity index. The PE fund reports returns based on quarterly appraisals, while the index is marked-to-market daily. Which statistical phenomenon is most likely to cause the correlation between the two to be 'understated'?",
+    "options": [
+      "Survivorship Bias",
+      "Stale Pricing / Lagged Appraisals",
+      "Fat Tails",
+      "Positive Skewness"
+    ],
+    "answer": "Stale Pricing / Lagged Appraisals",
+    "hint": "Private asset prices don't move as fast as public tickers, creating a 'lag'.",
+    "explanation": "Because private assets are valued infrequently (stale pricing), their reported returns do not capture the immediate volatility of public markets. This time-lag smooths the data and artificially lowers the measured correlation with liquid indices."
+  },
+  {
+    "id": 1603,
+    "question": "According to Modern Portfolio Theory, if two assets have a correlation coefficient of -1.0, what is the impact on the portfolio's risk?",
+    "options": [
+      "Risk is maximized.",
+      "Risk is eliminated entirely if the assets are held in specific proportions.",
+      "Risk remains the same as the weighted average.",
+      "Risk becomes unpredictable."
+    ],
+    "answer": "Risk is eliminated entirely if the assets are held in specific proportions.",
+    "hint": "Perfect negative correlation means when one goes up, the other goes down by the exact same relative amount.",
+    "explanation": "A correlation of -1.0 allows for the construction of a zero-variance (risk-free) portfolio by perfectly offsetting the movements of one asset with the other."
+  },
+  {
+    "id": 1604,
+    "question": "A Category I AIF is investing in a 'Green Infrastructure' project. Under SEBI guidelines, which of the following is an 'Investable Fund' for the purpose of calculating the 25% single-investee concentration limit?",
+    "options": [
+      "The total committed corpus of the fund.",
+      "The corpus net of estimated administrative and management expenses.",
+      "The actual cash received in the bank account.",
+      "The total value of the Sponsor's net worth."
+    ],
+    "answer": "The corpus net of estimated administrative and management expenses.",
+    "hint": "It is the amount 'available' for actual investment activity.",
+    "explanation": "SEBI defines 'Investable Funds' as the total corpus of the AIF minus estimated expenditure for administration and management of the fund over its life."
+  },
+  {
+    "id": 1605,
+    "question": "Mrs. Singh is an 'Accredited Investor'. She wishes to invest in a 'Large Value Fund' (LVF) for Accredited Investors. What is the minimum capital commitment required from her to maintain the regulatory exemptions for this fund?",
+    "options": [
+      "INR 1 Crore",
+      "INR 10 Crores",
+      "INR 70 Crores",
+      "No minimum commitment applies."
+    ],
+    "answer": "INR 70 Crores",
+    "hint": "LVFs have a much higher threshold than standard AIF schemes.",
+    "explanation": "A 'Large Value Fund for Accredited Investors' is a scheme where every investor (other than employees/directors) commits a minimum of INR 70 Crores. In return, the fund gets regulatory relaxations like 'on-filing' launch."
+  },
+  {
+    "id": 1606,
+    "question": "A distributor is offering an AIF to a client. The client is an employee of the Investment Manager of that specific AIF. Which of the following is correct regarding the minimum investment amount for this client?",
+    "options": [
+      "They must invest at least INR 1 Crore.",
+      "The minimum investment is relaxed to INR 25 Lakhs.",
+      "There is no minimum investment for employees.",
+      "Employees are prohibited from investing in their own funds."
+    ],
+    "answer": "The minimum investment is relaxed to INR 25 Lakhs.",
+    "hint": "Think of the 'Skin in the Game' alignment for staff.",
+    "explanation": "SEBI allows a lower entry barrier of INR 25 Lakhs for employees, directors, and the manager of the AIF to encourage alignment of interest with external LPs."
+  },
+  {
+    "id": 1607,
+    "question": "In the AIF ecosystem, who is legally responsible for the 'safe keeping' of the securities and other assets of the fund, ensuring they are not mixed with the manager's personal assets?",
+    "options": [
+      "The Investment Manager",
+      "The Trustee",
+      "The Custodian",
+      "The Sponsor"
+    ],
+    "answer": "The Custodian",
+    "hint": "This entity acts as the 'vault' for the fund's assets.",
+    "explanation": "The Custodian provides safekeeping services and ensures that the assets of the AIF are held separately from the manager's assets, providing a layer of security for the investors."
+  },
+  {
+    "id": 1608,
+    "question": "A Category III AIF decides to use high levels of leverage through derivatives. Who must the fund manager report the 'leverage utilized' to on a periodic basis?",
+    "options": [
+      "Only the Investors",
+      "Only the Trustee",
+      "Both SEBI and the Investors",
+      "No one, provided it's in the PPM"
+    ],
+    "answer": "Both SEBI and the Investors",
+    "hint": "Leverage is a systemic risk that needs regulatory and LP oversight.",
+    "explanation": "Category III AIFs must disclose the amount of leverage utilized to their investors and report it to SEBI in the prescribed periodic reporting formats to ensure systemic stability."
+  },
+  {
+    "id": 1609,
+    "question": "Which service provider is responsible for ensuring that the AIF's tax filings and 'Pass-Through' certificates (Form 64C) are sent to investors accurately and on time?",
+    "options": [
+      "The Custodian",
+      "The Tax Advisor / Chartered Accountant",
+      "The RTA",
+      "The Placement Agent"
+    ],
+    "answer": "The Tax Advisor / Chartered Accountant",
+    "hint": "This involves professional certification and compliance with the Income Tax Act.",
+    "explanation": "The fund's tax advisor or CA calculates the tax incidence and ensures the issuance of Form 64C/64D, which allows Cat I and II investors to claim pass-through benefits on their tax returns."
+  },
+  {
+    "id": 1010,
+    "question": "Under SEBI rules, the 'Investment Committee' (IC) members must ensure they do not have any 'conflict of interest'. If a member is also a director in a company the AIF is investing in, what is the mandatory action?",
+    "options": [
+      "They must resign from the IC.",
+      "They must disclose the conflict and recuse themselves from the decision-making process for that specific deal.",
+      "They must sell their shares in the company.",
+      "No action is needed if they are a minority shareholder."
+    ],
+    "answer": "They must disclose the conflict and recuse themselves from the decision-making process for that specific deal.",
+    "hint": "Recusal is the standard way to handle board-level conflicts.",
+    "explanation": "Fiduciary duty requires that IC members prioritize the fund's interests. If a conflict exists, it must be disclosed, and the member should not participate in the vote for that specific investment."
+  },
+  {
+    "id": 1611,
+    "question": "A Category I AIF is structured as a 'Limited Liability Partnership' (LLP). Which document serves the same purpose as the 'Trust Deed' in a trust structure?",
+    "options": [
+      "The LLP Agreement",
+      "The Shareholding Agreement",
+      "The Placement Memorandum",
+      "The Incorporation Certificate"
+    ],
+    "answer": "The LLP Agreement",
+    "hint": "This is the primary governing document for any partnership-based entity.",
+    "explanation": "The LLP Agreement defines the roles, responsibilities, profit-sharing, and governance of the AIF, similar to how the Trust Deed governs a Trust."
+  },
+  {
+    "id": 1612,
+    "question": "For a 'Close-ended' AIF, at what stage can an investor 'exit' the fund without finding a secondary buyer on their own?",
+    "options": [
+      "Anytime they wish.",
+      "Only at the end of the fund's tenure (liquidation).",
+      "Only if the manager makes a profit.",
+      "At the end of every quarter via a buyback."
+    ],
+    "answer": "Only at the end of the fund's tenure (liquidation).",
+    "hint": "Close-ended funds by definition lock capital for the full duration.",
+    "explanation": "Unlike open-ended funds, close-ended AIFs do not provide redemption rights. Investors are locked in until the fund winds up and liquidates its assets, unless they sell their units to another person (Secondary Sale)."
+  },
+  {
+    "id": 1613,
+    "question": "A Sponsor wants to set up multiple 'Schemes' under a single AIF registration. Is this permitted?",
+    "options": [
+      "No, each scheme needs a separate SEBI registration number.",
+      "Yes, an AIF can launch multiple schemes under the same registration, provided each has its own PPM.",
+      "Only for Category III AIFs.",
+      "Only if the schemes are in the same sector."
+    ],
+    "answer": "Yes, an AIF can launch multiple schemes under the same registration, provided each has its own PPM.",
+    "hint": "One registration, many possible portfolios.",
+    "explanation": "SEBI AIF registration is for the entity. Once registered, the AIF can launch multiple schemes, but each scheme must file a separate Private Placement Memorandum (PPM) with SEBI."
+  },
+  {
+    "id": 1614,
+    "question": "An AIF Manager intends to utilize the fund's capital to provide a loan to a startup. Under which category is this activity 'primary' and permitted?",
+    "options": [
+      "Category I - Venture Capital Fund",
+      "Category II - Debt Fund",
+      "Category III - Long/Short Fund",
+      "It is prohibited for all AIFs to lend money."
+    ],
+    "answer": "Category II - Debt Fund",
+    "hint": "Category II is the 'catch-all' for private credit and debt activities.",
+    "explanation": "While Category I focuses on equity/quasi-equity, Category II Debt Funds are specifically designed to invest primarily in debt or debt-securities of unlisted companies."
+  },
+  {
+    "id": 1615,
+    "question": "If an AIF receives capital from an 'Institutional Investor' from a country that shares a land border with India, what is the mandatory requirement under 'FDI Policy / Press Note 3'?",
+    "options": [
+      "No extra requirement.",
+      "The investment must be reported to the Ministry of Home Affairs.",
+      "Prior government approval is required before the investment can be accepted.",
+      "The investment is strictly banned."
+    ],
+    "answer": "Prior government approval is required before the investment can be accepted.",
+    "hint": "This is a security-linked regulation introduced in 2020.",
+    "explanation": "Press Note 3 requires prior government approval for any investment (direct or indirect) from an entity based in a country sharing a land border with India."
+  },
+  {
+    "id": 1616,
+    "question": "A Category III AIF (Hedge Fund) is mark-to-market daily. If an investor wants to redeem their units, the 'Redemption Price' is typically based on:",
+    "options": [
+      "The face value of the units.",
+      "The Net Asset Value (NAV) after deducting applicable exit loads and expenses.",
+      "The price at which the last unit was sold to a new investor.",
+      "The Sponsor's discretionary price."
+    ],
+    "answer": "The Net Asset Value (NAV) after deducting applicable exit loads and expenses.",
+    "hint": "NAV is the 'fair' price of the underlying portfolio.",
+    "explanation": "In open-ended Category III AIFs, redemption is facilitated at the current NAV, which reflects the market value of the assets minus the liabilities."
+  },
+  {
+    "id": 1617,
+    "question": "A fund charges 1.5% as 'Management Fee' and 20% 'Performance Fee' (Carry). If the fund returns 10% (Gross), and the Hurdle is 8%, what is the total fee percentage for the year (ignoring expenses)?",
+    "options": [
+      "1.5%",
+      "1.9%",
+      "3.5%",
+      "2.0%"
+    ],
+    "answer": "1.9%",
+    "hint": "Carry is 20% of the 'excess' return (10% - 8%) if it's a hard hurdle. 20% of 2% is 0.4%.",
+    "explanation": "Management Fee = 1.5%. Performance Fee = 20% of (10% - 8%) = 20% of 2% = 0.4%. Total Fee = 1.5% + 0.4% = 1.9%."
+  },
+  {
+    "id": 1618,
+    "question": "When an AIF enters the 'Liquidation Period' (after its tenure ends), it has 1 year to sell its assets. If it cannot sell them, what is the regulatory option provided by SEBI to manage the remaining illiquid assets?",
+    "options": [
+      "The assets must be donated to charity.",
+      "The assets can be transferred to a 'Dissolution Scheme' or 'Liquidation Scheme' with investor consent.",
+      "The manager must buy the assets at cost.",
+      "The fund's life is automatically extended for another 10 years."
+    ],
+    "answer": "The assets can be transferred to a 'Dissolution Scheme' or 'Liquidation Scheme' with investor consent.",
+    "hint": "This is a new framework to handle 'tail' assets without extending the main fund.",
+    "explanation": "SEBI introduced the 'Liquidation Scheme' and 'Dissolution Period' framework to allow managers to manage leftover illiquid assets without being in technical default of the fund's tenure."
+  },
+  {
+    "id": 1619,
+    "question": "A 'Hurdle Rate' that is 'compounded annually' means:",
+    "options": [
+      "The investor gets 8% of the initial investment every year.",
+      "The 8% return is calculated on the remaining capital balance plus any unpaid prior years' hurdle amounts.",
+      "The manager gets paid every year.",
+      "The hurdle rate is fixed and never changes."
+    ],
+    "answer": "The 8% return is calculated on the remaining capital balance plus any unpaid prior years' hurdle amounts.",
+    "hint": "Think about the 'Interest on Interest' concept.",
+    "explanation": "Compounding means the preferred return for year 2 is calculated on the (Original Capital + Year 1 Preferred Return), making it more difficult for the manager to reach the 'carry' threshold over time."
+  },
+  {
+    "id": 1620,
+    "question": "An investor sees a 'Negative J-Curve' in their first two years. This is primarily caused by:",
+    "options": [
+      "The portfolio companies failing.",
+      "The upfront payment of management fees and setup costs on the full committed capital while deals are still being sourced.",
+      "A drop in the stock market index.",
+      "High inflation."
+    ],
+    "answer": "The upfront payment of management fees and setup costs on the full committed capital while deals are still being sourced.",
+    "hint": "Costs happen on Day 1; Profits happen on Year 5.",
+    "explanation": "The J-Curve reflects the fact that costs (fees, legal, registration) hit the NAV immediately, while it takes years for the invested companies to appreciate and create value."
+  },
+  {
+    "id": 1621,
+    "question": "Which of the following describes 'Equalization' in the context of an AIF?",
+    "options": [
+      "Ensuring all investors have the same voting rights.",
+      "A mechanism where late-joining investors pay an interest amount to early investors to compensate for the risk/time of their capital.",
+      "Giving everyone the same amount of profit.",
+      "SEBI's mandate for equal gender representation in AMC boards."
+    ],
+    "answer": "A mechanism where late-joining investors pay an interest amount to early investors to compensate for the risk/time of their capital.",
+    "hint": "It 'equalizes' the cost basis for investors entering at different 'closes'.",
+    "explanation": "Equalization ensures that the first-close investors (who took the risk of being the first in) are compensated for the time-value of their money by subsequent-close investors."
+  },
+  {
+    "id": 1622,
+    "question": "If a fund has 'Cumulative Distributions' of 150 Cr and a 'Residual Value' (NAV) of 50 Cr, on a 'Paid-in Capital' of 100 Cr, what is the TVPI?",
+    "options": [
+      "1.5x",
+      "2.0x",
+      "0.5x",
+      "1.0x"
+    ],
+    "answer": "2.0x",
+    "hint": "TVPI = (Distributions + NAV) / Paid-in.",
+    "explanation": "(150 + 50) / 100 = 200 / 100 = 2.0x."
+  },
+  {
+    "id": 1623,
+    "question": "A 'Clawback' clause is legally enforceable against:",
+    "options": [
+      "The Investors",
+      "The Investment Manager (and often the individual partners of the GP)",
+      "The Portfolio Companies",
+      "The Trustee"
+    ],
+    "answer": "The Investment Manager (and often the individual partners of the GP)",
+    "hint": "It is the manager who must 'give back' the money.",
+    "explanation": "If the manager over-collected carry due to early wins followed by later losses, the clawback requires the AMC or its partners to return the excess cash to the LPs."
+  },
+  {
+    "id": 1624,
+    "question": "The 'Operating Expenses' of an AIF (like audit, RTA, and legal) are typically capped at a certain percentage of the corpus. If the cap is 0.25% and actual expenses are 0.40%, who pays the 0.15% excess?",
+    "options": [
+      "The Investors",
+      "The Investment Manager / AMC",
+      "The Government",
+      "The Expenses are written off"
+    ],
+    "answer": "The Investment Manager / AMC",
+    "hint": "A cap is a protective shield for the LPs.",
+    "explanation": "Any expenses above the disclosed cap in the PPM must be absorbed by the manager, ensuring that investors' returns aren't eroded by administrative inefficiencies."
+  },
+  {
+    "id": 1625,
+    "question": "In a 'Whole-of-Fund' (European) Waterfall, when does the Manager receive their first rupee of Carried Interest?",
+    "options": [
+      "After the first profitable exit.",
+      "Only after 100% of the total capital drawn for ALL investments has been returned to the investors (plus the hurdle).",
+      "Every year as a bonus.",
+      "After the investment period ends."
+    ],
+    "answer": "Only after 100% of the total capital drawn for ALL investments has been returned to the investors (plus the hurdle).",
+    "hint": "The manager 'waits in line' until all the investors' capital is back.",
+    "explanation": "The European waterfall is the most investor-friendly because it ensures the LP is 'whole' across the entire fund before the GP starts sharing in the upside."
+  },
+  {
+    "id": 1626,
+    "question": "A fund's 'Net Asset Value' (NAV) is 100 Cr. The manager expects a 20% growth. The Management Fee is 2% of the 'Closing NAV'. What is the estimated fee?",
+    "options": [
+      "2 Cr",
+      "2.4 Cr",
+      "0.4 Cr",
+      "1.2 Cr"
+    ],
+    "answer": "2.4 Cr",
+    "hint": "Calculate the NAV at the end of the year first.",
+    "explanation": "Closing NAV = 100 Cr + 20% growth = 120 Cr. Fee = 2% of 120 Cr = 2.4 Cr."
+  },
+  {
+    "id": 1627,
+    "question": "Which of the following is a 'Conflict of Interest' that must be disclosed in the 'Fee Structure' section of the PPM?",
+    "options": [
+      "The manager charging a 2% fee.",
+      "The manager receiving a 'retrocession' or 'kickback' from a portfolio company for bringing the investment.",
+      "The manager taking a salary from the AMC.",
+      "The fund paying for an audit."
+    ],
+    "answer": "The manager receiving a 'retrocession' or 'kickback' from a portfolio company for bringing the investment.",
+    "hint": "Anything where the manager benefits outside of the standard LP-GP split.",
+    "explanation": "If a manager earns extra fees from the investee company (deal fees, monitoring fees), this can conflict with the LPs' interests and must be disclosed or offset against the management fee."
+  },
+  {
+    "id": 1628,
+    "question": "A 'High Water Mark' ensures that performance fees are not paid twice on the same gains. If a fund's NAV starts at 100, goes to 120 (fee paid), falls to 90, and then rises to 110, is a performance fee paid on the rise to 110?",
+    "options": [
+      "Yes, on the 20 gain from 90 to 110.",
+      "No, because 110 is still below the previous peak (High Water Mark) of 120.",
+      "Only on the 10 gain above 100.",
+      "Yes, but at a 50% discount."
+    ],
+    "answer": "No, because 110 is still below the previous peak (High Water Mark) of 120.",
+    "hint": "The peak must be 'breached' before new fees are due.",
+    "explanation": "A performance fee is only paid for *new* wealth creation. Since the manager already got paid for the journey to 120, they aren't paid for 'recovering' the loss back to 110."
+  },
+  {
+    "id": 1629,
+    "question": "Why is the 'Public Market Equivalent' (PME) considered a better benchmark for PE than a simple point-to-point index return?",
+    "options": [
+      "It is easier to calculate.",
+      "It accounts for the specific timing and magnitude of the fund's irregular cash flows (drawdowns/distributions).",
+      "It only uses the Nifty 50.",
+      "It ignores dividends."
+    ],
+    "answer": "It accounts for the specific timing and magnitude of the fund's irregular cash flows (drawdowns/distributions).",
+    "hint": "It creates a 'synthetic' public portfolio that mimics the PE fund's timing.",
+    "explanation": "PME asks: 'What if I had put the same cash into the index on the exact days I paid capital calls?' This allows for a fair comparison of the manager's alpha over the public market alternative."
+  },
+  {
+    "id": 1630,
+    "question": "An investor sees a 'DPI' (Distributions to Paid-In) of 1.2x. What does this indicate?",
+    "options": [
+      "The fund is worth 20% more than cost.",
+      "The investor has received 100% of their capital back plus a 20% profit in actual cash.",
+      "The fund still has 80% of its assets unsold.",
+      "The fund is in a loss."
+    ],
+    "answer": "The investor has received 100% of their capital back plus a 20% profit in actual cash.",
+    "hint": "DPI > 1.0 means the 'cost' has been fully recovered in cash.",
+    "explanation": "DPI measures realized cash. 1.2x means for every INR 1 invested, INR 1.2 has already been returned to the investor's bank account."
+  },
+  {
+    "id": 1631,
+    "question": "In 'Indices and Benchmarking', what is 'Selection Bias'?",
+    "options": [
+      "When investors choose the wrong fund.",
+      "When a database only includes funds that 'choose' to report their data, typically excluding those with poor performance.",
+      "When the manager picks only tech stocks.",
+      "When SEBI picks the auditor."
+    ],
+    "answer": "When a database only includes funds that 'choose' to report their data, typically excluding those with poor performance.",
+    "hint": "It leads to an 'overstatement' of industry average returns.",
+    "explanation": "Reporting for private funds is voluntary. Managers with bad returns usually don't report, meaning the 'average' return of the reporting group is higher than the true industry average."
+  },
+  {
+    "id": 1632,
+    "question": "A 'Custom Benchmark' for a Real Estate fund would most likely include:",
+    "options": [
+      "The Nifty 50 Index.",
+      "A blend of property price indices, rental yield data, and a spread over the risk-free rate.",
+      "The Gold price.",
+      "The Bitcoin price."
+    ],
+    "answer": "A blend of property price indices, rental yield data, and a spread over the risk-free rate.",
+    "hint": "The benchmark should reflect the 'beta' of the asset class.",
+    "explanation": "Since real estate behaves differently from stocks, a relevant benchmark must use data points related to property markets and inflation, rather than equity market movements."
+  },
+  {
+    "id": 1633,
+    "question": "A 'Private Placement Memorandum' (PPM) is a 'legal' offer document. If a manager makes a false promise in the PPM, which section of the SEBI Act/Regulations are they primarily violating?",
+    "options": [
+      "Fraudulent and Unfair Trade Practices (FUTP) Regulations.",
+      "Insider Trading Regulations.",
+      "Takeover Code.",
+      "Taxation Code."
+    ],
+    "answer": "Fraudulent and Unfair Trade Practices (FUTP) Regulations.",
+    "hint": "Misleading disclosures fall under unfair practices.",
+    "explanation": "Providing false or misleading information to induce an investment is a violation of the FUTP regulations, which carry heavy penalties from SEBI."
+  },
+  {
+    "id": 1634,
+    "question": "What is the primary purpose of a 'Side Letter'?",
+    "options": [
+      "To change the name of the fund.",
+      "To grant specific, negotiated rights or exemptions to a particular investor (usually an anchor LP) that aren't in the main PPM.",
+      "To report to the tax department.",
+      "To fire the auditor."
+    ],
+    "answer": "To grant specific, negotiated rights or exemptions to a particular investor (usually an anchor LP) that aren't in the main PPM.",
+    "hint": "It is a 'bespoke' agreement for a specific investor.",
+    "explanation": "Large LPs often use Side Letters to get extra transparency, lower fees, or board observer seats that the smaller 'standard' LPs do not receive."
+  },
+  {
+    "id": 1635,
+    "question": "An 'Excuse Right' in a Contribution Agreement allows an investor to:",
+    "options": [
+      "Avoid paying the management fee.",
+      "Opt-out of a specific investment deal if it violates their internal policy (e.g. ESG, Shariah, or legal constraints).",
+      "Exit the fund early.",
+      "Not attend investor meetings."
+    ],
+    "answer": "Opt-out of a specific investment deal if it violates their internal policy (e.g. ESG, Shariah, or legal constraints).",
+    "hint": "It is a 'polite' way to say 'I cannot invest in this specific sector'.",
+    "explanation": "Excuse rights are common for institutional LPs (like pension funds) who have strict mandates against investing in 'sin sectors' like tobacco, gambling, or alcohol."
+  },
+  {
+    "id": 1636,
+    "question": "In a Shareholders' Agreement (SHA), a 'Pre-emptive Right' (or Right of First Offer) allows the AIF to:",
+    "options": [
+      "Sell their shares first.",
+      "Maintain their percentage ownership by having the right to buy their pro-rata share of any new shares issued by the company.",
+      "Veto the CEO's salary.",
+      "Appoint the auditor."
+    ],
+    "answer": "Maintain their percentage ownership by having the right to buy their pro-rata share of any new shares issued by the company.",
+    "hint": "It protects against 'dilution'.",
+    "explanation": "If a company issues new shares, pre-emptive rights allow existing investors to buy their share of the new issue first, so their stake doesn't get 'watered down' by new investors."
+  },
+  {
+    "id": 1637,
+    "question": "A 'Drag-Along' right in an SHA is a 'protective' right for:",
+    "options": [
+      "The Minority Shareholders",
+      "The Majority Shareholders (usually the AIF or Founders)",
+      "The Employees",
+      "The Government"
+    ],
+    "answer": "The Majority Shareholders (usually the AIF or Founders)",
+    "hint": "It allows the big player to 'drag' the small players into an exit.",
+    "explanation": "If a buyer wants to buy 100% of the company, the majority shareholder can 'drag' the minority along to ensure a clean sale, preventing a small shareholder from blocking the deal."
+  },
+  {
+    "id": 1638,
+    "question": "A 'Negative Covenant' in a debt agreement or SHA prevents the company from:",
+    "options": [
+      "Making a profit.",
+      "Taking certain actions (like taking more debt or changing the business) without the investor's consent.",
+      "Paying taxes.",
+      "Hiring new staff."
+    ],
+    "answer": "Taking certain actions (like taking more debt or changing the business) without the investor's consent.",
+    "hint": "It's a list of 'Thou Shalt Not's.",
+    "explanation": "Negative covenants are protective measures for AIFs to ensure the management doesn't take risks (like over-leveraging) that could jeopardize the AIF's investment."
+  },
+  {
+    "id": 1639,
+    "question": "The 'Representations and Warranties' (R&W) section of a deal document is essentially:",
+    "options": [
+      "A marketing brochure.",
+      "A set of factual statements made by the seller about the company's health, for which they are legally liable if found false.",
+      "A list of future profits.",
+      "The manager's resume."
+    ],
+    "answer": "A set of factual statements made by the seller about the company's health, for which they are legally liable if found false.",
+    "hint": "It is the 'legal truth' provided by the seller.",
+    "explanation": "If the seller 'warrants' that there are no pending lawsuits, and one is found later, the R&W clause allows the AIF to claim damages or indemnity."
+  },
+  {
+    "id": 1640,
+    "question": "An 'Indemnification' clause in an SHA requires the Founders to compensate the AIF if:",
+    "options": [
+      "The stock market goes down.",
+      "There is a breach of the representations and warranties or a loss due to undisclosed liabilities.",
+      "The company makes a loss.",
+      "The manager is fired."
+    ],
+    "answer": "There is a breach of the representations and warranties or a loss due to undisclosed liabilities.",
+    "hint": "It is the 'make-good' provision for legal breaches.",
+    "explanation": "Indemnity ensures that if the founders lied or hid a major liability (like a hidden tax debt), they have to pay the AIF back for the loss caused by that deception."
+  },
+  {
+    "id": 1641,
+    "question": "In 'Venture Capital', what is a 'Down Round'?",
+    "options": [
+      "A round of golf played after a deal.",
+      "A funding round where the company's valuation is lower than its previous funding round.",
+      "A round where only debt is raised.",
+      "A round where no new investors join."
+    ],
+    "answer": "A funding round where the company's valuation is lower than its previous funding round.",
+    "hint": "It is a sign of distress or overvaluation in the previous round.",
+    "explanation": "A down round is painful for existing investors as it causes significant dilution and indicates that the company is struggling to grow at its expected pace."
+  },
+  {
+    "id": 1642,
+    "question": "A 'Growth Equity' manager invests in a company that is already 'EBITDA positive'. What does this mean?",
+    "options": [
+      "The company has no debt.",
+      "The company is operationally profitable (Earnings Before Interest, Taxes, Depreciation, and Amortization).",
+      "The company is ready for an IPO today.",
+      "The company is a startup with no product."
+    ],
+    "answer": "The company is operationally profitable (Earnings Before Interest, Taxes, Depreciation, and Amortization).",
+    "hint": "It indicates the core business model is making money.",
+    "explanation": "Growth equity focuses on companies that have moved past the 'loss-making' startup stage and now need capital to scale an already profitable business."
+  },
+  {
+    "id": 1643,
+    "question": "In 'Private Credit', 'Senior Secured' debt means:",
+    "options": [
+      "The manager is very experienced.",
+      "The debt has a first claim on the company's assets and is the first to be paid in case of liquidation.",
+      "The debt is provided to senior citizens.",
+      "The debt is unsecured but has a high interest rate."
+    ],
+    "answer": "The debt has a first claim on the company's assets and is the first to be paid in case of liquidation.",
+    "hint": "It sits at the 'top' of the capital stack.",
+    "explanation": "Senior secured debt is the safest form of lending because it is backed by collateral (assets) and has the highest priority for repayment."
+  },
+  {
+    "id": 1644,
+    "question": "An 'Event-Driven' Hedge Fund strategy might trade on a 'Dividend Recapitalization'. What happens in this event?",
+    "options": [
+      "The company stops paying dividends.",
+      "The company takes on new debt specifically to pay a large one-time dividend to its shareholders.",
+      "The company issues new shares to pay dividends.",
+      "The company goes bankrupt."
+    ],
+    "answer": "The company takes on new debt specifically to pay a large one-time dividend to its shareholders.",
+    "hint": "It is a way for PE funds to get cash out of a company before selling it.",
+    "explanation": "Dividend recaps are often criticized for loading companies with debt, but they allow AIFs to de-risk their investment by getting some capital back early."
+  },
+  {
+    "id": 1645,
+    "question": "A 'Market Neutral' fund has a 'Beta' of:",
+    "options": [
+      "1.0",
+      "0.0",
+      "-1.0",
+      "2.0"
+    ],
+    "answer": "0.0",
+    "hint": "Neutrality means 'no sensitivity' to market direction.",
+    "explanation": "A market-neutral strategy aims to eliminate all systematic risk (Beta) so that the fund's returns are purely based on the manager's stock-picking (Alpha)."
+  },
+  {
+    "id": 1646,
+    "question": "In 'Real Estate' investing, 'Brownfield' projects are considered lower risk than 'Greenfield' because:",
+    "options": [
+      "They are built on farmland.",
+      "They involve existing buildings that often already have tenants and cash flow.",
+      "They are exempt from taxes.",
+      "They use older construction materials."
+    ],
+    "answer": "They involve existing buildings that often already have tenants and cash flow.",
+    "hint": "Construction risk is lower for existing structures.",
+    "explanation": "Brownfield projects involve buying and upgrading an existing asset. Since the building is already there and potentially earning rent, the uncertainty is much lower than starting from a 'green' empty field."
+  },
+  {
+    "id": 1647,
+    "question": "A 'Distressed Debt' strategy that focuses on 'Fulcrum Securities' targets:",
+    "options": [
+      "The safest bonds in the market.",
+      "The specific class of debt that is most likely to be converted into equity during a bankruptcy restructuring.",
+      "Companies with no debt.",
+      "Government bonds."
+    ],
+    "answer": "The specific class of debt that is most likely to be converted into equity during a bankruptcy restructuring.",
+    "hint": "It is the 'pivot' point where control of the company shifts.",
+    "explanation": "By owning the fulcrum security, the AIF can emerge as the new owner of the company after the restructuring, often getting a great business at a massive discount."
+  },
+  {
+    "id": 1648,
+    "question": "In 'Infrastructure', a 'PPP' model stands for:",
+    "options": [
+      "Private Profit Placement",
+      "Public-Private Partnership",
+      "Pension Plan Participation",
+      "Power Purchase Price"
+    ],
+    "answer": "Public-Private Partnership",
+    "hint": "It is a collaboration between the government and the AIF.",
+    "explanation": "PPAs involve a private AIF building and operating an asset (like a hospital or airport) for the government in exchange for long-term payments or toll rights."
+  },
+  {
+    "id": 1649,
+    "question": "A 'CTA' (Commodity Trading Advisor) uses 'Trend Following' algorithms. How do these funds behave during a market 'reversal' (when a trend suddenly ends)?",
+    "options": [
+      "They make a huge profit.",
+      "They usually suffer losses (Whipsaw) as their models take time to adjust to the new direction.",
+      "They stop trading automatically.",
+      "They only trade in gold."
+    ],
+    "answer": "They usually suffer losses (Whipsaw) as their models take time to adjust to the new direction.",
+    "hint": "Trend followers need a 'trend' to work; sudden changes are their biggest enemy.",
+    "explanation": "CTAs are 'slow' to turn. When a long bull market suddenly turns bear, the CTA will still be 'Long' for a few days or weeks, causing losses until the algorithm triggers a 'Short' signal."
+  },
+  {
+    "id": 1650,
+    "question": "A 'Convertible Arbitrage' fund buys a 'Convertible Bond' and 'Shorts' the company's stock. They are primarily betting on:",
+    "options": [
+      "The stock price going up.",
+      "The 'Volatility' of the stock and the fixed income yield of the bond.",
+      "The stock price going down.",
+      "The company going bankrupt."
+    ],
+    "answer": "The 'Volatility' of the stock and the fixed income yield of the bond.",
+    "hint": "The convertible bond has a 'hidden' call option.",
+    "explanation": "If the stock moves a lot (up OR down), the convertible bond's option value increases. By shorting the stock, the manager cancels out the direction risk and just profits from the 'wiggles' (volatility)."
+  },
+  {
+    "id": 1651,
+    "question": "An 'AIF of AIFs' (Fund of Funds) is allowed to invest in other AIFs. What is a key restriction for such a fund?",
+    "options": [
+      "It cannot invest in Category III AIFs.",
+      "It cannot invest in another 'Fund of Funds'.",
+      "It must have at least 1000 investors.",
+      "It is only for government investors."
+    ],
+    "answer": "It cannot invest in another 'Fund of Funds'.",
+    "hint": "SEBI prevents 'unlimited' layering of fees.",
+    "explanation": "To prevent excessive fee loading (fees on fees on fees), an FoF cannot invest in another FoF. The chain must stop at the 'operating' AIF level."
+  },
+  {
+    "id": 1652,
+    "question": "In 'Impact Investing', the 'Social Return' is:",
+    "options": [
+      "The profit shared with employees.",
+      "The measurable positive change in a social or environmental factor (e.g. CO2 reduced, jobs created).",
+      "The money given to the manager as a bonus.",
+      "The dividend paid to investors."
+    ],
+    "answer": "The measurable positive change in a social or environmental factor (e.g. CO2 reduced, jobs created).",
+    "hint": "It is the 'Impact' part of the investment.",
+    "explanation": "Impact funds track 'KPIs' (Key Performance Indicators) for social good, just like they track IRR for financial good."
+  },
+  {
+    "id": 1653,
+    "question": "A 'Secondary' AIF focuses on buying:",
+    "options": [
+      "Used cars.",
+      "Existing 'LP interests' or 'Portfolio stakes' from other investors who want to exit early from their AIF commitments.",
+      "Shares on the stock exchange.",
+      "Government bonds."
+    ],
+    "answer": "Existing 'LP interests' or 'Portfolio stakes' from other investors who want to exit early from their AIF commitments.",
+    "hint": "It provides liquidity to the 'locked-in' world of private equity.",
+    "explanation": "Secondary funds are the 'release valve' for the AIF industry, allowing investors who need cash urgently to sell their 10-year commitments to someone else at a discount."
+  },
+  {
+    "id": 1654,
+    "question": "What is the primary risk of a 'PIPE' (Private Investment in Public Equity) transaction for an AIF?",
+    "options": [
+      "The company is unlisted.",
+      "Price risk during the 'lock-in' period where the AIF cannot sell the shares even if the market price is crashing.",
+      "The manager forgets to buy the shares.",
+      "The company stops paying taxes."
+    ],
+    "answer": "Price risk during the 'lock-in' period where the AIF cannot sell the shares even if the market price is crashing.",
+    "hint": "You have a public stock but you are treated like a private owner.",
+    "explanation": "PIPE deals usually come with a 6-month or 1-year lock-in. If the stock drops 50% during that time, the AIF is helpless to exit, which is why they usually demand a discount at entry."
+  },
+  {
+    "id": 1655,
+    "question": "An AIF Manager wants to use 'Invested Capital' as the base for management fees after the investment period. Why is this better for investors than 'Committed Capital'?",
+    "options": [
+      "The fee percentage is lower.",
+      "It ensures the manager isn't paid for 'dry powder' (uncalled cash) or for money they have already returned to the investors.",
+      "It is easier to calculate.",
+      "It is tax-free."
+    ],
+    "answer": "It ensures the manager isn't paid for 'dry powder' (uncalled cash) or for money they have already returned to the investors.",
+    "hint": "It aligns the fee with the 'work' remaining (managing the unsold portfolio).",
+    "explanation": "Charging on 'Committed' capital forever would mean the manager gets a full fee even when only 10% of the fund is left. Shifting to 'Invested' capital (at cost) correctly reduces the fee as the fund winds down."
+  },
+  {
+    "id": 1656,
+    "question": "A Category II AIF Manager is planning to invest in a portfolio company where the Sponsor's brother holds a 15% stake. According to governance norms, what is the primary obligation of the Manager before executing this trade?",
+    "options": [
+      "The Manager must obtain a written waiver from SEBI.",
+      "The Manager must disclose the conflict of interest to the investors and ensure the transaction is at arm's length.",
+      "The Manager must ensure the Sponsor's brother sells his stake first.",
+      "The Manager must double the management fee to cover the risk."
+    ],
+    "answer": "The Manager must disclose the conflict of interest to the investors and ensure the transaction is at arm's length.",
+    "hint": "Conflicts involving relatives of the Sponsor or Manager are classic related-party issues requiring transparency.",
+    "explanation": "Governance standards for AIFs require that any conflict of interest, especially related-party transactions, be disclosed to investors. The transaction must be conducted on an arm's length basis to ensure the fund is not being used to benefit the Sponsor's associates unfairly."
+  },
+  {
+    "id": 1657,
+    "question": "During the 'Soft Due Diligence' phase, an AIF Manager conducts deep interviews with former employees of a target company. They discover a pattern of 'toxic leadership' and high turnover in the technology team. This finding is best categorized as a risk in:",
+    "options": [
+      "Financial Due Diligence",
+      "Legal Due Diligence",
+      "Human Resources and Governance Due Diligence",
+      "Tax Due Diligence"
+    ],
+    "answer": "Human Resources and Governance Due Diligence",
+    "hint": "Leadership culture and team stability are core pillars of organizational health.",
+    "explanation": "Leadership quality and employee retention are critical components of HR and Governance due diligence. In a technology-driven startup, a toxic culture can lead to 'Key Person' loss, which directly threatens the commercial viability of the investment."
+  },
+  {
+    "id": 1658,
+    "question": "An AIF Manager is setting up a 'Whistleblower Policy' as part of its internal governance framework. What is the primary purpose of this policy?",
+    "options": [
+      "To encourage employees to report unethical behavior or regulatory breaches without fear of retaliation.",
+      "To allow the Manager to fire employees who speak to the media.",
+      "To automate the calculation of performance fees.",
+      "To report daily stock prices to SEBI."
+    ],
+    "answer": "To encourage employees to report unethical behavior or regulatory breaches without fear of retaliation.",
+    "hint": "It is an internal 'early warning' system for fraud or non-compliance.",
+    "explanation": "A robust whistleblower policy is a hallmark of good governance, providing a safe channel for employees to flag internal misconduct, fraud, or violations of SEBI regulations, thereby protecting the interests of the fund and its unit holders."
+  },
+  {
+    "id": 1659,
+    "question": "Which body is responsible for providing an independent 'Compliance Certificate' annually, stating that the AIF has complied with all the provisions of the SEBI (AIF) Regulations?",
+    "options": [
+      "The Investment Committee",
+      "The Trustee (or Board of Directors of the Manager)",
+      "The Registrar and Transfer Agent",
+      "The Custodian"
+    ],
+    "answer": "The Trustee (or Board of Directors of the Manager)",
+    "hint": "The oversight entity has the ultimate responsibility for verifying regulatory adherence.",
+    "explanation": "The Trustee (for trusts) or the Board (for companies/LLPs) must ensure that a compliance audit or review is conducted and certify to SEBI that the fund has adhered to the regulatory framework and the terms of the PPM."
+  },
+  {
+    "id": 1660,
+    "question": "An AIF Manager wants to hire a 'Placement Agent' to raise funds globally. From a due diligence perspective, what is the most critical check the Manager must perform on this agent?",
+    "options": [
+      "The agent's social media following.",
+      "Whether the agent is appropriately registered with the relevant regulators in the jurisdictions where they will solicit investors.",
+      "The agent's office location.",
+      "The agent's height and weight."
+    ],
+    "answer": "Whether the agent is appropriately registered with the relevant regulators in the jurisdictions where they will solicit investors.",
+    "hint": "Raising money involves strict 'securities solicitation' laws globally.",
+    "explanation": "Using unregistered placement agents can lead to severe regulatory penalties and could even jeopardize the fund's ability to accept capital. Ensuring the agent is licensed (e.g., with SEBI in India or FINRA in the US) is a critical compliance check."
+  },
+  {
+    "id": 1661,
+    "question": "In the context of 'Investment Committee' (IC) governance, what is the 'Conflict of Interest' protocol when an IC member's personal portfolio includes a direct stake in a company currently under consideration by the AIF?",
+    "options": [
+      "The member must vote in favor of the investment.",
+      "The member must disclose the interest and recuse themselves from the discussion and the vote.",
+      "The member must sell their personal stake to the AIF at cost.",
+      "The IC must be dissolved immediately."
+    ],
+    "answer": "The member must disclose the interest and recuse themselves from the discussion and the vote.",
+    "hint": "Transparency followed by non-participation is the standard fix for decision-maker conflicts.",
+    "explanation": "Governance best practices require that any IC member with a personal interest in a deal must disclose it. To prevent bias, they should not participate in the deliberation or the decision-making process for that specific investment."
+  },
+  {
+    "id": 1662,
+    "question": "A potential investee company has 'dual-class' shares with superior voting rights for the founders. How should an AIF Manager view this during governance due diligence?",
+    "options": [
+      "It is a commercial benefit as founders stay in control.",
+      "It is a governance risk as it limits the AIF's ability to influence the company and hold the management accountable.",
+      "It is illegal under Indian law for all companies.",
+      "It makes the company tax-exempt."
+    ],
+    "answer": "It is a governance risk as it limits the AIF's ability to influence the company and hold the management accountable.",
+    "hint": "Consider the balance of power between investors and management.",
+    "explanation": "Dual-class structures can disenfranchise minority investors like AIFs. It creates a 'governance gap' where founders can make decisions without being accountable to the capital providers, which is a significant risk factor during due diligence."
+  },
+  {
+    "id": 1663,
+    "question": "An AIF holds a convertible debenture with a face value of ₹1,000. The company is currently struggling, and its equity value is estimated at zero. However, the company has significant physical assets. How should the valuer primarily approach this?",
+    "options": [
+      "Value at ₹1,000 as it is debt.",
+      "Value based on the 'Liquidation Value' of the underlying assets, net of senior liabilities.",
+      "Value at ₹1 as the equity is zero.",
+      "Value at the cost price."
+    ],
+    "answer": "Value based on the 'Liquidation Value' of the underlying assets, net of senior liabilities.",
+    "hint": "When a company is no longer a 'going concern', the value resides in what can be recovered from assets.",
+    "explanation": "For distressed debt or convertible instruments in a failing company, the 'Asset-based' or 'Liquidation' approach is most appropriate. The valuer estimates the net realizable value of assets to determine the potential recovery for the debenture holder."
+  },
+  {
+    "id": 1664,
+    "question": "A Category II AIF (Real Estate Fund) is valuing a project that is currently 40% complete. The valuer uses the 'Discounted Cash Flow' method for the projected sales. Which input is most sensitive to 'Market Risk' in this scenario?",
+    "options": [
+      "The registration fees paid last year.",
+      "The 'Absorption Rate' (speed at which units are expected to be sold).",
+      "The name of the architect.",
+      "The height of the building."
+    ],
+    "answer": "The 'Absorption Rate' (speed at which units are expected to be sold).",
+    "hint": "Speed of cash inflow determines the timing and risk of the project's returns.",
+    "explanation": "In real estate DCF, the absorption rate is highly sensitive to market demand. If the market slows, units take longer to sell, pushing cash flows further into the future and significantly reducing the Present Value (and the NAV)."
+  },
+  {
+    "id": 1665,
+    "question": "An AIF uses the 'Market Multiple' method to value a private tech company. It selects five 'comparable' listed companies. Why might a 'Size Discount' be applied to the multiples of the listed peers?",
+    "options": [
+      "Because the private company has more employees.",
+      "Because larger listed companies typically have more diversified revenue streams and easier access to capital than the smaller private target.",
+      "Because smaller companies pay more tax.",
+      "Because listed companies are more expensive to audit."
+    ],
+    "answer": "Because larger listed companies typically have more diversified revenue streams and easier access to capital than the smaller private target.",
+    "hint": "Big companies are usually perceived as less risky than small ones.",
+    "explanation": "Listed peers are often much larger and more stable than private portfolio companies. A 'Size Discount' or 'Small-Cap Premium' (on the discount rate) is applied to reflect the higher risk profile of a smaller, less established private entity."
+  },
+  {
+    "id": 1666,
+    "question": "When valuing a 'Venture Debt' instrument that includes 'Equity Kickers' (Warrants), how should the total value be reported in the NAV?",
+    "options": [
+      "Report only the principal amount of the loan.",
+      "Report the present value of the loan cash flows plus the fair value of the warrants (determined via an option pricing model).",
+      "Report the warrants at ₹1 until they are exercised.",
+      "Report the warrants as a liability."
+    ],
+    "answer": "Report the present value of the loan cash flows plus the fair value of the warrants (determined via an option pricing model).",
+    "hint": "The 'kicker' adds economic value today, not just in the future.",
+    "explanation": "Warrants have intrinsic and time value even before exercise. An accurate NAV must include the fair value of these 'equity kickers' using models like Black-Scholes, alongside the debt valuation, to reflect the total economic interest."
+  },
+  {
+    "id": 1667,
+    "question": "A Category III AIF has a massive position in a stock that is hitting 'lower circuits' daily due to bad news. The stock is currently un-tradeable. How should the Manager determine the 'Fair Value' for the NAV?",
+    "options": [
+      "Use the last traded price, as it is the only 'quoted' price.",
+      "Apply a discount to the last traded price to reflect the lack of liquidity and the downward pressure.",
+      "Value the stock at zero.",
+      "Use the price from one week ago."
+    ],
+    "answer": "Apply a discount to the last traded price to reflect the lack of liquidity and the downward pressure.",
+    "hint": "The last traded price is no longer 'executable' if there are only sellers and no buyers.",
+    "explanation": "When a security is suspended or stuck in circuits, the last traded price is not 'Fair Value'. Valuers must estimate the price at which a transaction *would* occur, which typically requires a haircut/discount to account for the distressed selling pressure and illiquidity."
+  },
+  {
+    "id": 1668,
+    "question": "If an AIF's 'Valuation Policy' specifies that unlisted securities will be valued at 'Cost' for the first 12 months, under what condition must this policy be overridden according to IPEV guidelines?",
+    "options": [
+      "Never; the policy is absolute.",
+      "If a 'Significant Event' occurs (e.g., bankruptcy, a major lawsuit, or a down-round) that renders cost an inaccurate representation of fair value.",
+      "If the Manager wants to show higher returns to attract new investors.",
+      "If the inflation rate exceeds 5%."
+    ],
+    "answer": "If a 'Significant Event' occurs (e.g., bankruptcy, a major lawsuit, or a down-round) that renders cost an inaccurate representation of fair value.",
+    "hint": "Fair value must always reflect current reality, regardless of the 'age' of the investment.",
+    "explanation": "IPEV guidelines allow 'Cost' as a proxy for fair value only in the absence of other indicators. If a major negative (or positive) event occurs, the 'Cost' method becomes invalid, and the asset must be re-valued to reflect the new reality immediately."
+  },
+  {
+    "id": 1669,
+    "question": "In a 'Calibration' exercise, the valuer finds that the market multiples for the sector have increased by 20% since the AIF invested. If the portfolio company's EBITDA has remained the same, what is the most likely direction of the new fair value?",
+    "options": [
+      "It will remain the same.",
+      "It will increase to reflect the expansion in market multiples.",
+      "It will decrease due to stagnation in earnings.",
+      "It will be written off."
+    ],
+    "answer": "It will increase to reflect the expansion in market multiples.",
+    "hint": "Valuation is a product of Earnings and the Multiple. If one goes up and the other is steady, the product rises.",
+    "explanation": "Even if a company's performance is flat, its fair value can change based on 'Market Inputs'. If peer multiples have expanded, the market is willing to pay more for the same earnings, resulting in a higher fair value for the AIF's holding."
+  },
+  {
+    "id": 1670,
+    "question": "An AIF Manager calculates the 'Fair Value' of a startup using the 'Replacement Cost' method. Why is this often criticized for early-stage tech ventures?",
+    "options": [
+      "Because it is too optimistic.",
+      "Because it ignores the 'Intangible Value' of the intellectual property and network effects, which often exceed the physical cost of development.",
+      "Because it is too difficult to calculate.",
+      "Because it only works for real estate."
+    ],
+    "answer": "Because it ignores the 'Intangible Value' of the intellectual property and network effects, which often exceed the physical cost of development.",
+    "hint": "The cost to 'rebuild' a website isn't the same as the value of the 'brand' or 'user base'.",
+    "explanation": "Replacement cost only measures the cost to recreate the assets. In tech, the value lies in future growth, data, and brand—none of which are fully captured by just summing up historical development salaries or hardware costs."
+  },
+  {
+    "id": 1671,
+    "question": "Under the SEBI (AIF) Regulations, who is ultimately responsible for 'appointing' the independent valuer for the fund's assets?",
+    "options": [
+      "The Investors",
+      "The Manager",
+      "The SEBI Chairman",
+      "The Investee Company"
+    ],
+    "answer": "The Manager",
+    "hint": "The day-to-day controller of the fund is tasked with ensuring proper valuation infrastructure.",
+    "explanation": "The AIF Manager is mandated by Regulation 23 to ensure proper valuation of investments. This includes the responsibility of appointing a qualified, independent valuer and documenting the process."
+  },
+  {
+    "id": 1672,
+    "question": "When calculating the Net Asset Value (NAV) of an AIF, how should 'Provision for Taxes' be treated?",
+    "options": [
+      "It should be ignored until the tax is actually paid.",
+      "It should be added to the Total Assets.",
+      "It should be treated as a liability and deducted from the Total Assets.",
+      "It should be capitalized as an asset."
+    ],
+    "answer": "It should be treated as a liability and deducted from the Total Assets.",
+    "hint": "NAV must represent the 'Net' amount available to unit holders after all obligations are met.",
+    "explanation": "Accrued taxes (on interest or business income at the fund level) are liabilities. To arrive at a fair NAV per unit, all such provisions must be deducted from the asset value, ensuring current unit holders' stakes reflect the true net worth."
+  },
+  {
+    "id": 1673,
+    "question": "An AIF scheme has a life of 7 years. In year 6, the Manager decides to exit a portfolio company by selling the shares back to the company's founders. What is this exit route called?",
+    "options": [
+      "Initial Public Offering (IPO)",
+      "Strategic Sale",
+      "Promoter Buyback",
+      "Secondary Sale to another AIF"
+    ],
+    "answer": "Promoter Buyback",
+    "hint": "The sellers are the investors, and the buyers are the original creators of the business.",
+    "explanation": "A Promoter Buyback (or Management Buyback) occurs when the original founders or promoters repurchase the stake held by the financial investor (the AIF). This is common when an IPO or strategic sale is not feasible."
+  },
+  {
+    "id": 1674,
+    "question": "A Category III AIF uses the 'High-Water Mark' principle for performance fees. If the initial NAV was 100, rose to 120 (fees paid), fell to 90, and is now at 110, what is the amount on which performance fees can be charged currently?",
+    "options": [
+      "₹10 (Increase from 100 to 110)",
+      "₹20 (Increase from 90 to 110)",
+      "₹0 (Current NAV is still below the previous high of 120)",
+      "₹110 (Entire current value)"
+    ],
+    "answer": "₹0 (Current NAV is still below the previous high of 120)",
+    "hint": "Performance fees are only paid on 'New' value created above the last level where fees were settled.",
+    "explanation": "The High-Water Mark ensures that a manager doesn't get paid for recovering losses. Since the NAV of 110 is still below the previous peak of 120 where fees were already collected, no new performance fee is due until the NAV crosses 120."
+  },
+  {
+    "id": 1675,
+    "question": "According to SEBI rules, a 'Material Change' in the Private Placement Memorandum (PPM) requires an exit option for dissenting investors. Which of the following is typically NOT considered a 'Material' change?",
+    "options": [
+      "Change in the Investment Strategy from Equity to Debt.",
+      "Significant increase in the Management Fee.",
+      "Change in the address of the Manager's back-office with no change in personnel.",
+      "Change in the Key Person of the fund."
+    ],
+    "answer": "Change in the address of the Manager's back-office with no change in personnel.",
+    "hint": "Materiality refers to factors that affect the risk, return, or core terms of the investment.",
+    "explanation": "Operational changes like an office move do not affect the investor's risk-return profile. However, changes in strategy, fees, or key people are fundamental to the investment decision and are therefore 'Material'."
+  },
+  {
+    "id": 1676,
+    "question": "During 'Fund Monitoring', an AIF Manager notices a portfolio company has missed its revenue target by 50% for two consecutive quarters. What is the standard governance action for the Manager?",
+    "options": [
+      "To immediately write off the investment to zero.",
+      "To increase the monitoring frequency, request a remedial plan from management, and inform the Investment Committee.",
+      "To ignore it, as startups are volatile.",
+      "To sell the shares on the open market immediately (if unlisted)."
+    ],
+    "answer": "To increase the monitoring frequency, request a remedial plan from management, and inform the Investment Committee.",
+    "hint": "Active monitoring requires intervention when performance significantly deviates from the plan.",
+    "explanation": "Fiduciary duty requires active stewardship. When a company underperforms significantly, the Manager must intervene to understand the cause, assess the impact on fair value, and work with the company to course-correct."
+  },
+  {
+    "id": 1677,
+    "question": "If an AIF scheme has ended its tenure and completed its winding-up process, within how many days must the Manager file the final winding-up report with SEBI?",
+    "options": [
+      "7 days",
+      "15 days",
+      "30 days",
+      "90 days"
+    ],
+    "answer": "15 days",
+    "hint": "It is a short administrative window after the final distributions are made.",
+    "explanation": "SEBI regulations require that once the winding-up is complete and assets are distributed, the Manager must submit a report to SEBI within 15 days, confirming the closure of the scheme."
+  },
+  {
+    "id": 1678,
+    "question": "What is the role of a 'Monitor' or 'Observer' appointed by an AIF on the board of an investee company?",
+    "options": [
+      "To run the day-to-day operations of the company.",
+      "To attend board meetings, receive information, and ensure the company adheres to the governance standards agreed in the SHA, but usually without voting rights.",
+      "To audit the company's tax returns personally.",
+      "To replace the CEO."
+    ],
+    "answer": "To attend board meetings, receive information, and ensure the company adheres to the governance standards agreed in the SHA, but usually without voting rights.",
+    "hint": "Observation rights provide 'Information' without 'Managerial Responsibility'.",
+    "explanation": "An Observer right allows the AIF to stay informed about the company's strategic decisions and compliance. Unlike a Director, an Observer typically doesn't vote, which limits the AIF's legal liability for board decisions."
+  },
+  {
+    "id": 1679,
+    "question": "An AIF scheme is in its 'Harvesting Period'. What does this mean?",
+    "options": [
+      "The fund is actively looking for new startups to invest in.",
+      "The fund is focused on managing its existing portfolio to achieve exits and return capital to investors.",
+      "The fund is planting crops in its office garden.",
+      "The fund is raising its second scheme."
+    ],
+    "answer": "The fund is focused on managing its existing portfolio to achieve exits and return capital to investors.",
+    "hint": "Think of the lifecycle of a plant: Growth is followed by the Harvest.",
+    "explanation": "The Harvesting Period (or Divestment Period) is the later stage of an AIF's life where the 'Investment Period' has ended. The Manager’s sole focus is on realizing the value of the investments and distributing the proceeds."
+  },
+  {
+    "id": 1680,
+    "question": "Which of the following describes a 'Full Secondary' exit for an AIF?",
+    "options": [
+      "The portfolio company goes for an IPO.",
+      "The AIF sells its entire remaining interest in a portfolio company to another Private Equity fund.",
+      "The AIF sells its units to a bank.",
+      "The AIF merges with another AIF."
+    ],
+    "answer": "The AIF sells its entire remaining interest in a portfolio company to another Private Equity fund.",
+    "hint": "It is a transaction between two 'financial' players in the private market.",
+    "explanation": "A Secondary Sale involves the transfer of shares from one financial investor (AIF 1) to another (AIF 2/PE Fund). This provides a clean exit for the first fund, especially as it nears its tenure end."
+  },
+  {
+    "id": 1681,
+    "question": "Regarding 'Reporting to Investors', what is the mandatory frequency for a Category I AIF to send out its performance reports (NAV and portfolio details)?",
+    "options": [
+      "Monthly",
+      "Quarterly",
+      "Half-yearly",
+      "Annually"
+    ],
+    "answer": "Half-yearly",
+    "hint": "Category I and II have a less frequent mandatory investor reporting cycle compared to Category III.",
+    "explanation": "According to SEBI (AIF) Regulations, Category I and II AIFs must provide reports to their investors at least once every six months (Half-yearly). Most managers, however, do it quarterly as a best practice."
+  },
+  {
+    "id": 1682,
+    "question": "A Category II AIF (Venture Capital Fund) has invested in a startup that is now being acquired by a global tech giant for ₹500 Crores. This exit is known as a:",
+    "options": [
+      "Management Buyout",
+      "Trade Sale / Strategic Exit",
+      "Liquidation",
+      "Rights Issue"
+    ],
+    "answer": "Trade Sale / Strategic Exit",
+    "hint": "The buyer is a 'business' in the same or related industry, not a 'financial fund'.",
+    "explanation": "A Trade Sale or Strategic Exit occurs when a portfolio company is sold to an operating company. These are often the most lucrative exits as the buyer pays for the synergy and strategic fit."
+  },
+  {
+    "id": 1683,
+    "question": "Under Section 115UB of the Income Tax Act, the income earned by a Category I AIF (other than Business Income) is taxed in the hands of:",
+    "options": [
+      "The Investment Manager",
+      "The AIF itself (Fund level)",
+      "The Unit Holders (Investors)",
+      "The Trustee"
+    ],
+    "answer": "The Unit Holders (Investors)",
+    "hint": "The 'Pass-through' status makes the fund transparent for tax purposes.",
+    "explanation": "Section 115UB provides a pass-through status for Category I and II AIFs. This means that income like Capital Gains or Interest is not taxed at the fund level but is taxed directly in the hands of the investors as if they had made the investment themselves."
+  },
+  {
+    "id": 1684,
+    "question": "A Category III AIF (structured as a Trust) earns 'Business Income' from its high-frequency trading activities. At what rate is this income typically taxed in 2026?",
+    "options": [
+      "10% (Flat rate)",
+      "Maximum Marginal Rate (MMR) at the fund level.",
+      "It is tax-exempt.",
+      "The rate applicable to the individual investor's slab."
+    ],
+    "answer": "Maximum Marginal Rate (MMR) at the fund level.",
+    "hint": "Cat III AIFs do not enjoy statutory pass-through for business income, leading to taxation at the source at the highest rate.",
+    "explanation": "Category III AIFs are generally taxed at the trust level for business income. In the absence of pass-through, the Trustee is assessed at the Maximum Marginal Rate (currently around 42.7% including surcharge/cess) before distributing the net amount."
+  },
+  {
+    "id": 1685,
+    "question": "If a Category II AIF incurs a 'Capital Loss' during the year, can this loss be passed through to the investors to be set off against their other personal capital gains?",
+    "options": [
+      "No, losses cannot be passed through.",
+      "Yes, for Category I and II, capital losses also pass through to investors since the 2019 amendment.",
+      "Only if the investor is a corporate entity.",
+      "Yes, but only if the loss is more than ₹1 Crore."
+    ],
+    "answer": "Yes, for Category I and II, capital losses also pass through to investors since the 2019 amendment.",
+    "hint": "Pass-through status applies to both 'Income' and 'Loss' for certain AIF categories.",
+    "explanation": "A significant benefit of Cat I/II AIFs is that since 2019, capital losses (both long-term and short-term) flow through to the unit holders. This allows investors to use these losses to offset other capital gains on their tax returns."
+  },
+  {
+    "id": 1686,
+    "question": "A Non-Resident Indian (NRI) receives a distribution from a Category I AIF. The AIF must deduct TDS (Tax Deducted at Source) at what rate under Section 194LBB?",
+    "options": [
+      "10% (Flat)",
+      "30% (Flat)",
+      "At the 'rates in force' applicable to non-residents (subject to DTAA).",
+      "No TDS is required."
+    ],
+    "answer": "At the 'rates in force' applicable to non-residents (subject to DTAA).",
+    "hint": "TDS rates for non-residents are usually determined by the specific tax treaties with their home country.",
+    "explanation": "While residents have a 10% TDS, non-residents are subject to 'rates in force'. This allows the investor to benefit from Double Taxation Avoidance Agreements (DTAA) if they provide a Tax Residency Certificate."
+  },
+  {
+    "id": 1687,
+    "question": "Is Goods and Services Tax (GST) applicable on the 'Management Fee' charged by the AIF Manager to the Fund?",
+    "options": [
+      "No, because it is an internal charge.",
+      "Yes, it is a taxable supply of service and attracts GST (typically 18%).",
+      "No, as AIFs are exempt from GST.",
+      "Yes, but only if the fee exceeds ₹10 Crores."
+    ],
+    "answer": "Yes, it is a taxable supply of service and attracts GST (typically 18%).",
+    "hint": "The Manager is a service provider, and the Fund is the client.",
+    "explanation": "Fund management is a taxable service. The Manager must charge GST (18%) on the management fees and performance fees (carry) billed to the Fund. This GST is a cost to the Fund and reduces the net return to investors."
+  },
+  {
+    "id": 1688,
+    "question": "Under the 'Safe Harbour' rules (Section 9A), if an offshore fund appoints a SEBI-registered AIF Manager in India, the offshore fund will NOT be deemed to have a 'Business Connection' in India provided:",
+    "options": [
+      "The Manager charges no fee.",
+      "The offshore fund meets specific criteria regarding residency, corpus, and diversification, and the Manager is compensated at arm's length.",
+      "The offshore fund only invests in government bonds.",
+      "The Manager is also the Sponsor."
+    ],
+    "answer": "The offshore fund meets specific criteria regarding residency, corpus, and diversification, and the Manager is compensated at arm's length.",
+    "hint": "Safe harbor rules protect foreign funds from being taxed in India just because their manager is located in India.",
+    "explanation": "Section 9A provides a 'Safe Harbour' to ensure that a foreign fund is not taxed as an Indian resident just because its manager is based in India. This requires meeting strict conditions to ensure the fund is a genuine offshore pooled vehicle."
+  },
+  {
+    "id": 1689,
+    "question": "What is the tax treatment of 'Dividends' received by a Category II AIF from an Indian company in the hands of its resident unit holders?",
+    "options": [
+      "They are exempt from tax.",
+      "They are taxed in the hands of the unit holder at their applicable slab rate (post-2020 regime).",
+      "The company pays a 20% Dividend Distribution Tax (DDT) and the investor pays nothing.",
+      "They are taxed at a flat rate of 15%."
+    ],
+    "answer": "They are taxed in the hands of the unit holder at their applicable slab rate (post-2020 regime).",
+    "hint": "DDT has been abolished; dividends are now part of the recipient's total taxable income.",
+    "explanation": "Since 2020, DDT has been abolished. Dividends are now taxed in the hands of the recipient. For AIFs, the pass-through preserves the character, so the dividend is taxed in the hands of the investor at their personal tax slab."
+  },
+  {
+    "id": 1690,
+    "question": "Can a Category I AIF (Infrastructure Fund) set off its 'Operating Expenses' (like audit and legal fees) against the 'Capital Gains' realized during the year to reduce the tax liability for its investors?",
+    "options": [
+      "Yes, all expenses are deductible from capital gains.",
+      "No, according to the Income Tax Act, operating expenses are not deductible from capital gains income.",
+      "Yes, but only up to 50% of the expenses.",
+      "Only management fees are deductible."
+    ],
+    "answer": "No, according to the Income Tax Act, operating expenses are not deductible from capital gains income.",
+    "hint": "Tax laws strictly distinguish between 'expenses of transfer' and 'general operating expenses'.",
+    "explanation": "For tax purposes, only the 'expenditure incurred wholly and exclusively in connection with the transfer' (like brokerage) can be deducted from capital gains. General fund operating expenses cannot be used to reduce the taxable capital gain."
+  },
+  {
+    "id": 1691,
+    "question": "What is the 'Minimum Corpus' required to register a standard Category II AIF scheme with SEBI?",
+    "options": [
+      "₹5 Crores",
+      "₹10 Crores",
+      "₹20 Crores",
+      "₹50 Crores"
+    ],
+    "answer": "₹20 Crores",
+    "hint": "The minimum size ensures the fund is a meaningful pooled vehicle.",
+    "explanation": "According to the SEBI (AIF) Regulations, no scheme of an AIF (other than Angel Funds) shall have a corpus of less than ₹20 Crores."
+  },
+  {
+    "id": 1692,
+    "question": "Under the 'Sponsor Commitment' (Continuing Interest) rule, how much must a Sponsor contribute to a Category III AIF?",
+    "options": [
+      "2.5% of the corpus or ₹5 Crores, whichever is lower.",
+      "5% of the corpus or ₹10 Crores, whichever is lower.",
+      "10% of the corpus.",
+      "No commitment is required."
+    ],
+    "answer": "5% of the corpus or ₹10 Crores, whichever is lower.",
+    "hint": "Category III funds (Hedge Funds) have a higher 'skin in the game' requirement than Category I/II.",
+    "explanation": "For Category III AIFs, the Sponsor or Manager must maintain a continuing interest of 5% of the corpus or ₹10 Crores, whichever is lower. (For Cat I/II, it is 2.5% or ₹5 Crores)."
+  },
+  {
+    "id": 1693,
+    "question": "What is the 'Concentration Limit' for a Category III AIF when investing in the equity of a single listed company?",
+    "options": [
+      "25% of the investable funds.",
+      "10% of the investable funds.",
+      "50% of the investable funds.",
+      "There is no limit for Category III."
+    ],
+    "answer": "10% of the investable funds.",
+    "hint": "Category III funds are more liquid and are held to stricter diversification norms than Cat I/II.",
+    "explanation": "SEBI mandates that a Category III AIF shall not invest more than 10% of its investable funds in a single investee company. For Category I and II, this limit is 25%."
+  },
+  {
+    "id": 1694,
+    "question": "A Category II AIF wants to borrow money to buy more shares of a startup. Is this permitted under SEBI regulations?",
+    "options": [
+      "Yes, up to 2 times the NAV.",
+      "No, Category I and II AIFs are prohibited from borrowing for the purpose of making investments.",
+      "Yes, if the investors approve by 75% vote.",
+      "Only for a period of 1 year."
+    ],
+    "answer": "No, Category I and II AIFs are prohibited from borrowing for the purpose of making investments.",
+    "hint": "Leverage is generally restricted to Category III funds only.",
+    "explanation": "Category I and II AIFs are strictly forbidden from using leverage to fund investments. They can only borrow for temporary liquidity needs (e.g., to pay expenses) for a maximum of 30 days, up to 10% of the corpus."
+  },
+  {
+    "id": 1695,
+    "question": "An AIF Manager intends to launch a 'Social Venture Fund'. This sub-category falls under which AIF classification?",
+    "options": [
+      "Category I",
+      "Category II",
+      "Category III",
+      "It is a standalone category."
+    ],
+    "answer": "Category I",
+    "hint": "Category I includes funds that the government/regulator considers to have a positive impact on the economy or society.",
+    "explanation": "Category I AIFs include Venture Capital Funds, SME Funds, Infrastructure Funds, and Social Venture Funds, as these are seen as providing 'positive spillover' effects."
+  },
+  {
+    "id": 1696,
+    "question": "The 'Minimum Investment' norm of ₹1 Crore is waived for which specific category of individuals associated with the AIF?",
+    "options": [
+      "All employees of the Sponsor.",
+      "Employees or directors of the AIF Manager (subject to a minimum of ₹25 Lakhs).",
+      "Relatives of the Manager.",
+      "High Net Worth Individuals."
+    ],
+    "answer": "Employees or directors of the AIF Manager (subject to a minimum of ₹25 Lakhs).",
+    "hint": "The regulator allows 'internal' stakeholders to invest smaller amounts to ensure alignment.",
+    "explanation": "To ensure 'skin in the game' and alignment of interest, employees and directors of the Manager are allowed to invest with a lower threshold of ₹25 Lakhs instead of the standard ₹1 Crore."
+  },
+  {
+    "id": 1697,
+    "question": "Under the 'Code of Conduct' for AIFs, a Manager must NOT offer any 'Guaranteed Return' to investors. Why is this rule strictly enforced?",
+    "options": [
+      "To prevent AIFs from competing with banks.",
+      "To ensure that investors understand that AIFs are risk-bearing equity/debt investments and not risk-free deposits.",
+      "To reduce the tax liability.",
+      "Because the Manager doesn't want to pay."
+    ],
+    "answer": "To ensure that investors understand that AIFs are risk-bearing equity/debt investments and not risk-free deposits.",
+    "hint": "Alternative investments are inherently risky; guarantees mask the true nature of the product.",
+    "explanation": "SEBI prohibits any assurance or guarantee of returns in AIFs. This is to ensure that the sophisticated investors targeted by these funds are fully aware of the market risks involved in private equity, venture capital, and hedge fund strategies."
+  },
+  {
+    "id": 1698,
+    "question": "What is the maximum number of investors allowed in a single 'Angel Fund' scheme?",
+    "options": [
+      "50",
+      "200",
+      "1000",
+      "Unlimited"
+    ],
+    "answer": "200",
+    "hint": "Angel Funds are smaller, exclusive sub-categories of VCFs.",
+    "explanation": "While a standard AIF scheme can have up to 1000 investors, an Angel Fund scheme is restricted to a maximum of 200 angel investors."
+  },
+  {
+    "id": 1699,
+    "question": "An AIF Manager wants to change the 'Sponsor' of the fund. What is the mandatory regulatory requirement?",
+    "options": [
+      "Prior approval from SEBI.",
+      "Approval from the RBI.",
+      "No approval is needed if the new Sponsor is Indian.",
+      "Approval from 51% of the portfolio companies."
+    ],
+    "answer": "Prior approval from SEBI.",
+    "hint": "Sponsors and Managers are the 'regulated' pillars of the fund; changing them requires the regulator's sign-off.",
+    "explanation": "Any change in control of the Manager or Sponsor, or a change in the entities themselves, requires prior approval from SEBI to ensure the new entities meet the 'Fit and Proper' criteria."
+  },
+  {
+    "id": 1700,
+    "question": "Which document must an AIF Manager provide to every potential investor before they commit capital, containing all material information about the fund?",
+    "options": [
+      "The Annual Report",
+      "The Private Placement Memorandum (PPM)",
+      "The Trust Deed",
+      "The Marketing Pitch Deck"
+    ],
+    "answer": "The Private Placement Memorandum (PPM)",
+    "hint": "It is the primary disclosure document that forms the basis of the legal offer.",
+    "explanation": "The PPM is the most critical document. It contains the investment objective, strategy, fees, risk factors, and legal terms. SEBI requires it to be detailed and filed with the regulator 30 days before any solicitation."
+  }
+]

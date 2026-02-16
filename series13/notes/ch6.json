@@ -1,0 +1,108 @@
+{
+  "course": "NISM Series XIII: Common Derivatives Certification Examination",
+  "unit_number": 6,
+  "unit_name": "Option Trading Strategies",
+  "weightage": "3% (4 Marks)",
+  "overview": "This chapter is about combining multiple options (or options + stocks) to create 'Strategies'. Instead of just buying a Call and hoping for the best, professionals use strategies to limit loss or profit from specific market conditions like 'Volatility' (Speed) or 'Sideways' markets. Although the weightage is low (only ~3-4 questions), these are the most practical tools for a trader.",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Protective Put (The Insurance Strategy)",
+      "basic_meaning": "Buying a Put Option to protect shares you already own.",
+      "detailed_explanation": "Imagine you bought 100 shares of Reliance at ₹2500. You are afraid the price might crash to ₹2000. \nTo protect yourself, you **Buy a Put Option** (Right to Sell) at Strike ₹2400. \n\n* **Scenario A (Price Crashes):** You lose money on shares, but the Put Option makes a profit. The loss is cancelled out.\n* **Scenario B (Price Rises):** You make profit on shares. The Put Option expires worthless (you lose only the small premium).\n\nThis is exactly like Car Insurance. You pay a premium so that if an accident happens, the insurance pays.",
+      "why_this_is_important": "This converts a 'Potentially Unlimited Loss' into a 'Limited Loss'.",
+      "formula": "Max Loss = (Buy Price - Strike Price) + Premium Paid",
+      "formula_explanation": "The maximum you can lose is the 'deductible' plus the insurance cost.",
+      "step_by_step_calculation_example": "**Data:** Buy Stock @ 100. Buy 95 PE @ ₹2.\n**Scenario:** Price crashes to 50.\n**Stock Loss:** $100 - 50 = 50$.\n**Put Profit:** Strike 95 - Price 50 - Premium 2 = $45 - 2 = 43$.\n**Net Loss:** $-50 + 43 = -7$. (Your loss is capped at 7, even if stock goes to 0).",
+      "real_life_indian_example": "Mutual Funds often buy Nifty Puts (Protective Put) to protect their portfolios during election results or war news.",
+      "exam_traps": [
+        "Thinking Protective Put makes money in a flat market. (No, you lose the premium).",
+        "Confusing it with Covered Call."
+      ],
+      "memory_trick": "Protect = Put (P for P). Insurance for your shares."
+    },
+    {
+      "concept": "2. Covered Call (The Rental Income Strategy)",
+      "basic_meaning": "Selling a Call Option against shares you already own to earn extra income.",
+      "detailed_explanation": "You own 100 shares of Infosys at ₹1500. You think the price will stay flat or go up slowly. You **Sell a Call Option** (Strike 1600) and receive ₹20 Premium.\n\n* **Scenario A (Flat Market):** Infosys stays at 1500. You keep the ₹20 premium. (Extra Income).\n* **Scenario B (Small Rise):** Infosys goes to 1590. You keep shares profit + ₹20 premium.\n* **Scenario C (Huge Rise):** Infosys goes to 1800. You are OBLIGATED to sell at 1600. You miss the big profit above 1600.\n\nThis is like renting out your house. You get rent (premium), but if someone offers a huge price for the house, you might have locked yourself in.",
+      "why_this_is_important": "This is the most popular strategy for long-term investors to generate 'passive income' on idle stocks.",
+      "formula": "Max Profit = (Strike - Buy Price) + Premium Received",
+      "formula_explanation": "You profit up to the Strike, plus the rent you collected.",
+      "step_by_step_calculation_example": "**Data:** Buy Stock @ 100. Sell 110 CE @ ₹5.\n**Scenario:** Price flies to 150.\n**Stock Profit:** $150 - 100 = 50$.\n**Call Loss:** Strike 110 - Price 150 + Premium 5 = $-40 + 5 = -35$.\n**Net Profit:** $50 - 35 = 15$. (Your profit is capped).",
+      "real_life_indian_example": "LIC (Life Insurance Corp) holds huge quantities of ITC. They often sell Call Options on ITC to earn extra cash because ITC stock doesn't move much.",
+      "exam_traps": [
+        "Thinking Covered Call protects downside risk. (It offers very little protection - only the premium amount).",
+        "Thinking you can do this without owning shares (That is called 'Naked Call Writing' - dangerous!)."
+      ],
+      "memory_trick": "Covered = I have the shares 'Covering' the risk. Call = I am selling the Call."
+    },
+    {
+      "concept": "3. Straddle (The 'Big Move' Bet)",
+      "basic_meaning": "Buying both a Call and a Put at the SAME Strike Price and SAME Expiry.",
+      "detailed_explanation": "You don't know if the market will go Up or Down, but you are sure it will move **violently** (e.g., Budget Day, Election Results).\n\n* **Action:** Buy ATM Call + Buy ATM Put.\n* **Logic:** If market crashes, Put makes money. If market rockets, Call makes money. The profit from one side must cover the cost of both premiums.\n* **Risk:** If market stays flat (sideways), you lose BOTH premiums. This is the worst case.",
+      "why_this_is_important": "This is a 'Volatility Strategy'. You are betting on speed, not direction.",
+      "formula": "Upper Breakeven = Strike + Total Premium\nLower Breakeven = Strike - Total Premium",
+      "formula_explanation": "Market must move beyond these points for you to make a profit.",
+      "step_by_step_calculation_example": "**Data:** Nifty @ 18000. Buy 18000 CE @ 100. Buy 18000 PE @ 100. Total Cost = 200.\n**Breakeven:**\nUpper: $18000 + 200 = 18200$.\nLower: $18000 - 200 = 17800$.\n**Result:** You only make money if Nifty goes above 18200 or below 17800. If it stays at 18000, you lose ₹200.",
+      "real_life_indian_example": "Traders buy Straddles on Adani stocks before earnings reports because the stock usually jumps 5-10% in either direction.",
+      "exam_traps": [
+        "Buying Straddle in a calm market. (You will lose due to Time Decay).",
+        "Thinking you need to know the direction. (No, direction is irrelevant)."
+      ],
+      "memory_trick": "Straddle = Sitting on a horse with legs on both sides. (Ready for both ways)."
+    },
+    {
+      "concept": "4. Strangle (The Cheaper 'Big Move' Bet)",
+      "basic_meaning": "Buying a Call and a Put at DIFFERENT Strike Prices (OTM).",
+      "detailed_explanation": "Similar to Straddle, but cheaper.\n\n* **Action:** Buy OTM Call (Higher Strike) + Buy OTM Put (Lower Strike).\n* **Logic:** Since OTM options are cheaper, the total cost is less than a Straddle. BUT, the market needs to move **even more** for you to profit.\n* [Image of Strangle Payoff Chart]",
+      "why_this_is_important": "Used when you expect a massive move but don't want to pay expensive ATM premiums.",
+      "formula": "Upper BE = Call Strike + Total Premium\nLower BE = Put Strike - Total Premium",
+      "formula_explanation": "Same as Straddle but wider range.",
+      "step_by_step_calculation_example": "**Data:** Nifty @ 18000. Buy 18200 CE @ 50. Buy 17800 PE @ 50. Total Cost = 100.\n**Breakeven:**\nUpper: $18200 + 100 = 18300$.\nLower: $17800 - 100 = 17700$.\n**Result:** Harder to win than Straddle, but lower loss if you fail.",
+      "real_life_indian_example": "Buying a Strangle on BankNifty on expiry day (Hero or Zero trades).",
+      "exam_traps": [
+        "Confusing Strangle with Straddle. (Straddle = Same Strike. Strangle = Different Strikes).",
+        "Thinking Strangle is safer. (It's cheaper, but lower probability of profit)."
+      ],
+      "memory_trick": "Strangle = Spread legs wider. (Different strikes)."
+    },
+    {
+      "concept": "5. Bull Call Spread (The Conservative Bull)",
+      "basic_meaning": "Buying a Call (to profit) and Selling a higher Call (to reduce cost).",
+      "detailed_explanation": "You are bullish, but you think the upside is limited.\n\n* **Action:** Buy ATM Call (pay premium) + Sell OTM Call (receive premium).\n* **Logic:** The premium you receive helps pay for the Call you bought. It makes the trade cheaper.\n* **Trade-off:** Your profit is capped at the higher strike.",
+      "why_this_is_important": "This is the most professional way to trade. It reduces the 'Breakeven Point', making it easier to win.",
+      "formula": "Max Profit = (Difference in Strikes) - Net Premium Paid",
+      "formula_explanation": "The width of the spread minus what you paid.",
+      "step_by_step_calculation_example": "**Data:** Buy 18000 CE @ 100. Sell 18200 CE @ 40. Net Cost = 60.\n**Max Profit:** Spread (200) - Cost (60) = 140.\n**Max Loss:** Net Cost = 60.\n**Result:** Even if Nifty goes to 20,000, your profit is stuck at 140. But you only risked 60.",
+      "real_life_indian_example": "You think Nifty will go up but face resistance at 18500. You use a spread to profit from the move up to 18500 without paying full price.",
+      "exam_traps": [
+        "Thinking you have unlimited profit. (No, Spreads always have limited profit).",
+        "Thinking you need high margin. (No, spreads have defined risk so margin is lower)."
+      ],
+      "memory_trick": "Spread = Buying one, Selling another. Spreading the risk."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Straddle vs Strangle",
+      "clear_explanation": "1. **Strikes:** Straddle uses SAME strike (ATM). Strangle uses DIFFERENT strikes (OTM).\n2. **Cost:** Straddle is Expensive. Strangle is Cheap.\n3. **Breakeven:** Straddle is easier to breakeven. Strangle needs a huge move."
+    },
+    {
+      "difference_between": "Protective Put vs Covered Call",
+      "clear_explanation": "1. **Goal:** Protective Put = Safety (Insurance). Covered Call = Income (Rent).\n2. **View:** Protective Put = Bullish but scared. Covered Call = Neutral/Mildly Bullish."
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Identify the strategy from the components (e.g., 'What is Long Call + Long Put?'). Answer: Straddle.",
+    "Calculate the Breakeven point for a Straddle.",
+    "Which strategy is used for Income Generation? (Answer: Covered Call).",
+    "Which strategy is used for hedging downside risk? (Answer: Protective Put)."
+  ],
+  "quick_revision_summary": [
+    "Protective Put = Long Stock + Long Put.",
+    "Covered Call = Long Stock + Short Call.",
+    "Straddle = Long Call + Long Put (Same Strike). Bet on Volatility.",
+    "Strangle = Long Call + Long Put (Different Strikes). Cheaper Volatility bet.",
+    "Spread = Buy + Sell. Lowers cost, caps profit.",
+    "Bull Call Spread = Buy Lower Call, Sell Higher Call."
+  ]
+}

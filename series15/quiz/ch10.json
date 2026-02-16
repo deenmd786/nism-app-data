@@ -1,0 +1,652 @@
+[
+  {
+    "id": 10001,
+    "question": "The difference between 'Price' and 'Value' is best described as:",
+    "options": [
+      "Price is what you pay, Value is what you get",
+      "Price is always equal to Value",
+      "Value is what you pay, Price is what you get",
+      "Price and Value are unrelated concepts"
+    ],
+    "answer": "Price is what you pay, Value is what you get",
+    "hint": "Warren Buffett's famous quote.",
+    "explanation": "Price is the amount paid in the market, while Value (Intrinsic Value) is the actual worth of the asset based on its fundamentals."
+  },
+  {
+    "id": 10002,
+    "question": "Which valuation method estimates the intrinsic value of a company based on its future cash flows?",
+    "options": [
+      "Relative Valuation",
+      "Discounted Cash Flow (DCF)",
+      "Technical Analysis",
+      "Asset-based Valuation"
+    ],
+    "answer": "Discounted Cash Flow (DCF)",
+    "hint": "Discounting the future to the present.",
+    "explanation": "DCF analysis values a company by projecting its future cash flows and discounting them back to the present value using a discount rate."
+  },
+  {
+    "id": 10003,
+    "question": "In a DCF model, the rate used to discount future cash flows to the present is called:",
+    "options": [
+      "Inflation Rate",
+      "Discount Rate / Cost of Capital",
+      "Growth Rate",
+      "Tax Rate"
+    ],
+    "answer": "Discount Rate / Cost of Capital",
+    "hint": "The cost of the money.",
+    "explanation": "The Discount Rate reflects the riskiness of the cash flows and the time value of money. It is often the Weighted Average Cost of Capital (WACC)."
+  },
+  {
+    "id": 10004,
+    "question": "What is 'Free Cash Flow to Firm' (FCFF)?",
+    "options": [
+      "Cash flow available to equity shareholders only",
+      "Cash flow available to all capital providers (Debt + Equity)",
+      "Net Profit",
+      "Dividend paid"
+    ],
+    "answer": "Cash flow available to all capital providers (Debt + Equity)",
+    "hint": "To the 'Firm' (everyone).",
+    "explanation": "FCFF is the cash flow available to all funding providers (debt holders and equity holders) after paying operating expenses and investing in capital expenditures."
+  },
+  {
+    "id": 10005,
+    "question": "What is 'Free Cash Flow to Equity' (FCFE)?",
+    "options": [
+      "Cash flow available to debt holders only",
+      "Cash flow available to equity shareholders after paying debt obligations",
+      "EBITDA",
+      "Revenue"
+    ],
+    "answer": "Cash flow available to equity shareholders after paying debt obligations",
+    "hint": "To 'Equity' holders only.",
+    "explanation": "FCFE is the cash flow available to be distributed to equity shareholders after all expenses, reinvestments, and debt repayments are made."
+  },
+  {
+    "id": 10006,
+    "question": "Which discount rate should be used to discount FCFF?",
+    "options": [
+      "Cost of Equity (Ke)",
+      "Weighted Average Cost of Capital (WACC)",
+      "Risk-Free Rate",
+      "Cost of Debt (Kd)"
+    ],
+    "answer": "Weighted Average Cost of Capital (WACC)",
+    "hint": "FCFF belongs to everyone, so use the cost of everyone's capital.",
+    "explanation": "Since FCFF is the cash flow for both debt and equity holders, it must be discounted by the WACC, which represents the cost of both debt and equity."
+  },
+  {
+    "id": 10007,
+    "question": "Which discount rate should be used to discount FCFE?",
+    "options": [
+      "Cost of Equity (Ke)",
+      "Weighted Average Cost of Capital (WACC)",
+      "Cost of Debt",
+      "Inflation Rate"
+    ],
+    "answer": "Cost of Equity (Ke)",
+    "hint": "FCFE belongs to shareholders, so use their expected return.",
+    "explanation": "Since FCFE is the cash flow available only to equity shareholders, it should be discounted by the Cost of Equity (Ke)."
+  },
+  {
+    "id": 10008,
+    "question": "What is 'Terminal Value' in a DCF model?",
+    "options": [
+      "The value of the company at the beginning",
+      "The present value of all future cash flows beyond the projection period",
+      "The liquidation value",
+      "The book value"
+    ],
+    "answer": "The present value of all future cash flows beyond the projection period",
+    "hint": "Value at the 'end' of the projection.",
+    "explanation": "Since companies are assumed to operate indefinitely (Going Concern), Terminal Value captures the value of all cash flows beyond the explicit forecast period (e.g., after year 5 or 10)."
+  },
+  {
+    "id": 10009,
+    "question": "The 'Gordon Growth Model' calculates Terminal Value assuming:",
+    "options": [
+      "Cash flows will stop",
+      "Cash flows will grow at a constant rate forever",
+      "Cash flows will fluctuate wildly",
+      "Cash flows will decrease"
+    ],
+    "answer": "Cash flows will grow at a constant rate forever",
+    "hint": "Perpetual growth.",
+    "explanation": "The Gordon Growth Model assumes that free cash flows will grow at a stable, constant rate (g) into perpetuity."
+  },
+  {
+    "id": 10010,
+    "question": "What is 'Relative Valuation'?",
+    "options": [
+      "Valuing a company by comparing it to similar companies (peers) using multiples",
+      "Calculating intrinsic value using DCF",
+      "Valuing assets based on book value",
+      "Valuing based on relatives' opinion"
+    ],
+    "answer": "Valuing a company by comparing it to similar companies (peers) using multiples",
+    "hint": "Pricing relative to neighbors.",
+    "explanation": "Relative valuation involves valuing a company based on how similar companies are priced in the market, using metrics like P/E or EV/EBITDA."
+  },
+  {
+    "id": 10011,
+    "question": "Which multiple is most suitable for valuing a loss-making high-growth startup?",
+    "options": [
+      "Price-to-Earnings (P/E)",
+      "Price-to-Sales (P/S) or EV/Sales",
+      "Dividend Yield",
+      "Price-to-Book (P/B)"
+    ],
+    "answer": "Price-to-Sales (P/S) or EV/Sales",
+    "hint": "They have no earnings, but they have sales.",
+    "explanation": "Since the company has no earnings (making P/E irrelevant), investors use Sales multiples to value the growth potential."
+  },
+  {
+    "id": 10012,
+    "question": "Which multiple is best for capital-intensive industries (like Steel, Cement, Telecom)?",
+    "options": [
+      "P/E Ratio",
+      "EV/EBITDA",
+      "Price-to-Book",
+      "Dividend Yield"
+    ],
+    "answer": "EV/EBITDA",
+    "hint": "Ignores depreciation and debt structure.",
+    "explanation": "EV/EBITDA is preferred for capital-intensive sectors because it ignores the distortion caused by high depreciation and different debt levels."
+  },
+  {
+    "id": 10013,
+    "question": "Which multiple is best for valuing Banks and Financial Institutions?",
+    "options": [
+      "EV/EBITDA",
+      "Price-to-Book (P/B)",
+      "Price-to-Sales",
+      "PEG Ratio"
+    ],
+    "answer": "Price-to-Book (P/B)",
+    "hint": "Their assets are financial (money).",
+    "explanation": "For banks, most assets and liabilities are financial instruments marked to market. Book value is a good proxy for the true value of the company."
+  },
+  {
+    "id": 10014,
+    "question": "Formula for 'CAPM' (Capital Asset Pricing Model) to calculate Cost of Equity is:",
+    "options": [
+      "Risk Free Rate + Beta * (Market Return - Risk Free Rate)",
+      "Risk Free Rate + Market Return",
+      "Risk Free Rate - Beta",
+      "Market Return / Beta"
+    ],
+    "answer": "Risk Free Rate + Beta * (Market Return - Risk Free Rate)",
+    "hint": "Rf + Risk Premium.",
+    "explanation": "Ke = Rf + β(Rm - Rf). It adds a risk premium (based on Beta) to the risk-free rate."
+  },
+  {
+    "id": 10015,
+    "question": "In CAPM, 'Beta' measures:",
+    "options": [
+      "Total Risk",
+      "Systematic Risk / Market Risk",
+      "Unsystematic Risk",
+      "No Risk"
+    ],
+    "answer": "Systematic Risk / Market Risk",
+    "hint": "Volatility relative to the market.",
+    "explanation": "Beta measures the sensitivity of the stock's returns to the market's returns. Beta > 1 is aggressive; Beta < 1 is defensive."
+  },
+  {
+    "id": 10016,
+    "question": "What is the 'Risk-Free Rate' typically based on?",
+    "options": [
+      "Corporate Bond Yield",
+      "Government Bond (G-Sec) Yield",
+      "Bank FD Rate",
+      "Stock Market Return"
+    ],
+    "answer": "Government Bond (G-Sec) Yield",
+    "hint": "The government doesn't default.",
+    "explanation": "The yield on long-term government bonds (like the 10-year G-Sec) is used as the proxy for the risk-free rate."
+  },
+  {
+    "id": 10017,
+    "question": "What is 'Equity Risk Premium'?",
+    "options": [
+      "The extra return expected from stocks over the risk-free rate",
+      "The insurance premium for equity",
+      "The broker's commission",
+      "The tax on equity"
+    ],
+    "answer": "The extra return expected from stocks over the risk-free rate",
+    "hint": "Why buy risky stocks if you can buy safe bonds?",
+    "explanation": "It is the additional return an investor expects to earn for taking the risk of investing in the stock market versus a risk-free asset."
+  },
+  {
+    "id": 10018,
+    "question": "If a stock has a PEG Ratio (P/E to Growth) of 0.5, it is considered:",
+    "options": [
+      "Overvalued",
+      "Undervalued",
+      "Fairly valued",
+      "Risky"
+    ],
+    "answer": "Undervalued",
+    "hint": "Price is low compared to Growth.",
+    "explanation": "A PEG ratio below 1.0 typically suggests that the stock is undervalued relative to its growth rate."
+  },
+  {
+    "id": 10019,
+    "question": "What is 'Sum-of-the-Parts' (SOTP) valuation?",
+    "options": [
+      "Valuing a conglomerate by valuing each business segment separately and adding them up",
+      "Valuing the sum of all assets",
+      "Valuing the parts of a machine",
+      "Adding the dividends"
+    ],
+    "answer": "Valuing a conglomerate by valuing each business segment separately and adding them up",
+    "hint": "Breaking it down.",
+    "explanation": "SOTP is used for conglomerates (like Reliance or ITC) to value each business unit (e.g., Oil, Retail, Telecom) independently and sum them to get the total value."
+  },
+  {
+    "id": 10020,
+    "question": "What is 'Enterprise Value' (EV)?",
+    "options": [
+      "Market Cap + Debt - Cash",
+      "Market Cap + Cash - Debt",
+      "Market Cap + Assets",
+      "Market Cap only"
+    ],
+    "answer": "Market Cap + Debt - Cash",
+    "hint": "Total takeover cost.",
+    "explanation": "EV represents the theoretical price to acquire the entire company: you pay for the equity, take on the debt, but get to keep the cash."
+  },
+  {
+    "id": 10021,
+    "question": "Which ratio is better for comparing companies with different tax rates?",
+    "options": [
+      "Net Profit Margin",
+      "EBIT Margin",
+      "P/E Ratio",
+      "Dividend Yield"
+    ],
+    "answer": "EBIT Margin",
+    "hint": "Before Tax.",
+    "explanation": "EBIT (Operating Profit) is calculated before taxes, allowing for better comparison of operational efficiency between companies in different tax jurisdictions."
+  },
+  {
+    "id": 10022,
+    "question": "What is 'Trailing P/E'?",
+    "options": [
+      "P/E based on estimated future earnings",
+      "P/E based on past 12 months' earnings",
+      "P/E of the trailing company",
+      "P/E based on dividends"
+    ],
+    "answer": "P/E based on past 12 months' earnings",
+    "hint": "Trailing behind (Past).",
+    "explanation": "Trailing P/E uses the earnings of the last 12 months (TTM - Trailing Twelve Months)."
+  },
+  {
+    "id": 10023,
+    "question": "What is 'Forward P/E'?",
+    "options": [
+      "P/E based on estimated future earnings (next 12 months)",
+      "P/E based on past earnings",
+      "P/E based on book value",
+      "P/E based on sales"
+    ],
+    "answer": "P/E based on estimated future earnings (next 12 months)",
+    "hint": "Looking forward.",
+    "explanation": "Forward P/E uses the projected earnings for the next fiscal year. It is more relevant for decision-making as markets are forward-looking."
+  },
+  {
+    "id": 10024,
+    "question": "If a company has a Cost of Equity of 15% and ROE of 20%, it is:",
+    "options": [
+      "Destroying value",
+      "Creating value",
+      "Neutral",
+      "Bankrupt"
+    ],
+    "answer": "Creating value",
+    "hint": "Earning more than the cost.",
+    "explanation": "If ROE > Cost of Equity, the company is generating returns higher than what shareholders expect, thus creating value (Economic Value Added)."
+  },
+  {
+    "id": 10025,
+    "question": "What is 'Replacement Cost' valuation?",
+    "options": [
+      "Valuing a company based on the cost to replace its assets today",
+      "Valuing based on replacing employees",
+      "Valuing based on replacement warranty",
+      "Valuing based on sales"
+    ],
+    "answer": "Valuing a company based on the cost to replace its assets today",
+    "hint": "Building it from scratch.",
+    "explanation": "It estimates what it would cost to build the company's plant, machinery, and brand from scratch at current market prices."
+  },
+  {
+    "id": 10026,
+    "question": "What is 'Liquidation Value'?",
+    "options": [
+      "Value if the company continues forever",
+      "Value if the company assets are sold off and liabilities paid immediately",
+      "Value of liquid assets only",
+      "Market price"
+    ],
+    "answer": "Value if the company assets are sold off and liabilities paid immediately",
+    "hint": "Closing down sale.",
+    "explanation": "Liquidation value is the estimated amount of money that would remain if all assets were sold and all liabilities settled today. It is usually the floor price."
+  },
+  {
+    "id": 10027,
+    "question": "Which is a limitation of P/E Ratio?",
+    "options": [
+      "It can be manipulated by accounting choices (depreciation, one-offs)",
+      "It is useless for loss-making companies",
+      "It doesn't consider debt",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "hint": "Earnings can be tricky.",
+    "explanation": "P/E relies on 'Earnings', which can be volatile, manipulated, or negative. It also ignores the debt structure."
+  },
+  {
+    "id": 10028,
+    "question": "What is 'Margin of Safety' in valuation?",
+    "options": [
+      "Buying a stock at a price significantly below its intrinsic value",
+      "Buying insurance",
+      "Using a stop loss",
+      "Buying government bonds"
+    ],
+    "answer": "Buying a stock at a price significantly below its intrinsic value",
+    "hint": "Room for error.",
+    "explanation": "It is the difference between the intrinsic value and the market price. Buying with a margin of safety protects the investor against errors in estimation."
+  },
+  {
+    "id": 10029,
+    "question": "If Interest Rates rise, the Intrinsic Value of a stock (DCF value) generally:",
+    "options": [
+      "Increases",
+      "Decreases",
+      "Stays the same",
+      "Doubles"
+    ],
+    "answer": "Decreases",
+    "hint": "Higher discount rate = Lower present value.",
+    "explanation": "When interest rates rise, the Discount Rate (WACC/Ke) increases. Discounting future cash flows at a higher rate reduces their Present Value."
+  },
+  {
+    "id": 10030,
+    "question": "What is 'WACC'?",
+    "options": [
+      "Weighted Average Cost of Capital",
+      "Weighted Asset Capital Cost",
+      "Working Average Cash Cost",
+      "World Average Cost of Capital"
+    ],
+    "answer": "Weighted Average Cost of Capital",
+    "hint": "Average cost of all money.",
+    "explanation": "WACC is the average rate a company expects to pay to finance its assets, weighted by the proportion of debt and equity in its capital structure."
+  },
+  {
+    "id": 10031,
+    "question": "Cost of Debt is usually lower than Cost of Equity because:",
+    "options": [
+      "Debt is safer (senior claim) and interest is tax-deductible",
+      "Banks are generous",
+      "Debt holders vote",
+      "Equity is guaranteed"
+    ],
+    "answer": "Debt is safer (senior claim) and interest is tax-deductible",
+    "hint": "Debt gets paid first.",
+    "explanation": "Lenders have a prior claim on assets (lower risk) and interest payments reduce taxable income (tax shield), making debt cheaper than equity."
+  },
+  {
+    "id": 10032,
+    "question": "The 'Tax Shield' benefit applies to:",
+    "options": [
+      "Dividend payments",
+      "Interest payments on debt",
+      "Principal repayment",
+      "Equity issuance"
+    ],
+    "answer": "Interest payments on debt",
+    "hint": "Interest is an expense.",
+    "explanation": "Interest paid on debt is a tax-deductible expense, which reduces the company's tax bill. Dividends are not tax-deductible."
+  },
+  {
+    "id": 10033,
+    "question": "What is 'Sensitivity Analysis' in valuation?",
+    "options": [
+      "Analyzing the emotional sensitivity of the CEO",
+      "Testing how the valuation changes if key assumptions (growth, margins) change",
+      "Measuring market sensitivity",
+      "None of the above"
+    ],
+    "answer": "Testing how the valuation changes if key assumptions (growth, margins) change",
+    "hint": "What if scenarios.",
+    "explanation": "Sensitivity analysis determines how different values of an independent variable (like growth rate) affect a particular dependent variable (like stock price)."
+  },
+  {
+    "id": 10034,
+    "question": "A company with a high 'Float' (insurance) is valuable because:",
+    "options": [
+      "It floats on water",
+      "It gets free money to invest before paying claims",
+      "It has high inventory",
+      "It has no debt"
+    ],
+    "answer": "It gets free money to invest before paying claims",
+    "hint": "Use money now, pay later.",
+    "explanation": "Float is money held by insurance companies that has not yet been paid out in claims. It can be invested to generate returns."
+  },
+  {
+    "id": 10035,
+    "question": "Which of the following is an 'Asset-Based' valuation method?",
+    "options": [
+      "P/E Ratio",
+      "DCF",
+      "Book Value per Share",
+      "Dividend Discount Model"
+    ],
+    "answer": "Book Value per Share",
+    "hint": "Based on balance sheet assets.",
+    "explanation": "Asset-based valuation focuses on the value of the company's assets (net of liabilities) rather than its earnings power."
+  },
+  {
+    "id": 10036,
+    "question": "The 'Dividend Discount Model' (DDM) values a stock based on:",
+    "options": [
+      "Present value of future dividends",
+      "Present value of free cash flows",
+      "Present value of sales",
+      "Book value"
+    ],
+    "answer": "Present value of future dividends",
+    "hint": "Dividends are the cash flow.",
+    "explanation": "DDM assumes the value of a stock is the present value of all its future dividend payments."
+  },
+  {
+    "id": 10037,
+    "question": "Cyclical companies (like Auto, Steel) often have Low P/E ratios at the Peak of the cycle because:",
+    "options": [
+      "Earnings are abnormally high",
+      "Earnings are low",
+      "Price is zero",
+      "They are bankrupt"
+    ],
+    "answer": "Earnings are abnormally high",
+    "hint": "Denominator (E) is huge.",
+    "explanation": "At the peak of a cycle, earnings are very high, making the P/E look low. This is often a 'value trap' as earnings will fall when the cycle turns."
+  },
+  {
+    "id": 10038,
+    "question": "What is 'Peer Group Comparison'?",
+    "options": [
+      "Comparing a company with its competitors in the same industry",
+      "Comparing with companies in different countries",
+      "Comparing with the government",
+      "Comparing with past performance only"
+    ],
+    "answer": "Comparing a company with its competitors in the same industry",
+    "hint": "Apples to Apples.",
+    "explanation": "It involves comparing valuation multiples of a company with other companies of similar size and business model in the same industry."
+  },
+  {
+    "id": 10039,
+    "question": "If a company has a P/E of 20 and the Industry P/E is 10, it implies:",
+    "options": [
+      "The company is trading at a premium to its peers",
+      "The company is trading at a discount",
+      "The company is making a loss",
+      "The company is cheap"
+    ],
+    "answer": "The company is trading at a premium to its peers",
+    "hint": "It is more expensive.",
+    "explanation": "A higher P/E than the industry average suggests the market expects higher growth or quality from this company, so it trades at a premium."
+  },
+  {
+    "id": 10040,
+    "question": "What is 'Holding Company Discount'?",
+    "options": [
+      "A discount on holding bags",
+      "The market valuing a holding company less than the sum of its investments",
+      "A discount given to shareholders",
+      "A discount on taxes"
+    ],
+    "answer": "The market valuing a holding company less than the sum of its investments",
+    "hint": "The whole is worth less than the parts.",
+    "explanation": "Holding companies often trade at a discount (20-50%) to the value of their underlying assets due to tax inefficiencies, lack of control, and management costs."
+  },
+  {
+    "id": 10041,
+    "question": "Which of the following increases Enterprise Value (EV)?",
+    "options": [
+      "Increase in Cash",
+      "Increase in Debt",
+      "Decrease in Share Price",
+      "Share Buyback"
+    ],
+    "answer": "Increase in Debt",
+    "hint": "EV = Equity + Debt...",
+    "explanation": "Since EV = Market Cap + Debt - Cash, an increase in Debt increases the Enterprise Value (the cost to acquire the firm)."
+  },
+  {
+    "id": 10042,
+    "question": "What is 'Growth at a Reasonable Price' (GARP)?",
+    "options": [
+      "Buying high growth stocks regardless of price",
+      "Buying value stocks with no growth",
+      "Buying stocks with good growth potential but at moderate valuations",
+      "Buying bonds"
+    ],
+    "answer": "Buying stocks with good growth potential but at moderate valuations",
+    "hint": "Best of both worlds (Growth + Value).",
+    "explanation": "GARP investors (like Peter Lynch) look for companies that are growing but are not trading at astronomically high P/E ratios."
+  },
+  {
+    "id": 10043,
+    "question": "When valuing a brand-new Ecommerce company with no profits, which metric is most useful?",
+    "options": [
+      "P/E Ratio",
+      "Dividend Yield",
+      "Gross Merchandise Value (GMV) multiple",
+      "Book Value"
+    ],
+    "answer": "Gross Merchandise Value (GMV) multiple",
+    "hint": "Total sales volume.",
+    "explanation": "For early-stage ecommerce, GMV (total value of goods sold) is a proxy for scale and market share, used for valuation before revenues/profits stabilize."
+  },
+  {
+    "id": 10044,
+    "question": "What is 'Minority Interest'?",
+    "options": [
+      "Interest paid to minors",
+      "The portion of a subsidiary not owned by the parent company",
+      "A small interest rate",
+      "Interest in small companies"
+    ],
+    "answer": "The portion of a subsidiary not owned by the parent company",
+    "hint": "The part you don't own.",
+    "explanation": "If a company owns 80% of a subsidiary, the remaining 20% owned by others is the Minority Interest, recorded as a liability on the consolidated balance sheet."
+  },
+  {
+    "id": 10045,
+    "question": "Which valuation method is most sensitive to the 'Growth Rate' assumption?",
+    "options": [
+      "Asset-based valuation",
+      "DCF (Discounted Cash Flow)",
+      "Book Value",
+      "Liquidation Value"
+    ],
+    "answer": "DCF (Discounted Cash Flow)",
+    "hint": "Compounding growth changes the future massively.",
+    "explanation": "In DCF, a small change in the terminal growth rate assumption can drastically change the final valuation, making it very sensitive."
+  },
+  {
+    "id": 10046,
+    "question": "What is 'Top-Down' Valuation?",
+    "options": [
+      "Valuing the CEO first",
+      "Starting with the Economy, then Sector, then Company",
+      "Starting with the Company first",
+      "Valuing only top companies"
+    ],
+    "answer": "Starting with the Economy, then Sector, then Company",
+    "hint": "Macro to Micro.",
+    "explanation": "Top-Down valuation starts with the macroeconomic outlook, selects promising industries, and then values specific companies within those industries."
+  },
+  {
+    "id": 10047,
+    "question": "What is 'Bottom-Up' Valuation?",
+    "options": [
+      "Picking stocks based on individual company fundamentals irrespective of the sector/economy",
+      "Valuing the economy first",
+      "Valuing small companies only",
+      "Technical analysis"
+    ],
+    "answer": "Picking stocks based on individual company fundamentals irrespective of the sector/economy",
+    "hint": "Stock picking.",
+    "explanation": "Bottom-up focuses on finding good companies with strong valuation, assuming they will perform well over time regardless of macro cycles."
+  },
+  {
+    "id": 10048,
+    "question": "What is 'Intrinsic Value'?",
+    "options": [
+      "The current stock price",
+      "The true, inherent value of the company based on fundamentals",
+      "The target price",
+      "The IPO price"
+    ],
+    "answer": "The true, inherent value of the company based on fundamentals",
+    "hint": "The 'Real' worth.",
+    "explanation": "Intrinsic value is the calculated 'true' value of the asset. The goal of an analyst is to find stocks where Market Price < Intrinsic Value."
+  },
+  {
+    "id": 10049,
+    "question": "If Market Price > Intrinsic Value, the stock is:",
+    "options": [
+      "Undervalued",
+      "Overvalued",
+      "Fairly Valued",
+      "A Buy"
+    ],
+    "answer": "Overvalued",
+    "hint": "Price is higher than worth.",
+    "explanation": "If the market is paying more than what the company is truly worth, the stock is considered overvalued (Sell/Avoid)."
+  },
+  {
+    "id": 10050,
+    "question": "The 'Efficient Market Hypothesis' suggests that:",
+    "options": [
+      "Analysts can easily beat the market",
+      "Market prices already reflect all available information, making valuation futile",
+      "Markets are always wrong",
+      "Technical analysis is the best"
+    ],
+    "answer": "Market prices already reflect all available information, making valuation futile",
+    "hint": "The market knows everything.",
+    "explanation": "EMH argues that since prices reflect all info, it is impossible to consistently find undervalued or overvalued stocks (though many investors disagree)."
+  }
+]

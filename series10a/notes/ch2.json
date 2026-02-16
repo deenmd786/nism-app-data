@@ -1,0 +1,96 @@
+{
+  "course": "NISM Series X-A: Investment Adviser (Level 1) Certification Examination",
+  "unit_number": 2,
+  "unit_name": "Time Value of Money (TVM)",
+  "weightage": "Part of Module 1 (37 Marks). This is the most practical chapter. Expect 5-8 marks specifically on calculations.",
+  "overview": "Time Value of Money (TVM) is the 'heart' of finance. It explains why a Rupee today is worth more than a Rupee tomorrow. For the NISM exam, this chapter is critical because you cannot calculate retirement needs, insurance requirements, or bond prices without understanding these formulas. It connects directly to Chapter 14 (Portfolio Theory) and Chapter 9 (Fixed Income).",
+  
+  "complete_concept_explanation": [
+    {
+      "concept": "1. The Concept of Time Value of Money",
+      "basic_meaning": "Money available now is worth more than the same amount in the future because of its 'earning capacity' (Interest).",
+      "detailed_explanation": "If someone offers you ₹10,000 today or ₹10,000 after one year, you will always pick today. Why? \n1. **Opportunity Cost:** You can invest today's money and earn interest.\n2. **Inflation:** Prices go up, so ₹10,000 will buy fewer goods next year.\n3. **Risk:** There is a chance the person might not pay you after a year.",
+      "why_this_is_important": "In the exam, you need this to compare two different cash flows (e.g., Should I take a lump sum today or a monthly pension?).",
+      "formula": "Not Applicable",
+      "formula_explanation": "Conceptual understanding of 'Interest' as the reward for waiting.",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "In 1990, a 'Dairy Milk' chocolate cost ₹5. Today, the same size might cost ₹40. The value of the currency has dropped. If you kept ₹5 in a cupboard, you lost value. If you put it in a Bank FD, it might have grown to ₹50.",
+      "exam_traps": [
+        "Ignoring the impact of inflation on purchasing power.",
+        "Thinking that 'Value' and 'Amount' are the same thing (₹100 is the amount, but its value changes with time)."
+      ],
+      "memory_trick": "A bird in hand is worth two in the bush. (Money today is certain and can grow)."
+    },
+    {
+      "concept": "2. Future Value (Compounding)",
+      "basic_meaning": "Finding out what a current investment will grow into after a few years.",
+      "detailed_explanation": "Compounding is the process where you earn interest on your principal AND on the interest already earned. It is like a snowball effect. The more time you give it, the faster it grows.",
+      "why_this_is_important": "Essential for calculating how much a client's SIP will be worth at retirement.",
+      "formula": "$$FV = PV \\times (1 + r)^n$$",
+      "formula_explanation": "FV = Future Value, PV = Present Value (Investment), r = rate of interest (decimal), n = number of years.",
+      "step_by_step_calculation_example": "Question: You invest ₹1,00,000 in a Fixed Deposit at 10% interest for 3 years. What is the FV?\n\nStep 1: Identify values. PV = 1,00,000 | r = 0.10 | n = 3.\nStep 2: Formula. $FV = 1,00,000 \\times (1 + 0.10)^3$\nStep 3: Solve bracket. $(1.10)^3 = 1.10 \\times 1.10 \\times 1.10 = 1.331$\nStep 4: Multiply. $1,00,000 \\times 1.331 = ₹1,33,100$.",
+      "real_life_indian_example": "Investing in a Public Provident Fund (PPF). The interest is added back to your balance every year, and next year you earn interest on that new, bigger balance.",
+      "exam_traps": [
+        "Confusing 'Simple Interest' with 'Compound Interest'. NISM always assumes Compounding unless stated otherwise.",
+        "Forgetting to convert percentage to decimal (10% = 0.10)."
+      ],
+      "memory_trick": "Compounding = Adding interest to the pile. (Snowball effect)."
+    },
+    {
+      "concept": "3. Present Value (Discounting)",
+      "basic_meaning": "Finding out the current worth of a future payment.",
+      "detailed_explanation": "Discounting is the reverse of Compounding. If you know you need ₹10 Lakhs in 5 years, how much should you invest today? We 'discount' the future money back to today's value.",
+      "why_this_is_important": "Used to determine the 'Fair Price' of an investment. If an investment costs more than its PV, it is expensive.",
+      "formula": "$$PV = \\frac{FV}{(1 + r)^n}$$",
+      "formula_explanation": "We divide the Future Value by the growth factor to bring it back to today.",
+      "step_by_step_calculation_example": "Question: You need ₹5,00,000 for a car in 2 years. Bank offers 8% interest. How much to invest today?\n\nStep 1: FV = 5,00,000 | r = 0.08 | n = 2.\nStep 2: $PV = 5,00,000 / (1.08)^2$\nStep 3: Solve bracket. $1.08 \\times 1.08 = 1.1664$\nStep 4: Divide. $5,00,000 / 1.1664 = ₹4,28,669$.",
+      "real_life_indian_example": "Buying a 'Zero Coupon Bond'. These bonds don't pay interest. They are sold at a discount (Present Value) and repaid at face value (Future Value).",
+      "exam_traps": [
+        "If the interest rate (r) increases, the Present Value (PV) decreases. This is a very common theory question.",
+        "Using the wrong 'n' (years) if the payment is monthly."
+      ],
+      "memory_trick": "Discounting = Shrinking the future balloon back to today's size."
+    },
+    {
+      "concept": "4. Annuities (Ordinary vs. Due)",
+      "basic_meaning": "A series of equal payments made at fixed intervals.",
+      "detailed_explanation": "When you pay a flat EMI or receive a monthly pension, it is an Annuity.\n1. **Ordinary Annuity:** Payment happens at the END of the period (e.g., Salary, Home Loan EMI).\n2. **Annuity Due:** Payment happens at the BEGINNING of the period (e.g., Monthly Rent, SIP started on 1st of month).",
+      "why_this_is_important": "NISM asks questions about which one results in a higher value. Annuity Due always results in more money because the first payment gets an extra period of interest.",
+      "formula": "Complex (Use Calculator/Tables), but remember the logic.",
+      "formula_explanation": "Annuity Due Value = Ordinary Annuity Value × (1 + r).",
+      "step_by_step_calculation_example": "If you save ₹1,000 at the end of every month for a year at 1% per month:\nOrdinary Annuity FV = ₹12,683.\nIf you save it at the start of every month:\nAnnuity Due FV = $12,683 \\times (1.01) = ₹12,810$.",
+      "real_life_indian_example": "SIP (Systematic Investment Plan) is a classic Annuity. LIC Pension plans are also Annuities.",
+      "exam_traps": [
+        "Assuming all payments are at the end. Look for keywords like 'beginning' or 'start'.",
+        "Confusing Annuity with a Lump sum investment."
+      ],
+      "memory_trick": "Due = 'Do it now' (Start). Ordinary = 'Occurs later' (End)."
+    }
+  ],
+
+  "important_differences": [
+    {
+      "difference_between": "Compounding vs. Discounting",
+      "clear_explanation": "Compounding moves money from Present to Future (Multiplication). Discounting moves money from Future to Present (Division)."
+    },
+    {
+      "difference_between": "Nominal Rate vs. Effective Rate",
+      "clear_explanation": "Nominal is the 'stated' rate (e.g., 12% per year). Effective is what you actually earn if interest is added more than once a year. If a bank compounds quarterly, the Effective Rate is higher than 12%."
+    }
+  ],
+
+  "frequently_asked_exam_areas": [
+    "Numerical: Calculating Future Value of a Lump sum.",
+    "Theory: Relationship between Interest rates and Present Value (Inverse relationship).",
+    "Conceptual: Rule of 72 (How long it takes to double your money: 72 / Interest Rate).",
+    "Identifying if a scenario is an Ordinary Annuity or Annuity Due."
+  ],
+
+  "quick_revision_summary": [
+    "TVM means ₹1 today > ₹1 tomorrow.",
+    "FV formula uses $(1+r)^n$. PV formula divides by it.",
+    "More frequent compounding (Monthly vs Yearly) leads to higher Future Value.",
+    "Rule of 72: If interest is 6%, money doubles in $72/6 = 12$ years.",
+    "Annuity Due > Ordinary Annuity in terms of value."
+  ]
+}

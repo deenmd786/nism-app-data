@@ -1,0 +1,113 @@
+{
+  "course": "NISM Series XIX-C: Alternative Investment Fund Managers Certification Examination",
+  "unit_number": 5,
+  "unit_name": "Introduction to Capital Market Theory",
+  "weightage": "Part of the 3 Marks allocated to Chapter 3, 4 & 5 combined",
+  "overview": "If MPT (Unit 4) was the foundation, Capital Market Theory is the skyscraper built on top of it. While MPT told us how to build a portfolio, Capital Market Theory explains how all investors together determine market prices. It introduces the 'Risk-Free' asset (like a Govt Bond) and the famous CAPM model. For the NISM exam, this chapter explains why you get paid for taking 'Market Risk' but not for taking 'Individual Company Risk'.",
+
+  "complete_concept_explanation": [
+    {
+      "concept": "1. The Risk-Free Asset",
+      "basic_meaning": "An investment where your return is 100% guaranteed.",
+      "detailed_explanation": "In theory, a Risk-Free asset has zero variance (no price movement) and zero risk of default. In India, short-term Government Securities (T-Bills) are considered risk-free because the government can always print more money to pay you back. \n\nIn Capital Market Theory, we assume every investor can lend or borrow money at this Risk-Free Rate ($R_f$).",
+      "why_this_is_important": "It acts as the 'Base Rate'. If a Bank FD gives 7% (safe), why would you invest in a risky AIF for 7%? You only take risk if you get a 'Premium' above this $R_f$.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "A 91-day Treasury Bill (T-Bill) issued by the RBI is the closest thing to a Risk-Free asset in the Indian market.",
+      "exam_traps": [
+        "Thinking a Bank FD is 'Risk-Free'. While very safe, banks can technically fail (though rare in India). Only Govt Securities are theoretically risk-free.",
+        "Assuming the Risk-Free rate is 0%. It is usually around the inflation rate or higher (e.g., 6%)."
+      ],
+      "memory_trick": "Risk-Free = The 'No-Brainer' Profit."
+    },
+    {
+      "concept": "2. The Capital Market Line (CML)",
+      "basic_meaning": "The updated 'Efficient Frontier' that includes risk-free lending and borrowing.",
+      "detailed_explanation": "In Unit 4, the Efficient Frontier was just a curve of risky stocks. Now, if you draw a straight line starting from the Risk-Free Rate ($R_f$) and make it touch the 'Efficient Frontier' curve, you get the CML.\n\n* **The Tangency Point:** The point where the line touches the curve is the **Market Portfolio** (containing all risky assets).\n* **The Line:** Represents all combinations of the Risk-Free asset and the Market Portfolio. Investors can either be 'Lenders' (safe) or 'Borrowers' (taking extra risk to get extra return).",
+      "why_this_is_important": "It shows that the best strategy for any investor is to just hold a mix of the Market Portfolio (like a Nifty 50 ETF) and Risk-Free Cash.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "If you have ₹100, putting ₹50 in a T-Bill and ₹50 in a Nifty Index Fund is a position on the CML.",
+      "exam_traps": [
+        "Confusing CML with SML (which we'll cover next). CML is for **Total Risk** (Standard Deviation) and **Portfolios** only.",
+        "Thinking CML applies to individual stocks. It only applies to efficient portfolios."
+      ],
+      "memory_trick": "CML = Curve + Risk-Free Straight Line."
+    },
+    
+    {
+      "concept": "3. Systematic vs. Unsystematic Risk (Recap)",
+      "basic_meaning": "The market only rewards you for the risk you *cannot* avoid.",
+      "detailed_explanation": "Capital Market Theory says that because 'Unsystematic Risk' (company-specific problems) can be removed for FREE by diversifying, the market will NOT pay you for taking it. \n\n* **Systematic Risk (Beta):** The risk of the whole market (War, Interest rates). You CANNOT avoid this. Therefore, the market gives you a 'Risk Premium' for bearing this.",
+      "why_this_is_important": "This justifies why AIF managers focus on Beta management and why diversification is a 'must-have', not an option.",
+      "formula": "Total Risk = Systematic Risk + Unsystematic Risk",
+      "formula_explanation": "Total risk is the sum of market-wide risks and specific company risks.",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "If you only buy Yes Bank shares and it crashes, the market won't pity you because you could have easily diversified into 10 other banks. But if the whole NSE crashes because of a global pandemic, that is Systematic Risk.",
+      "exam_traps": [
+        "The most famous trap: 'Does the market reward you for total risk?' Answer: **No**, only for Systematic Risk (Beta).",
+        "Thinking diversification reduces Systematic Risk. It only reduces Unsystematic Risk."
+      ],
+      "memory_trick": "Systematic = System-wide (Unavoidable). Unsystematic = Unique (Avoidable)."
+    },
+    {
+      "concept": "4. Capital Asset Pricing Model (CAPM)",
+      "basic_meaning": "A formula to calculate the 'Fair Return' of a stock based on its risk.",
+      "detailed_explanation": "CAPM is the most famous model in finance. it says the expected return of an asset depends on: \n1. Time value of money (Risk-Free Rate).\n2. Reward for taking market risk (Beta).\n\n**Beta ($\beta$):** Measures how much a stock moves relative to the market. \n* $\beta = 1$: Moves exactly with the market.\n* $\beta > 1$: 'Aggressive' (Moves more than the market).\n* $\beta < 1$: 'Defensive' (Moves less than the market).",
+      "why_this_is_important": "AIF managers use CAPM to see if a startup or stock is 'Cheap' or 'Expensive' compared to its risk level.",
+      "formula": "Expected Return = R_f + \beta \times (R_m - R_f)",
+      "formula_explanation": "Expected Return = Risk-Free Rate + [Beta × (Market Return - Risk-Free Rate)]. The part in the bracket is called the 'Market Risk Premium'.",
+      "step_by_step_calculation_example": "Step 1: Risk-Free Rate ($R_f$) = 6%.\nStep 2: Expected Market Return ($R_m$) = 12%.\nStep 3: Stock Beta ($\beta$) = 1.5.\nStep 4: Expected Return = 6% + [1.5 × (12% - 6%)]\nStep 5: Calculation = 6% + [1.5 × 6%] = 6% + 9% = 15%.\nThis stock *should* give 15% return to justify its risk.",
+      "real_life_indian_example": "High-growth tech startups in India often have a high Beta (e.g., 1.8), meaning they crash harder in a bad market but fly higher in a good one.",
+      "exam_traps": [
+        "Confusing Beta with Standard Deviation. Standard Deviation = Total Risk; Beta = Systematic Risk only.",
+        "Using the wrong $R_f$ or $R_m$ in the formula. Read the question carefully!"
+      ],
+      "memory_trick": "CAPM = Base Reward + (Riskiness × Market Bonus)."
+    },
+    {
+      "concept": "5. The Security Market Line (SML)",
+      "basic_meaning": "The visual version of CAPM.",
+      "detailed_explanation": "SML is a graph where the X-axis is **Beta** and the Y-axis is **Expected Return**. \n* Unlike CML (which is for portfolios), SML works for **Individual Stocks**.\n* **Undervalued:** If a stock's actual return is *above* the SML, it is a bargain (Buy!).\n* **Overvalued:** If a stock's actual return is *below* the SML, it is too expensive (Sell!).",
+      "why_this_is_important": "AIF managers look for 'Alpha' (the distance above the SML).",
+      "formula": "Same as CAPM",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "If CAPM says a stock should give 15% (on SML), but you find a stock giving 18% with the same risk, it is 'Above the SML' and a great investment.",
+      "exam_traps": [
+        "Thinking SML uses Standard Deviation. No, it uses **Beta**.",
+        "Thinking SML only applies to portfolios. No, it applies to **any** security."
+      ],
+      "memory_trick": "SML = Single Stocks; CML = Combined Portfolios."
+    }
+  ],
+
+  "important_differences": [
+    {
+      "difference_between": "CML vs. SML",
+      "clear_explanation": "**CML (Capital Market Line):** Uses Standard Deviation (Total Risk). Only for efficient portfolios. Tells you how to mix cash and the market. \n**SML (Security Market Line):** Uses Beta (Systematic Risk). For individual stocks and portfolios. Tells you the 'Fair Price' of risk."
+    },
+    {
+      "difference_between": "Lending vs. Borrowing Portfolio",
+      "clear_explanation": "**Lending:** You put some money in $R_f$ (Govt Bonds) and some in the Market. You are low risk. \n**Borrowing (Leveraged):** You borrow money at $R_f$ to buy *more* of the Market. You are high risk (common in Hedge Funds)."
+    }
+  ],
+
+  "frequently_asked_exam_areas": [
+    "Numerical on CAPM formula (Very likely).",
+    "Identifying Beta values (What does $\beta > 1$ mean?).",
+    "Difference between CML and SML (The risk measure used).",
+    "The concept that the market only rewards Systematic Risk."
+  ],
+
+  "quick_revision_summary": [
+    "Risk-Free rate is the return on Govt T-Bills.",
+    "Beta measures Systematic Risk (Market Risk).",
+    "CAPM gives the required return: $R_f + \beta(R_m - R_f)$.",
+    "Diversification only removes Unsystematic Risk.",
+    "The SML is the graph of the CAPM formula.",
+    "Alpha is the return earned above what CAPM predicts."
+  ]
+}

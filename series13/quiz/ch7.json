@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1601,
+    "question": "What is the primary function of the 'Trading System' (e.g., NEAT)?",
+    "options": [
+      "To match buy and sell orders automatically",
+      "To guarantee settlement",
+      "To manage risk",
+      "To issue new shares"
+    ],
+    "answer": "To match buy and sell orders automatically",
+    "hint": "Matching engine.",
+    "explanation": "The trading system (like NSE's NEAT) is an automated screen-based system that matches buy and sell orders based on price-time priority."
+  },
+  {
+    "id": 1602,
+    "question": "Who is a 'Trading Member' (TM)?",
+    "options": [
+      "A member of the stock exchange who can trade on their own account or for clients",
+      "A member of the clearing corporation only",
+      "An investor",
+      "A regulator"
+    ],
+    "answer": "A member of the stock exchange who can trade on their own account or for clients",
+    "hint": "They execute trades.",
+    "explanation": "A Trading Member (Stock Broker) has the right to execute trades on the exchange platform but may or may not have clearing rights."
+  },
+  {
+    "id": 1603,
+    "question": "Who is a 'Clearing Member' (CM)?",
+    "options": [
+      "A member responsible for settling trades and meeting financial obligations",
+      "A member who only trades",
+      "A retail client",
+      "A mutual fund"
+    ],
+    "answer": "A member responsible for settling trades and meeting financial obligations",
+    "hint": "They clear the mess.",
+    "explanation": "Clearing Members are responsible for settling the trades executed by Trading Members. They pay margins and settle funds/securities with the Clearing Corporation."
+  },
+  {
+    "id": 1604,
+    "question": "A 'Self-Clearing Member' (SCM) can clear trades for:",
+    "options": [
+      "Themselves and their clients only",
+      "Any trading member",
+      "Only for foreign investors",
+      "Only for mutual funds"
+    ],
+    "answer": "Themselves and their clients only",
+    "hint": "Self means limited scope.",
+    "explanation": "SCMs can clear and settle trades executed by themselves on their own account or on behalf of their clients, but not for other trading members."
+  },
+  {
+    "id": 1605,
+    "question": "A 'Professional Clearing Member' (PCM) can clear trades for:",
+    "options": [
+      "Any Trading Member (TM) but cannot trade themselves",
+      "Only themselves",
+      "Only retail clients",
+      "Only government bonds"
+    ],
+    "answer": "Any Trading Member (TM) but cannot trade themselves",
+    "hint": "Purely clearing business.",
+    "explanation": "PCMs (usually banks/custodians) do not trade but provide clearing and settlement services to other Trading Members."
+  },
+  {
+    "id": 1606,
+    "question": "Which entity acts as the 'Central Counterparty' (CCP) for all trades?",
+    "options": [
+      "Stock Exchange",
+      "Clearing Corporation (e.g., NCL/ICCL)",
+      "SEBI",
+      "RBI"
+    ],
+    "answer": "Clearing Corporation (e.g., NCL/ICCL)",
+    "hint": "The guarantor.",
+    "explanation": "The Clearing Corporation (like NSE Clearing Ltd) interposes itself between the buyer and seller, becoming the legal counterparty to guarantee settlement."
+  },
+  {
+    "id": 1607,
+    "question": "The process where the Clearing Corporation replaces the original buyer and seller is called:",
+    "options": [
+      "Novation",
+      "Arbitration",
+      "Allocation",
+      "Estimation"
+    ],
+    "answer": "Novation",
+    "hint": "New contract.",
+    "explanation": "Novation is the legal act of replacing one party in a contract with another (the CCP), ensuring that if one defaults, the other is protected."
+  },
+  {
+    "id": 1608,
+    "question": "Mark-to-Market (MTM) settlement happens:",
+    "options": [
+      "Daily",
+      "Weekly",
+      "Monthly",
+      "Yearly"
+    ],
+    "answer": "Daily",
+    "hint": "Every single day.",
+    "explanation": "Futures and Options profits/losses are calculated and settled (credited/debited) on a daily basis."
+  },
+  {
+    "id": 1609,
+    "question": "Final Settlement of Equity Futures in India is:",
+    "options": [
+      "Cash Settled",
+      "Physical Delivery (for Stocks) and Cash (for Indices)",
+      "Always Physical",
+      "Always Cash"
+    ],
+    "answer": "Physical Delivery (for Stocks) and Cash (for Indices)",
+    "hint": "Stocks are real assets.",
+    "explanation": "Since Oct 2019, Stock Futures & Options are physically settled (delivery of shares), while Index Derivatives remain cash-settled."
+  },
+  {
+    "id": 1610,
+    "question": "Which margin is collected upfront before a trade is executed?",
+    "options": [
+      "Initial Margin (SPAN + Exposure)",
+      "MTM Margin",
+      "Delivery Margin",
+      "Profit Margin"
+    ],
+    "answer": "Initial Margin (SPAN + Exposure)",
+    "hint": "Entry ticket.",
+    "explanation": "To initiate a position, the trader must deposit the Initial Margin (comprising SPAN margin and Exposure margin)."
+  },
+  {
+    "id": 1611,
+    "question": "SPAN Margin is calculated based on:",
+    "options": [
+      "Worst case portfolio loss (VaR)",
+      "Fixed percentage (e.g., 10%)",
+      "Broker's mood",
+      "Market capitalization"
+    ],
+    "answer": "Worst case portfolio loss (VaR)",
+    "hint": "Standard Portfolio Analysis of Risk.",
+    "explanation": "SPAN (Standard Portfolio Analysis of Risk) calculates the maximum possible loss a portfolio might suffer under various market scenarios."
+  },
+  {
+    "id": 1612,
+    "question": "Exposure Margin is charged over and above SPAN margin to cover:",
+    "options": [
+      "Extreme 'Tail' risks (Black Swan events)",
+      "Daily volatility",
+      "Brokerage fees",
+      "Taxes"
+    ],
+    "answer": "Extreme 'Tail' risks (Black Swan events)",
+    "hint": "Extra buffer.",
+    "explanation": "Exposure margin acts as a second layer of defense against extreme market movements that SPAN might not fully cover."
+  },
+  {
+    "id": 1613,
+    "question": "Premium Margin is paid by:",
+    "options": [
+      "Option Buyers",
+      "Option Sellers",
+      "Futures Traders",
+      "Brokers"
+    ],
+    "answer": "Option Buyers",
+    "hint": "Pay for the right.",
+    "explanation": "Option buyers must pay the full premium amount upfront. This is often referred to as Premium Margin in the clearing system."
+  },
+  {
+    "id": 1614,
+    "question": "Assignment Margin is applicable on:",
+    "options": [
+      "Short Option positions near expiry",
+      "Long Futures",
+      "Short Futures",
+      "Intraday trades"
+    ],
+    "answer": "Short Option positions near expiry",
+    "hint": "Risk of being assigned.",
+    "explanation": "Towards expiry, short option positions that are ITM face the risk of assignment (delivery obligation), so an additional Assignment Margin is levied."
+  },
+  {
+    "id": 1615,
+    "question": "Client Margin Reporting to the Exchange must be done:",
+    "options": [
+      "Daily",
+      "Weekly",
+      "Monthly",
+      "Never"
+    ],
+    "answer": "Daily",
+    "hint": "Strict compliance.",
+    "explanation": "Trading/Clearing Members must report the margins collected from their clients to the Clearing Corporation on a daily basis to ensure compliance."
+  },
+  {
+    "id": 1616,
+    "question": "If a client fails to pay MTM loss, the broker can:",
+    "options": [
+      "Square off the position",
+      "Wait indefinitely",
+      "Pay from their own pocket",
+      "File a police complaint"
+    ],
+    "answer": "Square off the position",
+    "hint": "Risk control.",
+    "explanation": "If a client defaults on margin calls or MTM losses, the broker has the right to close (square off) the client's open positions to prevent further loss."
+  },
+  {
+    "id": 1617,
+    "question": "The 'Position Limit' for a Client in Index Futures is generally:",
+    "options": [
+      "5% of Total Open Interest or a fixed absolute number",
+      "Unlimited",
+      "100 contracts",
+      "Depends on bank balance"
+    ],
+    "answer": "5% of Total Open Interest or a fixed absolute number",
+    "hint": "To prevent cornering.",
+    "explanation": "Regulators impose limits (e.g., 5% of total OI) to prevent a single client from controlling or manipulating the market."
+  },
+  {
+    "id": 1618,
+    "question": "Which order type is executed immediately or cancelled if not executed?",
+    "options": [
+      "IOC (Immediate or Cancel)",
+      "Limit Order",
+      "Stop Loss Order",
+      "GTC (Good Till Cancelled)"
+    ],
+    "answer": "IOC (Immediate or Cancel)",
+    "hint": "Now or never.",
+    "explanation": "An IOC order attempts to execute immediately. Any portion not filled instantly is cancelled."
+  },
+  {
+    "id": 1619,
+    "question": "A 'Stop Loss Market' order becomes a _____ order once the trigger price is hit.",
+    "options": [
+      "Market",
+      "Limit",
+      "IOC",
+      "Frozen"
+    ],
+    "answer": "Market",
+    "hint": "Get out at any price.",
+    "explanation": "Once the trigger price is crossed, a SL-M order converts into a Market Order and executes at the best available price."
+  },
+  {
+    "id": 1620,
+    "question": "What is 'Short Reporting' of margin?",
+    "options": [
+      "Reporting less margin collection than actual",
+      "Reporting more margin collection than actual",
+      "Reporting trades late",
+      "Short selling"
+    ],
+    "answer": "Reporting less margin collection than actual",
+    "hint": "A violation.",
+    "explanation": "Short reporting occurs when a broker collects less margin from a client than required but reports to the exchange that they collected the full amount (or vice versa, failing to report shortfalls)."
+  },
+  {
+    "id": 1621,
+    "question": "The 'Settlement Guarantee Fund' (SGF) is maintained by:",
+    "options": [
+      "Clearing Corporation",
+      "SEBI",
+      "RBI",
+      "Individual Brokers"
+    ],
+    "answer": "Clearing Corporation",
+    "hint": "Emergency fund.",
+    "explanation": "The SGF is a corpus maintained by the Clearing Corporation to ensure settlement in case a Clearing Member defaults."
+  },
+  {
+    "id": 1622,
+    "question": "Corporate Actions like Splits and Bonuses result in adjustments to:",
+    "options": [
+      "Strike Price and Lot Size",
+      "Only Strike Price",
+      "Only Lot Size",
+      "Nothing"
+    ],
+    "answer": "Strike Price and Lot Size",
+    "hint": "To keep value constant.",
+    "explanation": "To ensure the contract value remains neutral, the exchange adjusts both the Strike Price (lowered) and Lot Size (increased) proportionally."
+  },
+  {
+    "id": 1623,
+    "question": "If a company declares a dividend of 10% (Face Value 10), the adjustment factor is applied only if:",
+    "options": [
+      "The dividend is 'Extraordinary' (usually > 2% or 5% of market price)",
+      "Any dividend is declared",
+      "Dividend is paid in cash",
+      "Dividend is tax-free"
+    ],
+    "answer": "The dividend is 'Extraordinary' (usually > 2% or 5% of market price)",
+    "hint": "Small dividends are ignored.",
+    "explanation": "Ordinary dividends (small yield) are not adjusted for. Only extraordinary dividends (typically > 2% of market value) trigger an adjustment in futures/options."
+  },
+  {
+    "id": 1624,
+    "question": "Trading hours for Equity Derivatives in India typically are:",
+    "options": [
+      "9:15 AM to 3:30 PM",
+      "9:00 AM to 5:00 PM",
+      "10:00 AM to 4:00 PM",
+      "24 hours"
+    ],
+    "answer": "9:15 AM to 3:30 PM",
+    "hint": "Same as cash market.",
+    "explanation": "The F&O segment operates from 9:15 AM to 3:30 PM, aligning with the Cash Market."
+  },
+  {
+    "id": 1625,
+    "question": "The 'Client Code' is mandatory for:",
+    "options": [
+      "Every order entry",
+      "Only institutional trades",
+      "Only large trades",
+      "Only offline trades"
+    ],
+    "answer": "Every order entry",
+    "hint": "KYC linkage.",
+    "explanation": "To map trades to specific investors (UCC - Unique Client Code), the client code must be entered at the time of order placement."
+  },
+  {
+    "id": 1626,
+    "question": "Penalty for 'Margin Shortfall' is levied on:",
+    "options": [
+      "The Clearing Member / Trading Member",
+      "The Exchange",
+      "The SEBI",
+      "The Bank"
+    ],
+    "answer": "The Clearing Member / Trading Member",
+    "hint": "They are responsible for collection.",
+    "explanation": "If a broker fails to collect adequate margin from the client, the Exchange levies a penalty on the broker (Member)."
+  },
+  {
+    "id": 1627,
+    "question": "What is 'Netting' in clearing?",
+    "options": [
+      "Offsetting buy and sell positions to determine net obligation",
+      "Catching fish",
+      "Connecting to internet",
+      "Calculating gross value"
+    ],
+    "answer": "Offsetting buy and sell positions to determine net obligation",
+    "hint": "Plus minus equals net.",
+    "explanation": "Netting involves calculating the difference between total buy and total sell quantity for each contract to find the final amount to be settled."
+  },
+  {
+    "id": 1628,
+    "question": "Inter-operability between Clearing Corporations allows:",
+    "options": [
+      "Trading on one exchange and clearing on another",
+      "Trading without money",
+      "Trading globally",
+      "Clearing without margin"
+    ],
+    "answer": "Trading on one exchange and clearing on another",
+    "hint": "Freedom of choice.",
+    "explanation": "Inter-operability allows market participants to consolidate their clearing and settlement across different exchanges (e.g., NSE and BSE) through a single Clearing Corporation."
+  },
+  {
+    "id": 1629,
+    "question": "STT (Securities Transaction Tax) is applicable on:",
+    "options": [
+      "Sell side of Futures and Options",
+      "Buy side only",
+      "Both Buy and Sell",
+      "Neither"
+    ],
+    "answer": "Sell side of Futures and Options",
+    "hint": "Sellers pay usually.",
+    "explanation": "In derivatives, STT is typically charged only on the Sell side of the transaction (and on exercise of options)."
+  },
+  {
+    "id": 1630,
+    "question": "The 'Price Band' (Circuit Limits) for F&O stocks is usually:",
+    "options": [
+      "Flexible (Dynamic)",
+      "Fixed at 5%",
+      "Fixed at 20%",
+      "None"
+    ],
+    "answer": "Flexible (Dynamic)",
+    "hint": "They relax it if hit.",
+    "explanation": "F&O stocks have dynamic price bands (e.g., initially 10%). If the limit is hit, it is relaxed/expanded after a cooling period to allow trading to continue."
+  },
+  {
+    "id": 1631,
+    "question": "A 'Custodial Participant' (CP) settles trades through:",
+    "options": [
+      "A Clearing Member (PCM)",
+      "Directly with Exchange",
+      "The Broker",
+      "The Bank"
+    ],
+    "answer": "A Clearing Member (PCM)",
+    "hint": "Institutions use custodians.",
+    "explanation": "Large institutions (CPs) execute trades via brokers but settle them through their Clearing Member (Custodian)."
+  },
+  {
+    "id": 1632,
+    "question": "If a contract is 'Physically Settled', the deliverable obligation is determined by:",
+    "options": [
+      "Net open position at expiry",
+      "Gross open position",
+      "Trading volume",
+      "Random selection"
+    ],
+    "answer": "Net open position at expiry",
+    "hint": "What's left open.",
+    "explanation": "Only the net open position remaining after expiry (unclosed contracts) results in a physical delivery obligation."
+  },
+  {
+    "id": 1633,
+    "question": "When does 'Early Pay-in' of funds/securities help?",
+    "options": [
+      "It reduces margin requirements",
+      "It increases brokerage",
+      "It delays settlement",
+      "It avoids taxes"
+    ],
+    "answer": "It reduces margin requirements",
+    "hint": "You paid early, so no need for margin.",
+    "explanation": "If a member does an early pay-in of funds or securities, the clearing corporation releases the margin blocked against that position."
+  },
+  {
+    "id": 1634,
+    "question": "What is 'Give-up' and 'Take-up'?",
+    "options": [
+      "Transferring a trade from Trading Member to Clearing Member",
+      "Quitting trading",
+      "Giving money to charity",
+      "Taking a loan"
+    ],
+    "answer": "Transferring a trade from Trading Member to Clearing Member",
+    "hint": "Handing over responsibility.",
+    "explanation": "A Trading Member 'gives up' the trade details to a Clearing Member (Custodian), who 'takes up' the trade for settlement."
+  },
+  {
+    "id": 1635,
+    "question": "Which of these is NOT a risk management measure?",
+    "options": [
+      "Margins",
+      "Position Limits",
+      "Online Monitoring",
+      "Providing Tips"
+    ],
+    "answer": "Providing Tips",
+    "hint": "Advice isn't control.",
+    "explanation": "Providing trading tips is not a risk management function of the exchange/clearing corp. Margins, limits, and monitoring are."
+  },
+  {
+    "id": 1636,
+    "question": "The 'Contract Note' must be issued by the broker within:",
+    "options": [
+      "24 hours of the trade",
+      "48 hours",
+      "1 week",
+      "1 month"
+    ],
+    "answer": "24 hours of the trade",
+    "hint": "End of day processing.",
+    "explanation": "Brokers are legally required to issue a digital or physical contract note to the client within 24 hours of trade execution."
+  },
+  {
+    "id": 1637,
+    "question": "Unique Client Code (UCC) details must be uploaded to the Exchange:",
+    "options": [
+      "Before the client starts trading",
+      "After the first trade",
+      "At the end of the year",
+      "Only for profit trades"
+    ],
+    "answer": "Before the client starts trading",
+    "hint": "KYC first.",
+    "explanation": "Clients cannot trade until their KYC and UCC details are registered and uploaded to the Exchange database."
+  },
+  {
+    "id": 1638,
+    "question": "Cross-margining benefit is available between:",
+    "options": [
+      "Cash and Derivatives segments",
+      "Two different brokers",
+      "NSE and BSE",
+      "Equity and Commodity"
+    ],
+    "answer": "Cash and Derivatives segments",
+    "hint": "Offsetting risk across segments.",
+    "explanation": "If a client has offsetting positions (e.g., Long Stock in Cash, Short Future in Derivatives), cross-margining reduces the total margin requirement."
+  },
+  {
+    "id": 1639,
+    "question": "The Core Settlement Guarantee Fund (Core SGF) is primarily funded by:",
+    "options": [
+      "Contribution from Exchange, Clearing Corp, and Members",
+      "Government Grants",
+      "World Bank",
+      "Retail Investors"
+    ],
+    "answer": "Contribution from Exchange, Clearing Corp, and Members",
+    "hint": "Industry pool.",
+    "explanation": "The SGF is built from contributions by the Exchange, Clearing Corporation, and Clearing Members to handle default risks."
+  },
+  {
+    "id": 1640,
+    "question": "A trade executed at a price far away from the market price (Fat Finger error) can be:",
+    "options": [
+      "Annulled (Cancelled) by the Exchange",
+      "Never cancelled",
+      "Accepted as valid always",
+      "Paid by the government"
+    ],
+    "answer": "Annulled (Cancelled) by the Exchange",
+    "hint": "Trade annulment policy.",
+    "explanation": "In case of erroneous trades causing material loss, the Exchange has the power to annul (cancel) the trade under specific guidelines."
+  },
+  {
+    "id": 1641,
+    "question": "Who calculates the Daily Settlement Price?",
+    "options": [
+      "The Clearing Corporation",
+      "The Broker",
+      "The Media",
+      "The Trader"
+    ],
+    "answer": "The Clearing Corporation",
+    "hint": "Official closing price.",
+    "explanation": "The Clearing Corporation determines the settlement price (usually closing weighted average) to calculate MTM."
+  },
+  {
+    "id": 1642,
+    "question": "If an Option is exercised, the assigned writer is selected on a:",
+    "options": [
+      "Random basis",
+      "First in First Out basis",
+      "Last in First Out basis",
+      "Highest volume basis"
+    ],
+    "answer": "Random basis",
+    "hint": "Fairness.",
+    "explanation": "The Clearing Corporation uses a random algorithm to assign the exercise obligation to open short positions."
+  },
+  {
+    "id": 1643,
+    "question": "SEBI's risk management framework aims to:",
+    "options": [
+      "Protect market integrity and investors",
+      "Ensure brokers make profit",
+      "Increase tax revenue",
+      "Stop trading completely"
+    ],
+    "answer": "Protect market integrity and investors",
+    "hint": "Safety first.",
+    "explanation": "The primary goal is to prevent systemic failure and protect investor interests."
+  },
+  {
+    "id": 1644,
+    "question": "Can a Trading Member accept Cash from a client for margin?",
+    "options": [
+      "No, only Cheque/DD/Bank Transfer",
+      "Yes, up to 2 Lakhs",
+      "Yes, unlimited",
+      "Yes, if no receipt is given"
+    ],
+    "answer": "No, only Cheque/DD/Bank Transfer",
+    "hint": "Digital trail is mandatory.",
+    "explanation": "SEBI regulations strictly prohibit accepting cash for securities transactions. All payments must be through banking channels."
+  },
+  {
+    "id": 1645,
+    "question": "What is the 'Market Wide Position Limit' (MWPL)?",
+    "options": [
+      "Maximum OI allowed in a stock across all members",
+      "Maximum OI for one broker",
+      "Maximum trading hours",
+      "Maximum price"
+    ],
+    "answer": "Maximum OI allowed in a stock across all members",
+    "hint": "Total market cap limit.",
+    "explanation": "MWPL is the cap on the total Open Interest for a specific stock, usually set at 20% of the non-promoter holding."
+  },
+  {
+    "id": 1646,
+    "question": "If a stock crosses 95% of its MWPL, it enters a:",
+    "options": [
+      "Ban Period",
+      "Boom Period",
+      "Bonus Period",
+      "Bankruptcy"
+    ],
+    "answer": "Ban Period",
+    "hint": "No new positions.",
+    "explanation": "When MWPL hits 95%, the stock enters a Ban Period where no new positions can be created (only squaring off is allowed) until OI drops below 80%."
+  },
+  {
+    "id": 1647,
+    "question": "Which file format is typically used for trade data download by brokers?",
+    "options": [
+      "CSV / Text",
+      "MP3",
+      "JPG",
+      "EXE"
+    ],
+    "answer": "CSV / Text",
+    "hint": "Data file.",
+    "explanation": "Trade files (like trade.txt) are simple text/CSV files used by back-office software."
+  },
+  {
+    "id": 1648,
+    "question": "Who regulates the Clearing Corporations in India?",
+    "options": [
+      "SEBI",
+      "RBI",
+      "Ministry of Corporate Affairs",
+      "None"
+    ],
+    "answer": "SEBI",
+    "hint": "Securities regulator.",
+    "explanation": "SEBI regulates all intermediaries in the securities market, including Clearing Corporations."
+  },
+  {
+    "id": 1649,
+    "question": "Collateral for margin can be deposited in the form of:",
+    "options": [
+      "Cash, Fixed Deposits (FDR), and Approved Securities",
+      "Real Estate deeds",
+      "Personal Jewelry",
+      "Vehicle RC"
+    ],
+    "answer": "Cash, Fixed Deposits (FDR), and Approved Securities",
+    "hint": "Liquid assets.",
+    "explanation": "Clearing Corporations accept liquid assets like Cash, Bank Guarantees, FDRs, and select Stocks (with haircut) as margin collateral."
+  },
+  {
+    "id": 1650,
+    "question": "A 'Haircut' in risk management refers to:",
+    "options": [
+      "The percentage deducted from the value of collateral to cover volatility",
+      "A penalty for late payment",
+      "A discount on brokerage",
+      "A type of chart pattern"
+    ],
+    "answer": "The percentage deducted from the value of collateral to cover volatility",
+    "hint": "Safety margin on asset value.",
+    "explanation": "If you deposit stocks worth ₹100 as margin, the clearing corp might value them at ₹85 (15% haircut) to account for potential price drops."
+  }
+]

@@ -1,0 +1,125 @@
+{
+  "course": "NISM Series XII: Securities Markets Foundation",
+  "unit_number": 6,
+  "unit_name": "Derivative Markets",
+  "weightage": "10%",
+  "overview": "This chapter introduces the most complex but exciting part of the market. Derivatives are instruments used to manage risk (Hedging) or bet on future prices (Speculation). For the exam, you need to clearly understand the difference between 'Forwards' and 'Futures', and the definitions of 'Call' and 'Put' options. Expect about 10 questions, mostly definitions and conceptual scenarios.",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. What is a Derivative?",
+      "basic_meaning": "A financial contract that does not have its own value but 'derives' (takes) its value from something else.",
+      "detailed_explanation": "Think of Curd (Dahi). Its price depends on the price of Milk. If Milk gets expensive, Curd gets expensive. \n\nIn this example:\n* **Milk** is the **'Underlying Asset'**.\n* **Curd** is the **'Derivative'**.\n\nIn the stock market, the Underlying Asset can be a Share (Reliance), an Index (Nifty), Currency (USD/INR), or Commodity (Gold). The Derivative contract moves up or down based on the movement of this underlying asset.",
+      "why_this_is_important": "It is the foundation. You cannot trade derivatives without knowing what 'Underlying' means.",
+      "formula": "Value of Derivative depends on Price of Underlying",
+      "formula_explanation": "If Underlying Price goes UP, Call Option Price goes UP.",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Nifty 50 Futures is a derivative. Its price changes based on the value of the Nifty 50 Index.",
+      "exam_traps": [
+        "Derivatives can be based on things like Rainfall (Weather derivatives) or Interest Rates, not just stocks.",
+        "They are leveraged instruments (small money controls big value)."
+      ],
+      "memory_trick": "Derivative = Derived from something else."
+    },
+    {
+      "concept": "2. Participants in Derivatives Market",
+      "basic_meaning": "The three types of players based on their motive.",
+      "detailed_explanation": "1.  **Hedgers:** They want to **reduce risk**. Example: A farmer fears wheat prices will fall, so he sells a derivative contract today to lock in a price. He is 'insuring' himself.\n2.  **Speculators:** They want to **take risk** to make profit. They bet on price direction (Up or Down). They provide liquidity to the market.\n3.  **Arbitrageurs:** They try to make **risk-free profit** by exploiting price differences between two markets (e.g., buying cheap in Cash market and selling expensive in Futures market).",
+      "why_this_is_important": "Exam questions will give a scenario and ask 'Is this person a Hedger or Speculator?'",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Hedger: An exporter selling USD futures to protect against Rupee strengthening. Speculator: A trader buying Nifty Call options expecting a market rally.",
+      "exam_traps": [
+        "Arbitrage is risk-less profit. Speculation involves high risk.",
+        "Most volume in Indian markets comes from Speculators."
+      ],
+      "memory_trick": "Hedge = Protect. Speculate = Gamble. Arbitrage = Smart Math."
+    },
+    {
+      "concept": "3. Forward Contracts (OTC)",
+      "basic_meaning": "A private agreement between two parties to buy/sell something at a future date at a fixed price.",
+      "detailed_explanation": "Imagine you agree with a local farmer to buy 100kg of onions next month at ₹50/kg, regardless of the market price then. \n* **Customized:** You decide the quantity and date.\n* **OTC (Over The Counter):** It happens directly between two people, not on an exchange.\n* **Counterparty Risk:** High risk that the farmer might run away or refuse to sell if prices go up.",
+      "why_this_is_important": "This is the 'primitive' version of futures. It explains why we need exchanges.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "A jeweler agreeing with a gold importer to buy gold next week at a fixed rate.",
+      "exam_traps": [
+        "Forward contracts are NOT traded on stock exchanges.",
+        "They carry high default risk."
+      ],
+      "memory_trick": "Forward = Face-to-Face (Private)."
+    },
+    {
+      "concept": "4. Futures Contracts (Exchange Traded)",
+      "basic_meaning": "A standardized version of a Forward contract, traded on an exchange.",
+      "detailed_explanation": "To solve the risk of Forwards, we have Futures.\n* **Standardized:** The Exchange decides the lot size (e.g., 50 shares) and expiry date (e.g., last Thursday of the month).\n* **Exchange Traded:** You don't know who the other party is. The Clearing Corporation guarantees the trade.\n* **Mark-to-Market (MTM):** Profit/Loss is calculated and settled daily.",
+      "why_this_is_important": "This is the most common derivative product.",
+      "formula": "Future Price = Spot Price + Cost of Carry",
+      "formula_explanation": "Cost of Carry includes interest cost and storage cost.",
+      "step_by_step_calculation_example": "Spot Price of Gold: ₹50,000.\nInterest for 1 month: ₹200.\nFutures Price = 50,000 + 200 = ₹50,200.",
+      "real_life_indian_example": "Buying 1 lot of Reliance Futures (250 shares) on NSE.",
+      "exam_traps": [
+        "Futures are legally binding obligations. You MUST fulfill the contract (or close it before expiry).",
+        "Margins are mandatory for Futures trading."
+      ],
+      "memory_trick": "Futures = Forwards + Rules + Safety."
+    },
+    {
+      "concept": "5. Options (Call and Put)",
+      "basic_meaning": "Contracts that give you the **RIGHT** but not the **OBLIGATION** to buy or sell.",
+      "detailed_explanation": "Think of it like a 'Token Advance' for a house.\n\n1.  **Call Option (Right to Buy):** You think prices will go **UP**. You pay a premium to book the price. If price goes up, you profit. If price goes down, you just walk away (lose only the premium).\n2.  **Put Option (Right to Sell):** You think prices will go **DOWN**. It's like an insurance policy. If the market crashes, you have the right to sell at a high price.",
+      "why_this_is_important": "This concept (Right vs Obligation) is the most tested area in derivatives.",
+      "formula": "Break-even Point (Call) = Strike Price + Premium",
+      "formula_explanation": "You start making profit only after the price crosses (Strike + Premium).",
+      "step_by_step_calculation_example": "Buy Nifty Call Option.\nStrike Price: 18,000.\nPremium Paid: ₹100.\n**Scenario 1:** Nifty goes to 18,200. Profit = (18200 - 18000) - 100 = ₹100.\n**Scenario 2:** Nifty goes to 17,000. Loss = Only ₹100 (Premium). You don't lose the huge difference.",
+      "real_life_indian_example": "Buying insurance for your car is like buying a PUT option. If accident happens (market crash), you get paid. If no accident, you lose the premium.",
+      "exam_traps": [
+        "Buyer has the RIGHT. Seller (Writer) has the OBLIGATION.",
+        "Buyer pays Premium. Seller receives Premium.",
+        "Maximum loss for Buyer = Premium paid. Maximum loss for Seller = Unlimited."
+      ],
+      "memory_trick": "Call = Call Up (Bullish). Put = Put Down (Bearish)."
+    },
+    {
+      "concept": "6. Moneyness (ITM, ATM, OTM)",
+      "basic_meaning": "Describes if an option is currently profitable or not.",
+      "detailed_explanation": "For a **Call Option** (Right to Buy):\n* **In The Money (ITM):** Market Price > Strike Price. (Profitable to exercise).\n* **At The Money (ATM):** Market Price = Strike Price.\n* **Out of The Money (OTM):** Market Price < Strike Price. (Loss making, worthless).",
+      "why_this_is_important": "Only ITM options have 'Intrinsic Value'. OTM options are pure 'Time Value'.",
+      "formula": "Intrinsic Value (Call) = Max(0, Spot Price - Strike Price)",
+      "formula_explanation": "The real value built into the option right now.",
+      "step_by_step_calculation_example": "Spot Price: ₹105. Strike Price: ₹100.\nCall Option Intrinsic Value = 105 - 100 = ₹5.\nIf Premium is ₹7, then Time Value = 7 - 5 = ₹2.",
+      "real_life_indian_example": " OTM options are cheap (lottery tickets); ITM options are expensive.",
+      "exam_traps": [
+        "Intrinsic Value can never be negative. Minimum is Zero.",
+        "For Put Options, ITM is when Market Price < Strike Price (Opposite of Call)."
+      ],
+      "memory_trick": "ITM = I have money (Profit). OTM = Out of luck (Loss)."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Futures vs. Options",
+      "clear_explanation": "**Futures:** Both parties have an OBLIGATION. Linear Profit/Loss (If market moves ₹1, you gain/lose ₹1). \n**Options:** Buyer has RIGHT, Seller has OBLIGATION. Non-linear Payoff (Buyer's loss limited to premium)."
+    },
+    {
+      "difference_between": "Exchange Traded vs. OTC",
+      "clear_explanation": "**Exchange Traded (Futures):** Standardized, Regulated, No Default Risk (Clearing Corp guarantee). \n**OTC (Forwards):** Customized, Unregulated, High Default Risk."
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Identify Hedgers, Speculators, Arbitrageurs.",
+    "Calculations of Break-even point for Call/Put.",
+    "Difference between Rights (Option Buyer) and Obligations (Option Seller).",
+    "Mark-to-Market (MTM) margin concept in Futures.",
+    "Which contracts are standardized? (Futures & Options)."
+  ],
+  "quick_revision_summary": [
+    "Derivative derives value from Underlying Asset.",
+    "Hedgers reduce risk; Speculators take risk.",
+    "Futures = Obligation; Options = Right (for Buyer).",
+    "Call Option = Bullish view; Put Option = Bearish view.",
+    "Option Buyer pays Premium; Seller receives Premium.",
+    "Risk for Option Buyer is Limited (Premium); for Seller is Unlimited."
+  ]
+}

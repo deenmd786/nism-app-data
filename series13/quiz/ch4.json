@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1301,
+    "question": "Which of the following best describes a 'Long Hedge'?",
+    "options": [
+      "Buying futures to protect against a rise in prices",
+      "Selling futures to protect against a fall in prices",
+      "Buying spot and selling futures",
+      "Buying options to speculate"
+    ],
+    "answer": "Buying futures to protect against a rise in prices",
+    "hint": "You need to buy later, so you lock the price now.",
+    "explanation": "A Long Hedge involves buying futures contracts to lock in a purchase price for an asset that will be needed in the future, protecting against price increases."
+  },
+  {
+    "id": 1302,
+    "question": "Which of the following best describes a 'Short Hedge'?",
+    "options": [
+      "Buying futures to protect against a rise in prices",
+      "Selling futures to protect against a fall in prices",
+      "Selling spot and buying futures",
+      "Selling options to speculate"
+    ],
+    "answer": "Selling futures to protect against a fall in prices",
+    "hint": "You own the asset and fear a price drop.",
+    "explanation": "A Short Hedge involves selling futures contracts to lock in a sale price for an asset currently owned, protecting against price declines."
+  },
+  {
+    "id": 1303,
+    "question": "A portfolio manager holding a diversified equity portfolio fears a market crash. What should they do?",
+    "options": [
+      "Buy Index Futures",
+      "Sell Index Futures",
+      "Buy Call Options",
+      "Do nothing"
+    ],
+    "answer": "Sell Index Futures",
+    "hint": "Short Hedge to protect value.",
+    "explanation": "To protect the value of the portfolio from a market fall, the manager should sell (short) Index Futures. If the market falls, the profit from the futures will offset the loss in the portfolio."
+  },
+  {
+    "id": 1304,
+    "question": "To hedge a portfolio perfectly, the 'Hedge Ratio' should be:",
+    "options": [
+      "1.0",
+      "0.5",
+      "0.0",
+      "Infinite"
+    ],
+    "answer": "1.0",
+    "hint": "One-to-one match.",
+    "explanation": "A Hedge Ratio of 1.0 implies that the futures position exactly matches the exposure of the underlying asset."
+  },
+  {
+    "id": 1305,
+    "question": "If a stock has a Beta of 1.5, it is considered:",
+    "options": [
+      "Less volatile than the market",
+      "More volatile than the market",
+      "Equally volatile as the market",
+      "Risk-free"
+    ],
+    "answer": "More volatile than the market",
+    "hint": "Beta > 1 means high volatility.",
+    "explanation": "A Beta greater than 1 indicates that the stock is more volatile (movements are amplified) compared to the market index."
+  },
+  {
+    "id": 1306,
+    "question": "How many lots of Nifty Futures should be sold to hedge a portfolio worth ₹10,00,000 with a Beta of 1.2, if Nifty is at 10,000 and lot size is 50?",
+    "options": [
+      "2 lots",
+      "3 lots",
+      "1 lot",
+      "4 lots"
+    ],
+    "answer": "2 lots",
+    "hint": "(Portfolio Value * Beta) / Contract Value.",
+    "explanation": "Contract Value = 10,000 * 50 = ₹5,00,000. Hedge Value needed = ₹10,00,000 * 1.2 = ₹12,00,000. Number of contracts = 12,00,000 / 5,00,000 = 2.4 (Approx 2 or 3, usually rounded to nearest integer, here 2 is safest partial hedge or 3 for full)."
+  },
+  {
+    "id": 1307,
+    "question": "What is 'Basis Risk' in hedging?",
+    "options": [
+      "The risk that the futures price and spot price do not move in perfect lockstep",
+      "The risk of default",
+      "The risk of exchange failure",
+      "The risk of interest rate change"
+    ],
+    "answer": "The risk that the futures price and spot price do not move in perfect lockstep",
+    "hint": "The spread changes unpredictably.",
+    "explanation": "Basis Risk arises when the relationship (spread) between the Spot and Futures prices changes, making the hedge imperfect."
+  },
+  {
+    "id": 1308,
+    "question": "An arbitrage strategy involving buying the spot asset and selling the futures contract is called:",
+    "options": [
+      "Cash and Carry Arbitrage",
+      "Reverse Cash and Carry Arbitrage",
+      "Calendar Spread",
+      "Inter-market Spread"
+    ],
+    "answer": "Cash and Carry Arbitrage",
+    "hint": "Buy cash, carry to future.",
+    "explanation": "Cash and Carry arbitrage exploits overpriced futures. You buy the asset in the cash market and sell the expensive future to lock in a risk-free profit."
+  },
+  {
+    "id": 1309,
+    "question": "An arbitrage strategy involving selling the spot asset and buying the futures contract is called:",
+    "options": [
+      "Cash and Carry Arbitrage",
+      "Reverse Cash and Carry Arbitrage",
+      "Calendar Spread",
+      "Inter-market Spread"
+    ],
+    "answer": "Reverse Cash and Carry Arbitrage",
+    "hint": "Reverse of normal arbitrage.",
+    "explanation": "Reverse Cash and Carry exploits underpriced futures. You sell the asset (if you own it or can borrow it) and buy the cheap future."
+  },
+  {
+    "id": 1310,
+    "question": "A speculator who expects the market to rise should:",
+    "options": [
+      "Go Long on Futures",
+      "Go Short on Futures",
+      "Sell Call Options",
+      "Buy Put Options"
+    ],
+    "answer": "Go Long on Futures",
+    "hint": "Bullish view.",
+    "explanation": "A Long Futures position profits from rising prices."
+  },
+  {
+    "id": 1311,
+    "question": "A speculator who expects the market to fall should:",
+    "options": [
+      "Go Long on Futures",
+      "Go Short on Futures",
+      "Buy Call Options",
+      "Sell Put Options"
+    ],
+    "answer": "Go Short on Futures",
+    "hint": "Bearish view.",
+    "explanation": "A Short Futures position profits from falling prices."
+  },
+  {
+    "id": 1312,
+    "question": "What is a 'Calendar Spread' strategy?",
+    "options": [
+      "Buying a near-month future and selling a far-month future (or vice-versa)",
+      "Buying a stock and selling its index future",
+      "Buying two different stocks",
+      "Selling a call and buying a put"
+    ],
+    "answer": "Buying a near-month future and selling a far-month future (or vice-versa)",
+    "hint": "Spreading across time.",
+    "explanation": "A Calendar Spread involves taking offsetting positions in two futures contracts of the same underlying but with different expiry dates."
+  },
+  {
+    "id": 1313,
+    "question": "In a 'Bull Calendar Spread', a trader typically:",
+    "options": [
+      "Buys Near Month, Sells Far Month",
+      "Sells Near Month, Buys Far Month",
+      "Buys Both",
+      "Sells Both"
+    ],
+    "answer": "Buys Near Month, Sells Far Month",
+    "hint": "Expect near month to rise faster.",
+    "explanation": "In a Bull Spread, the trader expects the near-month contract to outperform the far-month contract, so they buy the near and sell the far."
+  },
+  {
+    "id": 1314,
+    "question": "Which of these is a benefit of Spread Trading?",
+    "options": [
+      "Lower Margin Requirements",
+      "Unlimited Profit Potential",
+      "Zero Risk",
+      "No Transaction Costs"
+    ],
+    "answer": "Lower Margin Requirements",
+    "hint": "Less risk = Less margin.",
+    "explanation": "Since spread positions hedge each other (one long, one short), the net risk is lower, so exchanges charge significantly lower margins."
+  },
+  {
+    "id": 1315,
+    "question": "If you are 'Long the Basis', you are:",
+    "options": [
+      "Buying Spot and Selling Future",
+      "Selling Spot and Buying Future",
+      "Buying both",
+      "Selling both"
+    ],
+    "answer": "Buying Spot and Selling Future",
+    "hint": "You own the asset (Spot) and hedge it.",
+    "explanation": "Long Basis means you own the asset (Long Spot) and have sold Futures (Short Future). You benefit if the Basis strengthens."
+  },
+  {
+    "id": 1316,
+    "question": "Beta Hedging is primarily used to eliminate which type of risk?",
+    "options": [
+      "Systematic Risk (Market Risk)",
+      "Unsystematic Risk (Stock Specific Risk)",
+      "Credit Risk",
+      "Operational Risk"
+    ],
+    "answer": "Systematic Risk (Market Risk)",
+    "hint": "Risk you can't diversify away.",
+    "explanation": "Beta measures market risk. Hedging with Index Futures removes the Systematic Risk (market movements) from the portfolio."
+  },
+  {
+    "id": 1317,
+    "question": "Unsystematic Risk can be reduced by:",
+    "options": [
+      "Diversification",
+      "Hedging with Index Futures",
+      "Buying more of the same stock",
+      "Ignoring it"
+    ],
+    "answer": "Diversification",
+    "hint": "Don't put all eggs in one basket.",
+    "explanation": "Unsystematic risk is specific to a company. It can be eliminated by holding a diversified portfolio of many stocks."
+  },
+  {
+    "id": 1318,
+    "question": "If a stock is not available in the F&O segment, can you hedge it directly using its own futures?",
+    "options": [
+      "No",
+      "Yes",
+      "Only if SEBI permits",
+      "Only in the Commodities market"
+    ],
+    "answer": "No",
+    "hint": "No futures = No direct hedge.",
+    "explanation": "You cannot hedge a stock directly if it does not have a corresponding futures contract. You might have to use a proxy hedge (Cross Hedging)."
+  },
+  {
+    "id": 1319,
+    "question": "What is 'Cross Hedging'?",
+    "options": [
+      "Hedging an asset with a derivative on a different but correlated asset",
+      "Hedging across two different exchanges",
+      "Hedging currency with gold",
+      "Hedging without margin"
+    ],
+    "answer": "Hedging an asset with a derivative on a different but correlated asset",
+    "hint": "Using a substitute.",
+    "explanation": "Cross Hedging involves using a futures contract on a different asset (e.g., using Nifty Bank to hedge a portfolio of bank stocks) because the direct future is unavailable or illiquid."
+  },
+  {
+    "id": 1320,
+    "question": "The 'Hedge Efficiency' measures:",
+    "options": [
+      "How well the hedging instrument offsets the risk of the underlying",
+      "How much profit was made",
+      "How fast the trade was executed",
+      "The brokerage paid"
+    ],
+    "answer": "How well the hedging instrument offsets the risk of the underlying",
+    "hint": "Correlation squared (R-squared).",
+    "explanation": "Hedge efficiency (often measured by R-squared) indicates the percentage of variance in the portfolio that is eliminated by the hedge."
+  },
+  {
+    "id": 1321,
+    "question": "A 'Perfect Hedge' results in a portfolio beta of:",
+    "options": [
+      "Zero",
+      "One",
+      "Negative One",
+      "Infinity"
+    ],
+    "answer": "Zero",
+    "hint": "Market neutral.",
+    "explanation": "A perfectly hedged portfolio has no correlation to market movements, effectively making its Beta zero."
+  },
+  {
+    "id": 1322,
+    "question": "Arbitrage is possible when the actual Futures price is:",
+    "options": [
+      "Different from the Theoretical Fair Value",
+      "Equal to the Spot Price",
+      "Equal to the Fair Value",
+      "Zero"
+    ],
+    "answer": "Different from the Theoretical Fair Value",
+    "hint": "Mispricing.",
+    "explanation": "Arbitrage opportunities arise when there is a divergence between the actual market price of the future and its theoretical fair value calculated using cost of carry."
+  },
+  {
+    "id": 1323,
+    "question": "Transaction costs (brokerage, taxes) usually ______ the arbitrage profit.",
+    "options": [
+      "Reduce",
+      "Increase",
+      "Have no effect on",
+      "Multiply"
+    ],
+    "answer": "Reduce",
+    "hint": "Costs eat into profit.",
+    "explanation": "Arbitrage is only viable if the price difference is large enough to cover all transaction costs and still leave a profit."
+  },
+  {
+    "id": 1324,
+    "question": "If you are 'Short' the market, you want the Basis to:",
+    "options": [
+      "Strengthen (Become more positive)",
+      "Weaken (Become more negative)",
+      "Stay constant",
+      "Disappear"
+    ],
+    "answer": "Strengthen (Become more positive)",
+    "hint": "Spot outperforms Future.",
+    "explanation": "Short hedgers (Long Spot, Short Future) benefit when the Spot price rises relative to the Futures price (Strengthening Basis)."
+  },
+  {
+    "id": 1325,
+    "question": "What is 'Churning' a portfolio?",
+    "options": [
+      "Excessive trading to generate commissions",
+      "Holding for long term",
+      "Hedging once a year",
+      "Buying only blue chips"
+    ],
+    "answer": "Excessive trading to generate commissions",
+    "hint": "Unethical practice.",
+    "explanation": "Churning refers to excessive trading by a broker in a client's account primarily to generate commissions, which is unethical."
+  },
+  {
+    "id": 1326,
+    "question": "For a speculator, leverage acts as a:",
+    "options": [
+      "Double-edged sword (magnifies both profits and losses)",
+      "Safety net",
+      "Guarantee of profit",
+      "Tax shield"
+    ],
+    "answer": "Double-edged sword (magnifies both profits and losses)",
+    "hint": "High risk, high reward.",
+    "explanation": "Leverage amplifies the returns on capital, meaning small price moves can lead to huge profits or huge losses."
+  },
+  {
+    "id": 1327,
+    "question": "What is the primary goal of a 'Hedger'?",
+    "options": [
+      "Risk Reduction",
+      "Profit Maximization",
+      "Speculation",
+      "Arbitrage"
+    ],
+    "answer": "Risk Reduction",
+    "hint": "Insurance.",
+    "explanation": "Hedgers participate in the market to reduce or transfer the risk of adverse price movements associated with an asset they hold or plan to buy."
+  },
+  {
+    "id": 1328,
+    "question": "An importer who needs to pay $1 million in 3 months fears the Rupee will depreciate. They should:",
+    "options": [
+      "Buy USDINR Futures",
+      "Sell USDINR Futures",
+      "Buy Nifty Futures",
+      "Sell Nifty Futures"
+    ],
+    "answer": "Buy USDINR Futures",
+    "hint": "Long Hedge for currency.",
+    "explanation": "To lock in the exchange rate, the importer should buy (Long) USDINR futures. If the dollar rises (Rupee falls), the futures profit will offset the higher cost of buying dollars in the spot market."
+  },
+  {
+    "id": 1329,
+    "question": "An exporter who will receive $1 million in 3 months fears the Rupee will appreciate. They should:",
+    "options": [
+      "Sell USDINR Futures",
+      "Buy USDINR Futures",
+      "Sell Nifty Futures",
+      "Buy Nifty Futures"
+    ],
+    "answer": "Sell USDINR Futures",
+    "hint": "Short Hedge for currency.",
+    "explanation": "To lock in the exchange rate, the exporter should sell (Short) USDINR futures. If the dollar falls (Rupee rises), the futures profit will offset the lower revenue from selling dollars."
+  },
+  {
+    "id": 1330,
+    "question": "When does a 'Short Squeeze' occur?",
+    "options": [
+      "When short sellers are forced to buy back positions as prices rise",
+      "When buyers panic and sell",
+      "When the market crashes",
+      "When trading is halted"
+    ],
+    "answer": "When short sellers are forced to buy back positions as prices rise",
+    "hint": "Squeezing the bears.",
+    "explanation": "A Short Squeeze happens when a rising price forces short sellers to cover (buy back) their positions to limit losses, which fuels further price rises."
+  },
+  {
+    "id": 1331,
+    "question": "If you buy a Nifty Future at 10,000 and the market closes at 9,900, what happens to your margin account?",
+    "options": [
+      "100 points loss is debited",
+      "100 points profit is credited",
+      "Nothing happens until expiry",
+      "You get a bonus"
+    ],
+    "answer": "100 points loss is debited",
+    "hint": "MTM Loss.",
+    "explanation": "Daily MTM settlement means the loss (100 points * Lot Size) is immediately debited from your margin account."
+  },
+  {
+    "id": 1332,
+    "question": "The 'Convergence' of Spot and Futures prices at expiry ensures:",
+    "options": [
+      "No arbitrage opportunity exists at expiry",
+      "Arbitrage is maximized",
+      "Prices are always zero",
+      "Volatility is zero"
+    ],
+    "answer": "No arbitrage opportunity exists at expiry",
+    "hint": "Law of one price.",
+    "explanation": "At expiry, the future becomes the spot asset. If they didn't converge, there would be a risk-free arbitrage opportunity."
+  },
+  {
+    "id": 1333,
+    "question": "A strategy that profits from a decrease in the spread between two contracts is:",
+    "options": [
+      "Buying the Spread",
+      "Selling the Spread",
+      "Butterfly Spread",
+      "Condor Spread"
+    ],
+    "answer": "Selling the Spread",
+    "hint": "Betting the gap will close.",
+    "explanation": "Selling the spread usually involves betting that the price difference (spread) between two contracts will narrow."
+  },
+  {
+    "id": 1334,
+    "question": "Which of these is a key assumption in the Cost of Carry model?",
+    "options": [
+      "Markets are efficient and friction-free",
+      "Markets are always irrational",
+      "Taxes are 50%",
+      "Interest rates are zero"
+    ],
+    "answer": "Markets are efficient and friction-free",
+    "hint": "Ideal world.",
+    "explanation": "The model assumes no transaction costs, no restrictions on short selling, and identical borrowing/lending rates (efficient markets)."
+  },
+  {
+    "id": 1335,
+    "question": "Can you hedge a single stock using Index Futures?",
+    "options": [
+      "Yes, but it will have Basis Risk (Correlation risk)",
+      "No, it is impossible",
+      "Yes, it is a perfect hedge",
+      "Only if the stock is in the index"
+    ],
+    "answer": "Yes, but it will have Basis Risk (Correlation risk)",
+    "hint": "Stock moves differently from Index.",
+    "explanation": "You can use Index futures, but since a single stock doesn't move perfectly with the index, there is significant correlation/basis risk."
+  },
+  {
+    "id": 1336,
+    "question": "Rolling over a short futures position to the next month involves:",
+    "options": [
+      "Buying the near month and Selling the far month",
+      "Selling the near month and Buying the far month",
+      "Buying both",
+      "Selling both"
+    ],
+    "answer": "Buying the near month and Selling the far month",
+    "hint": "Close the old short (Buy), Open new short (Sell).",
+    "explanation": "To roll a short position: You must Close the current short (Buy Near Month) and Open a new short (Sell Far Month)."
+  },
+  {
+    "id": 1337,
+    "question": "If implied volatility increases, it generally affects:",
+    "options": [
+      "Options prices significantly, Futures prices minimally",
+      "Futures prices significantly",
+      "Neither",
+      "Bond prices"
+    ],
+    "answer": "Options prices significantly, Futures prices minimally",
+    "hint": "Vega is an Option Greek.",
+    "explanation": "Volatility is a key component of Option pricing (Vega). Futures prices are driven by Spot and Cost of Carry, not directly by Volatility (though margins may increase)."
+  },
+  {
+    "id": 1338,
+    "question": "A 'Protective Put' is strictly an Option strategy, but it is similar to:",
+    "options": [
+      "Long Asset + Long Put",
+      "Long Asset + Short Call",
+      "Short Asset + Long Put",
+      "Short Asset + Short Call"
+    ],
+    "answer": "Long Asset + Long Put",
+    "hint": "Insurance on asset.",
+    "explanation": "Protective Put involves owning the stock and buying a put option. This limits downside risk, similar to a hedge."
+  },
+  {
+    "id": 1339,
+    "question": "Synthetic Long Futures can be created using options by:",
+    "options": [
+      "Buying a Call and Selling a Put (Same Strike/Expiry)",
+      "Buying a Call and Buying a Put",
+      "Selling a Call and Selling a Put",
+      "Buying a Put and Selling a Call"
+    ],
+    "answer": "Buying a Call and Selling a Put (Same Strike/Expiry)",
+    "hint": "Put-Call Parity.",
+    "explanation": "According to Put-Call Parity: Long Call + Short Put = Long Future (Synthetic Long)."
+  },
+  {
+    "id": 1340,
+    "question": "Synthetic Short Futures can be created using options by:",
+    "options": [
+      "Buying a Put and Selling a Call (Same Strike/Expiry)",
+      "Buying a Call and Buying a Put",
+      "Selling a Put",
+      "Buying a Call"
+    ],
+    "answer": "Buying a Put and Selling a Call (Same Strike/Expiry)",
+    "hint": "Put-Call Parity.",
+    "explanation": "According to Put-Call Parity: Long Put + Short Call = Short Future (Synthetic Short)."
+  },
+  {
+    "id": 1341,
+    "question": "What is the 'Cost of Carry' if the futures price is 105 and spot is 100?",
+    "options": [
+      "5",
+      "-5",
+      "100",
+      "0"
+    ],
+    "answer": "5",
+    "hint": "Future - Spot.",
+    "explanation": "Cost of Carry = Futures Price - Spot Price = 105 - 100 = 5."
+  },
+  {
+    "id": 1342,
+    "question": "Arbitrage keeps the market:",
+    "options": [
+      "Efficient",
+      "Inefficient",
+      "Volatile",
+      "Closed"
+    ],
+    "answer": "Efficient",
+    "hint": "Removes price errors.",
+    "explanation": "Arbitrageurs exploit price discrepancies, which forces prices back to their fair value, ensuring market efficiency."
+  },
+  {
+    "id": 1343,
+    "question": "Which strategy has the lowest risk?",
+    "options": [
+      "Cash and Carry Arbitrage",
+      "Naked Speculation",
+      "Writing Naked Calls",
+      "Writing Naked Puts"
+    ],
+    "answer": "Cash and Carry Arbitrage",
+    "hint": "Risk-free profit.",
+    "explanation": "Arbitrage is theoretically risk-free profit (locking in spread), whereas speculation and naked option writing carry significant risk."
+  },
+  {
+    "id": 1344,
+    "question": "If you are a mutual fund manager with a cash inflow of ₹10 Crores but haven't decided which stocks to buy yet, you can:",
+    "options": [
+      "Buy Index Futures (Long Hedge)",
+      "Sell Index Futures",
+      "Keep cash in savings",
+      "Buy Gold"
+    ],
+    "answer": "Buy Index Futures (Long Hedge)",
+    "hint": "Anticipatory Hedge.",
+    "explanation": "To avoid missing out on a market rally while picking stocks, the manager can buy Index Futures (Anticipatory Long Hedge) to gain market exposure immediately."
+  },
+  {
+    "id": 1345,
+    "question": "A 'Contrarian' trader:",
+    "options": [
+      "Goes against the prevailing market trend",
+      "Follows the trend",
+      "Never trades",
+      "Only does arbitrage"
+    ],
+    "answer": "Goes against the prevailing market trend",
+    "hint": "Contrary.",
+    "explanation": "Contrarians buy when others are selling (fear) and sell when others are buying (greed)."
+  },
+  {
+    "id": 1346,
+    "question": "Scalpers are traders who:",
+    "options": [
+      "Hold positions for a few seconds or minutes for small profits",
+      "Hold for years",
+      "Only hedge",
+      "Trade only once a month"
+    ],
+    "answer": "Hold positions for a few seconds or minutes for small profits",
+    "hint": "High frequency, small gains.",
+    "explanation": "Scalping is a trading style specializing in taking profits on small price changes, often executing hundreds of trades a day."
+  },
+  {
+    "id": 1347,
+    "question": "Swing Traders generally hold positions for:",
+    "options": [
+      "Several days to weeks",
+      "Seconds",
+      "Years",
+      "Decades"
+    ],
+    "answer": "Several days to weeks",
+    "hint": "Capturing a 'swing'.",
+    "explanation": "Swing trading involves holding a position for a period of days to weeks to capture an expected price move."
+  },
+  {
+    "id": 1348,
+    "question": "Stop-loss orders are essential for speculators to:",
+    "options": [
+      "Protect capital from large losses",
+      "Guarantee profit",
+      "Increase leverage",
+      "Reduce brokerage"
+    ],
+    "answer": "Protect capital from large losses",
+    "hint": "Risk management.",
+    "explanation": "A stop-loss exits the trade automatically if the price moves against the trader, preventing a manageable loss from becoming a disaster."
+  },
+  {
+    "id": 1349,
+    "question": "Which of these is NOT a spread strategy?",
+    "options": [
+      "Long Nifty Future",
+      "Calendar Spread",
+      "Inter-Commodity Spread",
+      "Butterfly Spread"
+    ],
+    "answer": "Long Nifty Future",
+    "hint": "Single directional trade.",
+    "explanation": "Long Nifty Future is a simple directional strategy (Speculation), not a spread. Spreads involve at least two legs (Buy and Sell)."
+  },
+  {
+    "id": 1350,
+    "question": "The 'Open Interest' limit for a broker (Trading Member) is usually:",
+    "options": [
+      "Higher than for an individual client",
+      "Lower than for an individual client",
+      "Same as a client",
+      "Zero"
+    ],
+    "answer": "Higher than for an individual client",
+    "hint": "Brokers aggregate many clients.",
+    "explanation": "Trading Members have higher position limits (e.g., 15% of total OI or ₹500 Cr) compared to individual clients (e.g., 5% of total OI)."
+  }
+]

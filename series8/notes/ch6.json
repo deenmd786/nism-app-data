@@ -1,0 +1,98 @@
+{
+  "course": "NISM Series VIII: Equity Derivatives",
+  "unit_number": 6,
+  "unit_name": "Trading Mechanism",
+  "weightage": "10 Marks",
+  "overview": "This chapter explains the 'nuts and bolts' of how trading actually happens on the exchange. It covers how orders are matched, the different types of orders you can place, and the entities involved in the process. For the exam, you need to understand the 'Open Electronic Limit Order Book' and how the computer decides which trade happens first.",
+
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Open Electronic Limit Order Book (OELOB)",
+      "basic_meaning": "A digital list where all buy and sell orders from across India are stored and matched by a computer.",
+      "detailed_explanation": "In the old days, traders shouted in a 'trading ring'. Now, the NSE/BSE use a computer system.\n1. **Transparency:** Everyone can see the best 5 buy and sell prices (Market Depth).\n2. **Anonymity:** You don't know who you are buying from or selling to.\n3. **Order Driven:** The market moves based on the orders placed by people, not by a single 'market maker' deciding the price.",
+      "why_this_is_important": "The exam often asks about the 'nature' of the Indian market. It is an 'Order-Driven' system, not a 'Quote-Driven' one.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "When you open your Zerodha or Upstox app and see the 'Blue' (Buy) and 'Red' (Sell) columns moving, you are looking at the Order Book.",
+      "exam_traps": [
+        "Is the system 'Quote-driven'? NO, it is 'Order-driven'.",
+        "Does the exchange know the identity of the buyer/seller during the match? NO, it is anonymous."
+      ],
+      "memory_trick": "OELOB = Online, Everyone can see, List of Business."
+    },
+    {
+      "concept": "2. Order Matching Rules (Price-Time Priority)",
+      "basic_meaning": "The computer follows a strict rule: Best price gets first priority. If prices are the same, the person who came first gets priority.",
+      "detailed_explanation": "The system matches orders based on two levels:\n1. **Price Priority:** \n   - A Buy order with a HIGHER price is better (comes first).\n   - A Sell order with a LOWER price is better (comes first).\n2. **Time Priority:** If two people want to buy at ₹100, the one who placed the order at 10:00 AM will get the shares before the one who placed it at 10:01 AM.",
+      "why_this_is_important": "You might get a numerical table and be asked: 'At what price will the trade occur?'.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Order Book:\n- Seller A: Wants to sell 100 shares at ₹105 (Placed at 10:00 AM)\n- Seller B: Wants to sell 100 shares at ₹104 (Placed at 10:05 AM)\n- Buyer C: Wants to buy 100 shares at ₹105 (Placed at 10:10 AM)\n\n**Matching:** Even though Seller A came first, Seller B is offering a BETTER (lower) price. Buyer C will be matched with Seller B at ₹104.",
+      "real_life_indian_example": "This is why traders use 'Market Orders' when they are in a hurry; they want to jump to the best available price immediately.",
+      "exam_traps": [
+        "Does Time come before Price? NO. Price is ALWAYS the first priority.",
+        "Higher Sell price is better? NO, Lower Sell price is better for the buyer."
+      ],
+      "memory_trick": "Price is King, Time is Queen."
+    },
+    {
+      "concept": "3. Types of Orders",
+      "basic_meaning": "Different ways you can tell the computer to execute your trade.",
+      "detailed_explanation": "1. **Limit Order:** You specify the exact price (e.g., 'Buy only if price is ₹100'). It might not get executed if price never hits ₹100.\n2. **Market Order:** You don't care about price; you want it 'NOW'. It matches with the best available price in the book.\n3. **Stop-Loss (SL) Order:** An order that stays 'dormant' until a certain price (Trigger Price) is reached. Used to limit losses.\n4. **IOC (Immediate or Cancel):** Buy it right now, or cancel the order. No waiting in the book.",
+      "why_this_is_important": "NISM asks about 'Time Condition' (Day vs IOC) and 'Price Condition' (Limit vs Market).",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "You bought Nifty at ₹20,000. You are afraid it might fall. You place a **Stop Loss Sell** at ₹19,950. If Nifty stays at ₹20,000, nothing happens. If it drops to ₹19,950, the computer automatically sells your position to prevent a bigger loss.",
+      "real_life_indian_example": "Using a 'Limit Order' to buy a stock during a very volatile day to ensure you don't accidentally pay a 5% higher price because of a sudden spike.",
+      "exam_traps": [
+        "A Market order guarantees execution but NOT the price.",
+        "A Limit order guarantees price but NOT the execution."
+      ],
+      "memory_trick": "Limit = My Price. Market = Market's Price."
+    },
+    {
+      "concept": "4. Entities in the Trading System",
+      "basic_meaning": "The people and organizations that make the market work.",
+      "detailed_explanation": "1. **Trading Members (Brokers):** They have the license to trade on the exchange (e.g., Zerodha, ICICI Securities).\n2. **Clearing Members:** They are responsible for the 'Settlement' of funds and shares. Every Trading Member must be attached to a Clearing Member.\n3. **Professional Clearing Member (PCM):** A member who doesn't trade themselves but only clears trades for others (usually Banks).\n4. **Custodians:** Institutions that look after the funds/securities of large clients like FIIs.",
+      "why_this_is_important": "The exam asks about the difference between a Trading Member and a Clearing Member.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "When you buy a share, your 'Broker' (Trading Member) executes the trade, but behind the scenes, a 'Clearing Member' ensures money moves from your bank to the seller's bank.",
+      "exam_traps": [
+        "Can a Trading Member clear their own trades? YES, if they are also a Clearing Member.",
+        "A Custodian clears trades for retail investors? NO, usually only for large institutions."
+      ],
+      "memory_trick": "Trading = The Deal. Clearing = The Delivery."
+    }
+  ],
+
+  "important_differences": [
+    {
+      "difference_between": "Limit Order vs. Market Order",
+      "clear_explanation": "Limit Order: You control the price, but you might not get the trade. Market Order: You get the trade instantly, but you don't control the price."
+    },
+    {
+      "difference_between": "Day Order vs. IOC Order",
+      "clear_explanation": "Day Order: Valid until 3:30 PM today. IOC (Immediate or Cancel): Must be executed the very second it hits the exchange, otherwise, it is deleted."
+    }
+  ],
+
+  "frequently_asked_exam_areas": [
+    "The priority rule for order matching (Price-Time).",
+    "Identifying 'Limit' and 'Market' order characteristics.",
+    "The role of the 'Clearing Member' in the settlement process.",
+    "Terminology: What is a 'Basket Trade'? (Buying multiple stocks in one click).",
+    "What is 'Contract Month'? (The month in which the contract expires)."
+  ],
+
+  "quick_revision_summary": [
+    "Indian markets are Electronic and Order-Driven.",
+    "Price is the 1st priority; Time is the 2nd priority.",
+    "Stop Loss orders protect you from huge losses.",
+    "Brokers are 'Trading Members'.",
+    "Trade Confirmation Slips are generated after a trade is matched.",
+    "Market depth shows the top 5 buy/sell orders."
+  ]
+}

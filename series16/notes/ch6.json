@@ -1,0 +1,77 @@
+{
+  "course": "NISM Series XVI: Commodity Derivatives Certification Examination",
+  "unit_number": 6,
+  "unit_name": "Trading Mechanism",
+  "weightage": "10%",
+  "overview": "This chapter explains the 'how-to' of the exchange. It covers how a trade actually happens, the different types of orders you can place (like Limit or Market orders), and the rules of the electronic trading system. For the NISM exam, it is important to understand the hierarchy of members and the rules of 'Price-Time priority'. It connects to earlier chapters by showing how the theoretical futures and options contracts are practically traded on a screen.",
+  
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Membership Structure",
+      "basic_meaning": "Not everyone can trade directly on the exchange; you have to go through 'Gatekeepers' called Members.",
+      "detailed_explanation": "In Indian commodity exchanges, there is a clear hierarchy of who can do what:\n\n1. **Trading Member (TM):** Can trade on their own account and for their clients, but they cannot 'settle' or clear the money/goods themselves.\n2. **Trading cum Clearing Member (TCM):** Can trade and also clear/settle their own trades and their clients' trades.\n3. **Professional Clearing Member (PCM):** They generally do not trade. They only provide clearing and settlement services for other Trading Members.\n4. **Institutional Clients:** Large entities like Mutual Funds or Banks that trade through a member but have their own specific settlement rules.",
+      "why_this_is_important": "Knowing who has the power to 'clear' a trade is a frequent exam question. It's essential for market stability.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "If you open an account with a broker like Zerodha, they are a Trading cum Clearing Member (TCM). They take your order and also handle the money settlement with the exchange.",
+      "exam_traps": [
+        "Thinking a PCM trades like a normal broker. PCMs usually only clear trades, they don't buy/sell for retail clients.",
+        "Confusing a Trading Member with a Clearing Member. Only a Clearing Member can settle funds with the Clearing Corporation."
+      ],
+      "memory_trick": "TM = Trades only. TCM = Trades + Clears Money. PCM = Professional Money Clearer."
+    },
+    {
+      "concept": "2. Order Types (Market, Limit, Stop-Loss)",
+      "basic_meaning": "These are the 'instructions' you give to the computer about how you want to buy or sell.",
+      "detailed_explanation": "1. **Market Order:** You tell the system: 'Buy/Sell right now at whatever the best price is'. Execution is guaranteed, but the price is not.\n2. **Limit Order:** You tell the system: 'Buy only at ₹X or lower' or 'Sell only at ₹Y or higher'. You get your price (or better), but there is no guarantee the trade will actually happen if the market doesn't hit your price.\n3. **Stop-Loss Order:** Used to limit losses. It stays 'hidden' until the market hits a certain 'Trigger Price', then it becomes a real order.",
+      "why_this_is_important": "Brokers must explain these clearly to clients. For the exam, you need to know which order guarantees *execution* vs which one guarantees *price*.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Scenario: You bought Gold at ₹70,000. You want to limit your loss to ₹500.\n\n* **Action:** You place a 'Stop-Loss Sell' order with a **Trigger Price** of ₹69,500.\n* **Result:** If the price falls to ₹69,500, the system immediately puts your gold up for sale to prevent further loss.",
+      "real_life_indian_example": "A day-trader in Delhi might place a **Limit Order** to buy Crude Oil at ₹6,500 while the market is at ₹6,510, hoping for a small dip before a rally.",
+      "exam_traps": [
+        "Confusing the 'Trigger Price' with the 'Limit Price' in a stop-loss order.",
+        "Thinking a Market Order is safer. It can be risky in low-liquidity markets because the price might jump significantly before your order is filled."
+      ],
+      "memory_trick": "Limit = My Price. Market = Now Price. Stop-Loss = Exit Door."
+    },
+    {
+      "concept": "3. Price-Time Priority",
+      "basic_meaning": "The rule the exchange uses to decide 'who gets the trade first' when multiple people want to buy/sell.",
+      "detailed_explanation": "The matching engine follows two strict steps:\n1. **Price Priority:** The best price always wins. (Highest Bidder for buyers, Lowest Asker for sellers).\n2. **Time Priority:** If two people offer the *same* price, the person who placed the order first gets the trade.",
+      "why_this_is_important": "This ensures the market is fair and transparent. It's a core theoretical concept for NISM.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Scenario: 3 people want to buy Gold.\n\n* **A:** Bids ₹70,005 at 10:00 AM.\n* **B:** Bids ₹70,000 at 09:55 AM.\n* **C:** Bids ₹70,005 at 10:01 AM.\n\n**Matching Order:**\n1.  **A** gets it first (Best Price).\n2.  **C** gets it next (Same price as A, but arrived after).\n3.  **B** gets it last (Worst price).",
+      "real_life_indian_example": "In high-frequency trading (Algo trading), being even 1 millisecond faster can mean the difference between getting a profitable trade or missing it due to Time Priority.",
+      "exam_traps": [
+        "Thinking quantity matters. The size of the order does NOT change your priority; only Price and Time do.",
+        "Forgetting that Price is *always* more important than Time."
+      ],
+      "memory_trick": "Price is King, Time is Queen."
+    }
+  ],
+
+  "important_differences": [
+    {
+      "difference_between": "Client Trading vs Proprietary Trading",
+      "clear_explanation": "* **Client Trading:** The broker executes a trade for a customer (like you).\n* **Proprietary (Pro) Trading:** The broker trades using their *own* company money to make a profit. Brokers must keep these accounts strictly separate."
+    }
+  ],
+
+  "frequently_asked_exam_areas": [
+    "Understanding the role of a Professional Clearing Member (PCM).",
+    "Identifying 'Day Orders' vs 'IOC' (Immediate or Cancel) orders.",
+    "The concept of 'Anonymity' in the order book (You don't know who is buying/selling).",
+    "The rule of 'Price-Time' priority."
+  ],
+
+  "quick_revision_summary": [
+    "Only Members (TM, TCM, PCM) have direct exchange access.",
+    "Market orders guarantee speed; Limit orders guarantee price.",
+    "Stop-loss orders act as an automated exit to control risk.",
+    "Order matching = Best Price + Earliest Time.",
+    "Contract Notes must be issued within 24 hours of a trade."
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "course": "NISM Series XII: Securities Markets Foundation",
+  "unit_number": 4,
+  "unit_name": "Secondary Markets",
+  "weightage": "20%",
+  "overview": "This chapter is the heart of the stock market as we know it. While the Primary market is for 'New' shares, the Secondary market is for 'Used' shares (Buying and Selling existing shares). This is where the daily action happens on BSE and NSE. The exam weightage is high (20%), focusing heavily on the 'T+1' settlement cycle, the role of Depositories, and Corporate Actions.",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. What is the Secondary Market?",
+      "basic_meaning": "It is the place where investors buy and sell securities that have already been issued. It is commonly known as the 'Stock Exchange'.",
+      "detailed_explanation": "Once a company finishes its IPO, the shares are listed here. The company does NOT get money when you buy shares here; the money goes to the investor who sold the shares to you. Its main purpose is to provide **Liquidity** (ability to convert shares to cash easily) and **Price Discovery** (determining the fair value of a company based on supply and demand).",
+      "why_this_is_important": "Without a secondary market, investors would be stuck with their shares forever, unable to sell when they need money.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Buying Tata Motors shares on Zerodha or Angel One happens in the Secondary Market.",
+      "exam_traps": [
+        "Buying shares from the company = Primary Market. Buying from another investor = Secondary Market.",
+        "The Secondary Market does not provide capital to the company."
+      ],
+      "memory_trick": "Secondary = Second Hand (Used Goods Market)."
+    },
+    {
+      "concept": "2. Market Infrastructure Institutions (MIIs)",
+      "basic_meaning": "The three pillars that support the stock market system.",
+      "detailed_explanation": " \n\n1.  **Stock Exchanges (Trading):** Provide the platform/screen where buyers and sellers meet. (e.g., NSE, BSE).\n2.  **Clearing Corporations (Clearing & Settlement):** The 'Guarantor'. They ensure that the buyer pays money and the seller delivers shares. If one party defaults, the Clearing Corp steps in to fulfill the obligation. (e.g., NCL, ICCL).\n3.  **Depositories (Holding):** The 'Bank for Shares'. They hold your securities in electronic form (Demat). (e.g., NSDL, CDSL).",
+      "why_this_is_important": "Exam questions often mix up the roles. Remember: Exchange = Trade; Clearing Corp = Guarantee; Depository = Custody.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "You trade on NSE app -> NCL processes the money/shares -> Shares sit in your NSDL/CDSL account.",
+      "exam_traps": [
+        "Brokers are NOT MIIs. They are intermediaries/members.",
+        "Clearing Corporation provides 'Counterparty Guarantee' (removes risk of default)."
+      ],
+      "memory_trick": "Trade (Exchange) -> Clear (Corp) -> Hold (Depository)."
+    },
+    {
+      "concept": "3. Trading & Settlement Cycle (T+1)",
+      "basic_meaning": "The time it takes for shares to reach your account after you buy them.",
+      "detailed_explanation": "India follows a **T+1** rolling settlement cycle.\n* **T Day (Trade Day):** You buy shares on Monday.\n* **T+1 Day (Settlement Day):** By Tuesday (next working day), money is taken from you and shares are credited to your Demat account.\n\nPreviously it was T+2, but India moved to T+1 to make the system faster and safer.",
+      "why_this_is_important": "This is a guaranteed exam question. You must know when you become the legal owner.",
+      "formula": "Settlement Date = Trade Date + 1 Working Day",
+      "formula_explanation": "Holidays and Weekends are excluded.",
+      "step_by_step_calculation_example": "Scenario 1: You buy on Friday (T).\nSaturday/Sunday are holidays.\nT+1 = Monday. (Shares in account on Monday).\n\nScenario 2: You buy on Wednesday (T).\nThursday is a Public Holiday.\nT+1 = Friday.",
+      "real_life_indian_example": "If you sell shares on Monday, you can withdraw the cash on Tuesday evening.",
+      "exam_traps": [
+        "Do not mark T+2 (Old system) or T+0 (Optional/Beta system). The standard is T+1.",
+        "Rolling Settlement means trades are settled individually day-by-day, not bunched together weekly."
+      ],
+      "memory_trick": "T+1 = Trade + One Day."
+    },
+    {
+      "concept": "4. Corporate Actions",
+      "basic_meaning": "Events initiated by a company that affect its shareholders.",
+      "detailed_explanation": "These actions often change the share price artificially.\n\n1.  **Dividend:** Sharing profit with shareholders. Price usually drops by the dividend amount on the 'Ex-Date'.\n2.  **Bonus Issue:** Giving free extra shares to existing shareholders. (e.g., 1:1 Bonus = Buy 1, Get 1 Free). Price drops by half, but total value remains same.\n3.  **Stock Split:** Breaking high-value shares into smaller ones to make them affordable. (e.g., ₹10 FV becomes ₹2 FV). No change in wealth, just more shares.\n4.  **Buyback:** Company buying its own shares from the market to extinguish them. Reduces number of shares, usually increases value for remaining shareholders.",
+      "why_this_is_important": "Questions will ask 'How does a Bonus issue affect Face Value?' (It doesn't) vs 'Split' (It reduces Face Value).",
+      "formula": "New Price = Old Price / Adjustment Factor",
+      "formula_explanation": "For 1:1 Bonus, Factor is 2. For 1:5 Split, Factor is 5.",
+      "step_by_step_calculation_example": "**Stock Split Example:**\nShare Price: ₹1000. Face Value: ₹10.\nCompany announces 1:10 Split (1 share becomes 10).\nNew Share Price = ₹1000 / 10 = ₹100.\nNew Face Value = ₹10 / 10 = ₹1.\n**Result:** You have 10 shares of ₹100 instead of 1 share of ₹1000. Total Value is same (₹1000).",
+      "real_life_indian_example": "IRCTC split its shares from FV ₹10 to FV ₹2 in 2021. The price dropped from ~₹4000 to ~₹800, making it affordable for small investors.",
+      "exam_traps": [
+        "Bonus shares are issued out of 'Free Reserves' of the company.",
+        "Bonus Issue: Face Value remains SAME. Stock Split: Face Value REDUCES."
+      ],
+      "memory_trick": "Split breaks the Face (Value). Bonus is just a Gift (Face stays same)."
+    },
+    {
+      "concept": "5. Important Dates (Record Date vs. Ex-Date)",
+      "basic_meaning": "The deadlines to determine who gets the benefit (Dividend/Bonus).",
+      "detailed_explanation": "1.  **Record Date:** The date the company checks its records to see who owns the shares.\n2.  **Ex-Date:** The date on or after which the security trades *without* the benefit. You must buy *before* the Ex-Date to get the benefit.",
+      "why_this_is_important": "Investors often buy on Ex-Date thinking they will get the dividend, but they won't. This is a crucial practical concept.",
+      "formula": "Ex-Date = Usually 1 business day before Record Date (due to T+1)",
+      "formula_explanation": "Because it takes 1 day for shares to come to your account.",
+      "step_by_step_calculation_example": "Record Date: Friday, 20th.\nSettlement takes 1 day.\nTo be on record on Friday, you must own shares by Thursday end.\nSo you must buy on Wednesday.\nEx-Date = Thursday, 19th. (If you buy on 19th, you are too late).",
+      "real_life_indian_example": "Vedanta declares dividend. Ex-Date is tomorrow. If you buy today, you get dividend. If you buy tomorrow, previous owner gets dividend.",
+      "exam_traps": [
+        "The exchange sets the Ex-Date. The Company sets the Record Date.",
+        "To get the benefit, you must buy BEFORE the Ex-Date."
+      ],
+      "memory_trick": "Ex-Date = Exclude Date (Benefit is excluded)."
+    },
+    {
+      "concept": "6. Market Indices (The Barometer)",
+      "basic_meaning": "A basket of stocks that represents the overall market sentiment.",
+      "detailed_explanation": "Instead of tracking 5000 companies, we track the top ones.\n1.  **S&P BSE SENSEX:** Top 30 companies on BSE.\n2.  **NIFTY 50:** Top 50 companies on NSE.\n\nThey use **Free-Float Market Capitalization** method. This means they only count shares available for public trading, excluding shares held by promoters/founders.",
+      "why_this_is_important": "Indices are the benchmark. Mutual funds try to beat the Index.",
+      "formula": "Market Cap = Share Price × Total Shares",
+      "formula_explanation": "Free Float Mcap = Share Price × Total Shares × Public Shareholding %",
+      "step_by_step_calculation_example": "Company A has 100 shares. Price ₹10.\nPromoters hold 60 shares. Public holds 40 shares.\nTotal Market Cap = 100 × 10 = ₹1000.\nFree Float Market Cap = 40 × 10 = ₹400.",
+      "real_life_indian_example": "If Nifty moves from 18,000 to 18,180, the market is up 1%.",
+      "exam_traps": [
+        "Sensex has 30 stocks, Nifty has 50.",
+        "Full Market Cap includes promoter shares; Indices use Free Float (exclude promoter)."
+      ],
+      "memory_trick": "Sensex = Sensitivity Index (30). Nifty = National Fifty (50)."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Demat Account vs. Trading Account",
+      "clear_explanation": "**Trading Account:** Used to place orders (Buy/Sell). Like a transaction counter. Maintained by Broker. \n**Demat Account:** Used to hold securities (Store). Like a digital locker. Maintained by Depository (NSDL/CDSL)."
+    },
+    {
+      "difference_between": "Limit Order vs. Market Order",
+      "clear_explanation": "**Market Order:** Buy immediately at whatever price is available (Best price). Speed is priority. \n**Limit Order:** Buy only at a specific price (or better). Price is priority. (e.g., Buy at ₹100. If price is ₹101, don't buy)."
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "T+1 Settlement Cycle definition.",
+    "Difference between Record Date and Ex-Date.",
+    "Impact of Stock Split vs Bonus on Face Value.",
+    "Functions of Clearing Corporation (Risk Management/Guarantee).",
+    "Which method is used for Sensex/Nifty calculation? (Free Float Market Cap)."
+  ],
+  "quick_revision_summary": [
+    "Secondary Market provides Liquidity.",
+    "Exchange = Trading; Clearing Corp = Settlement; Depository = Holding.",
+    "Settlement is T+1 working days.",
+    "Buy BEFORE Ex-Date to get dividends.",
+    "Bonus Issue: Face Value SAME. Stock Split: Face Value CHANGES.",
+    "Margins are collected to prevent default risk."
+  ]
+}

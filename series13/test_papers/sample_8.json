@@ -1,0 +1,1952 @@
+[
+  {
+    "id": 1701,
+    "question": "A textile manufacturer in India anticipates a payment of €500,000 in six months. Concerned that the Euro might depreciate against the Rupee, the manufacturer enters into a contract with a bank to sell €500,000 at a fixed rate of ₹90/€. This specific contract is an example of:",
+    "options": [
+      "Exchange Traded Currency Future",
+      "Over-the-Counter (OTC) Forward Contract",
+      "Interest Rate Swap",
+      "Exchange Traded Currency Option"
+    ],
+    "answer": "Over-the-Counter (OTC) Forward Contract",
+    "hint": "Customized agreement with a bank, not an exchange.",
+    "explanation": "Forward contracts are customized, bilateral agreements (usually between a client and a bank) to buy or sell an asset at a specified future time for a price agreed upon today. They are OTC instruments."
+  },
+  {
+    "id": 1702,
+    "question": "Which of the following derivatives instruments inherently carries the highest degree of 'Counterparty Risk'?",
+    "options": [
+      "Nifty 50 Futures",
+      "Reliance Call Options",
+      "A bilateral Interest Rate Swap between two corporations",
+      "Gold ETF units"
+    ],
+    "answer": "A bilateral Interest Rate Swap between two corporations",
+    "hint": "No central clearing house guarantees this trade.",
+    "explanation": "OTC derivatives like bilateral swaps lack a central counterparty (Clearing Corporation). If one party defaults, the other suffers a direct loss, unlike exchange-traded derivatives where the CCP guarantees settlement."
+  },
+  {
+    "id": 1703,
+    "question": "In the context of derivatives, what does the term 'Notional Principal' refer to?",
+    "options": [
+      "The actual amount of money exchanged at the start.",
+      "The hypothetical value on which interest payments are calculated, but which is never exchanged.",
+      "The profit made by the broker.",
+      "The margin money deposited."
+    ],
+    "answer": "The hypothetical value on which interest payments are calculated, but which is never exchanged.",
+    "hint": "It's a reference amount, not real principal.",
+    "explanation": "In instruments like Interest Rate Swaps, the principal amount is 'notional' because it is used only to calculate the interest payments to be exchanged, and the principal itself is usually not exchanged."
+  },
+  {
+    "id": 1704,
+    "question": "An arbitrageur observes that the spot price of Gold is ₹60,000 and the 1-year futures price is ₹67,000. If the risk-free interest rate is 6% p.a. and storage costs are negligible, what action will the arbitrageur take to earn a risk-free profit?",
+    "options": [
+      "Buy Spot, Sell Future",
+      "Sell Spot, Buy Future",
+      "Buy Spot, Buy Future",
+      "Do nothing"
+    ],
+    "answer": "Buy Spot, Sell Future",
+    "hint": "Calculate Fair Value: 60k + 6% = 63.6k. Future is 67k (Expensive).",
+    "explanation": "Fair Future Price = Spot * (1+r) = 60,000 * 1.06 = 63,600. The market future is 67,000 (Overpriced). The strategy is 'Cash and Carry': Buy Spot @ 60k, Sell Future @ 67k. Profit = 67,000 - 63,600 = 3,400."
+  },
+  {
+    "id": 1705,
+    "question": "Which of the following best describes the role of a 'Speculator' in the derivatives market?",
+    "options": [
+      "They use derivatives to reduce business risk.",
+      "They provide risk capital and liquidity by taking positions based on their view of future price movements.",
+      "They ensure risk-free profits by exploiting price differences.",
+      "They regulate the market."
+    ],
+    "answer": "They provide risk capital and liquidity by taking positions based on their view of future price movements.",
+    "hint": "Risk-takers seeking profit.",
+    "explanation": "Speculators willingly take on risk that hedgers want to avoid, hoping to profit from price changes. Their participation adds liquidity and depth to the market."
+  },
+  {
+    "id": 1706,
+    "question": "A farmer sells soybean futures to protect against a potential fall in crop prices. This is an example of a:",
+    "options": [
+      "Short Hedge",
+      "Long Hedge",
+      "Arbitrage",
+      "Straddle"
+    ],
+    "answer": "Short Hedge",
+    "hint": "Selling futures to lock in a sale price.",
+    "explanation": "A Short Hedge involves selling futures contracts to protect against a decline in the price of the commodity the hedger owns (or will produce)."
+  },
+  {
+    "id": 1707,
+    "question": "If an investor places a 'Market Order' to buy 500 shares, at what price will the trade typically be executed?",
+    "options": [
+      "At the previous day's closing price.",
+      "At the best available 'Ask' (Sell) price currently in the order book.",
+      "At the best available 'Bid' (Buy) price.",
+      "At the price specified by the investor."
+    ],
+    "answer": "At the best available 'Ask' (Sell) price currently in the order book.",
+    "hint": "Takers hit the other side.",
+    "explanation": "A Market Buy order matches with the best available Sell (Ask) orders in the system to ensure immediate execution."
+  },
+  {
+    "id": 1708,
+    "question": "Company 'A' has a market capitalization of ₹50,000 Crores. The promoters hold 40% of the shares. What is the 'Free Float Market Capitalization' used for index calculation?",
+    "options": [
+      "₹50,000 Crores",
+      "₹20,000 Crores",
+      "₹30,000 Crores",
+      "₹40,000 Crores"
+    ],
+    "answer": "₹30,000 Crores",
+    "hint": "Total Cap - Promoter Holding.",
+    "explanation": "Free Float = Total Cap * (1 - Promoter Holding %) = 50,000 * (1 - 0.40) = 50,000 * 0.60 = ₹30,000 Crores."
+  },
+  {
+    "id": 1709,
+    "question": "The 'Nifty Bank' index is a thematic index comprising the most liquid and large capitalized Indian banking stocks. How many stocks are currently part of this index?",
+    "options": [
+      "10",
+      "12",
+      "15",
+      "20"
+    ],
+    "answer": "12",
+    "hint": "Standard dozen.",
+    "explanation": "The Nifty Bank Index comprises 12 of the most liquid and large capitalized Indian banking stocks."
+  },
+  {
+    "id": 1710,
+    "question": "Impact Cost is calculated as the difference between the Execution Price and the:",
+    "options": [
+      "Previous Close",
+      "Ideal Price (Average of Best Bid and Ask)",
+      "Opening Price",
+      "VWAP"
+    ],
+    "answer": "Ideal Price (Average of Best Bid and Ask)",
+    "hint": "Cost relative to the theoretical 'fair' price at that moment.",
+    "explanation": "Impact Cost = (Actual Execution Price - Ideal Price) / Ideal Price * 100. Ideal Price is (Best Bid + Best Ask) / 2."
+  },
+  {
+    "id": 1711,
+    "question": "A stock trading at ₹1000 declares a 1:1 Bonus Issue. Theoretically, what should be the stock price on the Ex-Bonus date?",
+    "options": [
+      "₹1000",
+      "₹500",
+      "₹2000",
+      "₹100"
+    ],
+    "answer": "₹500",
+    "hint": "Double the shares, half the price.",
+    "explanation": "In a 1:1 bonus, the number of shares doubles. To keep market capitalization constant, the price halves. ₹1000 / 2 = ₹500."
+  },
+  {
+    "id": 1712,
+    "question": "In the T+1 settlement cycle, if a trade is executed on Wednesday (T day), funds and securities pay-in/pay-out occurs on:",
+    "options": [
+      "Wednesday evening",
+      "Thursday (T+1)",
+      "Friday (T+2)",
+      "Monday"
+    ],
+    "answer": "Thursday (T+1)",
+    "hint": "Next business day.",
+    "explanation": "Under the T+1 cycle, settlement happens on the next working day after the trade day."
+  },
+  {
+    "id": 1713,
+    "question": "Which entity acts as the 'Central Counterparty' (CCP) for all trades executed on the National Stock Exchange?",
+    "options": [
+      "NSDL",
+      "SEBI",
+      "NSE Clearing Ltd (NCL/NSCCL)",
+      "RBI"
+    ],
+    "answer": "NSE Clearing Ltd (NCL/NSCCL)",
+    "hint": "The clearing arm of NSE.",
+    "explanation": "NSE Clearing Ltd (formerly NSCCL) is the clearing corporation that guarantees the settlement of net obligations for trades on the NSE."
+  },
+  {
+    "id": 1714,
+    "question": "What is the primary function of the 'Pre-Open Call Auction' session (9:00 AM - 9:08 AM)?",
+    "options": [
+      "To allow retail investors to exit early.",
+      "To discover an equilibrium opening price based on demand and supply.",
+      "To test the trading system.",
+      "To allow only institutional trades."
+    ],
+    "answer": "To discover an equilibrium opening price based on demand and supply.",
+    "hint": "Price discovery mechanism.",
+    "explanation": "The call auction mechanism aggregates all buy and sell orders to find a single 'Equilibrium Price' that maximizes the tradable volume, setting the opening price."
+  },
+  {
+    "id": 1715,
+    "question": "Identify the 'Systematic Risk' factor from the following:",
+    "options": [
+      "Management fraud in Company X.",
+      "A fire at a supplier's factory.",
+      "An increase in the RBI Repo Rate.",
+      "A labor strike in the auto industry."
+    ],
+    "answer": "An increase in the RBI Repo Rate.",
+    "hint": "Affects the whole economy.",
+    "explanation": "Interest rate changes (RBI Repo Rate) affect the entire economy and market. This is Systematic Risk. The others are Unsystematic (specific) risks."
+  },
+  {
+    "id": 1716,
+    "question": "If a stock has a 'Beta' of 1.5, and the market index rises by 2%, the stock is theoretically expected to:",
+    "options": [
+      "Rise by 2%",
+      "Rise by 3%",
+      "Fall by 3%",
+      "Rise by 1.5%"
+    ],
+    "answer": "Rise by 3%",
+    "hint": "Beta * Market Return.",
+    "explanation": "Expected Return = Beta * Market Return = 1.5 * 2% = 3%."
+  },
+  {
+    "id": 1717,
+    "question": "What is 'Dematerialization'?",
+    "options": [
+      "The process of issuing new shares.",
+      "The conversion of physical share certificates into electronic form.",
+      "The buyback of shares by a company.",
+      "The delisting of shares."
+    ],
+    "answer": "The conversion of physical share certificates into electronic form.",
+    "hint": "Physical to Digital.",
+    "explanation": "Dematerialization (Demat) is the process of converting physical paper certificates into digital records held by a depository."
+  },
+  {
+    "id": 1718,
+    "question": "A 'Stop Loss Sell' order is typically placed:",
+    "options": [
+      "Above the current market price.",
+      "Below the current market price.",
+      "At the target profit price.",
+      "At zero."
+    ],
+    "answer": "Below the current market price.",
+    "hint": "Sell if it drops too much.",
+    "explanation": "A Stop Loss Sell is used to limit losses on a long position. It triggers a sell if the price falls *below* a specified level."
+  },
+  {
+    "id": 1719,
+    "question": "Which corporate action involves the company buying its own shares from the open market or via tender offer to reduce the number of outstanding shares?",
+    "options": [
+      "Rights Issue",
+      "Bonus Issue",
+      "Buyback",
+      "Stock Split"
+    ],
+    "answer": "Buyback",
+    "hint": "Company buys itself.",
+    "explanation": "A Buyback (Share Repurchase) reduces the number of outstanding shares, often increasing EPS for remaining shareholders."
+  },
+  {
+    "id": 1720,
+    "question": "The 'VIX' (Volatility Index) is essentially a measure of:",
+    "options": [
+      "Historical volatility over the last year.",
+      "Implied volatility representing market's expectation of near-term risk.",
+      "The P/E ratio of the Nifty.",
+      "The volume of trading."
+    ],
+    "answer": "Implied volatility representing market's expectation of near-term risk.",
+    "hint": "The 'Fear Gauge'.",
+    "explanation": "India VIX measures the market's expectation of volatility over the next 30 days based on Nifty option prices."
+  },
+  {
+    "id": 1721,
+    "question": "Which of the following describes 'Insider Trading'?",
+    "options": [
+      "Trading by employees of a company.",
+      "Trading based on Unpublished Price Sensitive Information (UPSI).",
+      "Trading by foreign investors.",
+      "Trading during market holidays."
+    ],
+    "answer": "Trading based on Unpublished Price Sensitive Information (UPSI).",
+    "hint": "Using secret info.",
+    "explanation": "Insider trading is the illegal practice of trading securities based on material, non-public information (UPSI)."
+  },
+  {
+    "id": 1722,
+    "question": "Securities Transaction Tax (STT) is applicable on:",
+    "options": [
+      "Commodity Futures",
+      "Currency Derivatives",
+      "Equity and Equity Derivatives traded on recognized exchanges",
+      "Fixed Deposits"
+    ],
+    "answer": "Equity and Equity Derivatives traded on recognized exchanges",
+    "hint": "Specific to the stock market.",
+    "explanation": "STT is levied on the value of taxable securities transactions (Equity Cash and F&O) done on a recognized stock exchange in India."
+  },
+  {
+    "id": 1723,
+    "question": "What is the 'Price-to-Earnings' (P/E) Ratio used for?",
+    "options": [
+      "To measure liquidity.",
+      "To measure volatility.",
+      "To value a company by comparing its stock price to its earnings per share.",
+      "To calculate dividends."
+    ],
+    "answer": "To value a company by comparing its stock price to its earnings per share.",
+    "hint": "Valuation metric.",
+    "explanation": "P/E Ratio = Market Price / Earnings Per Share (EPS). It indicates how much investors are willing to pay for every rupee of earnings."
+  },
+  {
+    "id": 1724,
+    "question": "If a stock is in the 'Trade-for-Trade' (T2T) segment, what trading restriction applies?",
+    "options": [
+      "No restriction.",
+      "Only institutional investors can trade.",
+      "Intraday squaring off is not allowed; all trades must result in delivery.",
+      "Only limit orders are allowed."
+    ],
+    "answer": "Intraday squaring off is not allowed; all trades must result in delivery.",
+    "hint": "Forced delivery.",
+    "explanation": "T2T segment stocks cannot be traded for intraday speculation. Every buy must be paid for, and every sell must result in delivery."
+  },
+  {
+    "id": 1725,
+    "question": "Who assigns the ISIN (International Securities Identification Number) to a security in India?",
+    "options": [
+      "SEBI",
+      "NSDL (National Securities Depository Limited)",
+      "NSE",
+      "RBI"
+    ],
+    "answer": "NSDL (National Securities Depository Limited)",
+    "hint": "The National Numbering Agency.",
+    "explanation": "NSDL acts as the National Numbering Agency (NNA) for India and assigns the unique 12-digit ISIN to securities."
+  },
+  {
+    "id": 1726,
+    "question": "A 'Circuit Breaker' halts trading in the entire market when:",
+    "options": [
+      "A specific stock falls by 20%.",
+      "The benchmark index (Nifty/Sensex) moves by a specified percentage (10%, 15%, 20%).",
+      "The volume is too high.",
+      "It rains heavily."
+    ],
+    "answer": "The benchmark index (Nifty/Sensex) moves by a specified percentage (10%, 15%, 20%).",
+    "hint": "Market-wide halt.",
+    "explanation": "Index-based circuit breakers halt trading across all equity and equity derivative markets to cool down panic during extreme volatility."
+  },
+  {
+    "id": 1727,
+    "question": "In the context of the order book, the 'Spread' is defined as:",
+    "options": [
+      "The difference between High and Low price.",
+      "The difference between Best Buy (Bid) and Best Sell (Ask) price.",
+      "The difference between Opening and Closing price.",
+      "The brokerage charged."
+    ],
+    "answer": "The difference between Best Buy (Bid) and Best Sell (Ask) price.",
+    "hint": "Bid-Ask gap.",
+    "explanation": "The Bid-Ask Spread is the difference between the highest price a buyer is willing to pay (Best Bid) and the lowest price a seller is willing to accept (Best Ask)."
+  },
+  {
+    "id": 1728,
+    "question": "Which of the following is a function of the 'Primary Market'?",
+    "options": [
+      "Price discovery of existing shares.",
+      "Transfer of ownership between investors.",
+      "Capital formation by issuing new securities.",
+      "Speculation."
+    ],
+    "answer": "Capital formation by issuing new securities.",
+    "hint": "Creation of capital.",
+    "explanation": "The Primary Market facilitates capital formation by allowing companies to raise funds through the issuance of fresh securities (IPOs)."
+  },
+  {
+    "id": 1729,
+    "question": "An investor wants to ensure his order is executed immediately or cancelled if liquidity is unavailable. Which order type should he use?",
+    "options": [
+      "Limit Order",
+      "Immediate or Cancel (IOC)",
+      "Good Till Cancelled (GTC)",
+      "Stop Loss Order"
+    ],
+    "answer": "Immediate or Cancel (IOC)",
+    "hint": "Now or never.",
+    "explanation": "IOC orders attempt to execute immediately. Any portion that cannot be filled instantly is cancelled, rather than remaining in the book."
+  },
+  {
+    "id": 1730,
+    "question": "If a company declares a dividend of 250% on a face value of ₹2, what is the dividend amount per share?",
+    "options": [
+      "₹250",
+      "₹50",
+      "₹5",
+      "₹2.50"
+    ],
+    "answer": "₹5",
+    "hint": "Percentage of Face Value.",
+    "explanation": "Dividend = 250% of Face Value = (250 / 100) * 2 = 2.5 * 2 = ₹5."
+  },
+  {
+    "id": 1731,
+    "question": "Which of the following corporate actions results in a reduction of Face Value?",
+    "options": [
+      "Bonus Issue",
+      "Rights Issue",
+      "Stock Split",
+      "Dividend"
+    ],
+    "answer": "Stock Split",
+    "hint": "Splitting the denomination.",
+    "explanation": "A Stock Split divides existing shares into multiple shares by reducing the Face Value (e.g., FV 10 becomes FV 2 in a 1:5 split)."
+  },
+  {
+    "id": 1732,
+    "question": "Spot Price = ₹100. Risk-Free Rate = 10% p.a. Time to Expiry = 1 Year. What is the Fair Value of the Future?",
+    "options": [
+      "₹100",
+      "₹110",
+      "₹90",
+      "₹105"
+    ],
+    "answer": "₹110",
+    "hint": "S * (1+r).",
+    "explanation": "Fair Value = Spot * (1 + Rate) = 100 * (1 + 0.10) = 110."
+  },
+  {
+    "id": 1733,
+    "question": "If the Spot Price is ₹200 and the Futures Price is ₹205, the 'Basis' is:",
+    "options": [
+      "5",
+      "-5",
+      "200",
+      "405"
+    ],
+    "answer": "-5",
+    "hint": "Basis = Spot - Future.",
+    "explanation": "Basis is defined as Spot Price minus Futures Price. 200 - 205 = -5."
+  },
+  {
+    "id": 1734,
+    "question": "When the Futures Price is higher than the Spot Price, the market is said to be in:",
+    "options": [
+      "Backwardation",
+      "Contango",
+      "Discount",
+      "Reversal"
+    ],
+    "answer": "Contango",
+    "hint": "Normal cost of carry condition.",
+    "explanation": "Contango is the normal market condition where Futures trade at a premium to Spot due to the Cost of Carry (Interest/Storage)."
+  },
+  {
+    "id": 1735,
+    "question": "Initial Margin in futures trading is collected to cover:",
+    "options": [
+      "Mark-to-Market losses.",
+      "Brokerage fees.",
+      "The potential worst-case loss (VaR) over a short period.",
+      "Stamp duty."
+    ],
+    "answer": "The potential worst-case loss (VaR) over a short period.",
+    "hint": "Risk buffer.",
+    "explanation": "Initial Margin (SPAN margin) covers the Value at Risk (VaR), estimating the maximum potential loss in a single day with 99% confidence."
+  },
+  {
+    "id": 1736,
+    "question": "If a trader holds a Short Futures position and the price rises, what happens to his margin account?",
+    "options": [
+      "Money is credited.",
+      "Money is debited (M2M Loss).",
+      "No change.",
+      "The position is doubled."
+    ],
+    "answer": "Money is debited (M2M Loss).",
+    "hint": "Short sellers lose when prices go up.",
+    "explanation": "Daily Mark-to-Market (M2M) settlement debits losses from the trader's account. Since the price rose, the short seller incurs a loss."
+  },
+  {
+    "id": 1737,
+    "question": "As a futures contract approaches its expiry date, the difference between Spot and Futures prices:",
+    "options": [
+      "Increases.",
+      "Converges to zero.",
+      "Becomes negative.",
+      "Remains constant."
+    ],
+    "answer": "Converges to zero.",
+    "hint": "Convergence.",
+    "explanation": "This is the principle of Convergence. At expiry, there is no time left for interest or storage costs, so Future Price = Spot Price."
+  },
+  {
+    "id": 1738,
+    "question": "What is 'Open Interest' (OI)?",
+    "options": [
+      "The total volume traded in a day.",
+      "The number of contracts outstanding (not settled/closed) at a point in time.",
+      "The interest rate charged on margins.",
+      "The number of new investors."
+    ],
+    "answer": "The number of contracts outstanding (not settled/closed) at a point in time.",
+    "hint": "Positions that are still 'Open'.",
+    "explanation": "Open Interest is the total number of derivative contracts that have been entered into but not yet liquidated by an offsetting transaction or by delivery."
+  },
+  {
+    "id": 1739,
+    "question": "If Nifty Spot is 18,000 and the 1-month future is 18,050, the 50 points premium represents:",
+    "options": [
+      "Volatility",
+      "Cost of Carry",
+      "Beta",
+      "Dividend"
+    ],
+    "answer": "Cost of Carry",
+    "hint": "The cost to hold the position.",
+    "explanation": "The premium (Future - Spot) in a normal market represents the Cost of Carry (Interest cost minus Dividend yield)."
+  },
+  {
+    "id": 1740,
+    "question": "A 'Calendar Spread' strategy involves:",
+    "options": [
+      "Buying Stock, Selling Future.",
+      "Buying Near Month Future, Selling Far Month Future.",
+      "Buying Call, Selling Put.",
+      "Buying Nifty, Selling Bank Nifty."
+    ],
+    "answer": "Buying Near Month Future, Selling Far Month Future.",
+    "hint": "Same asset, different time.",
+    "explanation": "Calendar Spreads involve simultaneous Long and Short positions on the same underlying asset but with different expiry dates."
+  },
+  {
+    "id": 1741,
+    "question": "Why do regulators impose 'Market Wide Position Limits' (MWPL)?",
+    "options": [
+      "To limit the profit of brokers.",
+      "To prevent market manipulation and excessive concentration of open interest.",
+      "To tax the investors.",
+      "To stop foreign investment."
+    ],
+    "answer": "To prevent market manipulation and excessive concentration of open interest.",
+    "hint": "Limiting exposure.",
+    "explanation": "MWPL ensures that no single stock has excessive speculative open interest relative to its free-float market cap, preventing manipulation (squeezes)."
+  },
+  {
+    "id": 1742,
+    "question": "If a stock pays a dividend, what is the impact on the theoretical futures price?",
+    "options": [
+      "Futures price increases.",
+      "Futures price decreases.",
+      "Futures price remains unaffected.",
+      "Futures price becomes zero."
+    ],
+    "answer": "Futures price decreases.",
+    "hint": "Futures holders don't get the dividend.",
+    "explanation": "Fair Price = Spot + Interest - Dividend. Since dividends are a benefit to the spot holder (not future holder), they reduce the fair futures price."
+  },
+  {
+    "id": 1743,
+    "question": "Index Futures in India are settled via:",
+    "options": [
+      "Physical Delivery",
+      "Cash Settlement",
+      "Both",
+      "None"
+    ],
+    "answer": "Cash Settlement",
+    "hint": "No delivery of 50 stocks.",
+    "explanation": "Index futures are always cash-settled based on the difference between the entry price and the closing index value."
+  },
+  {
+    "id": 1744,
+    "question": "A trader buys 1 Lot of Nifty Futures (Lot size 50) at 19,000. He sells it at 19,100. What is his profit?",
+    "options": [
+      "₹100",
+      "₹5,000",
+      "₹500",
+      "₹1,000"
+    ],
+    "answer": "₹5,000",
+    "hint": "Points * Lot Size.",
+    "explanation": "Profit = (Exit - Entry) * Lot Size = (19,100 - 19,000) * 50 = 100 * 50 = ₹5,000."
+  },
+  {
+    "id": 1745,
+    "question": "Which margin covers the 'tail risk' or extreme losses beyond the normal VaR limits?",
+    "options": [
+      "SPAN Margin",
+      "Exposure Margin",
+      "M2M Margin",
+      "Premium Margin"
+    ],
+    "answer": "Exposure Margin",
+    "hint": "Extra safety layer.",
+    "explanation": "Exposure margin is charged over and above the SPAN margin to cover risks arising from extreme market volatility or black swan events."
+  },
+  {
+    "id": 1746,
+    "question": "Arbitrage opportunities between Spot and Futures help in:",
+    "options": [
+      "Creating volatility.",
+      "Aligning the Futures price with its Fair Value (Market Efficiency).",
+      "Increasing taxes.",
+      "Stopping trading."
+    ],
+    "answer": "Aligning the Futures price with its Fair Value (Market Efficiency).",
+    "hint": "Closing the gap.",
+    "explanation": "Arbitrageurs exploit mispricing. Their actions (buying low, selling high) force the prices back in line with fair value, ensuring market efficiency."
+  },
+  {
+    "id": 1747,
+    "question": "If a trader expects a 'Bear Market' (falling prices), which Futures strategy should he adopt?",
+    "options": [
+      "Long Futures",
+      "Short Futures",
+      "Calendar Spread",
+      "Cash and Carry"
+    ],
+    "answer": "Short Futures",
+    "hint": "Sell first.",
+    "explanation": "Shorting futures allows a trader to profit from falling prices by selling high and buying back low later."
+  },
+  {
+    "id": 1748,
+    "question": "A stock is banned in F&O if the aggregate open interest crosses what percentage of MWPL?",
+    "options": [
+      "80%",
+      "95%",
+      "100%",
+      "50%"
+    ],
+    "answer": "95%",
+    "hint": "The ban threshold.",
+    "explanation": "When the open interest of a stock crosses 95% of the Market Wide Position Limit (MWPL), it enters the F&O ban period (no new positions allowed)."
+  },
+  {
+    "id": 1749,
+    "question": "The 'Tick Size' for Nifty Futures is:",
+    "options": [
+      "₹1.00",
+      "₹0.05",
+      "₹0.10",
+      "₹0.25"
+    ],
+    "answer": "₹0.05",
+    "hint": "Minimum price move.",
+    "explanation": "The minimum price movement (Tick Size) allowed for Nifty Futures (and most Indian stocks) is ₹0.05 (5 paise)."
+  },
+  {
+    "id": 1750,
+    "question": "Who sets the 'Lot Size' for derivative contracts?",
+    "options": [
+      "The Broker",
+      "The Investor",
+      "SEBI / Stock Exchange",
+      "The Company"
+    ],
+    "answer": "SEBI / Stock Exchange",
+    "hint": "Regulator.",
+    "explanation": "The Lot Size is determined by the Stock Exchange as per SEBI guidelines to ensure the contract value stays within a specified range (e.g., ₹5-10 Lakhs)."
+  },
+  {
+    "id": 1751,
+    "question": "A wealth manager holds a ₹15 Crore equity portfolio with a Beta of 1.15. He expects a short-term bearish phase and wants to reduce the portfolio's systematic risk to a Beta of 0.5 using Nifty Futures. If Nifty is at 21,000 and the lot size is 50, what action is required?",
+    "options": [
+      "Sell 93 Lots",
+      "Buy 93 Lots",
+      "Sell 164 Lots",
+      "Buy 164 Lots"
+    ],
+    "answer": "Sell 93 Lots",
+    "hint": "Number of contracts = [Portfolio Value * (Current Beta - Target Beta)] / (Futures Price * Lot Size).",
+    "explanation": "Contract Value = 21,000 * 50 = ₹10,50,000. Calculation: [15,00,00,000 * (1.15 - 0.5)] / 10,50,000 = [15,00,00,000 * 0.65] / 10,50,000 = 9,75,00,000 / 10,50,000 = 92.85. Rounding to the nearest whole number gives 93 lots to be sold."
+  },
+  {
+    "id": 1752,
+    "question": "An arbitrageur identifies that the Spot price of a stock is ₹1,500. The 1-month futures contract is trading at ₹1,520. If the risk-free interest rate is 10% p.a., determine the arbitrage potential per lot (Lot size 400).",
+    "options": [
+      "₹3,000",
+      "₹2,500",
+      "₹8,000",
+      "₹1,200"
+    ],
+    "answer": "₹3,000",
+    "hint": "Arbitrage Profit = Actual Future Price - Fair Future Price.",
+    "explanation": "Fair Future Price = 1,500 + (1,500 * 0.10 * 1/12) = 1,500 + 12.5 = ₹1,512.50. Arbitrage per share = 1,520 - 1,512.50 = ₹7.50. Total Profit = 7.50 * 400 = ₹3,000."
+  },
+  {
+    "id": 1753,
+    "question": "If a trader expects the 'Basis' to strengthen (move from -₹20 to -₹5) while holding a Short Hedge position, the trader will experience:",
+    "options": [
+      "An additional gain",
+      "An additional loss",
+      "No impact on the hedge",
+      "A margin call"
+    ],
+    "answer": "An additional gain",
+    "hint": "Basis = Spot - Future. Short hedgers benefit when the basis increases.",
+    "explanation": "A short hedger sells futures. If the basis strengthens (Spot increases relative to Futures), the loss in the futures position is less than the gain in the spot, or vice versa, resulting in a net profit from the basis movement."
+  },
+  {
+    "id": 1754,
+    "question": "A corporate entity is set to receive a payment in GBP in 2 months. To protect against the depreciation of GBP against INR, the entity should:",
+    "options": [
+      "Buy GBPINR Futures",
+      "Sell GBPINR Futures",
+      "Buy GBPINR Call Options",
+      "Sell GBPINR Put Options"
+    ],
+    "answer": "Sell GBPINR Futures",
+    "hint": "The entity is 'Long' the currency and needs to protect against falling prices.",
+    "explanation": "The entity will receive GBP (asset). To hedge against the risk of the value of GBP falling (depreciation), they must take an equal and opposite position in the derivatives market, which is selling GBPINR futures."
+  },
+  {
+    "id": 1755,
+    "question": "In a 'Contango' market, if a long-term investor continuously rolls over their long futures position to the next month, they will generally face:",
+    "options": [
+      "A positive roll yield",
+      "A negative roll yield",
+      "Zero cost of rolling",
+      "Guaranteed arbitrage profit"
+    ],
+    "answer": "A negative roll yield",
+    "hint": "Contango means Far Month > Near Month.",
+    "explanation": "In Contango, the trader sells the expiring near-month (lower price) and buys the next-month (higher price). This constant 'buying high and selling low' results in a negative roll yield (cost)."
+  },
+  {
+    "id": 1756,
+    "question": "Which of the following describes the 'Cost of Carry' for a dividend-paying stock?",
+    "options": [
+      "Interest Cost + Dividends",
+      "Interest Cost - Dividends",
+      "Only Interest Cost",
+      "Storage Cost + Interest Cost"
+    ],
+    "answer": "Interest Cost - Dividends",
+    "hint": "Dividends are a benefit of holding the spot asset.",
+    "explanation": "For equity futures, the cost of carry is the interest paid to finance the purchase of the stock minus any dividends received during the holding period."
+  },
+  {
+    "id": 1757,
+    "question": "An investor wants to shift their asset allocation from 100% Debt to 50% Equity and 50% Debt without liquidating their bonds. Which derivative strategy achieves this synthetically?",
+    "options": [
+      "Sell Index Futures",
+      "Buy Index Futures",
+      "Buy Put Options",
+      "Sell Call Options"
+    ],
+    "answer": "Buy Index Futures",
+    "hint": "Adding equity exposure to an existing debt portfolio.",
+    "explanation": "By buying index futures equivalent to 50% of the portfolio value, the investor adds equity market exposure (Beta) to their interest-bearing debt holdings, creating a synthetic balanced fund."
+  },
+  {
+    "id": 1758,
+    "question": "If the Spot Nifty is at 19,000 and the 1-month Nifty Future is at 18,950, the market is said to be in:",
+    "options": [
+      "Contango",
+      "Backwardation",
+      "Equilibrium",
+      "Convergence"
+    ],
+    "answer": "Backwardation",
+    "hint": "Spot is higher than Futures.",
+    "explanation": "When the spot price is higher than the futures price (or near-month is higher than far-month), the market is in Backwardation, often indicating high immediate demand for the asset."
+  },
+  {
+    "id": 1759,
+    "question": "A speculator executes a 'Short Calendar Spread' in futures by buying the near-month and selling the far-month. This trader expects the spread between the two months to:",
+    "options": [
+      "Widen",
+      "Narrow",
+      "Stay the same",
+      "Become zero"
+    ],
+    "answer": "Narrow",
+    "hint": "Selling the spread profits when the difference decreases.",
+    "explanation": "In a Short Calendar Spread, the trader sells the higher-priced month (usually far) and buys the lower-priced month (near). Profit is made if the price gap (spread) between them decreases."
+  },
+  {
+    "id": 1760,
+    "question": "Calculate the fair value of a 2-month stock future if Spot = ₹500, Risk-free rate = 7% p.a., and the stock pays a dividend of ₹5 exactly one month from today.",
+    "options": [
+      "₹505.83",
+      "₹500.83",
+      "₹502.50",
+      "₹495.00"
+    ],
+    "answer": "₹500.83",
+    "hint": "Fair Price = Spot + Interest - Dividend.",
+    "explanation": "Interest for 2 months = 500 * 0.07 * 2/12 = ₹5.83. Fair Price = 500 + 5.83 - 5.00 = ₹500.83."
+  },
+  {
+    "id": 1761,
+    "question": "A fund manager uses 'Beta Hedging' to protect a portfolio. If the market falls by 10% and the portfolio falls by 12%, while the futures hedge gains 10%, the net loss of 2% is primarily due to:",
+    "options": [
+      "Systematic Risk",
+      "Unsystematic Risk",
+      "Market Risk",
+      "Inflation Risk"
+    ],
+    "answer": "Unsystematic Risk",
+    "hint": "Index futures only hedge against broad market moves.",
+    "explanation": "Beta hedging (using index futures) only neutralizes systematic (market) risk. The specific risk of the individual stocks (unsystematic risk) remains unhedged, causing the tracking error."
+  },
+  {
+    "id": 1762,
+    "question": "During the daily settlement of futures, if the clearinghouse cannot collect the MTM loss from a member, which mechanism is primarily used to ensure market integrity?",
+    "options": [
+      "Investor Protection Fund",
+      "Settlement Guarantee Fund",
+      "Trade Guarantee Fund",
+      "Public Provident Fund"
+    ],
+    "answer": "Settlement Guarantee Fund",
+    "hint": "A pool of funds used to cover defaults of members.",
+    "explanation": "The Settlement Guarantee Fund (SGF) is maintained by the clearing corporation to ensure that the settlement of trades continues even if a clearing member defaults."
+  },
+  {
+    "id": 1763,
+    "question": "Which of the following factors increases the 'Convenience Yield' for a physical commodity like Crude Oil?",
+    "options": [
+      "High global inventory levels",
+      "Expectation of a supply shortage in the near term",
+      "Decrease in interest rates",
+      "Increase in storage costs"
+    ],
+    "answer": "Expectation of a supply shortage in the near term",
+    "hint": "Benefits of having the physical asset right now.",
+    "explanation": "Convenience yield rises when the benefits of holding the physical commodity (like avoiding a production shutdown) increase, typically during shortages."
+  },
+  {
+    "id": 1764,
+    "question": "A trader is 'Long' 500 shares of XYZ at ₹2,000 and 'Short' 1 lot of XYZ Futures (Lot size 500) at ₹2,015. At expiry, XYZ is at ₹1,980. What is the net profit/loss?",
+    "options": [
+      "Loss of ₹10,000",
+      "Profit of ₹7,500",
+      "Loss of ₹7,500",
+      "Profit of ₹17,500"
+    ],
+    "answer": "Profit of ₹7,500",
+    "hint": "Net Profit = Gain on Future + Loss on Spot.",
+    "explanation": "Loss on Spot = (1,980 - 2,000) * 500 = -₹10,000. Gain on Future = (2,015 - 1,980) * 500 = +₹17,500. Net P&L = -10,000 + 17,500 = +₹7,500."
+  },
+  {
+    "id": 1765,
+    "question": "Which of the following is an example of an 'Anticipatory Hedge'?",
+    "options": [
+      "Selling futures against an existing stock portfolio",
+      "Buying futures because you expect to receive cash to buy stocks in 2 months",
+      "Executing a calendar spread to earn theta",
+      "Buying a put option to protect a long stock"
+    ],
+    "answer": "Buying futures because you expect to receive cash to buy stocks in 2 months",
+    "hint": "Hedging a transaction that has not yet occurred.",
+    "explanation": "An anticipatory hedge is used to lock in the price of an asset that an investor intends to purchase or sell at a later date."
+  },
+  {
+    "id": 1766,
+    "question": "The sensitivity of an option's premium to a 1% change in 'Implied Volatility' is called:",
+    "options": [
+      "Delta",
+      "Gamma",
+      "Vega",
+      "Theta"
+    ],
+    "answer": "Vega",
+    "hint": "Volatility is measured by Vega.",
+    "explanation": "Vega measures the sensitivity of the option price to changes in the volatility of the underlying asset."
+  },
+  {
+    "id": 1767,
+    "question": "Calculate the 'Intrinsic Value' of a Nifty Call Option if Nifty is at 19,450 and the Strike Price is 19,300.",
+    "options": [
+      "150",
+      "-150",
+      "0",
+      "19,300"
+    ],
+    "answer": "150",
+    "hint": "Intrinsic Value for Call = Max(0, Spot - Strike).",
+    "explanation": "Intrinsic Value = 19,450 - 19,300 = 150. Since it's positive, the option is ITM."
+  },
+  {
+    "id": 1768,
+    "question": "An option's 'Theta' decay is highest for which of the following?",
+    "options": [
+      "At-The-Money (ATM) options near expiry",
+      "Deep In-The-Money (ITM) options with 6 months to expiry",
+      "Deep Out-of-The-Money (OTM) options",
+      "European style options"
+    ],
+    "answer": "At-The-Money (ATM) options near expiry",
+    "hint": "Time decay accelerates as expiration approaches for ATM options.",
+    "explanation": "Theta represents time decay. It is most aggressive for ATM options in the final days before expiration as the 'extrinsic value' collapses to zero."
+  },
+  {
+    "id": 1769,
+    "question": "If an investor sells a Put option, their risk profile is most similar to:",
+    "options": [
+      "Shorting the stock",
+      "Buying the stock (with limited profit)",
+      "Buying a call option",
+      "Holding cash"
+    ],
+    "answer": "Buying the stock (with limited profit)",
+    "hint": "Selling a put is a bullish strategy.",
+    "explanation": "Selling a put involves taking on the obligation to buy the stock if the price falls. It has significant downside risk (like being long) but limited upside (premium received)."
+  },
+  {
+    "id": 1770,
+    "question": "The 'Delta' of an At-The-Money (ATM) Call option is typically close to:",
+    "options": [
+      "0",
+      "0.5",
+      "1.0",
+      "-0.5"
+    ],
+    "answer": "0.5",
+    "hint": "ATM options have roughly a 50/50 chance of being ITM at expiry.",
+    "explanation": "Delta for an ATM call is approximately 0.5, meaning for every ₹1 the stock moves, the option premium moves by ₹0.50."
+  },
+  {
+    "id": 1771,
+    "question": "A trader buys a 20,000 Strike Put for ₹150. If Nifty expires at 19,700, what is the net profit/loss?",
+    "options": [
+      "Loss of ₹150",
+      "Profit of ₹300",
+      "Profit of ₹150",
+      "Profit of ₹20,000"
+    ],
+    "answer": "Profit of ₹150",
+    "hint": "Net Profit = Intrinsic Value at Expiry - Premium Paid.",
+    "explanation": "Intrinsic Value = 20,000 - 19,700 = 300. Net Profit = 300 - 150 = ₹150."
+  },
+  {
+    "id": 1772,
+    "question": "Which Greek measures the 'convexity' or the rate of change of Delta?",
+    "options": [
+      "Gamma",
+      "Vega",
+      "Theta",
+      "Rho"
+    ],
+    "answer": "Gamma",
+    "hint": "Gamma is the Delta of Delta.",
+    "explanation": "Gamma measures how much the Delta changes for a one-unit move in the underlying asset price."
+  },
+  {
+    "id": 1773,
+    "question": "An 'In-The-Money' (ITM) option consists of:",
+    "options": [
+      "Only Intrinsic Value",
+      "Only Time Value",
+      "Both Intrinsic Value and Time Value",
+      "Zero value"
+    ],
+    "answer": "Both Intrinsic Value and Time Value",
+    "hint": "Before expiry, any option usually has some time value left.",
+    "explanation": "An ITM option's premium is the sum of its intrinsic value (profit if exercised now) and time value (value based on time left and volatility)."
+  },
+  {
+    "id": 1774,
+    "question": "According to the Black-Scholes model, an increase in 'Time to Expiry' will:",
+    "options": [
+      "Increase the value of Calls and decrease Puts",
+      "Decrease the value of both Calls and Puts",
+      "Increase the value of both Calls and Puts",
+      "Have no effect"
+    ],
+    "answer": "Increase the value of both Calls and Puts",
+    "hint": "More time means more chance for the option to become ITM.",
+    "explanation": "Increased time to maturity increases the 'time value' component of the premium for both call and put options."
+  },
+  {
+    "id": 1775,
+    "question": "A 'Long Strangle' strategy involves:",
+    "options": [
+      "Buying an ATM Call and an ATM Put",
+      "Buying an OTM Call and an OTM Put",
+      "Selling an ATM Call and an ATM Put",
+      "Selling an OTM Call and an OTM Put"
+    ],
+    "answer": "Buying an OTM Call and an OTM Put",
+    "hint": "A cheaper version of a straddle.",
+    "explanation": "A Long Strangle involves buying out-of-the-money options to profit from high volatility, requiring a larger price move than a straddle but costing less premium."
+  },
+  {
+    "id": 1776,
+    "question": "Which of the following describes the 'American Style' of option exercise?",
+    "options": [
+      "Exercise only on the day of expiry",
+      "Exercise any time on or before the day of expiry",
+      "Settlement in shares only",
+      "Available only for index options"
+    ],
+    "answer": "Exercise any time on or before the day of expiry",
+    "hint": "India's stock options were this style before shifting to European.",
+    "explanation": "American style options give the holder the right to exercise the contract at any point during its life."
+  },
+  {
+    "id": 1777,
+    "question": "The 'Break-even' point for a Put option buyer is:",
+    "options": [
+      "Strike Price + Premium",
+      "Strike Price - Premium",
+      "Spot Price + Premium",
+      "Spot Price - Premium"
+    ],
+    "answer": "Strike Price - Premium",
+    "hint": "The stock must fall enough to cover the premium cost.",
+    "explanation": "For a Put buyer, the profit starts when the underlying asset price drops below the Strike Price by an amount equal to the premium paid."
+  },
+  {
+    "id": 1778,
+    "question": "In a 'Bull Call Spread', why does a trader sell a higher strike call?",
+    "options": [
+      "To increase the potential profit",
+      "To reduce the net cost of the long call premium",
+      "To hedge against a market crash",
+      "To make the strategy delta neutral"
+    ],
+    "answer": "To reduce the net cost of the long call premium",
+    "hint": "It's a debit spread where the short call finances the long call.",
+    "explanation": "By selling an OTM call, the trader receives premium which offsets the cost of the ATM/ITM call they bought, though it also caps the maximum profit."
+  },
+  {
+    "id": 1779,
+    "question": "A 'Covered Call' involves:",
+    "options": [
+      "Buying a stock and buying a call",
+      "Selling a stock and selling a call",
+      "Buying a stock and selling a call",
+      "Selling a stock and buying a call"
+    ],
+    "answer": "Buying a stock and selling a call",
+    "hint": "Writing an option against an existing holding.",
+    "explanation": "In a Covered Call, the investor holds the underlying stock and sells a call option to generate income from the premium."
+  },
+  {
+    "id": 1780,
+    "question": "What is the 'Maximum Loss' for a Short Put writer?",
+    "options": [
+      "Premium Received",
+      "Strike Price minus Premium",
+      "Unlimited",
+      "Zero"
+    ],
+    "answer": "Strike Price minus Premium",
+    "hint": "The stock price can go to zero.",
+    "explanation": "The maximum loss occurs if the stock price goes to zero. The seller is obligated to buy at the Strike but the stock is worth zero. The loss is Strike minus the premium already collected."
+  },
+  {
+    "id": 1781,
+    "question": "A trader expects a stock to fall but wants to limit the loss if the stock rises. He buys a 500 Put for ₹20 and sells a 480 Put for ₹8. This is a:",
+    "options": [
+      "Bull Put Spread",
+      "Bear Put Spread",
+      "Bear Call Spread",
+      "Long Strangle"
+    ],
+    "answer": "Bear Put Spread",
+    "hint": "A bearish debit spread using puts.",
+    "explanation": "A Bear Put Spread involves buying a higher strike put and selling a lower strike put to profit from a price decline while reducing the cost of the hedge."
+  },
+  {
+    "id": 1782,
+    "question": "Which Greek is 'Positive' for both Long Call and Long Put positions?",
+    "options": [
+      "Delta",
+      "Gamma",
+      "Theta",
+      "Rho"
+    ],
+    "answer": "Gamma",
+    "hint": "Option buyers are always long volatility and convexity.",
+    "explanation": "Gamma and Vega are positive for all long option positions. Theta is negative for all long option positions."
+  },
+  {
+    "id": 1783,
+    "question": "If you expect the market to remain 'range-bound' (flat), which of the following is the most profitable strategy?",
+    "options": [
+      "Long Straddle",
+      "Short Straddle",
+      "Long Strangle",
+      "Bull Call Spread"
+    ],
+    "answer": "Short Straddle",
+    "hint": "You want to collect premiums and have them decay to zero.",
+    "explanation": "A Short Straddle (selling an ATM call and put) earns the maximum profit when the underlying asset price stays exactly at the strike price."
+  },
+  {
+    "id": 1784,
+    "question": "A 'Box Spread' is a combination of:",
+    "options": [
+      "Bull Call Spread and Bear Put Spread",
+      "Bull Call Spread and Bull Put Spread",
+      "Short Straddle and Long Strangle",
+      "Two Straddles"
+    ],
+    "answer": "Bull Call Spread and Bear Put Spread",
+    "hint": "It creates a synthetic risk-free return.",
+    "explanation": "A Box spread involves a bull call spread and a bear put spread with the same strikes. The total payoff at expiry is fixed (difference between strikes), regardless of price."
+  },
+  {
+    "id": 1785,
+    "question": "An investor is 'Long Gamma'. This means their position will benefit from:",
+    "options": [
+      "Time passing",
+      "Large price movements in the underlying",
+      "The market staying flat",
+      "A decrease in volatility"
+    ],
+    "answer": "Large price movements in the underlying",
+    "hint": "Option buyers benefit from 'convexity'.",
+    "explanation": "Being Long Gamma means your Delta increases in your favor as the price moves. High volatility and large price swings are beneficial."
+  },
+  {
+    "id": 1786,
+    "question": "A 'Butterfly Spread' using calls uses how many strike prices?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "3",
+    "hint": "It involves a lower strike, a middle strike, and a higher strike.",
+    "explanation": "A Butterfly spread is a neutral strategy that uses three strike prices: buying one lower strike, selling two middle strikes, and buying one higher strike."
+  },
+  {
+    "id": 1787,
+    "question": "According to 'Put-Call Parity', a Synthetic Long Future is created by:",
+    "options": [
+      "Long Call + Short Put (at same strike)",
+      "Long Call + Long Put",
+      "Short Call + Short Put",
+      "Short Call + Long Put"
+    ],
+    "answer": "Long Call + Short Put (at same strike)",
+    "hint": "C - P = F - K. If C - P = 0, then Future = Strike.",
+    "explanation": "Buying a call and selling a put at the same strike and expiry replicates the linear payoff of a long futures contract."
+  },
+  {
+    "id": 1788,
+    "question": "A 'Protective Put' is equivalent to which of the following in terms of payoff?",
+    "options": [
+      "Long Call",
+      "Short Call",
+      "Covered Call",
+      "Long Future"
+    ],
+    "answer": "Long Call",
+    "hint": "Limited downside, unlimited upside.",
+    "explanation": "Holding the stock and a put (Protective Put) has the same payoff profile as holding a call option: loss limited to the premium/downside, unlimited profit on the upside."
+  },
+  {
+    "id": 1789,
+    "question": "Which Greek measures the sensitivity of an option's premium to changes in 'Interest Rates'?",
+    "options": [
+      "Delta",
+      "Gamma",
+      "Rho",
+      "Vega"
+    ],
+    "answer": "Rho",
+    "hint": "R is for Rho and Rates.",
+    "explanation": "Rho measures the change in an option's price for a 1% change in the risk-free interest rate."
+  },
+  {
+    "id": 1790,
+    "question": "An investor holds 1,000 shares of a stock and is worried about a crash. He buys 1,000 units of Puts. This is called:",
+    "options": [
+      "Income generation",
+      "Speculation",
+      "Protective Put",
+      "Covered Put"
+    ],
+    "answer": "Protective Put",
+    "hint": "Insurance for an existing holding.",
+    "explanation": "A protective put is a hedging strategy that uses put options to protect against a drop in the price of a stock already owned."
+  },
+  {
+    "id": 1791,
+    "question": "Which of the following is NOT an input in the Black-Scholes Option Pricing Model?",
+    "options": [
+      "Spot Price",
+      "Strike Price",
+      "Historical Dividend Yield",
+      "Stock's Beta"
+    ],
+    "answer": "Stock's Beta",
+    "hint": "Derivatives are priced based on the asset's own volatility, not market beta.",
+    "explanation": "The BS model uses Spot, Strike, Time, Volatility, and Interest Rates. Beta (systematic risk) is used in CAPM, not for individual option pricing."
+  },
+  {
+    "id": 1792,
+    "question": "A trader expects a stock to remain stable and wants to earn 'Theta'. Which strategy is appropriate?",
+    "options": [
+      "Long Straddle",
+      "Long Call",
+      "Short Straddle",
+      "Bear Put Spread"
+    ],
+    "answer": "Short Straddle",
+    "hint": "Theta is time decay; sellers earn it.",
+    "explanation": "Option sellers have positive Theta. A short straddle seller earns the daily time decay (theta) as long as the stock stays near the strike price."
+  },
+  {
+    "id": 1793,
+    "question": "If you sell an 'Iron Condor', you profit most if the stock price:",
+    "options": [
+      "Moves up significantly",
+      "Moves down significantly",
+      "Stays within a specific range",
+      "Becomes highly volatile"
+    ],
+    "answer": "Stays within a specific range",
+    "hint": "It is a neutral strategy with capped risk.",
+    "explanation": "An Iron Condor profits when the underlying asset's price stays between the two middle strike prices at expiration."
+  },
+  {
+    "id": 1794,
+    "question": "What happens to the 'Gamma' of an ATM option as it gets very close to expiry?",
+    "options": [
+      "It becomes zero",
+      "It decreases",
+      "It increases significantly",
+      "It stays constant"
+    ],
+    "answer": "It increases significantly",
+    "hint": "Pin risk leads to high gamma.",
+    "explanation": "Near expiry, a small move in the stock can swing an ATM option from ITM to OTM instantly. This high sensitivity means Gamma is extremely high."
+  },
+  {
+    "id": 1795,
+    "question": "The total premium of an option is ₹50 and its intrinsic value is ₹30. What is its 'Time Value'?",
+    "options": [
+      "₹80",
+      "₹20",
+      "₹30",
+      "Zero"
+    ],
+    "answer": "₹20",
+    "hint": "Premium = Intrinsic Value + Time Value.",
+    "explanation": "Time Value = 50 - 30 = ₹20."
+  },
+  {
+    "id": 1796,
+    "question": "If Nifty is at 18,500 and you sell an 18,600 Put for ₹150, what is the 'Break-even'?",
+    "options": [
+      "18,750",
+      "18,450",
+      "18,600",
+      "18,350"
+    ],
+    "answer": "18,450",
+    "hint": "BEP for Put Seller = Strike - Premium.",
+    "explanation": "18,600 - 150 = 18,450. The seller is safe as long as Nifty is above 18,450."
+  },
+  {
+    "id": 1797,
+    "question": "Which strategy is a 'Credit Spread' (results in net premium inflow)?",
+    "options": [
+      "Bull Call Spread",
+      "Bear Put Spread",
+      "Bull Put Spread",
+      "Long Straddle"
+    ],
+    "answer": "Bull Put Spread",
+    "hint": "A credit spread involves selling a more expensive option and buying a cheaper one.",
+    "explanation": "In a Bull Put Spread, you sell a higher strike put (expensive) and buy a lower strike put (cheap), resulting in a net credit."
+  },
+  {
+    "id": 1798,
+    "question": "A 'Collar' strategy is constructed by:",
+    "options": [
+      "Long Stock + Long Put + Short Call",
+      "Long Stock + Short Put + Long Call",
+      "Short Stock + Long Put + Short Call",
+      "Long Stock + Long Put + Long Call"
+    ],
+    "answer": "Long Stock + Long Put + Short Call",
+    "hint": "Protecting a stock while paying for the protection by selling upside.",
+    "explanation": "A collar is used to protect a stock holding by buying a protective put and selling a covered call to offset the cost of the put."
+  },
+  {
+    "id": 1799,
+    "question": "If you are 'Short Gamma', your greatest risk is:",
+    "options": [
+      "Time passing",
+      "Low volatility",
+      "A large, sudden move in the underlying",
+      "A dividend payment"
+    ],
+    "answer": "A large, sudden move in the underlying",
+    "hint": "Gamma risk is the risk of the Delta changing quickly.",
+    "explanation": "Short Gamma positions (like short straddles) lose more money at an accelerating rate as the market moves away from the strike price."
+  },
+  {
+    "id": 1800,
+    "question": "A trader buys a call option with a Delta of 0.4. If the stock falls by ₹10, what is the estimated change in the option premium?",
+    "options": [
+      "Fall by ₹4",
+      "Rise by ₹4",
+      "Fall by ₹10",
+      "No change"
+    ],
+    "answer": "Fall by ₹4",
+    "hint": "Change in Premium = Delta * Change in Stock.",
+    "explanation": "Change = 0.4 * (-10) = -4. The call option premium will decrease by ₹4."
+  },
+  {
+    "id": 3701,
+    "question": "A Trading Member (TM) receives an order from a client to sell 500 Nifty Futures at 'Market'. However, the exchange has reached the 'Market-wide Position Limit' (MWPL) of 95% for the underlying. How will the system handle this order?",
+    "options": [
+      "The order will be executed as usual.",
+      "The order will be rejected unless it is a square-off of an existing long position.",
+      "The order will be executed, but a 10% penalty will be charged.",
+      "The order will be kept in a 'pending' state until the MWPL drops below 80%."
+    ],
+    "answer": "The order will be rejected unless it is a square-off of an existing long position.",
+    "hint": "Think about the rules of the 'Ban Period'.",
+    "explanation": "When a security enters the ban period (crossing 95% MWPL), only offsetting trades (squaring off existing positions) are allowed. Fresh positions are blocked."
+  },
+  {
+    "id": 3702,
+    "question": "An investor holds a portfolio with a long position in Nifty Futures and a long position in a Nifty Put option (Protective Put). According to the SPAN logic, how does the margin requirement for this portfolio compare to a naked long futures position?",
+    "options": [
+      "It is higher because of the extra option premium.",
+      "It is lower because the Put option limits the maximum downside risk of the futures.",
+      "It is exactly the same.",
+      "Margins are not required for hedged positions."
+    ],
+    "answer": "It is lower because the Put option limits the maximum downside risk of the futures.",
+    "hint": "SPAN is a portfolio-based risk assessment system.",
+    "explanation": "SPAN recognizes that the long put acts as insurance against the long futures. Since the combined risk of loss is capped, the margin requirement is reduced compared to a naked position."
+  },
+  {
+    "id": 3703,
+    "question": "A trader buys 2 lots of a stock future (Lot size 250) at Rs. 1,200. The price closes at Rs. 1,180 on Day 1. On Day 2, the trader sells the position at Rs. 1,190. What is the net MTM cash flow for Day 2 only?",
+    "options": [
+      "Rs. 5,000 (Pay-in)",
+      "Rs. 5,000 (Pay-out)",
+      "Rs. 10,000 (Pay-in)",
+      "Zero"
+    ],
+    "answer": "Rs. 5,000 (Pay-out)",
+    "hint": "Day 2 MTM = (Exit Price - Previous Day Close) x Total Quantity.",
+    "explanation": "MTM Day 2 = (1,190 - 1,180) * 500 = 10 * 500 = +5,000. A positive value indicates a profit (Pay-out) for that day's settlement."
+  },
+  {
+    "id": 3704,
+    "question": "Which of the following describes 'Novation' from a legal risk perspective?",
+    "options": [
+      "It increases the risk of counterparty default.",
+      "It eliminates the counterparty risk between the original buyer and seller by making the CCP the new counterparty.",
+      "It is a voluntary agreement that clients can opt out of.",
+      "It only applies to physical delivery trades."
+    ],
+    "answer": "It eliminates the counterparty risk between the original buyer and seller by making the CCP the new counterparty.",
+    "hint": "The Clearing Corporation 'steps in' as the middleman.",
+    "explanation": "Novation is the process where the original contract between buyer and seller is replaced by two new contracts with the CCP, ensuring that the default of one original party doesn't affect the other."
+  },
+  {
+    "id": 3705,
+    "question": "A stock future is approaching its final hour before expiry. The contract is under 'Physical Settlement'. If a trader is 'Short' and chooses to do nothing, what must they ensure is available in their demat account?",
+    "options": [
+      "Sufficient cash to pay the contract value.",
+      "The exact number of underlying shares for delivery.",
+      "Only the margin amount.",
+      "Nothing, the exchange will square it off automatically."
+    ],
+    "answer": "The exact number of underlying shares for delivery.",
+    "hint": "Short futures at expiry = Obligation to sell/deliver.",
+    "explanation": "Under physical settlement, a short futures position that remains open at expiry is converted into a delivery obligation, requiring the seller to provide the actual shares."
+  },
+  {
+    "id": 3706,
+    "question": "In the NEAT trading system, a 'Stop-Loss' order remains 'Passive' until it is 'Triggered'. Once triggered, it becomes a:",
+    "options": [
+      "GTC Order",
+      "Market or Limit order depending on the original instruction",
+      "IOC Order",
+      "Manual Trade"
+    ],
+    "answer": "Market or Limit order depending on the original instruction",
+    "hint": "The trigger price simply activates the order into the active book.",
+    "explanation": "A Stop-Loss order is essentially a 'conditional' order. Once the trigger price is touched, the order is released into the system as a regular market or limit order."
+  },
+  {
+    "id": 3707,
+    "question": "Calculate the 'Extreme Loss Margin' (ELM) for a position where the contract value is Rs. 15,00,000 and the ELM rate is 3.5%.",
+    "options": [
+      "Rs. 52,500",
+      "Rs. 15,000",
+      "Rs. 45,000",
+      "Rs. 35,000"
+    ],
+    "answer": "Rs. 52,500",
+    "hint": "ELM = Contract Value x ELM %.",
+    "explanation": "ELM = 15,00,000 * 3.5 / 100 = Rs. 52,500. This is collected over and above the SPAN margin."
+  },
+  {
+    "id": 3708,
+    "question": "Which entity is responsible for managing the 'Core Settlement Guarantee Fund' (SGF)?",
+    "options": [
+      "SEBI",
+      "The Clearing Corporation",
+      "The RBI",
+      "The Ministry of Finance"
+    ],
+    "answer": "The Clearing Corporation",
+    "hint": "It is the central body responsible for clearing and settlement risk.",
+    "explanation": "The Clearing Corporation (e.g., NCL) maintains the SGF to guarantee the settlement of trades in case of a member default."
+  },
+  {
+    "id": 3709,
+    "question": "An investor sees a sudden drop in the 'Open Interest' (OI) of a contract while the price remains stable. What does this most likely indicate?",
+    "options": [
+      "New money is entering the market.",
+      "Traders are squaring off their existing positions.",
+      "A circuit breaker is about to be hit.",
+      "The contract has been banned."
+    ],
+    "answer": "Traders are squaring off their existing positions.",
+    "hint": "OI falls when both the buyer and seller exit the market.",
+    "explanation": "Open Interest represents the total number of outstanding contracts. A drop in OI means participants are closing their positions (squaring off) rather than creating new ones."
+  },
+  {
+    "id": 3710,
+    "question": "A Clearing Member (CM) uses 'Shares' as collateral for margins. What is the process called when the broker marks a 'Lien' on these shares in the client's demat account in favor of the Clearing Corporation?",
+    "options": [
+      "Hypothecation",
+      "Margin Pledge",
+      "Re-hypothecation",
+      "Assignment"
+    ],
+    "answer": "Margin Pledge",
+    "hint": "It is the standardized mechanism for using securities as collateral without moving them out of the client's account.",
+    "explanation": "Under the current SEBI framework, clients 'pledge' their securities for margin. The shares remain in the client's account but are locked in favor of the CC."
+  },
+  {
+    "id": 3711,
+    "question": "If a Trading Member (TM) exceeds their 'Total Collateral' utilization beyond 90%, the exchange system automatically:",
+    "options": [
+      "Charges a 2% extra brokerage.",
+      "Places the member in 'Risk-Reduction Mode' (RRM).",
+      "Suspends the member for the rest of the month.",
+      "Liquidates the member's personal property."
+    ],
+    "answer": "Places the member in 'Risk-Reduction Mode' (RRM).",
+    "hint": "It is a safety feature to prevent over-leverage.",
+    "explanation": "In RRM, the member can only place orders that reduce their existing open positions; fresh positions that would increase risk are not permitted."
+  },
+  {
+    "id": 3712,
+    "question": "A trader is long 1 lot of Nifty Futures and the market falls by 5%. The broker issues a 'Margin Call'. What must the trader do to keep the position open?",
+    "options": [
+      "Do nothing, the position is automatically safe.",
+      "Deposit additional funds (cash) or collateral to cover the shortfall.",
+      "Wait for the market to recover.",
+      "Change the broker."
+    ],
+    "answer": "Deposit additional funds (cash) or collateral to cover the shortfall.",
+    "hint": "A margin call is a demand for more money to maintain the minimum required margin.",
+    "explanation": "When the value of the account falls below the required level due to MTM losses or increased margin requirements, the trader must provide more funds or square off."
+  },
+  {
+    "id": 3713,
+    "question": "What is the 'Settlement Price' for the final settlement of a stock futures contract in the physical settlement regime?",
+    "options": [
+      "The opening price of the day.",
+      "The closing price of the underlying stock in the cash market.",
+      "The average of high and low for the month.",
+      "A fixed price determined by SEBI."
+    ],
+    "answer": "The closing price of the underlying stock in the cash market.",
+    "hint": "Derivatives must converge with the 'spot' price at expiry.",
+    "explanation": "The final settlement of all equity derivatives is linked to the official closing price of the underlying security in the cash segment on the expiry day."
+  },
+  {
+    "id": 3714,
+    "question": "Which of the following is a 'Cash Equivalent' component of collateral?",
+    "options": [
+      "Equity shares with 20% haircut",
+      "Fixed Deposit Receipts (FDRs)",
+      "Real Estate documents",
+      "Corporate Bonds with 50% haircut"
+    ],
+    "answer": "Fixed Deposit Receipts (FDRs)",
+    "hint": "Cash equivalents include cash, bank guarantees, and FDRs.",
+    "explanation": "FDRs are considered cash equivalents because they are highly liquid and have a stable value, helping members meet the 50% cash-component requirement."
+  },
+  {
+    "id": 3715,
+    "question": "A 'Direct Market Access' (DMA) trade is executed by an institutional client. Who is ultimately responsible for the 'Risk Management' of this order before it hits the exchange?",
+    "options": [
+      "The Institutional Client",
+      "The Trading Member (Broker)",
+      "The Exchange",
+      "The Software Vendor"
+    ],
+    "answer": "The Trading Member (Broker)",
+    "hint": "The broker is the gateway and remains the guarantor to the exchange.",
+    "explanation": "Even in DMA, the broker must have automated risk filters in place to ensure the client's order is within limits before it is routed to the exchange."
+  },
+  {
+    "id": 3716,
+    "question": "What is the 'Tick Size' for most stocks in the F&O segment on the NSE?",
+    "options": [
+      "Rs. 1.00",
+      "0.05 (5 paise)",
+      "0.10 (10 paise)",
+      "0.25 (25 paise)"
+    ],
+    "answer": "0.05 (5 paise)",
+    "hint": "It is the minimum increment by which a price can change.",
+    "explanation": "The standard tick size for most securities and derivatives on Indian exchanges is 0.05 (5 paise)."
+  },
+  {
+    "id": 3717,
+    "question": "In the event of a Clearing Member defaulting, the 'Default Waterfall' ensures that the funds are used in a specific order. Which of the following is used AFTER the defaulting member's collateral but BEFORE the non-defaulting members' contributions?",
+    "options": [
+      "The Core Settlement Guarantee Fund (SGF)",
+      "The personal savings of the Exchange CEO",
+      "The taxes paid by other investors",
+      "The client's insurance policy"
+    ],
+    "answer": "The Core Settlement Guarantee Fund (SGF)",
+    "hint": "The SGF is the central buffer of the clearinghouse.",
+    "explanation": "After exhausting the defaulting member's own margins and deposits, the Clearing Corporation uses the Core SGF and its own 'skin in the game' funds."
+  },
+  {
+    "id": 3718,
+    "question": "A trader is long 500 units of a stock at 1000 and short 500 units of the same stock at 1010. What is their 'Net' position for margin calculation?",
+    "options": [
+      "1000 units",
+      "500 units",
+      "Zero",
+      "Not possible to calculate"
+    ],
+    "answer": "Zero",
+    "hint": "Net = Long - Short.",
+    "explanation": "Since the long and short positions are equal in the same contract, the net position is zero, and the margin requirement for a zero net position is also zero."
+  },
+  {
+    "id": 3719,
+    "question": "Under the 'Anti-Money Laundering' (AML) norms, which of the following is considered a 'Red Flag'?",
+    "options": [
+      "A client making a steady 10% annual profit.",
+      "Frequent and large cash deposits in the client's bank account followed by immediate transfers to the broker.",
+      "A client who trades only in Nifty options.",
+      "A client who signs the KYC form with a black pen."
+    ],
+    "answer": "Frequent and large cash deposits in the client's bank account followed by immediate transfers to the broker.",
+    "hint": "Think about 'unexplained' sources of cash.",
+    "explanation": "Unusual cash flow patterns with no clear economic purpose are key indicators of potential money laundering and must be reported as suspicious."
+  },
+  {
+    "id": 3720,
+    "question": "An investor wants to trade in the 'Currency Derivatives' segment. Which regulator provides the broad guidelines for 'participation limits' and 'eligible underlying' for currency pairs involving INR?",
+    "options": [
+      "SEBI",
+      "RBI",
+      "Both SEBI and RBI",
+      "Ministry of External Affairs"
+    ],
+    "answer": "Both SEBI and RBI",
+    "hint": "One regulates the market/trading, the other regulates the currency/foreign exchange.",
+    "explanation": "Currency derivatives in India are jointy regulated by SEBI (market conduct/exchange) and RBI (monetary policy/foreign exchange management)."
+  },
+  {
+    "id": 3721,
+    "question": "If a broker fails to issue a 'Contract Note' to a client, it is a violation of:",
+    "options": [
+      "The Income Tax Act",
+      "The SEBI (Stock Brokers) Regulations",
+      "The Companies Act",
+      "The Banking Regulation Act"
+    ],
+    "answer": "The SEBI (Stock Brokers) Regulations",
+    "hint": "Contract note is a mandatory trade confirmation for every broker.",
+    "explanation": "SEBI (Stock Brokers) Regulations mandate that every broker must issue a contract note for every trade executed on behalf of a client within 24 hours."
+  },
+  {
+    "id": 3722,
+    "question": "What is the 'Time Limit' for filing an appeal to the Securities Appellate Tribunal (SAT) against an order of SEBI?",
+    "options": [
+      "15 days",
+      "30 days",
+      "45 days",
+      "90 days"
+    ],
+    "answer": "45 days",
+    "hint": "This is the standard window provided under the SEBI Act.",
+    "explanation": "Any person aggrieved by an order of SEBI may prefer an appeal to the SAT within 45 days from the date on which a copy of the order is received."
+  },
+  {
+    "id": 3723,
+    "question": "A person is found to be 'Cornering' the market by holding a dominant share of the Open Interest to manipulate prices. This is a violation of:",
+    "options": [
+      "SEBI (PFUTP) Regulations",
+      "PMLA",
+      "GST Act",
+      "Income Tax Act"
+    ],
+    "answer": "SEBI (PFUTP) Regulations",
+    "hint": "PFUTP = Prohibition of Fraudulent and Unfair Trade Practices.",
+    "explanation": "Cornering the market or price manipulation are considered unfair trade practices and are strictly prohibited under the SEBI (PFUTP) Regulations."
+  },
+  {
+    "id": 3724,
+    "question": "Under the 'Insider Trading' regulations, 'Trading Window' is closed during which period?",
+    "options": [
+      "Every Saturday and Sunday.",
+      "When Unpublished Price Sensitive Information (UPSI) is being finalized (e.g., quarterly results).",
+      "When the exchange is undergoing maintenance.",
+      "Only during the month of December."
+    ],
+    "answer": "When Unpublished Price Sensitive Information (UPSI) is being finalized (e.g., quarterly results).",
+    "hint": "It prevents 'Designated Persons' from trading when they have an information advantage.",
+    "explanation": "The trading window is closed for designated persons of a company when it is likely that they have access to UPSI, such as before financial results are made public."
+  },
+  {
+    "id": 3725,
+    "question": "Which document is mandatory to be provided to a client explaining the risks of loss and the fact that leverage can work against them?",
+    "options": [
+      "Member-Client Agreement",
+      "Risk Disclosure Document (RDD)",
+      "Rights and Obligations Document",
+      "Tariff Sheet"
+    ],
+    "answer": "Risk Disclosure Document (RDD)",
+    "hint": "It's the 'Standard Warning' document.",
+    "explanation": "The RDD is a mandatory part of the KYC kit that informs the client about the various risks inherent in trading in the derivatives segment."
+  },
+  {
+    "id": 3726,
+    "question": "The 'Investor Protection Fund' (IPF) of an exchange is primarily funded through:",
+    "options": [
+      "A small percentage of the transaction fees and penalties collected from members.",
+      "Donations from the general public.",
+      "Direct funding from the RBI.",
+      "Interest from the CEO's bank account."
+    ],
+    "answer": "A small percentage of the transaction fees and penalties collected from members.",
+    "hint": "The market participants contribute to the safety net.",
+    "explanation": "The IPF is maintained by each exchange using contributions from transaction charges, interest on funds, and penalties levied on trading members."
+  },
+  {
+    "id": 3727,
+    "question": "An intermediary is required to maintain the 'KYC' (Know Your Client) records of a person for how many years after the business relationship is terminated?",
+    "options": [
+      "1 year",
+      "3 years",
+      "5 years",
+      "10 years"
+    ],
+    "answer": "5 years",
+    "hint": "This is a standard requirement under PMLA and SEBI guidelines.",
+    "explanation": "Regulated entities must preserve client identity and transaction records for a period of 5 years from the date of the end of the business relationship."
+  },
+  {
+    "id": 3728,
+    "question": "Who is the 'Grievance Redressal' authority within the Stock Exchange that handles initial disputes between a broker and a client?",
+    "options": [
+      "Investor Grievance Redressal Committee (IGRC)",
+      "Arbitration Tribunal",
+      "Supreme Court",
+      "Audit Committee"
+    ],
+    "answer": "Investor Grievance Redressal Committee (IGRC)",
+    "hint": "It is the first step in the dispute resolution process at the exchange.",
+    "explanation": "The IGRC is an independent committee set up by the exchange to hear and resolve grievances between clients and trading members before formal arbitration."
+  },
+  {
+    "id": 3729,
+    "question": "If a broker's license is 'Cancelled' by SEBI, can the broker continue to clear their existing client's open positions?",
+    "options": [
+      "Yes, indefinitely.",
+      "Only for a limited period to allow orderly square-off/winding down of positions.",
+      "No, all trades are immediately cancelled.",
+      "The client takes over the broker's terminal."
+    ],
+    "answer": "Only for a limited period to allow orderly square-off/winding down of positions.",
+    "hint": "The priority is investor protection during a wind-down.",
+    "explanation": "When registration is cancelled, SEBI allows a cooling-off/winding-down period where no fresh business is taken, but existing obligations are settled/squared off."
+  },
+  {
+    "id": 3730,
+    "question": "Which of the following acts by a broker is considered 'Unethical' and a violation of the Code of Conduct?",
+    "options": [
+      "Refusing to execute a trade due to lack of margin.",
+      "Executing a trade for a client without receiving an explicit order (Unauthorized trading).",
+      "Charging a brokerage of 0.5%.",
+      "Advising a client to read the RDD."
+    ],
+    "answer": "Executing a trade for a client without receiving an explicit order (Unauthorized trading).",
+    "hint": "The broker must always have proof of the client's instruction.",
+    "explanation": "Unauthorized trading (trading without client consent/order) is a major violation of the broker's fiduciary duty and the SEBI code of conduct."
+  },
+  {
+    "id": 3731,
+    "question": "Under the 'Prevention of Money Laundering Act', who is defined as a 'Politically Exposed Person' (PEP)?",
+    "options": [
+      "A person who works at a local municipality.",
+      "Individuals who are or have been entrusted with prominent public functions by a foreign country.",
+      "Anyone who has voted in the last election.",
+      "An employee of a government-owned bank."
+    ],
+    "answer": "Individuals who are or have been entrusted with prominent public functions by a foreign country.",
+    "hint": "Think high-level foreign officials like Heads of State or senior politicians.",
+    "explanation": "PEPs require enhanced due diligence because of the higher risk of potential involvement in corruption or money laundering due to their public status."
+  },
+  {
+    "id": 3732,
+    "question": "What is the primary role of the 'Compliance Officer' in a brokerage firm?",
+    "options": [
+      "To increase the firm's trading profit.",
+      "To ensure the firm complies with all the rules, regulations, and guidelines issued by SEBI and the Exchange.",
+      "To recruit new relationship managers.",
+      "To manage the firm's IT infrastructure."
+    ],
+    "answer": "To ensure the firm complies with all the rules, regulations, and guidelines issued by SEBI and the Exchange.",
+    "hint": "They are the internal 'Regulatory Watchdog'.",
+    "explanation": "The Compliance Officer is responsible for monitoring the activities of the firm and its employees to prevent any regulatory violations."
+  },
+  {
+    "id": 3733,
+    "question": "A stockbroker receives a complaint through 'SCORES'. Within how many days must they provide a 'Action Taken Report' (ATR) to SEBI?",
+    "options": [
+      "7 days",
+      "15 days",
+      "30 days",
+      "60 days"
+    ],
+    "answer": "30 days",
+    "hint": "This is the standard response time for grievance redressal on the SEBI portal.",
+    "explanation": "Intermediaries are generally required to resolve the grievance and upload the ATR on the SCORES portal within 30 days of receipt of the complaint."
+  },
+  {
+    "id": 3734,
+    "question": "Which of the following is an example of 'Fraudulent Trade Practice'?",
+    "options": [
+      "Buying a stock that is part of the Nifty 50.",
+      "Wash Sales (Buying and selling with the intention of creating artificial volume with no change in beneficial ownership).",
+      "Holding an index future until expiry.",
+      "Diversifying across 10 different stocks."
+    ],
+    "answer": "Wash Sales (Buying and selling with the intention of creating artificial volume with no change in beneficial ownership).",
+    "hint": "Match trades where 'you sell to yourself'.",
+    "explanation": "Wash sales are used to create a false impression of liquidity and market interest, which is a violation under SEBI PFUTP regulations."
+  },
+  {
+    "id": 3735,
+    "question": "If a person is aggrieved by a decision of the 'Securities Appellate Tribunal' (SAT), they can file an appeal with:",
+    "options": [
+      "The High Court",
+      "The Supreme Court of India",
+      "The RBI Governor",
+      "The Prime Minister"
+    ],
+    "answer": "The Supreme Court of India",
+    "hint": "SAT is a high-level tribunal; the next step is the highest court in the land.",
+    "explanation": "Any person aggrieved by any decision or order of the SAT can file an appeal with the Supreme Court, but only on questions of law."
+  },
+  {
+    "id": 3736,
+    "question": "Income from 'Index Options' trading is classified under which head for income tax purposes?",
+    "options": [
+      "Income from Other Sources",
+      "Capital Gains",
+      "Profits and Gains of Business or Profession (Non-speculative)",
+      "Speculative Income"
+    ],
+    "answer": "Profits and Gains of Business or Profession (Non-speculative)",
+    "hint": "Derivatives on recognized exchanges are legally defined as non-speculative.",
+    "explanation": "Under Section 43(5) of the Income Tax Act, F&O trading is treated as a non-speculative business activity, which allows losses to be set off against other business income."
+  },
+  {
+    "id": 3737,
+    "question": "A trader earns Rs. 5,00,000 in Nifty Futures but incurs a loss of Rs. 2,00,000 in Intraday Equity Cash trading. How is the tax calculated?",
+    "options": [
+      "Tax on net profit of Rs. 3,00,000.",
+      "Tax on Rs. 5,00,000; the Rs. 2,00,000 loss cannot be set off against F&O profit.",
+      "The loss is ignored entirely.",
+      "The profit is tax-free."
+    ],
+    "answer": "Tax on Rs. 5,00,000; the Rs. 2,00,000 loss cannot be set off against F&O profit.",
+    "hint": "Intraday Cash is 'Speculative'; F&O is 'Non-Speculative'.",
+    "explanation": "Speculative losses can ONLY be set off against speculative profits. Since F&O is non-speculative, the intraday loss cannot be adjusted against it."
+  },
+  {
+    "id": 3738,
+    "question": "When calculating the 'Total Turnover' for an F&O trader for Tax Audit purposes, which of the following is correct?",
+    "options": [
+      "Turnover = Sum of (Profit + Absolute Value of Loss) + Premium received on sale of options.",
+      "Turnover = Total trade value of all contracts bought.",
+      "Turnover = Only the net profit for the year.",
+      "Turnover = Total margin paid to the broker."
+    ],
+    "answer": "Turnover = Sum of (Profit + Absolute Value of Loss) + Premium received on sale of options.",
+    "hint": "It is the sum of 'differences' regardless of whether they are profit or loss.",
+    "explanation": "For tax purposes, the turnover is the absolute sum of all positive and negative differences (profits/losses) plus the premium received on option writing."
+  },
+  {
+    "id": 3739,
+    "question": "Is 'Securities Transaction Tax' (STT) deductible as a business expense for an F&O trader?",
+    "options": [
+      "No, STT is never deductible.",
+      "Yes, because F&O is treated as a business, STT is an allowable business expense.",
+      "Only if the trader is a company.",
+      "Only if the turnover is above Rs. 10 Crores."
+    ],
+    "answer": "Yes, because F&O is treated as a business, STT is an allowable business expense.",
+    "hint": "For business income, the taxes related to that business are deductible expenses.",
+    "explanation": "Section 36 of the Income Tax Act allows STT paid on taxable securities transactions to be claimed as a deduction from the business income."
+  },
+  {
+    "id": 3740,
+    "question": "An individual trader's F&O turnover is Rs. 15 Crores. 100% of their receipts and payments are through digital channels. Is a 'Tax Audit' by a Chartered Accountant mandatory?",
+    "options": [
+      "No, the threshold for digital business is Rs. 10 Crores.",
+      "Yes, because the turnover exceeds the Rs. 10 Crore limit for digital transactions.",
+      "Only if they are making a loss.",
+      "Only if they are using more than 10 brokers."
+    ],
+    "answer": "Yes, because the turnover exceeds the Rs. 10 Crore limit for digital transactions.",
+    "hint": "Threshold for audit in digital businesses is Rs. 10 Crores.",
+    "explanation": "Under Section 44AB, if turnover exceeds Rs. 10 Crores (for digital businesses), an audit is mandatory. Since the turnover is Rs. 15 Crores, the audit is required."
+  },
+  {
+    "id": 3741,
+    "question": "Under the 'Presumptive Taxation' scheme (Section 44AD), a trader can declare profit as 6% of turnover for digital transactions. What is the consequence if the trader declares a profit LESS than 6% and their income is above the basic exemption limit?",
+    "options": [
+      "They must pay a fixed penalty of Rs. 1 Lakh.",
+      "A tax audit by a Chartered Accountant becomes mandatory.",
+      "They are barred from trading for 5 years.",
+      "There are no consequences."
+    ],
+    "answer": "A tax audit by a Chartered Accountant becomes mandatory.",
+    "hint": "Declaring less than the 'presumed' profit requires 'proof' via an audit.",
+    "explanation": "If a taxpayer claims that their actual profit is less than the presumptive rate (6% or 8%), they must maintain books of accounts and get them audited by a CA."
+  },
+  {
+    "id": 3742,
+    "question": "Which of the following describes 'Current Ratio'?",
+    "options": [
+      "Total Assets / Total Liabilities",
+      "Current Assets / Current Liabilities",
+      "Gross Profit / Net Profit",
+      "Debt / Equity"
+    ],
+    "answer": "Current Assets / Current Liabilities",
+    "hint": "It measures short-term liquidity.",
+    "explanation": "The current ratio assesses whether a company has enough liquid assets to cover its short-term obligations due within a year."
+  },
+  {
+    "id": 3743,
+    "question": "What is 'Churning' in a client's portfolio from a sales practice perspective?",
+    "options": [
+      "Diversifying across multiple sectors.",
+      "Excessive trading in a client's account primarily to generate brokerage for the broker, without a clear client benefit.",
+      "Rebalancing the portfolio once a year.",
+      "Buying only Blue-chip stocks."
+    ],
+    "answer": "Excessive trading in a client's account primarily to generate brokerage for the broker, without a clear client benefit.",
+    "hint": "It is an unethical practice focused on commission generation.",
+    "explanation": "Churning is a violation of the broker's duty to act in the client's best interest. It involves frequent buying/selling with no sound investment logic."
+  },
+  {
+    "id": 3744,
+    "question": "A Relationship Manager (RM) tells a 70-year-old retired person to invest 100% of their pension into 'Naked Option Writing' to earn monthly income. This is a violation of:",
+    "options": [
+      "Insider Trading rules.",
+      "Suitability and Risk Profiling norms.",
+      "PMLA guidelines.",
+      "GST regulations."
+    ],
+    "answer": "Suitability and Risk Profiling norms.",
+    "hint": "The product risk does not match the client's risk appetite and stage of life.",
+    "explanation": "Brokers must ensure that the products they recommend are 'suitable' for the client's age, financial capacity, and risk tolerance. Option writing is high-risk and unsuitable for conservative retirees."
+  },
+  {
+    "id": 3745,
+    "question": "Which of the following is considered 'Misselling'?",
+    "options": [
+      "Explaining that options trading can lead to a 100% loss of capital.",
+      "Guaranteeing a fixed return of 5% per month from F&O trading.",
+      "Providing the Risk Disclosure Document to the client.",
+      "Asking the client to sign the KYC form."
+    ],
+    "answer": "Guaranteeing a fixed return of 5% per month from F&O trading.",
+    "hint": "No one can guarantee returns in the securities market.",
+    "explanation": "Misselling involves making false or exaggerated claims about a product. Since market returns are never guaranteed, such promises are unethical and illegal."
+  },
+  {
+    "id": 3746,
+    "question": "What should a broker do if they have a 'Conflict of Interest' regarding a stock they are recommending to a client (e.g., the broker's own company is an underwriter for that stock)?",
+    "options": [
+      "Ignore it and recommend anyway.",
+      "Disclose the conflict of interest to the client clearly.",
+      "Keep the information secret.",
+      "Only tell institutional clients."
+    ],
+    "answer": "Disclose the conflict of interest to the client clearly.",
+    "hint": "Transparency is key to maintaining trust and compliance.",
+    "explanation": "The SEBI code of conduct requires intermediaries to disclose any potential conflict of interest to the client so that the client can make an informed decision."
+  },
+  {
+    "id": 3747,
+    "question": "The 'Investor Protection Fund' (IPF) can provide compensation to an investor only if:",
+    "options": [
+      "The investor makes a loss because of a market crash.",
+      "The Trading Member is declared a 'Defaulter' by the exchange.",
+      "The investor's computer is hacked.",
+      "The exchange goes on strike."
+    ],
+    "answer": "The Trading Member is declared a 'Defaulter' by the exchange.",
+    "hint": "It is a safety net for losses due to the broker's financial failure.",
+    "explanation": "IPF compensation is triggered only when a member is declared a defaulter and fails to pay the legitimate dues of the client."
+  },
+  {
+    "id": 3748,
+    "question": "An investor notices a trade in their account that they did not authorize. What is the first step they should take?",
+    "options": [
+      "Call the police immediately.",
+      "Lodge a formal complaint with the broker's compliance officer and the exchange.",
+      "Wait for a few days to see if the trade becomes profitable.",
+      "Close their bank account."
+    ],
+    "answer": "Lodge a formal complaint with the broker's compliance officer and the exchange.",
+    "hint": "Proactive and timely reporting is essential for dispute resolution.",
+    "explanation": "Unauthorized trading should be reported immediately to the broker and the exchange to ensure the trade can be disputed and the account secured."
+  },
+  {
+    "id": 3749,
+    "question": "What is 'Front Running' in sales practice?",
+    "options": [
+      "Running to the terminal before everyone else.",
+      "Executing a personal trade before a large client order is executed to profit from the price movement.",
+      "Selling shares to a family member.",
+      "Being the first broker to get a SEBI license."
+    ],
+    "answer": "Executing a personal trade before a large client order is executed to profit from the price movement.",
+    "hint": "It exploits non-public information about a pending large trade.",
+    "explanation": "Front running is an unethical and illegal practice where an intermediary uses knowledge of a client's large order to trade on their own account first."
+  },
+  {
+    "id": 3750,
+    "question": "Which of the following is a key 'Right' of a client in the derivatives market?",
+    "options": [
+      "The right to receive a refund for all market losses.",
+      "The right to receive a Contract Note within 24 hours of the trade.",
+      "The right to trade without any margins.",
+      "The right to set their own settlement price."
+    ],
+    "answer": "The right to receive a Contract Note within 24 hours of the trade.",
+    "hint": "It is a fundamental proof of transaction.",
+    "explanation": "Clients have a legal right to receive a formal contract note for every trade, detailing the execution price, brokerage, and taxes."
+  }
+]

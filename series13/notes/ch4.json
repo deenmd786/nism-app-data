@@ -1,0 +1,109 @@
+{
+  "course": "NISM Series XIII: Common Derivatives Certification Examination",
+  "unit_number": 4,
+  "unit_name": "Strategies Using Futures",
+  "weightage": "16% (24 Marks)",
+  "overview": "Now that you know what a Future is (Unit 3), this chapter teaches you HOW to use it to make money or save money. This is a very practical chapter. You will learn how to protect a stock portfolio from crashing (Hedging), how to bet on market direction (Speculation), and how to make risk-free money (Arbitrage). Expect numerical questions on 'Beta Hedging' here.",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Hedging (The Shield)",
+      "basic_meaning": "Using Futures to reduce or cancel out the risk of price changes in your existing business or portfolio.",
+      "detailed_explanation": "Hedging is like buying insurance. You don't do it to make a profit; you do it so you don't lose money.\n\nThere are two main types:\n\n**A. Short Hedge (Selling Futures):**\n* **Who uses it?** Someone who OWNS the asset (Long position in Spot) and is afraid prices will FALL.\n* **Action:** Sell Futures today.\n* **Logic:** If Spot price falls (loss in asset), Future price will also fall (profit in Short Future). The profit cancels the loss.\n\n**B. Long Hedge (Buying Futures):**\n* **Who uses it?** Someone who NEEDS to buy the asset later (Short position in Spot/Requirement) and is afraid prices will RISE.\n* **Action:** Buy Futures today.\n* **Logic:** If Spot price rises (loss in purchase), Future price will also rise (profit in Long Future).",
+      "why_this_is_important": "This is the primary purpose of derivatives. The exam will give you a scenario and ask: 'Should he Buy or Sell Futures?'",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "**Short Hedge Example:**\n1. You hold ₹10 Lakhs worth of TCS shares (Spot).\n2. You fear TCS will fall.\n3. You **Sell** ₹10 Lakhs worth of TCS Futures.\n4. TCS falls by 10%.\n5. Loss in Shares = ₹1 Lakh.\n6. Profit in Short Futures = ₹1 Lakh.\n7. **Net Loss = 0.** Your portfolio is protected.",
+      "real_life_indian_example": "**Farmer (Short Hedge):** An Indian farmer growing wheat is afraid price will drop by harvest time. He **Sells** Wheat Futures now to lock in the price.\n**Jeweller (Long Hedge):** Tanishq needs to buy Gold next month for a wedding order. They fear Gold will become expensive. They **Buy** Gold Futures now.",
+      "exam_traps": [
+        "Confusing Long vs Short hedge. Remember: If you HAVE the asset, you SELL futures (Short Hedge). If you NEED the asset, you BUY futures (Long Hedge).",
+        "Thinking Hedging is for profit. (No, it's for safety)."
+      ],
+      "memory_trick": "Have Asset -> Fear Fall -> Sell Future (Short Hedge). Need Asset -> Fear Rise -> Buy Future (Long Hedge)."
+    },
+    {
+      "concept": "2. Beta Hedging (Portfolio Protection)",
+      "basic_meaning": "How many Nifty Futures should I sell to protect my specific portfolio of stocks?",
+      "detailed_explanation": "Not all stocks move exactly like Nifty. \n* **Beta ($\beta$):** Measures sensitivity. \n* $\beta = 1$: Stock moves exactly like Nifty.\n* $\beta = 1.5$: Stock is 50% more volatile (Aggressive).\n* $\beta = 0.8$: Stock is less volatile (Defensive).\n\nIf you have a high beta portfolio, you need to sell MORE Nifty Futures to protect it completely.",
+      "why_this_is_important": "This is a guaranteed numerical question (2-3 marks).",
+      "formula": "$$ \\text{Number of Contracts} = \\frac{\\text{Portfolio Value} \\times \\text{Target Beta}}{\\text{Contract Value of Index}} $$",
+      "formula_explanation": "Usually, we want to reduce Beta to 0 (Complete Hedge). So we just use Portfolio Beta.",
+      "step_by_step_calculation_example": "**Question:** You have a portfolio of ₹20 Lakhs. Beta is 1.2. Nifty is at 10,000. Lot size is 50. How many contracts to sell for a full hedge?\n\n**Step 1:** Calculate Contract Value of 1 Nifty Lot.\n$10,000 \\times 50 = \\text{₹5,00,000}$.\n\n**Step 2:** Apply Formula.\n$$ \\text{No. of Contracts} = \\frac{20,00,000 \\times 1.2}{5,00,000} $$\n$$ = \\frac{24,00,000}{5,00,000} = 4.8 $$\n\n**Answer:** You should sell approximately **5 lots** of Nifty Futures.",
+      "real_life_indian_example": "A Mutual Fund manager holding banking stocks (High Beta) will sell BankNifty Futures to protect the fund during a market crash.",
+      "exam_traps": [
+        "Forgetting to multiply by Beta. (Students often do Portfolio / Contract Value).",
+        "Confusing 'Contract Value' (Price x Lot) with just 'Price'."
+      ],
+      "memory_trick": "Hedge Ratio = (Value x Beta) / Future Value."
+    },
+    {
+      "concept": "3. Speculation (The Sword)",
+      "basic_meaning": "Taking a risk to make a profit based on a view (Bullish or Bearish).",
+      "detailed_explanation": "Unlike hedgers, speculators don't own the underlying asset. They just trade the Futures.\n\n1.  **Bullish Speculator:** Thinks market will go UP. **Buys Futures (Long).**\n2.  **Bearish Speculator:** Thinks market will go DOWN. **Sells Futures (Short).**\n\n**Leverage:** The main attraction. You only pay Margin (approx 20%). If Nifty moves 1%, your return on investment (ROI) could be 5%.",
+      "why_this_is_important": "Speculators provide liquidity. Without them, hedgers wouldn't find anyone to trade with.",
+      "formula": "Leverage = Contract Value / Margin Paid",
+      "formula_explanation": "Shows how many times your exposure is compared to your cash.",
+      "step_by_step_calculation_example": "**Scenario:** You have ₹1 Lakh. You buy Nifty Futures worth ₹10 Lakhs (Margin is 10%).\n\n**Movement:** Nifty goes up 5%.\n**Profit:** 5% of ₹10 Lakhs = ₹50,000.\n**ROI:** You made ₹50k on your ₹1 Lakh investment = **50% Return**.\n(Note: If Nifty fell 5%, you would lose 50% of your capital!).",
+      "real_life_indian_example": "Intraday traders on NSE often use Futures because brokerage is low compared to buying full shares, and leverage is high.",
+      "exam_traps": [
+        "Thinking Speculation is illegal. (No, it is legal and necessary for liquidity).",
+        "Underestimating the risk of leverage."
+      ],
+      "memory_trick": "Speculate = See (View). Bull = Buy. Bear = Sell."
+    },
+    {
+      "concept": "4. Arbitrage (Risk-Free Profit)",
+      "basic_meaning": "Exploiting price differences between two markets to make money without risk.",
+      "detailed_explanation": "There are two main types involving Futures:\n\n**A. Cash and Carry Arbitrage (Buy Spot, Sell Future):**\n* **When?** When Futures are 'Overpriced' (Too expensive).\n* **Action:** Buy the cheap asset in Spot Market -> Sell the expensive Future.\n* **Result:** You hold the asset until expiry, deliver it against the Future, and pocket the difference.\n\n**B. Reverse Cash and Carry (Sell Spot, Buy Future):**\n* **When?** When Futures are 'Underpriced' (Too cheap).\n* **Action:** Sell the expensive asset in Spot -> Buy the cheap Future.\n* **Result:** You earn interest on the cash from selling spot, and buy back the asset cheaper later via Future.",
+      "why_this_is_important": "Arbitrage keeps the market efficient. It forces Futures price to stay connected to Spot price.",
+      "formula": "Fair Value = Spot + Cost of Carry. If Actual Future Price > Fair Value => Arbitrage Opportunity.",
+      "formula_explanation": "If Future Price is 105 and Fair Value is 102, sell the Future (105) and Buy Spot.",
+      "step_by_step_calculation_example": "**Scenario:** Reliance Spot = 1000. Reliance Future = 1020. Cost of Carry (Fair Interest) = 10.\n\n**Analysis:** Fair Future Price should be $1000 + 10 = 1010$. Actual is 1020 (Overpriced).\n\n**Action (Cash & Carry):**\n1. Borrow ₹1000 and Buy Spot.\n2. Sell Future at 1020.\n3. Hold till expiry.\n4. **Profit:** $(1020 - 1000) - 10 (Interest Cost) = \\text{₹10 Profit}$.",
+      "real_life_indian_example": "Large proprietary trading desks (Prop Desks) run algorithms to find even a ₹0.50 difference between Spot and Future to execute thousands of these trades.",
+      "exam_traps": [
+        "Thinking you can do Reverse Cash & Carry easily. (Hard for retail traders because you can't Short Sell in Spot market and hold it for days - you need SLB mechanism).",
+        "Confusing 'Cash and Carry' (Long Spot) with 'Reverse' (Short Spot)."
+      ],
+      "memory_trick": "Cash & Carry = Buy Cash (Spot), Carry to Future."
+    },
+    {
+      "concept": "5. Spread Trading",
+      "basic_meaning": "Buying one Future and Selling another Future to reduce risk.",
+      "detailed_explanation": "Instead of betting on direction (Up/Down), you bet on the **difference** between two contracts.\n\n**Calendar Spread:**\n* Buy Nifty (Near Month - e.g., Jan).\n* Sell Nifty (Far Month - e.g., Feb).\n* **Logic:** You profit if the difference (spread) between Jan and Feb changes.\n* **Risk:** Very low, because if market crashes, both Jan and Feb will fall. Your loss in one is offset by profit in the other.",
+      "why_this_is_important": "Spread trading requires much lower margin than naked speculation because it is safer.",
+      "formula": "Spread = Price of Future 1 - Price of Future 2",
+      "formula_explanation": "You trade the gap.",
+      "step_by_step_calculation_example": " \nBuy Jan Future @ 100. Sell Feb Future @ 105. Spread = 5.\nIf Spread widens to 8, you make profit.",
+      "real_life_indian_example": "Rollover: When a trader closes the Near Month contract and opens the Next Month contract, they are essentially doing a Calendar Spread.",
+      "exam_traps": [
+        "Thinking Spread trading has NO risk. (It has low risk, not zero risk).",
+        "Thinking Spread trading requires high margin. (No, exchanges give margin benefit)."
+      ],
+      "memory_trick": "Spread = Gap. Betting on the Gap."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Hedging vs Speculation vs Arbitrage",
+      "clear_explanation": "1.  **Hedging:** Reduces Risk. (No profit motive).\n2.  **Speculation:** Takes Risk. (High profit motive).\n3.  **Arbitrage:** Risk-Free Profit. (Exploits price errors)."
+    },
+    {
+      "difference_between": "Long Hedge vs Short Hedge",
+      "clear_explanation": "1.  **Long Hedge:** You BUY Futures. Used when you plan to BUY the asset later.\n2.  **Short Hedge:** You SELL Futures. Used when you ALREADY OWN the asset."
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Calculation of Number of Contracts for Beta Hedging (Memorize the formula!).",
+    "Identify if a scenario is a Long Hedge or Short Hedge.",
+    "Which strategy is Risk-Free? (Answer: Arbitrage/Cash & Carry).",
+    "What is the benefit of Spread Trading? (Answer: Lower Margin, Lower Risk)."
+  ],
+  "quick_revision_summary": [
+    "Hedging is insurance, not for profit.",
+    "Short Hedge = Sell Future (Protect Long Position).",
+    "Long Hedge = Buy Future (Protect Short Position).",
+    "Beta measures sensitivity. Beta > 1 is aggressive.",
+    "Hedge Contracts = (Portfolio Value * Beta) / Contract Value.",
+    "Arbitrage = Buying Low in Spot, Selling High in Future (Cash & Carry).",
+    "Spread = Buy One Future, Sell Another. Low Risk."
+  ]
+}
