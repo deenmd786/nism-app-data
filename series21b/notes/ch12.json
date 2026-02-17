@@ -1,0 +1,106 @@
+{
+  "course": "NISM Series XXI-B: Portfolio Managers Certification Examination",
+  "unit_number": 12,
+  "unit_name": "Introduction to Indices",
+  "weightage": "5 Marks",
+  "overview": "This chapter introduces the concept of a 'Market Barometer' or Index. Just as a thermometer measures body temperature, a Stock Market Index measures the 'health' and direction of the stock market. For a Portfolio Manager, indices are the most important tools for benchmarking performance. In this unit, you will learn how indices like Nifty 50 and Sensex are built, the different methods used to calculate them, and why they are essential for tracking market trends.",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. What is a Stock Market Index?",
+      "basic_meaning": "A statistical indicator that tracks the performance of a specific group of stocks.",
+      "detailed_explanation": "An index is a basket of stocks chosen to represent a particular market or sector. Instead of checking thousands of individual stocks, you look at the index to see if the market is going up or down. \n- **Representation:** It acts as a sample of the total market.\n- **Benchmark:** It provides a standard against which a Portfolio Manager's performance is compared.\n- **Sentiment:** It reflects the overall mood and confidence of investors in the economy.",
+      "why_this_is_important": "It is impossible to track every single stock. Indices simplify market analysis and provide a baseline for 'Alpha' calculation.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "If the **Nifty 50** goes up by 1%, it generally means that the top 50 companies in India have collectively performed well that day.",
+      "exam_traps": [
+        "Thinking an index contains all stocks. It only contains a 'representative' sample.",
+        "Assuming all stocks in an index have equal importance. Usually, larger companies have more weight."
+      ],
+      "memory_trick": "Index = Market Thermometer."
+    },
+    {
+      "concept": "2. Types of Indices based on Market Coverage",
+      "basic_meaning": "Indices are categorized by the 'size' or 'type' of stocks they track.",
+      "detailed_explanation": "1. **Broad Market Indices:** These represent the entire market. (e.g., Nifty 50, Nifty 500, S&P BSE SENSEX).\n2. **Sectoral Indices:** These track a specific industry. (e.g., Nifty Bank, Nifty IT, Nifty Pharma).\n3. **Thematic Indices:** These track a specific investment theme across different sectors. (e.g., Nifty Infrastructure, Nifty ESG).\n4. **Strategy Indices:** These are designed based on specific quantitative parameters like volatility or value. (e.g., Nifty 50 Low Volatility 30).",
+      "why_this_is_important": "A Portfolio Manager managing a 'Pharma Fund' must be compared against the Nifty Pharma index, not the general Nifty 50.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "During the IT boom, the Nifty IT index might rise by 5% even if the broad Nifty 50 is flat.",
+      "exam_traps": [
+        "Confusing Sectoral with Thematic. Sectoral is one industry (Banking); Thematic can span multiple (e.g., ESG includes IT, Pharma, and Energy)."
+      ],
+      "memory_trick": "Broad = Whole Forest. Sectoral = One type of tree. Thematic = Trees that grow in shade."
+    },
+    {
+      "concept": "3. Index Calculation: Free-Float Market Cap Method",
+      "basic_meaning": "Calculating the index value based only on shares available for the public to trade.",
+      "detailed_explanation": "Most modern indices, including Nifty and Sensex, use the **Free-Float Market Capitalization** method. \n- **Full Market Cap:** Total shares × Price. Includes shares held by promoters (owners) which aren't traded.\n- **Free-Float Market Cap:** Only includes shares available for the public to buy/sell (excludes promoter/government holdings).\n\n*Why use Free-Float?* It reflects the true 'investible' market and prevents the index from being distorted by large chunks of shares that never move.",
+      "why_this_is_important": "This is the global standard for index construction. It ensures the index is liquid and tradable.",
+      "formula": "Free-Float Market Cap = Total Shares × Current Price × Free-Float Factor",
+      "formula_explanation": "The 'Free-Float Factor' is a decimal (like 0.60) representing the percentage of shares held by the public.",
+      "step_by_step_calculation_example": "1. Company A Total Market Cap = Rs. 1000 Crores.\n2. Promoters own 40% of shares (Not tradable).\n3. Public owns 60% of shares (Free-Float).\n4. Free-Float Market Cap = 1000 × 0.60 = Rs. 600 Crores.\n5. Only this 600 Crores will be used to determine the company's weight in the index.",
+      "real_life_indian_example": "Reliance Industries has a massive market cap, but its index weight is based only on the shares not held by the Ambani family.",
+      "exam_traps": [
+        "Thinking the index uses 'Full' market cap. Indian indices switched to 'Free-Float' long ago.",
+        "Confusing Price-Weighted indices (like Dow Jones) with Market Cap Weighted indices (like Nifty)."
+      ],
+      "memory_trick": "Free-Float = Only what is 'Floating' (available) in the market."
+    },
+    {
+      "concept": "4. Index Maintenance: Rebalancing and Selection Criteria",
+      "basic_meaning": "How the index stays 'fresh' and accurate over time.",
+      "detailed_explanation": "An index is not permanent. It is reviewed periodically (usually semi-annually).\n1. **Rebalancing:** Adjusting the weights of companies because their prices have changed.\n2. **Reconstitution:** Removing 'losers' and adding 'winners'. If a company's market cap falls or it stops being liquid, it is kicked out of the Nifty 50 and replaced by a better company.\n3. **Selection Criteria:** To be in Nifty 50, a stock must be highly liquid (low impact cost) and among the largest by free-float market cap.",
+      "why_this_is_important": "It ensures the index always represents the current leaders of the economy, not old, dying companies.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "In 2024, if Shriram Finance is added to Nifty 50 and UPL is removed, it is part of the periodic rebalancing/reconstitution process.",
+      "exam_traps": [
+        "Thinking rebalancing happens every day. It usually happens every 6 months.",
+        "Assuming the number of stocks in Nifty 50 changes. The stocks change, but the count stays 50."
+      ],
+      "memory_trick": "Rebalancing = Cleaning the house to keep only the best items."
+    },
+    {
+      "concept": "5. Impact Cost",
+      "basic_meaning": "A measure of how much price changes when you try to buy/sell a large amount of stock.",
+      "detailed_explanation": "Impact cost is the 'real' cost of liquidity. \n- If you want to buy Rs. 1 Crore worth of shares and the price jumps by 0.5% because your order was so big, the **Impact Cost is 0.5%**.\n- **Low Impact Cost:** High liquidity (easy to trade big amounts without moving the price). Mandatory for index stocks.\n- **High Impact Cost:** Low liquidity (dangerous for large investors).",
+      "why_this_is_important": "Nifty stocks MUST have low impact costs so that institutional investors and Portfolio Managers can trade them easily.",
+      "formula": "Impact Cost % = [(Execution Price - Mid-Price) / Mid-Price] × 100",
+      "formula_explanation": "Mid-price is the average of the best Buy and Sell orders. Execution price is what you actually paid.",
+      "step_by_step_calculation_example": "1. Best Buy = 99. Best Sell = 101. \n2. Mid-Price = (99 + 101) / 2 = 100. \n3. You place a large order and pay 100.50.\n4. Impact Cost = [(100.50 - 100) / 100] × 100 = 0.5%.",
+      "real_life_indian_example": "Blue-chip stocks like TCS have very low impact costs, while small-cap 'penny' stocks have very high impact costs.",
+      "exam_traps": [
+        "Thinking Impact Cost is a brokerage fee. It is NOT. It is a price slippage caused by lack of liquidity."
+      ],
+      "memory_trick": "Impact Cost = Price of being too big in a small market."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Price Return Index (PRI) vs. Total Return Index (TRI)",
+      "clear_explanation": "PRI only tracks the stock price changes. TRI tracks stock price changes PLUS the dividends paid by the companies. SEBI mandates using TRI for performance comparison."
+    },
+    {
+      "difference_between": "Sensex vs. Nifty 50",
+      "clear_explanation": "Sensex (BSE) has 30 stocks with 1978-79 as the base year. Nifty 50 (NSE) has 50 stocks with 1995 as the base year."
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Definition of Free-Float Market Capitalization.",
+    "Requirement of Total Return Index (TRI) for benchmarking.",
+    "Concept of Impact Cost as a measure of liquidity.",
+    "Characteristics of a good benchmark (Representative, Investible, Measurable)."
+  ],
+  "quick_revision_summary": [
+    "Indices act as market barometers and performance benchmarks.",
+    "Nifty and Sensex use the Free-Float Market Cap weighting method.",
+    "Rebalancing ensures the index stays representative of the current market leaders.",
+    "TRI (Total Return Index) must be used to compare PMS performance (Price + Dividends).",
+    "Impact Cost measures liquidity: Low cost = High liquidity.",
+    "Broad, Sectoral, and Thematic are the three main types of indices."
+  ]
+}

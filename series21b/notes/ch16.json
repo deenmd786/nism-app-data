@@ -1,0 +1,78 @@
+{
+  "course": "NISM Series XXI-B: Portfolio Managers Certification Examination",
+  "unit_number": 16,
+  "unit_name": "Introduction to Capital Market Theory",
+  "weightage": "5 Marks",
+  "overview": "Capital Market Theory (CMT) is the logical extension of Modern Portfolio Theory. While MPT tells an individual how to build a portfolio, CMT looks at how the *entire market* prices assets when everyone follows those rules. This unit introduces the famous Capital Asset Pricing Model (CAPM), which helps us understand why some stocks give higher returns than others. For the NISM exam, you must master the difference between the CML and SML and understand the concept of 'Beta' as a measure of systematic risk.",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Capital Market Line (CML)",
+      "basic_meaning": "The line that shows the relationship between total risk and expected return for 'efficient' portfolios.",
+      "detailed_explanation": "The CML is the 'new' efficient frontier when we introduce a **Risk-Free Asset** (like a Govt Bond) into the mix. \n- **The Risk-Free Point:** The line starts at the Risk-Free Rate ($R_f$) on the Y-axis. \n- **The Market Portfolio:** The line touches the original MPT efficient frontier at the 'Market Portfolio' point ($M$). \n- **Lending and Borrowing:** Investors can now lend money (buy bonds) or borrow money (leverage) to reach any point on this straight line. \n- **Total Risk:** The CML uses **Standard Deviation** on the X-axis because it applies to whole, diversified portfolios.",
+      "why_this_is_important": "It tells us that everyone should hold the same 'Market Portfolio' and just vary their cash levels based on risk tolerance.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "If the risk-free rate in India is 7% (G-Sec), the CML starts there. If a manager buys the Nifty 50 index and adds some G-Secs, they are moving along the CML.",
+      "exam_traps": [
+        "The CML applies ONLY to **Efficient Portfolios**. It does not apply to individual stocks because they have unsystematic risk.",
+        "Confusing the X-axis. For CML, it is always **Standard Deviation** (Total Risk)."
+      ],
+      "memory_trick": "CML = Comprehensive (Total) Risk for Portfolios."
+    },
+    {
+      "concept": "2. Security Market Line (SML)",
+      "basic_meaning": "The line that shows the relationship between 'Systematic Risk' (Beta) and return for any security or portfolio.",
+      "detailed_explanation": "The SML is the graphical version of the **Capital Asset Pricing Model (CAPM)**. \n- **Applicability:** Unlike the CML, the SML applies to **every** security, whether it is a single stock or a whole portfolio. \n- **X-Axis:** It uses **Beta** as the measure of risk. \n- **Pricing:** In an efficient market, every stock should lie on this line. If a stock is *above* the line, it is 'Undervalued' (giving higher return for its risk). If *below*, it is 'Overvalued'.",
+      "why_this_is_important": "This is the primary tool used to check if a stock is 'fairly priced' given its risk.",
+      "formula": "Required Return = R_f + Beta × (R_m - R_f)",
+      "formula_explanation": "You deserve the Risk-Free rate PLUS a premium based on how much your stock reacts to the market (Beta).",
+      "step_by_step_calculation_example": "Risk-Free Rate ($R_f$) = 7%. Market Return ($R_m$) = 12%. Stock Beta = 1.2.\nRequired Return = 7% + 1.2 × (12% - 7%) \n= 7% + 1.2 × (5%) \n= 7% + 6% = 13%. \nMeaning: If the stock only gives 11%, it is overvalued and you shouldn't buy it.",
+      "real_life_indian_example": "High-growth tech stocks often have a high Beta (e.g., 1.5), so according to SML, they must provide much higher returns than a stable FMCG stock with a low Beta (e.g., 0.7).",
+      "exam_traps": [
+        "Thinking SML is only for portfolios. No, SML is for **Individual Securities** as well.",
+        "Confusing the X-axis. For SML, it is always **Beta**."
+      ],
+      "memory_trick": "SML = Specific stocks/securities."
+    },
+    {
+      "concept": "3. Understanding Beta ($\beta$)",
+      "basic_meaning": "A measure of how much a stock moves when the whole market moves.",
+      "detailed_explanation": "Beta measures **Systematic Risk**—the risk you cannot diversify away. \n- **$\beta = 1.0$:** The stock moves exactly with the market (e.g., an Index Fund). \n- **$\beta > 1.0$:** 'Aggressive' stock. It is more volatile than the market (e.g., Banking or Tech). \n- **$\beta < 1.0$:** 'Defensive' stock. It is less volatile than the market (e.g., Pharma or FMCG). \n- **$\beta = 0$:** The asset has no relationship with the market (e.g., Cash or Risk-free bond).",
+      "why_this_is_important": "It is the only risk that the market actually 'rewards' with extra returns.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "If the Nifty falls by 10%, a stock with a Beta of 1.5 is expected to fall by 15%. If the Nifty rises by 10%, it is expected to rise by 15%.",
+      "real_life_indian_example": "Stocks like Tata Motors often have high Betas, while stocks like HUL or ITC often have lower Betas.",
+      "exam_traps": [
+        "Thinking Beta measures total risk. It only measures **Systematic (Market) Risk**.",
+        "Assuming a negative Beta is impossible. It is rare, but some assets (like certain 'inverse' ETFs) can have negative Beta."
+      ],
+      "memory_trick": "Beta = Benchmarking to Market."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "CML vs. SML",
+      "clear_explanation": "CML uses Standard Deviation (Total Risk) on the X-axis and applies only to efficient portfolios. SML uses Beta (Systematic Risk) and applies to all individual stocks and portfolios."
+    },
+    {
+      "difference_between": "Lending Portfolio vs. Borrowing Portfolio",
+      "clear_explanation": "A lending portfolio is one where you put some money in $R_f$ (Govt Bonds) and some in the market. A borrowing portfolio is one where you borrow money at $R_f$ to buy *more* than 100% of the market (Leverage)."
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Identifying the X-axis for CML (Standard Deviation) vs SML (Beta).",
+    "Calculating Required Return using the CAPM formula.",
+    "Understanding that only Systematic Risk (Beta) is rewarded by the market.",
+    "Interpretation of a stock lying above or below the SML."
+  ],
+  "quick_revision_summary": [
+    "CMT explains how risk determines the 'fair' price of any asset.",
+    "CML: Total Risk, only for efficient portfolios.",
+    "SML: Systematic Risk (Beta), for all securities.",
+    "CAPM Formula: $E(R) = R_f + \beta(R_m - R_f)$.",
+    "Beta = 1 is the market; Beta > 1 is aggressive; Beta < 1 is defensive.",
+    "The market does not reward you for 'Unsystematic Risk' because you could have diversified it away for free."
+  ]
+}

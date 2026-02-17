@@ -1,0 +1,108 @@
+{
+  "course": "NISM Series-XXI-A: Portfolio Management Services (PMS) Distributors Certification Examination",
+  "unit_number": 5,
+  "unit_name": "Derivatives",
+  "weightage": "5 Marks",
+  "overview": "This chapter introduces 'Derivatives', which are financial contracts used to manage risk (Hedging) or make bets (Speculation). In the NISM exam, you will see about 5 questions from here. The key is to understand the difference between 'Futures' and 'Options', and terms like 'Call', 'Put', and 'Strike Price'. PMS managers often use derivatives to protect client portfolios from market falls.",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Definition of Derivatives",
+      "basic_meaning": "A contract whose value depends on the value of something else (called the 'Underlying').",
+      "detailed_explanation": "Think of Curd (Dahi). Its price depends on the price of Milk. If Milk gets expensive, Curd gets expensive.\n\nHere:\n- **Milk** is the **Underlying Asset**.\n- **Curd** is the **Derivative**.\n\nIn finance, the 'Underlying' can be a Stock (Reliance), an Index (Nifty), Currency (USD/INR), or Commodity (Gold). The Derivative instrument (like a Future or Option) has no value of its own; it just tracks the price of the underlying.",
+      "why_this_is_important": "Investors use derivatives to 'Hedge' (reduce risk) or 'Speculate' (take risk for profit) without buying the actual asset.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "If Reliance share price (Underlying) goes up by Rs 50, the Reliance Futures contract (Derivative) will also go up by roughly Rs 50.",
+      "real_life_indian_example": "Nifty Futures is the most traded derivative in India. Its price moves exactly as the Nifty 50 Index moves.",
+      "exam_traps": [
+        "Derivatives do NOT create value; they just transfer risk from one person to another.",
+        "They are 'Leveraged' instruments (high risk, high reward)."
+      ],
+      "memory_trick": "Derivative = Derived from something else."
+    },
+    {
+      "concept": "2. Forwards vs. Futures",
+      "basic_meaning": "Both are promises to buy/sell something at a future date. Forwards are private; Futures are public (on exchange).",
+      "detailed_explanation": "1. **Forward Contract:** \n   - A private agreement between two parties (e.g., You and a Farmer) to buy wheat at a fixed price 3 months later.\n   - **Risk:** High counterparty risk (Farmer might run away).\n   - **Regulation:** Not regulated by stock exchanges.\n\n2. **Futures Contract:** \n   - A standardized contract traded on an exchange (NSE/BSE).\n   - **Safety:** The Exchange (Clearing Corp) guarantees the trade. No counterparty risk.\n   - **Standardization:** Fixed Lot Size (e.g., 50 shares), Expiry Date (last Thursday of month).\n   - **Mark-to-Market (MTM):** Profits/Losses are settled DAILY.",
+      "why_this_is_important": "PMS managers strictly trade 'Futures' (Exchange Traded) to avoid the risk of default found in Forwards.",
+      "formula": "Futures Price = Spot Price + Cost of Carry",
+      "formula_explanation": "Cost of Carry includes Interest cost and Storage cost minus any Dividend earned.",
+      "step_by_step_calculation_example": "Spot Price of Gold = Rs 50,000.\nInterest Cost for 1 month = Rs 200.\nStorage Cost = Rs 50.\n\nFutures Price = 50,000 + 200 + 50 = Rs 50,250.",
+      "real_life_indian_example": "If you think Tata Motors will go up next month, instead of buying shares for Rs 5 Lakhs, you can buy 1 Lot of Futures by paying just Rs 1 Lakh margin.",
+      "exam_traps": [
+        "Futures require 'Initial Margin' (upfront money) and 'Maintenance Margin'.",
+        "If MTM loss is huge, you get a 'Margin Call' from the broker to deposit more money immediately."
+      ],
+      "memory_trick": "Futures = Future date + Exchange safety."
+    },
+    {
+      "concept": "3. Options: Call and Put (The Insurance Concept)",
+      "basic_meaning": "Right to Buy or Sell without obligation. Like paying an insurance premium.",
+      "detailed_explanation": "1. **Call Option (CE):** Gives you the **Right to BUY**. \n   - You buy this if you think the market will go **UP** (Bullish).\n   - Payoff: Unlimited profit potential, limited loss (only premium).\n\n2. **Put Option (PE):** Gives you the **Right to SELL**.\n   - You buy this if you think the market will go **DOWN** (Bearish) or to protect your portfolio.\n   - Payoff: Profit increases as market falls.\n\nKey Terms:\n- **Strike Price:** The pre-agreed price.\n- **Premium:** The price you pay to buy the option (non-refundable).\n- **Expiry:** The date the contract ends.",
+      "why_this_is_important": "This is the most flexible tool. You can make money even if the market stays flat (by selling options).",
+      "formula": "",
+      "formula_explanation": "Call Buyer Profit = Spot Price - Strike Price - Premium.",
+      "step_by_step_calculation_example": "You buy a Nifty Call Option.\nStrike Price = 18000.\nPremium Paid = Rs 100.\n\nScenario 1: Nifty goes to 18500.\nProfit = 18500 - 18000 - 100 = Rs 400.\n\nScenario 2: Nifty stays at 17000.\nYou don't exercise. Loss = Rs 100 (Only the premium).",
+      "real_life_indian_example": "Buying 'Car Insurance' is like buying a Put Option. If the car crashes (Market crashes), the insurance pays you. If nothing happens, you only lose the premium.",
+      "exam_traps": [
+        "Option Buyer has LIMITED Loss (Premium) and UNLIMITED Profit.",
+        "Option Seller (Writer) has LIMITED Profit (Premium) and UNLIMITED Loss (Risk)."
+      ],
+      "memory_trick": "Call = Call Up (Buy). Put = Put Down (Sell)."
+    },
+    {
+      "concept": "4. Moneyness of Options (ITM, ATM, OTM)",
+      "basic_meaning": "Checking if your option is currently profitable or not.",
+      "detailed_explanation": "1. **In-The-Money (ITM):** The option has real value. \n   - Call: Spot Price > Strike Price.\n   - Put: Spot Price < Strike Price.\n\n2. **At-The-Money (ATM):** Spot Price = Strike Price. (Highest time value).\n\n3. **Out-Of-The-Money (OTM):** The option is currently worthless.\n   - Call: Spot Price < Strike Price.\n   - Put: Spot Price > Strike Price.",
+      "why_this_is_important": "ITM options are expensive (Higher Premium). OTM options are cheap but risky (High chance of expiring worthless).",
+      "formula": "Option Premium = Intrinsic Value + Time Value",
+      "formula_explanation": "Intrinsic Value is the profit if exercised now. Time Value is the hope that it will become profitable later.",
+      "step_by_step_calculation_example": "Nifty Spot = 18200.\n\nCall Option Strike 18000 (ITM).\nIntrinsic Value = 18200 - 18000 = 200.\nIf Premium is 250, then Time Value = 50.",
+      "real_life_indian_example": "Traders often buy OTM options on Expiry day (Hero-Zero trades) because they cost Rs 5 or Rs 10, hoping they become ITM.",
+      "exam_traps": [
+        "At Expiry, OTM options become ZERO.",
+        "Only ITM options have Intrinsic Value."
+      ],
+      "memory_trick": "ITM = I have money (Profit). OTM = Out of luck (Loss)."
+    },
+    {
+      "concept": "5. Open Interest (OI) and Volume",
+      "basic_meaning": "Indicators of market activity and sentiment.",
+      "detailed_explanation": "1. **Volume:** Total number of contracts traded during the day (Buy + Sell).\n2. **Open Interest (OI):** Total number of contracts that are 'Open' (Not yet settled or closed).\n\n- Rising OI + Rising Price = **Bullish** (New money coming in to buy).\n- Rising OI + Falling Price = **Bearish** (New money coming in to sell/short).",
+      "why_this_is_important": "PMS managers watch OI to see if a market trend is strong or weak.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "If Nifty OI is increasing but Nifty is falling, it means big players are building 'Short' positions.",
+      "exam_traps": [
+        "Volume resets to zero every day. OI carries forward to the next day until expiry.",
+        "High PCR (Put-Call Ratio) usually signals market is Oversold (Bullish reversal likely)."
+      ],
+      "memory_trick": "Volume = Activity today. OI = Commitment for tomorrow."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Futures vs. Options",
+      "clear_explanation": "In Futures, you MUST fulfill the contract (Obligation) - profit or loss is linear. In Options, you have the RIGHT to choose (No Obligation for buyer) - loss is limited to premium."
+    },
+    {
+      "difference_between": "Hedging vs. Speculation",
+      "clear_explanation": "Hedging is reducing risk (e.g., Owning shares and buying a Put Option to protect value). Speculation is taking risk (e.g., Buying a Call Option just to profit from price rise)."
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Payoff calculation for Call and Put Buyer.",
+    "Difference between Forward (OTC) and Future (Exchange).",
+    "Identify ITM, ATM, OTM for a given Spot and Strike price.",
+    "Concept of Margin in Futures (Initial vs Maintenance).",
+    "Meaning of 'Long' (Buy) and 'Short' (Sell) positions."
+  ],
+  "quick_revision_summary": [
+    "Derivative value comes from the Underlying Asset.",
+    "Futures have daily settlement (MTM).",
+    "Call = Buy view. Put = Sell view.",
+    "Option Buyer pays Premium (Max Loss). Seller receives Premium (Max Profit).",
+    "Hedging is the primary use of derivatives in PMS."
+  ]
+}

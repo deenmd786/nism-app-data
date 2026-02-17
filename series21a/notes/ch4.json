@@ -1,0 +1,108 @@
+{
+  "course": "NISM Series-XXI-A: Portfolio Management Services (PMS) Distributors Certification Examination",
+  "unit_number": 4,
+  "unit_name": "Investing in Fixed Income Securities",
+  "weightage": "5 Marks",
+  "overview": "This chapter deals with the 'safety' and 'income' part of a portfolio. While stocks provide growth, Fixed Income (Bonds) provides stability. In the NISM exam, you can expect around 5 questions. The most critical concept here is the 'Inverse Relationship' between Interest Rates and Bond Prices—if you understand this, you can answer half the questions correctly. It also covers types of risks like Credit Risk and Reinvestment Risk.",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Anatomy of a Bond (The Basics)",
+      "basic_meaning": "A Bond is simply a loan. You are the bank (lender), and the Company/Government is the borrower.",
+      "detailed_explanation": "When you buy a bond, you are lending money for a fixed time. In return, you get:\n\n1. **Principal (Face Value/Par Value):** The amount you lend, which you get back at the end.\n2. **Coupon (Interest Rate):** The fixed interest paid to you regularly (e.g., 8% per year).\n3. **Maturity Date:** The date when the loan ends and you get your principal back.\n4. **Issuer:** The entity borrowing the money (Govt or Company).",
+      "why_this_is_important": "To distinguish between the 'trading price' and the 'face value'. Interest is calculated on Face Value, NOT the market price.",
+      "formula": "Annual Coupon = Face Value * Coupon Rate",
+      "formula_explanation": "If Face Value is Rs 1000 and Coupon is 8%, you get Rs 80 per year regardless of whether the bond trades at Rs 900 or Rs 1100.",
+      "step_by_step_calculation_example": "Bond Face Value = Rs 100.\nCoupon Rate = 7%.\nCurrent Market Price = Rs 105.\n\nInterest Received = 7% of 100 = Rs 7.\n(Note: Interest is NOT 7% of 105).",
+      "real_life_indian_example": "RBI Bonds (Floating Rate Savings Bond 2020) act like a secure loan to the Government of India.",
+      "exam_traps": [
+        "Coupon Rate is fixed on Face Value.",
+        "Current Yield changes with Market Price."
+      ],
+      "memory_trick": "Bond = IOU (I Owe You) note."
+    },
+    {
+      "concept": "2. The Price-Yield Relationship (Crucial Exam Topic)",
+      "basic_meaning": "Bond Prices and Interest Rates move in OPPOSITE directions. It is a See-Saw.",
+      "detailed_explanation": "This is the most tested concept.\n\n* **Scenario A:** If market interest rates go **UP** (e.g., RBI hikes rates), new bonds will offer higher coupons (say 9%). Your old bond (paying 8%) becomes less attractive. To sell it, you must lower its price. **(Rates UP -> Price DOWN)**.\n\n* **Scenario B:** If market interest rates go **DOWN**, new bonds offer less (say 6%). Your old bond (paying 8%) is now very valuable. People will pay extra to buy it. **(Rates DOWN -> Price UP)**.",
+      "why_this_is_important": "This explains 'Interest Rate Risk'. Even safe government bonds can lose value if interest rates rise.",
+      "formula": "",
+      "formula_explanation": "Price ∝ 1 / Yield",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "In 2022, when RBI increased repo rates, the NAV of long-term Debt Mutual Funds fell sharply because bond prices crashed.",
+      "exam_traps": [
+        "If Yield goes up, Price comes DOWN.",
+        "Long-term bonds are MORE sensitive to rate changes than short-term bonds."
+      ],
+      "memory_trick": "See-Saw: When Rates sit up, Price goes down."
+    },
+    {
+      "concept": "3. Types of Risks in Debt",
+      "basic_meaning": "Debt is safer than equity, but not risk-free.",
+      "detailed_explanation": "1. **Interest Rate Risk:** The risk that bond prices will fall if interest rates rise (as explained above).\n2. **Credit Risk (Default Risk):** The risk that the borrower will not pay back. G-Secs (Govt Bonds) have ZERO credit risk (Sovereign Guarantee). Corporate bonds have high credit risk.\n3. **Reinvestment Risk:** The risk that when you get your interest/principal back, you have to invest it at a lower rate (happens when rates fall).\n4. **Liquidity Risk:** You want to sell the bond, but there are no buyers.",
+      "why_this_is_important": "To match the client's risk profile. A conservative client should avoid corporate bonds with low credit ratings.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "IL&FS Crisis (2018): A top-rated company defaulted, causing massive losses in debt funds (Credit Risk).",
+      "exam_traps": [
+        "Govt Bonds have Interest Rate Risk but NO Credit Risk.",
+        "Zero Coupon Bonds have the highest Interest Rate Risk (Duration) for their maturity."
+      ],
+      "memory_trick": "IRC: Interest (Price change), Reinvestment (Rate change), Credit (Default)."
+    },
+    {
+      "concept": "4. Yield Measures: Current Yield vs. YTM",
+      "basic_meaning": "How much are you actually earning?",
+      "detailed_explanation": "1. **Coupon Rate:** The interest printed on the bond (e.g., 8%).\n2. **Current Yield:** The return based on today's purchase price.\n   - Formula: Annual Coupon / Current Market Price.\n3. **Yield to Maturity (YTM):** The total return you get if you hold the bond until it matures. It includes interest + capital gain/loss. This is the most accurate measure.",
+      "why_this_is_important": "YTM allows you to compare bonds with different coupons and prices.",
+      "formula": "Current Yield = Coupon Interest / Market Price",
+      "formula_explanation": "Simple return calculation.",
+      "step_by_step_calculation_example": "Bond Face Value: Rs 100. Coupon: Rs 10.\nMarket Price: Rs 90 (Discount).\n\nCurrent Yield = 10 / 90 = 11.11%.\n(Notice: Current Yield > Coupon Rate because you bought it cheap).",
+      "real_life_indian_example": "When buying a bond on NSE, always look at the YTM, not just the coupon.",
+      "exam_traps": [
+        "If Price < Face Value (Discount), then YTM > Coupon Rate.",
+        "If Price > Face Value (Premium), then YTM < Coupon Rate."
+      ],
+      "memory_trick": "YTM = Total Return (Interest + Profit/Loss on price)."
+    },
+    {
+      "concept": "5. Duration and Convexity",
+      "basic_meaning": "How sensitive is a bond to interest rate changes?",
+      "detailed_explanation": "1. **Duration (Macaulay Duration):** It measures how long it takes to recover your investment from cash flows. More importantly, it measures **Sensitivity**.\n   - High Duration = High Risk (Price swings violently with rate changes).\n   - Low Duration = Low Risk.\n2. **Convexity:** A more advanced measure that corrects the inaccuracies of Duration for large rate changes. It shows the 'curvature' of the price-yield relationship.",
+      "why_this_is_important": "Fund managers reduce duration when they expect rates to rise (to protect capital).",
+      "formula": "Change in Price ≈ - Duration * Change in Yield",
+      "formula_explanation": "Negative sign shows inverse relationship.",
+      "step_by_step_calculation_example": "Bond has Duration of 5 years.\nInterest rates rise by 1%.\nBond Price will fall by approximately 5%.\n(5 years * 1% = 5%).",
+      "real_life_indian_example": "Long-term G-Sec funds (10-year duration) are very volatile. Liquid funds (0.1-year duration) are very stable.",
+      "exam_traps": [
+        "Zero Coupon Bonds have Duration EQUAL to their Maturity (Highest sensitivity).",
+        "Coupon Bonds have Duration LESS than their Maturity."
+      ],
+      "memory_trick": "Duration = Sensitivity."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Money Market vs. Debt Market",
+      "clear_explanation": "Money Market is for short-term borrowing (< 1 year) like T-Bills and Commercial Paper. Debt Market (Capital Market) is for long-term borrowing (> 1 year) like G-Secs and Debentures."
+    },
+    {
+      "difference_between": "Secured vs. Unsecured Debentures",
+      "clear_explanation": "Secured Debentures are backed by assets (if company fails, sell assets to pay you). Unsecured have no backing (riskier, so they offer higher interest)."
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Inverse relationship: Rates UP -> Price DOWN.",
+    "Calculation of Current Yield.",
+    "Definition of Zero Coupon Bond (Issued at discount, redeemed at par).",
+    "Credit Rating Agencies (CRISIL, ICRA) rate the *default risk*.",
+    "Concept of Duration (Sensitivity)."
+  ],
+  "quick_revision_summary": [
+    "Face Value is constant; Market Price fluctuates.",
+    "G-Secs have NO Default Risk but HAVE Interest Rate Risk.",
+    "YTM is the best measure of return.",
+    "Duration measures sensitivity to interest rates.",
+    "Call Option: Issuer can pay back early. Put Option: Investor can demand money back early."
+  ]
+}

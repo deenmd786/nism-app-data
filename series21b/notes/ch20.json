@@ -1,0 +1,92 @@
+{
+  "course": "NISM Series XXI-B: Portfolio Managers Certification Examination",
+  "unit_number": 20,
+  "unit_name": "Performance Measurement and Evaluation of Portfolio Managers",
+  "weightage": "10 Marks",
+  "overview": "This unit is the Report Card of the portfolio management process. It explains how to calculate returns accurately and, more importantly, how to judge if those returns were due to a manager's skill or just luck. For the NISM exam, you must master return calculation methods like TWRR and understand risk-adjusted ratios like Sharpe and Treynor. This chapter is critical because SEBI has strict rules on how performance is reported to clients.",
+  
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Time-Weighted Rate of Return (TWRR)",
+      "basic_meaning": "The standard way to measure a manager's performance by removing the effect of client cash flows.",
+      "detailed_explanation": "TWRR breaks the investment period into sub-periods every time money is added or removed. It calculates return for each sub-period separately and then compounds them. This measures the Manager's Skill, not the Investor's Timing.",
+      "why_this_is_important": "SEBI mandates TWRR for PMS performance reporting because it fairly compares managers.",
+      "formula": "TWRR = [(1 + r1) × (1 + r2) × ... × (1 + rn)] − 1",
+      "formula_explanation": "Multiply 1 plus each sub-period return and subtract 1 from the final value.",
+      "step_by_step_calculation_example": "Month 1 return = 10% (0.10). Month 2 return = 5% (0.05). TWRR = (1.10 × 1.05) − 1 = 1.155 − 1 = 0.155 or 15.5%.",
+      "exam_traps": [
+        "Confusing TWRR with MWRR. MWRR is affected by cash flow timing.",
+        "Using TWRR for tax calculations. IRR/XIRR (MWRR) is used for that."
+      ],
+      "memory_trick": "TWRR = Talent-Weighted (Measures Manager's Talent)."
+    },
+    {
+      "concept": "2. Risk-Adjusted Performance: Sharpe Ratio",
+      "basic_meaning": "Extra return earned per unit of total risk taken.",
+      "detailed_explanation": "Sharpe Ratio compares excess return to total volatility. Higher Sharpe means better risk-adjusted performance.",
+      "why_this_is_important": "It helps judge whether returns are due to skill or excessive risk-taking.",
+      "formula": "Sharpe Ratio = (Rp − Rf) / Standard Deviation",
+      "formula_explanation": "(Portfolio Return − Risk-Free Rate) divided by Standard Deviation.",
+      "step_by_step_calculation_example": "Return = 15%, Rf = 7%, SD = 10%. Sharpe = (15 − 7) / 10 = 0.8.",
+      "exam_traps": [
+        "Sharpe uses Standard Deviation, not Beta.",
+        "Forgetting to subtract Risk-Free Rate."
+      ],
+      "memory_trick": "Sharpe = S for Standard Deviation."
+    },
+    {
+      "concept": "3. Risk-Adjusted Performance: Treynor Ratio",
+      "basic_meaning": "Extra return earned per unit of market risk taken.",
+      "detailed_explanation": "Treynor Ratio measures return relative to systematic risk using Beta. It assumes the portfolio is well-diversified.",
+      "why_this_is_important": "Useful when comparing diversified portfolios.",
+      "formula": "Treynor Ratio = (Rp − Rf) / Beta",
+      "formula_explanation": "(Portfolio Return − Risk-Free Rate) divided by Beta.",
+      "step_by_step_calculation_example": "Return = 15%, Rf = 7%, Beta = 1.2. Treynor = (15 − 7) / 1.2 = 6.66.",
+      "exam_traps": [
+        "Treynor uses Beta, Sharpe uses Standard Deviation.",
+        "Not suitable for undiversified portfolios."
+      ],
+      "memory_trick": "Treynor = T for Trend (Market Risk)."
+    },
+    {
+      "concept": "4. Jensen's Alpha",
+      "basic_meaning": "Extra return earned above expected return based on risk taken.",
+      "detailed_explanation": "Alpha compares actual return with CAPM expected return. Positive Alpha means outperformance.",
+      "why_this_is_important": "Active PMS fees are justified only if consistent positive Alpha is generated.",
+      "formula": "Alpha = Actual Return − [Rf + Beta × (Rm − Rf)]",
+      "formula_explanation": "Actual Return minus CAPM expected return.",
+      "step_by_step_calculation_example": "Actual = 18%, Expected (CAPM) = 15%. Alpha = 3%.",
+      "exam_traps": [
+        "High return does not always mean positive Alpha."
+      ],
+      "memory_trick": "Alpha = Added Value."
+    }
+  ],
+
+  "important_differences": [
+    {
+      "difference_between": "Sharpe vs Treynor",
+      "clear_explanation": "Sharpe uses Total Risk (Standard Deviation). Treynor uses Systematic Risk (Beta)."
+    },
+    {
+      "difference_between": "TWRR vs MWRR",
+      "clear_explanation": "TWRR evaluates Manager performance. MWRR evaluates Investor experience."
+    }
+  ],
+
+  "frequently_asked_exam_areas": [
+    "Mandatory use of TWRR for PMS reporting.",
+    "Calculation of Sharpe and Treynor ratios.",
+    "Interpretation of Jensen's Alpha.",
+    "Benchmark selection matching portfolio style."
+  ],
+
+  "quick_revision_summary": [
+    "Performance measurement distinguishes Skill vs Luck.",
+    "TWRR eliminates cash flow distortion.",
+    "Sharpe = (Return − Rf) / Standard Deviation.",
+    "Treynor = (Return − Rf) / Beta.",
+    "Alpha = Actual − CAPM Expected.",
+    "Performance reporting must be transparent and periodic."
+  ]
+}
