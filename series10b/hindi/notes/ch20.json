@@ -1,0 +1,76 @@
+{
+  "course": "NISM Series X-B: Investment Adviser (Level 2) Certification Examination",
+  "unit_number": 20,
+  "unit_name": "Case Studies",
+  "weightage": "Module 12 (Chapters 18, 19, और 20 को मिलाकर कुल 45 Marks) का हिस्सा",
+  "overview": "यह अध्याय उन सभी concepts को जोड़ता है जो आपने सीखे हैं—Insurance और Retirement से लेकर Taxation और Behavioral Finance तक। परीक्षा में, एक केस स्टडी (case study) में 5-6 उप-प्रश्न (sub-questions) हो सकते हैं। यदि आप पहली calculation (जैसे retirement corpus) में गलती करते हैं, तो आपके बाद के उत्तर भी गलत हो सकते हैं। यह अध्याय आपको सिखाता है कि किसी क्लाइंट के जीवन को एक वित्तीय योजना (financial plan) में व्यवस्थित रूप से (systematically) कैसे decode किया जाए।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Decoding the Client Profile",
+      "basic_meaning": "क्लाइंट की 'कहानी' को पढ़ना और formulas के लिए आवश्यक संख्याओं (numbers) को चुनना।",
+      "detailed_explanation": "एक सामान्य NISM केस स्टडी में शामिल हैं:\n1. **Personal Details:** पति, पत्नी और बच्चों की आयु (Time Horizon के लिए उपयोग किया जाता है)।\n2. **Income & Expenses:** Gross salary, अनिवार्य कटौतियां (mandatory deductions), और मासिक जीवन यापन की लागत (Surplus और HLV के लिए उपयोग किया जाता है)।\n3. **Existing Assets:** PF बैलेंस, Mutual Funds, Gold, Real Estate (Portfolio Analysis के लिए उपयोग किया जाता है)।\n4. **Goals:** शिक्षा की लागत (Future Value), शादी की लागत, और Retirement age।\n5. **Risk Profile:** क्लाइंट के पिछले व्यवहार (past behavior) के बारे में सुराग (Asset Allocation के लिए उपयोग किया जाता है)।",
+      "why_this_is_important": "Exam Trap: हमेशा जाँचें कि दिए गए खर्चे 'Monthly' हैं या 'Annual' (वार्षिक)। उन्हें मिला देना केस स्टडी सेक्शन में फेल होने का सबसे आम कारण है।",
+      "formula": "Surplus = (Gross Income - Taxes - PF - EMIs) - Annual Expenses",
+      "formula_explanation": "नए निवेश के लिए उपलब्ध राशि (amount)।",
+      "step_by_step_calculation_example": "**Scenario:** श्री अरुण (35) ₹1,50,000/माह कमाते हैं। PF कटौती ₹10,000 है। Home EMI ₹40,000 है। मासिक जीवन यापन की लागत (living cost) ₹50,000 है।\n\n**Calculation:**\n- Annual Income = ₹18,00,000.\n- Annual Outflows (PF + EMI + Living) = (10k + 40k + 50k) * 12 = ₹12,00,000.\n- **Annual Surplus = ₹6,00,000.**\n- **Monthly Surplus = ₹50,000.**",
+      "real_life_indian_example": "बेंगलुरु में दो बच्चों और उच्च (high) होम लोन वाले परिवार की 'Risk Capacity' टियर-2 शहर में समान वेतन (salary) वाले नि:संतान (childless) जोड़े की तुलना में बहुत कम होगी।",
+      "exam_traps": [
+        "Trap: 'Take-home' (घर ले जाने वाले) वेतन से PF योगदान (contribution) को घटाना भूल जाना।",
+        "Trap: भविष्य के लक्ष्यों के लिए केस स्टडी टेक्स्ट में उल्लिखित 'Inflation' (मुद्रास्फीति) दर को अनदेखा करना।"
+      ],
+      "memory_trick": "P.I.G.S. = Profile, Income, Goals, Surplus."
+    },
+    {
+      "concept": "2. Calculating the Retirement Gap",
+      "basic_meaning": "यह पता लगाना कि एक आरामदायक retirement के लिए कितना पैसा 'Missing' (कम) है।",
+      "detailed_explanation": "इसमें 3 बड़े कदम शामिल हैं:\n1. **Inflating Expenses:** FV फॉर्मूले का उपयोग करके गणना करें कि retirement की आयु में वर्तमान खर्चे क्या होंगे।\n2. **Determining the Corpus:** जीवन भर उस inflated खर्चे को उत्पन्न (generate) करने के लिए 60 वर्ष की आयु में आवश्यक कुल राशि (total amount) की गणना करें (Real Rate of Return का उपयोग करके)।\n3. **Accounting for Existing Assets:** आवश्यक corpus से वर्तमान PF, PPF और MF होल्डिंग्स के भविष्य के मूल्य (future value) को घटाएं।",
+      "why_this_is_important": "यह आमतौर पर परीक्षा में 4-मार्क का प्रश्न होता है। इसके लिए वित्तीय कैलकुलेटर (financial calculator) या PV/FV टेबल के उपयोग की आवश्यकता होती है।",
+      "formula": "$$FV = PV \\times (1 + r)^n$$ और $$Corpus = \\frac{Annual\\ Expense}{Real\\ Rate}$$ (Simplified)",
+      "formula_explanation": "Real Rate का उपयोग करें क्योंकि retirement के *बाद* भी खर्चे बढ़ते रहते हैं।",
+      "step_by_step_calculation_example": "\n**Scenario:** Current Expense = ₹6 Lakhs/year. 20 वर्षों में Retire. Inflation = 6%. Retirement के बाद Real Rate of Return = 2%.\n\n**Step 1 (Inflated Expense):** \n$$FV = 6,00,000 \\times (1.06)^{20} = ₹19,24,281$$ प्रति वर्ष।\n\n**Step 2 (60 वर्ष की आयु में आवश्यक Corpus):**\n$$Corpus = \\frac{19,24,281}{0.02} = ₹9.62\\ Crores.$$",
+      "real_life_indian_example": "अधिकांश भारतीय क्लाइंट्स यह देखकर हैरान रह जाते हैं कि उन्हें एक साधारण जीवन शैली के लिए लगभग ₹10 Crores की आवश्यकता है, क्योंकि वे भूल जाते हैं कि 6% inflation हर 20 साल में लागत को तीन गुना (triples) कर देता है।",
+      "exam_traps": [
+        "Trap: पेंशन निकासी (withdrawal) चरण के लिए Real Return (8% - 6% = 2%) के बजाय nominal return (उदा. 8%) का उपयोग करना।",
+        "Trap: 'Spouse's' (जीवनसाथी की) जीवन प्रत्याशा (life expectancy) की गणना करना भूल जाना, जो आमतौर पर अधिक होती है।"
+      ],
+      "memory_trick": "Inflate the Bill -> Build the Hill (Corpus) -> Fill the Gap."
+    },
+    {
+      "concept": "3. Comprehensive Asset Allocation Suggestion",
+      "basic_meaning": "परिवार को ठीक-ठीक बताना कि उनके 'Gaps' (कमी) के आधार पर उन्हें अपना पैसा कहाँ लगाना चाहिए।",
+      "detailed_explanation": "Math पूरा होने के बाद, आपको एक recommendation (सिफारिश) देनी होगी:\n1. **Emergency Fund:** Liquid Fund में 6 महीने का खर्च रखने का सुझाव दें।\n2. **Insurance:** जाँचें कि क्या Life Cover (HLV) और Health Cover पर्याप्त (adequate) है। यदि नहीं, तो पहले Term Plan का सुझाव दें।\n3. **Asset Mix:** \n   * Long Term Goals (>7 वर्ष): Equity (Diversified/Index funds)।\n   * Medium Term (3-7 वर्ष): Hybrid/Dynamic Asset Allocation funds।\n   * Short Term (<3 वर्ष): Debt funds/FDs।",
+      "why_this_is_important": "परीक्षा आपको 'Recommended Portfolio' के लिए चार विकल्प देगी। सही विकल्प वह होगा जो क्लाइंट के Risk Profile और उनके लक्ष्यों के Time Horizon *दोनों* से मेल खाता हो।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "**Case:** 2 साल में लक्ष्य रखने वाला एक 'Conservative' (रूढ़िवादी) निवेशक।\n- **Wrong Recommendation:** 100% Equity (2 साल के लक्ष्य के लिए बहुत अधिक जोखिम भरा)।\n- **Correct Recommendation:** Short-term Debt Fund या FD (timeline और risk profile से मेल खाता है)।",
+      "real_life_indian_example": "बच्चे की उच्च शिक्षा (15 साल दूर) के लिए Index fund में SIP का सुझाव देना, जबकि परिवार की आगामी यूरोप यात्रा (8 महीने दूर) के लिए Liquid fund का सुझाव देना।",
+      "exam_traps": [
+        "Trap: किसी 'Conservative' क्लाइंट को जोखिम भरा उत्पाद (risky product) सुझाना सिर्फ इसलिए क्योंकि रिटर्न अधिक है। (यह SEBI के suitability नियमों का उल्लंघन करता है)।",
+        "Trap: ऐसे क्लाइंट को 80C उत्पाद (जैसे ELSS) सुझाना जिसने PF के साथ पहले ही अपनी ₹1.5 Lakh की सीमा (limit) समाप्त कर दी है।"
+      ],
+      "memory_trick": "Timeline उत्पाद (Product) तय करती है; Temperament (स्वभाव) % Allocation तय करता है।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Financial Planning vs. Tax Planning",
+      "clear_explanation": "| Feature | Financial Planning | Tax Planning |\n|---|---|---|\n| **Goal** | जीवन के लक्ष्य (Life goals) (शिक्षा, Retirement)। | कर देयता (tax liability) कम करना। |\n| **Focus** | Long term wealth और सुरक्षा। | 80C, 10(10D) आदि के तहत तत्काल बचत (Immediate savings)। |\n| **Rule** | Investment को tax saving को संचालित (drive) करना चाहिए। | Tax saving कभी भी निवेश का एकमात्र कारण नहीं होना चाहिए। |"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "HLV (Annual Income - Personal Expenses) / Interest Rate की गणना।",
+    "Insurance adequacy (यह जाँचना कि क्या मौजूदा life cover पर्याप्त है)।",
+    "कम जोखिम सहनशीलता (low risk tolerance) वाले 50 वर्षीय व्यक्ति के लिए सही Asset Allocation का चयन करना।",
+    "ग्रेच्युटी (Gratuity) या लीव एनकैशमेंट (Leave Encashment) पेआउट के tax-free हिस्से की गणना करना।",
+    "किसी विशिष्ट निवेश कॉम्बो (investment combo) का 'Post-Tax' रिटर्न निर्धारित करना।"
+  ],
+  "quick_revision_summary": [
+    "शुरू करने से पहले हमेशा Monthly डेटा को Annual डेटा में बदलें।",
+    "Retirement Corpus = (Inflated Expense / Real Rate)।",
+    "Investment की तुलना में Insurance एक प्राथमिकता (priority) है।",
+    "Nominee मालिक (owner) नहीं (NOT) है (जब तक कि यह NRI/Share विशिष्ट अपवाद (specific exception) न हो)।",
+    "Equity 7+ वर्षों के लिए है; Debt <3 वर्षों के लिए है।",
+    "'Risk Profile' को ध्यान से पढ़ें—यह गणितीय क्षमता (mathematical capacity) को ओवरराइड (override) करता है।",
+    "अंत में Post-Tax और Post-Inflation रिटर्न ही मायने रखते हैं।"
+  ]
+}

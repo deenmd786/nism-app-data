@@ -1,0 +1,92 @@
+{
+  "course": "NISM Series XXI-B: Portfolio Managers Certification Examination",
+  "unit_number": 17,
+  "unit_name": "Risk",
+  "weightage": "10 Marks",
+  "overview": "यह high-weightage chapter केवल risk 'calculate' करने से आगे बढ़कर इसे 'manage' कैसे करें, इस पर focus करता है। NISM exam में, 'Risk' केवल एक डरावना शब्द नहीं है; यह एक measurable statistical concept है। जहाँ Units 15 और 16 ने math को introduce किया, वहीं Unit 17 practical types के risk—जैसे Credit, Liquidity, और Operational risk—और Value at Risk (VaR) जैसे advanced tools पर focus करता है। इस unit को समझना ज़रूरी है क्योंकि एक Portfolio Manager का मुख्य काम केवल 'पैसा कमाना' नहीं है, बल्कि 'पैसा खोने के risk' को manage करना है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Defining and Measuring Risk",
+      "basic_meaning": "Risk वह 'uncertainty' (अनिश्चितता) है कि आपका actual profit आपके expected profit से अलग होगा।",
+      "detailed_explanation": "Finance में, हम केवल यह नहीं कहते कि कोई investment 'risky' है; हम इसे दो main तरीकों से measure करते हैं:\n1. **Standard Deviation (Total Risk):** यह measure करता है कि किसी stock की price अपनी average price के आस-पास कितना उछलती है। यदि कोई stock बहुत 'jumpy' (high volatility) है, तो उसका Standard Deviation high होता है。\n2. **Beta (Systematic Risk):** यह measure करता है कि overall market की तुलना में stock कितना move करता है। \n- **Absolute Risk:** किसी और चीज़ से तुलना किए बिना portfolio की अपनी volatility को देखना।\n- **Relative Risk:** किसी benchmark से तुलना करके risk को देखना (जैसे, हम Nifty 50 से कितना deviate हुए?)।",
+      "why_this_is_important": "एक manager को 'Total Risk' पता होना चाहिए ताकि client को volatility से घबराहट न हो, और 'Relative Risk' यह देखने के लिए कि क्या वे वास्तव में अपना काम सही से कर रहे हैं।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "यदि आप किसी 'Penny Stock' में invest करते हैं, तो उसका Standard Deviation (Absolute Risk) high हो सकता है। यदि आप 'Index Fund' में invest करते हैं, तो उसका Beta ठीक 1.0 (Market Risk) होगा।",
+      "exam_traps": [
+        "यह सोचना कि Risk = Loss। Risk में expected से *अधिक* profit कमाने की 'uncertainty' भी शामिल होती है।",
+        "Standard Deviation को Beta के साथ confuse करना। SD Total Risk है; Beta केवल Market Risk है।"
+      ],
+      "memory_trick": "Absolute = Standalone (अकेला). Relative = Relation to Benchmark (Benchmark से संबंध)।"
+    },
+    {
+      "concept": "2. Types of Investment Risks",
+      "basic_meaning": "वे अलग-अलग 'कारण' जिनकी वजह से आप पैसा खो सकते हैं।",
+      "detailed_explanation": "Portfolio Managers को इन specific risks को पहचानना और tackle करना होता है:\n1. **Market Risk (Systematic Risk):** पूरी economy के कारण risk (जैसे, COVID, Inflation, Interest Rate में बदलाव)। आप diversify करके इससे नहीं बच सकते।\n2. **Credit Risk (Default Risk):** यह risk कि जिस company को आपने पैसा उधार दिया है (Bonds) वह आपको वापस नहीं करेगी।\n3. **Liquidity Risk:** यह risk कि आप अपना stock जल्दी नहीं बेच सकते क्योंकि कोई buyer नहीं है।\n4. **Operational Risk:** Internal failures के कारण risk—जैसे computer glitch, किसी employee द्वारा fraud, या गलत trade entry।\n5. **Regulatory Risk:** यह risk कि government कोई ऐसा law बदल दे (जैसे, किसी product को ban करना) जिससे company को नुकसान हो।",
+      "why_this_is_important": "अलग-अलग assets में अलग-अलग risks होते हैं। Bonds में high Credit Risk होता है; Small-cap stocks में high Liquidity Risk होता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Credit Risk: DHFL bonds के investors ने पैसा खो दिया जब company ने default किया। Liquidity Risk: Recession (मंदी) के दौरान किसी दूरदराज के इलाके में flat बेचने की कोशिश करना—आपको महीनों तक buyer नहीं मिल सकता है।",
+      "exam_traps": [
+        "यह सोचना कि Government Bonds (G-Secs) में Credit Risk होता है। उनमें नहीं होता (Sovereign guarantee)।",
+        "यह मान लेना कि diversification Market Risk को हटा देता है। यह केवल 'Company-specific' risk को हटाता है।"
+      ],
+      "memory_trick": "M-C-L-O: Market, Credit, Liquidity, Operational।"
+    },
+    {
+      "concept": "3. Value at Risk (VaR)",
+      "basic_meaning": "'Maximum Possible Loss' (अधिकतम संभव नुकसान) जिसका आप एक normal दिन में सामना कर सकते हैं।",
+      "detailed_explanation": "VaR एक single number है जो किसी portfolio के downside risk को summarize करता है। इसके तीन components होते हैं:\n1. **A Time Period:** (जैसे, 1 दिन या 1 महीना)।\n2. **A Confidence Level:** (जैसे, 95% या 99%)।\n3. **A Loss Amount:** (जैसे, Rs. 5 Lakhs)।\n\n- **Interpretation:** यदि किसी portfolio का '95% confidence पर 1-day VaR 5 लाख रुपये' है, तो इसका मतलब है: '95% chance है कि हम कल 5 लाख से ज़्यादा नहीं हारेंगे'। या, '5% chance है कि हम 5 लाख से ज़्यादा (MORE) हारेंगे'。",
+      "why_this_is_important": "यह managers को clients को यह बताने में मदद करता है कि normal market conditions में वे 'worst-case' में कितना cash खो सकते हैं।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "एक bank potential trading losses को cover करने के लिए कितना extra cash अलग रखना है, यह तय करने के लिए VaR का उपयोग करता है।",
+      "exam_traps": [
+        "यह सोचना कि VaR आपको 'absolute' worst case बताता है। यह आपको केवल 'Normal' conditions में worst case बताता है। यह 2008 के crash जैसे 'Black Swan' events को predict नहीं करता है।",
+        "Percentages को confuse करना। एक 99% confidence VaR हमेशा 95% confidence VaR की तुलना में *अधिक* (higher) loss number होगा।"
+      ],
+      "memory_trick": "VaR = Value at Risk (दांव पर कितनी value लगी है?)।"
+    },
+    {
+      "concept": "4. Tracking Error",
+      "basic_meaning": "Manager द्वारा benchmark को सही ढंग से 'copy' न कर पाने का risk।",
+      "detailed_explanation": "PMS में, managers की तुलना अक्सर एक index (Benchmark) से की जाती है। \n- **Active Risk:** यदि Nifty 10% ऊपर जाता है और manager का portfolio केवल 8% ऊपर जाता है, तो एक gap है। \n- **Tracking Error:** समय के साथ इन 'gaps' का Standard Deviation। \n- **Low Tracking Error:** Manager index के बहुत करीब (close) है। \n- **High Tracking Error:** Manager index से दूर बड़े 'Active' bets ले रहा है।",
+      "why_this_is_important": "यह client को बताता है कि क्या manager वास्तव में 'Active' है या केवल एक 'Closet Indexer' है (केवल index को copy करने के लिए high fees charge कर रहा है)।",
+      "formula": "Tracking Error = Standard Deviation of (Portfolio Return - Benchmark Return)",
+      "formula_explanation": "हर महीने returns में difference calculate करें, फिर उन differences की volatility (Standard Deviation) निकालें।",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "एक Index Fund का tracking error बहुत low (0.1% के करीब) होता है। एक 'Aggressive' Flexi-cap PMS का tracking error high (5-8%) हो सकता है।",
+      "exam_traps": [
+        "यह सोचना कि Tracking Error केवल return में साधारण 'difference' है। नहीं, यह एक period में उस difference का **Standard Deviation** है।"
+      ],
+      "memory_trick": "Tracking Error = Gap Volatility (गैप का उतार-चढ़ाव)।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Absolute Risk vs. Relative Risk",
+      "clear_explanation": "Absolute Risk portfolio के अपने 'shakes' (उतार-चढ़ाव/Standard Deviation) को measure करता है। Relative Risk यह measure करता है कि किसी benchmark (Tracking Error) की तुलना में यह कितना 'shake' करता है।"
+    },
+    {
+      "difference_between": "Stress Testing vs. VaR",
+      "clear_explanation": "VaR 'Normal' markets (जैसे, 95% दिनों में) में losses को predict करता है। Stress Testing यह पूछता है कि 'क्या होगा यदि कल 1929 जैसा Depression आ जाए?' ताकि 'Extreme' events के effect को देखा जा सके।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "एक VaR statement को interpret करना (Time, Confidence, Amount)।",
+    "Types of risk को identify करना (Liquidity vs Credit vs Operational)।",
+    "Active returns के Standard Deviation के रूप में Tracking Error की Definition।",
+    "यह समझना कि Systematic Risk (Market Risk) को diversify नहीं किया जा सकता।"
+  ],
+  "quick_revision_summary": [
+    "Risk केवल loss नहीं है, बल्कि uncertainty है।",
+    "Standard Deviation = Total Risk; Beta = Systematic Risk।",
+    "Credit Risk उधारकर्ता (borrower) के default करने का खतरा है।",
+    "VaR: एक तय समय में किसी निश्चित confidence के साथ maximum loss।",
+    "Tracking Error किसी benchmark के relative 'Active Risk' को measure करता है।",
+    "Stress Testing 'Tail Risks' (extreme crashes) के लिए तैयार करने में मदद करता है।"
+  ]
+}

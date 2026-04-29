@@ -1,0 +1,112 @@
+{
+  "course": "NISM Series XIX-C: Alternative Investment Fund Managers Certification Examination",
+  "unit_number": 5,
+  "unit_name": "Introduction to Capital Market Theory",
+  "weightage": "Chapter 3, 4 और 5 के संयुक्त 3 Marks के वेटेज का हिस्सा",
+  "overview": "यदि MPT (Unit 4) नींव (foundation) था, तो Capital Market Theory इसके ऊपर बनी गगनचुंबी इमारत है। जबकि MPT ने हमें बताया कि portfolio कैसे बनाया जाए, Capital Market Theory यह समझाती है कि सभी investors मिलकर market prices कैसे तय करते हैं। यह 'Risk-Free' asset (जैसे Govt Bond) और प्रसिद्ध CAPM model को पेश करता है। NISM exam के लिए, यह chapter समझाता है कि आपको 'Market Risk' लेने के लिए पैसे क्यों मिलते हैं, लेकिन 'Individual Company Risk' लेने के लिए क्यों नहीं।",
+
+  "complete_concept_explanation": [
+    {
+      "concept": "1. The Risk-Free Asset",
+      "basic_meaning": "एक ऐसा investment जहां आपका return 100% guaranteed होता है।",
+      "detailed_explanation": "Theory में, एक Risk-Free asset का variance zero (price में कोई उतार-चढ़ाव नहीं) और default का risk zero होता है। India में, short-term Government Securities (T-Bills) को risk-free माना जाता है क्योंकि सरकार आपको पैसे वापस करने के लिए हमेशा और पैसे छाप सकती है।\n\nCapital Market Theory में, हम यह मानकर चलते हैं कि हर investor इस Risk-Free Rate ($R_f$) पर पैसे उधार दे सकता है या ले सकता है।",
+      "why_this_is_important": "यह 'Base Rate' के रूप में काम करता है। यदि एक Bank FD 7% (safe) देती है, तो आप 7% के लिए किसी risky AIF में invest क्यों करेंगे? आप risk तभी लेते हैं जब आपको इस $R_f$ के ऊपर 'Premium' मिलता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "RBI द्वारा जारी 91-day Treasury Bill (T-Bill) Indian market में Risk-Free asset के सबसे करीब है।",
+      "exam_traps": [
+        "Bank FD को 'Risk-Free' समझना। हालांकि यह बहुत सुरक्षित है, banks technically fail हो सकते हैं (भले ही India में यह rare है)। केवल Govt Securities ही theoretically risk-free हैं।",
+        "यह मान लेना कि Risk-Free rate 0% है। यह आमतौर पर inflation rate के आसपास या उससे अधिक (जैसे, 6%) होता है।"
+      ],
+      "memory_trick": "Risk-Free = 'No-Brainer' Profit."
+    },
+    {
+      "concept": "2. The Capital Market Line (CML)",
+      "basic_meaning": "Updated 'Efficient Frontier' जिसमें risk-free lending और borrowing शामिल है।",
+      "detailed_explanation": "Unit 4 में, Efficient Frontier केवल risky stocks का एक curve था। अब, यदि आप Risk-Free Rate ($R_f$) से शुरू होने वाली एक सीधी रेखा (straight line) खींचते हैं और इसे 'Efficient Frontier' curve को छूने देते हैं, तो आपको CML मिलता है।\n\n* **The Tangency Point:** वह बिंदु जहां रेखा curve को छूती है, **Market Portfolio** (जिसमें सभी risky assets होते हैं) है।\n* **The Line:** यह Risk-Free asset और Market Portfolio के सभी combinations को represent करती है। Investors या तो 'Lenders' (safe) हो सकते हैं या 'Borrowers' (extra return पाने के लिए extra risk ले रहे हैं)।",
+      "why_this_is_important": "यह दिखाता है कि किसी भी investor के लिए सबसे अच्छी strategy केवल Market Portfolio (जैसे Nifty 50 ETF) और Risk-Free Cash का mix रखना है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "यदि आपके पास ₹100 हैं, तो ₹50 T-Bill में और ₹50 Nifty Index Fund में लगाना CML पर एक position है।",
+      "exam_traps": [
+        "CML को SML (जिसे हम आगे cover करेंगे) के साथ confuse करना। CML केवल **Total Risk** (Standard Deviation) और **Portfolios** के लिए है।",
+        "यह सोचना कि CML individual stocks पर लागू होता है। यह केवल efficient portfolios पर लागू होता है।"
+      ],
+      "memory_trick": "CML = Curve + Risk-Free Straight Line."
+    },
+    {
+      "concept": "3. Systematic vs. Unsystematic Risk (Recap)",
+      "basic_meaning": "Market आपको केवल उस risk के लिए reward देता है जिसे आप *avoid नहीं कर सकते*।",
+      "detailed_explanation": "Capital Market Theory कहती है कि चूंकि 'Unsystematic Risk' (company-specific problems) को diversify करके FREE में हटाया जा सकता है, इसलिए market आपको इसे लेने के लिए पैसे (reward) नहीं देगा।\n\n* **Systematic Risk (Beta):** पूरे market का risk (जैसे War, Interest rates)। आप इसे avoid नहीं कर सकते। इसलिए, market इसे सहन करने के लिए आपको 'Risk Premium' देता है।",
+      "why_this_is_important": "यह clarify करता है कि AIF managers Beta management पर focus क्यों करते हैं और diversification एक 'must-have' क्यों है, न कि कोई option।",
+      "formula": "Total Risk = Systematic Risk + Unsystematic Risk",
+      "formula_explanation": "Total risk market-wide risks और specific company risks का जोड़ (sum) है।",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "यदि आप केवल Yes Bank के shares खरीदते हैं और यह crash हो जाता है, तो market आप पर दया नहीं करेगा क्योंकि आप आसानी से 10 अन्य banks में diversify कर सकते थे। लेकिन अगर global pandemic के कारण पूरा NSE crash हो जाता है, तो वह Systematic Risk है।",
+      "exam_traps": [
+        "सबसे प्रसिद्ध trap: 'क्या market आपको total risk के लिए reward देता है?' उत्तर: **नहीं**, केवल Systematic Risk (Beta) के लिए।",
+        "यह सोचना कि diversification Systematic Risk को कम करता है। यह केवल Unsystematic Risk को कम करता है।"
+      ],
+      "memory_trick": "Systematic = System-wide (Unavoidable)। Unsystematic = Unique (Avoidable)।"
+    },
+    {
+      "concept": "4. Capital Asset Pricing Model (CAPM)",
+      "basic_meaning": "किसी stock के risk के आधार पर उसका 'Fair Return' calculate करने का एक formula।",
+      "detailed_explanation": "CAPM finance में सबसे famous model है। यह कहता है कि किसी asset का expected return इन पर निर्भर करता है:\n1. Time value of money (Risk-Free Rate)।\n2. Market risk लेने के लिए reward (Beta)।\n\n**Beta ($\\beta$):** यह मापता है कि market के मुकाबले कोई stock कितना move करता है।\n* $\\beta = 1$: बिल्कुल market के साथ move करता है।\n* $\\beta > 1$: 'Aggressive' (Market से ज्यादा move करता है)।\n* $\\beta < 1$: 'Defensive' (Market से कम move करता है)।",
+      "why_this_is_important": "AIF managers CAPM का उपयोग यह देखने के लिए करते हैं कि कोई startup या stock अपने risk level की तुलना में 'Cheap' है या 'Expensive'।",
+      "formula": "Expected Return = $R_f + \\beta \\times (R_m - R_f)$",
+      "formula_explanation": "Expected Return = Risk-Free Rate + [Beta × (Market Return - Risk-Free Rate)]। Bracket वाले हिस्से को 'Market Risk Premium' कहा जाता है।",
+      "step_by_step_calculation_example": "Step 1: Risk-Free Rate ($R_f$) = 6%.\nStep 2: Expected Market Return ($R_m$) = 12%.\nStep 3: Stock Beta ($\\beta$) = 1.5.\nStep 4: Expected Return = 6% + [1.5 × (12% - 6%)]\nStep 5: Calculation = 6% + [1.5 × 6%] = 6% + 9% = 15%.\nअपने risk को justify करने के लिए इस stock को 15% return देना *चाहिए*।",
+      "real_life_indian_example": "India में high-growth tech startups का Beta अक्सर high होता है (जैसे, 1.8), जिसका अर्थ है कि वे खराब market में अधिक तेजी से गिरते हैं लेकिन अच्छे market में अधिक ऊपर जाते हैं।",
+      "exam_traps": [
+        "Beta को Standard Deviation के साथ confuse करना। Standard Deviation = Total Risk; Beta = केवल Systematic Risk।",
+        "Formula में गलत $R_f$ या $R_m$ का उपयोग करना। प्रश्न को ध्यान से पढ़ें!"
+      ],
+      "memory_trick": "CAPM = Base Reward + (Riskiness × Market Bonus)।"
+    },
+    {
+      "concept": "5. The Security Market Line (SML)",
+      "basic_meaning": "CAPM का visual version।",
+      "detailed_explanation": "SML एक graph है जहां X-axis पर **Beta** और Y-axis पर **Expected Return** होता है।\n* CML (जो portfolios के लिए है) के विपरीत, SML **Individual Stocks** के लिए काम करता है।\n* **Undervalued:** यदि किसी stock का actual return SML के *ऊपर (above)* है, तो यह सस्ता है (Buy!)।\n* **Overvalued:** यदि किसी stock का actual return SML के *नीचे (below)* है, तो यह बहुत महंगा है (Sell!)।",
+      "why_this_is_important": "AIF managers 'Alpha' (SML के ऊपर की दूरी) की तलाश करते हैं।",
+      "formula": "Same as CAPM",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "यदि CAPM कहता है कि किसी stock को 15% (SML पर) देना चाहिए, लेकिन आपको उसी risk के साथ 18% देने वाला stock मिलता है, तो यह 'Above the SML' है और एक बेहतरीन investment है।",
+      "exam_traps": [
+        "यह सोचना कि SML Standard Deviation का उपयोग करता है। नहीं, यह **Beta** का उपयोग करता है।",
+        "यह सोचना कि SML केवल portfolios पर लागू होता है। नहीं, यह **किसी भी** security पर लागू होता है।"
+      ],
+      "memory_trick": "SML = Single Stocks; CML = Combined Portfolios."
+    }
+  ],
+
+  "important_differences": [
+    {
+      "difference_between": "CML vs. SML",
+      "clear_explanation": "**CML (Capital Market Line):** Standard Deviation (Total Risk) का उपयोग करता है। केवल efficient portfolios के लिए। बताता है कि cash और market को कैसे mix किया जाए।\n**SML (Security Market Line):** Beta (Systematic Risk) का उपयोग करता है। Individual stocks और portfolios के लिए। Risk की 'Fair Price' बताता है।"
+    },
+    {
+      "difference_between": "Lending vs. Borrowing Portfolio",
+      "clear_explanation": "**Lending:** आप कुछ पैसा $R_f$ (Govt Bonds) में और कुछ Market में लगाते हैं। आप low risk पर हैं।\n**Borrowing (Leveraged):** आप Market को *और अधिक* खरीदने के लिए $R_f$ पर पैसा उधार लेते हैं। आप high risk पर हैं (Hedge Funds में common है)।"
+    }
+  ],
+
+  "frequently_asked_exam_areas": [
+    "CAPM formula पर Numerical (आने की बहुत संभावना है)।",
+    "Beta values को identify करना ($\\beta > 1$ का क्या अर्थ है?)।",
+    "CML और SML के बीच अंतर (उपयोग किया जाने वाला risk measure)।",
+    "यह concept कि market केवल Systematic Risk को reward देता है।"
+  ],
+
+  "quick_revision_summary": [
+    "Risk-Free rate Govt T-Bills पर मिलने वाला return है।",
+    "Beta Systematic Risk (Market Risk) को मापता है।",
+    "CAPM required return देता है: $R_f + \\beta(R_m - R_f)$।",
+    "Diversification केवल Unsystematic Risk को हटाता है।",
+    "SML CAPM formula का graph है।",
+    "Alpha वह return है जो CAPM के prediction से ऊपर कमाया जाता है।"
+  ]
+}

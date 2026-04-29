@@ -1,0 +1,109 @@
+{
+  "course": "NISM Series XIII: Common Derivatives Certification Examination",
+  "unit_number": 4,
+  "unit_name": "Futures का उपयोग करके रणनीतियाँ (Strategies Using Futures)",
+  "weightage": "16% (24 Marks)",
+  "overview": "अब जब आप जान गए हैं कि Future क्या है (Unit 3), यह चैप्टर आपको सिखाता है कि पैसे कमाने या पैसे बचाने के लिए इसका उपयोग कैसे (HOW) किया जाए। यह एक बहुत ही practical चैप्टर है। आप सीखेंगे कि किसी स्टॉक पोर्टफोलियो को क्रैश होने से कैसे बचाया जाए (Hedging), बाज़ार की दिशा पर दांव कैसे लगाया जाए (Speculation), और जोखिम-मुक्त पैसा कैसे बनाया जाए (Arbitrage)। यहाँ 'Beta Hedging' पर numerical questions की उम्मीद करें।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Hedging (ढाल / The Shield)",
+      "basic_meaning": "अपने मौजूदा बिज़नेस या पोर्टफोलियो में कीमतों में बदलाव के जोखिम (risk) को कम करने या खत्म करने के लिए Futures का उपयोग करना।",
+      "detailed_explanation": "हेजिंग (Hedging) बीमा (insurance) खरीदने जैसा है। आप इसे लाभ कमाने के लिए नहीं करते हैं; आप इसे इसलिए करते हैं ताकि आपको नुकसान न हो।\n\nइसके दो मुख्य प्रकार हैं:\n\n**A. Short Hedge (Futures बेचना):**\n* **कौन उपयोग करता है?** कोई ऐसा व्यक्ति जिसके पास Asset (संपत्ति) है (Spot में Long position) और जिसे डर है कि कीमतें गिरेंगी (FALL)।\n* **Action:** आज Futures बेचें (Sell)।\n* **Logic:** यदि Spot price गिरता है (asset में नुकसान), तो Future price भी गिरेगा (Short Future में लाभ)। लाभ, नुकसान को खत्म (cancel) कर देता है।\n\n**B. Long Hedge (Futures खरीदना):**\n* **कौन उपयोग करता है?** कोई ऐसा व्यक्ति जिसे बाद में Asset खरीदने की आवश्यकता है (Spot/Requirement में Short position) और जिसे डर है कि कीमतें बढ़ेंगी (RISE)।\n* **Action:** आज Futures खरीदें (Buy)।\n* **Logic:** यदि Spot price बढ़ता है (खरीद में नुकसान), तो Future price भी बढ़ेगा (Long Future में लाभ)।",
+      "why_this_is_important": "यह derivatives का प्राथमिक उद्देश्य (primary purpose) है। परीक्षा आपको एक scenario देगी और पूछेगी: 'क्या उसे Futures Buy करना चाहिए या Sell?'",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "**Short Hedge का उदाहरण:**\n1. आपके पास ₹10 Lakhs के TCS shares (Spot) हैं।\n2. आपको डर है कि TCS गिरेगा।\n3. आप ₹10 Lakhs मूल्य के TCS Futures **Sell (बेचते)** करते हैं।\n4. TCS 10% गिर जाता है।\n5. Shares में नुकसान = ₹1 Lakh.\n6. Short Futures में लाभ = ₹1 Lakh.\n7. **Net Loss = 0.** आपका पोर्टफोलियो सुरक्षित है।",
+      "real_life_indian_example": "**किसान (Short Hedge):** गेहूँ उगाने वाले एक भारतीय किसान को डर है कि फसल के समय तक कीमत गिर जाएगी। वह कीमत लॉक करने के लिए अभी गेहूँ के Futures **Sell** करता है।\n**जौहरी / Jeweller (Long Hedge):** Tanishq को शादी के ऑर्डर के लिए अगले महीने सोना (Gold) खरीदना है। उन्हें डर है कि सोना महंगा हो जाएगा। वे अभी Gold Futures **Buy** करते हैं।",
+      "exam_traps": [
+        "Long बनाम Short hedge में confuse होना। याद रखें: यदि आपके पास Asset है (HAVE), तो आप futures SELL करते हैं (Short Hedge)। यदि आपको Asset की आवश्यकता है (NEED), तो आप futures BUY करते हैं (Long Hedge)।",
+        "यह सोचना कि Hedging लाभ (profit) के लिए है। (नहीं, यह सुरक्षा/safety के लिए है)।"
+      ],
+      "memory_trick": "Asset है -> गिरने का डर -> Future Sell (Short Hedge)। Asset चाहिए -> बढ़ने का डर -> Future Buy (Long Hedge)।"
+    },
+    {
+      "concept": "2. Beta Hedging (पोर्टफोलियो सुरक्षा)",
+      "basic_meaning": "अपने विशिष्ट स्टॉक पोर्टफोलियो की सुरक्षा के लिए मुझे कितने Nifty Futures बेचने चाहिए?",
+      "detailed_explanation": "सभी स्टॉक्स बिल्कुल Nifty की तरह नहीं चलते हैं। \n* **Beta ($\\beta$):** संवेदनशीलता (sensitivity) को मापता है। \n* $\\beta = 1$: स्टॉक बिल्कुल Nifty की तरह चलता है।\n* $\\beta = 1.5$: स्टॉक 50% अधिक अस्थिर (Volatile/Aggressive) है।\n* $\\beta = 0.8$: स्टॉक कम अस्थिर (Defensive) है。\n\nयदि आपके पास high beta पोर्टफोलियो है, तो इसे पूरी तरह से सुरक्षित करने के लिए आपको अधिक (MORE) Nifty Futures बेचने होंगे।",
+      "why_this_is_important": "यह एक पक्का (guaranteed) numerical question है (2-3 marks)।",
+      "formula": "$$ \\text{Number of Contracts} = \\frac{\\text{Portfolio Value} \\times \\text{Portfolio Beta}}{\\text{Contract Value of Index}} $$",
+      "formula_explanation": "आमतौर पर, हम Beta को 0 (Complete Hedge) तक कम करना चाहते हैं। इसलिए हम सीधे Portfolio Beta का उपयोग करते हैं। Contract Value = Index Level × Lot Size.",
+      "step_by_step_calculation_example": "**Question:** आपके पास ₹20 Lakhs का पोर्टफोलियो है। Beta 1.2 है। Nifty 10,000 पर है। Lot size 50 है। Full hedge के लिए कितने contracts बेचने होंगे?\n\n**Step 1:** 1 Nifty Lot की Contract Value निकालें।\n$10,000 \\times 50 = \\text{₹5,00,000}$.\n\n**Step 2:** Formula लागू करें।\n$$ \\text{No. of Contracts} = \\frac{20,00,000 \\times 1.2}{5,00,000} $$\n$$ = \\frac{24,00,000}{5,00,000} = 4.8 $$\n\n**Answer:** आपको लगभग **5 lots** Nifty Futures बेचने चाहिए।",
+      "real_life_indian_example": "बैंकिंग स्टॉक्स (High Beta) रखने वाला एक Mutual Fund मैनेजर बाज़ार क्रैश के दौरान फंड को बचाने के लिए BankNifty Futures बेचेगा।",
+      "exam_traps": [
+        "Beta से गुणा (multiply) करना भूल जाना। (Students अक्सर केवल Portfolio / Contract Value कर देते हैं)।",
+        "'Contract Value' (Price × Lot) को केवल 'Price' समझने की गलती करना।"
+      ],
+      "memory_trick": "Hedge Ratio = (Value × Beta) / Future Value."
+    },
+    {
+      "concept": "3. Speculation (सट्टा / The Sword)",
+      "basic_meaning": "अपने नज़रिए (View: Bullish या Bearish) के आधार पर लाभ कमाने के लिए जोखिम लेना।",
+      "detailed_explanation": "Hedgers के विपरीत, speculators के पास underlying asset नहीं होता है। वे केवल Futures में ट्रेड करते हैं।\n\n1.  **Bullish Speculator:** सोचता है कि बाज़ार ऊपर (UP) जाएगा। **Futures खरीदता है (Long)।**\n2.  **Bearish Speculator:** सोचता है कि बाज़ार नीचे (DOWN) जाएगा। **Futures बेचता है (Short)।**\n\n**Leverage:** यह मुख्य आकर्षण है। आप केवल Margin (लगभग 20%) का भुगतान करते हैं। यदि Nifty 1% चलता है, तो आपका Return on Investment (ROI) 5% हो सकता है।",
+      "why_this_is_important": "Speculators लिक्विडिटी (liquidity) प्रदान करते हैं। उनके बिना, hedgers को ट्रेड करने के लिए कोई नहीं मिलेगा।",
+      "formula": "$$ Leverage = \\frac{Contract Value}{Margin Paid} $$",
+      "formula_explanation": "दर्शाता है कि आपके नकद (cash) की तुलना में आपका exposure कितने गुना (times) है।",
+      "step_by_step_calculation_example": "**Scenario:** आपके पास ₹1 Lakh है। आप ₹10 Lakhs मूल्य के Nifty Futures खरीदते हैं (Margin 10% है)।\n\n**Movement:** Nifty 5% ऊपर जाता है।\n**Profit:** ₹10 Lakhs का 5% = ₹50,000.\n**ROI:** आपने अपने ₹1 Lakh के निवेश पर ₹50k कमाए = **50% Return**.\n(Note: यदि Nifty 5% गिरता, तो आप अपनी पूँजी का 50% खो देते!)।",
+      "real_life_indian_example": "NSE पर Intraday ट्रेडर्स अक्सर Futures का उपयोग करते हैं क्योंकि पूरे शेयर खरीदने की तुलना में ब्रोकरेज कम होती है, और leverage अधिक होता है।",
+      "exam_traps": [
+        "यह सोचना कि Speculation अवैध (illegal) है। (नहीं, यह वैध है और liquidity के लिए आवश्यक है)।",
+        "Leverage के जोखिम को कम आंकना (Underestimating)।"
+      ],
+      "memory_trick": "Speculate = See (View). Bull = Buy. Bear = Sell."
+    },
+    {
+      "concept": "4. Arbitrage (जोखिम-मुक्त लाभ / Risk-Free Profit)",
+      "basic_meaning": "बिना जोखिम के पैसा बनाने के लिए दो बाज़ारों के बीच कीमतों के अंतर (price differences) का फायदा उठाना।",
+      "detailed_explanation": "Futures से जुड़े दो मुख्य प्रकार हैं:\n\n**A. Cash and Carry Arbitrage (Buy Spot, Sell Future):**\n* **कब?** जब Futures 'Overpriced' (बहुत महंगे) हों।\n* **Action:** Spot Market में सस्ता asset खरीदें -> महंगा Future बेचें।\n* **Result:** आप expiry तक asset को होल्ड करते हैं, Future के खिलाफ इसकी डिलीवरी देते हैं, और अंतर (difference) अपनी जेब में रखते हैं।\n\n**B. Reverse Cash and Carry (Sell Spot, Buy Future):**\n* **कब?** जब Futures 'Underpriced' (बहुत सस्ते) हों।\n* **Action:** Spot में महंगा asset बेचें -> सस्ता Future खरीदें।\n* **Result:** आप spot बेचने से मिले नकद पर ब्याज कमाते हैं, और बाद में Future के माध्यम से asset को सस्ता वापस खरीदते हैं।",
+      "why_this_is_important": "Arbitrage बाज़ार को कुशल (efficient) रखता है। यह Futures price को Spot price से जुड़े रहने के लिए मजबूर करता है।",
+      "formula": "Fair Value = Spot + Cost of Carry. यदि Actual Future Price > Fair Value => Arbitrage Opportunity.",
+      "formula_explanation": "यदि Future Price 105 है और Fair Value 102 है, तो Future (105) बेचें और Spot खरीदें।",
+      "step_by_step_calculation_example": "**Scenario:** Reliance Spot = 1000. Reliance Future = 1020. Cost of Carry (Fair Interest) = 10.\n\n**Analysis:** Fair Future Price $1000 + 10 = 1010$ होना चाहिए। Actual 1020 (Overpriced) है।\n\n**Action (Cash & Carry):**\n1. ₹1000 उधार लें और Spot खरीदें।\n2. 1020 पर Future बेचें।\n3. Expiry तक होल्ड करें।\n4. **Profit:** $(1020 - 1000) - 10 (Interest Cost) = \\text{₹10 Profit}$.",
+      "real_life_indian_example": "बड़े Proprietary Trading Desks (Prop Desks) Spot और Future के बीच ₹0.50 के अंतर को खोजने के लिए एल्गोरिदम (algorithms) चलाते हैं ताकि ऐसे हज़ारों ट्रेड निष्पादित (execute) किए जा सकें।",
+      "exam_traps": [
+        "यह सोचना कि आप Reverse Cash & Carry आसानी से कर सकते हैं। (Retail ट्रेडर्स के लिए मुश्किल है क्योंकि आप Spot बाज़ार में Short Sell करके उसे कई दिनों तक होल्ड नहीं कर सकते - आपको SLB mechanism की आवश्यकता होती है)।",
+        "'Cash and Carry' (Long Spot) को 'Reverse' (Short Spot) के साथ confuse करना।"
+      ],
+      "memory_trick": "Cash & Carry = Cash (Spot) में Buy करें, Future तक Carry करें।"
+    },
+    {
+      "concept": "5. Spread Trading",
+      "basic_meaning": "जोखिम कम करने के लिए एक Future खरीदना और दूसरा Future बेचना।",
+      "detailed_explanation": "दिशा (Up/Down) पर दांव लगाने के बजाय, आप दो कॉन्ट्रैक्ट्स के बीच के **अंतर (difference)** पर दांव लगाते हैं।\n\n**Calendar Spread:**\n* Nifty खरीदें (Near Month - उदा., Jan)।\n* Nifty बेचें (Far Month - उदा., Feb)।\n* **Logic:** आप तब लाभ कमाते हैं जब Jan और Feb के बीच का अंतर (spread) बदलता है।\n* **Risk:** बहुत कम, क्योंकि यदि बाज़ार क्रैश होता है, तो Jan और Feb दोनों गिरेंगे। एक में आपका नुकसान दूसरे में लाभ से offset हो जाता है।",
+      "why_this_is_important": "Naked speculation की तुलना में Spread trading के लिए बहुत कम margin की आवश्यकता होती है क्योंकि यह सुरक्षित है।",
+      "formula": "$$ Spread = Price of Future 1 - Price of Future 2 $$",
+      "formula_explanation": "आप गैप (gap) को ट्रेड करते हैं।",
+      "step_by_step_calculation_example": "Jan Future @ 100 खरीदें। Feb Future @ 105 बेचें। Spread = 5.\nयदि Spread चौड़ा होकर (widens) 8 हो जाता है, तो आप लाभ कमाते हैं।",
+      "real_life_indian_example": "Rollover: जब कोई ट्रेडर Near Month कॉन्ट्रैक्ट को बंद करता है और Next Month कॉन्ट्रैक्ट को खोलता है, तो वे अनिवार्य रूप से एक Calendar Spread कर रहे होते हैं।",
+      "exam_traps": [
+        "यह सोचना कि Spread trading में कोई (NO) रिस्क नहीं है। (इसमें कम रिस्क है, ज़ीरो रिस्क नहीं)।",
+        "यह सोचना कि Spread trading के लिए उच्च मार्जिन की आवश्यकता है। (नहीं, एक्सचेंजों द्वारा मार्जिन बेनिफिट दिया जाता है)।"
+      ],
+      "memory_trick": "Spread = Gap. गैप (Gap) पर दांव लगाना।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Hedging बनाम Speculation बनाम Arbitrage",
+      "clear_explanation": "1.  **Hedging:** जोखिम (Risk) कम करता है। (लाभ का कोई उद्देश्य नहीं)।\n2.  **Speculation:** जोखिम लेता है। (उच्च लाभ का उद्देश्य)।\n3.  **Arbitrage:** जोखिम-मुक्त लाभ (Risk-Free Profit)। (मूल्य त्रुटियों / price errors का फायदा उठाता है)।"
+    },
+    {
+      "difference_between": "Long Hedge बनाम Short Hedge",
+      "clear_explanation": "1.  **Long Hedge:** आप Futures BUY करते हैं। इसका उपयोग तब किया जाता है जब आप बाद में asset BUY करने की योजना बनाते हैं।\n2.  **Short Hedge:** आप Futures SELL करते हैं। इसका उपयोग तब किया जाता है जब आपके पास पहले से ही (ALREADY OWN) asset होता है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Beta Hedging के लिए Number of Contracts की गणना (फ़ॉर्मूला याद कर लें!)।",
+    "पहचानें कि कोई scenario Long Hedge है या Short Hedge।",
+    "कौन सी रणनीति जोखिम-मुक्त (Risk-Free) है? (उत्तर: Arbitrage/Cash & Carry)।",
+    "Spread Trading का क्या लाभ है? (उत्तर: Lower Margin, Lower Risk)।"
+  ],
+  "quick_revision_summary": [
+    "Hedging बीमा है, लाभ के लिए नहीं।",
+    "Short Hedge = Future बेचें (Long Position की रक्षा करें)।",
+    "Long Hedge = Future खरीदें (Short Position की रक्षा करें)।",
+    "Beta संवेदनशीलता (sensitivity) को मापता है। Beta > 1 आक्रामक (aggressive) है।",
+    "Hedge Contracts = (Portfolio Value × Beta) / Contract Value.",
+    "Arbitrage = Spot में कम पर खरीदना, Future में उच्च पर बेचना (Cash & Carry)।",
+    "Spread = एक Future खरीदें, दूसरा बेचें। कम जोखिम (Low Risk)।"
+  ]
+}

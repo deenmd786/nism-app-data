@@ -1,0 +1,91 @@
+{
+  "course": "NISM Series I: Currency Derivatives",
+  "unit_number": 7,
+  "unit_name": "ETCD में Clearing, Settlement और Risk Management",
+  "weightage": "10%",
+  "overview": "यदि Unit 6 Trade की 'plumbing' के बारे में था, तो Unit 7 'policing' और 'money transfer' के बारे में है। यह Chapter बताता है कि Exchange यह कैसे सुनिश्चित करता है कि यदि आप ₹10,000 जीतते हैं, तो आपको वह वास्तव में मिले, भले ही हारने वाला व्यक्ति Payment करने से मना कर दे। आप Clearing Corporation, विभिन्न प्रकार के Margins (आपके द्वारा जमा की जाने वाली Security Deposit), और Risk को कैसे Manage किया जाता है ताकि पूरा Market Crash न हो, इसके बारे में सीखेंगे। NISM Exam के लिए, विभिन्न प्रकार के Margins पर ध्यान दें—यह Examiners का पसंदीदा विषय है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Clearing Corporation (CC) और Novation",
+      "basic_meaning": "Clearing Corporation हर Buyer और हर Seller के बीच एक Legal Middleman के रूप में कार्य करता है ताकि यह Guarantee दी जा सके कि हर Trade Settle हो जाए।",
+      "detailed_explanation": "Step 1: जब Buyer A, Seller B से खरीदता है, तो Clearing Corporation बीच में आ जाता है। \nStep 2: यह 'हर Buyer के लिए Seller' और 'हर Seller के लिए Buyer' बन जाता है। इस प्रक्रिया को **Novation** कहा जाता है। \nStep 3: Novation के कारण, आपको इस बात की चिंता करने की ज़रूरत नहीं है कि आपके Computer Screen के दूसरी तरफ वाला व्यक्ति Fraud है। Clearing Corporation आपके पैसे की Guarantee देता है।",
+      "why_this_is_important": "Novation एक Technical Word है जो Exam में अक्सर आता है। यही कारण है कि Exchange-Traded Futures में Zero Counterparty Risk होता है।",
+      "formula": "लागू नहीं",
+      "formula_explanation": "लागू नहीं",
+      "step_by_step_calculation_example": "लागू नहीं",
+      "real_life_indian_example": "जब आप NSE पर USDINR का 1 Lot खरीदते हैं, तो आप नहीं जानते कि इसे किसने बेचा। यह Mumbai का कोई Bank या Kerala का कोई Trader हो सकता है। आपको कोई परवाह नहीं है, क्योंकि NSE Clearing Limited (NCL) आपको आपका Profit देने के लिए जिम्मेदार है।",
+      "exam_traps": [
+        "यह सोचना कि Exchange और Clearing Corporation (CC) एक ही हैं। वे आमतौर पर अलग-अलग Legal Entities होती हैं। Exchange Orders को Match करने के लिए है; CC पैसे Settle करने और Risk Management के लिए है।"
+      ],
+      "memory_trick": "Novation = 'No-Evasion'। कोई भी अपने Payment से बच नहीं सकता क्योंकि CC बीच में खड़ा है।"
+    },
+    {
+      "concept": "2. Initial Margin और SPAN Margin",
+      "basic_meaning": "Initial Margin वह Security Deposit है जो आपको Trade खोलने की अनुमति मिलने से पहले चुकाना होता है।",
+      "detailed_explanation": "Step 1: Defaults को रोकने के लिए, Exchange एक ही दिन में किसी Contract को होने वाले Maximum Potential Loss की Calculation करता है। \nStep 2: वे आपसे यह राशि Upfront लेते हैं। इसे **Initial Margin** कहा जाता है। \nStep 3: भारत में, Currency Derivatives इसकी Calculation करने के लिए **SPAN (Standard Portfolio Analysis of Risk)** नामक System का उपयोग करते हैं। यह आपके पूरे Portfolio (आपके सभी Buy और Sell) को देखता है और Worst-case Scenario के Risk की Calculation करता है।",
+      "why_this_is_important": "Exam के प्रश्नों में अक्सर पूछा जाता है कि 'Upfront Margin' को क्या कहा जाता है। यह Initial Margin है।",
+      "formula": "Initial Margin = SPAN Margin + Extreme Loss Margin (ELM)",
+      "formula_explanation": "आपके Account में Block किया गया कुल पैसा Mathematical Risk (SPAN) और एक छोटे से Extra Safety Buffer (ELM) का Combination है।",
+      "step_by_step_calculation_example": "यदि USDINR के 1 Lot के लिए SPAN Margin ₹2,000 है और ELM ₹500 है, तो 'Buy' Button पर Click करने के लिए आपके Account में कम से कम ₹2,500 होने चाहिए।",
+      "real_life_indian_example": "यदि आप ₹20,000 में एक Flat किराए पर लेना चाहते हैं, तो Landlord Security Deposit के रूप में ₹1 लाख मांगता है। वह ₹1 लाख आपके Initial Margin की तरह है। यदि आप बिना Rent दिए भाग जाते हैं, तो वह उस Deposit का उपयोग करता है। इसी तरह, यदि आप पैसा खो देते हैं और Payment नहीं कर सकते हैं तो Exchange आपके Margin का उपयोग करता है।",
+      "exam_traps": [
+        "यह सोचना कि आप केवल तभी Margin देते हैं जब आप Lose करते हैं। गलत (False)! आपको Trade शुरू करने से *पहले* ही Initial Margin देना होगा।"
+      ],
+      "memory_trick": "SPAN = 'Scan'। System आपके Risk को Scan करता है और आपको बताता है कि कितना Deposit रखना है।"
+    },
+    {
+      "concept": "3. Extreme Loss Margin (ELM)",
+      "basic_meaning": "यह Black Swan Events (अप्रत्याशित भारी Market Crash) को Cover करने के लिए SPAN Margin के ऊपर एकत्र किया गया एक अतिरिक्त Safety Margin है।",
+      "detailed_explanation": "Step 1: SPAN सामान्य दैनिक Price Movements को Cover करता है। \nStep 2: लेकिन कभी-कभी, कोई युद्ध छिड़ जाता है या कोई बड़ा Economic Crisis आ जाता है, और Market एक ही मिनट में 5% तक Move कर जाता है। \nStep 3: ऐसे Extreme दिनों को संभालने के लिए, Exchange ELM लेता है। USDINR के लिए, यह आमतौर पर Gross Open Position का 1% होता है।",
+      "why_this_is_important": "NISM अक्सर ELM का विशिष्ट Percentage पूछता है या यह क्यों लिया जाता है। यह सख्ती से Extreme स्थितियों के लिए है।",
+      "formula": "ELM = Total Contract Value का 1% (अधिकांश Pairs के लिए)।",
+      "formula_explanation": "यह उन Dollars के Total Value पर लिया जाने वाला एक छोटा सा Flat Percentage है जिसे आप Control कर रहे हैं।",
+      "step_by_step_calculation_example": "आप ₹80 पर 1 Lot ($1,000) खरीदते हैं। Total Contract Value = ₹80,000। \nELM (1%) = ₹800।",
+      "real_life_indian_example": "यह आपके दरवाजे पर एक Primary Lock (SPAN) और एक अतिरिक्त 'Godrej' Latch (ELM) रखने जैसा है, ताकि अगर कोई Professional Thief सेंध लगाने की कोशिश करे तो Security रहे।",
+      "exam_traps": [
+        "ELM को MTM के साथ Confuse करना। ELM Trading से *पहले* रखा गया Deposit है। MTM Trading के *बाद* Settle किया गया वास्तविक Profit/Loss है।"
+      ],
+      "memory_trick": "ELM = 'Extra Lock Money'।"
+    },
+    {
+      "concept": "4. Mark-to-Market (MTM) और Maintenance Margin",
+      "basic_meaning": "MTM Profit और Loss (P&L) का Daily Settlement है। यदि नुकसान के कारण आपके Account का Balance बहुत कम हो जाता है, तो आपको Margin Call आती है।",
+      "detailed_explanation": "Step 1: हर शाम, आपके P&L की Calculation की जाती है। यदि आपको ₹1,000 का नुकसान हुआ, तो इसे आपके Margin से काट लिया जाता है। \nStep 2: यदि आपका शेष Balance एक निश्चित स्तर (Maintenance Margin) से नीचे गिर जाता है, तो Broker आपको Call करेगा। \nStep 3: यह एक **Margin Call** है। अगले दिन Market खुलने से पहले Balance को वापस Initial Margin स्तर पर लाने के लिए आपको Fresh Cash लाना होगा।",
+      "why_this_is_important": "MTM पर Numerical Questions बहुत आम हैं। आपको पता होना चाहिए कि MTM हर एक दिन (T+1 आधार पर) **Cash** में Settle किया जाता है।",
+      "formula": "Net Margin Balance = Initial Margin - Accumulated MTM Loss",
+      "formula_explanation": "आपका शुरुआती Deposit minus वो Daily Loss जो आपने सहे हैं।",
+      "step_by_step_calculation_example": "Initial Margin: ₹3,000। \nDay 1 Loss: ₹500। New Balance: ₹2,500। \nDay 2 Loss: ₹1,000। New Balance: ₹1,500। \nयदि Limit ₹2,000 है, तो आपको इसे वापस मूल ₹3,000 पर लाने के लिए ₹1,500 और जोड़ने की Margin Call मिलेगी।",
+      "real_life_indian_example": "यह Prepaid SIM Card की तरह है। आपके पास ₹100 का Balance है। हर Minute जब आप बात करते हैं (Market Move), पैसा काटा जाता है। यदि आपका Balance ₹10 तक पहुँच जाता है, तो Company आपको तुरंत Recharge करने की Warning देती है अन्यथा आपकी Outgoing Calls Block कर दी जाएंगी।",
+      "exam_traps": [
+        "Exam पूछ सकती है कि MTM कब Settle होता है। यह Daily रूप से तय होता है, और वास्तविक Cash का Transaction **T+1** (अगले दिन) पर होता है।"
+      ],
+      "memory_trick": "MTM = 'Mirror The Market'। आपके Account का Balance ठीक वैसा ही दिखना चाहिए जैसा आज Market में हुआ (Mirror करना)।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Initial Margin vs MTM",
+      "clear_explanation": "Initial Margin Potential Future Loss को Cover करने के लिए रखा गया एक Safety Deposit (Block किया गया Amount) है। MTM (Mark-to-Market) वह Actual Loss या Profit है जो आपने आज के Price Movement के आधार पर पहले ही बना लिया है, जिसे Cash में Settle किया जाता है।"
+    },
+    {
+      "difference_between": "SPAN Margin vs Extreme Loss Margin (ELM)",
+      "clear_explanation": "SPAN Margin की Calculation सामान्य Price Moves की Mathematical Probability के आधार पर की जाती है। दुर्लभ, बड़े Market Shocks से बचाने के लिए इसके ऊपर ELM एक निश्चित Percentage (आमतौर पर 1%) के रूप में जोड़ा जाता है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Novation की परिभाषा (Clearing Corporation का Counterparty बनना)।",
+    "भारत में Margin Calculation के लिए किस System का उपयोग किया जाता है? (उत्तर: SPAN)।",
+    "Total Margin के Components (Initial Margin = SPAN + ELM)।",
+    "MTM Settlement की Frequency (Daily) और Margin Call का Concept।",
+    "Liquid Assets: आप Margin के रूप में क्या दे सकते हैं? (Cash, FD, Government Securities, 'Haircut' के साथ चुनिंदा Shares)।"
+  ],
+  "quick_revision_summary": [
+    "Clearing Corporation (CC) Novation के माध्यम से हर Trade की Guarantee देता है।",
+    "Initial Margin का Payment Trading से पहले Upfront किया जाना चाहिए।",
+    "SPAN वह Software/System है जिसका उपयोग Risk-Based Margin की Calculation करने के लिए किया जाता है।",
+    "ELM (Extreme Loss Margin) एक अतिरिक्त 1% Safety Buffer है।",
+    "MTM Daily रूप से होता है; Loss काटा जाता है और Profit Cash में जमा किया जाता है।",
+    "यदि आपका Margin बहुत कम हो जाता है, तो आपको अधिक Funds जोड़ने के लिए Margin Call आती है।",
+    "भारत में Currency Derivatives का Settlement सख्ती से **Cash** (Indian Rupees) में होता है, Dollars की Physical Delivery नहीं होती है।"
+  ]
+}

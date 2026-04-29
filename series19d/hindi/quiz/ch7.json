@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "What does 'Adverse Selection' refer to in the context of AIF investors?",
+    "options": [
+      "Investors choosing the wrong bank",
+      "The risk that only the least desirable funds or companies seek capital from certain investors",
+      "Choosing an investor who cannot pay",
+      "Selecting a fund manager based on their clothing"
+    ],
+    "answer": "The risk that only the least desirable funds or companies seek capital from certain investors",
+    "hint": "यह एक information asymmetry (सूचना विषमता) की समस्या है।",
+    "explanation": "Adverse Selection तब होता है जब खराब संभावनाओं (poor prospects) वाला fund manager या company capital की तलाश में अधिक होती है, जिससे investors द्वारा lower-quality opportunities चुनने का जोखिम (risk) बढ़ जाता है।"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following is a 'Governance Risk' at the fund level?",
+    "options": [
+      "A drop in the stock market",
+      "Lack of transparency or conflict of interest in the Investment Committee",
+      "High inflation",
+      "Changes in currency rates"
+    ],
+    "answer": "Lack of transparency or conflict of interest in the Investment Committee",
+    "hint": "इस बारे में सोचें कि fund को आंतरिक (internally) रूप से कैसे 'govern' (प्रबंधित) किया जाता है।",
+    "explanation": "Governance risks में fund के आंतरिक सिस्टम और नैतिकता (ethics) शामिल हैं, जैसे कि निर्णय (decisions) कैसे लिए जाते हैं और conflicts को कैसे manage किया जाता है।"
+  },
+  {
+    "id": 3,
+    "question": "The 'J-Curve' effect in AIFs primarily illustrates:",
+    "options": [
+      "Linear growth from day one",
+      "Initial negative returns due to fees/setup costs followed by positive returns as assets mature",
+      "A steady decline in fund value",
+      "A sudden jump in value at the very start"
+    ],
+    "answer": "Initial negative returns due to fees/setup costs followed by positive returns as assets mature",
+    "hint": "'J' अक्षर (letter) का आकार।",
+    "explanation": "Fund के शुरुआती जीवन में, management fees और setup costs realized gains (प्राप्त लाभ) से अधिक होते हैं, जिससे curve नीचे (dip) जाता है, और बाद में exits होने पर ऊपर उठता है।"
+  },
+  {
+    "id": 4,
+    "question": "What does 'DPI' stand for in performance measurement?",
+    "options": [
+      "Debt to Principal Interest",
+      "Distributions to Paid-in-Capital",
+      "Dividends per Investor",
+      "Daily Portfolio Index"
+    ],
+    "answer": "Distributions to Paid-in-Capital",
+    "hint": "यह मापता है कि कितना cash वापस 'distributed' (बांटा) किया गया है।",
+    "explanation": "DPI एक ratio है जो यह दर्शाता है कि investors से मंगाए गए capital में से कितना उन्हें cash के रूप में वापस कर दिया गया है।"
+  },
+  {
+    "id": 5,
+    "question": "If a fund has a TVPI of 2.5x and a DPI of 1.0x, what is the RVPI?",
+    "options": [
+      "3.5x",
+      "1.5x",
+      "2.5x",
+      "0.5x"
+    ],
+    "answer": "1.5x",
+    "hint": "TVPI = DPI + RVPI।",
+    "explanation": "Total Value (2.5) = Realized Value (1.0) + Residual Value (RVPI)। इसलिए, RVPI = 1.5x।"
+  },
+  {
+    "id": 6,
+    "question": "Which metric is the 'Realized' multiple, reflecting actual cash returned to investors?",
+    "options": [
+      "RVPI",
+      "TVPI",
+      "DPI",
+      "IRR"
+    ],
+    "answer": "DPI",
+    "hint": "Distributions का मतलब actual cash है।",
+    "explanation": "DPI एकमात्र multiple है जो actual cash distributions को मापता है, जो इसे 'cash-on-cash' performance के मूल्यांकन के लिए एक महत्वपूर्ण metric बनाता है।"
+  },
+  {
+    "id": 7,
+    "question": "What is 'Residual Value' (RV) in an AIF?",
+    "options": [
+      "The cash in the bank",
+      "The estimated current market value of the fund's remaining (unrealized) investments",
+      "The total fees paid",
+      "The money lost in bad deals"
+    ],
+    "answer": "The estimated current market value of the fund's remaining (unrealized) investments",
+    "hint": "Portfolio में 'बची हुई' (leftover) value।",
+    "explanation": "Residual Value fund द्वारा अभी भी रखे गए investments की Net Asset Value (NAV) है।"
+  },
+  {
+    "id": 8,
+    "question": "How is 'Gross IRR' different from 'Net IRR'?",
+    "options": [
+      "Gross includes taxes; Net does not",
+      "Gross is before management fees/carry; Net is after all fees and expenses",
+      "Net is only for debt funds",
+      "There is no difference"
+    ],
+    "answer": "Gross is before management fees/carry; Net is after all fees and expenses",
+    "hint": "Net वह है जो investor को वास्तव में 'मिलता' (nets) है।",
+    "explanation": "Gross IRR underlying assets की performance को मापता है, जबकि Net IRR fund की लागतों (costs) के बाद investor को वास्तव में प्राप्त return को दर्शाता है।"
+  },
+  {
+    "id": 9,
+    "question": "Why is IRR often considered a 'money-weighted' return?",
+    "options": [
+      "It only counts paper money",
+      "It accounts for the timing and size of cash flows",
+      "It ignores timing",
+      "It is based on the manager's weight"
+    ],
+    "answer": "It accounts for the timing and size of cash flows",
+    "hint": "IRR में Time value of money (पैसे का समय मूल्य) मायने रखता है।",
+    "explanation": "IRR इस बात के प्रति संवेदनशील (sensitive) है कि capital कब मंगाया जाता है और distributions कब किए जाते हैं, जिससे यह एक money-weighted return metric बन जाता है।"
+  },
+  {
+    "id": 10,
+    "question": "What does 'MOIC' stand for?",
+    "options": [
+      "Money On Invested Capital",
+      "Multiple On Invested Capital",
+      "Market On International Credit",
+      "Manager Of Investment Capital"
+    ],
+    "answer": "Multiple On Invested Capital",
+    "hint": "पैसा कितने गुना बढ़ा, इसका एक simple multiple।",
+    "explanation": "MOIC एक ratio है जो किसी investment की कुल value (realized + unrealized) की तुलना उस विशिष्ट deal में लगाए गए शुरुआती capital से करता है।"
+  },
+  {
+    "id": 11,
+    "question": "Which benchmarking agency was first appointed by IVCA for AIFs in India?",
+    "options": [
+      "Moody's",
+      "CRISIL",
+      "S&P",
+      "Fitch"
+    ],
+    "answer": "CRISIL",
+    "hint": "एक प्रमुख भारतीय rating और research agency।",
+    "explanation": "CRISIL भारतीय वेंचर एंड अल्टरनेट कैपिटल एसोसिएशन (IVCA) द्वारा SEBI के दिशा-निर्देशों के बाद नियुक्त (appointed) की गई पहली benchmarking agency थी।"
+  },
+  {
+    "id": 12,
+    "question": "As per SEBI, AIFs must report performance data for benchmarking on a ________ basis.",
+    "options": [
+      "Monthly",
+      "Quarterly",
+      "Half-yearly",
+      "Annual"
+    ],
+    "answer": "Half-yearly",
+    "hint": "साल में दो बार (Twice a year)।",
+    "explanation": "AIFs द्वारा benchmarking agencies को 30 सितंबर और 31 मार्च तक का performance benchmarking data प्रदान किया जाना चाहिए।"
+  },
+  {
+    "id": 13,
+    "question": "What is the 'Kaplan-Schoar Public Market Equivalent' (KS-PME)?",
+    "options": [
+      "A way to calculate tax",
+      "A metric that compares AIF performance to a public market index (like Nifty) using the same cash flows",
+      "A measure of inflation",
+      "A type of debt instrument"
+    ],
+    "answer": "A metric that compares AIF performance to a public market index (like Nifty) using the same cash flows",
+    "hint": "PME = Public Market Equivalent।",
+    "explanation": "KS-PME उन्हीं cash flows को index में 'invest' करके public index की तुलना में private equity fund की performance को मापता है।"
+  },
+  {
+    "id": 14,
+    "question": "If a KS-PME score is greater than 1.0, it indicates:",
+    "options": [
+      "The AIF outperformed the public market index",
+      "The AIF underperformed the public market index",
+      "The AIF and public market had identical returns",
+      "The AIF lost money"
+    ],
+    "answer": "The AIF outperformed the public market index",
+    "hint": "1 से अधिक का मतलब है कि numerator (AIF) बड़ा है।",
+    "explanation": "KS-PME > 1 का अर्थ है कि private investment ने public market index में निवेश किए गए पैसे की तुलना में अधिक value generate की।"
+  },
+  {
+    "id": 15,
+    "question": "What does 'Direct Alpha' measure?",
+    "options": [
+      "The total return of the fund",
+      "The excess return of a fund over a public market benchmark, expressed as an annualized rate",
+      "The tax rate",
+      "The fee percentage"
+    ],
+    "answer": "The excess return of a fund over a public market benchmark, expressed as an annualized rate",
+    "hint": "Alpha 'अतिरिक्त' (extra) return को मापता है।",
+    "explanation": "Direct Alpha एक आधुनिक (modern) metric है जो public benchmark के मुकाबले outperformance का एक वार्षिक प्रतिशत (annualized percentage) प्रदान करता है।"
+  },
+  {
+    "id": 16,
+    "question": "Which risk is associated with the 'lock-in' period of an AIF?",
+    "options": [
+      "Market Risk",
+      "Liquidity Risk",
+      "Credit Risk",
+      "Inflation Risk"
+    ],
+    "answer": "Liquidity Risk",
+    "hint": "आप अपनी units आसानी से नहीं बेच सकते।",
+    "explanation": "AIFs में Liquidity risk अधिक होता है क्योंकि लंबे lock-in periods के कारण investors आसानी से अपनी units को exit या बेच नहीं सकते हैं।"
+  },
+  {
+    "id": 17,
+    "question": "In performance reporting, SEBI requires returns to be reported in both:",
+    "options": [
+      "Gold and Silver terms",
+      "INR and USD terms",
+      "Gross and Net terms only",
+      "Pre-tax and Post-tax terms only"
+    ],
+    "answer": "INR and USD terms",
+    "hint": "Global investors के लिए प्रासंगिक (Relevant)।",
+    "explanation": "Benchmarking agencies विभिन्न investors की जरूरतों को पूरा करने के लिए AIF performance को भारतीय रुपये (INR) और अमेरिकी डॉलर (USD) दोनों में रिपोर्ट करती हैं।"
+  },
+  {
+    "id": 18,
+    "question": "A fund that has a DPI of 0.2x after 5 years is likely in which stage of the J-Curve?",
+    "options": [
+      "Early/Investment Phase",
+      "Final Harvest Phase",
+      "Winding up Phase",
+      "The peak of the curve"
+    ],
+    "answer": "Early/Investment Phase",
+    "hint": "Low distribution का मतलब है कि fund अभी भी 'युवा' (young) है।",
+    "explanation": "Low DPI यह दर्शाता है कि अधिकांश value अभी भी unrealized है और fund संभवतः J-Curve की 'घाटी' (valley) या शुरुआती उठने वाले हिस्से में है।"
+  },
+  {
+    "id": 19,
+    "question": "What is the primary drawback of using IRR for benchmarking?",
+    "options": [
+      "It is too simple",
+      "It assumes interim cash flows are reinvested at the same IRR (reinvestment risk)",
+      "It doesn't account for taxes",
+      "It only works for gold"
+    ],
+    "answer": "It assumes interim cash flows are reinvested at the same IRR (reinvestment risk)",
+    "hint": "एक गणितीय धारणा (mathematical assumption) जो यथार्थवादी (realistic) नहीं हो सकती है।",
+    "explanation": "IRR गणितीय रूप से यह मान लेता है कि बांटा गया cash उसी उच्च दर (high rate) पर reinvest किया जाता है, जो वास्तविकता में संभव नहीं हो सकता है।"
+  },
+  {
+    "id": 20,
+    "question": "What is 'Tracking Error' in the context of AIF benchmarking?",
+    "options": [
+      "A mistake in a GPS device",
+      "The divergence between the price behavior of a position or a portfolio and the price behavior of a benchmark",
+      "The error in calculating fees",
+      "The delay in reporting"
+    ],
+    "answer": "The divergence between the price behavior of a position or a portfolio and the price behavior of a benchmark",
+    "hint": "Fund index को कितनी अच्छी तरह 'track' करता है।",
+    "explanation": "Tracking error किसी portfolio के returns और benchmark के returns के बीच के अंतर की volatility को मापता है।"
+  },
+  {
+    "id": 21,
+    "question": "How does 'Performance Attribution' help investors?",
+    "options": [
+      "It explains the sources of a fund's returns (e.g., sector pick, timing)",
+      "It attributes blame to the manager",
+      "It calculates the tax",
+      "It identifies the auditor"
+    ],
+    "answer": "It explains the sources of a fund's returns (e.g., sector pick, timing)",
+    "hint": "विशिष्ट कारकों (specific factors) को return का श्रेय देना।",
+    "explanation": "Attribution analysis performance का ब्रेकडाउन करता है ताकि यह दिखाया जा सके कि returns manager के sectors, विशिष्ट stocks को चुनने या timing की skill से आए हैं या नहीं।"
+  },
+  {
+    "id": 22,
+    "question": "Which of the following is NOT a SEBI-recognized benchmarking agency for AIFs in India?",
+    "options": [
+      "CRISIL",
+      "NSE Indices",
+      "Preqin",
+      "The Local Bank"
+    ],
+    "answer": "The Local Bank",
+    "hint": "SEBI-level की मान्यता की आवश्यकता है।",
+    "explanation": "CRISIL, NSE Indices, और Preqin भारत में AIF performance benchmarking में शामिल प्रमुख entities हैं।"
+  },
+  {
+    "id": 23,
+    "question": "The 'Vintage Year' of a fund refers to:",
+    "options": [
+      "The year the manager was born",
+      "The year of the fund's first capital call or first investment",
+      "The year the fund closes down",
+      "The current year"
+    ],
+    "answer": "The year of the fund's first capital call or first investment",
+    "hint": "जैसे वह साल जब शराब (wine) बनाई गई थी।",
+    "explanation": "Benchmarking के लिए Vintage year महत्वपूर्ण है क्योंकि एक ही vintage के funds ने समान आर्थिक और बाजार स्थितियों (economic and market conditions) का सामना किया।"
+  },
+  {
+    "id": 24,
+    "question": "Why is 'Post-Tax Return' calculation important for Category III AIFs?",
+    "options": [
+      "They pay no tax",
+      "They are taxed at the fund level at high rates (MMR), significantly impacting net returns",
+      "Only for foreign investors",
+      "Taxes are the only return"
+    ],
+    "answer": "They are taxed at the fund level at high rates (MMR), significantly impacting net returns",
+    "hint": "Cat III में statutory pass-through नहीं होता है।",
+    "explanation": "चूंकि Cat III funds fund स्तर (fund level) पर टैक्स का भुगतान करते हैं, इसलिए 'sticker' return निवेशक द्वारा वास्तव में रखे जाने वाले return से बहुत अधिक होता है।"
+  },
+  {
+    "id": 25,
+    "question": "What is 'Volatility' as a risk measure?",
+    "options": [
+      "The speed of a stock",
+      "The degree of variation of a trading price series over time (Standard Deviation)",
+      "The total amount of debt",
+      "The number of trades"
+    ],
+    "answer": "The degree of variation of a trading price series over time (Standard Deviation)",
+    "hint": "कीमत में कितना 'उतार-चढ़ाव' (swings) होता है।",
+    "explanation": "Volatility किसी asset की value में होने वाले बदलावों के आकार में जोखिम (risk) या अनिश्चितता (uncertainty) को मापती है।"
+  },
+  {
+    "id": 26,
+    "question": "Which multiple includes both realized cash and the value of remaining holdings?",
+    "options": [
+      "DPI",
+      "RVPI",
+      "TVPI",
+      "MOIC only"
+    ],
+    "answer": "TVPI",
+    "hint": "Total Value = All Value।",
+    "explanation": "TVPI (Total Value to Paid-in-Capital) आज तक की fund की performance की पूरी तस्वीर (complete picture) प्रदान करता है।"
+  },
+  {
+    "id": 27,
+    "question": "A TVPI of 1.0x means:",
+    "options": [
+      "The fund has doubled the money",
+      "The fund's total value exactly equals the capital paid in (Break-even)",
+      "The fund is a total loss",
+      "The manager gets a huge bonus"
+    ],
+    "answer": "The fund's total value exactly equals the capital paid in (Break-even)",
+    "hint": "Value / Capital = 1।",
+    "explanation": "1.0x multiple पर, fund ने अभी तक कोई profit generate नहीं किया है; इसने केवल मूल capital value को संरक्षित (preserve) किया है।"
+  },
+  {
+    "id": 28,
+    "question": "What is the primary use of a 'Customized Performance Report' for an AIF?",
+    "options": [
+      "To hide losses",
+      "To compare the fund against a specific peer group (e.g., only same-sector funds)",
+      "To avoid SEBI reporting",
+      "To calculate the manager's salary"
+    ],
+    "answer": "To compare the fund against a specific peer group (e.g., only same-sector funds)",
+    "hint": "Tailored तुलना (comparison)।",
+    "explanation": "Benchmarking agencies customized reports बना सकती हैं जो किसी fund की तुलना उद्योग के अधिक प्रासंगिक sub-set (जैसे समान-क्षेत्र) से करती हैं।"
+  },
+  {
+    "id": 29,
+    "question": "In a Debt AIF, which risk is most critical to monitor for performance?",
+    "options": [
+      "Stock market crash",
+      "Credit Risk (Default by borrowers)",
+      "Social media trends",
+      "CEO's fashion"
+    ],
+    "answer": "Credit Risk (Default by borrowers)",
+    "hint": "Lending (उधार देने) से संबंधित।",
+    "explanation": "Debt funds के लिए, borrowers की ब्याज और मूलधन (interest and principal) चुकाने की क्षमता performance का प्राथमिक चालक (primary driver) है।"
+  },
+  {
+    "id": 30,
+    "question": "What does 'Alpha' represent in a fund's performance?",
+    "options": [
+      "The market return",
+      "Value added by the manager's skill over the benchmark return",
+      "The first letter of the fund name",
+      "The risk-free rate"
+    ],
+    "answer": "Value added by the manager's skill over the benchmark return",
+    "hint": "यह 'सक्रिय' (active) return है।",
+    "explanation": "Alpha किसी benchmark index के return के सापेक्ष (relative) किसी निवेश का अतिरिक्त (excess) return है।"
+  },
+  {
+    "id": 31,
+    "question": "What is 'Beta' in the context of benchmarking?",
+    "options": [
+      "The manager's skill",
+      "The return attributable to broad market movements",
+      "A software test",
+      "The secondary return"
+    ],
+    "answer": "The return attributable to broad market movements",
+    "hint": "Market-driven return।",
+    "explanation": "Beta समग्र बाजार (overall market) के उतार-चढ़ाव (systematic return) के प्रति fund के returns की संवेदनशीलता (sensitivity) को मापता है।"
+  },
+  {
+    "id": 32,
+    "question": "Which of these factors can cause 'Differential IRRs' between two similar funds?",
+    "options": [
+      "Different timing of cash flows",
+      "Varying management fee structures",
+      "Different exit valuations",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "hint": "Performance fees, timing, और valuation से प्रभावित होती है।",
+    "explanation": "Timing, fees, और वह कीमत जिस पर assets बेचे जाते हैं, ये सभी मौलिक रूप से IRR की गणना को बदल देते हैं।"
+  },
+  {
+    "id": 33,
+    "question": "A fund's 'Audit Report' on performance helps in:",
+    "options": [
+      "Ensuring the reported IRR and multiples are accurate and verifiable",
+      "Predicting future returns",
+      "Reducing the tax rate",
+      "Firing the manager"
+    ],
+    "answer": "Ensuring the reported IRR and multiples are accurate and verifiable",
+    "hint": "किसी third party द्वारा सत्यापन (Verification)।",
+    "explanation": "Performance audits fund के दावों को विश्वसनीयता (credibility) प्रदान करते हैं, जो institutional investors को आकर्षित करने के लिए आवश्यक है।"
+  },
+  {
+    "id": 34,
+    "question": "What is 'Capital Call' (Drawdown) frequency's impact on IRR?",
+    "options": [
+      "No impact",
+      "Delaying capital calls can artificially inflate the IRR",
+      "Calling money early increases IRR",
+      "IRR only depends on the exit price"
+    ],
+    "answer": "Delaying capital calls can artificially inflate the IRR",
+    "hint": "IRR fund द्वारा पैसे रखे जाने के 'समय' (time) के प्रति संवेदनशील है।",
+    "explanation": "यदि manager जल्दी capital मंगाने के बजाय credit line का उपयोग करता है, तो investor के cash flow के लिए 'start time' में देरी होती है, जिससे IRR प्रतिशत बढ़ जाता है।"
+  },
+  {
+    "id": 35,
+    "question": "Why is 'Valuation' a risk factor in performance benchmarking?",
+    "options": [
+      "Because math is hard",
+      "Unlisted assets have no daily market price, so valuations are subjective estimates",
+      "Because the valuer might be a robot",
+      "Because of inflation"
+    ],
+    "answer": "Unlisted assets have no daily market price, so valuations are subjective estimates",
+    "hint": "Pricing में Subjectivity।",
+    "explanation": "चूंकि AIFs के पास private assets होते हैं, इसलिए NAV (और इस प्रकार RVPI/TVPI) अनुमानों (estimates) पर आधारित होता है जो वास्तविकता से अधिक या कम हो सकते हैं।"
+  },
+  {
+    "id": 36,
+    "question": "What is the 'Sharpe Ratio' used for?",
+    "options": [
+      "Measuring risk-adjusted return",
+      "Measuring the total size of the fund",
+      "Measuring the speed of exit",
+      "Measuring the manager's age"
+    ],
+    "answer": "Measuring risk-adjusted return",
+    "hint": "प्रति यूनिट जोखिम पर Return (Return per unit of risk)।",
+    "explanation": "Sharpe Ratio investors को यह समझने में मदद करता है कि क्या fund के returns स्मार्ट निवेश निर्णयों के कारण हैं या अत्यधिक जोखिम लेने (excessive risk-taking) के कारण।"
+  },
+  {
+    "id": 37,
+    "question": "Which AIF category is most likely to show the steepest initial dip in the J-Curve?",
+    "options": [
+      "Venture Capital (Category I)",
+      "Debt Fund (Category II)",
+      "Hedge Fund (Category III)",
+      "Sovereign Wealth Fund"
+    ],
+    "answer": "Venture Capital (Category I)",
+    "hint": "High upfront costs और पहले exit में बहुत लंबा समय।",
+    "explanation": "VC funds अक्सर स्टार्टअप्स के बिकने से पहले निवेश करने और फीस चुकाने में कई साल बिताते हैं, जिससे J-Curve में एक लंबी शुरुआती 'घाटी' (valley) बन जाती है।"
+  },
+  {
+    "id": 38,
+    "question": "What is 'Public Market Equivalent' (PME) primarily trying to answer?",
+    "options": [
+      "What is the price of Nifty today?",
+      "Would I have been better off just investing in the stock market?",
+      "How do I pay my taxes?",
+      "What is the IRR of a bond?"
+    ],
+    "answer": "Would I have been better off just investing in the stock market?",
+    "hint": "सार्वजनिक विकल्पों (public alternatives) से तुलना।",
+    "explanation": "PME metrics investors को यह तय करने में मदद करते हैं कि क्या liquid public index की तुलना में AIF की illiquidity और risk उठाना लाभदायक (worth it) था।"
+  },
+  {
+    "id": 39,
+    "question": "As per SEBI guidelines, performance data for benchmarking is mandatory for AIFs that have completed:",
+    "options": [
+      "1 month from First Close",
+      "1 year from First Close",
+      "3 years from First Close",
+      "The entire tenure"
+    ],
+    "answer": "1 year from First Close",
+    "hint": "मापने (measuring) शुरू करने के लिए एक उचित समय।",
+    "explanation": "AIF schemes को कम से कम एक वर्ष तक चालू (operational) रहने के बाद benchmarking agencies को डेटा प्रदान करना होता है।"
+  },
+  {
+    "id": 40,
+    "question": "What is 'Survival Bias' in benchmarking?",
+    "options": [
+      "A bias toward funds that invest in survival gear",
+      "The tendency to exclude failed funds from an index, making average returns look higher",
+      "A bias toward new funds",
+      "The manager's will to survive"
+    ],
+    "answer": "The tendency to exclude failed funds from an index, making average returns look higher",
+    "hint": "केवल 'बचने वालों' (survivors) को गिना जाता है।",
+    "explanation": "यदि खराब प्रदर्शन करने वाले funds बंद हो जाते हैं और उन्हें डेटा से हटा दिया जाता है, तो सक्रिय funds का शेष 'औसत' (average) कृत्रिम रूप से (artificially) उच्च (high) दिखाई देता है।"
+  },
+  {
+    "id": 41,
+    "question": "A DPI of 1.5x indicates that the investor has:",
+    "options": [
+      "Lost 50% of their money",
+      "Received all their capital back plus a 50% profit in cash",
+      "Only 50% of their capital back",
+      "No cash returned yet"
+    ],
+    "answer": "Received all their capital back plus a 50% profit in cash",
+    "hint": "DPI > 1 का अर्थ है कि profit 'प्राप्त' (realized) हो गया है।",
+    "explanation": "DPI = 1.0 का अर्थ है break-even। 1.0 से ऊपर कुछ भी LP (investor) को लौटाए गए वास्तविक नकद लाभ (actual cash profit) को दर्शाता है।"
+  },
+  {
+    "id": 42,
+    "question": "Why is 'Information Ratio' used in AIF benchmarking?",
+    "options": [
+      "To measure the amount of data in the PPM",
+      "To measure the consistency of a manager's excess return over a benchmark",
+      "To calculate the internet speed of the fund",
+      "To measure the transparency level"
+    ],
+    "answer": "To measure the consistency of a manager's excess return over a benchmark",
+    "hint": "Alpha / Tracking Error।",
+    "explanation": "यह किसी benchmark के मुकाबले excess returns generate करने की manager की क्षमता का आकलन करता है, जिसे ऐसा करने के लिए लिए गए जोखिम (risk) के लिए adjust किया जाता है।"
+  },
+  {
+    "id": 43,
+    "question": "What is the impact of 'Taxes' on the TVPI multiple?",
+    "options": [
+      "Increases TVPI",
+      "Reduces TVPI (as taxes are an outflow that reduces Net Asset Value)",
+      "No impact",
+      "TVPI only counts taxes"
+    ],
+    "answer": "Reduces TVPI (as taxes are an outflow that reduces Net Asset Value)",
+    "hint": "Taxes एक लागत (cost) हैं।",
+    "explanation": "वास्तविक या अर्जित कर देनदारियां (Actual or accrued tax liabilities) investors के लिए उपलब्ध net value को कम करती हैं, जिससे TVPI कम हो जाता है।"
+  },
+  {
+    "id": 44,
+    "question": "What is the 'Modified IRR' (MIRR)?",
+    "options": [
+      "A regular IRR",
+      "An IRR that assumes cash flows are reinvested at a specific cost of capital, not the IRR rate",
+      "An IRR with zero math",
+      "An IRR for startups only"
+    ],
+    "answer": "An IRR that assumes cash flows are reinvested at a specific cost of capital, not the IRR rate",
+    "hint": "IRR का एक अधिक यथार्थवादी (realistic) संस्करण (version)।",
+    "explanation": "MIRR reinvested cash के लिए अधिक रूढ़िवादी धारणा (conservative assumption) का उपयोग करके मानक IRR की reinvestment rate की समस्या को हल करता है।"
+  },
+  {
+    "id": 45,
+    "question": "A 'Benchmark Report' provided by agencies usually compares a fund against its:",
+    "options": [
+      "Bank account",
+      "Relevant Peer Group (Category, Vintage, Strategy)",
+      "The CEO's previous company",
+      "The Gold price"
+    ],
+    "answer": "Relevant Peer Group (Category, Vintage, Strategy)",
+    "hint": "सेब की तुलना सेब से करना (Comparing apples to apples)।",
+    "explanation": "एक उचित तुलना (fair comparison) के लिए उन funds को देखना आवश्यक है जो एक ही समय में शुरू हुए थे और एक समान निवेश जनादेश (investment mandate) का पालन करते हैं।"
+  },
+  {
+    "id": 46,
+    "question": "Which of the following is a 'Qualitative' performance factor?",
+    "options": [
+      "DPI",
+      "The stability and experience of the Investment Team",
+      "IRR",
+      "AUM"
+    ],
+    "answer": "The stability and experience of the Investment Team",
+    "hint": "गैर-संख्यात्मक कारक (Non-numerical factor)।",
+    "explanation": "जबकि संख्याएं (quantitative) महत्वपूर्ण हैं, टीम की गुणवत्ता (qualitative) भविष्य के प्रदर्शन का एक भविष्यवक्ता (predictor) है।"
+  },
+  {
+    "id": 47,
+    "question": "What happens if an AIF fails to provide data to a benchmarking agency?",
+    "options": [
+      "It is a regulatory violation and must be disclosed in the PPM",
+      "Nothing",
+      "The manager is fined ₹10",
+      "The fund is closed immediately"
+    ],
+    "answer": "It is a regulatory violation and must be disclosed in the PPM",
+    "hint": "SEBI compliance गंभीर है।",
+    "explanation": "Benchmarking के लिए reporting SEBI दिशानिर्देशों के तहत अनिवार्य (mandatory) है; ऐसा न करने पर विनियामक परिणाम (regulatory consequences) भुगतने पड़ते हैं।"
+  },
+  {
+    "id": 48,
+    "question": "In the 'Worked Out Case' for Chapter 7, 'Pre-Tax IRR' will always be _______ than 'Post-Tax IRR'.",
+    "options": [
+      "Lower",
+      "Higher",
+      "Equal",
+      "Double"
+    ],
+    "answer": "Higher",
+    "hint": "Taxes हमेशा return में से हिस्सा निकाल लेते हैं।",
+    "explanation": "चूंकि taxes मुनाफे से कटौती (deduction) हैं, इसलिए करों से पहले का return (Pre-tax) स्वाभाविक रूप से करों के बाद के return (Post-tax) से अधिक होता है।"
+  },
+  {
+    "id": 49,
+    "question": "What is 'Time-Weighted Rate of Return' (TWRR)?",
+    "options": [
+      "A return that ignores cash flow timing and focuses on the manager's investment selection skill",
+      "The same as IRR",
+      "A measure of clock speed",
+      "The return on a watch company"
+    ],
+    "answer": "A return that ignores cash flow timing and focuses on the manager's investment selection skill",
+    "hint": "अक्सर Mutual Funds के लिए उपयोग किया जाता है जहां manager इस बात को नियंत्रित (control) नहीं करता है कि नकद (cash) कब आता है।",
+    "explanation": "TWRR cash inflows और outflows के विकृत प्रभावों (distorting effects) को समाप्त करता है, लेकिन यह AIFs में कम आम है जहां managers cash calls के समय को नियंत्रित *करते* हैं।"
+  },
+  {
+    "id": 50,
+    "question": "What is the primary benefit of benchmarking for an Investor?",
+    "options": [
+      "To see if they paid too much in fees",
+      "To evaluate if the fund manager is delivering 'Alpha' or just following the market 'Beta'",
+      "To calculate their personal income tax",
+      "To get a free report"
+    ],
+    "answer": "To evaluate if the fund manager is delivering 'Alpha' or just following the market 'Beta'",
+    "hint": "Manager की skill की जाँच करना।",
+    "explanation": "Benchmarking investors को यह देखने की अनुमति देता है कि fund के उच्च returns (high returns) manager की skill (Alpha) के कारण हैं या सिर्फ एक सामान्य बुल मार्केट (bull market - Beta) के कारण।"
+  }
+]

@@ -1,0 +1,94 @@
+{
+  "course": "NISM Series VIII: Equity Derivatives",
+  "unit_number": 6,
+  "unit_name": "Trading Mechanism (ट्रेडिंग मैकेनिज्म)",
+  "weightage": "10 Marks",
+  "overview": "यह chapter बताता है कि exchange पर वास्तव में trading कैसे होती है (इसके 'nuts and bolts')। यह cover करता है कि orders कैसे match होते हैं, आप कितने अलग-अलग प्रकार के orders place कर सकते हैं, और इस process में कौन-सी entities शामिल होती हैं। Exam के लिए, आपको 'Open Electronic Limit Order Book' और computer यह कैसे तय करता है कि कौन सा trade पहले होगा, यह समझना बहुत ज़रूरी है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Open Electronic Limit Order Book (OELOB)",
+      "basic_meaning": "एक digital list जहाँ पूरे India से सभी buy और sell orders store होते हैं और computer द्वारा match किए जाते हैं।",
+      "detailed_explanation": "पुराने समय में, traders एक 'trading ring' में चिल्लाकर trade करते थे। अब, NSE/BSE एक computer system का इस्तेमाल करते हैं।\n1. **Transparency:** हर कोई best 5 buy और sell prices (Market Depth) देख सकता है।\n2. **Anonymity:** आपको यह नहीं पता होता कि आप किससे खरीद रहे हैं या किसे बेच रहे हैं।\n3. **Order Driven:** Market लोगों द्वारा place किए गए orders के आधार पर move करता है, न कि किसी एक 'market maker' द्वारा तय की गई price पर।",
+      "why_this_is_important": "Exam अक्सर Indian market के 'nature' के बारे में पूछता है। यह एक 'Order-Driven' system है, न कि 'Quote-Driven'।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "जब आप अपना Zerodha या Upstox app खोलते हैं और 'Blue' (Buy) और 'Red' (Sell) columns को move होते देखते हैं, तो आप Order Book देख रहे होते हैं।",
+      "exam_traps": [
+        "क्या system 'Quote-driven' है? NO, यह 'Order-driven' है।",
+        "क्या match के दौरान exchange को buyer/seller की identity पता होती है? NO, यह anonymous होता है।"
+      ],
+      "memory_trick": "OELOB = Online, Everyone can see, List of Business."
+    },
+    {
+      "concept": "2. Order Matching Rules (Price-Time Priority)",
+      "basic_meaning": "Computer एक सख्त rule follow करता है: Best price को पहली priority मिलती है। अगर prices same हैं, तो जो पहले आया उसे priority मिलती है।",
+      "detailed_explanation": "System दो levels पर orders match करता है:\n1. **Price Priority:** \n   - HIGHER price वाला Buy order बेहतर होता है (पहले आता है)।\n   - LOWER price वाला Sell order बेहतर होता है (पहले आता है)।\n2. **Time Priority:** अगर दो लोग ₹100 पर खरीदना चाहते हैं, तो जिसने सुबह 10:00 AM पर order place किया, उसे 10:01 AM वाले से पहले shares मिलेंगे।",
+      "why_this_is_important": "आपको एक numerical table दिया जा सकता है और पूछा जा सकता है: 'Trade किस price पर होगा?'।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Order Book:\n- Seller A: 100 shares ₹105 पर बेचना चाहता है (Placed at 10:00 AM)\n- Seller B: 100 shares ₹104 पर बेचना चाहता है (Placed at 10:05 AM)\n- Buyer C: 100 shares ₹105 पर खरीदना चाहता है (Placed at 10:10 AM)\n\n**Matching:** भले ही Seller A पहले आया, Seller B एक BETTER (lower) price offer कर रहा है। Buyer C को Seller B के साथ ₹104 पर match किया जाएगा।",
+      "real_life_indian_example": "यही कारण है कि traders जब जल्दी में होते हैं तो 'Market Orders' का इस्तेमाल करते हैं; वे तुरंत best available price पर jump करना चाहते हैं।",
+      "exam_traps": [
+        "क्या Time Priority, Price से पहले आती है? NO. Price हमेशा पहली priority होती है।",
+        "क्या Higher Sell price बेहतर है? NO, buyer के लिए Lower Sell price बेहतर है।"
+      ],
+      "memory_trick": "Price is King, Time is Queen."
+    },
+    {
+      "concept": "3. Types of Orders",
+      "basic_meaning": "अलग-अलग तरीके जिनसे आप computer को अपना trade execute करने के लिए कह सकते हैं।",
+      "detailed_explanation": "1. **Limit Order:** आप exact price specify करते हैं (जैसे, 'Buy only if price is ₹100')। अगर price कभी ₹100 तक नहीं पहुँचता, तो यह execute नहीं होगा।\n2. **Market Order:** आपको price की परवाह नहीं है; आपको यह 'NOW' (तुरंत) चाहिए। यह book में best available price के साथ match हो जाता है।\n3. **Stop-Loss (SL) Order:** एक order जो तब तक 'dormant' (निष्क्रिय) रहता है जब तक कि एक निश्चित price (Trigger Price) तक नहीं पहुँच जाता। इसका इस्तेमाल losses को limit करने के लिए किया जाता है।\n4. **IOC (Immediate or Cancel):** इसे अभी खरीदें, या order cancel कर दें। Book में कोई waiting नहीं।",
+      "why_this_is_important": "NISM 'Time Condition' (Day vs IOC) और 'Price Condition' (Limit vs Market) के बारे में पूछता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "आपने Nifty ₹20,000 पर खरीदा। आपको डर है कि यह गिर सकता है। आप ₹19,950 पर एक **Stop Loss Sell** place करते हैं। अगर Nifty ₹20,000 पर रहता है, तो कुछ नहीं होता। अगर यह ₹19,950 पर गिर जाता है, तो computer बड़े loss को रोकने के लिए आपकी position को automatically sell कर देता है।",
+      "real_life_indian_example": "बहुत volatile दिन के दौरान stock खरीदने के लिए 'Limit Order' का इस्तेमाल करना ताकि sudden spike के कारण आप गलती से 5% ज्यादा price न pay कर दें।",
+      "exam_traps": [
+        "Market order execution की guarantee देता है लेकिन price की नहीं।",
+        "Limit order price की guarantee देता है लेकिन execution की नहीं।"
+      ],
+      "memory_trick": "Limit = My Price. Market = Market's Price."
+    },
+    {
+      "concept": "4. Entities in the Trading System",
+      "basic_meaning": "वे लोग और organizations जो market को चलाते हैं।",
+      "detailed_explanation": "1. **Trading Members (Brokers):** इनके पास exchange पर trade करने का license होता है (जैसे, Zerodha, ICICI Securities)।\n2. **Clearing Members:** ये funds और shares के 'Settlement' के लिए responsible होते हैं। हर Trading Member को एक Clearing Member से जुड़ा होना ज़रूरी है।\n3. **Professional Clearing Member (PCM):** एक member जो खुद trade नहीं करता बल्कि केवल दूसरों (आमतौर पर Banks) के trades clear करता है।\n4. **Custodians:** Institutions जो FIIs जैसे बड़े clients के funds/securities की देखभाल करते हैं।",
+      "why_this_is_important": "Exam में Trading Member और Clearing Member के बीच का difference पूछा जाता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "जब आप कोई share खरीदते हैं, तो आपका 'Broker' (Trading Member) trade execute करता है, लेकिन परदे के पीछे (behind the scenes), एक 'Clearing Member' यह ensure करता है कि money आपके bank से seller के bank में move हो।",
+      "exam_traps": [
+        "क्या Trading Member अपने खुद के trades clear कर सकता है? YES, अगर वे Clearing Member भी हैं।",
+        "क्या Custodian retail investors के लिए trades clear करता है? NO, आमतौर पर केवल large institutions के लिए।"
+      ],
+      "memory_trick": "Trading = The Deal. Clearing = The Delivery."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Limit Order vs. Market Order",
+      "clear_explanation": "Limit Order: आप price control करते हैं, लेकिन आपको trade नहीं भी मिल सकता है। Market Order: आपको trade तुरंत मिल जाता है, लेकिन आप price control नहीं करते हैं।"
+    },
+    {
+      "difference_between": "Day Order vs. IOC Order",
+      "clear_explanation": "Day Order: आज 3:30 PM तक valid है। IOC (Immediate or Cancel): Exchange पर हिट करते ही उसी second execute होना चाहिए, नहीं तो यह delete हो जाता है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Order matching के लिए priority rule (Price-Time)।",
+    "'Limit' और 'Market' order characteristics की पहचान करना।",
+    "Settlement process में 'Clearing Member' का role।",
+    "Terminology: 'Basket Trade' क्या है? (एक click में multiple stocks खरीदना)।",
+    "'Contract Month' क्या है? (वह महीना जिसमें contract expire होता है)।"
+  ],
+  "quick_revision_summary": [
+    "Indian markets Electronic और Order-Driven हैं।",
+    "Price पहली priority है; Time दूसरी priority है।",
+    "Stop Loss orders आपको बड़े losses से बचाते हैं।",
+    "Brokers 'Trading Members' होते हैं।",
+    "Trade match होने के बाद Trade Confirmation Slips generate होती हैं।",
+    "Market depth top 5 buy/sell orders दिखाती है।"
+  ]
+}

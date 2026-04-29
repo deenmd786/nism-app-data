@@ -1,0 +1,94 @@
+{
+  "course": "NISM Series XXIV: AML and CFT Provisions in Securities Markets",
+  "unit_number": 7,
+  "unit_name": "SEBI Guidelines for KYC Norms in Securities Market",
+  "weightage": "8",
+  "overview": "यह chapter Indian stock market में 'Know Your Client' (KYC) के practical application पर focus करता है। जहाँ पिछले chapters में laws और global standards discuss किए गए थे, यह unit KRA (KYC Registration Agency) और CKYC (Central KYC) जैसे actual systems को explain करता है जो investing को आसान और safer बनाते हैं। यह एक high-weightage chapter है क्योंकि यह market में हर investor के entry-point से deal करता है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Uniform KYC और KRA का Role",
+      "basic_meaning": "KRA एक system है जहाँ आप अपना KYC एक बार करते हैं और stock market में हर जगह उसका use करते हैं।",
+      "detailed_explanation": "पहले, अगर आप एक broker के साथ और फिर एक mutual fund के साथ account open करते थे, तो आपको दो बार documents submit करने पड़ते थे। अब, SEBI ने **KYC Registration Agencies (KRAs)** appoint की हैं। \n1. **One-time Process**: एक बार जब कोई investor किसी SEBI intermediary के साथ KYC complete कर लेता है, तो data KRA पर upload हो जाता है। \n2. **Interoperability**: दूसरे intermediaries investor के PAN का use करके बस इस data को 'download' कर सकते हैं, जिससे time और paper की बचत होती है। \n3. **Centralized Storage**: KRAs इन digital records को store और safeguard करने के लिए responsible हैं।",
+      "why_this_is_important": "Exam के लिए, याद रखें कि KRAs **SEBI {KYC Registration Agency} Regulations, 2011** के तहत regulated हैं। Practically, यह investors को repetitive paperwork से frustrate होने से बचाता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Rohan Zerodha के साथ एक demat account open करता है। Zerodha उसके documents को 'CVL KRA' पर upload कर देता है। अगले महीने, जब Rohan SBI Mutual Fund में invest करना चाहता है, तो SBI उसके PAN का use करके CVL KRA से उसकी details fetch कर लेता है। Rohan को अपने ID proofs दोबारा देने की ज़रूरत नहीं है।",
+      "exam_traps": [
+        "Common Trap: Students सोचते हैं कि KRA banks के लिए है। नहीं, KRAs specifically **Securities Market** (Brokers, MFs, DPs) के लिए हैं।",
+        "Confusing Concept: KRA CKYC से अलग है (जो पूरे financial sector के लिए है)।",
+        "Important Rule: KRA records के लिए PAN unique identifier है।"
+      ],
+      "memory_trick": "KRA = 'Know-once, Registered-Always' (stock market के लिए)।"
+    },
+    {
+      "concept": "2. Central KYC Registry (CKYCR)",
+      "basic_meaning": "KYC के लिए एक massive government 'digital locker' जो Banks, Insurance, और Stock Markets सब जगह काम करता है।",
+      "detailed_explanation": "1. **Managed by CERSAI**: The Central Registry of Securitisation Asset Reconstruction and Security Interest of India (Ministry of Finance के अंडर)। \n2. **14-Digit KIN**: Register होने के बाद, investor को एक unique **KYC Identification Number (KIN)** मिलता है। \n3. **Cross-Sector**: KRA (सिर्फ Securities) के unlike, CKYC आपको insurance खरीदने या trading account open करने के लिए अपने bank KYC का use करने allow करता है।",
+      "why_this_is_important": "NISM '14-digit' number और managing body (CERSAI) के बारे में पूछता है।",
+      "formula": "KYC Identity = 14-digit KIN",
+      "formula_explanation": "यह unique code India में कहीं भी आपके digital KYC profile को access करने की key है।",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Anil का HDFC Bank में savings account है। उसका bank उसका KYC CKYCR पर upload करता है। जब Anil LIC से Life Insurance policy खरीदने जाता है, तो वह बस अपना 14-digit KIN देता है। LIC CERSAI server से उसका data instantly pull कर लेता है।",
+      "exam_traps": [
+        "Numerical Trap: याद रखें KIN **14 digits** का होता है, 10 (PAN) या 12 (Aadhaar) का नहीं।",
+        "Management: CKYC को **CERSAI** manage करता है, जबकि KRA को **CVL या NSDL** जैसी entities manage करती हैं।"
+      ],
+      "memory_trick": "CKYC = 'C' for 'Complete' (Bank + Insurance + Stocks) जिसे 'C'ERSAI handle करता है।"
+    },
+    {
+      "concept": "3. In-Person Verification (IPV)",
+      "basic_meaning": "एक broker द्वारा physically (या video के ज़रिए) यह confirm करने का process कि ID card पर दिख रहा व्यक्ति वही है जो उनके सामने खड़ा है।",
+      "detailed_explanation": "1. **Mandatory Check**: SEBI intermediary के लिए हर client का IPV करना mandatory बनाता है। \n2. **Who can do it?**: Broker, sub-broker, या एक authorized person के employees। \n3. **Video-KYC (V-CIP)**: Technology के कारण, physical visits को अब **Video Customer Identification Process (V-CIP)** से replace कर दिया गया है, जो एक real-time recorded video call होती है।",
+      "why_this_is_important": "NISM पूछता है कि IPV के लिए responsible कौन है। Answer हमेशा **Intermediary** होता है।",
+      "formula": "IPV = Document Verification + Face Matching + Real-time Interaction",
+      "formula_explanation": "एक valid IPV के लिए इन तीनों का होना ज़रूरी है।",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "कोच्चि में एक housewife online account open करती है। Broker का app एक video call start करता है जहाँ वह अपना original PAN card अपने face के बगल में पकड़ती है। Officer इस 'Video IPV' को record करता है यह ensure करने के लिए कि वह कोई fake person नहीं है या किसी और का ID use नहीं कर रही है।",
+      "exam_traps": [
+        "Important Point: IPV को KYC form पर उस व्यक्ति के name और designation के साथ record किया जाना चाहिए जिसने इसे किया है।",
+        "Trap: क्या कोई client अपना खुद का IPV कर सकता है? नहीं, intermediary के एक employee को इसे करना होता है।"
+      ],
+      "memory_trick": "IPV = 'I' 'P'rove 'V'itality (मैं prove करता हूँ कि मैं real हूँ)।"
+    },
+    {
+      "concept": "4. Officially Valid Documents (OVDs)",
+      "basic_meaning": "6 government-approved documents की list जिनका use आप Identity और Address proof के लिए कर सकते हैं।",
+      "detailed_explanation": "PMLA rules के अनुसार, 6 OVDs हैं:\n1. **Passport**\n2. **Driving License**\n3. **Voter ID Card**\n4. **Aadhaar Card**\n5. **NREGA Job Card** (किसी officer द्वारा duly signed)\n6. **National Population Register से Letter**।\n**Note on PAN**: हालाँकि stock market के सभी trades के लिए PAN mandatory है, लेकिन technically यह एक Identity Proof है, Address Proof नहीं।",
+      "why_this_is_important": "NISM अक्सर पूछता है 'इनमें से कौन सा OVD नहीं है?'। वे 'Ration Card' या 'Electricity Bill' include कर सकते हैं (ये standard OVDs नहीं हैं, हालाँकि कभी-कभी secondary proof के रूप में use होते हैं)।",
+      "formula": "Complete KYC = PAN (Identity) + OVD (Identity & Address)",
+      "formula_explanation": "एक standard account open करने के लिए आपको दोनों की ज़रूरत होती है।",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "एक student account open करना चाहता है लेकिन उसके पास सिर्फ Ration card है। Broker इसे reject कर देगा क्योंकि Ration card अब official '6 OVD' list में नहीं है। Student को Voter ID या Aadhaar देना होगा।",
+      "exam_traps": [
+        "Trap: PAN सभी transactions के लिए mandatory है, लेकिन PAN address के लिए OVD नहीं है।",
+        "Trap: क्या Aadhaar mandatory है? यह एक preferred OVD है, लेकिन 'only' (इकलौता) नहीं।"
+      ],
+      "memory_trick": "P-D-V-A-N: Passport, Driving, Voter, Aadhaar, Nrega."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "KRA vs. CKYC",
+      "clear_explanation": "**KRA** सिर्फ Securities Market के लिए है (SEBI regulated)। **CKYC** Banks और Insurance सहित पूरे Financial Sector के लिए है (CERSAI/Ministry of Finance regulated)।"
+    },
+    {
+      "difference_between": "Normal Account vs. Small Account",
+      "clear_explanation": "**Normal Accounts** के लिए full OVDs की ज़रूरत होती है। **Small Accounts** (banks में allowed हैं लेकिन stocks में restricted) सिर्फ एक photo और self-attestation के साथ open किए जा सकते हैं लेकिन इनमें deposits और balance पर limits होती हैं।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Central KYC में 14-digit KIN।",
+    "6 Officially Valid Documents (OVDs) की List।",
+    "KRA Registration Agencies के Roles और functions।",
+    "सभी clients के लिए In-Person Verification (IPV) की requirement।",
+    "Securities market में unique identifier के रूप में PAN।"
+  ],
+  "quick_revision_summary": [
+    "KRA stock market के लिए one-time KYC allow करता है।",
+    "CKYC cross-sector usage के लिए एक 14-digit number provide करता है।",
+    "CERSAI Central KYC Registry को manage करता है।",
+    "Intermediaries को IPV/V-CIP perform करना ही चाहिए।",
+    "KYC के लिए valid होने के लिए PAN को Aadhaar से linked होना चाहिए।"
+  ]
+}

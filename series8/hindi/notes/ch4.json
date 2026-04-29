@@ -1,0 +1,109 @@
+{
+  "course": "NISM Series VIII: Equity Derivatives",
+  "unit_number": 4,
+  "unit_name": "Options का परिचय",
+  "weightage": "20 Marks",
+  "overview": "NISM Series 8 exam के लिए यह सबसे critical chapter है। जहाँ Futures simple agreements होते हैं, वहीं Options 'Rights' (अधिकार) होते हैं जिन्हें आप खरीदते हैं। यह chapter options के विभिन्न प्रकारों, उनकी pricing (Intrinsic बनाम Time Value) कैसे की जाती है, और pass होने के लिए आवश्यक vocabulary (ITM, ATM, OTM) को cover करता है। Chapter 5 (Strategies) के लिए इसे समझना बहुत ज़रूरी है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Option क्या है?",
+      "basic_meaning": "Option एक contract है जो आपको कुछ खरीदने या बेचने का विकल्प (Right/अधिकार) देता है, लेकिन आपको ऐसा करने के लिए मजबूर (Obligation/बाध्य) नहीं किया जाता है।",
+      "detailed_explanation": "एक Future contract में, आपको अंत में खरीदना/बेचना MUST होता है। Option में, आपके पास एक choice (विकल्प) होती है।\n1. **Option Buyer (Holder):** यह अधिकार पाने के लिए 'Premium' नामक एक fee pay करता है। उनके पास 'Limited Loss' (केवल premium तक) और 'Unlimited Profit' potential होता है।\n2. **Option Seller (Writer):** Premium प्राप्त करता है। इसके बदले में, वे एक बहुत बड़ा risk लेते हैं। उनके पास 'Limited Profit' (केवल premium तक) और 'Unlimited Loss' potential होता है।\n\nइसके दो मुख्य प्रकार हैं:\n- **Call Option:** खरीदने का अधिकार (Right to BUY)।\n- **Put Option:** बेचने का अधिकार (Right to SELL)।",
+      "why_this_is_important": "Exam अक्सर 'Asymmetric' payoff का परीक्षण करता है: Buyer के पास rights होते हैं, Seller के पास obligations होती हैं।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "अगले महीने के लिए ₹50 Lakhs में एक flat बुक करने के लिए builder को ₹5,000 non-refundable 'token amount' देना। यदि property की कीमतें ₹60 Lakhs तक बढ़ जाती हैं, तो आप ₹50 Lakhs में खरीदने के अपने 'Right' का उपयोग करते हैं। यदि कीमतें गिरकर ₹40 Lakhs हो जाती हैं, तो आप पीछे हट जाते हैं और केवल अपना ₹5,000 token (Premium) खोते हैं।",
+      "exam_traps": [
+        "यह सोचना कि Seller के पास choice होती है। NO! केवल BUYER के पास choice होती है।",
+        "'Premium' को 'Margin' के साथ confuse करना। Buyers premium pay करते हैं; Sellers margin pay करते हैं।"
+      ],
+      "memory_trick": "Option = Opportunity (अवसर)। अच्छा हो तो ले लो, बुरा हो तो छोड़ दो।"
+    },
+    {
+      "concept": "2. Call Options (खरीदने का अधिकार)",
+      "basic_meaning": "आप Call Option तब खरीदते हैं जब आपको लगता है कि किसी stock का market price ऊपर (UP) जाएगा।",
+      "detailed_explanation": "जब आप एक Call खरीदते हैं:\n1. आप एक 'Strike Price' (वह कीमत जिस पर आप खरीदना चाहते हैं) तय करते हैं।\n2. यदि Market Price Strike Price के ऊपर (ABOVE) जाता है, तो आप profit कमाते हैं。\n3. यदि Market Price Strike Price के नीचे (BELOW) रहता है, तो आप अपने अधिकार का उपयोग नहीं करते हैं और केवल premium खोते हैं।",
+      "why_this_is_important": "Exam के questions अक्सर Call buyer के लिए 'Break-even point' के बारे में पूछते हैं।",
+      "formula": "Break-even Point (Call) = Strike Price + Premium Paid",
+      "formula_explanation": "चूँकि आपने premium pay किया है, असली profit कमाना शुरू करने के लिए stock को कम से कम उस amount से ऊपर जाना चाहिए।",
+      "step_by_step_calculation_example": "आप Reliance का Call Option खरीदते हैं। Strike Price = ₹2500. Premium = ₹50.\nStep 1: Break-even Calculate करें = 2500 + 50 = ₹2550.\nStep 2: यदि Reliance ₹2600 तक पहुँचता है, तो आपका Profit = 2600 - 2550 = ₹50 प्रति share.\nStep 3: यदि Reliance ₹2400 पर ही रहता है, तो आप नहीं खरीदते। Loss = ₹50 (Premium)।",
+      "real_life_indian_example": "Nifty 22000 Call Option खरीदना क्योंकि आपको उम्मीद है कि Budget session positive रहेगा और markets rally करेंगे।",
+      "exam_traps": [
+        "Call Buyer Bullish होता है (price बढ़ने की उम्मीद करता है)।",
+        "Call Seller Bearish होता है (price गिरने या flat रहने की उम्मीद करता है)।"
+      ],
+      "memory_trick": "Call = 'Call Up' (आप चाहते हैं कि price ऊपर जाए)।"
+    },
+    {
+      "concept": "3. Put Options (बेचने का अधिकार)",
+      "basic_meaning": "आप Put Option तब खरीदते हैं जब आपको लगता है कि किसी stock का market price नीचे (DOWN) जाएगा।",
+      "detailed_explanation": "जब आप एक Put खरीदते हैं:\n1. आप एक 'Strike Price' (वह कीमत जिस पर आप बेचना चाहते हैं) तय करते हैं।\n2. यदि Market Price Strike Price के नीचे (BELOW) जाता है, तो आप profit कमाते हैं क्योंकि आप एक higher fixed price पर बेच सकते हैं。\n3. यदि Market Price ऊपर (UP) जाता है, तो आप अपने अधिकार का उपयोग नहीं करते हैं और केवल premium खोते हैं।",
+      "why_this_is_important": "Puts का उपयोग अक्सर market crash के खिलाफ 'Hedging' (Insurance) के लिए किया जाता है।",
+      "formula": "Break-even Point (Put) = Strike Price - Premium Paid",
+      "formula_explanation": "चूँकि आपने premium pay किया है, profit कमाने के लिए stock को strike price से कम से कम उस amount से नीचे गिरना चाहिए।",
+      "step_by_step_calculation_example": "आप SBI का Put Option खरीदते हैं। Strike Price = ₹600. Premium = ₹20.\nStep 1: Break-even Calculate करें = 600 - 20 = ₹580.\nStep 2: यदि SBI गिरकर ₹500 हो जाता है, तो आपका Profit = 580 - 500 = ₹80 प्रति share.\nStep 3: यदि SBI बढ़कर ₹700 हो जाता है, तो आप नहीं बेचते। Loss = ₹20 (Premium)।",
+      "real_life_indian_example": "Market crash होने की स्थिति में खुद को बचाने के लिए एक बड़े election result से पहले अपने portfolio के लिए Put option खरीदना।",
+      "exam_traps": [
+        "Put Buyer Bearish होता है (price गिरने की उम्मीद करता है)।",
+        "Put Seller Bullish होता है (price बढ़ने या flat रहने की उम्मीद करता है)।"
+      ],
+      "memory_trick": "Put = 'Put Down' (आप चाहते हैं कि price नीचे जाए)।"
+    },
+    {
+      "concept": "4. Options की Moneyness (ITM, ATM, OTM)",
+      "basic_meaning": "यह बताता है कि current market price के आधार पर वर्तमान में option के अंदर कितना 'profit' बैठा है।",
+      "detailed_explanation": "**1. In-the-Money (ITM):** यदि आप अभी option को exercise करते हैं, तो आप पैसे कमाएंगे। ये महंगे होते हैं。\n**2. At-the-Money (ATM):** Market Price ठीक Strike Price के बराबर है。\n**3. Out-of-the-Money (OTM):** यदि आप अभी exercise करते हैं, तो आप पैसे खो देंगे। ये सस्ते 'lottery tickets' होते हैं।",
+      "why_this_is_important": "NISM यह पूछना पसंद करता है कि किसी दिए गए stock price के लिए कौन सा option ITM या OTM है।",
+      "formula": "Intrinsic Value (Call) = Current Price - Strike Price (यदि negative है, तो यह 0 है)।",
+      "formula_explanation": "Intrinsic value 'असली (real)' value है। OTM options की intrinsic value ZERO होती है।",
+      "step_by_step_calculation_example": "Nifty का Current Market Price = 20,000.\n- 19,800 Call: ITM (Market 19,800 से higher है).\n- 20,000 Call: ATM.\n- 20,200 Call: OTM (Market अभी 20,200 तक नहीं पहुँचा है).",
+      "real_life_indian_example": "भारत में अधिकांश retail traders चमत्कार (miracle) की उम्मीद में 'Saste' (Cheap) OTM options खरीदते हैं, लेकिन अधिकांश OTM options worthless (Zero) expire होते हैं।",
+      "exam_traps": [
+        "Puts के लिए, ITM तब होता है जब Strike > Market Price (Calls का बिल्कुल उल्टा!)।",
+        "OTM options में शून्य (zero) Intrinsic Value होती है, केवल Time Value होती है।"
+      ],
+      "memory_trick": "ITM = 'In The Money' (पहले से ही profitable)।"
+    },
+    {
+      "concept": "5. Option Pricing: Intrinsic Value बनाम Time Value",
+      "basic_meaning": "आप जो Premium pay करते हैं उसमें दो भाग होते हैं: Real Value और Time Value।",
+      "detailed_explanation": "1. **Intrinsic Value:** यदि अभी exercise किया जाए तो उपलब्ध actual profit। (केवल ITM options में यह होता है)।\n2. **Time Value:** 'उम्मीद (hope)' की value। जैसे-जैसे expiry date करीब आती है, यह value गायब हो जाती है। इसे **Time Decay (Theta)** कहा जाता है।\n\nआखिरी दिन (expiry पर), Time Value Zero हो जाती है। Premium केवल Intrinsic Value के बराबर होगा।",
+      "why_this_is_important": "Numerical questions अक्सर आपसे Premium से Intrinsic value को अलग करने के लिए कहते हैं।",
+      "formula": "Option Premium = Intrinsic Value + Time Value",
+      "formula_explanation": "Total price उसकी current worth (वर्तमान कीमत) और उसके future potential का योग (sum) है।",
+      "step_by_step_calculation_example": "Reliance Spot = ₹2550. आप ₹70 में एक ₹2500 Call खरीदते हैं।\nStep 1: Intrinsic Value = 2550 - 2500 = ₹50.\nStep 2: Time Value = Total Premium - Intrinsic Value = 70 - 50 = ₹20.",
+      "real_life_indian_example": "यही कारण है कि यदि market 3 दिनों तक move नहीं करता है, तो भी आपके option की price गिर जाएगी। आप हर second 'Time Value' खो रहे हैं।",
+      "exam_traps": [
+        "Intrinsic value कभी भी negative नहीं (NEVER) हो सकती। यह या तो positive होती है या zero।",
+        "Expiry पर, एक OTM option का premium हमेशा zero होता है।"
+      ],
+      "memory_trick": "Time Value = 'Expectation Fee' (उम्मीद की फीस)। एक बार समय समाप्त होने पर, फीस चली जाती है।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "American बनाम European Options",
+      "clear_explanation": "American Options को expiry से पहले किसी भी समय (ANYTIME) exercise किया जा सकता है। European Options को केवल (ONLY) expiry date पर exercise किया जा सकता है। \n**Note:** भारत में, सभी Stock और Index options **European** style के होते हैं (इन्हें 'CE' और 'PE' द्वारा दर्शाया जाता है)।"
+    },
+    {
+      "difference_between": "Option Buyer बनाम Option Seller",
+      "clear_explanation": "Buyer: Premium pay करता है, Limited risk, Unlimited profit. \nSeller: Premium प्राप्त करता है, Unlimited risk, Limited profit (केवल Premium)।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Calls और Puts दोनों के लिए ITM/ATM/OTM की पहचान करना।",
+    "Intrinsic Value Calculate करना (Call के लिए Spot - Strike; Put के लिए Strike - Spot)।",
+    "यह समझना कि Seller (Writer) के पास obligation होती है और वह margins pay करता है।",
+    "यह तथ्य (fact) कि Indian options European style के होते हैं।",
+    "एक Option Buyer के लिए Maximum loss (Pay किया गया premium)।"
+  ],
+  "quick_revision_summary": [
+    "Call = Bullish; Put = Bearish.",
+    "Premium = Intrinsic Value + Time Value.",
+    "Option Buyer = Limited Risk; Option Seller = Unlimited Risk.",
+    "भारत में, हम European options का उपयोग करते हैं (Exercise केवल expiry पर)।",
+    "Time decay (Theta) Buyer को नुकसान पहुँचाता है और Seller को फायदा पहुँचाता है।",
+    "OTM options की Intrinsic Value zero होती है।"
+  ]
+}

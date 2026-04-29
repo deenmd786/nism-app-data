@@ -1,0 +1,77 @@
+{
+  "course": "NISM Series XVI: Commodity Derivatives Certification Examination",
+  "unit_number": 2,
+  "unit_name": "Commodity Indices",
+  "weightage": "5%",
+  "overview": "यह अध्याय बताता है कि हम 'Indices' (Nifty 50 की तरह लेकिन commodities के लिए) का उपयोग करके समग्र रूप से commodity market या विशिष्ट sectors के प्रदर्शन को कैसे track करते हैं। Exam के लिए यह महत्वपूर्ण है क्योंकि यह index construction, विभिन्न प्रकार के returns (Spot बनाम Excess बनाम Total), और भारत में उपयोग की जाने वाली विशिष्ट iCOMDEX series को कवर करता है। यह पिछले अध्यायों से जुड़कर दिखाता है कि व्यापक बाज़ार दृश्य (broader market view) प्रदान करने के लिए individual commodity कीमतों को एक साथ कैसे बंडल किया जाता है।",
+  
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Commodity Index क्या है?",
+      "basic_meaning": "Commodity index एक सांख्यिकीय उपकरण (statistical tool) है जो commodities के एक समूह के price movement को track करता है।",
+      "detailed_explanation": "जैसे Sensex stock market को track करता है, वैसे ही एक commodity index commodities की एक 'basket' को track करता है। \n\nKey features:\n* **Diversification:** यह केवल Gold जैसे किसी एक item पर निर्भर नहीं करता; इसमें Copper, Oil, और Wheat एक साथ शामिल हो सकते हैं।\n* **Benchmark:** यह देखने के लिए एक मानक (standard) के रूप में कार्य करता है कि समग्र बाज़ार (overall market) ऊपर जा रहा है या नीचे।\n* **Investment Tool:** Investors व्यक्तिगत items के बजाय पूरे sector पर दांव लगाने के लिए index futures में trade कर सकते हैं।",
+      "why_this_is_important": "यह व्यापक बाज़ार निवेश (broad market exposure) की अनुमति देता है और institutional trading का एक प्रमुख हिस्सा है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "MCX पर iCOMDEX Composite Index एक साथ Bullion, Metals, और Energy सहित कई sectors को track करता है।",
+      "exam_traps": [
+        "किसी एक commodity price को index समझने की गलती करना। एक index हमेशा कई items या contracts की 'basket' (टोकरी) होना चाहिए (MUST)।",
+        "यह सोचना कि index weights हमेशा बराबर होते हैं। Weights आमतौर पर production या liquidity पर आधारित होते हैं।"
+      ],
+      "memory_trick": "Index = Indicator. यह 'पूरे' समूह के स्वास्थ्य (health) को इंगित करता है।"
+    },
+    {
+      "concept": "2. Commodity Indices के प्रकार (Returns के आधार पर)",
+      "basic_meaning": "एक index ने कितना 'कमाया (earned)' है, इसकी गणना करने के तीन तरीके हैं।",
+      "detailed_explanation": "1. **Spot Index:** underlying commodities के केवल वर्तमान नकद (spot) मूल्यों को track करता है।\n2. **Excess Return (Price) Index:** futures prices में बदलाव के साथ-साथ 'Roll Yield' (एक expiring contract से नए contract में जाने पर होने वाला profit/loss) को track करता है।\n3. **Total Return Index:** यह सबसे पूर्ण (complete) है। इसमें Excess Return Index की हर चीज़ के साथ-साथ (PLUS) collateral के रूप में रखे गए cash margin पर अर्जित ब्याज (interest) भी शामिल होता है।",
+      "why_this_is_important": "Exam अक्सर पूछता है कि किस return प्रकार में interest/collateral yield शामिल होता है।",
+      "formula": "$$Total\\ Return = Price\\ Change + Roll\\ Yield + Collateral\\ Yield$$",
+      "formula_explanation": "Total return मूल्य लाभ (price profit), contracts बदलने से होने वाले लाभ, और आपकी नकद जमा (cash deposits) पर मिलने वाले ब्याज का योग (sum) है।",
+      "step_by_step_calculation_example": "Scenario: \n* Gold की कीमत 2% बढ़ जाती है (Price Change)।\n* आपने अपने contract को अगले महीने में roll करके 0.5% profit कमाया (Roll Yield)।\n* बैंक में आपके margin money ने 0.2% interest कमाया (Collateral Yield)।\n\n**Calculation:** 2% + 0.5% + 0.2% = **2.7% Total Return**.",
+      "real_life_indian_example": "जब आप MCX iCOMDEX Bullion Index की value देखते हैं, तो आप आमतौर पर 'Price' या 'Excess Return' संस्करण देख रहे होते हैं।",
+      "exam_traps": [
+        "यह सोचना कि Spot Index में futures prices शामिल हैं। यह केवल वर्तमान नकद कीमतों (current cash prices) का उपयोग करता है।",
+        "यह भूल जाना कि Total Return में ब्याज आय (interest income) शामिल होती है।"
+      ],
+      "memory_trick": "Spot = केवल Cash. Excess = Futures + Roll. Total = सब कुछ (Interest सहित)।"
+    },
+    {
+      "concept": "3. iCOMDEX Index Series (MCX)",
+      "basic_meaning": "यह भारत के सबसे बड़े commodity exchange पर उपयोग किए जाने वाले indices का प्रमुख परिवार (flagship family) है。",
+      "detailed_explanation": "iCOMDEX (MCX iCOMDEX) में कई real-time indices शामिल हैं:\n* **Composite Index:** सभी sectors में समग्र बाजार (overall market) को track करता है।\n* **Sectoral Indices:** Bullion (Gold और Silver) या Base Metals (Copper, Zinc, आदि) जैसे विशिष्ट समूहों को track करता है।\n* **Single Commodity Indices:** किसी एक commodity (जैसे Gold) को track करता है लेकिन एक long-term position का अनुकरण (simulate) करने के लिए 'rolling' futures chain के माध्यम से।",
+      "why_this_is_important": "चूंकि NISM Series 16 के लिए MCX प्राथमिक exchange है, इसलिए iCOMDEX के नाम जानना अनिवार्य है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "एक investor जो यह दांव लगाना चाहता है कि औद्योगिक क्षेत्र (industrial sector) बढ़ेगा, वह **MCX iCOMDEX Base Metals Index** में trade करेगा।",
+      "exam_traps": [
+        "यह सोचना कि Nifty 50 एक commodity index है। यह एक stock index है।",
+        "यह मानना कि Bullion index में Crude Oil शामिल है। इसमें केवल Gold और Silver शामिल हैं।"
+      ],
+      "memory_trick": "iCOMDEX = Indian COMmodity Daily EXchange index."
+    }
+  ],
+  
+  "important_differences": [
+    {
+      "difference_between": "Contango बनाम Backwardation in Index Rolling",
+      "clear_explanation": "* **Contango:** Future price वर्तमान price से अधिक है। जब index 'rolls' (अगले महीने का खरीदता है) करता है, तो यह उच्च कीमत पर खरीदता है, जिससे **Negative Roll Yield** होता है।\n* **Backwardation:** Future price वर्तमान price से कम है। जब index 'rolls' करता है, तो यह कम कीमत पर खरीदता है, जिससे **Positive Roll Yield** होता है।"
+    }
+  ],
+  
+  "frequently_asked_exam_areas": [
+    "Total Return Index की परिभाषा (interest/collateral income शामिल है)।",
+    "Sectoral indices की पहचान (Bullion बनाम Base Metals)।",
+    "यह समझना कि index futures cash-settled होते हैं, physical नहीं।",
+    "'Rebalancing' की अवधारणा (basket में commodities के weights को समायोजित करना)।"
+  ],
+  
+  "quick_revision_summary": [
+    "Commodity indices बाज़ार के स्वास्थ्य को दिखाने के लिए वस्तुओं की 'basket' को track करते हैं।",
+    "Total Return = Price + Roll + Interest.",
+    "iCOMDEX मुख्य भारतीय index series है।",
+    "Diversification के लिए Indices बहुत अच्छे हैं क्योंकि commodities अक्सर stocks की तुलना में अलग तरह से चलते हैं।",
+    "Backwardation index धारकों (holders) के लिए एक positive roll yield बनाता है।"
+  ]
+}

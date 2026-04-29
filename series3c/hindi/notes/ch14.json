@@ -1,0 +1,94 @@
+{
+  "course": "NISM Series III-C: Securities Intermediaries Compliance (Fund)",
+  "unit_number": 14,
+  "unit_name": "SEBI (Mutual Fund) Regulations, 1996",
+  "weightage": "11",
+  "overview": "यह आपके syllabus के chapters का 'Big Daddy' है, जिसका weightage सबसे अधिक (11%) है। Mutual Funds आज भारतीयों के invest करने के सबसे popular तरीकों में से एक हैं। क्योंकि इसमें बहुत अधिक public money शामिल है, SEBI ने बहुत detailed rules बनाए हैं। यह chapter 'Three-Tier' structure (Sponsor-Trustee-AMC) को explain करता है, schemes कैसे launch की जाती हैं, वे कहाँ invest कर सकते हैं, और expenses पर strict limits क्या हैं। एक Compliance Officer के लिए, यह आपका daily bread and butter (रोजमर्रा का काम) है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. The Three-Tier Legal Structure",
+      "basic_meaning": "भारत में Mutual Funds को एक 'Trust' के रूप में set up किया जाता है जिसमें checks and balances सुनिश्चित करने के लिए तीन main players होते हैं।",
+      "detailed_explanation": "Step 1: **The Sponsor**. ये 'Promoter' होते हैं जो fund start करते हैं। उनका track record sound होना चाहिए (finance में 5 साल, जिनमें से 3 साल profit हो)। उन्हें AMC की net worth का कम से कम 40% contribute करना होगा। Step 2: **The Trustees**. ये 'Internal Watchdogs' हैं जो investors (unitholders) के पैसे को protect करते हैं। कम से कम 2/3rd (दो-तिहाई) trustees independent होने चाहिए (sponsor से related नहीं)। Step 3: **The AMC (Asset Management Company)**. यह वह office है जो असल में पैसे को 'manage' करता है, fund managers को hire करता है, और research करता है। AMC के कम से कम 50% directors independent होने चाहिए।",
+      "why_this_is_important": "Exam Importance: Questions अक्सर 'Independent Director' percentages (Trustees के लिए 2/3rd, AMC के लिए 50%) के बारे में पूछते हैं। Practical Importance: Compliance यह सुनिश्चित करता है कि इन separate entities में कोई 'Conflict of Interest' न हो।",
+      "formula": "AMC Net Worth = Minimum ₹50 Crores.",
+      "formula_explanation": "अपनी financial strength साबित करने के लिए AMC के पास हमेशा कम से कम 50 करोड़ रुपये की 'Net Worth' (capital) होनी चाहिए।",
+      "step_by_step_calculation_example": "अगर कोई Sponsor एक fund शुरू करना चाहता है, तो उसे 50cr AMC capital का 40% contribute करना होगा, जो कि उनकी अपनी जेब से ₹20 Crore होता है।",
+      "real_life_indian_example": "'HDFC Mutual Fund' में, HDFC Bank **Sponsor** है। HDFC Trustee Co. **Trustee** है, और HDFC Asset Management Co. **AMC** है।",
+      "exam_traps": [
+        "यह सोचना कि AMC पैसे का मालिक (owns) है। नहीं, **Trustee** investors के फायदे के लिए assets hold करता है।",
+        "Percentages में confuse होना: Trustees के लिए 2/3rd vs AMC directors के लिए 50%।"
+      ],
+      "memory_trick": "S.T.A = Sponsor (Starts), Trustee (Tracks), AMC (Acts/Manages)।"
+    },
+    {
+      "concept": "2. Classification of Mutual Fund Schemes",
+      "basic_meaning": "विभिन्न funds को इस आधार पर कैसे group किया जाता है कि वे कैसे operate करते हैं और क्या खरीदते हैं।",
+      "detailed_explanation": "1. **By Structure**: \n   - **Open-ended**: Investors units को daily buy/sell कर सकते हैं। कोई fixed maturity नहीं होती।\n   - **Close-ended**: केवल एक fixed period के लिए open होते हैं। Exit provide करने के लिए Units को Stock Exchange पर list होना चाहिए। \n2. **By Asset Class (SEBI Categorization)**: \n   - **Equity Funds**: कम से कम 65% stocks में invest करना चाहिए।\n   - **Debt Funds**: Bonds और fixed income में invest करते हैं।\n   - **Hybrid Funds**: Equity और debt का mix।\n   - **Liquid Funds**: बहुत short-term (91 days तक) debt instruments में invest करते हैं।",
+      "why_this_is_important": "Exam Importance: आपको Liquid funds के लिए '91 days' limit पता होनी चाहिए। Practical Importance: Compliance यह सुनिश्चित करता है कि fund manager गलती से 'Debt' fund में 'Equity' न खरीद ले।",
+      "formula": "Liquid Fund Maturity ≤ 91 Days.",
+      "formula_explanation": "एक liquid fund कोई ऐसा paper (instrument) नहीं खरीद सकता जिसे pay back होने में 3 महीने (91 days) से ज्यादा का समय लगे।",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "एक 'ELSS' (Tax Saving) fund एक open-ended equity fund है जिसमें 3 साल का lock-in period होता है। भले ही यह open-ended है, आप इसे 3 साल तक नहीं बेच सकते।",
+      "exam_traps": [
+        "यह सोचना कि close-ended funds को कभी भी AMC को वापस बेचा जा सकता है। नहीं, वे **Stock Exchange** पर बेचे जाते हैं।",
+        "याद रखें: Liquid funds '91 days' के लिए होते हैं—यह number एक classic exam question है।"
+      ],
+      "memory_trick": "Liquid = Quick (पानी की तरह)। इसलिए maturity बहुत short (91 days) होनी चाहिए।"
+    },
+    {
+      "concept": "3. Net Asset Value (NAV)",
+      "basic_meaning": "एक mutual fund scheme की एक unit का 'Price'।",
+      "detailed_explanation": "NAV fund के owned सभी assets (stocks, bonds, cash) की total market value लेकर, उसमें से expenses को घटाकर (subtract), और उसे units के total number से divide करके calculate किया जाता है। Open-ended schemes के लिए NAV हर business day calculate और publish किया जाना चाहिए।",
+      "why_this_is_important": "Exam Importance: NAV का Basic calculation अक्सर पूछा जाता है। Practical Importance: Compliance check करता है कि AMC NAV declare करने से पहले सभी 'Expenses' को सही ढंग से include कर रहा है या नहीं।",
+      "formula": "NAV = (Total Assets - Liabilities) / Total Number of Units.",
+      "formula_explanation": "यह fund की net 'worth' है जिसे investors द्वारा hold किए गए shares (units) की संख्या से divide किया जाता है।",
+      "step_by_step_calculation_example": "Fund Assets = ₹110 Crores. Liabilities = ₹10 Crores. Total Units = 1 Crore. \n1. Net Assets = 110 - 10 = ₹100 Crores. \n2. NAV = 100 Crores / 1 Crore units = ₹100 per unit.",
+      "real_life_indian_example": "अगर stock market ऊपर जाता है, तो Mutual Fund द्वारा hold किए गए shares की value बढ़ जाती है, जिससे आपकी scheme का NAV भी ऊपर जाता है।",
+      "exam_traps": [
+        "Units से divide करने से पहले liabilities/expenses को subtract करना भूल जाना।",
+        "International funds के लिए NAV time zones के कारण 1-day lag के साथ publish हो सकता है।"
+      ],
+      "memory_trick": "NAV = एक Mutual Fund का 'Share Price'।"
+    },
+    {
+      "concept": "4. Total Expense Ratio (TER)",
+      "basic_meaning": "वह annual fee जो AMC investors के पैसे को manage करने के लिए उनसे charge करता है।",
+      "detailed_explanation": "Fund को manage करने में पैसा लगता है (fund managers की salary, rent, marketing, brokers को commission)। इन सभी को 'Total Expense Ratio' में club कर दिया जाता है। SEBI ने कितना charge किया जा सकता है, इस पर strict 'Slabs' लगा दिए हैं। Generally, जैसे-जैसे fund बड़ा होता है (AUM बढ़ता है), expense का percentage DOWN होना चाहिए। एक 'Direct Plan' (कम expense क्योंकि कोई distributor commission नहीं) और एक 'Regular Plan' (ज्यादा expense) होता है।",
+      "why_this_is_important": "Exam Importance: Questions अक्सर पूछते हैं कि किस plan (Direct/Regular) का NAV ज्यादा होता है। Practical Importance: एक Compliance Officer का सबसे बड़ा काम यह ensure करना है कि AMC investors से overcharge न करे।",
+      "formula": "TER % = (Total Expenses / Average Daily Net Assets) * 100.",
+      "formula_explanation": "आपके पैसे का वह percentage जो management fees के रूप में हर साल 'disappear' (कट) हो जाता है।",
+      "step_by_step_calculation_example": "अगर एक fund के पास ₹1000 है और वह fees के रूप में ₹20 charge करता है, तो TER 2% है। अगर आप ₹1 Lakh invest करते हैं, तो आप NAV reduction के माध्यम से indirectly yearly management fees के रूप में ₹2,000 pay करते हैं।",
+      "real_life_indian_example": "अगर आप किसी fund का 'Direct Plan' खरीदते हैं, तो आपका NAV ₹102 हो सकता है, जबकि उसी fund के 'Regular Plan' का NAV ₹100 हो सकता है, क्योंकि Direct Plan में expenses कम होते हैं।",
+      "exam_traps": [
+        "Exam Trap: 'Direct plan का NAV कम होता है।' FALSE! Lower expenses का मतलब है HIGHER NAV.",
+        "Expenses daily charge किए जाते हैं लेकिन एक 'Annual' percentage के रूप में दिखाए जाते हैं।"
+      ],
+      "memory_trick": "TER = वह 'Tax' जो AMC आपके लिए काम करने के लिए लेता है।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Trustee vs AMC",
+      "clear_explanation": "1. Role: Trustee 'Guardian' (compliance की निगरानी करता है) है। AMC 'Manager' (investment decisions लेता है) है। 2. Control: Trustees AMC को fire (हटा) सकते हैं, लेकिन AMC Trustees को fire नहीं कर सकता।"
+    },
+    {
+      "difference_between": "Direct Plan vs Regular Plan",
+      "clear_explanation": "1. Commission: Direct plan में zero distributor commission होता है। Regular plan में commission include होता है। 2. NAV: Direct plan का NAV हमेशा higher होता है क्योंकि expenses कम होते हैं।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "NAV का Calculation (Assets - Liabilities / Units)।",
+    "Independent director requirements (Trustee: 2/3rd, AMC: 50%)।",
+    "Liquid Fund maturity rule (91 days तक)।",
+    "एक AMC के लिए Minimum net worth (₹50 Crores)।",
+    "Trustees को Reporting requirements (Half-yearly reports)।"
+  ],
+  "quick_revision_summary": [
+    "Mutual Fund Structure: Sponsor (Promoter) -> Trustee (Guardian) -> AMC (Manager)।",
+    "Open-ended funds daily liquidity offer करते हैं; Close-ended exchanges पर list होते हैं।",
+    "Equity funds (min 65% equity) vs Debt funds।",
+    "NAV unit price है, जो daily publish होता है।",
+    "TER (Expense Ratio) SEBI द्वारा capped है और Direct Plans के लिए कम होना चाहिए।",
+    "Trustees के पास unitholders के interests को protect करने की ultimate power होती है।"
+  ]
+}

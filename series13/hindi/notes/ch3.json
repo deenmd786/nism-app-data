@@ -1,0 +1,124 @@
+{
+  "course": "NISM Series XIII: Common Derivatives Certification Examination",
+  "unit_number": 3,
+  "unit_name": "Introduction to Forwards and Futures",
+  "weightage": "13% (20 Marks)",
+  "overview": "यह अध्याय exam का मूल (core) है। यह definitions से लेकर Futures वास्तव में कैसे काम करते हैं, इसकी वास्तविक कार्यप्रणाली (mechanics) तक जाता है। आप एक private 'Forward' डील और एक public 'Future' trade के बीच का अंतर सीखेंगे। यह Futures की price कैसे तय होती है (Cost of Carry) और मुनाफे/नुकसान (profits/losses) की गणना कैसे की जाती है, इसके math को भी कवर करता है। यहाँ से कम से कम 2-3 numerical questions की अपेक्षा करें।",
+  
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Forward Contracts (The Private Deal)",
+      "basic_meaning": "किसी asset को आज तय की गई कीमत पर भविष्य के एक निर्दिष्ट (specified) समय पर खरीदने या बेचने के लिए दो पक्षों के बीच एक अनुकूलित समझौता (customized agreement)।",
+      "detailed_explanation": "कल्पना करें कि आप अब से 3 महीने बाद एक विशिष्ट (specific) घर खरीदना चाहते हैं। आप मालिक से बात करते हैं और ₹50 Lakhs की कीमत पर सहमत होते हैं। यह एक **Forward Contract** है।\n\n**Key Features:**\n1. **OTC (Over The Counter):** यह एक private डील है, stock exchange पर trade नहीं की जाती है।\n2. **Customized:** आप और मालिक शर्तें तय करते हैं (कीमत, तारीख, फर्नीचर शामिल है या नहीं, आदि)।\n3. **Counterparty Risk:** यह सबसे बड़ी समस्या है। यदि property की कीमतें ₹30 Lakhs तक गिर जाती हैं, तो आप भाग सकते हैं (default कर सकते हैं)। यदि कीमतें बढ़कर ₹80 Lakhs हो जाती हैं, तो मालिक बेचने से इनकार कर सकता है। सौदे की गारंटी देने के लिए कोई पुलिस (Exchange) नहीं है।",
+      "why_this_is_important": "Forwards में 'Risk' (जोखिम) को समझने से यह स्पष्ट होता है कि हमें Futures की आवश्यकता क्यों (WHY) है (जो सुरक्षित हैं)।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "एक किसान एक रेस्तरां को 2 महीने बाद ₹20/kg पर 100 क्विंटल प्याज बेचने के लिए सहमत होता है। यदि प्याज की कीमतें ₹50/kg हो जाती हैं, तो किसान खुले बाजार में बेचने के लिए default कर सकता है (भाग सकता है)। यह Counterparty Risk है।",
+      "exam_traps": [
+        "यह सोचना कि Forwards तरल (liquid) हैं। (नहीं, आप आसानी से किसी private डील से बाहर नहीं निकल सकते)।",
+        "यह सोचना कि Forwards के लिए margin की आवश्यकता होती है। (आमतौर पर Futures के विपरीत, इसमें कोई margin का आदान-प्रदान नहीं होता है)।"
+      ],
+      "memory_trick": "Forward = Friends (अनौपचारिक/Informal, जोखिम भरा)। Future = Formal (सुरक्षित)।"
+    },
+    {
+      "concept": "2. Futures Contracts (The Standardized Deal)",
+      "basic_meaning": "एक Forward contract जो किसी Exchange (जैसे NSE/BSE) पर trade किया जाता है। Exchange व्यापार (trade) की गारंटी देने के लिए middleman (बिचौलिए) के रूप में कार्य करता है।",
+      "detailed_explanation": "Forwards के जोखिम को हल करने के लिए, exchanges ने Futures बनाए।\n\n**Key Features:**\n1. **Standardized:** आप quantity नहीं चुन सकते। आपको 'Lots' में ही खरीदना होगा (उदा., Nifty का 1 Lot = 50 units)। आप तारीख नहीं चुन सकते (Expiry निश्चित है, आमतौर पर महीने का अंतिम गुरुवार)।\n2. **Exchange Traded:** एक screen पर खरीदा और बेचा जाता है।\n3. **Novation (The Guarantee):** Clearing Corporation (CC) buyer और seller के बीच खड़ी होती है। यदि आप खरीदते हैं, तो CC आपके लिए seller बन जाती है। यदि आप बेचते हैं, तो CC buyer बन जाती है। यह Counterparty Risk को समाप्त (removes) करता है।",
+      "why_this_is_important": "यह परिभाषित करता है कि आधुनिक (modern) stock market कैसे काम करता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "आप Reliance Futures का 1 Lot खरीदते हैं। आप नहीं जानते कि इसे किसने बेचा (यह FII या retail trader हो सकता है)। आपको कोई परवाह नहीं है, क्योंकि NSE Clearing Corporation इस बात की गारंटी देता है कि आपको अपना मुनाफा मिलेगा।",
+      "exam_traps": [
+        "'Novation' को 'Arbitrage' के साथ confuse करना। Novation, Clearing Corp के middleman बनने की क्रिया (act) है।",
+        "यह सोचना कि आप Futures में 1 share trade कर सकते हैं। (नहीं, केवल Lots)।"
+      ],
+      "memory_trick": "Future = Fix (Fixed Size, Fixed Date, Fixed Rules)।"
+    },
+    {
+      "concept": "3. Important Terminology (Lot Size, Tick Size, Expiry)",
+      "basic_meaning": "Futures trading का शब्दकोश (dictionary)।",
+      "detailed_explanation": "1. **Spot Price (S):** Cash market में अभी asset की कीमत।\n2. **Futures Price (F):** भविष्य की डिलीवरी के लिए contract की कीमत।\n3. **Contract Value:** Spot Price × Lot Size.\n4. **Lot Size:** Shares की वह न्यूनतम संख्या (minimum number) जिसका आपको trade करना ही होगा (उदा., Nifty = 75 या 50, Reliance = 250)।\n5. **Expiry Date:** वह तारीख जब contract समाप्त होता है (महीने का अंतिम गुरुवार)।\n6. **Tick Size:** अनुमत न्यूनतम मूल्य संचलन (minimum price movement allowed) (आमतौर पर ₹0.05)।",
+      "why_this_is_important": "आप Lot Size के बिना profit/loss की गणना नहीं कर सकते।",
+      "formula": "Contract Value = Futures Price × Lot Size",
+      "formula_explanation": "यह आपको उस contract का कुल मूल्य (total worth) बताता है जिसे आप control कर रहे हैं।",
+      "step_by_step_calculation_example": "**Question:** Nifty Future 19,000 पर है। Lot size 50 है। Contract Value क्या है?\n\n**Answer:** \n19,000 * 50 = ₹9,50,000.\n(Note: आप इस पूरी राशि का भुगतान नहीं करते हैं, आप केवल Margin का भुगतान करते हैं, जो ~15% है)।",
+      "real_life_indian_example": "यदि Reliance ₹2500 है और Lot Size 250 है, तो आप ₹6.25 Lakhs मूल्य के shares को control कर रहे हैं।",
+      "exam_traps": [
+        "'Tick Size' (0.05) को 'Lot Size' (Quantity) के साथ confuse करना।",
+        "यह सोचना कि Contract Value वह है जो आप चुकाते हैं। (नहीं, आप Margin चुकाते हैं)।"
+      ],
+      "memory_trick": "Lot = Bundle. Tick = Step."
+    },
+    {
+      "concept": "4. Payoff Charts (Long बनाम Short)",
+      "basic_meaning": "आप कितना पैसा कमाते हैं या खोते हैं?",
+      "detailed_explanation": "1. **Long Futures (Buy):**\n    * **View:** Bullish (उम्मीद है कीमत UP जाएगी)।\n    * **Profit:** असीमित (Unlimited) (जैसे-जैसे कीमत ऊपर जाती है)।\n    * **Loss:** असीमित (Unlimited) (यदि कीमत गिरकर शून्य हो जाती है)।\n    * **Chart:** रेखा (Line) बाएं से दाएं UP (ऊपर) जाती है।\n\n2. **Short Futures (Sell):**\n    * **View:** Bearish (उम्मीद है कीमत DOWN जाएगी)।\n    * **Profit:** असीमित (Unlimited) (यदि कीमत गिरकर शून्य हो जाती है)।\n    * **Loss:** असीमित (Unlimited) (यदि कीमत बढ़कर अनंत/infinity हो जाती है)।\n    * **Chart:** रेखा (Line) बाएं से दाएं DOWN (नीचे) जाती है।",
+      "why_this_is_important": "Derivatives एक 'Zero Sum Game' है। यदि Mr. A ₹100 कमाता है, तो Mr. B को ₹100 खोना ही होगा (MUST)। कुल संपत्ति (total wealth) समान रहती है।",
+      "formula": "Long Profit = (Closing Price - Buying Price) × Lot Size\nShort Profit = (Selling Price - Closing Price) × Lot Size",
+      "formula_explanation": "साधारण अंतर (Simple difference) को quantity से गुणा (multiplied) किया गया।",
+      "step_by_step_calculation_example": "**Scenario:** आप ₹3200 पर TCS Futures Short (Sell) करते हैं। Lot Size 200 है। कीमत बढ़कर ₹3300 हो जाती है।\n\n**Calculation:**\nSelling Price = 3200\nClosing Price = 3300\nLoss = (3300 - 3200) * 200 = 100 * 200 = ₹20,000 Loss.",
+      "real_life_indian_example": "Adani के stocks में गिरावट आने पर Short sellers ने भारी मुनाफा कमाया। Long holders ने पैसा खो दिया।",
+      "exam_traps": [
+        "यह सोचना कि Shorting में नुकसान सीमित है। (नहीं, यदि stock चाँद (moon) पर चला जाता है, तो नुकसान अनंत/infinite है)।",
+        "Lot Size से गुणा (multiply) करना भूल जाना।"
+      ],
+      "memory_trick": "Long = Love (चाहते हैं कि यह ऊपर जाए)। Short = Scared (चाहते हैं कि यह नीचे जाए)।"
+    },
+    {
+      "concept": "5. Pricing: Cost of Carry Model",
+      "basic_meaning": "हम Future की उचित कीमत (fair price) कैसे तय करते हैं? Future price आमतौर पर Spot से अधिक क्यों होता है?",
+      "detailed_explanation": "Future Price random (यादृच्छिक) नहीं है। इसकी गणना इस प्रकार की जाती है:\n**Spot Price + asset को Hold करने की Cost**.\n\nयदि आप आज (Spot) सोना खरीदते हैं, तो आपको पैसे (Interest cost) चुकाने होंगे और लॉकर के लिए (Storage cost) भुगतान करना होगा। यदि आप Gold Future खरीदते हैं, तो आप आज भुगतान नहीं करते हैं। इसलिए, seller आपसे वह अतिरिक्त लागत (extra cost) वसूलता है।\n\n**Cost of Carry (CoC) = Interest Cost - Income (Dividends)**.\n\nयदि Cost of Carry Positive है, Future Price > Spot Price (Contango).\nयदि Cost of Carry Negative है (High dividends), Future Price < Spot Price (Backwardation).",
+      "why_this_is_important": "Spot और Future prices के बीच संबंध (relationship) की व्याख्या करता है।",
+      "formula": "F = S + (S × r × t) - D",
+      "formula_explanation": "F=Future, S=Spot, r=Interest Rate, t=Time to expiry (अवधि), D=अनुमानित Dividend.",
+      "step_by_step_calculation_example": "**Given:** Spot Price = 1000. Interest Rate = 10% p.a. Time = 1 month (1/12 year). कोई Dividend नहीं।\n\n**Calculation:**\nCost of Carry = 1000 * 0.10 * (1/12) = 8.33\nFair Future Price = 1000 + 8.33 = 1008.33",
+      "real_life_indian_example": "आमतौर पर, interest rates के कारण Nifty Futures 'Premium' (Nifty Spot से अधिक) पर trade करते हैं। यदि Infosys भारी dividend की घोषणा करता है, तो Infosys Futures 'Discount' (Spot से कम) पर trade कर सकते हैं।",
+      "exam_traps": [
+        "'Time' को वर्षों (years) में बदलना भूल जाना (उदा., 3 महीने = 3/12)।",
+        "यह सोचना कि Futures हमेशा अधिक होते हैं। (यदि dividends हैं तो नहीं!)।"
+      ],
+      "memory_trick": "Future = Spot + Interest - Dividend."
+    },
+    {
+      "concept": "6. Convergence",
+      "basic_meaning": "अंतिम दिन (Expiry) पर, Spot Price और Future Price बराबर हो जाते हैं।",
+      "detailed_explanation": "जैसे-जैसे expiry date करीब आती है, हमारे formula में 'Time' (t) शून्य (zero) हो जाता है। \nइसलिए, Cost of Carry शून्य हो जाती है।\nइसलिए, F = S + 0. \nExpiry के दिन: **Future Price = Spot Price**.\n\nयदि वे बराबर नहीं हैं, तो arbitrageurs सस्ते वाले को खरीदेंगे और महंगे वाले को तब तक बेचेंगे जब तक कि वे बराबर न हो जाएं।",
+      "why_this_is_important": "यह गारंटी देता है कि derivative market वास्तविकता (reality) से जुड़ा रहे।",
+      "formula": "Expiry पर: F = S",
+      "formula_explanation": "कोई समय नहीं बचा, इसलिए कोई interest cost नहीं।",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "महीने के अंतिम गुरुवार को 3:30 PM पर, Nifty Spot 18,200 है। Nifty Future भी बिल्कुल 18,200 ही होगा।",
+      "exam_traps": [
+        "यह सोचना कि Convergence हर दिन होता है। (नहीं, केवल Expiry पर)।",
+        "यह सोचना कि Expiry पर Future, Spot से अधिक हो सकता है। (arbitrage के कारण असंभव)।"
+      ],
+      "memory_trick": "अंतिम रेखा (finish line) पर, हर कोई एक ही बिंदु (same point) पर होता है।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Forward बनाम Future (सबसे महत्वपूर्ण तालिका - Most Important Table)",
+      "clear_explanation": "1. **Place:** Forward = OTC (Private). Future = Exchange (Public).\n2. **Risk:** Forward = उच्च Counterparty Risk. Future = शून्य Counterparty Risk (Novation).\n3. **Terms:** Forward = Customized. Future = Standardized.\n4. **Settlement:** Forward = अंत में (At the end). Future = दैनिक (Daily / MTM)."
+    },
+    {
+      "difference_between": "Long बनाम Short",
+      "clear_explanation": "1. **Long:** आप पहले खरीदते (Buy) हैं। आप कीमत का UP जाना चाहते हैं। Max Loss = कीमत 0 हो जाना।\n2. **Short:** आप पहले बेचते (Sell) हैं। आप कीमत का DOWN जाना चाहते हैं। Max Loss = असीमित (Unlimited) (कीमत अनंत/infinity हो जाना)।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "पहचाने कि कोई contract Forward है या Future विशेषताओं (Customized बनाम Standardized) के आधार पर।",
+    "Cost of Carry (Simple interest formula) का उपयोग करके Future की 'Fair Value' की गणना करें।",
+    "Expiry पर क्या होता है? (Convergence: F = S)।",
+    "Counterparty Guarantee कौन लेता है? (Clearing Corporation)।"
+  ],
+  "quick_revision_summary": [
+    "Forward = Private, Risky, Customized.",
+    "Future = Public, Safe (Novation), Standardized.",
+    "Long = Buy (Bullish). Short = Sell (Bearish).",
+    "F = S + Cost of Carry.",
+    "Cost of Carry = Interest - Dividends.",
+    "Expiry पर, F = S (Convergence)."
+  ]
+}

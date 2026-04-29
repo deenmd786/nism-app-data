@@ -1,0 +1,74 @@
+{
+  "course": "NISM Series XVI: Commodity Derivatives Certification Examination",
+  "unit_number": 9,
+  "unit_name": "Accounting and Taxation",
+  "weightage": "5%",
+  "overview": "यह अध्याय ट्रेडिंग के वित्तीय 'aftermath' (परिणाम) पर केंद्रित है—विशेष रूप से किताबों में ट्रेडों को कैसे रिकॉर्ड किया जाए और सरकार को आपको कौन से टैक्स देने होंगे। हालांकि इसका weightage 5% है, यह पास होने के लिए महत्वपूर्ण है क्योंकि इसमें CTT और GST जैसे विशिष्ट शब्द शामिल हैं। NISM परीक्षा के लिए, आपको यह समझना होगा कि agri बनाम non-agri उत्पादों पर कौन से टैक्स लागू होते हैं और business income को कैसे माना जाता है। यह आपकी ट्रेडिंग रणनीतियों (trading strategies) में 'लागत' (cost) की परत जोड़कर पहले के तकनीकी अध्यायों से जुड़ता है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Commodity Transaction Tax (CTT)",
+      "basic_meaning": "CTT एक टैक्स है जो सरकार तब लगाती है जब आप एक्सचेंज पर कोई non-agricultural (गैर-कृषि) कमोडिटी अनुबंध बेचते हैं।",
+      "detailed_explanation": "CTT के बारे में मुख्य बिंदु:\n\n* **Introduction:** इसे 2013 में कमोडिटी बाजारों को इक्विटी बाजारों के बराबर लाने के लिए पेश किया गया था।\n* **Who pays?** Futures के लिए, यह केवल **Seller** (विक्रेता) पर लगाया जाता है। Options के लिए, यह भी **Seller** (Option Writer) पर लगाया जाता है।\n* **Exemptions (छूट):** कृषि क्षेत्र (farm sector) के लिए ट्रेडिंग लागत कम रखने के लिए अधिकांश **Agricultural Commodities** (कृषि वस्तुओं) को CTT से छूट दी गई है।\n* **Rate:** यह कुल अनुबंध मूल्य (contract value) का एक छोटा प्रतिशत (वर्तमान में futures के लिए 0.01%) है।",
+      "why_this_is_important": "NISM अक्सर पूछता है कि किन वस्तुओं (commodities) को CTT से छूट प्राप्त है। यह जानना कि यह ज्यादातर 'Agri' है, एक फ्री मार्क (free mark) है।",
+      "formula": "CTT = Contract Value × CTT Rate",
+      "formula_explanation": "आपके द्वारा बेचे गए माल के कुल मूल्य (total value) को सरकार की टैक्स दर से गुणा करें।",
+      "step_by_step_calculation_example": "Scenario: Dean ₹70,00,000 मूल्य के Gold futures का 1 लॉट बेचता है।\n\n* **CTT Rate:** 0.01%.\n* **Calculation:** 70,00,000 × 0.0001 = **₹700**.\n* **Result:** इस बिक्री के लिए सरकारी टैक्स के रूप में Dean के खाते से ₹700 काटे जाएंगे।",
+      "real_life_indian_example": "यदि आप MCX पर Crude Oil या Silver का व्यापार करते हैं, तो आपको अपने contract note में 'CTT' की एक लाइन दिखाई देगी। यदि आप NCDEX पर Guar Seed का व्यापार करते हैं, तो वह लाइन संभवतः ₹0 होगी क्योंकि यह एक agri-commodity है।",
+      "exam_traps": [
+        "यह सोचना कि futures में 'Buyer' CTT का भुगतान करता है। केवल Seller भुगतान करता है।",
+        "CTT को STT के साथ confuse करना। STT Stocks के लिए है; CTT Commodities के लिए है।"
+      ],
+      "memory_trick": "CTT = Commodities Tax on Traders. 'Agri' मुफ्त है (Exempt/छूट)।"
+    },
+    {
+      "concept": "2. GST on Commodity Trading",
+      "basic_meaning": "GST ब्रोकर द्वारा प्रदान की जाने वाली 'Service' (सेवा) पर लगाया जाता है, और कभी-कभी स्वयं भौतिक वस्तुओं (physical goods) पर भी।",
+      "detailed_explanation": "GST कैसे लागू होता है:\n\n1. **On Brokerage:** ब्रोकर आपको एक service प्रदान करता है। इस सेवा पर **18% GST** लगता है। यह आपके ट्रेडिंग शुल्कों (trading charges) और एक्सचेंज फीस पर लागू होता है।\n2. **On Physical Delivery:** यदि आप किसी कमोडिटी (जैसे Gold) की भौतिक डिलीवरी (physical delivery) लेते हैं, तो इसे 'Sale of Goods' (माल की बिक्री) माना जाता है। आपको उस विशिष्ट वस्तु पर लागू GST का भुगतान करना होगा (उदा., **सोने के लिए 3%**)।\n3. **Input Tax Credit (ITC):** यदि आप एक GST-registered व्यवसाय (business) हैं, तो आप अपनी अन्य कर देनदारियों (tax liabilities) को कम करने के लिए ब्रोकरेज पर भुगतान किए गए GST को क्रेडिट के रूप में दावा (claim) कर सकते हैं।",
+      "why_this_is_important": "ब्रोकरेज के लिए 18% दर जानना एक मानक तकनीकी प्रश्न (standard technical question) है।",
+      "formula": "GST on Brokerage = Brokerage Amount × 18%",
+      "formula_explanation": "आप अपने ब्रोकर को जो फीस देते हैं उसका 18%।",
+      "step_by_step_calculation_example": "Scenario: Dean एक ट्रेड के लिए ब्रोकरेज के रूप में ₹200 का भुगतान करता है।\n\n* **GST Rate:** 18%.\n* **Calculation:** 200 × 0.18 = **₹36**.\n* **Total Cost:** ₹236 (Brokerage + GST).",
+      "real_life_indian_example": "जब Dean की एजेंसी, Digroz, अपनी कंपनी के hedging ट्रेडों के लिए एक contract note प्राप्त करती है, तो वे देखेंगे कि ब्रोकरेज में 18% GST जोड़ा गया है। चूंकि Digroz एक व्यवसाय है, वे इस ₹36 का उपयोग अपने डिजिटल मार्केटिंग ग्राहकों से एकत्र किए गए GST की भरपाई (offset) करने के लिए कर सकते हैं।",
+      "exam_traps": [
+        "यह सोचना कि *Gold* की कीमत पर GST 18% है। यह केवल *Service fee* पर है। माल (good) पर ही एक अलग दर (3%) है।",
+        "यह भूल जाना कि ट्रेडिंग के संदर्भ में GST एक 'Service Tax' है।"
+      ],
+      "memory_trick": "Service = 18. Gold = 3."
+    },
+    {
+      "concept": "3. Income Tax Treatment (PGBP)",
+      "basic_meaning": "कमोडिटी ट्रेडिंग से होने वाले लाभ (Profit) को टैक्स उद्देश्यों के लिए नियमित 'Business Income' माना जाता है।",
+      "detailed_explanation": "Tax Rules:\n\n* **Nature of Income:** कमोडिटी डेरिवेटिव्स में ट्रेडिंग को **Non-Speculative Business Income** माना जाता है (बशर्ते यह किसी मान्यता प्राप्त एक्सचेंज पर किया गया हो)।\n* **Head of Income:** 'Profits and Gains of Business or Profession' (PGBP) के तहत रिपोर्ट किया जाता है।\n* **Set-off of Losses:** चूंकि यह non-speculative है, आप इन नुकसानों (losses) को किसी भी अन्य व्यावसायिक आय (business income) या किराये की आय (rental income) के खिलाफ set off (समायोजित) कर सकते हैं (लेकिन salary के खिलाफ नहीं)।\n* **Carry Forward:** आप भविष्य के मुनाफे के खिलाफ समायोजित करने के लिए व्यावसायिक नुकसान (business losses) को **8 साल** तक carry forward (आगे ले जाना) कर सकते हैं।",
+      "why_this_is_important": "NISM परीक्षण करता है कि क्या आप जानते हैं कि कमोडिटी डेरिवेटिव्स 'Non-Speculative' हैं। ट्रेडर्स के लिए यह एक बहुत बड़ा फायदा है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Scenario: Dean ट्रेडिंग से ₹1,00,000 का मुनाफा कमाता है लेकिन सॉफ्टवेयर पर ₹20,000 और इंटरनेट/कार्यालय पर ₹10,000 खर्च करता है।\n\n* **Taxable Income:** 1,00,000 - 30,000 = **₹70,000**.\n* **Result:** वह केवल शुद्ध (net) ₹70,000 पर आयकर (income tax) देता है।",
+      "real_life_indian_example": "यदि दिल्ली में किसी full-time ट्रेडर का साल खराब रहता है और उसे Crude Oil ट्रेडिंग में ₹2 लाख का नुकसान होता है, तो वे उस ₹2 लाख को अपने दूसरे व्यवसाय (जैसे वेब डेवलपमेंट) में कमाए गए मुनाफे से घटा सकते हैं ताकि कम टैक्स देना पड़े।",
+      "exam_traps": [
+        "कमोडिटी ट्रेडिंग को intraday equity की तरह 'Speculative' (सट्टा) समझना। यह नहीं है; यह Non-Speculative है।",
+        "यह सोचना कि आप Salary income के खिलाफ ट्रेडिंग के नुकसान को set off कर सकते हैं। आप नहीं (CANNOT) कर सकते।"
+      ],
+      "memory_trick": "Commodities = Clean Business (Non-Speculative)."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Speculative vs. Non-Speculative Income",
+      "clear_explanation": "* **Speculative:** Intraday equity ट्रेडिंग। नुकसान (Losses) को केवल speculative मुनाफे के खिलाफ समायोजित (adjusted) किया जा सकता है।\n* **Non-Speculative:** Commodity derivatives (एक्सचेंज पर)। नुकसान को अधिकांश अन्य व्यावसायिक आय (business incomes) के खिलाफ समायोजित किया जा सकता है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "CTT केवल non-agri commodities के लिए है।",
+    "Futures पर CTT केवल Seller (विक्रेता) द्वारा भुगतान किया जाता है।",
+    "कमोडिटी डेरिवेटिव ट्रेडिंग Non-Speculative Business Income है।",
+    "ब्रोकरेज और एक्सचेंज शुल्कों पर GST दर 18% है।",
+    "नुकसान (Losses) को 8 साल तक carry forward किया जा सकता है।"
+  ],
+  "quick_revision_summary": [
+    "CTT = non-agri की बिक्री पर 0.01%।",
+    "GST = फीस (ब्रोकरेज/एक्सचेंज) पर 18%।",
+    "आय (Income) को PGBP (Business Income) माना जाता है।",
+    "Derivatives कानूनी रूप से 'Non-Speculative' हैं।",
+    "अपने लेजर (ledger) में MTM मुनाफा/नुकसान दैनिक (daily) दर्ज करें।"
+  ]
+}

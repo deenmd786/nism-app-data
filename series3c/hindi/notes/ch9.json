@@ -1,0 +1,78 @@
+{
+  "course": "NISM Series III-C: Securities Intermediaries Compliance (Fund)",
+  "unit_number": 9,
+  "unit_name": "Prevention of Money Laundering Act, 2002 (PMLA)",
+  "weightage": "7",
+  "overview": "Money laundering एक ऐसी प्रक्रिया है जिसमें 'dirty money' (drugs या fraud जैसे अपराधों से कमाया गया पैसा) को 'clean' (legal) दिखाया जाता है। यह चैप्टर PMLA 2002 को कवर करता है, जो इससे लड़ने के लिए भारत में मुख्य law है। एक Compliance Officer के लिए, यह सबसे critical चैप्टर्स में से एक है क्योंकि इसमें failure की penalty सिर्फ fines नहीं, बल्कि jail time भी है। आप सीखेंगे कि criminals कैसे पैसा छिपाते हैं और एक intermediary के रूप में उन्हें रोकने की आपकी क्या duty है। यह Chapter 10 (KYC) से जुड़ता है क्योंकि अपने customer को जानना (knowing your customer) money laundering को रोकने का पहला step है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Money Laundering के Three Stages",
+      "basic_meaning": "Criminals द्वारा illegal cash को legal-looking assets में बदलने की step-by-step प्रक्रिया।",
+      "detailed_explanation": "Criminals आमतौर पर तीन stages को follow करते हैं: \n1. **Placement**: यह पहला और सबसे riskiest stage है। 'Dirty' cash को financial system में introduce किया जाता है। उदाहरण के लिए, कई अलग-अलग bank accounts में cash के छोटे amounts deposit करना। \n2. **Layering**: यह सबसे complex stage है। पैसे को कई accounts और देशों के माध्यम से घुमाया जाता है ताकि confusion की 'layers' बन सकें। इससे police के लिए source का पता लगाना बहुत मुश्किल हो जाता है। \n3. **Integration**: यह 'final' stage है। अब साफ हो चुका पैसा (cleaned money) legal assets जैसे property, luxury cars, या stocks खरीदने के लिए उपयोग किया जाता है। दुनिया की नज़र में, ऐसा लगता है कि व्यक्ति ने इन्हें honest earnings का उपयोग करके खरीदा है।",
+      "why_this_is_important": "Exam Importance: बहुत ज्यादा। अक्सर आपसे किसी उदाहरण से stage identify करने के लिए पूछा जाएगा। Practical Importance: इन stages को समझने से आपको customer behavior में 'red flags' को पहचानने में मदद मिलती है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "एक corrupt official के पास cash में ₹1 crore हैं। \n- **Placement**: वह यह cash 100 'smurfs' (helpers) को देता है जो प्रत्येक अपने accounts में ₹1 lakh deposit करते हैं। \n- **Layering**: पैसा Dubai में एक shell company को transfer किया जाता है, फिर Singapore में एक trust को। \n- **Integration**: Singapore trust Mumbai में एक luxury flat खरीदता है। Official के पास अब एक 'legal' flat है।",
+      "exam_traps": [
+        "'Layering' को 'Placement' के साथ confuse करना। याद रखें: Placement system में *entry* है; Layering इसे इधर-उधर *घूमाना* (moving) है।",
+        "यह सोचना कि money laundering में केवल cash शामिल है। इसमें digital assets और property भी शामिल हो सकते हैं।"
+      ],
+      "memory_trick": "P.L.I = Put it in (Placement), Layer it up (Layering), Invest it (Integration)।"
+    },
+    {
+      "concept": "2. Intermediaries की Obligations (KYC और CDD)",
+      "basic_meaning": "एक firm की यह legal duty कि वे verify करें कि उनके clients कौन हैं और उनका पैसा कहाँ से आ रहा है।",
+      "detailed_explanation": "हर intermediary (जैसे Mutual Fund या Broker) को यह करना अनिवार्य है: \n1. **KYC (Know Your Customer)**: ID और address proofs collect करना। \n2. **Client Due Diligence (CDD)**: 'Beneficial Owner' (वह असली व्यक्ति जिसका पैसा है, भले ही वह किसी company के नाम के पीछे हो) को खोजने के लिए गहराई में जाना। \n3. **Enhanced Due Diligence (EDD)**: 'High Risk' clients जैसे Politically Exposed Persons (PEPs) - उदा., राजनेताओं या उनके परिवार के सदस्यों के लिए extra checks।",
+      "why_this_is_important": "Exam Importance: Questions अक्सर 'Beneficial Owner' threshold के बारे में पूछते हैं। Practical Importance: यदि आप उचित KYC नहीं करते हैं, तो आपकी firm को market से ban किया जा सकता है।",
+      "formula": "Beneficial Owner Threshold: आमतौर पर companies के लिए 25% और partnerships के लिए 15%।",
+      "formula_explanation": "यदि कोई व्यक्ति किसी ऐसी company में 25% से अधिक का मालिक है जो आपका client है, तो आपको उस व्यक्ति को 'Beneficial Owner' के रूप में identify करना होगा।",
+      "step_by_step_calculation_example": "एक company 'A Ltd' आपके fund में invest करना चाहती है। इसमें 30% ownership Mr. X की है और 70% अन्य छोटे investors की है। चूँकि Mr. X के पास > 25% है, आपको Mr. X का Beneficial Owner के रूप में full KYC check करना होगा।",
+      "real_life_indian_example": "जब आप एक Demat account खोलते हैं, तो broker आपका PAN card मांगता है और 'In-person Verification' (IPV) करता है। यह उनकी PMLA obligation का हिस्सा है ताकि यह सुनिश्चित हो सके कि आप एक असली व्यक्ति हैं और laundering के लिए उपयोग की जाने वाली fake identity नहीं हैं।",
+      "exam_traps": [
+        "यह सोचना कि PEPs को invest करने से ban किया गया है। नहीं, वे सिर्फ 'High Risk' हैं और उन्हें अधिक checks की आवश्यकता होती है।",
+        "यह भूल जाना कि CDD एक 'on-going' प्रक्रिया होनी चाहिए, न कि शुरुआत में केवल एक बार का check।"
+      ],
+      "memory_trick": "CDD = Check, Double-check, और Document।"
+    },
+    {
+      "concept": "3. Record Keeping और Reporting",
+      "basic_meaning": "कई वर्षों तक transaction data को store करने और सरकार को suspicious activity की report करने की duty।",
+      "detailed_explanation": "1. **Record Keeping**: प्रत्येक intermediary को relationship समाप्त होने की date से कम से कम **5 वर्षों** तक सभी transactions (और client identities) का record रखना अनिवार्य (MUST) है। \n2. **Principal Officer**: प्रत्येक firm को PMLA compliance के लिए जिम्मेदार एक 'Principal Officer' नियुक्त करना होगा। \n3. **Reporting to FIU-IND**: Firms को Financial Intelligence Unit - India (FIU-IND) को specific transactions की report करनी होती है। \n- **CTR (Cash Transaction Report)**: एक महीने में > ₹10 Lakhs के cash transactions के लिए। \n- **STR (Suspicious Transaction Report)**: किसी भी ऐसे transaction के लिए जो crime 'महसूस' (feels) होता हो, चाहे amount कुछ भी हो। Suspicious लगने के 7 दिनों के भीतर इसे file किया जाना चाहिए।",
+      "why_this_is_important": "Exam Importance: '5-year' rule और '₹10 Lakh' threshold बहुत common questions हैं। Practical Importance: STR file करने में देरी से Compliance Officer पर भारी fines लग सकते हैं।",
+      "formula": "CTR Threshold = > ₹10,00,000 (10 Lakhs) प्रति माह (per month)।",
+      "formula_explanation": "यदि कोई client एक महीने में कुल 10 लाख से अधिक cash deposit करता है, तो उसे report किया जाना चाहिए।",
+      "step_by_step_calculation_example": "एक client उसी महीने में सोमवार को cash में ₹4 लाख, बुधवार को ₹4 लाख, और शुक्रवार को ₹3 लाख deposit करता है। Total = ₹11 लाख। इसे CTR के रूप में report किया जाना MUST है क्योंकि यह ₹10 लाख की limit को पार कर गया है।",
+      "real_life_indian_example": "बिना किसी income वाला एक छात्र अचानक Mutual Fund में ₹50 लाख invest करता है। भले ही पैसा cash न हो, Compliance Officer को एक **STR** file करनी चाहिए क्योंकि transaction client के profile से match नहीं करता है।",
+      "exam_traps": [
+        "5-year rule को confuse करना। यह client द्वारा account close करने के 5 साल *बाद* तक है, न कि पहले trade से 5 साल।",
+        "SEBI बनाम FIU-IND को report करना। PMLA reports (CTR/STR) **FIU-IND** को जाती हैं, SEBI को नहीं।"
+      ],
+      "memory_trick": "Records को 5 (years) के लिए रखें, 10 (Lakhs) को report करें, और suspicious वाले के लिए STR करें।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Principal Officer बनाम Compliance Officer",
+      "clear_explanation": "1. Principal Officer (PMLA): विशेष रूप से FIU-IND को money laundering activity की निगरानी और report करने के लिए जिम्मेदार। 2. Compliance Officer: सभी SEBI rules के समग्र पालन (overall adherence) के लिए जिम्मेदार। Note: छोटी firms में, एक व्यक्ति दोनों कार्य कर सकता है, लेकिन उनके 'roles' कानूनी रूप से (legally) अलग हैं।"
+    },
+    {
+      "difference_between": "CTR बनाम STR",
+      "clear_explanation": "1. CTR (Cash Transaction Report): एक fixed amount (> ₹10 Lakhs cash) पर आधारित। किसी 'suspicion' की आवश्यकता नहीं; यदि amount hit हो जाता है, तो उसे report करें। 2. STR (Suspicious Transaction Report): 'Gut feeling' या अजीब (weird) behavior पर आधारित। कोई minimum amount नहीं; यहां तक कि ₹100 को भी report किया जा सकता है यदि यह crime जैसा लगता है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Stages का सही order identify करना: Placement -> Layering -> Integration।",
+    "Cash transactions को report करने का threshold (₹10 Lakhs)।",
+    "Records को कितने समय तक रखना है (relationship खत्म होने के 5 साल बाद तक)।",
+    "Reports के लिए central receiving agency के रूप में FIU-IND का role।"
+  ],
+  "quick_revision_summary": [
+    "Money Laundering: Placement (entry), Layering (hiding), Integration (legalizing)।",
+    "KYC बेस (base) है; कंपनियों के लिए Beneficial Ownership threshold 25% है।",
+    "Record Keeping: Account closure के 5 साल बाद तक।",
+    "CTR (Cash > 10L) और STR (Suspicious) को FIU-IND को report करें।",
+    "PMLA reporting के लिए Principal Officer प्रमुख (key) व्यक्ति है।",
+    "Non-compliance से कठोर कारावास (rigorous imprisonment) और fines हो सकते हैं।"
+  ]
+}

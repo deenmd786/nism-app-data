@@ -1,0 +1,92 @@
+{
+  "course": "NISM Series XV: Research Analyst",
+  "unit_number": 10,
+  "unit_name": "Valuation Principles",
+  "weightage": "12 Marks",
+  "overview": "Valuation रिसर्च एनालिसिस का दिल (heart) है। यह चैप्टर आपको सिखाता है कि यह तय करने के लिए स्टॉक की 'Fair Price' (उचित मूल्य) की गणना कैसे करें कि यह 'Buy' (खरीदना) है या 'Sell' (बेचना)। परीक्षा में इसका वेटेज (weightage) सबसे अधिक है और यह बहुत तकनीकी (technical) है। आप सीखेंगे कि भविष्य के कैश (DCF) के आधार पर और उसके पड़ोसियों से तुलना करके (Relative Valuation) किसी कंपनी का मूल्यांकन कैसे करें।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Discounted Cash Flow (DCF) Valuation",
+      "basic_meaning": "DCF यह पूछने जैसा है: 'यदि यह कंपनी मुझे अगले 10 वर्षों तक हर साल ₹100 देगी, तो मुझे आज इसके लिए कितना भुगतान करना चाहिए?'",
+      "detailed_explanation": "DCF एक 'Intrinsic Valuation' (आंतरिक मूल्यांकन) विधि है। यह मानती है कि कंपनी की वैल्यू भविष्य में कमाए जाने वाले सभी कैश का योग (sum) है, जिसे 'Discount Rate' का उपयोग करके आज की वैल्यू में वापस लाया जाता है।\n1. **Forecast:** आप 5-10 वर्षों के लिए कंपनी के Free Cash Flows (FCF) की भविष्यवाणी करते हैं।\n2. **Terminal Value:** आप अनुमान लगाते हैं कि पूर्वानुमान (forecast) अवधि के अंत में कंपनी की वैल्यू क्या होगी।\n3. **Discounting:** आप भविष्य की उन वैल्यूज़ को आज के रुपयों में सिकोड़ने (shrink) के लिए एक दर (आमतौर पर WACC) का उपयोग करते हैं।\n4. **Intrinsic Value:** इन सभी रियायती (discounted) वैल्यूज़ का योग (sum)।",
+      "why_this_is_important": "NISM, DCF के पीछे के सिद्धांत (theory) का गहराई से परीक्षण करता है। यह किसी व्यवसाय को महत्व (value) देने का सबसे तार्किक (logically sound) तरीका है।",
+      "formula": "$Value = \\frac{CF_1}{(1+r)^1} + \\frac{CF_2}{(1+r)^2} + ... + \\frac{Terminal Value}{(1+r)^n}$",
+      "formula_explanation": "CF = Cash Flow, r = Discount Rate, n = Year. भविष्य के कैश की 'Present Value' जानने के लिए हम उसे रेट से विभाजित (divide) करते हैं।",
+      "step_by_step_calculation_example": "एक कंपनी 1 वर्ष में आपको ₹110 देगी। Discount rate 10% है।\nPresent Value = 110 / (1 + 0.10)^1 = ₹100.\nतो, आज व्यवसाय की वैल्यू ₹100 है।",
+      "real_life_indian_example": "विश्लेषक **HUL** या **TCS** जैसी स्थिर कंपनियों के लिए DCF का उपयोग करते हैं क्योंकि ऐतिहासिक रुझानों के आधार पर उनके भविष्य के कैश फ्लो का अनुमान लगाना आसान होता है।",
+      "exam_traps": [
+        "यह सोचना कि DCF एक अल्पकालिक (short-term) टूल है। नहीं, यह लंबी अवधि (long-term) 'Intrinsic' वैल्यू के लिए है।",
+        "'Discount Rate' को कंफ्यूज करना। यदि ब्याज दरें बढ़ती (UP) हैं, तो DCF वैल्यू कम (DOWN) हो जाती है।"
+      ],
+      "memory_trick": "DCF = 'D'iscounting 'C'ash from the 'F'uture (भविष्य से कैश को डिस्काउंट करना)।"
+    },
+    {
+      "concept": "2. Relative Valuation (Multiples)",
+      "basic_meaning": "समान कंपनियों से तुलना करके किसी स्टॉक को महत्व (value) देना, जैसे एक ही कॉलोनी में दो घरों के प्रति वर्ग फुट की कीमत की तुलना करना।",
+      "detailed_explanation": "भविष्य की भविष्यवाणी करने के बजाय, आप देखते हैं कि बाज़ार (market) वर्तमान में समान कंपनियों के लिए क्या भुगतान कर रहा है। सामान्य Multiples में शामिल हैं:\n1. **P/E Ratio (Price-to-Earnings):** लाभदायक, स्थिर कंपनियों के लिए सर्वश्रेष्ठ।\n2. **P/B Ratio (Price-to-Book):** बैंकों और वित्तीय कंपनियों के लिए सर्वोत्तम जहाँ संपत्ति (assets) ज्यादातर नकद (cash) होती है।\n3. **EV/EBITDA:** भारी उद्योगों (स्टील, पावर) के लिए सर्वश्रेष्ठ क्योंकि यह ऋण (debt) और कर (tax) के अंतर को नज़रअंदाज़ करता है।\n4. **Price-to-Sales:** उच्च-विकास वाले (high-growth) स्टार्टअप्स के लिए उपयोग किया जाता है जो अभी तक लाभ नहीं कमा रहे हैं।",
+      "why_this_is_important": "परीक्षा अक्सर पूछती है: 'बैंक के लिए कौन सा multiple सबसे अच्छा है?' (उत्तर: P/B)। व्यावहारिक रूप से, 'underpriced' (कम कीमत वाले) स्टॉक को पहचानने का यह सबसे तेज़ तरीका है।",
+      "formula": "$Target Price = Industry Average Multiple \\times Company's Metric$ (उदा., EPS)",
+      "formula_explanation": "यदि क्षेत्र (sector) आमतौर पर आय (earnings) का 20 गुना भुगतान करता है, और आपकी कंपनी ₹10 कमाती है, तो इसकी कीमत ₹200 होनी चाहिए।",
+      "step_by_step_calculation_example": "Company X का EPS ₹5 है। इसके साथी (Industry) 15x के P/E पर ट्रेड करते हैं।\nFair Value of Company X = 5 * 15 = ₹75.",
+      "real_life_indian_example": "यदि **HDFC Bank** 3x Book Value पर ट्रेड करता है और **ICICI Bank** 2.5x Book Value पर ट्रेड करता है, तो एक विश्लेषक कह सकता है कि ICICI 'अपेक्षाकृत (relatively)' सस्ता है।",
+      "exam_traps": [
+        "नकारात्मक (negative) आय (Losses) वाली कंपनी के लिए P/E का उपयोग करना। आप losses के लिए P/E का उपयोग नहीं कर सकते!",
+        "विभिन्न उद्योगों की कंपनियों की तुलना करना (जैसे, टेक P/E की तुलना स्टील P/E से करना)।"
+      ],
+      "memory_trick": "Relative = 'Relatives' (Peer Group) के साथ तुलना करना।"
+    },
+    {
+      "concept": "3. Weighted Average Cost of Capital (WACC)",
+      "basic_meaning": "औसत ब्याज दर (average interest rate) जो कोई कंपनी अपने सभी धन प्रदाताओं (Banks और Shareholders) को चुकाती है।",
+      "detailed_explanation": "एक कंपनी को दो स्रोतों से धन मिलता है: Debt (ऋण) और Equity (निवेशक)।\n1. **Cost of Debt:** बैंक को दी जाने वाली ब्याज दर (tax savings के लिए समायोजित/adjusted)।\n2. **Cost of Equity:** शेयरधारकों को मिलने वाले रिटर्न की उम्मीद (CAPM का उपयोग करके गणना की गई)।\n3. **WACC:** इन दोनों लागतों का भारित औसत (weighted average)। यह आमतौर पर DCF मॉडल में 'Discount Rate' के रूप में उपयोग किया जाता है।",
+      "why_this_is_important": "परीक्षा में, आपको यह जानना होगा कि उच्च (higher) WACC कंपनी की वैल्यू को कम कर देता है।",
+      "formula": "Not Applicable (Unit 10 के लिए Theory पर केंद्रित)",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "**Vodafone Idea** जैसी अत्यधिक कर्जदार कंपनी का WACC (उच्च जोखिम) बहुत अधिक है, जिससे उसका मूल्यांकन (valuation) बहुत कम हो जाता है।",
+      "exam_traps": [
+        "यह सोचना कि WACC केवल Debt के बारे में है। यह Debt और Equity दोनों की लागत है।",
+        "यह भूल जाना कि ऋण पर ब्याज कर-कटौती योग्य (tax-deductible) है (Debt, Equity से सस्ता है)।"
+      ],
+      "memory_trick": "WACC = सभी 'Capital' (पूंजी) की लागत का 'Weight'।"
+    },
+    {
+      "concept": "4. CAPM (Capital Asset Pricing Model)",
+      "basic_meaning": "एक फ़ॉर्मूला यह गणना करने के लिए कि जोखिम लेने के लिए एक शेयरधारक को 'उचित (fairly)' रूप से किस रिटर्न की उम्मीद करनी चाहिए।",
+      "detailed_explanation": "अपेक्षित रिटर्न (expected return) तीन चीजों पर निर्भर करता है:\n1. **Risk-Free Rate:** आपको सुरक्षित सरकारी बॉन्ड (G-Sec) से क्या मिलता है।\n2. **Beta:** बाज़ार की तुलना में स्टॉक कितना अस्थिर (wild) है।\n3. **Market Risk Premium:** वह अतिरिक्त रिटर्न जो पूरा शेयर बाज़ार सुरक्षित बॉन्ड के मुक़ाबले देता है।",
+      "why_this_is_important": "NISM Series XV में CAPM पर Numerical प्रश्न बहुत आम हैं।",
+      "formula": "$Expected Return = Risk\\text{-}Free Rate + Beta \\times (Market Return - Risk\\text{-}Free Rate)$",
+      "formula_explanation": "आप सुरक्षित रिटर्न से शुरू करते हैं और इस आधार पर 'Risk Bonus' जोड़ते हैं कि स्टॉक कितना अस्थिर (Beta) है।",
+      "step_by_step_calculation_example": "G-Sec Rate (Risk-Free) = 7%. Market Return = 12%. Beta of Stock = 1.2.\nExpected Return = 7 + 1.2 * (12 - 7) = 7 + (1.2 * 5) = 7 + 6 = 13%.",
+      "real_life_indian_example": "यदि भारत में 10-वर्षीय G-Sec yield 7% है, तो **Adani Enterprises** जैसे उच्च-बीटा (high-beta) स्टॉक को **HUL** जैसे निम्न-बीटा (low-beta) स्टॉक की तुलना में आपके मॉडल में बहुत अधिक अपेक्षित रिटर्न की आवश्यकता होगी।",
+      "exam_traps": [
+        "(Market Return - Risk-Free Rate) को केवल Market Return के साथ कंफ्यूज करना। ब्रैकेट 'Premium' है।",
+        "यह सोचना कि Beta गणना को प्रभावित नहीं करता है। उच्च (Higher) Beta = उच्च (Higher) Expected Return।"
+      ],
+      "memory_trick": "CAPM = आपकी 'Cap'ital के लिए कीमत।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Price बनाम Value",
+      "clear_explanation": "Price (कीमत) वह है जो आप बाज़ार में भुगतान करते हैं (मांग/आपूर्ति द्वारा निर्धारित)। Value (मूल्य) वह है जो कंपनी वास्तव में मूल्यवान है (इसके मुनाफे और संपत्ति द्वारा निर्धारित)।"
+    },
+    {
+      "difference_between": "Intrinsic बनाम Relative Valuation",
+      "clear_explanation": "Intrinsic (DCF) कंपनी के अंदर अपने स्वयं के कैश फ्लो को देखता है। Relative (Multiples) बाहर यह देखता है कि अन्य लोग समान कंपनियों के लिए क्या भुगतान कर रहे हैं।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "CAPM फॉर्मूले का उपयोग करके Numerical गणना।",
+    "विशिष्ट क्षेत्रों के लिए कौन सा multiple सर्वोत्तम है (Banks = P/B, Loss-making = P/S, Steel = EV/EBITDA)।",
+    "ब्याज दरों और Valuation के बीच विपरीत संबंध (inverse relationship)।",
+    "DCF में 'Terminal Value' की परिभाषा।"
+  ],
+  "quick_revision_summary": [
+    "DCF भविष्य के कैश फ्लो का मूल्यांकन करता है; WACC का उपयोग discount rate के रूप में करता है।",
+    "Relative Valuation साथियों (peers) की तुलना करने के लिए P/E, P/B, और EV/EBITDA का उपयोग करता है।",
+    "CAPM Formula: Rf + Beta(Rm - Rf).",
+    "उच्च जोखिम (Beta) -> उच्च Discount Rate -> निम्न (Lower) Value.",
+    "Valuation यह पता लगाने में मदद करता है कि क्या कोई स्टॉक 'Undervalued' (Buy) है या 'Overvalued' (Sell)।"
+  ]
+}

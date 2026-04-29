@@ -1,0 +1,108 @@
+{
+  "course": "NISM Series-XXI-A: Portfolio Management Services (PMS) Distributors Certification Examination",
+  "unit_number": 5,
+  "unit_name": "Derivatives",
+  "weightage": "5 Marks",
+  "overview": "यह chapter 'Derivatives' को introduce करता है, जो financial contracts हैं जिनका उपयोग risk manage करने (Hedging) या bets लगाने (Speculation) के लिए किया जाता है। NISM exam में, आप यहाँ से लगभग 5 questions देखेंगे। 'Futures' और 'Options', और 'Call', 'Put', और 'Strike Price' जैसे terms के बीच के difference को समझना ज़रूरी है। PMS managers अक्सर client portfolios को market के गिरने से बचाने के लिए derivatives का उपयोग करते हैं।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Definition of Derivatives",
+      "basic_meaning": "एक contract जिसकी value किसी और चीज़ की value पर निर्भर करती है (जिसे 'Underlying' कहा जाता है)।",
+      "detailed_explanation": "Curd (दही) के बारे में सोचें। इसकी कीमत Milk (दूध) की कीमत पर निर्भर करती है। यदि दूध महंगा हो जाता है, तो दही महंगा हो जाता है।\n\nयहाँ:\n- **Milk**, **Underlying Asset** है।\n- **Curd**, **Derivative** है।\n\nFinance में, 'Underlying' कोई Stock (Reliance), एक Index (Nifty), Currency (USD/INR), या Commodity (Gold) हो सकता है। Derivative instrument (जैसे Future या Option) की अपनी कोई value नहीं होती है; यह सिर्फ underlying की price को track करता है।",
+      "why_this_is_important": "Investors actual asset खरीदे बिना 'Hedge' (risk कम करने) या 'Speculate' (profit के लिए risk लेने) के लिए derivatives का उपयोग करते हैं।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "यदि Reliance share price (Underlying) 50 रुपये बढ़ जाती है, तो Reliance Futures contract (Derivative) भी लगभग 50 रुपये बढ़ जाएगा।",
+      "real_life_indian_example": "Nifty Futures भारत में सबसे अधिक trade किया जाने वाला derivative है। इसकी price बिल्कुल वैसे ही move करती है जैसे Nifty 50 Index move करता है।",
+      "exam_traps": [
+        "Derivatives value create नहीं करते हैं; वे केवल एक व्यक्ति से दूसरे व्यक्ति को risk transfer करते हैं।",
+        "ये 'Leveraged' instruments हैं (high risk, high reward)।"
+      ],
+      "memory_trick": "Derivative = Derived from something else (किसी और चीज़ से लिया गया)।"
+    },
+    {
+      "concept": "2. Forwards vs. Futures",
+      "basic_meaning": "दोनों future date पर कुछ खरीदने/बेचने के promises हैं। Forwards private होते हैं; Futures public (exchange पर) होते हैं।",
+      "detailed_explanation": "1. **Forward Contract:** \n   - दो parties (जैसे, आप और एक किसान) के बीच 3 महीने बाद एक fixed price पर गेहूं खरीदने का private agreement।\n   - **Risk:** High counterparty risk (किसान भाग सकता है)।\n   - **Regulation:** Stock exchanges द्वारा regulated नहीं होते।\n\n2. **Futures Contract:** \n   - एक standardized contract जो exchange (NSE/BSE) पर trade होता है।\n   - **Safety:** Exchange (Clearing Corp) trade की guarantee देता है। कोई counterparty risk नहीं।\n   - **Standardization:** Fixed Lot Size (जैसे, 50 shares), Expiry Date (महीने का आखिरी गुरुवार)।\n   - **Mark-to-Market (MTM):** Profits/Losses को DAILY settle किया जाता है।",
+      "why_this_is_important": "PMS managers Forwards में पाए जाने वाले default के risk से बचने के लिए strictly 'Futures' (Exchange Traded) trade करते हैं।",
+      "formula": "Futures Price = Spot Price + Cost of Carry",
+      "formula_explanation": "Cost of Carry में Interest cost और Storage cost शामिल होते हैं, जिसमें से कमाए गए Dividend को घटा दिया जाता है।",
+      "step_by_step_calculation_example": "Gold की Spot Price = 50,000 रुपये।\n1 महीने के लिए Interest Cost = 200 रुपये।\nStorage Cost = 50 रुपये।\n\nFutures Price = 50,000 + 200 + 50 = 50,250 रुपये।",
+      "real_life_indian_example": "यदि आपको लगता है कि Tata Motors अगले महीने ऊपर जाएगा, तो 5 लाख रुपये के shares खरीदने के बजाय, आप सिर्फ 1 लाख रुपये margin देकर Futures का 1 Lot खरीद सकते हैं।",
+      "exam_traps": [
+        "Futures के लिए 'Initial Margin' (upfront पैसा) और 'Maintenance Margin' की आवश्यकता होती है।",
+        "यदि MTM loss बहुत बड़ा है, तो आपको तुरंत और पैसा जमा करने के लिए broker से 'Margin Call' आता है।"
+      ],
+      "memory_trick": "Futures = Future date + Exchange safety।"
+    },
+    {
+      "concept": "3. Options: Call and Put (The Insurance Concept)",
+      "basic_meaning": "बिना obligation के खरीदने (Buy) या बेचने (Sell) का अधिकार (Right)। Insurance premium चुकाने जैसा।",
+      "detailed_explanation": "1. **Call Option (CE):** आपको **खरीदने का अधिकार (Right to BUY)** देता है। \n   - आप इसे तब खरीदते हैं जब आपको लगता है कि market **UP** जाएगा (Bullish)।\n   - Payoff: Unlimited profit potential, limited loss (केवल premium)।\n\n2. **Put Option (PE):** आपको **बेचने का अधिकार (Right to SELL)** देता है।\n   - आप इसे तब खरीदते हैं जब आपको लगता है कि market **DOWN** जाएगा (Bearish) या अपने portfolio को protect करने के लिए।\n   - Payoff: Market गिरने पर profit बढ़ता है।\n\nKey Terms:\n- **Strike Price:** पहले से तय की गई price।\n- **Premium:** Option खरीदने के लिए आप जो price चुकाते हैं (non-refundable)।\n- **Expiry:** वह date जब contract समाप्त होता है।",
+      "why_this_is_important": "यह सबसे flexible tool है। Market flat रहने पर भी आप पैसा कमा सकते हैं (options बेचकर)।",
+      "formula": "Call Buyer Profit = Spot Price - Strike Price - Premium",
+      "formula_explanation": "यदि Spot Price, Strike Price और Premium के total से ज़्यादा है, तो Buyer profit में है।",
+      "step_by_step_calculation_example": "आप एक Nifty Call Option खरीदते हैं।\nStrike Price = 18000.\nPremium Paid = 100 रुपये।\n\nScenario 1: Nifty 18500 पर जाता है।\nProfit = 18500 - 18000 - 100 = 400 रुपये।\n\nScenario 2: Nifty 17000 पर रहता है।\nआप exercise नहीं करते। Loss = 100 रुपये (केवल premium)।",
+      "real_life_indian_example": "'Car Insurance' खरीदना Put Option खरीदने जैसा है। यदि car crash होती है (Market crash होता है), तो insurance आपको pay करता है। यदि कुछ नहीं होता है, तो आप केवल premium खोते हैं।",
+      "exam_traps": [
+        "Option Buyer का LIMITED Loss (Premium) और UNLIMITED Profit होता है।",
+        "Option Seller (Writer) का LIMITED Profit (Premium) और UNLIMITED Loss (Risk) होता है।"
+      ],
+      "memory_trick": "Call = Call Up (Buy). Put = Put Down (Sell)।"
+    },
+    {
+      "concept": "4. Moneyness of Options (ITM, ATM, OTM)",
+      "basic_meaning": "यह check करना कि आपका option वर्तमान में profitable है या नहीं।",
+      "detailed_explanation": "1. **In-The-Money (ITM):** Option की real value होती है। \n   - Call: Spot Price > Strike Price.\n   - Put: Spot Price < Strike Price.\n\n2. **At-The-Money (ATM):** Spot Price = Strike Price. (Highest time value)।\n\n3. **Out-Of-The-Money (OTM):** Option वर्तमान में worthless (बेकार) है।\n   - Call: Spot Price < Strike Price.\n   - Put: Spot Price > Strike Price।",
+      "why_this_is_important": "ITM options महंगे होते हैं (Higher Premium)। OTM options सस्ते होते हैं लेकिन risky होते हैं (worthless expire होने का high chance)।",
+      "formula": "Option Premium = Intrinsic Value + Time Value",
+      "formula_explanation": "Intrinsic Value वह profit है जो अभी exercise करने पर मिलेगा। Time Value यह उम्मीद है कि यह बाद में profitable हो जाएगा।",
+      "step_by_step_calculation_example": "Nifty Spot = 18200.\n\nCall Option Strike 18000 (ITM).\nIntrinsic Value = 18200 - 18000 = 200.\nयदि Premium 250 है, तो Time Value = 50।",
+      "real_life_indian_example": "Traders अक्सर Expiry के दिन (Hero-Zero trades) OTM options खरीदते हैं क्योंकि उनकी कीमत 5 या 10 रुपये होती है, इस उम्मीद में कि वे ITM बन जाएंगे।",
+      "exam_traps": [
+        "Expiry पर, OTM options ZERO हो जाते हैं।",
+        "केवल ITM options की ही Intrinsic Value होती है।"
+      ],
+      "memory_trick": "ITM = I have money (Profit). OTM = Out of luck (Loss)।"
+    },
+    {
+      "concept": "5. Open Interest (OI) and Volume",
+      "basic_meaning": "Market activity और sentiment के indicators।",
+      "detailed_explanation": "1. **Volume:** दिन के दौरान trade किए गए contracts की कुल संख्या (Buy + Sell)।\n2. **Open Interest (OI):** 'Open' contracts की कुल संख्या (जो अभी तक settle या close नहीं हुए हैं)।\n\n- Rising OI + Rising Price = **Bullish** (खरीदने के लिए नया पैसा आ रहा है)।\n- Rising OI + Falling Price = **Bearish** (बेचने/short करने के लिए नया पैसा आ रहा है)।",
+      "why_this_is_important": "PMS managers OI देखते हैं ताकि पता चल सके कि market trend strong है या weak।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "यदि Nifty का OI बढ़ रहा है लेकिन Nifty गिर रहा है, तो इसका मतलब है कि बड़े players 'Short' positions बना रहे हैं।",
+      "exam_traps": [
+        "Volume हर दिन zero पर reset हो जाता है। OI expiry तक अगले दिन carry forward होता है।",
+        "High PCR (Put-Call Ratio) आमतौर पर signal देता है कि market Oversold है (Bullish reversal की संभावना है)।"
+      ],
+      "memory_trick": "Volume = Activity today (आज की गतिविधि). OI = Commitment for tomorrow (कल के लिए कमिटमेंट)।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Futures vs. Options",
+      "clear_explanation": "Futures में, आपको contract fulfill करना ही होता है (Obligation) - profit या loss linear होता है। Options में, आपके पास चुनने का अधिकार (RIGHT) होता है (buyer के लिए कोई obligation नहीं) - loss premium तक limited होता है।"
+    },
+    {
+      "difference_between": "Hedging vs. Speculation",
+      "clear_explanation": "Hedging का मतलब risk कम करना है (जैसे, Shares own करना और value को protect करने के लिए Put Option खरीदना)। Speculation का मतलब risk लेना है (जैसे, केवल price rise से profit कमाने के लिए Call Option खरीदना)।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Call और Put Buyer के लिए Payoff calculation।",
+    "Forward (OTC) और Future (Exchange) के बीच का अंतर।",
+    "किसी दिए गए Spot और Strike price के लिए ITM, ATM, OTM पहचानना।",
+    "Futures में Margin का Concept (Initial vs Maintenance)।",
+    "'Long' (Buy) और 'Short' (Sell) positions का मतलब।"
+  ],
+  "quick_revision_summary": [
+    "Derivative की value Underlying Asset से आती है।",
+    "Futures में daily settlement (MTM) होता है।",
+    "Call = Buy view. Put = Sell view.",
+    "Option Buyer Premium pay करता है (Max Loss)। Seller Premium receive करता है (Max Profit)।",
+    "PMS में derivatives का primary use Hedging है।"
+  ]
+}

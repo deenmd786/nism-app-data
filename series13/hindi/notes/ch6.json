@@ -1,0 +1,108 @@
+{
+  "course": "NISM Series XIII: Common Derivatives Certification Examination",
+  "unit_number": 6,
+  "unit_name": "Option Trading Strategies (ऑप्शन ट्रेडिंग स्ट्रैटेजीज़)",
+  "weightage": "3% (4 Marks)",
+  "overview": "यह chapter 'Strategies' बनाने के लिए कई options (या options + stocks) को एक साथ मिलाने (combining) के बारे में है। सिर्फ एक Call खरीदकर अच्छे की उम्मीद करने के बजाय, professionals नुकसान (loss) को सीमित करने या 'Volatility' (तेज़ी) या 'Sideways' (स्थिर) market जैसी विशिष्ट market conditions से profit कमाने के लिए strategies का उपयोग करते हैं। हालाँकि इसका weightage कम है (केवल ~3-4 questions), लेकिन ये एक trader के लिए सबसे practical tools हैं।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Protective Put (The Insurance Strategy)",
+      "basic_meaning": "आपके पास पहले से मौजूद shares को protect करने के लिए Put Option खरीदना।",
+      "detailed_explanation": "मान लीजिए कि आपने ₹2500 पर Reliance के 100 shares खरीदे हैं। आपको डर है कि price गिरकर ₹2000 हो सकता है। \nखुद को सुरक्षित करने के लिए, आप ₹2400 के Strike पर एक **Put Option खरीदें** (Right to Sell)। \n\n* **Scenario A (Price गिरता है):** आपको shares पर नुकसान होता है, लेकिन Put Option में profit होता है। नुकसान cancel out हो जाता है (बैलेंस हो जाता है)।\n* **Scenario B (Price बढ़ता है):** आप shares पर profit कमाते हैं। Put Option worthless expire हो जाता है (आप केवल छोटा सा premium खोते हैं)।\n\nयह बिल्कुल Car Insurance की तरह है। आप premium देते हैं ताकि अगर कोई दुर्घटना हो, तो insurance पैसा दे।",
+      "why_this_is_important": "यह एक 'Potentially Unlimited Loss' (संभावित असीमित नुकसान) को 'Limited Loss' (सीमित नुकसान) में बदल देता है।",
+      "formula": "Max Loss = (Buy Price - Strike Price) + Premium Paid",
+      "formula_explanation": "आप अधिकतम (maximum) अपना 'deductible' और insurance की cost खो सकते हैं।",
+      "step_by_step_calculation_example": "**Data:** Buy Stock @ 100. Buy 95 PE @ ₹2.\n**Scenario:** Price 50 तक गिर जाता है।\n**Stock Loss:** $100 - 50 = 50$.\n**Put Profit:** Strike 95 - Price 50 - Premium 2 = $45 - 2 = 43$.\n**Net Loss:** $-50 + 43 = -7$. (आपका नुकसान 7 पर cap हो गया है, भले ही stock 0 पर चला जाए)।",
+      "real_life_indian_example": "Mutual Funds चुनाव परिणामों (election results) या युद्ध की खबरों के दौरान अपने portfolios को protect करने के लिए अक्सर Nifty Puts (Protective Put) खरीदते हैं।",
+      "exam_traps": [
+        "यह सोचना कि Protective Put एक flat market में पैसा बनाता है। (नहीं, आप premium खो देते हैं)।",
+        "इसे Covered Call के साथ confuse करना।"
+      ],
+      "memory_trick": "Protect = Put (P for P). आपके shares के लिए Insurance."
+    },
+    {
+      "concept": "2. Covered Call (The Rental Income Strategy)",
+      "basic_meaning": "Extra income कमाने के लिए आपके पास पहले से मौजूद shares के खिलाफ Call Option बेचना।",
+      "detailed_explanation": "आपके पास ₹1500 पर Infosys के 100 shares हैं। आपको लगता है कि price flat रहेगा या धीरे-धीरे ऊपर जाएगा। आप एक **Call Option बेचते हैं (Sell)** (Strike 1600) और ₹20 Premium प्राप्त करते हैं।\n\n* **Scenario A (Flat Market):** Infosys 1500 पर रहता है। आप ₹20 premium अपने पास रखते हैं। (Extra Income)।\n* **Scenario B (Small Rise):** Infosys 1590 पर जाता है। आप shares का profit + ₹20 premium अपने पास रखते हैं。\n* **Scenario C (Huge Rise):** Infosys 1800 पर जाता है। आप 1600 पर बेचने के लिए OBLIGATED (बाध्य) हैं। आप 1600 से ऊपर का बड़ा profit चूक (miss) जाते हैं।\n\nयह अपना घर किराए पर देने जैसा है। आपको rent (premium) मिलता है, लेकिन अगर कोई घर के लिए बहुत बड़ी कीमत offer करता है, तो शायद आपने खुद को lock कर लिया हो।",
+      "why_this_is_important": "Idle stocks (रखे हुए शेयरों) पर 'passive income' generate करने के लिए यह long-term investors की सबसे popular strategy है।",
+      "formula": "Max Profit = (Strike - Buy Price) + Premium Received",
+      "formula_explanation": "आप Strike तक profit कमाते हैं, साथ ही जो rent आपने collect किया।",
+      "step_by_step_calculation_example": "**Data:** Buy Stock @ 100. Sell 110 CE @ ₹5.\n**Scenario:** Price 150 तक उड़ जाता है।\n**Stock Profit:** $150 - 100 = 50$.\n**Call Loss:** Strike 110 - Price 150 + Premium 5 = $-40 + 5 = -35$.\n**Net Profit:** $50 - 35 = 15$. (आपका profit cap हो गया है)।",
+      "real_life_indian_example": "LIC (Life Insurance Corp) के पास ITC की भारी मात्रा है। वे अक्सर extra cash कमाने के लिए ITC पर Call Options बेचते हैं क्योंकि ITC का stock ज्यादा move नहीं करता है।",
+      "exam_traps": [
+        "यह सोचना कि Covered Call downside risk को protect करता है। (यह बहुत कम protection देता है - केवल premium amount जितना)।",
+        "यह सोचना कि आप shares own किए बिना ऐसा कर सकते हैं (उसे 'Naked Call Writing' कहा जाता है - जो खतरनाक है!)।"
+      ],
+      "memory_trick": "Covered = मेरे पास risk को 'Covering' करने वाले shares हैं। Call = मैं Call बेच रहा हूँ।"
+    },
+    {
+      "concept": "3. Straddle (The 'Big Move' Bet)",
+      "basic_meaning": "SAME Strike Price और SAME Expiry पर Call और Put दोनों खरीदना।",
+      "detailed_explanation": "आप नहीं जानते कि market ऊपर जाएगा या नीचे, लेकिन आपको यकीन है कि यह **बहुत तेज़ी से (violently)** move करेगा (जैसे, Budget Day, Election Results)।\n\n* **Action:** Buy ATM Call + Buy ATM Put.\n* **Logic:** अगर market गिरता है, तो Put पैसा बनाता है। अगर market रॉकेट की तरह बढ़ता है, तो Call पैसा बनाता है। एक तरफ का profit दोनों premiums की cost को cover करने के लिए पर्याप्त होना चाहिए।\n* **Risk:** यदि market flat (sideways) रहता है, तो आप दोनों premiums खो देते हैं। यह सबसे खराब स्थिति है।",
+      "why_this_is_important": "यह एक 'Volatility Strategy' है। आप दिशा (direction) पर नहीं, गति (speed) पर दांव लगा रहे हैं।",
+      "formula": "Upper Breakeven = Strike + Total Premium\nLower Breakeven = Strike - Total Premium",
+      "formula_explanation": "आपको profit कमाने के लिए Market को इन points के पार जाना होगा।",
+      "step_by_step_calculation_example": "**Data:** Nifty @ 18000. Buy 18000 CE @ 100. Buy 18000 PE @ 100. Total Cost = 200.\n**Breakeven:**\nUpper: $18000 + 200 = 18200$.\nLower: $18000 - 200 = 17800$.\n**Result:** आप तभी पैसा कमाते हैं जब Nifty 18200 से ऊपर या 17800 से नीचे जाता है। अगर यह 18000 पर ही रहता है, तो आप ₹200 खो देते हैं।",
+      "real_life_indian_example": "Traders earnings reports से पहले Adani stocks पर Straddles खरीदते हैं क्योंकि stock आमतौर पर किसी भी दिशा में 5-10% उछलता है।",
+      "exam_traps": [
+        "शांत (calm) market में Straddle खरीदना। (आप Time Decay के कारण हार जाएंगे)।",
+        "यह सोचना कि आपको direction जानने की जरूरत है। (नहीं, direction irrelevant है)।"
+      ],
+      "memory_trick": "Straddle = दोनों तरफ पैर करके घोड़े पर बैठना। (दोनों तरफ के लिए तैयार)।"
+    },
+    {
+      "concept": "4. Strangle (The Cheaper 'Big Move' Bet)",
+      "basic_meaning": "DIFFERENT Strike Prices (OTM) पर Call और Put खरीदना।",
+      "detailed_explanation": "Straddle के समान, लेकिन सस्ता।\n\n* **Action:** Buy OTM Call (Higher Strike) + Buy OTM Put (Lower Strike).\n* **Logic:** चूंकि OTM options सस्ते होते हैं, इसलिए total cost Straddle से कम होती है। लेकिन (BUT), आपको profit कमाने के लिए market को **और भी ज्यादा** move करने की आवश्यकता होती है।\n* ",
+      "why_this_is_important": "इसका उपयोग तब किया जाता है जब आप एक बड़े move की उम्मीद करते हैं लेकिन महंगे ATM premiums का भुगतान नहीं करना चाहते हैं।",
+      "formula": "Upper BE = Call Strike + Total Premium\nLower BE = Put Strike - Total Premium",
+      "formula_explanation": "Straddle के समान लेकिन wider range (बड़ी रेंज)।",
+      "step_by_step_calculation_example": "**Data:** Nifty @ 18000. Buy 18200 CE @ 50. Buy 17800 PE @ 50. Total Cost = 100.\n**Breakeven:**\nUpper: $18200 + 100 = 18300$.\nLower: $17800 - 100 = 17700$.\n**Result:** Straddle की तुलना में जीतना कठिन है, लेकिन अगर आप fail होते हैं तो loss कम होता है।",
+      "real_life_indian_example": "Expiry day पर BankNifty पर Strangle खरीदना (Hero या Zero trades)।",
+      "exam_traps": [
+        "Strangle को Straddle के साथ confuse करना। (Straddle = Same Strike. Strangle = Different Strikes)।",
+        "यह सोचना कि Strangle ज्यादा safe है। (यह सस्ता है, लेकिन profit की probability कम है)।"
+      ],
+      "memory_trick": "Strangle = पैर ज्यादा फैलाना। (Different strikes)।"
+    },
+    {
+      "concept": "5. Bull Call Spread (The Conservative Bull)",
+      "basic_meaning": "एक Call खरीदना (profit के लिए) और एक higher Call बेचना (cost कम करने के लिए)।",
+      "detailed_explanation": "आप bullish हैं, लेकिन आपको लगता है कि upside (ऊपर जाने की संभावना) सीमित है।\n\n* **Action:** Buy ATM Call (premium दें) + Sell OTM Call (premium प्राप्त करें)।\n* **Logic:** जो premium आपको मिलता है वह आपके द्वारा खरीदे गए Call की कीमत चुकाने में मदद करता है। यह trade को सस्ता बनाता है।\n* **Trade-off:** आपका profit higher strike पर cap हो जाता है।",
+      "why_this_is_important": "यह trade करने का सबसे professional तरीका है। यह 'Breakeven Point' को कम करता है, जिससे जीतना आसान हो जाता है।",
+      "formula": "Max Profit = (Difference in Strikes) - Net Premium Paid",
+      "formula_explanation": "Spread की चौड़ाई में से जो आपने pay किया उसे घटाएं।",
+      "step_by_step_calculation_example": "**Data:** Buy 18000 CE @ 100. Sell 18200 CE @ 40. Net Cost = 60.\n**Max Profit:** Spread (200) - Cost (60) = 140.\n**Max Loss:** Net Cost = 60.\n**Result:** अगर Nifty 20,000 पर भी चला जाता है, तो भी आपका profit 140 पर अटक जाता है। लेकिन आपने केवल 60 का risk लिया।",
+      "real_life_indian_example": "आपको लगता है कि Nifty ऊपर जाएगा लेकिन 18500 पर resistance का सामना करेगा। आप 18500 तक के move से profit कमाने के लिए एक spread का उपयोग करते हैं बिना पूरी कीमत चुकाए।",
+      "exam_traps": [
+        "यह सोचना कि आपके पास असीमित (unlimited) profit है। (नहीं, Spreads में हमेशा limited profit होता है)।",
+        "यह सोचना कि आपको high margin की आवश्यकता है। (नहीं, spreads में defined risk होता है इसलिए margin कम होता है)।"
+      ],
+      "memory_trick": "Spread = एक खरीदना, दूसरा बेचना। Risk को फैलाना (Spreading)।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Straddle vs Strangle",
+      "clear_explanation": "1. **Strikes:** Straddle SAME strike (ATM) का उपयोग करता है। Strangle DIFFERENT strikes (OTM) का उपयोग करता है।\n2. **Cost:** Straddle महंगा (Expensive) है। Strangle सस्ता (Cheap) है।\n3. **Breakeven:** Straddle में breakeven करना आसान है। Strangle के लिए एक बहुत बड़े move की आवश्यकता होती है।"
+    },
+    {
+      "difference_between": "Protective Put vs Covered Call",
+      "clear_explanation": "1. **Goal:** Protective Put = Safety (Insurance). Covered Call = Income (Rent).\n2. **View:** Protective Put = Bullish लेकिन डरा हुआ। Covered Call = Neutral/Mildly Bullish।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Components से strategy की पहचान करें (जैसे, 'Long Call + Long Put क्या है?')। Answer: Straddle.",
+    "Straddle के लिए Breakeven point calculate करना।",
+    "Income Generation के लिए किस strategy का उपयोग किया जाता है? (Answer: Covered Call)।",
+    "Downside risk को hedge करने के लिए किस strategy का उपयोग किया जाता है? (Answer: Protective Put)।"
+  ],
+  "quick_revision_summary": [
+    "Protective Put = Long Stock + Long Put.",
+    "Covered Call = Long Stock + Short Call.",
+    "Straddle = Long Call + Long Put (Same Strike). Volatility पर दांव।",
+    "Strangle = Long Call + Long Put (Different Strikes). सस्ता Volatility दांव।",
+    "Spread = Buy + Sell. Cost कम करता है, profit cap करता है।",
+    "Bull Call Spread = Buy Lower Call, Sell Higher Call."
+  ]
+}

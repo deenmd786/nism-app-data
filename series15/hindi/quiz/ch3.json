@@ -1,0 +1,652 @@
+[
+  {
+    "id": 3001,
+    "question": "What is 'Face Value' of a bond?",
+    "options": [
+      "The price at which it trades in the market",
+      "The amount the issuer pays at maturity",
+      "The annual interest payment",
+      "The value of the company's assets"
+    ],
+    "answer": "The amount the issuer pays at maturity",
+    "hint": "इसे Par Value के रूप में भी जाना जाता है।",
+    "explanation": "Face Value (या Par Value) bond की वह nominal value है जो bond के mature होने पर investor को चुकाई (repaid) जाती है।"
+  },
+  {
+    "id": 3002,
+    "question": "What is the 'Coupon Rate'?",
+    "options": [
+      "The discount given at purchase",
+      "The interest rate the bond issuer pays to the holder",
+      "The tax rate on the bond",
+      "The rate at which the bond price grows"
+    ],
+    "answer": "The interest rate the bond issuer pays to the holder",
+    "hint": "यह bond पर मिलने वाला 'interest' (ब्याज) है।",
+    "explanation": "Coupon Rate face value का वह fixed percentage है जो issuer द्वारा bondholder को interest payment के रूप में दिया जाता है।"
+  },
+  {
+    "id": 3003,
+    "question": "What is a 'Zero Coupon Bond'?",
+    "options": [
+      "A bond that pays no interest but trades at a deep discount",
+      "A bond that pays 0% tax",
+      "A bond that has no maturity date",
+      "A bond issued by a bankrupt company"
+    ],
+    "answer": "A bond that pays no interest but trades at a deep discount",
+    "hint": "कोई coupons नहीं, केवल capital appreciation।",
+    "explanation": "Zero Coupon Bonds periodic interest का भुगतान नहीं करते हैं। इसके बजाय, उन्हें face value पर भारी discount पर issue किया जाता है और maturity पर face value पर redeem किया जाता है।"
+  },
+  {
+    "id": 3004,
+    "question": "Which term describes the current market price of a stock multiplied by the total number of outstanding shares?",
+    "options": [
+      "Enterprise Value",
+      "Book Value",
+      "Market Capitalization",
+      "Face Value"
+    ],
+    "answer": "Market Capitalization",
+    "hint": "Price × Quantity।",
+    "explanation": "Market Capitalization (Market Cap) किसी company के outstanding equity shares की कुल market value को दर्शाता है।"
+  },
+  {
+    "id": 3005,
+    "question": "What represents the theoretical takeover price of a company?",
+    "options": [
+      "Market Capitalization",
+      "Enterprise Value (EV)",
+      "Book Value",
+      "P/E Ratio"
+    ],
+    "answer": "Enterprise Value (EV)",
+    "hint": "Market Cap + Debt - Cash।",
+    "explanation": "Enterprise Value (EV) किसी company की कुल value का एक measure है, जिसे अक्सर equity market capitalization के एक अधिक व्यापक (comprehensive) विकल्प के रूप में उपयोग किया जाता है क्योंकि इसमें debt शामिल होता है और cash को बाहर रखा जाता है (excludes cash)।"
+  },
+  {
+    "id": 3006,
+    "question": "Formula for Enterprise Value (EV) is:",
+    "options": [
+      "Market Cap + Debt + Cash",
+      "Market Cap + Debt - Cash",
+      "Market Cap - Debt + Cash",
+      "Market Cap - Debt - Cash"
+    ],
+    "answer": "Market Cap + Debt - Cash",
+    "hint": "यदि आप कोई घर (company) खरीदते हैं, तो आप उसका mortgage (debt) लेते हैं लेकिन तिजोरी में रखा पैसा (cash) भी आपको मिलता है।",
+    "explanation": "EV = Market Capitalization + Total Debt - Cash and Cash Equivalents। यह पूरे business को acquire (अधिग्रहित) करने की लागत को दर्शाता है।"
+  },
+  {
+    "id": 3007,
+    "question": "What is 'EPS'?",
+    "options": [
+      "Equity Per Share",
+      "Earnings Per Share",
+      "Estimated Price Share",
+      "Equity Price Structure"
+    ],
+    "answer": "Earnings Per Share",
+    "hint": "प्रत्येक share को आवंटित (allocated) profit।",
+    "explanation": "EPS किसी company के profit का वह हिस्सा है जो common stock के प्रत्येक outstanding share को allocate किया जाता है। यह profitability का एक प्रमुख indicator है।"
+  },
+  {
+    "id": 3008,
+    "question": "How is 'Basic EPS' calculated?",
+    "options": [
+      "(Net Income - Preferred Dividends) / Weighted Average Number of Outstanding Shares",
+      "Net Income / Total Assets",
+      "Revenue / Number of Shares",
+      "Dividends / Share Price"
+    ],
+    "answer": "(Net Income - Preferred Dividends) / Weighted Average Number of Outstanding Shares",
+    "hint": "Common shareholders के लिए उपलब्ध profit को share count से divide किया जाता है।",
+    "explanation": "Basic EPS वर्तमान में outstanding shares की वास्तविक संख्या के आधार पर प्रति शेयर earnings की गणना करता है।"
+  },
+  {
+    "id": 3009,
+    "question": "What is 'Diluted EPS'?",
+    "options": [
+      "EPS adjusted for inflation",
+      "EPS calculated assuming all convertible securities (options, warrants) are converted to equity",
+      "EPS calculated using only cash profits",
+      "EPS after tax deduction"
+    ],
+    "answer": "EPS calculated assuming all convertible securities (options, warrants) are converted to equity",
+    "hint": "Share count के लिए 'सबसे खराब स्थिति' (worst case) का scenario।",
+    "explanation": "Diluted EPS उस संभावित dilution (कमी) का हिसाब रखता है जो तब हो सकता है जब सभी convertible securities (जैसे stock options या convertible bonds) का प्रयोग (exercise) किया गया हो।"
+  },
+  {
+    "id": 3010,
+    "question": "The 'P/E Ratio' compares:",
+    "options": [
+      "Price to Earnings",
+      "Profit to Equity",
+      "Price to Equity",
+      "Profit to Expenses"
+    ],
+    "answer": "Price to Earnings",
+    "hint": "Market Price / EPS।",
+    "explanation": "Price-to-Earnings (P/E) ratio किसी company के प्रति शेयर earnings के सापेक्ष (relative) उसके वर्तमान share price को मापता है।"
+  },
+  {
+    "id": 3011,
+    "question": "A high P/E ratio usually implies that:",
+    "options": [
+      "The stock is undervalued",
+      "investors expect high growth in the future",
+      "The company is making a loss",
+      "The company has high debt"
+    ],
+    "answer": "investors expect high growth in the future",
+    "hint": "Investors भविष्य की earnings के लिए अधिक भुगतान करने को तैयार हैं।",
+    "explanation": "एक high P/E ratio यह दर्शाता है कि investors कम P/E वाली कंपनियों की तुलना में भविष्य में अधिक earnings growth की उम्मीद कर रहे हैं।"
+  },
+  {
+    "id": 3012,
+    "question": "What is 'Book Value' per share?",
+    "options": [
+      "Total Assets / Number of Shares",
+      "(Total Assets - Total Liabilities) / Number of Outstanding Shares",
+      "Market Price / Number of Shares",
+      "Face Value + Reserves"
+    ],
+    "answer": "(Total Assets - Total Liabilities) / Number of Outstanding Shares",
+    "hint": "Net Worth प्रति शेयर (per share)।",
+    "explanation": "Book Value किसी company की net asset value है, जिसकी गणना total assets में से intangible assets और liabilities को घटाकर की जाती है।"
+  },
+  {
+    "id": 3013,
+    "question": "The P/B Ratio is useful for valuing companies in which sector?",
+    "options": [
+      "Technology (Asset-light)",
+      "Banking and Financial Services (Asset-heavy)",
+      "Service Consulting",
+      "Software"
+    ],
+    "answer": "Banking and Financial Services (Asset-heavy)",
+    "hint": "जहाँ balance sheet पर assets market value के करीब होते हैं।",
+    "explanation": "Price-to-Book (P/B) का व्यापक रूप से banks और financial companies के लिए उपयोग किया जाता है क्योंकि उनके assets और liabilities market के अनुसार mark किए जाते हैं, जिससे book value true value का एक अच्छा proxy बन जाता है।"
+  },
+  {
+    "id": 3014,
+    "question": "What is 'Dividend Yield'?",
+    "options": [
+      "Dividend per share / Face Value",
+      "Dividend per share / Market Price per share",
+      "Total Dividend / Net Profit",
+      "Market Price / Dividend per share"
+    ],
+    "answer": "Dividend per share / Market Price per share",
+    "hint": "आपके द्वारा चुकाई गई कीमत के सापेक्ष dividends से मिलने वाला return।",
+    "explanation": "Dividend Yield एक financial ratio है जो दर्शाता है कि कोई company अपने stock price के सापेक्ष (relative) हर साल dividends के रूप में कितना भुगतान करती है।"
+  },
+  {
+    "id": 3015,
+    "question": "If a stock price is ₹100 and it pays a dividend of ₹5, what is the Dividend Yield?",
+    "options": [
+      "20%",
+      "5%",
+      "0.05%",
+      "50%"
+    ],
+    "answer": "5%",
+    "hint": "5 को 100 से divide करें।",
+    "explanation": "(5 / 100) * 100 = 5%।"
+  },
+  {
+    "id": 3016,
+    "question": "What is 'Dividend Payout Ratio'?",
+    "options": [
+      "Percentage of earnings paid as dividends to shareholders",
+      "Percentage of revenue paid as dividends",
+      "Percentage of cash flow paid as dividends",
+      "Percentage of face value paid as dividends"
+    ],
+    "answer": "Percentage of earnings paid as dividends to shareholders",
+    "hint": "Profit का कितना हिस्सा 'paid out' (भुगतान) किया गया है?",
+    "explanation": "Dividend Payout Ratio earnings का वह हिस्सा है जो shareholders को dividends के रूप में भुगतान किया जाता है, जिसे आमतौर पर percentage के रूप में व्यक्त किया जाता है।"
+  },
+  {
+    "id": 3017,
+    "question": "What is 'Free Float' Market Capitalization?",
+    "options": [
+      "Total Market Cap including promoter shares",
+      "Market Cap of shares available for trading by the public (excluding locked-in shares)",
+      "Market Cap of shares owned by the government",
+      "Market Cap of free shares given as bonus"
+    ],
+    "answer": "Market Cap of shares available for trading by the public (excluding locked-in shares)",
+    "hint": "वे shares जो market में float (तैरने) के लिए 'free' (स्वतंत्र) हैं।",
+    "explanation": "Free Float Market Cap उन shares को बाहर कर देता है (excludes) जो promoters, सरकारों या strategic investors के पास होते हैं और trading के लिए आसानी से उपलब्ध नहीं होते हैं।"
+  },
+  {
+    "id": 3018,
+    "question": "Indices like Nifty 50 and Sensex are calculated based on:",
+    "options": [
+      "Full Market Capitalization",
+      "Free Float Market Capitalization",
+      "Book Value",
+      "Enterprise Value"
+    ],
+    "answer": "Free Float Market Capitalization",
+    "hint": "यह उसे दर्शाता है जो वास्तव में tradable (व्यापार योग्य) है।",
+    "explanation": "Nifty और Sensex सहित अधिकांश प्रमुख global indices, गणना के लिए Free Float Market Capitalization method का उपयोग करते हैं।"
+  },
+  {
+    "id": 3019,
+    "question": "What is 'Yield to Maturity' (YTM)?",
+    "options": [
+      "The interest rate printed on the bond",
+      "The total return anticipated on a bond if held until it matures",
+      "The return if the bond is sold today",
+      "The tax paid on the bond"
+    ],
+    "answer": "The total return anticipated on a bond if held until it matures",
+    "hint": "अंत तक मिलने वाला कुल yield।",
+    "explanation": "YTM किसी bond में investment का internal rate of return (IRR) है, यदि investor maturity तक bond को hold करता है और सभी भुगतान निर्धारित समय (scheduled) पर किए जाते हैं।"
+  },
+  {
+    "id": 3020,
+    "question": "What is the relationship between Bond Price and Yield?",
+    "options": [
+      "Directly proportional (Price goes up, Yield goes up)",
+      "Inversely proportional (Price goes up, Yield goes down)",
+      "No relationship",
+      "They are always equal"
+    ],
+    "answer": "Inversely proportional (Price goes up, Yield goes down)",
+    "hint": "यदि आप समान cash flow के लिए अधिक भुगतान करते हैं, तो आपका return कम होता है।",
+    "explanation": "Bond prices और yields विपरीत दिशाओं (opposite directions) में चलते हैं। जब interest rates बढ़ती हैं, तो bond prices गिरते हैं, और इसके विपरीत।"
+  },
+  {
+    "id": 3021,
+    "question": "What is 'Current Yield' of a bond?",
+    "options": [
+      "Coupon Payment / Current Market Price",
+      "Coupon Payment / Face Value",
+      "Face Value / Market Price",
+      "YTM / Coupon"
+    ],
+    "answer": "Coupon Payment / Current Market Price",
+    "hint": "आपके द्वारा चुकाई गई कीमत के आधार पर अभी आपको जो yield मिलता है।",
+    "explanation": "Current Yield security की वर्तमान कीमत से विभाजित annual income (interest) है।"
+  },
+  {
+    "id": 3022,
+    "question": "If a bond has a Face Value of ₹1000, Coupon of 10%, and Market Price of ₹1200, the Current Yield is:",
+    "options": [
+      "10%",
+      "8.33%",
+      "12%",
+      "100%"
+    ],
+    "answer": "8.33%",
+    "hint": "Coupon ₹100 है। Price ₹1200 है।",
+    "explanation": "Coupon = 1000 का 10% = 100। Current Yield = 100 / 1200 = 8.33%।"
+  },
+  {
+    "id": 3023,
+    "question": "What is 'Duration' of a bond?",
+    "options": [
+      "The time until maturity",
+      "A measure of the sensitivity of the bond's price to changes in interest rates",
+      "The length of the bond paper",
+      "The time it takes to issue the bond"
+    ],
+    "answer": "A measure of the sensitivity of the bond's price to changes in interest rates",
+    "hint": "यह risk को मापता है, केवल समय को नहीं।",
+    "explanation": "Duration (विशेष रूप से Modified Duration) मापता है कि interest rates में 1% के बदलाव के लिए bond की कीमत कितनी बदल जाएगी।"
+  },
+  {
+    "id": 3024,
+    "question": "Which bond has higher interest rate risk?",
+    "options": [
+      "Short-term bond",
+      "Long-term bond",
+      "Floating rate bond",
+      "Zero-risk bond"
+    ],
+    "answer": "Long-term bond",
+    "hint": "Rates के साथ चीजें गलत होने के लिए अधिक समय (time) है।",
+    "explanation": "Long-term bonds में आमतौर पर higher duration होता है, जिसका अर्थ है कि वे interest rates में बदलाव के प्रति अधिक संवेदनशील (sensitive) होते हैं (higher interest rate risk)।"
+  },
+  {
+    "id": 3025,
+    "question": "What is a 'Convertible Bond'?",
+    "options": [
+      "A bond that can be converted into cash",
+      "A bond that can be converted into equity shares of the issuing company",
+      "A bond that converts into a different currency",
+      "A bond that changes its interest rate"
+    ],
+    "answer": "A bond that can be converted into equity shares of the issuing company",
+    "hint": "Debt Equity बन जाता है।",
+    "explanation": "Convertible bonds bondholder को issuing company के पूर्व निर्धारित (predetermined) संख्या में shares के बदले bond को exchange (बदलने) का विकल्प देते हैं।"
+  },
+  {
+    "id": 3026,
+    "question": "What is a 'Callable Bond'?",
+    "options": [
+      "The investor can call the issuer for money",
+      "The issuer has the right to redeem (call back) the bond before maturity",
+      "The bond is called on the phone",
+      "It has no maturity"
+    ],
+    "answer": "The issuer has the right to redeem (call back) the bond before maturity",
+    "hint": "Issuer इसे वापस 'calls' (बुलाता) है।",
+    "explanation": "एक Callable Bond issuer को maturity से पहले debt का भुगतान करने की अनुमति देता है, आमतौर पर तब जब interest rates गिर जाती हैं।"
+  },
+  {
+    "id": 3027,
+    "question": "What is a 'Puttable Bond'?",
+    "options": [
+      "The investor has the right to sell (put) the bond back to the issuer before maturity",
+      "The issuer can put the bond in the trash",
+      "The bond puts money in the bank",
+      "A bond with a put option on a stock"
+    ],
+    "answer": "The investor has the right to sell (put) the bond back to the issuer before maturity",
+    "hint": "Investor इसे issuer को वापस 'puts' (देता) है।",
+    "explanation": "एक Puttable Bond investor को maturity से पहले किसी निर्दिष्ट (specified) तारीख पर issuer को security वापस खरीदने (repurchase) के लिए मजबूर करने की अनुमति देता है।"
+  },
+  {
+    "id": 3028,
+    "question": "What is 'Credit Rating'?",
+    "options": [
+      "A score of the company's customer service",
+      "An evaluation of the creditworthiness of a debtor/issuer",
+      "The rating of a movie",
+      "The stock price ranking"
+    ],
+    "answer": "An evaluation of the creditworthiness of a debtor/issuer",
+    "hint": "AAA, AA, BB...",
+    "explanation": "Credit Ratings (CRISIL, ICRA जैसी एजेंसियों द्वारा निर्दिष्ट) borrower की debt वापस चुकाने की क्षमता का आकलन (assess) करती हैं। AAA सबसे सुरक्षित है।"
+  },
+  {
+    "id": 3029,
+    "question": "What is 'Default Risk'?",
+    "options": [
+      "The risk that the stock market will crash",
+      "The risk that the issuer will fail to make interest or principal payments",
+      "The risk of inflation",
+      "The risk of losing the bond certificate"
+    ],
+    "answer": "The risk that the issuer will fail to make interest or principal payments",
+    "hint": "Borrower भुगतान करना बंद कर देता है।",
+    "explanation": "Default Risk (या Credit Risk) इस बात की संभावना है कि bond issuer अपेक्षित interest payments करने या principal चुकाने में विफल रहेगा।"
+  },
+  {
+    "id": 3030,
+    "question": "What is 'Beta' in equity markets?",
+    "options": [
+      "A measure of a stock's volatility relative to the overall market",
+      "The second letter of the alphabet",
+      "The profit margin",
+      "The dividend yield"
+    ],
+    "answer": "A measure of a stock's volatility relative to the overall market",
+    "hint": "Systematic Risk।",
+    "explanation": "Beta systematic risk को मापता है। 1.0 के Beta का मतलब है कि stock market के साथ चलता है। Beta > 1 अधिक volatile है; Beta < 1 कम volatile है।"
+  },
+  {
+    "id": 3031,
+    "question": "A stock with a Beta of 1.5 implies:",
+    "options": [
+      "It is 50% less volatile than the market",
+      "It is 50% more volatile than the market",
+      "It will always go up 1.5%",
+      "It pays 1.5% dividend"
+    ],
+    "answer": "It is 50% more volatile than the market",
+    "hint": "1.5, 1.0 से अधिक है।",
+    "explanation": "यदि market 10% ऊपर जाता है, तो 1.5 Beta वाले stock के 15% ऊपर जाने की उम्मीद है। यह market movements को amplify (बढ़ाता) करता है।"
+  },
+  {
+    "id": 3032,
+    "question": "What are 'Preference Shares'?",
+    "options": [
+      "Shares that prefer not to be traded",
+      "Shares that have priority over equity shares in dividend payment and liquidation",
+      "Shares bought by preferred customers",
+      "Shares with double voting rights"
+    ],
+    "answer": "Shares that have priority over equity shares in dividend payment and liquidation",
+    "hint": "उन्हें 'preference' या प्राथमिकता मिलती है।",
+    "explanation": "Preference shareholders को common shareholders से पहले dividends मिलते हैं और liquidation के मामले में assets पर उनका अधिक दावा (higher claim) होता है।"
+  },
+  {
+    "id": 3033,
+    "question": "What is 'DVR' (Differential Voting Rights) share?",
+    "options": [
+      "Shares with no voting rights",
+      "Shares with fewer voting rights but typically higher dividend",
+      "Shares for directors only",
+      "Digital Virtual Rights"
+    ],
+    "answer": "Shares with fewer voting rights but typically higher dividend",
+    "hint": "आप पैसे के लिए अपना vote छोड़ देते हैं।",
+    "explanation": "DVR shares आमतौर पर इसकी भरपाई करने के लिए higher dividend payout के बदले कम voting rights (जैसे, 10 shares के लिए 1 vote) प्रदान करते हैं।"
+  },
+  {
+    "id": 3034,
+    "question": "The 'Yield Curve' plots:",
+    "options": [
+      "Price vs. Volume",
+      "Yields of bonds with different maturities",
+      "Profit vs. Loss",
+      "Inflation vs. GDP"
+    ],
+    "answer": "Yields of bonds with different maturities",
+    "hint": "Short term बनाम Long term rates।",
+    "explanation": "Yield Curve एक लाइन है जो समान credit quality वाले लेकिन अलग-अलग maturity dates वाले bonds के interest rates (yields) को plot करती है।"
+  },
+  {
+    "id": 3035,
+    "question": "A 'Normal' yield curve is:",
+    "options": [
+      "Upward sloping (Long-term rates > Short-term rates)",
+      "Downward sloping (Inverted)",
+      "Flat",
+      "Circular"
+    ],
+    "answer": "Upward sloping (Long-term rates > Short-term rates)",
+    "hint": "आप पैसे को अधिक समय तक lock करने के लिए अधिक भुगतान की उम्मीद करते हैं।",
+    "explanation": "एक सामान्य आर्थिक माहौल में, investors समय के risk की भरपाई के लिए लंबी maturity पर higher yields की मांग करते हैं, जिससे एक upward slope (ऊपर की ओर ढलान) बनता है।"
+  },
+  {
+    "id": 3036,
+    "question": "What is 'Receivable Days' or 'DSO'?",
+    "options": [
+      "The days the market is open",
+      "The average number of days it takes a company to collect payment after a sale",
+      "The days needed to receive shares",
+      "The days needed to manufacture a product"
+    ],
+    "answer": "The average number of days it takes a company to collect payment after a sale",
+    "hint": "Days Sales Outstanding।",
+    "explanation": "DSO यह मापता है कि कोई company ग्राहकों से revenue कितनी कुशलता (efficiently) से collect करती है। यह जितना कम हो, उतना अच्छा है।"
+  },
+  {
+    "id": 3037,
+    "question": "What is 'Inventory Turnover Ratio'?",
+    "options": [
+      "How many times a company's inventory is sold and replaced over a period",
+      "The total value of inventory",
+      "The cost of the warehouse",
+      "The number of damaged goods"
+    ],
+    "answer": "How many times a company's inventory is sold and replaced over a period",
+    "hint": "सामान (goods) बेचने की गति।",
+    "explanation": "यह मापता है कि company अपना stock कितनी तेज़ी से बेचती है। एक higher ratio मजबूत sales या प्रभावी (effective) inventory management को दर्शाता है।"
+  },
+  {
+    "id": 3038,
+    "question": "Which ratio measures a company's ability to pay short-term obligations?",
+    "options": [
+      "Debt-to-Equity Ratio",
+      "Current Ratio",
+      "P/E Ratio",
+      "Gross Margin"
+    ],
+    "answer": "Current Ratio",
+    "hint": "Current Assets / Current Liabilities।",
+    "explanation": "Current Ratio एक liquidity ratio है जो किसी company की short-term obligations या एक वर्ष के भीतर देय (due) obligations का भुगतान करने की क्षमता को मापता है।"
+  },
+  {
+    "id": 3039,
+    "question": "What does 'Debt-to-Equity' ratio measure?",
+    "options": [
+      "Liquidity",
+      "Leverage / Solvency",
+      "Profitability",
+      "Efficiency"
+    ],
+    "answer": "Leverage / Solvency",
+    "hint": "Owner के पैसे की तुलना में company को finance करने के लिए कितना debt उपयोग किया जाता है।",
+    "explanation": "Debt-to-Equity उस डिग्री (degree) को मापता है जिस तक कोई company wholly-owned funds (अपने पैसे) बनाम debt (कर्ज) के माध्यम से अपने operations को finance कर रही है। यह financial leverage को दर्शाता है।"
+  },
+  {
+    "id": 3040,
+    "question": "What is 'ROE'?",
+    "options": [
+      "Return on Equity",
+      "Return on Earnings",
+      "Rate of Entry",
+      "Risk of Equity"
+    ],
+    "answer": "Return on Equity",
+    "hint": "Net Income / Shareholder's Equity।",
+    "explanation": "ROE equity के संबंध में किसी business की profitability को मापता है।"
+  },
+  {
+    "id": 3041,
+    "question": "What is 'ROCE'?",
+    "options": [
+      "Return on Cash Earnings",
+      "Return on Capital Employed",
+      "Rate of Common Equity",
+      "Risk of Capital Expenditure"
+    ],
+    "answer": "Return on Capital Employed",
+    "hint": "सभी capital (Equity + Debt) से उत्पन्न returns।",
+    "explanation": "ROCE किसी company की profitability और उस दक्षता (efficiency) को मापता है जिसके साथ उसके capital (debt और equity दोनों) का उपयोग किया जाता है।"
+  },
+  {
+    "id": 3042,
+    "question": "In a 'Bear Market', prices are generally:",
+    "options": [
+      "Rising",
+      "Falling",
+      "Stable",
+      "None of the above"
+    ],
+    "answer": "Falling",
+    "hint": "Bears (भालू) नीचे की ओर झपट्टा (swipe) मारते हैं।",
+    "explanation": "एक Bear Market गिरते share prices और निराशावादी (pessimistic) sentiment द्वारा पहचाना जाता है।"
+  },
+  {
+    "id": 3043,
+    "question": "In a 'Bull Market', prices are generally:",
+    "options": [
+      "Rising",
+      "Falling",
+      "Stable",
+      "None of the above"
+    ],
+    "answer": "Rising",
+    "hint": "Bulls (बैल) ऊपर की ओर उछालते (toss) हैं।",
+    "explanation": "एक Bull Market बढ़ते share prices और आशावादी (optimistic) sentiment द्वारा पहचाना जाता है।"
+  },
+  {
+    "id": 3044,
+    "question": "What is a 'Blue Chip' stock?",
+    "options": [
+      "A stock of a casino",
+      "A stock of a very new company",
+      "A stock of a large, well-established, and financially sound company",
+      "A stock that trades below ₹10"
+    ],
+    "answer": "A stock of a large, well-established, and financially sound company",
+    "hint": "विश्वसनीय (Reliable), उच्च गुणवत्ता (high quality)।",
+    "explanation": "Blue Chip stocks बड़ी, प्रतिष्ठित (reputable) और financially stable कंपनियों के shares होते हैं जिनका reliable performance का इतिहास रहा है।"
+  },
+  {
+    "id": 3045,
+    "question": "What is 'Stop Loss'?",
+    "options": [
+      "Stopping the loss of data",
+      "An order to sell a security when it reaches a certain price to limit loss",
+      "A government ban on trading",
+      "The end of a trading session"
+    ],
+    "answer": "An order to sell a security when it reaches a certain price to limit loss",
+    "hint": "यह आपके 'loss' (नुकसान) को 'stops' (रोकता) करता है।",
+    "explanation": "Stop Loss आगे के नुकसान को रोकने के लिए किसी asset को एक विशेष price point पर पहुँचने पर बेचने का एक advance order है।"
+  },
+  {
+    "id": 3046,
+    "question": "What is 'Short Interest'?",
+    "options": [
+      "Interest paid for a short time",
+      "The total number of shares currently sold short and not yet covered",
+      "Being interested in short people",
+      "A short-term loan"
+    ],
+    "answer": "The total number of shares currently sold short and not yet covered",
+    "hint": "कितने bears stock के खिलाफ शर्त (bet) लगा रहे हैं?",
+    "explanation": "Short Interest market sentiment को दर्शाता है; high short interest का मतलब है कि कई investors को कीमत गिरने की उम्मीद है।"
+  },
+  {
+    "id": 3047,
+    "question": "What is 'Floating Rate Bond'?",
+    "options": [
+      "A bond that floats on water",
+      "A bond with a variable interest rate tied to a benchmark",
+      "A bond with no maturity",
+      "A bond with varying face value"
+    ],
+    "answer": "A bond with a variable interest rate tied to a benchmark",
+    "hint": "Rate बदलता/तैरता (changes/floats) है।",
+    "explanation": "Floating Rate Bonds में coupons fixed नहीं होते हैं, बल्कि एक reference rate (जैसे MIBOR या Repo Rate) के आधार पर समय-समय पर reset होते हैं।"
+  },
+  {
+    "id": 3048,
+    "question": "What is 'Alpha'?",
+    "options": [
+      "The excess return of an investment relative to the return of a benchmark index",
+      "The risk of the investment",
+      "The total return",
+      "The first stock bought"
+    ],
+    "answer": "The excess return of an investment relative to the return of a benchmark index",
+    "hint": "Outperformance (बेहतर प्रदर्शन)।",
+    "explanation": "Alpha किसी investment पर active return को मापता है। यदि कोई fund 12% return देता है जबकि market 10% return देता है, तो Alpha +2% है।"
+  },
+  {
+    "id": 3049,
+    "question": "What is 'CAGR'?",
+    "options": [
+      "Common Annual Gross Return",
+      "Compound Annual Growth Rate",
+      "Calculated Average Growth Return",
+      "Company Annual Growth Report"
+    ],
+    "answer": "Compound Annual Growth Rate",
+    "hint": "Smoothed (समतल) annual growth।",
+    "explanation": "CAGR एक वर्ष से अधिक की निर्दिष्ट अवधि (specified period) में किसी investment की mean annual growth rate है।"
+  },
+  {
+    "id": 3050,
+    "question": "What is 'Basis Point' (bps)?",
+    "options": [
+      "1% equals 100 basis points",
+      "1% equals 10 basis points",
+      "1% equals 1000 basis points",
+      "1% equals 1 basis point"
+    ],
+    "answer": "1% equals 100 basis points",
+    "hint": "एक प्रतिशत का 1/100वां हिस्सा (1/100th of a percent)।",
+    "explanation": "Basis Point interest rates और अन्य percentages के लिए माप की एक इकाई (unit of measure) है। 100 bps = 1%। 50 bps = 0.5%।"
+  }
+]

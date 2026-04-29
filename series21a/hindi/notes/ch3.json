@@ -1,0 +1,109 @@
+{
+  "course": "NISM Series-XXI-A: Portfolio Management Services (PMS) Distributors Certification Examination",
+  "unit_number": 4,
+  "unit_name": "Investing in Fixed Income Securities",
+  "weightage": "5 Marks",
+  "overview": "यह chapter portfolio के 'safety' और 'income' हिस्से से संबंधित है। जहाँ stocks growth देते हैं, वहीं Fixed Income (Bonds) stability प्रदान करते हैं। NISM exam में, आप लगभग 5 questions की उम्मीद कर सकते हैं। यहाँ सबसे महत्वपूर्ण concept Interest Rates और Bond Prices के बीच 'Inverse Relationship' (विपरीत संबंध) है—अगर आप इसे समझ लेते हैं, तो आप आधे सवालों के सही जवाब दे सकते हैं। इसमें Credit Risk और Reinvestment Risk जैसे risk के प्रकार भी शामिल हैं।",
+  
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Anatomy of a Bond (The Basics)",
+      "basic_meaning": "Bond का सीधा सा मतलब एक loan (कर्ज) है। आप bank (lender) हैं, और Company/Government उधार लेने वाले (borrower) हैं।",
+      "detailed_explanation": "जब आप bond खरीदते हैं, तो आप एक fixed time के लिए पैसा उधार दे रहे होते हैं। बदले में, आपको मिलता है:\n\n1. **Principal (Face Value/Par Value):** वह amount जो आप उधार देते हैं, जो आपको अंत में वापस मिलता है।\n2. **Coupon (Interest Rate):** आपको नियमित रूप से दिया जाने वाला fixed interest (जैसे, 8% प्रति वर्ष)।\n3. **Maturity Date:** वह date जब loan समाप्त होता है और आपको अपना principal वापस मिलता है।\n4. **Issuer:** पैसा उधार लेने वाली entity (Govt या Company)।",
+      "why_this_is_important": "'trading price' और 'face value' के बीच अंतर करने के लिए। Interest की calculation Face Value पर की जाती है, market price पर नहीं।",
+      "formula": "Annual Coupon = Face Value * Coupon Rate",
+      "formula_explanation": "यदि Face Value Rs 1000 है और Coupon 8% है, तो आपको प्रति वर्ष Rs 80 मिलेंगे, चाहे bond Rs 900 पर trade कर रहा हो या Rs 1100 पर।",
+      "step_by_step_calculation_example": "Bond Face Value = Rs 100.\nCoupon Rate = 7%.\nCurrent Market Price = Rs 105.\n\nInterest Received = 100 का 7% = Rs 7.\n(Note: Interest 105 का 7% नहीं है)।",
+      "real_life_indian_example": "RBI Bonds (Floating Rate Savings Bond 2020) Government of India को दिए गए एक secure loan की तरह काम करते हैं।",
+      "exam_traps": [
+        "Coupon Rate हमेशा Face Value पर fixed होता है।",
+        "Current Yield हमेशा Market Price के साथ बदलता है।"
+      ],
+      "memory_trick": "Bond = IOU (I Owe You) note."
+    },
+    {
+      "concept": "2. The Price-Yield Relationship (Crucial Exam Topic)",
+      "basic_meaning": "Bond Prices और Interest Rates OPPOSITE (विपरीत) दिशाओं में चलते हैं। यह एक See-Saw की तरह है।",
+      "detailed_explanation": "यह सबसे ज्यादा test किया जाने वाला concept है।\n\n* **Scenario A:** अगर market interest rates **UP** (ऊपर) जाते हैं (जैसे, RBI rates बढ़ाता है), तो नए bonds higher coupons (मान लीजिए 9%) offer करेंगे। आपका पुराना bond (जो 8% दे रहा है) कम आकर्षक हो जाता है। इसे बेचने के लिए, आपको इसकी price कम करनी होगी। **(Rates UP -> Price DOWN)**।\n\n* **Scenario B:** अगर market interest rates **DOWN** (नीचे) जाते हैं, तो नए bonds कम offer करते हैं (मान लीजिए 6%)। आपका पुराना bond (जो 8% दे रहा है) अब बहुत valuable है। लोग इसे खरीदने के लिए extra पैसे देंगे। **(Rates DOWN -> Price UP)**।",
+      "why_this_is_important": "यह 'Interest Rate Risk' को समझाता है। Interest rates बढ़ने पर safe government bonds की value भी गिर सकती है।",
+      "formula": "Price ∝ 1 / Yield",
+      "formula_explanation": "यह mathematical रूप से Inverse Relationship (विपरीत संबंध) को दर्शाता है।",
+      "step_by_step_calculation_example": "लागू नहीं (Not Applicable)",
+      "real_life_indian_example": "2022 में, जब RBI ने repo rates बढ़ाए, तो long-term Debt Mutual Funds का NAV तेजी से गिरा क्योंकि bond prices क्रैश हो गए थे।",
+      "exam_traps": [
+        "अगर Yield ऊपर जाता है, तो Price नीचे (DOWN) आता है।",
+        "Long-term bonds rate changes के प्रति short-term bonds की तुलना में अधिक (MORE) sensitive होते हैं।"
+      ],
+      "memory_trick": "See-Saw: जब Rates ऊपर बैठते हैं, तो Price नीचे जाता है।"
+    },
+    {
+      "concept": "3. Types of Risks in Debt",
+      "basic_meaning": "Debt equity से safer है, लेकिन पूरी तरह से risk-free नहीं है।",
+      "detailed_explanation": "1. **Interest Rate Risk:** यह risk कि interest rates बढ़ने पर bond prices गिर जाएंगे (जैसा कि ऊपर बताया गया है)।\n2. **Credit Risk (Default Risk):** यह risk कि borrower पैसे वापस नहीं करेगा। G-Secs (Govt Bonds) में ZERO credit risk होता है (Sovereign Guarantee)। Corporate bonds में high credit risk होता है।\n3. **Reinvestment Risk:** यह risk कि जब आपको अपना interest/principal वापस मिलता है, तो आपको इसे lower rate पर invest करना पड़ता है (ऐसा तब होता है जब market में rates गिरते हैं)।\n4. **Liquidity Risk:** आप bond बेचना चाहते हैं, लेकिन कोई buyer नहीं है।",
+      "why_this_is_important": "Client के risk profile से match करने के लिए। एक conservative client को low credit ratings वाले corporate bonds से बचना चाहिए।",
+      "formula": "लागू नहीं (Not Applicable)",
+      "formula_explanation": "लागू नहीं (Not Applicable)",
+      "step_by_step_calculation_example": "लागू नहीं (Not Applicable)",
+      "real_life_indian_example": "IL&FS Crisis (2018): एक top-rated company default कर गई, जिससे debt funds में भारी नुकसान हुआ (Credit Risk)।",
+      "exam_traps": [
+        "Govt Bonds में Interest Rate Risk होता है लेकिन कोई Credit Risk नहीं (NO Credit Risk) होता।",
+        "Zero Coupon Bonds में उनकी maturity के लिए सबसे अधिक Interest Rate Risk (Duration) होता है।"
+      ],
+      "memory_trick": "IRC: Interest (Price change), Reinvestment (Rate change), Credit (Default)।"
+    },
+    {
+      "concept": "4. Yield Measures: Current Yield vs. YTM",
+      "basic_meaning": "आप वास्तव में कितना कमा रहे हैं?",
+      "detailed_explanation": "1. **Coupon Rate:** Bond पर छपा interest (जैसे, 8%)।\n2. **Current Yield:** आज की purchase price के आधार पर return.\n   - Formula: Annual Coupon / Current Market Price.\n3. **Yield to Maturity (YTM):** यदि आप bond को maturity तक hold करते हैं तो मिलने वाला total return. इसमें interest के साथ capital gain/loss भी शामिल है। यह सबसे सटीक (accurate) measure है।",
+      "why_this_is_important": "YTM आपको अलग-अलग coupons और prices वाले bonds की सही से तुलना करने की अनुमति देता है।",
+      "formula": "Current Yield = Coupon Interest / Market Price",
+      "formula_explanation": "Simple return calculation.",
+      "step_by_step_calculation_example": "Bond Face Value: Rs 100. Coupon: Rs 10.\nMarket Price: Rs 90 (Discount).\n\nCurrent Yield = 10 / 90 = 11.11%.\n(ध्यान दें: Current Yield > Coupon Rate क्योंकि आपने इसे सस्ते में खरीदा है)।",
+      "real_life_indian_example": "NSE पर bond खरीदते समय, केवल coupon ही नहीं, हमेशा YTM देखना चाहिए।",
+      "exam_traps": [
+        "यदि Price < Face Value (Discount पर है), तो YTM > Coupon Rate.",
+        "यदि Price > Face Value (Premium पर है), तो YTM < Coupon Rate."
+      ],
+      "memory_trick": "YTM = Total Return (Interest + Profit/Loss on price)।"
+    },
+    {
+      "concept": "5. Duration and Convexity",
+      "basic_meaning": "कोई bond interest rate में बदलाव के प्रति कितना sensitive है?",
+      "detailed_explanation": "1. **Duration (Macaulay Duration):** यह मापता है कि cash flows से आपके investment को recover करने में कितना समय लगता है। इससे भी महत्वपूर्ण बात यह है कि यह **Sensitivity** को मापता है।\n   - High Duration = High Risk (Rate changes के साथ Price तेजी से ऊपर-नीचे होता है)।\n   - Low Duration = Low Risk.\n2. **Convexity:** एक अधिक advanced measure जो बड़े rate changes के लिए Duration की अशुद्धियों (inaccuracies) को ठीक करता है। यह price-yield relationship का 'curvature' दिखाता है।",
+      "why_this_is_important": "जब rates बढ़ने की उम्मीद होती है, तो Fund managers capital बचाने के लिए duration कम कर देते हैं।",
+      "formula": "Change in Price ≈ - Duration * Change in Yield",
+      "formula_explanation": "Negative sign यहाँ inverse relationship (विपरीत संबंध) दिखाता है।",
+      "step_by_step_calculation_example": "Bond की Duration 5 साल है।\nInterest rates 1% बढ़ जाते हैं।\nBond Price लगभग 5% गिर जाएगा।\n(5 years * 1% = 5%)।",
+      "real_life_indian_example": "Long-term G-Sec funds (10-year duration) बहुत volatile होते हैं। Liquid funds (0.1-year duration) बहुत stable होते हैं।",
+      "exam_traps": [
+        "Zero Coupon Bonds की Duration उनकी Maturity के EQUAL (बराबर) होती है (Highest sensitivity)।",
+        "Coupon Bonds की Duration उनकी Maturity से LESS (कम) होती है।"
+      ],
+      "memory_trick": "Duration = Sensitivity."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Money Market vs. Debt Market",
+      "clear_explanation": "**Money Market:** यह short-term उधार (< 1 साल) के लिए है जैसे T-Bills और Commercial Paper। \n**Debt Market (Capital Market):** यह long-term उधार (> 1 साल) के लिए है जैसे G-Secs और Debentures।"
+    },
+    {
+      "difference_between": "Secured vs. Unsecured Debentures",
+      "clear_explanation": "**Secured Debentures:** ये assets द्वारा backed होते हैं (अगर company fail होती है, तो आपको payment करने के लिए assets बेचे जाते हैं)। \n**Unsecured Debentures:** इनका कोई backing नहीं होता (ये ज्यादा risky होते हैं, इसलिए वे higher interest देते हैं)।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Inverse relationship: Rates UP -> Price DOWN.",
+    "Current Yield की Calculation.",
+    "Zero Coupon Bond की Definition (Discount पर issue होता है, par पर redeem होता है)।",
+    "Credit Rating Agencies (CRISIL, ICRA) *default risk* को rate करती हैं।",
+    "Duration (Sensitivity) का Concept."
+  ],
+  "quick_revision_summary": [
+    "Face Value constant रहता है; Market Price fluctuate करता है (बदलता है)।",
+    "G-Secs में NO Default Risk होता है लेकिन Interest Rate Risk होता है।",
+    "YTM return का सबसे अच्छा measure है।",
+    "Duration interest rates के प्रति sensitivity मापता है।",
+    "Call Option: Issuer समय से पहले पैसा वापस कर सकता है। Put Option: Investor समय से पहले पैसे वापस मांग सकता है।"
+  ]
+}

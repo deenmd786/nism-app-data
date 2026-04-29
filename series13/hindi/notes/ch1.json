@@ -1,0 +1,93 @@
+{
+  "course": "NISM Series XIII: Common Derivatives Certification Examination",
+  "unit_number": 1,
+  "unit_name": "Basics of Derivatives",
+  "weightage": "4% (6 Marks)",
+  "overview": "यह foundation chapter है। यह define करता है कि 'derivative' क्या है, market में कौन participate करता है, और customized (OTC) और standardized (Exchange) deals के बीच क्या difference है। हालाँकि इसका weightage केवल 6 marks (लगभग 4-6 questions) है, लेकिन आप इन basic definitions को master किए बिना बाद के chapters (Options/Futures) को नहीं समझ सकते। NISM exam अक्सर इस chapter से simple definition-based questions पूछता है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. What is a Derivative?",
+      "basic_meaning": "Derivative एक financial contract है जिसकी अपनी कोई independent value नहीं होती। यह अपनी value किसी और चीज़ से 'derive' (प्राप्त) करता है, जिसे 'Underlying Asset' कहा जाता है।",
+      "detailed_explanation": "मान लीजिए आप दही (Curd) खरीद रहे हैं। दही का price दूध (Milk) के price पर depend करता है। अगर दूध महंगा हो जाता है, तो दही भी महंगा हो जाता है। \n\nइस example में:\n1. **Milk** 'Underlying Asset' है।\n2. **Curd** 'Derivative' है。\n\nFinancial markets में, Derivative दो लोगों के बीच future date पर किसी चीज़ को buy या sell करने का contract है। जैसे-जैसे underlying asset का price change होता है, इस contract की value भी change होती है। \n\nUnderlying asset ये हो सकते हैं:\n* **Shares** (जैसे, Reliance, TCS)\n* **Commodities** (जैसे, Gold, Wheat, Crude Oil)\n* **Currency** (जैसे, USD-INR)\n* **Interest Rates**",
+      "why_this_is_important": "यह पूरे subject को define करता है। अगर आप यह नहीं समझते हैं कि derivative केवल इसलिए move करता है क्योंकि underlying move करता है, तो आप hedging को समझने में fail हो जाएंगे।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Reliance Industries का stock ₹2500 (Underlying) पर trade कर रहा है। एक 'Reliance Futures Contract' (Derivative) ₹2510 पर trade कर रहा है। अगर Reliance stock ₹2600 तक ऊपर जाता है, तो Futures contract की value भी ऊपर जाएगी।",
+      "exam_traps": [
+        "यह सोचना कि Derivatives की independent value होती है। उनकी नहीं होती।",
+        "'Underlying' को 'Derivative' के साथ confuse करना। हमेशा पूछें: Price को कौन control करता है?"
+      ],
+      "memory_trick": "Derivative = Dependent. (D for D)।"
+    },
+    {
+      "concept": "2. Market Participants (Who trades and why?)",
+      "basic_meaning": "Derivatives market में मुख्य रूप से तीन प्रकार के लोग होते हैं: Hedgers (Risk protect करते हैं), Speculators (Profit के लिए risk लेते हैं), और Arbitrageurs (Risk-free profit)।",
+      "detailed_explanation": "1. **Hedgers (The Protectors):** इन लोगों को अपने business में real risk होता है और वे उस risk को कम करने के लिए derivatives का use करते हैं। वे price changes के खिलाफ insurance चाहते हैं。\n\n2. **Speculators (The Gamblers/Traders):** इन लोगों को कोई business risk नहीं होता है। ये सिर्फ market को predict करते हैं। अगर उन्हें लगता है कि market ऊपर जाएगा, तो वे buy करते हैं। वे market को liquidity (volume) provide करते हैं। वे वह risk लेते हैं जिससे Hedgers छुटकारा पाना चाहते हैं。\n\n3. **Arbitrageurs (The Smart Profiteers):** वे price mistakes की तलाश करते हैं। अगर Gold मुंबई में सस्ता है और दिल्ली में महंगा है, तो वे बिना किसी risk के तुरंत profit कमाने के लिए मुंबई में खरीदते हैं और दिल्ली में बेचते हैं।",
+      "why_this_is_important": "NISM हमेशा 100% एक दिए गए scenario में participant type को identify करने के लिए पूछता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "**Hedger Example:** एक Indian Jeweller के पास 10kg Gold है। उसे डर है कि gold prices गिर जाएंगे। वह price lock करने के लिए Gold Futures 'Sell' करता है। वह hedging कर रहा है。\n\n**Speculator Example:** राहुल को लगता है कि Tata Motors ऊपर जाएगा। वह Tata Motors Futures खरीदता है। उसके पास कोई factory नहीं है, वह सिर्फ profit चाहता है。\n\n**Arbitrageur Example:** Reliance Futures NSE पर ₹2500 और BSE पर ₹2505 पर trade कर रहा है। एक arbitrageur तुरंत ₹5 का profit कमाने के लिए NSE पर खरीदता है और BSE पर बेचता है।",
+      "exam_traps": [
+        "Hedgers को Speculators के साथ confuse करना। याद रखें: Hedgers के पास पहले से ही asset होता है या उन्हें asset की ज़रूरत होती है। Speculators सिर्फ cash profit चाहते हैं।",
+        "यह सोचना कि Arbitrage में high risk शामिल है। True Arbitrage 'Risk-Free' होता है।"
+      ],
+      "memory_trick": "H = Help (Risk कम करें), S = Speculate (Risk लें), A = All profit (कोई risk नहीं)।"
+    },
+    {
+      "concept": "3. OTC vs. Exchange Traded Derivatives",
+      "basic_meaning": "Derivatives दो जगहों पर trade किए जाते हैं: Over-the-Counter (Private phone/email deals) या Exchange Traded (Computerized stock market deals)।",
+      "detailed_explanation": "**1. Over-The-Counter (OTC):**\n* **Private:** दो parties के बीच की deal (जैसे, आप और एक Bank)।\n* **Customized:** आप exact quantity और date decide कर सकते हैं。\n* **High Risk:** दूसरा व्यक्ति भाग सकता है (Counterparty Risk)।\n* **Example:** Forwards, Swaps।\n\n**2. Exchange Traded (ETD):**\n* **Public:** NSE/BSE पर trade किए जाते हैं。\n* **Standardized:** Fixed lot sizes और expiry dates。\n* **No Counterparty Risk:** Clearing Corporation trade की guarantee लेता है。\n* **Example:** Futures, Options।",
+      "why_this_is_important": "आपको पता होना चाहिए कि कौन सा product किस market का है। Futures exchanges पर trade होते हैं; Forwards OTC trade होते हैं।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "**OTC:** एक exporter अगले महीने sell होने वाले $1 Million के लिए rate fix करने के लिए HDFC Bank को call करता है। यह एक Forward contract (OTC) है。\n\n**Exchange:** आप अपना Zerodha/Upstox app open करते हैं और USDINR का 1 lot खरीदते हैं। यह एक Future contract (Exchange) है।",
+      "exam_traps": [
+        "यह सोचना कि Futures OTC हैं। (False, Futures Exchange Traded होते हैं)।",
+        "यह सोचना कि OTC safer है। (False, OTC में default risk होता है)।",
+        "यह सोचना कि Forwards standardized होते हैं। (False, वे customized होते हैं)।"
+      ],
+      "memory_trick": "OTC = Off The Computer (Private/Custom)। Exchange = Standard/Safe।"
+    },
+    {
+      "concept": "4. Types of Derivatives (The 4 Pillars)",
+      "basic_meaning": "चार main products Forwards, Futures, Options, और Swaps हैं।",
+      "detailed_explanation": "1. **Forwards:** Future date पर एक fixed price पर buy/sell करने का agreement। यह एक private (OTC) customized contract है। इसे fulfill करने की OBLIGATION (बाध्यता) होती है。\n\n2. **Futures:** Forward (बाद में buy/sell) के समान ही, लेकिन यह एक Exchange (Standardized) पर trade किया जाता है। इसे fulfill करने की OBLIGATION होती है。\n\n3. **Options:** Buyer को buy या sell करने का RIGHT (अधिकार) देता है, लेकिन obligation नहीं। जैसे घर बुक करने के लिए token money (premium) pay करना। अगर बाद में आपको यह पसंद नहीं आता है, तो आप केवल token money खोते हैं, आपको घर खरीदने की ज़रूरत नहीं है。\n\n4. **Swaps:** एक specific period में cash flows (आमतौर पर interest rates या currency) को exchange करने का agreement। ज़्यादातर OTC होते हैं।",
+      "why_this_is_important": "ये वे chapters हैं जिन्हें आप बाद में पढ़ेंगे। आपको अभी basic difference पता होना चाहिए: Obligation (Future/Forward) बनाम Right (Option)।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "**Forward:** किसान 3 महीने बाद ₹20/kg पर Britannia को गेहूं बेचने के लिए सहमत (agrees) होता है。\n**Future:** Trader MCX exchange पर Wheat Futures खरीदता है。\n**Option:** Nifty पर 'Call Option' खरीदना। अगर Nifty गिरता है, तो मैं केवल अपना premium खोता हूँ।",
+      "exam_traps": [
+        "'Right' बनाम 'Obligation' को confuse करना। Futures = Obligation। Options = Right।",
+        "यह सोचना कि Swaps ज़्यादातर NSE पर trade होते हैं। (False, Swaps ज़्यादातर banks के बीच OTC होते हैं)।"
+      ],
+      "memory_trick": "Forward = Friends (Private deal)। Future = Formal (Exchange deal)। Option = Choice।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Forwards (OTC) vs Futures (Exchange)",
+      "clear_explanation": "1. **Customization:** Forwards tailor-made होते हैं (कोई भी size/date)। Futures standardized होते हैं (fixed lot/date)।\n2. **Risk:** Forwards में high counterparty risk (default) होता है। Futures में zero counterparty risk होता है (Clearing House guarantee लेता है)।\n3. **Regulation:** Forwards कम regulated होते हैं। Futures SEBI द्वारा highly regulated होते हैं。\n4. **Settlement:** Forwards अंत में एक बार settle होते हैं। Futures daily (Mark-to-Market) settle होते हैं।"
+    },
+    {
+      "difference_between": "Spot Market vs Derivative Market",
+      "clear_explanation": "1. **Time:** Spot market = Pay करें और NOW (अभी) delivery लें (T+1)। Derivative market = एक FUTURE date पर Settle करें。\n2. **Usage:** Spot ownership के लिए है। Derivative hedging (protection) या speculation के लिए है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "एक story-based question में identify करना कि कौन Hedger है और कौन Speculator।",
+    "OTC (Forwards) और Exchange Traded (Futures) के बीच Difference।",
+    "क्या Future contract में obligation होती है या right? (Answer: Obligation)।",
+    "किस derivative में Counterparty risk होता है? (Answer: Forwards/OTC)।"
+  ],
+  "quick_revision_summary": [
+    "Derivative अपनी value Underlying से derive करता है।",
+    "Hedgers risk कम करते हैं; Speculators risk लेते हैं; Arbitrageurs risk-less profit बनाते हैं।",
+    "OTC = Private, Customized, Risky (Forwards)।",
+    "Exchange = Public, Standardized, Safe (Futures)।",
+    "Options एक RIGHT देते हैं, Futures एक OBLIGATION imply करते हैं।"
+  ]
+}

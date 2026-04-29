@@ -1,0 +1,109 @@
+{
+  "course": "NISM Series XIII: Common Derivatives Certification Examination",
+  "unit_number": 5,
+  "unit_name": "Introduction to Options",
+  "weightage": "15% (22 Marks)",
+  "overview": "यह सबसे महत्वपूर्ण conceptual chapter है। जहाँ Futures सरल linear contracts हैं, वहीं Options non-linear और अधिक जटिल (complex) हैं। यह chapter Options की शब्दावली (vocabulary) को परिभाषित करता है: Call vs Put, Buyer vs Seller, और सबसे अधिक test किया जाने वाला concept—'Moneyness' (ITM/ATM/OTM)। यदि आप इस chapter में महारत हासिल कर लेते हैं, तो अगला chapter (Strategies) आसान हो जाता है। केवल ITM/OTM को परिभाषित करने पर 4-5 questions की उम्मीद करें।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Option क्या है? (Call vs Put)",
+      "basic_meaning": "Option एक contract है जो आपको एक CHOICE (Right या अधिकार) देता है, कोई compulsion (Obligation या बाध्यता) नहीं।",
+      "detailed_explanation": "कल्पना करें कि आप 1 महीने के लिए ₹50 Lakhs के flat को book करने के लिए 'token money' के रूप में ₹10,000 pay करते हैं। \n* यदि prices ₹60 Lakhs तक बढ़ जाते हैं, तो आप अपने right को exercise करते हैं और ₹50 Lakhs में खरीदते हैं। (Profit)।\n* यदि prices गिरकर ₹30 Lakhs हो जाते हैं, तो आप पीछे हट जाते हैं। आप केवल ₹10,000 token money खोते हैं। आपको flat खरीदने के लिए मजबूर (forced) नहीं किया जाता है।\n\n**दो प्रकार (Two Types):**\n1. **Call Option (CE):** BUY (खरीदने) का Right. (सोचें: किसी को अपने पास 'Call' करना)।\n    * **View:** Bullish (चाहते हैं कि price UP जाए)।\n2. **Put Option (PE):** SELL (बेचने) का Right. (सोचें: किसी चीज़ को दूर 'Put' करना)।\n    * **View:** Bearish (चाहते हैं कि price DOWN जाए)।",
+      "why_this_is_important": "यह Options का ABC है। आपको तुरंत पता होना चाहिए कि Call = Buy और Put = Sell.",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "**Call Option:** आप एक 'Reliance 2500 CE' खरीदते हैं। आपके पास Reliance को ₹2500 में खरीदने का right है, भले ही यह ₹3000 तक चला जाए।\n**Put Option:** आप एक 'Nifty 18000 PE' खरीदते हैं। आपके पास Nifty को 18,000 पर बेचने का right है, भले ही यह crash होकर 15,000 हो जाए।",
+      "exam_traps": [
+        "यह सोचना कि Buyer की obligation होती है। (नहीं, Buyer के पास CHOICE होती है। Seller की OBLIGATION होती है)।",
+        "CE (Call European) को PE (Put European) के साथ confuse करना।"
+      ],
+      "memory_trick": "Call = Up (Phone को ऊपर पकड़ना)। Put = Down (इसे नीचे रखना)।"
+    },
+    {
+      "concept": "2. Buyer vs. Seller (The Power Dynamic)",
+      "basic_meaning": "Buyer Right पाने के लिए पैसा pay करता है। Seller Obligation लेने के लिए पैसा receive करता है।",
+      "detailed_explanation": "हर Option trade में, दो पक्ष (sides) होते हैं:\n\n**1. Option Buyer (Holder):**\n* **Premium Pay करता है:** (Loss इसी amount तक सीमित)।\n* **Rights होते हैं:** Exercise करना है या नहीं, यह तय कर सकता है।\n* **Max Profit:** Unlimited.\n* **Max Loss:** Pay किए गए Premium तक Limited.\n\n**2. Option Seller (Writer):**\n* **Premium Receive करता है:** (यह उसका max profit है)।\n* **Obligation होती है:** यदि buyer मांगता है तो contract पूरा करना ही होगा (MUST)।\n* **Max Profit:** Receive किए गए Premium तक Limited.\n* **Max Loss:** Unlimited (बहुत risky!).",
+      "why_this_is_important": "अधिकांश retail traders Buyers होते हैं (limited risk)। अधिकांश institutions Sellers होते हैं (वे premium income चाहते हैं)।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Insurance Company एक 'Option Seller' है (आपका premium लेती है, बड़े payout का risk उठाती है)। आप एक 'Option Buyer' हैं (छोटा premium pay करते हैं, protection पाते हैं)।",
+      "exam_traps": [
+        "यह सोचना कि Option Selling safe है। (यह finance में सबसे risky चीज़ है!)।",
+        "यह सोचना कि Sellers के पास rights होते हैं। (उनके पास ZERO rights होते हैं, केवल obligations)।"
+      ],
+      "memory_trick": "Buyer = Boss (तय करने के लिए pay करता है)। Seller = Servant (बात मानने के लिए pay किया जाता है)।"
+    },
+    {
+      "concept": "3. Moneyness (ITM, ATM, OTM)",
+      "basic_meaning": "किसी option को इस आधार पर classify करना कि वह वर्तमान में profitable है या नहीं।",
+      "detailed_explanation": "\nयह **Spot Price ($S$)** और **Strike Price ($K$)** के बीच के संबंध पर निर्भर करता है।\n\n**Call Options के लिए (Right to Buy):**\n* **In The Money (ITM):** $S > K$ (Profitable)। E.g., Spot 100, Strike 90.\n* **At The Money (ATM):** $S = K$.\n* **Out of The Money (OTM):** $S < K$ (Loss)। E.g., Spot 100, Strike 110.\n\n**Put Options के लिए (Right to Sell):**\n* **In The Money (ITM):** $S < K$ (Profitable)। E.g., Spot 90, Strike 100.\n* **At The Money (ATM):** $S = K$.\n* **Out of The Money (OTM):** $S > K$ (Loss)। E.g., Spot 110, Strike 100.",
+      "why_this_is_important": "2-3 questions के आने की 100% guarantee है: 'Nifty 18000 है। क्या 17500 Call ITM है या OTM?'",
+      "formula": "ITM Call: $S - K > 0$\nITM Put: $K - S > 0$",
+      "formula_explanation": "सरल घटाव (Simple subtraction)।",
+      "step_by_step_calculation_example": "**Question:** Nifty Spot 18,200 है। आपके पास 18,000 Call Option और 18,500 Put Option है। Moneyness Identify करें।\n\n**1. Call (18,000):**\nSpot (18,200) > Strike (18,000)। आप 18,000 पर सस्ता खरीद सकते हैं। **ITM**.\n\n**2. Put (18,500):**\nSpot (18,200) < Strike (18,500)। आप 18,500 पर महँगा बेच सकते हैं। **ITM**.",
+      "real_life_indian_example": "Traders OTM options (सस्ते) खरीदते हैं इस उम्मीद में कि वे ITM (महँगे) हो जाएंगे। यह lottery ticket खरीदने जैसा है।",
+      "exam_traps": [
+        "Put ITM को Call ITM के साथ confuse करना। (वे एक-दूसरे के opposite हैं!)।",
+        "यह सोचना कि OTM options की value zero होती है। (नहीं, उनमें 'Time Value' होती है)।"
+      ],
+      "memory_trick": "Call ITM = Spot High है। Put ITM = Spot Low है।"
+    },
+    {
+      "concept": "4. Intrinsic Value vs. Time Value",
+      "basic_meaning": "Premium वैसा क्यों है जैसा वह है? Premium = Intrinsic Value + Time Value.",
+      "detailed_explanation": "**1. Intrinsic Value (IV):** 'Real' profit यदि आप option को अभी (NOW) exercise करते हैं।\n* **केवल ITM options में Intrinsic Value होती है।**\n* OTM options में **Zero** Intrinsic Value होती है।\n* Formula: Spot और Strike के बीच का अंतर।\n\n**2. Time Value (TV):** 'Hope' (उम्मीद) की value। expiry तक बचे हुए समय के लिए आप जो extra पैसा pay करते हैं।\n* महीने की शुरुआत में: Time Value Highest होती है।\n* Expiry पर: Time Value **Zero** होती है।",
+      "why_this_is_important": "यह बताता है कि OTM options की कीमत क्यों होती है भले ही वे वर्तमान में useless हों।",
+      "formula": "$$Premium = IV + TV$$",
+      "formula_explanation": "Total Price = Real Value + Hope Value.",
+      "step_by_step_calculation_example": "**Question:** Nifty Spot = 18,100. Strike 18,000 Call ₹150 पर trade कर रहा है। TV calculate करें।\n\n**Step 1: IV Calculate करें।**\n$$IV = S - K = 18,100 - 18,000 = 100$$\n\n**Step 2: TV Calculate करें।**\n$$Premium = IV + TV$$\n$$150 = 100 + TV$$\n$$TV = 50$$\n\n**Answer:** आप केवल बचे हुए समय के लिए ₹50 pay कर रहे हैं।",
+      "real_life_indian_example": "Expiry के दिन दोपहर 3:30 बजे, Time Value 0 हो जाती है। Option की कीमत बिल्कुल Intrinsic Value के बराबर हो जाती है।",
+      "exam_traps": [
+        "OTM के लिए negative Intrinsic Value calculate करना। (IV कभी negative नहीं हो सकती। Minimum 0 है)।",
+        "यह सोचना कि expiry के पास Time Value बढ़ती है। (नहीं, यह decay/कम होती है - Theta Decay)।"
+      ],
+      "memory_trick": "IV = Real Profit. TV = Hope."
+    },
+    {
+      "concept": "5. Payoff Charts (The 4 Diagrams)",
+      "basic_meaning": "Buyer और Seller के लिए profit और loss को visualize करना।",
+      "detailed_explanation": "\n**1. Long Call (Buyer):**\n* Loss Premium तक सीमित।\n* Profit (Strike + Premium) के बाद शुरू होता है।\n\n\n**2. Short Call (Seller):**\n* Profit Premium तक सीमित।\n* Loss (Strike + Premium) के बाद शुरू होता है।\n\n\n**3. Long Put (Buyer):**\n* Loss Premium तक सीमित।\n* Price गिरने पर Profit बढ़ता है।\n\n\n**4. Short Put (Seller):**\n* Profit Premium तक सीमित।\n* Price गिरने पर Loss बढ़ता है।",
+      "why_this_is_important": "आपको एक image मिल सकती है और पहचानने के लिए कहा जा सकता है: 'क्या यह Long Call है या Short Put?'",
+      "formula": "Break Even Point (Call) = Strike + Premium\nBreak Even Point (Put) = Strike - Premium",
+      "formula_explanation": "वह price जहाँ आप असली पैसा कमाना शुरू करते हैं।",
+      "step_by_step_calculation_example": "**Scenario:** ₹100 Premium पर 18000 Call खरीदें।\n**Break Even:** $$18000 + 100 = 18100$$\nयदि Nifty 18050 पर बंद होता है, तो आप ₹50 recover करते हैं, लेकिन फिर भी ₹50 का net loss होता है।",
+      "real_life_indian_example": "Retail traders Long Call पसंद करते हैं (Unlimited profit visual)। Professionals Short Call पसंद करते हैं (Profit की high probability)।",
+      "exam_traps": [
+        "Gross profit में से pay किए गए Premium को घटाना भूल जाना।",
+        "यह सोचना कि Break Even केवल Strike Price है।"
+      ],
+      "memory_trick": "Call Chart = ऊपर की ओर इशारा करते हुए Hockey Stick का आकार। Put Chart = नीचे की ओर इशारा करते हुए Hockey Stick का आकार।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Futures vs Options",
+      "clear_explanation": "1. **Obligation:** Futures = दोनों parties की obligation होती है। Options = केवल Seller की obligation होती है।\n2. **Risk:** Futures = Linear (दोनों के लिए unlimited loss)। Options = Asymmetric (Buyer का limited loss, Seller का unlimited loss)।\n3. **Cost:** Futures = Margin. Options = Buyer Premium pay करता है, Seller Margin pay करता है।"
+    },
+    {
+      "difference_between": "Call Buyer vs Put Seller",
+      "clear_explanation": "1. **View:** दोनों Bullish हैं (चाहते हैं market UP जाए)।\n2. **Difference:** Call Buyer बड़ा up move चाहता है (unlimited profit के लिए)। Put Seller छोटे up move या sideways market से खुश रहता है (premium रखने के लिए)।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "दिए गए Spot और Strike के लिए ITM/ATM/OTM को Identify करना।",
+    "Intrinsic Value Calculate करना (याद रखें: Min 0 है)।",
+    "Call (K+P) और Put (K-P) के लिए Break Even Point Calculate करना।",
+    "Option Buyer के लिए Max Loss = Premium Paid."
+  ],
+  "quick_revision_summary": [
+    "Call = Right to Buy. Put = Right to Sell.",
+    "Buyer Premium pay करता है (Limited Loss)। Seller Margin लेता है (Unlimited Risk)।",
+    "ITM में Intrinsic Value होती है। OTM में केवल Time Value होती है।",
+    "Premium = Intrinsic Value + Time Value.",
+    "Break Even Call = Strike + Premium.",
+    "Break Even Put = Strike - Premium.",
+    "Option Sellers मुर्गियों की तरह खाते हैं (small frequent wins) और हाथियों की तरह निकालते हैं (one huge loss)।"
+  ]
+}

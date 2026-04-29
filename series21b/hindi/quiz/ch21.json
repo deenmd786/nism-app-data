@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "What is the primary purpose of 'Portfolio Rebalancing'?",
+    "options": [
+      "To maximize the number of trades",
+      "To bring the portfolio back to its target asset allocation and intended risk level",
+      "To always buy the most expensive stocks",
+      "To avoid paying any management fees"
+    ],
+    "answer": "To bring the portfolio back to its target asset allocation and intended risk level",
+    "hint": "यह 'Risk Drift' को control करता है।",
+    "explanation": "चूंकि विभिन्न assets अलग-अलग speed से बढ़ते हैं, इसलिए portfolio का risk profile बदल जाता है। Rebalancing IPS में सहमत balance को restore करता है।"
+  },
+  {
+    "id": 2,
+    "question": "What is 'Portfolio Drift'?",
+    "options": [
+      "The manager moving to a new office",
+      "The deviation of actual asset weights from the target weights due to market movements",
+      "A stock price staying flat for a year",
+      "The process of withdrawing funds"
+    ],
+    "answer": "The deviation of actual asset weights from the target weights due to market movements",
+    "hint": "यदि stocks 20% बढ़ते हैं और bonds flat रहते हैं, तो आपका equity % higher 'drift' (खिसक) हो जाता है।",
+    "explanation": "Drift market volatility का natural result है; rebalancing drift का 'cure' (इलाज) है।"
+  },
+  {
+    "id": 3,
+    "question": "Which rebalancing strategy involves resetting the portfolio at fixed intervals (e.g., every 6 months)?",
+    "options": [
+      "Constant Proportion Insurance",
+      "Time-only Rebalancing",
+      "Threshold-only Rebalancing",
+      "Tactical Allocation"
+    ],
+    "answer": "Time-only Rebalancing",
+    "hint": "Calendar-based approach.",
+    "explanation": "Time-only rebalancing में, manager price changes को ignore करता है और केवल specific dates पर rebalance करता है, भले ही weights कितना भी shift क्यों न हुए हों।"
+  },
+  {
+    "id": 4,
+    "question": "Which rebalancing strategy triggers a trade only when an asset weight deviates by a specific percentage (e.g., +/- 5%)?",
+    "options": [
+      "Buy-and-Hold",
+      "Calendar Rebalancing",
+      "Threshold-based (Percentage-of-Portfolio) Rebalancing",
+      "Strategic Indexing"
+    ],
+    "answer": "Threshold-based (Percentage-of-Portfolio) Rebalancing",
+    "hint": "केवल तभी Rebalance करें जब 'drift' एक certain limit तक पहुँच जाए।",
+    "explanation": "यह method calendar-based rebalancing की तुलना में market volatility के प्रति अधिक reactive है और unnecessary trades से बचकर costs को control करने में मदद कर सकता है।"
+  },
+  {
+    "id": 5,
+    "question": "What is a major 'Cost' associated with frequent rebalancing?",
+    "options": [
+      "Higher dividends",
+      "Transaction costs (brokerage) and Capital Gains taxes",
+      "Increased interest rates",
+      "The cost of the benchmark index"
+    ],
+    "answer": "Transaction costs (brokerage) and Capital Gains taxes",
+    "hint": "Winners को बेचने से अक्सर tax liabilities trigger होती हैं।",
+    "explanation": "हर rebalancing trade में brokerage fees लगती हैं और इससे profits realize हो सकते हैं जो short-term या long-term capital gains tax के subject होते हैं।"
+  },
+  {
+    "id": 6,
+    "question": "Rebalancing essentially forces an investor to ________.",
+    "options": [
+      "Buy High and Sell Low",
+      "Sell High (Winners) and Buy Low (Laggards)",
+      "Hold cash forever",
+      "Only invest in new IPOs"
+    ],
+    "answer": "Sell High (Winners) and Buy Low (Laggards)",
+    "hint": "यह एक contrarian mechanism है।",
+    "explanation": "जो assets बढ़े हैं (overweight हो रहे हैं) उन्हें बेचकर और जो underperform कर रहे हैं (underweight हो रहे हैं) उन्हें खरीदकर, investor एक अनुशासित 'buy low, sell high' logic को follow करता है।"
+  },
+  {
+    "id": 7,
+    "question": "What is 'Strategic Asset Allocation' (SAA) in the context of rebalancing?",
+    "options": [
+      "The temporary weights during a crash",
+      "The long-term target weights defined in the Investment Policy Statement (IPS)",
+      "The process of picking the best stocks",
+      "The daily trading plan"
+    ],
+    "answer": "The long-term target weights defined in the Investment Policy Statement (IPS)",
+    "hint": "यह वह 'anchor' है जिस पर portfolio rebalancing के दौरान लौटता है।",
+    "explanation": "SAA portfolio के लिए 'home base' है। Rebalancing इस home base पर लौटने का act है।"
+  },
+  {
+    "id": 8,
+    "question": "In a 'Buy-and-Hold' strategy, rebalancing is ________.",
+    "options": [
+      "Done daily",
+      "Never performed",
+      "Triggered by news",
+      "Only for debt"
+    ],
+    "answer": "Never performed",
+    "hint": "Weights को वहां drift होने दिया जाता है जहां market उन्हें ले जाता है।",
+    "explanation": "एक pure buy-and-hold investor उस risk को accept करता है जो समय के साथ asset values में change होने पर market create करता है।"
+  },
+  {
+    "id": 9,
+    "question": "A 'Corridor' in threshold rebalancing refers to ________.",
+    "options": [
+      "The hallway in the exchange",
+      "The allowable range of deviation around the target weight (e.g., Target 50% +/- 5% corridor)",
+      "The time between two trades",
+      "The list of approved stocks"
+    ],
+    "answer": "The allowable range of deviation around the target weight (e.g., Target 50% +/- 5% corridor)",
+    "hint": "इसे 'tolerance band' के रूप में भी जाना जाता है।",
+    "explanation": "Corridor यह define करता है कि rebalancing action mandatory होने से पहले manager कितना 'drift' tolerate करने को तैयार है।"
+  },
+  {
+    "id": 10,
+    "question": "What happens to a portfolio's risk if it is NEVER rebalanced during a long bull market in equities?",
+    "options": [
+      "Risk decreases",
+      "Risk remains constant",
+      "Risk increases as equity becomes a larger portion of the total portfolio",
+      "The portfolio becomes risk-free"
+    ],
+    "answer": "Risk increases as equity becomes a larger portion of the total portfolio",
+    "hint": "Equities आमतौर पर debt की तुलना में अधिक volatile होते हैं।",
+    "explanation": "Rebalancing के बिना, एक 50/50 portfolio 80/20 equity/debt बन सकता है, जिससे यह market crash के प्रति बहुत अधिक vulnerable (संवेदनशील) हो जाता है।"
+  },
+  {
+    "id": 11,
+    "question": "Which of the following is a 'Hybrid' rebalancing strategy?",
+    "options": [
+      "Buy and Hold",
+      "Time-and-Threshold Rebalancing",
+      "Strategic only",
+      "Tactical only"
+    ],
+    "answer": "Time-and-Threshold Rebalancing",
+    "hint": "Schedule पर check करना लेकिन केवल तभी trade करना जब drift काफी बड़ा हो।",
+    "explanation": "यह calendar के discipline (जैसे हर quarter में check करना) को threshold की cost-efficiency (जैसे केवल तभी trade करें जब drift > 3% हो) के साथ जोड़ता है।"
+  },
+  {
+    "id": 12,
+    "question": "What is 'Tactical Asset Allocation' (TAA) rebalancing?",
+    "options": [
+      "Returning to the original weights exactly",
+      "Deliberately overweighting an asset class based on a short-term market view",
+      "Selling everything to buy gold",
+      "Ignoring all market movements"
+    ],
+    "answer": "Deliberately overweighting an asset class based on a short-term market view",
+    "hint": "यह 'view-based' rebalancing है।",
+    "explanation": "TAA में, manager एक नए temporary target (जैसे 60% के बजाय 70% equity) पर 'rebalance' कर सकता है क्योंकि उन्हें rally की उम्मीद है।"
+  },
+  {
+    "id": 13,
+    "question": "What is the 'Rebalancing Premium'?",
+    "options": [
+      "The fee paid to the manager for rebalancing",
+      "The extra return generated by the disciplined 'buy low, sell high' nature of rebalancing in mean-reverting markets",
+      "The tax paid during rebalancing",
+      "A bonus given by the stock exchange"
+    ],
+    "answer": "The extra return generated by the disciplined 'buy low, sell high' nature of rebalancing in mean-reverting markets",
+    "hint": "Rebalancing कभी-कभी risk control से परे value add कर सकता है।",
+    "explanation": "ऐसे markets में जो fluctuate होते हैं लेकिन एक range में रहते हैं, rebalancing systematically रूप से winners से gains harvest करता है और discount पर losers को खरीदता है।"
+  },
+  {
+    "id": 14,
+    "question": "For a 'Tax-Sensitive' investor, rebalancing should be done ________.",
+    "options": [
+      "Every day",
+      "Less frequently or using 'Inflows' to balance without selling",
+      "Only in the first week of the year",
+      "As much as possible"
+    ],
+    "answer": "Less frequently or using 'Inflows' to balance without selling",
+    "hint": "Winners को बेचने से Capital Gains Tax trigger होता है।",
+    "explanation": "Managers नए dividends या deposits को underweight asset class में direct करके 'rebalance' कर सकते हैं, जिससे बेचने और tax देने की आवश्यकता से बचा जा सके।"
+  },
+  {
+    "id": 15,
+    "question": "Which of the following describes 'Constant Proportion Portfolio Insurance' (CPPI)?",
+    "options": [
+      "A passive indexing strategy",
+      "A dynamic rebalancing strategy that increases equity exposure as the portfolio value rises",
+      "Investing only in insurance companies",
+      "A fixed 50/50 mix"
+    ],
+    "answer": "A dynamic rebalancing strategy that increases equity exposure as the portfolio value rises",
+    "hint": "यह 'momentum' logic को follow करता है—prices बढ़ने पर अधिक खरीदना।",
+    "explanation": "CPPI का aim 'floor' value को protect करना है, जबकि 'cushion' बढ़ने पर risky assets में अधिक shift करके upside की अनुमति देना है।"
+  },
+  {
+    "id": 16,
+    "question": "In a 'Trending' (strongly rising) market, rebalancing ________.",
+    "options": [
+      "Increases returns compared to buy-and-hold",
+      "Decreases returns compared to buy-and-hold",
+      "Has no impact on returns",
+      "Eliminates all market risk"
+    ],
+    "answer": "Decreases returns compared to buy-and-hold",
+    "hint": "Rebalancing में 'selling the winner' शामिल है।",
+    "explanation": "यदि कोई stock बिना correct हुए लगातार बढ़ता रहता है, तो rebalancing इसके pieces को जल्दी बेच देता है, जिससे इसे hold करने की तुलना में कम profit होता है।"
+  },
+  {
+    "id": 17,
+    "question": "In a 'Mean-Reverting' (sideways/volatile) market, rebalancing ________.",
+    "options": [
+      "Decreases returns",
+      "Increases returns",
+      "Causes the portfolio to go to zero",
+      "Only benefits the broker"
+    ],
+    "answer": "Increases returns",
+    "hint": "Rebalancing price में 'swings' को capture करता है।",
+    "explanation": "Rebalancing तब excel करता है जब assets एक cycle में ऊपर और नीचे जाते हैं, क्योंकि यह consistently 'buys the dips' और 'sells the peaks'।"
+  },
+  {
+    "id": 18,
+    "question": "What is the 'Psychological' challenge of rebalancing?",
+    "options": [
+      "It is too easy to do",
+      "It requires selling the assets that have been performing the best (the winners)",
+      "It requires buying assets that are currently rising",
+      "It requires talking to the client every hour"
+    ],
+    "answer": "It requires selling the assets that have been performing the best (the winners)",
+    "hint": "जो काम कर रहा है उसे बेचना 'गलत' (wrong) लगता है।",
+    "explanation": "Investors अक्सर अपने winners से emotionally attach हो जाते हैं और 'losers' या laggards को खरीदने के लिए उन्हें बेचना मुश्किल लगता है।"
+  },
+  {
+    "id": 19,
+    "question": "What is 'Cash Flow' rebalancing?",
+    "options": [
+      "Selling all stocks for cash",
+      "Using new dividends, interest, or fresh deposits to buy underweight assets",
+      "Withdrawing all profit every month",
+      "Buying stocks only with borrowed money"
+    ],
+    "answer": "Using new dividends, interest, or fresh deposits to buy underweight assets",
+    "hint": "Rebalance करने का सबसे cost-efficient तरीका।",
+    "explanation": "यह केवल underweight assets में 'add' करके overweight assets को बेचने की transaction costs और taxes से बचाता है।"
+  },
+  {
+    "id": 20,
+    "question": "What is 'Automatic' rebalancing?",
+    "options": [
+      "A robot that picks stocks",
+      "A system where rebalancing trades are triggered automatically by software when drift limits are hit",
+      "The market rebalancing itself",
+      "The client doing the trades"
+    ],
+    "answer": "A system where rebalancing trades are triggered automatically by software when drift limits are hit",
+    "hint": "Modern PMS और Robo-advisory platforms में common है।",
+    "explanation": "Automation human emotion को हटा देता है और यह सुनिश्चित करता है कि portfolio strictly risk mandate के भीतर रहे।"
+  },
+  {
+    "id": 21,
+    "question": "Which factor would justify a 'Narrower' rebalancing corridor (e.g., +/- 1%)?",
+    "options": [
+      "High transaction costs",
+      "High risk aversion and need for strict risk control",
+      "Low market volatility",
+      "High taxes"
+    ],
+    "answer": "High risk aversion and need for strict risk control",
+    "hint": "Investor चाहता है कि portfolio plan के बहुत करीब रहे।",
+    "explanation": "एक narrow corridor यह सुनिश्चित करता है कि risk profile लगभग कभी न बदले, लेकिन इससे trading बहुत अधिक frequent होती है और costs अधिक होती हैं।"
+  },
+  {
+    "id": 22,
+    "question": "Which factor would justify a 'Wider' rebalancing corridor (e.g., +/- 10%)?",
+    "options": [
+      "Low transaction costs",
+      "High transaction costs and high taxes",
+      "A very conservative risk profile",
+      "Daily news updates"
+    ],
+    "answer": "High transaction costs and high taxes",
+    "hint": "Trading महंगी है, इसलिए आप इसे तभी करते हैं जब बिल्कुल आवश्यक हो।",
+    "explanation": "Wider corridors अधिक drift की अनुमति देते हैं, trades की संख्या को कम करते हैं और capital को fees और taxes द्वारा खाए जाने से बचाते हैं।"
+  },
+  {
+    "id": 23,
+    "question": "What is 'Inter-asset' rebalancing?",
+    "options": [
+      "Rebalancing within the same sector",
+      "Rebalancing between different asset classes like Equity and Debt",
+      "Selling one stock to buy another stock",
+      "Rebalancing between two different countries"
+    ],
+    "answer": "Rebalancing between different asset classes like Equity and Debt",
+    "hint": "सबसे common और important प्रकार का rebalancing.",
+    "explanation": "यह rebalancing पूरे portfolio के fundamental risk-return trade-off को maintain करता है।"
+  },
+  {
+    "id": 24,
+    "question": "What is 'Intra-asset' rebalancing?",
+    "options": [
+      "Selling debt to buy equity",
+      "Rebalancing within an asset class, such as between Large-cap and Mid-cap stocks",
+      "Moving money to a bank account",
+      "Only buying gold"
+    ],
+    "answer": "Rebalancing within an asset class, such as between Large-cap and Mid-cap stocks",
+    "hint": "एक category के भीतर 'style' या 'cap' balance को maintain करना।",
+    "explanation": "यह सुनिश्चित करता है कि portfolio का equity हिस्सा किसी एक specific segment द्वारा बहुत अधिक dominate न हो जाए।"
+  },
+  {
+    "id": 25,
+    "question": "How does 'Volatility' affect rebalancing frequency?",
+    "options": [
+      "Higher volatility leads to fewer rebalancing triggers",
+      "Higher volatility leads to more frequent rebalancing triggers in a threshold strategy",
+      "Volatility has no effect on rebalancing",
+      "Volatility only affects debt portfolios"
+    ],
+    "answer": "Higher volatility leads to more frequent rebalancing triggers in a threshold strategy",
+    "hint": "बड़े price swings से तेजी से 'drift' होता है।",
+    "explanation": "एक volatile market में, asset weights अपने 'tolerance bands' पर बहुत तेज़ी से hit करते हैं, जिसके लिए manager को intervene करने की आवश्यकता होती है।"
+  },
+  {
+    "id": 26,
+    "question": "What is 'Valuation-based' rebalancing?",
+    "options": [
+      "Rebalancing only on the client's birthday",
+      "Rebalancing based on market valuation metrics like P/E or P/B ratios",
+      "Selling only the cheapest stocks",
+      "Buying only the most expensive stocks"
+    ],
+    "answer": "Rebalancing based on market valuation metrics like P/E or P/B ratios",
+    "hint": "एक asset class से दूर जाना क्योंकि यह 'expensive' (महंगा) हो गया है।",
+    "explanation": "यह एक tactical approach है जहाँ manager किसी asset class में exposure को कम करता है, न केवल इसलिए कि यह बढ़ गया है, बल्कि इसलिए कि इसे 'overvalued' के रूप में देखा जाता है।"
+  },
+  {
+    "id": 27,
+    "question": "In a 'Constant-Mix' strategy, the manager ________.",
+    "options": [
+      "Keeps the dollar amount in each asset the same",
+      "Maintains a constant percentage (e.g., 60/40) regardless of total portfolio value",
+      "Only buys index funds",
+      "Changes the mix every day"
+    ],
+    "answer": "Maintains a constant percentage (e.g., 60/40) regardless of total portfolio value",
+    "hint": "अधिकांश balanced funds के लिए standard rebalancing philosophy.",
+    "explanation": "इस strategy में उस asset को बेचने की आवश्यकता होती है जिसकी relative value बढ़ गई है और उसे खरीदना होता है जो घट गया है।"
+  },
+  {
+    "id": 28,
+    "question": "Which of the following is NOT a rebalancing trigger?",
+    "options": [
+      "Passage of a specific time period",
+      "Weight deviation exceeding a limit",
+      "A change in the company's CEO",
+      "Major change in the client's risk profile"
+    ],
+    "answer": "A change in the company's CEO",
+    "hint": "'Portfolio Structure' से संबंधित triggers पर focus करें।",
+    "explanation": "CEO का change 'Security Selection' (उस stock को खरीदना या बेचना) को trigger कर सकता है, लेकिन rebalancing 'Asset Allocation' weights के बारे में है।"
+  },
+  {
+    "id": 29,
+    "question": "What is 'Partial' rebalancing?",
+    "options": [
+      "Only rebalancing one client",
+      "Moving weights closer to the target but not all the way, to save on costs",
+      "Only selling winners but not buying losers",
+      "Rebalancing only on half-holidays"
+    ],
+    "answer": "Moving weights closer to the target but not all the way, to save on costs",
+    "hint": "Cost management के लिए एक middle-ground approach.",
+    "explanation": "यदि कोई weight 65% (Target 60%) तक drift हो जाता है, तो एक manager trade के size और cost को कम करने के लिए 60% के बजाय 62% पर rebalance कर सकता है।"
+  },
+  {
+    "id": 30,
+    "question": "Which rebalancing strategy is most suitable for an investor who wants to 'Capture Momentum'?",
+    "options": [
+      "Constant Mix",
+      "Buy and Hold or CPPI",
+      "Threshold rebalancing",
+      "Strategic rebalancing"
+    ],
+    "answer": "Buy and Hold or CPPI",
+    "hint": "Momentum investors winners की 'ride' करना चाहते हैं।",
+    "explanation": "Constant mix (standard rebalancing) winners को बेचकर momentum के *against* (खिलाफ) काम करता है। Buy-and-hold winners को बढ़ने देता है।"
+  },
+  {
+    "id": 31,
+    "question": "What is 'Rebalancing to the Edge'?",
+    "options": [
+      "Selling all stocks",
+      "Rebalancing just enough to bring the weight back to the inner edge of the tolerance band",
+      "Rebalancing to the total market cap",
+      "Ignoring the rules"
+    ],
+    "answer": "Rebalancing just enough to bring the weight back to the inner edge of the tolerance band",
+    "hint": "Trading की amount को minimize करने के लिए उपयोग किया जाता है।",
+    "explanation": "यदि corridor 45-55% है, और stock 56% पर hit करता है, तो manager इसे 55% पर वापस लाने के लिए केवल उतना ही बेचता है।"
+  },
+  {
+    "id": 32,
+    "question": "What is the primary benefit of 'Calendar-based' rebalancing for a small investor?",
+    "options": [
+      "It captures every market swing",
+      "It is simple to understand and execute without complex software",
+      "It is the most tax-efficient",
+      "It guarantees the highest returns"
+    ],
+    "answer": "It is simple to understand and execute without complex software",
+    "hint": "Easiness और discipline.",
+    "explanation": "एक investor हर साल 'Jan 1st' के लिए अपने weights check करने और adjustments करने के लिए आसानी से एक reminder set कर सकता है।"
+  },
+  {
+    "id": 33,
+    "question": "A 'Stop-loss' order is a tool for ________.",
+    "options": [
+      "Increasing profit",
+      "Managing downside risk and triggering an exit (a form of rebalancing to cash)",
+      "Avoiding all taxes",
+      "Choosing a new fund manager"
+    ],
+    "answer": "Managing downside risk and triggering an exit (a form of rebalancing to cash)",
+    "hint": "Loss को बदतर होने से 'stop' करने के लिए उपयोग किया जाता है।",
+    "explanation": "हालांकि अक्सर individual stocks के लिए उपयोग किया जाता है, यह capital को protect करने के लिए एक dynamic rebalancing strategy का हिस्सा हो सकता है।"
+  },
+  {
+    "id": 34,
+    "question": "The 'Tracking Error' of an active portfolio might ________ after a rebalancing exercise.",
+    "options": [
+      "Always increase",
+      "Change, as the manager resets their active bets relative to the index",
+      "Always become zero",
+      "Become negative"
+    ],
+    "answer": "Change, as the manager resets their active bets relative to the index",
+    "hint": "Rebalancing manager के लिए choice का एक moment है।",
+    "explanation": "Rebalancing manager को यह evaluate करने की अनुमति देता है कि क्या उनके 'overweight' और 'underweight' positions अभी भी समझ में आते हैं।"
+  },
+  {
+    "id": 35,
+    "question": "Which of the following is a 'Dynamic' rebalancing strategy?",
+    "options": [
+      "Buy and Hold",
+      "CPPI (Constant Proportion Portfolio Insurance)",
+      "Calendar rebalancing",
+      "Investing only in bank FDs"
+    ],
+    "answer": "CPPI (Constant Proportion Portfolio Insurance)",
+    "hint": "Portfolio value change होने पर asset mix automatically change हो जाता है।",
+    "explanation": "Dynamic strategies market performance के आधार पर equity/debt ratio को लगातार adjust करने के लिए math formulas का उपयोग करती हैं।"
+  },
+  {
+    "id": 36,
+    "question": "What is 'Tax-Loss Harvesting' in the context of rebalancing?",
+    "options": [
+      "Avoiding all taxes forever",
+      "Selling loss-making assets during rebalancing to offset gains and reduce the tax bill",
+      "Only buying stocks that are about to fall",
+      "Hiding profits from the government"
+    ],
+    "answer": "Selling loss-making assets during rebalancing to offset gains and reduce the tax bill",
+    "hint": "Rebalancing की 'Cost' को कम करने का एक smart तरीका।",
+    "explanation": "Managers अपनी rebalancing को ऐसे समय पर करते हैं जिससे losses realize हो सकें जो winners को बेचने से होने वाले taxable gains को cancel कर सकें।"
+  },
+  {
+    "id": 37,
+    "question": "Rebalancing is less effective when the correlation between assets is ________.",
+    "options": [
+      "Zero",
+      "Very Low",
+      "Very High (close to +1.0)",
+      "Negative"
+    ],
+    "answer": "Very High (close to +1.0)",
+    "hint": "यदि सभी assets एक साथ move करते हैं, तो weights में कोई 'drift' नहीं होता है।",
+    "explanation": "यदि stocks और bonds दोनों 10% बढ़ते हैं, तो percentage weights समान रहते हैं, और किसी rebalancing की आवश्यकता नहीं होती है।"
+  },
+  {
+    "id": 38,
+    "question": "What is the 'Anchor' in a rebalancing strategy?",
+    "options": [
+      "A ship's anchor",
+      "The Strategic Asset Allocation (target weights)",
+      "The current market price",
+      "The manager's salary"
+    ],
+    "answer": "The Strategic Asset Allocation (target weights)",
+    "hint": "वह fixed point जिस पर आप लौटते हैं।",
+    "explanation": "Anchor वह long-term plan है जो investor को market extremes के दौरान emotional decisions लेने से रोकता है।"
+  },
+  {
+    "id": 39,
+    "question": "Which rebalancing strategy is 'Anti-Cyclical'?",
+    "options": [
+      "Buy and Hold",
+      "Constant Mix (Standard Rebalancing)",
+      "Momentum strategy",
+      "Sector Rotation"
+    ],
+    "answer": "Constant Mix (Standard Rebalancing)",
+    "hint": "यह जो 'hot' है उसे बेचता है और जो 'cold' है उसे खरीदता है।",
+    "explanation": "Constant mix बढ़ते assets में exposure कम करके prevailing market trend के against (विपरीत) काम करता है।"
+  },
+  {
+    "id": 40,
+    "question": "What is 'Style' rebalancing?",
+    "options": [
+      "Changing the manager's clothes",
+      "Adjusting the weights between Value and Growth or Large and Small cap within the equity portion",
+      "Only buying 'stylish' companies",
+      "Investing only in the fashion industry"
+    ],
+    "answer": "Adjusting the weights between Value and Growth or Large and Small cap within the equity portion",
+    "hint": "एक प्रकार का 'Intra-asset' rebalancing.",
+    "explanation": "यह सुनिश्चित करता है कि portfolio किसी एक investment philosophy (जैसे बहुत अधिक 'Growth' risk) की ओर बहुत अधिक biased न हो जाए।"
+  },
+  {
+    "id": 41,
+    "question": "In a 'Bear' market, rebalancing typically involves ________.",
+    "options": [
+      "Selling stocks to buy bonds",
+      "Buying stocks (which have become underweight) by selling bonds",
+      "Selling everything and going to cash",
+      "Only buying gold"
+    ],
+    "answer": "Buying stocks (which have become underweight) by selling bonds",
+    "hint": "आप 'dip' खरीद रहे हैं।",
+    "explanation": "जैसे-जैसे stock values गिरती हैं, portfolio में उनका weight कम हो जाता है। Rebalancing investor को कम prices पर अधिक stocks खरीदने के लिए मजबूर करता है।"
+  },
+  {
+    "id": 42,
+    "question": "Which of the following is a drawback of 'Time-only' rebalancing?",
+    "options": [
+      "It is too complex",
+      "It may trigger trades when drift is very small, or miss large drifts that happen between check dates",
+      "It is illegal",
+      "It only works for equity"
+    ],
+    "answer": "It may trigger trades when drift is very small, or miss large drifts that happen between check dates",
+    "hint": "यह market volatility के प्रति 'blind' (अंधा) है।",
+    "explanation": "दो calendar check-points के बीच एक crash हो सकता है और recover हो सकता है, जिससे portfolio un-rebalanced रह जाता है जब इसे इसकी सबसे अधिक आवश्यकता होती है।"
+  },
+  {
+    "id": 43,
+    "question": "The decision on 'Tolerance Band' width depends on ________.",
+    "options": [
+      "The manager's age",
+      "The trade-off between risk control and transaction costs/taxes",
+      "The number of employees in the firm",
+      "The color of the app"
+    ],
+    "answer": "The trade-off between risk control and transaction costs/taxes",
+    "hint": "Rebalancing के 'Cost vs. Benefit' को manage करना।",
+    "explanation": "Managers ऐसे bands set करते हैं जो 'churning' से बचने के लिए काफी चौड़े हों लेकिन risk को control में रखने के लिए काफी संकीर्ण (narrow) हों।"
+  },
+  {
+    "id": 44,
+    "question": "What is 'Rebalancing with Dividends'?",
+    "options": [
+      "Giving the dividend to charity",
+      "Reinvesting dividends only into the asset classes that are currently underweight",
+      "Using dividends to pay for a vacation",
+      "Buying only the stocks that paid the dividend"
+    ],
+    "answer": "Reinvesting dividends only into the asset classes that are currently underweight",
+    "hint": "एक 'Cash flow' rebalancing method.",
+    "explanation": "यह highly efficient है क्योंकि यह किसी भी existing holdings को बेचे बिना portfolio को rebalance करता है।"
+  },
+  {
+    "id": 45,
+    "question": "A portfolio manager who rebalances very frequently (e.g., daily) is likely ________.",
+    "options": [
+      "A long-term investor",
+      "Increasing transaction costs and hurting the client's net returns",
+      "A genius",
+      "Following SEBI rules strictly"
+    ],
+    "answer": "Increasing transaction costs and hurting the client's net returns",
+    "hint": "Frequent trading आमतौर पर 'Churning' है।",
+    "explanation": "जब तक यह एक high-frequency algorithmic strategy न हो, costs को account करने के बाद daily rebalancing शायद ही कभी beneficial होती है।"
+  },
+  {
+    "id": 46,
+    "question": "What is 'Risk-Parity' rebalancing?",
+    "options": [
+      "Rebalancing to equal weights",
+      "Rebalancing so that each asset class contributes equally to the total risk of the portfolio",
+      "Only investing in low-risk bonds",
+      "Avoiding all risk"
+    ],
+    "answer": "Rebalancing so that each asset class contributes equally to the total risk of the portfolio",
+    "hint": "'Rupee Value' के बजाय 'Risk Contribution' पर focus करता है।",
+    "explanation": "इस advanced strategy में, यदि stocks अधिक volatile हो जाते हैं, तो manager total risk contribution को समान रखने के लिए उन्हें बेच देगा।"
+  },
+  {
+    "id": 47,
+    "question": "What is the 'Target Weight'?",
+    "options": [
+      "The weight of the heaviest stock",
+      "The ideal percentage allocation for an asset class as per the IPS",
+      "The weight of the manager",
+      "The total value of the portfolio"
+    ],
+    "answer": "The ideal percentage allocation for an asset class as per the IPS",
+    "hint": "'Goal' weight.",
+    "explanation": "यह वह percentage है जो portfolio में 'होना चाहिए' (जैसे 60% Equity)।"
+  },
+  {
+    "id": 48,
+    "question": "What is 'Ad-hoc' rebalancing?",
+    "options": [
+      "Rebalancing on a fixed schedule",
+      "Rebalancing based on the manager's intuition or sudden market events without a fixed rule",
+      "Rebalancing only for NRIs",
+      "A rule set by SEBI"
+    ],
+    "answer": "Rebalancing based on the manager's intuition or sudden market events without a fixed rule",
+    "hint": "Unplanned और discretionary.",
+    "explanation": "यद्यपि यह flexibility प्रदान करता है, इसमें rule-based (time या threshold) rebalancing के discipline का अभाव होता है।"
+  },
+  {
+    "id": 49,
+    "question": "In a 'Constant-Mix' strategy, as the portfolio value increases, the dollar amount in equity ________.",
+    "options": [
+      "Stays the same",
+      "Increases proportionately to maintain the percentage",
+      "Decreases",
+      "Becomes zero"
+    ],
+    "answer": "Increases proportionately to maintain the percentage",
+    "hint": "यदि 100 का 60% 60 है, तो 200 का 60% 120 है।",
+    "explanation": "60/40 ratio को constant रखने के लिए total wealth बढ़ने पर manager को अधिक equity खरीदनी होगी।"
+  },
+  {
+    "id": 50,
+    "question": "The ultimate goal of rebalancing for a long-term investor is ________.",
+    "options": [
+      "To get rich as fast as possible",
+      "To ensure the portfolio doesn't take more risk than the investor can handle over time",
+      "To help the broker make more money",
+      "To follow the latest social media trends"
+    ],
+    "answer": "To ensure the portfolio doesn't take more risk than the investor can handle over time",
+    "hint": "यह सबसे बढ़कर एक 'Risk Management' tool है।",
+    "explanation": "Rebalancing यह peace of mind प्रदान करती है कि investment plan को consistently follow किया जा रहा है, जिससे बड़ी emotional गलतियों को रोका जा सकता है।"
+  }
+]

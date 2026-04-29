@@ -1,0 +1,92 @@
+{
+  "course": "NISM Series X-A: Investment Adviser (Level 1) Certification Examination",
+  "unit_number": 14,
+  "unit_name": "Introduction to Modern Portfolio Theory",
+  "weightage": "Module 5 का हिस्सा (Chapters 14, 15, 16 के लिए total 20 Marks)। यह chapter conceptual है और typically 4-5 marks carry करता है।",
+  "overview": "यह chapter अपना focus 'Buying a single stock' से हटाकर 'Building a Team of stocks' पर लाता है। Modern Portfolio Theory (MPT), जिसे Harry Markowitz ने propose किया था, mathematically prove करता है कि अगर आप अलग-अलग assets को सही तरीके से mix करते हैं, तो आप returns कम किए बिना risk को कम कर सकते हैं। यह famous rule introduce करता है: 'अपने सभी अंडे एक टोकरी में मत रखो (Do not put all your eggs in one basket)'।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. What is Modern Portfolio Theory (MPT)?",
+      "basic_meaning": "एक mathematical framework जो किसी specific level of risk के लिए return maximize करने वाला portfolio build करने में मदद करता है।",
+      "detailed_explanation": "MPT (1952) से पहले, लोग सोचते थे कि invest करने का best तरीका सिर्फ highest profit potential वाले 10 stocks pick करना है। Harry Markowitz ने prove किया कि यह dangerous था। [Image illustrating Modern Portfolio Theory and diversification] \n\nMPT कहता है: किसी stock का risk अकेले मत देखो। यह देखो कि यह आपके द्वारा own किए गए अन्य stocks के *relative* कैसे behave करता है। अगर Stock A ऊपर जाता है जब Stock B नीचे जाता है, तो दोनों को own करना आपकी life को smoother बनाता है।",
+      "why_this_is_important": "यह 'Diversification' का scientific basis है। इसका goal 'Efficient Frontier' (नीचे explain किया गया है) को ढूँढना है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "अगर आप केवल IT stocks (Infosys, TCS, Wipro) खरीदते हैं, तो US recession आपके पूरे portfolio को crash कर देगा। अगर आप Pharma (Sun Pharma) और FMCG (HUL) add करते हैं, तो आपका portfolio stable हो जाता है क्योंकि ये sectors अलग तरह से behave करते हैं।",
+      "exam_traps": [
+        "यह सोचना कि MPT ALL risk को eliminate कर देता है। (नहीं, यह केवल 'Unsystematic' risk को eliminate करता है)।",
+        "यह सोचना कि high risk का मतलब हमेशा high return होता है। (MPT कहता है कि high risk *should* offer high return, लेकिन poor diversification low return के साथ high risk देता है)।"
+      ],
+      "memory_trick": "MPT = Mix People Together (Teamwork failure को कम करता है)।"
+    },
+    {
+      "concept": "2. Correlation Coefficient",
+      "basic_meaning": "-1 और +1 के बीच का एक number जो measure करता है कि दो assets एक साथ कैसे move करते हैं।",
+      "detailed_explanation": "यह diversification के लिए सबसे critical number है।\n\n1. **Positive Correlation (+1):** दोनों बिल्कुल एक साथ move करते हैं। (जैसे, HDFC Bank और ICICI Bank)। कोई diversification benefit नहीं।\n2. **Negative Correlation (-1):** वे exact opposite directions में move करते हैं। (जैसे, Gold और Stocks अक्सर opposite move करते हैं)। Maximum diversification benefit।\n3. **Zero Correlation (0):** कोई relationship नहीं। (जैसे, Mumbai में Rainfall और Microsoft stock का price)। Diversification के लिए अच्छा है।",
+      "why_this_is_important": "NISM पूछता है: 'Risk कम करने के लिए, क्या आपको +1 या -1 correlation वाला stock add करना चाहिए?' (Answer: -1 या 0 के करीब)।",
+      "formula": "Range: -1 to +1",
+      "formula_explanation": "-1 perfect hedge है। +1 no hedge है।",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "2008 के crash के दौरान, Sensex 50% गिर गया, लेकिन Gold prices ऊपर गए। Sensex और Gold दोनों को hold करने वाले investor को केवल Sensex hold करने वाले investor की तुलना में बहुत कम loss हुआ।",
+      "exam_traps": [
+        "यह सोचना कि 0 के correlation का मतलब 'Bad' है। (0 असल में diversification के लिए अच्छा है)।",
+        "यह सोचना कि आपको exactly -1 चाहिए। (Perfect -1 rare है; +0.5 से कम कुछ भी आमतौर पर काफी अच्छा होता है)।"
+      ],
+      "memory_trick": "+1 = Friends (एक साथ चलते हैं)। -1 = Enemies (Opposite चलते हैं)। 0 = Strangers (कोई परवाह नहीं)।"
+    },
+    {
+      "concept": "3. Standard Deviation vs. Beta (Risk Measures)",
+      "basic_meaning": "'Risk' को measure करने के दो अलग-अलग rulers.",
+      "detailed_explanation": "1. **Standard Deviation (Total Risk):** Measure करता है कि कोई stock अपने average return से कितना deviate करता है। इसमें market risk (Systematic) और company risk (Unsystematic) दोनों शामिल हैं। Individual stocks या undiversified portfolios के लिए use होता है। [Image explaining Beta vs Standard Deviation risk measures]\n2. **Beta (Market Risk):** Measure करता है कि Market Index (Nifty/Sensex) की तुलना में stock कितना move करता है।\n   - Beta = 1: Market के समान move करता है।\n   - Beta > 1: ज़्यादा volatile (Aggressive)।\n   - Beta < 1: कम volatile (Defensive)।",
+      "why_this_is_important": "अगर client के पास fully diversified portfolio है, तो Beta use करें। अगर उनके पास सिर्फ एक stock है, तो Standard Deviation use करें।",
+      "formula": "$$Beta = \\frac{Covariance(Stock, Market)}{Variance(Market)}$$",
+      "formula_explanation": "यह sensitivity दिखाता है। अगर Beta 1.5 है, और Market 10% बढ़ता है, तो Stock 15% बढ़ता है।",
+      "step_by_step_calculation_example": "Market Return = 10%. Risk Free Rate = 6%. Stock Beta = 1.2.\nExpected Return = 6 + 1.2(10 - 6) = 10.8%.\n(यह CAPM formula logic है)।",
+      "real_life_indian_example": "Adani Enterprises (High Beta ~2.0) बहुत तेज़ी से swing करता है। HUL (Low Beta ~0.6) धीरे-धीरे move करता है। एक conservative investor को HUL pick करना चाहिए।",
+      "exam_traps": [
+        "SD को Beta के साथ confuse करना। SD = Total Risk. Beta = Systematic Risk.",
+        "यह सोचना कि Beta केवल loss को measure करता है। (Beta upside और downside दोनों पर volatility measure करता है)।"
+      ],
+      "memory_trick": "SD = Standard Deviation = Single/Solo Risk. Beta = Benchmark Risk."
+    },
+    {
+      "concept": "4. The Efficient Frontier",
+      "basic_meaning": "एक graphical curve जो 'Best Possible' portfolios दिखाता है।",
+      "detailed_explanation": "अगर आप stocks के हर possible combination के लिए Risk (X-axis) vs. Return (Y-axis) plot करते हैं, तो आपको bullet जैसा एक shape मिलता है। \nइस shape की **upper boundary** को 'Efficient Frontier' कहा जाता है।\n- Line के ON (ऊपर) कोई भी portfolio 'Efficient' है (उस risk के लिए best return)।\n- Line के BELOW (नीचे) कोई भी portfolio 'Inefficient' है (आप risk ले रहे हैं लेकिन कम return पा रहे हैं)।",
+      "why_this_is_important": "एक portfolio manager का goal client के portfolio को इस line पर (ONTO) push करना होता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Portfolio A: Risk 10%, Return 12%. \nPortfolio B: Risk 10%, Return 8%. \nPortfolio A Efficient Frontier पर है। Portfolio B inefficient है क्योंकि समान 10% risk के लिए, यह कम पैसा देता है।",
+      "exam_traps": [
+        "यह सोचना कि आप efficient frontier के ABOVE (ऊपर) जा सकते हैं। (आप नहीं जा सकते, जब तक कि आप leverage/borrowing add न करें)।",
+        "यह सोचना कि केवल एक 'best' point है। (नहीं, पूरी line efficient है; choice client की risk appetite पर depend करती है)।"
+      ],
+      "memory_trick": "Frontier = The Border. Border से कम (नीचे) किसी भी चीज़ के लिए settle न हों।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Systematic vs. Unsystematic Risk",
+      "clear_explanation": "Systematic (Market Risk): Macro factors जैसे Interest Rates, War, Inflation. इन्हें diversify नहीं किया जा सकता। Beta द्वारा measure किया जाता है। \nUnsystematic (Business Risk): Company factors जैसे Strikes, Fire, Lawsuits. इन्हें Diversification द्वारा remove किया जा सकता है। Standard Deviation minus Beta द्वारा measure किया जाता है।"
+    },
+    {
+      "difference_between": "Variance vs. Standard Deviation",
+      "clear_explanation": "Variance mathematical calculation (Squared deviation) है। Standard Deviation Variance का square root है। हम Standard Deviation का उपयोग करते हैं क्योंकि यह returns की समान unit (%) में होता है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Correlation Coefficient की Range (-1 से +1)।",
+    "कौन सा risk diversify किया जा सकता है? (Unsystematic)।",
+    "Beta की Definition (Sensitivity to Market)।",
+    "Risk/return numbers दिए जाने पर 'Efficient' vs 'Inefficient' portfolios को identify करना।"
+  ],
+  "quick_revision_summary": [
+    "MPT किसी दिए गए risk के लिए return maximize करने का aim रखता है।",
+    "Diversification सबसे अच्छा तब काम करता है जब correlation Negative (-1) हो।",
+    "Total Risk = Systematic + Unsystematic.",
+    "Beta Systematic Risk (Market Risk) को measure करता है।",
+    "Efficient Frontier optimal portfolios को represent करता है।"
+  ]
+}

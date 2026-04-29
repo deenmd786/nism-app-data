@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following best describes a 'Forward Contract'?",
+    "options": [
+      "A standardized contract traded on an exchange",
+      "An agreement to buy or sell an asset at a future date for a price agreed upon today",
+      "A contract that gives the right but not the obligation to buy",
+      "An agreement settled immediately in cash"
+    ],
+    "answer": "An agreement to buy or sell an asset at a future date for a price agreed upon today",
+    "hint": "यह future के लिए एक private agreement है।",
+    "explanation": "Forward contract दो parties के बीच एक customized, private agreement होता है, जिसमें किसी asset को भविष्य की एक तय तारीख (future date) पर उस price पर exchange किया जाता है जो contract के समय ही तय कर लिया गया हो।"
+  },
+  {
+    "id": 2,
+    "question": "What is the primary risk associated with Forward Contracts that is minimized in Futures Contracts?",
+    "options": [
+      "Market Risk",
+      "Counterparty (Credit) Risk",
+      "Inflation Risk",
+      "Interest Rate Risk"
+    ],
+    "answer": "Counterparty (Credit) Risk",
+    "hint": "यह risk कि सामने वाली party payment करने से मना कर दे।",
+    "explanation": "चूँकि Forwards द्विपक्षीय (bilateral) OTC contracts होते हैं और इनमें कोई central clearinghouse नहीं होता, इसलिए इस बात का बड़ा risk रहता है कि कोई एक party अपनी obligation पूरी करने से default कर जाए। इसे Counterparty Risk कहते हैं।"
+  },
+  {
+    "id": 3,
+    "question": "Futures contracts are:",
+    "options": [
+      "Customized and traded OTC",
+      "Standardized and traded on an exchange",
+      "Non-binding agreements",
+      "Always settled by physical delivery"
+    ],
+    "answer": "Standardized and traded on an exchange",
+    "hint": "Exchange traded = Standardized.",
+    "explanation": "Futures पूरी तरह से standardized contracts होते हैं (lot size, expiry date आदि के मामले में) जो organized exchanges पर trade होते हैं। इससे liquidity और safety सुनिश्चित होती है।"
+  },
+  {
+    "id": 4,
+    "question": "If you buy a futures contract, your view on the underlying asset is:",
+    "options": [
+      "Bearish",
+      "Bullish",
+      "Neutral",
+      "Volatile"
+    ],
+    "answer": "Bullish",
+    "hint": "अगर prices ऊपर जाएंगे तो आपको profit होगा।",
+    "explanation": "Future buy करने (Long जाने) का मतलब है कि आप asset को भविष्य में एक fixed price पर खरीदने का agreement कर रहे हैं। अगर market price आपके purchase price से ऊपर जाता है, तो आपको profit होता है (यानी आपका view Bullish है)।"
+  },
+  {
+    "id": 5,
+    "question": "If you sell a futures contract, your view on the underlying asset is:",
+    "options": [
+      "Bullish",
+      "Bearish",
+      "Neutral",
+      "Optimistic"
+    ],
+    "answer": "Bearish",
+    "hint": "अगर prices नीचे जाएंगे तो आपको profit होगा।",
+    "explanation": "Future sell करने (Short जाने) का मतलब है कि आप asset को भविष्य में एक fixed price पर बेचने का agreement कर रहे हैं। अगर market price आपके selling price से नीचे गिरता है, तो आपको profit होता है (यानी आपका view Bearish है)।"
+  },
+  {
+    "id": 6,
+    "question": "The theoretical price of a future is calculated using which model?",
+    "options": [
+      "Black-Scholes Model",
+      "Cost of Carry Model",
+      "Binomial Model",
+      "Monte Carlo Simulation"
+    ],
+    "answer": "Cost of Carry Model",
+    "hint": "Asset को future date तक 'carry' (होल्ड) करने का cost.",
+    "explanation": "Cost of Carry model किसी future का fair price calculate करता है। इसमें asset को होल्ड करने का cost (जैसे interest, storage) spot price में add किया जाता है और कोई भी yield (जैसे dividends) subtract की जाती है।"
+  },
+  {
+    "id": 7,
+    "question": "According to the Cost of Carry model, Fair Futures Price (F) =",
+    "options": [
+      "Spot Price + Cost of Carry",
+      "Spot Price - Cost of Carry",
+      "Spot Price / Cost of Carry",
+      "Spot Price * Cost of Carry"
+    ],
+    "answer": "Spot Price + Cost of Carry",
+    "hint": "Spot price प्लस इसे होल्ड करने का cost.",
+    "explanation": "F = S + C, जहाँ S का मतलब Spot Price है और C का मतलब Cost of Carry (Interest - Dividend) है।"
+  },
+  {
+    "id": 8,
+    "question": "If the Futures price is higher than the Spot price, the market is said to be in:",
+    "options": [
+      "Backwardation",
+      "Contango",
+      "Discount",
+      "Recession"
+    ],
+    "answer": "Contango",
+    "hint": "Curve 'Up' (ऊपर) की तरफ जाता है।",
+    "explanation": "Contango एक normal market condition है जहाँ Futures price, Spot price से ज़्यादा होता है। ऐसा आमतौर पर cost of carry की वजह से होता है।"
+  },
+  {
+    "id": 9,
+    "question": "If the Futures price is lower than the Spot price, the market is said to be in:",
+    "options": [
+      "Contango",
+      "Backwardation",
+      "Premium",
+      "Inflation"
+    ],
+    "answer": "Backwardation",
+    "hint": "Curve 'Back' (पीछे) या नीचे की तरफ जाता है।",
+    "explanation": "Backwardation तब होता है जब Futures price, Spot price से कम हो जाता है। ऐसा अक्सर physical asset की shortage या ज़्यादा dividend expectation के कारण होता है।"
+  },
+  {
+    "id": 10,
+    "question": "What happens to the difference between Spot and Futures prices as the expiration date approaches?",
+    "options": [
+      "It widens",
+      "It remains constant",
+      "It converges to zero",
+      "It becomes negative"
+    ],
+    "answer": "It converges to zero",
+    "hint": "Expiry के दिन future ही spot बन जाता है।",
+    "explanation": "जैसे-जैसे contract expiry के करीब आता है, cost of carry कम होती जाती है। Expiration day पर, Futures price और Spot price बराबर हो जाने चाहिए (इसे Convergence कहते हैं)।"
+  },
+  {
+    "id": 11,
+    "question": "What is 'Tick Size'?",
+    "options": [
+      "The total value of the contract",
+      "The minimum price fluctuation allowed",
+      "The commission charged",
+      "The number of shares in a lot"
+    ],
+    "answer": "The minimum price fluctuation allowed",
+    "hint": "Price का सबसे छोटा step जो move कर सकता है।",
+    "explanation": "Tick size वह minimum price movement है जो exchange द्वारा allow किया जाता है (उदाहरण के लिए, 0.05 पैसे)।"
+  },
+  {
+    "id": 12,
+    "question": "The 'Contract Cycle' for equity derivatives in India typically consists of:",
+    "options": [
+      "1 month contracts only",
+      "Near month, Next month, and Far month contracts",
+      "Weekly contracts only",
+      "Yearly contracts only"
+    ],
+    "answer": "Near month, Next month, and Far month contracts",
+    "hint": "लगातार आने वाले तीन महीने।",
+    "explanation": "किसी भी समय, trading के लिए तीन monthly contracts उपलब्ध होते हैं: Near Month (वर्तमान महीना), Next Month (अगला महीना), और Far Month (तीसरा महीना)।"
+  },
+  {
+    "id": 13,
+    "question": "When does a standard monthly equity derivative contract expire in India?",
+    "options": [
+      "Last day of the month",
+      "Last Thursday of the month",
+      "First Monday of the month",
+      "15th of the month"
+    ],
+    "answer": "Last Thursday of the month",
+    "hint": "Thursday (गुरुवार) सबसे important दिन होता है।",
+    "explanation": "Monthly contracts हमेशा expiry month के आखिरी गुरुवार (Last Thursday) को expire होते हैं। अगर उस दिन छुट्टी (holiday) है, तो यह पिछले trading day पर expire होता है।"
+  },
+  {
+    "id": 14,
+    "question": "Payoff for a buyer of a futures contract is:",
+    "options": [
+      "Limited Profit, Unlimited Loss",
+      "Unlimited Profit, Limited Loss",
+      "Unlimited Profit, Unlimited Loss",
+      "Limited Profit, Limited Loss"
+    ],
+    "answer": "Unlimited Profit, Unlimited Loss",
+    "hint": "यह एक Linear payoff है।",
+    "explanation": "Long futures position का payoff linear होता है। Price बढ़ने पर आपको unlimited profit हो सकता है और price गिरने पर unlimited loss (theoretically zero तक) हो सकता है।"
+  },
+  {
+    "id": 15,
+    "question": "Which of the following creates a 'Synthetic Long' position?",
+    "options": [
+      "Buying a Call and Selling a Put (same strike)",
+      "Buying a Put and Selling a Call",
+      "Buying a Future",
+      "Selling a Future"
+    ],
+    "answer": "Buying a Call and Selling a Put (same strike)",
+    "hint": "Call bullish होता है, और Short Put भी bullish होता है।",
+    "explanation": "Long Call + Short Put एक ऐसा payoff profile बनाता है जो बिल्कुल underlying asset (या future) खरीदने जैसा होता है। इसे ही Synthetic Long कहते हैं।"
+  },
+  {
+    "id": 16,
+    "question": "What is 'Cash and Carry Arbitrage'?",
+    "options": [
+      "Buying Spot and Selling Futures when Futures are overpriced",
+      "Selling Spot and Buying Futures when Futures are overpriced",
+      "Buying only Futures",
+      "Selling only Spot"
+    ],
+    "answer": "Buying Spot and Selling Futures when Futures are overpriced",
+    "hint": "Cash asset को carry करना।",
+    "explanation": "अगर Futures price theoretically बहुत ज़्यादा (expensive) है, तो एक arbitrageur Spot market में asset buy करता है और Future sell कर देता है ताकि risk-free profit lock किया जा सके।"
+  },
+  {
+    "id": 17,
+    "question": "What is 'Reverse Cash and Carry Arbitrage'?",
+    "options": [
+      "Buying Spot and Selling Futures",
+      "Selling Spot and Buying Futures when Futures are underpriced",
+      "Buying Call Options",
+      "Selling Put Options"
+    ],
+    "answer": "Selling Spot and Buying Futures when Futures are underpriced",
+    "hint": "यह standard arbitrage का बिल्कुल उल्टा (Reverse) है।",
+    "explanation": "अगर Futures अपनी fair value से discount पर trade कर रहे हैं (underpriced हैं), तो arbitrageur underlying asset (Spot) को sell करता है और Future buy कर लेता है।"
+  },
+  {
+    "id": 18,
+    "question": "The 'Basis' is defined as:",
+    "options": [
+      "Futures Price - Spot Price",
+      "Spot Price - Futures Price",
+      "Strike Price - Spot Price",
+      "Spot Price - Strike Price"
+    ],
+    "answer": "Spot Price - Futures Price",
+    "hint": "Standard definition में Spot हमेशा पहले आता है।",
+    "explanation": "Basis = Spot Price - Futures Price. एक normal market (Contango) में basis negative होता है। Backwardation में, basis positive होता है।"
+  },
+  {
+    "id": 19,
+    "question": "If you hold a Short Futures position and the price rises, you make a:",
+    "options": [
+      "Profit",
+      "Loss",
+      "No change",
+      "Dividend"
+    ],
+    "answer": "Loss",
+    "hint": "Short sellers चाहते हैं कि price नीचे गिरे।",
+    "explanation": "एक short seller को तब नुकसान (loss) होता है जब price बढ़ता है, क्योंकि उसने current market value से कम price पर asset बेचने का agreement किया होता है।"
+  },
+  {
+    "id": 20,
+    "question": "A stock pays a dividend of Rs. 10. The Spot price is Rs. 100. Interest rate is 10% p.a. Time to expiry is 1 year. What is the Fair Futures Price? (Simple interest)",
+    "options": [
+      "100",
+      "110",
+      "120",
+      "100"
+    ],
+    "answer": "100",
+    "hint": "F = S + Interest - Dividend.",
+    "explanation": "Cost of Carry = Interest - Dividend. यहाँ Interest = 100 का 10% = 10. Dividend = 10. इसलिए F = 100 + 10 - 10 = 100."
+  },
+  {
+    "id": 21,
+    "question": "The margin calculated based on the worst-case scenario loss of a portfolio is called:",
+    "options": [
+      "Span Margin",
+      "Exposure Margin",
+      "Premium Margin",
+      "Mark-to-Market Margin"
+    ],
+    "answer": "Span Margin",
+    "hint": "Standard Portfolio Analysis of Risk.",
+    "explanation": "SPAN margin exchange द्वारा calculate किया जाता है ताकि किसी portfolio में एक दिन के अंदर होने वाले worst possible loss को कवर किया जा सके।"
+  },
+  {
+    "id": 22,
+    "question": "Initial Margin in futures is collected from:",
+    "options": [
+      "Buyer only",
+      "Seller only",
+      "Both Buyer and Seller",
+      "Neither"
+    ],
+    "answer": "Both Buyer and Seller",
+    "hint": "दोनों parties की obligation होती है।",
+    "explanation": "Options के विपरीत जहाँ सिर्फ seller margin पे करता है, Futures में buyer और seller दोनों की obligation होती है, इसलिए Initial Margin दोनों से कलेक्ट किया जाता है।"
+  },
+  {
+    "id": 23,
+    "question": "What is 'Mark-to-Market' (MTM)?",
+    "options": [
+      "The final settlement at expiry",
+      "The daily adjustment of profits and losses against the margin account",
+      "The marketing of the exchange",
+      "The process of selecting stocks for the index"
+    ],
+    "answer": "The daily adjustment of profits and losses against the margin account",
+    "hint": "Value को daily 'Mark' करना।",
+    "explanation": "MTM वह process है जहाँ contract की value को daily current market price के हिसाब से adjust किया जाता है, और profits/losses को trader के margin account में credit/debit किया जाता है।"
+  },
+  {
+    "id": 24,
+    "question": "If an investor has a long position in a stock and fears a price fall, they can hedge by:",
+    "options": [
+      "Buying Futures",
+      "Selling Futures",
+      "Buying Shares",
+      "Doing nothing"
+    ],
+    "answer": "Selling Futures",
+    "hint": "अपने long asset को short derivative से offset करें।",
+    "explanation": "Cash market में अपनी long position को hedge करने (बचाने) के लिए, investor को Futures market में short position (Sell) लेनी चाहिए।"
+  },
+  {
+    "id": 25,
+    "question": "If an investor plans to buy shares in the future and fears a price rise, they can hedge by:",
+    "options": [
+      "Buying Futures (Long Hedge)",
+      "Selling Futures (Short Hedge)",
+      "Selling Shares",
+      "Selling Call Options"
+    ],
+    "answer": "Buying Futures (Long Hedge)",
+    "hint": "अपना buy price अभी से lock कर लें।",
+    "explanation": "Long Hedge में आज ही futures buy कर लिए जाते हैं ताकि भविष्य का purchase price lock किया जा सके, जिससे asset के price बढ़ने का डर खत्म हो जाता है।"
+  },
+  {
+    "id": 26,
+    "question": "The leverage in a futures contract comes from:",
+    "options": [
+      "Paying the full contract value upfront",
+      "Paying only a margin (percentage) of the contract value",
+      "Borrowing from the broker",
+      "High volatility"
+    ],
+    "answer": "Paying only a margin (percentage) of the contract value",
+    "hint": "सिर्फ 15% cash देकर 100% value कंट्रोल करना।",
+    "explanation": "Futures traders को contract की full value का एक छोटा सा हिस्सा (margin) जमा करके बड़े contract को कंट्रोल करने की सुविधा देते हैं, इसे ही leverage कहते हैं।"
+  },
+  {
+    "id": 27,
+    "question": "Which of these is NOT a characteristic of Futures?",
+    "options": [
+      "Standardized",
+      "Exchange Traded",
+      "Central Counterparty Clearing",
+      "High Counterparty Risk"
+    ],
+    "answer": "High Counterparty Risk",
+    "hint": "Clearing House इस risk को हटा देता है।",
+    "explanation": "Futures में counterparty risk ना के बराबर होता है क्योंकि Clearing Corporation trade की गारंटी लेता है। High counterparty risk असल में Forwards का characteristic है।"
+  },
+  {
+    "id": 28,
+    "question": "For an index with a Spot price of 1000 and a risk-free rate of 6%, what is the 1-month Futures price? (Assume no dividends, use simple interest)",
+    "options": [
+      "1000",
+      "1005",
+      "1060",
+      "1006"
+    ],
+    "answer": "1005",
+    "hint": "1 महीना पूरे साल का 1/12 होता है।",
+    "explanation": "Cost of Carry = 1000 * 6% * (1/12) = 1000 * 0.06 / 12 = 5. इसलिए Futures Price = 1000 + 5 = 1005."
+  },
+  {
+    "id": 29,
+    "question": "Dividends are a ____________ to the Cost of Carry.",
+    "options": [
+      "Benefit (Negative Cost)",
+      "Cost (Positive Cost)",
+      "Neutral factor",
+      "Tax"
+    ],
+    "answer": "Benefit (Negative Cost)",
+    "hint": "ये asset को होल्ड करने का cost कम कर देते हैं।",
+    "explanation": "जहाँ Interest एक cost है जो आप asset होल्ड करने के लिए पे करते हैं, वहीं Dividends एक benefit है जो आपको मिलता है। इसलिए, वे net Cost of Carry को कम कर देते हैं (Negative Cost)।"
+  },
+  {
+    "id": 30,
+    "question": "Beta measures the sensitivity of a stock to:",
+    "options": [
+      "Interest Rates",
+      "Market Index movements",
+      "Inflation",
+      "Company Earnings"
+    ],
+    "answer": "Market Index movements",
+    "hint": "Stock की movement Market के मुकाबले।",
+    "explanation": "Beta यह दर्शाता है कि overall market index की तुलना में किसी stock का price कितना ज़्यादा या कम move करता है।"
+  },
+  {
+    "id": 31,
+    "question": "To hedge a portfolio perfectly using Index Futures, the number of contracts required depends on:",
+    "options": [
+      "Portfolio Value only",
+      "Beta of the Portfolio only",
+      "Portfolio Value, Beta, and Contract Value",
+      "The broker's advice"
+    ],
+    "answer": "Portfolio Value, Beta, and Contract Value",
+    "hint": "Hedge Ratio का formula याद करें।",
+    "explanation": "Number of Contracts निकालने का formula है = (Portfolio का Beta * Portfolio की Value) / एक Futures Contract की Value."
+  },
+  {
+    "id": 32,
+    "question": "If you are 'Long' on a stock and 'Short' on a future of the same stock, your net position is effectively:",
+    "options": [
+      "Neutral / Hedged",
+      "Double Long",
+      "Double Short",
+      "Speculative"
+    ],
+    "answer": "Neutral / Hedged",
+    "hint": "एक Plus (+), दूसरा Minus (-).",
+    "explanation": "एक position में होने वाला फायदा (gain) दूसरी position के नुकसान (loss) को offset कर देता है, जिससे आपकी net position neutral या hedged हो जाती है।"
+  },
+  {
+    "id": 33,
+    "question": "Which of the following describes 'Convenience Yield'?",
+    "options": [
+      "The benefit or premium associated with holding the physical underlying asset rather than the derivative",
+      "The yield from dividends",
+      "The interest rate",
+      "The profit from arbitrage"
+    ],
+    "answer": "The benefit or premium associated with holding the physical underlying asset rather than the derivative",
+    "hint": "Actual goods (सामान) को अपने पास रखने की 'convenience'.",
+    "explanation": "Convenience yield वह non-monetary फायदा है जो किसी physical asset (जैसे तेल या गेहूँ) को shortage के समय अपने पास रखने से मिलता है। इसी कारण अक्सर Backwardation की स्थिति बनती है।"
+  },
+  {
+    "id": 34,
+    "question": "Can you exit a Futures position before the expiry date?",
+    "options": [
+      "No, you must wait until expiry",
+      "Yes, by entering into an opposing transaction",
+      "Yes, by calling the company",
+      "Only if you make a profit"
+    ],
+    "answer": "Yes, by entering into an opposing transaction",
+    "hint": "Position को Square off करना।",
+    "explanation": "आप trading hours के दौरान कभी भी एक equal और opposite position लेकर अपनी futures position से exit कर सकते हैं (जैसे अगर आप long हैं, तो sell कर दें)।"
+  },
+  {
+    "id": 35,
+    "question": "Settlement of a futures contract at expiry usually happens at:",
+    "options": [
+      "The strike price",
+      "The opening price of the expiry day",
+      "The closing Spot price of the underlying on the expiry day",
+      "The previous day's closing price"
+    ],
+    "answer": "The closing Spot price of the underlying on the expiry day",
+    "hint": "अंत में Spot price ही मान्य होता है।",
+    "explanation": "Expiry वाले दिन, Final Settlement Price हमेशा underlying asset का closing Spot price होता है।"
+  },
+  {
+    "id": 36,
+    "question": "A 'Calendar Spread' in futures involves:",
+    "options": [
+      "Buying a future and selling a future with the same expiry",
+      "Buying a future of one expiry and selling a future of a different expiry on the same underlying",
+      "Buying a stock and selling an index",
+      "Buying a call and selling a put"
+    ],
+    "answer": "Buying a future of one expiry and selling a future of a different expiry on the same underlying",
+    "hint": "Calendar के अलग-अलग महीनों (months) में Spread बनाना।",
+    "explanation": "Calendar spread में एक ही underlying asset के अलग-अलग expiration months वाले futures contracts में एक साथ long और short positions ली जाती हैं।"
+  },
+  {
+    "id": 37,
+    "question": "If the risk-free interest rate increases, the theoretical Futures price (in Contango) will generally:",
+    "options": [
+      "Increase",
+      "Decrease",
+      "Stay the same",
+      "Become zero"
+    ],
+    "answer": "Increase",
+    "hint": "Cost of carry बढ़ जाएगा।",
+    "explanation": "चूँकि Cost of Carry = Interest - Dividend, इसलिए अगर interest rate बढ़ता है तो cost of carry भी बढ़ जाएगी, जिससे futures price भी बढ़ जाएगा।"
+  },
+  {
+    "id": 38,
+    "question": "Which of these participants ensures the financial integrity of the futures market?",
+    "options": [
+      "The Broker",
+      "The Clearing Corporation",
+      "The Market Maker",
+      "The Speculator"
+    ],
+    "answer": "The Clearing Corporation",
+    "hint": "जो Market में Central Guarantor का काम करता है।",
+    "explanation": "Clearing Corporation margins कलेक्ट करता है और central counterparty की तरह काम करता है। यह सुनिश्चित करता है कि जीतने वाली party को पैसे मिलें, भले ही हारने वाली party default कर दे।"
+  },
+  {
+    "id": 39,
+    "question": "The 'Open Interest' in a futures contract increases when:",
+    "options": [
+      "A new buyer meets a new seller",
+      "An existing buyer sells to an existing seller",
+      "An existing buyer sells to a new buyer",
+      "An existing seller buys from an existing buyer"
+    ],
+    "answer": "A new buyer meets a new seller",
+    "hint": "जब दोनों parties एकदम नई positions खोल रही हों।",
+    "explanation": "Open Interest (OI) तभी बढ़ता है जब market में एक नई long position और एक नई short position एक साथ create होती है। अगर पुरानी positions close होती हैं, तो OI घट जाता है।"
+  },
+  {
+    "id": 40,
+    "question": "Shorting a stock in the Cash (Spot) market is usually restricted because:",
+    "options": [
+      "You cannot sell what you do not own for long periods (settlement cycle constraints)",
+      "It is illegal",
+      "It requires too much money",
+      "Exchanges don't allow selling"
+    ],
+    "answer": "You cannot sell what you do not own for long periods (settlement cycle constraints)",
+    "hint": "Spot market में डिलीवरी (Delivery) देनी पड़ती है।",
+    "explanation": "Indian spot market में, आप settlement cycle के बाद तक short position को होल्ड नहीं कर सकते (Intra-day shorting allowed है, लेकिन overnight नहीं)। जबकि Futures में आप महीनों तक short positions होल्ड कर सकते हैं।"
+  },
+  {
+    "id": 41,
+    "question": "What is 'Churning'?",
+    "options": [
+      "Making butter",
+      "Excessive trading by a broker to generate commissions",
+      "Holding a position for a long time",
+      "Hedging a portfolio"
+    ],
+    "answer": "Excessive trading by a broker to generate commissions",
+    "hint": "सिर्फ fees/brokerage बनाने के लिए account में फालतू trades करना।",
+    "explanation": "Churning एक unethical (गलत) प्रैक्टिस है जहाँ कोई broker अपने client के account में ज़रूरत से ज़्यादा trades करता है, ताकि वह खुद ज़्यादा brokerage commissions कमा सके।"
+  },
+  {
+    "id": 42,
+    "question": "In a futures contract, the 'Lot Size' is determined by:",
+    "options": [
+      "The Buyer",
+      "The Seller",
+      "The Exchange / Regulator",
+      "The Broker"
+    ],
+    "answer": "The Exchange / Regulator",
+    "hint": "यह Standardization का एक हिस्सा है।",
+    "explanation": "Exchange (SEBI की guidelines के साथ) Lot Size तय करता है ताकि contract की value एक निश्चित range के अंदर ही रहे।"
+  },
+  {
+    "id": 43,
+    "question": "If you buy 1 lot of Nifty Futures at 10,000 and sell at 10,100 (Lot size = 75), your profit is:",
+    "options": [
+      "100",
+      "7500",
+      "1000",
+      "750"
+    ],
+    "answer": "7500",
+    "hint": "Price का difference * Quantity.",
+    "explanation": "Profit = (Selling Price - Buying Price) * Lot Size = (10100 - 10000) * 75 = 100 * 75 = Rs. 7500."
+  },
+  {
+    "id": 44,
+    "question": "Futures prices are usually quoted:",
+    "options": [
+      "Per Lot",
+      "Per Unit (Per Share)",
+      "Per 100 Shares",
+      "Inclusive of Tax"
+    ],
+    "answer": "Per Unit (Per Share)",
+    "hint": "बिल्कुल normal stock price की तरह।",
+    "explanation": "भले ही आप lots में trade करते हैं, लेकिन screen पर जो price दिखाया (quote किया) जाता है, वह underlying asset के per unit (प्रति शेयर) का होता है।"
+  },
+  {
+    "id": 45,
+    "question": "The relationship between futures prices of different expiry months is called:",
+    "options": [
+      "Term Structure",
+      "Price Action",
+      "Volatility Skew",
+      "Beta"
+    ],
+    "answer": "Term Structure",
+    "hint": "समय (time) के साथ prices का structure.",
+    "explanation": "Futures prices का term structure यह बताता है कि एक ही underlying asset के अलग-अलग maturity months वाले futures prices के बीच क्या relationship है (यानी market Contango में है या Backwardation में)।"
+  },
+  {
+    "id": 46,
+    "question": "Which of the following is an example of an underlying asset that cannot be delivered physically?",
+    "options": [
+      "Gold",
+      "Wheat",
+      "Stock Index (e.g., Nifty 50)",
+      "Reliance Shares"
+    ],
+    "answer": "Stock Index (e.g., Nifty 50)",
+    "hint": "यह सिर्फ एक mathematical number है।",
+    "explanation": "Index कई stocks से मिलकर बना एक statistical number होता है। आप 'index' की physical delivery नहीं दे सकते; इसलिए यह हमेशा cash-settled होता है।"
+  },
+  {
+    "id": 47,
+    "question": "When a futures contract is cash-settled, the settlement amount is based on:",
+    "options": [
+      "The difference between the entry price and the settlement price",
+      "The full value of the contract",
+      "The initial margin",
+      "The brokerage fee"
+    ],
+    "answer": "The difference between the entry price and the settlement price",
+    "hint": "Profit या Loss को Net करना।",
+    "explanation": "Cash settlement में पूरी asset value का लेन-देन नहीं होता, बल्कि entry price और final settlement price के बीच का जो net difference (profit/loss) होता है, सिर्फ वही पे किया या रिसीव किया जाता है।"
+  },
+  {
+    "id": 48,
+    "question": "Speculators provide _________ to the market.",
+    "options": [
+      "Risk",
+      "Liquidity",
+      "Regulation",
+      "Insurance"
+    ],
+    "answer": "Liquidity",
+    "hint": "वे हमेशा trade करने के लिए तैयार रहते हैं।",
+    "explanation": "Speculators hedgers के trades की दूसरी side लेने के लिए तैयार रहते हैं, जिससे market में depth और liquidity बनी रहती है।"
+  },
+  {
+    "id": 49,
+    "question": "If you hold a futures contract until expiry, the price you effectively pay for the underlying is:",
+    "options": [
+      "The Spot price on expiry",
+      "The Futures price at which you entered the contract",
+      "The average price of the month",
+      "The highest price of the day"
+    ],
+    "answer": "The Futures price at which you entered the contract",
+    "hint": "यही वह price था जिस पर आपने agreement किया था।",
+    "explanation": "हालाँकि settlement expiry वाले दिन के Spot price पर होता है, लेकिन daily MTM adjustments की वजह से आपकी जेब से जो net cost जाती है, वह असल में वही Futures price होती है जिस पर आपने शुरू में contract lock किया था।"
+  },
+  {
+    "id": 50,
+    "question": "Electronic trading systems used for derivatives in India provide:",
+    "options": [
+      "Anonymity and Time/Price Priority",
+      "Negotiation capabilities",
+      "Physical meeting place",
+      "Unlimited credit"
+    ],
+    "answer": "Anonymity and Time/Price Priority",
+    "hint": "Computers सबसे पहले best price और time को match करते हैं।",
+    "explanation": "Modern exchanges ऐसे order-matching software का इस्तेमाल करते हैं जहाँ orders को Price (best price पहले) और Time (पहले आओ, पहले पाओ) के आधार पर match किया जाता है, और trader की पहचान भी गुप्त (anonymous) रखी जाती है।"
+  }
+]

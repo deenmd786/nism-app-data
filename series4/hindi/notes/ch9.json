@@ -1,0 +1,93 @@
+{
+  "course": "NISM Series IV: Interest Rate Derivatives Certification Examination",
+  "unit_number": 9,
+  "unit_name": "IRD की Accounting और Taxation",
+  "weightage": "5 Marks",
+  "overview": "यह चैप्टर दो सिरदर्द वाले विषयों से संबंधित है: 'मैं इसे अपनी books में कैसे record करूँ?' (Accounting) और 'मैं सरकार को कितना payment करूँ?' (Taxation)। Exam के लिए, आपको Chartered Accountant होने की आवश्यकता नहीं है, लेकिन आपको basic rules पता होने चाहिए: मुख्य रूप से कि Exchange Traded Derivatives को 'Non-Speculative Business Income' माना जाता है और accounts में mark-to-market किया जाना चाहिए।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Accounting Treatment (ICAI Guidance Note और Ind AS 109)",
+      "basic_meaning": "आपको अपने derivative की value को उसकी 'Current Market Price' (Fair Value) पर record करना चाहिए, न कि उस price पर जिस पर आपने इसे खरीदा था।",
+      "detailed_explanation": "अतीत (past) में, companies केवल तभी losses/profits record करती थीं जब वे वास्तव में contract बेचती थीं। \nअब, **Ind AS 109 (Financial Instruments)** या **ICAI Guidance Note** के तहत, आपको 'Mark-to-Market' (MTM) accounting को follow करना होगा।\n- **Balance Sheet Date:** यदि आप 31 मार्च को Future hold करते हैं, तो आपको इसकी market price check करनी होगी।\n- **Profit/Loss:** भले ही आपने इसे नहीं बेचा है, आपको अपने Profit & Loss (P&L) Account में तुरंत 'Unrealized' profit या loss को recognize करना होगा।",
+      "why_this_is_important": "यह companies को derivatives positions में भारी losses छिपाने से रोकता है।",
+      "formula": "Fair Value = Reporting Date पर Market Price",
+      "formula_explanation": "यदि Market Price < Buy Price, तो Loss book करें। यदि Market Price > Buy Price, तो Profit book करें।",
+      "step_by_step_calculation_example": "Scenario: Company 1 फरवरी को Rs 100 पर Bond Futures खरीदती है। \n31 मार्च (Year End) को, price Rs 98 है। उन्होंने इसे अभी तक बेचा नहीं (NOT sold) है। \nAccounting Entry: उन्हें उस वर्ष के लिए अपने P&L में Rs 2 का loss record करना MUST है, भले ही trade अभी भी open हो।",
+      "real_life_indian_example": "बड़े Indian banks daily अपने derivative portfolios की value तय करने के लिए Ind AS 109 का उपयोग करते हैं।",
+      "exam_traps": [
+        "यह सोचना कि आप केवल बेचते समय profit record करते हैं। नहीं, आप इसे Balance Sheet date (31 मार्च) पर भी record करते हैं।",
+        "'Historical Cost' (Buy Price) को 'Fair Value' (Current Price) के साथ confuse करना।"
+      ],
+      "memory_trick": "MTM = Mark To Market (Market Price से Match करें)।"
+    },
+    {
+      "concept": "2. Taxation: Business Income बनाम Capital Gains",
+      "basic_meaning": "क्या आप एक Trader हैं या Investor?",
+      "detailed_explanation": "Income Tax Act आपके intent (इरादे) के आधार पर derivative income को classify करता है:\n1. **Business Income:** यदि आप frequently trade करते हैं या अपने business को hedge करने के लिए (उदा., एक Bank, Broker, या Corporate Treasurer)। अधिकांश derivative income यहीं आती है।\n2. **Capital Gains:** यदि आप एक investor हैं जो long term के लिए hold करते हैं (Futures के लिए बहुत rare है क्योंकि वे जल्दी expire हो जाते हैं)।\n\n*Exam Rule of Thumb:* NISM exams के लिए, आमतौर पर Exchange Traded Derivatives income को **Business Income** के रूप में treat करें।",
+      "why_this_is_important": "Business Income आपको अपने profit से expenses (जैसे internet, advisory fees, books) deduct करने की अनुमति देती है।",
+      "formula": "Taxable Income = Net Profit - Business Expenses",
+      "formula_explanation": "Standard Income Tax calculation।",
+      "step_by_step_calculation_example": "Futures से Profit: Rs 5 Lakhs. \nExpenses (Brokerage, Internet, Software): Rs 50,000. \nTaxable Business Income: Rs 4.50 Lakhs. \n(आपके slab rate पर Tax लगता है)।",
+      "real_life_indian_example": "शाम को F&O trading करने वाले एक salaried person को इसे केवल 'Capital Gains' के बजाय ITR-3 में 'Business Income' के रूप में declare करना चाहिए।",
+      "exam_traps": [
+        "यह सोचना कि F&O income हमेशा Capital Gains होती है। यह लगभग हमेशा Business Income होती है।",
+        "यह सोचना कि आप F&O losses छिपा सकते हैं। उन्हें carry forward करने के लिए आपको उन्हें declare करना होगा।"
+      ],
+      "memory_trick": "Trading एक Business है। इस पर Business की तरह Tax लगाएँ।"
+    },
+    {
+      "concept": "3. Speculative बनाम Non-Speculative (Section 43(5))",
+      "basic_meaning": "Traders के लिए Golden Ticket! Taxman की नज़र में Exchange Traded Derivatives 'Speculation' (सट्टा) नहीं (NOT) हैं।",
+      "detailed_explanation": "आम तौर पर, 'Speculation' (जैसे gambling) losses को normal profits के against set off नहीं किया जा सकता है। \nहालाँकि, **Income Tax Act का Section 43(5)** कहता है:\n- यदि कोई derivative **Recognized Stock Exchange** (जैसे NSE/BSE) पर trade किया जाता है; AND\n- यह एक contract note द्वारा supported है;\n- तो (THEN), यह **NON-SPECULATIVE Business Income** है।\n\n**Benefit:** F&O से होने वाले loss को अन्य business profits (लेकिन Salary से नहीं) के against set off किया जा सकता है।",
+      "why_this_is_important": "यह एक बहुत बड़ी tax relief है। यदि यह 'Speculative' होता, तो आप अन्य income के against losses को adjust नहीं कर पाते।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Scenario A (Speculative): आप Horse Racing में Rs 1 Lakh हार जाते हैं। आप इसे अपने shop profit से deduct नहीं कर सकते।\nScenario B (Non-Speculative): आप Bond Futures (NSE) में Rs 1 Lakh का loss करते हैं। आप अपना total tax कम करने के लिए इसे अपने textile shop profit से deduct कर सकते हैं (CAN)।",
+      "real_life_indian_example": "यह section विशेष रूप से illegal bucket shops के बजाय NSE जैसे official exchanges पर trading को प्रोत्साहित करने के लिए लाया गया था।",
+      "exam_traps": [
+        "यह सोचना कि 'Speculative' का मतलब 'High Risk' है। Tax law में, 'Speculative' का मतलब है 'बिना delivery के settle होना'। लेकिन Section 43(5) derivatives के लिए एक EXCEPTION (अपवाद) है।",
+        "यह सोचना कि OTC derivatives को समान benefit मिलता है। आमतौर पर, केवल Exchange Traded को ही यह मिलता है।"
+      ],
+      "memory_trick": "Exchange = Non-Speculative (Good). Off-Exchange = Speculative (Bad)."
+    },
+    {
+      "concept": "4. GST और Stamp Duty",
+      "basic_meaning": "हर trade पर आपके द्वारा pay की जाने वाली extra costs।",
+      "detailed_explanation": "1. **GST (Goods & Services Tax):** \n   - **18%** पर charge किया जाता है। \n   - यह केवल (ONLY) **Brokerage और Transaction Charges** पर लागू होता है। \n   - Profit या Contract Value पर लागू नहीं (NOT) होता है।\n\n2. **Stamp Duty:** \n   - एक state tax है, लेकिन अब पूरे भारत में समान (uniform) है। \n   - **Total Turnover (Contract Value)** पर charge किया जाता है। \n   - Rates बहुत कम हैं (उदा., Futures के लिए 0.002%, Options के लिए 0.003%)।",
+      "why_this_is_important": "ये transaction costs के रूप में कार्य करते हैं जो आपके net profit को कम करते हैं।",
+      "formula": "Total Cost = Brokerage + GST (Brokerage का 18%) + Stamp Duty + Exchange Charges",
+      "formula_explanation": "Costs का simple addition।",
+      "step_by_step_calculation_example": "आप 1 Lot खरीदते हैं। \nBrokerage = Rs 20. \nGST = 20 का 18% = Rs 3.60. \nStamp Duty = Rs 2. \nTotal Transaction Cost = 20 + 3.60 + 2 = Rs 25.60.",
+      "real_life_indian_example": "Zerodha/Upstox के किसी भी 'Contract Note' को देखें। आपको brokerage amount पर स्पष्ट रूप से IGST/CGST/SGST mentioned दिखाई देगा।",
+      "exam_traps": [
+        "Profit amount पर GST calculate करना। (गलत!)।",
+        "Contract Value (Rs 2 Lakhs) पर GST calculate करना। (गलत! केवल service fees पर)।"
+      ],
+      "memory_trick": "GST Service (Brokerage) पर है। Stamp Duty Value पर है।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Speculative Income बनाम Non-Speculative Business Income",
+      "clear_explanation": "SPECULATIVE losses केवल Speculative profits के against set off किए जा सकते हैं (Restrictive)। || NON-SPECULATIVE losses (जैसे F&O) को अन्य Business profits के against set off किया जा सकता है (Flexible)।"
+    },
+    {
+      "difference_between": "Hedge Accounting बनाम Trading Accounting",
+      "clear_explanation": "TRADING: Profit/Loss सीधे P&L Account में जाता है। || HEDGING: Underlying asset के loss की timing से match करने के लिए Profit/Loss पहले 'Reserves' (OCI) में जा सकता है (Matching Concept)।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Income Tax Act का Section 43(5) (Derivatives Non-Speculative हैं)।",
+    "GST की Applicability (Brokerage पर 18%, Principal पर नहीं)।",
+    "Ind AS 109 का सिद्धांत (Fair Value / Mark-to-Market)।",
+    "क्या F&O losses को Salary income के against set off किया जा सकता है? (नहीं, Salary के against कभी नहीं)।",
+    "Accounting Standards कौन issue करता है? (ICAI / MCA)।"
+  ],
+  "quick_revision_summary": [
+    "Exchange Traded Derivatives = Non-Speculative Business Income।",
+    "Ind AS 109 में MTM (Fair Value) accounting की आवश्यकता होती है।",
+    "Unrealized gains/losses को year-end पर recognize किया जाना चाहिए।",
+    "Brokerage/Service fees पर GST 18% है।",
+    "Losses को 8 वर्षों तक carry forward किया जा सकता है (Business Loss)।"
+  ]
+}

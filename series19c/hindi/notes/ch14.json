@@ -1,0 +1,98 @@
+{
+  "course": "NISM Series XIX-C: Alternative Investment Fund Managers Certification Examination",
+  "unit_number": 14,
+  "unit_name": "Valuation",
+  "weightage": "10 Marks",
+  "overview": "Stock market में, prices आपकी screen पर हर second बदलते हैं। लेकिन एक AIF में, आप उन companies के मालिक होते हैं जो कहीं भी listed नहीं होती हैं। आपको कैसे पता चलेगा कि आपका ₹10 Crore का investment अब ₹15 Crore का है या ₹5 Crore का? यह chapter Valuation की 'Art and Science' को समझाता है। NISM exam के लिए, आपको private companies को value करने के लिए इस्तेमाल किए जाने वाले अलग-अलग methods और इन valuations को कौन कर सकता है, इस बारे में सख्त SEBI rules को समझना होगा।",
+  
+  "complete_concept_explanation": [
+    {
+      "concept": "1. AIFs के लिए Valuation क्यों critical है?",
+      "basic_meaning": "Fund के assets का 'Price Tag' calculate करना ताकि investors को उनका profit/loss पता चल सके।",
+      "detailed_explanation": "Valuation की जरूरत तीन मुख्य कारणों से होती है:\n1. **Reporting (NAV):** Investors को समय-समय पर उनके units की Net Asset Value (NAV) बताने के लिए।\n2. **Fees:** Management fees अक्सर assets की value के आधार पर calculate की जाती है।\n3. **Exits:** जब fund किसी company को बेचता है, तो valuation selling price तय करने में मदद करता है।\n\nचूंकि AIF assets (जैसे startups या real estate) **illiquid** (आसानी से बेचे नहीं जा सकने वाले) होते हैं, इसलिए valuation specific models पर आधारित एक 'estimate' (अनुमान) होता है।",
+      "why_this_is_important": "अगर कोई manager किसी company को 'over-value' करता है, तो वे अपने हक से ज्यादा fees charge कर सकते हैं। यही कारण है कि SEBI की इस process पर सख्त निगरानी (oversight) है।",
+      "formula": "NAV = (Total Assets - Total Liabilities) / Number of Outstanding Units",
+      "formula_explanation": "एक unit की value निकालने के लिए, fund के पास जो कुछ भी है (Total Assets) उसकी कुल कीमत में से उसकी देनदारियों (Total Liabilities) को घटाकर total units से divide किया जाता है।",
+      "step_by_step_calculation_example": "Step 1: AIF के पास 3 startups हैं जिनकी कुल value ₹120 Cr है।\nStep 2: Bank में cash ₹10 Cr है।\nStep 3: Unpaid expenses (Liabilities) ₹5 Cr हैं।\nStep 4: Net Assets = 120 + 10 - 5 = ₹125 Cr।\nStep 5: अगर 1 Crore units हैं, तो NAV = 125 / 1 = ₹125 per unit।",
+      "real_life_indian_example": "जब कोई AIF 'BoAt' या 'Lenskart' जैसे brand में उनके public होने (IPO) से पहले invest करता है, तो वे हर quarter अपने investors को यह बताने के लिए इन valuation methods का इस्तेमाल करते हैं कि उस stake की कीमत कितनी है।",
+      "exam_traps": [
+        "यह सोचना कि Valuation केवल बेचते समय (selling) किया जाता है। नहीं, यह reporting के लिए regularly (आमतौर पर quarterly या half-yearly) किया जाना चाहिए।",
+        "'Cost' और 'Value' के बीच confuse होना। आप किसी company को ₹10 Cr (Cost) में खरीद सकते हैं, लेकिन अगर वह grow करती है, तो उसकी Value ₹50 Cr हो सकती है।"
+      ],
+      "memory_trick": "Valuation = Fund का Report Card Grade।"
+    },
+    {
+      "concept": "2. Main Valuation Approaches",
+      "basic_meaning": "किसी business की कीमत (worth) calculate करने के अलग-अलग तरीके।",
+      "detailed_explanation": "दुनिया भर में इस्तेमाल होने वाले तीन standard approaches हैं:\n\n1.  **Income Approach (DCF):** Future को देखना। आप estimate लगाते हैं कि company अगले 10 सालों में कितना cash कमाएगी और उसे आज की value (Present Value) में 'discount' करते हैं。\n2.  **Market Approach (Multiples):** पड़ोसियों को देखना। अगर कोई वैसी ही listed company अपने profit के 20x पर बिक रही है, तो आप अपनी private company को भी उसके profit के 20x पर value करते हैं।\n3.  **Cost Approach:** Bill को देखना। आप calculate करते हैं कि आज बिल्कुल वैसी ही company को scratch से बनाने में कितना खर्चा आएगा (Replacement Cost)।",
+      "why_this_is_important": "NISM अक्सर पूछता है कि startups (आमतौर पर DCF) या established companies (Market Multiples) के लिए कौन सा method सबसे अच्छा है।",
+      "formula": "Enterprise Value (Market Approach) = EBITDA × Sector Multiple",
+      "formula_explanation": "आप company का profit लेते हैं और उसे उस industry में इस्तेमाल होने वाले एक standard number (multiple) से multiply करते हैं।",
+      "step_by_step_calculation_example": "Step 1: एक private Pizza company ₹2 Cr profit कमाती है।\nStep 2: Listed Pizza companies (जैसे Jubilant Foodworks) 30x profit पर trade करती हैं।\nStep 3: Valuation = 2 Cr × 30 = ₹60 Crores।",
+      "real_life_indian_example": "एक VC fund किसी SaaS startup को 'Income Approach' का उपयोग करके value कर सकता है क्योंकि startup का कोई current profit नहीं है लेकिन 5 साल में huge cash flows की उम्मीद है।",
+      "exam_traps": [
+        "यह सोचना कि DCF 100% accurate है। यह future के बारे में 'Assumptions' (मान्यताओं) पर निर्भर करता है, जो गलत हो सकते हैं।",
+        "यह मानना कि tech companies के लिए Cost Approach सबसे अच्छा है। यह आमतौर पर factories या real estate जैसी Asset-heavy companies के लिए बेहतर होता है।"
+      ],
+      "memory_trick": "Income = Future; Market = Neighbors; Cost = Building blocks।"
+    },
+    {
+      "concept": "3. Fair Value Hierarchy (Level 1, 2, and 3)",
+      "basic_meaning": "Price data कितना 'reliable' (भरोसेमंद) है?",
+      "detailed_explanation": "Accounting standards (जैसे Ind AS 113) valuations को इस आधार पर group करते हैं कि उसमें कितना 'guessing' शामिल है:\n* **Level 1 (Highest Reliability):** Active markets में quoted prices (जैसे NSE पर Reliance के shares)। कोई guessing की जरूरत नहीं है।\n* **Level 2:** Level 1 के अलावा Observable inputs (जैसे पड़ोस में बेची गई वैसी ही building की कीमत)।\n* **Level 3 (Lowest Reliability):** Unobservable inputs (जैसे किसी startup की future sales के बारे में आपकी अपनी assumptions)। ज्यादातर AIF investments इसी में आते हैं।",
+      "why_this_is_important": "AIFs risky होते हैं क्योंकि उनके ज्यादातर assets 'Level 3' होते हैं। Exam यह test करता है कि क्या आप reliability में अंतर जानते हैं।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "'Infosys' के shares hold करने वाले Category III AIF के पास एक **Level 1** asset है। वही fund अगर 'Byju's' के shares hold करता है तो वह एक **Level 3** asset है।",
+      "exam_traps": [
+        "यह सोचना कि Level 3 का मतलब 'False' है। इसका मतलब सिर्फ इतना है कि इसके लिए अधिक 'Judgment' और 'Disclosure' की जरूरत है।",
+        "यह मानना कि सभी AIF assets Level 3 हैं। Cat III AIFs में अक्सर Level 1 listed stocks होते हैं।"
+      ],
+      "memory_trick": "Level 1 = Open Market; Level 2 = Similar Market; Level 3 = Model Based।"
+    },
+    {
+      "concept": "4. Valuation कौन कर सकता है?",
+      "basic_meaning": "वह 'Doctor' जो company की health check करता है।",
+      "detailed_explanation": "SEBI के सख्त rules हैं ताकि manager numbers को 'fake' न कर सके:\n1. **Independent Valuer:** Valuation किसी ऐसे independent व्यक्ति द्वारा किया जाना चाहिए जो manager से related न हो।\n2. **Registered Valuer:** उन्हें **IBBI** (Insolvency and Bankruptcy Board of India) के साथ registered होना चाहिए या SEBI-registered Merchant Banker होना चाहिए।\n3. **Frequency:** \n   * **Cat I & II:** कम से कम हर छह महीने में एक बार।\n   * **Cat III:** हर दिन (अगर listed stocks में invest कर रहे हैं) या PPM में बताए गए NAV calculation period के अनुसार।",
+      "why_this_is_important": "यह 'Objectivity' (निष्पक्षता) सुनिश्चित करता है। किसी outsider के पास fund की performance के बारे में झूठ बोलने का कोई कारण नहीं है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Bangalore में एक AIF अपनी 15 fintech companies के portfolio को साल में दो बार value करने के लिए 'Deloitte' जैसी firm या IBBI list से एक 'Registered Valuer' को hire करता है।",
+      "exam_traps": [
+        "यह सोचना कि Manager costs बचाने के लिए valuation खुद कर सकता है। **यह allowed नहीं है।**",
+        "Cat I और II AIFs के लिए 'Six Month' rule को भूल जाना।"
+      ],
+      "memory_trick": "Independent + Registered = Trusted Valuation।"
+    }
+  ],
+
+  "important_differences": [
+    {
+      "difference_between": "Enterprise Value (EV) vs. Equity Value",
+      "clear_explanation": "**Enterprise Value:** पूरे business की total value (Value of operations)। \n**Equity Value:** सारा bank debt चुकाने के बाद shareholders के लिए जो बचता है।"
+    },
+    {
+      "difference_between": "Pre-money vs. Post-money Valuation",
+      "clear_explanation": "**Pre-money:** AIF द्वारा नया पैसा डालने से *पहले* company की value। \n**Post-money:** Investment के *बाद* की value। (Post-money = Pre-money + Investment Amount)।"
+    }
+  ],
+
+  "frequently_asked_exam_areas": [
+    "Post-money valuation का Calculation (Numerical)।",
+    "Level 1, 2, और 3 assets को identify करना।",
+    "Cat I & II के लिए valuation की Frequency (Answer: 6 months)।",
+    "AIF valuer के लिए जरूरी Qualifications (IBBI Registered)।",
+    "Startups को value करने के लिए Primary method (Answer: DCF/Income Approach)।"
+  ],
+
+  "quick_revision_summary": [
+    "Valuation NAV और fee purposes के लिए किसी asset की worth (कीमत) का अनुमान है।",
+    "तीन approaches: Income (Future cash), Market (Peer comparison), Cost (Replacement)।",
+    "Level 3 assets AIFs में आम हैं और manager/valuer की assumptions पर निर्भर करते हैं।",
+    "Valuations एक Independent Registered Valuer द्वारा किया जाना चाहिए।",
+    "Post-money = Pre-money + New Cash।",
+    "Cat I और II को हर 6 महीने में अपने portfolio की value करनी चाहिए।"
+  ]
+}

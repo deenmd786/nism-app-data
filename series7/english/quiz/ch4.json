@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "The possibility of a loss occurring due to adverse movement in the price of a security is known as ______.",
+    "options": [
+      "Credit Risk",
+      "Market Risk",
+      "Operational Risk",
+      "Systemic Risk"
+    ],
+    "answer": "Market Risk",
+    "hint": "It is also known as Price Risk.",
+    "explanation": "Market Risk is the risk where an investor may suffer losses due to market prices (share prices, interest rates) moving in an unfavorable direction."
+  },
+  {
+    "id": 2,
+    "question": "The risk that a counterparty will fail to fulfill their obligation to deliver funds or securities is called ______.",
+    "options": [
+      "Counterparty Risk (Credit Risk)",
+      "Liquidity Risk",
+      "Systematic Risk",
+      "Operational Risk"
+    ],
+    "answer": "Counterparty Risk (Credit Risk)",
+    "hint": "The fear of the opposite party backing out.",
+    "explanation": "Counterparty Risk (or Credit Risk) occurs when the other party to a trade defaults on delivering funds or securities at the time of pay-in."
+  },
+  {
+    "id": 3,
+    "question": "Which of the following risks arises when a security cannot be bought or sold quickly without a significant impact on its price?",
+    "options": [
+      "Market Risk",
+      "Credit Risk",
+      "Liquidity Risk",
+      "Legal Risk"
+    ],
+    "answer": "Liquidity Risk",
+    "hint": "There are not enough buyers or sellers in the market.",
+    "explanation": "Liquidity Risk occurs when the trading volume in the market is low, and executing a large order causes a significant change in price."
+  },
+  {
+    "id": 4,
+    "question": "Losses resulting from inadequate internal processes, system failures, or human errors fall under ______.",
+    "options": [
+      "Systemic Risk",
+      "Operational Risk",
+      "Market Risk",
+      "Liquidity Risk"
+    ],
+    "answer": "Operational Risk",
+    "hint": "A software crash or a typing mistake are examples.",
+    "explanation": "Operational Risk refers to losses caused by a broker's internal systems, hardware/software failure, or human error (like punching a wrong price)."
+  },
+  {
+    "id": 5,
+    "question": "Which entity primarily bears the responsibility of managing risk and guaranteeing settlement in the stock market?",
+    "options": [
+      "Stock Broker",
+      "Depository",
+      "Clearing Corporation",
+      "Registrar"
+    ],
+    "answer": "Clearing Corporation",
+    "hint": "It acts like a central counterparty (CCP).",
+    "explanation": "The Clearing Corporation guarantees trades and uses margins and the Settlement Guarantee Fund (SGF) to manage market risk and credit risk."
+  },
+  {
+    "id": 6,
+    "question": "A statistical measure that estimates the maximum potential loss on a portfolio over a given time period with a specific confidence level is called ______.",
+    "options": [
+      "Mark to Market (MTM)",
+      "Value at Risk (VaR)",
+      "Standard Deviation",
+      "Beta"
+    ],
+    "answer": "Value at Risk (VaR)",
+    "hint": "It estimates the 'worst-case scenario' loss.",
+    "explanation": "VaR (Value at Risk) is a risk management tool that indicates the maximum potential loss under normal market conditions over a specific period (e.g., 99% confidence level)."
+  },
+  {
+    "id": 7,
+    "question": "In the cash market, which margin covers the maximum historical loss of a stock based on its volatility?",
+    "options": [
+      "Extreme Loss Margin (ELM)",
+      "Mark to Market (MTM) Margin",
+      "VaR Margin",
+      "Delivery Margin"
+    ],
+    "answer": "VaR Margin",
+    "hint": "It is based on the stock's price volatility.",
+    "explanation": "VaR Margin is calculated based on the stock's historical price volatility (variance) and is collected upfront."
+  },
+  {
+    "id": 8,
+    "question": "Which margin is collected to cover losses that may arise in situations outside the confidence level of the VaR margin (i.e., 'tail risk')?",
+    "options": [
+      "Mark to Market Margin",
+      "Initial Margin",
+      "Extreme Loss Margin (ELM)",
+      "Base Margin"
+    ],
+    "answer": "Extreme Loss Margin (ELM)",
+    "hint": "For 'extreme' situations like a market crash.",
+    "explanation": "Extreme Loss Margin (ELM) is an additional margin above the VaR margin collected to cover unexpected or extreme price movements in the market."
+  },
+  {
+    "id": 9,
+    "question": "The total upfront margin in the cash market segment is a sum of ______.",
+    "options": [
+      "VaR Margin + ELM",
+      "VaR Margin + MTM Margin",
+      "ELM + MTM Margin",
+      "Initial Margin + Exposure Margin"
+    ],
+    "answer": "VaR Margin + ELM",
+    "hint": "Both must be collected before executing a trade.",
+    "explanation": "In the equity cash market, the Upfront Margin includes both VaR Margin and Extreme Loss Margin (ELM), which must be collected by the broker before the trade."
+  },
+  {
+    "id": 10,
+    "question": "Mark-to-Market (MTM) margin is calculated based on the difference between the trade price and the ______ of the day.",
+    "options": [
+      "Opening Price",
+      "Closing Price",
+      "Average Price",
+      "Highest Price"
+    ],
+    "answer": "Closing Price",
+    "hint": "The price at the end of the day.",
+    "explanation": "MTM margin is calculated at the end of the day. It is the difference (notional loss) between the client's trade price and the stock's closing price (settlement price)."
+  },
+  {
+    "id": 11,
+    "question": "If a broker fails to collect the Upfront Margin from a client, the exchange imposes a ______.",
+    "options": [
+      "Ban on trading for 1 year",
+      "Penalty for short collection of margin",
+      "Margin refund order",
+      "Capital Gains Tax"
+    ],
+    "answer": "Penalty for short collection of margin",
+    "hint": "A fine is imposed as per SEBI rules.",
+    "explanation": "It is mandatory for brokers to collect upfront margins. A report of 'short margin collection' goes to the exchange, and a penalty is levied on the default amount."
+  },
+  {
+    "id": 12,
+    "question": "To give margin benefit, clearing corporations accept securities as collateral from brokers. However, the value of securities is reduced by a certain percentage known as ______.",
+    "options": [
+      "Discount Rate",
+      "Haircut",
+      "Depreciation",
+      "Margin Call"
+    ],
+    "answer": "Haircut",
+    "hint": "The value of the collateral is slightly 'trimmed' to cover risk.",
+    "explanation": "Haircut is the percentage by which the value of collateral (shares) is reduced so that the clearing corporation does not suffer a loss if the market price falls."
+  },
+  {
+    "id": 13,
+    "question": "In the derivatives market (F&O), the margin calculated by the SPAN software based on portfolio risk is called ______.",
+    "options": [
+      "MTM Margin",
+      "Extreme Loss Margin",
+      "Initial Margin",
+      "Delivery Margin"
+    ],
+    "answer": "Initial Margin",
+    "hint": "It is calculated on a portfolio basis.",
+    "explanation": "In derivatives, the SPAN (Standard Portfolio Analysis of Risk) system calculates the Initial Margin by assessing risk at the portfolio level."
+  },
+  {
+    "id": 14,
+    "question": "Which margin in the derivatives segment acts similarly to the Extreme Loss Margin (ELM) in the cash segment?",
+    "options": [
+      "Initial Margin",
+      "Exposure Margin",
+      "Mark to Market Margin",
+      "Tender Period Margin"
+    ],
+    "answer": "Exposure Margin",
+    "hint": "This is for additional security over the Initial Margin.",
+    "explanation": "In the F&O segment, along with the Initial margin (SPAN), an 'Exposure Margin' is also collected upfront to cover extreme market volatility."
+  },
+  {
+    "id": 15,
+    "question": "Mark-to-Market (MTM) losses in the derivatives (Futures) market must be paid by the broker to the clearing corporation by ______.",
+    "options": [
+      "T+2 day",
+      "T+1 day morning (before trading hours)",
+      "T+7 day",
+      "End of the month"
+    ],
+    "answer": "T+1 day morning (before trading hours)",
+    "hint": "Settlement must be done before the market opens the next day.",
+    "explanation": "In the derivatives segment, payment for MTM loss must be made to the Clearing Corporation on the T+1 day before trading begins (usually morning pay-in)."
+  },
+  {
+    "id": 16,
+    "question": "When an investor's open positions cross a specified limit, regulators impose restrictions to prevent market manipulation. These limits are known as ______.",
+    "options": [
+      "Price Bands",
+      "Circuit Breakers",
+      "Position Limits",
+      "Haircuts"
+    ],
+    "answer": "Position Limits",
+    "hint": "You cannot hold a 'position' beyond a certain limit.",
+    "explanation": "Position limits prevent market concentration. They are set at the Client level, Trading Member level, and Market-Wide level."
+  },
+  {
+    "id": 17,
+    "question": "MWPL stands for ______.",
+    "options": [
+      "Market Wide Position Limit",
+      "Maximum Wealth Protection Limit",
+      "Margin Weightage Position Limit",
+      "Market Wide Price Limit"
+    ],
+    "answer": "Market Wide Position Limit",
+    "hint": "The maximum limit of F&O contracts across the entire market.",
+    "explanation": "MWPL is the maximum number of open F&O contracts that can be held for a specific stock across the entire market (combining all brokers and clients)."
+  },
+  {
+    "id": 18,
+    "question": "If the open interest of a stock in the derivatives segment crosses 95% of its MWPL, the stock is put into a ______.",
+    "options": [
+      "Circuit Breaker",
+      "Ban Period",
+      "Settlement Mode",
+      "Auction Market"
+    ],
+    "answer": "Ban Period",
+    "hint": "You cannot create new positions, only close old ones.",
+    "explanation": "When Open Interest crosses 95% of the MWPL, the stock enters a 'Ban Period'. During this time, traders can only square off their existing positions and cannot take new ones."
+  },
+  {
+    "id": 19,
+    "question": "A stock comes out of the F&O 'Ban Period' when its open interest falls below ______ of the MWPL.",
+    "options": [
+      "95%",
+      "90%",
+      "80%",
+      "50%"
+    ],
+    "answer": "80%",
+    "hint": "Positions must be reduced significantly for the ban to be lifted.",
+    "explanation": "A stock's Ban Period ends when its overall Open Interest falls to 80% of the MWPL or below."
+  },
+  {
+    "id": 20,
+    "question": "Which mechanism halts trading across the entire market to control panic selling or irrational buying?",
+    "options": [
+      "Price Band",
+      "Position Limit",
+      "Index-based Market-Wide Circuit Breaker",
+      "Short Selling Ban"
+    ],
+    "answer": "Index-based Market-Wide Circuit Breaker",
+    "hint": "The entire market halts upon a sharp fall in the Nifty or Sensex.",
+    "explanation": "Index-based Circuit Breakers trigger when there is a sudden movement of 10%, 15%, or 20% in the Nifty or Sensex. This halts trading across the entire market for some time."
+  },
+  {
+    "id": 21,
+    "question": "Market-wide circuit breakers are triggered when the benchmark index (Nifty/Sensex) moves by ______.",
+    "options": [
+      "5%, 10% or 15%",
+      "10%, 15% or 20%",
+      "2%, 5% or 10%",
+      "20%, 30% or 40%"
+    ],
+    "answer": "10%, 15% or 20%",
+    "hint": "SEBI has defined three stages.",
+    "explanation": "According to SEBI guidelines, circuit breakers are triggered at three stages (10%, 15%, and 20%) based on index movement, resulting in a coordinated trading halt."
+  },
+  {
+    "id": 22,
+    "question": "If a 10% market-wide circuit breaker is triggered before 1:00 PM, trading is halted for ______.",
+    "options": [
+      "15 minutes",
+      "45 minutes",
+      "1 hour 45 minutes",
+      "Rest of the day"
+    ],
+    "answer": "45 minutes",
+    "hint": "The halt is for 45 mins, followed by a 15-min pre-open session.",
+    "explanation": "If the index falls or rises by 10% before 1:00 PM, the market is halted for 45 minutes. (The halt duration depends on the trigger time)."
+  },
+  {
+    "id": 23,
+    "question": "If a 20% market-wide circuit breaker is triggered at any time of the day, what happens?",
+    "options": [
+      "Trading is halted for 2 hours",
+      "Trading is halted for the remainder of the day",
+      "Only F&O trading is halted",
+      "Trading continues but without margin limits"
+    ],
+    "answer": "Trading is halted for the remainder of the day",
+    "hint": "The market is closed for the rest of the day.",
+    "explanation": "If the index moves by 20% at any time, trading in the market is completely halted for the remainder of the day."
+  },
+  {
+    "id": 24,
+    "question": "To prevent extreme price fluctuations in individual stocks, stock exchanges apply ______.",
+    "options": [
+      "VaR Margin",
+      "Price Bands (Circuit Limits)",
+      "Mark to Market",
+      "Index Circuit Breakers"
+    ],
+    "answer": "Price Bands (Circuit Limits)",
+    "hint": "A stock cannot go up or down by more than 5%, 10%, or 20% in a single day.",
+    "explanation": "The exchange applies daily price bands (e.g., 2%, 5%, 10%, 20%) on individual stocks. The stock price cannot trade outside this band for that day."
+  },
+  {
+    "id": 25,
+    "question": "Which of the following stocks DO NOT have daily price bands applied to them in the cash market?",
+    "options": [
+      "Penny stocks",
+      "Stocks on which derivatives (F&O) products are available",
+      "Newly listed stocks",
+      "PSU bank stocks"
+    ],
+    "answer": "Stocks on which derivatives (F&O) products are available",
+    "hint": "F&O stocks have high liquidity and are kept open for Arbitrage.",
+    "explanation": "Stocks with Futures & Options trading do not have fixed daily price bands in the cash market; instead, they have dynamic price bands that the exchange can relax if needed."
+  },
+  {
+    "id": 26,
+    "question": "What is the primary purpose of the Core Settlement Guarantee Fund (Core SGF)?",
+    "options": [
+      "To pay dividends to shareholders",
+      "To guarantee settlement of trades if a clearing member defaults",
+      "To provide loans to stock brokers",
+      "To fund the operations of SEBI"
+    ],
+    "answer": "To guarantee settlement of trades if a clearing member defaults",
+    "hint": "A fund to save the market during a default.",
+    "explanation": "Core SGF is a safety net. If a clearing member defaults on their pay-in obligation (funds or securities), the Clearing Corporation uses this fund to guarantee settlement."
+  },
+  {
+    "id": 27,
+    "question": "Which of the following is NOT a contributor to the Core Settlement Guarantee Fund (Core SGF)?",
+    "options": [
+      "Clearing Corporation",
+      "Stock Exchange",
+      "Clearing Members",
+      "Retail Investors"
+    ],
+    "answer": "Retail Investors",
+    "hint": "SGF is a fund for market intermediaries, not the general public.",
+    "explanation": "The Clearing Corporation (CC), Stock Exchange, and Clearing Members (CMs) contribute to the Core SGF. Retail investors do not contribute to this fund."
+  },
+  {
+    "id": 28,
+    "question": "The sequence in which different funds are utilized by the Clearing Corporation in case of a member default is known as the ______.",
+    "options": [
+      "Settlement Cycle",
+      "Default Waterfall",
+      "Risk Algorithm",
+      "Margin Call"
+    ],
+    "answer": "Default Waterfall",
+    "hint": "Funds are used in a fixed order to recover losses.",
+    "explanation": "Default Waterfall is the predefined sequence in which the defaulter member's margin, Core SGF, and CC's funds are used for default settlement."
+  },
+  {
+    "id": 29,
+    "question": "In the Default Waterfall, whose funds are utilized FIRST?",
+    "options": [
+      "Exchange's contribution to SGF",
+      "Defaulter Clearing Member's margins and deposits",
+      "Other Non-defaulting members' funds",
+      "Clearing Corporation's reserve fund"
+    ],
+    "answer": "Defaulter Clearing Member's margins and deposits",
+    "hint": "Whoever made the mistake will have their money deducted first.",
+    "explanation": "In the Default Waterfall, the defaulter clearing member's margin, collateral, and deposits (security deposit) are used first."
+  },
+  {
+    "id": 30,
+    "question": "A broker enters a wrong price with an extra zero (fat-finger error), leading to abnormal trades. The exchange has the power to cancel such trades to protect market integrity. This is known as ______.",
+    "options": [
+      "Novation",
+      "Trade Annulment",
+      "Short Delivery",
+      "Arbitrage"
+    ],
+    "answer": "Trade Annulment",
+    "hint": "To 'cancel' or 'annul' trades.",
+    "explanation": "Trade Annulment is the exchange's power to cancel abnormal trades caused by system errors, fat-finger errors, or fraud."
+  },
+  {
+    "id": 31,
+    "question": "When an investor buys shares, the risk that the clearing corporation takes upon itself during novation is primarily ______.",
+    "options": [
+      "That the share price will fall",
+      "That the buying broker will default on paying funds",
+      "That the company will declare bankruptcy",
+      "That the dividend will not be paid"
+    ],
+    "answer": "That the buying broker will default on paying funds",
+    "hint": "The Clearing Corporation takes responsibility for settlement.",
+    "explanation": "In novation, the CC becomes the buyer for every seller. The primary risk here is that the buying broker might default on delivering funds on the pay-in day (Credit Risk)."
+  },
+  {
+    "id": 32,
+    "question": "Which system is used to test whether the Core SGF is sufficient to handle simultaneous defaults by the top clearing members?",
+    "options": [
+      "Beta Testing",
+      "Stress Testing",
+      "Algorithmic Testing",
+      "Back Testing"
+    ],
+    "answer": "Stress Testing",
+    "hint": "Putting the market under 'stress' to check it.",
+    "explanation": "Clearing Corporations conduct 'Stress Testing' on a daily basis to estimate potential risk during extreme market volatility and check the adequacy of the Core SGF."
+  },
+  {
+    "id": 33,
+    "question": "What is 'Base Minimum Capital' (BMC)?",
+    "options": [
+      "The minimum investment a retail client must make",
+      "The deposit maintained by a broker with the exchange on which no exposure/trading limits are granted",
+      "The minimum capital of a listed company",
+      "The fee paid to SEBI"
+    ],
+    "answer": "The deposit maintained by a broker with the exchange on which no exposure/trading limits are granted",
+    "hint": "The broker's base deposit kept for emergencies.",
+    "explanation": "Base Minimum Capital (BMC) is the minimum deposit every stock broker must keep with the exchange. The broker gets no margin/trading limit against it."
+  },
+  {
+    "id": 34,
+    "question": "When a trading member reaches a certain percentage (e.g., 85% or 90%) of their total margin limit, the exchange disables their trading terminal. This state is known as ______.",
+    "options": [
+      "Ban Period",
+      "Risk Reduction Mode (RRM)",
+      "Circuit Breaker",
+      "Default Waterfall"
+    ],
+    "answer": "Risk Reduction Mode (RRM)",
+    "hint": "To reduce risk, the creation of new positions is stopped.",
+    "explanation": "When a broker's margin utilization limit (usually 90%) is crossed, the terminal enters Risk Reduction Mode (RRM). The broker can only close open positions and cannot place fresh orders."
+  },
+  {
+    "id": 35,
+    "question": "To manage risk, margin requirements in the F&O segment are generally ______ compared to the cash segment for the same stock.",
+    "options": [
+      "Higher",
+      "Lower",
+      "Exactly the same",
+      "Zero"
+    ],
+    "answer": "Higher",
+    "hint": "Leverage (borrowing) is higher in F&O, so the risk is also higher.",
+    "explanation": "Derivatives (F&O) are highly leveraged instruments, so to manage risk, the exchange collects stricter and higher margins (Initial + Exposure) compared to the cash segment."
+  },
+  {
+    "id": 36,
+    "question": "Which of the following reduces the total margin requirement by offsetting positions in correlated assets?",
+    "options": [
+      "Cross Margining",
+      "Mark to Market",
+      "Short Selling",
+      "Extreme Loss Margin"
+    ],
+    "answer": "Cross Margining",
+    "hint": "Viewing opposing positions in the Cash and Derivatives markets together.",
+    "explanation": "Cross Margining benefit is given when a client has offsetting positions across cash and derivatives segments (e.g., Buy in cash, Sell in Futures), which reduces overall risk and margin requirements."
+  },
+  {
+    "id": 37,
+    "question": "If an investor does an 'Early Pay-in' of securities from their demat account before executing a sell order, what happens to the upfront margin requirement?",
+    "options": [
+      "Margin requirement is doubled",
+      "Margin requirement is waived/reduced",
+      "MTM margin increases",
+      "Positions are shifted to F&O"
+    ],
+    "answer": "Margin requirement is waived/reduced",
+    "hint": "If the shares have already reached the exchange, the risk is gone.",
+    "explanation": "If the investor delivers the shares to the exchange (Early Pay-in) before placing the sell order (or on T day), the CC's delivery risk is eliminated, and no margin is required on that trade."
+  },
+  {
+    "id": 38,
+    "question": "The margin system in India is evaluated dynamically and updated multiple times during the trading day. This is done to primarily capture ______.",
+    "options": [
+      "Changes in company fundamentals",
+      "Intraday price volatility",
+      "Global political events",
+      "Currency exchange rates"
+    ],
+    "answer": "Intraday price volatility",
+    "hint": "Tracking market movements throughout the day.",
+    "explanation": "To manage risk on an intraday basis, exchanges update margin files multiple times a day (usually at fixed intervals) to cover real-time price volatility."
+  },
+  {
+    "id": 39,
+    "question": "A situation where a failure of one large financial institution causes a domino effect, leading to the collapse of the entire financial system, is called ______.",
+    "options": [
+      "Operational Risk",
+      "Systemic Risk",
+      "Liquidity Risk",
+      "Credit Risk"
+    ],
+    "answer": "Systemic Risk",
+    "hint": "A crash of the entire 'system'.",
+    "explanation": "Systemic Risk is the risk of a breakdown of the entire financial system, which often happens when a large Clearing Member or Bank defaults, triggering a chain reaction."
+  },
+  {
+    "id": 40,
+    "question": "To mitigate risk from High-Frequency Trading (HFT) and Algos, SEBI requires exchanges to implement ______.",
+    "options": [
+      "Manual order verification",
+      "Ban on co-location",
+      "Order level checks and penalty for high order-to-trade ratio",
+      "T+5 settlement cycle"
+    ],
+    "answer": "Order level checks and penalty for high order-to-trade ratio",
+    "hint": "Algos can place and cancel many orders without trading.",
+    "explanation": "To control Algo/HFT risks, exchanges apply order-level risk checks (like value limits, quantity limits) and impose a penalty for excessive cancel/modify orders (High Order-to-Trade ratio penalty)."
+  },
+  {
+    "id": 41,
+    "question": "Who is responsible for collecting the VaR margin from the end-client?",
+    "options": [
+      "The Clearing Corporation",
+      "The Depository",
+      "The Stock Broker (Trading Member)",
+      "SEBI"
+    ],
+    "answer": "The Stock Broker (Trading Member)",
+    "hint": "The client does not deal directly with the exchange.",
+    "explanation": "The CC collects margin from the broker, and it is the broker's regulatory responsibility to collect upfront margins (VaR + ELM) from their client before executing a trade."
+  },
+  {
+    "id": 42,
+    "question": "The system that allows a broker to clear trades executed on any exchange through a single Clearing Corporation is called ______.",
+    "options": [
+      "Algorithmic Trading",
+      "Interoperability",
+      "Co-location",
+      "Dematerialization"
+    ],
+    "answer": "Interoperability",
+    "hint": "Connection between CCs.",
+    "explanation": "Interoperability among clearing corporations allows brokers to trade on the NSE and settle through the BSE's CC (ICCL), which leads to margin optimization."
+  },
+  {
+    "id": 43,
+    "question": "In the risk management framework, 'Liquid Assets' provided by brokers as collateral can include ______.",
+    "options": [
+      "Cash, Bank Guarantees, Fixed Deposits, and approved Securities",
+      "Real Estate and Vehicles",
+      "Unlisted shares of private companies",
+      "Promissory Notes from clients"
+    ],
+    "answer": "Cash, Bank Guarantees, Fixed Deposits, and approved Securities",
+    "hint": "Only assets that can be immediately converted to cash.",
+    "explanation": "CCs accept highly liquid assets as margin, such as Cash, Fixed Deposits (FDs), Bank Guarantees (BGs), Government Securities, and approved liquid equity shares (with a haircut)."
+  },
+  {
+    "id": 44,
+    "question": "If a stock hits its upper circuit limit for the day, it means ______.",
+    "options": [
+      "There are only buyers and no sellers at that price",
+      "There are only sellers and no buyers at that price",
+      "Trading is halted for 45 minutes",
+      "The stock is delisted"
+    ],
+    "answer": "There are only buyers and no sellers at that price",
+    "hint": "The price has reached its maximum limit because demand is very high.",
+    "explanation": "Hitting the Upper Circuit (Upper Price Band) means there are only buyers (pending buy orders) for that stock in the market, but no seller is willing to sell at that maximum allowed price."
+  },
+  {
+    "id": 45,
+    "question": "If a stock hits its lower circuit limit, it indicates that ______.",
+    "options": [
+      "There are only buyers and no sellers",
+      "There are only sellers and no buyers at that price",
+      "The company has declared bankruptcy",
+      "Trading moves to the F&O segment"
+    ],
+    "answer": "There are only sellers and no buyers at that price",
+    "hint": "The price has fallen to the minimum limit because of panic selling.",
+    "explanation": "Hitting the lower circuit means there are too many sellers, but no buyer is willing to buy the stock at that lowest allowed price."
+  },
+  {
+    "id": 46,
+    "question": "Which of the following best defines 'Notional Loss' in the context of MTM margin?",
+    "options": [
+      "Actual loss booked by selling the shares",
+      "Unrealized loss due to price drop on an open position",
+      "Loss of physical share certificates",
+      "Brokerage fees charged by the broker"
+    ],
+    "answer": "Unrealized loss due to price drop on an open position",
+    "hint": "This loss is currently on 'paper'; the trade is not closed yet.",
+    "explanation": "Notional Loss (or Unrealized Loss) occurs when the price of a security you hold falls, but you haven't sold it yet. MTM margin is collected to cover this exact loss."
+  },
+  {
+    "id": 47,
+    "question": "To manage the risk of physical settlement in derivatives, the exchange starts levying which margin in the days leading up to expiry?",
+    "options": [
+      "Delivery Margin",
+      "Extreme Loss Margin",
+      "MTM Margin",
+      "Base Minimum Capital"
+    ],
+    "answer": "Delivery Margin",
+    "hint": "The risk of actual delivery of shares at the time of expiry.",
+    "explanation": "Since stock derivatives are now physically settled (actual delivery of shares), the exchange levies an additional 'Delivery Margin' on ITM (In-The-Money) options and futures during the expiry week."
+  },
+  {
+    "id": 48,
+    "question": "A stock broker runs a 'Risk Management System' (RMS) which automatically blocks a client's order if ______.",
+    "options": [
+      "The stock price is going up",
+      "The client has insufficient margin/funds",
+      "The market is in a bull run",
+      "The order is a limit order"
+    ],
+    "answer": "The client has insufficient margin/funds",
+    "hint": "The terminal will not even send the order to the exchange.",
+    "explanation": "The broker's RMS software checks the client's available margin on a real-time basis. If funds are insufficient, the order is rejected before being sent to the exchange."
+  },
+  {
+    "id": 49,
+    "question": "For calculating capital adequacy, the ratio of Liquid Net Worth to Total Risk margin required should not be less than ______.",
+    "options": [
+      "0.1",
+      "1.0",
+      "5.0",
+      "10.0"
+    ],
+    "answer": "1.0",
+    "hint": "Net worth should be more than the margin.",
+    "explanation": "As per Capital Adequacy norms, a Clearing Member's Liquid Net Worth must always be greater than or equal to the total risk (margin requirement) taken by them (Ratio ≥ 1)."
+  },
+  {
+    "id": 50,
+    "question": "What happens if a broker continually violates position limits or margin requirements?",
+    "options": [
+      "They are given a bonus",
+      "Their trading terminals are disabled and heavy penalties are imposed",
+      "They are promoted to Clearing Member",
+      "Their clients are transferred to a mutual fund"
+    ],
+    "answer": "Their trading terminals are disabled and heavy penalties are imposed",
+    "hint": "SEBI and the Exchange take strict action.",
+    "explanation": "Risk management rules are strict. Exchanges impose monetary penalties for margin shortfalls or position limit violations, and can disable the broker's trading terminals for severe violations."
+  }
+]

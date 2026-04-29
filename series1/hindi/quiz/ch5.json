@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "question": "Which strategy is most suitable for an Indian importer who needs to pay USD 100,000 after 2 months and expects the USD to appreciate?",
+    "options": ["Short Hedge (Sell Futures)", "Long Hedge (Buy Futures)", "Do nothing", "Sell Call Options"],
+    "answer": "Long Hedge (Buy Futures)",
+    "hint": "उन्हें बाद में डॉलर BUY (खरीदने) करने होंगे।",
+    "explanation": "एक importer की foreign currency में future liability होती है। Currency के महँगा होने (appreciating) के risk से बचने के लिए, उन्हें Long Hedge (Futures खरीदकर) के जरिए आज ही buy price को lock कर लेना चाहिए।"
+  },
+  {
+    "id": 2,
+    "question": "An exporter expects to receive EUR 50,000 in 3 months. To hedge against the risk of the Euro depreciating, the exporter should:",
+    "options": ["Buy EURINR Futures", "Sell EURINR Futures", "Buy USDINR Futures", "Sell USDINR Futures"],
+    "answer": "Sell EURINR Futures",
+    "hint": "वे बाद में यूरो SELL (बेच) रहे होंगे।",
+    "explanation": "Exporter के पास भविष्य में बेचने के लिए Euros होंगे। Selling price को lock करने और value गिरने (depreciate) से खुद को बचाने के लिए, उन्हें आज EURINR futures Sell (Short) करने चाहिए।"
+  },
+  {
+    "id": 3,
+    "question": "A speculator expects the USDINR rate to fall from 83.00 to 82.50. What position should they take?",
+    "options": ["Go Long (Buy Futures)", "Go Short (Sell Futures)", "Buy a Call Option", "Buy the Spot currency"],
+    "answer": "Go Short (Sell Futures)",
+    "hint": "Bearish (मंदी) का नज़रिया।",
+    "explanation": "अगर नज़रिया bearish है (कीमतें गिरने की उम्मीद है), तो speculator को गिरावट से profit कमाने के लिए futures को Sell (Short) करना चाहिए।"
+  },
+  {
+    "id": 4,
+    "question": "Buying a near-month contract and simultaneously selling a far-month contract of the same underlying is known as:",
+    "options": ["Calendar Spread (Time Spread)", "Inter-currency Spread", "Arbitrage", "Naked Speculation"],
+    "answer": "Calendar Spread (Time Spread)",
+    "hint": "समय (time) के आधार पर spreading करना।",
+    "explanation": "Calendar Spread में एक ही underlying asset लेकिन अलग-अलग expiry dates वाले futures contracts में विपरीत (opposite) positions ली जाती हैं।"
+  },
+  {
+    "id": 5,
+    "question": "If an arbitrageur buys the spot currency and sells the currency future, this strategy is called:",
+    "options": ["Reverse Cash and Carry Arbitrage", "Cash and Carry Arbitrage", "Scalping", "Day Trading"],
+    "answer": "Cash and Carry Arbitrage",
+    "hint": "Cash में खरीदें, future तक carry करें।",
+    "explanation": "Cash and Carry Arbitrage में spot (cash) market में asset खरीदा जाता है और pricing inefficiencies (आमतौर पर जब Futures महँगा/overpriced हो) का फायदा उठाने के लिए futures contract बेचा जाता है।"
+  },
+  {
+    "id": 6,
+    "question": "Reverse Cash and Carry Arbitrage is profitable when:",
+    "options": ["Futures price is significantly higher than Fair Value", "Futures price is significantly lower than Fair Value", "Spot price is equal to Futures price", "Interest rates are zero"],
+    "answer": "Futures price is significantly lower than Fair Value",
+    "hint": "Futures 'सस्ते' हैं।",
+    "explanation": "यदि futures price undervalued है (fair value/spot + cost of carry से कम है), तो arbitrageur spot बेचता है और future खरीदता है (Reverse Cash and Carry)।"
+  },
+  {
+    "id": 7,
+    "question": "The risk that the Futures price and the Spot price do not move in perfect lockstep is called:",
+    "options": ["Credit Risk", "Basis Risk", "Liquidity Risk", "Operational Risk"],
+    "answer": "Basis Risk",
+    "hint": "Spot और future के बीच का अंतर बदलता रहता है।",
+    "explanation": "Basis Risk का अर्थ है कि spot price और futures price के बीच का अंतर (basis) अप्रत्याशित रूप से बढ़ या घट सकता है, जिससे hedge पूरी तरह से perfect नहीं रह जाता।"
+  },
+  {
+    "id": 8,
+    "question": "If a company has a foreign currency loan that needs to be repaid in 6 months, they are exposed to:",
+    "options": ["Currency appreciation risk", "Currency depreciation risk", "Interest rate risk only", "No risk"],
+    "answer": "Currency appreciation risk",
+    "hint": "यदि currency की value बढ़ती है तो कर्ज चुकाना महँगा हो जाता है।",
+    "explanation": "यदि foreign currency मजबूत होती है (appreciates), तो कंपनी को लोन चुकाने के लिए आवश्यक foreign currency खरीदने के लिए अधिक domestic currency की आवश्यकता होगी।"
+  },
+  {
+    "id": 9,
+    "question": "To hedge a payable of USD 1 million using futures with a lot size of USD 1,000, how many lots should be bought?",
+    "options": ["10 lots", "100 lots", "1,000 lots", "10,000 lots"],
+    "answer": "1,000 lots",
+    "hint": "Total Exposure / Lot Size.",
+    "explanation": "Contracts की संख्या = Total Exposure / Contract Size = 1,000,000 / 1,000 = 1,000 lots."
+  },
+  {
+    "id": 10,
+    "question": "A 'Perfect Hedge' results in:",
+    "options": ["Maximum profit", "Elimination of all risk and potential profit/loss", "Zero transaction costs", "Guaranteed depreciation"],
+    "answer": "Elimination of all risk and potential profit/loss",
+    "hint": "आप rate को पूरी तरह से lock कर देते हैं।",
+    "explanation": "Perfect hedge price movements की अनिश्चितता को पूरी तरह से समाप्त कर देता है, जिसका अर्थ है कि आप नुकसान से तो बचते हैं, लेकिन अनुकूल (favorable) बदलावों से होने वाले किसी भी potential gain को भी खो देते हैं।"
+  },
+  {
+    "id": 11,
+    "question": "Hedging with futures involves taking a position in the futures market that is ______ to the position in the physical market.",
+    "options": ["Identical", "Opposite", "Unrelated", "Double"],
+    "answer": "Opposite",
+    "hint": "Risk को cancel (रद्द) करने के लिए।",
+    "explanation": "Hedging विपरीत (opposite) position लेने पर काम करती है। यदि आप physical market में Long हैं (asset के मालिक हैं), तो आप futures में Short जाते हैं।"
+  },
+  {
+    "id": 12,
+    "question": "Speculators primarily add ______ to the market.",
+    "options": ["Risk", "Liquidity", "Regulations", "Transaction costs"],
+    "answer": "Liquidity",
+    "hint": "वे trade के दूसरे पक्ष (other side) को लेने के लिए तैयार रहते हैं।",
+    "explanation": "अपने नज़रिए के आधार पर लगातार buying और selling करके, speculators वह liquidity प्रदान करते हैं जिससे hedgers आसानी से positions में enter और exit कर पाते हैं।"
+  },
+  {
+    "id": 13,
+    "question": "If an investor is 'Long' the basis (Spot - Future), they profit when:",
+    "options": ["The basis strengthens (narrows/becomes more positive)", "The basis weakens (widens/becomes more negative)", "The basis remains constant", "Spot price falls to zero"],
+    "answer": "The basis strengthens (narrows/becomes more positive)",
+    "hint": "Long का मतलब है कि आप चाहते हैं कि value ऊपर जाए।",
+    "explanation": "Long Basis होने का मतलब आमतौर पर Spot खरीदना और Futures बेचना है। आपको profit तब होता है जब Futures की तुलना में Spot बढ़ता है (Basis strengthens)।"
+  },
+  {
+    "id": 14,
+    "question": "Which of the following is a cost involved in 'Cash and Carry' arbitrage?",
+    "options": ["Interest income earned", "Cost of funding (Interest paid to borrow funds)", "Dividend received", "Premium received"],
+    "answer": "Cost of funding (Interest paid to borrow funds)",
+    "hint": "आपको अभी asset खरीदना होगा।",
+    "explanation": "Spot asset खरीदने के लिए, arbitrageur आमतौर पर पैसे उधार लेता है, जिससे उसे interest (Cost of Carry) चुकाना पड़ता है।"
+  },
+  {
+    "id": 15,
+    "question": "An IT company in India earning revenue in USD expects the Dollar to fall. What should they do?",
+    "options": ["Buy USDINR Futures", "Sell USDINR Futures", "Buy Put options on INR", "Do nothing"],
+    "answer": "Sell USDINR Futures",
+    "hint": "Export earnings को सुरक्षित (Protect) करना।",
+    "explanation": "Exporter (IT कंपनी) अपने भविष्य के USD receivables की value को protect करना चाहता है। अगर USD गिरता है, तो उन्हें नुकसान होगा। Futures Sell करके इस risk को hedge किया जाता है।"
+  },
+  {
+    "id": 16,
+    "question": "The 'Hedge Ratio' is calculated as:",
+    "options": ["Value of Futures Position / Value of Spot Exposure", "Spot Price / Futures Price", "Strike Price / Spot Price", "100% always"],
+    "answer": "Value of Futures Position / Value of Spot Exposure",
+    "hint": "Exposure के लिए कितना cover चाहिए।",
+    "explanation": "Hedge Ratio spot exposure के मुकाबले futures position का आकार (size) तय करता है। एक optimal hedge ratio variance (जोखिम) को कम करता है।"
+  },
+  {
+    "id": 17,
+    "question": "If the futures price is 84.00 and the theoretical fair value is 83.50, an arbitrageur should:",
+    "options": ["Buy Futures, Sell Spot", "Sell Futures, Buy Spot", "Do nothing", "Buy both"],
+    "answer": "Sell Futures, Buy Spot",
+    "hint": "महँगी चीज़ बेचें।",
+    "explanation": "Futures price overvalued है (84.00 > 83.50)। रणनीति यह है कि महँगे Futures को बेचा जाए और सस्ते Spot को खरीदा जाए (Cash and Carry)।"
+  },
+  {
+    "id": 18,
+    "question": "A 'Bull Spread' using futures involves:",
+    "options": ["Buying Near Month, Selling Far Month", "Selling Near Month, Buying Far Month", "Buying both months", "Selling both months"],
+    "answer": "Buying Near Month, Selling Far Month",
+    "hint": "Spread या near term को लेकर bullish।",
+    "explanation": "Commodity/currency के संदर्भ में, एक Bull Spread में आमतौर पर Near Month को खरीदना और Far Month को बेचना शामिल होता है, यह उम्मीद करते हुए कि near term का प्रदर्शन (performance) बेहतर होगा।"
+  },
+  {
+    "id": 19,
+    "question": "Cross-hedging is used when:",
+    "options": ["Futures on the exact underlying asset are not available", "The trader wants double profit", "The market is closed", "Arbitrage is impossible"],
+    "answer": "Futures on the exact underlying asset are not available",
+    "hint": "Substitute (विकल्प) का उपयोग करना।",
+    "explanation": "यदि किसी specific currency exposure के लिए direct futures contract मौजूद नहीं है, तो trader किसी संबंधित (correlated) currency के futures का उपयोग कर सकता है (जैसे USD futures के साथ Singapore Dollar exposure को hedge करना)।"
+  },
+  {
+    "id": 20,
+    "question": "Beta (β) in a hedging context measures:",
+    "options": ["The volatility of the portfolio relative to the market/hedging instrument", "The interest rate", "The time to expiry", "The dividend yield"],
+    "answer": "The volatility of the portfolio relative to the market/hedging instrument",
+    "hint": "Sensitivity factor (संवेदनशीलता)।",
+    "explanation": "Beta यह दर्शाता है कि futures price में होने वाले movement के लिए asset का spot price कितना बदलता है, जिससे Optimal Hedge Ratio निकालने में मदद मिलती है।"
+  },
+  {
+    "id": 21,
+    "question": "If a trader has an uncovered short position in USDINR spot, the risk is that:",
+    "options": ["USD depreciates", "USD appreciates", "INR appreciates", "Interest rates fall"],
+    "answer": "USD appreciates",
+    "hint": "Short का मतलब है कि आपने वह चीज़ बेची जो आपके पास नहीं है।",
+    "explanation": "यदि आप USD में short हैं (आपको USD देना है), तो USD की कीमत बढ़ने (appreciate होने) पर आपको नुकसान होता है क्योंकि आपको इसे ऊंचे दाम पर वापस खरीदना होगा।"
+  },
+  {
+    "id": 22,
+    "question": "Scalpers are traders who:",
+    "options": ["Hold positions for weeks", "Hold positions for very short intervals to profit from small price changes", "Only trade options", "Never trade futures"],
+    "answer": "Hold positions for very short intervals to profit from small price changes",
+    "hint": "जल्दी अंदर, जल्दी बाहर (Quick in, quick out)।",
+    "explanation": "Scalpers बार-बार trade करते हैं, छोटे price ticks पर लाभ कमाने के लिए मिनटों या सेकंडों के लिए positions hold करते हैं।"
+  },
+  {
+    "id": 23,
+    "question": "Rolling over a hedge involves:",
+    "options": ["Closing a near-month position and opening a far-month position", "Increasing the position size", " defaulting on the contract", "Switching from Futures to Options"],
+    "answer": "Closing a near-month position and opening a far-month position",
+    "hint": "Expiry को आगे बढ़ाना।",
+    "explanation": "यदि exposure वर्तमान contract की expiry के बाद भी जारी रहता है, तो trader expiring contract को बंद करके और अगले महीने के लिए नया contract लेकर 'roll over' करता है।"
+  },
+  {
+    "id": 24,
+    "question": "An importer hedges 50% of their exposure. This is known as:",
+    "options": ["Full Hedge", "Partial Hedge", "Over Hedge", "Naked Hedge"],
+    "answer": "Partial Hedge",
+    "hint": "पूरा हिस्सा नहीं।",
+    "explanation": "Total exposure के केवल एक हिस्से को cover करना Partial Hedge कहलाता है, बाकी हिस्से को market risk के लिए खुला छोड़ दिया जाता है।"
+  },
+  {
+    "id": 25,
+    "question": "The 'Cost of Carry' for a currency future primarily depends on:",
+    "options": ["Storage costs", "Interest rate differential between the two currencies", "Transportation costs", "Insurance costs"],
+    "answer": "Interest rate differential between the two currencies",
+    "hint": "विभिन्न देशों में पैसे के किराये (rental costs) अलग-अलग होते हैं।",
+    "explanation": "Currency futures के लिए, Cost of Carry domestic और foreign currency के बीच interest rates के अंतर (Interest Rate Parity) से तय होता है।"
+  },
+  {
+    "id": 26,
+    "question": "If INR interest rates rise while USD rates remain constant, the USDINR Futures premium should theoretically:",
+    "options": ["Increase", "Decrease", "Become zero", "Remain unchanged"],
+    "answer": "Increase",
+    "hint": "Higher domestic rates = higher cost to carry.",
+    "explanation": "Interest Rate Parity के अनुसार, यदि domestic interest rate (INR) बढ़ता है, तो forward/futures premium बढ़ जाता है (spot की तुलना में USDINR futures price बढ़ जाती है)।"
+  },
+  {
+    "id": 27,
+    "question": "A trader buys 10 lots of USDINR Jan Futures at 83.10 and sells 10 lots of USDINR Feb Futures at 83.30. This is a:",
+    "options": ["Bull Spread", "Bear Spread", "Calendar Spread", "Butterfly Spread"],
+    "answer": "Calendar Spread",
+    "hint": "Asset एक ही है, समय अलग-अलग।",
+    "explanation": "अलग-अलग expiration months के लिए एक ही underlying को खरीदना और बेचना Calendar Spread कहलाता है।"
+  },
+  {
+    "id": 28,
+    "question": "The primary goal of an arbitrageur is:",
+    "options": ["Risk minimization", "Risk-free profit", "Speculative gain", "Market regulation"],
+    "answer": "Risk-free profit",
+    "hint": "फ्री लंच (Free lunch)।",
+    "explanation": "Arbitrageurs markets के बीच price differences (अंतर) का फायदा उठाकर risk-free profit कमाने की कोशिश करते हैं।"
+  },
+  {
+    "id": 29,
+    "question": "Over-hedging occurs when:",
+    "options": ["The futures position size exceeds the spot exposure", "The futures position size is less than spot exposure", "The hedge is done in the wrong direction", "The hedge is done using options"],
+    "answer": "The futures position size exceeds the spot exposure",
+    "hint": "आपने बहुत ज़्यादा बीमा (insurance) खरीद लिया।",
+    "explanation": "यदि आपका exposure $10,000 का है लेकिन आप $15,000 मूल्य के futures को hedge करते हैं, तो आप over-hedged हैं, जो एक नया speculative risk पैदा करता है।"
+  },
+  {
+    "id": 30,
+    "question": "Which of the following reduces the effectiveness of a hedge?",
+    "options": ["High correlation between Spot and Futures", "Low Basis Risk", "Maturity mismatch (Asset and Future expire at different times)", "High liquidity"],
+    "answer": "Maturity mismatch (Asset and Future expire at different times)",
+    "hint": "टाइमिंग (timing) गलत है।",
+    "explanation": "यदि futures contract cash flow होने की तारीख से अलग तारीख पर expire होता है, तो basis risk बढ़ जाता है, जिससे hedge की effectiveness कम हो जाती है।"
+  },
+  {
+    "id": 31,
+    "question": "Short Selling in futures means:",
+    "options": ["Selling a contract you do not own to buy it back later", "Selling a contract you own", "Selling only for intraday", "Selling spot currency"],
+    "answer": "Selling a contract you do not own to buy it back later",
+    "hint": "पहले बेचें, बाद में खरीदें।",
+    "explanation": "Short selling में underlying asset के बिना futures contract बेचना शामिल है, जिसे expiry से पहले वापस खरीदने (square off) या settle करने का obligation होता है।"
+  },
+  {
+    "id": 32,
+    "question": "Day traders typically ensure that:",
+    "options": ["All positions are closed before the market closes", "Positions are held overnight", "They only trade options", "They never use leverage"],
+    "answer": "All positions are closed before the market closes",
+    "hint": "No overnight risk.",
+    "explanation": "Day traders overnight gap risk से बचने के लिए trading session समाप्त होने से पहले सभी positions को square off (बंद) कर देते हैं।"
+  },
+  {
+    "id": 33,
+    "question": "If a speculator expects high volatility but is unsure of the direction, they might typically use:",
+    "options": ["Futures only", "Options (Straddle/Strangle)", "Cash market", "Forwards"],
+    "answer": "Options (Straddle/Strangle)",
+    "hint": "किसी भी दिशा (direction) में movement के लिए रणनीति।",
+    "explanation": "हालाँकि यह chapter Futures पर केंद्रित है, दिशा (direction) जाने बिना volatility की उम्मीद करने वाले speculators Options (Long Straddle) को प्राथमिकता देते हैं। Futures में, आमतौर पर आपको दिशा पता होनी चाहिए।"
+  },
+  {
+    "id": 34,
+    "question": "A 'Short Squeeze' occurs when:",
+    "options": ["Short sellers are forced to buy back positions as prices rise", "Buyers are forced to sell", "Market volume dries up", "The exchange halts trading"],
+    "answer": "Short sellers are forced to buy back positions as prices rise",
+    "hint": "Bears (मंदी वालों) को निचोड़ना।",
+    "explanation": "यदि कीमतें तेज़ी से बढ़ती हैं, तो short sellers नुकसान को कम करने के लिए जल्दी से अपनी positions वापस खरीदने (cover) के लिए दौड़ते हैं, जिससे कीमतों में और वृद्धि होती है।"
+  },
+  {
+    "id": 35,
+    "question": "Position Limits are set by exchanges to prevent:",
+    "options": ["Arbitrage", "Hedging", "Concentration of risk and manipulation", "Algorithmic trading"],
+    "answer": "Concentration of risk and manipulation",
+    "hint": "एक ही हाथ में बहुत ज़्यादा ताकत।",
+    "explanation": "Position limits यह रोकती हैं कि किसी एक entity के पास इतने contracts न हो जाएँ कि वह market को corner (manipulate) कर सके।"
+  },
+  {
+    "id": 36,
+    "question": "The 'Convergence Property' states that:",
+    "options": ["Futures price converges to Spot price at maturity", "Spot price converges to zero", "Futures price always stays above Spot", "Futures price always stays below Spot"],
+    "answer": "Futures price converges to Spot price at maturity",
+    "hint": "अंत में, वे एक ही चीज़ होते हैं।",
+    "explanation": "जैसे-जैसे contract expiration के करीब आता है, cost of carry शून्य हो जाता है, और futures price को spot price के बराबर होना चाहिए।"
+  },
+  {
+    "id": 37,
+    "question": "If you are an Indian student going to the USA in 3 months and need to pay fees in USD, you are:",
+    "options": ["Long INR", "Short USD", "Long USD (Need to buy USD)", "Short INR only"],
+    "answer": "Long USD (Need to buy USD)",
+    "hint": "आप एक importer की तरह हैं।",
+    "explanation": "आपको भविष्य में USD की आवश्यकता है। जब तक आप इसे हासिल नहीं कर लेते, तब तक आप personal finances में 'Short USD' हैं, इसलिए आपको hedge करने के लिए Long position (USD खरीदना) लेनी होगी।"
+  },
+  {
+    "id": 38,
+    "question": "In a 'Bear Spread', the trader profits if:",
+    "options": ["The price difference widens or narrows in a specific way favoring the short side", "The market rises significantly", "Volatility is zero", "Interest rates skyrocket"],
+    "answer": "The price difference widens or narrows in a specific way favoring the short side",
+    "hint": "Spread पर दांव लगाना।",
+    "explanation": "Bear Spread में आमतौर पर Near month को बेचना और Far month को खरीदना शामिल होता है, जिसमें profit तब होता है जब near month, far month की तुलना में तेज़ी से गिरता है।"
+  },
+  {
+    "id": 39,
+    "question": "What is the primary benefit of using Futures for hedging compared to Forwards?",
+    "options": ["Customization", "No Margin", "Liquidity and lack of counterparty risk", "Privacy"],
+    "answer": "Liquidity and lack of counterparty risk",
+    "hint": "Exchange traded होने के लाभ।",
+    "explanation": "Futures उच्च liquidity और central counterparty guarantee देते हैं, जबकि Forwards illiquid होते हैं और उनमें counterparty risk होता है।"
+  },
+  {
+    "id": 40,
+    "question": "If the Basis (Spot - Future) is negative, the market is said to be in:",
+    "options": ["Contango", "Backwardation", "Discount", "Recession"],
+    "answer": "Contango",
+    "hint": "Future > Spot.",
+    "explanation": "जब Futures Price > Spot Price होता है, तो Basis (Spot - Future) negative हो जाता है। इसे Contango कहा जाता है।"
+  },
+  {
+    "id": 41,
+    "question": "If the Basis (Spot - Future) is positive, the market is said to be in:",
+    "options": ["Contango", "Backwardation", "Premium", "Inflation"],
+    "answer": "Backwardation",
+    "hint": "Spot > Future.",
+    "explanation": "जब Spot Price > Futures Price होता है, तो Basis positive होता है। इसे Backwardation कहा जाता है।"
+  },
+  {
+    "id": 42,
+    "question": "An exporter uses a 'Money Market Hedge'. This involves:",
+    "options": ["Borrowing in foreign currency and converting to domestic spot", "Buying Futures", "Buying Call Options", "Doing nothing"],
+    "answer": "Borrowing in foreign currency and converting to domestic spot",
+    "hint": "Derivatives की जगह loans का उपयोग करना।",
+    "explanation": "Money market hedge foreign currency में पैसा उधार लेकर, उसे spot पर domestic currency में बदलकर और निवेश करके forward position को replicate करता है।"
+  },
+  {
+    "id": 43,
+    "question": "Open Interest (OI) analysis helps a trader to determine:",
+    "options": ["The strength of a trend", "The exact top of the market", "The exact bottom of the market", "The fundamental value"],
+    "answer": "The strength of a trend",
+    "hint": "नया पैसा बनाम पुराना पैसा।",
+    "explanation": "बढ़ते OI के साथ बढ़ती कीमतें मज़बूत trend (नया पैसा आ रहा है) का संकेत देती हैं। घटते OI के साथ बढ़ती कीमतें कमज़ोर trend (short covering) का संकेत देती हैं।"
+  },
+  {
+    "id": 44,
+    "question": "Which participant links the cash market and the futures market?",
+    "options": ["Arbitrageurs", "Hedgers", "Speculators", "Regulators"],
+    "answer": "Arbitrageurs",
+    "hint": "वे gap का फायदा उठाते हैं।",
+    "explanation": "Arbitrageurs price inefficiencies का फायदा उठाने के लिए दोनों markets में trade करते हैं, जिससे कीमतें जुड़ी (linked) और aligned रहती हैं।"
+  },
+  {
+    "id": 45,
+    "question": "If an importer does not hedge, they are effectively:",
+    "options": ["Speculating on the currency direction", "Hedging naturally", "Arbitraging", "Investing"],
+    "answer": "Speculating on the currency direction",
+    "hint": "कुछ न करना भी एक नज़रिया (view) है।",
+    "explanation": "किसी exposure को unhedged छोड़ने का मतलब है कि importer यह दांव (speculate) लगा रहा है कि currency उनके खिलाफ नहीं जाएगी।"
+  },
+  {
+    "id": 46,
+    "question": "Stop-loss orders are essential for speculators to:",
+    "options": ["Maximize leverage", "Manage risk and preserve capital", "Guarantee profit", "Increase transaction speed"],
+    "answer": "Manage risk and preserve capital",
+    "hint": "अपनी पूंजी (capital) बचाएं।",
+    "explanation": "Stop-loss orders छोटे नुकसान को विनाशकारी (catastrophic) होने से रोकने के लिए स्वचालित (automatically) रूप से हारने वाली (losing) position से बाहर निकाल देते हैं।"
+  },
+  {
+    "id": 47,
+    "question": "Leverage in futures trading implies:",
+    "options": ["Trading with borrowed money (margin)", "Trading only with your own full capital", "Trading with zero risk", "Trading physically"],
+    "answer": "Trading with borrowed money (margin)",
+    "hint": "छोटे deposit से बड़ी value को control करना।",
+    "explanation": "Leverage traders को अपेक्षाकृत छोटे margin deposit के साथ एक बड़ी contract value को control करने की अनुमति देता है।"
+  },
+  {
+    "id": 48,
+    "question": "A trader is Long 10 Lots USDINR. To close the position, they must:",
+    "options": ["Buy 10 more Lots", "Sell 10 Lots", "Wait for expiry only", "Pay a penalty"],
+    "answer": "Sell 10 Lots",
+    "hint": "विपरीत (opposite) करें।",
+    "explanation": "Long position को square off (बंद) करने के लिए, आपको विपरीत transaction करना होगा: उतने ही lots को Sell करें।"
+  },
+  {
+    "id": 49,
+    "question": "If the correlation between the hedging instrument and the asset is less than 1.0, the hedge will be:",
+    "options": ["Perfect", "Imperfect", "Illegal", "Profitable always"],
+    "answer": "Imperfect",
+    "hint": "वे एक साथ पूरी तरह से नहीं चलते हैं।",
+    "explanation": "यदि correlation perfect (1.0) नहीं है, तो hedge सभी risk को खत्म नहीं करेगा, जिसके परिणामस्वरूप एक Imperfect Hedge (Basis Risk) होगा।"
+  },
+  {
+    "id": 50,
+    "question": "The transaction cost in futures trading includes:",
+    "options": ["Brokerage, STT/CTT, Exchange charges, Stamp duty", "Only Brokerage", "Only Tax", "Interest only"],
+    "answer": "Brokerage, STT/CTT, Exchange charges, Stamp duty",
+    "hint": "सभी fees।",
+    "explanation": "Transaction costs में brokerage fees, taxes (Securities/Commodities Transaction Tax), exchange turnover fees और stamp duty शामिल होते हैं।"
+  }
+]

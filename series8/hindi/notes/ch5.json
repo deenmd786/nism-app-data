@@ -1,0 +1,128 @@
+{
+  "course": "NISM Series VIII: Equity Derivatives",
+  "unit_number": 5,
+  "unit_name": "Equity Futures और Equity Options का उपयोग करके Strategies",
+  "weightage": "10 Marks",
+  "overview": "यह chapter Chapters 3 और 4 में आपके द्वारा सीखी गई हर चीज़ का practical application है। यह आपको सिखाता है कि 'Strategies' बनाने के लिए विभिन्न options और futures को कैसे combine किया जाए। केवल market के ऊपर या नीचे जाने पर bet लगाने के बजाय, आप सीखते हैं कि range-bound market से कैसे profit कमाया जाए या अपने portfolio को कैसे protect किया जाए। NISM exam के लिए, आपको strategy का नाम, उसका objective (Bullish/Bearish), और उसका payoff (Risk/Reward) पहचानने पर focus करना चाहिए।",
+  
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Bull Spread (Bull Call Spread)",
+      "basic_meaning": "एक strategy जिसका उपयोग तब किया जाता है जब आप market के ऊपर जाने की उम्मीद करते हैं, लेकिन केवल moderately (बहुत बड़ी rally नहीं)।",
+      "detailed_explanation": "केवल एक महँगा Call option खरीदने के बजाय, आप दो काम करते हैं:\n1. **1 ITM/ATM Call Buy करें** (यह आपकी main bet है)।\n2. **1 OTM Call Sell करें** (यह आपके द्वारा pay किए गए premium को recover करने में मदद करता है)।\n\nचूंकि आपने एक call sell किया है, आपकी cost कम हो जाती है। हालाँकि, आपका profit भी cap (सीमित) हो जाता है।",
+      "why_this_is_important": "Exam पूछता है कि कोई व्यक्ति एक call खरीदते समय दूसरा call क्यों sell करेगा। Answer: Strategy की cost कम करने के लिए (Lower Premium)।",
+      "formula": "Net Premium Paid = Bought Call के लिए Premium Paid - Sold Call के लिए Premium Received",
+      "formula_explanation": "यह trade शुरू करने के लिए केवल net 'pocket expense' है।",
+      "step_by_step_calculation_example": "Nifty 20,000 पर है।\n1. ₹200 पर 20,000 Call Buy करें।\n2. ₹50 पर 20,500 Call Sell करें。\n- **Net Cost:** 200 - 50 = ₹150.\n- **Max Loss:** ₹150 (Limited).\n- **Max Profit:** (Strikes का Difference - Net Cost) = (500 - 150) = ₹350.",
+      "real_life_indian_example": "यदि आपको लगता है कि Reliance earnings call के बाद ₹2500 से ₹2600 तक जाएगा, लेकिन उससे अधिक नहीं, तो एक plain call खरीदने की तुलना में Bull Call Spread सस्ता है।",
+      "exam_traps": [
+        "Bull Spread में LIMITED profit और LIMITED loss होता है।",
+        "इसमें lower strike खरीदना और higher strike call बेचना शामिल है।"
+      ],
+      "memory_trick": "Bull Spread = 'Budget Bullish'. (आप चाहते हैं कि यह ऊपर जाए, लेकिन एक budget पर)।"
+    },
+    {
+      "concept": "2. Bear Spread (Bear Put Spread)",
+      "basic_meaning": "एक strategy जिसका उपयोग तब किया जाता है जब आप market के moderately गिरने की उम्मीद करते हैं।",
+      "detailed_explanation": "Bull Spread के समान लेकिन Puts का उपयोग करके:\n1. **1 ITM/ATM Put Buy करें** (गिरने पर bet)।\n2. **1 OTM Put Sell करें** (पहले put की cost कम करने के लिए)।\n\nआपका loss pay किए गए net premium तक सीमित है, और आपका profit strikes के बीच की दूरी minus premium तक सीमित है।",
+      "why_this_is_important": "Exam अक्सर इन spreads के 'Net Debit' (पैसे बाहर जाने) nature के बारे में पूछता है।",
+      "formula": "Max Profit = (Higher Strike - Lower Strike) - Net Premium Paid",
+      "formula_explanation": "आप maximum उतना ही कमा सकते हैं जितना दोनों strike prices के बीच का gap है, उसमें से enter करने के लिए pay की गई कीमत को घटाकर।",
+      "step_by_step_calculation_example": "Nifty 20,000 पर है।\n1. ₹150 पर 20,000 Put Buy करें।\n2. ₹40 पर 19,500 Put Sell करें。\n- **Net Cost:** 150 - 40 = ₹110.\n- **Break-even:** 20,000 - 110 = 19,890.",
+      "real_life_indian_example": "यह उम्मीद कि एक बड़ी rally के बाद market cool down होगा, लेकिन 10% crash नहीं होगा।",
+      "exam_traps": [
+        "Bear Put Spread में, आप HIGHER strike खरीदते हैं और LOWER strike बेचते हैं।",
+        "इसका उपयोग 'Moderately Bearish' market में किया जाता है।"
+      ],
+      "memory_trick": "Bear Spread = 'Budget Bearish'."
+    },
+    {
+      "concept": "3. Straddle (Long Straddle)",
+      "basic_meaning": "एक strategy जिसका उपयोग तब किया जाता है जब आप एक HUGE movement की उम्मीद करते हैं लेकिन direction (Up या Down) नहीं जानते।",
+      "detailed_explanation": "आप समान Strike Price और समान Expiry के Call और Put दोनों खरीदते हैं।\n- **यदि market तेज़ी से ऊपर जाता है:** Call भारी profit कमाता है, Put zero हो जाता है।\n- **यदि market crash होता है:** Put भारी profit कमाता है, Call zero हो जाता है।\n- **यदि market स्थिर रहता है:** Time decay (Theta) के कारण दोनों options value खो देते हैं। आप पैसे खो देते हैं।",
+      "why_this_is_important": "Exam question: 'Election या Budget जैसे major news event से पहले कौन सी strategy सबसे अच्छी है?' Answer: Long Straddle.",
+      "formula": "Total Premium Paid = Call Premium + Put Premium",
+      "formula_explanation": "आप दो 'insurance policies' के लिए pay कर रहे हैं, इसलिए यह महँगा है।",
+      "step_by_step_calculation_example": "Nifty 20,000 पर है। \n1. ₹100 पर 20,000 Call Buy करें।\n2. ₹100 पर 20,000 Put Buy करें。\n- **Total Cost:** ₹200.\n- आपको profit तभी होगा जब Nifty 20,200 के ABOVE या 19,800 के BELOW move करेगा।",
+      "real_life_indian_example": "किसी Company के Result announcement के दिन Trading करना। आप जानते हैं कि stock 5% उछलेगा या 5% गिरेगा, लेकिन आप नहीं जानते कि कौन सा।",
+      "exam_traps": [
+        "Straddle को profitable होने के लिए HIGH VOLATILITY की आवश्यकता होती है।",
+        "Call और Put दोनों के लिए strike prices SAME होनी चाहिए।"
+      ],
+      "memory_trick": "Straddle = 'Sitting on the fence' (बाड़ पर बैठना)। (दोनों तरफ पैर)।"
+    },
+    {
+      "concept": "4. Strangle (Long Strangle)",
+      "basic_meaning": "Straddle का एक सस्ता version, very high volatility के लिए उपयोग किया जाता है।",
+      "detailed_explanation": "Current price (ATM) पर खरीदने के बजाय, आप OTM (Out of the Money) options खरीदते हैं:\n1. **1 OTM Call Buy करें** (Higher strike)।\n2. **1 OTM Put Buy करें** (Lower strike)।\n\nचूंकि वे OTM हैं, इसलिए वे सस्ते हैं। हालाँकि, आपको profit कमाने के लिए market को MUCH MORE move करना चाहिए।",
+      "why_this_is_important": "यह पहचानना कि Strangle, Straddle से सस्ता है लेकिन इसका break-even range व्यापक (wider) है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Nifty 20,000 पर है।\n1. ₹40 पर 20,200 Call Buy करें।\n2. ₹40 पर 19,800 Put Buy करें。\n- **Total Cost:** ₹80 (ऊपर दिए गए ₹200 straddle से सस्ता)।\n- आपको तभी profit होगा जब Nifty 20,280 से ऊपर या 19,720 से नीचे जाएगा।",
+      "real_life_indian_example": "आमतौर पर उन retail traders द्वारा खरीदा जाता है जो 'black swan' event या market में बड़े shock की उम्मीद करते हैं।",
+      "exam_traps": [
+        "Strangles DIFFERENT strike prices का उपयोग करते हैं (Straddle समान का उपयोग करता है)।",
+        "यह एक 'Low Cost, High Movement' strategy है।"
+      ],
+      "memory_trick": "Strangle = 'Stretched Straddle'. (Strikes को अलग खींचा जाता है)।"
+    },
+    {
+      "concept": "5. Covered Call",
+      "basic_meaning": "अपने पास पहले से मौजूद stock को protect करना और थोड़ा extra 'rent' (premium) कमाना।",
+      "detailed_explanation": "1. **Own the Stock:** आपके demat में SBI के 100 shares हैं।\n2. **Sell an OTM Call:** आप किसी और को SBI Call sell करते हैं।\n\nयदि stock flat रहता है या धीरे-धीरे ऊपर जाता है, तो आपके द्वारा बेचा गया Call worthless expire हो जाता है। आप stock और premium (rent की तरह) दोनों रखते हैं। यदि stock बहुत अधिक उछलता है, तो आपको अपने shares strike price पर बेचने होंगे।",
+      "why_this_is_important": "Indian market में long-term investors के लिए यह एक बहुत ही आम strategy है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "आपके पास ₹600 पर SBI है।\n1. ₹10 में ₹650 Call Sell करें।\n- यदि SBI ₹600 पर रहता है, तो आप ₹10 रखते हैं। SBI की आपकी 'effective' cost ₹590 हो जाती है।\n- यदि SBI ₹700 तक जाता है, तो आपको अपना SBI ₹650 पर बेचना MUST है। आपने 650 से ऊपर का profit miss कर दिया, लेकिन आपने 600 से 650 तक profit कमाया।",
+      "real_life_indian_example": "बड़े portfolio managers अपने 'sleeping' stocks से extra income generate करने के लिए इसका उपयोग करते हैं।",
+      "exam_traps": [
+        "Covered Call में, investor एक बड़ी rally के लिए bullish नहीं होता है; वे 'Neutral to Slightly Bullish' होते हैं।",
+        "यह stock के upside potential को limit करता है।"
+      ],
+      "memory_trick": "Covered Call = 'Rent your House'. (आप house/stock के मालिक हैं और rent/premium collect करते हैं)।"
+    },
+    {
+      "concept": "6. Protective Put",
+      "basic_meaning": "अपने stocks के लिए insurance खरीदना।",
+      "detailed_explanation": "1. **Own the Stock:** आपके portfolio में shares हैं।\n2. **Buy a Put:** आप उसी stock के लिए Put option खरीदते हैं。\n\nयदि market crash होता है, तो Put option से होने वाला profit आपके stock portfolio के loss को cancel कर देगा।",
+      "why_this_is_important": "Exam में सबसे fundamental 'Hedging' strategy है।",
+      "formula": "Maximum Loss = (Stock Purchase Price + Put Premium) - Put Strike Price",
+      "formula_explanation": "आपकी wealth के लिए पूर्ण 'worst-case scenario' की गणना करता है।",
+      "step_by_step_calculation_example": "आप Reliance ₹2500 में खरीदते हैं। आप ₹50 में ₹2500 का Put खरीदते हैं।\n- यदि Reliance गिरकर ₹2000 हो जाता है: Stock loss ₹500 है, लेकिन Put profit ₹500 है। Net Loss केवल आपके द्वारा pay किया गया ₹50 premium है।\n- यह एक 'floor' होने जैसा है जिसके नीचे आप गिर नहीं सकते।",
+      "real_life_indian_example": "एक investor जो अपने long-term stocks से खुश है लेकिन आगामी युद्ध या global crisis से डरा हुआ है।",
+      "exam_traps": [
+        "Protective Put UNLIMITED upside (यदि stock ऊपर जाता है) और LIMITED downside (यदि stock गिरता है) प्रदान करता है।",
+        "Risk profile के संदर्भ में यह Covered Call के विपरीत है।"
+      ],
+      "memory_trick": "Protective Put = 'Portfolio Insurance'."
+    }
+  ],
+
+  "important_differences": [
+    {
+      "difference_between": "Straddle vs. Strangle",
+      "clear_explanation": "Straddle SAME strike price (आमतौर पर ATM) का उपयोग करता है और अधिक महँगा होता है। Strangle DIFFERENT strike prices (आमतौर पर OTM) का उपयोग करता है और सस्ता होता है।"
+    },
+    {
+      "difference_between": "Bull Call Spread vs. Long Call",
+      "clear_explanation": "Long Call में unlimited profit potential होता है लेकिन यह महँगा होता है। Bull Call Spread में limited profit होता है लेकिन यह सस्ता होता है क्योंकि आपने cost की भरपाई के लिए एक और call बेच दिया है।"
+    }
+  ],
+
+  "frequently_asked_exam_areas": [
+    "High volatility के लिए कौन सी strategy सबसे अच्छी है? (Straddle)।",
+    "एक 'Covered Call' परिदृश्य की पहचान करना (Own stock + Sell Call)।",
+    "Long Straddle में Maximum loss (Total Premium Paid)।",
+    "Bull Call Spread का उद्देश्य (Moderate Bullishness)।",
+    "किस strategy में 'capped' या limited profit होता है? (All Spreads)।"
+  ],
+
+  "quick_revision_summary": [
+    "Spreads (Bull/Bear) = Limited Profit, Limited Loss.",
+    "Straddle = High Volatility (Direction neutral).",
+    "Strangle = Cheaper Straddle (Needs bigger move).",
+    "Covered Call = Stock holders के लिए Income generation.",
+    "Protective Put = Stock holders के लिए Insurance.",
+    "Options sell करना (Writing) हमेशा higher risk और margin requirements के साथ आता है।"
+  ]
+}

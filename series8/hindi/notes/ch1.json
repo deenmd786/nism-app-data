@@ -1,0 +1,113 @@
+{
+  "course": "NISM Series VIII: Equity Derivatives",
+  "unit_number": 1,
+  "unit_name": "Basics of Derivatives",
+  "weightage": "10 Marks (Exam का लगभग 10%)",
+  "overview": "यह chapter पूरे NISM exam की foundation है। यह define करता है कि derivative क्या है, इनमें कौन trade करता है, और कितने types के products available हैं। आप इन basics को master किए बिना Futures या Options (Chapters 3 & 4) को नहीं समझ सकते। Exam में, इस chapter से questions आमतौर पर direct definitions या conceptual scenarios होते हैं।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. What is a Derivative?",
+      "basic_meaning": "Derivative एक financial contract है जिसकी अपनी कोई value नहीं होती। यह अपनी value किसी और चीज़ से 'derive' (प्राप्त) करता है, जिसे 'Underlying Asset' कहा जाता है।",
+      "detailed_explanation": "इसे 'दही' (Curd) और 'दूध' (Milk) की तरह समझें। दही का अपने आप में कोई अस्तित्व नहीं है; यह दूध से आता है। अगर दूध के prices ऊपर जाते हैं, तो दही के prices भी ऊपर जाते हैं। \n\nFinance में:\n1. 'Underlying' वह asset है (जैसे Reliance का share, Gold, या Nifty Index)।\n2. 'Derivative' उस asset के संबंध में buyer और seller के बीच एक contract है।\n3. अगर Reliance (Underlying) का price change होता है, तो Reliance Future (Derivative) का price भी automatically change हो जाएगा।",
+      "why_this_is_important": "Exam अक्सर पूछता है कि क्या derivative खुद एक asset है। Answer है: यह एक contract है, independent asset नहीं।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "अगर आप 'Nifty Futures' contract खरीदते हैं, तो इसका price 'Nifty 50 Index' की current value पर based होता है। आप सीधे 50 stocks नहीं खरीद रहे हैं; आप उनकी movement पर based एक contract खरीद रहे हैं।",
+      "exam_traps": [
+        "Derivative की कोई independent value नहीं होती; यह हमेशा underlying पर dependent होता है।",
+        "Derivatives केवल stocks ही नहीं, बल्कि Weather या Inflation जैसी चीज़ों पर भी based हो सकते हैं।"
+      ],
+      "memory_trick": "Derivative = Dependent. (D for D)।"
+    },
+    {
+      "concept": "2. Forward Contracts (OTC Market)",
+      "basic_meaning": "आज decide किए गए price पर future date में किसी asset को buy या sell करने के लिए दो parties के बीच एक private, customized agreement।",
+      "detailed_explanation": "यह derivative का सबसे पुराना form है।\n1. यह 'Over-the-Counter' (OTC) होता है, जिसका मतलब है सीधे दो लोगों के बीच (stock exchange पर नहीं)।\n2. Terms 'Customized' होते हैं: दोनों parties quantity, quality, और date खुद decide करती हैं।\n3. इसमें 'Counterparty Risk' होता है: चूँकि कोई exchange/guarantor नहीं है, अगर एक व्यक्ति भाग जाता है या default करता है, तो दूसरे व्यक्ति का पैसा डूब जाता है (loses money)।",
+      "why_this_is_important": "NISM लगभग हर बार 'Counterparty Risk' के बारे में पूछता है। याद रखें: Forwards में default का high risk होता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "पंजाब का एक किसान 3 महीने बाद Lays Chips company को ₹20/kg पर 1000kg आलू बेचने का agreement करता है। यह एक Forward contract है। अगर आलू का price गिरकर ₹10 हो जाता है, तो किसान खुश है (उसे अभी भी ₹20 मिलेंगे)। अगर Lays पैसे देने से मना कर देता है, तो किसान को नुकसान होता है (Counterparty Risk)।",
+      "exam_traps": [
+        "Forwards stock exchange पर traded नहीं होते हैं।",
+        "Forwards standardized नहीं होते हैं (वे customized होते हैं)।"
+      ],
+      "memory_trick": "Forward = Friends. (दो लोगों के बीच privately किया जाता है, लेकिन friends आपको धोखा दे सकते हैं = Risk)।"
+    },
+    {
+      "concept": "3. Futures Contracts (Exchange Traded)",
+      "basic_meaning": "Forwards का एक improvement। यह future में buy/sell करने का agreement है, लेकिन यह Stock Exchange (जैसे NSE/BSE) पर traded होता है।",
+      "detailed_explanation": "Futures, Forwards की problems को resolve करते हैं:\n1. **Standardized:** Exchange lot size (जैसे, Nifty का 1 lot = 75 qty) और expiry date (आखरी गुरुवार) decide करता है। आप इसे change नहीं कर सकते।\n2. **Regulated:** NSE/BSE पर traded होते हैं।\n3. **No Counterparty Risk:** Clearing Corporation (NSFCC) guarantor के रूप में काम करता है। अगर buyer default करता है, तो Clearing Corp seller को pay करता है।",
+      "why_this_is_important": "आपको पता होना चाहिए कि Futures 'Novation' (Clearing Corp guarantee) नामक mechanism के माध्यम से counterparty risk को remove करते हैं।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "आप NSE पर Tata Motors Futures का 1 lot खरीदते हैं। आप नहीं जानते कि seller कौन है (यह anonymous है)। अगर seller bankrupt हो जाता है, तो NSE Clearing Corporation आपके profit की guarantee लेता है।",
+      "exam_traps": [
+        "Futures customized नहीं होते हैं; वे Standardized होते हैं।",
+        "Futures Exchange पर traded होते हैं, OTC नहीं।"
+      ],
+      "memory_trick": "Futures = Formal. (Formal rules, strict exchange regulations)।"
+    },
+    {
+      "concept": "4. Market Participants (Who trades?)",
+      "basic_meaning": "उनके goal के आधार पर derivatives market में मुख्य रूप से तीन प्रकार के लोग होते हैं: Hedgers, Speculators, और Arbitrageurs।",
+      "detailed_explanation": "**1. Hedgers (Protectors):** उनके पास existing risk होता है और वे risk को REDUCE (कम) करने के लिए derivatives का use करते हैं। वे insurance खरीदने वाले लोगों की तरह हैं。\n**2. Speculators (Traders):** वे बड़ा profit कमाने के लिए risk लेते हैं। वे market direction predict करते हैं। वे market को liquidity provide करते हैं。\n**3. Arbitrageurs (Risk-free profit seekers):** वे एक market में low price पर खरीदते हैं और साथ ही साथ (simultaneously) दूसरे market में high price पर बेचते हैं।",
+      "why_this_is_important": "किसी scenario से participant के type को identify करना exam का एक बहुत common question है।",
+      "formula": "$$Arbitrage\\ Profit = Selling\\ Price - Buying\\ Price - Transaction\\ Cost$$",
+      "formula_explanation": "दो अलग-अलग markets में prices का simple subtraction।",
+      "step_by_step_calculation_example": "Scenario: Infosys BSE पर ₹1500 और NSE पर ₹1505 पर trade कर रहा है。\nStep 1: Arbitrageur BSE पर ₹1500 में खरीदता है。\nStep 2: Simultaneously NSE पर ₹1505 में बेचता है。\nStep 3: Profit = 1505 - 1500 = ₹5 per share (Risk-free)।",
+      "real_life_indian_example": "**Hedger:** एक Mutual Fund ₹100 Crore के shares hold करता है। उन्हें डर है कि market crash हो जाएगा। वे अपने portfolio value को protect करने के लिए Nifty Futures SELL करते हैं。\n**Speculator:** एक intraday trader सोचता है कि SBI ऊपर जाएगा, इसलिए वह SBI Call Options खरीदता है।",
+      "exam_traps": [
+        "यह सोचना कि Speculators 'बुरे' (bad) हैं। नहीं, उनकी ज़रूरत है क्योंकि वे Hedgers के लिए liquidity (buyers/sellers) provide करते हैं।",
+        "Arbitrage speculation नहीं है। Arbitrage risk-free profit है।"
+      ],
+      "memory_trick": "H-S-A: Hedgers (Risk से छिपते हैं - Hide), Speculators (Risk खोजते हैं - Seek), Arbitrageurs (Price difference का Advantage लेते हैं)।"
+    },
+    {
+      "concept": "5. Options (Call and Put)",
+      "basic_meaning": "एक contract जो buyer को buy या sell करने का RIGHT (अधिकार) देता है, लेकिन OBLIGATION (बाध्यता) नहीं।",
+      "detailed_explanation": "यह Futures/Forwards से अलग है जहाँ आपको contract fulfill करना MUST है। Options में:\n1. **Call Option:** BUY करने का Right.\n2. **Put Option:** SELL करने का Right.\n3. Buyer यह right पाने के लिए 'Premium' (एक insurance fee की तरह) pay करता है।\n4. अगर market buyer के against जाता है, तो वे केवल premium का loss सहकर पीछे हट (walk away) सकते हैं।",
+      "why_this_is_important": "यह concept Options को Futures से अलग करता है। Futures में, आपके पास obligation होती है। Options में, आपके पास choice होती है।",
+      "formula": "Option Buyer का Total Loss = Premium Paid तक Limited है।",
+      "formula_explanation": "आप option ticket की cost से ज़्यादा lose नहीं कर सकते।",
+      "step_by_step_calculation_example": "आप ₹20 के Premium पर TCS का एक Call Option खरीदते हैं। अगर TCS क्रैश होकर zero हो जाता है, तो आपका maximum loss केवल ₹20 है। अगर आपने TCS Futures खरीदा होता, तो आपका loss हज़ारों में हो सकता था।",
+      "real_life_indian_example": "'Car Insurance' खरीदना एक Put Option की तरह है। आप premium pay करते हैं। अगर कार crash हो जाती है (market गिरता है), तो insurance आपको pay करता है। अगर कार ठीक है, तो आप केवल premium lose करते हैं।",
+      "exam_traps": [
+        "Buyer के पास Right होता है; Seller (Writer) के पास Obligation होती है।",
+        "Option Seller का risk UNLIMITED होता है; Option Buyer का risk LIMITED होता है।"
+      ],
+      "memory_trick": "Call = Call up (Buy). Put = Put down (Sell)।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Forwards vs. Futures",
+      "clear_explanation": "Forwards OTC (Private), Customized होते हैं, और उनमें Counterparty Risk High होता है। Futures Exchange Traded, Standardized (Fixed lots/expiry) होते हैं, और उनमें Counterparty Risk Zero होता है (Clearing Corp द्वारा Guaranteed)।"
+    },
+    {
+      "difference_between": "Hedgers vs. Speculators",
+      "clear_explanation": "Hedgers underlying asset को OWN करते हैं और risk REDUCE (Safety) करना चाहते हैं। Speculators शुरुआत में asset own नहीं करते हैं और profit के लिए risk TAKE करना चाहते हैं (Gambling/Trading)।"
+    },
+    {
+      "difference_between": "OTC vs. Exchange Traded",
+      "clear_explanation": "OTC (Over The Counter) एक tailored suit (custom fit, private deal) खरीदने जैसा है। Exchange Traded एक mall से ready-made shirt खरीदने जैसा है (standard sizes S/M/L, public regulated shop)।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Derivative की Definition (यह एक contract है, जो underlying से value derive करता है)।",
+    "दिए गए story में identify करना कि कौन Hedger है और कौन Speculator।",
+    "किस contract में Counterparty risk होता है? (Answer: Forwards)।",
+    "Futures contracts की guarantee कौन लेता है? (Answer: Clearing Corporation/House)।",
+    "Arbitrage profit का Calculation (दो market prices के बीच का Difference)।"
+  ],
+  "quick_revision_summary": [
+    "Derivative को एक Underlying (Equity, Commodity, Currency, आदि) की आवश्यकता होती है।",
+    "Forwards = Private, Risky, Customized.",
+    "Futures = Public, Safe, Standardized.",
+    "Hedgers risk avoid करते हैं; Speculators risk लेते हैं; Arbitrageurs risk-free profit लेते हैं।",
+    "Options एक Right (अधिकार) देते हैं, Obligation नहीं।",
+    "Clearing Corporation Futures में counterparty risk को remove करता है।"
+  ]
+}

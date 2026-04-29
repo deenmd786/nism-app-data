@@ -1,0 +1,115 @@
+{
+  "course": "NISM Series I: Currency Derivatives",
+  "unit_number": 3,
+  "unit_name": "Exchange Traded Currency Futures",
+  "weightage": "20%",
+  "overview": "यह पूरे NISM Currency Derivatives परीक्षा का सबसे महत्वपूर्ण चैप्टर है, जिसका weightage 20% है! यूनिट 2 में, आपने सीखा कि Futures Contract थ्योरी में क्या होता है। इस यूनिट में, आप सीखेंगे कि भारतीय stock exchanges (जैसे NSE और BSE) पर वास्तविक जीवन में इन contracts का trade कैसे किया जाता है। आप trading के सख्त नियमों (जैसे Lot Size और Tick Size) के बारे में जानेंगे, कौन से currency pairs कानूनी रूप से allowed हैं, कीमतों की गणितीय गणना कैसे की जाती है, और Mark-to-Market नामक प्रक्रिया के माध्यम से daily profit and loss को कैसे manage किया जाता है। परीक्षा पास करने के लिए इस चैप्टर में महारत हासिल करना आवश्यक है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Contract Specifications: Lot Size और Tick Size",
+      "basic_meaning": "चूंकि futures एक exchange पर trade किए जाते हैं, इसलिए सब कुछ fixed और standardized होता है। 'Lot Size' वह minimum fixed quantity है जिसका आप trade कर सकते हैं। 'Tick Size' minimum price change allowed है।",
+      "detailed_explanation": "स्टेप 1: आप exchange में जाकर यह नहीं कह सकते कि 'मुझे 550 डॉलर खरीदने हैं'। Exchange केवल 'Lots' नामक पहले से पैक किए गए बॉक्स में बेचता है。\nस्टेप 2: USDINR, EURINR, और GBPINR के लिए, Lot Size base currency की ठीक 1,000 units है। तो, 1 Lot = $1,000, या €1,000, या £1,000。\nस्टेप 3: जापान की currency (Yen / JPY) का मूल्य बहुत छोटा है। इसलिए, इसका Lot Size बड़ा है: 100,000 Yen。\nस्टेप 4: 'Tick Size' वह सबसे छोटा कदम (step) है जिसके द्वारा कीमत ऊपर या नीचे जा सकती है। भारतीय currency futures में, Tick Size 0.25 पैसे है, जिसे रुपये में ₹0.0025 लिखा जाता है।",
+      "why_this_is_important": "यह परीक्षा में गारंटीकृत memory-based प्रश्न है। Numerical प्रश्नों को हल करने के लिए आपको इन सटीक नंबरों को जानना होगा।",
+      "formula": "Profit/Loss per tick = Lot Size × Tick Size",
+      "formula_explanation": "यह पता लगाने के लिए कि जब कीमत सिर्फ एक सबसे छोटे कदम से चलती है तो आप कितना पैसा बनाते हैं या खोते हैं, अपने बॉक्स के आकार (Lot Size) को सबसे छोटे मूल्य कदम (Tick Size) से गुणा करें।",
+      "step_by_step_calculation_example": "USDINR के लिए:\nLot Size = 1,000\nTick Size = ₹0.0025\nProfit/Loss per tick = 1,000 × 0.0025 = ₹2.50।\nमतलब: यदि आप USDINR का 1 Lot खरीदते हैं और कीमत सिर्फ एक tick ऊपर जाती है (उदाहरण के लिए, 83.0000 से 83.0025 तक), तो आप ठीक ₹2.50 का profit कमाते हैं।",
+      "real_life_indian_example": "यदि एक भारतीय छात्र को अमेरिकी कॉलेज की फीस के लिए $5,000 का भुगतान करना है, तो उनके पिता exchange rate को lock करने के लिए NSE पर ठीक 5 Lot USDINR futures खरीदेंगे।",
+      "exam_traps": [
+        "0.25 रुपये को 0.25 पैसे के साथ confuse करना। Tick Size 0.25 पैसे (जो ₹0.0025 है) है। कई छात्र परीक्षा में ₹0.25 चुनते हैं और अंक खो देते हैं।",
+        "JPYINR के लिए विशेष Lot Size भूल जाना। यह 1,00,000 Yen है, 1,000 Yen नहीं।"
+      ],
+      "memory_trick": "Yen एक 'हल्की' currency है, इसलिए इसे ले जाने के लिए आपको एक बड़े शॉपिंग बैग (1 लाख units) की आवश्यकता होती है। बाकी (USD, EUR, GBP) के लिए एक सामान्य बैग (1,000 units) पर्याप्त है। Tick Size 'Quarter Paisa' (0.0025) है।"
+    },
+    {
+      "concept": "2. Permitted Currency Pairs और Trading Hours",
+      "basic_meaning": "Exchange सख्ती से limit करता है कि आप किन currencies का trade कर सकते हैं और market किस समय खुला रहता है।",
+      "detailed_explanation": "स्टेप 1: आप भारतीय exchanges पर Australian Dollar या Swiss Franc जैसी किसी भी random currency का trade नहीं कर सकते。\nस्टेप 2: RBI और SEBI केवल 4 INR pairs की अनुमति देते हैं: USD-INR, EUR-INR, GBP-INR, और JPY-INR。\nस्टेप 3: वे 3 'Cross-Currency' pairs (जहाँ INR शामिल नहीं है) की भी अनुमति देते हैं: EUR-USD, GBP-USD, और USD-JPY。\nस्टेप 4: Currency derivatives के लिए market timings equity (शेयर) market से पूरी तरह अलग है। Currency market सुबह 9:00 बजे खुलता है और शाम 5:00 बजे बंद होता है।",
+      "why_this_is_important": "परीक्षा सेटर्स यह जांचना पसंद करते हैं कि क्या आप equity market timings और currency market timings के बीच का अंतर जानते हैं।",
+      "formula": "लागू नहीं",
+      "formula_explanation": "लागू नहीं",
+      "step_by_step_calculation_example": "लागू नहीं",
+      "real_life_indian_example": "Reliance के शेयरों का trade करने वाले एक trader को अपना terminal दोपहर 3:30 बजे बंद करना पड़ता है। लेकिन अगर वह USDINR का trade कर रहा है, तो वह आराम से बैठकर शाम 5:00 बजे तक trade कर सकता है, जिससे उसे European markets के खुलने पर react करने का समय मिल जाता है।",
+      "exam_traps": [
+        "यह सोचना कि currency market दोपहर 3:30 बजे (Nifty/Sensex की तरह) बंद हो जाता है। यह सख्ती से शाम 5:00 बजे बंद होता है।",
+        "यह मान लेना कि Cross-Currency pairs (जैसे EURUSD) भारत में allowed नहीं हैं। वे ALLOWED हैं!"
+      ],
+      "memory_trick": "4 बड़ी economies को याद रखें: US, Europe, UK, और Japan। केवल इन 4 को रुपये के खिलाफ अनुमति है।"
+    },
+    {
+      "concept": "3. Mark-to-Market (MTM) Settlement",
+      "basic_meaning": "MTM वह प्रक्रिया है जहाँ exchange हर शाम आपके profit या loss की गणना करता है और तुरंत आपके खाते में वह पैसा जोड़ता या काटता है।",
+      "detailed_explanation": "स्टेप 1: जब आप futures contract खरीदते हैं, तो आप एक सुरक्षा जमा (Margin) का भुगतान करते हैं。\nस्टेप 2: Exchange यह देखने के लिए महीने के अंत तक इंतजार नहीं करता है कि आप जीते या हारे। वे खातों का daily settle करते हैं。\nस्टेप 3: शाम 5:00 बजे, exchange 'Daily Settlement Price' (closing price) देखता है。\nस्टेप 4: यदि कीमत बढ़ गई, तो buyer profit कमाता है। Exchange तुरंत seller के margin account से पैसा लेता है और उसे buyer के margin account में डाल देता है。\nस्टेप 5: कल, गणना के लिए नया base price आज का closing price होगा। यह हर दिन risk को zero पर reset कर देता है।",
+      "why_this_is_important": "यह daily MTM वह जादुई तंत्र है जो futures को defaults से पूरी तरह risk-free बनाता है। यह यूनिट 3 में सबसे अधिक पूछा जाने वाला practical concept है।",
+      "formula": "Daily MTM P&L = (आज का Closing Price - कल का Closing Price) × Lot Size × Lot की संख्या",
+      "formula_explanation": "आप बस आज के closing price और कल के closing price के बीच का अंतर ज्ञात करते हैं, और इसे उस कुल quantity से गुणा करते हैं जो आपके पास है।",
+      "step_by_step_calculation_example": "आप सोमवार सुबह ₹83.00 पर USDINR का 1 Lot (1,000 USD) खरीदते हैं (BUY)।\nसोमवार शाम 5 बजे Close = ₹83.10।\nसोमवार के लिए आपका MTM = (83.10 - 83.00) × 1,000 = ₹100 profit (आपके खाते में जमा)।\nमंगलवार शाम 5 बजे Close = ₹82.90।\nमंगलवार के लिए आपका MTM = (82.90 - 83.10) × 1,000 = -₹200 loss (आपके खाते से काटे गए)। ध्यान दें: हम मंगलवार के loss की गणना सोमवार के close से करते हैं, original buying price से नहीं!",
+      "real_life_indian_example": "यदि आप एक घर खरीदते हैं, तो आप 5 साल बाद जब उसे बेचते हैं तो पूरा profit/loss चुकाते हैं। लेकिन currency futures में, यह ऐसा है जैसे broker दिन के ₹500 के profit या ₹300 के loss को settle करने के लिए हर शाम 5 बजे आपका दरवाजा खटखटाता है।",
+      "exam_traps": [
+        "Original buying price का उपयोग करके दिन 2 के MTM की गणना करना। गलत! दिन 2 के MTM के लिए, आपको दिन 1 के closing price को base के रूप में उपयोग करना होगा।",
+        "यह सोचना कि MTM केवल expiry day पर होता है। यह DAILY होता है।"
+      ],
+      "memory_trick": "MTM = Money Today Morning। आप हर सुबह नए सिरे से शुरुआत करते हैं क्योंकि कल का पैसा कल शाम को ही settle कर दिया गया था।"
+    },
+    {
+      "concept": "4. Currency Futures की Pricing (Cost of Carry Model)",
+      "basic_meaning": "Future की कीमत (मान लीजिए, 3 महीने बाद) spot price (आज की कीमत) से अलग क्यों होती है? यह केवल दोनों देशों के बीच interest rates में अंतर के कारण है।",
+      "detailed_explanation": "स्टेप 1: यदि आप किसी अमेरिकी बैंक में US Dollars रखते हैं, तो आपको 5% interest मिलता है। यदि आप किसी भारतीय बैंक में Indian Rupees रखते हैं, तो आपको 7% interest मिलता है。\nस्टेप 2: भारत का interest rate higher है। इसलिए, समय के साथ, चीजों को संतुलित करने के लिए डॉलर के मुकाबले रुपये का मूल्य गिरना (depreciate) चाहिए (अन्यथा, हर कोई सिर्फ भारतीय बैंकों में पैसा लगाएगा और मुफ्त risk-free profit कमाएगा)।\nस्टेप 3: क्योंकि future में रुपया गिर जाएगा, इसका मतलब है कि आपको future में 1 डॉलर खरीदने के लिए more रुपयों की आवश्यकता होगी。\nस्टेप 4: इसलिए, USDINR future की कीमत आमतौर पर spot price से higher होती है। इसे 'Premium' पर trade करना कहा जाता है。\nस्टेप 5: यह formula गणितीय रूप से spot price में interest rate के अंतर को जोड़कर इसे साबित करता है।",
+      "why_this_is_important": "यह currency pricing का theoretical हृदय है। इसे 'Interest Rate Parity' कहा जाता है। परीक्षा में theoretical प्रश्न पूछे जाएंगे कि कोई currency premium पर trade करेगी या discount पर।",
+      "formula": "Future Price = Spot Price × [ (1 + Domestic Interest Rate) / (1 + Foreign Interest Rate) ]",
+      "formula_explanation": "आप आज की कीमत लेते हैं और इसे दोनों देशों की interest rates के अनुपात से गुणा करते हैं। उच्च interest rate वाले देश की currency future में discount पर trade करेगी (यह कमजोर हो जाती है)।",
+      "step_by_step_calculation_example": "Spot USDINR = ₹80।\nभारत का interest (Domestic) = 6%।\nअमेरिका का interest (Foreign) = 2%।\nचूंकि भारत का interest अधिक है, इसलिए रुपया कमजोर होगा। डॉलर premium पर होगा।\n1 वर्ष के लिए अनुमानित Future Price = 80 + (80 × (6% - 2%)) = 80 + (80 × 4%) = 80 + 3.2 = ₹83.20।",
+      "real_life_indian_example": "ऐतिहासिक रूप से, अमेरिका (जैसे, 2%) की तुलना में भारत की interest rates हमेशा उच्च (जैसे, 6.5%) होती हैं। यही कारण है कि USDINR 1-month future हमेशा spot price से लगभग 10-15 पैसे अधिक quote किया जाता है। बाजार को उम्मीद है कि inflation और interest rate के अंतर के कारण हर महीने रुपये में थोड़ी गिरावट (depreciate) आएगी।",
+      "exam_traps": [
+        "सबसे बड़ा trap: छात्र सोचते हैं कि 'higher interest rate = strong economy = currency premium पर होगी'। FALSE! Higher interest rate वाली currency forward/futures market में हमेशा DISCOUNT पर trade करती है (यह कमजोर होती है)।",
+        "इस बात को लेकर confuse होना कि कौन premium पर है। यदि USD premium पर trade करता है, तो इसका मतलब है कि INR discount पर है।"
+      ],
+      "memory_trick": "Higher Interest = भारी बोझ (Heavier burden)। भारी बोझ उठाने वाली currency डूब जाएगी (discount पर trade करेगी)। Lower Interest = हल्का (Lighter)। यह ऊपर तैरेगी (premium पर trade करेगी)।"
+    },
+    {
+      "concept": "5. Open Interest (OI) vs Volume",
+      "basic_meaning": "Volume केवल यह है कि आज कितने transactions हुए। Open Interest (OI) यह है कि कितने contracts वर्तमान में 'alive' हैं और अभी तक closed नहीं हुए हैं।",
+      "detailed_explanation": "स्टेप 1: एक नई पार्टी की कल्पना करें। राहुल अंदर आता है। (Volume = 1, अंदर के लोग / OI = 1)।\nस्टेप 2: प्रिया अंदर आती है। (Volume = 1 अधिक, आज का कुल Volume = 2। अंदर के लोग / OI = 2)।\nस्टेप 3: राहुल चला जाता है। (Volume = 1 और transaction हुआ। आज का कुल Volume = 3। लेकिन अंदर के लोग / OI = 1 क्योंकि राहुल चला गया)।\nस्टेप 4: Trading में, 'पार्टी के अंदर के लोग' Open Interest है। यह दिखाता है कि बाजार में कितना active money लगा (locked) है। Volume सिर्फ यह दिखाता है कि आज घूमने वाला दरवाजा (revolving door) कितनी तेजी से घूम रहा है।",
+      "why_this_is_important": "Traders बाजार के trends को समझने के लिए OI का उपयोग करते हैं। यदि OI बढ़ रहा है, तो इसका मतलब है कि बाजार में नया पैसा आ रहा है। परीक्षा के लिए, इन दोनों परिभाषाओं के बीच अंतर करना महत्वपूर्ण है।",
+      "formula": "लागू नहीं",
+      "formula_explanation": "लागू नहीं",
+      "step_by_step_calculation_example": "लागू नहीं",
+      "real_life_indian_example": "सोमवार की सुबह, एक नया USDINR monthly contract लॉन्च किया जाता है। Volume बहुत अधिक होगा क्योंकि day-traders जल्दी से खरीदते और बेचते हैं। लेकिन दिन के अंत में, यदि सभी day-traders शाम 5 बजे से पहले अपनी positions बंद कर देते हैं, तो Open Interest बहुत कम रहेगा, भले ही Volume लाखों में हो।",
+      "exam_traps": [
+        "यह सोचना कि Volume और OI एक ही हैं। Volume हर सुबह ZERO पर reset हो जाता है। OI अगले दिन तक आगे बढ़ता है जब तक कि contract expire न हो जाए।",
+        "यदि कोई buyer अपनी मौजूदा position किसी नए buyer को बेचता है, तो OI नहीं बदलता है। केवल owner बदलता है।"
+      ],
+      "memory_trick": "Volume = आज के Footfalls (जैसे मॉल काउंटर)। OI = अभी की Occupancy (जैसे होटल का कमरा)। Occupancy कल तक आगे बढ़ सकती है, Footfalls रोज़ reset होते हैं।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Currency Trading Hours vs Equity Trading Hours",
+      "clear_explanation": "भारत में equity market (शेयर) सुबह 9:15 बजे से दोपहर 3:30 बजे तक trade करते हैं। Currency derivatives market सुबह 9:00 बजे जल्दी खुलते हैं और बहुत लंबे समय तक खुले रहते हैं, European और शुरुआती US market के समय के साथ overlap करने के लिए शाम 5:00 बजे बंद होते हैं।"
+    },
+    {
+      "difference_between": "Volume vs Open Interest (OI)",
+      "clear_explanation": "Volume एक ही दिन में होने वाले हर एक buy and sell transaction की गणना करता है। यह आधी रात को zero पर reset हो जाता है। OI केवल उन contracts की गणना करता है जो खोले गए हैं लेकिन अभी तक closed/settled नहीं हुए हैं। OI expiry date तक दिन-प्रतिदिन आगे बढ़ता है।"
+    },
+    {
+      "difference_between": "Premium vs Discount",
+      "clear_explanation": "यदि future price, spot price से HIGHER है, तो currency premium पर trade कर रही है। यदि future price, spot price से LOWER है, तो यह discount पर trade कर रही है। Lower interest rate वाले देश की currency premium पर trade करती है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Tick Size (0.0025) और Lot Size (USD/EUR/GBP के लिए 1000, JPY के लिए 100,000) पर numerical प्रश्न।",
+    "2 या 3 दिनों में Mark-to-Market (MTM) profit या loss की गणना करना (याद रखें कि कल के close का उपयोग करना है, buying price का नहीं)।",
+    "यह पहचानना कि currency market शाम 5:00 बजे बंद होता है।",
+    "Cost of Carry का concept: यह नियम कि higher interest rate वाली currency = future में discount।",
+    "Open Interest (OI) vs Volume की परिभाषाएं।"
+  ],
+  "quick_revision_summary": [
+    "USDINR, EURINR, GBPINR Lot Size = 1,000। JPYINR Lot Size = 1,00,000।",
+    "Tick Size = 0.25 पैसे (₹0.0025)।",
+    "Market Timings: सुबह 9:00 बजे से शाम 5:00 बजे तक।",
+    "केवल 4 INR pairs और 3 Cross pairs की अनुमति है।",
+    "Closing settlement price के आधार पर MTM DAILY किया जाता है।",
+    "Higher Interest Rate वाला देश = currency futures में Discount पर trade करेगी।",
+    "Lower Interest Rate वाला देश = currency futures में Premium पर trade करेगी।",
+    "Volume रोज़ reset होता है; Open Interest (OI) बंद होने या expire होने तक खुला रहता है।"
+  ]
+}

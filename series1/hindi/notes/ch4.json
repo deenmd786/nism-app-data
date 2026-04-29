@@ -1,0 +1,109 @@
+{
+  "course": "NISM Series I: Currency Derivatives",
+  "unit_number": 4,
+  "unit_name": "Exchange Traded Currency Options",
+  "weightage": "20%",
+  "overview": "दूसरे heavyweight चैप्टर में आपका स्वागत है! Unit 3 के साथ मिलकर, यह यूनिट आपकी परीक्षा का 40% हिस्सा बनाती है। जहाँ Futures (Unit 3) आपको ट्रेड पूरा करने के लिए मजबूर करते हैं, वहीं Options आपको एक Choice देते हैं। यह चैप्टर करेंसी खरीदने या बेचने के 'Right but not the Obligation' के जादू को समझाता है। आप Call Options, Put Options, Option Writer कौन है, Moneyness का क्या अर्थ है, और Option prices की गणना कैसे की जाती है, इसके बारे में सीखेंगे। चूँकि वास्तविक जीवन में Options में बहुत अधिक ट्रेडिंग होती है, इसलिए NISM इस यूनिट का practical scenario वाले प्रश्नों के साथ बहुत गहराई से परीक्षण करता है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Call Options और Put Options के बेसिक्स",
+      "basic_meaning": "एक Call Option आपको एक निश्चित कीमत पर करेंसी BUY करने का अधिकार देता है। एक Put Option आपको एक निश्चित कीमत पर करेंसी SELL करने का अधिकार देता है। यह अधिकार प्राप्त करने के लिए, आप एक non-refundable फीस देते हैं जिसे Premium कहा जाता है।",
+      "detailed_explanation": "Step 1: कल्पना करें कि आप एक घर खरीदना चाहते हैं जिसकी कीमत आज ₹50 लाख है। आपको लगता है कि अगले महीने कीमत ₹60 लाख हो जाएगी, लेकिन आपके पास अभी पूरा पैसा नहीं है。\nStep 2: आप बिल्डर को ₹1 लाख का टोकन अमाउंट (Premium) देते हैं और एक Call Option कॉन्ट्रैक्ट पर हस्ताक्षर करते हैं। यह आपको अगले महीने ₹50 लाख में घर खरीदने का RIGHT देता है。\nStep 3: अगर घर की कीमत सच में ₹60 लाख हो जाती है, तो आप खुश हैं! आप अपने अधिकार का उपयोग करते हैं, इसे ₹50 लाख में खरीदते हैं, और ₹10 लाख बचाते हैं。\nStep 4: लेकिन क्या होगा अगर घर की कीमत गिरकर ₹40 लाख हो जाए? चूंकि यह एक Option है, आप बस पीछे हट जाते हैं। आप बिल्डर से घर नहीं खरीदते हैं। आप केवल अपना ₹1 लाख का टोकन (Premium) खोते हैं。\nStep 5: करेंसी में, Call ठीक यही है: डॉलर खरीदने का अधिकार। Put इसके बिल्कुल विपरीत है: डॉलर बेचने का अधिकार (जैसे कार इंश्योरेंस खरीदना, आप अपनी क्षतिग्रस्त कार के जोखिम को कंपनी को बेचने के अधिकार के लिए Premium का भुगतान करते हैं)।",
+      "why_this_is_important": "यह बिल्कुल बुनियादी नींव है। यदि आप Call और Put में कन्फ्यूज होते हैं, तो आप scenario वाले प्रश्नों में फेल हो जाएंगे। परीक्षा में एक Option Buyer के maximum loss के बारे में बहुत पूछा जाता है (जो चुकाए गए Premium तक सीमित होता है)।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "एक भारतीय importer को अमेरिकी सप्लायर को भुगतान करने के लिए अगले महीने $10,000 खरीदने हैं। उसे डर है कि USD ₹83 से बढ़कर ₹85 हो जाएगा। वह 20 पैसे का Premium देकर ₹83 पर एक USDINR Call Option खरीदता है। यदि USD ₹85 हो जाता है, तो वह अपने Option को exercise करता है और ₹83 पर डॉलर प्राप्त करता है। यदि USD गिरकर ₹80 हो जाता है, तो वह Option को इग्नोर कर देता है और Open Market से ₹80 में सस्ते में खरीद लेता है।",
+      "exam_traps": [
+        "यह सोचना कि Option Buyer पीछे नहीं हट सकता। Buyer के पास हमेशा walk away का अधिकार होता है। इसीलिए इसे Option कहा जाता है।",
+        "Premium किसे मिलता है, इसमें कन्फ्यूज होना। Buyer Premium pay करता है। Seller/Writer को Premium receive होता है।"
+      ],
+      "memory_trick": "CALL = Call Up to Buy. PUT = Put Down to Sell. Buyer = King (जिसके पास विकल्प हैं)। Seller = Servant (जिसे King की बात माननी ही होगी)।"
+    },
+    {
+      "concept": "2. Option Terminology: Strike Price, Spot Price, और Premium",
+      "basic_meaning": "Options को समझने के लिए, आपको इसकी शब्दावली सीखनी होगी। Strike Price 'Fixed deal price' है। Spot Price 'Current market price' है। Premium गेम खेलने के लिए 'Ticket fees' है।",
+      "detailed_explanation": "Step 1: Strike Price (या Exercise Price): यह कॉन्ट्रैक्ट में लिखी गई कीमत है। यह वह कीमत है जिस पर आप भविष्य में करेंसी खरीदने या बेचने के लिए सहमत हुए हैं। यह कभी नहीं बदलती है。\nStep 2: Spot Price: यह आज बाजार में करेंसी की लाइव, चल रही कीमत है। यह हर सेकंड बदलती है。\nStep 3: Premium: Option Contract खरीदने के लिए Buyer द्वारा Seller को दिया जाने वाला upfront, non-refundable खर्च。\nStep 4: Expiry Date: वह अंतिम दिन जब तक Option valid होता है। भारत में, Currency Options आमतौर पर महीने के अंतिम working day से दो working days पहले expire होते हैं।",
+      "why_this_is_important": "परीक्षा के हर numerical प्रश्न में आपको एक Strike Price और एक Spot Price दिया जाएगा और आपसे Profit calculate करने के लिए कहा जाएगा। आपको पता होना चाहिए कि कौन सा क्या है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "आप ₹83.00 के Strike Price के साथ एक USDINR Call Option खरीदते हैं। आप ₹0.25 का Premium चुकाते हैं। आज, लाइव मार्केट Spot Price ₹82.50 है। आप Expiry से पहले Spot Price के ₹83.00 को पार करने का इंतजार कर रहे हैं।",
+      "exam_traps": [
+        "Strike Price और Spot Price को मिला देना। Strike = Fixed Contract Price. Spot = Moving Market Price.",
+        "Net profit calculate करते समय Premium घटाना भूल जाना।"
+      ],
+      "memory_trick": "Strike = पत्थर की लकीर (Fixed). Spot = On the spot अभी (Moving). Premium = Entry Ticket."
+    },
+    {
+      "concept": "3. Option की Moneyness: ITM, ATM, OTM",
+      "basic_meaning": "Moneyness आपको बताती है कि यदि आप अभी अपने Option Contract का exercise करते हैं तो क्या यह लाभदायक है (In-The-Money / ITM), बराबर पर है (At-The-Money / ATM), या बेकार है (Out-Of-The-Money / OTM)।",
+      "detailed_explanation": "आइए एक Call Option (BUY करने का अधिकार) को देखें:\nStep 1: In-The-Money (ITM): कल्पना करें कि आपके पास ₹80 (Strike) पर USD खरीदने का अधिकार है, लेकिन बाजार मूल्य (Spot) ₹85 है। आपको यह ₹5 सस्ता मिल रहा है! इस Option की value है। यह ITM है। (Spot > Strike)।\nStep 2: At-The-Money (ATM): खरीदने का आपका अधिकार ₹80 पर है, और बाजार मूल्य ठीक ₹80 है। यह एक tie है। यह ATM है। (Spot = Strike)।\nStep 3: Out-Of-The-Money (OTM): खरीदने का आपका अधिकार ₹80 पर है, लेकिन बाजार मूल्य गिरकर ₹75 हो गया। जब बाजार इसे ₹75 में दे रहा है तो आप ₹80 में क्यों खरीदेंगे? आप नहीं खरीदेंगे। यह Option अभी बेकार है। यह OTM है। (Spot < Strike)।\n\nPut Options (SELL करने का अधिकार) के लिए, यह तर्क पूरी तरह से REVERSED हो जाता है:\nStep 1: ITM = Spot < Strike (बाजार ₹75 है, आपके पास ₹80 पर ऊंचे दाम में बेचने का अधिकार है। बहुत बढ़िया!)\nStep 2: ATM = Spot = Strike.\nStep 3: OTM = Spot > Strike (बाजार ₹85 है, आप ₹80 पर कम में बेचने के अपने अधिकार का उपयोग क्यों करेंगे? बेकार)।",
+      "why_this_is_important": "यह अत्यधिक high probability वाला क्षेत्र है। NISM निश्चित रूप से आपको एक Strike और Spot Price देगा और पूछेगा 'क्या यह Option ITM, ATM, या OTM है?'।",
+      "formula": "Call ITM: Spot > Strike. Put ITM: Spot < Strike.",
+      "formula_explanation": "Call के लिए, आप चाहते हैं कि बाजार की कीमत आपकी सस्ती खरीदारी कीमत से अधिक हो। Put के लिए, आप चाहते हैं कि बाजार की कीमत आपकी उच्च बिक्री कीमत से नीचे गिर जाए।",
+      "step_by_step_calculation_example": "प्रश्न: एक Trader के पास ₹83.00 के Strike पर USDINR Put Option (बेचने का अधिकार) है। वर्तमान Spot Price ₹82.00 है। Moneyness क्या है?\nStep 1: Option के प्रकार की पहचान करें = PUT (बेचने का अधिकार)।\nStep 2: Strike = 83.00. Spot = 82.00.\nStep 3: यदि आप Option का exercise करते हैं, तो आप ₹83 में बेच सकते हैं। बाजार में, आप केवल ₹82 में बेच सकते हैं। आपका Option आपको बेहतर deal दे रहा है!\nStep 4: चूँकि इसका exercise करना लाभदायक है, इसलिए यह In-The-Money (ITM) है।",
+      "real_life_indian_example": "कोविड के दौरान, रुपया अचानक गिर गया और USDINR बहुत तेजी से ₹75 से ₹78 तक उछल गया। जिस किसी के पास ₹76 के Call Options थे, उन्होंने अचानक अपने Options को गहराई से In-The-Money (ITM) होते देखा और भारी Profit कमाया।",
+      "exam_traps": [
+        "Call ITM नियम (Spot > Strike) को सीखना और उसे Puts पर आँख बंद करके लागू कर देना। Put के लिए नियम बिल्कुल उल्टा है! बहुत सावधान रहें।",
+        "Premium को Moneyness के साथ कन्फ्यूज करना। Moneyness केवल Strike और Spot की तुलना करता है। यह तय करने के लिए कि यह ITM/OTM है या नहीं, Premium Amount को न देखें।"
+      ],
+      "memory_trick": "Call ITM: Market UP (मैं सस्ता खरीदता हूँ)। Put ITM: Market DOWN (मैं महंगा बेचता हूँ)।"
+    },
+    {
+      "concept": "4. Option Pricing: Intrinsic Value vs Time Value",
+      "basic_meaning": "आपके द्वारा चुकाया जाने वाला Premium दो अलग-अलग हिस्सों से मिलकर बना होता है: Intrinsic Value (अभी का वास्तविक नकद मूल्य) और Time Value (भविष्य के लिए hope की value)।",
+      "detailed_explanation": "Premium = Intrinsic Value + Time Value.\nStep 1: Intrinsic Value (IV) वह पैसा है जो आपको मिलेगा यदि आप इसी सेकंड Option का exercise करते हैं। केवल ITM Options में ही Intrinsic Value होती है। OTM और ATM Options में Intrinsic Value ZERO होती है。\nStep 2: Time Value (TV) वह अतिरिक्त पैसा है जो आप चुकाते हैं क्योंकि Option के expire होने में अभी समय बाकी है। Buyer 'उम्मीद' करता है कि कीमत उसके पक्ष में जाएगी。\nStep 3: जैसे-जैसे Expiry Date करीब आती है, 'उम्मीद' कम होती जाती है। इसलिए, Time Value धीरे-धीरे घटकर शून्य हो जाती है। इसे 'Time Decay' कहा जाता है。\nStep 4: अंतिम Expiry के दिन, Time Value पूरी तरह से ZERO हो जाती है। Premium ठीक Intrinsic Value के बराबर होता है।",
+      "why_this_is_important": "यह कॉन्सेप्ट बताता है कि बाजार में उतार-चढ़ाव न होने पर भी Option Buyers पैसा क्यों खो देते हैं। Time Decay उनके Premium को खा जाता है। यह परीक्षा की थ्योरी के लिए बहुत महत्वपूर्ण है।",
+      "formula": "Call के लिए Intrinsic Value (IV) = Spot Price - Strike Price (यदि यह Negative है, तो IV ZERO है)।\nPut के लिए Intrinsic Value (IV) = Strike Price - Spot Price (यदि यह Negative है, तो IV ZERO है)।",
+      "formula_explanation": "बस calculate करें कि आप अभी बाजार के मुकाबले कितना Profit कमा रहे हैं। यदि आप नुकसान (OTM) में हैं, तो Intrinsic Value ZERO है (यह कभी Negative नहीं होती)।",
+      "step_by_step_calculation_example": "आपके पास ₹80 के Strike वाला USDINR Call Option है। वर्तमान Spot ₹82 है। Option Premium ₹2.50 पर Trade कर रहा है।\nStep 1: Intrinsic Value ज्ञात करें। Spot (82) - Strike (80) = ₹2.00.\nStep 2: Total Premium ₹2.50 है।\nStep 3: Time Value ज्ञात करें। Premium (2.50) - IV (2.00) = ₹0.50.\nपरिणाम: Real Cash Value ₹2 है, और 'Hope/Time' की value 50 पैसे है।",
+      "real_life_indian_example": "यदि आप ऐसा Option खरीदते हैं जो 3 महीने में expire होता है, तो आप Time Value का बहुत अधिक भुगतान करते हैं क्योंकि 3 महीनों में कुछ भी हो सकता है। यदि आप ऐसा Option खरीदते हैं जो कल expire होता है, तो Time Value लगभग ZERO है क्योंकि चमत्कारों के लिए कोई समय नहीं बचा है।",
+      "exam_traps": [
+        "यह सोचना कि OTM Options में Intrinsic Value होती है। Trap! OTM और ATM Options की Intrinsic Value हमेशा ZERO होती है। उनका पूरा Premium सिर्फ Time Value होता है।",
+        "यह भूल जाना कि जब Option ATM (At-The-Money) होता है तो Time Value highest होती है।"
+      ],
+      "memory_trick": "Premium = Reality (Intrinsic) + Hope (Time). Expiry के दिन, Hope मर जाती है (Time value = 0), केवल Reality बनी रहती है।"
+    },
+    {
+      "concept": "5. American Options vs European Options",
+      "basic_meaning": "यह केवल आपको बताता है कि आपको अपने अधिकार का exercise करने की अनुमति WHEN (कब) है।",
+      "detailed_explanation": "Step 1: American Options: आप Expiry से पहले किसी भी Working Day पर अपने अधिकार का exercise कर सकते हैं। यह बहुत Flexible है。\nStep 2: European Options: आप केवल अंतिम Expiry Day पर ही अपने अधिकार का exercise कर सकते हैं। आप इसे पहले नहीं कर सकते。\nStep 3: भारत में, सभी Exchange-Traded Currency Options, European Style के हैं। आप उन्हें CE (Call European) और PE (Put European) के रूप में लिखा हुआ देखेंगे।",
+      "why_this_is_important": "NISM इसे सीधे factual प्रश्न के रूप में पूछता है। आपको भारत में उपयोग की जाने वाली Style के बारे में पता होना चाहिए।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "यदि आप 28 अक्टूबर को expire होने वाला USDINR 83.00 CE (Call European) खरीदते हैं, और Spot Price 15 अक्टूबर को ही उछलकर ₹85 हो जाता है, तो आप 15 तारीख को डॉलर की मांग करने के लिए इसका exercise नहीं कर सकते। आपको 28 तारीख तक इंतजार करना होगा, या बस Profit Book करने के लिए Market में Option Contract को ही बेचना होगा।",
+      "exam_traps": [
+        "यह सोचना कि American Options का Trade अमेरिका में होता है और European का यूरोप में। FALSE! ये केवल 'Style' के नाम हैं।",
+        "यह मान लेना कि भारतीय Currency Options, American हैं। वे सख्ती से European हैं।"
+      ],
+      "memory_trick": "American = Any time. European = End day only. भारत में, Currency Options केवल अंतिम दिन (European) के लिए 'E' हैं।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Option Buyer vs Option Seller/Writer",
+      "clear_explanation": "Buyer, Premium pay करता है, उसके पास exercise करने का RIGHT/Choice होता है, और उसका Maximum Loss सख्ती से चुकाए गए Premium तक सीमित होता है। उसकी Profit की संभावना Unlimited होती है। Seller/Writer को Premium receive होता है, उसका OBLIGATION होता है (Buyer की बात माननी ही पड़ती है), और उसका Maximum Profit प्राप्त Premium तक सीमित होता है। हालाँकि, उसके नुकसान का Risk Unlimited होता है!"
+    },
+    {
+      "difference_between": "Call Option vs Put Option",
+      "clear_explanation": "एक Call Option, Buyer को एक निश्चित Strike Price पर Underlying Currency BUY करने का अधिकार देता है (इसका उपयोग तब किया जाता है जब बाजार के UP जाने की उम्मीद हो)। एक Put Option, Buyer को एक निश्चित Strike Price पर Underlying Currency SELL करने का अधिकार देता है (इसका उपयोग तब किया जाता है जब बाजार के DOWN जाने की उम्मीद हो)।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "दिए गए Strike और Spot Price के आधार पर यह पहचानना कि Option ITM, ATM या OTM है (विशेष रूप से Put Options के लिए Tricky)।",
+    "Option Buyer के लिए Maximum Loss की calculate करना (उत्तर: चुकाया गया Premium)।",
+    "यह समझना कि भारत में सभी Currency Options, European Style (CE/PE) के हैं।",
+    "यह जानना कि Premium = Intrinsic Value + Time Value, और OTM Options में Intrinsic Value ZERO होती है।"
+  ],
+  "quick_revision_summary": [
+    "Call Option = Right to Buy. Put Option = Right to Sell.",
+    "Buyer, Premium pay करता है और Rights प्राप्त करता है। Seller, Premium receive करता है और Obligations लेता है。",
+    "Buyer का Risk, Premium तक सीमित है। Seller का Risk Unlimited है。",
+    "Call ITM = Spot > Strike. Put ITM = Spot < Strike.",
+    "OTM और ATM Options में ZERO Intrinsic Value होती है। उनमें केवल Time Value होती है।",
+    "जैसे-जैसे Expiry करीब आती है Time Value decay होती है और Expiry के दिन ZERO हो जाती है।",
+    "भारतीय Currency Options सख्ती से European हैं (केवल Expiry Date पर exercise किए जाते हैं)।"
+  ]
+}

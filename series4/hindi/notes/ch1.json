@@ -1,0 +1,115 @@
+{
+  "course": "NISM Series IV: Interest Rate Derivatives Certification Examination",
+  "unit_number": 1,
+  "unit_name": "Interest Rate, Interest Rate Instruments और Fixed Income Markets का परिचय",
+  "weightage": "10 Marks",
+  "overview": "यह चैप्टर पूरे exam की foundation है। 'Derivatives' (जो rates पर complex bets हैं) को समझने से पहले, आपको underlying asset: Interest Rates और Bonds को समझना होगा। यह unit समझाता है कि पैसे की कीमत (Interest) क्या है, वे assets जो interest देते हैं (Bonds/G-Secs), और इनमें शामिल specific risks क्या हैं। यदि आप यहां Bond Prices और Interest Rates के बीच के relationship को अच्छी तरह समझ लेते हैं, तो बाकी का course आसान हो जाएगा।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Interest Rate क्या है?",
+      "basic_meaning": "Interest Rate को उस 'Rent' की तरह सोचें जो आप किसी और के पैसे का उपयोग करने के लिए चुकाते हैं।",
+      "detailed_explanation": "यदि आप कोई घर उधार लेते हैं, तो आप rent देते हैं। यदि आप पैसा उधार लेते हैं, तो आप interest देते हैं। यह borrowing की cost या saving का reward है। Financial market में, interest rates तीन मुख्य कार्य करते हैं: \n1. यह savers (जिनके पास excess cash है) से borrowers (जिन्हें business के लिए cash चाहिए) तक पैसा ले जाने में मदद करता है। \n2. यह lender को उस risk के लिए compensate करता है कि borrower शायद पैसा वापस न करे। \n3. यह lender को 'inflation' (समय के साथ purchasing power में कमी) के लिए compensate करता है।",
+      "why_this_is_important": "पूरा exam उन products की trading के बारे में है जिनकी value interest rates के बदलने पर बदलती है। आपको यह समझना होगा कि इन rates को कौन drive करता है।",
+      "formula": "$Real\\ Interest\\ Rate \\approx Nominal\\ Interest\\ Rate - Inflation\\ Rate$",
+      "formula_explanation": "'Nominal' rate वह है जो bank आपको बताता है (उदा., 7% FD)। 'Real' rate वह है जो आप वास्तव में inflation घटाने के बाद कमाते हैं। यदि inflation अधिक है, तो आपकी real earnings कम होती हैं।",
+      "step_by_step_calculation_example": "Scenario: एक bank आपको प्रति वर्ष 8% (Nominal Rate) पर Fixed Deposit offer करता है। देश में inflation 5% है।\n\nCalculation:\nReal Rate = 8% - 5% = 3%.\n\nResult: आपकी purchasing power केवल 3% बढ़ती है, 8% नहीं।",
+      "real_life_indian_example": "जब RBI (Reserve Bank of India) Repo Rate बढ़ाता है, तो banks अपने loan rates बढ़ा देते हैं। इससे Tata या Reliance जैसी कंपनियों के लिए borrowing महंगी हो जाती है, जिससे उनका expansion धीमा हो सकता है।",
+      "exam_traps": [
+        "Real Rate को Nominal Rate के साथ confuse करना।",
+        "यह सोचना कि interest rates केवल central bank द्वारा तय किए जाते हैं (Market forces भी उन्हें तय करती हैं)।"
+      ],
+      "memory_trick": "Nominal वह Name tag है (जो आप देखते हैं)। Real वह Reality है (inflation द्वारा आपका profit खाने के बाद आपको जो मिलता है)।"
+    },
+    {
+      "concept": "2. Fixed Income Securities (Bonds और Debentures)",
+      "basic_meaning": "Bond मूल रूप से एक loan है जिसे छोटे टुकड़ों में बांटा गया है जिन्हें trade किया जा सकता है।",
+      "detailed_explanation": "जब Government या किसी Company को पैसे की आवश्यकता होती है, तो वे एक paper issue करते हैं जिसे Bond या Debenture कहा जाता है। \n1. Issuer: Borrower (उदा., Govt of India)। \n2. Investor: Lender (आप)। \n3. Principal: वह पैसा जो आप उधार देते हैं। \n4. Coupon: वह interest जो वे आपको periodically देते हैं। \n5. Maturity: वह date जब आपको अपना principal वापस मिलता है।",
+      "why_this_is_important": "Interest Rate Derivatives (इस exam का विषय) Bonds/G-Secs का underlying asset के रूप में उपयोग करते हैं। यदि आप नहीं जानते कि bond क्या है, तो आप bond futures trade नहीं कर सकते।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Government of India (GOI) '7.26% GS 2033' issue करती है। इसका मतलब है: \n- Issuer: Govt of India. \n- Coupon: वे प्रति वर्ष 7.26% interest देंगे। \n- Maturity: Bond वर्ष 2033 में expire होगा।",
+      "exam_traps": [
+        "यह सोचना कि 'Debentures' हमेशा secured होते हैं (Global terms में वे आमतौर पर unsecured होते हैं, हालांकि भारत में secured debentures आम हैं)।",
+        "यह मानना कि 'Coupon Rate' बदलता है। Bond certificate पर Coupon Rate आमतौर पर FIXED होता है। 'Yield' बदलती है, Coupon नहीं।"
+      ],
+      "memory_trick": "BOND = Binding Obligation for Needed Debt. आप पैसे वापस करने के लिए bound हैं।"
+    },
+    {
+      "concept": "3. Inverse Relationship: Price बनाम Yield",
+      "basic_meaning": "यह Golden Rule है: जब Interest Rates ऊपर (UP) जाते हैं, तो Bond Prices नीचे (DOWN) जाते हैं। जब Interest Rates नीचे (DOWN) जाते हैं, तो Bond Prices ऊपर (UP) जाते हैं।",
+      "detailed_explanation": "एक Seesaw की कल्पना करें। एक तरफ Interest Rate (Yield) है, दूसरी तरफ Bond Price है। \nऐसा क्यों? \nकल्पना करें कि आपके पास 5% pay करने वाला एक पुराना bond है। अचानक, market rate बढ़कर 7% हो जाता है। नए bonds अब 7% pay कर रहे हैं। अब कोई भी आपका पुराना 5% bond नहीं चाहता क्योंकि यह कम pay करता है। इसे बेचने के लिए, आपको इसे attractive बनाने के लिए इसकी price कम करनी होगी (इसे discount पर बेचना होगा)। \nइसके विपरीत, यदि market rates गिरकर 3% हो जाते हैं, तो आपका पुराना 5% bond बहुत valuable हो जाता है, और इसकी price बढ़ जाती है।",
+      "why_this_is_important": "90% derivative trading strategies इसी logic पर आधारित हैं। यदि आपको लगता है कि rates गिरेंगे, तो आप bonds (या bond futures) खरीदते हैं क्योंकि prices बढ़ेंगी।",
+      "formula": "$Price \\propto \\frac{1}{Yield}$",
+      "formula_explanation": "Price, Yield के inversely proportional (व्युत्क्रमानुपाती) है।",
+      "step_by_step_calculation_example": "Step 1: आप Rs 100 में एक bond खरीदते हैं जो Rs 5 coupon (5% yield) pay करता है। \nStep 2: Market rates बढ़कर 10% हो जाते हैं। \nStep 3: नए investors 10% return चाहते हैं। आपके bond को उनके द्वारा pay किए गए पैसे पर 10% return देने के लिए, price को गिरकर Rs 50 होना चाहिए (क्योंकि Rs 5 coupon / Rs 50 price = 10% yield)। \nResult: Rate दोगुना (doubled) हो गया, Price आधी (halved) हो गई।",
+      "real_life_indian_example": "2022 में, जब RBI ने rates बढ़ाना शुरू किया, तो भारत में long-term Debt Mutual Funds की NAV (Net Asset Value) गिर गई। ऐसा इसलिए हुआ क्योंकि rates बढ़ने पर उनके द्वारा hold किए गए bonds की prices क्रैश हो गईं।",
+      "exam_traps": [
+        "सबसे बड़ा trap: Students intuitively सोचते हैं 'Higher Interest अच्छा है, इसलिए Price UP होनी चाहिए'। NO! Higher interest नए buyer के लिए अच्छा है, लेकिन मौजूदा (existing) bondholder की price के लिए बुरा है।",
+        "'Coupon' को 'Yield' के साथ confuse करना। Coupon समान रहता है, Yield market के साथ move करती है।"
+      ],
+      "memory_trick": "See-Saw Rule: Rates UP -> Price DOWN. Rates DOWN -> Price UP."
+    },
+    {
+      "concept": "4. Indian Debt Market Structure",
+      "basic_meaning": "भारत में कौन, क्या और कहाँ trade करता है?",
+      "detailed_explanation": "Indian debt market को समय (time) के आधार पर दो मुख्य श्रेणियों में बांटा गया है: \n\n1. Money Market (Short Term, < 1 Year): \n- Highly liquid. \n- Short-term cash management के लिए उपयोग किया जाता है। \n- Instruments: T-Bills (Treasury Bills), Certificate of Deposits (CDs), Commercial Papers (CPs), TREPS (CBLO)। \n\n2. Government Securities Market (Long Term, > 1 Year): \n- इसे G-Secs या Dated Securities भी कहा जाता है। \n- Safest investment (Sovereign Guarantee)। \n- Instruments: Fixed Rate Bonds, Floating Rate Bonds। \n\n3. Corporate Bond Market: \n- Companies जो पैसा उधार लेती हैं। \n- G-Secs की तुलना में higher risk, इसलिए वे higher interest pay करते हैं।",
+      "why_this_is_important": "भारत में Interest Rate Futures ज्यादातर G-Secs (जैसे 10-year Bond) और T-Bills (91-day) पर आधारित हैं। आपको underlying asset को जानना आवश्यक है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Banks अपना CRR (Cash Reserve Ratio) maintain करने के लिए overnight पैसा उधार लेने के लिए 'Call Money Market' का उपयोग करते हैं।",
+      "exam_traps": [
+        "यह सोचना कि T-Bills coupons pay करते हैं। वे ऐसा नहीं (NOT) करते हैं। T-Bills 'Zero Coupon' securities हैं जिन्हें discount पर issue किया जाता है और face value पर redeem किया जाता है।",
+        "Money Market (Short term) को Capital Market (Long term) के साथ confuse करना।"
+      ],
+      "memory_trick": "Money Market = Quick Money (Short term). Capital Market = Building Capital (Long term structures)."
+    },
+    {
+      "concept": "5. Compounding Convention",
+      "basic_meaning": "कैसे interest अपने आप पर interest कमाता है।",
+      "detailed_explanation": "Derivatives में, हम अक्सर school में सीखे गए simple annual compounding के बजाय 'Continuous Compounding' का उपयोग करते हैं। \n- Discrete Compounding: Interest साल या तिमाही (quarter) में एक बार जोड़ा जाता है। \n- Continuous Compounding: Interest हर micro-second जोड़ा जाता है। यह derivatives की pricing के लिए mathematical standard है।",
+      "why_this_is_important": "किसी option या future की price तय करने के लिए (Black-Scholes या Cost of Carry models का उपयोग करके), आपको continuous compounding ($e^{rt}$) का उपयोग करना चाहिए।",
+      "formula": "$FV = PV \\cdot e^{rt}$",
+      "formula_explanation": "FV = Future Value, PV = Present Value, e = mathematical constant (2.718), r = rate, t = time. यह formula मानकर value calculate करता है कि interest continuously grow कर रहा है।",
+      "step_by_step_calculation_example": "Rs 100 को 10% पर 1 साल के लिए continuously compounded invest करें। \nCalculation: \nFV = 100 * $e^{0.10 \\cdot 1}$ \nFV = 100 * $2.718^{0.10}$ \nFV ≈ 100 * 1.10517 \nFV = Rs 110.51 \n(Note: Simple interest केवल Rs 110 देता। Continuous compounding ने 51 पैसे extra दिए)।",
+      "real_life_indian_example": "NSE (National Stock Exchange) पर Derivatives pricing engines futures की fair price calculate करने के लिए continuous compounding logic का उपयोग करते हैं।",
+      "exam_traps": [
+        "जब question में continuous compounding पूछा गया हो तब simple interest formula (1+rt) का उपयोग करना।",
+        "'t' (time) को years में convert करना भूल जाना (उदा., 6 महीने 0.5 होना चाहिए)।"
+      ],
+      "memory_trick": "अक्षर 'e' Exponential growth (Continuous) के लिए है।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Coupon Rate बनाम Yield (YTM)",
+      "clear_explanation": "COUPON RATE वह fixed percentage है जो bond certificate (उदा., 8%) पर print होता है। यह cash flow amount तय करता है। यह आमतौर पर कभी नहीं (NEVER) बदलता है। || YIELD (YTM) वह actual return है जो एक investor को bond खरीदने के लिए pay की गई price के आधार पर मिलता है। Market prices के बदलने पर यह हर second बदलता है।"
+    },
+    {
+      "difference_between": "Money Market बनाम Debt (Capital) Market",
+      "clear_explanation": "MONEY MARKET 1 वर्ष से कम (T-Bills, CDs) समय वाले instruments के लिए है। यह liquidity के लिए है। || DEBT MARKET 1 वर्ष से अधिक (G-Secs, Corporate Bonds) समय वाले instruments के लिए है। यह investment और funding projects के लिए है।"
+    },
+    {
+      "difference_between": "Clean Price बनाम Dirty Price",
+      "clear_explanation": "CLEAN PRICE bond की वह price है जिसमें कोई accumulated interest शामिल नहीं होता है। यह market में quoted price है। || DIRTY PRICE, Clean Price + Accrued Interest (पिछली payment date से कमाया गया interest) है। यह वह price है जो buyer वास्तव में seller को pay करता है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Interest Rates और Bond Prices के बीच inverse relationship (High Probability)।",
+    "Money Market instruments (T-Bills, CP, CD) बनाम Capital Market instruments की पहचान करना।",
+    "Accrued Interest का Calculation और Clean बनाम Dirty Price।",
+    "'Real Interest Rate' की definition (Nominal - Inflation)।",
+    "Government Securities के features (Sovereign guarantee, practically zero default risk)।"
+  ],
+  "quick_revision_summary": [
+    "Interest Rate borrowing की cost है।",
+    "Real Rate = Nominal Rate - Inflation.",
+    "Bond Price और Yield विपरीत (OPPOSITE) दिशाओं में चलते हैं (The See-Saw)।",
+    "T-Bills short-term (91, 182, 364 days) होते हैं और NO coupon pay करते हैं (discount पर issue होते हैं)।",
+    "G-Secs long-term होते हैं और आमतौर पर semi-annual coupons pay करते हैं।",
+    "Continuous Compounding $e^{rt}$ formula का उपयोग करता है।",
+    "Dirty Price = Clean Price + Accrued Interest.",
+    "Accrued Interest उन दिनों के लिए seller का होता है जितने दिन उन्होंने bond को hold किया था।"
+  ]
+}

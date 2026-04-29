@@ -1,0 +1,74 @@
+{
+  "course": "NISM Series XIX-B: Alternative Investment Funds (Category III) Distributors",
+  "unit_number": 8,
+  "unit_name": "Valuation",
+  "weightage": "12%",
+  "overview": "यह chapter fund के 'Price Tag' (कीमत) के बारे में है। चूंकि Category III AIFs unlisted shares और derivatives जैसी complex चीज़ों में invest करते हैं, इसलिए हम कीमत देखने के लिए हमेशा सिर्फ स्क्रीन नहीं देख सकते। यह chapter बताता है कि fund अपनी Net Asset Value (NAV) कैसे calculate करता है ताकि investors को पता चले कि उनके investment की असल कीमत क्या है। Exam के लिए, आपको विभिन्न प्रकार के assets की value तय करने के नियम और एक independent valuer के महत्व को समझना चाहिए। यह 'Ecosystem' (Chapter 4) को 'Performance' (Chapter 6) से जोड़ता है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. The Concept of Net Asset Value (NAV)",
+      "basic_meaning": "Fund की प्रति-unit (per-unit) वैल्यू।",
+      "detailed_explanation": "एक AIF को कई स्लाइस (units) में कटे हुए एक बड़े पिज्जा की तरह सोचें। NAV एक स्लाइस की कीमत है। इसकी गणना सभी investments की कुल market value लेकर, उसमें मौजूद cash को जोड़कर, fund पर जो कर्ज़ (liabilities) है उसे घटाकर और उसे units की कुल संख्या से divide करके की जाती है।\n\n**NAV के लिए मुख्य नियम:**\n1.  **Frequency:** Category III AIFs के लिए, NAV कम से कम **monthly** (open-ended funds के लिए) या **quarterly** (close-ended funds के लिए) calculate की जानी चाहिए।\n2.  **Accuracy:** यह 'Fair Value' को दर्शाना चाहिए—वह कीमत जो आपको तब मिलेगी यदि आप asset को आज एक सामान्य market में बेचते हैं।\n3.  **Deductions:** अंतिम NAV घोषित होने से पहले सभी management fees, trustee fees, और operational costs घटा दिए जाते हैं।",
+      "why_this_is_important": "NAV entry और exit का आधार है। यदि कोई client ₹1 Crore invest करना चाहता है, तो उन्हें यह जानने के लिए current NAV पता होनी चाहिए कि उन्हें कितनी units मिलेंगी। Exam अक्सर NAV calculation की 'frequency' (आवृत्ति) के बारे में पूछता है।",
+      "formula": "NAV per Unit = (Total Assets - Total Liabilities) / Total Number of Units",
+      "formula_explanation": "आप fund की कुल संपत्ति का पता लगाते हैं, कर्ज़ चुकाते हैं, और देखते हैं कि प्रत्येक unit के लिए कितनी वैल्यू बची है।",
+      "step_by_step_calculation_example": "**Scenario:** एक fund के पास stocks और cash में ₹105 Crores हैं। इस पर fees और expenses के ₹5 Crores बकाया हैं। 1 Crore units outstanding (जारी) हैं।\n1. Net Assets = ₹105 Cr - ₹5 Cr = **₹100 Crores**.\n2. NAV per Unit = ₹100 Cr / 1 Cr units = **₹100 per unit**.",
+      "real_life_indian_example": "यदि आप किसी Indian Long-Short AIF में invest करते हैं और NAV एक महीने में ₹100 से ₹110 हो जाती है, तो सभी fees कटने के बाद आपका investment 10% बढ़ गया है।",
+      "exam_traps": [
+        "यह सोचना कि NAV किसी stock के 'Market Price' के समान है। NAV एक calculated value है, न कि exchange पर traded price।",
+        "Exam पूछ सकता है कि क्या fees को NAV में जोड़ा जाता है। नहीं, उन्हें हमेशा **घटाया (subtracted)** जाता है।"
+      ],
+      "memory_trick": "NAV = 'Net' value. (कुल संपत्ति में से कचरा/Liabilities घटाकर)।"
+    },
+    {
+      "concept": "2. Valuing Different Assets (Listed vs. Unlisted)",
+      "basic_meaning": "'Easy-to-Price' (आसान) और 'Hard-to-Price' (कठिन) assets के लिए अलग-अलग नियम।",
+      "detailed_explanation": "\n\n**1. Listed Securities:** ये आसान हैं। आप किसी recognized stock exchange (जैसे NSE या BSE) के closing price का उपयोग करते हैं। यदि आज इसमें trade नहीं हुआ, तो आप सबसे हालिया उपलब्ध कीमत का उपयोग करते हैं।\n\n**2. Unlisted Securities:** ये कठिन हैं। चूंकि कोई exchange price नहीं है, इसलिए आपको specific methods का उपयोग करना चाहिए:\n* **Market Approach:** इसकी तुलना समान listed कंपनियों से करना।\n* **Income Approach:** भविष्य के मुनाफे की present value calculate करना (DCF method)।\n* **Cost Approach:** Asset को बनाने/खरीदने में खर्च की गई राशि का उपयोग करना।\n\n**3. Derivatives (Options/Futures):** इनका exchange prices या mathematical models (जैसे Black-Scholes) के आधार पर रोज़ाना 'Mark-to-Market' (MTM) किया जाना चाहिए।",
+      "why_this_is_important": "Category III funds बहुत सारे derivatives trade करते हैं। आपको पता होना चाहिए कि वे **Mark-to-Market (MTM)** process को follow करते हैं, जिसका अर्थ है कि हर एक दिन वैल्यू को current market price पर update किया जाता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "यदि कोई AIF 'Swiggy' जैसे unlisted startup के shares होल्ड करता है, तो वह सिर्फ कीमत का अंदाज़ा नहीं लगा सकता। उसे Swiggy के revenue को देखने और उचित कीमत खोजने के लिए Zomato (जो listed है) से तुलना करने के लिए एक professional valuer को hire करना होगा।",
+      "exam_traps": [
+        "Exam पूछ सकता है कि 'unlisted' assets की वैल्यू कौन तय करता है। इसका जवाब है एक **Independent Valuer**। Manager इसे अकेले नहीं कर सकता।",
+        "Listed stocks के लिए, यदि वे NSE और BSE दोनों पर trade करते हैं, तो fund के पास किसी एक को चुनने की policy होनी चाहिए (आमतौर पर वह जिसमें volume अधिक हो)।"
+      ],
+      "memory_trick": "Listed = स्क्रीन पर देखें। Unlisted = Valuer की ओर देखें।"
+    },
+    {
+      "concept": "3. The Role of the Independent Valuer",
+      "basic_meaning": "एक बाहरी expert जो धोखाधड़ी रोकने के लिए 'कठिन' (Hard) assets की कीमत तय करता है।",
+      "detailed_explanation": "किसी fund manager को returns के बारे में झूठ बोलने (अधिक fees पाने के लिए) से रोकने के लिए, SEBI को कुछ assets के लिए 'Independent Valuer' की आवश्यकता होती है।\n\n**मुख्य आवश्यकताएं:**\n1.  **Independence:** Valuer, manager का कर्मचारी या रिश्तेदार नहीं हो सकता।\n2.  **Registration:** वे SEBI-registered entity या किसी मान्यता प्राप्त संस्था के professional member होने चाहिए (जैसे IBBI के तहत एक Registered Valuer)।\n3.  **Audit:** Fund का statutory auditor यह check करेगा कि valuation process ने PPM में बताए गए नियमों का पालन किया है या नहीं।",
+      "why_this_is_important": "यह एक 'Governance' (शासन) चेक है। NISM exam चाहता है कि आप जानें कि illiquid assets की कीमत पर Manager अंतिम authority नहीं है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "बेंगलुरु का एक Category III AIF private debt में invest करता है। हर quarter, वे Kroll जैसी किसी independent firm या Big-4 auditor को यह certify करने के लिए लाते हैं कि debt की वैल्यू ₹50 Crores है और इसकी वैल्यू कम नहीं हुई है।",
+      "exam_traps": [
+        "Question: 'क्या Manager unlisted securities की वैल्यू तय कर सकता है?' Answer: **नहीं, उन्हें एक Independent Valuer का उपयोग करना चाहिए**।",
+        "Valuation policies का स्पष्ट रूप से **PPM** में खुलासा किया जाना चाहिए।"
+      ],
+      "memory_trick": "Independent Valuer = कीमतों के खेल में 'थर्ड-पार्टी रेफरी'।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Mark-to-Market (MTM) vs. Mark-to-Model",
+      "clear_explanation": "1. **MTM:** Stock exchange से actual price का उपयोग करता है। Listed stocks और futures के लिए उपयोग किया जाता है। \n2. **Mark-to-Model:** कीमत का अनुमान लगाने के लिए एक mathematical formula का उपयोग करता है। Unlisted shares या complex derivatives के लिए उपयोग किया जाता है जो अक्सर trade नहीं होते।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "NAV का Calculation (Assets - Liabilities / Units)।",
+    "Category III AIFs के लिए NAV घोषणा की frequency (Monthly/Quarterly)।",
+    "Unlisted assets के लिए Independent Valuer का अनिवार्य उपयोग।",
+    "'Fair Value' की परिभाषा, एक orderly transaction में exit price के रूप में।"
+  ],
+  "quick_revision_summary": [
+    "NAV प्रति unit 'Report Card' की कीमत है।",
+    "Listed assets = Exchange Closing Price.",
+    "Unlisted assets = Income/Market/Cost approach का उपयोग करने वाला Independent Valuer.",
+    "Category III AIFs को कम से कम Monthly या Quarterly NAV प्रदान करनी चाहिए।",
+    "Valuation policies का उल्लेख PPM में किया जाता है और उनका सख्ती से पालन किया जाना चाहिए।",
+    "NAV calculate होने से पहले fund के assets से Management और Performance fees घटा दी जाती हैं।"
+  ]
+}

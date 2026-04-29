@@ -1,0 +1,124 @@
+{
+  "course": "NISM Series XIII: Common Derivatives Certification Examination",
+  "unit_number": 7,
+  "unit_name": "Introduction to Trading, Clearing, Settlement & Risk Management",
+  "weightage": "17% (25 Marks)",
+  "overview": "यह शेयर बाजार का 'Engine Room' है। यह बताता है कि 'Buy' पर क्लिक करने के बाद क्या होता है। एक्सचेंज आपके ऑर्डर को कैसे मैच करता है? आपके पैसे की गारंटी कौन देता है? अगर आपको नुकसान (loss) होता है तो क्या होगा? इस अध्याय का सबसे अधिक weightage (17%) है क्योंकि यह खेल के नियमों—Margins और Settlement को कवर करता है। अगर आप पास होना चाहते हैं, तो आपको 'Mark-to-Market' कैलकुलेशन में महारत हासिल करनी होगी।",
+  
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Trading Mechanism (मैचमेकर/The Matchmaker)",
+      "basic_meaning": "कंप्यूटर सिस्टम (NEAT+) खरीदारों (buyers) और विक्रेताओं (sellers) को स्वचालित रूप से (automatically) कैसे मैच करता है।",
+      "detailed_explanation": "एक्सचेंज एक अनाम (anonymous), order-driven सिस्टम का उपयोग करता है।\n\n**1. Price-Time Priority:**\n* **Rule 1 (Price):** सबसे अच्छी कीमत (Best Price) को पहले सर्व किया जाता है। (Highest Buyer और Lowest Seller)।\n* **Rule 2 (Time):** यदि दो लोग समान कीमत ऑफर करते हैं, तो जो **पहले** आया उसे ट्रेड मिलता है।\n\n**2. Active vs. Passive Orders:**\n* **Passive:** आप एक Limit Order देते हैं (उदा. 100 पर Buy) और प्रतीक्षा करते हैं। आप लिक्विडिटी (liquidity) प्रदान करते हैं।\n* **Active:** आप एक Market Order देते हैं (उदा. अभी/NOW Buy) और passive order को हिट करते हैं। आप लिक्विडिटी लेते हैं।",
+      "why_this_is_important": "Priority को समझने से आपको यह जानने में मदद मिलती है कि कीमत आपके स्तर (level) को छूने के बावजूद आपका ऑर्डर execute क्यों नहीं हुआ।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "**Scenario:** \nBuyer A सुबह 10:00 बजे ₹100 की बिड (bid) लगाता है।\nBuyer B सुबह 10:01 बजे ₹100 की बिड लगाता है।\nBuyer C सुबह 10:02 बजे ₹101 की बिड लगाता है।\n\n**कौन जीतता है?**\nSeller मार्केट प्राइस पर बेचने आता है।\n1. **Buyer C** को यह सबसे पहले मिलता है (Best Price ₹101)।\n2. यदि शेयर बचते हैं, तो **Buyer A** को यह इसके बाद मिलता है (B की तुलना में Better Time)।",
+      "real_life_indian_example": "NSE पर, आप 'Top 5 Bid/Ask' विंडो देखते हैं। यह मैच होने की प्रतीक्षा कर रहे passive orders की कतार (queue) है।",
+      "exam_traps": [
+        "यह सोचना कि एक्सचेंज कीमत तय करता है। (नहीं, buyers और sellers कीमत तय करते हैं; एक्सचेंज सिर्फ उन्हें मैच करता है)।",
+        "यह सोचना कि Price की तुलना में Time priority अधिक महत्वपूर्ण है। (Price हमेशा King है)।"
+      ],
+      "memory_trick": "Price राजा (King) है। Time रानी (Queen) है। (पहले Price, फिर Time)।"
+    },
+    {
+      "concept": "2. Clearing & Settlement Entities",
+      "basic_meaning": "पैसे और गारंटी को कौन संभालता है?",
+      "detailed_explanation": "**1. Clearing Corporation (CC):** (उदा. NCL - NSE Clearing Ltd)। वे 'Guarantor' (गारंटर) हैं।\n* **Novation:** जैसे ही कोई ट्रेड होता है, CC बीच में आ जाता है। Buyer, CC से खरीदता है, और Seller, CC को बेचता है। यह दूसरे व्यक्ति के भाग जाने के जोखिम (risk) को दूर करता है।\n\n**2. Clearing Members (CM):** बड़े ब्रोकर्स/बैंक जो CC के सदस्य होते हैं। छोटे ब्रोकर्स को ट्रेड settle करने के लिए CM के माध्यम से जाना पड़ता है।\n\n**3. Custodians:** वे बड़े खिलाड़ियों (FIIs/Mutual Funds) के लिए शेयर/पैसे रखते हैं और उनके ट्रेड की पुष्टि (confirm) करते हैं।",
+      "why_this_is_important": "परीक्षा में पूछा जाता है कि 'सभी ट्रेडों के लिए counterparty कौन है?' उत्तर हमेशा Clearing Corporation होता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "यदि आप शेयर खरीदते हैं और आपका ब्रोकर डिफ़ॉल्ट (default) करता है, तो NSE Investor Protection Fund (IPF) और Clearing Corp अभी भी सुनिश्चित करते हैं कि आपको अपना पेआउट (payout) मिले।",
+      "exam_traps": [
+        "Clearing Member को Trading Member के साथ कंफ्यूज करना। (Trading Member = Broker. Clearing Member = पैसे settle करता है)।",
+        "यह सोचना कि Exchange (NSE) ट्रेड की गारंटी देता है। (नहीं, Clearing Corp उनकी गारंटी देता है)।"
+      ],
+      "memory_trick": "CC = Counterparty (Guarantor)।"
+    },
+    {
+      "concept": "3. Margins (सुरक्षा जमा/The Safety Deposit)",
+      "basic_meaning": "संभावित नुकसान (potential losses) को कवर करने के लिए आपके अकाउंट में ब्लॉक किया गया पैसा।",
+      "detailed_explanation": "चूंकि डेरिवेटिव्स लेवरेज्ड (leveraged) होते हैं (आप पूरा मूल्य नहीं चुकाते हैं), इसलिए एक्सचेंज को सुरक्षा की आवश्यकता होती है।\n\n**1. Initial Margin:** किसी ट्रेड में प्रवेश करने के लिए आवश्यक कुल मार्जिन। इसके दो भाग हैं:\n* **SPAN Margin:** Risk (VaR - Value at Risk) पर आधारित। संभावित एक दिन के नुकसान के 99% को कवर करता है।\n* **Exposure Margin:** अत्यधिक आपदाओं (extreme disasters - शेष 1%) के लिए अतिरिक्त कुशन (Ad-hoc margin)।\n\n**2. Maintenance Margin:** वह न्यूनतम बैलेंस जो आपको रखना ही चाहिए।\n\n**3. Mark-to-Market (MTM) Margin:** दैनिक लाभ/हानि (profit/loss) का settlement।",
+      "why_this_is_important": "यदि आप मार्जिन का भुगतान नहीं करते हैं, तो ब्रोकर बलपूर्वक (forcefully) आपकी पोजीशन बंद कर देगा (Margin Call)।",
+      "formula": "Total Margin = SPAN + Exposure",
+      "formula_explanation": "ट्रेड लेने के लिए आपको दोनों (BOTH) का भुगतान करना होगा।",
+      "step_by_step_calculation_example": "**Scenario:** Nifty का 1 Lot खरीदना (Value ₹10 Lakhs)।\n**SPAN:** एक्सचेंज volatility risk कैलकुलेट करता है = ₹1,00,000.\n**Exposure:** एक्सचेंज 2% अतिरिक्त सुरक्षा जोड़ता है = ₹20,000.\n**Total Blocked:** ₹1,20,000.\nयदि आपके पास केवल ₹1,10,000 हैं, तो ऑर्डर reject कर दिया जाएगा।",
+      "real_life_indian_example": "जब volatility बढ़ती है (उदा. युद्ध की खबर), तो SPAN margins अपने आप बढ़ जाते हैं, और आपका ब्रोकर और पैसे मांग सकता है।",
+      "exam_traps": [
+        "यह सोचना कि Margin फिक्स्ड (fixed) है। (नहीं, SPAN volatility के आधार पर रोज़ बदलता है)।",
+        "यह सोचना कि Exposure margin ऐच्छिक (optional) है। (नहीं, दोनों अनिवार्य/mandatory हैं)।"
+      ],
+      "memory_trick": "SPAN = Scientific (Risk पर आधारित)। Exposure = Extra (सुरक्षा/Safety)।"
+    },
+    {
+      "concept": "4. Mark-to-Market (MTM) Settlement",
+      "basic_meaning": "Profit/Loss का दैनिक कैलकुलेशन और ट्रांसफर। 'हर शाम बिल का निपटारा (Settling the bill)'।",
+      "detailed_explanation": "Futures में, आप महीने के अंत का इंतज़ार नहीं करते हैं। आप रोज़ाना (daily) settle करते हैं।\n* यदि कीमत आपके **विरुद्ध (AGAINST)** जाती है: उसी दिन आपके अकाउंट से पैसा काट लिया जाता है (Debit)।\n* यदि कीमत आपके **पक्ष (FOR)** में जाती है: अगली सुबह आपके अकाउंट में पैसा जोड़ दिया जाता है (Credit)।\n* अगले दिन, आपका buy price पिछले दिन के closing price पर रीसेट (reset) हो जाता है।",
+      "why_this_is_important": "यह डिफ़ॉल्ट (default) को रोकता है। नुकसान को तुरंत एकत्र कर लिया जाता है जब वे छोटे होते हैं।",
+      "formula": "MTM = (Closing Price - Entry Price) * Lot Size",
+      "formula_explanation": "आज के close और जहाँ से आपने शुरू किया था, उसके बीच का अंतर।",
+      "step_by_step_calculation_example": "**Day 1:** 18,000 पर Nifty Future खरीदा। Lot 50.\n**Close Day 1:** 17,900. (नुकसान/Loss 100 पॉइंट)।\n**Debit:** $100 \\times 50 = 5000$. (आपका अकाउंट बैलेंस 5000 कम हो जाता है)।\n\n**Day 2:** मार्केट शुरू होता है। आपका 'New Buy Price' प्रभावी रूप से 17,900 है।\n**Close Day 2:** 18,100. (लाभ/Profit 200 पॉइंट)।\n**Credit:** $200 \\times 50 = 10,000$. (आपके अकाउंट में जोड़ा गया)।",
+      "real_life_indian_example": "कई शुरुआती लोगों को 'Margin Call' मिलती है क्योंकि उन्होंने Day 1 पर नुकसान किया था और MTM नुकसान को कवर करने के लिए अकाउंट में पर्याप्त कैश नहीं बचा था।",
+      "exam_traps": [
+        "यह सोचना कि आप केवल तभी MTM का भुगतान करते हैं जब आप बेचते हैं। (नहीं, यह हर रात स्वचालित/automatic है)।",
+        "यह भूल जाना कि 'Base Price' हर दिन बदलता है।"
+      ],
+      "memory_trick": "MTM = Daily Bill. पैसे चुकाओ या बाहर हो जाओ (Pay up or Get out)।"
+    },
+    {
+      "concept": "5. Order Types (Limit, Market, Stop Loss)",
+      "basic_meaning": "वे निर्देश (Instructions) जो आप ब्रोकर को देते हैं।",
+      "detailed_explanation": "**1. Market Order:** जो भी कीमत अभी (NOW) उपलब्ध है, उसी पर खरीदें। (कीमत अनिश्चित, execution निश्चित)।\n**2. Limit Order:** केवल ₹100 या उससे कम पर खरीदें। (कीमत निश्चित, execution अनिश्चित—मार्केट 100 तक नहीं भी पहुंच सकता है)।\n**3. Stop Loss (SL):** एक 'सोता हुआ' (sleeping) ऑर्डर। \"यदि कीमत 90 तक गिर जाती है, तो आगे के नुकसान को रोकने (stop further loss) के लिए मेरे शेयर बेच दें।\"\n**4. IOC (Immediate or Cancel):** अभी जो मिल सकता है उसे खरीदें, और बाकी को तुरंत कैंसिल (cancel) कर दें।",
+      "why_this_is_important": "गलत ऑर्डर प्रकार का उपयोग करने से आपको पैसे का नुकसान (slippage) हो सकता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "**SL Trigger:** आपने 100 पर खरीदा। आपने Trigger 95, Price 94 पर SL-Limit लगाया।\nयदि कीमत 95 पर हिट करती है, तो आपका ऑर्डर 94 पर Limit Sell के रूप में सक्रिय (activates) हो जाता है।",
+      "real_life_indian_example": "क्रैश (crash) वाले दिन, Market Orders खतरनाक होते हैं क्योंकि आपको बहुत खराब कीमत पर execution मिल सकता है। Limit Orders सुरक्षित होते हैं।",
+      "exam_traps": [
+        "यह सोचना कि Stop Loss बाहर निकलने (exit) की गारंटी देता है। (नहीं, यदि कीमत आपके SL के नीचे कूदती/gap करती है, तो आप फंस सकते हैं)।",
+        "Trigger Price को Limit Price के साथ कंफ्यूज करना।"
+      ],
+      "memory_trick": "Limit = My Price. Market = Any Price."
+    },
+    {
+      "concept": "6. Corporate Actions Adjustment",
+      "basic_meaning": "यदि कंपनी कोई Dividend, Bonus, या Split घोषित करती है तो आपके Future/Option कॉन्ट्रैक्ट का क्या होता है?",
+      "detailed_explanation": "**1. Dividends:**\n* **Small Dividend (<10%):** कोई Adjustment नहीं। मार्केट प्राइस स्वाभाविक रूप से गिरता है।\n* **Extraordinary Dividend (>10%):** Dividend की राशि से Strike Price कम कर दिया जाता है।\n\n**2. Bonus/Split:**\n* कॉन्ट्रैक्ट को इस तरह से Adjust किया जाता है कि **मूल्य (Value) समान रहता है**।\n* **Strike Price:** घटता है (अनुपात/ratio से विभाजित)।\n* **Lot Size:** बढ़ता है (अनुपात/ratio से गुणा)।",
+      "why_this_is_important": "यदि Reliance 1:1 Bonus देता है, तो शेयर की कीमत आधी हो जाती है। यदि Option Strike नहीं बदलता है, तो Puts रखने वाले सभी लोग तुरंत (अनुचित रूप से) करोड़पति बन जाएंगे। Adjustments इसे रोकते हैं।",
+      "formula": "New Strike = Old Strike / Adjustment Factor\nNew Lot Size = Old Lot Size * Adjustment Factor",
+      "formula_explanation": "Price और Quantity के बीच विपरीत (Inverse) संबंध।",
+      "step_by_step_calculation_example": "**Scenario:** Reliance 1:1 Bonus (Ratio 2). Old Lot Size 250. Old Strike 2000.\n\n**Adjustment:**\nNew Strike = $2000 / 2 = 1000$.\nNew Lot Size = $250 \\times 2 = 500$.\n**Result:** Contract Value थी $2000 \\times 250 = 5L$. New Value है $1000 \\times 500 = 5L$. (मूल्य/Value में कोई बदलाव नहीं)।",
+      "real_life_indian_example": "जब ITC बोनस घोषित करता है, तो सभी F&O कॉन्ट्रैक्ट्स एक दिन के लिए निलंबित (suspended) कर दिए जाते हैं और नए strike prices और lot sizes के साथ फिर से खुलते हैं।",
+      "exam_traps": [
+        "यह सोचना कि Bonus के लिए आपको F&O में मुफ्त शेयर मिलते हैं। (नहीं, केवल lot size बढ़ता है)।",
+        "यह सोचना कि छोटे (small) dividends adjustments का कारण बनते हैं। (केवल >10% dividends ऐसा करते हैं)।"
+      ],
+      "memory_trick": "Price Drops -> Strike Drops -> Lot Size Pops (बढ़ता है)।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Initial Margin vs MTM Margin",
+      "clear_explanation": "1. **Purpose:** Initial Margin = Entry Ticket (डिफ़ॉल्ट के खिलाफ सुरक्षा)। MTM Margin = Daily Bill (Profit/Loss settlement)।\n2. **Timing:** Initial = ट्रेड से पहले (Before) चुकाया गया। MTM = रोज़ाना (Daily) चुकाया गया।"
+    },
+    {
+      "difference_between": "Limit Order vs Market Order",
+      "clear_explanation": "1. **Control:** Limit = आप Price को नियंत्रित करते हैं। Market = आप Speed (गति) को नियंत्रित करते हैं।\n2. **Certainty:** Limit = ट्रेड नहीं भी हो सकता है। Market = ट्रेड तुरंत होता है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "MTM Profit/Loss का कैलकुलेशन (बहुत अधिक संभावना/Very High Probability)।",
+    "Novation क्या है? (Clearing Corp का counterparty बनना)।",
+    "Initial Margin के घटक (Components) (SPAN + Exposure)।",
+    "Strike Price पर Bonus Issue का प्रभाव (Strike घटता है, Lot बढ़ता है)।",
+    "ट्रेड को कौन settle करता है? (Clearing Corporation, न कि Exchange)।"
+  ],
+  "quick_revision_summary": [
+    "Clearing Corp सभी ट्रेडों की गारंटी देता है (Novation)।",
+    "Best Price Order पहले मैच होता है; फिर Time Priority.\n* Initial Margin = SPAN (Risk) + Exposure (Safety)।",
+    "MTM की गणना रोज़ (daily) की जाती है। नुकसान का भुगतान तुरंत किया जाना चाहिए।",
+    "Corporate Actions (Bonus/Split) Strike Price और Lot Size को विपरीत रूप से (inversely) बदलते हैं।",
+    "Stop Loss का उपयोग नुकसान को सीमित करने के लिए किया जाता है।"
+  ]
+}

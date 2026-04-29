@@ -1,0 +1,81 @@
+{
+  "course": "NISM-Series-XIX-E: Alternative Investment Fund Managers (Category III)",
+  "unit_number": 12,
+  "unit_name": "Valuation",
+  "weightage": "10%",
+  "overview": "यह chapter समझाता है कि AIF द्वारा hold किए गए assets पर 'Price Tag' कैसे लगाया जाए। Category III AIF के लिए, यह critical है क्योंकि वे अक्सर complex derivatives या unlisted stocks trade करते हैं जिनका screen पर कोई clear price नहीं होता है। यदि valuation गलत है, तो NAV (Net Asset Value) गलत होगा, और investors शायद बहुत ज़्यादा pay करें या बहुत कम receive करें। Exam के लिए, आपको 'Mark-to-Market' (MTM) process और एक independent Valuer के role को समझने की ज़रूरत है।",
+
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Mark-to-Market (MTM) Valuation",
+      "basic_meaning": "MTM का मतलब है अपने assets को आज market में उनके current 'Closing Price' के आधार पर value करना, न कि उस price पर जिस पर आपने उन्हें खरीदा था।",
+      "detailed_explanation": "Nifty stocks या Exchange-Traded Derivatives जैसे liquid assets के लिए, valuation simple है। \n1. **Listed Securities:** किसी recognized stock exchange (NSE/BSE) पर closing price का उपयोग करें। यदि कोई stock दोनों पर trade करता है, तो AIF policy को decide करना होगा कि consistently किसका उपयोग करना है।\n2. **Daily Process:** Category III AIFs के लिए, derivatives और leveraged positions की high volatility को reflect करने के लिए MTM अक्सर रोज़ (daily) किया जाता है। \n3. **Unrealized Gain/Loss:** यदि आपने ₹100 में कोई stock खरीदा और वह अब ₹110 का है, तो MTM ₹10 का 'Unrealized Gain' record करता है। यह 'Paper Profit' दिखाता है।",
+      "why_this_is_important": "Category III AIFs leverage का use करते हैं। MTM यह monitor करने में मदद करता है कि क्या कोई fund बहुत ज़्यादा पैसा खो रहा है और bankrupt होने से पहले उसे अपनी positions close करने की ज़रूरत है।",
+      "formula": "MTM Value = Current Market Price * Quantity",
+      "formula_explanation": "आपके पास मौजूद shares/contracts की संख्या को exchange पर उपलब्ध latest price से multiply करें।",
+      "step_by_step_calculation_example": "एक AIF के पास SBI के 1,000 shares हैं जिन्हें ₹580 में खरीदा गया था। आज NSE पर closing price ₹610 है。\nStep 1: Purchase Value = 1,000 * 580 = ₹5,80,000.\nStep 2: Current MTM Value = 1,000 * 610 = ₹6,10,000.\nStep 3: Unrealized Profit = 6,10,000 - 5,80,000 = ₹30,000.\nResult: इस ₹30,000 के gain के आधार पर NAV increase होगा।",
+      "real_life_indian_example": "यदि आप 'Nifty Future' contract hold करते हैं, तो exchange (NSE) हर शाम MTM करता है। यदि Nifty गिरता है, तो AIF के margin account से पैसा automatically deduct हो जाता है।",
+      "exam_traps": [
+        "Common Trap: यह सोचना कि MTM केवल तभी होता है जब आप बेचते हैं। नहीं, MTM तब भी होता है जब आप केवल asset को hold कर रहे हों।",
+        "Important: यदि किसी stock में 30 दिनों से trading नहीं हुई है, तो उसे 'Thinly Traded' माना जाता है और वह अलग valuation rules follow करता है।"
+      ],
+      "memory_trick": "MTM = 'Market's Truth Monday' (या कोई भी दिन)—वह price जो दुनिया अभी (NOW) pay करने को तैयार है।"
+    },
+    {
+      "concept": "2. Valuation of Level 1, 2, and 3 Assets",
+      "basic_meaning": "Assets को इस आधार पर categorize किया जाता है कि उनकी price खोजना कितना आसान है। Level 1 सबसे आसान है (Market price), Level 3 सबसे कठिन है (Estimates)।",
+      "detailed_explanation": "1. **Level 1 (Observable Inputs):** ये identical assets के लिए active markets में quoted prices हैं। Example: NSE पर Reliance के shares।\n2. **Level 2 (Indirectly Observable):** Prices similar assets या market-corroborated data पर आधारित होती हैं। Example: एक corporate bond जो अक्सर trade नहीं करता है लेकिन दूसरे trade करने वाले bond के similar है।\n3. **Level 3 (Unobservable Inputs):** कोई market price exist नहीं करती। Manager Discounted Cash Flow (DCF) जैसे 'Assumptions' या 'Models' का use करता है। Example: किसी private startup में shares।",
+      "why_this_is_important": "NISM आपसे यह identify करने के लिए पूछता है कि कोई asset किस level का है। Investors Level 3 के बारे में ज़्यादा worry करते हैं क्योंकि manager value को 'over-estimate' कर सकता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Nifty Options hold करने वाला एक Category III AIF Level 1 assets hold कर रहा है। यदि वही AIF किसी pre-IPO tech company में invest करता है, तो वह एक Level 3 asset है।",
+      "exam_traps": [
+        "Exam पूछ सकता है: 'किस level में सबसे ज़्यादा subjectivity होती है?' Answer: Level 3।",
+        "Trap: यह सोचना कि सभी AIF assets Level 3 हैं। कई Category III funds exclusively Level 1 (Listed) assets में deal करते हैं।"
+      ],
+      "memory_trick": "Level 1 = Screen पर देखें। Level 2 = Neighbors को देखें। Level 3 = Crystal ball (Math models) देखें।"
+    },
+    {
+      "concept": "3. Role of the Independent Valuer",
+      "basic_meaning": "Manager को prices inflate करके 'cheating' करने से रोकने के लिए, SEBI valuation check करने के लिए एक outside expert की requirement रखता है।",
+      "detailed_explanation": "1. **Appointment:** Manager/Trustee को एक independent valuer appoint करना होता है。\n2. **Who can be a Valuer?** India में, यह आमतौर पर एक SEBI-registered valuer या specific experience वाला chartered accountant (CA) होता है。\n3. **Frequency:** Category III के लिए, जबकि MTM daily होता है, valuation processes का एक full independent audit साल में कम से कम एक बार किया जाता है。\n4. **Conflict:** Valuer वह same person/firm नहीं हो सकता जो fund का regular auditor है।",
+      "why_this_is_important": "यह एक 'Governance' check है। Exam valuer की 'Independence' के बारे में पूछता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "यदि कोई AIF किसी private hospital का 10% own करता है, तो वे सिर्फ यह नहीं कह सकते कि 'हमें लगता है कि इसकी worth ₹50 Crores है।' उन्हें DCF या Comparable Multiples जैसे formal methods का उपयोग करके report लिखने के लिए एक **Registered Valuer** को hire करना होगा।",
+      "exam_traps": [
+        "क्या Manager final valuation करता है? नहीं, Manager policy *provide* करता है, लेकिन Valuer unlisted assets के लिए numbers *verify* करता है।",
+        "Remember: 'Valuation Policy' में किसी भी बदलाव को investors को तुरंत disclose किया जाना चाहिए।"
+      ],
+      "memory_trick": "Valuer = 'The Umpire' (जो fair तरीके से score decide करता है)।"
+    }
+  ],
+
+  "important_differences": [
+    {
+      "difference_between": "Realized Gain vs. Unrealized Gain",
+      "clear_explanation": "Realized Gain तब होता है जब आप असल में asset बेचते हैं और cash आपके हाथ में होता है। Unrealized Gain (Paper Profit) उस asset की MTM price पर आधारित होता है जिसे आप अभी भी own करते हैं।"
+    },
+    {
+      "difference_between": "Cost Method vs. Fair Value Method",
+      "clear_explanation": "Cost Method किसी asset को उस price पर record करता है जिस पर आपने उसे खरीदा था (Historical)। Fair Value Method (AIFs के लिए Mandatory) इसे उस price पर record करता है जिस पर इसे आज एक orderly transaction में बेचा जा सकता है।"
+    }
+  ],
+
+  "frequently_asked_exam_areas": [
+    "Ind AS (Indian Accounting Standards) के अनुसार 'Fair Value' की Definition।",
+    "Inputs की Level 1, 2, और 3 hierarchy को Identify करना।",
+    "यदि कोई security multiple exchanges पर listed है तो किस price का use करें? (Consistent policy, आमतौर पर NSE/BSE closing)।",
+    "Category III के लिए valuation reporting की Frequency (Monthly/Daily)।"
+  ],
+
+  "quick_revision_summary": [
+    "Valuation 'Fair Value' पर किया जाना चाहिए, न कि purchase cost पर।",
+    "Mark-to-Market (MTM) listed Category III assets के लिए daily standard है।",
+    "Level 1 inputs (Market Prices) सबसे ज़्यादा reliable होते हैं।",
+    "Non-marketable (unlisted) assets के लिए Independent Valuers mandatory हैं।",
+    "गलत valuation से 'NAV Dilution' होता है, जिससे existing या नए investors को नुकसान पहुँचता है।"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "course": "NISM Series X-A: Investment Adviser (Level 1) Certification Examination",
+  "unit_number": 17,
+  "unit_name": "Operational Aspects of Investment Management",
+  "weightage": "Module 6 का हिस्सा (Ch 17-20 के लिए कुल 30 Marks)। यह अध्याय 'back-office' और 'paperwork' पक्ष को कवर करता है। 6-8 marks की उम्मीद करें।",
+  "overview": "यह अध्याय 'कहाँ निवेश करें' से हटकर 'कैसे निवेश करें' पर केंद्रित है। यह account खोलने के logistical steps, KYC (Know Your Customer) process, और client के investment records के निरंतर रखरखाव (ongoing maintenance) को कवर करता है। NISM exam के लिए, documentation और KRAs तथा RTAs जैसे intermediaries (मध्यस्थों) की भूमिका को समझना महत्वपूर्ण है।",
+
+  "complete_concept_explanation": [
+    {
+      "concept": "1. KYC (Know Your Customer) Process",
+      "basic_meaning": "किसी भी financial relationship को शुरू करने से पहले client की पहचान (identity) और पते (address) को verify (सत्यापित) करने की अनिवार्य प्रक्रिया (mandatory process)।",
+      "detailed_explanation": "KYC को money laundering और धोखाधड़ी (fraud) को रोकने के लिए डिज़ाइन किया गया है। भारत में, एक बार जब आप अपना 'Central KYC' (CKYC) पूरा कर लेते हैं, तो आपको इसे विभिन्न financial products (जैसे नया बैंक खाता खोलने या mutual fund खरीदने) के लिए फिर से करने की आवश्यकता नहीं होती है। \n\n**Key Documents Required:**\n1. **Proof of Identity (POI):** PAN Card (अधिकांश निवेशों के लिए अनिवार्य), Aadhaar, Passport.\n2. **Proof of Address (POA):** Voter ID, Utility Bills (बिजली/पानी का बिल), Driving License.\n3. **In-Person Verification (IPV):** यह सुनिश्चित करने के लिए एक भौतिक (physical) या video-आधारित जाँच कि documents वाला व्यक्ति ही आवेदन कर रहा है।",
+      "why_this_is_important": "NISM market investments के लिए 'Mandatory' (अनिवार्य) document (उत्तर: PAN) और 'Central KYC' की भूमिका के बारे में पूछता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "जब आप Zerodha या Groww जैसे platform पर account खोलते हैं, तो वे आपसे selfie लेने या एक छोटा video record करने के लिए कहते हैं। यह KYC process का **IPV (In-Person Verification)** step है।",
+      "exam_traps": [
+        "यह सोचना कि PAN वैकल्पिक (optional) है। (भारतीय निवासियों के लिए, सभी capital market transactions के लिए PAN अनिवार्य है)।",
+        "POI और POA में confuse होना। (PAN card पहचान का प्रमाण - Proof of Identity है, लेकिन पते का प्रमाण - Proof of Address नहीं है क्योंकि यह आपका घर का पता नहीं दिखाता है)।"
+      ],
+      "memory_trick": "KYC = Key Your Character (आप कौन हैं यह साबित करके account को unlock करें)।"
+    },
+    {
+      "concept": "2. Intermediaries की भूमिका (KRA और RTA)",
+      "basic_meaning": "वे एजेंसियां (agencies) जो पर्दे के पीछे (behind the scenes) investor data का प्रबंधन (manage) करती हैं।",
+      "detailed_explanation": "1. **KRA (KYC Registration Agency):** ये एजेंसियां (जैसे CAMS, Karvy, NSDL) आपके KYC records को centrally store करती हैं। जब आप किसी नए mutual fund में निवेश करते हैं, तो वे KRA से आपका data प्राप्त (fetch) कर लेते हैं ताकि आपको दोबारा कागजात जमा न करने पड़ें।\n2. **RTA (Registrar and Transfer Agent):** वे 'Register of Shareholders/Unitholders' बनाए रखते हैं। वे आपकी खरीदारी (purchases), निकासी (redemptions) को process करते हैं, और यह track रखते हैं कि आपके पास कितने units हैं। (उदा., CAMS और KFintech)।",
+      "why_this_is_important": "Exam अक्सर पूछता है: 'एक mutual fund में unitholders का record कौन रखता है?' (उत्तर: RTA)।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "यदि आप घर बदलते हैं और अपने CAMS KRA record में अपना पता बदलते हैं, तो यह स्वचालित रूप से (automatically) उन सभी अलग-अलग mutual funds के लिए update हो जाता है जो आपके पास CAMS के माध्यम से हैं। यह KRA system की ताकत है।",
+      "exam_traps": [
+        "यह सोचना कि AMC (Fund House) investor records रखता है। (आमतौर पर, वे यह काम RTA को outsource कर देते हैं)।",
+        "एक KRA (KYC data) को Custodian (Physical stock/bond data) के साथ confuse करना।"
+      ],
+      "memory_trick": "KRA = Keep Records of Address/Identity (पता/पहचान के रिकॉर्ड रखें). RTA = Record of Transactions/Account (लेनदेन/खाते का रिकॉर्ड)."
+    },
+    {
+      "concept": "3. Investment Services में Power of Attorney (PoA)",
+      "basic_meaning": "एक कानूनी दस्तावेज (legal document) जो एक Investment Adviser या Portfolio Manager को client की ओर से कार्य करने की अनुमति देता है।",
+      "detailed_explanation": "PMS (Chapter 12) जैसी सेवाओं में, client manager को एक **Limited Power of Attorney** (सीमित मुख्तारनामा) देता है। यह manager को अनुमति देता है:\n1. Client के demat account में securities खरीदने और बेचने की।\n2. Settlement के लिए client के bank और brokerage account के बीच funds move करने की।\n\n**Note:** एक PoA manager को assets का स्वामित्व (ownership) नहीं देता है; वे execution के लिए केवल 'agents' होते हैं।",
+      "why_this_is_important": "NISM इस शक्ति (power) की 'Limited' (सीमित) प्रकृति (nature) का परीक्षण करता है। एक manager shares को अपने व्यक्तिगत खाते (personal account) में transfer करने के लिए PoA का उपयोग नहीं कर सकता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "जब आप एक 'Full Service Broker' के लिए sign up करते हैं, तो आप एक PoA पर हस्ताक्षर करते हैं ताकि जब आप अपने mobile app पर shares बेचें, तो broker स्वचालित रूप से (automatically) आपके demat से shares ले सके और उन्हें exchange को deliver कर सके।",
+      "exam_traps": [
+        "यह सोचना कि साधारण Mutual Fund SIPs के लिए PoA अनिवार्य है। (आमतौर पर बुनियादी MF निवेश के लिए इसकी आवश्यकता नहीं होती है)।",
+        "यह सोचना कि एक PoA adviser को client के nominee को बदलने का अधिकार देता है। (वे ऐसा नहीं कर सकते)।"
+      ],
+      "memory_trick": "PoA = Permission of Action (कार्रवाई की अनुमति)।"
+    },
+    {
+      "concept": "4. Nomination और Transmission",
+      "basic_meaning": "यदि investor का निधन (passes away) हो जाता है तो पैसे का क्या होता है।",
+      "detailed_explanation": "1. **Nomination:** वह प्रक्रिया जहाँ investor एक ऐसे व्यक्ति (Nominee) का नाम देता है जिसे उसकी मृत्यु पर assets प्राप्त होंगे। परिवार के लिए कानूनी देरी (legal delays) से बचने के लिए nominee होना अत्यधिक अनुशंसित (highly recommended) है।\n2. **Transmission:** Shares/units को मृतक व्यक्ति (deceased person) के खाते से Nominee या Legal Heir (कानूनी उत्तराधिकारी) के खाते में वास्तव में ले जाने की परिचालन प्रक्रिया (operational process)।",
+      "why_this_is_important": "Exam एक Nominee (जो पैसा प्राप्त करता है) और एक Legal Heir (जो वसीयत - Will के अनुसार अंतिम मालिक है) के बीच के अंतर पर केंद्रित है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "यदि एक पिता अपने Mutual Funds के लिए अपने बेटे को 'Nominee' के रूप में नामित करता है, तो पिता की मृत्यु के बाद, fund house मृत्यु प्रमाण पत्र (Death Certificate) देखने के बाद units को बेटे के खाते में transfer कर देगा। यह 'Transmission' है।",
+      "exam_traps": [
+        "यह सोचना कि Nominee 'मालिक (Owner)' है। (कानूनी तौर पर, Nominee केवल एक 'Trustee' या 'Caretaker' है जब तक कि कानून या वसीयत द्वारा Legal Heirs का निर्धारण नहीं हो जाता)।",
+        "'Transfer' (जीवित रहते हुए बेचना/उपहार देना) को 'Transmission' (मृत्यु के कारण) के साथ confuse करना।"
+      ],
+      "memory_trick": "Nomination = Naming (नाम देना). Transmission = Transitioning (मृत्यु के बाद संपत्ति का जाना)."
+    }
+  ],
+
+  "important_differences": [
+    {
+      "difference_between": "KYC में PAN Card बनाम Aadhaar Card",
+      "clear_explanation": "PAN प्राथमिक 'Tax Identity' है और financial transactions को track करने के लिए अनिवार्य है। Aadhaar का उपयोग मुख्य रूप से 'Proof of Address' और 'Biometric Identity' के रूप में किया जाता है। एक सहज निवेश यात्रा (smooth investment journey) के लिए आपको दोनों की आवश्यकता होती है।"
+    },
+    {
+      "difference_between": "Transfer बनाम Transmission",
+      "clear_explanation": "Transfer: किसी निवेशक द्वारा किसी अन्य व्यक्ति को shares देने/बेचने का स्वैच्छिक कार्य (Voluntary act)। \nTransmission: मूल मालिक की मृत्यु के कारण assets को स्थानांतरित (move) करने की स्वचालित कानूनी प्रक्रिया (Automatic legal process)।"
+    }
+  ],
+
+  "frequently_asked_exam_areas": [
+    "KYC के लिए आवश्यक Documents (PAN अनिवार्य है)।",
+    "KYC data को centralized करने में KRAs की भूमिका।",
+    "RTA (Registrar and Transfer Agent) का कार्य (function)।",
+    "एक Nominee और एक Legal Heir के बीच अंतर।",
+    "In-Person Verification (IPV) की आवश्यकता।"
+  ],
+
+  "quick_revision_summary": [
+    "KYC एक बार की प्रक्रिया (one-time process) है जिसे KRAs द्वारा centrally manage किया जाता है।",
+    "सभी capital market प्रतिभागियों के लिए PAN अनिवार्य है।",
+    "RTA unit-holder register और transaction processing संभालता है।",
+    "PoA managers को trades execute करने की अनुमति देता है लेकिन assets चुराने की नहीं।",
+    "Transmission मृत्यु के बाद किसी nominee को assets स्थानांतरित (move) करने की प्रक्रिया है।",
+    "IPV यह सुनिश्चित करता है कि व्यक्ति और दस्तावेज़ (documents) मेल खाते हैं (match)।"
+  ]
+}

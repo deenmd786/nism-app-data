@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "What is the primary goal of Modern Portfolio Theory (MPT)?",
+    "options": [
+      "To maximize returns by taking maximum risk",
+      "To eliminate all types of risk",
+      "To construct a portfolio that maximizes return for a given level of risk",
+      "To invest solely in risk-free assets"
+    ],
+    "answer": "To construct a portfolio that maximizes return for a given level of risk",
+    "hint": "इसे Harry Markowitz ने पेश किया था; यह trade-off के बारे में है।",
+    "explanation": "MPT इस बात पर ज़ोर देता है कि risk, उच्च reward का एक स्वाभाविक हिस्सा है। लक्ष्य वह optimal balance (efficient frontier) खोजना है जहाँ आप उस risk के लिए अधिकतम return प्राप्त कर सकें जो आप लेने को तैयार हैं।"
+  },
+  {
+    "id": 2,
+    "question": "In MPT, risk is typically measured by:",
+    "options": [
+      "Beta",
+      "Alpha",
+      "Standard Deviation or Variance of returns",
+      "Correlation Coefficient"
+    ],
+    "answer": "Standard Deviation or Variance of returns",
+    "hint": "Return अपने average से कितना deviate होता है?",
+    "explanation": "Standard deviation (या variance) MPT में इस्तेमाल होने वाला statistical measure है जो किसी asset या portfolio की volatility या total risk को quantify करता है।"
+  },
+  {
+    "id": 3,
+    "question": "Which type of risk can be eliminated through diversification?",
+    "options": [
+      "Systematic Risk",
+      "Market Risk",
+      "Unsystematic (Idiosyncratic) Risk",
+      "Inflation Risk"
+    ],
+    "answer": "Unsystematic (Idiosyncratic) Risk",
+    "hint": "किसी एक company तक सीमित risk।",
+    "explanation": "Unsystematic risk किसी company या industry के लिए specific होता है (जैसे हड़ताल, management failure)। Diversified portfolio रखकर, इस risk को लगभग खत्म किया जा सकता है।"
+  },
+  {
+    "id": 4,
+    "question": "Systematic Risk is also known as:",
+    "options": [
+      "Diversifiable Risk",
+      "Non-diversifiable Risk",
+      "Specific Risk",
+      "Operational Risk"
+    ],
+    "answer": "Non-diversifiable Risk",
+    "hint": "आप market से छिप नहीं सकते।",
+    "explanation": "Systematic risk पूरे market को प्रभावित करता है (जैसे मंदी, युद्ध, interest rates) और इसे diversification के ज़रिए खत्म नहीं किया जा सकता।"
+  },
+  {
+    "id": 5,
+    "question": "The 'Efficient Frontier' represents portfolios that offer:",
+    "options": [
+      "The highest risk for a given return",
+      "The lowest return for a given risk",
+      "The maximum expected return for a defined level of risk",
+      "Zero risk"
+    ],
+    "answer": "The maximum expected return for a defined level of risk",
+    "hint": "सबसे बेहतरीन possible boundary।",
+    "explanation": "Efficient Frontier उन optimal portfolios का एक सेट है जो defined level of risk के लिए highest expected return देते हैं, या expected return के दिए गए level के लिए lowest risk देते हैं।"
+  },
+  {
+    "id": 6,
+    "question": "What is the range of the Correlation Coefficient between two assets?",
+    "options": [
+      "0 to 1",
+      "-1 to 0",
+      "-1 to +1",
+      "-100 to +100"
+    ],
+    "answer": "-1 to +1",
+    "hint": "पूरी तरह से opposite से लेकर पूरी तरह से same तक।",
+    "explanation": "Correlation -1 (perfect negative correlation) से +1 (perfect positive correlation) तक होता है। 0 का मतलब है no correlation।"
+  },
+  {
+    "id": 7,
+    "question": "Greatest diversification benefits are achieved when adding an asset with a correlation of:",
+    "options": [
+      "+1",
+      "+0.5",
+      "0",
+      "-1"
+    ],
+    "answer": "-1",
+    "hint": "जब एक ऊपर जाता है, तो दूसरा बिल्कुल उसी तरह नीचे आता है।",
+    "explanation": "-1 के correlation का मतलब है कि assets बिल्कुल opposite direction में जाते हैं, जो अधिकतम possible risk reduction (hedging) प्रदान करता है।"
+  },
+  {
+    "id": 8,
+    "question": "The Capital Asset Pricing Model (CAPM) describes the relationship between:",
+    "options": [
+      "Risk and Return",
+      "Supply and Demand",
+      "Inflation and Interest Rates",
+      "Price and Volume"
+    ],
+    "answer": "Risk and Return",
+    "hint": "Risk लेने के लिए आपको कितना return मिलना चाहिए?",
+    "explanation": "CAPM एक model है जो assets (खासकर stocks) के लिए systematic risk और expected return के बीच के relationship को बताता है।"
+  },
+  {
+    "id": 9,
+    "question": "According to CAPM, the expected return of a security is equal to:",
+    "options": [
+      "Risk-Free Rate + Beta * (Market Return - Risk-Free Rate)",
+      "Risk-Free Rate + Alpha",
+      "Market Return - Inflation",
+      "Risk-Free Rate / Beta"
+    ],
+    "answer": "Risk-Free Rate + Beta * (Market Return - Risk-Free Rate)",
+    "hint": "Rf + Risk Premium।",
+    "explanation": "CAPM formula है: E(Ri) = Rf + Beta * (Rm - Rf), जहाँ (Rm - Rf) market risk premium है।"
+  },
+  {
+    "id": 10,
+    "question": "What does 'Beta' measure in the context of CAPM?",
+    "options": [
+      "Total Risk",
+      "Unsystematic Risk",
+      "Systematic Risk / Market Sensitivity",
+      "Liquidity Risk"
+    ],
+    "answer": "Systematic Risk / Market Sensitivity",
+    "hint": "Market के मुकाबले stock कितना move करता है।",
+    "explanation": "Beta overall market (systematic risk) के संबंध में किसी asset या portfolio की volatility को मापता है।"
+  },
+  {
+    "id": 11,
+    "question": "If a stock has a Beta of 1.5, it is considered:",
+    "options": [
+      "Less volatile than the market",
+      "As volatile as the market",
+      "50% more volatile than the market",
+      "Risk-free"
+    ],
+    "answer": "50% more volatile than the market",
+    "hint": "Beta > 1 का मतलब है high volatility।",
+    "explanation": "1 से ज़्यादा beta यह दर्शाता है कि stock, market से ज़्यादा volatile है। 1.5 beta का मतलब है कि यह market movement के 1.5 गुना move करता है।"
+  },
+  {
+    "id": 12,
+    "question": "The 'Market Portfolio' in CAPM theory consists of:",
+    "options": [
+      "Only large-cap stocks",
+      "Only government bonds",
+      "All investable assets in the market, held in proportion to their market value",
+      "Only the top 10 performing stocks"
+    ],
+    "answer": "All investable assets in the market, held in proportion to their market value",
+    "hint": "सबसे बेहतरीन diversified basket।",
+    "explanation": "Theoretically, market portfolio में market के सभी risky assets होते हैं, जो उनकी market value के अनुसार weighted होते हैं। असल में, S&P 500 या Nifty 50 जैसे broad index का proxy के रूप में उपयोग किया जाता है।"
+  },
+  {
+    "id": 13,
+    "question": "The 'Security Market Line' (SML) plots:",
+    "options": [
+      "Expected Return vs. Standard Deviation",
+      "Expected Return vs. Beta",
+      "Price vs. Earnings",
+      "Risk vs. Time"
+    ],
+    "answer": "Expected Return vs. Beta",
+    "hint": "SML, CAPM का graphical representation है।",
+    "explanation": "SML किसी individual security के expected return को systematic, non-diversifiable risk (Beta) के function के रूप में दर्शाता है।"
+  },
+  {
+    "id": 14,
+    "question": "The 'Capital Market Line' (CML) plots:",
+    "options": [
+      "Expected Return vs. Standard Deviation",
+      "Expected Return vs. Beta",
+      "Alpha vs. Beta",
+      "Time vs. Money"
+    ],
+    "answer": "Expected Return vs. Standard Deviation",
+    "hint": "CML, efficient portfolios से संबंधित है।",
+    "explanation": "CML उन portfolios को represent करता है जो risk-free asset और market portfolio को optimally combine करते हैं। यह expected return को total risk (standard deviation) के against plot करता है।"
+  },
+  {
+    "id": 15,
+    "question": "A stock with a Beta of 0 is likely:",
+    "options": [
+      "Highly volatile",
+      "Uncorrelated with the market (e.g., Risk-free asset)",
+      "A bankrupt company",
+      "The market portfolio"
+    ],
+    "answer": "Uncorrelated with the market (e.g., Risk-free asset)",
+    "hint": "इसे कोई फर्क नहीं पड़ता कि market क्या कर रहा है।",
+    "explanation": "0 beta का मतलब है कि asset का return market के साथ uncorrelated है। Risk-free asset (जैसे T-bills) का beta 0 होता है।"
+  },
+  {
+    "id": 16,
+    "question": "Jensen's Alpha measures:",
+    "options": [
+      "The market return",
+      "The risk-free rate",
+      "The excess return generated over and above the CAPM predicted return",
+      "The volatility of the portfolio"
+    ],
+    "answer": "The excess return generated over and above the CAPM predicted return",
+    "hint": "क्या manager ने benchmark को beat किया?",
+    "explanation": "Jensen's Alpha किसी portfolio के actual return और CAPM (उसके beta के आधार पर) का उपयोग करके calculate किए गए expected return के बीच का अंतर है।"
+  },
+  {
+    "id": 17,
+    "question": " Point A lies below the Efficient Frontier. This portfolio is considered:",
+    "options": [
+      "Efficient",
+      "Inefficient / Sub-optimal",
+      "Impossible",
+      "Risk-free"
+    ],
+    "answer": "Inefficient / Sub-optimal",
+    "hint": "आपको उसी risk पर ज़्यादा return मिल सकता है।",
+    "explanation": "Efficient frontier के नीचे मौजूद कोई भी portfolio sub-optimal होता है क्योंकि frontier पर उसी risk के लिए higher return देने वाला एक और portfolio मौजूद होता है।"
+  },
+  {
+    "id": 18,
+    "question": "The slope of the Capital Market Line (CML) is known as:",
+    "options": [
+      "Beta",
+      "Alpha",
+      "Sharpe Ratio",
+      "Treynor Ratio"
+    ],
+    "answer": "Sharpe Ratio",
+    "hint": "Return per unit of total risk।",
+    "explanation": "CML का slope, efficient portfolios के लिए risk की market price को represent करता है, जो कि Sharpe Ratio है: (Rm - Rf) / StdDev(m)।"
+  },
+  {
+    "id": 19,
+    "question": "What is the key assumption of CAPM regarding investors?",
+    "options": [
+      "Investors are irrational",
+      "Investors are risk-averse and rational",
+      "Investors prefer risk over return",
+      "Investors have different information"
+    ],
+    "answer": "Investors are risk-averse and rational",
+    "hint": "Homo Economicus।",
+    "explanation": "CAPM यह assume करता है कि सभी investors rational और risk-averse हैं, और वे अपनी utility को maximize करना चाहते हैं।"
+  },
+  {
+    "id": 20,
+    "question": "Which ratio uses Beta as the measure of risk?",
+    "options": [
+      "Sharpe Ratio",
+      "Treynor Ratio",
+      "Sortino Ratio",
+      "Information Ratio"
+    ],
+    "answer": "Treynor Ratio",
+    "hint": "Sharpe के समान, लेकिन यह systematic risk का उपयोग करता है।",
+    "explanation": "Treynor Ratio, market risk (Beta) की per unit पर risk-free rate से ज़्यादा कमाए गए return को मापता है। Formula है: (Rp - Rf) / Beta।"
+  },
+  {
+    "id": 21,
+    "question": "If the market risk premium increases, what happens to the expected return of a stock (assuming Beta > 0)?",
+    "options": [
+      "Decreases",
+      "Increases",
+      "Remains same",
+      "Becomes zero"
+    ],
+    "answer": "Increases",
+    "hint": "Investors risk लेने के लिए ज़्यादा की demand करते हैं।",
+    "explanation": "CAPM के अनुसार, अगर market risk premium (Rm - Rf) बढ़ता है, तो किसी भी risky asset (Beta > 0) का expected return भी बढ़ना चाहिए।"
+  },
+  {
+    "id": 22,
+    "question": "The 'Separation Theorem' states that investment decision involves two separate steps:",
+    "options": [
+      "Buying and Selling",
+      "Determining the optimal risky portfolio and then allocating between it and the risk-free asset",
+      "Fundamental and Technical analysis",
+      "Asset allocation and Stock selection"
+    ],
+    "answer": "Determining the optimal risky portfolio and then allocating between it and the risk-free asset",
+    "hint": "सबसे अच्छी basket चुनें, फिर तय करें कि कितना cash lend/borrow करना है।",
+    "explanation": "Tobin's Separation Theorem कहता है कि optimal risky portfolio का चुनाव individual investor की risk appetite से अलग होता है (जो cash/risky asset के split को तय करता है)।"
+  },
+  {
+    "id": 23,
+    "question": "What is 'Arbitrage Pricing Theory' (APT)?",
+    "options": [
+      "A theory for pricing risk-free bonds",
+      "A multi-factor model that serves as an alternative to CAPM",
+      "A method to calculate tax",
+      "A theory about currency exchange"
+    ],
+    "answer": "A multi-factor model that serves as an alternative to CAPM",
+    "hint": "CAPM एक factor (market) का उपयोग करता है, यह कई factors का उपयोग करता है।",
+    "explanation": "APT मानता है कि किसी asset के return का prediction उस asset और कई common risk factors (जैसे inflation, GDP, आदि) के बीच के relationship का उपयोग करके किया जा सकता है, न कि केवल market risk के आधार पर।"
+  },
+  {
+    "id": 24,
+    "question": "A portfolio with a Beta of 1.0 is expected to return:",
+    "options": [
+      "The Risk-Free Rate",
+      "The Market Return",
+      "Twice the Market Return",
+      "Zero"
+    ],
+    "answer": "The Market Return",
+    "hint": "यह market को mimic करता है।",
+    "explanation": "1.0 का Beta यह दर्शाता है कि portfolio में market के बराबर ही systematic risk है, इसलिए इसका expected return market return के बराबर होता है।"
+  },
+  {
+    "id": 25,
+    "question": "Information Ratio measures:",
+    "options": [
+      "Absolute return",
+      "Active return divided by tracking error",
+      "Return per unit of Beta",
+      "Return per unit of total risk"
+    ],
+    "answer": "Active return divided by tracking error",
+    "hint": "Active managers को evaluate करने के लिए उपयोग किया जाता है।",
+    "explanation": "Information Ratio, alpha generate करने में fund manager की consistency को मापता है। यह (Portfolio Return - Benchmark Return) / Tracking Error होता है।"
+  },
+  {
+    "id": 26,
+    "question": "Which of the following is NOT an assumption of Markowitz Portfolio Theory?",
+    "options": [
+      "Investors are rational",
+      "Markets are efficient",
+      "Transaction costs are zero",
+      "Investors prefer higher risk for the same return"
+    ],
+    "answer": "Investors prefer higher risk for the same return",
+    "hint": "Investors को risk से नफरत है।",
+    "explanation": "MPT assume करता है कि investors risk-averse होते हैं। समान return वाले दो portfolios दिए जाने पर, वे हमेशा कम risk वाला portfolio चुनेंगे।"
+  },
+  {
+    "id": 27,
+    "question": "If two assets have a correlation of +1, the portfolio risk (standard deviation) will be:",
+    "options": [
+      "Zero",
+      "The weighted average of the individual standard deviations",
+      "Less than the weighted average",
+      "Higher than the weighted average"
+    ],
+    "answer": "The weighted average of the individual standard deviations",
+    "hint": "कोई diversification benefit नहीं।",
+    "explanation": "Perfect positive correlation (+1) के साथ, कोई diversification benefit नहीं मिलता। Risk सिर्फ components के risks का linear weighted average होता है।"
+  },
+  {
+    "id": 28,
+    "question": "What is 'Tracking Error'?",
+    "options": [
+      "The mistake in calculating NAV",
+      "The standard deviation of the difference between portfolio returns and benchmark returns",
+      "The beta of the portfolio",
+      "The transaction cost"
+    ],
+    "answer": "The standard deviation of the difference between portfolio returns and benchmark returns",
+    "hint": "आप index से कितना deviate हुए?",
+    "explanation": "Tracking error किसी benchmark के मुकाबले excess returns की volatility को मापता है। यह दर्शाता है कि कोई portfolio किसी index को कितने करीब से follow करता है।"
+  },
+  {
+    "id": 29,
+    "question": "According to CML, the optimal risky portfolio is:",
+    "options": [
+      "The portfolio with the highest return",
+      "The Tangency Portfolio where the CML touches the Efficient Frontier",
+      "The Minimum Variance Portfolio",
+      "The Risk-Free Asset"
+    ],
+    "answer": "The Tangency Portfolio where the CML touches the Efficient Frontier",
+    "hint": "वह point जहाँ line सिर्फ curve को छूती है।",
+    "explanation": "Optimal risky portfolio वह point of tangency है जो Capital Market Line (जो risk-free rate से खींची जाती है) और Efficient Frontier के बीच बनता है।"
+  },
+  {
+    "id": 30,
+    "question": "If an asset lies above the Security Market Line (SML), it is considered:",
+    "options": [
+      "Overvalued",
+      "Undervalued",
+      "Fairly valued",
+      "Risk-free"
+    ],
+    "answer": "Undervalued",
+    "hint": "यह अपने risk के मुकाबले ज़्यादा return देता है।",
+    "explanation": "यदि कोई asset SML के ऊपर है, तो इसका मतलब है कि यह अपने level of risk के लिए CAPM द्वारा predict किए गए return से ज़्यादा return generate कर रहा है। इसलिए, यह attractive/undervalued है।"
+  },
+  {
+    "id": 31,
+    "question": "Which measure is best for evaluating the performance of a well-diversified portfolio?",
+    "options": [
+      "Standard Deviation",
+      "Sharpe Ratio",
+      "Treynor Ratio",
+      "Sortino Ratio"
+    ],
+    "answer": "Treynor Ratio",
+    "hint": "Diversified portfolios केवल systematic risk की परवाह करते हैं।",
+    "explanation": "एक well-diversified portfolio के लिए, unsystematic risk खत्म हो जाता है। इसलिए, relevant risk measure Beta होता है। इसके लिए Treynor ratio (Return/Beta) appropriate है।"
+  },
+  {
+    "id": 32,
+    "question": "What is the 'Global Minimum Variance Portfolio'?",
+    "options": [
+      "The portfolio with the highest return globally",
+      "The portfolio on the efficient frontier with the lowest possible risk (standard deviation)",
+      "A portfolio of only international stocks",
+      "A portfolio with zero beta"
+    ],
+    "answer": "The portfolio on the efficient frontier with the lowest possible risk (standard deviation)",
+    "hint": "Curve पर सबसे बायां point।",
+    "explanation": "Global Minimum Variance Portfolio, efficient frontier पर वह unique portfolio होता है जिसमें सभी possible portfolios में सबसे कम standard deviation (risk) होता है।"
+  },
+  {
+    "id": 33,
+    "question": "The Sortino Ratio differs from the Sharpe Ratio by:",
+    "options": [
+      "Using Beta instead of Standard Deviation",
+      "Using only Downside Deviation (risk of loss) instead of Total Standard Deviation",
+      "Ignoring the risk-free rate",
+      "Being applicable only to bonds"
+    ],
+    "answer": "Using only Downside Deviation (risk of loss) instead of Total Standard Deviation",
+    "hint": "Upside volatility अच्छी होती है!",
+    "explanation": "Sortino Ratio केवल 'bad' volatility (downside deviation) को penalize करता है, जबकि Sharpe Ratio upside और downside volatility दोनों को समान रूप से penalize करता है।"
+  },
+  {
+    "id": 34,
+    "question": "In the Single Index Model, the return of a stock is related to:",
+    "options": [
+      "GDP growth",
+      "The return of a market index",
+      "Interest rates",
+      "The return of its competitor"
+    ],
+    "answer": "The return of a market index",
+    "hint": "Markowitz का simplification।",
+    "explanation": "Single Index Model यह assume करता है कि stocks के बीच comovements किसी single common factor (आमतौर पर market index) के कारण होते हैं।"
+  },
+  {
+    "id": 35,
+    "question": "If the correlation between two assets is 0, what happens to portfolio risk when they are combined?",
+    "options": [
+      "Risk remains the same",
+      "Risk is reduced but not eliminated",
+      "Risk is eliminated completely",
+      "Risk doubles"
+    ],
+    "answer": "Risk is reduced but not eliminated",
+    "hint": "Negative correlation के बिना भी diversification काम करता है।",
+    "explanation": "0 correlation (uncorrelated) होने पर, assets को combine करने से overall portfolio variance कम हो जाता है (diversification benefit) लेकिन यह -1 correlation की तरह इसे पूरी तरह से eliminate नहीं करता है।"
+  },
+  {
+    "id": 36,
+    "question": "What is the primary difference between CML and SML?",
+    "options": [
+      "CML applies to individual assets; SML applies to efficient portfolios",
+      "CML uses Standard Deviation (Total Risk); SML uses Beta (Systematic Risk)",
+      "CML is curved; SML is straight",
+      "There is no difference"
+    ],
+    "answer": "CML uses Standard Deviation (Total Risk); SML uses Beta (Systematic Risk)",
+    "hint": "CML = Total Risk, SML = Market Risk।",
+    "explanation": "CML, efficient portfolios के लिए return को total risk (standard deviation) के against plot करता है। SML किसी भी asset या portfolio के लिए return को systematic risk (beta) के against plot करता है।"
+  },
+  {
+    "id": 37,
+    "question": "Which of the following implies that a market is 'Efficient'?",
+    "options": [
+      "Prices reflect all available information",
+      "Prices are always rising",
+      "There is no risk",
+      "There are no transaction costs"
+    ],
+    "answer": "Prices reflect all available information",
+    "hint": "आप market को beat नहीं कर सकते।",
+    "explanation": "Efficient Market Hypothesis (EMH) बताता है कि asset prices सभी available information को reflect करते हैं, जिससे risk-adjusted basis पर लगातार 'market को beat' करना असंभव हो जाता है।"
+  },
+  {
+    "id": 38,
+    "question": "A negative Beta indicates:",
+    "options": [
+      "The asset moves in the same direction as the market",
+      "The asset moves in the opposite direction to the market",
+      "The asset has no risk",
+      "The asset is bankrupt"
+    ],
+    "answer": "The asset moves in the opposite direction to the market",
+    "hint": "कभी-कभी gold की तरह।",
+    "explanation": "Negative beta का मतलब है कि asset, market के inverse (उल्टे) move करता है। अगर market ऊपर जाता है, तो यह asset नीचे जाता है, और इसके विपरीत।"
+  },
+  {
+    "id": 39,
+    "question": "The intercept of the Security Market Line (SML) is:",
+    "options": [
+      "Beta",
+      "Market Return",
+      "Risk-Free Rate",
+      "Zero"
+    ],
+    "answer": "Risk-Free Rate",
+    "hint": "जहाँ line Y-axis पर शुरू होती है।",
+    "explanation": "SML Y-axis पर शुरू होता है (जहाँ Beta = 0 होता है)। इस point पर, expected return Risk-Free Rate (Rf) होता है।"
+  },
+  {
+    "id": 40,
+    "question": "Risk Budgeting involves:",
+    "options": [
+      "Allocating capital to the highest return assets",
+      "Allocating risk contributions to different components of the portfolio",
+      "Avoiding all risky assets",
+      "Budgeting for office expenses"
+    ],
+    "answer": "Allocating risk contributions to different components of the portfolio",
+    "hint": "अपने 'risk' allowance को समझदारी से खर्च करना।",
+    "explanation": "Risk budgeting केवल capital को allocate करने के बजाय, portfolio की total risk appetite को विभिन्न assets या strategies में allocate करने का process है।"
+  },
+  {
+    "id": 41,
+    "question": "Which form of market efficiency states that current prices reflect all historical price and volume data?",
+    "options": [
+      "Weak Form",
+      "Semi-Strong Form",
+      "Strong Form",
+      "Zero Form"
+    ],
+    "answer": "Weak Form",
+    "hint": "पुराने charts बेकार हैं।",
+    "explanation": "Weak Form efficiency यह दावा करती है कि सभी पिछले market prices और data, securities prices में पूरी तरह से reflected होते हैं, इसलिए technical analysis excess returns generate नहीं कर सकता।"
+  },
+  {
+    "id": 42,
+    "question": "The 'Slope' of the SML is:",
+    "options": [
+      "Risk-Free Rate",
+      "Beta",
+      "Market Risk Premium (Rm - Rf)",
+      "Standard Deviation"
+    ],
+    "answer": "Market Risk Premium (Rm - Rf)",
+    "hint": "Beta की एक unit लेने पर मिलने वाला extra return।",
+    "explanation": "SML का slope, market risk premium को दर्शाता है। यह दिखाता है कि Beta में हर एक unit की वृद्धि पर expected return कितना बढ़ता है।"
+  },
+  {
+    "id": 43,
+    "question": "In MPT, 'covariance' measures:",
+    "options": [
+      "The volatility of a single asset",
+      "The average return",
+      "How two assets move together",
+      "The risk-free rate"
+    ],
+    "answer": "How two assets move together",
+    "hint": "Co-movement।",
+    "explanation": "Covariance दो assets के returns के बीच directional relationship का measure है। Portfolio variance calculate करने के लिए यह एक key input है।"
+  },
+  {
+    "id": 44,
+    "question": "If a portfolio lies on the Capital Market Line (CML), its correlation with the market portfolio is:",
+    "options": [
+      "0",
+      "+1",
+      "-1",
+      "0.5"
+    ],
+    "answer": "+1",
+    "hint": "यह risk-free और market का mix है।",
+    "explanation": "CML पर मौजूद portfolios risk-free asset और market portfolio के combinations होते हैं। चूँकि risk-free asset में कोई variance नहीं होता है, इसलिए portfolio के fluctuations market के साथ perfectly correlated (+1) होते हैं।"
+  },
+  {
+    "id": 45,
+    "question": "The 'Tangency Portfolio' is also known as:",
+    "options": [
+      "The Minimum Variance Portfolio",
+      "The Market Portfolio",
+      "The Risk-Free Portfolio",
+      "The Alpha Portfolio"
+    ],
+    "answer": "The Market Portfolio",
+    "hint": "Equilibrium में, optimal risky portfolio ही market होता है।",
+    "explanation": "CAPM के assumptions के तहत, tangency portfolio (optimal risky portfolio) ही Market Portfolio होता है जिसमें सभी risky assets शामिल होते हैं।"
+  },
+  {
+    "id": 46,
+    "question": "Idiosyncratic risk is another name for:",
+    "options": [
+      "Systematic Risk",
+      "Market Risk",
+      "Beta Risk",
+      "Unsystematic Risk"
+    ],
+    "answer": "Unsystematic Risk",
+    "hint": "Individual के लिए unique।",
+    "explanation": "Idiosyncratic risk उस risk को कहते हैं जो किसी specific company या asset के लिए unique होता है, जिसे unsystematic या specific risk भी कहा जाता है।"
+  },
+  {
+    "id": 47,
+    "question": "If an investor is 'Risk Neutral', they care only about:",
+    "options": [
+      "Minimizing Variance",
+      "Maximizing Expected Return",
+      "Maximizing Sharpe Ratio",
+      "Minimizing Beta"
+    ],
+    "answer": "Maximizing Expected Return",
+    "hint": "वे volatility को ignore करते हैं।",
+    "explanation": "एक risk-neutral investor risk के प्रति indifferent (तटस्थ) होता है और केवल expected returns के आधार पर decision लेता है।"
+  },
+  {
+    "id": 48,
+    "question": "Which of the following factors does Multi-Factor Models add to CAPM?",
+    "options": [
+      "Size and Value factors",
+      "Only Market factor",
+      "Only Risk-Free factor",
+      "Only Technical factors"
+    ],
+    "answer": "Size and Value factors",
+    "hint": "Fama-French model।",
+    "explanation": "Multi-factor models (जैसे Fama-French) returns को explain करने के लिए company size (Small Cap vs. Large Cap) और value (Book-to-Market ratio) जैसे factors को जोड़कर CAPM को expand करते हैं।"
+  },
+  {
+    "id": 49,
+    "question": "The concept of 'Mean-Variance Optimization' is associated with:",
+    "options": [
+      "William Sharpe",
+      "Harry Markowitz",
+      "Eugene Fama",
+      "John Bogle"
+    ],
+    "answer": "Harry Markowitz",
+    "hint": "MPT के पिता।",
+    "explanation": "Harry Markowitz ने Mean-Variance Optimization पेश किया था, जो assets के portfolio को इस तरह से assemble करने का mathematical framework है कि दिए गए level of risk के लिए expected return maximize हो सके।"
+  },
+  {
+    "id": 50,
+    "question": "An asset with a Beta of 2.0 implies:",
+    "options": [
+      "It is risk-free",
+      "It provides double the market return always",
+      "Its price will likely move 2% for every 1% move in the market",
+      "It has low volatility"
+    ],
+    "answer": "Its price will likely move 2% for every 1% move in the market",
+    "hint": "Volatility का दोगुना।",
+    "explanation": "Beta एक multiplier है। 2.0 के beta का मतलब है कि asset, market index के मुकाबले market movements के प्रति दोगुना sensitive है।"
+  }
+]

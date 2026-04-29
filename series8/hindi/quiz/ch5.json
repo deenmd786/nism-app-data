@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following best describes a 'Long Hedge' using futures?",
+    "options": [
+      "Buying futures to protect against a price rise",
+      "Selling futures to protect against a price fall",
+      "Buying futures to speculate",
+      "Selling futures to arbitrage"
+    ],
+    "answer": "Buying futures to protect against a price rise",
+    "hint": "Long का मतलब है buy; hedge का मतलब है protect करना।",
+    "explanation": "एक Long Hedge में भविष्य में आवश्यक asset के लिए purchase price को lock करने के लिए futures contracts को buy करना शामिल है, जो संभावित price increases से बचाता है।"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following best describes a 'Short Hedge' using futures?",
+    "options": [
+      "Buying futures to protect against a price rise",
+      "Selling futures to protect against a price fall",
+      "Selling futures to speculate",
+      "Buying call options"
+    ],
+    "answer": "Selling futures to protect against a price fall",
+    "hint": "Short का मतलब है sell; hedge आपकी inventory को protect करता है।",
+    "explanation": "एक Short Hedge में पहले से owned asset के लिए sale price को lock करने के लिए futures contracts को sell करना शामिल है, जो संभावित price decreases से बचाता है।"
+  },
+  {
+    "id": 3,
+    "question": "A portfolio manager holds a diversified equity portfolio with a Beta of 1.2. To hedge against a market crash, the manager should:",
+    "options": [
+      "Buy Index Futures",
+      "Sell Index Futures",
+      "Buy Call Options",
+      "Sell Put Options"
+    ],
+    "answer": "Sell Index Futures",
+    "hint": "Beta > 1 का मतलब है high sensitivity; आपको market को short करने की आवश्यकता है।",
+    "explanation": "एक long portfolio को hedge करने के लिए, index futures में short position लेनी चाहिए। Contracts की संख्या portfolio के Beta पर निर्भर करती है।"
+  },
+  {
+    "id": 4,
+    "question": "What is 'Arbitrage' in the context of futures?",
+    "options": [
+      "Risk-free profit from price discrepancies between Spot and Futures markets",
+      "High-risk trading",
+      "Long-term investing",
+      "Illegal trading"
+    ],
+    "answer": "Risk-free profit from price discrepancies between Spot and Futures markets",
+    "hint": "Free money (मुफ्त पैसा)।",
+    "explanation": "Arbitrage, Spot और Futures markets के बीच mispricing का फायदा उठाकर risk-free profit (Cash-and-Carry) generate करता है।"
+  },
+  {
+    "id": 5,
+    "question": "Which strategy involves Buying a Call and Selling a Call with a higher Strike Price (same expiry)?",
+    "options": [
+      "Bull Call Spread",
+      "Bear Put Spread",
+      "Long Straddle",
+      "Short Strangle"
+    ],
+    "answer": "Bull Call Spread",
+    "hint": "आप bullish हैं लेकिन cost कम करने के लिए upside को cap कर रहे हैं।",
+    "explanation": "एक Bull Call Spread में ITM/ATM Call को buy करना और OTM Call को sell करना शामिल है। यह profit को limit करता है लेकिन trade की cost को कम करता है।"
+  },
+  {
+    "id": 6,
+    "question": "Which strategy involves Buying a Put and Selling a Put with a lower Strike Price (same expiry)?",
+    "options": [
+      "Bear Put Spread",
+      "Bull Call Spread",
+      "Long Strangle",
+      "Short Straddle"
+    ],
+    "answer": "Bear Put Spread",
+    "hint": "आप bearish हैं लेकिन downside profit को cap कर रहे हैं।",
+    "explanation": "एक Bear Put Spread में ITM/ATM Put को buy करना और OTM Put को sell करना शामिल है। यह price गिरने पर profit देता है लेकिन maximum profit को limit करता है।"
+  },
+  {
+    "id": 7,
+    "question": "A 'Long Straddle' is profitable when:",
+    "options": [
+      "The market is highly volatile (big move in either direction)",
+      "The market is stagnant",
+      "The market moves slightly up",
+      "The market moves slightly down"
+    ],
+    "answer": "The market is highly volatile (big move in either direction)",
+    "hint": "Straddling का मतलब है कि अगर movement बहुत बड़ा है तो आप दोनों तरफ जीतते हैं।",
+    "explanation": "एक Long Straddle (एक ही strike पर Call buy + Put buy) किसी भी दिशा में महत्वपूर्ण price movement से profit कमाता है, जो pay किए गए combined premiums को cover कर लेता है।"
+  },
+  {
+    "id": 8,
+    "question": "A 'Short Straddle' is profitable when:",
+    "options": [
+      "The market is range-bound / low volatility",
+      "The market crashes",
+      "The market rallies",
+      "Implied Volatility increases"
+    ],
+    "answer": "The market is range-bound / low volatility",
+    "hint": "Selling का मतलब है कि आप stability चाहते हैं।",
+    "explanation": "एक Short Straddle (एक ही strike पर Call sell + Put sell) time decay (Theta) से profit कमाता है जब stock price strike price के करीब रहता है।"
+  },
+  {
+    "id": 9,
+    "question": "Which strategy involves Buying a Call and Buying a Put at DIFFERENT Strike Prices (Put Strike < Call Strike)?",
+    "options": [
+      "Long Strangle",
+      "Long Straddle",
+      "Short Strangle",
+      "Butterfly Spread"
+    ],
+    "answer": "Long Strangle",
+    "hint": "Strangle का 'neck', Straddle की तुलना में wider होता है।",
+    "explanation": "एक Long Strangle, Straddle से सस्ता होता है क्योंकि दोनों options आमतौर पर OTM होते हैं। इसे profitable होने के लिए बड़े move की आवश्यकता होती है।"
+  },
+  {
+    "id": 10,
+    "question": "A 'Covered Call' strategy involves:",
+    "options": [
+      "Buying Stock + Selling Call",
+      "Buying Stock + Buying Put",
+      "Selling Stock + Buying Call",
+      "Buying Call + Selling Put"
+    ],
+    "answer": "Buying Stock + Selling Call",
+    "hint": "Short call को long stock के साथ cover करें।",
+    "explanation": "Covered Call writing, stock holding से income (premium) generate करती है। यह limited downside protection (premium की सीमा तक) प्रदान करती है और upside potential को cap करती है।"
+  },
+  {
+    "id": 11,
+    "question": "A 'Protective Put' strategy involves:",
+    "options": [
+      "Buying Stock + Buying Put",
+      "Buying Stock + Selling Call",
+      "Selling Stock + Selling Put",
+      "Buying Call + Selling Put"
+    ],
+    "answer": "Buying Stock + Buying Put",
+    "hint": "अपने stock के लिए insurance खरीदना।",
+    "explanation": "एक Protective Put, insurance के रूप में कार्य करता है। आप stock hold करते हैं और stock price क्रैश होने पर losses को limit करने के लिए Put buy करते हैं।"
+  },
+  {
+    "id": 12,
+    "question": "The maximum loss in a 'Bull Call Spread' is:",
+    "options": [
+      "Net Premium Paid",
+      "Strike Difference - Net Premium",
+      "Unlimited",
+      "Strike Price"
+    ],
+    "answer": "Net Premium Paid",
+    "hint": "आपने enter करने के लिए पैसे दिए; अधिकतम आप उतना ही खो सकते हैं।",
+    "explanation": "चूंकि यह एक debit spread है (आप प्राप्त करने से अधिक pay करते हैं), maximum loss केवल net premium paid तक ही सीमित है।"
+  },
+  {
+    "id": 13,
+    "question": "The maximum profit in a 'Bull Call Spread' is:",
+    "options": [
+      "Difference in Strike Prices - Net Premium Paid",
+      "Unlimited",
+      "Net Premium Paid",
+      "Strike Price"
+    ],
+    "answer": "Difference in Strike Prices - Net Premium Paid",
+    "hint": "Capped upside.",
+    "explanation": "Profit higher strike पर cap हो जाता है। Max Profit = (Higher Strike - Lower Strike) - Net Premium Paid."
+  },
+  {
+    "id": 14,
+    "question": "Which strategy is also known as a 'Zero Cost Collar'?",
+    "options": [
+      "Buying a Put and Selling a Call to finance the Put",
+      "Buying a Call and Selling a Put",
+      "Buying a Future",
+      "Selling a Future"
+    ],
+    "answer": "Buying a Put and Selling a Call to finance the Put",
+    "hint": "Collar downside को protect करता है और upside को cap करता है।",
+    "explanation": "एक Collar में stock hold करना, protective Put buy करना और Covered Call sell करना शामिल है। यदि premiums match करते हैं, तो यह 'Zero Cost' होता है।"
+  },
+  {
+    "id": 15,
+    "question": "A 'Butterfly Spread' typically involves:",
+    "options": [
+      "3 Strike Prices",
+      "2 Strike Prices",
+      "1 Strike Price",
+      "4 Strike Prices"
+    ],
+    "answer": "3 Strike Prices",
+    "hint": "बीच में body, साइड में wings.",
+    "explanation": "एक Butterfly Spread 3 strikes का उपयोग करता है: 1 ITM Call buy करें, 2 ATM Calls sell करें, 1 OTM Call buy करें (या Puts का उपयोग करके)। यह low volatility से profit कमाता है।"
+  },
+  {
+    "id": 16,
+    "question": "In a 'Cash and Carry Arbitrage', the arbitrageur:",
+    "options": [
+      "Buys Spot, Sells Future",
+      "Sells Spot, Buys Future",
+      "Buys Call, Sells Put",
+      "Sells Call, Buys Put"
+    ],
+    "answer": "Buys Spot, Sells Future",
+    "hint": "Cash asset को carry करें।",
+    "explanation": "जब Futures overpriced होते हैं, तो आप underlying asset (Spot) buy करते हैं और difference को lock करने के लिए Future sell करते हैं।"
+  },
+  {
+    "id": 17,
+    "question": "Which strategy has 'Unlimited Risk'?",
+    "options": [
+      "Short Straddle",
+      "Long Straddle",
+      "Bull Call Spread",
+      "Protective Put"
+    ],
+    "answer": "Short Straddle",
+    "hint": "Naked options sell करना।",
+    "explanation": "एक Short Straddle में naked Calls और Puts को sell करना शामिल है। यदि market किसी भी दिशा में काफी move करता है, तो losses unlimited हो सकते हैं।"
+  },
+  {
+    "id": 18,
+    "question": "If you are 'Moderately Bullish', which strategy is most appropriate?",
+    "options": [
+      "Bull Call Spread",
+      "Long Call",
+      "Long Put",
+      "Short Straddle"
+    ],
+    "answer": "Bull Call Spread",
+    "hint": "आप upside चाहते हैं लेकिन cost को कम करना चाहते हैं।",
+    "explanation": "एक Bull Call Spread, plain Long Call की तुलना में trade की cost को कम करता है, जिससे यह moderate bullish views के लिए उपयुक्त बन जाता है जहां unlimited upside की उम्मीद नहीं होती है।"
+  },
+  {
+    "id": 19,
+    "question": "To hedge a portfolio of Rs. 10 Lakhs with a Beta of 1.5 using Nifty Futures (Value = 5 Lakhs per lot), how many lots should you Sell?",
+    "options": [
+      "3 Lots",
+      "2 Lots",
+      "1 Lot",
+      "1.5 Lots"
+    ],
+    "answer": "3 Lots",
+    "hint": "Hedge Ratio = (Beta * Portfolio Value) / Contract Value.",
+    "explanation": "Contracts की संख्या = (1.5 * 10,00,000) / 5,00,000 = 15,00,000 / 5,00,000 = 3 Lots."
+  },
+  {
+    "id": 20,
+    "question": "A 'Calendar Spread' is a strategy based on:",
+    "options": [
+      "Time Decay (Theta) differences",
+      "Price differences only",
+      "Volatility skew",
+      "Arbitrage"
+    ],
+    "answer": "Time Decay (Theta) differences",
+    "hint": "Far month की तुलना में near month तेजी से decay होता है।",
+    "explanation": "Calendar Spreads (Horizontal Spreads) far-month options की तुलना में near-month options के तेजी से होने वाले time decay का फायदा उठाते हैं।"
+  },
+  {
+    "id": 21,
+    "question": "Buying a Call option provides leverage because:",
+    "options": [
+      "Premium is small compared to stock price",
+      "It is risk-free",
+      "It guarantees profit",
+      "It is tax-free"
+    ],
+    "answer": "Premium is small compared to stock price",
+    "hint": "Small down payment, big exposure.",
+    "explanation": "Options high leverage प्रदान करते हैं क्योंकि एक छोटा premium, underlying asset की एक बड़ी value को control करता है।"
+  },
+  {
+    "id": 22,
+    "question": "Which of these is a 'Delta Neutral' strategy?",
+    "options": [
+      "Long Straddle (at initiation)",
+      "Long Call",
+      "Short Put",
+      "Bull Call Spread"
+    ],
+    "answer": "Long Straddle (at initiation)",
+    "hint": "Call का Delta (+0.5) + Put का Delta (-0.5) = 0.",
+    "explanation": "एक ATM Straddle शुरुआत में delta neutral होता है क्योंकि call का positive delta, put के negative delta को offset (संतुलित) कर देता है।"
+  },
+  {
+    "id": 23,
+    "question": "If Implied Volatility (IV) is very low, which strategy is generally recommended?",
+    "options": [
+      "Long Straddle / Long Strangle",
+      "Short Straddle / Short Strangle",
+      "Covered Call",
+      "Selling Puts"
+    ],
+    "answer": "Long Straddle / Long Strangle",
+    "hint": "Buy low, sell high (volatility).",
+    "explanation": "जब IV low होता है, तो premiums सस्ते होते हैं। Options (Straddle/Strangle) खरीदना favorable होता है क्योंकि आप उम्मीद करते हैं कि volatility mean (increase) पर वापस आ जाएगी।"
+  },
+  {
+    "id": 24,
+    "question": "If Implied Volatility (IV) is very high, which strategy is generally recommended?",
+    "options": [
+      "Short Straddle / Short Strangle",
+      "Long Straddle",
+      "Long Call",
+      "Long Put"
+    ],
+    "answer": "Short Straddle / Short Strangle",
+    "hint": "Expensive premium को sell करें।",
+    "explanation": "जब IV high होता है, तो premiums महंगे होते हैं। Options sell करना (Short Straddle/Strangle) आपको volatility कम होने पर इस high premium को capture करने की अनुमति देता है।"
+  },
+  {
+    "id": 25,
+    "question": "A 'Synthetic Future Long' is created by:",
+    "options": [
+      "Buying a Call and Selling a Put (ATM)",
+      "Buying a Put and Selling a Call",
+      "Buying a Call and Buying a Put",
+      "Selling a Call and Selling a Put"
+    ],
+    "answer": "Buying a Call and Selling a Put (ATM)",
+    "hint": "Positive Delta + Positive Delta (short put से)।",
+    "explanation": "Long Call (+Delta) + Short Put (+Delta) एक payoff profile बनाता है जो बिल्कुल Long Futures के समान होता है।"
+  },
+  {
+    "id": 26,
+    "question": "Which strategy profits if the market stays between two specific prices?",
+    "options": [
+      "Short Strangle / Iron Condor",
+      "Long Strangle",
+      "Long Straddle",
+      "Bull Call Spread"
+    ],
+    "answer": "Short Strangle / Iron Condor",
+    "hint": "Range-bound profit.",
+    "explanation": "Options sell करना (Short Strangle या Iron Condor) theta decay से profit कमाता है, जब तक कि price, strike prices द्वारा defined range के भीतर रहता है।"
+  },
+  {
+    "id": 27,
+    "question": "The 'Iron Condor' is a combination of:",
+    "options": [
+      "Bull Put Spread + Bear Call Spread",
+      "Bull Call Spread + Bear Put Spread",
+      "Long Straddle + Short Straddle",
+      "Two Long Calls"
+    ],
+    "answer": "Bull Put Spread + Bear Call Spread",
+    "hint": "चार wings (legs) वाला एक पक्षी।",
+    "explanation": "एक Iron Condor में 4 options शामिल होते हैं (एक OTM Put और OTM Call sell करना, और protection के लिए आगे के OTM Put और Call buy करना)। यह एक limited risk, non-directional strategy है।"
+  },
+  {
+    "id": 28,
+    "question": "What is the primary objective of a 'Covered Call'?",
+    "options": [
+      "Income Generation (Yield Enhancement)",
+      "Speculation on a crash",
+      "Arbitrage",
+      "Leverage"
+    ],
+    "answer": "Income Generation (Yield Enhancement)",
+    "hint": "Stocks पर rental income.",
+    "explanation": "Investors उन stocks से extra income (premium) कमाने के लिए Covered Calls का उपयोग करते हैं जिन्हें वे पहले से ही hold करने की योजना बना रहे हैं, जिससे overall yield बढ़ती है।"
+  },
+  {
+    "id": 29,
+    "question": "Which of the following is a 'Directional Strategy'?",
+    "options": [
+      "Bull Call Spread",
+      "Long Straddle",
+      "Short Straddle",
+      "Iron Condor"
+    ],
+    "answer": "Bull Call Spread",
+    "hint": "इसके नाम में 'Bull' है।",
+    "explanation": "एक Bull Call Spread के लिए market का ऊपर जाना (Directional) आवश्यक है। Straddles और Condors Volatility (Non-directional) strategies हैं।"
+  },
+  {
+    "id": 30,
+    "question": "In a 'Bear Put Spread', you:",
+    "options": [
+      "Buy a Higher Strike Put and Sell a Lower Strike Put",
+      "Buy a Lower Strike Put and Sell a Higher Strike Put",
+      "Buy a Call and Sell a Put",
+      "Sell a Call and Sell a Put"
+    ],
+    "answer": "Buy a Higher Strike Put and Sell a Lower Strike Put",
+    "hint": "ITM/ATM Put buy करें, OTM Put sell करें।",
+    "explanation": "आप गिरावट से profit कमाने के लिए expensive Put (High strike) खरीदते हैं और trade को fund करने के लिए cheap Put (Low strike) बेचते हैं।"
+  },
+  {
+    "id": 31,
+    "question": "A 'Ratio Spread' typically involves:",
+    "options": [
+      "Buying and selling unequal numbers of options",
+      "Buying equal numbers of options",
+      "Trading only futures",
+      "Trading only stocks"
+    ],
+    "answer": "Buying and selling unequal numbers of options",
+    "hint": "'Ratio' नाम inequality को दर्शाता है।",
+    "explanation": "उदा., 1 Call buy करें, 2 Calls sell करें। यह cost को कम करता है (या credit बनाता है) लेकिन अगर market बहुत दूर चला जाता है तो unlimited risk introduce करता है।"
+  },
+  {
+    "id": 32,
+    "question": "Arbitrage is possible when the 'Cost of Carry' implied in the futures price is:",
+    "options": [
+      "Different from the actual cost of carry",
+      "Equal to the actual cost of carry",
+      "Zero",
+      "Negative"
+    ],
+    "answer": "Different from the actual cost of carry",
+    "hint": "Mispricing अवसर (opportunity) पैदा करती है।",
+    "explanation": "यदि theoretical price (Spot + Cost of Carry) वास्तविक Market Futures Price से अलग है, तो arbitrage संभव है।"
+  },
+  {
+    "id": 33,
+    "question": "The 'Max Loss' for a Long Straddle is:",
+    "options": [
+      "Total Premium Paid",
+      "Unlimited",
+      "Strike Price",
+      "Zero"
+    ],
+    "answer": "Total Premium Paid",
+    "hint": "आप एक buyer हैं।",
+    "explanation": "एक option buyer के रूप में, आपका risk केवल आपके द्वारा pay किए गए premium तक ही सीमित है।"
+  },
+  {
+    "id": 34,
+    "question": "Which strategy allows you to buy a stock cheaper than the current market price?",
+    "options": [
+      "Selling Cash-Secured Puts",
+      "Buying Calls",
+      "Buying Futures",
+      "Buying Puts"
+    ],
+    "answer": "Selling Cash-Secured Puts",
+    "hint": "Buy करने के लिए wait करने के पैसे पाएं।",
+    "explanation": "Current price से कम strike पर Put sell करके, आप premium collect करते हैं। यदि price गिरकर strike पर आ जाता है, तो आप buy करने के लिए बाध्य हैं, प्रभावी रूप से (Strike - Premium) पर buy कर रहे हैं।"
+  },
+  {
+    "id": 35,
+    "question": "If you are 'Long Gamma', you generally want:",
+    "options": [
+      "High Volatility / Large Moves",
+      "Low Volatility / No Moves",
+      "Time decay to help you",
+      "Interest rates to fall"
+    ],
+    "answer": "High Volatility / Large Moves",
+    "hint": "Gamma आपके gains को तेज (accelerate) करता है।",
+    "explanation": "Long option positions (Long Straddle/Strangle) Long Gamma होते हैं। वे underlying में होने वाले explosive moves से benefit प्राप्त करते हैं।"
+  },
+  {
+    "id": 36,
+    "question": "Which strategy is best for a market where you expect a 'Breakout' but don't know the direction?",
+    "options": [
+      "Long Straddle",
+      "Short Straddle",
+      "Covered Call",
+      "Bull Call Spread"
+    ],
+    "answer": "Long Straddle",
+    "hint": "Movement पर दांव लगाना, चाहे कोई भी movement हो।",
+    "explanation": "एक Long Straddle किसी भी दिशा में बड़े moves से profit कमाता है, जिससे यह breakouts (उदा., earnings announcement से पहले) के लिए ideal बन जाता है।"
+  },
+  {
+    "id": 37,
+    "question": "What is the 'Breakeven Point' for a Covered Call strategy (ignoring stock gain)?",
+    "options": [
+      "Stock Purchase Price - Call Premium Received",
+      "Stock Purchase Price + Call Premium Received",
+      "Strike Price + Premium",
+      "Strike Price - Premium"
+    ],
+    "answer": "Stock Purchase Price - Call Premium Received",
+    "hint": "Premium आपके cost basis को कम करता है।",
+    "explanation": "प्राप्त premium एक buffer के रूप में कार्य करता है, जो stock के effective purchase price को कम करता है।"
+  },
+  {
+    "id": 38,
+    "question": "In a 'Bull Call Spread', the lower strike call is _________ and the higher strike call is _________.",
+    "options": [
+      "Bought, Sold",
+      "Sold, Bought",
+      "Bought, Bought",
+      "Sold, Sold"
+    ],
+    "answer": "Bought, Sold",
+    "hint": "Main वाले को buy करें, cheap वाले को sell करें।",
+    "explanation": "आप profit के लिए ITM/ATM call (Lower strike) buy करते हैं और cost कम करने के लिए OTM call (Higher strike) sell करते हैं।"
+  },
+  {
+    "id": 39,
+    "question": "A strategy using options to mimic a short futures position is:",
+    "options": [
+      "Synthetic Short (Long Put + Short Call)",
+      "Synthetic Long",
+      "Covered Call",
+      "Protective Put"
+    ],
+    "answer": "Synthetic Short (Long Put + Short Call)",
+    "hint": "Bearish setup.",
+    "explanation": "Put buy करना और Call sell करना (समान strike पर) Future Short करने के समान एक payoff बनाता है।"
+  },
+  {
+    "id": 40,
+    "question": "Which strategy has the highest probability of profit but limited returns?",
+    "options": [
+      "Iron Condor / Short Strangle",
+      "Long Straddle",
+      "Buying OTM Calls",
+      "Buying OTM Puts"
+    ],
+    "answer": "Iron Condor / Short Strangle",
+    "hint": "Premium sell करने का win rate high होता है।",
+    "explanation": "Selling options (credit strategies) में आमतौर पर profit की probability high होती है क्योंकि market ranges के भीतर रहने की प्रवृत्ति रखता है, लेकिन profit premium तक सीमित होता है।"
+  },
+  {
+    "id": 41,
+    "question": "The margin requirement for a 'Bull Call Spread' is generally ___________ than a Naked Call Write.",
+    "options": [
+      "Lower",
+      "Higher",
+      "Same",
+      "Zero"
+    ],
+    "answer": "Lower",
+    "hint": "Defined risk = defined margin.",
+    "explanation": "चूंकि spread में defined/limited risk होता है, इसलिए margin requirement naked options लिखने की तुलना में काफी कम होती है जिसमें unlimited risk होता है।"
+  },
+  {
+    "id": 42,
+    "question": "Hedging with options instead of futures allows the holder to:",
+    "options": [
+      "Preserve the upside potential while limiting downside risk",
+      "Eliminate all costs",
+      "Guarantee a profit",
+      "Avoid taxes"
+    ],
+    "answer": "Preserve the upside potential while limiting downside risk",
+    "hint": "Options 'optional' होते हैं।",
+    "explanation": "Futures (जो एक price lock करते हैं) के विपरीत, एक Put option (Protective Put) buy करना गिरावट से बचाता है लेकिन price बढ़ने पर participation की अनुमति भी देता है।"
+  },
+  {
+    "id": 43,
+    "question": "If you sell a 'Deep ITM Call' on a stock you don't own, you are:",
+    "options": [
+      "Highly Bearish",
+      "Highly Bullish",
+      "Neutral",
+      "Hedging"
+    ],
+    "answer": "Highly Bearish",
+    "hint": "ITM calls की Naked selling.",
+    "explanation": "यह high risk वाली एक बहुत ही aggressive bearish strategy है।"
+  },
+  {
+    "id": 44,
+    "question": "What is the risk in 'Reverse Cash and Carry Arbitrage'?",
+    "options": [
+      "Inability to short sell the underlying asset (in India)",
+      "Futures price rising",
+      "Spot price falling",
+      "Interest rates rising"
+    ],
+    "answer": "Inability to short sell the underlying asset (in India)",
+    "hint": "Spot market restrictions.",
+    "explanation": "Reverse arbitrage के लिए Spot asset को sell करने की आवश्यकता होती है। भारत में, retail investors Spot market में overnight short positions hold नहीं कर सकते (SLB mechanism मौजूद है लेकिन complex है)।"
+  },
+  {
+    "id": 45,
+    "question": "A 'Box Spread' is primarily used for:",
+    "options": [
+      "Arbitrage (Risk-free interest rate capture)",
+      "Directional trading",
+      "Volatility trading",
+      "Hedging"
+    ],
+    "answer": "Arbitrage (Risk-free interest rate capture)",
+    "hint": "Boxed in profit.",
+    "explanation": "एक Box Spread में Bull Call Spread और Bear Put Spread का combination होता है। इसे theoretically risk-free interest rate देना चाहिए। कोई भी deviation एक arbitrage opportunity है।"
+  },
+  {
+    "id": 46,
+    "question": "Which option strategy benefits most from 'Theta Decay'?",
+    "options": [
+      "Short Straddle",
+      "Long Straddle",
+      "Long Call",
+      "Long Put"
+    ],
+    "answer": "Short Straddle",
+    "hint": "Sellers time decay पसंद करते हैं।",
+    "explanation": "एक Short Straddle में दो short options (Call और Put) होते हैं। दोनों समय के साथ decay होते हैं, जिससे seller को benefit होता है।"
+  },
+  {
+    "id": 47,
+    "question": "Which of these is a 'Credit Spread'?",
+    "options": [
+      "Bull Put Spread",
+      "Bull Call Spread",
+      "Bear Put Spread",
+      "Long Straddle"
+    ],
+    "answer": "Bull Put Spread",
+    "hint": "Expensive वाले को sell करना, cheap वाले को buy करना।",
+    "explanation": "एक Bull Put Spread में, आप higher strike Put (expensive) sell करते हैं और lower strike Put (cheap) buy करते हैं, जिसके परिणामस्वरूप net credit (पैसे प्राप्त होना) होता है।"
+  },
+  {
+    "id": 48,
+    "question": "In a 'Butterfly Spread', the maximum profit occurs at:",
+    "options": [
+      "The middle strike price",
+      "The highest strike price",
+      "The lowest strike price",
+      "Infinity"
+    ],
+    "answer": "The middle strike price",
+    "hint": "Butterfly की body.",
+    "explanation": "एक Butterfly spread सबसे अधिक profitable तब होता है जब stock price expiry पर ठीक middle strike price (जहां आपने दो options sell किए थे) पर close होता है।"
+  },
+  {
+    "id": 49,
+    "question": "Which strategy involves selling a Call and selling a Put at different strikes (OTM)?",
+    "options": [
+      "Short Strangle",
+      "Short Straddle",
+      "Long Strangle",
+      "Bull Spread"
+    ],
+    "answer": "Short Strangle",
+    "hint": "एक wider range को strangle करना।",
+    "explanation": "OTM Call और OTM Put sell करना एक Short Strangle है। यदि market दो strikes के बीच रहता है तो यह profit देता है।"
+  },
+  {
+    "id": 50,
+    "question": "To convert a 'Long Future' position into a 'Synthetic Long Call', you should:",
+    "options": [
+      "Buy a Put Option",
+      "Sell a Call Option",
+      "Buy a Call Option",
+      "Sell a Put Option"
+    ],
+    "answer": "Buy a Put Option",
+    "hint": "Future + Put = Call.",
+    "explanation": "Long Future + Long Put = Long Call payoff profile. Put Future के downside को limit करता है, जो Call की नकल (mimic) करता है।"
+  }
+]

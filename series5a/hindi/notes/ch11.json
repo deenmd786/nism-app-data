@@ -1,0 +1,94 @@
+{
+  "course": "NISM Series V-A: Mutual Fund Distributors Certification",
+  "unit_number": 11,
+  "unit_name": "Mutual Fund Scheme Performance",
+  "weightage": "7 Marks (Approx. 7 Questions)",
+  "overview": "यह chapter एक Mutual Fund का 'Report Card' है। आप सीखेंगे कि किसी 'Benchmark' (जैसे Nifty 50) से compare करके यह कैसे judge किया जाए कि कोई fund अच्छा कर रहा है या नहीं। इसमें Index funds के लिए 'Tracking Error' जैसे important concepts और हमें सिर्फ 'Absolute' returns के बजाय 'Relative' performance क्यों देखना चाहिए, यह भी cover किया गया है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Benchmarks (The Yardstick)",
+      "basic_meaning": "एक standard index जिससे Mutual Fund की performance को compare किया जाता है।",
+      "detailed_explanation": "अगर किसी student को 90 marks मिलते हैं, तो आपको तब तक नहीं पता चलता कि वह अच्छा है जब तक आप class average नहीं देख लेते। इसी तरह, अगर कोई fund 15% return देता है, लेकिन market (Benchmark) ने 20% दिया, तो fund ने poorly perform किया। \n- **Equity Funds:** आमतौर पर Nifty 50, Sensex, या Nifty Midcap 100 के खिलाफ compare किए जाते हैं।\n- **Debt Funds:** 10-year Gilt Index या CCIL Bond Index के खिलाफ compare किए जाते हैं。\n- **Mandatory Rule:** हर scheme का एक 'Primary Benchmark' और एक 'Secondary Benchmark' (आमतौर पर Nifty 50 जैसा broad market index) होना चाहिए।",
+      "why_this_is_important": "एक distributor के रूप में, आपको clients को explain करना होगा कि भले ही उनका fund 'loss' दिखा रहा हो, अगर वह benchmark से कम गिरा है तो वह अच्छा कर रहा हो सकता है।",
+      "formula": "$$\\text{Relative Performance}=\\text{Fund Return}-\\text{Benchmark Return}$$",
+      "formula_explanation": "यह आपको बताता है कि manager ने कितना 'Alpha' (outperformance) create किया।",
+      "step_by_step_calculation_example": "1. Fund Return = 12%.\n2. Benchmark Return = 10%.\n3. Relative Performance = 12% - 10% = +2%.\n**Result:** Manager ने active stock picking के through 2% value add की।",
+      "real_life_indian_example": "अगर आप 'SBI Bluechip Fund' खरीदते हैं, तो आपको उसके returns को 'Nifty 100 TRI' index से compare करना चाहिए।",
+      "exam_traps": [
+        "किसी Small Cap fund को Nifty 50 से compare करना (Incorrect; इसे Small Cap index से compare किया जाना चाहिए)।",
+        "यह सोचना कि benchmark return की guarantee है (नहीं, यह सिर्फ comparison के लिए है)।"
+      ],
+      "memory_trick": "Benchmark = Passing marks / Class के average marks."
+    },
+    {
+      "concept": "2. Total Return Index (TRI) vs. Price Return Index (PRI)",
+      "basic_meaning": "TRI 'honest' benchmark है क्योंकि इसमें dividends शामिल होते हैं, जबकि PRI में केवल stock prices शामिल होते हैं।",
+      "detailed_explanation": "Past में, funds खुद को PRI (जो केवल stock prices track करता है) से compare करते थे। चूँकि Mutual Funds को stocks से dividends भी मिलते हैं, इसलिए उन्हें PRI से compare करने पर funds 'extra good' दिखते थे। \n- **SEBI Rule:** सभी Mutual Funds को अब comparison के लिए **TRI** (Total Return Index) का use करना mandatory है। TRI assume करता है कि stocks से मिले dividends को वापस index में reinvest कर दिया गया है।",
+      "why_this_is_important": "यह एक frequent exam question है। TRI एक fair 'Apples-to-Apples' comparison provide करता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "1. Stock price 10% ऊपर जाता है (Price Return).\n2. Stock 2% dividend pay करता है.\n3. TRI = 10% + 2% = 12%.\n4. Fund को सिर्फ 10% नहीं, बल्कि 12% को beat करना होगा।",
+      "real_life_indian_example": "जब आप news पर 'Nifty 50' देखते हैं, तो वह आमतौर पर PRI होता है। लेकिन आपके Mutual Fund statement पर, यह 'Nifty 50 TRI' लिखा होता है।",
+      "exam_traps": [
+        "यह सोचना कि PRI comparison के लिए better है (नहीं, TRI mandatory standard है)।",
+        "यह मानना कि TRI PRI से कम होता है (TRI हमेशा PRI से higher या equal होता है क्योंकि इसमें dividends से extra income शामिल होती है)।"
+      ],
+      "memory_trick": "TRI = Total (Price + Dividend). PRI = Price only."
+    },
+    {
+      "concept": "3. Tracking Error (For Passive/Index Funds)",
+      "basic_meaning": "एक Index Fund और उसके Benchmark के returns के बीच का difference.",
+      "detailed_explanation": "एक Index Fund का काम Nifty 50 को exactly copy करना है। हालाँकि, expenses, cash holdings, और stocks buy/sell करने में delays के कारण, fund return हमेशा index से थोड़ा कम होता है। इस 'gap' को Tracking Error कहते हैं। \n- **Lower Tracking Error = Better Index Fund.**",
+      "why_this_is_important": "Passive investors के लिए, आप सबसे lowest tracking error वाला fund ढूँढते हैं।",
+      "formula": "$$\\text{Tracking Error}=\\text{Index Return}-\\text{Fund Return}$$",
+      "formula_explanation": "Ideally, यह zero होना चाहिए, लेकिन real life में, यह एक small positive number होता है।",
+      "step_by_step_calculation_example": "1. Nifty 50 Index Return = 15.00%.\n2. Nifty Index Fund Return = 14.85%.\n3. Tracking Error = 15.00 - 14.85 = 0.15%.\n**Result:** Fund index को copy करने का अच्छा काम कर रहा है।",
+      "real_life_indian_example": "अगर किसी fund में बहुत से investors एक ही दिन redeem कर रहे हैं, तो manager को cash hold करना पड़ सकता है, जिससे उस दिन tracking error high हो सकता है।",
+      "exam_traps": [
+        "यह सोचना कि high tracking error अच्छा है (नहीं, इसका मतलब है कि fund index को copy करने में fail हो रहा है)।",
+        "यह मानना कि tracking error सिर्फ Active funds में होता है (नहीं, यह specifically Passive/Index funds के लिए एक concept है)।"
+      ],
+      "memory_trick": "Tracking Error = Copy-cat's mistake."
+    },
+    {
+      "concept": "4. Cash Levels in a Fund",
+      "basic_meaning": "पैसे का वह percentage जो fund manager stocks/bonds में invest करने के बजाय cash में रखता है।",
+      "detailed_explanation": "Managers cash इसलिए रखते हैं ताकि उन investors को pay कर सकें जो redeem (withdraw) करना चाहते हैं।\n- **High Cash Level:** Manager cautious है या markets के गिरने की उम्मीद कर रहा है। अगर market अचानक ऊपर चला जाता है तो इससे 'underperformance' हो सकती है (क्योंकि cash portion ने कुछ भी earn नहीं किया)।\n- **Low Cash Level:** Fully invested. Rising markets के लिए अच्छा है, लेकिन risky है अगर बहुत से लोग एक साथ redeem करें।",
+      "why_this_is_important": "यह explain करता है कि कोई fund market के बिल्कुल बराबर move क्यों नहीं कर सकता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "एक fund के पास 10% cash और 90% stocks हैं। अगर stock market 10% बढ़ता है, तो fund सिर्फ लगभग 9% ही बढ़ेगा क्योंकि cash part grow नहीं हुआ।",
+      "exam_traps": [
+        "यह सोचना कि cash levels हमेशा zero होते हैं (वे आमतौर पर 1% से 5% होते हैं)।",
+        "यह मानना कि high cash हमेशा बुरा होता है (यह high market volatility के दौरान use की जाने वाली एक strategy है)।"
+      ],
+      "memory_trick": "Cash = Car के brakes. रुकने के लिए useful है, लेकिन highway पर आपको slow कर देता है।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Benchmark vs. Portfolio",
+      "clear_explanation": "Benchmark: External index (जैसे, Nifty)। \nPortfolio: Stocks/bonds का actual group जो manager ने खरीदा है।"
+    },
+    {
+      "difference_between": "Primary vs. Secondary Benchmark",
+      "clear_explanation": "Primary: Fund के style के specific (जैसे, Midcap Index)।\nSecondary: General comparison के लिए एक broad market index (जैसे, Nifty 50)।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "TRI की Definition और इसका use क्यों किया जाता है।",
+    "Index Funds में 'Tracking Error' का Meaning.",
+    "Gilt Funds के लिए कौन सा index benchmark है? (I-Sec Li-BEX या CCIL Index)।",
+    "'Peer Group' comparison क्या है? (एक fund को दूसरे similar funds के साथ compare करना, जैसे, HDFC Midcap vs SBI Midcap)।",
+    "Scheme performance पर expenses का Impact."
+  ],
+  "quick_revision_summary": [
+    "Funds को हमेशा appropriate Benchmark के साथ compare करें।",
+    "Performance comparison के लिए TRI (Total Return Index) का use होना ही चाहिए।",
+    "Index funds का Tracking Error low होना चाहिए।",
+    "Scheme performance 1, 3, 5 years और since inception के लिए disclose की जानी चाहिए।",
+    "Performance हमेशा Benchmark और एक additional benchmark (Nifty 50 / Sensex) के against compare की जाती है।",
+    "Dividends और expenses दोनों investor को reported final performance को affect करते हैं।"
+  ]
+}

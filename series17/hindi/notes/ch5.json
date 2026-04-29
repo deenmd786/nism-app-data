@@ -1,0 +1,76 @@
+{
+  "course": "NISM Series XVII: Retirement Adviser",
+  "unit_number": 5,
+  "unit_name": "Evaluating Fund Performance & Fund Selection",
+  "weightage": "10%",
+  "overview": "यह chapter retirement planning की 'Analytical Lab' है। Unit 4 में products को जानने के बाद, अब आपको यह सीखना होगा कि कैसे check करें कि कोई fund वास्तव में अच्छा काम कर रहा है या नहीं। आप किसी fund को सिर्फ इसलिए नहीं चुन सकते क्योंकि उसकी '5-star' rating है; आपको Alpha, Beta, और Sharpe जैसे mathematical ratios को समझना होगा। यह unit आपको सिखाता है कि कैसे 'Skill' को 'Luck' से अलग करें ताकि आप अपने client की lifelong savings के लिए सबसे consistent managers को चुन सकें।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Risk and Volatility: Standard Deviation and Beta",
+      "basic_meaning": "Standard Deviation आपको बताता है कि कोई fund कितना 'jumpy' (उछल-कूद करने वाला) है। Beta आपको बताता है कि fund overall market के साथ कितना 'dance' करता है।",
+      "detailed_explanation": "1. **Standard Deviation (Total Risk)**: यह मापता है कि किसी fund के returns उसके average return से कितना deviate (भटकते) हैं। अगर किसी fund का SD high है, तो उसका price बहुत तेज़ी से ऊपर-नीचे होता है। एक retiree के लिए, 'Monthly Income' bucket में high SD बहुत खतरनाक है।\n2. **Beta (Market Risk)**: यह किसी fund की volatility (अस्थिरता) की तुलना उसके benchmark (जैसे Nifty 50) से करता है। [Image explaining Beta in mutual funds with examples]\n   * **Beta = 1**: Fund बिल्कुल market की तरह move करता है।\n   * **Beta > 1**: Fund 'Aggressive' है (अगर Nifty 10% ऊपर जाता है, तो fund 12% ऊपर जा सकता है)।\n   * **Beta < 1**: Fund 'Defensive' है (अगर Nifty 10% गिरता है, तो fund शायद सिर्फ 8% गिरे)।",
+      "why_this_is_important": "Exam perspective: Beta एक high-probability question है। Practical perspective: एक retiree के लिए जो market crashes से डरता है, आपको 'Low Beta' (< 1) वाला fund चुनना चाहिए।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "एक 'Safe Driver' (Low Beta) vs एक 'Formula 1 Driver' (High Beta) के बारे में सोचें। Retirement में, आप आमतौर पर वह safe driver चाहते हैं जो car को crash न करे, भले ही वह थोड़ा slow हो। एक Index Fund का Beta exactly 1 होता है। एक Mid-cap fund का Beta आमतौर पर > 1 होता है।",
+      "exam_traps": [
+        "Trap: यह सोचना कि high Beta हमेशा बुरा होता है। (यह bull market में अच्छा होता है!)।",
+        "Confusing point: क्या Standard Deviation में Beta शामिल होता है? हाँ, SD 'Total' risk है, जबकि Beta केवल 'Market' risk है।",
+        "Key point: Beta 1.2 होने का मतलब है कि fund index से 20% ज़्यादा volatile है।"
+      ],
+      "memory_trick": "Beta = Market के साथ 'Behavior'। High Beta = High Drama।"
+    },
+    {
+      "concept": "2. Risk-Adjusted Returns: Sharpe Ratio and Alpha",
+      "basic_meaning": "Alpha वह 'Extra' profit है जो manager ने आपके लिए बनाया। Sharpe Ratio आपको बताता है कि क्या वह extra profit लिए गए 'Headache' (Risk) के लायक था।",
+      "detailed_explanation": "1. **Alpha (Manager's Skill)**: यह benchmark के ऊपर generate किया गया return है। अगर Nifty ने 10% दिया और आपके fund ने 12% दिया, तो Alpha +2% है। यह बेहतर stocks चुनने की manager की ability को दिखाता है। [Image explaining Jensen's Alpha concept in investing]\n2. **Sharpe Ratio (Efficiency)**: यह 'Return per unit of Risk' मापता है। \n   * **Higher Sharpe Ratio ALWAYS better होता है।** \n   * यह आपको बताता है कि क्या किसी fund ने सिर्फ 'stupid risks' लेकर high returns दिए हैं या 'smart management' के ज़रिए।",
+      "why_this_is_important": "इस तरह आप दो funds को compare करते हैं। अगर Fund A और Fund B दोनों ने 15% return दिया, लेकिन Fund A ने इसे बहुत कम 'shaking' (volatility) के साथ किया, तो Fund A का Sharpe Ratio higher होगा।",
+      "formula": "Sharpe Ratio = (Fund Return - Risk-Free Rate) / Standard Deviation",
+      "formula_explanation": "Fund का return लें, उसमें से वह घटाएँ जो आपको एक safe 'Govt Bond' (Risk-free) में मिलता, और उसे इस बात से divide करें कि fund कितना 'हिला' (Standard Deviation)।",
+      "step_by_step_calculation_example": "1. Fund Return: 15%\n2. Risk-Free Rate (SBI FD): 7%\n3. Standard Deviation (Risk): 4%\nStep 1: 15% - 7% = 8% (यह 'Excess' return है)।\nStep 2: 8% / 4% = 2.0.\nResult: Sharpe Ratio 2.0 है। आमतौर पर, 1.0 से ऊपर कुछ भी अच्छा माना जाता है।",
+      "real_life_indian_example": "दो cricketers की कल्पना करें। Virat Kohli हर match में 50 runs बनाते हैं (High Consistency/Sharpe)। दूसरा player एक match में 100 और अगले चार में 0 बनाता है (Low Consistency/Sharpe)। एक retirement plan के लिए, आप 'Virat Kohli'—high Sharpe Ratio manager—चाहते हैं।",
+      "exam_traps": [
+        "Question: कौन सा ratio 'Standard Deviation' का उपयोग करता है? Answer: Sharpe Ratio.",
+        "Question: कौन सा ratio 'Manager's Alpha' को मापता है? Answer: Alpha Ratio.",
+        "Trap: बिना Sharpe check किए यह सोचना कि 20% return वाला fund 15% return वाले से बेहतर है। (20% वाला fund बहुत ज़्यादा risky हो सकता है!)।"
+      ],
+      "memory_trick": "Alpha = Benchmark के 'Above'; Sharpe = 'Smart' risk management."
+    },
+    {
+      "concept": "3. Fund Selection Criteria (The 5 P's)",
+      "basic_meaning": "यह देखने के लिए एक checklist कि क्या Fund House भरोसेमंद है और fund solid है।",
+      "detailed_explanation": "1. **People**: Manager कौन है? वे वहाँ कितने समय से हैं? (आप ऐसा manager नहीं चाहेंगे जो हर 6 महीने में बदल जाए)।\n2. **Process**: क्या उनके पास stocks चुनने का कोई logical system है या यह सिर्फ 'luck' है?\n3. **Philosophy**: क्या fund 'Growth' oriented है या 'Value' oriented?\n4. **Portfolio**: वे वास्तव में कौन से stocks hold करते हैं? क्या यह IT या Banks जैसे किसी एक sector में बहुत ज़्यादा 'concentrated' है?\n5. **Performance**: क्या fund एक 'one-year wonder' है या यह 5-10 सालों से consistent है?",
+      "why_this_is_important": "यह आपको महीने के सबसे 'hot' fund के पीछे भागने से रोकता है और आपको एक stable long-term portfolio बनाने में मदद करता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "एक car खरीदने से पहले, आप brand (People), engine (Process), fuel type (Philosophy), features (Portfolio), और reviews (Performance) check करते हैं। Mutual Funds के लिए भी यही logic use करें!",
+      "exam_traps": [
+        "कौन सा 'P' manager के experience से deal करता है? Answer: People.",
+        "Trap: केवल 'Performance' पर focus करना। (NISM इस बात पर ज़ोर देता है कि Process और People भी उतने ही important हैं)।",
+        "Key point: Performance को long periods में 'Peers' और 'Benchmark' के against check किया जाना चाहिए।"
+      ],
+      "memory_trick": "People, Process, Philosophy, Portfolio, Performance."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Benchmark vs Peer Group Comparison",
+      "clear_explanation": "Benchmark comparison का मतलब है यह check करना कि क्या fund ने 'Market' (जैसे Nifty 50) को beat किया। Peer Group comparison का मतलब है यह check करना कि क्या fund ने अपने 'Competitors' (अन्य similar funds) को beat किया। एक fund market को beat कर सकता है लेकिन फिर भी अपने peers में सबसे 'worst' हो सकता है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Sharpe Ratio की Definition और इसका formula.",
+    "Alpha और Beta values को समझना।",
+    "Fund selection के लिए 5 P's framework.",
+    "Standard Deviation (Total Risk) और Beta (Market Risk) के बीच Difference."
+  ],
+  "quick_revision_summary": [
+    "High Sharpe Ratio = Good (Efficient risk management).",
+    "Positive Alpha = Good (Manager ने value add की).",
+    "Beta < 1 = Defensive/Safe; Beta > 1 = Aggressive/Risky.",
+    "हमेशा 'Market Cycles' (Bull और Bear markets) में performance check करें।",
+    "Expense Ratio को ignore न करें—higher costs आपके final returns को कम करते हैं।"
+  ]
+}

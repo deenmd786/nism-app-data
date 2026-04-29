@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1301,
+    "question": "Which of the following best describes a 'Long Hedge'?",
+    "options": [
+      "Buying futures to protect against a rise in prices",
+      "Selling futures to protect against a fall in prices",
+      "Buying spot and selling futures",
+      "Buying options to speculate"
+    ],
+    "answer": "Buying futures to protect against a rise in prices",
+    "hint": "आपको बाद में खरीदने की आवश्यकता है, इसलिए आप अभी price lock कर लें।",
+    "explanation": "एक Long Hedge में भविष्य में आवश्यक asset के लिए purchase price lock करने के लिए futures contracts खरीदना शामिल है, जो price बढ़ने से बचाता है।"
+  },
+  {
+    "id": 1302,
+    "question": "Which of the following best describes a 'Short Hedge'?",
+    "options": [
+      "Buying futures to protect against a rise in prices",
+      "Selling futures to protect against a fall in prices",
+      "Selling spot and buying futures",
+      "Selling options to speculate"
+    ],
+    "answer": "Selling futures to protect against a fall in prices",
+    "hint": "आप asset के मालिक हैं और price गिरने का डर है।",
+    "explanation": "एक Short Hedge में वर्तमान में स्वामित्व वाले (owned) asset के लिए sale price lock करने के लिए futures contracts बेचना शामिल है, जो price में गिरावट से बचाता है।"
+  },
+  {
+    "id": 1303,
+    "question": "A portfolio manager holding a diversified equity portfolio fears a market crash. What should they do?",
+    "options": [
+      "Buy Index Futures",
+      "Sell Index Futures",
+      "Buy Call Options",
+      "Do nothing"
+    ],
+    "answer": "Sell Index Futures",
+    "hint": "Value protect करने के लिए Short Hedge।",
+    "explanation": "Portfolio की value को market गिरने से बचाने के लिए, manager को Index Futures बेचना (short) चाहिए। यदि market गिरता है, तो futures से होने वाला profit portfolio में होने वाले नुकसान की भरपाई (offset) कर देगा।"
+  },
+  {
+    "id": 1304,
+    "question": "To hedge a portfolio perfectly, the 'Hedge Ratio' should be:",
+    "options": [
+      "1.0",
+      "0.5",
+      "0.0",
+      "Infinite"
+    ],
+    "answer": "1.0",
+    "hint": "One-to-one match.",
+    "explanation": "1.0 का Hedge Ratio बताता है कि futures position underlying asset के exposure से पूरी तरह मेल खाती (exactly matches) है।"
+  },
+  {
+    "id": 1305,
+    "question": "If a stock has a Beta of 1.5, it is considered:",
+    "options": [
+      "Less volatile than the market",
+      "More volatile than the market",
+      "Equally volatile as the market",
+      "Risk-free"
+    ],
+    "answer": "More volatile than the market",
+    "hint": "Beta > 1 का अर्थ है high volatility।",
+    "explanation": "1 से अधिक का Beta दर्शाता है कि market index की तुलना में stock अधिक volatile है (movements amplified हैं)।"
+  },
+  {
+    "id": 1306,
+    "question": "How many lots of Nifty Futures should be sold to hedge a portfolio worth ₹10,00,000 with a Beta of 1.2, if Nifty is at 10,000 and lot size is 50?",
+    "options": [
+      "2 lots",
+      "3 lots",
+      "1 lot",
+      "4 lots"
+    ],
+    "answer": "2 lots",
+    "hint": "(Portfolio Value * Beta) / Contract Value.",
+    "explanation": "Contract Value = 10,000 * 50 = ₹5,00,000. आवश्यक Hedge Value = ₹10,00,000 * 1.2 = ₹12,00,000. Contracts की संख्या = 12,00,000 / 5,00,000 = 2.4 (लगभग 2 या 3, आमतौर पर निकटतम पूर्णांक पर rounded, यहाँ 2 सबसे सुरक्षित partial hedge है या पूर्ण के लिए 3)।"
+  },
+  {
+    "id": 1307,
+    "question": "What is 'Basis Risk' in hedging?",
+    "options": [
+      "The risk that the futures price and spot price do not move in perfect lockstep",
+      "The risk of default",
+      "The risk of exchange failure",
+      "The risk of interest rate change"
+    ],
+    "answer": "The risk that the futures price and spot price do not move in perfect lockstep",
+    "hint": "Spread अप्रत्याशित रूप से (unpredictably) बदलता है।",
+    "explanation": "Basis Risk तब उत्पन्न होता है जब Spot और Futures prices के बीच संबंध (spread) बदल जाता है, जिससे hedge अपूर्ण (imperfect) हो जाता है।"
+  },
+  {
+    "id": 1308,
+    "question": "An arbitrage strategy involving buying the spot asset and selling the futures contract is called:",
+    "options": [
+      "Cash and Carry Arbitrage",
+      "Reverse Cash and Carry Arbitrage",
+      "Calendar Spread",
+      "Inter-market Spread"
+    ],
+    "answer": "Cash and Carry Arbitrage",
+    "hint": "Cash में खरीदें, future में carry करें।",
+    "explanation": "Cash and Carry arbitrage overpriced futures का फायदा उठाता है। आप risk-free profit lock करने के लिए cash market में asset खरीदते हैं और expensive future बेचते हैं।"
+  },
+  {
+    "id": 1309,
+    "question": "An arbitrage strategy involving selling the spot asset and buying the futures contract is called:",
+    "options": [
+      "Cash and Carry Arbitrage",
+      "Reverse Cash and Carry Arbitrage",
+      "Calendar Spread",
+      "Inter-market Spread"
+    ],
+    "answer": "Reverse Cash and Carry Arbitrage",
+    "hint": "Normal arbitrage का Reverse।",
+    "explanation": "Reverse Cash and Carry underpriced futures का फायदा उठाता है। आप asset बेचते हैं (यदि आप इसके मालिक हैं या इसे उधार ले सकते हैं) और सस्ता future खरीदते हैं।"
+  },
+  {
+    "id": 1310,
+    "question": "A speculator who expects the market to rise should:",
+    "options": [
+      "Go Long on Futures",
+      "Go Short on Futures",
+      "Sell Call Options",
+      "Buy Put Options"
+    ],
+    "answer": "Go Long on Futures",
+    "hint": "Bullish (तेजी का) नजरिया।",
+    "explanation": "एक Long Futures position बढ़ती कीमतों से profit कमाती है।"
+  },
+  {
+    "id": 1311,
+    "question": "A speculator who expects the market to fall should:",
+    "options": [
+      "Go Long on Futures",
+      "Go Short on Futures",
+      "Buy Call Options",
+      "Sell Put Options"
+    ],
+    "answer": "Go Short on Futures",
+    "hint": "Bearish (मंदी का) नजरिया।",
+    "explanation": "एक Short Futures position गिरती कीमतों से profit कमाती है।"
+  },
+  {
+    "id": 1312,
+    "question": "What is a 'Calendar Spread' strategy?",
+    "options": [
+      "Buying a near-month future and selling a far-month future (or vice-versa)",
+      "Buying a stock and selling its index future",
+      "Buying two different stocks",
+      "Selling a call and buying a put"
+    ],
+    "answer": "Buying a near-month future and selling a far-month future (or vice-versa)",
+    "hint": "समय (time) के साथ Spread करना।",
+    "explanation": "एक Calendar Spread में समान underlying लेकिन अलग-अलग expiry dates वाले दो futures contracts में offsetting positions लेना शामिल है।"
+  },
+  {
+    "id": 1313,
+    "question": "In a 'Bull Calendar Spread', a trader typically:",
+    "options": [
+      "Buys Near Month, Sells Far Month",
+      "Sells Near Month, Buys Far Month",
+      "Buys Both",
+      "Sells Both"
+    ],
+    "answer": "Buys Near Month, Sells Far Month",
+    "hint": "Near month के तेज़ी से बढ़ने की उम्मीद है।",
+    "explanation": "एक Bull Spread में, trader को near-month contract के far-month contract से बेहतर प्रदर्शन (outperform) करने की उम्मीद होती है, इसलिए वे near खरीदते हैं और far बेचते हैं।"
+  },
+  {
+    "id": 1314,
+    "question": "Which of these is a benefit of Spread Trading?",
+    "options": [
+      "Lower Margin Requirements",
+      "Unlimited Profit Potential",
+      "Zero Risk",
+      "No Transaction Costs"
+    ],
+    "answer": "Lower Margin Requirements",
+    "hint": "कम risk = कम margin।",
+    "explanation": "चूंकि spread positions एक-दूसरे को hedge करती हैं (एक long, एक short), net risk कम होता है, इसलिए exchanges काफी कम margins charge करते हैं।"
+  },
+  {
+    "id": 1315,
+    "question": "If you are 'Long the Basis', you are:",
+    "options": [
+      "Buying Spot and Selling Future",
+      "Selling Spot and Buying Future",
+      "Buying both",
+      "Selling both"
+    ],
+    "answer": "Buying Spot and Selling Future",
+    "hint": "आप asset (Spot) के मालिक हैं और इसे hedge करते हैं।",
+    "explanation": "Long Basis का अर्थ है कि आप asset के मालिक हैं (Long Spot) और आपने Futures बेचे हैं (Short Future)। Basis मज़बूत (strengthen) होने पर आपको लाभ होता है।"
+  },
+  {
+    "id": 1316,
+    "question": "Beta Hedging is primarily used to eliminate which type of risk?",
+    "options": [
+      "Systematic Risk (Market Risk)",
+      "Unsystematic Risk (Stock Specific Risk)",
+      "Credit Risk",
+      "Operational Risk"
+    ],
+    "answer": "Systematic Risk (Market Risk)",
+    "hint": "वह Risk जिसे आप diversify नहीं कर सकते।",
+    "explanation": "Beta market risk को मापता है। Index Futures के साथ Hedging portfolio से Systematic Risk (market movements) को हटा देता है।"
+  },
+  {
+    "id": 1317,
+    "question": "Unsystematic Risk can be reduced by:",
+    "options": [
+      "Diversification",
+      "Hedging with Index Futures",
+      "Buying more of the same stock",
+      "Ignoring it"
+    ],
+    "answer": "Diversification",
+    "hint": "सभी अंडे एक टोकरी में न रखें (Don't put all eggs in one basket)।",
+    "explanation": "Unsystematic risk किसी company के लिए specific होता है। कई stocks का diversified portfolio रखकर इसे समाप्त (eliminated) किया जा सकता है।"
+  },
+  {
+    "id": 1318,
+    "question": "If a stock is not available in the F&O segment, can you hedge it directly using its own futures?",
+    "options": [
+      "No",
+      "Yes",
+      "Only if SEBI permits",
+      "Only in the Commodities market"
+    ],
+    "answer": "No",
+    "hint": "No futures = No direct hedge.",
+    "explanation": "यदि किसी stock का corresponding futures contract नहीं है, तो आप उसे directly hedge नहीं कर सकते। आपको proxy hedge (Cross Hedging) का उपयोग करना पड़ सकता है।"
+  },
+  {
+    "id": 1319,
+    "question": "What is 'Cross Hedging'?",
+    "options": [
+      "Hedging an asset with a derivative on a different but correlated asset",
+      "Hedging across two different exchanges",
+      "Hedging currency with gold",
+      "Hedging without margin"
+    ],
+    "answer": "Hedging an asset with a derivative on a different but correlated asset",
+    "hint": "Substitute (विकल्प) का उपयोग करना।",
+    "explanation": "Cross Hedging में एक अलग asset पर futures contract का उपयोग करना शामिल है (जैसे, bank stocks के portfolio को hedge करने के लिए Nifty Bank का उपयोग करना) क्योंकि direct future अनुपलब्ध या illiquid है।"
+  },
+  {
+    "id": 1320,
+    "question": "The 'Hedge Efficiency' measures:",
+    "options": [
+      "How well the hedging instrument offsets the risk of the underlying",
+      "How much profit was made",
+      "How fast the trade was executed",
+      "The brokerage paid"
+    ],
+    "answer": "How well the hedging instrument offsets the risk of the underlying",
+    "hint": "Correlation squared (R-squared)।",
+    "explanation": "Hedge efficiency (अक्सर R-squared द्वारा मापी जाती है) portfolio में variance के उस percentage को दर्शाती है जो hedge द्वारा समाप्त (eliminated) हो जाती है।"
+  },
+  {
+    "id": 1321,
+    "question": "A 'Perfect Hedge' results in a portfolio beta of:",
+    "options": [
+      "Zero",
+      "One",
+      "Negative One",
+      "Infinity"
+    ],
+    "answer": "Zero",
+    "hint": "Market neutral.",
+    "explanation": "पूरी तरह से hedged (perfectly hedged) portfolio का market movements से कोई correlation नहीं होता है, जिससे प्रभावी रूप से इसका Beta शून्य हो जाता है।"
+  },
+  {
+    "id": 1322,
+    "question": "Arbitrage is possible when the actual Futures price is:",
+    "options": [
+      "Different from the Theoretical Fair Value",
+      "Equal to the Spot Price",
+      "Equal to the Fair Value",
+      "Zero"
+    ],
+    "answer": "Different from the Theoretical Fair Value",
+    "hint": "Mispricing.",
+    "explanation": "Arbitrage opportunities तब उत्पन्न होती हैं जब future के actual market price और cost of carry का उपयोग करके calculate की गई इसकी theoretical fair value के बीच अंतर (divergence) होता है।"
+  },
+  {
+    "id": 1323,
+    "question": "Transaction costs (brokerage, taxes) usually ______ the arbitrage profit.",
+    "options": [
+      "Reduce",
+      "Increase",
+      "Have no effect on",
+      "Multiply"
+    ],
+    "answer": "Reduce",
+    "hint": "Costs profit को खा जाते हैं।",
+    "explanation": "Arbitrage तभी viable है जब price difference सभी transaction costs को cover करने के लिए काफी बड़ा हो और फिर भी profit बचा रहे।"
+  },
+  {
+    "id": 1324,
+    "question": "If you are 'Short' the market, you want the Basis to:",
+    "options": [
+      "Strengthen (Become more positive)",
+      "Weaken (Become more negative)",
+      "Stay constant",
+      "Disappear"
+    ],
+    "answer": "Strengthen (Become more positive)",
+    "hint": "Spot Future से बेहतर प्रदर्शन (outperforms) करता है।",
+    "explanation": "Short hedgers (Long Spot, Short Future) को तब लाभ होता है जब Futures price के मुकाबले Spot price बढ़ता है (Strengthening Basis)।"
+  },
+  {
+    "id": 1325,
+    "question": "What is 'Churning' a portfolio?",
+    "options": [
+      "Excessive trading to generate commissions",
+      "Holding for long term",
+      "Hedging once a year",
+      "Buying only blue chips"
+    ],
+    "answer": "Excessive trading to generate commissions",
+    "hint": "अनैतिक (Unethical) practice।",
+    "explanation": "Churning का अर्थ है एक broker द्वारा मुख्य रूप से commissions उत्पन्न करने के लिए client के account में अत्यधिक trading करना, जो अनैतिक (unethical) है।"
+  },
+  {
+    "id": 1326,
+    "question": "For a speculator, leverage acts as a:",
+    "options": [
+      "Double-edged sword (magnifies both profits and losses)",
+      "Safety net",
+      "Guarantee of profit",
+      "Tax shield"
+    ],
+    "answer": "Double-edged sword (magnifies both profits and losses)",
+    "hint": "High risk, high reward.",
+    "explanation": "Leverage capital पर returns को amplify करता है, जिसका अर्थ है कि छोटे price moves से भारी लाभ या भारी नुकसान हो सकता है।"
+  },
+  {
+    "id": 1327,
+    "question": "What is the primary goal of a 'Hedger'?",
+    "options": [
+      "Risk Reduction",
+      "Profit Maximization",
+      "Speculation",
+      "Arbitrage"
+    ],
+    "answer": "Risk Reduction",
+    "hint": "Insurance.",
+    "explanation": "Hedgers उनके पास मौजूद या खरीदने की योजना वाले asset से जुड़े adverse price movements के risk को कम करने या transfer करने के लिए market में भाग लेते हैं।"
+  },
+  {
+    "id": 1328,
+    "question": "An importer who needs to pay $1 million in 3 months fears the Rupee will depreciate. They should:",
+    "options": [
+      "Buy USDINR Futures",
+      "Sell USDINR Futures",
+      "Buy Nifty Futures",
+      "Sell Nifty Futures"
+    ],
+    "answer": "Buy USDINR Futures",
+    "hint": "Currency के लिए Long Hedge।",
+    "explanation": "Exchange rate lock करने के लिए, importer को USDINR futures (Long) खरीदना चाहिए। यदि dollar बढ़ता है (रुपया गिरता है), तो futures profit spot market में dollar खरीदने की उच्च लागत (higher cost) की भरपाई कर देगा।"
+  },
+  {
+    "id": 1329,
+    "question": "An exporter who will receive $1 million in 3 months fears the Rupee will appreciate. They should:",
+    "options": [
+      "Sell USDINR Futures",
+      "Buy USDINR Futures",
+      "Sell Nifty Futures",
+      "Buy Nifty Futures"
+    ],
+    "answer": "Sell USDINR Futures",
+    "hint": "Currency के लिए Short Hedge।",
+    "explanation": "Exchange rate lock करने के लिए, exporter को USDINR futures बेचना (Short) चाहिए। यदि dollar गिरता है (रुपया बढ़ता है), तो futures profit dollar बेचने से होने वाले कम revenue की भरपाई कर देगा।"
+  },
+  {
+    "id": 1330,
+    "question": "When does a 'Short Squeeze' occur?",
+    "options": [
+      "When short sellers are forced to buy back positions as prices rise",
+      "When buyers panic and sell",
+      "When the market crashes",
+      "When trading is halted"
+    ],
+    "answer": "When short sellers are forced to buy back positions as prices rise",
+    "hint": "Bears को squeeze करना।",
+    "explanation": "एक Short Squeeze तब होता है जब बढ़ती कीमत short sellers को नुकसान सीमित करने के लिए अपने positions को cover (buy back) करने के लिए मजबूर करती है, जो आगे कीमत बढ़ने को बढ़ावा (fuels) देता है।"
+  },
+  {
+    "id": 1331,
+    "question": "If you buy a Nifty Future at 10,000 and the market closes at 9,900, what happens to your margin account?",
+    "options": [
+      "100 points loss is debited",
+      "100 points profit is credited",
+      "Nothing happens until expiry",
+      "You get a bonus"
+    ],
+    "answer": "100 points loss is debited",
+    "hint": "MTM Loss.",
+    "explanation": "Daily MTM settlement का मतलब है कि loss (100 points * Lot Size) तुरंत आपके margin account से debit हो जाता है।"
+  },
+  {
+    "id": 1332,
+    "question": "The 'Convergence' of Spot and Futures prices at expiry ensures:",
+    "options": [
+      "No arbitrage opportunity exists at expiry",
+      "Arbitrage is maximized",
+      "Prices are always zero",
+      "Volatility is zero"
+    ],
+    "answer": "No arbitrage opportunity exists at expiry",
+    "hint": "Law of one price.",
+    "explanation": "Expiry पर, future spot asset बन जाता है। यदि वे converge (एक साथ मिलना) नहीं करते हैं, तो risk-free arbitrage opportunity होगी।"
+  },
+  {
+    "id": 1333,
+    "question": "A strategy that profits from a decrease in the spread between two contracts is:",
+    "options": [
+      "Buying the Spread",
+      "Selling the Spread",
+      "Butterfly Spread",
+      "Condor Spread"
+    ],
+    "answer": "Selling the Spread",
+    "hint": "दांव लगाना कि gap बंद हो जाएगा।",
+    "explanation": "Selling the spread में आमतौर पर यह दांव लगाना शामिल होता है कि दो contracts के बीच price difference (spread) कम (narrow) हो जाएगा।"
+  },
+  {
+    "id": 1334,
+    "question": "Which of these is a key assumption in the Cost of Carry model?",
+    "options": [
+      "Markets are efficient and friction-free",
+      "Markets are always irrational",
+      "Taxes are 50%",
+      "Interest rates are zero"
+    ],
+    "answer": "Markets are efficient and friction-free",
+    "hint": "Ideal world.",
+    "explanation": "यह model मानता है कि कोई transaction costs नहीं हैं, short selling पर कोई प्रतिबंध नहीं है, और borrowing/lending rates समान हैं (efficient markets)।"
+  },
+  {
+    "id": 1335,
+    "question": "Can you hedge a single stock using Index Futures?",
+    "options": [
+      "Yes, but it will have Basis Risk (Correlation risk)",
+      "No, it is impossible",
+      "Yes, it is a perfect hedge",
+      "Only if the stock is in the index"
+    ],
+    "answer": "Yes, but it will have Basis Risk (Correlation risk)",
+    "hint": "Stock Index से अलग तरह से चलता है।",
+    "explanation": "आप Index futures का उपयोग कर सकते हैं, लेकिन चूंकि एक single stock index के साथ पूरी तरह से (perfectly) नहीं चलता है, इसलिए इसमें महत्वपूर्ण correlation/basis risk होता है।"
+  },
+  {
+    "id": 1336,
+    "question": "Rolling over a short futures position to the next month involves:",
+    "options": [
+      "Buying the near month and Selling the far month",
+      "Selling the near month and Buying the far month",
+      "Buying both",
+      "Selling both"
+    ],
+    "answer": "Buying the near month and Selling the far month",
+    "hint": "पुराना short बंद करें (Buy), नया short खोलें (Sell)।",
+    "explanation": "Short position को roll करने के लिए: आपको वर्तमान short को Close (Near Month खरीदें) करना होगा और एक नया short Open (Far Month बेचें) करना होगा।"
+  },
+  {
+    "id": 1337,
+    "question": "If implied volatility increases, it generally affects:",
+    "options": [
+      "Options prices significantly, Futures prices minimally",
+      "Futures prices significantly",
+      "Neither",
+      "Bond prices"
+    ],
+    "answer": "Options prices significantly, Futures prices minimally",
+    "hint": "Vega एक Option Greek है।",
+    "explanation": "Volatility Option pricing (Vega) का एक प्रमुख घटक है। Futures prices Spot और Cost of Carry से संचालित (driven) होते हैं, न कि सीधे Volatility से (हालांकि margins बढ़ सकते हैं)।"
+  },
+  {
+    "id": 1338,
+    "question": "A 'Protective Put' is strictly an Option strategy, but it is similar to:",
+    "options": [
+      "Long Asset + Long Put",
+      "Long Asset + Short Call",
+      "Short Asset + Long Put",
+      "Short Asset + Short Call"
+    ],
+    "answer": "Long Asset + Long Put",
+    "hint": "Asset पर Insurance।",
+    "explanation": "Protective Put में stock का मालिक होना और put option खरीदना शामिल है। यह एक hedge के समान downside risk को सीमित (limits) करता है।"
+  },
+  {
+    "id": 1339,
+    "question": "Synthetic Long Futures can be created using options by:",
+    "options": [
+      "Buying a Call and Selling a Put (Same Strike/Expiry)",
+      "Buying a Call and Buying a Put",
+      "Selling a Call and Selling a Put",
+      "Buying a Put and Selling a Call"
+    ],
+    "answer": "Buying a Call and Selling a Put (Same Strike/Expiry)",
+    "hint": "Put-Call Parity.",
+    "explanation": "Put-Call Parity के अनुसार: Long Call + Short Put = Long Future (Synthetic Long)।"
+  },
+  {
+    "id": 1340,
+    "question": "Synthetic Short Futures can be created using options by:",
+    "options": [
+      "Buying a Put and Selling a Call (Same Strike/Expiry)",
+      "Buying a Call and Buying a Put",
+      "Selling a Put",
+      "Buying a Call"
+    ],
+    "answer": "Buying a Put and Selling a Call (Same Strike/Expiry)",
+    "hint": "Put-Call Parity.",
+    "explanation": "Put-Call Parity के अनुसार: Long Put + Short Call = Short Future (Synthetic Short)।"
+  },
+  {
+    "id": 1341,
+    "question": "What is the 'Cost of Carry' if the futures price is 105 and spot is 100?",
+    "options": [
+      "5",
+      "-5",
+      "100",
+      "0"
+    ],
+    "answer": "5",
+    "hint": "Future - Spot.",
+    "explanation": "Cost of Carry = Futures Price - Spot Price = 105 - 100 = 5."
+  },
+  {
+    "id": 1342,
+    "question": "Arbitrage keeps the market:",
+    "options": [
+      "Efficient",
+      "Inefficient",
+      "Volatile",
+      "Closed"
+    ],
+    "answer": "Efficient",
+    "hint": "Price errors को हटाता है।",
+    "explanation": "Arbitrageurs price discrepancies का फायदा उठाते हैं, जो prices को उनके fair value पर वापस लाता है, जिससे market efficiency सुनिश्चित होती है।"
+  },
+  {
+    "id": 1343,
+    "question": "Which strategy has the lowest risk?",
+    "options": [
+      "Cash and Carry Arbitrage",
+      "Naked Speculation",
+      "Writing Naked Calls",
+      "Writing Naked Puts"
+    ],
+    "answer": "Cash and Carry Arbitrage",
+    "hint": "Risk-free profit.",
+    "explanation": "Arbitrage theoretically risk-free profit (spread lock करना) है, जबकि speculation और naked option writing में महत्वपूर्ण (significant) risk होता है।"
+  },
+  {
+    "id": 1344,
+    "question": "If you are a mutual fund manager with a cash inflow of ₹10 Crores but haven't decided which stocks to buy yet, you can:",
+    "options": [
+      "Buy Index Futures (Long Hedge)",
+      "Sell Index Futures",
+      "Keep cash in savings",
+      "Buy Gold"
+    ],
+    "answer": "Buy Index Futures (Long Hedge)",
+    "hint": "Anticipatory Hedge.",
+    "explanation": "Stocks चुनते समय market rally से चूकने से बचने के लिए, manager market exposure तुरंत प्राप्त करने के लिए Index Futures (Anticipatory Long Hedge) खरीद सकता है।"
+  },
+  {
+    "id": 1345,
+    "question": "A 'Contrarian' trader:",
+    "options": [
+      "Goes against the prevailing market trend",
+      "Follows the trend",
+      "Never trades",
+      "Only does arbitrage"
+    ],
+    "answer": "Goes against the prevailing market trend",
+    "hint": "विपरीत (Contrary)।",
+    "explanation": "Contrarians तब खरीदते हैं जब अन्य लोग बेच रहे होते हैं (डर/fear) और तब बेचते हैं जब अन्य लोग खरीद रहे होते हैं (लालच/greed)।"
+  },
+  {
+    "id": 1346,
+    "question": "Scalpers are traders who:",
+    "options": [
+      "Hold positions for a few seconds or minutes for small profits",
+      "Hold for years",
+      "Only hedge",
+      "Trade only once a month"
+    ],
+    "answer": "Hold positions for a few seconds or minutes for small profits",
+    "hint": "High frequency, छोटे gains।",
+    "explanation": "Scalping एक trading style है जो छोटे price changes पर profit लेने में माहिर है, अक्सर एक दिन में सैकड़ों trades execute करते हैं।"
+  },
+  {
+    "id": 1347,
+    "question": "Swing Traders generally hold positions for:",
+    "options": [
+      "Several days to weeks",
+      "Seconds",
+      "Years",
+      "Decades"
+    ],
+    "answer": "Several days to weeks",
+    "hint": "एक 'swing' को capture करना।",
+    "explanation": "Swing trading में एक expected price move को capture करने के लिए कुछ दिनों से लेकर हफ्तों तक position hold करना शामिल है।"
+  },
+  {
+    "id": 1348,
+    "question": "Stop-loss orders are essential for speculators to:",
+    "options": [
+      "Protect capital from large losses",
+      "Guarantee profit",
+      "Increase leverage",
+      "Reduce brokerage"
+    ],
+    "answer": "Protect capital from large losses",
+    "hint": "Risk management.",
+    "explanation": "यदि price trader के खिलाफ जाता है तो एक stop-loss trade से automatically exit हो जाता है, जिससे एक manageable loss एक disaster (आपदा) बनने से बच जाता है।"
+  },
+  {
+    "id": 1349,
+    "question": "Which of these is NOT a spread strategy?",
+    "options": [
+      "Long Nifty Future",
+      "Calendar Spread",
+      "Inter-Commodity Spread",
+      "Butterfly Spread"
+    ],
+    "answer": "Long Nifty Future",
+    "hint": "Single directional trade.",
+    "explanation": "Long Nifty Future एक simple directional strategy (Speculation) है, spread नहीं। Spreads में कम से कम दो legs (Buy और Sell) शामिल होते हैं।"
+  },
+  {
+    "id": 1350,
+    "question": "The 'Open Interest' limit for a broker (Trading Member) is usually:",
+    "options": [
+      "Higher than for an individual client",
+      "Lower than for an individual client",
+      "Same as a client",
+      "Zero"
+    ],
+    "answer": "Higher than for an individual client",
+    "hint": "Brokers कई clients को aggregate करते हैं।",
+    "explanation": "Trading Members की position limits (जैसे, total OI का 15% या ₹500 Cr) individual clients (जैसे, total OI का 5%) की तुलना में अधिक होती हैं।"
+  }
+]

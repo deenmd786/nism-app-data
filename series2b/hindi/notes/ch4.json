@@ -1,0 +1,77 @@
+{
+  "course": "NISM Series II-B: Registrars to an Issue and Share Transfer Agents - Mutual Fund",
+  "unit_number": 4,
+  "unit_name": "Other Securities की विशेषताएं",
+  "weightage": "20% (Unit 1 से 5 के लिए संयुक्त Weightage)",
+  "overview": "पिछले Chapters में, हमने शुद्ध Equity और शुद्ध Debt को देखा। लेकिन Financial Market में कुछ Hybrid Securities हैं जो दोनों की विशेषताओं को जोड़ती हैं, या International Investors के लिए विशेष उद्देश्यों की पूर्ति करती हैं। यह Chapter इन 'Other Securities' को कवर करता है, जिनमें मुख्य रूप से Warrants, Convertible Debentures, और Depository Receipts शामिल हैं। एक RTA के रूप में, जब कोई Bond, Share में Convert होता है, या जब किसी Warrant का Exercise किया जाता है, तो आप अक्सर Paperwork को Process करेंगे। परीक्षा पास करने और Real-World RTA Operations के लिए इन Unique Instruments को समझना महत्वपूर्ण है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Convertible Debentures",
+      "basic_meaning": "एक Convertible Debenture अपना जीवन एक Regular Loan के रूप में शुरू करता है (जो आपको Fixed Interest देता है), लेकिन कुछ वर्षों के बाद, यह जादुई रूप से Equity Shares में बदल जाता है (जिससे आप एक Part-Owner बन जाते हैं)।",
+      "detailed_explanation": "जब कोई Company पैसा उधार लेना चाहती है, लेकिन जानती है कि Investors को Share Market पसंद है, तो वे 'Convertible Debentures' Issue करते हैं। पहले कुछ वर्षों के लिए, यह बिल्कुल एक Bond की तरह काम करता है: आपको एक Fixed Interest Rate (Coupon) मिलती है। लेकिन Pre-decided Date पर, Company आपका Principal Amount वापस नहीं करती है। इसके बजाय, वे आपको उस पैसे के बराबर Company के Equity Shares देते हैं।\nइसके दो मुख्य प्रकार हैं:\n1. Fully Convertible Debentures (FCD): पूरी Debt Amount, Shares में बदल जाती है। आप Lender नहीं रहते और पूरी तरह से Owner बन जाते हैं।\n2. Partly Convertible Debentures (PCD): Debt का केवल एक हिस्सा (मान लीजिए 50%) Shares में Convert होता है। शेष 50% Maturity तक Regular Debt के रूप में रहता है। ",
+      "why_this_is_important": "यह एक RTA के लिए एक बहुत बड़ा Operational Task है। जब Conversion Date आती है, तो RTA को यह सटीक रूप से Calculate करना चाहिए कि प्रत्येक Debenture Holder को कितने Shares Allot करने हैं और Shareholder Register को Update करना है।",
+      "formula": "Conversion Ratio = Convertible Bond का Par Value / Conversion Price",
+      "formula_explanation": "यह आपको ठीक-ठीक बताता है कि आपको अपने एक Bond के लिए कितने Shares मिलेंगे। Bond के Face Value को Share के Pre-agreed Price से Divide करें।",
+      "step_by_step_calculation_example": "Step 1: आपके पास ₹1,000 के Face Value के साथ Mahindra & Mahindra का एक FCD है。\nStep 2: Conversion Agreement कहता है कि Conversion Price ₹200 प्रति Share होगा。\nStep 3: Conversion Ratio = 1000 / 200 = 5।\nStep 4: Conversion Date पर, आपका Bond नष्ट हो जाता है, और RTA आपके Demat Account में Mahindra & Mahindra के 5 Shares Credit कर देता है।",
+      "real_life_indian_example": "कई भारतीय Startups और बढ़ती Companies विदेशी Investors से Funding प्राप्त करने के लिए अनिवार्य रूप से Compulsorily Convertible Debentures (CCDs) का उपयोग करती हैं। यह शुरू में Debt के रूप में कार्य करता है ताकि Founders तुरंत Ownership न खोएं, लेकिन अंततः Equity में Convert हो जाता है।",
+      "exam_traps": [
+        "Trap: क्या एक Convertible Debenture, Normal Debenture के समान Interest देता है? नहीं (NO)। क्योंकि Investor को बाद में Shareholder बनने का 'Sweetener' (अतिरिक्त लाभ) मिलता है, इसलिए Companies, Normal Debentures की तुलना में Convertible Debentures पर कम (LOWER) Interest Rate प्रदान करती हैं।",
+        "याद रखें कि FCD में Principal Amount के 'Repayment' का कोई Risk नहीं होता है क्योंकि Company आपको Cash में नहीं, बल्कि Shares में Payment करती है।"
+      ],
+      "memory_trick": "Convertible = Caterpillar (Debt) का Butterfly (Equity) में बदलना।"
+    },
+    {
+      "concept": "2. Warrants",
+      "basic_meaning": "Warrant किसी Company द्वारा Issue किया गया एक विशेष Coupon है जो आपको भविष्य में एक निश्चित, Discounted Price पर उनके Shares खरीदने का Right देता है (लेकिन Obligation नहीं)।",
+      "detailed_explanation": "कभी-कभी Companies, Normal Bonds Issue करती हैं लेकिन उन्हें अत्यधिक आकर्षक बनाना चाहती हैं। इसलिए, वे Bond के साथ एक 'Warrant' जोड़ देती हैं। एक Warrant मूल रूप से एक Contract है जो कहता है: 'हे, यदि आपके पास यह है, तो आप अगले 3 वर्षों में कभी भी ₹500 में हमारी Company का 1 Share खरीद सकते हैं।'\nयदि Share का वास्तविक Stock Market Price ₹800 तक बढ़ जाता है, तो आप बहुत खुश होते हैं! आप अपने Warrant का Exercise करके Company से केवल ₹500 में Share खरीदते हैं, जिससे Instant Profit होता है।\nयदि Stock Market Price गिरकर ₹300 हो जाता है, तो आप बस Warrant को कचरे में फेंक देते हैं। आपके पास खरीदने का *Right* है, लेकिन *Obligation* नहीं। ",
+      "why_this_is_important": "RTAs, Warrants के 'Exercise' को संभालते हैं। जब कोई Investor अपने Warrant का उपयोग करने का निर्णय लेता है, तो वे RTA को पैसा भेजते हैं, और RTA उन्हें नए Shares Issue करता है।",
+      "formula": "Warrant Intrinsic Value = Stock का Current Market Price - Warrant Exercise Price",
+      "formula_explanation": "यह आपके प्रति Share Guaranteed Profit की Calculation करता है यदि आप आज Warrant का Exercise करते हैं।",
+      "step_by_step_calculation_example": "Step 1: आपके पास Reliance Industries का एक Warrant है जिसका 'Exercise Price' ₹2,000 है (2 साल के लिए Valid)।\nStep 2: 1 वर्ष के बाद, Reliance के Shares Market में ₹2,500 पर Trade कर रहे हैं。\nStep 3: Intrinsic Value = 2500 - 2000 = ₹500।\nStep 4: आप Warrant को Exercise करते हैं, Company को ₹2,000 का Payment करते हैं, Share प्राप्त करते हैं, और इसे तुरंत Market में ₹2,500 में बेच सकते हैं।",
+      "real_life_indian_example": "HDFC Ltd ने Investors को आकर्षित करने के लिए अक्सर अपने Bonds से जुड़े 'Warrants' का इस्तेमाल किया। Investors को Bond का Guaranteed Fixed Interest और साथ ही Warrant का Lottery-Ticket जैसा Upside मिलना पसंद था।",
+      "exam_traps": [
+        "एक Warrant कोई Obligation नहीं है। यदि Market Price, Warrant Price से कम है, तो Investor बस इसे Expire होने देता है। उन्हें खरीदने के लिए Force नहीं किया जाता है।",
+        "Warrants के परिणामस्वरूप नए Shares बनाए जाते हैं (Dilution)। जब आप किसी Warrant का Exercise करते हैं, तो पैसा Company के पास जाता है, किसी अन्य Investor के पास नहीं।"
+      ],
+      "memory_trick": "Warrant = Warranty Card जो आपके भविष्य के Purchase Price की Guarantee देता है।"
+    },
+    {
+      "concept": "3. Depository Receipts (ADRs, GDRs, और IDRs)",
+      "basic_meaning": "Depository Receipts (DRs) एक चतुर चाल है जो एक देश के Investors को दूसरे देश में स्थित Company के Shares आसानी से खरीदने की अनुमति देती है, बिना अलग-अलग Currencies या विदेशी Share Market के नियमों की चिंता किए।",
+      "detailed_explanation": "मान लीजिए कि एक American, Infosys (एक भारतीय Company) के Shares खरीदना चाहता है। भारतीय Bank Account खोलना और Rupees में Transaction करना बहुत बड़ा सिरदर्द है।\nइसलिए, Infosys एक Shortcut बनाती है:\n1. Infosys भारत में एक Global Bank (Custodian) के पास अपने कई भारतीय Shares Deposit करती है।\n2. America में उस Bank की Branch इन Shares के बदले 'Receipts' Issue करती है।\n3. इन Receipts का New York Stock Exchange (NYSE) पर US Dollars में Trade किया जाता है।\nयदि America में Trade किया जाता है, तो उन्हें American Depository Receipts (ADRs) कहा जाता है। यदि Europe या Globally Trade किया जाता है, तो वे Global Depository Receipts (GDRs) हैं।\nइसके विपरीत, यदि कोई विदेशी Company (जैसे Apple) चाहती है कि भारतीय उसके Shares Bombay Stock Exchange (BSE) पर Rupees में खरीदें, तो वह Indian Depository Receipts (IDRs) Issue करती है। ",
+      "why_this_is_important": "भारत में Mutual Funds अक्सर ADRs और GDRs के माध्यम से विदेशी Companies में Invest करते हैं। RTAs को इन जटिल Holdings को Track करना होता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Standard Chartered Bank (एक British Bank) ने भारत में Indian Depository Receipts (IDRs) Issue कीं। इसने सामान्य भारतीय Investors को नियमित Indian Rupees का उपयोग करके NSE/BSE पर Standard Chartered Bank का एक हिस्सा खरीदने की अनुमति दी।",
+      "exam_traps": [
+        "ADRs का Trade सख्ती से USA में किया जाता है। GDRs का Trade USA के बाहर कई देशों में (आमतौर पर Europe में) किया जाता है।",
+        "Underlying Shares को Home Country में एक 'Domestic Custodian Bank' द्वारा सुरक्षित रखा जाता है। Receipts एक 'Overseas Depository Bank' द्वारा Issue की जाती हैं। दोनों Roles में Confuse न हों।"
+      ],
+      "memory_trick": "A = America (ADR)। G = Global/Europe (GDR)। I = India (IDR)। वे Foreign Shares के लिए केवल Translation Devices हैं।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Convertible Debentures vs. Regular Debentures",
+      "clear_explanation": "Regular Debentures हमेशा के लिए Loan बने रहते हैं और अंत में बस आपका Cash वापस कर देते हैं; वे Higher Interest Rate देते हैं। Convertible Debentures भविष्य की तारीख में Company के Shares में बदल जाते हैं, जो आपको Ownership देते हैं; इस Awesome Benefit के कारण, वे थोड़ी Lower Interest Rate का भुगतान करते हैं।"
+    },
+    {
+      "difference_between": "ADR vs. GDR vs. IDR",
+      "clear_explanation": "यह सब Geography के बारे में है। एक भारतीय Company जो Americans से Dollars में पैसा जुटाती है, ADRs का उपयोग करती है। एक भारतीय Company जो Europeans से Euros/Pounds में पैसा जुटाती है, GDRs का उपयोग करती है। एक विदेशी Company जो भारतीयों से Rupees में पैसा जुटाती है, IDRs का उपयोग करती है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "एक FCD के Conversion के दौरान क्या होता है, इसकी पहचान करना (Debt गायब हो जाता है, नई Equity का जन्म होता है)।",
+    "यह जानना कि Convertible Bond पर Interest Rate आमतौर पर Non-Convertible Bond की तुलना में कम होती है।",
+    "यह समझना कि Warrant Share खरीदने का 'Right देता है लेकिन Obligation नहीं'।",
+    "Depository Receipt के प्रकार का उसके देश से मिलान करना (America के लिए ADR, India के लिए IDR)।"
+  ],
+  "quick_revision_summary": [
+    "Convertible Debentures, Lenders को Pre-decided Date और Price पर Owner (Shareholder) बनने की अनुमति देते हैं।",
+    "Warrants Sweeteners हैं जो Equity Shares के लिए भविष्य के Purchase Price को Lock कर देते हैं।",
+    "Warrants आपको खरीदने के लिए Force नहीं करते हैं; आप उनका Exercise केवल तभी करते हैं जब Market Price, Exercise Price से अधिक हो।",
+    "Depository Receipts (DRs) बिना Currency Hassles के Shares के Cross-Border Trading की अनुमति देती हैं।",
+    "ADR = America में Trade किया जाता है। GDR = Globally Trade किया जाता है। IDR = भारत में Trade की जाने वाली Foreign Company।"
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "course": "NISM Series IV: Interest Rate Derivatives Certification Examination",
+  "unit_number": 2,
+  "unit_name": "Interest Rate Derivatives",
+  "weightage": "5 Marks",
+  "overview": "Unit 1 में, हमने 'Underlying' (Interest Rates और Bonds) के बारे में सीखा। Unit 2 में, हम स्वयं 'Derivative' के बारे में सीखेंगे। यह chapter परिभाषित करता है कि Interest Rate Derivative (IRD) क्या है और इसके विभिन्न प्रकारों का परिचय देता है: Forwards, Futures, Options, और Swaps। यह यह भी बताता है कि वे कहाँ trade किए जाते हैं (OTC vs. Exchange)। यह एक conceptual chapter है जो course के बाकी हिस्सों के लिए शब्दावली (vocabulary) को परिभाषित करता है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Interest Rate Derivative (IRD) क्या है?",
+      "basic_meaning": "यह एक financial contract है जिसकी value किसी interest rate के movement पर निर्भर करती है।",
+      "detailed_explanation": "जिस तरह 'Curd' (दही) अपनी value 'Milk' से प्राप्त करता है, उसी तरह एक 'Derivative' अपनी value एक 'Underlying Asset' से प्राप्त करता है। \nInterest Rate Derivatives के लिए: \n- Underlying कोई Interest Rate (जैसे Repo Rate, MIBOR) या कोई Interest-bearing asset (जैसे Government Bond) होता है। \n- यदि interest rate UP जाता है, तो derivative की value उसी के अनुसार बदलती है। \n- इनका उपयोग interest rates के बदलने के risk से बचाव (hedge) के लिए किया जाता है।",
+      "why_this_is_important": "Banks और companies के पास बड़े loans होते हैं। अगर rates बढ़ते हैं, तो उनकी cost बढ़ जाती है। वे अपनी costs को lock करने के लिए IRDs का उपयोग करते हैं।",
+      "formula": "Value of Derivative = f(Underlying Interest Rate)",
+      "formula_explanation": "Price underlying rate का एक function (f) है।",
+      "step_by_step_calculation_example": "Not Applicable for definition.",
+      "real_life_indian_example": "एक housing finance company (जैसे HDFC) को डर है कि RBI rates बढ़ाएगा, जिससे उनकी borrowing महंगी हो जाएगी। वे अपने मौजूदा कम interest rate को lock करने के लिए एक IRD खरीदते हैं।",
+      "exam_traps": [
+        "यह सोचना कि derivative स्वयं asset है। नहीं, यह asset पर एक BET है।",
+        "IRDs को Equity Derivatives (Nifty Futures) के साथ confuse करना। यहाँ underlying RATES हैं, stocks नहीं।"
+      ],
+      "memory_trick": "Derivative = Derived Value. IRD = Derived from Interest Rates."
+    },
+    {
+      "concept": "2. OTC vs. Exchange Traded Derivatives",
+      "basic_meaning": "आप कहाँ trade करते हैं? एक private दुकान (OTC) में या एक public supermarket (Exchange) में?",
+      "detailed_explanation": "1. OTC (Over-The-Counter): \n- दो parties के बीच Private contract (जैसे, Bank A और Bank B)। \n- Customizable (आप कोई भी date, कोई भी amount set कर सकते हैं)। \n- High Counterparty Risk (दूसरा व्यक्ति भाग सकता है/default कर सकता है)। \n- Examples: FRAs, Swaps। \n\n2. Exchange Traded (ETD): \n- Stock exchange (NSE/BSE) पर trade किया जाता है। \n- Standardized (Fixed dates, fixed amounts)। \n- No Counterparty Risk (Clearing House trade की guarantee देता है)। \n- Examples: Interest Rate Futures (IRF)।",
+      "why_this_is_important": "Exam में अक्सर पूछा जाता है कि कौन सा product किस market का है। आपको यह अंतर पता होना चाहिए।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "अगर SBI एक generic 10-Year Bond Future trade करना चाहता है, तो वे NSE (Exchange) पर जाते हैं। अगर उन्हें किसी अजीब date के लिए एक specific tailored hedge चाहिए, तो वे सीधे किसी दूसरे bank को call करते हैं (OTC)।",
+      "exam_traps": [
+        "यह सोचना कि Swaps Exchange Traded हैं। भारत में, Swaps (OIS) ज्यादातर OTC होते हैं।",
+        "यह सोचना कि Futures customizable हैं। Futures rigid होते हैं; Forwards/OTC flexible होते हैं।"
+      ],
+      "memory_trick": "OTC = Off The Cuff (Custom, Private). Exchange = Every Thing Standard."
+    },
+    {
+      "concept": "3. Forward Rate Agreement (FRA)",
+      "basic_meaning": "FUTURE loan के लिए interest rate को lock करने का एक contract।",
+      "detailed_explanation": "FRA एक OTC contract है। \n- Buyer: बढ़ती rates से खुद को protect करना चाहता है (fixed पर borrow करता है)। \n- Seller: गिरती rates से खुद को protect करना चाहता है (fixed पर lend करता है)। \n- Settlement: कोई actual loan नहीं होता है। वे केवल interest rates में difference pay करते हैं।",
+      "why_this_is_important": "यह interest rate hedging का सबसे सरल रूप है।",
+      "formula": "Payoff = (Reference Rate - Fixed Rate) * Notional * Time",
+      "formula_explanation": "अगर Market Rate > Fixed Rate है, तो Buyer जीतता है (उसे payment मिलती है)। अगर Market Rate < Fixed Rate है, तो Seller जीतता है।",
+      "step_by_step_calculation_example": "Example: आप 6% पर एक FRA खरीदते हैं। \nScenario: Settlement day पर, market rate 8% है। \nCalculation: Seller आपको difference pay करता है (8% - 6% = 2%)। \nWhy? आपको market में 8% pay करना पड़ता, लेकिन FRA आपको 2% pay करता है, इसलिए आपकी net cost प्रभावी रूप से 6% है।",
+      "real_life_indian_example": "एक corporate treasurer जानता है कि उसे 3 महीने में 100 Cr रुपये borrow करने हैं। उसे डर है कि rates 7% से 8% तक बढ़ जाएंगे। वह अपनी cost lock करने के लिए 7.1% पर '3x6 FRA' खरीदता है।",
+      "exam_traps": [
+        "यह सोचना कि Principal amount exchange किया जाता है। FRAs में, केवल INTEREST DIFFERENCE exchange किया जाता है।",
+        "'3x6 FRA' को लेकर confuse होना। इसका मतलब है: 3 महीने में शुरू होता है, 6 महीने में समाप्त होता है (इसलिए यह वास्तव में 3 महीने का loan है)।"
+      ],
+      "memory_trick": "FRA = Fix Rate Agreement."
+    },
+    {
+      "concept": "4. Interest Rate Futures (IRF)",
+      "basic_meaning": "Forwards के Standardized versions जो exchange पर trade होते हैं।",
+      "detailed_explanation": "IRFs आज तय की गई price पर specified future date को किसी debt instrument (जैसे Government Bond) को खरीदने या बेचने के contracts हैं। \n- NSE/BSE पर trade होते हैं। \n- Cash Settled या Physically Settled (contract पर निर्भर करता है)। \n- Daily Mark-to-Market (Profits/Losses daily adjust होते हैं)।",
+      "why_this_is_important": "यह इस certification में cover किया गया primary product है।",
+      "formula": "Future Price ≈ Spot Price + Cost of Carry",
+      "formula_explanation": "Cost of Carry = Bond को hold करने की Interest cost minus कमाया गया Coupon।",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "NSE 'NBF II' (91-Day T-Bill Futures) और 10-Year G-Sec Futures offer करता है। Traders इन्हें तब खरीदते हैं जब उन्हें लगता है कि bond prices बढ़ेंगी (यानी rates नीचे जाएंगी)।",
+      "exam_traps": [
+        "यह सोचना कि आपको expiry तक future hold करना ही होगा। नहीं, आप इसे expiry से पहले कभी भी बेच (square-off कर) सकते हैं।",
+        "यह भूल जाना कि IRFs में margins (Initial Margin + MTM Margin) होते हैं।"
+      ],
+      "memory_trick": "Future = Standardized Forward."
+    },
+    {
+      "concept": "5. Interest Rate Options (IRO)",
+      "basic_meaning": "ख़राब rate moves के खिलाफ Insurance, लेकिन आप अच्छे rate moves का आनंद ले सकते हैं।",
+      "detailed_explanation": "एक Option खरीदने/बेचने का Right (अधिकार) देता है, लेकिन obligation (बाध्यता) नहीं। \n- Call Option: Fixed rate pay करने का Right (अगर rates बढ़ते हैं तो borrower को protect करता है)। \n- Put Option: Fixed rate receive करने का Right (अगर rates गिरते हैं तो lender को protect करता है)। \n- Premium: वह cost जो आप इस 'insurance' को खरीदने के लिए pay करते हैं।",
+      "why_this_is_important": "Options में loss limited होता है (premium paid) लेकिन profit potential unlimited होता है।",
+      "formula": "Payoff = Max(0, Market Rate - Strike Rate) - Premium",
+      "formula_explanation": "आप तभी exercise करते हैं जब इससे आपको फायदा होता है। अन्यथा, आपका loss केवल premium तक सीमित रहता है।",
+      "step_by_step_calculation_example": "आप 6% strike पर एक Call Option (Cap) खरीदते हैं। Premium paid = 0.5%। \nScenario A: Market Rate 9% हो जाता है। आप option exercise करते हैं। आप प्रभावी रूप से 6% + 0.5% premium = 6.5% pay करते हैं (2.5% बचाया)। \nScenario B: Market Rate 4% तक गिर जाता है। आप option को ignore करते हैं। आप market से 4% + 0.5% premium = 4.5% पर borrow करते हैं।",
+      "real_life_indian_example": "Interest Rate Caps और Floors बैंकों द्वारा इस्तेमाल किए जाने वाले common option products हैं।",
+      "exam_traps": [
+        "यह सोचना कि buyer की obligation है। केवल SELLER की obligation होती है। Buyer के पास CHOICE होती है।",
+        "Interest rate के संदर्भ में Call और Put को confuse करना। Call on Rate = Borrower protection."
+      ],
+      "memory_trick": "Option = Opportunity (Choice)."
+    },
+    {
+      "concept": "6. Interest Rate Swaps (IRS)",
+      "basic_meaning": "Interest payments को exchange करना: एक Fixed pay करता है, दूसरा Floating pay करता है।",
+      "detailed_explanation": "दो parties एक notional principal पर interest cash flows को swap करने के लिए सहमत होती हैं। \n- Party A (Fixed Payer): 7% fixed pay करता है। Floating (MIBOR) receive करता है। \n- Party B (Floating Payer): Floating (MIBOR) pay करता है। 7% fixed receive करता है। \n- इसका उपयोग liability को Fixed से Floating या इसके विपरीत transform करने के लिए किया जाता है।",
+      "why_this_is_important": "IRS दुनिया का सबसे बड़ा derivative market है।",
+      "formula": "Net Payment = (Fixed Rate - Floating Rate) * Principal",
+      "formula_explanation": "केवल net difference pay किया जाता है।",
+      "step_by_step_calculation_example": "Company A के पास एक floating loan है लेकिन वह fixed certainty चाहता है। यह Pay Fixed / Receive Floating के swap में enter करता है। \nResult: Swap से 'Receive Floating' उनके original floating loan payment को cancel कर देता है। वे केवल Fixed Swap rate pay करते रह जाते हैं।",
+      "real_life_indian_example": "MIBOR पर आधारित OIS (Overnight Index Swap) भारत में सबसे popular swap है।",
+      "exam_traps": [
+        "यह सोचना कि Principal exchange किया जाता है। Interest Rate Swap में NO principal exchange होता है।",
+        "यह सोचना कि Swaps NSE पर trade होते हैं। ये OTC (Inter-bank) होते हैं।"
+      ],
+      "memory_trick": "Swap = Switch. Floating से Fixed में Switching."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Forward vs. Future",
+      "clear_explanation": "FORWARD OTC (Private), Customized, High Risk, और No Margin वाला होता है। || FUTURE Exchange Traded, Standardized, No Counterparty Risk, और Requires Margin वाला होता है।"
+    },
+    {
+      "difference_between": "Future vs. Option",
+      "clear_explanation": "FUTURE एक Obligation (बाध्यता) है (आपको buy/sell करना ही होगा)। Profits/Losses linear होते हैं। || OPTION एक Right (अधिकार) है (आप buy/sell कर सकते हैं)। Profits non-linear होते हैं (Limited Loss, Unlimited Profit)।"
+    },
+    {
+      "difference_between": "Exchange Traded vs. OTC",
+      "clear_explanation": "EXCHANGE में एक central counterparty (Clearing Corp) होती है जो trades की guarantee देती है। || OTC trade करने वाली दो parties के बीच trust (भरोसे) पर निर्भर करता है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "OTC (Swaps, FRA) और Exchange Traded (Futures, Options) के बीच का अंतर।",
+    "Margin कौन pay करता है? (Futures traders)।",
+    "Interest Rate Future में 'Underlying' क्या है? (एक Notional Bond या T-Bill)।",
+    "Counterparty Risk की definition (यह risk कि दूसरी party default कर सकती है)।"
+  ],
+  "quick_revision_summary": [
+    "Derivatives अपनी value एक Underlying (Interest Rate/Bond) से प्राप्त करते हैं।",
+    "OTC = Customized, Counterparty Risk (जैसे, FRA, Swaps)।",
+    "Exchange = Standardized, No Counterparty Risk (जैसे, IRF)।",
+    "FRA = Future interest rate को lock करना।",
+    "Swap = Fixed और Floating payments को exchange करना।",
+    "Option = Right है लेकिन obligation नहीं (Insurance)।",
+    "Hedging = Risk को कम करना। Speculation = Profit के लिए Risk लेना।"
+  ]
+}

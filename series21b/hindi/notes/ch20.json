@@ -1,0 +1,88 @@
+{
+  "course": "NISM Series XXI-B: Portfolio Managers Certification Examination",
+  "unit_number": 20,
+  "unit_name": "Performance Measurement and Evaluation of Portfolio Managers",
+  "weightage": "10 Marks",
+  "overview": "यह unit portfolio management process का Report Card है। यह बताता है कि returns को accurately कैसे calculate करें और, इससे भी ज़रूरी, यह कैसे judge करें कि वे returns manager की skill की वजह से थे या सिर्फ luck की वजह से। NISM exam के लिए, आपको TWRR जैसे return calculation methods को master करना होगा और Sharpe और Treynor जैसे risk-adjusted ratios को समझना होगा। यह chapter बहुत critical है क्योंकि SEBI के पास clients को performance report करने के strict rules हैं।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Time-Weighted Rate of Return (TWRR)",
+      "basic_meaning": "Manager की performance को measure करने का standard तरीका जिसमें client cash flows के effect को हटा दिया जाता है।",
+      "detailed_explanation": "TWRR investment period को sub-periods में तोड़ देता है जब भी पैसा add या remove किया जाता है। यह हर sub-period के लिए अलग से return calculate करता है और फिर उन्हें compound करता है। यह Manager की Skill को मापता है, Investor की Timing को नहीं।",
+      "why_this_is_important": "SEBI PMS performance reporting के लिए TWRR mandate करता है क्योंकि यह managers को fairly compare करता है।",
+      "formula": "TWRR = [(1 + r1) × (1 + r2) × ... × (1 + rn)] − 1",
+      "formula_explanation": "हर sub-period return में 1 जोड़कर multiply करें और final value में से 1 घटा दें।",
+      "step_by_step_calculation_example": "Month 1 return = 10% (0.10)। Month 2 return = 5% (0.05)। TWRR = (1.10 × 1.05) − 1 = 1.155 − 1 = 0.155 या 15.5%।",
+      "exam_traps": [
+        "TWRR को MWRR के साथ confuse करना। MWRR cash flow timing से affect होता है।",
+        "Tax calculations के लिए TWRR का use करना। उसके लिए IRR/XIRR (MWRR) use होता है।"
+      ],
+      "memory_trick": "TWRR = Talent-Weighted (Manager का Talent मापता है)।"
+    },
+    {
+      "concept": "2. Risk-Adjusted Performance: Sharpe Ratio",
+      "basic_meaning": "लिए गए total risk की हर unit पर कमाया गया extra return।",
+      "detailed_explanation": "Sharpe Ratio excess return को total volatility से compare करता है। Higher Sharpe का मतलब है बेहतर risk-adjusted performance।",
+      "why_this_is_important": "यह judge करने में मदद करता है कि returns skill की वजह से हैं या excessive risk लेने की वजह से।",
+      "formula": "Sharpe Ratio = (Rp − Rf) / Standard Deviation",
+      "formula_explanation": "(Portfolio Return − Risk-Free Rate) को Standard Deviation से divide करें।",
+      "step_by_step_calculation_example": "Return = 15%, Rf = 7%, SD = 10%। Sharpe = (15 − 7) / 10 = 0.8।",
+      "exam_traps": [
+        "Sharpe Standard Deviation use करता है, Beta नहीं।",
+        "Risk-Free Rate subtract करना भूल जाना।"
+      ],
+      "memory_trick": "Sharpe = S for Standard Deviation।"
+    },
+    {
+      "concept": "3. Risk-Adjusted Performance: Treynor Ratio",
+      "basic_meaning": "लिए गए market risk की हर unit पर कमाया गया extra return।",
+      "detailed_explanation": "Treynor Ratio Beta का use करके systematic risk के relative return को मापता है। यह मानकर चलता है कि portfolio well-diversified है।",
+      "why_this_is_important": "Diversified portfolios को compare करते समय useful है।",
+      "formula": "Treynor Ratio = (Rp − Rf) / Beta",
+      "formula_explanation": "(Portfolio Return − Risk-Free Rate) को Beta से divide करें।",
+      "step_by_step_calculation_example": "Return = 15%, Rf = 7%, Beta = 1.2। Treynor = (15 − 7) / 1.2 = 6.66।",
+      "exam_traps": [
+        "Treynor Beta use करता है, Sharpe Standard Deviation use करता है।",
+        "Undiversified portfolios के लिए suitable नहीं है।"
+      ],
+      "memory_trick": "Treynor = T for Trend (Market Risk)।"
+    },
+    {
+      "concept": "4. Jensen's Alpha",
+      "basic_meaning": "लिए गए risk के आधार पर expected return के ऊपर कमाया गया extra return।",
+      "detailed_explanation": "Alpha actual return को CAPM expected return के साथ compare करता है। Positive Alpha का मतलब है outperformance (बेहतर प्रदर्शन)।",
+      "why_this_is_important": "Active PMS fees केवल तभी justify की जा सकती हैं जब consistent positive Alpha generate हो।",
+      "formula": "Alpha = Actual Return − [Rf + Beta × (Rm − Rf)]",
+      "formula_explanation": "Actual Return में से CAPM expected return को minus करें।",
+      "step_by_step_calculation_example": "Actual = 18%, Expected (CAPM) = 15%। Alpha = 3%।",
+      "exam_traps": [
+        "High return का मतलब हमेशा positive Alpha नहीं होता।"
+      ],
+      "memory_trick": "Alpha = Added Value।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Sharpe vs Treynor",
+      "clear_explanation": "**Sharpe** Total Risk (Standard Deviation) use करता है। **Treynor** Systematic Risk (Beta) use करता है।"
+    },
+    {
+      "difference_between": "TWRR vs MWRR",
+      "clear_explanation": "**TWRR** Manager की performance को evaluate करता है। **MWRR** Investor के experience को evaluate करता है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "PMS reporting के लिए TWRR का mandatory use।",
+    "Sharpe और Treynor ratios का Calculation।",
+    "Jensen's Alpha का Interpretation।",
+    "Portfolio style के matching Benchmark का selection।"
+  ],
+  "quick_revision_summary": [
+    "Performance measurement Skill और Luck के बीच अंतर बताता है।",
+    "TWRR cash flow distortion को खत्म (eliminate) करता है।",
+    "Sharpe = (Return − Rf) / Standard Deviation।",
+    "Treynor = (Return − Rf) / Beta।",
+    "Alpha = Actual − CAPM Expected।",
+    "Performance reporting transparent और periodic होनी चाहिए।"
+  ]
+}

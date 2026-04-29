@@ -1,0 +1,111 @@
+{
+  "course": "NISM Series V-B: Mutual Fund Foundation",
+  "unit_number": 7,
+  "unit_name": "Performance of Mutual Funds",
+  "weightage": "12%",
+  "overview": "यह chapter आपको सिखाता है कि सबसे आम investor question का answer कैसे दिया जाए: 'मुझे कितना profit मिलेगा?' यह explain करता है कि returns कैसे calculate करें, simple और compound growth के बीच क्या difference है, और हम किसी fund की performance को 'Benchmark' के खिलाफ क्यों compare करते हैं। Exam के लिए, यह एक heavy numerical chapter है। यहाँ अच्छा score करने के लिए आपको NAV, CAGR, और XIRR को समझना ही होगा। यह Unit 2 (NAV concepts) से directly connect होता है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Net Asset Value (NAV) Calculation",
+      "basic_meaning": "NAV एक mutual fund की एक unit का 'Price' है। यह scheme द्वारा hold किए गए सभी assets की market value में से उसकी liabilities को घटाकर represent करता है।",
+      "detailed_explanation": "एक mutual fund को stocks की एक basket की तरह सोचें। इस basket की value हर दिन change होती है क्योंकि stock prices change होते हैं।  \n\n**यह कैसे calculate होता है:**\n1. Fund द्वारा owned सभी stocks/bonds की total market value लें।\n2. कोई भी cash या earned interest (Current Assets) add करें।\n3. Management fees और RTA charges (Liabilities) जैसे expenses subtract करें।\n4. Final amount को investors द्वारा hold की गई total number of units से divide करें।",
+      "why_this_is_important": "NAV investor को उनके investment की current worth बताता है। यह units को buy और sell करने का basis है।",
+      "formula": "$$NAV = \\frac{\\text{Market Value of Investments} + \\text{Current Assets} - \\text{Liabilities}}{\\text{Number of Outstanding Units}}$$",
+      "formula_explanation": "Total wealth को total number of slices से divide करने पर price per slice मिलता है।",
+      "step_by_step_calculation_example": "Scenario: एक fund के पास Rs. 100 Crores के stocks हैं। इसके पास cash में Rs. 2 Crores हैं और expenses में Rs. 1 Crore देना है (owes)। 1 Crore units issue की गई हैं।\n\nStep 1: Net Assets = (100 + 2 - 1) = Rs. 101 Crores.\nStep 2: Number of units = 1 Crore.\nStep 3: NAV = 101 / 1 = Rs. 101 per unit.",
+      "real_life_indian_example": "अगर Nifty 50 2% ऊपर जाता है, तो आमतौर पर किसी Nifty Index Fund का NAV भी उस दिन approximately 2% ऊपर जाएगा।",
+      "exam_traps": [
+        "यह सोचना कि NAV monthly calculate होता है। Answer: यह DAILY calculate और publish होता है।",
+        "Calculation में liabilities को subtract करना भूल जाना।"
+      ],
+      "memory_trick": "NAV = (What we have - What we owe) / Number of slices."
+    },
+    {
+      "concept": "2. Absolute Returns vs. CAGR",
+      "basic_meaning": "Absolute return start से end तक की total growth है। CAGR (Compound Annual Growth Rate) 'average yearly' growth है।",
+      "detailed_explanation": " 1. **Absolute Return:** **1 year से कम** के periods के लिए use होता है। यह सिर्फ simple percentage profit है।\n2. **CAGR:** **1 year से ज्यादा** के periods के लिए use होता है। यह 'Power of Compounding' को account में लेता है। यह आपको बताता है: 'अगर fund हर साल एक steady rate से grow करता, तो वह rate क्या होती?'",
+      "why_this_is_important": "अगर कोई fund 3 years में 30% return देता है, तो यह high लगता है। लेकिन CAGR roughly 9.1% है। CAGR long-term performance को correctly compare करने में मदद करता है।",
+      "formula": "$$\\text{Absolute Return} = \\frac{\\text{Current NAV} - \\text{Original NAV}}{\\text{Original NAV}} \\times 100$$",
+      "formula_explanation": "Simple profit percentage. (Final - Initial) / Initial.",
+      "step_by_step_calculation_example": "Scenario: आपने Rs. 100 invest किए। 6 months बाद, यह Rs. 110 है।\n\nCalculation: (110 - 100) / 100 * 100 = 10% Absolute Return.\nNote: चूँकि period < 1 year है, इसलिए हम CAGR use नहीं करते हैं।",
+      "real_life_indian_example": "अगर Equity fund में आपकी SIP 10 years में 15% CAGR दिखाती है, तो इसका मतलब है कि आपका पैसा effectively हर साल compounded basis पर 15% grow कर रहा था।",
+      "exam_traps": [
+        "Exam पूछता है: '1 year से ज्यादा के लिए कौन सा return use होता है?' Answer: CAGR.",
+        "'1 year से कम के लिए कौन सा return use होता है?' Answer: Absolute Return."
+      ],
+      "memory_trick": "CAGR = 'C' for Compounded (Long term). Absolute = 'A' for All-at-once profit."
+    },
+    {
+      "concept": "3. XIRR (Extended Internal Rate of Return)",
+      "basic_meaning": "जब अलग-अलग times पर multiple investments होते हैं (जैसे Monthly SIP), तो returns calculate करने का correct तरीका।",
+      "detailed_explanation": "CAGR perfectly work करता है अगर आप एक बार lumpsum invest करते हैं (जैसे, Jan 1st को Rs. 50,000)। लेकिन एक SIP में, आप हर महीने Rs. 5,000 invest करते हैं। हर installment एक अलग amount of time के लिए fund में रहती है।  \n\n**XIRR** एक mathematical formula है (आमतौर पर Excel में किया जाता है) जो हर single transaction की exact date और amount को देखकर average return calculate करता है।",
+      "why_this_is_important": "Investors अक्सर अपनी portfolio value देखते हैं और उन्हें लगता है कि return गलत है। SIP performance को show करने का XIRR ही एकमात्र accurate तरीका है।",
+      "formula": "Manual Calculation के लिए Applicable नहीं है",
+      "formula_explanation": "XIRR computers का use करके trial and error (iteration) से solve होने वाली एक complex equation है।",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "अगर आप अपना Mutual Fund Statement (CAS) देखते हैं, तो आपकी SIP के लिए दिखाया गया 'Personalized Return' असल में XIRR होता है।",
+      "exam_traps": [
+        "SIP returns calculate करने के लिए कौन सा method best है? Answer: XIRR.",
+        "क्या CAGR SIPs के लिए work करता है? Answer: नहीं, यह multiple cash flows के लिए accurate नहीं है।"
+      ],
+      "memory_trick": "SIP = XIRR. (दोनों में 3/4 letters हैं, इन्हें एक pair की तरह सोचें)।"
+    },
+    {
+      "concept": "4. Benchmarking Performance",
+      "basic_meaning": "Fund Manager ने अच्छा काम किया या नहीं, यह देखने के लिए fund के return को एक standard market index के खिलाफ compare करना।",
+      "detailed_explanation": "अगर कोई fund 12% return देता है, तो क्या यह अच्छा है? \n- अगर Nifty 50 (Benchmark) ने 15% दिया, तो fund BAD है (इसने underperform किया)।\n- अगर Nifty 50 ने 8% दिया, तो fund GREAT है (इसने Alpha generate किया)। \n\n**Common Benchmarks:**\n* Large Cap Funds -> Nifty 50 या Sensex.\n* Mid Cap Funds -> Nifty Midcap 150.\n* Banking Funds -> Nifty Bank Index.",
+      "why_this_is_important": "यह Fund Managers को उस 'Bull Market' का credit लेने से रोकता है जहाँ सब कुछ ऊपर जा रहा है। उन्हें अपनी skill prove करने के लिए benchmark को beat करना होता है।",
+      "formula": "$$\\text{Alpha} = \\text{Fund Return} - \\text{Benchmark Return}$$",
+      "formula_explanation": "Alpha manager की skill द्वारा earn किया गया 'Extra' return है।",
+      "step_by_step_calculation_example": "Fund Return: 18%\nBenchmark (Nifty): 14%\n\nAlpha = 18 - 14 = 4%. इस manager ने 4% extra value add की।",
+      "real_life_indian_example": "एक 'Nifty Index Fund' में ideally 0% Alpha होना चाहिए क्योंकि यह सिर्फ benchmark को copy करने की कोशिश करता है, उसे beat करने की नहीं।",
+      "exam_traps": [
+        "'Return in excess of the benchmark' के लिए क्या term है? Answer: Alpha.",
+        "किसी scheme के लिए benchmark कौन decide करता है? Answer: AMC (SID में declare किया जाता है)।"
+      ],
+      "memory_trick": "Benchmark = Passing Marks. Alpha = Smart होने के लिए Extra marks."
+    },
+    {
+      "concept": "5. Total Returns Index (TRI)",
+      "basic_meaning": "एक benchmark index जिसमें stock price growth और उन stocks द्वारा pay किए गए dividends दोनों शामिल होते हैं।",
+      "detailed_explanation": "Past में, mutual funds खुद को simple indices (Price Return Index) से compare करते थे। लेकिन companies dividends भी pay करती हैं। \n\nSEBI अब mandate करता है कि सभी mutual funds को अपनी performance को **Total Returns Index (TRI)** के खिलाफ compare करना ही होगा। यह बहुत 'tougher' और 'fairer' benchmark है क्योंकि इसमें dividends की value शामिल होती है।",
+      "why_this_is_important": "यह एक ज्यादा honest comparison provide करता है। यह funds को असल से बेहतर दिखने से रोकता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Nifty 50 TRI हमेशा simple Nifty 50 की तुलना में slightly higher return दिखाएगा क्योंकि यह companies के 1-2% dividend yield को add करता है।",
+      "exam_traps": [
+        "SEBI किस index के खिलाफ comparison mandate करता है? Answer: Total Returns Index (TRI).",
+        "क्या TRI में dividends शामिल होते हैं? Answer: YES."
+      ],
+      "memory_trick": "TRI = 'T' for Total (Price + Dividend)."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Lumpsum vs. SIP Return Calculation",
+      "clear_explanation": "**Lumpsum:** CAGR use करें। इसमें एक entry और एक exit होता है। Years के ऊपर calculate करना simple है।\n\n**SIP:** XIRR use करें। यह अलग-अलग dates पर multiple entries को handle करता है। Monthly savers के लिए ज्यादा accurate है।"
+    },
+    {
+      "difference_between": "Relative Performance vs. Absolute Performance",
+      "clear_explanation": "**Absolute:** केवल fund का return देखना (जैसे, मैंने 10% बनाया)।\n\n**Relative:** Fund को Benchmark के खिलाफ देखना (जैसे, मैंने 10% बनाया, लेकिन market ने 12% बनाया, इसलिए मैं असल में relatively fail हो गया)।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "NAV की Definition और calculation.",
+    "< 1 year के लिए कौन सा return use करना है? (Absolute).",
+    "> 1 year के लिए कौन सा return use करना है? (CAGR).",
+    "SIP return calculation के लिए best method? (XIRR).",
+    "Alpha क्या है? (Benchmark के ऊपर excess return).",
+    "Total Returns Index (TRI) का mandatory use."
+  ],
+  "quick_revision_summary": [
+    "NAV daily calculate होता है।",
+    "Expenses NAV को कम करते हैं।",
+    "CAGR 'smooth' average yearly growth rate है।",
+    "XIRR irregular या multiple cash flows (SIP) के लिए है।",
+    "Benchmark comparison का yardstick है।",
+    "TRI = Price growth + Dividends.",
+    "Alpha = Fund Manager की Skill."
+  ]
+}

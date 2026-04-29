@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "What is the primary purpose of 'Performance Measurement'?",
+    "options": [
+      "To calculate the total taxes paid",
+      "To determine the rate of return earned by the portfolio",
+      "To choose the next stock to buy",
+      "To pay the custodian"
+    ],
+    "answer": "To determine the rate of return earned by the portfolio",
+    "hint": "यह मूल्यांकन का 'क्या' (what) है—मूल संख्या (raw number)।",
+    "explanation": "Performance measurement मूल्यांकन (evaluation) का पहला कदम है, जो एक अवधि में उत्पन्न वास्तविक return (actual return) की गणना करने पर केंद्रित है।"
+  },
+  {
+    "id": 2,
+    "question": "Which method of return calculation is mandated by SEBI for reporting PMS performance?",
+    "options": [
+      "Simple Interest",
+      "Internal Rate of Return (IRR)",
+      "Time-Weighted Rate of Return (TWRR)",
+      "Price-to-Earnings Ratio"
+    ],
+    "answer": "Time-Weighted Rate of Return (TWRR)",
+    "hint": "यह client cash flows के कारण होने वाले विरूपण (distortion) को समाप्त करता है।",
+    "explanation": "TWRR client द्वारा पैसे जमा करने (deposits) और निकालने (withdrawals) के समय (timing) के प्रभाव को हटाकर manager के कौशल (skill) को मापता है।"
+  },
+  {
+    "id": 3,
+    "question": "The 'Money-Weighted Rate of Return' (MWRR) is also known as:",
+    "options": [
+      "Alpha",
+      "Internal Rate of Return (IRR)",
+      "Beta",
+      "Standard Deviation"
+    ],
+    "answer": "Internal Rate of Return (IRR)",
+    "hint": "यह cash flows की timing के प्रति संवेदनशील (sensitive) है।",
+    "explanation": "MWRR या IRR उस वास्तविक (actual) return को दर्शाता है जो एक निवेशक को अपने पैसे पर मिलता है, जो इस बात से प्रभावित होता है कि उन्होंने कब funds जोड़े या निकाले।"
+  },
+  {
+    "id": 4,
+    "question": "Why is TWRR preferred over MWRR for evaluating the manager?",
+    "options": [
+      "Because MWRR is too hard to calculate",
+      "Because managers usually have no control over the timing of client cash flows",
+      "Because TWRR always gives a higher number",
+      "Because TWRR includes taxes"
+    ],
+    "answer": "Because managers usually have no control over the timing of client cash flows",
+    "hint": "इस बारे में सोचें कि पैसा कब डालना है, यह कौन तय करता है।",
+    "explanation": "TWRR निवेशक के पैसे जोड़ने या निकालने के निर्णय के प्रभाव से manager की investment performance को अलग (isolate) करता है।"
+  },
+  {
+    "id": 5,
+    "question": "What is 'Risk-Adjusted Return'?",
+    "options": [
+      "The return after subtracting the manager's fee",
+      "The return of the portfolio relative to the amount of risk taken to achieve it",
+      "The return of the safest government bond",
+      "The return after paying all capital gains taxes"
+    ],
+    "answer": "The return of the portfolio relative to the amount of risk taken to achieve it",
+    "hint": "यह आपको बताता है कि क्या 'अतिरिक्त' (extra) return, 'अतिरिक्त' तनाव (stress) के लायक था।",
+    "explanation": "केवल raw returns का मूल्यांकन करना पर्याप्त नहीं है; आपको यह जांचना होगा कि क्या manager ने उन returns को प्राप्त करने के लिए अत्यधिक जोखिम (excessive risk) उठाया।"
+  },
+  {
+    "id": 6,
+    "question": "Which ratio uses 'Standard Deviation' as the measure of risk?",
+    "options": [
+      "Treynor Ratio",
+      "Sharpe Ratio",
+      "Information Ratio",
+      "PE Ratio"
+    ],
+    "answer": "Sharpe Ratio",
+    "hint": "यह return per unit of total risk को मापता है।",
+    "explanation": "Sharpe Ratio की गणना इस प्रकार की जाती है: $$\\frac{R_p - R_f}{\\sigma_p}$$। यह total volatility (Standard Deviation) का उपयोग करता है।"
+  },
+  {
+    "id": 7,
+    "question": "Which ratio uses 'Beta' as the measure of risk?",
+    "options": [
+      "Sharpe Ratio",
+      "Treynor Ratio",
+      "Current Ratio",
+      "Quick Ratio"
+    ],
+    "answer": "Treynor Ratio",
+    "hint": "यह market-related (systematic) risk पर केंद्रित है।",
+    "explanation": "Treynor Ratio की गणना इस प्रकार की जाती है: $$\\frac{R_p - R_f}{\\beta_p}$$। यह अच्छी तरह से diversified portfolios के लिए सबसे अच्छा है।"
+  },
+  {
+    "id": 8,
+    "question": "What does 'Alpha' represent in performance evaluation?",
+    "options": [
+      "The first day's return",
+      "The excess return of the portfolio over its required return (benchmark) for its level of risk",
+      "The total risk of the portfolio",
+      "The market index return"
+    ],
+    "answer": "The excess return of the portfolio over its required return (benchmark) for its level of risk",
+    "hint": "यह manager द्वारा जोड़ी गई value (मूल्य) है।",
+    "explanation": "Alpha active management कौशल (skill) का एक उपाय है। एक सकारात्मक (positive) Alpha का मतलब है कि manager ने जोखिम को adjust करने के बाद बाजार (market) को पछाड़ दिया।"
+  },
+  {
+    "id": 9,
+    "question": "What is 'Jensen's Alpha'?",
+    "options": [
+      "The average return of the portfolio",
+      "The difference between the actual return and the CAPM predicted return",
+      "The tax-adjusted return",
+      "The return of a small-cap fund"
+    ],
+    "answer": "The difference between the actual return and the CAPM predicted return",
+    "hint": "यह risk-adjusted excess return खोजने का एक standard formula है।",
+    "explanation": "Jensen's Alpha यह निर्धारित करने में मदद करता है कि क्या manager ने लिए गए systematic risk की भरपाई करने के लिए पर्याप्त return उत्पन्न किया है।"
+  },
+  {
+    "id": 10,
+    "question": "What is 'Information Ratio' (IR)?",
+    "options": [
+      "The ratio of news articles to trades",
+      "The ratio of active return to active risk (tracking error)",
+      "The ratio of profit to management fee",
+      "The speed of information flow"
+    ],
+    "answer": "The ratio of active return to active risk (tracking error)",
+    "hint": "यह manager के outperformance की स्थिरता (consistency) को मापता है।",
+    "explanation": "IR = (Portfolio Return - Benchmark Return) / Tracking Error। एक उच्च (higher) IR अधिक सुसंगत (consistent) प्रदर्शन को दर्शाता है।"
+  },
+  {
+    "id": 11,
+    "question": "What is 'Tracking Error'?",
+    "options": [
+      "The mistake in tracking a client's address",
+      "The standard deviation of the difference between portfolio and benchmark returns",
+      "The time taken to execute a trade",
+      "The loss of a physical certificate"
+    ],
+    "answer": "The standard deviation of the difference between portfolio and benchmark returns",
+    "hint": "यह दिखाता है कि outperformance कितना 'volatile' (अस्थिर) है।",
+    "explanation": "Tracking error उस स्थिरता (consistency) को मापता है जिसके साथ एक manager किसी benchmark का अनुसरण करता है या उससे विचलित (deviate) होता है।"
+  },
+  {
+    "id": 12,
+    "question": "A 'Sharpe Ratio' of 1.5 is generally considered ____ than a ratio of 0.8.",
+    "options": [
+      "Worse",
+      "Better",
+      "Equal",
+      "Unrelated"
+    ],
+    "answer": "Better",
+    "hint": "Higher ratios का मतलब है समान जोखिम के लिए अधिक return।",
+    "explanation": "एक उच्च (higher) Sharpe ratio इंगित करता है कि portfolio manager लिए गए जोखिम की प्रत्येक इकाई (unit) के लिए अधिक excess return उत्पन्न कर रहा है।"
+  },
+  {
+    "id": 13,
+    "question": "Which of the following is a 'Benchmark'?",
+    "options": [
+      "Nifty 50 Index",
+      "The manager's personal goal",
+      "A safe in the office",
+      "The price of gold only"
+    ],
+    "answer": "Nifty 50 Index",
+    "hint": "यह वह मानक (standard) है जिसके विरुद्ध प्रदर्शन की तुलना की जाती है।",
+    "explanation": "Benchmarks (जैसे Nifty 50 या BSE 200) manager के प्रदर्शन को आंकने (judge) के लिए संदर्भ का एक बिंदु (point of reference) प्रदान करते हैं।"
+  },
+  {
+    "id": 14,
+    "question": "In 'Performance Attribution', 'Selection Effect' refers to:",
+    "options": [
+      "Choosing the right asset class (Equity/Debt)",
+      "Picking the right individual securities within an asset class",
+      "Choosing the right broker",
+      "Selecting the right client"
+    ],
+    "answer": "Picking the right individual securities within an asset class",
+    "hint": "यह शेयरों के विशिष्ट 'selection' (चयन) के बारे में है।",
+    "explanation": "Selection effect benchmark में मौजूद शेयरों की तुलना में बेहतर शेयर चुनकर जोड़े गए मूल्य (value added) को मापता है।"
+  },
+  {
+    "id": 15,
+    "question": "In 'Performance Attribution', 'Allocation Effect' refers to:",
+    "options": [
+      "Choosing the right specific stocks",
+      "The value added by overweighting or underweighting certain sectors or asset classes",
+      "Calculating the management fee",
+      "Opening new accounts"
+    ],
+    "answer": "The value added by overweighting or underweighting certain sectors or asset classes",
+    "hint": "यह विभिन्न खंडों (segments) में 'allocation' (आवंटन) के बारे में है।",
+    "explanation": "Allocation effect यह जांचता है कि क्या manager को Banking vs IT जैसे क्षेत्रों (sectors) के बीच पैसा स्थानांतरित करने से लाभ हुआ।"
+  },
+  {
+    "id": 16,
+    "question": "What is 'GIPS' (Global Investment Performance Standards)?",
+    "options": [
+      "A set of mandatory Indian laws",
+      "A set of voluntary global standards for fair representation and full disclosure of investment performance",
+      "A type of mutual fund",
+      "A marketing agency name"
+    ],
+    "answer": "A set of voluntary global standards for fair representation and full disclosure of investment performance",
+    "hint": "यह अच्छे डेटा की 'cherry-picking' को रोकता है।",
+    "explanation": "GIPS सुनिश्चित करता है कि दुनिया भर में प्रदर्शन डेटा (performance data) को लगातार और नैतिक रूप से (ethically) रिपोर्ट किया जाए।"
+  },
+  {
+    "id": 17,
+    "question": "What is 'Cherry Picking' in performance reporting?",
+    "options": [
+      "Eating fruit while trading",
+      "Reporting only the best-performing accounts or periods while hiding the bad ones",
+      "Investing only in fruit companies",
+      "Selecting stocks very carefully"
+    ],
+    "answer": "Reporting only the best-performing accounts or periods while hiding the bad ones",
+    "hint": "यह एक भ्रामक प्रथा (deceptive practice) है।",
+    "explanation": "Cherry picking किसी manager के सच्चे कौशल (true skill) की गलत धारणा देता है। GIPS standards इसे रोकने में मदद करते हैं।"
+  },
+  {
+    "id": 18,
+    "question": "The 'Risk-Free Rate' used in Sharpe and Treynor ratios is usually based on:",
+    "options": [
+      "Savings Bank interest",
+      "Return on 91-day Treasury Bills (T-Bills)",
+      "The Nifty 50 return",
+      "Zero percent"
+    ],
+    "answer": "Return on 91-day Treasury Bills (T-Bills)",
+    "hint": "यह वह return है जो आपको 'शून्य' (zero) जोखिम के साथ मिलता है।",
+    "explanation": "भारत में, short-term government T-Bills पर मिलने वाली yield को risk-free rate के लिए मानक (standard) माना जाता है।"
+  },
+  {
+    "id": 19,
+    "question": "A portfolio with a 'Negative Alpha' means:",
+    "options": [
+      "The manager has lost all the money",
+      "The manager underperformed the benchmark after adjusting for risk",
+      "The manager has no risk",
+      "The manager is not charging any fees"
+    ],
+    "answer": "The manager underperformed the benchmark after adjusting for risk",
+    "hint": "नकारात्मक कौशल (Negative skill) या खराब समय (poor timing)।",
+    "explanation": "Negative alpha इंगित करता है कि manager के विकल्पों (choices) ने वास्तव में एक साधारण index investment की तुलना में मूल्य कम कर दिया है।"
+  },
+  {
+    "id": 20,
+    "question": "What is 'Survivorship Bias'?",
+    "options": [
+      "Only the best investors survive",
+      "A bias created by only including funds/portfolios that currently exist, ignoring those that failed and closed",
+      "The ability to survive a market crash",
+      "Investing in insurance companies"
+    ],
+    "answer": "A bias created by only including funds/portfolios that currently exist, ignoring those that failed and closed",
+    "hint": "यह औसत प्रदर्शन (average performance) को वास्तव में जितना है, उससे बेहतर दिखाता है।",
+    "explanation": "यदि कोई manager 5 खराब funds बंद कर देता है और केवल उन 2 का प्रदर्शन दिखाता है जो बच गए (survived), तो डेटा biased (पक्षपाती) होता है।"
+  },
+  {
+    "id": 21,
+    "question": "What is 'Rolling Return'?",
+    "options": [
+      "The return of a rolling tire company",
+      "The average return for a specific period (e.g., 3 years) calculated on a continuous basis (daily or monthly)",
+      "The return of a single day only",
+      "A return that is always positive"
+    ],
+    "answer": "The average return for a specific period (e.g., 3 years) calculated on a continuous basis (daily or monthly)",
+    "hint": "यह विभिन्न market cycles में प्रदर्शन देखने में मदद करता है।",
+    "explanation": "Rolling returns point-to-point returns की तुलना में स्थिरता (consistency) की स्पष्ट तस्वीर (clearer picture) प्रदान करते हैं।"
+  },
+  {
+    "id": 22,
+    "question": "Which index is appropriate as a benchmark for a 'Mid-Cap' PMS strategy?",
+    "options": [
+      "Nifty 50",
+      "Nifty Midcap 100",
+      "Gold Price",
+      "Liquid Fund Index"
+    ],
+    "answer": "Nifty Midcap 100",
+    "hint": "Benchmark उपयोग किए गए शेयरों के 'universe' से मेल खाना चाहिए।",
+    "explanation": "एक उचित मूल्यांकन (fair evaluation) सुनिश्चित करने के लिए manager की तुलना उस सेगमेंट से की जानी चाहिए जिसमें वे वास्तव में निवेश कर रहे हैं।"
+  },
+  {
+    "id": 23,
+    "question": "What is 'Market Timing'?",
+    "options": [
+      "The opening and closing time of the exchange",
+      "The strategy of making buy/sell decisions based on predictions of future market movements",
+      "Buying stocks every Monday",
+      "Managing the clock at the exchange"
+    ],
+    "answer": "The strategy of making buy/sell decisions based on predictions of future market movements",
+    "hint": "समय (timing) के माध्यम से 'buy low' और 'sell high' करने की कोशिश करना।",
+    "explanation": "Market timing active management का एक हिस्सा है जहां managers बाजार के दृष्टिकोण (market outlook) के आधार पर cash levels बदलते हैं।"
+  },
+  {
+    "id": 24,
+    "question": "The 'Sortino Ratio' is different from the Sharpe Ratio because it only considers:",
+    "options": [
+      "Upside volatility",
+      "Downside volatility (Downside risk)",
+      "The manager's age",
+      "Total sales"
+    ],
+    "answer": "Downside volatility (Downside risk)",
+    "hint": "निवेशक केवल 'खराब' (bad) volatility की परवाह करते हैं।",
+    "explanation": "Sortino ratio 'अच्छी' volatility (ऊपर की ओर मूल्य परिवर्तन) को नजरअंदाज करता है और केवल नुकसान के जोखिम (risk of loss) पर केंद्रित होता है।"
+  },
+  {
+    "id": 25,
+    "question": "In TWRR calculation, why are 'Sub-periods' created?",
+    "options": [
+      "To make the math more complex",
+      "To isolate periods between external cash flows",
+      "To calculate monthly taxes",
+      "To report to different regulators"
+    ],
+    "answer": "To isolate periods between external cash flows",
+    "hint": "हर बार जब पैसा प्रवेश करता है या निकलता है, तो एक नया sub-period शुरू होता है।",
+    "explanation": "प्रत्येक sub-period के लिए returns की गणना करके और उन्हें geometrically जोड़कर, cash flow timing का प्रभाव हटा दिया जाता है।"
+  },
+  {
+    "id": 26,
+    "question": "What is 'Composite Performance'?",
+    "options": [
+      "The performance of a single best client",
+      "The aggregation of all portfolios managed with a similar strategy into a single group",
+      "The average return of the whole stock market",
+      "A mixture of stock and bond returns"
+    ],
+    "answer": "The aggregation of all portfolios managed with a similar strategy into a single group",
+    "hint": "GIPS 'पूरी' (whole) कहानी दिखाने के लिए इसकी आवश्यकता होती है।",
+    "explanation": "Composites managers को केवल अपने सबसे अच्छे व्यक्तिगत accounts (cherry picking) दिखाने से रोकते हैं।"
+  },
+  {
+    "id": 27,
+    "question": "What is 'Relative Return'?",
+    "options": [
+      "Portfolio Return minus Benchmark Return",
+      "Portfolio Return plus Inflation",
+      "Return given to family members",
+      "The absolute profit in rupees"
+    ],
+    "answer": "Portfolio Return minus Benchmark Return",
+    "hint": "यह outperformance को मापता है।",
+    "explanation": "यदि बाजार (market) 20% गिरता है और portfolio केवल 10% गिरता है, तो relative return +10% (outperformance) है।"
+  },
+  {
+    "id": 28,
+    "question": "What is 'Absolute Return'?",
+    "options": [
+      "The return relative to a benchmark",
+      "The total percentage return or profit earned by a portfolio over a period",
+      "The return of a risk-free bond",
+      "A return that is never wrong"
+    ],
+    "answer": "The total percentage return or profit earned by a portfolio over a period",
+    "hint": "यह आपके पैसे की 'मूल' (raw) वृद्धि है।",
+    "explanation": "Absolute return को benchmark से कोई मतलब नहीं है; यह केवल इस बात की परवाह करता है कि पैसा बना (made) या डूबा (lost)।"
+  },
+  {
+    "id": 29,
+    "question": "What is 'Standard Deviation' a measure of?",
+    "options": [
+      "Systematic Risk",
+      "Total Risk (Volatility)",
+      "Unsystematic Risk only",
+      "Manager's skill"
+    ],
+    "answer": "Total Risk (Volatility)",
+    "hint": "यह मापता है कि returns औसत से कितना 'deviate' (विचलित) होते हैं।",
+    "explanation": "Standard deviation बाजार-व्यापी जोखिमों (market-wide risks) और कंपनी-विशिष्ट जोखिमों (company-specific risks) दोनों को कवर करता है।"
+  },
+  {
+    "id": 30,
+    "question": "What is 'Active Risk'?",
+    "options": [
+      "The risk of the market falling",
+      "The risk taken by deviating from the benchmark (measured by Tracking Error)",
+      "Trading too many times",
+      "The risk of a broker failing"
+    ],
+    "answer": "The risk taken by deviating from the benchmark (measured by Tracking Error)",
+    "hint": "Index से 'अलग' होने का जोखिम।",
+    "explanation": "Active risk वह जोखिम है जो एक manager Alpha उत्पन्न करने की उम्मीद में लेता है।"
+  },
+  {
+    "id": 31,
+    "question": "Which of these is a 'Relative' performance measure?",
+    "options": [
+      "Total Gain in Rupees",
+      "Information Ratio",
+      "Absolute Percentage Return",
+      "Standard Deviation"
+    ],
+    "answer": "Information Ratio",
+    "hint": "यह active return की तुलना tracking error से करता है।",
+    "explanation": "Information ratio विशेष रूप से benchmark की तुलना में manager के active दांव (bets) की गुणवत्ता को मापता है।"
+  },
+  {
+    "id": 32,
+    "question": "What does a 'Beta' of 0.8 imply for a portfolio?",
+    "options": [
+      "It will always lose 20%",
+      "It is 20% less volatile than the market index",
+      "It is 80% riskier than the market",
+      "It has no risk"
+    ],
+    "answer": "It is 20% less volatile than the market index",
+    "hint": "Market Beta हमेशा 1 होता है।",
+    "explanation": "1 से कम Beta का मतलब है कि portfolio 'defensive' (रक्षात्मक) है और दोनों दिशाओं में बाजार से कम आगे-पीछे (move) होना चाहिए।"
+  },
+  {
+    "id": 33,
+    "question": "What is 'Performance Evaluation' vs 'Measurement'?",
+    "options": [
+      "They are the same thing",
+      "Measurement is calculating numbers; Evaluation is judging the skill behind the numbers",
+      "Measurement is for SEBI; Evaluation is for the client",
+      "Evaluation is done only at the end of the year"
+    ],
+    "answer": "Measurement is calculating numbers; Evaluation is judging the skill behind the numbers",
+    "hint": "Evaluation पूछता है 'क्या यह कौशल (skill) था या किस्मत (luck)?'।",
+    "explanation": "Evaluation में returns के स्रोत (source) को समझने के लिए attribution और risk-adjustment शामिल है।"
+  },
+  {
+    "id": 34,
+    "question": "What is 'Benchmark Mismatch'?",
+    "options": [
+      "Comparing a Debt fund to a Stock index",
+      "Using an old index",
+      "A disagreement on the index price",
+      "Buying the wrong index fund"
+    ],
+    "answer": "Comparing a Debt fund to a Stock index",
+    "hint": "सेब की तुलना संतरे से करना।",
+    "explanation": "Benchmark mismatch से किसी manager के सच्चे प्रदर्शन (true performance) का गलत मूल्यांकन होता है।"
+  },
+  {
+    "id": 35,
+    "question": "Which standard requires the use of 'Trade-Date' accounting?",
+    "options": [
+      "GIPS",
+      "Income Tax Act",
+      "Bank Regulations",
+      "Company Law"
+    ],
+    "answer": "GIPS",
+    "hint": "यह लेनदेन (transaction) को उसी दिन दर्ज करता है जिस दिन वह किया गया था, न कि settle होने वाले दिन।",
+    "explanation": "GIPS को प्रदर्शन रिपोर्टों (performance reports) में वर्तमान बाजार की स्थिति को सटीक रूप से दर्शाने के लिए trade-date accounting की आवश्यकता होती है।"
+  },
+  {
+    "id": 36,
+    "question": "What is 'Value Added' in attribution analysis?",
+    "options": [
+      "The tax collected",
+      "The difference between actual portfolio return and what would have been earned in a passive benchmark",
+      "The total amount of dividends",
+      "The manager's bonus"
+    ],
+    "answer": "The difference between actual portfolio return and what would have been earned in a passive benchmark",
+    "hint": "यह active management का शुद्ध लाभ (net benefit) है।",
+    "explanation": "Attribution यह पहचानने का प्रयास करता है कि क्या 'Value Added' asset allocation से आया है या security selection से।"
+  },
+  {
+    "id": 37,
+    "question": "What is 'Gross-of-fees' return?",
+    "options": [
+      "Return before deducting management and performance fees",
+      "Return after paying all fees",
+      "Return before paying taxes only",
+      "Return from disgusting stocks"
+    ],
+    "answer": "Return before deducting management and performance fees",
+    "hint": "यह manager द्वारा चुने गए विकल्पों का 'शुद्ध' (pure) प्रदर्शन दिखाता है।",
+    "explanation": "GIPS managers की तुलना करने के लिए gross-of-fees दिखाने की सिफारिश करता है, लेकिन clients को net-of-fees पर ध्यान देना चाहिए।"
+  },
+  {
+    "id": 38,
+    "question": "What is 'Net-of-fees' return?",
+    "options": [
+      "Return before fees",
+      "Return after deducting all management and performance fees",
+      "Return after tax only",
+      "The broker's profit"
+    ],
+    "answer": "Return after deducting all management and performance fees",
+    "hint": "यह वह है जो client को वास्तव में अपनी जेब में मिलता है।",
+    "explanation": "Net-of-fees return सभी लागतों (costs) के बाद client की पूंजी (capital) की वास्तविक वृद्धि को दर्शाता है।"
+  },
+  {
+    "id": 39,
+    "question": "The 'Treynor Ratio' is most useful for which type of investors?",
+    "options": [
+      "Investors with only one stock",
+      "Investors with well-diversified portfolios that only have systematic risk left",
+      "Day traders",
+      "Real estate investors"
+    ],
+    "answer": "Investors with well-diversified portfolios that only have systematic risk left",
+    "hint": "यह Beta का उपयोग करता है, जो unsystematic risk को अनदेखा करता है।",
+    "explanation": "यदि एक portfolio diversified है, तो total risk लगभग systematic risk के करीब होता है, जिससे Treynor एक बेहतर मीट्रिक (metric) बन जाता है।"
+  },
+  {
+    "id": 40,
+    "question": "What is 'Annualized Return'?",
+    "options": [
+      "The return of the first year only",
+      "The geometric average return per year for a period of more than one year",
+      "The total return multiplied by 10",
+      "The return expected for next year"
+    ],
+    "answer": "The geometric average return per year for a period of more than one year",
+    "hint": "यह 1-वर्ष, 3-वर्ष और 5-वर्षीय returns को तुलनीय (comparable) बनाता है।",
+    "explanation": "Annualization एक 'प्रति वर्ष' (per year) आंकड़ा प्रदान करता है, यह मानते हुए कि उस अवधि में वृद्धि compounded (चक्रवृद्धि) थी।"
+  },
+  {
+    "id": 41,
+    "question": "A portfolio with a Sharpe Ratio of zero implies:",
+    "options": [
+      "The manager lost everything",
+      "The portfolio return is equal to the risk-free rate",
+      "The manager is not charging fees",
+      "There is no risk in the portfolio"
+    ],
+    "answer": "The portfolio return is equal to the risk-free rate",
+    "hint": "Excess return शून्य है।",
+    "explanation": "यदि portfolio return risk-free rate के बराबर है, तो Sharpe ratio का अंश (numerator) (Rp - Rf) शून्य हो जाता है।"
+  },
+  {
+    "id": 42,
+    "question": "What is 'Time-Weighted' return primarily designed to ignore?",
+    "options": [
+      "Taxes",
+      "External cash flows (deposits/withdrawals)",
+      "Dividends",
+      "Brokerage fees"
+    ],
+    "answer": "External cash flows (deposits/withdrawals)",
+    "hint": "यह समय (time) की प्रत्येक अवधि को समान महत्व (weight) देता है।",
+    "explanation": "TWRR इस बात को नजरअंदाज करता है कि खाते में कितना पैसा था, यह केवल assets के प्रतिशत वृद्धि (percentage growth) पर ध्यान केंद्रित करता है।"
+  },
+  {
+    "id": 43,
+    "question": "Which of these factors is analyzed in 'Macro Attribution'?",
+    "options": [
+      "Stock picking",
+      "Fund sponsor's asset allocation decisions",
+      "The broker's speed",
+      "Individual stock dividends"
+    ],
+    "answer": "Fund sponsor's asset allocation decisions",
+    "hint": "यह 'बड़े' (large) निर्णयों को देखता है।",
+    "explanation": "Macro attribution फंड के उच्चतम स्तर (highest level) पर किए गए नीति और आवंटन निर्णयों (allocation decisions) को देखता है।"
+  },
+  {
+    "id": 44,
+    "question": "Which of these is analyzed in 'Micro Attribution'?",
+    "options": [
+      "GDP growth",
+      "Individual security selection by the portfolio manager",
+      "Inflation trends",
+      "Global currency rates"
+    ],
+    "answer": "Individual security selection by the portfolio manager",
+    "hint": "यह 'छोटे' या विशिष्ट (specific) निर्णयों को देखता है।",
+    "explanation": "Micro attribution manager के विशिष्ट क्षेत्र (sector) और stock-picking कौशल (skill) पर केंद्रित है।"
+  },
+  {
+    "id": 45,
+    "question": "What is 'Benchmark Risk'?",
+    "options": [
+      "The risk of the benchmark falling",
+      "The risk that the benchmark itself is poorly constructed",
+      "The risk of deviating from the benchmark (Tracking Error)",
+      "The cost of buying the index"
+    ],
+    "answer": "The risk of deviating from the benchmark (Tracking Error)",
+    "hint": "Active risk का दूसरा नाम।",
+    "explanation": "यदि किसी manager को एक benchmark के खिलाफ आंका जाता है, तो अलग-अलग दांव लेने से 'benchmark risk' पैदा होता है।"
+  },
+  {
+    "id": 46,
+    "question": "What is the 'Capture Ratio' (Up-market / Down-market)?",
+    "options": [
+      "How many stocks the manager 'captured'",
+      "A measure of how much of the market's gains/losses the manager participated in",
+      "The total volume of trades",
+      "The manager's market share"
+    ],
+    "answer": "A measure of how much of the market's gains/losses the manager participated in",
+    "hint": "आप चाहते हैं कि 'Up-capture' > 100% और 'Down-capture' < 100% हो।",
+    "explanation": "Capture ratios निवेशकों को यह देखने में मदद करते हैं कि क्या manager bull markets या bear markets के दौरान बेहतर प्रदर्शन करता है।"
+  },
+  {
+    "id": 47,
+    "question": "Why is it important to evaluate performance over a 'Full Market Cycle'?",
+    "options": [
+      "To pay more fees",
+      "To see how the manager performs in both Bull (rising) and Bear (falling) markets",
+      "To avoid taxes",
+      "Because SEBI requires it every day"
+    ],
+    "answer": "To see how the manager performs in both Bull (rising) and Bear (falling) markets",
+    "hint": "एक 'भाग्यशाली' (lucky) manager शायद तभी अच्छा दिखे जब सब कुछ ऊपर जा रहा हो।",
+    "explanation": "कौशल (Skill) तब सबसे अच्छी तरह साबित होता है जब एक manager बाजार के दोनों चरम सीमाओं (market extremes) को प्रभावी ढंग से नेविगेट कर सकता है।"
+  },
+  {
+    "id": 48,
+    "question": "What is 'Arithmetic Mean' vs 'Geometric Mean' in returns?",
+    "options": [
+      "Arithmetic is better for future projections; Geometric is for historical performance",
+      "Arithmetic is always smaller",
+      "There is no difference in finance",
+      "Geometric is only for bonds"
+    ],
+    "answer": "Arithmetic is better for future projections; Geometric is for historical performance",
+    "hint": "Geometric mean compounding (चक्रवृद्धि) का हिसाब रखता है।",
+    "explanation": "Geometric mean (CAGR) समय के साथ किसी निवेश की वास्तविक वृद्धि को सटीक रूप से दर्शाता है।"
+  },
+  {
+    "id": 49,
+    "question": "A 'Jensen's Alpha' of zero means the manager has:",
+    "options": [
+      "Lost money",
+      "Delivered exactly the return expected for the risk taken",
+      "Taken no risk",
+      "Beaten the market by 10%"
+    ],
+    "answer": "Delivered exactly the return expected for the risk taken",
+    "hint": "Manager ने 'उम्मीद के मुताबिक' (par for the course) प्रदर्शन किया।",
+    "explanation": "Zero alpha का मतलब है कि manager ने कोई अतिरिक्त मूल्य (extra value) नहीं जोड़ा लेकिन risk-adjusted benchmark से कम प्रदर्शन भी नहीं किया।"
+  },
+  {
+    "id": 50,
+    "question": "Who provides the 'Performance Audit' for a PMS firm?",
+    "options": [
+      "The Portfolio Manager themselves",
+      "An Independent External Auditor (Chartered Accountant)",
+      "The client's family",
+      "The local bank"
+    ],
+    "answer": "An Independent External Auditor (Chartered Accountant)",
+    "hint": "पारदर्शिता (transparency) और अनुपालन (compliance) के लिए।",
+    "explanation": "External audits सत्यापित (verify) करते हैं कि बताए गए प्रदर्शन के आंकड़े सटीक हैं और SEBI regulations का पालन करते हैं।"
+  }
+]

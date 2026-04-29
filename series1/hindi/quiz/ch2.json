@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "question": "A financial contract whose value is derived from the value of an underlying asset is known as:",
+    "options": ["Equity", "Bond", "Derivative", "Mutual Fund"],
+    "answer": "Derivative",
+    "hint": "नाम से ही पता चलता है कि यह अपनी value 'derive' (प्राप्त) करता है।",
+    "explanation": "Derivatives ऐसे financial instruments हैं जो अपनी value किसी underlying asset (जैसे stock, currency, commodity, या interest rate) से derive करते हैं।"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following is NOT a feature of a Forward Contract?",
+    "options": ["Traded on an Exchange", "Customizable terms", "Over-the-Counter (OTC) instrument", "Counterparty risk exists"],
+    "answer": "Traded on an Exchange",
+    "hint": "Forwards private agreements होते हैं।",
+    "explanation": "Forward contracts Over-the-Counter (OTC) trade किए जाते हैं और दो parties के बीच customized होते हैं। ये centralized exchanges पर trade नहीं होते।"
+  },
+  {
+    "id": 3,
+    "question": "In a Futures contract, the risk of counterparty default is eliminated by:",
+    "options": ["The Broker", "The Clearing Corporation", "The SEBI", "The RBI"],
+    "answer": "The Clearing Corporation",
+    "hint": "वह central entity जो trades की guarantee देती है।",
+    "explanation": "Clearing Corporation एक central counterparty (हर seller के लिए buyer और हर buyer के लिए seller) के रूप में कार्य करती है, जिससे futures में counterparty default risk खत्म हो जाता है।"
+  },
+  {
+    "id": 4,
+    "question": "Standardization of contract size and expiry date is a characteristic of:",
+    "options": ["Forward Contracts", "Futures Contracts", "Swap Contracts", "OTC Options"],
+    "answer": "Futures Contracts",
+    "hint": "ये NSE/BSE जैसे exchanges पर trade होते हैं।",
+    "explanation": "Liquidity बढ़ाने के लिए exchange द्वारा Futures contracts की quantity, quality, और delivery dates को standardize किया जाता है।"
+  },
+  {
+    "id": 5,
+    "question": "The process of adjusting the value of a futures contract to reflect the current market price daily is called:",
+    "options": ["Hedging", "Amortization", "Mark-to-Market (MTM)", "Discounting"],
+    "answer": "Mark-to-Market (MTM)",
+    "hint": "Daily profit/loss का settlement।",
+    "explanation": "Mark-to-Market (MTM) futures trading में profits और losses का daily settlement है, जो यह सुनिश्चित करता है कि margin account वर्तमान market value को दर्शाए।"
+  },
+  {
+    "id": 6,
+    "question": "An option that gives the buyer the right to BUY the underlying asset is a:",
+    "options": ["Put Option", "Call Option", "Swap", "Forward"],
+    "answer": "Call Option",
+    "hint": "आप asset को अपनी तरफ 'call' (बुलाते) करते हैं।",
+    "explanation": "Call Option holder को एक specified Strike Price पर underlying asset खरीदने का Right (अधिकार) देता है, लेकिन कोई Obligation (मजबूरी) नहीं।"
+  },
+  {
+    "id": 7,
+    "question": "An option that gives the buyer the right to SELL the underlying asset is a:",
+    "options": ["Put Option", "Call Option", "Future", "Swap"],
+    "answer": "Put Option",
+    "hint": "आप asset को किसी और को 'put' (देते) करते हैं।",
+    "explanation": "Put Option holder को एक specified Strike Price पर underlying asset बेचने का Right (अधिकार) देता है।"
+  },
+  {
+    "id": 8,
+    "question": "The fixed price at which an option holder can buy or sell the underlying asset is known as the:",
+    "options": ["Spot Price", "Strike Price", "Forward Price", "Premium"],
+    "answer": "Strike Price",
+    "hint": "Contract में 'तय' (struck) की गई price।",
+    "explanation": "Strike Price (या Exercise Price) वह pre-agreed price है जिस पर option contract को exercise किया जा सकता है।"
+  },
+  {
+    "id": 9,
+    "question": "Who has the OBLIGATION to perform in an option contract?",
+    "options": ["The Option Buyer", "The Option Writer (Seller)", "The Exchange", "The Regulator"],
+    "answer": "The Option Writer (Seller)",
+    "hint": "वह व्यक्ति जिसे premium मिलता है।",
+    "explanation": "Option Buyer के पास 'Right' होता है, जबकि Option Writer (Seller) के पास contract को पूरा करने का 'Obligation' (दायित्व) होता है, यदि buyer इसे exercise करता है।"
+  },
+  {
+    "id": 10,
+    "question": "The price paid by the option buyer to the option seller for acquiring the right is called:",
+    "options": ["Margin", "Strike Price", "Option Premium", "Brokerage"],
+    "answer": "Option Premium",
+    "hint": "Option की कीमत (cost)।",
+    "explanation": "Option Premium वह upfront cost है जो option rights खरीदने के लिए buyer द्वारा seller को चुकाई जाती है।"
+  },
+  {
+    "id": 11,
+    "question": "Currency Futures in India are settled in:",
+    "options": ["Foreign Currency", "Cash (Indian Rupee)", "Gold", "Physical Delivery of Notes"],
+    "answer": "Cash (Indian Rupee)",
+    "hint": "आपके account में असली dollars नहीं आते।",
+    "explanation": "भारत में Currency futures (NSE/BSE जैसे exchanges पर) Indian Rupees में cash-settled होते हैं, जो entry price और settlement price के difference पर आधारित होते हैं।"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following derivatives is legally binding on both parties to fulfill the contract?",
+    "options": ["Options", "Futures", "Rights", "Warrants"],
+    "answer": "Futures",
+    "hint": "पीछे हटने का कोई विकल्प नहीं।",
+    "explanation": "Futures contract (और Forwards) में buyer और seller दोनों legally obligated (बाध्य) होते हैं। Options में, केवल seller obligated होता है।"
+  },
+  {
+    "id": 13,
+    "question": "If you expect the USD to depreciate against the INR, what position should you take in USDINR futures?",
+    "options": ["Long (Buy)", "Short (Sell)", "Neutral", "None of the above"],
+    "answer": "Short (Sell)",
+    "hint": "ऊंचे दाम पर बेचें, बाद में कम दाम पर खरीदें।",
+    "explanation": "यदि आपको लगता है कि asset (USD) की value गिरेगी, तो गिरावट से profit कमाने के लिए आपको futures contract को Sell (Short) करना चाहिए।"
+  },
+  {
+    "id": 14,
+    "question": "Initial Margin in futures trading is collected to:",
+    "options": ["Pay the broker's fees", "Cover the potential loss on the contract", "Pay the exchange registration fee", "Generate interest for the exchange"],
+    "answer": "Cover the potential loss on the contract",
+    "hint": "यह एक security deposit के रूप में काम करता है।",
+    "explanation": "Initial Margin एक deposit है जो यह सुनिश्चित करने के लिए आवश्यक है कि trader potential losses को cover कर सके और अपने obligations पूरे कर सके।"
+  },
+  {
+    "id": 15,
+    "question": "A 'European' option can be exercised:",
+    "options": ["At any time before expiry", "Only on the expiry date", "Only when in profit", "Only on weekends"],
+    "answer": "Only on the expiry date",
+    "hint": "Strict timing (यूरोपीय) बनाम आज़ादी (अमेरिकन)।",
+    "explanation": "European options केवल specific expiration date पर exercise किए जा सकते हैं, जबकि American options expiry से पहले कभी भी exercise किए जा सकते हैं। (भारत में Currency options European होते हैं)।"
+  },
+  {
+    "id": 16,
+    "question": "Which term describes an option that has intrinsic value (e.g., Call Strike < Spot Price)?",
+    "options": ["At-the-Money (ATM)", "Out-of-the-Money (OTM)", "In-the-Money (ITM)", "No-Money"],
+    "answer": "In-the-Money (ITM)",
+    "hint": "इसमें अभी real value है।",
+    "explanation": "एक option In-the-Money (ITM) होता है यदि उसे तुरंत exercise करने पर gain (फायदा) हो (paid premium को छोड़कर)।"
+  },
+  {
+    "id": 17,
+    "question": "The total number of outstanding futures contracts that have not been settled is called:",
+    "options": ["Volume", "Turnover", "Open Interest", "Liquidity"],
+    "answer": "Open Interest",
+    "hint": "वे Contracts जो अभी भी 'open' हैं।",
+    "explanation": "Open Interest उन derivative contracts की कुल संख्या है जिन्हें अभी तक settle, exercise या close out नहीं किया गया है।"
+  },
+  {
+    "id": 18,
+    "question": "In a currency swap, the principal amounts are usually:",
+    "options": ["Not exchanged", "Exchanged at the beginning and end", "Exchanged only at the end", "Exchanged only at the beginning"],
+    "answer": "Exchanged at the beginning and end",
+    "hint": "Swap का अर्थ है actual capital का लेन-देन।",
+    "explanation": "एक standard currency swap में, दो currencies के principal amounts शुरुआत (inception) में exchange किए जाते हैं और maturity पर वापस (re-exchange) किए जाते हैं।"
+  },
+  {
+    "id": 19,
+    "question": "Buying a Call option is similar to:",
+    "options": ["Buying the underlying asset but with limited downside risk", "Selling the underlying asset", "Shorting the market", "Buying a bond"],
+    "answer": "Buying the underlying asset but with limited downside risk",
+    "hint": "ऊपर जाने पर profit, लेकिन नीचे जाने पर केवल premium का नुकसान।",
+    "explanation": "Call खरीदना आपको asset के मालिक होने की तरह price बढ़ने (bullish) पर profit कमाने की अनुमति देता है, लेकिन आपका maximum loss केवल paid premium तक सीमित रहता है।"
+  },
+  {
+    "id": 20,
+    "question": "Which Greek letter measures the sensitivity of an option's price to changes in the underlying asset's price?",
+    "options": ["Theta", "Vega", "Delta", "Rho"],
+    "answer": "Delta",
+    "hint": "Price में बदलाव।",
+    "explanation": "Delta मापता है कि underlying asset की price में 1 unit के बदलाव पर option price में कितना बदलाव होने की उम्मीद है।"
+  },
+  {
+    "id": 21,
+    "question": "OTC derivatives generally face higher ______ than exchange-traded derivatives.",
+    "options": ["Liquidity", "Transparency", "Counterparty Risk", "Regulation"],
+    "answer": "Counterparty Risk",
+    "hint": "Private contracts में central guarantee नहीं होती।",
+    "explanation": "चूँकि OTC trades बिना clearing corporation के bilateral होते हैं, इसलिए दूसरी party के default होने का risk ज़्यादा होता है (Counterparty Risk)।"
+  },
+  {
+    "id": 22,
+    "question": "A currency pair is trading at 80. If you buy a Call option with Strike 82, this option is:",
+    "options": ["In-the-Money", "At-the-Money", "Out-of-the-Money", "Deep In-the-Money"],
+    "answer": "Out-of-the-Money",
+    "hint": "Call के लिए Strike Price वर्तमान price से अधिक है।",
+    "explanation": "Call option के लिए, यदि Strike Price (82) > Spot Price (80) है, तो option Out-of-the-Money (OTM) है क्योंकि इसकी कोई intrinsic value नहीं है।"
+  },
+  {
+    "id": 23,
+    "question": "The 'Cost of Carry' model is used to determine the theoretical price of:",
+    "options": ["Futures", "Options", "Swaps", "Spot"],
+    "answer": "Futures",
+    "hint": "Spot price + Interest - Income.",
+    "explanation": "Futures contract की fair value 'Cost of Carry' model (Spot Price + Cost of Financing - Benefits of Holding) का उपयोग करके calculate की जाती है।"
+  },
+  {
+    "id": 24,
+    "question": "An Interest Rate Swap typically involves exchanging:",
+    "options": ["Principal only", "Fixed rate interest for floating rate interest", "Equity for Debt", "Gold for Cash"],
+    "answer": "Fixed rate interest for floating rate interest",
+    "hint": "Interest payment का प्रकार बदलना।",
+    "explanation": "सबसे common interest rate swap में एक party fixed interest rate pay करती है और दूसरी से floating rate (जैसे SOFR/LIBOR) receive करती है।"
+  },
+  {
+    "id": 25,
+    "question": "Intrinsic Value + Time Value =",
+    "options": ["Strike Price", "Spot Price", "Option Premium", "Futures Price"],
+    "answer": "Option Premium",
+    "hint": "Option price के हिस्से (components)।",
+    "explanation": "एक option की कुल price (Premium) उसकी Intrinsic Value (real value) और Time Value (hope value) का जोड़ होती है।"
+  },
+  {
+    "id": 26,
+    "question": "Time decay (erosion of time value) accelerates as the option approaches:",
+    "options": ["Inception", "Expiration", "The weekend", "The beginning of the month"],
+    "answer": "Expiration",
+    "hint": "कुछ भी होने के लिए कम समय।",
+    "explanation": "जैसे-जैसे कोई option अपनी expiry date के करीब आता है, time value तेज़ी से कम होती है, जिसे 'Theta' द्वारा मापा जाता है।"
+  },
+  {
+    "id": 27,
+    "question": "If you sell a Put Option, your view on the market is:",
+    "options": ["Bearish", "Bullish or Neutral", "Highly Volatile", "Bearish to Neutral"],
+    "answer": "Bullish or Neutral",
+    "hint": "आप नहीं चाहते कि price नीचे जाए।",
+    "explanation": "Put बेचने का मतलब है कि आप उम्मीद करते हैं कि price strike price से ऊपर रहेगी (Neutral) या बढ़ेगी (Bullish), ताकि आप premium रख सकें।"
+  },
+  {
+    "id": 28,
+    "question": "What is the maximum loss for a buyer of a Call Option?",
+    "options": ["Unlimited", "Strike Price", "The Premium Paid", "Spot Price"],
+    "answer": "The Premium Paid",
+    "hint": "आप केवल वही खो सकते हैं जो आपने शुरुआत में दिया है।",
+    "explanation": "एक option buyer option को exercise न करने का विकल्प चुन सकता है। इसलिए, maximum loss केवल इसे खरीदने के लिए दिए गए premium तक सीमित होता है।"
+  },
+  {
+    "id": 29,
+    "question": "What is the maximum profit for a seller of a Call Option?",
+    "options": ["Unlimited", "Strike Price", "The Premium Received", "Spot Price"],
+    "answer": "The Premium Received",
+    "hint": "Seller को केवल upfront payment मिलता है।",
+    "explanation": "Option writer (seller) के लिए maximum gain प्राप्त premium तक सीमित होता है। हालाँकि, यदि market उनके खिलाफ जाता है तो उनका potential loss unlimited होता है।"
+  },
+  {
+    "id": 30,
+    "question": "Futures contracts are usually closed out by:",
+    "options": ["Physical delivery", "Entering an offsetting (reverse) trade", "Defaulting", "Waiting for 10 years"],
+    "answer": "Entering an offsetting (reverse) trade",
+    "hint": "Square off करना (position close करना)।",
+    "explanation": "ज़्यादातर futures contracts delivery के लिए maturity तक hold नहीं किए जाते; उन्हें expiry से पहले opposite position (जैसे, खरीदा है तो बेचना) लेकर 'square off' कर दिया जाता है।"
+  },
+  {
+    "id": 31,
+    "question": "Which entity guarantees the settlement of trades on the stock exchange?",
+    "options": ["The Broker", "The Depository", "The Clearing Corporation/House", "The Bank"],
+    "answer": "The Clearing Corporation/House",
+    "hint": "उदाहरण: NSCCL, ICCL.",
+    "explanation": "Clearing Corporation margins के ज़रिए risk manage करते हुए, exchange पर execute होने वाले सभी trades के settlement की guarantee देती है।"
+  },
+  {
+    "id": 32,
+    "question": "A contract that gives the right to buy or sell a currency at a future date is a:",
+    "options": ["Swap", "Option", "Loan", "Bond"],
+    "answer": "Option",
+    "hint": "मुख्य शब्द 'Right' (अधिकार) है।",
+    "explanation": "केवल Options 'Right' (अधिकार) देते हैं। Forwards और Futures 'Obligation' (मजबूरी/दायित्व) लगाते हैं।"
+  },
+  {
+    "id": 33,
+    "question": "Long USDINR Future at 83.00. Settlement price at expiry is 83.50. What is the profit/loss?",
+    "options": ["Loss of 0.50", "Profit of 0.50", "No Profit No Loss", "Profit of 83.50"],
+    "answer": "Profit of 0.50",
+    "hint": "कम पर खरीदें, ज़्यादा पर बेचें।",
+    "explanation": "आपने 83.00 पर खरीदा (Long) और price बढ़कर 83.50 हो गई। Profit = 83.50 - 83.00 = 0.50."
+  },
+  {
+    "id": 34,
+    "question": "Short USDINR Future at 83.00. Settlement price is 83.50. What is the profit/loss?",
+    "options": ["Loss of 0.50", "Profit of 0.50", "Loss of 83.00", "Profit of 5.00"],
+    "answer": "Loss of 0.50",
+    "hint": "आपने बेचा, लेकिन price ऊपर चली गई।",
+    "explanation": "आपने 83.00 पर बेचा (Short), लेकिन price 83.50 तक बढ़ गई। Loss = 83.50 - 83.00 = 0.50."
+  },
+  {
+    "id": 35,
+    "question": "Arbitrage involves:",
+    "options": ["Taking high risk for high returns", "Risk-less profit from price discrepancies", "Long term investing", "Betting on market direction"],
+    "answer": "Risk-less profit from price discrepancies",
+    "hint": "यहाँ खरीदना, वहाँ बेचना।",
+    "explanation": "Arbitrage दो या अधिक markets के बीच price difference का फायदा उठाकर risk-free profit कमाने की practice है।"
+  },
+  {
+    "id": 36,
+    "question": "Which of the following is an example of a derivative underlying?",
+    "options": ["Weather", "Currency", "Interest Rate", "All of the above"],
+    "answer": "All of the above",
+    "hint": "Derivatives लगभग किसी भी मापने योग्य चीज़ पर आधारित हो सकते हैं।",
+    "explanation": "Derivatives विभिन्न variables पर आधारित हो सकते हैं जिनमें financial assets (currency, stocks, interest rates) और non-financial variables (जैसे मौसम) शामिल हैं।"
+  },
+  {
+    "id": 37,
+    "question": "Margin money is required for:",
+    "options": ["Option Buyers", "Futures Buyers and Sellers", "Spot Traders", "Mutual Fund Investors"],
+    "answer": "Futures Buyers and Sellers",
+    "hint": "दोनों पक्षों पर obligation (दायित्व) होता है।",
+    "explanation": "Futures में, buyers और sellers दोनों पर settle करने का obligation होता है, इसलिए दोनों को margin जमा करना होता है। (Options में, केवल seller margin जमा करता है)।"
+  },
+  {
+    "id": 38,
+    "question": "When the Futures price is higher than the Spot price, the market is in:",
+    "options": ["Backwardation", "Contango", "Recession", "Parity"],
+    "answer": "Contango",
+    "hint": "Cost of carry के साथ standard market condition।",
+    "explanation": "Contango वह स्थिति है जहाँ किसी commodity या asset की futures price उसकी spot price से अधिक होती है (अक्सर cost of carry के कारण)।"
+  },
+  {
+    "id": 39,
+    "question": "When the Futures price is lower than the Spot price, the market is in:",
+    "options": ["Backwardation", "Contango", "Inflation", "Equilibrium"],
+    "answer": "Backwardation",
+    "hint": "Contango का उल्टा।",
+    "explanation": "Backwardation तब होता है जब futures price, spot price से कम होती है (अक्सर physical asset को hold करने के फायदों के कारण)।"
+  },
+  {
+    "id": 40,
+    "question": "The expiry date of currency derivatives contracts in India is usually:",
+    "options": ["The last working day of the month", "Two working days prior to the last working day of the month", "The 15th of every month", "Every Friday"],
+    "answer": "Two working days prior to the last working day of the month",
+    "hint": "यह T+2 settlement के लिए समय देता है।",
+    "explanation": "RBI की guidelines आमतौर पर spot market settlement cycles के साथ align करने के लिए महीने के आखिरी business day से 2 working days पहले expiry तय करती हैं।"
+  },
+  {
+    "id": 41,
+    "question": "Using derivatives to reduce or eliminate risk is called:",
+    "options": ["Speculation", "Hedging", "Arbitrage", "Gambling"],
+    "answer": "Hedging",
+    "hint": "सुरक्षा के लिए बाड़ (fence) या बचाव की तरह।",
+    "explanation": "Corporations के लिए derivatives का मुख्य उद्देश्य Hedging है—यानी अपने risk को उन लोगों को transfer करना जो उसे लेने के लिए तैयार हैं।"
+  },
+  {
+    "id": 42,
+    "question": "Using derivatives to bet on market movements for profit is called:",
+    "options": ["Hedging", "Speculation", "Insurance", "Saving"],
+    "answer": "Speculation",
+    "hint": "Profit के लिए risk लेना।",
+    "explanation": "Speculators वह risk लेते हैं जिससे hedgers बचना चाहते हैं, इस उम्मीद में कि वे price changes से profit कमाएंगे।"
+  },
+  {
+    "id": 43,
+    "question": "The 'Notional Value' of a derivative contract refers to:",
+    "options": ["The margin paid", "The total value of the underlying assets controlled", "The brokerage fee", "The tax value"],
+    "answer": "The total value of the underlying assets controlled",
+    "hint": "Contract Size x Price.",
+    "explanation": "Notional value उस underlying asset की position की total value है जिसे derivative contract control करता है।"
+  },
+  {
+    "id": 44,
+    "question": "In a USDINR option contract, the 'Underlying' is:",
+    "options": ["The US Dollar", "The Indian Rupee", "The exchange rate between USD and INR", "The interest rate"],
+    "answer": "The exchange rate between USD and INR",
+    "hint": "वह variable जिस पर दांव (bet) लगाया जा रहा है।",
+    "explanation": "Currency option के लिए underlying asset वह विशिष्ट exchange rate pair (Spot rate) होता है जिसका trade किया जा रहा है।"
+  },
+  {
+    "id": 45,
+    "question": "Which order type ensures a trade is executed immediately at the best available price?",
+    "options": ["Limit Order", "Market Order", "Stop Loss Order", "GTC Order"],
+    "answer": "Market Order",
+    "hint": "अभी खरीदें/बेचें (NOW)।",
+    "explanation": "Market Order किसी security को current market price पर तुरंत खरीदने या बेचने का instruction है।"
+  },
+  {
+    "id": 46,
+    "question": "Contracts that are customized to the needs of the client are usually:",
+    "options": ["Exchange Traded Funds", "Futures", "Forwards", "REITs"],
+    "answer": "Forwards",
+    "hint": "OTC flexibility (लचीलापन)।",
+    "explanation": "Forwards OTC instruments हैं और इन्हें size, expiry, और delivery terms के अनुसार tailor (customize) किया जा सकता है।"
+  },
+  {
+    "id": 47,
+    "question": "At expiry, the price of a Futures contract usually converges to:",
+    "options": ["The Spot Price", "The Strike Price", "Zero", "Infinity"],
+    "answer": "The Spot Price",
+    "hint": "Convergence principle (मिलने का सिद्धांत)।",
+    "explanation": "जैसे-जैसे contract अपनी expiry के करीब आता है, time value घटती जाती है और futures price underlying asset की spot price के साथ converge (मिल जाती) हो जाती है।"
+  },
+  {
+    "id": 48,
+    "question": "An option with a Delta of 0.5 implies:",
+    "options": ["50% chance of expiring ITM", "Option price moves 0.50 for every 1.00 move in underlying", "Option costs 0.50", "Time decay is 0.50"],
+    "answer": "Option price moves 0.50 for every 1.00 move in underlying",
+    "hint": "Delta बदलाव की दर (rate of change) है।",
+    "explanation": "Delta उस ratio को दर्शाता है जो किसी asset की price में बदलाव की तुलना उसके derivative की price में होने वाले बदलाव से करता है।"
+  },
+  {
+    "id": 49,
+    "question": "Maintenance Margin is:",
+    "options": ["The minimum balance required to keep a position open", "The fee paid to the broker", "The profit made", "The tax paid"],
+    "answer": "The minimum balance required to keep a position open",
+    "hint": "इस line (स्तर) से नीचे मत गिरें।",
+    "explanation": "यदि margin account का balance, Maintenance Margin level से नीचे गिर जाता है, तो trader को और funds deposit करने के लिए margin call आता है।"
+  },
+  {
+    "id": 50,
+    "question": "In Option terminology, 'Writing' an option means:",
+    "options": ["Buying it", "Selling it (creating the obligation)", "Exercising it", "Expiring it"],
+    "answer": "Selling it (creating the obligation)",
+    "hint": "Writer ही seller होता है।",
+    "explanation": "Option Writing का मतलब option बेचना है, जहाँ writer premium प्राप्त करता है लेकिन contract को पूरा करने का obligation (दायित्व) भी लेता है।"
+  }
+]

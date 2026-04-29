@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "What is the primary definition of a 'Derivative'?",
+    "options": [
+      "An asset that has no value of its own",
+      "A contract that derives its value from an underlying asset",
+      "A bank deposit with a variable interest rate",
+      "A share of a company listed on the stock exchange"
+    ],
+    "answer": "A contract that derives its value from an underlying asset",
+    "hint": "Root word 'derive' (प्राप्त करना) के बारे में सोचें।",
+    "explanation": "Derivative एक ऐसा financial instrument है जिसकी value एक या एक से अधिक underlying assets (जैसे stocks, indices, या commodities) की value से प्राप्त (derive) होती है।"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following is NOT a type of derivative contract?",
+    "options": [
+      "Forward",
+      "Future",
+      "Equity Share",
+      "Option"
+    ],
+    "answer": "Equity Share",
+    "hint": "इनमें से तीन underlying asset पर निर्भर करते हैं; जबकि एक खुद ही एक asset है।",
+    "explanation": "Equity Share कंपनी में ownership को दर्शाता है और यह खुद एक asset है (spot market instrument), जबकि Forwards, Futures, और Options उन shares पर आधारित derivative contracts हैं।"
+  },
+  {
+    "id": 3,
+    "question": "In the context of derivatives, what is the 'Underlying'?",
+    "options": [
+      "The profit made from a trade",
+      "The asset from which the derivative gets its value",
+      "The exchange where the trade happens",
+      "The broker facilitating the trade"
+    ],
+    "answer": "The asset from which the derivative gets its value",
+    "hint": "यह वह चीज़ है जो contract के मूल (base) में होती है।",
+    "explanation": "Underlying वह asset (जैसे stock, currency, या commodity) है जिस पर derivative contract आधारित होता है।"
+  },
+  {
+    "id": 4,
+    "question": "Which of the following markets is known as a 'Cash Market'?",
+    "options": [
+      "Spot Market",
+      "Futures Market",
+      "Options Market",
+      "Forward Market"
+    ],
+    "answer": "Spot Market",
+    "hint": "जहाँ आप cash देते हैं और तुरंत delivery लेते हैं।",
+    "explanation": "Spot Market वह जगह है जहाँ assets को तुरंत delivery और payment के लिए खरीदा और बेचा जाता है, इसे Cash Market भी कहा जाता है।"
+  },
+  {
+    "id": 5,
+    "question": "Forward contracts are traded in which type of market?",
+    "options": [
+      "Exchange-Traded Market",
+      "Over-the-Counter (OTC) Market",
+      "Bond Market",
+      "Mutual Fund Market"
+    ],
+    "answer": "Over-the-Counter (OTC) Market",
+    "hint": "ये private agreements होते हैं, किसी public exchange पर नहीं।",
+    "explanation": "Forward contracts दो पार्टियों के बीच सीधे trade किए जाने वाले private, customized agreements होते हैं (OTC), न कि किसी centralized exchange पर।"
+  },
+  {
+    "id": 6,
+    "question": "What is the key feature distinguishing a Futures contract from a Forward contract?",
+    "options": [
+      "Futures are customized; Forwards are standardized",
+      "Futures are standardized; Forwards are customized",
+      "Futures have higher counterparty risk",
+      "Futures are not regulated"
+    ],
+    "answer": "Futures are standardized; Forwards are customized",
+    "hint": "सोचें कि exchanges को आसानी से trading के लिए क्या चाहिए होता है।",
+    "explanation": "Futures contracts को exchange द्वारा quantity, quality, और delivery date के मामले में standardized किया जाता है, जबकि Forwards को पार्टियों की जरूरतों के अनुसार customized किया जाता है।"
+  },
+  {
+    "id": 7,
+    "question": "Who acts as the counterparty for all trades in an exchange-traded futures market?",
+    "options": [
+      "The Broker",
+      "The Clearing Corporation/House",
+      "The Seller",
+      "The Buyer"
+    ],
+    "answer": "The Clearing Corporation/House",
+    "hint": "यह entity default को रोकने के लिए trade की गारंटी देती है।",
+    "explanation": "Clearing Corporation हर seller के लिए buyer और हर buyer के लिए seller के रूप में कार्य करती है, जिससे counterparty risk (novation) खत्म हो जाता है।"
+  },
+  {
+    "id": 8,
+    "question": "A market participant who uses derivatives to reduce or eliminate risk is called a:",
+    "options": [
+      "Speculator",
+      "Arbitrageur",
+      "Hedger",
+      "Broker"
+    ],
+    "answer": "Hedger",
+    "hint": "यह व्यक्ति अपने risk को 'fence' (सुरक्षित) करना चाहता है।",
+    "explanation": "Hedgers अपने मौजूदा portfolio या future position को adverse price movements (कीमतों के विपरीत उतार-चढ़ाव) से बचाने के लिए derivatives का उपयोग करते हैं।"
+  },
+  {
+    "id": 9,
+    "question": "A market participant willing to take a risk in expectation of a profit is called a:",
+    "options": [
+      "Hedger",
+      "Speculator",
+      "Clearing Member",
+      "Regulator"
+    ],
+    "answer": "Speculator",
+    "hint": "ये market की दिशा पर सट्टा (speculate) लगाते हैं।",
+    "explanation": "Speculators वह risk लेते हैं जिसे hedgers ट्रांसफर करना चाहते हैं। वे profit कमाने के लिए future price movements पर दांव लगाते हैं।"
+  },
+  {
+    "id": 10,
+    "question": "What is 'Arbitrage'?",
+    "options": [
+      "Taking high risks for high returns",
+      "Simultaneous buying and selling in different markets to profit from price differences",
+      "Holding an asset for a very long time",
+      "Defaulting on a contract"
+    ],
+    "answer": "Simultaneous buying and selling in different markets to profit from price differences",
+    "hint": "Price के अंतर का उपयोग करके risk-free profit कमाना।",
+    "explanation": "Arbitrage में risk-free profit कमाने के लिए कम कीमत वाले market में asset खरीदना और एक साथ उसे अधिक कीमत वाले market में बेचना शामिल है।"
+  },
+  {
+    "id": 11,
+    "question": "Which of the following creates a 'Right but not the obligation' to buy or sell?",
+    "options": [
+      "Futures Contract",
+      "Forward Contract",
+      "Options Contract",
+      "Swap Contract"
+    ],
+    "answer": "Options Contract",
+    "hint": "आपके पास ऐसा करने का 'option' (विकल्प) होता है।",
+    "explanation": "Options buyer को contract exercise करने का right देते हैं, लेकिन legal obligation (बाध्यता) नहीं। Futures और Forwards में obligation होता है।"
+  },
+  {
+    "id": 12,
+    "question": "In an Options contract, the 'Call Option' gives the buyer the right to:",
+    "options": [
+      "Sell the underlying asset",
+      "Buy the underlying asset",
+      "Cancel the contract",
+      "Swap the asset"
+    ],
+    "answer": "Buy the underlying asset",
+    "hint": "आप assets को अपनी ओर 'call' करते हैं।",
+    "explanation": "Call Option holder को एक specified price पर underlying asset खरीदने का right देता है।"
+  },
+  {
+    "id": 13,
+    "question": "In an Options contract, the 'Put Option' gives the buyer the right to:",
+    "options": [
+      "Buy the underlying asset",
+      "Sell the underlying asset",
+      "Hold the underlying asset",
+      "Receive dividends"
+    ],
+    "answer": "Sell the underlying asset",
+    "hint": "आप asset को खुद से दूर 'put' करते हैं (बेचते हैं)।",
+    "explanation": "Put Option holder को एक specified price पर underlying asset बेचने का right देता है।"
+  },
+  {
+    "id": 14,
+    "question": "What is 'Counterparty Risk'?",
+    "options": [
+      "The risk that the market price will move against you",
+      "The risk that the other party to the contract will default",
+      "The risk of the exchange shutting down",
+      "The risk of high inflation"
+    ],
+    "answer": "The risk that the other party to the contract will default",
+    "hint": "इसे default risk भी कहा जाता है।",
+    "explanation": "Counterparty risk वह संभावना है कि contract की दूसरी पार्टी अपना हिस्सा पूरा न करे (जैसे payment न करना या delivery न देना)। OTC markets में यह risk अधिक होता है।"
+  },
+  {
+    "id": 15,
+    "question": "Which of these instruments typically has the highest counterparty risk?",
+    "options": [
+      "Index Futures",
+      "Stock Options",
+      "Forward Contracts",
+      "Treasury Bills"
+    ],
+    "answer": "Forward Contracts",
+    "hint": "सोचें कि इनमें से किसकी गारंटी exchange द्वारा नहीं दी जाती है।",
+    "explanation": "Forward contracts OTC instruments होते हैं जिनमें trade की गारंटी देने के लिए कोई central clearing house नहीं होता, जिससे उनमें counterparty default का खतरा बना रहता है।"
+  },
+  {
+    "id": 16,
+    "question": "Derivatives help in 'Price Discovery'. What does this mean?",
+    "options": [
+      "Finding the lowest price",
+      "Revealing information about future price expectations",
+      "Fixing the price of goods by the government",
+      "Discovering hidden assets"
+    ],
+    "answer": "Revealing information about future price expectations",
+    "hint": "Market यह 'discover' करता है कि future में एक asset की कीमत क्या होनी चाहिए।",
+    "explanation": "Futures और options markets, asset की future value के बारे में market participants की सामूहिक सोच को दर्शाते हैं, जिससे fair price discover करने में मदद मिलती है।"
+  },
+  {
+    "id": 17,
+    "question": "What does 'OTC' stand for?",
+    "options": [
+      "Over The Counter",
+      "On The Computer",
+      "Over The Capital",
+      "One Time Clearing"
+    ],
+    "answer": "Over The Counter",
+    "hint": "दो पार्टियों के बीच direct trading।",
+    "explanation": "OTC का मतलब Over-The-Counter है, जो उन decentralized dealer networks को दर्शाता है जहाँ trading सीधे दो पार्टियों के बीच होती है।"
+  },
+  {
+    "id": 18,
+    "question": "Which of the following is NOT an advantage of Exchange-Traded Derivatives compared to OTC?",
+    "options": [
+      "High Liquidity",
+      "No Counterparty Risk",
+      "High Customization",
+      "Transparency"
+    ],
+    "answer": "High Customization",
+    "hint": "Exchanges को standardization पसंद है।",
+    "explanation": "Exchange-traded derivatives को liquidity और trading की सुविधा के लिए standardized (customized नहीं) किया जाता है। OTC contracts वे होते हैं जो customization प्रदान करते हैं।"
+  },
+  {
+    "id": 19,
+    "question": "If you buy a Futures contract, you are said to be:",
+    "options": [
+      "Short",
+      "Long",
+      "Square",
+      "Hedged"
+    ],
+    "answer": "Long",
+    "hint": "Long का मतलब खरीदना/hold करना होता है।",
+    "explanation": "एक 'Long' position लेने का मतलब है contract खरीदना। 'Short' position लेने का मतलब है contract बेचना।"
+  },
+  {
+    "id": 20,
+    "question": "If you sell a Futures contract to open a position, you are said to be:",
+    "options": [
+      "Long",
+      "Short",
+      "Covered",
+      "Bullish"
+    ],
+    "answer": "Short",
+    "hint": "Short का मतलब बेचना होता है।",
+    "explanation": "Derivatives में, trade शुरू करने के लिए contract को बेचने को 'Short' जाना कहा जाता है।"
+  },
+  {
+    "id": 21,
+    "question": "The predetermined price at which an underlying asset is bought or sold in an option contract is called:",
+    "options": [
+      "Spot Price",
+      "Strike Price",
+      "Market Price",
+      "Premium"
+    ],
+    "answer": "Strike Price",
+    "hint": "शुरुआत में ही price 'strike' (तय) कर लिया जाता है।",
+    "explanation": "Strike Price (या Exercise Price) वह तय कीमत है जिस पर option holder underlying asset को खरीद (Call) या बेच (Put) सकता है।"
+  },
+  {
+    "id": 22,
+    "question": "The money paid by the buyer of an option to the seller is called:",
+    "options": [
+      "Margin",
+      "Strike Price",
+      "Option Premium",
+      "Commission"
+    ],
+    "answer": "Option Premium",
+    "hint": "'Insurance' या right (अधिकार) खरीदने की लागत।",
+    "explanation": "Option Premium वह कीमत है जो buyer option contract द्वारा दिए गए rights (अधिकारों) को प्राप्त करने के लिए चुकाता है।"
+  },
+  {
+    "id": 23,
+    "question": "Derivatives are often described as a 'Zero-Sum Game'. What does this mean?",
+    "options": [
+      "No one makes any profit",
+      "The net value of all positions is zero; one person's gain is another's loss",
+      "The market value always goes to zero",
+      "There are zero fees involved"
+    ],
+    "answer": "The net value of all positions is zero; one person's gain is another's loss",
+    "hint": "Winner वही लेता है जो loser हारता है।",
+    "explanation": "एक derivative contract में, एक पार्टी द्वारा कमाए गए हर डॉलर के लिए, counterparty द्वारा गँवाया गया एक बराबर डॉलर होता है (transaction costs को छोड़कर)।"
+  },
+  {
+    "id": 24,
+    "question": "Which of these can be an underlying asset for a derivative?",
+    "options": [
+      "Interest Rates",
+      "Currencies",
+      "Commodities",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "hint": "Derivatives कई asset classes को कवर करते हैं।",
+    "explanation": "Derivatives कई तरह के underlyings पर आधारित हो सकते हैं, जिनमें stocks, indices, interest rates, currencies, commodities, और यहाँ तक कि मौसम (weather) भी शामिल है।"
+  },
+  {
+    "id": 25,
+    "question": "The expiration date of a derivative contract is:",
+    "options": [
+      "The date the contract is signed",
+      "The last day the contract is valid/traded",
+      "The date the company was founded",
+      "The date dividends are paid"
+    ],
+    "answer": "The last day the contract is valid/traded",
+    "hint": "Contract के जीवन (life) का अंत।",
+    "explanation": "Expiration date (या expiry date) वह आखिरी दिन होता है जब derivative contract अस्तित्व में रहता है। इसके बाद, इसे settle कर दिया जाता है।"
+  },
+  {
+    "id": 26,
+    "question": "Leverage in derivatives means:",
+    "options": [
+      "Trading without any money",
+      "Taking a large position with a small amount of capital (margin)",
+      "Borrowing money from a bank",
+      "Investing only in safe assets"
+    ],
+    "answer": "Taking a large position with a small amount of capital (margin)",
+    "hint": "थोड़े से पैसे से बहुत कुछ control करना।",
+    "explanation": "Derivatives traders को value का केवल एक छोटा सा हिस्सा (margin) चुकाकर बड़े contract values को control करने की अनुमति देते हैं, जिससे leverage बनता है।"
+  },
+  {
+    "id": 27,
+    "question": "Which term describes the physical quantity of the underlying asset covered in one derivative contract?",
+    "options": [
+      "Strike Price",
+      "Lot Size",
+      "Tick Size",
+      "Open Interest"
+    ],
+    "answer": "Lot Size",
+    "hint": "Shares का एक 'बैच'।",
+    "explanation": "Lot Size (या Contract Size) एक सिंगल derivative contract द्वारा दर्शाए गए underlying asset की मात्रा (amount) को specify करता है।"
+  },
+  {
+    "id": 28,
+    "question": "In India, equity derivatives are primarily settled by:",
+    "options": [
+      "Physical Delivery",
+      "Cash Settlement",
+      "Asset Swap",
+      "Deferred Payment"
+    ],
+    "answer": "Cash Settlement",
+    "hint": "Shares के ट्रक नहीं आते; सिर्फ profit/loss का अंतर settle होता है।",
+    "explanation": "भारत में ज्यादातर equity index derivatives और कई stock derivatives cash-settled होते हैं, जिसका मतलब है कि असल shares की बजाय profit/loss का लेन-देन cash में किया जाता है।"
+  },
+  {
+    "id": 29,
+    "question": "A farmer selling wheat futures to lock in a price for his crop is an example of:",
+    "options": [
+      "Speculating",
+      "Arbitraging",
+      "Hedging",
+      "Trading"
+    ],
+    "answer": "Hedging",
+    "hint": "किसान price गिरने से अपना बचाव कर रहा है।",
+    "explanation": "किसान अपनी उपज के लिए price fluctuation (कीमतों में उतार-चढ़ाव) के risk को कम करने के लिए derivatives का उपयोग कर रहा है। इसे hedging कहते हैं।"
+  },
+  {
+    "id": 30,
+    "question": "An investor who buys a call option hoping the stock price will skyrocket is acting as a:",
+    "options": [
+      "Hedger",
+      "Speculator",
+      "Arbitrageur",
+      "Market Maker"
+    ],
+    "answer": "Speculator",
+    "hint": "Potential profit के लिए risk लेना।",
+    "explanation": "Investor profit कमाने के लिए price की दिशा पर दांव लगा रहा है, न कि किसी मौजूदा asset की सुरक्षा कर रहा है। यह speculation (सट्टेबाजी) है।"
+  },
+  {
+    "id": 31,
+    "question": "The difference between the spot price and the futures price is known as:",
+    "options": [
+      "Basis",
+      "Margin",
+      "Premium",
+      "Spread"
+    ],
+    "answer": "Basis",
+    "hint": "Base का अंतर।",
+    "explanation": "Basis = Spot Price - Futures Price. यह spot और futures markets के बीच संबंध को समझने के लिए एक मुख्य (key) concept है।"
+  },
+  {
+    "id": 32,
+    "question": "Which organization regulates the Equity Derivatives market in India?",
+    "options": [
+      "RBI",
+      "SEBI",
+      "IRDAI",
+      "AMFI"
+    ],
+    "answer": "SEBI",
+    "hint": "Securities and Exchange Board of India.",
+    "explanation": "SEBI (Securities and Exchange Board of India) securities market के लिए regulatory authority है, जिसमें equity derivatives भी शामिल हैं।"
+  },
+  {
+    "id": 33,
+    "question": "In a Futures contract, the process of adjusting the contract value daily based on market prices is called:",
+    "options": [
+      "Mark-to-Market (MTM)",
+      "Daily Margin Call",
+      "Spot Settlement",
+      "Premium Adjustment"
+    ],
+    "answer": "Mark-to-Market (MTM)",
+    "hint": "Current market के अनुसार value को mark करना।",
+    "explanation": "Mark-to-Market, futures contracts में profits और losses का daily settlement है ताकि कोई बड़ा कर्ज (debt) जमा न हो।"
+  },
+  {
+    "id": 34,
+    "question": "Swaps are a type of derivative that involves:",
+    "options": [
+      "Immediate exchange of goods",
+      "Exchanging cash flows or liabilities between two parties",
+      "Buying insurance",
+      "Betting on stock indices only"
+    ],
+    "answer": "Exchanging cash flows or liabilities between two parties",
+    "hint": "आप payment streams को 'swap' (अदला-बदली) करते हैं।",
+    "explanation": "Swap एक तय समय के लिए cash flows (जैसे floating interest rate के बदले fixed interest rate) का आदान-प्रदान करने का एक agreement है।"
+  },
+  {
+    "id": 35,
+    "question": "Which of the following is NOT a feature of an OTC derivative?",
+    "options": [
+      "High Regulation",
+      "Customization",
+      "Counterparty Risk",
+      "Private Negotiation"
+    ],
+    "answer": "High Regulation",
+    "hint": "OTC एक्सचेंजों की तुलना में कम controlled होता है।",
+    "explanation": "OTC markets आमतौर पर exchange-traded markets की तुलना में कम regulated होते हैं। इनमें customization और private negotiation होती है लेकिन counterparty risk अधिक होता है।"
+  },
+  {
+    "id": 36,
+    "question": "The total number of outstanding derivative contracts that have not been settled is called:",
+    "options": [
+      "Volume",
+      "Turnover",
+      "Open Interest",
+      "Market Cap"
+    ],
+    "answer": "Open Interest",
+    "hint": "वह Interest जो अभी भी 'open' है।",
+    "explanation": "Open Interest (OI) किसी भी समय market में open contracts (long या short) की कुल संख्या को दर्शाता है।"
+  },
+  {
+    "id": 37,
+    "question": "If you are 'Bullish' on the market, you would typically:",
+    "options": [
+      "Sell Futures",
+      "Buy Put Options",
+      "Buy Futures",
+      "Do nothing"
+    ],
+    "answer": "Buy Futures",
+    "hint": "Bulls ऊपर की ओर हमला करते हैं; आप बढ़ती कीमतों से मुनाफा कमाना चाहते हैं।",
+    "explanation": "Bullish होने का मतलब है कीमतों के बढ़ने की उम्मीद करना। Futures खरीदना (Long जाना) आपको कीमतों में वृद्धि से profit कमाने का मौका देता है।"
+  },
+  {
+    "id": 38,
+    "question": "If you are 'Bearish' on the market, you would typically:",
+    "options": [
+      "Buy Futures",
+      "Sell Futures",
+      "Buy Call Options",
+      "Sell Put Options"
+    ],
+    "answer": "Sell Futures",
+    "hint": "Bears नीचे की ओर स्वाइप करते हैं; आप गिरती कीमतों से मुनाफा कमाना चाहते हैं।",
+    "explanation": "Bearish होने का मतलब है कीमतों के गिरने की उम्मीद करना। Futures बेचना (Short जाना) आपको कीमतों में गिरावट से profit कमाने का मौका देता है।"
+  },
+  {
+    "id": 39,
+    "question": "The initial amount required to be deposited before entering a futures contract is called:",
+    "options": [
+      "Premium",
+      "Initial Margin",
+      "Maintenance Margin",
+      "Mark-to-Market"
+    ],
+    "answer": "Initial Margin",
+    "hint": "शुरुआत (start) में आवश्यक margin।",
+    "explanation": "Initial Margin वह deposit है जो exchange द्वारा futures position शुरू करने के लिए आवश्यक होता है।"
+  },
+  {
+    "id": 40,
+    "question": "Why are derivatives considered efficient?",
+    "options": [
+      "They have low transaction costs compared to the underlying asset",
+      "They guarantee profits",
+      "They are risk-free",
+      "They are only for rich people"
+    ],
+    "answer": "They have low transaction costs compared to the underlying asset",
+    "hint": "Physical asset की तुलना में contract को trade करना सस्ता है।",
+    "explanation": "Derivatives में अक्सर सीधे underlying assets की trading करने की तुलना में transaction costs कम और liquidity अधिक होती है, जो market efficiency में योगदान देता है।"
+  },
+  {
+    "id": 41,
+    "question": "Which derivative instrument was the first to be introduced on the NSE (National Stock Exchange of India)?",
+    "options": [
+      "Stock Options",
+      "Index Futures",
+      "Stock Futures",
+      "Index Options"
+    ],
+    "answer": "Index Futures",
+    "hint": "Nifty 50 इसका base था।",
+    "explanation": "Index Futures (विशेष रूप से Nifty 50 पर) जून 2000 में NSE पर पेश किए गए पहले derivative instruments थे।"
+  },
+  {
+    "id": 42,
+    "question": "Can an individual investor trade directly with another individual investor in the Futures market?",
+    "options": [
+      "Yes, always",
+      "No, they must trade through a registered broker",
+      "Only if they know each other",
+      "Only for small amounts"
+    ],
+    "answer": "No, they must trade through a registered broker",
+    "hint": "Exchange तक पहुंचने के लिए आपको एक intermediary (मध्यस्थ) की आवश्यकता होती है।",
+    "explanation": "Exchange-traded markets में, सभी trades को exchange के registered members (brokers) के माध्यम से ही किया जाना चाहिए।"
+  },
+  {
+    "id": 43,
+    "question": "Which of the following describes a 'European Option'?",
+    "options": [
+      "Can be exercised any time before expiry",
+      "Can only be exercised on the expiry date",
+      "Traded only in Europe",
+      "Has a higher premium"
+    ],
+    "answer": "Can only be exercised on the expiry date",
+    "hint": "'American' style के विपरीत (contrast)।",
+    "explanation": "European options को केवल expiration date पर ही exercise किया जा सकता है, जबकि American options को expiry से पहले किसी भी समय exercise किया जा सकता है। (नोट: भारत में Index options European style के होते हैं)।"
+  },
+  {
+    "id": 44,
+    "question": "Which of the following describes an 'American Option'?",
+    "options": [
+      "Can be exercised any time on or before expiry",
+      "Can only be exercised on the expiry date",
+      "Traded only in USA",
+      "Always settled in Dollars"
+    ],
+    "answer": "Can be exercised any time on or before expiry",
+    "hint": "Exercise timing में अधिक flexibility।",
+    "explanation": "American options होल्डर को contract के जीवनकाल (life) के दौरान किसी भी समय अपने right (अधिकार) को exercise करने की अनुमति देते हैं।"
+  },
+  {
+    "id": 45,
+    "question": "The concept of 'Novation' in derivatives refers to:",
+    "options": [
+      "Creating a new product",
+      "The Clearing Corporation substituting itself as the counterparty",
+      "The expiry of a contract",
+      "The calculation of margin"
+    ],
+    "answer": "The Clearing Corporation substituting itself as the counterparty",
+    "hint": "पुराने contract की जगह नया contract लेना।",
+    "explanation": "Novation वह legal process है जहाँ central counterparty (Clearing House) buyer और seller के बीच में आ जाती है और trade की गारंटी देती है।"
+  },
+  {
+    "id": 46,
+    "question": "If you buy a stock in the cash market and sell a future on the same stock, this is an example of:",
+    "options": [
+      "Naked Speculation",
+      "Arbitrage / Hedging",
+      "Illegal Trading",
+      "Insider Trading"
+    ],
+    "answer": "Arbitrage / Hedging",
+    "hint": "आपके पास asset है और आप future का वादा (promise) बेचते हैं।",
+    "explanation": "यह अक्सर एक Cash-and-Carry Arbitrage रणनीति या hedge होता है। आप asset hold करते हैं और price को lock करने या risk-free rate कमाने के लिए future बेच देते हैं।"
+  },
+  {
+    "id": 47,
+    "question": "Which factor primarily drives the value of an option?",
+    "options": [
+      "The price of the underlying asset",
+      "The color of the certificate",
+      "The name of the broker",
+      "The location of the exchange"
+    ],
+    "answer": "The price of the underlying asset",
+    "hint": "इसका 'derivative' (किसी और पर निर्भर होने वाला) स्वभाव।",
+    "explanation": "Underlying asset की कीमत इसके options की value को प्रभावित करने वाला सबसे महत्वपूर्ण factor है (इसके साथ ही time to expiry और volatility भी)।"
+  },
+  {
+    "id": 48,
+    "question": "What is the primary purpose of the 'Index' in Index Derivatives?",
+    "options": [
+      "To confuse investors",
+      "To act as a benchmark and underlying asset",
+      "To replace individual stocks",
+      "To lower taxes"
+    ],
+    "answer": "To act as a benchmark and underlying asset",
+    "hint": "यह market को represent करता है।",
+    "explanation": "Nifty या Sensex जैसे Indices, index derivatives के लिए underlying asset के रूप में काम करते हैं, जिससे investors broad market view पर trade कर सकते हैं।"
+  },
+  {
+    "id": 49,
+    "question": "Which of these is a risk associated with writing (selling) options?",
+    "options": [
+      "Limited Profit, Unlimited Risk",
+      "Unlimited Profit, Limited Risk",
+      "No Risk",
+      "Guaranteed Loss"
+    ],
+    "answer": "Limited Profit, Unlimited Risk",
+    "hint": "Sellers को premium तो मिलता है, लेकिन क्या होगा अगर market बहुत तेजी से ऊपर-नीचे हो जाए?",
+    "explanation": "Option writers (sellers) premium कमाते हैं (limited profit) लेकिन अगर market उनके खिलाफ काफी ज्यादा move करता है तो उन्हें unlimited risk का सामना करना पड़ सकता है (खासकर naked call writing में)।"
+  },
+  {
+    "id": 50,
+    "question": "In the context of the Indian market, what does NISM stand for?",
+    "options": [
+      "National Institute of Securities Markets",
+      "National Indian Stock Market",
+      "New India Securities Management",
+      "National Investment and Savings Method"
+    ],
+    "answer": "National Institute of Securities Markets",
+    "hint": "वह संस्थान (institute) जो यह परीक्षा आयोजित कर रहा है।",
+    "explanation": "NISM का मतलब National Institute of Securities Markets है, जो इन certification परीक्षाओं को आयोजित करता है।"
+  }
+]

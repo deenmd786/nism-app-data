@@ -1,0 +1,652 @@
+[
+  {
+    "id": 10001,
+    "question": "The difference between 'Price' and 'Value' is best described as:",
+    "options": [
+      "Price is what you pay, Value is what you get",
+      "Price is always equal to Value",
+      "Value is what you pay, Price is what you get",
+      "Price and Value are unrelated concepts"
+    ],
+    "answer": "Price is what you pay, Value is what you get",
+    "hint": "वॉरेन बफेट (Warren Buffett) का प्रसिद्ध उद्धरण (quote)।",
+    "explanation": "Price (कीमत) वह राशि है जो market में चुकाई जाती है, जबकि Value (Intrinsic Value - आंतरिक मूल्य) उसके fundamentals के आधार पर asset की वास्तविक कीमत (actual worth) है।"
+  },
+  {
+    "id": 10002,
+    "question": "Which valuation method estimates the intrinsic value of a company based on its future cash flows?",
+    "options": [
+      "Relative Valuation",
+      "Discounted Cash Flow (DCF)",
+      "Technical Analysis",
+      "Asset-based Valuation"
+    ],
+    "answer": "Discounted Cash Flow (DCF)",
+    "hint": "भविष्य को वर्तमान में discount करना।",
+    "explanation": "DCF विश्लेषण भविष्य के cash flows का अनुमान लगाकर और उन्हें discount rate का उपयोग करके present value (वर्तमान मूल्य) पर वापस लाकर किसी कंपनी की value निकालता है।"
+  },
+  {
+    "id": 10003,
+    "question": "In a DCF model, the rate used to discount future cash flows to the present is called:",
+    "options": [
+      "Inflation Rate",
+      "Discount Rate / Cost of Capital",
+      "Growth Rate",
+      "Tax Rate"
+    ],
+    "answer": "Discount Rate / Cost of Capital",
+    "hint": "पैसे की लागत (The cost of the money)।",
+    "explanation": "Discount Rate cash flows के जोखिम (riskiness) और पैसे के समय मूल्य (time value of money) को दर्शाता है। यह अक्सर Weighted Average Cost of Capital (WACC) होता है।"
+  },
+  {
+    "id": 10004,
+    "question": "What is 'Free Cash Flow to Firm' (FCFF)?",
+    "options": [
+      "Cash flow available to equity shareholders only",
+      "Cash flow available to all capital providers (Debt + Equity)",
+      "Net Profit",
+      "Dividend paid"
+    ],
+    "answer": "Cash flow available to all capital providers (Debt + Equity)",
+    "hint": "'Firm' (सभी) के लिए।",
+    "explanation": "FCFF वह cash flow है जो operating expenses का भुगतान करने और capital expenditures में निवेश करने के बाद सभी funding providers (debt holders और equity holders) के लिए उपलब्ध होता है।"
+  },
+  {
+    "id": 10005,
+    "question": "What is 'Free Cash Flow to Equity' (FCFE)?",
+    "options": [
+      "Cash flow available to debt holders only",
+      "Cash flow available to equity shareholders after paying debt obligations",
+      "EBITDA",
+      "Revenue"
+    ],
+    "answer": "Cash flow available to equity shareholders after paying debt obligations",
+    "hint": "केवल 'Equity' holders के लिए।",
+    "explanation": "FCFE वह cash flow है जो सभी खर्चों (expenses), पुनर्निवेशों (reinvestments) और कर्ज चुकाने (debt repayments) के बाद equity shareholders को वितरित (distribute) करने के लिए उपलब्ध होता है।"
+  },
+  {
+    "id": 10006,
+    "question": "Which discount rate should be used to discount FCFF?",
+    "options": [
+      "Cost of Equity (Ke)",
+      "Weighted Average Cost of Capital (WACC)",
+      "Risk-Free Rate",
+      "Cost of Debt (Kd)"
+    ],
+    "answer": "Weighted Average Cost of Capital (WACC)",
+    "hint": "FCFF सभी का है, इसलिए सभी के capital की लागत (cost) का उपयोग करें।",
+    "explanation": "चूंकि FCFF debt और equity holders दोनों के लिए cash flow है, इसलिए इसे WACC द्वारा discount किया जाना चाहिए, जो debt और equity दोनों की लागत (cost) को दर्शाता है।"
+  },
+  {
+    "id": 10007,
+    "question": "Which discount rate should be used to discount FCFE?",
+    "options": [
+      "Cost of Equity (Ke)",
+      "Weighted Average Cost of Capital (WACC)",
+      "Cost of Debt",
+      "Inflation Rate"
+    ],
+    "answer": "Cost of Equity (Ke)",
+    "hint": "FCFE shareholders का है, इसलिए उनके अपेक्षित रिटर्न (expected return) का उपयोग करें।",
+    "explanation": "चूंकि FCFE वह cash flow है जो केवल equity shareholders के लिए उपलब्ध है, इसलिए इसे Cost of Equity (Ke) द्वारा discount किया जाना चाहिए।"
+  },
+  {
+    "id": 10008,
+    "question": "What is 'Terminal Value' in a DCF model?",
+    "options": [
+      "The value of the company at the beginning",
+      "The present value of all future cash flows beyond the projection period",
+      "The liquidation value",
+      "The book value"
+    ],
+    "answer": "The present value of all future cash flows beyond the projection period",
+    "hint": "अनुमान (projection) के 'अंत' (end) में Value.",
+    "explanation": "चूंकि यह माना जाता है कि कंपनियां अनिश्चित काल तक काम करती हैं (Going Concern), Terminal Value स्पष्ट पूर्वानुमान अवधि (explicit forecast period - उदा. 5 या 10 वर्ष के बाद) से परे सभी cash flows के मूल्य को पकड़ता है (captures)।"
+  },
+  {
+    "id": 10009,
+    "question": "The 'Gordon Growth Model' calculates Terminal Value assuming:",
+    "options": [
+      "Cash flows will stop",
+      "Cash flows will grow at a constant rate forever",
+      "Cash flows will fluctuate wildly",
+      "Cash flows will decrease"
+    ],
+    "answer": "Cash flows will grow at a constant rate forever",
+    "hint": "निरंतर विकास (Perpetual growth)।",
+    "explanation": "Gordon Growth Model यह मानता है कि free cash flows हमेशा (perpetuity) के लिए एक स्थिर, निरंतर दर (stable, constant rate - 'g') से बढ़ेंगे।"
+  },
+  {
+    "id": 10010,
+    "question": "What is 'Relative Valuation'?",
+    "options": [
+      "Valuing a company by comparing it to similar companies (peers) using multiples",
+      "Calculating intrinsic value using DCF",
+      "Valuing assets based on book value",
+      "Valuing based on relatives' opinion"
+    ],
+    "answer": "Valuing a company by comparing it to similar companies (peers) using multiples",
+    "hint": "पड़ोसियों (neighbors) के सापेक्ष मूल्य निर्धारण (Pricing relative)।",
+    "explanation": "Relative valuation में P/E या EV/EBITDA जैसे multiples का उपयोग करके market में समान कंपनियों (similar companies) की कीमत के आधार पर किसी कंपनी का मूल्यांकन करना शामिल है।"
+  },
+  {
+    "id": 10011,
+    "question": "Which multiple is most suitable for valuing a loss-making high-growth startup?",
+    "options": [
+      "Price-to-Earnings (P/E)",
+      "Price-to-Sales (P/S) or EV/Sales",
+      "Dividend Yield",
+      "Price-to-Book (P/B)"
+    ],
+    "answer": "Price-to-Sales (P/S) or EV/Sales",
+    "hint": "उनके पास कोई earnings नहीं है, लेकिन उनके पास sales (बिक्री) है।",
+    "explanation": "चूंकि कंपनी के पास कोई earnings नहीं है (जिससे P/E अप्रासंगिक या irrelevant हो जाता है), निवेशक growth potential का मूल्यांकन (value) करने के लिए Sales multiples का उपयोग करते हैं।"
+  },
+  {
+    "id": 10012,
+    "question": "Which multiple is best for capital-intensive industries (like Steel, Cement, Telecom)?",
+    "options": [
+      "P/E Ratio",
+      "EV/EBITDA",
+      "Price-to-Book",
+      "Dividend Yield"
+    ],
+    "answer": "EV/EBITDA",
+    "hint": "Depreciation और debt structure को अनदेखा करता है।",
+    "explanation": "EV/EBITDA को पूंजी-गहन क्षेत्रों (capital-intensive sectors) के लिए प्राथमिकता दी जाती है क्योंकि यह उच्च मूल्यह्रास (high depreciation) और अलग-अलग debt levels के कारण होने वाली विकृति (distortion) को नज़रअंदाज़ करता है।"
+  },
+  {
+    "id": 10013,
+    "question": "Which multiple is best for valuing Banks and Financial Institutions?",
+    "options": [
+      "EV/EBITDA",
+      "Price-to-Book (P/B)",
+      "Price-to-Sales",
+      "PEG Ratio"
+    ],
+    "answer": "Price-to-Book (P/B)",
+    "hint": "उनके assets वित्तीय (पैसा) हैं।",
+    "explanation": "बैंकों के लिए, अधिकांश assets और liabilities बाजार के अनुसार चिह्नित (marked to market) वित्तीय साधन (financial instruments) हैं। Book value कंपनी के वास्तविक मूल्य (true value) का एक अच्छा प्रतिनिधि (proxy) है।"
+  },
+  {
+    "id": 10014,
+    "question": "Formula for 'CAPM' (Capital Asset Pricing Model) to calculate Cost of Equity is:",
+    "options": [
+      "Risk Free Rate + Beta * (Market Return - Risk Free Rate)",
+      "Risk Free Rate + Market Return",
+      "Risk Free Rate - Beta",
+      "Market Return / Beta"
+    ],
+    "answer": "Risk Free Rate + Beta * (Market Return - Risk Free Rate)",
+    "hint": "Rf + Risk Premium.",
+    "explanation": "Ke = Rf + β(Rm - Rf). यह risk-free rate में (Beta के आधार पर) एक risk premium जोड़ता है।"
+  },
+  {
+    "id": 10015,
+    "question": "In CAPM, 'Beta' measures:",
+    "options": [
+      "Total Risk",
+      "Systematic Risk / Market Risk",
+      "Unsystematic Risk",
+      "No Risk"
+    ],
+    "answer": "Systematic Risk / Market Risk",
+    "hint": "Market के सापेक्ष Volatility.",
+    "explanation": "Beta market returns के प्रति stock's returns की संवेदनशीलता (sensitivity) को मापता है। Beta > 1 aggressive है; Beta < 1 defensive है।"
+  },
+  {
+    "id": 10016,
+    "question": "What is the 'Risk-Free Rate' typically based on?",
+    "options": [
+      "Corporate Bond Yield",
+      "Government Bond (G-Sec) Yield",
+      "Bank FD Rate",
+      "Stock Market Return"
+    ],
+    "answer": "Government Bond (G-Sec) Yield",
+    "hint": "सरकार default नहीं करती है।",
+    "explanation": "Long-term government bonds (जैसे 10-year G-Sec) पर yield का उपयोग risk-free rate के प्रतिनिधि (proxy) के रूप में किया जाता है।"
+  },
+  {
+    "id": 10017,
+    "question": "What is 'Equity Risk Premium'?",
+    "options": [
+      "The extra return expected from stocks over the risk-free rate",
+      "The insurance premium for equity",
+      "The broker's commission",
+      "The tax on equity"
+    ],
+    "answer": "The extra return expected from stocks over the risk-free rate",
+    "hint": "यदि आप safe bonds खरीद सकते हैं तो risky stocks क्यों खरीदें?",
+    "explanation": "यह वह अतिरिक्त प्रतिफल (additional return) है जो एक निवेशक risk-free asset के मुकाबले stock market में निवेश करने का जोखिम उठाने के लिए अर्जित (earn) करने की अपेक्षा करता है।"
+  },
+  {
+    "id": 10018,
+    "question": "If a stock has a PEG Ratio (P/E to Growth) of 0.5, it is considered:",
+    "options": [
+      "Overvalued",
+      "Undervalued",
+      "Fairly valued",
+      "Risky"
+    ],
+    "answer": "Undervalued",
+    "hint": "Growth की तुलना में Price कम है।",
+    "explanation": "1.0 से नीचे का PEG ratio आमतौर पर यह बताता है कि stock अपनी growth rate (विकास दर) के सापेक्ष undervalued (कम आंका गया) है।"
+  },
+  {
+    "id": 10019,
+    "question": "What is 'Sum-of-the-Parts' (SOTP) valuation?",
+    "options": [
+      "Valuing a conglomerate by valuing each business segment separately and adding them up",
+      "Valuing the sum of all assets",
+      "Valuing the parts of a machine",
+      "Adding the dividends"
+    ],
+    "answer": "Valuing a conglomerate by valuing each business segment separately and adding them up",
+    "hint": "इसे टुकड़ों में तोड़ना (Breaking it down)।",
+    "explanation": "SOTP का उपयोग समूहों (conglomerates - जैसे Reliance या ITC) के लिए प्रत्येक व्यावसायिक इकाई (business unit - उदा. Oil, Retail, Telecom) को स्वतंत्र रूप से value करने और कुल मूल्य प्राप्त करने के लिए उन्हें जोड़ने (sum) के लिए किया जाता है।"
+  },
+  {
+    "id": 10020,
+    "question": "What is 'Enterprise Value' (EV)?",
+    "options": [
+      "Market Cap + Debt - Cash",
+      "Market Cap + Cash - Debt",
+      "Market Cap + Assets",
+      "Market Cap only"
+    ],
+    "answer": "Market Cap + Debt - Cash",
+    "hint": "कुल अधिग्रहण लागत (Total takeover cost)।",
+    "explanation": "EV पूरी कंपनी का अधिग्रहण (acquire) करने के लिए सैद्धांतिक कीमत (theoretical price) को दर्शाता है: आप equity के लिए भुगतान करते हैं, debt लेते हैं, लेकिन cash अपने पास रखते हैं।"
+  },
+  {
+    "id": 10021,
+    "question": "Which ratio is better for comparing companies with different tax rates?",
+    "options": [
+      "Net Profit Margin",
+      "EBIT Margin",
+      "P/E Ratio",
+      "Dividend Yield"
+    ],
+    "answer": "EBIT Margin",
+    "hint": "Tax से पहले (Before Tax)।",
+    "explanation": "EBIT (Operating Profit) की गणना taxes से पहले की जाती है, जो विभिन्न tax अधिकार क्षेत्रों (jurisdictions) में कंपनियों के बीच परिचालन दक्षता (operational efficiency) की बेहतर तुलना (comparison) करने की अनुमति देता है।"
+  },
+  {
+    "id": 10022,
+    "question": "What is 'Trailing P/E'?",
+    "options": [
+      "P/E based on estimated future earnings",
+      "P/E based on past 12 months' earnings",
+      "P/E of the trailing company",
+      "P/E based on dividends"
+    ],
+    "answer": "P/E based on past 12 months' earnings",
+    "hint": "पीछे छूटना (Trailing behind - Past)।",
+    "explanation": "Trailing P/E पिछले 12 महीनों (TTM - Trailing Twelve Months) की earnings का उपयोग करता है।"
+  },
+  {
+    "id": 10023,
+    "question": "What is 'Forward P/E'?",
+    "options": [
+      "P/E based on estimated future earnings (next 12 months)",
+      "P/E based on past earnings",
+      "P/E based on book value",
+      "P/E based on sales"
+    ],
+    "answer": "P/E based on estimated future earnings (next 12 months)",
+    "hint": "आगे की ओर देखना (Looking forward)।",
+    "explanation": "Forward P/E अगले वित्तीय वर्ष (fiscal year) के लिए अनुमानित आय (projected earnings) का उपयोग करता है। यह निर्णय लेने (decision-making) के लिए अधिक प्रासंगिक है क्योंकि बाजार आगे की ओर देखने वाले (forward-looking) होते हैं।"
+  },
+  {
+    "id": 10024,
+    "question": "If a company has a Cost of Equity of 15% and ROE of 20%, it is:",
+    "options": [
+      "Destroying value",
+      "Creating value",
+      "Neutral",
+      "Bankrupt"
+    ],
+    "answer": "Creating value",
+    "hint": "लागत से अधिक कमाना (Earning more than the cost)।",
+    "explanation": "यदि ROE > Cost of Equity, तो कंपनी shareholders की अपेक्षा से अधिक returns दे रही है, इस प्रकार value (Economic Value Added) बना (creating) रही है।"
+  },
+  {
+    "id": 10025,
+    "question": "What is 'Replacement Cost' valuation?",
+    "options": [
+      "Valuing a company based on the cost to replace its assets today",
+      "Valuing based on replacing employees",
+      "Valuing based on replacement warranty",
+      "Valuing based on sales"
+    ],
+    "answer": "Valuing a company based on the cost to replace its assets today",
+    "hint": "इसे शुरू से (from scratch) बनाना।",
+    "explanation": "यह अनुमान लगाता है कि वर्तमान बाजार कीमतों (current market prices) पर कंपनी के संयंत्र (plant), मशीनरी और ब्रांड को शुरू से बनाने में क्या खर्च आएगा।"
+  },
+  {
+    "id": 10026,
+    "question": "What is 'Liquidation Value'?",
+    "options": [
+      "Value if the company continues forever",
+      "Value if the company assets are sold off and liabilities paid immediately",
+      "Value of liquid assets only",
+      "Market price"
+    ],
+    "answer": "Value if the company assets are sold off and liabilities paid immediately",
+    "hint": "बिक्री बंद करना (Closing down sale)।",
+    "explanation": "Liquidation value धन की वह अनुमानित राशि है जो आज सभी assets बेचे जाने और सभी liabilities का निपटान (settled) होने पर शेष रहेगी। यह आमतौर पर floor price होती है।"
+  },
+  {
+    "id": 10027,
+    "question": "Which is a limitation of P/E Ratio?",
+    "options": [
+      "It can be manipulated by accounting choices (depreciation, one-offs)",
+      "It is useless for loss-making companies",
+      "It doesn't consider debt",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "hint": "Earnings पेचीदा (tricky) हो सकती हैं।",
+    "explanation": "P/E 'Earnings' पर निर्भर करता है, जो volatile (अस्थिर), हेरफेर (manipulated) या negative हो सकती है। यह debt structure को भी नजरअंदाज करता है।"
+  },
+  {
+    "id": 10028,
+    "question": "What is 'Margin of Safety' in valuation?",
+    "options": [
+      "Buying a stock at a price significantly below its intrinsic value",
+      "Buying insurance",
+      "Using a stop loss",
+      "Buying government bonds"
+    ],
+    "answer": "Buying a stock at a price significantly below its intrinsic value",
+    "hint": "त्रुटि के लिए जगह (Room for error)।",
+    "explanation": "यह intrinsic value और market price के बीच का अंतर है। Margin of safety के साथ खरीदना निवेशक को अनुमान (estimation) में होने वाली त्रुटियों (errors) से बचाता है।"
+  },
+  {
+    "id": 10029,
+    "question": "If Interest Rates rise, the Intrinsic Value of a stock (DCF value) generally:",
+    "options": [
+      "Increases",
+      "Decreases",
+      "Stays the same",
+      "Doubles"
+    ],
+    "answer": "Decreases",
+    "hint": "Higher discount rate = Lower present value.",
+    "explanation": "जब interest rates बढ़ते हैं, तो Discount Rate (WACC/Ke) बढ़ जाता है। उच्च दर (higher rate) पर future cash flows को discount करने से उनकी Present Value कम हो जाती है।"
+  },
+  {
+    "id": 10030,
+    "question": "What is 'WACC'?",
+    "options": [
+      "Weighted Average Cost of Capital",
+      "Weighted Asset Capital Cost",
+      "Working Average Cash Cost",
+      "World Average Cost of Capital"
+    ],
+    "answer": "Weighted Average Cost of Capital",
+    "hint": "सभी धन की औसत लागत (Average cost of all money)।",
+    "explanation": "WACC वह औसत दर (average rate) है जो कोई कंपनी अपने assets को वित्त (finance) देने के लिए भुगतान करने की अपेक्षा करती है, जिसे उसके capital structure में debt और equity के अनुपात (proportion) से मापा (weighted) जाता है।"
+  },
+  {
+    "id": 10031,
+    "question": "Cost of Debt is usually lower than Cost of Equity because:",
+    "options": [
+      "Debt is safer (senior claim) and interest is tax-deductible",
+      "Banks are generous",
+      "Debt holders vote",
+      "Equity is guaranteed"
+    ],
+    "answer": "Debt is safer (senior claim) and interest is tax-deductible",
+    "hint": "Debt का भुगतान पहले किया जाता है।",
+    "explanation": "कर्जदाताओं (Lenders) का assets पर पूर्व दावा (prior claim - lower risk) होता है और interest payments कर योग्य आय (taxable income - tax shield) को कम करते हैं, जिससे debt, equity से सस्ता हो जाता है।"
+  },
+  {
+    "id": 10032,
+    "question": "The 'Tax Shield' benefit applies to:",
+    "options": [
+      "Dividend payments",
+      "Interest payments on debt",
+      "Principal repayment",
+      "Equity issuance"
+    ],
+    "answer": "Interest payments on debt",
+    "hint": "Interest एक खर्च (expense) है।",
+    "explanation": "Debt पर चुकाया गया Interest एक tax-deductible expense है, जो कंपनी के tax bill को कम करता है। Dividends tax-deductible नहीं हैं।"
+  },
+  {
+    "id": 10033,
+    "question": "What is 'Sensitivity Analysis' in valuation?",
+    "options": [
+      "Analyzing the emotional sensitivity of the CEO",
+      "Testing how the valuation changes if key assumptions (growth, margins) change",
+      "Measuring market sensitivity",
+      "None of the above"
+    ],
+    "answer": "Testing how the valuation changes if key assumptions (growth, margins) change",
+    "hint": "'क्या होगा यदि' (What if) परिदृश्य (scenarios)।",
+    "explanation": "Sensitivity analysis यह निर्धारित करता है कि स्वतंत्र चर (independent variable - जैसे growth rate) के विभिन्न मूल्य (values) किसी विशेष आश्रित चर (dependent variable - जैसे stock price) को कैसे प्रभावित करते हैं।"
+  },
+  {
+    "id": 10034,
+    "question": "A company with a high 'Float' (insurance) is valuable because:",
+    "options": [
+      "It floats on water",
+      "It gets free money to invest before paying claims",
+      "It has high inventory",
+      "It has no debt"
+    ],
+    "answer": "It gets free money to invest before paying claims",
+    "hint": "पैसे का अभी उपयोग करें, बाद में भुगतान करें (Use money now, pay later)।",
+    "explanation": "Float वह पैसा है जो बीमा कंपनियों (insurance companies) के पास होता है जिसका भुगतान अभी तक दावों (claims) में नहीं किया गया है। इसे returns उत्पन्न (generate) करने के लिए invest किया जा सकता है।"
+  },
+  {
+    "id": 10035,
+    "question": "Which of the following is an 'Asset-Based' valuation method?",
+    "options": [
+      "P/E Ratio",
+      "DCF",
+      "Book Value per Share",
+      "Dividend Discount Model"
+    ],
+    "answer": "Book Value per Share",
+    "hint": "Balance sheet assets पर आधारित।",
+    "explanation": "Asset-based valuation कंपनी की कमाई क्षमता (earnings power) के बजाय उसके assets (देनदारियों को घटाकर - net of liabilities) के मूल्य (value) पर केंद्रित है।"
+  },
+  {
+    "id": 10036,
+    "question": "The 'Dividend Discount Model' (DDM) values a stock based on:",
+    "options": [
+      "Present value of future dividends",
+      "Present value of free cash flows",
+      "Present value of sales",
+      "Book value"
+    ],
+    "answer": "Present value of future dividends",
+    "hint": "Dividends ही cash flow हैं।",
+    "explanation": "DDM मानता है कि stock का value उसके सभी भविष्य के dividend भुगतानों का present value (वर्तमान मूल्य) है।"
+  },
+  {
+    "id": 10037,
+    "question": "Cyclical companies (like Auto, Steel) often have Low P/E ratios at the Peak of the cycle because:",
+    "options": [
+      "Earnings are abnormally high",
+      "Earnings are low",
+      "Price is zero",
+      "They are bankrupt"
+    ],
+    "answer": "Earnings are abnormally high",
+    "hint": "भाजक (Denominator - E) बहुत बड़ा है।",
+    "explanation": "एक cycle के चरम (peak) पर, earnings बहुत अधिक होती हैं, जिससे P/E कम दिखता है। यह अक्सर एक 'value trap' होता है क्योंकि चक्र (cycle) बदलने पर earnings गिर जाएंगी।"
+  },
+  {
+    "id": 10038,
+    "question": "What is 'Peer Group Comparison'?",
+    "options": [
+      "Comparing a company with its competitors in the same industry",
+      "Comparing with companies in different countries",
+      "Comparing with the government",
+      "Comparing with past performance only"
+    ],
+    "answer": "Comparing a company with its competitors in the same industry",
+    "hint": "सेब की तुलना सेब से (Apples to Apples)।",
+    "explanation": "इसमें एक ही industry में समान आकार (similar size) और व्यवसाय मॉडल (business model) वाली अन्य कंपनियों के साथ किसी कंपनी के valuation multiples की तुलना (comparing) करना शामिल है।"
+  },
+  {
+    "id": 10039,
+    "question": "If a company has a P/E of 20 and the Industry P/E is 10, it implies:",
+    "options": [
+      "The company is trading at a premium to its peers",
+      "The company is trading at a discount",
+      "The company is making a loss",
+      "The company is cheap"
+    ],
+    "answer": "The company is trading at a premium to its peers",
+    "hint": "यह अधिक महंगा (expensive) है।",
+    "explanation": "Industry के औसत (average) से अधिक P/E बताता है कि बाजार को इस कंपनी से उच्च विकास (higher growth) या गुणवत्ता (quality) की उम्मीद है, इसलिए यह premium पर ट्रेड करता है।"
+  },
+  {
+    "id": 10040,
+    "question": "What is 'Holding Company Discount'?",
+    "options": [
+      "A discount on holding bags",
+      "The market valuing a holding company less than the sum of its investments",
+      "A discount given to shareholders",
+      "A discount on taxes"
+    ],
+    "answer": "The market valuing a holding company less than the sum of its investments",
+    "hint": "संपूर्ण (whole) का मूल्य उसके भागों (parts) से कम है।",
+    "explanation": "Holding companies कर अक्षमताओं (tax inefficiencies), नियंत्रण की कमी (lack of control) और प्रबंधन लागत (management costs) के कारण अक्सर अपने underlying assets के मूल्य पर छूट (discount - 20-50%) पर व्यापार (trade) करती हैं।"
+  },
+  {
+    "id": 10041,
+    "question": "Which of the following increases Enterprise Value (EV)?",
+    "options": [
+      "Increase in Cash",
+      "Increase in Debt",
+      "Decrease in Share Price",
+      "Share Buyback"
+    ],
+    "answer": "Increase in Debt",
+    "hint": "EV = Equity + Debt...",
+    "explanation": "चूंकि EV = Market Cap + Debt - Cash, इसलिए Debt में वृद्धि (increase) Enterprise Value (फर्म को प्राप्त करने की लागत) को बढ़ाती है।"
+  },
+  {
+    "id": 10042,
+    "question": "What is 'Growth at a Reasonable Price' (GARP)?",
+    "options": [
+      "Buying high growth stocks regardless of price",
+      "Buying value stocks with no growth",
+      "Buying stocks with good growth potential but at moderate valuations",
+      "Buying bonds"
+    ],
+    "answer": "Buying stocks with good growth potential but at moderate valuations",
+    "hint": "दोनों दुनिया का सर्वश्रेष्ठ (Growth + Value)।",
+    "explanation": "GARP निवेशक (जैसे Peter Lynch) उन कंपनियों की तलाश करते हैं जो बढ़ (grow) रही हैं लेकिन खगोलीय रूप से (astronomically) उच्च P/E अनुपातों (ratios) पर trade नहीं कर रही हैं।"
+  },
+  {
+    "id": 10043,
+    "question": "When valuing a brand-new Ecommerce company with no profits, which metric is most useful?",
+    "options": [
+      "P/E Ratio",
+      "Dividend Yield",
+      "Gross Merchandise Value (GMV) multiple",
+      "Book Value"
+    ],
+    "answer": "Gross Merchandise Value (GMV) multiple",
+    "hint": "कुल बिक्री मात्रा (Total sales volume)।",
+    "explanation": "Early-stage ecommerce के लिए, GMV (बेचे गए माल का कुल मूल्य) पैमाने (scale) और market share का एक प्रतिनिधि (proxy) है, जिसका उपयोग revenues/profits के स्थिर (stabilize) होने से पहले मूल्यांकन (valuation) के लिए किया जाता है।"
+  },
+  {
+    "id": 10044,
+    "question": "What is 'Minority Interest'?",
+    "options": [
+      "Interest paid to minors",
+      "The portion of a subsidiary not owned by the parent company",
+      "A small interest rate",
+      "Interest in small companies"
+    ],
+    "answer": "The portion of a subsidiary not owned by the parent company",
+    "hint": "वह हिस्सा जो आपके पास नहीं है (The part you don't own)।",
+    "explanation": "यदि किसी कंपनी के पास सहायक कंपनी (subsidiary) का 80% हिस्सा है, तो दूसरों के स्वामित्व वाला शेष 20% हिस्सा Minority Interest है, जिसे समेकित बैलेंस शीट (consolidated balance sheet) पर देयता (liability) के रूप में दर्ज किया जाता है।"
+  },
+  {
+    "id": 10045,
+    "question": "Which valuation method is most sensitive to the 'Growth Rate' assumption?",
+    "options": [
+      "Asset-based valuation",
+      "DCF (Discounted Cash Flow)",
+      "Book Value",
+      "Liquidation Value"
+    ],
+    "answer": "DCF (Discounted Cash Flow)",
+    "hint": "Compounding growth भविष्य को बड़े पैमाने पर (massively) बदल देती है।",
+    "explanation": "DCF में, terminal growth rate की धारणा (assumption) में एक छोटा सा बदलाव (change) अंतिम मूल्यांकन (final valuation) को काफी हद तक बदल सकता है, जिससे यह बहुत संवेदनशील (sensitive) हो जाता है।"
+  },
+  {
+    "id": 10046,
+    "question": "What is 'Top-Down' Valuation?",
+    "options": [
+      "Valuing the CEO first",
+      "Starting with the Economy, then Sector, then Company",
+      "Starting with the Company first",
+      "Valuing only top companies"
+    ],
+    "answer": "Starting with the Economy, then Sector, then Company",
+    "hint": "Macro से Micro.",
+    "explanation": "Top-Down valuation व्यापक आर्थिक दृष्टिकोण (macroeconomic outlook) के साथ शुरू होता है, आशाजनक उद्योगों (promising industries) का चयन करता है, और फिर उन उद्योगों के भीतर विशिष्ट कंपनियों (specific companies) को महत्व (value) देता है।"
+  },
+  {
+    "id": 10047,
+    "question": "What is 'Bottom-Up' Valuation?",
+    "options": [
+      "Picking stocks based on individual company fundamentals irrespective of the sector/economy",
+      "Valuing the economy first",
+      "Valuing small companies only",
+      "Technical analysis"
+    ],
+    "answer": "Picking stocks based on individual company fundamentals irrespective of the sector/economy",
+    "hint": "Stock चुनना (Stock picking)।",
+    "explanation": "Bottom-up मजबूत valuation वाली अच्छी कंपनियों को खोजने पर केंद्रित है, यह मानते हुए कि वे macro cycles की परवाह किए बिना समय के साथ अच्छा प्रदर्शन करेंगी।"
+  },
+  {
+    "id": 10048,
+    "question": "What is 'Intrinsic Value'?",
+    "options": [
+      "The current stock price",
+      "The true, inherent value of the company based on fundamentals",
+      "The target price",
+      "The IPO price"
+    ],
+    "answer": "The true, inherent value of the company based on fundamentals",
+    "hint": "'वास्तविक' मूल्य (The 'Real' worth)।",
+    "explanation": "Intrinsic value asset का गणना (calculated) किया गया 'सच्चा' (true) मूल्य है। एक analyst का लक्ष्य उन stocks को ढूंढना है जहां Market Price < Intrinsic Value हो।"
+  },
+  {
+    "id": 10049,
+    "question": "If Market Price > Intrinsic Value, the stock is:",
+    "options": [
+      "Undervalued",
+      "Overvalued",
+      "Fairly Valued",
+      "A Buy"
+    ],
+    "answer": "Overvalued",
+    "hint": "कीमत (Price) मूल्य (worth) से अधिक है।",
+    "explanation": "यदि market कंपनी की वास्तविक कीमत (truly worth) से अधिक भुगतान (paying) कर रहा है, तो stock को overvalued (Sell/Avoid) माना जाता है।"
+  },
+  {
+    "id": 10050,
+    "question": "The 'Efficient Market Hypothesis' suggests that:",
+    "options": [
+      "Analysts can easily beat the market",
+      "Market prices already reflect all available information, making valuation futile",
+      "Markets are always wrong",
+      "Technical analysis is the best"
+    ],
+    "answer": "Market prices already reflect all available information, making valuation futile",
+    "hint": "Market सब कुछ जानता है।",
+    "explanation": "EMH का तर्क है कि चूंकि कीमतें सभी जानकारी (info) को दर्शाती हैं, इसलिए लगातार undervalued या overvalued stocks खोजना असंभव है (हालांकि कई निवेशक इससे असहमत हैं)।"
+  }
+]

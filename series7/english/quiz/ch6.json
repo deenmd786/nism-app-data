@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "What is the primary objective of the settlement process in the securities market?",
+    "options": [
+      "To execute the trade on the exchange",
+      "To exchange securities for funds between buyers and sellers",
+      "To calculate the brokerage fee",
+      "To dematerialize physical shares"
+    ],
+    "answer": "To exchange securities for funds between buyers and sellers",
+    "hint": "This is the final step of the trade where the transaction is completed.",
+    "explanation": "The main objective of the settlement process is to deliver securities to the buyer and pay funds to the seller."
+  },
+  {
+    "id": 2,
+    "question": "What is the current rolling settlement cycle for equity cash markets in India?",
+    "options": [
+      "T+1",
+      "T+2",
+      "T+3",
+      "T+0"
+    ],
+    "answer": "T+1",
+    "hint": "Settlement occurs on the next working day after the trade.",
+    "explanation": "The settlement cycle for the equity spot market in India is 'T+1'. This means the settlement of funds and securities takes place one working day after the Trade Day (T)."
+  },
+  {
+    "id": 3,
+    "question": "The day on which the Clearing Corporation actually receives funds and securities from the clearing members is called ______.",
+    "options": [
+      "Trade Day",
+      "Pay-in Day",
+      "Pay-out Day",
+      "Expiry Day"
+    ],
+    "answer": "Pay-in Day",
+    "hint": "Brokers bring 'in' their obligations to the CC.",
+    "explanation": "Pay-in day is the day when the selling broker delivers securities and the buying broker delivers funds to the Clearing Corporation (CC)."
+  },
+  {
+    "id": 4,
+    "question": "The day on which the Clearing Corporation delivers funds to the selling brokers and securities to the buying brokers is known as ______.",
+    "options": [
+      "Pay-in Day",
+      "Pay-out Day",
+      "Record Date",
+      "Value Date"
+    ],
+    "answer": "Pay-out Day",
+    "hint": "Funds and shares go 'out' from the CC.",
+    "explanation": "Pay-out is the process where the CC credits funds into the bank accounts of selling members and securities into the demat accounts of buying members."
+  },
+  {
+    "id": 5,
+    "question": "If a broker fails to deliver the required securities on the pay-in day, it results in a ______.",
+    "options": [
+      "Margin Call",
+      "Short Delivery",
+      "Trade Annulment",
+      "Close-out"
+    ],
+    "answer": "Short Delivery",
+    "hint": "Shares fell 'short'.",
+    "explanation": "When the selling broker fails to deliver shares to the CC by the pay-in deadline, it is called 'Short Delivery'."
+  },
+  {
+    "id": 6,
+    "question": "How does the Clearing Corporation resolve a 'Short Delivery' of securities?",
+    "options": [
+      "By conducting an Auction",
+      "By giving the buyer equivalent mutual funds",
+      "By extending the settlement cycle to T+5",
+      "By cancelling the trade entirely"
+    ],
+    "answer": "By conducting an Auction",
+    "hint": "Shares are bought from the market and given to the buyer.",
+    "explanation": "In the case of a short delivery, the CC conducts an Auction session to provide shares to the buyer, where it buys shares on behalf of the defaulting seller."
+  },
+  {
+    "id": 7,
+    "question": "If the required securities are not obtained even in the Auction market, the trade is settled in cash through a process called ______.",
+    "options": [
+      "Financial Close-out",
+      "Internal Shortage",
+      "Novation",
+      "Margin Penalty"
+    ],
+    "answer": "Financial Close-out",
+    "hint": "If shares are not found, the account is 'closed' in cash.",
+    "explanation": "If shares are not obtained even in the auction, the CC closes out the trade in cash. The buyer receives cash based on the highest specified price (with penalty) instead of shares."
+  },
+  {
+    "id": 8,
+    "question": "Which entities maintain the 'Clearing Pool Accounts' used by brokers to deliver and receive securities?",
+    "options": [
+      "Stock Exchanges",
+      "Clearing Banks",
+      "Depositories (NSDL/CDSL)",
+      "SEBI"
+    ],
+    "answer": "Depositories (NSDL/CDSL)",
+    "hint": "The transaction of securities (shares) happens here.",
+    "explanation": "Brokers' Clearing Pool Accounts are maintained with NSDL or CDSL (Depositories), which are used for the pay-in and pay-out of securities."
+  },
+  {
+    "id": 9,
+    "question": "To prevent the misuse of client shares, SEBI mandated that payout of securities should be credited directly to the ______.",
+    "options": [
+      "Broker's Pool Account",
+      "Client's Demat Account",
+      "Clearing Bank Account",
+      "Custodian's Account"
+    ],
+    "answer": "Client's Demat Account",
+    "hint": "Shares go directly into the account of the actual owner.",
+    "explanation": "Under the Direct Payout mechanism, the CC credits shares directly into the buying client's demat account instead of routing them through the broker's pool account."
+  },
+  {
+    "id": 10,
+    "question": "An 'Internal Shortage' occurs when ______.",
+    "options": [
+      "The Clearing Corporation lacks funds in the SGF",
+      "One client of a broker fails to deliver shares sold to another client of the same broker",
+      "A foreign investor fails to pay for their trade",
+      "The broker's clearing bank account is frozen"
+    ],
+    "answer": "One client of a broker fails to deliver shares sold to another client of the same broker",
+    "hint": "Buy and sell matched 'internally' within the broker, but the seller did not deliver the shares.",
+    "explanation": "An Internal Shortage occurs when both the buyer and the defaulting seller are clients of the same broker. The broker settles this through their internal auction or close-out mechanism."
+  },
+  {
+    "id": 11,
+    "question": "If a client buys shares but fails to pay the funds to the broker, the broker transfers these shares to a specific account called ______.",
+    "options": [
+      "Client Unpaid Securities Account (CUSA)",
+      "Margin Pledge Account",
+      "Proprietary Account",
+      "Default Account"
+    ],
+    "answer": "Client Unpaid Securities Account (CUSA)",
+    "hint": "The account for unpaid shares (for which funds were not received).",
+    "explanation": "If the client fails to provide funds for pay-in, the broker transfers those shares into the 'Client Unpaid Securities Account (CUSA)'."
+  },
+  {
+    "id": 12,
+    "question": "According to SEBI rules, within how many days must a broker liquidate (sell) the shares in the CUSA if the client still fails to pay?",
+    "options": [
+      "T+2 days",
+      "T+2 + 5 days",
+      "30 days",
+      "90 days"
+    ],
+    "answer": "T+2 + 5 days",
+    "hint": "A period of 5 working days is given after settlement.",
+    "explanation": "It is mandatory for the broker to sell the unpaid shares held in CUSA in the market within 5 working days after the settlement day (T+1/T+2) to clear the client's debit."
+  },
+  {
+    "id": 13,
+    "question": "Which unique code is used by Institutional Investors to route their trades for settlement through a Custodian?",
+    "options": [
+      "UCC",
+      "ISIN",
+      "CP Code (Custodian Participant Code)",
+      "MICR Code"
+    ],
+    "answer": "CP Code (Custodian Participant Code)",
+    "hint": "This is the identification code of the Custodian.",
+    "explanation": "In institutional trades (like Mutual Funds), the broker enters the CP Code, which informs the Clearing Corporation that the settlement obligation lies with the Custodian."
+  },
+  {
+    "id": 14,
+    "question": "If a Custodian rejects an institutional trade (does not confirm it by the deadline), who is responsible for the settlement obligation?",
+    "options": [
+      "The Institutional Client",
+      "The Clearing Corporation",
+      "The Executing Stock Broker",
+      "The Depositories"
+    ],
+    "answer": "The Executing Stock Broker",
+    "hint": "The obligation falls on the one who executed the trade.",
+    "explanation": "If the Custodian does not confirm the trade (CP Code rejection), the entire pay-in obligation for that trade reverts to the broker who punched the trade."
+  },
+  {
+    "id": 15,
+    "question": "When a broker provides securities or funds to the Clearing Corporation before the actual pay-in time, it is known as ______.",
+    "options": [
+      "Margin Pledge",
+      "Early Pay-in",
+      "Direct Payout",
+      "Forward Settlement"
+    ],
+    "answer": "Early Pay-in",
+    "hint": "Making the pay-in before the scheduled time (early).",
+    "explanation": "In an Early Pay-in, the broker delivers securities or funds to the CC even before the settlement day."
+  },
+  {
+    "id": 16,
+    "question": "What is the primary benefit of making an 'Early Pay-in' of securities for a sell trade?",
+    "options": [
+      "Higher selling price is guaranteed",
+      "The client gets a dividend bonus",
+      "Margin requirement for that trade is waived",
+      "Brokerage fees are refunded"
+    ],
+    "answer": "Margin requirement for that trade is waived",
+    "hint": "The exchange's delivery risk is eliminated, hence no margin is levied.",
+    "explanation": "Since the CC receives the shares ahead of time, the delivery risk becomes zero, so the Upfront/VaR margin applied to that sell trade is waived."
+  },
+  {
+    "id": 17,
+    "question": "The daily settlement of profits and losses in the derivatives market (Futures) based on the closing price is called ______.",
+    "options": [
+      "Final Settlement",
+      "Mark-to-Market (MTM) Settlement",
+      "Physical Settlement",
+      "Gross Settlement"
+    ],
+    "answer": "Mark-to-Market (MTM) Settlement",
+    "hint": "Adjusting based on daily market prices.",
+    "explanation": "In MTM (Mark-to-Market) settlement, the open positions of Futures contracts are revalued at the daily closing price, and the profit/loss is settled on a daily basis."
+  },
+  {
+    "id": 18,
+    "question": "In the F&O segment, MTM losses must be paid by the clearing member to the Clearing Corporation by ______.",
+    "options": [
+      "End of the month",
+      "T+2 day evening",
+      "T+1 day morning (before trading hours)",
+      "T+5 days"
+    ],
+    "answer": "T+1 day morning (before trading hours)",
+    "hint": "Settlement must be done before the market opens the next day.",
+    "explanation": "In derivatives, the payment of MTM loss must be made on T+1 day before trading begins (morning pay-in)."
+  },
+  {
+    "id": 19,
+    "question": "Currently, how are all single-stock derivatives (Futures & Options) settled on their expiry day in India?",
+    "options": [
+      "Cash Settlement",
+      "Physical Settlement",
+      "Carried forward automatically",
+      "Settled in foreign currency"
+    ],
+    "answer": "Physical Settlement",
+    "hint": "Now actual shares have to be given/taken on expiry.",
+    "explanation": "As per the SEBI mandate, the settlement of all In-The-Money (ITM) stock options and expired stock futures now happens through Physical Settlement (actual delivery of shares), not in cash."
+  },
+  {
+    "id": 20,
+    "question": "Index derivatives (like Nifty Futures or Options) are settled on expiry through ______.",
+    "options": [
+      "Physical Settlement",
+      "Cash Settlement",
+      "Trade Annulment",
+      "Block Delivery"
+    ],
+    "answer": "Cash Settlement",
+    "hint": "You cannot physically deliver the entire 'Nifty'.",
+    "explanation": "The settlement of Index derivatives (like Nifty 50, Bank Nifty) is always in Cash because it is not practical to deliver all the underlying stocks of the index."
+  },
+  {
+    "id": 21,
+    "question": "Which tax is levied by the Central Government on the value of securities transacted on a recognized stock exchange?",
+    "options": [
+      "Capital Gains Tax",
+      "Securities Transaction Tax (STT)",
+      "Goods and Services Tax (GST)",
+      "Stamp Duty"
+    ],
+    "answer": "Securities Transaction Tax (STT)",
+    "hint": "This is levied on every transaction executed on the exchange.",
+    "explanation": "STT (Securities Transaction Tax) is a direct tax levied on buying and selling (or just selling, depending on the segment) in the equity and derivatives market."
+  },
+  {
+    "id": 22,
+    "question": "In the equity cash market, who pays the Securities Transaction Tax (STT) for delivery-based trades?",
+    "options": [
+      "Only the Buyer",
+      "Only the Seller",
+      "Both Buyer and Seller",
+      "The Stock Broker"
+    ],
+    "answer": "Both Buyer and Seller",
+    "hint": "Both parties have to pay STT in delivery trades.",
+    "explanation": "In the equity cash market, STT is levied on both the buyer and the seller for delivery-based transactions (currently 0.1% on both sides)."
+  },
+  {
+    "id": 23,
+    "question": "In the derivatives market (F&O), STT is typically payable by ______.",
+    "options": [
+      "Both Buyer and Seller",
+      "Only the Seller",
+      "Only the Buyer",
+      "The Exchange"
+    ],
+    "answer": "Only the Seller",
+    "hint": "In F&O, the tax is applied only on the sell side (except for physical settlement scenarios).",
+    "explanation": "In the Futures and Options segment (in normal trading), STT is paid only by the Seller."
+  },
+  {
+    "id": 24,
+    "question": "Which charge is uniform across all states in India and is collected by the stock exchanges on behalf of the state governments?",
+    "options": [
+      "STT",
+      "Stamp Duty",
+      "SEBI Turnover Fee",
+      "Exchange Transaction Charge"
+    ],
+    "answer": "Stamp Duty",
+    "hint": "It has been made uniform across the country since 2020.",
+    "explanation": "Following the amendment to the Indian Stamp Act, Stamp Duty on securities transactions has been made uniform across India, and it is levied only on the 'Buy' side."
+  },
+  {
+    "id": 25,
+    "question": "Stamp Duty on securities transactions is levied on ______.",
+    "options": [
+      "Only the Seller",
+      "Only the Buyer",
+      "Both Buyer and Seller",
+      "Neither, it is paid by the company"
+    ],
+    "answer": "Only the Buyer",
+    "hint": "This is opposite to STT, which is levied on the seller in F&O.",
+    "explanation": "Under uniform stamp duty rules, Stamp Duty on stock exchange transactions is collected only from the Buyer."
+  },
+  {
+    "id": 26,
+    "question": "Corporate actions like dividends or bonus shares are given to investors who hold the shares in their demat account on the ______.",
+    "options": [
+      "Execution Date",
+      "Settlement Date",
+      "Record Date",
+      "Expiry Date"
+    ],
+    "answer": "Record Date",
+    "hint": "Your name must be in the company's 'Record'.",
+    "explanation": "The Record Date is the cut-off date determined by the company. Those whose names appear as shareholders in the company's records on this day receive the corporate benefits."
+  },
+  {
+    "id": 27,
+    "question": "If an investor buys a stock on its 'Ex-Dividend' date, will they receive the upcoming dividend?",
+    "options": [
+      "Yes, always",
+      "No, they will not receive the dividend",
+      "Yes, but only 50%",
+      "Only if they sell it the next day"
+    ],
+    "answer": "No, they will not receive the dividend",
+    "hint": "Ex = Without.",
+    "explanation": "A buyer purchasing shares on or after the Ex-date does not get the benefit of the dividend. That dividend goes to the previous owner (seller)."
+  },
+  {
+    "id": 28,
+    "question": "Under the T+1 settlement cycle, the 'Ex-Date' for a corporate action (like a dividend) is usually ______ the Record Date.",
+    "options": [
+      "The same day as",
+      "One working day before",
+      "Two working days before",
+      "One working day after"
+    ],
+    "answer": "The same day as",
+    "hint": "In T+1, shares arrive the very next day.",
+    "explanation": "In the T+1 settlement regime, the Ex-Date and the Record Date are usually on the same day."
+  },
+  {
+    "id": 29,
+    "question": "The mandatory settlement of a client's unused funds by the broker at least once in a quarter or month is known as ______.",
+    "options": [
+      "Close-out",
+      "Actual Settlement (Running Account Settlement)",
+      "Margin Call",
+      "Pay-out"
+    ],
+    "answer": "Actual Settlement (Running Account Settlement)",
+    "hint": "Sending excess funds lying with the broker back to the client's bank account.",
+    "explanation": "As per SEBI guidelines, brokers must perform 'Actual Settlement' (Running account settlement) of clients' funds every 30 or 90 days (based on the client's preference)."
+  },
+  {
+    "id": 30,
+    "question": "The process where a client instructs their broker to keep their funds or securities to meet future margin obligations is called a ______.",
+    "options": [
+      "Margin Pledge",
+      "Running Account Authorization",
+      "Power of Attorney",
+      "Short Selling"
+    ],
+    "answer": "Running Account Authorization",
+    "hint": "Allowing the account to 'run' continuously.",
+    "explanation": "With Running Account Authorization, the broker can retain the client's payout funds so the client doesn't have to repeatedly make pay-ins for future trades."
+  },
+  {
+    "id": 31,
+    "question": "Which of the following documents acts as the legal proof of a trade executed by the broker for the client?",
+    "options": [
+      "Margin Statement",
+      "Ledger Account",
+      "Contract Note",
+      "Delivery Instruction Slip"
+    ],
+    "answer": "Contract Note",
+    "hint": "It contains details of trade time, price, and brokerage.",
+    "explanation": "A Contract Note is a legally binding document that the broker issues to the client within 24 hours of trade execution."
+  },
+  {
+    "id": 32,
+    "question": "In case of physical settlement of stock derivatives, what additional margin is levied by the exchange in the days leading up to expiry?",
+    "options": [
+      "Initial Margin",
+      "Extreme Loss Margin",
+      "Delivery Margin",
+      "Mark-to-Market Margin"
+    ],
+    "answer": "Delivery Margin",
+    "hint": "To cover the risk of actual 'delivery' of shares.",
+    "explanation": "During the expiry week, the exchange levies a 'Delivery Margin' on ITM (In-The-Money) options and futures to mitigate the physical delivery default risk."
+  },
+  {
+    "id": 33,
+    "question": "Which system allows a stock broker to settle trades of NSE and BSE through a single Designated Clearing Corporation (DCC)?",
+    "options": [
+      "Straight Through Processing (STP)",
+      "Interoperability",
+      "Gross Margining",
+      "Algorithmic Clearing"
+    ],
+    "answer": "Interoperability",
+    "hint": "CCs operating together (inter).",
+    "explanation": "Interoperability allows brokers to trade on multiple exchanges but route all their clearing and settlement through a single CC (DCC), which saves margin."
+  },
+  {
+    "id": 34,
+    "question": "A stock broker must transfer funds received from pay-out to the client's bank account within ______.",
+    "options": [
+      "1 working day",
+      "3 working days",
+      "7 working days",
+      "By the end of the month"
+    ],
+    "answer": "1 working day",
+    "hint": "As soon as funds arrive from the exchange, the broker must immediately transfer them to the client.",
+    "explanation": "According to SEBI rules, the broker must transfer funds to the client's bank account within 1 working day of receiving the pay-out from the Clearing Corporation."
+  },
+  {
+    "id": 35,
+    "question": "To secure the settlement system against a major clearing member default, the Clearing Corporation maintains a highly liquid fund called ______.",
+    "options": [
+      "Mutual Fund",
+      "Core Settlement Guarantee Fund (Core SGF)",
+      "Investor Protection Fund (IPF)",
+      "Dividend Yield Fund"
+    ],
+    "answer": "Core Settlement Guarantee Fund (Core SGF)",
+    "hint": "A 'Guarantee' to save the market during a default.",
+    "explanation": "The Core SGF is a reserve fund used by the CC when a clearing member defaults on fulfilling their settlement obligations (funds/securities)."
+  },
+  {
+    "id": 36,
+    "question": "The sequence in which different funds (Defaulter's margin, CC funds, SGF) are utilized in the event of a settlement default is called the ______.",
+    "options": [
+      "Margin Call",
+      "Default Waterfall",
+      "Auction Mechanism",
+      "Risk Algorithm"
+    ],
+    "answer": "Default Waterfall",
+    "hint": "A predetermined sequence of funds to cover losses.",
+    "explanation": "The Default Waterfall is the predefined sequence in which the defaulter member's margin and Core SGF funds are utilized to settle a default."
+  },
+  {
+    "id": 37,
+    "question": "Which segment requires all trades to be settled on a gross basis, meaning no intraday netting is allowed and every trade results in delivery?",
+    "options": [
+      "Normal Cash Market",
+      "Derivatives Market",
+      "Trade-to-Trade (T2T) Segment",
+      "Currency Market"
+    ],
+    "answer": "Trade-to-Trade (T2T) Segment",
+    "hint": "Intraday trading (buy-sell on the same day) is not allowed in this.",
+    "explanation": "To prevent speculative trading in the T2T (Trade-to-Trade) segment, netting is disallowed. It is mandatory to deliver funds for every buy and shares for every sell."
+  },
+  {
+    "id": 38,
+    "question": "In the context of clearing and settlement, what does 'Novation' ensure?",
+    "options": [
+      "That the broker's software is updated",
+      "That the Clearing Corporation guarantees the settlement of the trade",
+      "That physical shares are converted to electronic",
+      "That taxes are paid to the government"
+    ],
+    "answer": "That the Clearing Corporation guarantees the settlement of the trade",
+    "hint": "The CC takes on the counterparty risk.",
+    "explanation": "Novation is the process where the CC replaces the original contract and becomes the counterparty itself (seller to the buyer, buyer to the seller), thereby eliminating counterparty default risk."
+  },
+  {
+    "id": 39,
+    "question": "A member who clears and settles trades for Trading Members but does not execute trades themselves is known as a ______.",
+    "options": [
+      "Trading Member (TM)",
+      "Professional Clearing Member (PCM)",
+      "Authorised Person",
+      "Retail Client"
+    ],
+    "answer": "Professional Clearing Member (PCM)",
+    "hint": "These institutions only provide the 'Professional' service of clearing.",
+    "explanation": "A PCM does not trade on the exchange; they only clear and settle trades for Trading Members and Institutional clients."
+  },
+  {
+    "id": 40,
+    "question": "If a broker incorrectly uses Client A's funds to settle Client B's obligation, they are violating the SEBI rule of ______.",
+    "options": [
+      "Segregation of Client Funds",
+      "Running Account Authorization",
+      "Margin Trading",
+      "Algorithmic Trading"
+    ],
+    "answer": "Segregation of Client Funds",
+    "hint": "Every client's funds must be kept separate.",
+    "explanation": "It is mandatory for brokers to maintain 'Segregation of Funds'. One client's funds cannot be used for another client or for the broker's proprietary trades."
+  },
+  {
+    "id": 41,
+    "question": "The electronic platform provided by Depositories that enables clearing members to view and monitor their settlement obligations is ______.",
+    "options": [
+      "SPEED-e (NSDL) / Easiest (CDSL)",
+      "NEFT / RTGS",
+      "SCORES",
+      "UPI"
+    ],
+    "answer": "SPEED-e (NSDL) / Easiest (CDSL)",
+    "hint": "Portals to access Demat accounts online.",
+    "explanation": "NSDL's SPEED-e and CDSL's Easiest allow brokers and investors to submit electronic delivery instructions (DIS) and monitor settlements."
+  },
+  {
+    "id": 42,
+    "question": "What happens if a buyer in the cash market fails to bring in funds on the pay-in day?",
+    "options": [
+      "The exchange cancels the trade",
+      "The selling broker doesn't get paid",
+      "The buying broker has to arrange funds to meet the obligation to the CC",
+      "The trade is shifted to F&O"
+    ],
+    "answer": "The buying broker has to arrange funds to meet the obligation to the CC",
+    "hint": "The CC knows the broker, not the client.",
+    "explanation": "The Clearing Corporation is not affected by a client's default. If the client does not provide funds, it is the buying broker's (Clearing Member) responsibility to arrange funds and make the pay-in to the CC."
+  },
+  {
+    "id": 43,
+    "question": "Which document replaced the Power of Attorney (PoA) for automatically transferring shares from a client's demat account for settlement pay-in?",
+    "options": [
+      "Margin Pledge Form",
+      "Demat Debit and Pledge Instruction (DDPI)",
+      "Contract Note",
+      "Delivery Instruction Slip"
+    ],
+    "answer": "Demat Debit and Pledge Instruction (DDPI)",
+    "hint": "SEBI introduced this instead of PoA to prevent misuse.",
+    "explanation": "DDPI is a restricted authorization that allows the broker to debit shares from the client's demat account solely for exchange settlement (pay-in) and margin pledging."
+  },
+  {
+    "id": 44,
+    "question": "When an investor's shares are blocked in their own demat account for margin purposes instead of being transferred to the broker, it is called ______.",
+    "options": [
+      "Early Pay-in",
+      "Margin Pledge System",
+      "Dematerialization",
+      "Close-out"
+    ],
+    "answer": "Margin Pledge System",
+    "hint": "Shares are 'pledged' within your own account.",
+    "explanation": "In the Margin Pledge system, shares remain in the client's account but are pledged (blocked) in favor of the broker, which prevents the misuse of shares."
+  },
+  {
+    "id": 45,
+    "question": "A stock broker receives a 'Margin Call' from the exchange when ______.",
+    "options": [
+      "The client wants to buy more shares",
+      "The broker's deposited collateral falls below the required margin limits due to MTM losses",
+      "The broker's bank account is closed",
+      "The market hits the upper circuit"
+    ],
+    "answer": "The broker's deposited collateral falls below the required margin limits due to MTM losses",
+    "hint": "Margin has fallen 'short', inject more funds.",
+    "explanation": "When adverse market movements (MTM losses) cause the broker's available margin to fall below the required limit, the exchange makes a Margin Call to cover the shortfall."
+  },
+  {
+    "id": 46,
+    "question": "Which of the following handles the transfer of funds between the clearing members during the settlement process?",
+    "options": [
+      "The Stock Exchange",
+      "The Clearing Banks",
+      "The Depositories",
+      "The SEBI Office"
+    ],
+    "answer": "The Clearing Banks",
+    "hint": "The bank handles the work related to funds.",
+    "explanation": "The Clearing Corporation uses the settlement accounts of empaneled 'Clearing Banks' (e.g., HDFC, ICICI, SBI) for funds pay-in and pay-out."
+  },
+  {
+    "id": 47,
+    "question": "An investor bought 100 shares of ABC Ltd on Monday. They noticed a sudden drop in price on Tuesday and sold the 100 shares. Can this be netted in T+1 settlement?",
+    "options": [
+      "Yes, they will be netted in the same settlement",
+      "No, Monday and Tuesday trades belong to different settlement cycles",
+      "Yes, but only if they are T2T stocks",
+      "No, because selling is not allowed before delivery"
+    ],
+    "answer": "No, Monday and Tuesday trades belong to different settlement cycles",
+    "hint": "Netting only happens for trades on the same 'Trade Day' (intraday).",
+    "explanation": "Multilateral netting is only for same-day (e.g., Monday) buy/sell trades. A buy trade on Monday will settle on Tuesday (T+1), and a sell trade on Tuesday will settle on Wednesday."
+  },
+  {
+    "id": 48,
+    "question": "What mechanism allows institutional investors to route their orders seamlessly from their order management system to the broker and custodian?",
+    "options": [
+      "Algorithmic Trading",
+      "Straight Through Processing (STP)",
+      "Co-location",
+      "Margin Trading"
+    ],
+    "answer": "Straight Through Processing (STP)",
+    "hint": "Electronic processing without manual entry.",
+    "explanation": "STP (Straight Through Processing) makes the execution, allocation, and clearing of institutional trades end-to-end electronic and automated."
+  },
+  {
+    "id": 49,
+    "question": "Under Anti-Money Laundering (AML) rules, a broker cannot accept ______ from a client for settling trades.",
+    "options": [
+      "NEFT transfers",
+      "UPI payments",
+      "Cash (Currency Notes)",
+      "Cheques"
+    ],
+    "answer": "Cash (Currency Notes)",
+    "hint": "Cash transactions are strictly prohibited in the stock market.",
+    "explanation": "Stock brokers cannot accept Cash from clients for trading or settlement. All transactions must be traceable through Bank Accounts."
+  },
+  {
+    "id": 50,
+    "question": "If a broker faces a system failure and erroneous trades are punched, the exchange has the authority to cancel those trades through ______.",
+    "options": [
+      "Short Delivery",
+      "Trade Annulment",
+      "Interoperability",
+      "Arbitration"
+    ],
+    "answer": "Trade Annulment",
+    "hint": "To 'cancel' or 'annul' trades.",
+    "explanation": "The exchange has the power of Trade Annulment, allowing it to cancel trades caused by system glitches, fat-finger errors, or manipulation before settlement."
+  }
+]

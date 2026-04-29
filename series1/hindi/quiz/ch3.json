@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following best describes a 'Currency Futures' contract?",
+    "options": ["A customized OTC agreement", "A standardized contract traded on an exchange", "A non-binding agreement", "An agreement settled in foreign currency physical notes"],
+    "answer": "A standardized contract traded on an exchange",
+    "hint": "'Exchange Traded' के बारे में सोचें।",
+    "explanation": "Currency futures एक future date पर specific currency खरीदने या बेचने के लिए standardized contracts होते हैं, जो एक recognized stock exchange पर trade किए जाते हैं।"
+  },
+  {
+    "id": 2,
+    "question": "What is the standard lot size for USDINR futures contracts on Indian exchanges?",
+    "options": ["USD 100", "USD 1,000", "USD 10,000", "USD 100,000"],
+    "answer": "USD 1,000",
+    "hint": "Standard contract value की unit।",
+    "explanation": "India में USDINR futures के लिए contract size (lot size) USD 1,000 होता है।"
+  },
+  {
+    "id": 3,
+    "question": "Currency futures in India are settled in which currency?",
+    "options": ["US Dollars", "Indian Rupees", "Euro", "The base currency of the pair"],
+    "answer": "Indian Rupees",
+    "hint": "Domestic currency में cash settlement।",
+    "explanation": "India में सभी currency futures contracts foreign currency में नहीं, बल्कि Indian Rupees (INR) में cash-settled होते हैं।"
+  },
+  {
+    "id": 4,
+    "question": "What is the 'Tick Size' for USDINR futures contracts?",
+    "options": ["0.0100", "0.0050", "0.0025", "0.0001"],
+    "answer": "0.0025",
+    "hint": "एक पैसे का चौथाई हिस्सा।",
+    "explanation": "USDINR futures के लिए minimum price movement (tick size) 0.25 पैसे या INR 0.0025 होता है।"
+  },
+  {
+    "id": 5,
+    "question": "The Final Settlement Price for USDINR futures contracts is based on:",
+    "options": ["The closing price of the futures contract", "The RBI Reference Rate", "The spot price at a specific bank", "The average of the last 30 minutes of trading"],
+    "answer": "The RBI Reference Rate",
+    "hint": "Central Bank द्वारा जारी किया गया official rate।",
+    "explanation": "Final Settlement Price expiry के दिन USD-INR के लिए RBI Reference Rate होता है।"
+  },
+  {
+    "id": 6,
+    "question": "Contracts for currency futures expire on:",
+    "options": ["The last day of the month", "Two working days prior to the last working day of the month", "The first working day of the next month", "Every Friday"],
+    "answer": "Two working days prior to the last working day of the month",
+    "hint": "यह T+2 settlement के लिए समय देता है।",
+    "explanation": "Expiry date आमतौर पर expiry month के आखिरी business day से दो working days पहले होती है।"
+  },
+  {
+    "id": 7,
+    "question": "In the context of futures trading, 'Novation' refers to:",
+    "options": ["Creating a new contract", "The Clearing Corporation substituting itself as the counterparty", "Cancelling a trade", "Extending the expiry"],
+    "answer": "The Clearing Corporation substituting itself as the counterparty",
+    "hint": "Parties को replace करना।",
+    "explanation": "Novation वह legal process है जहाँ Clearing Corporation हर seller के लिए buyer और हर buyer के लिए seller बन जाती है, जिससे settlement की guarantee मिलती है।"
+  },
+  {
+    "id": 8,
+    "question": "What is the maximum tenor of currency futures contracts usually available in India?",
+    "options": ["1 month", "3 months", "12 months", "36 months"],
+    "answer": "12 months",
+    "hint": "एक पूरा साल।",
+    "explanation": "Exchanges आमतौर पर 12 महीने तक की maturity वाले monthly contracts offer करते हैं।"
+  },
+  {
+    "id": 9,
+    "question": "Initial Margin is calculated based on:",
+    "options": ["Fixed percentage for all", "SPAN (Standard Portfolio Analysis of Risk)", "The broker's discretion", "The client's bank balance"],
+    "answer": "SPAN (Standard Portfolio Analysis of Risk)",
+    "hint": "Globally इस्तेमाल होने वाला एक software/algorithm।",
+    "explanation": "Initial margins SPAN system का उपयोग करके calculate किए जाते हैं, जो portfolio के worst-case loss का आकलन करता है।"
+  },
+  {
+    "id": 10,
+    "question": "If a trader buys 10 lots of USDINR futures at 82.5000 and sells them at 82.6000, what is the profit? (Lot size = 1000)",
+    "options": ["INR 100", "INR 1,000", "INR 10,000", "INR 500"],
+    "answer": "INR 1,000",
+    "hint": "Difference x Lot Size x Number of Lots।",
+    "explanation": "Profit = (Sell Price - Buy Price) * Lot Size * No. of Lots = (82.60 - 82.50) * 1000 * 10 = 0.10 * 10000 = INR 1,000."
+  },
+  {
+    "id": 11,
+    "question": "Which entity provides the trading platform for currency futures?",
+    "options": ["The Clearing Member", "The Stock Exchange", "The RBI", "The Depository"],
+    "answer": "The Stock Exchange",
+    "hint": "NSE या BSE की तरह।",
+    "explanation": "Stock Exchange (जैसे NSE, BSE) automated screen-based trading platform प्रदान करता है।"
+  },
+  {
+    "id": 12,
+    "question": "A 'Stop Loss' order is used to:",
+    "options": ["Book profits immediately", "Limit losses by triggering a trade when a price level is reached", "Buy at the lowest possible price", "Stop trading for the day"],
+    "answer": "Limit losses by triggering a trade when a price level is reached",
+    "hint": "नुकसान को रोकना।",
+    "explanation": "Stop Loss order एक existing position पर loss को limit करने के लिए लगाया जाता है। जब trigger price हिट होती है, तो यह market order बन जाता है।"
+  },
+  {
+    "id": 13,
+    "question": "Mark-to-Market (MTM) settlement happens:",
+    "options": ["Weekly", "Monthly", "Daily", "Only at expiry"],
+    "answer": "Daily",
+    "hint": "हर trading day पर।",
+    "explanation": "MTM profits और losses हर trading day के अंत में calculate किए जाते हैं और cash में settle होते हैं।"
+  },
+  {
+    "id": 14,
+    "question": "The 'Basis' in futures markets is defined as:",
+    "options": ["Futures Price - Spot Price", "Spot Price - Futures Price", "Strike Price - Spot Price", "Bid Price - Ask Price"],
+    "answer": "Spot Price - Futures Price",
+    "hint": "Cash और future के बीच का relation।",
+    "explanation": "Basis को आमतौर पर Spot Price में से Futures Price को घटाकर (Spot Price - Futures Price) define किया जाता है।"
+  },
+  {
+    "id": 15,
+    "question": "Who can become a 'Self Clearing Member' (SCM)?",
+    "options": ["Any individual", "A Clearing Member who clears only their own trades and their clients' trades", "A member who clears for other trading members", "A bank only"],
+    "answer": "A Clearing Member who clears only their own trades and their clients' trades",
+    "hint": "'Self' (खुद) के लिए clear करना।",
+    "explanation": "एक Self Clearing Member (SCM) केवल अपने और अपने clients द्वारा execute किए गए trades को clear और settle कर सकता है, अन्य trading members के लिए नहीं।"
+  },
+  {
+    "id": 16,
+    "question": "What is the lot size for JPYINR futures?",
+    "options": ["1,000 JPY", "10,000 JPY", "100,000 JPY", "1,000,000 JPY"],
+    "answer": "100,000 JPY",
+    "hint": "Yen की value छोटी है, इसलिए lot बड़ा है।",
+    "explanation": "एक Yen की छोटी value के कारण, JPYINR के लिए contract size JPY 100,000 होता है।"
+  },
+  {
+    "id": 17,
+    "question": "The quotation for JPYINR futures is for how many units of Yen?",
+    "options": ["1 unit", "100 units", "1000 units", "10 units"],
+    "answer": "100 units",
+    "hint": "'प्रति ___ Yen' के रूप में quote किया जाता है।",
+    "explanation": "JPYINR को 100 Japanese Yen की price के रूप में quote किया जाता है (जैसे, 58.00 का मतलब है 100 Yen की कीमत 58 INR है)।"
+  },
+  {
+    "id": 18,
+    "question": "Daily Settlement Price is:",
+    "options": ["The last traded price", "The weighted average price of the last 30 minutes", "The opening price", "The RBI Reference Rate"],
+    "answer": "The weighted average price of the last 30 minutes",
+    "hint": "Closing के समय manipulation रोकने के लिए calculate किया जाता है।",
+    "explanation": "Daily Settlement Price आमतौर पर trading के आखिरी 30 मिनट का volume-weighted average price (VWAP) होता है।"
+  },
+  {
+    "id": 19,
+    "question": "Extreme Loss Margin is collected to cover:",
+    "options": ["Daily volatility", "Losses in situations outside the 99% confidence interval (tail risk)", "Broker commissions", "Interest payments"],
+    "answer": "Losses in situations outside the 99% confidence interval (tail risk)",
+    "hint": "Extreme (अत्यधिक) परिस्थितियां।",
+    "explanation": "Extreme Loss Margin वह additional margin है जो extreme market conditions में risk को cover करने के लिए SPAN margin के ऊपर collect किया जाता है।"
+  },
+  {
+    "id": 20,
+    "question": "Which order type stays in the system until the end of the trading session if not executed?",
+    "options": ["IOC (Immediate or Cancel)", "Day Order", "Fill or Kill", "GTC (Good Till Cancelled - not valid in derivatives intraday)"],
+    "answer": "Day Order",
+    "hint": "'Day' (पूरे दिन) के लिए valid।",
+    "explanation": "Day Order पूरे trading day के लिए valid रहता है और अगर market close होने तक execute नहीं होता है, तो expire हो जाता है।"
+  },
+  {
+    "id": 21,
+    "question": "If a clearing member defaults, who guarantees the settlement?",
+    "options": ["The Exchange / Clearing Corporation", "The SEBI", "The defaulting member's clients", "The RBI"],
+    "answer": "The Exchange / Clearing Corporation",
+    "hint": "Settlement Guarantee Fund।",
+    "explanation": "यदि कोई clearing member default करता है, तो Clearing Corporation obligations को पूरा करने के लिए अपने Settlement Guarantee Fund (SGF) का उपयोग करती है।"
+  },
+  {
+    "id": 22,
+    "question": "Calendar Spread Margin is applicable when:",
+    "options": ["A trader has offsetting positions in different expiry months", "A trader buys two different currencies", "A trader buys and sells the same contract same month", "A trader holds only long positions"],
+    "answer": "A trader has offsetting positions in different expiry months",
+    "hint": "Long Jan, Short Feb।",
+    "explanation": "Calendar Spread Margin एक lower margin benefit है जो एक ही underlying लेकिन अलग-अलग expiry months वाले futures में offsetting positions लेने पर दिया जाता है।"
+  },
+  {
+    "id": 23,
+    "question": "What happens to open positions on the expiry day?",
+    "options": ["They are rolled over automatically", "They are settled at the Final Settlement Price", "They are forfeited", "They become OTC contracts"],
+    "answer": "They are settled at the Final Settlement Price",
+    "hint": "Cash settlement।",
+    "explanation": "Expiry day के close पर सभी open positions, Final Settlement Price के आधार पर अपने आप cash में settle हो जाती हैं।"
+  },
+  {
+    "id": 24,
+    "question": "The time priority in order matching means:",
+    "options": ["Larger orders get priority", "Earlier orders at the same price get priority", "Institutional orders get priority", "Sell orders get priority over buy orders"],
+    "answer": "Earlier orders at the same price get priority",
+    "hint": "पहले आओ, पहले पाओ।",
+    "explanation": "Price-Time priority यह सुनिश्चित करती है कि यदि दो orders एक ही price पर हैं, तो जो system में पहले आया है वह पहले execute होगा।"
+  },
+  {
+    "id": 25,
+    "question": "Trading hours for currency derivatives in India (NSE/BSE) are typically:",
+    "options": ["9:00 AM to 3:30 PM", "9:00 AM to 5:00 PM", "10:00 AM to 3:30 PM", "9:00 AM to 5:00 PM (currently till 5:00 PM, formerly 3:30)"],
+    "answer": "9:00 AM to 5:00 PM",
+    "hint": "Equity markets से लंबा समय।",
+    "explanation": "India में Currency derivatives के trading hours आमतौर पर सुबह 9:00 बजे से शाम 5:00 बजे तक होते हैं।"
+  },
+  {
+    "id": 26,
+    "question": "Which of the following codes represents the Euro-INR pair?",
+    "options": ["USDINR", "GBPINR", "EURINR", "JPYINR"],
+    "answer": "EURINR",
+    "hint": "Europe।",
+    "explanation": "EURINR, Euro vs Indian Rupee futures के लिए standard trading symbol है।"
+  },
+  {
+    "id": 27,
+    "question": "If the price of a future contract rises, the short seller:",
+    "options": ["Makes a profit", "Makes a loss", "Is unaffected", "Receives margin"],
+    "answer": "Makes a loss",
+    "hint": "Short sellers चाहते हैं कि price नीचे जाए।",
+    "explanation": "एक short seller महँगा बेचता है ताकि बाद में सस्ता खरीद सके। अगर price बढ़ती है, तो उसे नुकसान (loss) होता है।"
+  },
+  {
+    "id": 28,
+    "question": "A limit order specifies:",
+    "options": ["Only Quantity", "Only Price", "Price and Quantity", "Neither Price nor Quantity"],
+    "answer": "Price and Quantity",
+    "hint": "आप limit तय करते हैं।",
+    "explanation": "Limit order trader को वह exact price (या उससे बेहतर) specify करने की अनुमति देता है जिस पर वे एक specific quantity खरीदना या बेचना चाहते हैं।"
+  },
+  {
+    "id": 29,
+    "question": "What is 'Volume' in futures trading?",
+    "options": ["Number of contracts outstanding", "Number of contracts traded during a specific period", "Value of the underlying asset", "The margin amount"],
+    "answer": "Number of contracts traded during a specific period",
+    "hint": "Activity का level।",
+    "explanation": "Volume एक trading session के दौरान खरीदे और बेचे गए contracts की कुल संख्या को दर्शाता है।"
+  },
+  {
+    "id": 30,
+    "question": "Client level gross margining means:",
+    "options": ["Margins are netted across all clients", "Margins are computed for each client without netting against others", "Margins are not collected from clients", "Margins are paid by the exchange"],
+    "answer": "Margins are computed for each client without netting against others",
+    "hint": "एक client का long दूसरे के short को offset नहीं कर सकता।",
+    "explanation": "Broker को हर client से अलग-अलग margin collect करना होता है; margin के लिए एक client का profit/position दूसरे client के loss/position को offset नहीं कर सकता।"
+  },
+  {
+    "id": 31,
+    "question": "An 'Immediate or Cancel' (IOC) order:",
+    "options": ["Must be fully executed or cancelled", "Executes what is possible immediately and cancels the rest", "Waits for the best price", "Is valid for 1 hour"],
+    "answer": "Executes what is possible immediately and cancels the rest",
+    "hint": "अभी करो या छोड़ दो।",
+    "explanation": "IOC order तुरंत execute होने की कोशिश करता है। जो हिस्सा तुरंत fill नहीं हो पाता, वह cancel हो जाता है।"
+  },
+  {
+    "id": 32,
+    "question": "The identifier for a futures contract includes:",
+    "options": ["Underlying, Expiry Date", "Broker Name", "Client Name", "Depository ID"],
+    "answer": "Underlying, Expiry Date",
+    "hint": "क्या (What) और कब (When)।",
+    "explanation": "एक unique contract की पहचान उसके underlying asset (जैसे, USDINR) और उसकी expiry date (जैसे, 28FEB2024) से होती है।"
+  },
+  {
+    "id": 33,
+    "question": "The maximum permissible position limit for clients is designed to:",
+    "options": ["Increase revenue", "Prevent market manipulation and concentration risk", "Reduce trading volume", "Encourage retail participation"],
+    "answer": "Prevent market manipulation and concentration risk",
+    "hint": "कोई एक व्यक्ति market को control न कर सके।",
+    "explanation": "Position limits यह सुनिश्चित करती हैं कि किसी एक entity के पास इतनी बड़ी position न हो जिससे वह market prices को manipulate कर सके।"
+  },
+  {
+    "id": 34,
+    "question": "If you buy a USDINR future at 83.10 and the price closes at 83.00, what happens to your margin account?",
+    "options": ["Funds are credited", "Funds are debited (Marked to Market Loss)", "No change", "Account is closed"],
+    "answer": "Funds are debited (Marked to Market Loss)",
+    "hint": "आपने खरीदा, price गिर गई।",
+    "explanation": "चूँकि आप long हैं और price गिर गई है, इसलिए आपको loss होता है जो आपके margin account (MTM) से debit (काट लिया) जाता है।"
+  },
+  {
+    "id": 35,
+    "question": "Which of the following is NOT a currency pair traded on Indian exchanges?",
+    "options": ["USDINR", "EURINR", "GBPINR", "CNYINR"],
+    "answer": "CNYINR",
+    "hint": "Chinese Yuan अभी यहाँ standard नहीं है।",
+    "explanation": "Standard pairs USDINR, EURINR, GBPINR, और JPYINR हैं। CNY (Chinese Yuan) actively trade नहीं होता है।"
+  },
+  {
+    "id": 36,
+    "question": "The 'Spread' contract in futures trading allows a trader to:",
+    "options": ["Buy one maturity and sell another maturity simultaneously", "Buy two different currencies", "Trade without margin", "Avoid transaction costs"],
+    "answer": "Buy one maturity and sell another maturity simultaneously",
+    "hint": "Calendar spread।",
+    "explanation": "Spread order price difference का फायदा उठाने के लिए एक ही समय में एक contract month को खरीदने और दूसरे को बेचने की अनुमति देता है।"
+  },
+  {
+    "id": 37,
+    "question": "Clearing Members (CM) are responsible for:",
+    "options": ["Only trading", "Risk management and settlement of trades", "Issuing currency notes", "Setting exchange rates"],
+    "answer": "Risk management and settlement of trades",
+    "hint": "ये हिसाब-किताब (mess) clear करते हैं।",
+    "explanation": "Clearing Members trades को settle करने (funds और obligations) और Trading Members तथा clients से margins collect करने के लिए ज़िम्मेदार होते हैं।"
+  },
+  {
+    "id": 38,
+    "question": "Professional Clearing Members (PCM) are:",
+    "options": ["Members who trade for themselves", "Members who clear trades but do not trade themselves", "Members who are also banks", "Members who only do proprietary trading"],
+    "answer": "Members who clear trades but do not trade themselves",
+    "hint": "Clearing में specialists।",
+    "explanation": "PCMs वे members होते हैं जो Trading Members को clearing services देते हैं, लेकिन आमतौर पर अपने खुद के account से trade नहीं करते हैं।"
+  },
+  {
+    "id": 39,
+    "question": "The lot size for GBPINR futures is:",
+    "options": ["100 GBP", "1,000 GBP", "10,000 GBP", "500 GBP"],
+    "answer": "1,000 GBP",
+    "hint": "USD और Euro के समान।",
+    "explanation": "GBPINR के लिए contract size GBP 1,000 है।"
+  },
+  {
+    "id": 40,
+    "question": "The lot size for EURINR futures is:",
+    "options": ["1,000 EUR", "100 EUR", "10,000 EUR", "500 EUR"],
+    "answer": "1,000 EUR",
+    "hint": "USD के समान।",
+    "explanation": "EURINR के लिए contract size EUR 1,000 है।"
+  },
+  {
+    "id": 41,
+    "question": "Currency futures prices in India are quoted up to how many decimal places?",
+    "options": ["2", "4", "3", "1"],
+    "answer": "4",
+    "hint": "Precision, tick size से मैच करती है।",
+    "explanation": "Prices 4 decimal places तक quote की जाती हैं (जैसे, 82.4525)।"
+  },
+  {
+    "id": 42,
+    "question": "In the symbol 'USDINR 27FEB2024', what does '27FEB2024' represent?",
+    "options": ["The start date", "The expiry date", "The settlement date", "The spot date"],
+    "answer": "The expiry date",
+    "hint": "जब contract समाप्त होता है।",
+    "explanation": "Contract symbol में दी गई तारीख उस specific futures contract की Expiry Date को दर्शाती है।"
+  },
+  {
+    "id": 43,
+    "question": "If the MTM loss exceeds the available cash in the margin account, the broker makes a:",
+    "options": ["Profit call", "Margin Call", "Trade Call", "Stop Call"],
+    "answer": "Margin Call",
+    "hint": "और पैसे की मांग।",
+    "explanation": "Margin Call broker द्वारा client से additional funds deposit करने की मांग है, ताकि margin balance वापस required level पर आ सके।"
+  },
+  {
+    "id": 44,
+    "question": "Who calculates the Daily Settlement Price?",
+    "options": ["The Broker", "The Exchange / Clearing Corporation", "The RBI", "The largest bank"],
+    "answer": "The Exchange / Clearing Corporation",
+    "hint": "Central venue authority।",
+    "explanation": "Exchange (या इसकी Clearing Corporation) trading data के आधार पर Daily Settlement Price calculate करती है।"
+  },
+  {
+    "id": 45,
+    "question": "A 'Market Order' without a specified price executes at:",
+    "options": ["The opening price", "The best available price currently in the order book", "The closing price", "The limit price"],
+    "answer": "The best available price currently in the order book",
+    "hint": "जो available है उसे ले लेता है।",
+    "explanation": "Market orders तुरंत opposite orders के best available price (खरीदने के लिए best ask, बेचने के लिए best bid) पर match हो जाते हैं।"
+  },
+  {
+    "id": 46,
+    "question": "Cross-currency futures (like EURUSD, GBPUSD) available on Indian exchanges are settled in:",
+    "options": ["USD", "INR", "EUR", "GBP"],
+    "answer": "INR",
+    "hint": "भारत में सब कुछ रुपये में settle होता है।",
+    "explanation": "Indian exchanges (NSE/BSE) पर trade होने वाले cross-currency pairs भी Indian Rupees में cash-settled होते हैं।"
+  },
+  {
+    "id": 47,
+    "question": "What is the penalty for short collection of margins from clients?",
+    "options": ["There is no penalty", "Penalty is levied on the Clearing/Trading Member", "Penalty is levied on the RBI", "The trade is reversed"],
+    "answer": "Penalty is levied on the Clearing/Trading Member",
+    "hint": "Strict compliance का नियम।",
+    "explanation": "Exchanges उन members पर भारी penalty लगाते हैं जो अपने clients से required margins collect करने में fail होते हैं।"
+  },
+  {
+    "id": 48,
+    "question": "The difference between the best buy price and best sell price in the order book is called:",
+    "options": ["Tick Size", "Bid-Ask Spread", "Basis", "Margin"],
+    "answer": "Bid-Ask Spread",
+    "hint": "Immediate liquidity की कीमत।",
+    "explanation": "Highest Bid और lowest Ask के बीच के gap को Bid-Ask Spread कहा जाता है।"
+  },
+  {
+    "id": 49,
+    "question": "Arbitrageurs in currency futures help to:",
+    "options": ["Increase volatility", "Align futures prices with spot prices (fair value)", "Reduce liquidity", "Delay settlement"],
+    "answer": "Align futures prices with spot prices (fair value)",
+    "hint": "Gap को बंद करना।",
+    "explanation": "Price differences का फायदा उठाकर, arbitrageurs यह सुनिश्चित करते हैं कि futures prices अपनी theoretical fair value (जो spot prices से derive होती है) के साथ aligned रहें।"
+  },
+  {
+    "id": 50,
+    "question": "Trading Members (TM) clear their trades through:",
+    "options": ["Themselves (if not CM)", "A Clearing Member (CM)", "The RBI", "A Depository Participant"],
+    "answer": "A Clearing Member (CM)",
+    "hint": "Clearing की hierarchy।",
+    "explanation": "Trading Members जो Clearing Members नहीं हैं, उन्हें अपने trades एक designated Clearing Member के माध्यम से clear करने होते हैं।"
+  }
+]

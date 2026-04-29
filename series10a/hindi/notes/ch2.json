@@ -1,0 +1,92 @@
+{
+  "course": "NISM Series X-A: Investment Adviser (Level 1) Certification Examination",
+  "unit_number": 2,
+  "unit_name": "Time Value of Money (TVM)",
+  "weightage": "Module 1 का हिस्सा (37 Marks). यह सबसे practical chapter है। विशेष रूप से calculations पर 5-8 marks की उम्मीद करें।",
+  "overview": "Time Value of Money (TVM) finance का 'heart' है। यह समझाता है कि आज के एक रुपये की कीमत कल के एक रुपये से अधिक क्यों है। NISM exam के लिए, यह chapter महत्वपूर्ण है क्योंकि आप इन formulas को समझे बिना retirement needs, insurance requirements, या bond prices की गणना नहीं कर सकते हैं। यह सीधे Chapter 14 (Portfolio Theory) और Chapter 9 (Fixed Income) से जुड़ता है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Time Value of Money का Concept",
+      "basic_meaning": "अभी उपलब्ध पैसा भविष्य में उसी amount से अधिक मूल्यवान है क्योंकि इसकी 'earning capacity' (Interest) होती है।",
+      "detailed_explanation": "यदि कोई आपको आज ₹10,000 या एक साल बाद ₹10,000 offer करता है, तो आप हमेशा आज को चुनेंगे। क्यों? \n1. **Opportunity Cost:** आप आज के पैसे को invest कर सकते हैं और interest कमा सकते हैं।\n2. **Inflation:** कीमतें ऊपर जाती हैं, इसलिए अगले साल ₹10,000 में कम सामान आएगा।\n3. **Risk:** इस बात का chance है कि वह व्यक्ति एक साल बाद आपको payment न करे।",
+      "why_this_is_important": "Exam में, आपको दो अलग-अलग cash flows की तुलना करने के लिए इसकी आवश्यकता होती है (उदा., क्या मुझे आज lump sum लेना चाहिए या monthly pension?)।",
+      "formula": "Not Applicable",
+      "formula_explanation": "इंतज़ार करने के इनाम (reward for waiting) के रूप में 'Interest' की Conceptual understanding।",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "1990 में, एक 'Dairy Milk' चॉकलेट की कीमत ₹5 थी। आज, उसी size की कीमत ₹40 हो सकती है। Currency की value गिर गई है। यदि आपने अलमारी में ₹5 रखे थे, तो आपने value खो दी। यदि आपने इसे Bank FD में रखा होता, तो यह बढ़कर ₹50 हो सकता था।",
+      "exam_traps": [
+        "Purchasing power पर inflation के impact को ignore करना।",
+        "यह सोचना कि 'Value' और 'Amount' एक ही चीज़ हैं (₹100 amount है, लेकिन समय के साथ इसकी value बदल जाती है)।"
+      ],
+      "memory_trick": "हाथ में एक पक्षी झाड़ी में दो के बराबर है। (आज का पैसा निश्चित है और बढ़ सकता है)।"
+    },
+    {
+      "concept": "2. Future Value (Compounding)",
+      "basic_meaning": "यह पता लगाना कि एक current investment कुछ वर्षों के बाद कितना बढ़ जाएगा।",
+      "detailed_explanation": "Compounding वह प्रक्रिया है जहाँ आप अपने principal और पहले से कमाए गए interest दोनों पर interest कमाते हैं। यह एक snowball effect की तरह है। आप इसे जितना अधिक समय देंगे, यह उतनी ही तेज़ी से बढ़ेगा।",
+      "why_this_is_important": "यह calculate करने के लिए आवश्यक है कि retirement के समय किसी client की SIP की value कितनी होगी।",
+      "formula": "$$FV = PV \\times (1 + r)^n$$",
+      "formula_explanation": "FV = Future Value, PV = Present Value (Investment), r = rate of interest (decimal), n = number of years.",
+      "step_by_step_calculation_example": "Question: आप 3 साल के लिए 10% interest पर Fixed Deposit में ₹1,00,000 invest करते हैं। FV क्या है?\n\nStep 1: Values identify करें। PV = 1,00,000 | r = 0.10 | n = 3.\nStep 2: Formula. $FV = 1,00,000 \\times (1 + 0.10)^3$\nStep 3: Bracket solve करें। $1.10^3 = 1.10 \\times 1.10 \\times 1.10 = 1.331$\nStep 4: Multiply करें। $1,00,000 \\times 1.331 = ₹1,33,100$.",
+      "real_life_indian_example": "Public Provident Fund (PPF) में invest करना। हर साल आपके balance में interest वापस जोड़ दिया जाता है, और अगले साल आप उस नए, बड़े balance पर interest कमाते हैं।",
+      "exam_traps": [
+        "'Simple Interest' को 'Compound Interest' के साथ confuse करना। NISM हमेशा Compounding मानता है जब तक कि अन्यथा (otherwise) न कहा गया हो।",
+        "Percentage को decimal में convert करना भूल जाना (10% = 0.10)।"
+      ],
+      "memory_trick": "Compounding = ढेर में interest जोड़ना। (Snowball effect)।"
+    },
+    {
+      "concept": "3. Present Value (Discounting)",
+      "basic_meaning": "भविष्य के payment की वर्तमान कीमत (current worth) का पता लगाना।",
+      "detailed_explanation": "Discounting, Compounding का उल्टा (reverse) है। यदि आप जानते हैं कि आपको 5 वर्षों में ₹10 Lakhs की आवश्यकता है, तो आपको आज कितना invest करना चाहिए? हम future money को आज की value पर वापस 'discount' करते हैं।",
+      "why_this_is_important": "किसी investment की 'Fair Price' निर्धारित करने के लिए उपयोग किया जाता है। यदि किसी investment की कीमत उसके PV से अधिक है, तो वह महंगा है।",
+      "formula": "$$PV = \\frac{FV}{(1 + r)^n}$$",
+      "formula_explanation": "हम Future Value को growth factor से divide करते हैं ताकि इसे आज पर वापस लाया जा सके।",
+      "step_by_step_calculation_example": "Question: आपको 2 साल में कार के लिए ₹5,00,000 चाहिए। Bank 8% interest offer करता है। आज कितना invest करना चाहिए?\n\nStep 1: FV = 5,00,000 | r = 0.08 | n = 2.\nStep 2: $PV = 5,00,000 / 1.08^2$\nStep 3: Bracket solve करें। $1.08 \\times 1.08 = 1.1664$\nStep 4: Divide करें। $5,00,000 / 1.1664 = ₹4,28,669$.",
+      "real_life_indian_example": "एक 'Zero Coupon Bond' खरीदना। ये bonds interest pay नहीं करते हैं। इन्हें discount (Present Value) पर बेचा जाता है और face value (Future Value) पर चुकाया जाता है।",
+      "exam_traps": [
+        "यदि interest rate (r) बढ़ता है, तो Present Value (PV) कम हो जाता है। यह एक बहुत ही common theory question है।",
+        "यदि payment monthly है तो गलत 'n' (years) का उपयोग करना।"
+      ],
+      "memory_trick": "Discounting = भविष्य के गुब्बारे को सिकोड़कर आज के आकार में लाना।"
+    },
+    {
+      "concept": "4. Annuities (Ordinary बनाम Due)",
+      "basic_meaning": "Fixed intervals पर किए गए equal payments की एक series।",
+      "detailed_explanation": "जब आप एक flat EMI pay करते हैं या monthly pension प्राप्त करते हैं, तो यह एक Annuity है।\n1. **Ordinary Annuity:** Payment period के अंत (END) में होता है (उदा., Salary, Home Loan EMI)।\n2. **Annuity Due:** Payment period की शुरुआत (BEGINNING) में होता है (उदा., Monthly Rent, महीने की 1 तारीख को शुरू की गई SIP)।",
+      "why_this_is_important": "NISM इस बारे में सवाल पूछता है कि किसके परिणामस्वरूप higher value मिलती है। Annuity Due से हमेशा अधिक पैसा मिलता है क्योंकि पहले payment को interest का एक extra period मिलता है।",
+      "formula": "Complex (Calculator/Tables का उपयोग करें), लेकिन logic याद रखें।",
+      "formula_explanation": "Annuity Due Value = Ordinary Annuity Value × (1 + r).",
+      "step_by_step_calculation_example": "यदि आप एक वर्ष के लिए 1% प्रति माह की दर से हर महीने के अंत में ₹1,000 बचाते हैं:\nOrdinary Annuity FV = ₹12,683.\nयदि आप इसे हर महीने की शुरुआत में बचाते हैं:\nAnnuity Due FV = $12,683 \\times 1.01 = ₹12,810$.",
+      "real_life_indian_example": "SIP (Systematic Investment Plan) एक classic Annuity है। LIC Pension plans भी Annuities हैं।",
+      "exam_traps": [
+        "यह मान लेना कि सभी payments अंत में हैं। 'beginning' या 'start' जैसे keywords खोजें।",
+        "Annuity को Lump sum investment के साथ confuse करना।"
+      ],
+      "memory_trick": "Due = 'अभी करो' (Start)। Ordinary = 'बाद में होता है' (End)।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Compounding बनाम Discounting",
+      "clear_explanation": "Compounding पैसे को Present से Future में ले जाता है (Multiplication)। Discounting पैसे को Future से Present में ले जाता है (Division)।"
+    },
+    {
+      "difference_between": "Nominal Rate बनाम Effective Rate",
+      "clear_explanation": "Nominal 'बताई गई' (stated) दर है (उदा., 12% प्रति वर्ष)। Effective वह है जो आप वास्तव में कमाते हैं यदि interest साल में एक से अधिक बार जोड़ा जाता है। यदि कोई bank quarterly compound करता है, तो Effective Rate 12% से अधिक होता है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Numerical: Lump sum की Future Value Calculate करना।",
+    "Theory: Interest rates और Present Value के बीच संबंध (Inverse relationship)।",
+    "Conceptual: Rule of 72 (आपके पैसे को दोगुना होने में कितना समय लगता है: 72 / Interest Rate)।",
+    "यह पहचानना कि कोई scenario Ordinary Annuity है या Annuity Due।"
+  ],
+  "quick_revision_summary": [
+    "TVM का मतलब है आज का ₹1 > कल का ₹1।",
+    "FV formula $(1+r)^n$ का उपयोग करता है। PV formula इससे divide करता है।",
+    "अधिक frequent compounding (Monthly बनाम Yearly) से higher Future Value प्राप्त होती है।",
+    "Rule of 72: यदि interest 6% है, तो पैसा $72/6 = 12$ वर्षों में दोगुना हो जाता है।",
+    "Value के मामले में Annuity Due > Ordinary Annuity।"
+  ]
+}

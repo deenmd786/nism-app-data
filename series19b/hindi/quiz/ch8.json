@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "What is the primary purpose of 'Valuation' in an AIF?",
+    "options": [
+      "To increase the fees",
+      "To determine the fair value of the fund's assets to calculate NAV",
+      "To pay taxes",
+      "To market the fund"
+    ],
+    "answer": "To determine the fair value of the fund's assets to calculate NAV",
+    "hint": "आज asset की कीमत क्या है?",
+    "explanation": "Valuation एक asset के वर्तमान मूल्य (current worth) का अनुमान लगाने की प्रक्रिया है ताकि investors के लिए प्रति unit Net Asset Value (NAV) प्राप्त किया जा सके।"
+  },
+  {
+    "id": 2,
+    "question": "For listed securities that are actively traded, the valuation is typically based on:",
+    "options": [
+      "The cost price",
+      "The closing market price on the stock exchange",
+      "The manager's estimate",
+      "The book value"
+    ],
+    "answer": "The closing market price on the stock exchange",
+    "hint": "Market price सबसे अच्छी कीमत है।",
+    "explanation": "Active listed securities का मूल्यांकन principal exchange पर closing price का उपयोग करके 'Mark-to-Market' किया जाता है।"
+  },
+  {
+    "id": 3,
+    "question": "Unlisted securities or illiquid assets must be valued by:",
+    "options": [
+      "The Fund Manager alone",
+      "An Independent Valuer",
+      "The Distributor",
+      "The Investor"
+    ],
+    "answer": "An Independent Valuer",
+    "hint": "निष्पक्ष तीसरा पक्ष (Unbiased third party)।",
+    "explanation": "SEBI regulations यह अनिवार्य करते हैं कि unlisted/illiquid assets का मूल्यांकन एक independent valuer द्वारा किया जाए ताकि निष्पक्षता सुनिश्चित हो और conflict of interest से बचा जा सके।"
+  },
+  {
+    "id": 4,
+    "question": "Which valuation methodology is commonly used for early-stage startups (Venture Capital)?",
+    "options": [
+      "Discounted Cash Flow (DCF)",
+      "Last Round Valuation (Price of Recent Investment)",
+      "P/E Ratio",
+      "Dividend Yield"
+    ],
+    "answer": "Last Round Valuation (Price of Recent Investment)",
+    "hint": "पिछले व्यक्ति ने क्या भुगतान किया?",
+    "explanation": "Startups में अक्सर DCF/PE के लिए मुनाफे (profits) की कमी होती है। सबसे recent funding round में एक नए investor द्वारा चुकाई गई कीमत एक प्रमुख benchmark होती है।"
+  },
+  {
+    "id": 5,
+    "question": "The 'Discounted Cash Flow' (DCF) method values an asset based on:",
+    "options": [
+      "Its past profits",
+      "The present value of its expected future cash flows",
+      "Its book value",
+      "Its liquidation value"
+    ],
+    "answer": "The present value of its expected future cash flows",
+    "hint": "भविष्य का पैसा, आज की value।",
+    "explanation": "DCF future cash flows का अनुमान लगाता है और एक discount rate (WACC) का उपयोग करके उन्हें वर्तमान (present) में discount करता है।"
+  },
+  {
+    "id": 6,
+    "question": "Under SEBI AIF Regulations, the valuation of Category III AIF assets must be carried out:",
+    "options": [
+      "Daily",
+      "Once in 3 years",
+      "Periodically as per the PPM (e.g., Monthly/Quarterly)",
+      "Never"
+    ],
+    "answer": "Periodically as per the PPM (e.g., Monthly/Quarterly)",
+    "hint": "नियमित updates।",
+    "explanation": "Valuation frequency PPM में परिभाषित होती है, लेकिन आमतौर पर reporting cycle (मासिक या त्रैमासिक) के अनुरूप होती है।"
+  },
+  {
+    "id": 7,
+    "question": "What is 'Mark-to-Model' valuation?",
+    "options": [
+      "Valuing based on market prices",
+      "Valuing using financial models when market prices are not available",
+      "Valuing based on models",
+      "Valuing based on models"
+    ],
+    "answer": "Valuing using financial models when market prices are not available",
+    "hint": "कोई market price नहीं है? एक model का उपयोग करें।",
+    "explanation": "जब कोई asset (जैसे complex derivative या private debt) trade नहीं करता है, तो fair value का अनुमान लगाने के लिए models (जैसे Black-Scholes या DCF) का उपयोग किया जाता है।"
+  },
+  {
+    "id": 8,
+    "question": "The 'Net Asset Value' (NAV) is calculated as:",
+    "options": [
+      "Total Assets + Liabilities",
+      "(Total Assets - Total Liabilities) / Number of Units",
+      "Total Assets / Number of Investors",
+      "Total Profit / Total Loss"
+    ],
+    "answer": "(Total Assets - Total Liabilities) / Number of Units",
+    "hint": "Assets में से आपकी देनदारी (what you owe) घटाएं।",
+    "explanation": "NAV per unit = (Market Value of Investments + Current Assets - Current Liabilities & Expenses) / Outstanding Units."
+  },
+  {
+    "id": 9,
+    "question": "In the context of Debt Funds, if a borrower defaults, the asset should be:",
+    "options": [
+      "Valued at par",
+      "Written down or provisioned to reflect the loss",
+      "Valued at double",
+      "Ignored"
+    ],
+    "answer": "Written down or provisioned to reflect the loss",
+    "hint": "Bad debt अपना value खो देता है।",
+    "explanation": "यदि कोई loan खराब (NPA) हो जाता है, तो fund को उसकी recovery की कम संभावना को दर्शाने के लिए उसकी value पर 'haircut' (markdown) लेना चाहिए।"
+  },
+  {
+    "id": 10,
+    "question": "Relative Valuation involves comparing a company to:",
+    "options": [
+      "Itself 100 years ago",
+      "Similar peer companies (Comparable Company Analysis)",
+      "The government",
+      "Gold prices"
+    ],
+    "answer": "Similar peer companies (Comparable Company Analysis)",
+    "hint": "समान चीजों (apples to apples) की तुलना करना।",
+    "explanation": "Relative valuation target company की value का अनुमान लगाने के लिए समान listed peers के multiples (जैसे P/E, EV/EBITDA) का उपयोग करता है।"
+  },
+  {
+    "id": 11,
+    "question": "The 'International Private Equity and Venture Capital Valuation (IPEV) Guidelines' are:",
+    "options": [
+      "Mandatory laws",
+      "Global best practices for valuing private assets",
+      "Only for Europe",
+      "Banned in India"
+    ],
+    "answer": "Global best practices for valuing private assets",
+    "hint": "Global मानक (standard)।",
+    "explanation": "IPEV guidelines private equity और venture capital investments के मूल्यांकन के लिए विश्व स्तर पर स्वीकृत ढांचा (framework) प्रदान करते हैं।"
+  },
+  {
+    "id": 12,
+    "question": "If a Category III AIF holds a significant position in an illiquid stock, a 'Liquidity Discount' may apply because:",
+    "options": [
+      "The stock is too liquid",
+      "It would be difficult to sell the large position without depressing the price",
+      "The company is bankrupt",
+      "The manager wants to buy it"
+    ],
+    "answer": "It would be difficult to sell the large position without depressing the price",
+    "hint": "जल्दी बेचना मुश्किल है।",
+    "explanation": "Illiquidity discounts (DLOM - Discount for Lack of Marketability) स्थिति से आसानी से बाहर न निकल पाने के risk/cost को दर्शाते हैं।"
+  },
+  {
+    "id": 13,
+    "question": "Who is responsible for appointing the Independent Valuer?",
+    "options": [
+      "The Investor",
+      "The Investment Manager / Sponsor",
+      "SEBI",
+      "The Stock Exchange"
+    ],
+    "answer": "The Investment Manager / Sponsor",
+    "hint": "Fund management।",
+    "explanation": "Manager valuer को नियुक्त करता है, हालांकि valuer स्वतंत्र और योग्य (independent and qualified) होना चाहिए (उदा., IBBI के साथ Registered Valuer)।"
+  },
+  {
+    "id": 14,
+    "question": "In Real Estate valuation, the 'Capitalization Rate' (Cap Rate) is used in:",
+    "options": [
+      "DCF Method",
+      "Direct Capitalization Method (Income Approach)",
+      "Cost Approach",
+      "Market Approach"
+    ],
+    "answer": "Direct Capitalization Method (Income Approach)",
+    "hint": "Income / Rate = Value.",
+    "explanation": "Value = Net Operating Income (NOI) / Cap Rate. यह संपत्ति (property) की income उत्पन्न करने की क्षमता के आधार पर value का अनुमान लगाता है।"
+  },
+  {
+    "id": 15,
+    "question": "Ind AS 113 deals with:",
+    "options": [
+      "Leases",
+      "Fair Value Measurement",
+      "Revenue Recognition",
+      "Income Tax"
+    ],
+    "answer": "Fair Value Measurement",
+    "hint": "'Fair Value' के लिए मानक (standard)।",
+    "explanation": "Ind AS 113 fair value को परिभाषित करता है और इसे मापने के लिए एक framework निर्धारित करता है।"
+  },
+  {
+    "id": 16,
+    "question": "Under Ind AS, 'Level 1' inputs for valuation are:",
+    "options": [
+      "Unobservable inputs",
+      "Quoted prices in active markets for identical assets",
+      "Observable inputs other than quoted prices",
+      "Estimates"
+    ],
+    "answer": "Quoted prices in active markets for identical assets",
+    "hint": "सबसे अच्छा data: Market Price।",
+    "explanation": "Level 1 inputs सबसे विश्वसनीय होते हैं (उदा., closing stock price)। Level 2 observable data (समान assets) का उपयोग करता है। Level 3 unobservable models का उपयोग करता है।"
+  },
+  {
+    "id": 17,
+    "question": "Private Equity investments are typically classified as Level ____ assets in the fair value hierarchy.",
+    "options": [
+      "Level 1",
+      "Level 2",
+      "Level 3",
+      "Level 0"
+    ],
+    "answer": "Level 3",
+    "hint": "मूल्यांकन करना सबसे कठिन है।",
+    "explanation": "चूंकि वे exchanges पर trade नहीं करते हैं और मूल्यांकन के लिए महत्वपूर्ण judgement/models की आवश्यकता होती है, इसलिए PE assets आमतौर पर Level 3 होते हैं।"
+  },
+  {
+    "id": 18,
+    "question": "When valuing a 'Convertible Note', the valuer must consider:",
+    "options": [
+      "Only the debt value",
+      "Only the equity value",
+      "Both the debt component and the conversion option (equity upside)",
+      "Neither"
+    ],
+    "answer": "Both the debt component and the conversion option (equity upside)",
+    "hint": "यह एक hybrid है।",
+    "explanation": "एक convertible note में debt (interest) और equity (conversion option) दोनों की विशेषताएं होती हैं, इसलिए दोनों का मूल्यांकन किया जाना चाहिए।"
+  },
+  {
+    "id": 19,
+    "question": "The 'J-Curve' effect often leads to NAV being ____ in the initial years of a PE fund.",
+    "options": [
+      "Higher",
+      "Lower or flat (at cost)",
+      "Double",
+      "Zero"
+    ],
+    "answer": "Lower or flat (at cost)",
+    "hint": "Fees इसे नीचे खींचती हैं।",
+    "explanation": "शुरुआत में, fees का भुगतान किया जाता है लेकिन investments का मूल्य अभी नहीं बढ़ा होता है (अक्सर cost पर रखे जाते हैं), जिससे NAV में गिरावट (dip) आती है या वह flat रहता है।"
+  },
+  {
+    "id": 20,
+    "question": "Valuation of 'Derivatives' (Options/Futures) is typically done using:",
+    "options": [
+      "Cost price",
+      "Black-Scholes Model or similar pricing models",
+      "P/E Ratio",
+      "Real Estate appraisal"
+    ],
+    "answer": "Black-Scholes Model or similar pricing models",
+    "hint": "Mathematical models।",
+    "explanation": "Option pricing models underlying price, volatility, time to expiry, और interest rates के आधार पर fair value की गणना करते हैं।"
+  },
+  {
+    "id": 21,
+    "question": "SEBI requires the AIF manager to disclose the valuation policy to investors in the:",
+    "options": [
+      "PPM",
+      "Newspaper",
+      "Tax Return",
+      "Bank Statement"
+    ],
+    "answer": "PPM",
+    "hint": "नियम पुस्तिका (rulebook)।",
+    "explanation": "Private Placement Memorandum (PPM) में valuation principles और methodology का विवरण होना चाहिए।"
+  },
+  {
+    "id": 22,
+    "question": "Which of the following creates a 'Conflict of Interest' in valuation?",
+    "options": [
+      "Independent valuer",
+      "Manager valuing the assets to maximize their performance fee",
+      "Auditor checking the value",
+      "Investor checking the value"
+    ],
+    "answer": "Manager valuing the assets to maximize their performance fee",
+    "hint": "अपना खुद का homework जांचना।",
+    "explanation": "यदि managers अपने स्वयं के portfolio का मूल्यांकन करते हैं, तो वे बेहतर performance दिखाने और उच्च fees कमाने के लिए कीमतों (prices) को बढ़ा (inflate) सकते हैं।"
+  },
+  {
+    "id": 23,
+    "question": "For 'Distressed Assets', the valuation is often based on:",
+    "options": [
+      "Face value of the loan",
+      "Recovery Value or Liquidation Value",
+      "Stock market price",
+      "Historical cost"
+    ],
+    "answer": "Recovery Value or Liquidation Value",
+    "hint": "आप क्या बचा सकते हैं (salvage)?",
+    "explanation": "Distressed assets का मूल्यांकन इस आधार पर किया जाता है कि underlying collateral के liquidation या restructuring से क्या recover किया जा सकता है।"
+  },
+  {
+    "id": 24,
+    "question": "If an AIF invests in another AIF (Fund of Funds), how does it value that investment?",
+    "options": [
+      "Based on the NAV reported by the underlying fund",
+      "Based on its own guess",
+      "Based on the stock market index",
+      "At zero"
+    ],
+    "answer": "Based on the NAV reported by the underlying fund",
+    "hint": "Source पर भरोसा करें।",
+    "explanation": "FoFs (Fund of Funds) आमतौर पर underlying fund managers द्वारा प्रदान किए गए NAV statements पर निर्भर करते हैं।"
+  },
+  {
+    "id": 25,
+    "question": "What is 'Side Pocketing' in valuation context?",
+    "options": [
+      "Hiding money",
+      "Segregating illiquid/distressed assets and valuing them separately from the liquid portfolio",
+      "Putting cash in a pocket",
+      "Selling assets"
+    ],
+    "answer": "Segregating illiquid/distressed assets and valuing them separately from the liquid portfolio",
+    "hint": "खराब चीज़ों को अलग करें।",
+    "explanation": "Side pockets खराब assets को freeze कर देते हैं ताकि उनकी valuation volatility (या lack of liquidity) मुख्य fund के NAV और trading को प्रभावित न करे।"
+  },
+  {
+    "id": 26,
+    "question": "The 'Cost Approach' to valuation assumes:",
+    "options": [
+      "Value is based on future income",
+      "Value is what it would cost to replace the asset",
+      "Value is based on market peers",
+      "Value is zero"
+    ],
+    "answer": "Value is what it would cost to replace the asset",
+    "hint": "Replacement cost।",
+    "explanation": "Cost approach किसी asset का मूल्यांकन उसे फिर से बनाने या बदलने (recreate or replace) की cost के आधार पर करता है (अक्सर infra या real estate के लिए उपयोग किया जाता है)।"
+  },
+  {
+    "id": 27,
+    "question": "Material deviations in valuation must be reported to:",
+    "options": [
+      "The Investors",
+      "SEBI",
+      "The Trustees",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "hint": "पारदर्शिता (Transparency)।",
+    "explanation": "Valuation में महत्वपूर्ण बदलाव (changes) या त्रुटियों (errors) को सभी stakeholders (Investors, Trustees, Regulator) के सामने disclose किया जाना चाहिए।"
+  },
+  {
+    "id": 28,
+    "question": "A 'Registered Valuer' must be registered with:",
+    "options": [
+      "RBI",
+      "IBBI (Insolvency and Bankruptcy Board of India)",
+      "Only ICAI",
+      "Only SEBI"
+    ],
+    "answer": "IBBI (Insolvency and Bankruptcy Board of India)",
+    "hint": "Companies Act के तहत।",
+    "explanation": "Companies Act, 2013, अनिवार्य करता है कि valuation IBBI के साथ पंजीकृत Registered Valuers द्वारा किया जाए।"
+  },
+  {
+    "id": 29,
+    "question": "The valuation of a 'Private Limited Company' share is typically:",
+    "options": [
+      "Quoted on the exchange",
+      "Derived using methods like DCF or Multiples",
+      "Fixed at INR 10",
+      "Equal to cash in bank"
+    ],
+    "answer": "Derived using methods like DCF or Multiples",
+    "hint": "कोई market price नहीं।",
+    "explanation": "चूंकि यह trade नहीं होता है, इसलिए fair value सैद्धांतिक (theoretical) models का उपयोग करके प्राप्त किया जाता है।"
+  },
+  {
+    "id": 30,
+    "question": "Volatility impacts the valuation of:",
+    "options": [
+      "Cash",
+      "Options / Derivatives",
+      "Fixed Deposits",
+      "Government Bonds (held to maturity)"
+    ],
+    "answer": "Options / Derivatives",
+    "hint": "Vega.",
+    "explanation": "Volatility option pricing models (Black-Scholes) में एक महत्वपूर्ण input है। Higher volatility option value को बढ़ाती है।"
+  },
+  {
+    "id": 31,
+    "question": "NAV calculation frequency for Open-ended Category III AIFs is usually:",
+    "options": [
+      "Daily or Weekly",
+      "Monthly",
+      "Annually",
+      "Never"
+    ],
+    "answer": "Monthly",
+    "hint": "Standard subscription cycle।",
+    "explanation": "अधिकांश open-ended AIFs monthly liquidity प्रदान करते हैं, इसलिए NAV मासिक (monthly) रूप से निकाला जाता है।"
+  },
+  {
+    "id": 32,
+    "question": "Impairment of an asset means:",
+    "options": [
+      "Increase in value",
+      "Permanent reduction in the recoverable amount of the asset below its carrying value",
+      "Selling the asset",
+      "Buying more"
+    ],
+    "answer": "Permanent reduction in the recoverable amount of the asset below its carrying value",
+    "hint": "Value का नुकसान।",
+    "explanation": "Impairment यह पहचानता है कि किसी asset का value काफी गिर गया है और उसके recover होने की उम्मीद नहीं है।"
+  },
+  {
+    "id": 33,
+    "question": "Fair Value is defined as the price that would be received to sell an asset in an:",
+    "options": [
+      "Orderly transaction between market participants at the measurement date",
+      "Forced liquidation sale",
+      "Auction with no bidders",
+      "Internal transfer"
+    ],
+    "answer": "Orderly transaction between market participants at the measurement date",
+    "hint": "इच्छुक खरीदार, इच्छुक विक्रेता (Willing buyer, willing seller)।",
+    "explanation": "Ind AS 113 परिभाषा: Independent market participants के बीच orderly transaction (forced नहीं)।"
+  },
+  {
+    "id": 34,
+    "question": "When valuing 'Infrastructure Assets', which method is most common?",
+    "options": [
+      "P/E Ratio",
+      "DCF (due to stable long-term cash flows)",
+      "Liquidation Value",
+      "Option Pricing"
+    ],
+    "answer": "DCF (due to stable long-term cash flows)",
+    "hint": "Long-term steady cash।",
+    "explanation": "Infra projects (roads, power) में long concessions पर अनुमानित (predictable) cash flows होते हैं, जो DCF को आदर्श बनाते हैं।"
+  },
+  {
+    "id": 35,
+    "question": "The 'Auditor's' role in valuation is to:",
+    "options": [
+      "Calculate the value",
+      "Review and verify the valuation process and inputs used by the manager/valuer",
+      "Set the price",
+      "Ignore it"
+    ],
+    "answer": "Review and verify the valuation process and inputs used by the manager/valuer",
+    "hint": "काम की जांच करें।",
+    "explanation": "Auditors value नहीं बनाते हैं; वे verify करते हैं कि अपनाई गई methodology सही और consistent थी।"
+  },
+  {
+    "id": 36,
+    "question": "Cryptocurrencies (if held) are difficult to value because:",
+    "options": [
+      "They have no value",
+      "High volatility and lack of a central regulated exchange for reference pricing",
+      "They are physical",
+      "They are stable"
+    ],
+    "answer": "High volatility and lack of a central regulated exchange for reference pricing",
+    "hint": "कौन सी exchange price वास्तविक है?",
+    "explanation": "Exchanges के बीच price में असमानता (disparity) और अत्यधिक volatility के कारण Crypto valuation चुनौतीपूर्ण है।"
+  },
+  {
+    "id": 37,
+    "question": "Accrued Interest is:",
+    "options": [
+      "Ignored in NAV",
+      "Added to the value of debt securities when calculating NAV",
+      "Subtracted from NAV",
+      "Paid to the manager"
+    ],
+    "answer": "Added to the value of debt securities when calculating NAV",
+    "hint": "Interest अर्जित हुआ लेकिन अभी तक भुगतान नहीं किया गया।",
+    "explanation": "NAV में वह interest शामिल होना चाहिए जो valuation date तक bonds पर accrued (उपार्जित) हो गया है।"
+  },
+  {
+    "id": 38,
+    "question": "If a stock is suspended from trading, the valuer should:",
+    "options": [
+      "Value it at the last traded price forever",
+      "Value it at zero instantly",
+      "Estimate fair value based on available information (and likely apply a discount)",
+      "Wait for it to relist"
+    ],
+    "answer": "Estimate fair value based on available information (and likely apply a discount)",
+    "hint": "हमेशा के लिए पुरानी price का उपयोग नहीं कर सकते।",
+    "explanation": "यदि निलंबन (suspension) लंबा खिंचता है, तो आखिरी price पुरानी (stale) हो जाती है। Fair value का अनुमान लगाया जाना चाहिए, अक्सर एक महत्वपूर्ण haircut के साथ।"
+  },
+  {
+    "id": 39,
+    "question": "The 'Enterprise Value' (EV) includes:",
+    "options": [
+      "Equity Value only",
+      "Equity Value + Net Debt",
+      "Debt only",
+      "Cash only"
+    ],
+    "answer": "Equity Value + Net Debt",
+    "hint": "Firm की कुल value।",
+    "explanation": "EV सभी stakeholders (debt + equity holders) के लिए business के कुल मूल्य (total value) को दर्शाता है।"
+  },
+  {
+    "id": 40,
+    "question": "Terminal Value in a DCF model represents:",
+    "options": [
+      "The value of the company at the end of the projection period into perpetuity",
+      "The value at the beginning",
+      "The scrap value",
+      "The tax value"
+    ],
+    "answer": "The value of the company at the end of the projection period into perpetuity",
+    "hint": "उसके बाद हमेशा के लिए value।",
+    "explanation": "Terminal value स्पष्ट forecast period के बाद के सभी cash flows की value को capture करता है।"
+  },
+  {
+    "id": 41,
+    "question": "Valuation of a 'Structured Product' often requires:",
+    "options": [
+      "Breaking it down into components (Bond + Derivative)",
+      "Guessing",
+      "Using the face value",
+      "Using the P/E ratio"
+    ],
+    "answer": "Breaking it down into components (Bond + Derivative)",
+    "hint": "भागों का योग (Sum of parts)।",
+    "explanation": "Structured products का मूल्यांकन zero-coupon bond और embedded option की value को जोड़कर किया जाता है।"
+  },
+  {
+    "id": 42,
+    "question": "Who bears the cost of the Independent Valuer?",
+    "options": [
+      "The Manager personally",
+      "The AIF (Investors)",
+      "SEBI",
+      "The Government"
+    ],
+    "answer": "The AIF (Investors)",
+    "hint": "Fund का खर्च (expense)।",
+    "explanation": "Valuation fees एक operating expense है जिसे fund के NAV पर charge किया जाता है।"
+  },
+  {
+    "id": 43,
+    "question": "A 'Down Round' implies:",
+    "options": [
+      "Valuation has increased",
+      "Valuation has decreased compared to the previous round",
+      "Valuation is flat",
+      "The company is closed"
+    ],
+    "answer": "Valuation has decreased compared to the previous round",
+    "hint": "Price नीचे चला गया।",
+    "explanation": "यदि कोई startup पिछली बार की तुलना में कम valuation पर पैसा जुटाता है, तो यह एक Down Round है, जो anti-dilution clauses को trigger करता है।"
+  },
+  {
+    "id": 44,
+    "question": "Which of the following is NOT a standard valuation approach?",
+    "options": [
+      "Market Approach",
+      "Income Approach",
+      "Cost Approach",
+      "Astrological Approach"
+    ],
+    "answer": "Astrological Approach",
+    "hint": "सितारे (Stars) price तय नहीं करते हैं।",
+    "explanation": "तीन standard approaches Market, Income और Cost हैं।"
+  },
+  {
+    "id": 45,
+    "question": "EBITDA multiples are commonly used in:",
+    "options": [
+      "Bond valuation",
+      "Equity valuation (Relative Value)",
+      "Option valuation",
+      "Currency valuation"
+    ],
+    "answer": "Equity valuation (Relative Value)",
+    "hint": "Enterprise Value / EBITDA.",
+    "explanation": "EV/EBITDA operating companies के मूल्यांकन के लिए एक standard multiple है।"
+  },
+  {
+    "id": 46,
+    "question": "If a fund holds foreign assets, the valuation must encompass:",
+    "options": [
+      "Only the asset price change",
+      "Asset price change and Foreign Exchange (Forex) rate fluctuation",
+      "Only Forex rate",
+      "Neither"
+    ],
+    "answer": "Asset price change and Foreign Exchange (Forex) rate fluctuation",
+    "hint": "मुद्रा (Currency) मायने रखती है।",
+    "explanation": "INR में value asset की performance और INR/USD exchange rate दोनों पर निर्भर करता है।"
+  },
+  {
+    "id": 47,
+    "question": "Valuation Guidelines for AIFs are generally aligned with:",
+    "options": [
+      "Local municipal laws",
+      "SEBI (Mutual Funds) Regulations standards (as a baseline reference)",
+      "No standards",
+      "The manager's diary"
+    ],
+    "answer": "SEBI (Mutual Funds) Regulations standards (as a baseline reference)",
+    "hint": "Products के बीच consistency।",
+    "explanation": "SEBI अक्सर valuation norms को सामंजस्यपूर्ण (harmonize) करता है, यह अपेक्षा करते हुए कि AIFs strict Mutual Fund norms के समान सिद्धांतों का पालन करेंगे, विशेष रूप से listed assets के लिए।"
+  },
+  {
+    "id": 48,
+    "question": "The NAV of a Close-ended fund matters for:",
+    "options": [
+      "Daily trading",
+      "Periodic reporting and final distribution",
+      "Entry of new investors (which is not allowed anyway)",
+      "None"
+    ],
+    "answer": "Periodic reporting and final distribution",
+    "hint": "प्रगति (progress) को track करना।",
+    "explanation": "चूंकि investors daily बाहर (exit) नहीं निकल सकते, इसलिए NAV performance report करने और liquidation पर value निर्धारित करने के लिए होता है।"
+  },
+  {
+    "id": 49,
+    "question": "Sensitivity Analysis in valuation tests:",
+    "options": [
+      "The manager's emotions",
+      "How the value changes if key assumptions (like growth rate, discount rate) change",
+      "The computer speed",
+      "The auditor's mood"
+    ],
+    "answer": "How the value changes if key assumptions (like growth rate, discount rate) change",
+    "hint": "क्या होगा अगर (What if) scenarios।",
+    "explanation": "यह inputs को बदलकर valuation model की मजबूती (robustness) की जांच करता है।"
+  },
+  {
+    "id": 50,
+    "question": "Standard of Value typically used for AIFs is:",
+    "options": [
+      "Investment Value (Synergistic value)",
+      "Fair Value / Fair Market Value",
+      "Book Value",
+      "Scrap Value"
+    ],
+    "answer": "Fair Value / Fair Market Value",
+    "hint": "Market participant का दृष्टिकोण।",
+    "explanation": "AIFs Fair Value report करते हैं, जो वह मूल्य है जो asset को open market में मिलेगा, न कि किसी strategic buyer के लिए विशिष्ट मूल्य (Synergistic)।"
+  }
+]

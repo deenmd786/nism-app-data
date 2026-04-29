@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "What is the primary objective of the 'Clearing' process in the securities market?",
+    "options": [
+      "To execute trades on behalf of clients",
+      "To determine the funds and securities obligations of the trading members",
+      "To provide research reports to investors",
+      "To regulate the stock exchanges"
+    ],
+    "answer": "To determine the funds and securities obligations of the trading members",
+    "hint": "यह पता लगाना कि किसे कितने पैसे देने हैं और किसे कितने shares देने हैं।",
+    "explanation": "Clearing process का main काम trading members की net obligations (किसको क्या देना है और क्या लेना है) को calculate करना है।"
+  },
+  {
+    "id": 2,
+    "question": "Which entity is responsible for clearing and settling trades executed on a stock exchange?",
+    "options": [
+      "Depository",
+      "Clearing Corporation",
+      "Merchant Banker",
+      "SEBI"
+    ],
+    "answer": "Clearing Corporation",
+    "hint": "NCL और ICCL इसके प्रमुख उदाहरण हैं।",
+    "explanation": "Clearing Corporation (CC) exchange पर होने वाले सभी trades को clear और settle करने की जिम्मेदारी लेती है।"
+  },
+  {
+    "id": 3,
+    "question": "The process where the Clearing Corporation steps in as the central counterparty to every trade is known as ______.",
+    "options": [
+      "Securitization",
+      "Novation",
+      "Dematerialization",
+      "Underwriting"
+    ],
+    "answer": "Novation",
+    "hint": "CC हर buyer के लिए seller और हर seller के लिए buyer बन जाती है।",
+    "explanation": "Novation वह legal process है जिसमें Clearing Corporation original contract को replace करके खुद counterparty बन जाती है, जिससे settlement guarantee होती है।"
+  },
+  {
+    "id": 4,
+    "question": "To settle trades through the Clearing Corporation, a stock broker must be registered as a ______.",
+    "options": [
+      "Clearing Member (CM)",
+      "Depository Participant (DP)",
+      "Custodian",
+      "Merchant Banker"
+    ],
+    "answer": "Clearing Member (CM)",
+    "hint": "सिर्फ trading member होना काफी नहीं है, CC का member भी होना चाहिए।",
+    "explanation": "Trades को CC के साथ clear और settle करने के लिए broker को Clearing Member (CM) बनना पड़ता है या किसी Professional Clearing Member (PCM) की सर्विस लेनी पड़ती है।"
+  },
+  {
+    "id": 5,
+    "question": "A member who can only trade on their own behalf and on behalf of their clients, but cannot clear the trades themselves, is a ______.",
+    "options": [
+      "Trading Member (TM)",
+      "Trading cum Clearing Member (TCM)",
+      "Professional Clearing Member (PCM)",
+      "Authorised Person"
+    ],
+    "answer": "Trading Member (TM)",
+    "hint": "इनके पास सिर्फ trading rights होते हैं, clearing rights नहीं।",
+    "explanation": "Trading Member (TM) exchange पर orders execute कर सकता है, लेकिन trades को clear करने के लिए उसे PCM या TCM से tie-up करना पड़ता है।"
+  },
+  {
+    "id": 6,
+    "question": "A member who holds the right to trade as well as clear their own trades and trades of other Trading Members is called a ______.",
+    "options": [
+      "Trading Member (TM)",
+      "Trading cum Clearing Member (TCM)",
+      "Professional Clearing Member (PCM)",
+      "Sub-broker"
+    ],
+    "answer": "Trading cum Clearing Member (TCM)",
+    "hint": "इनके पास Trade (T) और Clear (C) दोनों की power होती है।",
+    "explanation": "TCM खुद trading भी कर सकता है और Clearing Corporation का member होने के नाते अपनी और दूसरों की clearing भी कर सकता है।"
+  },
+  {
+    "id": 7,
+    "question": "Which member does NOT have trading rights but is registered with the Clearing Corporation to clear and settle trades for others?",
+    "options": [
+      "Trading Member (TM)",
+      "Professional Clearing Member (PCM)",
+      "Trading cum Clearing Member (TCM)",
+      "Retail Investor"
+    ],
+    "answer": "Professional Clearing Member (PCM)",
+    "hint": "ये professional entities (जैसे banks) होती हैं जो सिर्फ clearing services देती हैं।",
+    "explanation": "PCM (Professional Clearing Member) exchange पर trade नहीं कर सकता, वो सिर्फ TMs और Institutional clients के trades clear करता है।"
+  },
+  {
+    "id": 8,
+    "question": "Banks that are empaneled by the Clearing Corporation to facilitate the transfer of funds for settlement are called ______.",
+    "options": [
+      "Merchant Banks",
+      "Investment Banks",
+      "Clearing Banks",
+      "Cooperative Banks"
+    ],
+    "answer": "Clearing Banks",
+    "hint": "Settlement accounts इन्हीं banks में open किये जाते हैं।",
+    "explanation": "Clearing Banks वह designated banks हैं जहाँ हर Clearing Member को settlement (pay-in/pay-out) के लिए एक dedicated account खोलना होता है।"
+  },
+  {
+    "id": 9,
+    "question": "Which entity acts as the 'Clearing Agency' for the electronic transfer of securities during settlement?",
+    "options": [
+      "Clearing Bank",
+      "Depository",
+      "SEBI",
+      "RBI"
+    ],
+    "answer": "Depository",
+    "hint": "NSDL और CDSL भारत में यह काम करते हैं।",
+    "explanation": "Depositories (NSDL/CDSL) securities के pay-in और pay-out (electronic transfer) को handle करते हैं।"
+  },
+  {
+    "id": 10,
+    "question": "Which clearing agency settles trades executed by institutional investors like Mutual Funds and FPIs?",
+    "options": [
+      "Retail Broker",
+      "Custodian",
+      "RTA",
+      "Merchant Banker"
+    ],
+    "answer": "Custodian",
+    "hint": "ये बड़े investors के assets को safe रखते हैं और settlement करते हैं।",
+    "explanation": "Institutional trades को Custodian clear और settle करते हैं। Custodians CC के साथ registered Professional Clearing Members (PCMs) होते हैं।"
+  },
+  {
+    "id": 11,
+    "question": "The method used by Clearing Corporations to calculate the net obligation of a member by offsetting their buy and sell positions in a security is called ______.",
+    "options": [
+      "Gross Settlement",
+      "Multilateral Netting",
+      "Bilateral Netting",
+      "Trade-to-Trade Settlement"
+    ],
+    "answer": "Multilateral Netting",
+    "hint": "सभी trades को एक साथ मिलाकर 'net' figure निकालना।",
+    "explanation": "Multilateral Netting में एक broker के पूरे दिन के सभी buy और sell trades को adjust करके एक single net obligation (funds and securities) निकाली जाती है।"
+  },
+  {
+    "id": 12,
+    "question": "If a broker buys 1000 shares of XYZ and sells 600 shares of XYZ on the same day for the same settlement cycle, what is their net security obligation under multilateral netting?",
+    "options": [
+      "Deliver 600 shares",
+      "Receive 1000 shares",
+      "Receive 400 shares",
+      "Deliver 400 shares"
+    ],
+    "answer": "Receive 400 shares",
+    "hint": "Buy (1000) - Sell (600) = Net Buy.",
+    "explanation": "Multilateral netting के तहत 1000 buy और 600 sell आपस में offset हो जाते हैं। Broker को सिर्फ net 400 shares receive करने की obligation होती है।"
+  },
+  {
+    "id": 13,
+    "question": "In which segment is 'Multilateral Netting' NOT allowed, and every trade must be settled by taking/giving delivery?",
+    "options": [
+      "Normal Cash Market",
+      "Derivatives Market",
+      "Trade-to-Trade (T2T) Segment",
+      "Commodity Market"
+    ],
+    "answer": "Trade-to-Trade (T2T) Segment",
+    "hint": "इस segment में intraday trading (netting) allowed नहीं होती।",
+    "explanation": "Trade-to-Trade (T या Z group) stocks में netting allowed नहीं होती। हर buy trade के लिए fund देना होता है और हर sell trade के लिए shares deliver करने होते हैं।"
+  },
+  {
+    "id": 14,
+    "question": "Institutional trades that are to be settled by a Custodian are identified on the trading system using a unique 12-digit code called the ______.",
+    "options": [
+      "UCC",
+      "ISIN",
+      "CP Code (Custodian Participant Code)",
+      "PAN"
+    ],
+    "answer": "CP Code (Custodian Participant Code)",
+    "hint": "यह code बताता है कि trade का settlement Custodian करेगा।",
+    "explanation": "Broker जब institutional order punch करता है, तो वो CP Code डालता है, जिससे Clearing Corporation को पता चलता है कि settlement obligation Custodian की है।"
+  },
+  {
+    "id": 15,
+    "question": "A Custodian must confirm an institutional trade executed by a broker on the trade day (T-Day). If the Custodian rejects the trade, whose responsibility does it become?",
+    "options": [
+      "The Clearing Corporation",
+      "The Institutional Investor",
+      "The Stock Broker (Trading Member)",
+      "The Exchange"
+    ],
+    "answer": "The Stock Broker (Trading Member)",
+    "hint": "Trade जिसने execute किया है, obligation उसी पर आ जाती है।",
+    "explanation": "अगर Custodian trade को confirm नहीं करता (reject कर देता है), तो उस trade की settlement obligation वापस उस Trading Member (broker) पर आ जाती है जिसने trade execute किया था।"
+  },
+  {
+    "id": 16,
+    "question": "What does STP stand for in the context of institutional trade clearing?",
+    "options": [
+      "Standard Trade Practice",
+      "Straight Through Processing",
+      "Systematic Trading Protocol",
+      "Settlement Time Period"
+    ],
+    "answer": "Straight Through Processing",
+    "hint": "बिना manual intervention के end-to-end electronic processing।",
+    "explanation": "Straight Through Processing (STP) एक electronic mechanism है जिससे institutional trades का execution, allocation, और clearing/settlement बिना manual data entry के seamless तरीके से होता है।"
+  },
+  {
+    "id": 17,
+    "question": "Who generates and downloads the final 'Obligation Report' to the Clearing Members?",
+    "options": [
+      "Stock Exchange",
+      "Clearing Corporation",
+      "SEBI",
+      "Depository"
+    ],
+    "answer": "Clearing Corporation",
+    "hint": "Netting करने के बाद ये report CC द्वारा दी जाती है।",
+    "explanation": "Trade day के बाद Clearing Corporation सभी trades की multilateral netting करके Clearing Members को Obligation Report download कराती है।"
+  },
+  {
+    "id": 18,
+    "question": "To transfer shares for settlement, a client must issue instructions to their Depository Participant (DP) using a ______.",
+    "options": [
+      "Cheque Book",
+      "Delivery Instruction Slip (DIS) or DDPI",
+      "Contract Note",
+      "Margin Pledge Form"
+    ],
+    "answer": "Delivery Instruction Slip (DIS) or DDPI",
+    "hint": "यह demat account का 'cheque' होता है।",
+    "explanation": "Shares को pay-in के लिए transfer करने हेतु client अपने DP को Delivery Instruction Slip (DIS) देता है, या broker DDPI (Demat Debit and Pledge Instruction) का उपयोग करता है।"
+  },
+  {
+    "id": 19,
+    "question": "When a member opts for 'Early Pay-in' of securities or funds, what immediate benefit do they receive?",
+    "options": [
+      "Extra dividend from the company",
+      "Exemption/reduction in margin requirement for those trades",
+      "Discount on brokerage",
+      "Tax waiver"
+    ],
+    "answer": "Exemption/reduction in margin requirement for those trades",
+    "hint": "Risk खत्म हो जाने के कारण CC को margin की ज़रूरत नहीं होती।",
+    "explanation": "अगर broker settlement day से पहले ही securities या funds CC को दे देता है (Early Pay-in), तो CC का risk खत्म हो जाता है और उस trade पर लगा margin free हो जाता है।"
+  },
+  {
+    "id": 20,
+    "question": "Clearing Members are required to open a 'Clearing Pool Account' with a Depository. What is the purpose of this account?",
+    "options": [
+      "To hold personal investments of the broker",
+      "To receive and deliver securities towards exchange settlement",
+      "To pledge shares for a bank loan",
+      "To store physical share certificates"
+    ],
+    "answer": "To receive and deliver securities towards exchange settlement",
+    "hint": "यह account CC और client के बीच एक 'transit' point है।",
+    "explanation": "Clearing Pool Account का इस्तेमाल pay-in के लिए clients से shares collect करके CC को देने, और pay-out में CC से shares receive करके clients को distribute करने के लिए होता है।"
+  },
+  {
+    "id": 21,
+    "question": "The SEBI mechanism that allows the Clearing Corporation to credit payout securities directly into the client’s demat account, bypassing the broker's pool account, is known as ______.",
+    "options": [
+      "Direct Payout to Client Account",
+      "Off-market Transfer",
+      "Trade-to-Trade Payout",
+      "Pledge System"
+    ],
+    "answer": "Direct Payout to Client Account",
+    "hint": "Shares सीधे actual owner के खाते में जाते हैं।",
+    "explanation": "SEBI ने brokers द्वारा client shares के misuse को रोकने के लिए Direct Payout system लागू किया है, जहाँ CC shares सीधे buyer (client) के demat account में credit करती है।"
+  },
+  {
+    "id": 22,
+    "question": "If a broker has a net funds 'Pay-in' obligation of Rs. 10 Lakhs, where must they ensure these funds are available on the settlement day?",
+    "options": [
+      "In their Personal Savings Account",
+      "In the Exchange's Office",
+      "In their Settlement Account with the Clearing Bank",
+      "In the Depository Participant's Account"
+    ],
+    "answer": "In their Settlement Account with the Clearing Bank",
+    "hint": "Clearing Bank ही funds transfer handle करता है।",
+    "explanation": "Pay-in के समय CC broker के Clearing Bank Settlement Account से सीधे funds debit करती है, इसलिए broker को वहां पर्याप्त funds रखने होते हैं।"
+  },
+  {
+    "id": 23,
+    "question": "Internal Shortage occurs when ______.",
+    "options": [
+      "The broker falls short of funds to pay the exchange",
+      "One client of a broker fails to deliver shares sold to another client of the same broker",
+      "The Clearing Corporation runs out of SGF funds",
+      "The exchange suspends trading"
+    ],
+    "answer": "One client of a broker fails to deliver shares sold to another client of the same broker",
+    "hint": "Broker के घर के अंदर (internal) ही buy और sell match हो गया, पर seller ने shares नहीं दिए।",
+    "explanation": "Internal Shortage तब होती है जब एक broker का seller client shares deliver नहीं करता, और buyer उसी broker का दूसरा client होता है। इसे broker खुद auction या close-out के जरिये settle करता है।"
+  },
+  {
+    "id": 24,
+    "question": "If a seller fails to deliver securities to the Clearing Corporation on the pay-in day, it leads to a ______.",
+    "options": [
+      "Margin Call",
+      "Short Delivery",
+      "Trade Annulment",
+      "Direct Payout"
+    ],
+    "answer": "Short Delivery",
+    "hint": "जितने shares देने थे, उससे 'short' (कम) पड़ गए।",
+    "explanation": "Pay-in deadline तक पूरी securities CC को deliver ना कर पाने की स्थिति को Short Delivery कहते हैं।"
+  },
+  {
+    "id": 25,
+    "question": "How does the Clearing Corporation resolve a 'Short Delivery' to ensure the buyer receives their shares?",
+    "options": [
+      "By forcing the company to issue new shares",
+      "By cancelling the buyer's trade",
+      "By conducting an Auction",
+      "By giving the buyer mutual fund units instead"
+    ],
+    "answer": "By conducting an Auction",
+    "hint": "CC बाज़ार से वो shares खरीदकर buyer को देती है।",
+    "explanation": "Short Delivery होने पर CC एक Auction session conduct करती है, जहाँ वो defaulting seller के behalf पर shares खरीदती है ताकि original buyer को shares मिल सकें।"
+  },
+  {
+    "id": 26,
+    "question": "In the Auction market, who is NOT allowed to offer (sell) shares?",
+    "options": [
+      "A new seller",
+      "An institutional investor",
+      "The defaulting member who failed to deliver",
+      "A retail investor holding the shares"
+    ],
+    "answer": "The defaulting member who failed to deliver",
+    "hint": "जिसने गलती की है, उसे auction में भाग लेने नहीं दिया जाता।",
+    "explanation": "Auction में कोई भी participant shares offer कर सकता है, सिवाय उस defaulting member के जिसकी वजह से short delivery हुई है।"
+  },
+  {
+    "id": 27,
+    "question": "If shares are not obtained even in the Auction market, the transaction is settled in cash. This process is called ______.",
+    "options": [
+      "Square-off",
+      "Financial Closure / Close-out",
+      "Novation",
+      "Netting"
+    ],
+    "answer": "Financial Closure / Close-out",
+    "hint": "Shares नहीं मिले तो penalty के साथ cash में हिसाब 'close' कर दिया जाता है।",
+    "explanation": "अगर auction में shares नहीं मिलते हैं, तो CC highest price (with penalty) calculate करके trade को cash में 'Close-out' कर देती है, और buyer को shares की जगह cash मिलता है।"
+  },
+  {
+    "id": 28,
+    "question": "Which framework allows stock brokers to use a single Clearing Corporation to clear trades executed across multiple exchanges?",
+    "options": [
+      "Gross Margining",
+      "Interoperability",
+      "Multilateral Netting",
+      "Algorithmic Trading"
+    ],
+    "answer": "Interoperability",
+    "hint": "CCs का आपस में (inter) operate करना।",
+    "explanation": "Interoperability के तहत एक broker NSE पर trade करके BSE की CC (ICCL) से, या BSE पर trade करके NSE की CC (NCL) से clear कर सकता है। इससे margin बचता है।"
+  },
+  {
+    "id": 29,
+    "question": "Under Interoperability, the specific Clearing Corporation chosen by a broker to clear all their trades is called the ______.",
+    "options": [
+      "Primary Depository",
+      "Designated Clearing Corporation (DCC)",
+      "Central Counterparty",
+      "Settlement Bank"
+    ],
+    "answer": "Designated Clearing Corporation (DCC)",
+    "hint": "Broker ने इसे 'designate' (चुना) किया है।",
+    "explanation": "Broker को Interoperability के तहत एक Designated Clearing Corporation (DCC) चुननी होती है (जैसे NCL या ICCL), जो उसके सभी exchanges के trades को clear करती है।"
+  },
+  {
+    "id": 30,
+    "question": "Margins in the derivatives segment are calculated on a portfolio basis using a system called ______.",
+    "options": [
+      "VaR System",
+      "SPAN (Standard Portfolio Analysis of Risk)",
+      "ELM System",
+      "Black-Scholes Model"
+    ],
+    "answer": "SPAN (Standard Portfolio Analysis of Risk)",
+    "hint": "यह portfolio risk assess करने का world-standard software है।",
+    "explanation": "F&O segment में Initial Margin calculate करने के लिए Clearing Corporations SPAN (Standard Portfolio Analysis of Risk) methodology का उपयोग करती हैं।"
+  },
+  {
+    "id": 31,
+    "question": "Clearing Corporations calculate margin requirements for clients on a 'Gross' basis. What does this mean?",
+    "options": [
+      "Margins of Client A and Client B can be offset against each other",
+      "Margins are collected only on the gross profit of the broker",
+      "Margins of Client A and Client B are calculated separately and cannot be offset",
+      "Margin is taken as a gross percentage of the broker's net worth"
+    ],
+    "answer": "Margins of Client A and Client B are calculated separately and cannot be offset",
+    "hint": "Client level पर netting allowed नहीं है।",
+    "explanation": "Client-level margining 'Gross basis' पर होती है। अगर Client A ने Reliance Buy किया है और Client B ने Reliance Sell किया है, तो broker को दोनों से अलग-अलग margin लेना होगा।"
+  },
+  {
+    "id": 32,
+    "question": "A penalty is levied on the Clearing Member if they fail to collect or report the ______ to the Clearing Corporation.",
+    "options": [
+      "Client Demat Account details",
+      "Upfront Client Margin",
+      "Brokerage fees",
+      "Income Tax details"
+    ],
+    "answer": "Upfront Client Margin",
+    "hint": "Risk Management का सबसे अहम हिस्सा।",
+    "explanation": "Brokers को clients से trade से पहले Upfront Margin collect करना होता है और CC को report करना होता है। Short collection या false reporting पर भारी penalty लगती है।"
+  },
+  {
+    "id": 33,
+    "question": "Trades belonging to which group of securities are cleared on a gross basis (trade-to-trade) without multilateral netting?",
+    "options": [
+      "Group A (Large Cap)",
+      "Group T / Z (Trade-to-Trade)",
+      "Derivatives (F&O)",
+      "Exchange Traded Funds (ETFs)"
+    ],
+    "answer": "Group T / Z (Trade-to-Trade)",
+    "hint": "यहाँ speculation रोकने के लिए netting बंद होती है।",
+    "explanation": "Trade-to-Trade (T2T) segment में हर trade का gross settlement होता है। इसमें intraday square-off (netting) नहीं होता, 100% delivery mandatory होती है।"
+  },
+  {
+    "id": 34,
+    "question": "The 'Settlement Guarantee Fund' (SGF) is primarily used when ______.",
+    "options": [
+      "The market crashes by 20%",
+      "A clearing member defaults on their pay-in obligations",
+      "A company declares bankruptcy",
+      "Investors want early payout"
+    ],
+    "answer": "A clearing member defaults on their pay-in obligations",
+    "hint": "यह Fund 'Guarantee' देने के लिए है।",
+    "explanation": "अगर कोई Clearing Member settlement (Pay-in) में default करता है, तो Clearing Corporation SGF का पैसा use करके counterparty को payment/shares देती है ताकि settlement fail न हो।"
+  },
+  {
+    "id": 35,
+    "question": "Which identification number is essential for the Clearing Corporation to identify which trades belong to which client?",
+    "options": [
+      "Aadhaar Number",
+      "UCC (Unique Client Code)",
+      "Company Registration Number",
+      "DP ID"
+    ],
+    "answer": "UCC (Unique Client Code)",
+    "hint": "Exchange में client का यही ID होता है।",
+    "explanation": "Trading system में order डालते समय broker UCC punch करता है। CC इसी UCC के जरिये trades को client-level पर identify करती है और margin/obligations calculate करती है।"
+  },
+  {
+    "id": 36,
+    "question": "Who provides the 'Liquid Assets' (collateral) to the Clearing Corporation to obtain trading limits?",
+    "options": [
+      "Retail Investors",
+      "Clearing Members",
+      "Depositories",
+      "SEBI"
+    ],
+    "answer": "Clearing Members",
+    "hint": "CC के साथ member ही deal करता है।",
+    "explanation": "Clearing Members (Brokers) CC के पास Cash, FDs, या approved securities के रूप में Liquid Assets जमा करते हैं। इसी के आधार पर उन्हें exchange पर trading limit मिलती है।"
+  },
+  {
+    "id": 37,
+    "question": "The concept where buying shares of a company gives the buyer the right to receive corporate benefits (like dividends/bonus) announced by the company is called trading ______.",
+    "options": [
+      "Ex-Rights",
+      "Cum-Benefits (Cum-Dividend / Cum-Bonus)",
+      "No-Delivery",
+      "Spot Delivery"
+    ],
+    "answer": "Cum-Benefits (Cum-Dividend / Cum-Bonus)",
+    "hint": "Cum = Cumulative (सहित)।",
+    "explanation": "जब कोई stock 'Cum-Benefit' trade कर रहा होता है, तो उस समय shares खरीदने वाले buyer को upcoming corporate action (dividend/bonus) का लाभ मिलता है।"
+  },
+  {
+    "id": 38,
+    "question": "If a stock is trading 'Ex-Dividend', it means the buyer of the stock ______.",
+    "options": [
+      "Will receive the dividend",
+      "Will NOT receive the upcoming dividend",
+      "Must pay the dividend to the company",
+      "Gets a guaranteed bonus share"
+    ],
+    "answer": "Will NOT receive the upcoming dividend",
+    "hint": "Ex = Without (के बिना)।",
+    "explanation": "Ex-date के दिन या उसके बाद shares खरीदने वाले investor को company द्वारा declare किया गया dividend नहीं मिलता; वो dividend पुराने owner (seller) को मिलता है।"
+  },
+  {
+    "id": 39,
+    "question": "The date determined by the company board on which an investor must hold the shares in their demat account to be eligible for corporate benefits is called the ______.",
+    "options": [
+      "Trade Date",
+      "Settlement Date",
+      "Record Date",
+      "Expiry Date"
+    ],
+    "answer": "Record Date",
+    "hint": "इस दिन company के 'Record' में आपका नाम होना चाहिए।",
+    "explanation": "Record Date वह cut-off date है जिस दिन company अपनी books check करती है। जिनके नाम demat accounts (records) में shareholders के रूप में होते हैं, उन्हें corporate benefits मिलते हैं।"
+  },
+  {
+    "id": 40,
+    "question": "In the T+1 settlement cycle, if an investor buys shares on Monday, on which day will the shares be credited to their demat account (assuming no holidays)?",
+    "options": [
+      "Monday evening",
+      "Tuesday",
+      "Wednesday",
+      "Thursday"
+    ],
+    "answer": "Tuesday",
+    "hint": "Trade Day (T) + 1 working day.",
+    "explanation": "T+1 settlement में, trades का pay-in और pay-out Trade day के अगले working day (Tuesday) को होता है।"
+  },
+  {
+    "id": 41,
+    "question": "In India, the final settlement of equity cash market trades by the Clearing Corporation is ______.",
+    "options": [
+      "Revocable within 7 days",
+      "Subject to RBI approval",
+      "Final and Irrevocable",
+      "Valid only if the company is profitable"
+    ],
+    "answer": "Final and Irrevocable",
+    "hint": "एक बार settlement हो गया, तो उसे पलटा नहीं जा सकता।",
+    "explanation": "Payment and Settlement Systems Act के तहत, Clearing Corporation द्वारा किया गया settlement final और irrevocable (अपरिवर्तनीय) होता है।"
+  },
+  {
+    "id": 42,
+    "question": "Block deals are large transactions executed in a separate trading window. How are block deals settled?",
+    "options": [
+      "Over the Counter (OTC)",
+      "Together with normal market trades (Multilateral Netting)",
+      "Physical delivery only",
+      "Settlement is deferred by a month"
+    ],
+    "answer": "Together with normal market trades (Multilateral Netting)",
+    "hint": "इनकी clearing normal trades के साथ ही होती है।",
+    "explanation": "Block deals भले ही separate window में trade होते हैं, लेकिन उनका clearing और settlement normal cash market trades के साथ multilateral netting process में ही होता है।"
+  },
+  {
+    "id": 43,
+    "question": "If a broker incorrectly enters a CP Code for a retail trade, causing the Custodian to reject it, the trade is accounted as a ______.",
+    "options": [
+      "System Error",
+      "Trade Annulment",
+      "Non-Institutional Trade of the Trading Member",
+      "Block Deal"
+    ],
+    "answer": "Non-Institutional Trade of the Trading Member",
+    "hint": "Obligation broker के खुद के account (Proprietary/Client) में आ जाती है।",
+    "explanation": "अगर Custodian trade reject करता है (CP Code rejection), तो CC उस trade को सीधा Trading Member का obligation मानकर उससे pay-in मांगती है।"
+  },
+  {
+    "id": 44,
+    "question": "The daily Mark-to-Market (MTM) settlement for futures contracts is handled by the Clearing Corporation. When must members pay MTM losses?",
+    "options": [
+      "End of the expiry month",
+      "T+2 days",
+      "By T+1 day morning (before trading begins)",
+      "Within 7 days"
+    ],
+    "answer": "By T+1 day morning (before trading begins)",
+    "hint": "अगले दिन market खुलने से पहले account clear होना चाहिए।",
+    "explanation": "F&O segment में MTM losses का clearing T+1 day पर trading hours शुरू होने से पहले (Morning Pay-in) settle किया जाता है।"
+  },
+  {
+    "id": 45,
+    "question": "Which of the following acts as the primary risk management tool for the Clearing Corporation during the clearing process?",
+    "options": [
+      "Collection of Margins",
+      "Publishing Annual Reports",
+      "Fixing Brokerage Rates",
+      "Approving IPOs"
+    ],
+    "answer": "Collection of Margins",
+    "hint": "Members से collateral/funds लेना।",
+    "explanation": "Clearing Corporation default risk को रोकने के लिए Clearing Members से upfront, MTM, और exposure margins collect करती है।"
+  },
+  {
+    "id": 46,
+    "question": "What role does the RBI play in the clearing and settlement process of stock exchanges?",
+    "options": [
+      "It directly clears equity trades",
+      "It provides the RTGS/NEFT payment systems used by Clearing Banks",
+      "It maintains client demat accounts",
+      "It issues UCC to investors"
+    ],
+    "answer": "It provides the RTGS/NEFT payment systems used by Clearing Banks",
+    "hint": "Funds transfer का infrastructure RBI का होता है।",
+    "explanation": "Clearing Banks के बीच funds का inter-bank transfer RBI के RTGS (Real Time Gross Settlement) या NEFT systems के माध्यम से होता है।"
+  },
+  {
+    "id": 47,
+    "question": "During the clearing process, what does the term 'Obligation Download' refer to?",
+    "options": [
+      "Downloading trading software",
+      "CC communicating the net pay-in/pay-out requirements to the members",
+      "Investors downloading contract notes",
+      "SEBI downloading broker logs"
+    ],
+    "answer": "CC communicating the net pay-in/pay-out requirements to the members",
+    "hint": "Brokers को बताना कि उन्हें क्या देना/लेना है।",
+    "explanation": "Obligation Download वह file/report है जो CC brokers को भेजती है, जिसमें उनके T-Day के trades के आधार पर funds और securities की net liability लिखी होती है।"
+  },
+  {
+    "id": 48,
+    "question": "Who defines the list of 'Approved Securities' that clearing members can deposit as collateral?",
+    "options": [
+      "Stock Broker",
+      "Clearing Corporation",
+      "Retail Investor",
+      "Ministry of Finance"
+    ],
+    "answer": "Clearing Corporation",
+    "hint": "CC ही तय करती है कि कौन से shares safe हैं।",
+    "explanation": "Clearing Corporation liquidity और volatility criteria के आधार पर एक list बनाती है कि कौन से shares margin (collateral) के रूप में accept किये जाएंगे।"
+  },
+  {
+    "id": 49,
+    "question": "Physical settlement in the equity derivatives (F&O) market implies that on expiry, ______.",
+    "options": [
+      "The contract is settled only in cash",
+      "The buyer/seller must give or take actual delivery of the underlying shares",
+      "Physical share certificates are mailed",
+      "The position is carried forward to the next month automatically"
+    ],
+    "answer": "The buyer/seller must give or take actual delivery of the underlying shares",
+    "hint": "अब Cash settlement नहीं होता, actual shares देने पड़ते हैं।",
+    "explanation": "SEBI rules के अनुसार, expiry पर In-the-Money (ITM) stock derivatives cash में settle नहीं होते, बल्कि investors को underlying shares की actual delivery देनी या लेनी पड़ती है।"
+  },
+  {
+    "id": 50,
+    "question": "For seamless electronic transfer, Clearing Corporations maintain interconnected accounts with which entities?",
+    "options": [
+      "With every retail investor's savings bank",
+      "With Depositories (NSDL/CDSL) and Clearing Banks",
+      "With foreign central banks",
+      "With mutual fund houses only"
+    ],
+    "answer": "With Depositories (NSDL/CDSL) and Clearing Banks",
+    "hint": "Shares और Funds का settlement यहीं से होता है।",
+    "explanation": "Clearing process को execute करने के लिए CC का Depositories (securities के लिए) और Clearing Banks (funds के लिए) के साथ direct electronic interface होता है।"
+  }
+]

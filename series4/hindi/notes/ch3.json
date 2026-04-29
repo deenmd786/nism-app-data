@@ -1,0 +1,129 @@
+{
+  "course": "NISM Series IV: Interest Rate Derivatives Certification Examination",
+  "unit_number": 3,
+  "unit_name": "Exchange Traded Interest Rate Futures",
+  "weightage": "20 Marks",
+  "overview": "यह exam का HEART (दिल) है। 20% weightage के साथ, यह unit theory से आगे बढ़कर exchange पर trade होने वाले actual product पर आती है। आप सीखेंगे कि Interest Rate Futures (IRF) contracts कैसे design किए जाते हैं, उन्हें कैसे quote (price) किया जाता है, और उन्हें कैसे settle किया जाता है। यदि आप pass होना चाहते हैं, तो आप इस chapter की एक भी line skip नहीं कर सकते। यह NSE/BSE पर खेले जाने वाले game के specific rules को cover करता है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Exchange Traded Interest Rate Future (IRF) क्या है?",
+      "basic_meaning": "भविष्य की तारीख पर एक तय price पर debt instrument को खरीदने या बेचने का एक standardized contract, जो stock exchange पर trade होता है।",
+      "detailed_explanation": "OTC trades (Unit 2) के विपरीत, IRFs standardized होते हैं। इसका मतलब है कि Exchange (NSE/BSE) rules तय करता है, आप नहीं। \nKey Features: \n1. Standardized Contract Size (उदा. Rs 2 Lakhs या 2000 units)। \n2. Standardized Expiry Date (आमतौर पर महीने का आखिरी Thursday)। \n3. Guaranteed Settlement (Clearing Corporation सुनिश्चित करता है कि कोई default न हो)। \n4. Daily Mark-to-Market (Profits/Losses रोज़ calculate होते हैं)।",
+      "why_this_is_important": "यह standardization liquidity (खरीदने/बेचने में आसानी) और safety (कोई default risk नहीं) लाता है, जिससे यह retail investors के लिए accessible हो जाता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "यदि आप NSE पर '10-Year G-Sec Future' खरीदते हैं, तो आप एक standardized agreement में enter कर रहे हैं। आपको personally किसी seller को खोजने की आवश्यकता नहीं है; Exchange आपको automatically match कर देता है।",
+      "exam_traps": [
+        "यह सोचना कि आप expiry date बदल सकते हैं। आप नहीं बदल सकते।",
+        "'Underlying' (Bond) को 'Contract' (Future) के साथ confuse करना।"
+      ],
+      "memory_trick": "IRF = I (Interest) R (Rate) F (Fixed Rules). केवल Standardized rules."
+    },
+    {
+      "concept": "2. भारत में IRFs के प्रकार (T-Bill vs. Bond Futures)",
+      "basic_meaning": "दो मुख्य products: Short-term betting (T-Bills) और Long-term betting (Bonds)।",
+      "detailed_explanation": "1. **91-Day T-Bill Futures:** \n   - Underlying: 91-Day Government Treasury Bill. \n   - Focus: Short-term interest rates. \n\n2. **6-Year, 10-Year & 13-Year Government Bond Futures (G-Sec Futures):** \n   - Underlying: Government of India (GOI) Securities का एक basket. \n   - Focus: Long-term interest rates. \n   - 10-Year Future सबसे popular/liquid है।",
+      "why_this_is_important": "इन दोनों के pricing और quotation methods पूरी तरह से अलग हैं। इन्हें mix-up न करें।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Traders working capital loans (short term) को hedge करने के लिए T-Bill futures का उपयोग करते हैं। वे housing loans या infrastructure projects (long term) को hedge करने के लिए Bond Futures का उपयोग करते हैं।",
+      "exam_traps": [
+        "यह मानना कि T-Bill futures को Price में quote किया जाता है। उन्हें Index (100 - Yield) में quote किया जाता है।",
+        "यह मानना कि Bond futures को Yield में quote किया जाता है। उन्हें Price में quote किया जाता है।"
+      ],
+      "memory_trick": "T-Bill = Tiny (Short). Bond = Big (Long)."
+    },
+    {
+      "concept": "3. Quotation Convention: 91-Day T-Bill Futures",
+      "basic_meaning": "Screen पर price कैसे दिखाया जाता है? T-Bills के लिए, यह '100 minus the Yield' होता है।",
+      "detailed_explanation": "Exchange चाहता है कि price एक normal stock की तरह move करे: \n- Normal Stock: Good news -> Price UP. \n- Interest Rates: Rates DOWN -> Economy के लिए अच्छा। \nइसलिए, जब rates गिरते हैं तो chart को 'upward' दिखाने के लिए, वे एक inverted quote का उपयोग करते हैं। \n\n**Quote = 100 - Annualized Discount Yield**",
+      "why_this_is_important": "आपको पता होना चाहिए कि screen price को वापस actual interest rate में कैसे convert किया जाए।",
+      "formula": "Quote Price = 100 - Y",
+      "formula_explanation": "जहाँ Y percentage terms में yield है।",
+      "step_by_step_calculation_example": "Scenario: 91-Day T-Bills के लिए market interest rate 6.50% है। \n\nCalculation: \nQuote Price = 100 - 6.50 \nQuote Price = 93.50. \n\nयदि rates गिरकर 6.00% हो जाते हैं: \nQuote Price = 100 - 6.00 = 94.00. \n(देखा? Rates DOWN गए, Price Quote UP गया। यह एक normal stock market move की नकल करता है)।",
+      "real_life_indian_example": "Trading terminal पर, आप '93.50' देखते हैं। यह आपको बताता है कि implied interest rate 6.50% है।",
+      "exam_traps": [
+        "यह सोचना कि 93.50 वह actual money है जो आप pay करते हैं। यह सिर्फ एक INDEX value है।",
+        "Coupon interest calculate करने की कोशिश करना। T-Bills में कोई coupon नहीं होता है।"
+      ],
+      "memory_trick": "'100 Minus' Rule. हमेशा 100 से subtract करें।"
+    },
+    {
+      "concept": "4. Quotation Convention: 10-Year Bond Futures",
+      "basic_meaning": "Bonds के लिए, price को सीधे प्रति Rs 100 face value पर 'Clean Price' के रूप में दिखाया जाता है।",
+      "detailed_explanation": "Bond Futures को actual bond market prices के समान quote किया जाता है। \n- इसमें accrued interest शामिल नहीं होता है (Clean Price)। \n- यदि quote Rs 98.00 है, तो इसका मतलब है कि market हर Rs 100 face value के लिए bond की value Rs 98 लगाता है।",
+      "why_this_is_important": "यह वापस Unit 1 से जुड़ता है: Inverse Relationship. यदि rates ऊपर जाते हैं, तो यह quoted price नीचे जाएगा।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Scenario: Market Yield 7.5% है और Coupon 7% है। चूँकि Yield > Coupon, bond discount पर trade करता है। \nQuote: Rs 96.50 (Example Price)।",
+      "real_life_indian_example": "NSE Contract '10YGS2034' का 100.25 पर trade होने का मतलब है कि bond premium पर trade कर रहा है (Yield < Coupon)।",
+      "exam_traps": [
+        "यह सोचना कि quote में interest शामिल है (Dirty Price)। Futures quote हमेशा CLEAN Price होता है।",
+        "इसे T-Bill inverted quotes के साथ confuse करना।"
+      ],
+      "memory_trick": "Bonds Clean होते हैं (Clean Price Quoted)।"
+    },
+    {
+      "concept": "5. Settlement Mechanism: Cash vs. Physical",
+      "basic_meaning": "Expiry day पर क्या होता है? क्या आपको अपने Demat account में actual bond deliver होता है, या सिर्फ cash में profit मिलता है?",
+      "detailed_explanation": "1. **Cash Settlement:** \n   - T-Bill Futures और current Bond Futures के लिए सबसे common है। \n   - Expiry पर, exchange Final Settlement Price calculate करता है। \n   - यदि आपने profit कमाया है, तो आपके account में cash credit हो जाता है। यदि loss हुआ है, तो cash debit हो जाता है। \n   - कोई actual bonds exchange नहीं होते हैं। \n\n2. **Physical Settlement:** \n   - Seller को buyer को actual Government Bonds deliver करने होते हैं। \n   - Buyer को पूरी contract value pay करनी होती है। \n   - Retail trading में rare है लेकिन specific contracts में possible है।",
+      "why_this_is_important": "Retail traders Cash Settlement पसंद करते हैं क्योंकि वे SGL accounts में G-Secs hold करने का hassle नहीं चाहते हैं।",
+      "formula": "Final Settlement Price (Bond) = Underlying Bond का Weighted Average Price",
+      "formula_explanation": "Trading के अंतिम 2 घंटों में spot market में prices के आधार पर calculate किया जाता है।",
+      "step_by_step_calculation_example": "आपने Rs 100 पर Bond Futures का 1 lot खरीदा। \nExpiry पर, spot market में bond का Weighted Average Price Rs 102 है। \nSettlement: आपको Cash में Rs 2 (x Lot Size) प्राप्त होते हैं। Contract closed.",
+      "real_life_indian_example": "भारत में लगभग सभी retail brokerages delivery risks से बचने के लिए केवल Cash Settled Interest Rate Futures में trading की अनुमति देते हैं।",
+      "exam_traps": [
+        "यह सोचना कि Cash Settlement में आपको bond certificate मिलेगा।",
+        "Settlement price logic न जानना (अंतिम 2 घंटों का Weighted Average)।"
+      ],
+      "memory_trick": "Cash is King (ज़्यादातर contracts सिर्फ Cash exchange करते हैं)।"
+    },
+    {
+      "concept": "6. Conversion Factor & The 'Basket' (Advanced)",
+      "basic_meaning": "चूँकि bonds के अलग-अलग coupons होते हैं, हम उन्हें equal बनाने के लिए एक multiplier का उपयोग करते हैं।",
+      "detailed_explanation": "\nBond Futures अक्सर eligible bonds के 'Basket' पर आधारित होते हैं (उदा. तीन अलग-अलग 10-year bonds)। \n- उनमें से किसी को भी deliver करने के लिए, हमें उनकी values को equal करने के लिए 'Conversion Factor' की आवश्यकता होती है। \n- Conversion Factor < 1: Bond का coupon 'Standard' से कम है। \n- Conversion Factor > 1: Bond का coupon 'Standard' से अधिक है। \n- Invoice Price = (Futures Price * Conversion Factor) + Accrued Interest.",
+      "why_this_is_important": "Physical Settlement के लिए या यह समझने के लिए महत्वपूर्ण है कि कौन सा bond 'Cheapest to Deliver' है।",
+      "formula": "Invoice Price = (Futures Price × CF) + Accrued Interest",
+      "formula_explanation": "यह वह final amount निर्धारित करता है जो buyer physical delivery में seller को pay करता है।",
+      "step_by_step_calculation_example": "Futures Price = Rs 100. \nConversion Factor (CF) = 0.90 (Low coupon bond). \nAccrued Interest = Rs 2. \nInvoice Price = (100 * 0.90) + 2 = 90 + 2 = Rs 92.",
+      "real_life_indian_example": "एक seller हमेशा अपना profit maximize करने के लिए basket से 'Cheapest to Deliver' (CTD) bond चुनेगा।",
+      "exam_traps": [
+        "Final Invoice Price में Accrued Interest जोड़ना भूल जाना।",
+        "यह सोचना कि Conversion Factor को Accrued Interest पर apply किया जाता है। नहीं, केवल Futures Price पर।"
+      ],
+      "memory_trick": "Future को Convert करें, फिर Interest जोड़ें।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "91-Day T-Bill Future vs 10-Year Bond Future",
+      "clear_explanation": "T-BILL FUTURE quote (100 - Yield) है। Yield गिरने पर Price बढ़ता है। || BOND FUTURE quote Clean Price है। Yield गिरने पर Price बढ़ता है। (Direction समान है, Calculation अलग है)।"
+    },
+    {
+      "difference_between": "Initial Margin vs MTM Margin",
+      "clear_explanation": "INITIAL MARGIN trade open करने के लिए upfront pay किया गया deposit है (उदा. value का 5%)। यह potential future risk को cover करता है। || MTM (Mark-To-Market) MARGIN profit/loss का daily adjustment है। यदि आपको loss हो रहा है तो इसे रोज़ cash में pay करना होगा।"
+    },
+    {
+      "difference_between": "Invoice Price vs Quoted Price",
+      "clear_explanation": "QUOTED PRICE screen price (Clean) है। || INVOICE PRICE exchange किया गया actual money है (Conversion Factor के लिए adjusted Dirty Price)।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "T-Bill Future Quote (100 - Yield) का Calculation।",
+    "Conversion Factor का उपयोग करके Invoice Price का Calculation।",
+    "'Cheapest to Deliver' (CTD) bond की definition।",
+    "यह समझना कि Retail investors G-Sec Futures में trade कर सकते हैं।",
+    "Settlement Price logic (Underlying का Weighted Average Price)।"
+  ],
+  "quick_revision_summary": [
+    "IRF = Standardized, Exchange Traded, कोई Counterparty Risk नहीं।",
+    "T-Bill Quote = 100 - Yield.",
+    "Bond Future Quote = Clean Price.",
+    "Invoice Price = (Futures Price * CF) + Accrued Interest.",
+    "Margins (Initial + Extreme Loss) mandatory हैं।",
+    "Daily Settlement (MTM) हर दिन होता है।",
+    "Final Settlement आमतौर पर Cash (Profit/Loss difference) होता है।"
+  ]
+}

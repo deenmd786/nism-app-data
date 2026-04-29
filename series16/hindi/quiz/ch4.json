@@ -1,0 +1,652 @@
+[
+  {
+    "id": 4001,
+    "question": "What does a 'Call Option' give the buyer?",
+    "options": [
+      "An obligation to buy the asset",
+      "The right, but not the obligation, to buy the asset",
+      "The right to sell the asset",
+      "An obligation to sell the asset"
+    ],
+    "answer": "The right, but not the obligation, to buy the asset",
+    "hint": "Calls के buyers 'Bullish' (तेजी के विचार वाले) होते हैं।",
+    "explanation": "एक call option holder (धारक) को एक specific time period के भीतर एक specified price पर underlying commodity खरीदने का अधिकार देता है, लेकिन कोई दायित्व (obligation) नहीं देता।"
+  },
+  {
+    "id": 4002,
+    "question": "What does a 'Put Option' give the buyer?",
+    "options": [
+      "The right to buy the asset",
+      "The right, but not the obligation, to sell the asset",
+      "An obligation to buy the asset",
+      "A guarantee of profit"
+    ],
+    "answer": "The right, but not the obligation, to sell the asset",
+    "hint": "Puts के buyers 'Bearish' (मंदी के विचार वाले) होते हैं।",
+    "explanation": "एक put option holder को एक specified price पर underlying commodity बेचने का अधिकार देता है।"
+  },
+  {
+    "id": 4003,
+    "question": "The fixed price at which the option holder can buy or sell the underlying asset is called:",
+    "options": [
+      "Market Price",
+      "Spot Price",
+      "Strike Price",
+      "Premium"
+    ],
+    "answer": "Strike Price",
+    "hint": "इसे exercise price के रूप में भी जाना जाता है।",
+    "explanation": "Strike price option contract में निर्धारित (pre-determined) कीमत है जिस पर transaction होगा यदि option exercise किया जाता है।"
+  },
+  {
+    "id": 4004,
+    "question": "What is the 'Premium' in an options contract?",
+    "options": [
+      "The total value of the gold",
+      "The price paid by the buyer to the seller for the rights",
+      "The tax paid to the government",
+      "The profit made at the end of the year"
+    ],
+    "answer": "The price paid by the buyer to the seller for the rights",
+    "hint": "यह insurance/option की 'लागत' (cost) है।",
+    "explanation": "Premium वह non-refundable fee है जो option buyer द्वारा option seller (writer) को अग्रिम (upfront) भुगतान की जाती है।"
+  },
+  {
+    "id": 4005,
+    "question": "Who has 'Unlimited Risk' in an options contract?",
+    "options": [
+      "The Option Buyer",
+      "The Option Seller (Writer)",
+      "The Exchange",
+      "The Warehouse Manager"
+    ],
+    "answer": "The Option Seller (Writer)",
+    "hint": "उन्हें एक छोटा premium मिलता है लेकिन वे सभी संभावित नुकसान (potential loss) का सामना करते हैं।",
+    "explanation": "Option buyers के पास limited risk (चुकाया गया premium) होता है, जबकि option sellers (विशेष रूप से calls के) को सैद्धांतिक रूप से unlimited risk का सामना करना पड़ता है यदि market उनके खिलाफ जाता है।"
+  },
+  {
+    "id": 4006,
+    "question": "An option is 'In-the-Money' (ITM) for a Call buyer if:",
+    "options": [
+      "Market Price > Strike Price",
+      "Market Price < Strike Price",
+      "Market Price = Strike Price",
+      "The market is closed"
+    ],
+    "answer": "Market Price > Strike Price",
+    "hint": "Buyer वर्तमान market price से सस्ता खरीद सकता है।",
+    "explanation": "एक call option तब ITM होता है जब commodity का वर्तमान (current) market price option के strike price से अधिक (higher) होता है।"
+  },
+  {
+    "id": 4007,
+    "question": "An option is 'Out-of-the-Money' (OTM) for a Put buyer if:",
+    "options": [
+      "Market Price > Strike Price",
+      "Market Price < Strike Price",
+      "Market Price = Strike Price",
+      "The premium is zero"
+    ],
+    "answer": "Market Price > Strike Price",
+    "hint": "Strike price पर बेचने का अधिकार बेकार है यदि market price अधिक है।",
+    "explanation": "एक put option तब OTM होता है जब market price strike price से अधिक (higher) होता है, जिसका अर्थ है कि बेचने के अधिकार का exercise करने में कोई immediate benefit नहीं है।"
+  },
+  {
+    "id": 4008,
+    "question": "What is 'Intrinsic Value'?",
+    "options": [
+      "The total premium",
+      "The amount by which an option is in-the-money",
+      "The time left for expiry",
+      "The volatility of the market"
+    ],
+    "answer": "The amount by which an option is in-the-money",
+    "hint": "यह 'वास्तविक' (real) मूल्य है यदि option आज exercise किया गया था।",
+    "explanation": "Intrinsic value strike price और current market price के बीच का अंतर है, लेकिन यह कभी negative नहीं हो सकता (OTM options के लिए यह शून्य है)।"
+  },
+  {
+    "id": 4009,
+    "question": "What is 'Time Value' in an option premium?",
+    "options": [
+      "The cost of a clock",
+      "Premium minus Intrinsic Value",
+      "The interest rate on a loan",
+      "The time it takes to execute a trade"
+    ],
+    "answer": "Premium minus Intrinsic Value",
+    "hint": "यह expiry से पहले option के अधिक मूल्यवान (more valuable) होने की probability को दर्शाता है।",
+    "explanation": "Time value (या extrinsic value) premium का वह हिस्सा है जो intrinsic value से अधिक (exceeds) होता है, जो price move करने के लिए बचे हुए समय (remaining time) को दर्शाता है।"
+  },
+  {
+    "id": 4010,
+    "question": "Which of the following describes an 'American' style option?",
+    "options": [
+      "Can only be exercised on the expiry date",
+      "Can be exercised at any time before or on the expiry date",
+      "Can only be traded in the USA",
+      "Has no expiry date"
+    ],
+    "answer": "Can be exercised at any time before or on the expiry date",
+    "hint": "यह buyer को अधिक flexibility प्रदान करता है।",
+    "explanation": "American options holder को contract के जीवन (life) के दौरान किसी भी बिंदु (point) पर अपने अधिकारों का exercise करने की अनुमति देते हैं।"
+  },
+  {
+    "id": 4011,
+    "question": "Which of the following describes a 'European' style option?",
+    "options": [
+      "Can be exercised any time",
+      "Can only be exercised on the expiry date",
+      "Is traded only in Euros",
+      "Always has a low premium"
+    ],
+    "answer": "Can only be exercised on the expiry date",
+    "hint": "भारत में अधिकांश index और commodity options इस style का पालन करते हैं।",
+    "explanation": "European options केवल expiration के समय ही exercise किए जा सकते हैं, हालांकि उन्हें उससे पहले secondary market में trade (बेचा) किया जा सकता है।"
+  },
+  {
+    "id": 4012,
+    "question": "In India, 'Options on Goods' involve:",
+    "options": [
+      "Cash settlement only",
+      "The right to buy or sell the physical commodity directly",
+      "Mandatory delivery for everyone",
+      "Buying shares in a warehouse"
+    ],
+    "answer": "The right to buy or sell the physical commodity directly",
+    "hint": "यह SEBI द्वारा एक बड़ा regulatory बदलाव था।",
+    "explanation": "Options on futures के विपरीत, 'Options on Goods' exercise किए जाने पर सीधे physical delivery में settle होते हैं।"
+  },
+  {
+    "id": 4013,
+    "question": "What does 'Delta' measure in options?",
+    "options": [
+      "Change in premium for a 1-unit change in underlying price",
+      "Change in premium due to time passing",
+      "The risk of the broker",
+      "The total volume of trades"
+    ],
+    "answer": "Change in premium for a 1-unit change in underlying price",
+    "hint": "यह 'Greeks' में से एक है।",
+    "explanation": "Delta underlying asset के price में बदलाव के प्रति option के premium की संवेदनशीलता (sensitivity) को मापता है।"
+  },
+  {
+    "id": 4014,
+    "question": "What does 'Theta' represent?",
+    "options": [
+      "Price sensitivity",
+      "Time decay (loss of value as time passes)",
+      "Volatility sensitivity",
+      "Interest rate risk"
+    ],
+    "answer": "Time decay (loss of value as time passes)",
+    "hint": "Options 'wasting assets' (बर्बाद होने वाली संपत्तियां) हैं।",
+    "explanation": "Theta उस दर (rate) को मापता है जिस पर एक option का मूल्य (value) अपने expiration date के करीब आने पर कम (decreases) होता है।"
+  },
+  {
+    "id": 4015,
+    "question": "What is 'Implied Volatility' (IV)?",
+    "options": [
+      "The past price movement of the asset",
+      "The market's expectation of future price fluctuations",
+      "The speed of the exchange's internet",
+      "The number of buyers in the market"
+    ],
+    "answer": "The market's expectation of future price fluctuations",
+    "hint": "High IV का मतलब आमतौर पर higher premiums होता है।",
+    "explanation": "IV option के price से प्राप्त (derived) होता है और यह दर्शाता है कि market भविष्य में underlying के price के कितने move करने की उम्मीद करता है।"
+  },
+  {
+    "id": 4016,
+    "question": "A trader who expects very low volatility would likely:",
+    "options": [
+      "Buy a Call and a Put",
+      "Sell (Write) options to collect premium",
+      "Stop trading",
+      "Only trade in physical markets"
+    ],
+    "answer": "Sell (Write) options to collect premium",
+    "hint": "वे लाभ कमाते हैं यदि price एक range के भीतर रहता है।",
+    "explanation": "Option sellers 'Theta decay' और stable prices से लाभान्वित होते हैं, क्योंकि उनके द्वारा बेचे गए options के बेकार (worthless) expire होने की संभावना होती है।"
+  },
+  {
+    "id": 4017,
+    "question": "What is a 'Long Straddle' strategy?",
+    "options": [
+      "Buying only calls",
+      "Selling only puts",
+      "Buying a Call and a Put with the same strike and expiry",
+      "Buying gold in two different cities"
+    ],
+    "answer": "Buying a Call and a Put with the same strike and expiry",
+    "hint": "उपयोग किया जाता है जब आप एक बड़े move की उम्मीद करते हैं लेकिन दिशा (direction) नहीं जानते हैं।",
+    "explanation": "एक long straddle लाभ (profits) कमाता है यदि market किसी भी दिशा (ऊपर या नीचे) में महत्वपूर्ण रूप से (significantly) move करता है।"
+  },
+  {
+    "id": 4018,
+    "question": "At-the-Money (ATM) means:",
+    "options": [
+      "Strike Price = Market Price",
+      "Strike Price > Market Price",
+      "Strike Price < Market Price",
+      "The trader is out of cash"
+    ],
+    "answer": "Strike Price = Market Price",
+    "hint": "Option वर्तमान price level पर ठीक (right) है।",
+    "explanation": "एक option ATM होता है जब strike price underlying commodity के current market price के समान (identical) या बहुत करीब होता है।"
+  },
+  {
+    "id": 4019,
+    "question": "What is 'Vega'?",
+    "options": [
+      "The change in premium due to time",
+      "The change in premium due to a 1% change in IV",
+      "The change in premium due to interest rates",
+      "The name of a star"
+    ],
+    "answer": "The change in premium due to a 1% change in IV",
+    "hint": "यह volatility risk को मापता है।",
+    "explanation": "Vega आपको बताता है कि underlying asset की implied volatility (IV) बदलने पर option की कीमत कितनी बदल जाएगी।"
+  },
+  {
+    "id": 4020,
+    "question": "Why is 'Time Decay' bad for option buyers?",
+    "options": [
+      "It makes the price go up",
+      "The option loses value every day, even if the asset price stays still",
+      "It increases the taxes",
+      "It makes delivery harder"
+    ],
+    "answer": "The option loses value every day, even if the asset price stays still",
+    "hint": "Buyers 'Long Theta' होते हैं।",
+    "explanation": "जैसे-जैसे समय बीतता है, option के profitable होने की probability कम हो जाती है, जिससे premium का time value हिस्सा सिकुड़ (shrink) जाता है।"
+  },
+  {
+    "id": 4021,
+    "question": "Who pays the margin in an options trade?",
+    "options": [
+      "Only the Buyer",
+      "Only the Seller (Writer)",
+      "Both Buyer and Seller",
+      "Neither"
+    ],
+    "answer": "Only the Seller (Writer)",
+    "hint": "Buyer का risk पहले से भुगतान किए गए premium तक सीमित (limited) है।",
+    "explanation": "चूँकि seller के पास संभावित रूप से unlimited risk है, इसलिए उन्हें यह सुनिश्चित करने के लिए margins जमा करना होगा कि वे अपने दायित्वों (obligations) को पूरा कर सकते हैं।"
+  },
+  {
+    "id": 4022,
+    "question": "What is 'Open Interest' in options?",
+    "options": [
+      "The total premium paid",
+      "The total number of open/active option contracts",
+      "The interest rate on margins",
+      "The number of traders interested in options"
+    ],
+    "answer": "The total number of open/active option contracts",
+    "hint": "यह options market की depth और liquidity को दर्शाता है।",
+    "explanation": "Futures की तरह, options में Open Interest उन outstanding contracts की कुल संख्या (total number) का प्रतिनिधित्व करता है जिन्हें बंद (closed) या exercise नहीं किया गया है।"
+  },
+  {
+    "id": 4023,
+    "question": "If a Gold Call option has a strike of 70,000 and the market is at 72,000, what is the Intrinsic Value?",
+    "options": [
+      "0",
+      "2,000",
+      "72,000",
+      "Depends on the time"
+    ],
+    "answer": "2,000",
+    "hint": "यह 'in-the-money' amount है।",
+    "explanation": "72,000 (Market) - 70,000 (Strike) = 2,000 intrinsic value."
+  },
+  {
+    "id": 4024,
+    "question": "What is 'Gamma'?",
+    "options": [
+      "The rate of change of Delta",
+      "The rate of change of Theta",
+      "A type of radiation",
+      "The final profit"
+    ],
+    "answer": "The rate of change of Delta",
+    "hint": "यह मापता है कि Delta कितना 'stable' है।",
+    "explanation": "Gamma मापता है कि underlying asset के price move करने पर option का Delta कितना बदल जाता है।"
+  },
+  {
+    "id": 4025,
+    "question": "What is the 'Maximum Loss' for an option buyer?",
+    "options": [
+      "Unlimited",
+      "Zero",
+      "The premium paid",
+      "The strike price"
+    ],
+    "answer": "The premium paid",
+    "hint": "आप केवल वही खो सकते हैं जो आपने अधिकार (right) खरीदने के लिए खर्च किया था।",
+    "explanation": "Options खरीदने का प्राथमिक लाभ (primary advantage) यह है कि downside सख्ती (strictly) से premium की cost तक सीमित है।"
+  },
+  {
+    "id": 4026,
+    "question": "A 'Covered Call' involves:",
+    "options": [
+      "Buying a call and a put",
+      "Selling a call while owning the underlying physical asset",
+      "Selling a call with no assets",
+      "Covering the call with a cloth"
+    ],
+    "answer": "Selling a call while owning the underlying physical asset",
+    "hint": "इसका उपयोग मौजूदा holding से अतिरिक्त (extra) income generate करने के लिए किया जाता है।",
+    "explanation": "एक covered call में, seller अपने risk को कम करते हुए, call exercise होने की स्थिति में 'cover' के रूप में अपने physical stock का उपयोग करता है।"
+  },
+  {
+    "id": 4027,
+    "question": "What happens to the premium if Implied Volatility (IV) increases?",
+    "options": [
+      "Premium decreases",
+      "Premium increases",
+      "Premium stays same",
+      "Option expires"
+    ],
+    "answer": "Premium increases",
+    "hint": "अधिक अनिश्चितता (Higher uncertainty) 'insurance' को अधिक महंगा (expensive) बना देती है।",
+    "explanation": "Calls और puts दोनों तब अधिक महंगे (expensive) हो जाते हैं जब IV बढ़ता है क्योंकि बड़े price swing की संभावना (chance) अधिक होती है।"
+  },
+  {
+    "id": 4028,
+    "question": "Options on 'Futures' (used in India) convert into what upon exercise?",
+    "options": [
+      "Cash",
+      "Physical goods",
+      "A futures position",
+      "Another option"
+    ],
+    "answer": "A futures position",
+    "hint": "Option आपको एक futures contract enter करने का अधिकार (right) देता है।",
+    "explanation": "जब futures पर एक option exercise किया जाता है, तो buyer को strike price पर underlying futures contract में एक long/short position प्राप्त होती है।"
+  },
+  {
+    "id": 4029,
+    "question": "What is 'Rho'?",
+    "options": [
+      "Sensitivity to volatility",
+      "Sensitivity to interest rates",
+      "Sensitivity to time",
+      "Sensitivity to moisture"
+    ],
+    "answer": "Sensitivity to interest rates",
+    "hint": "यह short-term traders के लिए आमतौर पर सबसे कम महत्वपूर्ण (least important) Greek है।",
+    "explanation": "Rho मापता है कि risk-free interest rate में बदलाव के आधार पर option का premium कितना बदल जाएगा।"
+  },
+  {
+    "id": 4030,
+    "question": "What is an 'Option Series'?",
+    "options": [
+      "A TV show about trading",
+      "All options of the same class with the same strike and expiry",
+      "A group of brokers",
+      "A sequence of days"
+    ],
+    "answer": "All options of the same class with the same strike and expiry",
+    "hint": "यह वह specific contract है जिसे आप trade करने के लिए चुनते हैं।",
+    "explanation": "एक option series में एक specific type (Calls या Puts) के सभी contracts शामिल होते हैं जो समान (same) strike price और expiration date साझा करते हैं।"
+  },
+  {
+    "id": 4031,
+    "question": "What is 'Assignment' in options?",
+    "options": [
+      "Homework for traders",
+      "The process where an option seller is required to fulfill their obligation",
+      "Buying a new computer",
+      "Signing a contract"
+    ],
+    "answer": "The process where an option seller is required to fulfill their obligation",
+    "hint": "यह तब होता है जब buyer exercise करने का फैसला करता है।",
+    "explanation": "जब एक option buyer अपने अधिकार (right) का exercise करता है, तो clearing house उसी option के एक random seller को वह दायित्व (obligation) 'assign' करता है।"
+  },
+  {
+    "id": 4032,
+    "question": "If you are 'Bullish' but want limited risk, you would:",
+    "options": [
+      "Sell a Call",
+      "Buy a Put",
+      "Buy a Call",
+      "Sell a Put"
+    ],
+    "answer": "Buy a Call",
+    "hint": "आप चाहते हैं कि price ऊपर जाए, और आप केवल premium का risk लेना चाहते हैं।",
+    "explanation": "Call option खरीदना आपको एक capped downside के साथ बढ़ती कीमतों (rising prices) से profit कमाने की अनुमति देता है।"
+  },
+  {
+    "id": 4033,
+    "question": "If you are 'Bearish' and want limited risk, you would:",
+    "options": [
+      "Buy a Call",
+      "Buy a Put",
+      "Sell a Put",
+      "Sell a Call"
+    ],
+    "answer": "Buy a Put",
+    "hint": "आप चाहते हैं कि price गिरे।",
+    "explanation": "Put option खरीदना आपको एक capped downside के साथ गिरती कीमतों (falling prices) से profit कमाने की अनुमति देता है।"
+  },
+  {
+    "id": 4034,
+    "question": "What is 'Put-Call Parity'?",
+    "options": [
+      "The price of a put must always equal the call",
+      "The mathematical relationship between call and put prices",
+      "A rule that you must buy both",
+      "None of the above"
+    ],
+    "answer": "The mathematical relationship between call and put prices",
+    "hint": "यह calls, puts और underlying asset के बीच arbitrage को रोकता है।",
+    "explanation": "Put-Call Parity एक fundamental principle है जो समान strike और expiry वाले European calls और puts की कीमतों को जोड़ता (links) है।"
+  },
+  {
+    "id": 4035,
+    "question": "What is the 'Option Class'?",
+    "options": [
+      "A training course",
+      "All call and put options on a single underlying commodity",
+      "The level of a trader's account",
+      "The type of warehouse"
+    ],
+    "answer": "All call and put options on a single underlying commodity",
+    "hint": "उदाहरण: सभी Gold options एक class हैं।",
+    "explanation": "एक option class में एक specific underlying asset से जुड़े सभी calls और puts शामिल होते हैं।"
+  },
+  {
+    "id": 4036,
+    "question": "Which of these is a 'Neutral' strategy?",
+    "options": [
+      "Long Call",
+      "Long Put",
+      "Short Straddle",
+      "Long Futures"
+    ],
+    "answer": "Short Straddle",
+    "hint": "यदि price बहुत अधिक move नहीं करता है तो आप पैसा बनाते हैं।",
+    "explanation": "एक short straddle में call और put दोनों को बेचना (selling) शामिल है, जो time decay और low volatility से profit कमाता है।"
+  },
+  {
+    "id": 4037,
+    "question": "What does 'Expiration' mean for an OTM option?",
+    "options": [
+      "It becomes a futures contract",
+      "It expires worthless",
+      "The buyer gets a refund",
+      "The seller pays a fine"
+    ],
+    "answer": "It expires worthless",
+    "hint": "ऐसे option का exercise करने का कोई कारण नहीं है जिसका कोई value नहीं है।",
+    "explanation": "यदि कोई option expiration के समय Out-of-the-Money है, तो उसका कोई value नहीं है और buyer केवल भुगतान किए गए premium को खो देता है।"
+  },
+  {
+    "id": 4038,
+    "question": "What is 'Volatility Skew'?",
+    "options": [
+      "When all options have the same IV",
+      "When IV differs across different strike prices",
+      "When the market is closed",
+      "When the broker makes a mistake"
+    ],
+    "answer": "When IV differs across different strike prices",
+    "hint": "यह अक्सर graph पर 'smile' या 'smirk' जैसा दिखता है।",
+    "explanation": "Volatility skew market की इस धारणा (perception) को दर्शाता है कि कुछ परिणाम (outcomes) (जैसे अचानक crash) दूसरों की तुलना में अधिक संभावित (likely) हैं, जो विभिन्न strikes की IV को प्रभावित करते हैं।"
+  },
+  {
+    "id": 4039,
+    "question": "What is a 'Strike Price Interval'?",
+    "options": [
+      "The time between two trades",
+      "The difference between two consecutive strike prices",
+      "The distance between two warehouses",
+      "The lunch break at the exchange"
+    ],
+    "answer": "The difference between two consecutive strike prices",
+    "hint": "उदाहरण: हर 100 या 500 रुपये पर Gold strikes।",
+    "explanation": "Exchanges strike prices के बीच मानकीकृत अंतराल (standardized gaps) निर्धारित करते हैं (जैसे, यदि एक strike 70,000 है, तो अगला 70,500 हो सकता है)।"
+  },
+  {
+    "id": 4040,
+    "question": "Why do people use options for 'Hedging'?",
+    "options": [
+      "To double their money",
+      "To protect against price drops while still keeping the profit if prices rise",
+      "Because they are cheaper than water",
+      "To avoid the exchange"
+    ],
+    "answer": "To protect against price drops while still keeping the profit if prices rise",
+    "hint": "Options 'deductible' वाले insurance की तरह हैं।",
+    "explanation": "Futures के विपरीत, जो एक price lock करते हैं, options एक hedger को नुकसान से बचाने की अनुमति देते हैं जबकि market उनके पक्ष (favor) में जाने पर भी profit प्राप्त करते हैं।"
+  },
+  {
+    "id": 4041,
+    "question": "Which Greek is most important for a 'Day Trader' of options?",
+    "options": [
+      "Delta",
+      "Rho",
+      "Theta",
+      "All are equal"
+    ],
+    "answer": "Delta",
+    "hint": "उन्हें immediate price move की परवाह है।",
+    "explanation": "चूँकि day traders positions से जल्दी बाहर निकलते हैं, इसलिए समय (Theta) या interest rates (Rho) का प्रभाव (impact) price movement (Delta) से कम महत्वपूर्ण है।"
+  },
+  {
+    "id": 4042,
+    "question": "What is 'Moneyness'?",
+    "options": [
+      "How much money a trader has",
+      "The relationship between the market price and the strike price",
+      "The speed of money transfer",
+      "The tax rate"
+    ],
+    "answer": "The relationship between the market price and the strike price",
+    "hint": "यह describe करता है कि क्या एक option ITM, ATM, या OTM है।",
+    "explanation": "Moneyness उस शब्द का उपयोग है जो यह describe करने के लिए किया जाता है कि क्या किसी option का exercise करना वर्तमान में लाभदायक (profitable) है।"
+  },
+  {
+    "id": 4043,
+    "question": "In a 'Short Put', the seller expects the price to:",
+    "options": [
+      "Fall sharply",
+      "Stay stable or rise",
+      "Do nothing",
+      "Go to zero"
+    ],
+    "answer": "Stay stable or rise",
+    "hint": "वे चाहते हैं कि put बेकार (worthless) expire हो जाए।",
+    "explanation": "एक put seller neutral-to-bullish होता है। यदि price strike से ऊपर रहता है, तो वे premium रखते हैं।"
+  },
+  {
+    "id": 4044,
+    "question": "What is 'Exercising' an option?",
+    "options": [
+      "Going to the gym",
+      "The act of using the right to buy or sell the asset",
+      "Canceling the contract",
+      "Selling the option to someone else"
+    ],
+    "answer": "The act of using the right to buy or sell the asset",
+    "hint": "Buyer अपने contract rights को 'invoke' (लागू) करता है।",
+    "explanation": "Exercise option holder द्वारा exchange को formal notification (औपचारिक अधिसूचना) है कि वे strike price पर underlying को खरीदना/बेचना चाहते हैं।"
+  },
+  {
+    "id": 4045,
+    "question": "What is the 'Net Premium' in a multi-option strategy?",
+    "options": [
+      "The total profit",
+      "The difference between premiums paid and premiums received",
+      "The tax on premiums",
+      "The brokerage fee"
+    ],
+    "answer": "The difference between premiums paid and premiums received",
+    "hint": "यह trade खोलने के लिए total cost या credit है।",
+    "explanation": "Complex strategies (जैसे spreads) में, आप शामिल सभी premiums के net cash flow की calculation करते हैं।"
+  },
+  {
+    "id": 4046,
+    "question": "What happens if a Call Option seller is 'Assigned'?",
+    "options": [
+      "They must buy the asset",
+      "They must sell the asset at the strike price",
+      "They get a bonus",
+      "They are removed from the exchange"
+    ],
+    "answer": "They must sell the asset at the strike price",
+    "hint": "उन्हें buyer के खरीदने के अधिकार को पूरा करना होगा।",
+    "explanation": "जब एक call exercise की जाती है, तो assigned seller को strike price पर asset (या futures position/cash equivalent) देने के लिए बाध्य (obligated) किया जाता है।"
+  },
+  {
+    "id": 4047,
+    "question": "What is a 'Deep In-the-Money' option?",
+    "options": [
+      "An option with zero intrinsic value",
+      "An option where market price is very far from the strike price",
+      "An option found at the bottom of the ocean",
+      "An option with no expiry"
+    ],
+    "answer": "An option where market price is very far from the strike price",
+    "hint": "यह underlying asset की तरह लगभग बिल्कुल (almost exactly) behave करता है।",
+    "explanation": "Deep ITM options में बहुत अधिक intrinsic value और एक Delta 1.0 (calls के लिए) या -1.0 (puts के लिए) के करीब होता है।"
+  },
+  {
+    "id": 4048,
+    "question": "The 'Black-Scholes' model is used for:",
+    "options": [
+      "Calculating the weight of gold",
+      "Pricing options",
+      "Managing warehouses",
+      "Determining rain patterns"
+    ],
+    "answer": "Pricing options",
+    "hint": "यह एक प्रसिद्ध mathematical formula है।",
+    "explanation": "Black-Scholes model (और इसके variations जैसे Black-76) एक option premium के fair value की calculation करने के लिए इस्तेमाल किया जाने वाला standard formula है।"
+  },
+  {
+    "id": 4049,
+    "question": "What is 'Automatic Exercise'?",
+    "options": [
+      "A robot trading for you",
+      "The exchange automatically exercising ITM options at expiry",
+      "Exercising while walking",
+      "None of the above"
+    ],
+    "answer": "The exchange automatically exercising ITM options at expiry",
+    "hint": "यह buyers को उनके द्वारा जीते गए (rightfully won) पैसे को खोने से रोकता है।",
+    "explanation": "अधिकांश exchanges में 'STT' (Securities Transaction Tax) और exercise नियम होते हैं जो expiration के समय in-the-money options को automatically settle करते हैं।"
+  },
+  {
+    "id": 4050,
+    "question": "Which factor has the LEAST impact on an option with 1 day to expiry?",
+    "options": [
+      "Price movement",
+      "Interest rates (Rho)",
+      "Volatility",
+      "None"
+    ],
+    "answer": "Interest rates (Rho)",
+    "hint": "Interest समय (time) के साथ calculate किया जाता है; यदि कोई समय नहीं है, तो कोई प्रभाव नहीं है।",
+    "explanation": "Rho बचे हुए समय (time remaining) के प्रति अत्यधिक संवेदनशील (highly sensitive) है। बहुत short-term options के लिए, interest rate में बदलाव का प्रभाव नगण्य (negligible) है।"
+  }
+]

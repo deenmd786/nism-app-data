@@ -1,0 +1,108 @@
+{
+  "course": "NISM Series X-A: Investment Adviser (Level 1) Certification Examination",
+  "unit_number": 16,
+  "unit_name": "Portfolio Performance Measurement and Evaluation",
+  "weightage": "Module 5 (कुल 20 Marks) का हिस्सा। 6-8 marks की उम्मीद करें। इस अध्याय में high-probability numerical प्रश्न शामिल हैं।",
+  "overview": "एक portfolio बनाने (Ch 15) के बाद, आपको यह जाँचना होगा कि क्या यह वास्तव में काम कर रहा है। यह अध्याय एक निवेश के 'Report Card' की तरह है। यह हमें सिखाता है कि केवल 'Returns' देखना पर्याप्त नहीं है; हमें 'Risk-Adjusted Returns' को देखना चाहिए। यह Sharpe, Treynor, और Alpha जैसे प्रमुख ratios पेश करता है जो NISM परीक्षा के सबसे महत्वपूर्ण numerical क्षेत्र हैं।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Absolute Return vs. Compounded Annual Growth Rate (CAGR)",
+      "basic_meaning": "Absolute return कुल लाभ/हानि (total gain/loss) है। CAGR आपके पैसे की 'smoothed out' (सुचारू) वार्षिक गति (annual speed) है।",
+      "detailed_explanation": "1. **Absolute Return:** बताता है कि निवेश शुरू से अंत तक कितना बढ़ा। यह समय (time) को नज़रअंदाज़ करता है। \n2. **CAGR:** औसत वार्षिक वृद्धि दर (average yearly growth rate) बताता है। यह अलग-अलग समय अवधि के निवेशों की तुलना करने का सबसे अच्छा तरीका है (उदा., 3-वर्षीय FD की 5-वर्षीय Mutual Fund से तुलना करना)।",
+      "why_this_is_important": "परीक्षा में, यदि कोई प्रश्न कई वर्षों के प्रदर्शन (performance) के लिए पूछता है, तो आपको CAGR का उपयोग करना होगा। Absolute return केवल एक वर्ष से कम की अवधि के लिए उपयोगी है।",
+      "formula": "$$Absolute Return = \\frac{(Current Value - Investment Value)}{Investment Value} \\times 100$$",
+      "formula_explanation": "आपके पैसे में साधारण प्रतिशत वृद्धि (Simple percentage increase)।",
+      "step_by_step_calculation_example": "प्रश्न: आपने ₹1,00,000 निवेश किए और 3 साल बाद यह ₹1,50,000 हो गया। \n\nStep 1: Absolute Return = (50,000 / 1,00,000) * 100 = 50%.\nStep 2: CAGR = [(1,50,000 / 1,00,000)^(1/3)] - 1. \nStep 3: CAGR लगभग 14.47% प्रति वर्ष है। \nNote: 50% को 3 से भाग देने पर 16.6% आता है, लेकिन CAGR कम है क्योंकि यह compounding (चक्रवृद्धि) को ध्यान में रखता है।",
+      "real_life_indian_example": "यदि आपके पिता ने 1990 में ₹10 Lakhs में एक घर खरीदा और उसे 2024 में ₹1 Crore में बेचा, तो absolute return बहुत बड़ा (900%) है, लेकिन CAGR केवल 7-8% के आसपास हो सकता है, जो एक बैंक FD के समान है।",
+      "exam_traps": [
+        "CAGR के बजाय simple average return का उपयोग करना। हमेशा याद रखें कि पैसा पैसे पर बढ़ता है (compounding)।",
+        "'Point-to-Point' return को CAGR के साथ confuse करना।"
+      ],
+      "memory_trick": "Absolute = कुल उछाल (The Total Jump)। CAGR = प्रति वर्ष गति (The Speed per year)।"
+    },
+    {
+      "concept": "2. Risk-Adjusted Returns (The Core Idea)",
+      "basic_meaning": "यह जाँचना कि क्या उच्च रिटर्न (high returns) बहुत अधिक डरावना जोखिम (scary risk) लेकर प्राप्त किए गए थे।",
+      "detailed_explanation": "दो छात्रों की कल्पना करें। छात्र A दिन में 2 घंटे पढ़ाई करके 90% स्कोर करता है। छात्र B दिन में 18 घंटे पढ़ाई करके 90% स्कोर करता है। छात्र A 'अधिक कुशल' (more efficient) है। \nइसी तरह, finance में, हम जाँचते हैं कि क्या किसी Fund Manager ने 10% risk या 30% risk लेकर 15% रिटर्न प्राप्त किया। एक अच्छा portfolio कम risk के लिए उच्च रिटर्न देता है।",
+      "why_this_is_important": "NISM ratios का उपयोग करके दो फंडों के बीच चयन करने की आपकी क्षमता का परीक्षण करता है। उच्च रिटर्न का मतलब हमेशा बेहतर फंड नहीं होता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "एक 'Penny Stock' 50% रिटर्न दे सकता है, लेकिन यह 90% क्रैश भी हो सकता है। एक 'Bluechip' फंड 12% रिटर्न देता है लेकिन स्थिर (steady) है। एक retiree के लिए, Bluechip फंड का risk-adjusted profile बेहतर है।",
+      "exam_traps": [
+        "यह सोचना कि 'Return' ही प्रदर्शन मूल्यांकन (performance evaluation) का एकमात्र criteria है। (Risk भी समान रूप से महत्वपूर्ण है)।",
+        "प्रदर्शन का मूल्यांकन करते समय 'Risk-Free Rate' (जैसे FD/T-Bill rates) को अनदेखा करना।"
+      ],
+      "memory_trick": "Risk-Adjusted Return = Return ÷ Risk (खतरे की प्रति इकाई लाभ)।"
+    },
+    {
+      "concept": "3. Sharpe Ratio (Total Risk Measure)",
+      "basic_meaning": "लिए गए प्रत्येक 1% Total Risk (Standard Deviation) के लिए आपको कितना 'extra' रिटर्न मिलता है।",
+      "detailed_explanation": "Sharpe Ratio 'Excess Return' (Risk-free rate से ऊपर का रिटर्न) की तुलना 'Standard Deviation' (Total Risk) से करता है। \n\n**Higher Sharpe Ratio = Better Fund.**",
+      "why_this_is_important": "NISM numericals में लगभग हमेशा Sharpe Ratio calculation शामिल होता है। इसका उपयोग उन portfolios के लिए किया जाता है जो पूरी तरह से diversified नहीं (NOT) हैं।",
+      "formula": "$$Sharpe Ratio = \\frac{(Rp - Rf)}{SD}$$",
+      "formula_explanation": "Rp = Portfolio Return, Rf = Risk-free Rate (उदा., T-Bill rate), SD = Standard Deviation.",
+      "step_by_step_calculation_example": "Fund A: Return 15%, SD 10%. Fund B: Return 12%, SD 5%. Risk-free rate (Rf) 6% है।\n\nStep 1: Sharpe A = (15 - 6) / 10 = 0.9\nStep 2: Sharpe B = (12 - 6) / 5 = 1.2\nVerdict: Fund B बेहतर है क्योंकि इसका Sharpe Ratio अधिक है, भले ही इसका absolute return (12%) कम हो।",
+      "real_life_indian_example": "एक Aggressive Hybrid Fund की तुलना Small Cap Fund से करना। Small Cap का रिटर्न अधिक हो सकता है, लेकिन क्योंकि इसका risk (SD) बहुत अधिक है, इसका Sharpe ratio Hybrid फंड से कम हो सकता है।",
+      "exam_traps": [
+        "portfolio return से Risk-Free rate (Rf) को घटाना भूल जाना।",
+        "Standard Deviation के बजाय Beta का उपयोग करना। (Sharpe SD का उपयोग करता है!)।"
+      ],
+      "memory_trick": "S-S: Sharpe Standard Deviation का उपयोग करता है।"
+    },
+    {
+      "concept": "4. Treynor Ratio (Market Risk Measure)",
+      "basic_meaning": "लिए गए Market Risk (Beta) के प्रत्येक 1% के लिए आपको कितना 'extra' रिटर्न मिलता है।",
+      "detailed_explanation": "Treynor Ratio Sharpe के समान है, लेकिन यह Standard Deviation के बजाय **Beta** (Systematic Risk) का उपयोग करता है। यह 'well-diversified' portfolios के मूल्यांकन के लिए सबसे अच्छा उपाय है क्योंकि यह मानता है कि unsystematic risk को पहले ही हटा दिया गया है।",
+      "why_this_is_important": "NISM पूछता है: 'well-diversified portfolio के लिए कौन सा ratio सबसे अच्छा है?' उत्तर: Treynor.",
+      "formula": "$$Treynor Ratio = \\frac{(Rp - Rf)}{Beta}$$",
+      "formula_explanation": "Systematic risk की प्रति इकाई (per unit) excess return को मापता है।",
+      "step_by_step_calculation_example": "Fund X: Return 18%, Beta 1.5. Rf = 6%.\n\nStep 1: Treynor Ratio = (18 - 6) / 1.5 = 12 / 1.5 = 8.\nMeaning: market risk की प्रत्येक 1 इकाई के लिए, आपने 8 इकाइयाँ अतिरिक्त लाभ (extra profit) कमाया।",
+      "real_life_indian_example": "दो large-cap index funds की तुलना करना। चूँकि वे दोनों well-diversified हैं, Treynor ratio आपको बताता है कि किस manager ने market volatility को बेहतर तरीके से संभाला।",
+      "exam_traps": [
+        "Beta के बजाय Standard Deviation का उपयोग करना। (Treynor Beta का उपयोग करता है!)।",
+        "यदि Beta 0 से कम है (बहुत दुर्लभ), तो ratio अर्थहीन (meaningless) हो जाता है।"
+      ],
+      "memory_trick": "T-B: Treynor Beta का उपयोग करता है।"
+    },
+    {
+      "concept": "5. Jensen's Alpha (The Manager's Skill)",
+      "basic_meaning": "लिए गए जोखिम के आधार पर जो उम्मीद (expected) थी, उससे ऊपर manager द्वारा उत्पन्न 'Extra' रिटर्न।",
+      "detailed_explanation": "Alpha fund manager का 'जादू' (magic) है। यदि बाजार कहता है कि किसी फंड को उसके जोखिम के आधार पर 10% देना चाहिए था, लेकिन manager ने 12% दिया, तो Alpha +2% है। \n\n**Positive Alpha = Manager beat the market.\nNegative Alpha = Manager performed worse than expected.**",
+      "why_this_is_important": "यह 'Active' management में एक प्रमुख concept है। यह 'Expected Return' खोजने के लिए CAPM model (Ch 14 से) का उपयोग करता है।",
+      "formula": "$$Alpha = Actual Return - [Rf + Beta \\times (Rm - Rf)]$$",
+      "formula_explanation": "Alpha = Actual - Expected. ब्रैकेट वाला हिस्सा CAPM फॉर्मूला है।",
+      "step_by_step_calculation_example": "Fund Return = 15%. Market Return (Rm) = 12%. Rf = 6%. Beta = 1.\n\nStep 1: Expected Return = 6 + 1(12 - 6) = 12%.\nStep 2: Alpha = Actual (15%) - Expected (12%) = +3%.\nVerdict: Manager ने stock picking के माध्यम से 3% value जोड़ी।",
+      "real_life_indian_example": "SBI Mutual Fund का एक fund manager इतने अच्छे stocks चुनता है कि जब Nifty फ्लैट (flat) होता है, तब भी फंड ऊपर जाता है। वह 'extra' लाभ Alpha है।",
+      "exam_traps": [
+        "यह सोचना कि Alpha और Return समान हैं। (Return कुल/total है; Alpha उम्मीद से ऊपर का 'extra' है)।",
+        "यदि Alpha शून्य (zero) है, तो इसका मतलब है कि manager ने ठीक market risk के अनुसार प्रदर्शन किया।"
+      ],
+      "memory_trick": "Alpha = 'A+' (Manager का ग्रेड)।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Sharpe Ratio vs. Treynor Ratio",
+      "clear_explanation": "Sharpe Standard Deviation (Total Risk) का उपयोग करता है; Treynor Beta (Systematic Risk) का उपयोग करता है। Single stocks या non-diversified funds के लिए Sharpe का उपयोग करें; Well-diversified portfolios के लिए Treynor का उपयोग करें।"
+    },
+    {
+      "difference_between": "Benchmark vs. Actual Portfolio",
+      "clear_explanation": "Benchmark (उदा., Nifty 50) तुलना का मानक (standard) है। 'Relative Performance' देखने के लिए वास्तविक पोर्टफोलियो प्रदर्शन (actual portfolio performance) का मूल्यांकन इसके विरुद्ध किया जाता है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Numerical: सबसे अच्छे फंड की पहचान करने के लिए Sharpe और Treynor ratios की गणना करना।",
+    "Theory: यह पहचानना कि कौन सा ratio Beta vs. Standard Deviation का उपयोग करता है।",
+    "Alpha की परिभाषा (Positive vs Negative)।",
+    "एक उपयुक्त benchmark का चयन करना (उदा., Liquid funds की तुलना T-Bill rates से की जानी चाहिए, Nifty से नहीं)।"
+  ],
+  "quick_revision_summary": [
+    "Total Return पर्याप्त नहीं है; हमेशा Risk-Adjusted return की जाँच करें।",
+    "Sharpe Ratio = (Return - Rf) / SD. (अधिक होना बेहतर है)।",
+    "Treynor Ratio = (Return - Rf) / Beta. (अधिक होना बेहतर है)।",
+    "Alpha Manager के कौशल को मापता है (Actual - Expected)।",
+    "Standard Deviation 'Total Risk' मापता है; Beta 'Market Risk' मापता है।",
+    "Tracking Error यह मापता है कि कोई फंड अपने benchmark से कितना भटकता (deviates) है।"
+  ]
+}

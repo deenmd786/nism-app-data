@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following is a measure of the risk-adjusted return of a mutual fund scheme?",
+    "options": [
+      "Alpha",
+      "Beta",
+      "Sharpe Ratio",
+      "Standard Deviation"
+    ],
+    "answer": "Sharpe Ratio",
+    "hint": "Total risk की प्रति इकाई (per unit) reward.",
+    "explanation": "Sharpe Ratio total risk (standard deviation) की प्रति इकाई (per unit) अर्जित excess return (risk-free rate के ऊपर) को मापता है।"
+  },
+  {
+    "id": 2,
+    "question": "What does 'Standard Deviation' measure in a mutual fund?",
+    "options": [
+      "The credit rating",
+      "The total risk or volatility of returns",
+      "The fund manager's experience",
+      "The expense ratio"
+    ],
+    "answer": "The total risk or volatility of returns",
+    "hint": "Mean से भटकाव (Deviation)।",
+    "explanation": "Standard Deviation यह दर्शाता है कि fund के returns उसके average return से कितना विचलित (deviate) होते हैं, जो total volatility को दर्शाता है।"
+  },
+  {
+    "id": 3,
+    "question": "Beta measures a fund's sensitivity to:",
+    "options": [
+      "Interest rate changes only",
+      "Market movements (Systematic Risk)",
+      "Inflation",
+      "Credit default"
+    ],
+    "answer": "Market movements (Systematic Risk)",
+    "hint": "Volatility का Benchmarking.",
+    "explanation": "Beta मापता है कि market index के संबंध में fund का NAV कितना move करता है। 1 के Beta का अर्थ है कि यह market के अनुरूप (in line) चलता है।"
+  },
+  {
+    "id": 4,
+    "question": "A fund with a Beta of 1.2 is considered:",
+    "options": [
+      "Less volatile than the market",
+      "More volatile than the market (Aggressive)",
+      "Exactly as volatile as the market",
+      "Risk-free"
+    ],
+    "answer": "More volatile than the market (Aggressive)",
+    "hint": "> 1 का मतलब high sensitivity.",
+    "explanation": "1 से अधिक Beta का मतलब है कि fund के market से अधिक बढ़ने या गिरने की संभावना है (जैसे, यदि market 10% बढ़ता है, तो fund 12% बढ़ सकता है)।"
+  },
+  {
+    "id": 5,
+    "question": "The 'Risk-free Rate' is typically represented by the yield on:",
+    "options": [
+      "Corporate Bonds",
+      "Government Securities (T-Bills)",
+      "Fixed Deposits",
+      "Gold"
+    ],
+    "answer": "Government Securities (T-Bills)",
+    "hint": "Sovereign गारंटी।",
+    "explanation": "Treasury Bills (T-Bills) को risk-free माना जाता है क्योंकि उन्हें सरकार का समर्थन (backed) प्राप्त होता है।"
+  },
+  {
+    "id": 6,
+    "question": "Which ratio measures the ability of a fund manager to generate excess returns relative to the benchmark (Skill)?",
+    "options": [
+      "Alpha",
+      "Beta",
+      "R-Squared",
+      "P/E Ratio"
+    ],
+    "answer": "Alpha",
+    "hint": "Value addition.",
+    "explanation": "Alpha fund manager द्वारा market (Beta) की भविष्यवाणी से अधिक उत्पन्न extra return को दर्शाता है। Positive Alpha = Outperformance (बेहतर प्रदर्शन)।"
+  },
+  {
+    "id": 7,
+    "question": "If a fund has a Sharpe Ratio of 0.5 and another has 0.8, which is better?",
+    "options": [
+      "0.5",
+      "0.8",
+      "Both are same",
+      "Cannot be determined"
+    ],
+    "answer": "0.8",
+    "hint": "जितना ज्यादा उतना अच्छा (Higher is better)।",
+    "explanation": "एक higher Sharpe Ratio बेहतर risk-adjusted performance (समान risk के लिए अधिक return) को इंगित करता है।"
+  },
+  {
+    "id": 8,
+    "question": "Treynor Ratio uses which measure of risk in its denominator?",
+    "options": [
+      "Standard Deviation",
+      "Beta",
+      "Variance",
+      "Correlation"
+    ],
+    "answer": "Beta",
+    "hint": "केवल Systematic risk.",
+    "explanation": "Treynor Ratio = (Portfolio Return - Risk Free Rate) / Beta. यह systematic risk की प्रति इकाई (per unit) return को मापता है।"
+  },
+  {
+    "id": 9,
+    "question": "Total Return includes:",
+    "options": [
+      "Only Capital Appreciation",
+      "Only Dividends",
+      "Capital Appreciation + Dividends reinvested",
+      "Inflation"
+    ],
+    "answer": "Capital Appreciation + Dividends reinvested",
+    "hint": "पूरा पैकेज (The whole package)।",
+    "explanation": "Total Return price increase (capital gain) और वितरित (distributed) तथा reinvest की गई income (dividends) दोनों को capture करता है।"
+  },
+  {
+    "id": 10,
+    "question": "CAGR is most useful for measuring returns over:",
+    "options": [
+      "Very short periods (< 1 year)",
+      "Long periods (> 1 year)",
+      "Daily volatility",
+      "Intraday trading"
+    ],
+    "answer": "Long periods (> 1 year)",
+    "hint": "Compound annual growth.",
+    "explanation": "CAGR एक geometric mean annual rate देने के लिए कई वर्षों के returns की volatility को सुचारू (smooth out) करता है।"
+  },
+  {
+    "id": 11,
+    "question": "A high 'Standard Deviation' implies:",
+    "options": [
+      "Low Risk",
+      "High Risk / High Volatility",
+      "Guaranteed Returns",
+      "Fixed Income"
+    ],
+    "answer": "High Risk / High Volatility",
+    "hint": "बड़े उतार-चढ़ाव (Wide swings)।",
+    "explanation": "High standard deviation का मतलब है कि returns एक बड़ी range में फैले हुए हैं, जो higher volatility/risk को दर्शाता है।"
+  },
+  {
+    "id": 12,
+    "question": "Benchmark comparison helps an investor to:",
+    "options": [
+      "Calculate taxes",
+      "Evaluate if the fund has outperformed the market index",
+      "Predict future returns",
+      "Know the fund manager's salary"
+    ],
+    "answer": "Evaluate if the fund has outperformed the market index",
+    "hint": "सापेक्ष प्रदर्शन (Relative performance)।",
+    "explanation": "एक प्रासंगिक benchmark (जैसे Nifty 50) के against fund returns की तुलना करने से पता चलता है कि active management ने value add किया या नहीं।"
+  },
+  {
+    "id": 13,
+    "question": "Simple Annualized Return is generally used for periods:",
+    "options": [
+      "Less than 1 year",
+      "More than 1 year",
+      "Exactly 5 years",
+      "Never"
+    ],
+    "answer": "Less than 1 year",
+    "hint": "Simple interest logic.",
+    "explanation": "1 वर्ष से कम की अवधि के लिए, simple annualized return (Absolute Return * 365 / Days) का अक्सर उपयोग किया जाता है, हालांकि SEBI विज्ञापनों में < 1 वर्ष के लिए absolute returns अनिवार्य करता है।"
+  },
+  {
+    "id": 14,
+    "question": "Which of these is a 'Relative Return' measure?",
+    "options": [
+      "Absolute Return",
+      "Alpha",
+      "CAGR",
+      "Yield"
+    ],
+    "answer": "Alpha",
+    "hint": "Benchmark के सापेक्ष (Relative)।",
+    "explanation": "Alpha benchmark index की performance के सापेक्ष (relative) performance को मापता है।"
+  },
+  {
+    "id": 15,
+    "question": "Tracking Error is most relevant for:",
+    "options": [
+      "Active Funds",
+      "Index Funds / ETFs",
+      "Debt Funds",
+      "Liquid Funds"
+    ],
+    "answer": "Index Funds / ETFs",
+    "hint": "रास्ते पर टिके रहना।",
+    "explanation": "Tracking Error मापता है कि कोई Index Fund अपने benchmark index को कितनी बारीकी से (closely) follow करता है। Lower tracking error बेहतर होता है।"
+  },
+  {
+    "id": 16,
+    "question": "If a fund's Beta is 0.8 and the market rises by 10%, the fund is expected to rise by (approx):",
+    "options": [
+      "8%",
+      "10%",
+      "12%",
+      "18%"
+    ],
+    "answer": "8%",
+    "hint": "0.8 गुणा 10.",
+    "explanation": "Expected Return ~ Beta * Market Return = 0.8 * 10% = 8%."
+  },
+  {
+    "id": 17,
+    "question": "R-Squared measures:",
+    "options": [
+      "The correlation between the fund's movement and the benchmark's movement",
+      "The risk-free rate",
+      "The expense ratio",
+      "The fund size"
+    ],
+    "answer": "The correlation between the fund's movement and the benchmark's movement",
+    "hint": "Beta की विश्वसनीयता (Reliability)।",
+    "explanation": "R-Squared (0 से 1) इंगित करता है कि fund का कितना movement benchmark द्वारा स्पष्ट (explained) किया जाता है। High R-squared का मतलब है कि Beta figure विश्वसनीय (reliable) है।"
+  },
+  {
+    "id": 18,
+    "question": "Which of the following indicates a 'Risk-Free' investment?",
+    "options": [
+      "Zero Standard Deviation",
+      "Beta = 1",
+      "Sharpe Ratio = 0",
+      "High Alpha"
+    ],
+    "answer": "Zero Standard Deviation",
+    "hint": "कोई volatility नहीं।",
+    "explanation": "एक risk-free asset में guaranteed return होता है, इसलिए उसका variance/standard deviation शून्य (zero) होता है।"
+  },
+  {
+    "id": 19,
+    "question": "Expense Ratio directly impacts:",
+    "options": [
+      "The Benchmark",
+      "The NAV (Net Asset Value)",
+      "The Stock Market",
+      "The GDP"
+    ],
+    "answer": "The NAV (Net Asset Value)",
+    "hint": "Cost की कटौती।",
+    "explanation": "Expenses हर दिन fund के assets से काटे (deduct) जाते हैं, जिससे NAV कम हो जाता है।"
+  },
+  {
+    "id": 20,
+    "question": "A high Portfolio Turnover Ratio implies:",
+    "options": [
+      "Buy and Hold strategy",
+      "Frequent trading (churning) by the fund manager",
+      "Low expenses",
+      "Passive management"
+    ],
+    "answer": "Frequent trading (churning) by the fund manager",
+    "hint": "Active रूप से फेरबदल।",
+    "explanation": "High turnover का मतलब है कि manager stocks को बार-बार खरीद और बेच रहा है, जिससे transaction costs बढ़ सकती हैं।"
+  },
+  {
+    "id": 21,
+    "question": "Information Ratio measures:",
+    "options": [
+      "Portfolio returns above benchmark returns relative to the volatility of those excess returns (Tracking Error)",
+      "Absolute returns",
+      "Risk-free returns",
+      "Dividend yield"
+    ],
+    "answer": "Portfolio returns above benchmark returns relative to the volatility of those excess returns (Tracking Error)",
+    "hint": "Alpha की निरंतरता (Consistency)।",
+    "explanation": "Information Ratio = (Portfolio Return - Benchmark Return) / Tracking Error. यह manager के outperformance की consistency का मूल्यांकन करता है।"
+  },
+  {
+    "id": 22,
+    "question": "Sortino Ratio differs from Sharpe Ratio because:",
+    "options": [
+      "It uses only Downside Deviation (Bad Volatility) instead of Total Standard Deviation",
+      "It uses Beta",
+      "It ignores returns",
+      "It is for debt funds only"
+    ],
+    "answer": "It uses only Downside Deviation (Bad Volatility) instead of Total Standard Deviation",
+    "hint": "केवल नुकसान (losses) को दंडित करता है।",
+    "explanation": "Sharpe upside और downside दोनों volatility को penalize करता है। Sortino केवल downside volatility (नुकसान) को penalize करता है, जिससे निवेशक वास्तव में डरते हैं।"
+  },
+  {
+    "id": 23,
+    "question": "The 'average maturity' of a debt fund portfolio indicates its sensitivity to:",
+    "options": [
+      "Equity market crashes",
+      "Interest Rate changes",
+      "Gold prices",
+      "Currency fluctuation"
+    ],
+    "answer": "Interest Rate changes",
+    "hint": "Duration का जोखिम।",
+    "explanation": "Higher average maturity का मतलब है interest rate में बदलाव के प्रति higher sensitivity (duration)।"
+  },
+  {
+    "id": 24,
+    "question": "Modified Duration measures:",
+    "options": [
+      "The time to maturity",
+      "The percentage change in bond price for a 1% change in interest rates",
+      "The credit rating",
+      "The coupon rate"
+    ],
+    "answer": "The percentage change in bond price for a 1% change in interest rates",
+    "hint": "Sensitivity का मापदंड।",
+    "explanation": "Modified Duration interest rate risk को quantify (मात्रा निर्धारित) करता है। जैसे, 5 साल की Duration का मतलब है कि rates में 1% की वृद्धि price को ~5% गिरा देती है।"
+  },
+  {
+    "id": 25,
+    "question": "Credit Risk in a debt fund is assessed by looking at:",
+    "options": [
+      "The Portfolio's Credit Ratings (AAA, AA, etc.)",
+      "The Beta",
+      "The Alpha",
+      "The Expense Ratio"
+    ],
+    "answer": "The Portfolio's Credit Ratings (AAA, AA, etc.)",
+    "hint": "उधार लेने वालों की गुणवत्ता (Quality)।",
+    "explanation": "High ratings (AAA, Sovereign) की तुलना में lower credit ratings (BBB, C) higher credit risk (default का जोखिम) दर्शाते हैं।"
+  },
+  {
+    "id": 26,
+    "question": "Yield to Maturity (YTM) of a debt fund indicates:",
+    "options": [
+      "The past return",
+      "The likely return if the portfolio is held till maturity (assuming no defaults/rate changes)",
+      "The guaranteed return",
+      "The dividend yield"
+    ],
+    "answer": "The likely return if the portfolio is held till maturity (assuming no defaults/rate changes)",
+    "hint": "Forward looking yield.",
+    "explanation": "YTM return की वह estimated annual rate है जो एक investor को प्राप्त होगी यदि bond को maturity तक hold किया जाए।"
+  },
+  {
+    "id": 27,
+    "question": "Basis Point (bps) refers to:",
+    "options": [
+      "1%",
+      "0.1%",
+      "0.01% (1/100th of a percent)",
+      "10%"
+    ],
+    "answer": "0.01% (1/100th of a percent)",
+    "hint": "बहुत छोटा हिस्सा (Tiny fraction)।",
+    "explanation": "100 Basis Points = 1%. इसलिए 1 bps = 0.01%."
+  },
+  {
+    "id": 28,
+    "question": "Value at Risk (VaR) estimates:",
+    "options": [
+      "The maximum potential loss over a given time period with a certain confidence level",
+      "The maximum profit",
+      "The average return",
+      "The total assets"
+    ],
+    "answer": "The maximum potential loss over a given time period with a certain confidence level",
+    "hint": "सबसे खराब स्थिति (Worst case scenario)।",
+    "explanation": "VaR इस सवाल का जवाब देता है: '95% या 99% confidence के साथ मेरा सबसे खराब संभावित नुकसान (worst expected loss) क्या है?'"
+  },
+  {
+    "id": 29,
+    "question": "If a fund has a negative Alpha, it means:",
+    "options": [
+      "It has lost money",
+      "It has underperformed its benchmark on a risk-adjusted basis",
+      "It has low risk",
+      "It is an index fund"
+    ],
+    "answer": "It has underperformed its benchmark on a risk-adjusted basis",
+    "hint": "Manager value add करने में विफल रहा।",
+    "explanation": "Negative Alpha का अर्थ है कि manager ने लिए गए risk के लिए अपेक्षित (expected) return से कम return generate किया।"
+  },
+  {
+    "id": 30,
+    "question": "Concentration Risk arises from:",
+    "options": [
+      "Investing in too many stocks",
+      "Investing heavily in a single sector or company",
+      "Investing in government bonds",
+      "Diversifying globally"
+    ],
+    "answer": "Investing heavily in a single sector or company",
+    "hint": "एक ही टोकरी में बहुत सारे अंडे।",
+    "explanation": "Diversification की कमी (Lack of diversification) concentration risk को जन्म देती है।"
+  },
+  {
+    "id": 31,
+    "question": "Liquidity Risk is high in:",
+    "options": [
+      "Large-cap funds",
+      "Small-cap funds / Credit Risk funds",
+      "Liquid funds",
+      "Gilt funds"
+    ],
+    "answer": "Small-cap funds / Credit Risk funds",
+    "hint": "बेचने में मुश्किल (Hard to sell)।",
+    "explanation": "Small-cap stocks और low-rated bonds illiquid हो सकते हैं, जिससे price को प्रभावित किए बिना बड़ी मात्रा में बेचना मुश्किल हो जाता है।"
+  },
+  {
+    "id": 32,
+    "question": "XIRR (Extended Internal Rate of Return) is used to calculate returns for:",
+    "options": [
+      "Lump sum investments",
+      "SIPs or multiple transactions at different dates",
+      "Fixed Deposits",
+      "Intraday trades"
+    ],
+    "answer": "SIPs or multiple transactions at different dates",
+    "hint": "अनियमित (Irregular) cash flows.",
+    "explanation": "SIPs की तरह अनियमित अंतराल (irregular intervals) पर कई cash inflows और outflows होने पर annualized returns की गणना करने के लिए XIRR सही metric है।"
+  },
+  {
+    "id": 33,
+    "question": "Absolute Return calculation: (Current Value - Invested Value) / Invested Value * 100. This is suitable for:",
+    "options": [
+      "10 year period",
+      "SIPs",
+      "Point-to-Point return (usually short term)",
+      "Benchmarks"
+    ],
+    "answer": "Point-to-Point return (usually short term)",
+    "hint": "Simple percentage growth.",
+    "explanation": "Absolute return सिर्फ total growth को दर्शाता है, समय (time factor) को अनदेखा करता है। यह लंबी अवधि के लिए भ्रामक (misleading) होता है।"
+  },
+  {
+    "id": 34,
+    "question": "Rolling Returns are better than Point-to-Point returns because:",
+    "options": [
+      "They are always higher",
+      "They remove the bias of specific start/end dates and show performance consistency",
+      "They are easier to calculate",
+      "SEBI mandates them"
+    ],
+    "answer": "They remove the bias of specific start/end dates and show performance consistency",
+    "hint": "हर window को देखना।",
+    "explanation": "Rolling returns सभी संभावित holding periods (जैसे, पिछले 10 वर्षों में हर 3-साल की अवधि) में performance का विश्लेषण करते हैं, जो consistency (निरंतरता) को उजागर करता है।"
+  },
+  {
+    "id": 35,
+    "question": "The P/E Ratio (Price to Earnings) of a fund portfolio indicates:",
+    "options": [
+      "Valuation (Cheap vs Expensive)",
+      "Volatility",
+      "Liquidity",
+      "Credit Quality"
+    ],
+    "answer": "Valuation (Cheap vs Expensive)",
+    "hint": "Earnings के लिए Price.",
+    "explanation": "High Portfolio P/E बताता है कि hold किए गए stocks महंगे हैं (Growth/Overvalued), जबकि low P/E value का सुझाव देता है।"
+  },
+  {
+    "id": 36,
+    "question": "A 'Gilt Fund' has zero:",
+    "options": [
+      "Interest Rate Risk",
+      "Credit Risk (Default Risk)",
+      "Liquidity Risk",
+      "Market Risk"
+    ],
+    "answer": "Credit Risk (Default Risk)",
+    "hint": "Sovereign समर्थन (backing)।",
+    "explanation": "Gilt funds Government Securities में invest करते हैं, जिनमें व्यावहारिक रूप से शून्य default risk (sovereign guarantee) होता है, लेकिन उनमें interest rate risk अधिक होता है।"
+  },
+  {
+    "id": 37,
+    "question": "Which of these is a 'Risk-Adjusted Return' measure?",
+    "options": [
+      "CAGR",
+      "Standard Deviation",
+      "Treynor Ratio",
+      "AUM"
+    ],
+    "answer": "Treynor Ratio",
+    "hint": "Return / Risk.",
+    "explanation": "Sharpe, Treynor, और Sortino ratios सभी risk-adjusted return measures हैं।"
+  },
+  {
+    "id": 38,
+    "question": "If Interest Rates rise, the NAV of a Long Duration Debt Fund will:",
+    "options": [
+      "Rise significantly",
+      "Fall significantly",
+      "Remain unchanged",
+      "Rise slightly"
+    ],
+    "answer": "Fall significantly",
+    "hint": "See-saw effect.",
+    "explanation": "Bond prices और interest rates का inverse (उल्टा) संबंध होता है। Long duration bonds सबसे अधिक sensitive होते हैं, इसलिए rates बढ़ने पर उनकी price (और NAV) सबसे ज्यादा गिरती है।"
+  },
+  {
+    "id": 39,
+    "question": "The 'Sharpe Ratio' is calculated as:",
+    "options": [
+      "(Return - Risk Free Rate) / Standard Deviation",
+      "(Return - Risk Free Rate) / Beta",
+      "Return / Risk",
+      "(Return - Benchmark Return) / Tracking Error"
+    ],
+    "answer": "(Return - Risk Free Rate) / Standard Deviation",
+    "hint": "Total risk पर Excess return.",
+    "explanation": "यह Sharpe Ratio का standard formula है।"
+  },
+  {
+    "id": 40,
+    "question": "Which measure helps compare two funds from different categories (e.g., Equity vs Debt)?",
+    "options": [
+      "Beta",
+      "Alpha",
+      "Sharpe Ratio",
+      "Tracking Error"
+    ],
+    "answer": "Sharpe Ratio",
+    "hint": "Standardized risk unit.",
+    "explanation": "Sharpe Ratio total risk की प्रति इकाई (per unit) return को normalize करता है, जिससे asset classes के बीच तुलना संभव होती है (हालांकि इसे peer groups के भीतर उपयोग करना सबसे अच्छा है)।"
+  },
+  {
+    "id": 41,
+    "question": "A fund with a high R-Squared (close to 1) and high Beta (>1) is likely:",
+    "options": [
+      "An Index Fund",
+      "An Aggressive Fund that closely tracks market direction but amplifies moves",
+      "A Debt Fund",
+      "A Low Volatility Fund"
+    ],
+    "answer": "An Aggressive Fund that closely tracks market direction but amplifies moves",
+    "hint": "Correlation + Leverage.",
+    "explanation": "High R-squared का मतलब है कि यह market pattern का पालन करता है; High Beta का मतलब है कि यह market से अधिक swing (उतार-चढ़ाव) करता है।"
+  },
+  {
+    "id": 42,
+    "question": "Macaulay Duration is expressed in:",
+    "options": [
+      "Percentage",
+      "Years",
+      "Rupees",
+      "Ratio"
+    ],
+    "answer": "Years",
+    "hint": "Time weighted.",
+    "explanation": "Macaulay Duration किसी bond से cash flows प्राप्त करने का weighted average time है।"
+  },
+  {
+    "id": 43,
+    "question": "If a fund's NAV drops from 20 to 18, the simple return is:",
+    "options": [
+      "-10%",
+      "-20%",
+      "10%",
+      "2%"
+    ],
+    "answer": "-10%",
+    "hint": "(18-20)/20.",
+    "explanation": "-2 / 20 * 100 = -10%."
+  },
+  {
+    "id": 44,
+    "question": "Reinvestment Risk is highest in:",
+    "options": [
+      "Growth Option",
+      "Dividend / IDCW Payout Option",
+      "Cumulative FDs",
+      "Zero Coupon Bonds"
+    ],
+    "answer": "Dividend / IDCW Payout Option",
+    "hint": "Cash वापस पाना।",
+    "explanation": "जब आपको payouts (dividends/coupons) मिलते हैं, तो आपको उन्हें संभावित रूप से कम current rates पर reinvest करना पड़ता है।"
+  },
+  {
+    "id": 45,
+    "question": "Which benchmark is appropriate for a Large Cap Equity Fund?",
+    "options": [
+      "Nifty 50 TRI",
+      "CRISIL Composite Bond Fund Index",
+      "Price of Gold",
+      "SBI Savings Rate"
+    ],
+    "answer": "Nifty 50 TRI",
+    "hint": "Top 50 companies.",
+    "explanation": "एक large-cap fund को Nifty 50 या Sensex जैसे large-cap index के against benchmark किया जाना चाहिए।"
+  },
+  {
+    "id": 46,
+    "question": "Standard Deviation is the square root of:",
+    "options": [
+      "Beta",
+      "Alpha",
+      "Variance",
+      "Mean"
+    ],
+    "answer": "Variance",
+    "hint": "Statistical परिभाषा।",
+    "explanation": "Variance औसत चुकता विचलन (average squared deviation) को मापता है; Standard Deviation इसका square root है।"
+  },
+  {
+    "id": 47,
+    "question": "A 'Portfolio Beta' is calculated as:",
+    "options": [
+      "The average Beta of all stocks in the portfolio",
+      "The weighted average Beta of the underlying securities",
+      "The highest Beta stock",
+      "The lowest Beta stock"
+    ],
+    "answer": "The weighted average Beta of the underlying securities",
+    "hint": "Weighted sum (भारित योग)।",
+    "explanation": "Portfolio Beta portfolio में individual stocks के Betas और उनके allocation के भार (weight) का योग (sum) है।"
+  },
+  {
+    "id": 48,
+    "question": "Which is a 'measure of relative risk'?",
+    "options": [
+      "Standard Deviation",
+      "Beta",
+      "Variance",
+      "Range"
+    ],
+    "answer": "Beta",
+    "hint": "Market के सापेक्ष (Relative)।",
+    "explanation": "Standard Deviation absolute risk है। Beta relative risk है (benchmark index के सापेक्ष)।"
+  },
+  {
+    "id": 49,
+    "question": "Performance attribution analysis helps determine:",
+    "options": [
+      "The tax liability",
+      "The sources of excess return (Sector allocation vs Stock selection)",
+      "The distributor commission",
+      "The NAV calculation"
+    ],
+    "answer": "The sources of excess return (Sector allocation vs Stock selection)",
+    "hint": "Alpha कहाँ से आया?",
+    "explanation": "यह performance का विश्लेषण करता है ताकि यह देखा जा सके कि manager ने सही sectors चुनकर या sectors के भीतर सही stocks चुनकर जीत हासिल की।"
+  },
+  {
+    "id": 50,
+    "question": "The 'Risk-Return Trade-off' implies:",
+    "options": [
+      "You can get high returns with zero risk",
+      "To aim for higher potential returns, you must accept higher risk",
+      "Risk and Return are unrelated",
+      "Debt funds always beat equity funds"
+    ],
+    "answer": "To aim for higher potential returns, you must accept higher risk",
+    "hint": "बुनियादी नियम (Fundamental rule)।",
+    "explanation": "Investors अधिक uncertainty (अनिश्चितता) लेने के लिए मुआवजे (risk premium) की मांग करते हैं।"
+  }
+]

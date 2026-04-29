@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "The process of converting physical share certificates into electronic form is known as:",
+    "options": [
+      "Rematerialization",
+      "Dematerialization",
+      "Immobilization",
+      "Securitization"
+    ],
+    "answer": "Dematerialization",
+    "hint": "इसे अक्सर 'Demat' कहा जाता है।",
+    "explanation": "Dematerialization वह प्रक्रिया (process) है जिसके द्वारा एक client अपने physical certificates को electronic balances में बदलवा सकता है।"
+  },
+  {
+    "id": 2,
+    "question": "Which form must be filled by the investor to initiate dematerialization?",
+    "options": [
+      "RRF (Remat Request Form)",
+      "DRF (Demat Request Form)",
+      "DIS (Delivery Instruction Slip)",
+      "TRF (Transmission Request Form)"
+    ],
+    "answer": "DRF (Demat Request Form)",
+    "hint": "Demat के लिए Request करना।",
+    "explanation": "Investor को तीन प्रतियों (triplicate) में एक Dematerialization Request Form (DRF) भरना होता है और इसे physical certificates के साथ DP के पास जमा करना होता है।"
+  },
+  {
+    "id": 3,
+    "question": "Before sending the certificates to the Registrar (RTA), what must the DP do to the physical certificates?",
+    "options": [
+      "Burn them",
+      "Keep them in a vault",
+      "Punch two holes and stamp 'Surrendered for Dematerialisation'",
+      "Sell them in the market"
+    ],
+    "answer": "Punch two holes and stamp 'Surrendered for Dematerialisation'",
+    "hint": "दुरुपयोग (misuse) रोकने के लिए खराब (Deface) करना।",
+    "explanation": "DP को company के नाम पर दो छेद (punch) करके और 'Surrendered for Dematerialisation' का स्टैम्प लगाकर certificates को deface (विकृत) करना होता है ताकि उन्हें physically trade न किया जा सके।"
+  },
+  {
+    "id": 4,
+    "question": "If the pattern of holding in the physical certificate (A + B) differs from the demat account (A only), can the shares be dematerialized?",
+    "options": [
+      "Yes, always",
+      "No, the pattern of holding must match exactly",
+      "Yes, if A is the first holder",
+      "Yes, if B gives an NOC"
+    ],
+    "answer": "No, the pattern of holding must match exactly",
+    "hint": "Ownership (स्वामित्व) बिल्कुल समान होना चाहिए।",
+    "explanation": "Dematerialization तभी संभव है जब physical certificate पर नाम और नामों का क्रम (order) demat account के नामों से बिल्कुल मेल (match) खाता हो।"
+  },
+  {
+    "id": 5,
+    "question": "What is 'Transposition'?",
+    "options": [
+      "Transfer of shares to a new owner",
+      "Change in the order of names of joint holders (e.g., A+B to B+A)",
+      "Transmission due to death",
+      "Converting shares to bonds"
+    ],
+    "answer": "Change in the order of names of joint holders (e.g., A+B to B+A)",
+    "hint": "वही लोग, अलग क्रम (sequence)।",
+    "explanation": "Transposition, dematerialization के लिए demat account से match करने के लिए joint holders के नामों के क्रम को बदलने (उदा. 'A & B' से 'B & A') की प्रक्रिया है।"
+  },
+  {
+    "id": 6,
+    "question": "Who generates the 'Demat Request Number' (DRN)?",
+    "options": [
+      "The Investor",
+      "The DP (through the Depository system)",
+      "The RTA",
+      "The Stock Exchange"
+    ],
+    "answer": "The DP (through the Depository system)",
+    "hint": "Entry करने पर System द्वारा generate किया गया।",
+    "explanation": "DP, DRF के details को Depository system (DPM/CDAS) में enter करता है, जो एक unique Demat Request Number (DRN) generate करता है।"
+  },
+  {
+    "id": 7,
+    "question": "How long does the dematerialization process typically take as per regulations?",
+    "options": [
+      "1 day",
+      "7 days",
+      "15-30 days",
+      "6 months"
+    ],
+    "answer": "15-30 days",
+    "hint": "Physical transit और verification के लिए समय दें।",
+    "explanation": "इस प्रक्रिया में certificates का physical movement और RTA द्वारा verification शामिल होता है। इसमें आमतौर पर 15 से 30 दिन लगते हैं।"
+  },
+  {
+    "id": 8,
+    "question": "If the signature on the DRF does not match the specimen signature with the company/RTA, what happens?",
+    "options": [
+      "The shares are dematerialized anyway",
+      "The RTA rejects the request",
+      "The DP signs on behalf of the client",
+      "The shares are forfeited"
+    ],
+    "answer": "The RTA rejects the request",
+    "hint": "पहचान (Identity) verify होने में विफलता।",
+    "explanation": "Signature mismatch rejection का सबसे आम कारण है। RTA request को reject कर देगा और documents वापस कर देगा।"
+  },
+  {
+    "id": 9,
+    "question": "Can 'Locked-in' shares (e.g., Promoter's contribution) be dematerialized?",
+    "options": [
+      "No",
+      "Yes, but the lock-in status is carried over to the demat account",
+      "Yes, and the lock-in is removed",
+      "Only after lock-in ends"
+    ],
+    "answer": "Yes, but the lock-in status is carried over to the demat account",
+    "hint": "Electronic form भी status को संभालता है।",
+    "explanation": "Locked-in securities को dematerialize किया जा सकता है। System lock-in status और expiry date को दिखाएगा, जिससे lock-in खत्म होने तक उन्हें बेचा नहीं जा सकेगा।"
+  },
+  {
+    "id": 10,
+    "question": "Who sends the physical certificates to the RTA/Issuer?",
+    "options": [
+      "The Investor directly",
+      "The DP",
+      "The Depository",
+      "The Stock Exchange"
+    ],
+    "answer": "The DP",
+    "hint": "मध्यस्थ (Intermediary) की जिम्मेदारी।",
+    "explanation": "Certificates को deface करने के बाद, DP उन्हें DRF के साथ Registrar and Transfer Agent (RTA) को भेज देता है।"
+  },
+  {
+    "id": 11,
+    "question": "What is 'ISIN'?",
+    "options": [
+      "International Securities Identification Number",
+      "Indian Share Identification Number",
+      "Internal Stock Index Number",
+      "Invested Share Index Number"
+    ],
+    "answer": "International Securities Identification Number",
+    "hint": "Security के लिए Unique code।",
+    "explanation": "ISIN एक 12-digit alphanumeric code है जो किसी विशिष्ट (specific) security issuance की विशिष्ट रूप से पहचान करता है।"
+  },
+  {
+    "id": 12,
+    "question": "Can odd-lot physical shares be dematerialized?",
+    "options": [
+      "No, only market lots (50, 100, etc.)",
+      "Yes, any quantity can be dematerialized",
+      "Yes, but they must be sold first",
+      "Only if the company agrees"
+    ],
+    "answer": "Yes, any quantity can be dematerialized",
+    "hint": "Demat odd-lot की समस्या को हल करता है।",
+    "explanation": "हां, shares की कोई भी संख्या (यहां तक ​​कि 1 भी) dematerialize की जा सकती है। Demat holdings पर 'market lot' का concept लागू नहीं होता है।"
+  },
+  {
+    "id": 13,
+    "question": "If an investor has certificates of 3 different companies, how many DRFs are needed?",
+    "options": [
+      "One combined DRF",
+      "Three separate DRFs",
+      "Two DRFs",
+      "No DRF needed"
+    ],
+    "answer": "Three separate DRFs",
+    "hint": "प्रति ISIN/Company एक फॉर्म।",
+    "explanation": "प्रत्येक ISIN (Company/Security type) के लिए एक अलग DRF की आवश्यकता होती है। आप एक फॉर्म में अलग-अलग कंपनियों को combine नहीं कर सकते।"
+  },
+  {
+    "id": 14,
+    "question": "What does the RTA do after verifying the demat request?",
+    "options": [
+      "Sends new certificates",
+      "Confirms the request electronically to the Depository",
+      "Sells the shares",
+      "Returns the old certificates to investor"
+    ],
+    "answer": "Confirms the request electronically to the Depository",
+    "hint": "इलेक्ट्रॉनिक स्वीकृति (handshake)।",
+    "explanation": "यदि documents सही हैं, तो RTA depository system में request को confirm करता है, जिससे investor के demat account में shares credit हो जाते हैं।"
+  },
+  {
+    "id": 15,
+    "question": "The 'Transposition Form' is used when:",
+    "options": [
+      "Names are different",
+      "Names are same but order is different",
+      "Shares are being sold",
+      "Shares are being transmitted"
+    ],
+    "answer": "Names are same but order is different",
+    "hint": "नामों को फिर से व्यवस्थित (Rearrange) करना।",
+    "explanation": "Transposition का उपयोग तब किया जाता है जब holders के नाम समान होते हैं लेकिन certificate और account के बीच क्रम (First/Second holder) अलग होता है।"
+  },
+  {
+    "id": 16,
+    "question": "If the RTA rejects a demat request, what happens to the physical certificates?",
+    "options": [
+      "They are destroyed",
+      "They are returned to the DP/Investor along with a rejection memo",
+      "They are kept by RTA forever",
+      "They are sold"
+    ],
+    "answer": "They are returned to the DP/Investor along with a rejection memo",
+    "hint": "आपको अपनी संपत्ति वापस मिल जाती है।",
+    "explanation": "RTA physical certificates और DRF को एक rejection memo (जिसमें कारण लिखा होता है) के साथ DP को (और बाद में investor को) वापस कर देता है।"
+  },
+  {
+    "id": 17,
+    "question": "Which of the following is a valid reason for rejection of a demat request?",
+    "options": [
+      "Signature Mismatch",
+      "Fake/Forged Shares",
+      "Stop Transfer Order on shares",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "hint": "स्वामित्व (title) या पहचान में कोई भी खराबी।",
+    "explanation": "यदि signature मेल नहीं खाता है, shares नकली (fake) हैं, या specific folio पर कोर्ट का आदेश/stop transfer है, तो RTA request को reject कर देगा।"
+  },
+  {
+    "id": 18,
+    "question": "Can mutilated (damaged) certificates be dematerialized?",
+    "options": [
+      "No, never",
+      "Yes, if the material parts (Folio, Cert No, Name) are legible",
+      "Only if the company issues a new one first",
+      "Only if the Stock Exchange permits"
+    ],
+    "answer": "Yes, if the material parts (Folio, Cert No, Name) are legible",
+    "hint": "यदि RTA इसे पहचान सकता है।",
+    "explanation": "हां, बशर्ते कि आवश्यक विवरण (essential details) पढ़ने योग्य (legible) हों। यदि बहुत अधिक क्षतिग्रस्त है, तो investor को पहले duplicate/नया certificate प्राप्त करने की आवश्यकता हो सकती है।"
+  },
+  {
+    "id": 19,
+    "question": "The folio number mentioned in the DRF must match:",
+    "options": [
+      "The demat account number",
+      "The folio number on the physical certificate",
+      "The bank account number",
+      "The PAN number"
+    ],
+    "answer": "The folio number on the physical certificate",
+    "hint": "Company के records का लिंक।",
+    "explanation": "Folio Number company के physical records में investor की पहचान करता है और इसे certificate से सही ढंग से दर्ज (enter) किया जाना चाहिए।"
+  },
+  {
+    "id": 20,
+    "question": "Who provides the value of the 'Paid-up Capital' for the shares being dematerialized?",
+    "options": [
+      "The Investor",
+      "The Stock Exchange",
+      "The Depository system (based on ISIN master)",
+      "The DP"
+    ],
+    "answer": "The Depository system (based on ISIN master)",
+    "hint": "स्थिर डेटा (Static data)।",
+    "explanation": "System, Depository द्वारा maintain किए गए ISIN details के आधार पर face value और paid-up value को अपने आप (automatically) भर देता है।"
+  },
+  {
+    "id": 21,
+    "question": "Can a Power of Attorney (POA) holder sign the DRF?",
+    "options": [
+      "Yes, if the POA grants such powers",
+      "No, client must sign personally",
+      "Yes, always",
+      "Only for corporate clients"
+    ],
+    "answer": "Yes, if the POA grants such powers",
+    "hint": "Authorization (अधिकार) मायने रखता है।",
+    "explanation": "एक POA holder DRF पर हस्ताक्षर कर सकता है यदि Power of Attorney document उन्हें dematerialization के लिए documents पर हस्ताक्षर करने का स्पष्ट अधिकार (explicitly authorize) देता है।"
+  },
+  {
+    "id": 22,
+    "question": "If the name on the certificate is 'S. Kumar' and on the demat account is 'Suresh Kumar', what is required?",
+    "options": [
+      "Nothing, it's fine",
+      "An affidavit confirming 'One and the Same Person'",
+      "A new demat account",
+      "A court order"
+    ],
+    "answer": "An affidavit confirming 'One and the Same Person'",
+    "hint": "नाम के mismatch को सुलझाना।",
+    "explanation": "मामूली नाम के mismatches के लिए आमतौर पर एक affidavit या घोषणा (declaration) की आवश्यकता होती है जिसमें कहा गया हो कि दोनों नाम एक ही व्यक्ति के हैं।"
+  },
+  {
+    "id": 23,
+    "question": "Can Debt instruments (Bonds/Debentures) be dematerialized?",
+    "options": [
+      "No, only equity",
+      "Yes",
+      "Only Government Bonds",
+      "Only if they are convertible"
+    ],
+    "answer": "Yes",
+    "hint": "लगभग सभी securities।",
+    "explanation": "हां, bonds और debentures जैसे debt instruments को भी उसी प्रक्रिया (process) का उपयोग करके dematerialize किया जा सकता है।"
+  },
+  {
+    "id": 24,
+    "question": "What is 'Rematerialization'?",
+    "options": [
+      "Selling shares",
+      "Converting electronic holdings back to physical certificates",
+      "Buying new shares",
+      "Cancelling shares"
+    ],
+    "answer": "Converting electronic holdings back to physical certificates",
+    "hint": "Demat का उल्टा (Reverse)।",
+    "explanation": "Rematerialization एक demat account में रखे गए electronic securities को वापस physical share certificates में बदलने की प्रक्रिया है।"
+  },
+  {
+    "id": 25,
+    "question": "Which form is used for Rematerialization?",
+    "options": [
+      "DRF",
+      "RRF (Remat Request Form)",
+      "DIS",
+      "TRF"
+    ],
+    "answer": "RRF (Remat Request Form)",
+    "hint": "विशिष्ट फॉर्म (Specific form)।",
+    "explanation": "प्रक्रिया (process) शुरू करने के लिए investor को DP के पास एक Rematerialization Request Form (RRF) जमा करना होगा।"
+  },
+  {
+    "id": 26,
+    "question": "Who prints and dispatches the physical certificates in case of Rematerialization?",
+    "options": [
+      "The DP",
+      "The Depository",
+      "The Issuer / RTA",
+      "The Stock Exchange"
+    ],
+    "answer": "The Issuer / RTA",
+    "hint": "Certificate बनाने वाला।",
+    "explanation": "Remat request के confirmation पर, Issuer/RTA नए share certificates प्रिंट करता है और उन्हें सीधे investor को भेज (dispatch) देता है।"
+  },
+  {
+    "id": 27,
+    "question": "Is the ISIN required for Rematerialization?",
+    "options": [
+      "Yes",
+      "No",
+      "Only for equity",
+      "Only for debt"
+    ],
+    "answer": "Yes",
+    "hint": "System को यह जानना होगा कि क्या debit करना है।",
+    "explanation": "यह पहचानने के लिए ISIN की आवश्यकता होती है कि किस security को rematerialize किया जा रहा है और account से debit किया जा रहा है।"
+  },
+  {
+    "id": 28,
+    "question": "Can a client sell shares while they are 'Pending for Demat'?",
+    "options": [
+      "Yes",
+      "No",
+      "Yes, if the broker agrees",
+      "Yes, in the grey market"
+    ],
+    "answer": "No",
+    "hint": "वे रास्ते में (transit) हैं।",
+    "explanation": "'Pending for Demat' status में होने पर shares को बेचा या transfer नहीं किया जा सकता है। उन्हें पहले account में credit होना चाहिए।"
+  },
+  {
+    "id": 29,
+    "question": "What is the 'Free Balance' in a demat account?",
+    "options": [
+      "Shares available for transfer/sale (not locked or pledged)",
+      "Shares given for free",
+      "Bonus shares",
+      "Shares with zero value"
+    ],
+    "answer": "Shares available for transfer/sale (not locked or pledged)",
+    "hint": "भारमुक्त (Unencumbered)।",
+    "explanation": "Free Balance securities की उस मात्रा (quantity) को संदर्भित करता है जो किसी भी lien, lock-in, या pledge से मुक्त है और trading/transfer के लिए उपलब्ध है।"
+  },
+  {
+    "id": 30,
+    "question": "If a certificate is found to be 'Fake' by the RTA:",
+    "options": [
+      "It is returned to the investor",
+      "It is retained/confiscated by the RTA and not returned",
+      "It is dematerialized anyway",
+      "The DP is fined"
+    ],
+    "answer": "It is retained/confiscated by the RTA and not returned",
+    "hint": "यह अवैध (illegal) सामग्री है।",
+    "explanation": "Fake (नकली) या जाली (forged) certificates को RTA/Company द्वारा जब्त (confiscated) कर लिया जाता है और investor या DP को वापस नहीं किया जाता है।"
+  },
+  {
+    "id": 31,
+    "question": "The DP acknowledges receipt of the DRF by issuing:",
+    "options": [
+      "A cheque",
+      "A transaction statement",
+      "An acknowledgement slip (counterfoil of DRF) with DRN",
+      "A new certificate"
+    ],
+    "answer": "An acknowledgement slip (counterfoil of DRF) with DRN",
+    "hint": "जमा (submission) करने का प्रमाण।",
+    "explanation": "DP, DRF से acknowledgement slip फाड़ता है, उस पर मोहर (stamp) लगाता है, और उसे Demat Request Number (DRN) के साथ client को देता है।"
+  },
+  {
+    "id": 32,
+    "question": "Can shares held in 'Street Name' (Broker's name) be dematerialized directly into Client's account?",
+    "options": [
+      "Yes",
+      "No, they must first be transferred to Client's name in company records",
+      "Yes, if broker gives NOC",
+      "Yes, if value is small"
+    ],
+    "answer": "No, they must first be transferred to Client's name in company records",
+    "hint": "Ownership (स्वामित्व) का बेमेल होना।",
+    "explanation": "Shares account holder के नाम पर registered होने चाहिए। यदि वे street name (broker के नाम) में हैं, तो demat से पहले उन्हें physically client के नाम पर transfer किया जाना चाहिए।"
+  },
+  {
+    "id": 33,
+    "question": "Can government securities be dematerialized?",
+    "options": [
+      "No",
+      "Yes",
+      "Only by banks",
+      "Only by RBI"
+    ],
+    "answer": "Yes",
+    "hint": "SGL अकाउंट।",
+    "explanation": "हां, Government Securities (G-Secs) को demat रूप में रखा जा सकता है। Depository उन्हें RBI के पास एक SGL account में रखता है।"
+  },
+  {
+    "id": 34,
+    "question": "Is it possible to dematerialize 'Partly Paid' shares?",
+    "options": [
+      "No, only fully paid",
+      "Yes, separate ISIN is usually assigned",
+      "Yes, mixed with fully paid",
+      "Only if company agrees"
+    ],
+    "answer": "Yes, separate ISIN is usually assigned",
+    "hint": "अलग श्रेणी (category)।",
+    "explanation": "हां, partly paid shares को dematerialize किया जा सकता है। उनका ISIN आमतौर पर उसी company के fully paid shares से अलग होता है।"
+  },
+  {
+    "id": 35,
+    "question": "If an investor loses the DRF acknowledgement, can they still get the shares?",
+    "options": [
+      "No",
+      "Yes, the credit happens electronically regardless",
+      "They must file an FIR",
+      "They must start over"
+    ],
+    "answer": "Yes, the credit happens electronically regardless",
+    "hint": "Slip सिर्फ एक रसीद है।",
+    "explanation": "Acknowledgement सिर्फ एक रसीद (receipt) है। System में प्रक्रिया जारी रहती है, और यदि RTA द्वारा verify किया जाता है तो shares credit कर दिए जाएंगे।"
+  },
+  {
+    "id": 36,
+    "question": "Who pays the Stamp Duty on Dematerialization?",
+    "options": [
+      "Investor",
+      "DP",
+      "Issuer",
+      "No Stamp Duty applies"
+    ],
+    "answer": "No Stamp Duty applies",
+    "hint": "System का एक फायदा।",
+    "explanation": "Securities के dematerialization पर कोई stamp duty (स्टाम्प शुल्क) नहीं लगाया जाता है।"
+  },
+  {
+    "id": 37,
+    "question": "Can a 'Minor' dematerialize shares held in their name?",
+    "options": [
+      "No",
+      "Yes, through the Guardian",
+      "Only after turning 18",
+      "Only if they sign themselves"
+    ],
+    "answer": "Yes, through the Guardian",
+    "hint": "Guardian account चलाता है।",
+    "explanation": "हां, Guardian नाबालिग (minor) की ओर से DRF पर हस्ताक्षर (sign) करता है।"
+  },
+  {
+    "id": 38,
+    "question": "What happens if the company name changes while shares are physical?",
+    "options": [
+      "Old certificates are invalid",
+      "Old certificates are valid and can be dematerialized",
+      "Must get new certificates first",
+      "Company must buy them back"
+    ],
+    "answer": "Old certificates are valid and can be dematerialized",
+    "hint": "ISIN लिंक रहता है।",
+    "explanation": "पुरानी company के नाम वाले पुराने certificates आमतौर पर dematerialization के लिए मान्य (valid) होते हैं क्योंकि RTA नाम बदलने को track करता है।"
+  },
+  {
+    "id": 39,
+    "question": "The 'Distinctive Numbers' of the shares:",
+    "options": [
+      "Are lost in demat",
+      "Are stored in the depository system database",
+      "Are changed",
+      "Are irrelevant"
+    ],
+    "answer": "Are stored in the depository system database",
+    "hint": "वे specific range को track करते हैं।",
+    "explanation": "यद्यपि account में shares fungible (बदलने योग्य) होते हैं, depository system reconciliation (मिलान) के लिए dematerialized किए गए distinctive numbers का record रखता है।"
+  },
+  {
+    "id": 40,
+    "question": "If a DRF is rejected, can the investor resubmit it?",
+    "options": [
+      "No, never",
+      "Yes, after rectifying the error (e.g., fresh signature)",
+      "Only after 1 year",
+      "Only with a new DP"
+    ],
+    "answer": "Yes, after rectifying the error (e.g., fresh signature)",
+    "hint": "गलती सुधारें।",
+    "explanation": "Investor गलती को सुधार कर (उदा. सही हस्ताक्षर या affidavit प्रदान करके) certificates के साथ DRF को फिर से जमा (resubmit) कर सकता है।"
+  },
+  {
+    "id": 41,
+    "question": "Who is responsible for verifying the 'Market Status' (e.g., Stop Transfer) of the shares?",
+    "options": [
+      "The DP",
+      "The RTA / Issuer",
+      "The Investor",
+      "The Broker"
+    ],
+    "answer": "The RTA / Issuer",
+    "hint": "वे registry रखते हैं।",
+    "explanation": "RTA अपने internal records की जांच करता है ताकि यह सुनिश्चित हो सके कि विशिष्ट certificate/folio के खिलाफ कोई stop transfer आदेश या कानूनी रोक (legal injunction) तो नहीं है।"
+  },
+  {
+    "id": 42,
+    "question": "Can Mutual Fund units be dematerialized?",
+    "options": [
+      "No",
+      "Yes, through a Conversion Request",
+      "Only if listed on exchange",
+      "Only Exchange Traded Funds (ETFs)"
+    ],
+    "answer": "Yes, through a Conversion Request",
+    "hint": "SOA से Demat में।",
+    "explanation": "हां, investors अपनी physical Statement of Account (SOA) units को demat form में convert कर सकते हैं (इसे अक्सर Destatementization कहा जाता है)।"
+  },
+  {
+    "id": 43,
+    "question": "What is 'Destatementization'?",
+    "options": [
+      "Converting Mutual Fund SOA to Demat units",
+      "Converting Demat to Physical",
+      "Closing an account",
+      "Freezing an account"
+    ],
+    "answer": "Converting Mutual Fund SOA to Demat units",
+    "hint": "MF के लिए विशिष्ट शब्द।",
+    "explanation": "Destatementization, Statement of Account के रूप में रखे गए mutual fund units को electronic demat units में बदलने की प्रक्रिया है।"
+  },
+  {
+    "id": 44,
+    "question": "If a certificate is 'Lost in Transit' from DP to RTA:",
+    "options": [
+      "The DP is responsible and must help issue duplicate/demat",
+      "The Investor loses the money",
+      "The RTA issues credit anyway",
+      "The Post office pays"
+    ],
+    "answer": "The DP is responsible and must help issue duplicate/demat",
+    "hint": "कागज़ात का संरक्षक (Custodian)।",
+    "explanation": "DP रास्ते (transit) में certificates की सुरक्षा के लिए जिम्मेदार है। उन्हें duplicates प्राप्त करने या समस्या को हल करने में investor की सहायता करनी चाहिए।"
+  },
+  {
+    "id": 45,
+    "question": "Can an investor dematerialize shares into a 'Joint Account' if the physical shares are in a 'Single Name'?",
+    "options": [
+      "Yes",
+      "No",
+      "Yes, with an NOC",
+      "Yes, if the single name is the first holder"
+    ],
+    "answer": "No",
+    "hint": "पैटर्न (Pattern) मैच होना चाहिए।",
+    "explanation": "Holding का pattern match होना चाहिए। एक single holder certificate को joint account में dematerialize नहीं किया जा सकता है। नाम बिल्कुल समान (identical) होने चाहिए।"
+  },
+  {
+    "id": 46,
+    "question": "What is the fee charged by the Depository to the Issuer for dematerialization?",
+    "options": [
+      "Demat Fee",
+      "Custody Fee",
+      "Connectivity Fee",
+      "No fee is charged to issuer for demat"
+    ],
+    "answer": "No fee is charged to issuer for demat",
+    "hint": "आमतौर पर investor/DP से लिया जाता है।",
+    "explanation": "आमतौर पर, Depository DP से (जो investor से लेता है) charge करता है। Issuers annual custody fees देते हैं, लेकिन आमतौर पर per-request demat fees नहीं देते।"
+  },
+  {
+    "id": 47,
+    "question": "The RTA must process the demat request within:",
+    "options": [
+      "7 days",
+      "15 days",
+      "30 days",
+      "60 days"
+    ],
+    "answer": "15 days",
+    "hint": "समय-सीमा को वर्षों से सख्त किया गया है।",
+    "explanation": "वर्तमान नियमों के अनुसार, RTA से प्राप्ति (receipt) के 15 दिनों के भीतर request को verify और confirm करने की उम्मीद की जाती है।"
+  },
+  {
+    "id": 48,
+    "question": "Can a client hold physical and demat shares of the same company simultaneously?",
+    "options": [
+      "Yes",
+      "No",
+      "Only for 1 month",
+      "Only if demat is frozen"
+    ],
+    "answer": "Yes",
+    "hint": "पसंद आपकी है।",
+    "explanation": "एक investor कुछ shares को physical form में और कुछ को demat form में रखने का विकल्प चुन सकता है, हालांकि trading ज्यादातर demat तक ही सीमित है।"
+  },
+  {
+    "id": 49,
+    "question": "When does the DP destroy the physical certificates?",
+    "options": [
+      "Immediately upon receipt",
+      "Never, RTA destroys them",
+      "After 1 year",
+      "After credit is confirmed"
+    ],
+    "answer": "Never, RTA destroys them",
+    "hint": "DP उन्हें RTA को भेजता है।",
+    "explanation": "DP उन्हें नष्ट (destroy) नहीं करता है (छेद करने के अलावा)। RTA request को process करने के बाद उन्हें नष्ट/विकृत (destroys/mutilates) कर देता है।"
+  },
+  {
+    "id": 50,
+    "question": "If a DRF is pending for a long time, the investor should contact:",
+    "options": [
+      "The Police",
+      "The DP",
+      "The Bank",
+      "The Media"
+    ],
+    "answer": "The DP",
+    "hint": "संपर्क का पहला बिंदु (First point of contact)।",
+    "explanation": "Investor को status check करने के लिए सबसे पहले DP से संपर्क करना चाहिए। इसके बाद DP, RTA से follow up कर सकता है।"
+  }
+]

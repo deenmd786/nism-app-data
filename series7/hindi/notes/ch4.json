@@ -1,0 +1,109 @@
+{
+  "course": "NISM Series VII: Securities Operations and Risk Management",
+  "unit_number": 4,
+  "unit_name": "Risk Management",
+  "weightage": "15%",
+  "overview": "यह chapter operations exam का 'Heart' है। इसका weightage 15% (लगभग 15 questions) है, लेकिन यह अधिक लगता है क्योंकि यहाँ के concepts Settlement (Chapter 6) में उपयोग किए जाते हैं। Risk Management केवल वह system है जो यह सुनिश्चित करता है कि यदि कोई broker या client bankrupt हो जाता है, तो stock market ढह (collapse) न जाए। यह 'Margins' पर focus करता है—वह पैसा जो आपको यह साबित करने के लिए trade से *पहले* और *दौरान* pay करना होता है कि आप अपनी deal पूरी कर सकते हैं।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Capital Adequacy Requirements (प्रवेश टिकट)",
+      "basic_meaning": "एक broker को सिर्फ एक broker *बने रहने* के लिए Exchange के पास जो minimum deposit रखना होता है।",
+      "detailed_explanation": "इससे पहले कि कोई broker एक भी trade execute कर सके, उन्हें Clearing Corporation के पास पैसा deposit करना होता है। इसे **Base Minimum Capital (BMC)** कहा जाता है।\n\n1. **Purpose:** यह एक अंतिम safety net के रूप में कार्य करता है। यदि broker भाग जाता है, तो Exchange इस पैसे का उपयोग broker के debts चुकाने के लिए करता है।\n2. **Structure:** यह deposit केवल cash नहीं होता है। यह Cash और Non-Cash (जैसे shares) का mix होता है।\n3. **Rule:** एक broker को आमतौर पर अपनी category के आधार पर ₹10 Lakhs से ₹50 Lakhs का BMC maintain करना होता है।",
+      "why_this_is_important": "इसके बिना, कोई भी broker बन सकता है और market में scam कर सकता है। यह non-serious players को बाहर करता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "जिस तरह आपको bank account active रखने के लिए minimum balance चाहिए, उसी तरह broker को अपना trading terminal active रखने के लिए BMC चाहिए।",
+      "exam_traps": [
+        "BMC को Margins के साथ confuse करना। BMC membership के लिए एक *fixed* deposit है। Margins daily trading के आधार पर *variable* deposits हैं।",
+        "यह सोचना कि BMC कभी भी withdraw किया जा सकता है। ऐसा नहीं किया जा सकता।"
+      ],
+      "memory_trick": "BMC = Broker Membership Card (Entry की कीमत)।"
+    },
+    {
+      "concept": "2. Margins: VaR और ELM (दैनिक सुरक्षा जमा)",
+      "basic_meaning": "जब आप order place करते हैं तो *upfront* block किया गया पैसा।",
+      "detailed_explanation": "जब आप shares खरीदते हैं, तो Exchange potential losses को cover करने के लिए एक deposit लेता है। यह 'Initial Margin' है। इसके दो भाग हैं:\n\n1. **VaR Margin (Value at Risk):**\n   - **Definition:** एक statistical measure। यह calculate करता है कि 'यह stock सामान्यतः एक दिन में कितना गिर सकता है?'\n   - **Coverage:** यह 99% दिनों को cover करता है। (99% Confidence Level)।\n   - **Variable:** Volatile stocks (जैसे Adani Ent) का VaR stable stocks (जैसे HUL) की तुलना में अधिक होता है।\n\n2. **ELM Margin (Extreme Loss Margin):**\n   - **Definition:** शेष 1% (disasters) के लिए safety buffer।\n   - **Rate:** आमतौर पर stock के आधार पर 3.5% या 5% पर fixed होता है।\n\n**Total Initial Margin = VaR + ELM**",
+      "why_this_is_important": "यदि market 10% crash हो जाता है और client pay नहीं करता है, तो broker loss को cover करने के लिए इस margin का उपयोग करता है।",
+      "formula": "$$Initial Margin = VaR Margin + ELM Margin$$",
+      "formula_explanation": "Percentages का simple addition।",
+      "step_by_step_calculation_example": "**Scenario:** आप ₹1,00,000 के shares खरीदना चाहते हैं।\nStock: Tata Steel.\nVaR Rate: 12%.\nELM Rate: 3.5%.\n\n**Calculation:**\nTotal Rate = 12% + 3.5% = 15.5%.\nMargin Required = ₹1,00,000 का 15.5% = ₹15,500.\n\n**Result:** आप तब तक order place नहीं कर सकते जब तक आपके account में ₹15,500 न हों।",
+      "real_life_indian_example": "यही कारण है कि आपका broker app 'Available Margin' बनाम 'Used Margin' दिखाता है। 'Used Margin' अनिवार्य रूप से यही VaR+ELM block है।",
+      "exam_traps": [
+        "Students ELM जोड़ना भूल जाते हैं। Total Margin में हमेशा ELM शामिल होता है।",
+        "यह सोचना कि VaR 100% risk cover करता है। यह 99% cover करता है।"
+      ],
+      "memory_trick": "VaR = Normal Risk. ELM = Disaster Risk."
+    },
+    {
+      "concept": "3. Mark to Market (MTM) Margin",
+      "basic_meaning": "हर दिन के अंत में 'Profit या Loss' का calculation।",
+      "detailed_explanation": "Markets हर दिन move करते हैं। यदि आपने अभी तक अपने shares के लिए pay नहीं किया है (settlement में 1 दिन लगता है), तो Exchange calculate करता है कि क्या आप loss में हैं।\n\n- यदि price **UP** (ऊपर) जाती है, तो आपको notional profit होता है (Exchange कुछ नहीं करता)।\n- यदि price **DOWN** (नीचे) जाती है, तो आपको notional loss होता है। Exchange आपसे वह loss अगली सुबह तक *तुरंत* pay करने के लिए कहता है। यह payment MTM Margin है।",
+      "why_this_is_important": "यह losses को जमा (accumulate) होने से रोकता है। आप अंत में एक बड़े झटके के बजाय daily loss pay करते हैं।",
+      "formula": "$$MTM = (Buy Price - Closing Price) \\times Quantity$$",
+      "formula_explanation": "केवल तभी calculate किया जाता है जब Closing Price Buy Price से कम (LOWER) हो (buyers के लिए)।",
+      "step_by_step_calculation_example": "**Scenario:**\nDay 1 (Monday): आप ₹500 पर SBI के 100 shares खरीदते हैं।\nMarket ₹490 पर close होता है।\n\n**Calculation:**\nLoss per share = ₹500 - ₹490 = ₹10.\nTotal MTM Loss = 10 * 100 = ₹1000.\n\n**Result:** आपको Tuesday सुबह तक broker को ₹1000 pay करने होंगे। यदि आप ऐसा नहीं करते हैं, तो broker आपके shares बेच देगा।",
+      "real_life_indian_example": "2020 के crash में, कई traders ने अपनी positions खो दीं क्योंकि वे MTM margins pay नहीं कर सके जब markets daily 10% गिरे।",
+      "exam_traps": [
+        "यह सोचना कि MTM Profit पर collect किया जाता है। नहीं, केवल Loss पर।",
+        "यह सोचना कि Initial Margin MTM को cover करता है। नहीं, MTM *extra* पैसा है जो आपको pay करना होगा।"
+      ],
+      "memory_trick": "MTM = Losses के लिए Daily Bill."
+    },
+    {
+      "concept": "4. Liquid Assets (पैसे के रूप में क्या गिना जाता है?)",
+      "basic_meaning": "Payment के वे रूप जिन्हें Clearing Corporation margins के लिए स्वीकार करता है।",
+      "detailed_explanation": "Exchange केवल cash नहीं लेता है। यह 'Liquid Assets' लेता है।\n\n**Components:**\n1. **Cash Component:** Cash, Bank Fixed Deposits (FDs), Bank Guarantees.\n2. **Non-Cash Component:** Approved Shares (Dematerialized), Mutual Fund Units (valid haircut के बाद)।\n\n**The 50:50 Rule:**\nTotal liquid assets का कम से कम **50%** **Cash Component** में होना अनिवार्य (MUST) है।",
+      "why_this_is_important": "Brokers केवल illiquid shares को margin के रूप में डंप नहीं कर सकते। उन्हें hard cash liquidity की आवश्यकता होती है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "**Example:** एक broker को ₹1 Crore margin deposit करना है।\nवह deposit कर सकता है:\n- Cash/FD में ₹50 Lakhs (Cash Component)।\n- Blue-chip Shares में ₹50 Lakhs (Non-Cash Component)।\n\n*वह ₹20 Lakhs Cash और ₹80 Lakhs Shares deposit नहीं कर सकता (CANNOT)।*",
+      "real_life_indian_example": "जब आप Zerodha में margin पाने के लिए अपने shares pledge करते हैं, तो आप Non-Cash component का उपयोग कर रहे होते हैं। लेकिन 50% rule के लिए आपको अभी भी cash की आवश्यकता होती है।",
+      "exam_traps": [
+        "Fixed Deposits को confuse करना। FDs को 'Cash Component' माना जाता है।",
+        "यह सोचना कि shares Cash Component हैं। Shares Non-Cash हैं।"
+      ],
+      "memory_trick": "Cash is King (कम से कम आधा होना चाहिए)।"
+    },
+    {
+      "concept": "5. Circuit Breakers (इमरजेंसी स्टॉप)",
+      "basic_meaning": "Panic crashing को रोकने के लिए trading को रोकना (Halting)।",
+      "detailed_explanation": "यदि market बहुत तेज़ी से move करता है, तो Exchange प्लग खींच लेता है (pulls the plug)।\n\n**Index Based Circuit Breakers (Nifty/Sensex):**\n- **10% Movement:** Market 45 mins के लिए रुकता है (यदि दोपहर 1 बजे से पहले हो)।\n- **15% Movement:** Market 1 hour 45 mins के लिए रुकता है।\n- **20% Movement:** Market पूरे दिन (WHOLE DAY) के लिए बंद हो जाता है।\n\n**Scrip Wise Price Bands:**\n- Individual stocks में bands होते हैं (उदा., 5%, 10%, 20%)। यदि कोई stock 20% hit करता है, तो trading *केवल* उसी price पर (frozen) जारी रहती है।",
+      "why_this_is_important": "यह investors को शांत होने (cool down) और तार्किक रूप से (rationally) सोचने का समय देता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "मार्च 2008 और मार्च 2020 में, Nifty ने Lower Circuit (10% fall) hit किया था और trading 45 मिनट के लिए रोक दी गई थी।",
+      "exam_traps": [
+        "Derivatives (F&O) वाले stocks में price bands नहीं (NOT) होते हैं। उनमें 'Dynamic Price Bands' (flexing) होते हैं।",
+        "Index circuit (Halt) को Stock circuit (Freeze) के साथ confuse करना। Index पूरे market को रोकता है। Stock circuit केवल उस एक stock को freeze करता है।"
+      ],
+      "memory_trick": "10-15-20 (Halt levels)।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Initial Margin बनाम MTM Margin",
+      "clear_explanation": "Initial Margin potential risk के आधार पर UPFRONT (trade से पहले) pay किया जाता है। MTM Margin actual loss के आधार पर AFTER trade (प्रतिदिन) pay किया जाता है।"
+    },
+    {
+      "difference_between": "Gross Margining बनाम Net Margining",
+      "clear_explanation": "Gross Margining (Client level) में, Client A की buy Client B की sell को offset नहीं कर सकती। Broker दोनों के लिए margin pay करता है। Net Margining (Broker level) में, A और B offset कर सकते हैं। भारत GROSS Margining (अधिक सख्त) का पालन करता है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "VaR का confidence level क्या है? (Answer: 99%).",
+    "Initial Margin के component क्या हैं? (Answer: VaR + ELM).",
+    "Liquid Assets में कितना Cash Component अनिवार्य है? (Answer: कम से कम 50%).",
+    "MTM pay करने की time limit? (Answer: T+1, आमतौर पर अगली सुबह).",
+    "किस percentage पर market पूरे दिन के लिए बंद हो जाता है? (Answer: 20%)."
+  ],
+  "quick_revision_summary": [
+    "VaR 99% risk cover करता है; ELM tail risk cover करता है।",
+    "MTM Closing Price बनाम Deal Price पर calculate किया जाता है।",
+    "Margins Upfront collect किए जाने चाहिए।",
+    "Liquid Assets = 50% Cash + 50% Non-Cash.",
+    "Derivatives stocks में dynamic price bands होते हैं (कोई fixed limit नहीं)।",
+    "Margins की short reporting के लिए Fines लागू होते हैं।"
+  ]
+}

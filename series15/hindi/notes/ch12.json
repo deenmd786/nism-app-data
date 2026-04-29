@@ -1,0 +1,79 @@
+{
+  "course": "NISM Series XV: Research Analyst",
+  "unit_number": 12,
+  "unit_name": "Fundamentals of Risk and Return (जोखिम और प्रतिफल के मूल सिद्धांत)",
+  "weightage": "7 Marks",
+  "overview": "यह chapter investment analysis की गणितीय आत्मा (mathematical soul) है। यह आपको सिखाता है कि किसी निवेश के प्रदर्शन (Return) और उससे जुड़ी अनिश्चितता (Risk) को कैसे मापा जाए। एक Research Analyst के लिए लक्ष्य केवल high returns खोजना नहीं है, बल्कि 'Risk-Adjusted' (जोखिम-समायोजित) returns खोजना है। यह chapter volatility के concepts को Sharpe Ratio जैसे वास्तविक दुनिया के प्रदर्शन मेट्रिक्स से जोड़ता है। NISM परीक्षा के लिए यह एक उच्च-वेटेज वाली quantitative unit है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. 'Returns' को समझना (Absolute, CAGR, और Holding Period)",
+      "basic_meaning": "Return वह 'इनाम' (Reward) है जो आपको अपना पैसा निवेश करने पर मिलता है। इसे एक simple percentage या compounded annual speed के रूप में मापा जा सकता है।",
+      "detailed_explanation": "1. **Holding Period Return (HPR):** Stock खरीदने के दिन से लेकर उसे बेचने के दिन तक अर्जित (earned) किया गया total return। इसमें price में वृद्धि (increase) और dividends दोनों शामिल हैं। 2. **CAGR (Compound Annual Growth Rate):** 'Smoothed' annual growth rate। यह आपको compounding मानते हुए आपके निवेश की औसत वार्षिक गति (average yearly speed) बताता है। 3. **Real Return:** यह महंगाई (inflation) को घटाने के बाद आपकी purchasing power (क्रय शक्ति) में वास्तविक वृद्धि है।",
+      "why_this_is_important": "Exam के प्रश्नों में अक्सर आपसे CAGR या Real Returns की गणना करने के लिए कहा जाता है। व्यावहारिक (Practically) रूप से, अलग-अलग समय अवधि में stock के प्रदर्शन की तुलना करने का एकमात्र सही तरीका CAGR है।",
+      "formula": "Real Return = [(1 + Nominal Return) / (1 + Inflation Rate)] - 1",
+      "formula_explanation": "सरल शब्दों में: Real Return ≈ Nominal Return - Inflation। यह बढ़ती कीमतों के कारण होने वाली 'नकली' (fake) वृद्धि (growth) को हटा देता है।",
+      "step_by_step_calculation_example": "यदि आपके stock ने इस वर्ष 12% return दिया, लेकिन inflation 7% थी। \nApproximate Real Return = 12% - 7% = 5%. \n(आपने वास्तव में अपनी wealth को केवल 5% बढ़ाया है)।",
+      "real_life_indian_example": "यदि आप Bank FD में पैसा लगाते हैं जो 7% interest दे रहा है और भारत में inflation 6% है, तो आपका **Real Return** केवल 1% है। आप मुश्किल से कीमतों में वृद्धि (price rises) को मात दे रहे हैं।",
+      "exam_traps": [
+        "Holding Period Return calculations में 'Dividends' को शामिल करना भूल जाना।",
+        "Simple average return को CAGR के साथ confuse करना। Multi-year investments के लिए हमेशा CAGR का उपयोग करें।"
+      ],
+      "memory_trick": "Nominal वह है जो आप 'Name' (कहते) हैं; Real वह है जो आप 'Buy' (खरीद) सकते हैं।"
+    },
+    {
+      "concept": "2. Risk मापना (Standard Deviation और Beta)",
+      "basic_meaning": "Risk किसी निवेश का 'उछाल' (Bounciness) या 'अनिश्चितता' (Uncertainty) है। यह इस बात से मापा जाता है कि returns औसत (average) से कितना 'भटकते' (wander) हैं।",
+      "detailed_explanation": "1. **Standard Deviation (SD):** यह 'Total Risk' को मापता है। यह देखता है कि किसी stock का price हर दिन कितना fluctuate करता है। High SD का मतलब है कि stock बहुत volatile है (उदा., Small-caps)। 2. **Beta (β):** 'Systematic Risk' को मापता है। यह Market (Nifty) से stock के उछाल (bounciness) की तुलना करता है। 1.5 के Beta का मतलब है कि stock market की तुलना में 50% अधिक volatile है।",
+      "why_this_is_important": "NISM SD और Beta के बीच के अंतर का बहुत अधिक परीक्षण करता है। आपको यह जानना होगा कि Beta उस जोखिम का माप है जिसे diversify करके दूर नहीं किया जा सकता (cannot be diversified away)।",
+      "formula": "Not Applicable (Theory focused)",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "**Nestle India** जैसे stock का Standard Deviation कम है (स्थिर कीमत)। **Adani Green** जैसे stock का Standard Deviation अधिक है (कीमत में बेतहाशा उतार-चढ़ाव)।",
+      "exam_traps": [
+        "यह सोचना कि Standard Deviation केवल 'नुकसान' को मापता है। यह 'भिन्नता' (variation) (ऊपर और नीचे दोनों) को मापता है।",
+        "यह मान लेना कि high Beta का हमेशा मतलब है कि stock 'खराब' है। इसका मतलब सिर्फ यह है कि यह high-risk/high-reward है।"
+      ],
+      "memory_trick": "Standard Deviation = कुल पागलपन (Total Wildness); Beta = भीड़ की तुलना में पागलपन (Wildness compared to the crowd)।"
+    },
+    {
+      "concept": "3. Risk-Adjusted Returns (Sharpe और Treynor Ratio)",
+      "basic_meaning": "यह प्रश्न पूछना: 'क्या लिया गया उच्च रिटर्न उस उच्च जोखिम के लायक था?'",
+      "detailed_explanation": "1. **Sharpe Ratio:** **Total Risk** (Standard Deviation) की प्रति इकाई (per unit) excess return को मापता है। 2. **Treynor Ratio:** **Market Risk** (Beta) की प्रति इकाई excess return को मापता है। 3. **Interpretation:** एक higher ratio हमेशा (ALWAYS) बेहतर होता है। इसका मतलब है कि analyst/fund manager ने लिए गए जोखिम के हर 'ग्राम' के लिए अधिक रिटर्न कमाया।",
+      "why_this_is_important": "Mutual funds का मूल्यांकन (evaluating) करने के लिए यह एक मुख्य tool है। Exam में पूछा जाएगा कि एक diversified portfolio (Treynor) बनाम non-diversified (Sharpe) के लिए कौन सा ratio बेहतर है।",
+      "formula": "Sharpe Ratio = (Return of Portfolio - Risk Free Rate) / Standard Deviation",
+      "formula_explanation": "अपने profit से सुरक्षित ब्याज (safe interest जैसे G-Sec) घटाएं, फिर stock के 'पागलपन' (wildness) से विभाजित (divide) करें।",
+      "step_by_step_calculation_example": "Portfolio Return = 15%. Risk-Free Rate = 7%. Standard Deviation = 4%. \nSharpe Ratio = (15 - 7) / 4 = 8 / 4 = 2.0. \n(2.0 के Sharpe ratio को आम तौर पर उत्कृष्ट (excellent) माना जाता है)।",
+      "real_life_indian_example": "यदि Fund A और Fund B दोनों ने 20% return दिया, लेकिन Fund A बहुत अधिक volatile था, तो Fund B का **Sharpe Ratio** अधिक होगा और वह बेहतर विकल्प (better choice) है।",
+      "exam_traps": [
+        "Treynor ratio के formula का उपयोग करना लेकिन Standard Deviation से विभाजित करना। याद रखें: Treynor **Beta** का उपयोग करता है।",
+        "यह सोचना कि negative Sharpe ratio अच्छा है। इसका मतलब है कि आपने सुरक्षित Bank FD से भी कम कमाया है।"
+      ],
+      "memory_trick": "Sharpe = 'S'tandard Deviation; Treynor = Be'T'a."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Systematic vs. Unsystematic Risk",
+      "clear_explanation": "Systematic Risk (Market Risk) युद्ध (war) या महंगाई (inflation) जैसे macro factors के कारण होता है और इसे हटाया नहीं जा सकता। Unsystematic Risk (Specific Risk) एक company के लिए unique है (जैसे हड़ताल) और इसे 'Diversification' (कई stocks खरीदकर) द्वारा हटाया जा सकता है।"
+    },
+    {
+      "difference_between": "Arithmetic Mean vs. Geometric Mean",
+      "clear_explanation": "Arithmetic Mean वार्षिक रिटर्न का एक simple average है। Geometric Mean (CAGR) वास्तविक (actual) compounded return है। Volatility के कारण Geometric mean हमेशा arithmetic mean के बराबर या उससे कम (lower) होता है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Sharpe Ratio की Numerical calculation।",
+    "यह पहचानना कि किस risk को diversification के माध्यम से समाप्त (eliminated) किया जा सकता है (Unsystematic)।",
+    "Beta को Systematic Risk के माप के रूप में परिभाषित करना।",
+    "Inflation के लिए adjust करके Real Return की Calculation।",
+    "Risk-Return Trade-off को समझना (High risk = Higher *Expected* Return)।"
+  ],
+  "quick_revision_summary": [
+    "Returns = इनाम (Reward); Risk = अनिश्चितता (Uncertainty)।",
+    "Standard Deviation = Total Risk; Beta = Systematic Risk।",
+    "Real Return = Nominal - Inflation (लगभग)।",
+    "Sharpe Ratio = Excess Return / Total Risk (SD)।",
+    "Treynor Ratio = Excess Return / Market Risk (Beta)।",
+    "Diversification Unsystematic Risk को खत्म (kills) कर देता है लेकिन Systematic Risk को छू भी नहीं सकता।"
+  ]
+}

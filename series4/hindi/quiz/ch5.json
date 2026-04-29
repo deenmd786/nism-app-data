@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "A corporate treasurer plans to issue bonds in 3 months. To protect against rising interest rates, they should:",
+    "options": [
+      "Buy (Long) Interest Rate Futures",
+      "Sell (Short) Interest Rate Futures",
+      "Buy (Long) Bonds in the spot market",
+      "Do nothing"
+    ],
+    "answer": "Sell (Short) Interest Rate Futures",
+    "hint": "बढ़ती rates = गिरती bond prices.",
+    "explanation": "यदि rates बढ़ती हैं, तो borrowing (उधार लेने) की cost बढ़ जाती है। Futures को short करके, treasurer गिरती bond prices से profit कमाता है, जो नए bond issuance पर higher interest cost को offset (बराबर) कर देता है।"
+  },
+  {
+    "id": 2,
+    "question": "An investor expects to receive a large cash inflow in 1 month to invest in G-Secs. They fear interest rates will fall (bond prices rise) before then. They should:",
+    "options": [
+      "Sell (Short) Interest Rate Futures",
+      "Buy (Long) Interest Rate Futures",
+      "Sell their current bond portfolio",
+      "Buy Put Options"
+    ],
+    "answer": "Buy (Long) Interest Rate Futures",
+    "hint": "Long Hedge.",
+    "explanation": "यह एक 'Long Hedge' है। अभी futures खरीदकर, investor current price/yield को lock कर लेता है। यदि prices बढ़ती हैं, तो futures पर profit उस higher price को offset कर देता है जो उन्हें बाद में bonds के लिए चुकानी होगी।"
+  },
+  {
+    "id": 3,
+    "question": "Which strategy is suitable if you are 'Bullish' on bond prices (expecting interest rates to fall)?",
+    "options": [
+      "Short Futures",
+      "Long Futures",
+      "Buy Put Option",
+      "Sell Call Option"
+    ],
+    "answer": "Long Futures",
+    "hint": "कम में खरीदें, ज़्यादा में बेचें।",
+    "explanation": "यदि interest rates गिरती हैं, तो bond prices बढ़ती हैं। एक Long Futures position आपको इस price increase से profit कमाने की अनुमति देती है।"
+  },
+  {
+    "id": 4,
+    "question": "Which strategy is suitable if you are 'Bearish' on bond prices (expecting interest rates to rise)?",
+    "options": [
+      "Short Futures",
+      "Long Futures",
+      "Buy Call Option",
+      "Sell Put Option"
+    ],
+    "answer": "Short Futures",
+    "hint": "गिरावट से मुनाफा।",
+    "explanation": "यदि interest rates बढ़ती हैं, तो bond prices गिरती हैं। एक Short Futures position prices में गिरावट से profit कमाती है।"
+  },
+  {
+    "id": 5,
+    "question": "To hedge a portfolio of bonds against interest rate risk, the Hedge Ratio is calculated as:",
+    "options": [
+      "BPV of Portfolio / BPV of Futures Contract",
+      "BPV of Futures Contract / BPV of Portfolio",
+      "Market Value of Portfolio / Market Value of Futures",
+      "Duration of Portfolio * Duration of Futures"
+    ],
+    "answer": "BPV of Portfolio / BPV of Futures Contract",
+    "hint": "Sensitivity का मिलान।",
+    "explanation": "Optimal number of contracts (Hedge Ratio) portfolio के Basis Point Value (BPV) या PV01 को single futures contract के BPV/PV01 से divide करके निकाला जाता है।"
+  },
+  {
+    "id": 6,
+    "question": "Cash and Carry Arbitrage is executed when:",
+    "options": [
+      "Futures Price < Spot Price + Cost of Carry (Futures are cheap)",
+      "Futures Price > Spot Price + Cost of Carry (Futures are expensive)",
+      "Futures Price = Spot Price",
+      "Market is volatile"
+    ],
+    "answer": "Futures Price > Spot Price + Cost of Carry (Futures are expensive)",
+    "hint": "महंगी चीज़ बेचें।",
+    "explanation": "यदि Futures price theoretically बहुत अधिक (overpriced) है, तो एक arbitrageur risk-free profit lock करने के लिए Spot Buy करता है और Futures Sell करता है।"
+  },
+  {
+    "id": 7,
+    "question": "Reverse Cash and Carry Arbitrage involves:",
+    "options": [
+      "Buying Spot and Selling Futures",
+      "Selling Spot (Shorting) and Buying Futures",
+      "Buying both Spot and Futures",
+      "Selling both Spot and Futures"
+    ],
+    "answer": "Selling Spot (Shorting) and Buying Futures",
+    "hint": "Futures सस्ते हैं।",
+    "explanation": "जब Futures Spot के मुक़ाबले underpriced होते हैं, तो arbitrageur Spot asset को Sell करता है (proceeds को invest करता है) और सस्ते Futures contract को Buy करता है।"
+  },
+  {
+    "id": 8,
+    "question": "A 'Calendar Spread' strategy in IRF involves:",
+    "options": [
+      "Buying a near-month contract and Selling a far-month contract (or vice versa)",
+      "Buying a G-Sec Future and Selling a T-Bill Future",
+      "Buying a Call and Selling a Put",
+      "Trading only on Mondays"
+    ],
+    "answer": "Buying a near-month contract and Selling a far-month contract (or vice versa)",
+    "hint": "समय के बीच spread.",
+    "explanation": "Calendar spread एक ही underlying asset लेकिन अलग-अलग expiry months वाले contracts के बीच price differences का फायदा उठाता है।"
+  },
+  {
+    "id": 9,
+    "question": "If the yield curve is expected to 'Steepen' (Long-term rates rise more than Short-term rates), a trader should:",
+    "options": [
+      "Buy Long-term Futures, Sell Short-term Futures",
+      "Sell Long-term Futures, Buy Short-term Futures",
+      "Buy both",
+      "Sell both"
+    ],
+    "answer": "Sell Long-term Futures, Buy Short-term Futures",
+    "hint": "Long-term prices ज़्यादा गिरेंगी।",
+    "explanation": "Rising long-term rates का मतलब है falling long-term bond prices (Short Long-term Futures)। Stable/falling short-term rates का मतलब है stable/rising short-term prices (Buy Short-term Futures)।"
+  },
+  {
+    "id": 10,
+    "question": "If the yield curve is expected to 'Flatten' (Long-term rates fall relative to Short-term rates), a trader should:",
+    "options": [
+      "Buy Long-term Futures, Sell Short-term Futures",
+      "Sell Long-term Futures, Buy Short-term Futures",
+      "Sell Call Options",
+      "Do nothing"
+    ],
+    "answer": "Buy Long-term Futures, Sell Short-term Futures",
+    "hint": "Long-term prices बढ़ेंगी।",
+    "explanation": "Falling long-term rates का मतलब है rising long-term bond prices (Buy Long-term Futures)। Rising/stable short-term rates का मतलब है falling/stable short-term prices (Sell Short-term Futures)।"
+  },
+  {
+    "id": 11,
+    "question": "BPV (Basis Point Value) or PV01 measures:",
+    "options": [
+      "The change in price for a 1 basis point (0.01%) change in yield",
+      "The change in yield for a 1 Rupee change in price",
+      "The total value of the bond",
+      "The coupon payment"
+    ],
+    "answer": "The change in price for a 1 basis point (0.01%) change in yield",
+    "hint": "Sensitivity मापने का तरीका।",
+    "explanation": "BPV/PV01 hedging के लिए एक key metric है। यह बताता है कि interest rates 0.01% (1 basis point) बदलने पर portfolio को कितना profit या loss होगा।"
+  },
+  {
+    "id": 12,
+    "question": "To reduce the duration of a bond portfolio without selling the bonds, a fund manager can:",
+    "options": [
+      "Buy Interest Rate Futures",
+      "Sell Interest Rate Futures",
+      "Buy longer maturity bonds",
+      "Sell Put Options"
+    ],
+    "answer": "Sell Interest Rate Futures",
+    "hint": "Futures को short करने से negative duration जुड़ती है।",
+    "explanation": "Futures को sell करने से negative duration वाली position बनती है। जब इसे long bond portfolio (positive duration) के साथ combine किया जाता है, तो portfolio की net duration घट जाती है।"
+  },
+  {
+    "id": 13,
+    "question": "A 'Long Straddle' (Buy Call + Buy Put) is profitable when:",
+    "options": [
+      "The market is stable with low volatility",
+      "The market moves significantly in either direction (High Volatility)",
+      "Interest rates rise slowly",
+      "Interest rates fall slowly"
+    ],
+    "answer": "The market moves significantly in either direction (High Volatility)",
+    "hint": "दो premiums को cover करने के लिए बड़े move की ज़रूरत।",
+    "explanation": "चूंकि आप दोनों options के लिए premium pay करते हैं, इसलिए costs को recover करने और profit कमाने के लिए underlying price का drastic (तेजी से) move (ऊपर या नीचे) होना ज़रूरी है।"
+  },
+  {
+    "id": 14,
+    "question": "A 'Short Straddle' (Sell Call + Sell Put) is profitable when:",
+    "options": [
+      "The market is highly volatile",
+      "The market is range-bound (Low Volatility)",
+      "The market crashes",
+      "The market rallies"
+    ],
+    "answer": "The market is range-bound (Low Volatility)",
+    "hint": "आप चाहते हैं कि दोनों options worthless expire हों।",
+    "explanation": "Seller दोनों तरफ से premium collect करता है। यदि price strike price के करीब (low volatility) रहती है, तो वे premiums को profit के रूप में रख लेते हैं।"
+  },
+  {
+    "id": 15,
+    "question": "Buying a Call Option is a suitable substitute for:",
+    "options": [
+      "Buying the underlying bond (Long Futures)",
+      "Selling the underlying bond (Short Futures)",
+      "Selling a Put",
+      "Shorting the market"
+    ],
+    "answer": "Buying the underlying bond (Long Futures)",
+    "hint": "Bullish नज़रिया।",
+    "explanation": "Call buy करना एक bullish strategy है, जो asset खरीदने के समान है, लेकिन futures की तुलना में इसमें downside risk limited (केवल premium तक) होता है।"
+  },
+  {
+    "id": 16,
+    "question": "The 'Cost of Carry' for an interest rate future is primarily determined by:",
+    "options": [
+      "Repo Rate (Financing Cost) - Coupon Income (Yield)",
+      "Coupon Income - Repo Rate",
+      "Inflation Rate",
+      "GDP Growth"
+    ],
+    "answer": "Repo Rate (Financing Cost) - Coupon Income (Yield)",
+    "hint": "लागत - आय।",
+    "explanation": "Cost of Carry = bond खरीदने की Financing Cost (Repo Rate) माइनस bond को hold करने से होने वाली Income (Coupon)।"
+  },
+  {
+    "id": 17,
+    "question": "If Cost of Carry is negative (Coupon > Repo Rate), the Futures price will be:",
+    "options": [
+      "Higher than Spot Price (Premium)",
+      "Lower than Spot Price (Discount)",
+      "Equal to Spot Price",
+      "Unrelated to Spot Price"
+    ],
+    "answer": "Lower than Spot Price (Discount)",
+    "hint": "Backwardation.",
+    "explanation": "यदि आप पैसे borrow करने की cost से ज़्यादा bond को hold करके कमाते हैं, तो Spot price अधिक attractive हो जाती है, जिससे Futures, Spot से नीचे (Backwardation) चले जाते हैं।"
+  },
+  {
+    "id": 18,
+    "question": "Which strategy has 'Unlimited Risk'?",
+    "options": [
+      "Long Call",
+      "Long Put",
+      "Short (Naked) Call",
+      "Protective Put"
+    ],
+    "answer": "Short (Naked) Call",
+    "hint": "अगर market ऊपर भागा, तो मुश्किल होगी।",
+    "explanation": "Underlying asset के बिना Call option sell करने (Naked Call) से seller को unlimited risk का सामना करना पड़ता है यदि asset price लगातार बढ़ती रहे।"
+  },
+  {
+    "id": 19,
+    "question": "A 'Protective Put' is constructed by:",
+    "options": [
+      "Long Underlying Asset + Long Put Option",
+      "Long Underlying Asset + Short Call Option",
+      "Short Underlying Asset + Long Call Option",
+      "Short Underlying Asset + Short Put Option"
+    ],
+    "answer": "Long Underlying Asset + Long Put Option",
+    "hint": "Asset + Insurance.",
+    "explanation": "यह strategy downside risk को limit करने के लिए Put option (Insurance) खरीदकर existing portfolio (Long Asset) की value को protect करती है।"
+  },
+  {
+    "id": 20,
+    "question": "A 'Covered Call' is constructed by:",
+    "options": [
+      "Long Underlying Asset + Short Call Option",
+      "Long Underlying Asset + Long Put Option",
+      "Short Underlying Asset + Short Put Option",
+      "Long Call + Long Put"
+    ],
+    "answer": "Long Underlying Asset + Short Call Option",
+    "hint": "Income कमाना।",
+    "explanation": "Investor के पास asset होता है और वह उसके against Call option sell करता है। यदि price नहीं बढ़ती है, तो वे premium को extra income के रूप में रख लेते हैं।"
+  },
+  {
+    "id": 21,
+    "question": "What is 'Beta' in the context of hedging?",
+    "options": [
+      "The sensitivity of a portfolio relative to the market/index",
+      "The volatility of the portfolio",
+      "The correlation coefficient",
+      "The duration"
+    ],
+    "answer": "The sensitivity of a portfolio relative to the market/index",
+    "hint": "Equity में इस्तेमाल होता है, लेकिन hedging पर भी लागू होता है।",
+    "explanation": "Beta मापता है कि benchmark/market में 1% move के लिए portfolio कितना move करता है। इस sensitivity को adjust करने के लिए Hedge Ratio में अक्सर Beta को शामिल किया जाता है।"
+  },
+  {
+    "id": 22,
+    "question": "If a portfolio has a Beta of 1.2 relative to the futures contract, the Hedge Ratio should be:",
+    "options": [
+      "Increased by 20% (1.2x)",
+      "Decreased by 20%",
+      "Kept at 1.0",
+      "Zero"
+    ],
+    "answer": "Increased by 20% (1.2x)",
+    "hint": "ज़्यादा volatile portfolio को ज़्यादा hedge की ज़रूरत।",
+    "explanation": "चूंकि portfolio futures की तुलना में 20% अधिक volatile है, इसलिए risk को पूरी तरह से hedge करने के लिए आपको 1.2 गुना अधिक contracts की आवश्यकता होगी।"
+  },
+  {
+    "id": 23,
+    "question": "Arbitrage opportunities in IRF markets typically disappear quickly due to:",
+    "options": [
+      "High transaction costs",
+      "Algorithmic and High-Frequency Trading (HFT)",
+      "Market holidays",
+      "Regulatory bans"
+    ],
+    "answer": "Algorithmic and High-Frequency Trading (HFT)",
+    "hint": "Computers तेज़ हैं।",
+    "explanation": "Computerized trading systems milliseconds में price discrepancies का पता लगाते हैं और उनका फायदा उठाते हैं, जिससे arbitrage window लगभग तुरंत close हो जाती है।"
+  },
+  {
+    "id": 24,
+    "question": "To hedge against a decline in the value of a bond portfolio, a 'Bear Put Spread' can be used instead of a simple Put to:",
+    "options": [
+      "Increase the profit potential",
+      "Reduce the upfront cost (Premium) of the hedge",
+      "Make the hedge risk-free",
+      "Avoid paying taxes"
+    ],
+    "answer": "Reduce the upfront cost (Premium) of the hedge",
+    "hint": "सस्ता insurance.",
+    "explanation": "एक Put खरीदकर और lower strike Put बेचकर, sale से प्राप्त premium खरीदे गए Put की cost को offset करता है, जिससे hedge सस्ता हो जाता है (हालाँकि protection cap हो जाती है)।"
+  },
+  {
+    "id": 25,
+    "question": "If you hold a bond and expect interest rates to remain stable, selling a Call Option (Covered Call) allows you to:",
+    "options": [
+      "Enhance yield through premium collection",
+      "Double your capital",
+      "Eliminate all risk",
+      "Convert the bond to equity"
+    ],
+    "answer": "Enhance yield through premium collection",
+    "hint": "Extra कमाई।",
+    "explanation": "Sideways market में, bond price ज्यादा move नहीं करती है। Call sell करने से premium income होती है, जो effectively portfolio पर yield बढ़ा देती है।"
+  },
+  {
+    "id": 26,
+    "question": "A 'Butterfly Spread' using Call options involves:",
+    "options": [
+      "Buying 1 Low Strike Call, Selling 2 Middle Strike Calls, Buying 1 High Strike Call",
+      "Buying 1 Call, Selling 1 Put",
+      "Buying 1 Call, Selling 1 Call",
+      "Buying 3 Calls"
+    ],
+    "answer": "Buying 1 Low Strike Call, Selling 2 Middle Strike Calls, Buying 1 High Strike Call",
+    "hint": "पंख और एक शरीर।",
+    "explanation": "Butterfly spread limited risk और limited profit वाली एक neutral strategy है, जिसे एक specific price point पर low volatility से profit कमाने के लिए design किया गया है।"
+  },
+  {
+    "id": 27,
+    "question": "What is 'Basis Risk' in a hedging strategy?",
+    "options": [
+      "The risk that the Futures price and Spot price do not move in perfect sync",
+      "The risk of the exchange defaulting",
+      "The risk of interest rates not changing",
+      "The risk of losing the basis points"
+    ],
+    "answer": "The risk that the Futures price and Spot price do not move in perfect sync",
+    "hint": "अपूर्ण सहसंबंध।",
+    "explanation": "Basis risk तब उत्पन्न होता है जब hedging instrument (Future) और hedge किया जा रहा asset (Spot) बिल्कुल एक साथ move नहीं करते हैं, जिससे hedge perfect नहीं हो पाता।"
+  },
+  {
+    "id": 28,
+    "question": "If you are 'Long the Basis' (Long Spot, Short Futures), you profit if:",
+    "options": [
+      "The Basis strengthens (Spot outperforms Futures)",
+      "The Basis weakens (Spot underperforms Futures)",
+      "The Basis remains zero",
+      "Both prices fall"
+    ],
+    "answer": "The Basis strengthens (Spot outperforms Futures)",
+    "hint": "Basis = Spot - Futures.",
+    "explanation": "Long Basis का मतलब है कि आपके पास Spot है और Future Short है। आप चाहते हैं कि Spot, Futures की तुलना में अधिक बढ़े, या Futures से कम गिरे (जिससे Basis बढ़े)।"
+  },
+  {
+    "id": 29,
+    "question": "Synthetic Long Bond position can be created by:",
+    "options": [
+      "Buying a Call Option + Selling a Put Option (same strike)",
+      "Buying a Put Option + Selling a Call Option",
+      "Buying a Call + Buying a Put",
+      "Selling a Call + Selling a Put"
+    ],
+    "answer": "Buying a Call Option + Selling a Put Option (same strike)",
+    "hint": "Synthetic Futures.",
+    "explanation": "Put-Call Parity के अनुसार, Long Call + Short Put बिल्कुल Long Futures/Forward position (Synthetic Long) की तरह behave करता है।"
+  },
+  {
+    "id": 30,
+    "question": "Synthetic Short Bond position can be created by:",
+    "options": [
+      "Buying a Put Option + Selling a Call Option (same strike)",
+      "Buying a Call Option + Selling a Put Option",
+      "Buying a Put + Buying a Call",
+      "Selling a Put + Selling a Call"
+    ],
+    "answer": "Buying a Put Option + Selling a Call Option (same strike)",
+    "hint": "Bearish synthetic.",
+    "explanation": "Long Put + Short Call एक Short Futures position की तरह behave करता है।"
+  },
+  {
+    "id": 31,
+    "question": "The primary objective of 'Immunization' in bond portfolio management is to:",
+    "options": [
+      "Maximize returns",
+      "Match the duration of assets and liabilities to protect against rate changes",
+      "Avoid all taxes",
+      "Invest only in T-Bills"
+    ],
+    "answer": "Match the duration of assets and liabilities to protect against rate changes",
+    "hint": "Rate changes से सुरक्षित।",
+    "explanation": "Immunization portfolio को सुरक्षित करता है ताकि interest rates में बदलाव के बावजूद उसकी value future liability obligations (भविष्य की देनदारियों) से match करे।"
+  },
+  {
+    "id": 32,
+    "question": "If a trader expects volatility to decrease, they should:",
+    "options": [
+      "Buy a Straddle",
+      "Sell a Straddle (Short Straddle)",
+      "Buy a Call",
+      "Buy a Put"
+    ],
+    "answer": "Sell a Straddle (Short Straddle)",
+    "hint": "Volatility बेचना।",
+    "explanation": "Straddle बेचना (Call और Put दोनों बेचना) एक short volatility strategy है। यह तब profit देती है जब market शांत रहता है और premiums decay (घटते) होते हैं।"
+  },
+  {
+    "id": 33,
+    "question": "Which of the following is a 'Directional' strategy?",
+    "options": [
+      "Long Call",
+      "Long Straddle",
+      "Short Straddle",
+      "Butterfly Spread"
+    ],
+    "answer": "Long Call",
+    "hint": "Market का ऊपर जाना ज़रूरी है।",
+    "explanation": "Long Call market के ऊपर जाने पर bet करता है। अन्य strategies volatility या neutral strategies हैं।"
+  },
+  {
+    "id": 34,
+    "question": "Inter-Commodity Spreads in IRF might involve trading:",
+    "options": [
+      "10-Year G-Sec Futures vs 91-Day T-Bill Futures",
+      "Gold vs Silver",
+      "G-Sec Futures vs Nifty Futures",
+      "USD-INR vs EUR-USD"
+    ],
+    "answer": "10-Year G-Sec Futures vs 91-Day T-Bill Futures",
+    "hint": "अलग-अलग interest rate instruments.",
+    "explanation": "Inter-commodity spread में अलग-अलग लेकिन related underlying assets (जैसे Long Term vs Short Term rates) के derivatives में opposite positions लेना शामिल है।"
+  },
+  {
+    "id": 35,
+    "question": "When hedging with futures, if the underlying bond is different from the deliverable bond of the futures contract, you must adjust for:",
+    "options": [
+      "Conversion Factor and Beta (Yield Beta)",
+      "The broker's commission",
+      "The weather",
+      "The stock market index"
+    ],
+    "answer": "Conversion Factor and Beta (Yield Beta)",
+    "hint": "Cross hedging.",
+    "explanation": "Cross-hedge में, आपको Conversion Factor (prices को align करने के लिए) और Beta (yield sensitivities को align करने के लिए) का उपयोग करके hedge ratio को adjust करना होता है।"
+  },
+  {
+    "id": 36,
+    "question": "Cheapest-to-Deliver (CTD) bond behavior implies that:",
+    "options": [
+      "The Futures price will track the CTD bond price most closely",
+      "The Futures price tracks the most expensive bond",
+      "The Futures price tracks the average of all bonds",
+      "The Futures price is random"
+    ],
+    "answer": "The Futures price will track the CTD bond price most closely",
+    "hint": "Sellers हमेशा सबसे सस्ता विकल्प देंगे।",
+    "explanation": "चूंकि sellers के पास CTD bond deliver करने का option होता है, इसलिए futures price theoretically CTD bond के price behavior द्वारा drive होती है।"
+  },
+  {
+    "id": 37,
+    "question": "If a trader performs a 'Cash and Carry' arbitrage but interest rates rise unexpectedly, the result is:",
+    "options": [
+      "A loss",
+      "Still a risk-free profit (locked in at start)",
+      "A reduced profit",
+      "An increased profit"
+    ],
+    "answer": "Still a risk-free profit (locked in at start)",
+    "hint": "Arbitrage 'risk-free' है।",
+    "explanation": "सही arbitrage trade execute होते ही profit lock कर लेता है। इसके बाद के market moves locked-in spread को affect नहीं करते हैं।"
+  },
+  {
+    "id": 38,
+    "question": "A 'Bull Spread' using Puts involves:",
+    "options": [
+      "Buying a Low Strike Put and Selling a High Strike Put",
+      "Buying a High Strike Put and Selling a Low Strike Put",
+      "Buying a Call and Selling a Put",
+      "Selling a Call and Buying a Put"
+    ],
+    "answer": "Buying a Low Strike Put and Selling a High Strike Put",
+    "hint": "आप चाहते हैं कि market ऊपर जाए, इसलिए आप महंगा Put बेचते हैं।",
+    "explanation": "Bull Put Spread (Credit Spread) में higher strike Put (महंगा) बेचना और lower strike Put (सस्ता) खरीदना शामिल है। यह तब profit देता है जब market ऊपर रहता है।"
+  },
+  {
+    "id": 39,
+    "question": "The 'Convergence' of Spot and Futures prices at maturity ensures that:",
+    "options": [
+      "Hedging is effective",
+      "Arbitrage is impossible at expiry",
+      "Basis becomes zero",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "hint": "Spot = Futures.",
+    "explanation": "Expiry पर, Spot, Futures के बराबर हो जाता है (Basis = 0)। यह arbitrage opportunities को खत्म करता है और hedge का converge होना सुनिश्चित करता है।"
+  },
+  {
+    "id": 40,
+    "question": "Which strategy benefits from 'Theta Decay' (Time Decay)?",
+    "options": [
+      "Option Buyers (Long Call/Put)",
+      "Option Sellers (Short Call/Put)",
+      "Futures Buyers",
+      "Futures Sellers"
+    ],
+    "answer": "Option Sellers (Short Call/Put)",
+    "hint": "समय buyer का दुश्मन और seller का दोस्त है।",
+    "explanation": "Option sellers premium collect करते हैं। जैसे-जैसे समय बीतता है, option की value कम होती जाती है (Theta decay), जिससे seller को फायदा होता है जो इसे सस्ते में वापस खरीद सकता है या इसे expire होने दे सकता है।"
+  },
+  {
+    "id": 41,
+    "question": "Dynamic Hedging involves:",
+    "options": [
+      "Setting a hedge once and leaving it",
+      "Continuously adjusting the hedge ratio as market conditions change",
+      "Hedging only 50% of the portfolio",
+      "Using only Options"
+    ],
+    "answer": "Continuously adjusting the hedge ratio as market conditions change",
+    "hint": "यह बदलता रहता है।",
+    "explanation": "Dynamic hedging में hedge (जैसे, Delta hedging) को बार-बार rebalance करना पड़ता है क्योंकि market के move होने पर sensitivities (Delta, Gamma) बदल जाती हैं।"
+  },
+  {
+    "id": 42,
+    "question": "A 'Box Spread' is an arbitrage strategy that combines:",
+    "options": [
+      "A Bull Call Spread and a Bear Put Spread",
+      "A Long Straddle and a Short Straddle",
+      "Four Calls",
+      "Four Puts"
+    ],
+    "answer": "A Bull Call Spread and a Bear Put Spread",
+    "hint": "Risk-free return lock करता है।",
+    "explanation": "Box Spread एक risk-free position बनाने के लिए समान strikes वाले Bull Call Spread और Bear Put Spread को combine करता है जिससे risk-free rate कमाया जा सके।"
+  },
+  {
+    "id": 43,
+    "question": "If you hedge a 5-year bond with a 10-year G-Sec future, you are exposed to:",
+    "options": [
+      "Currency Risk",
+      "Yield Curve Risk (Twist Risk)",
+      "Inflation Risk",
+      "Default Risk"
+    ],
+    "answer": "Yield Curve Risk (Twist Risk)",
+    "hint": "Curve का समानांतर (parallel) चलना ज़रूरी नहीं।",
+    "explanation": "चूंकि maturities अलग-अलग हैं, इसलिए 5-year और 10-year yields के बीच का spread बदल सकता है (curve steepening/flattening), जो hedge की efficiency को affect करेगा।"
+  },
+  {
+    "id": 44,
+    "question": "The primary risk of a 'Short Hedge' (Selling Futures) is:",
+    "options": [
+      "Basis Risk (Basis weakening)",
+      "Unlimited loss on the futures leg",
+      "The underlying asset defaulting",
+      "Margin calls if the market rallies"
+    ],
+    "answer": "Margin calls if the market rallies",
+    "hint": "Cash flow का जोखिम।",
+    "explanation": "हालांकि hedge value को protect करता है, लेकिन यदि market rally करता है (prices बढ़ती हैं), तो short futures position में रोज़ नुकसान होता है। Trader के पास margin calls के लिए cash होना चाहिए, भले ही underlying asset की value बढ़ रही हो।"
+  },
+  {
+    "id": 45,
+    "question": "Which of the following is an advantage of using Options for hedging over Futures?",
+    "options": [
+      "Zero cost",
+      "Linear payoff",
+      "Retaining the potential for upside profit",
+      "No expiration"
+    ],
+    "answer": "Retaining the potential for upside profit",
+    "hint": "Insurance vs Lock-in.",
+    "explanation": "Futures एक price lock कर देते हैं (loss और gain दोनों को खत्म कर देते हैं)। Options (जैसे Protective Puts) loss से बचाते हैं लेकिन market के favorable (अनुकूल) दिशा में जाने पर participation की अनुमति देते हैं।"
+  },
+  {
+    "id": 46,
+    "question": "If implied volatility is extremely high, buying options for hedging is:",
+    "options": [
+      "Expensive and potentially unattractive",
+      "Cheap and attractive",
+      "Neutral",
+      "Mandatory"
+    ],
+    "answer": "Expensive and potentially unattractive",
+    "hint": "High IV = High Premium.",
+    "explanation": "High volatility option premiums को बढ़ा देती है। Options खरीदना बहुत महंगा हो जाता है, जिससे अन्य hedging strategies (जैसे futures) अधिक attractive बन जाती हैं।"
+  },
+  {
+    "id": 47,
+    "question": "A 'Ratio Spread' involves:",
+    "options": [
+      "Buying and Selling unequal numbers of options",
+      "Buying 1 Call and Selling 1 Call",
+      "Buying equal numbers of Calls and Puts",
+      "Trading based on PE ratio"
+    ],
+    "answer": "Buying and Selling unequal numbers of options",
+    "hint": "Ratio 1:1 नहीं है।",
+    "explanation": "Ratio Spread में position को finance करने या एक specific payoff profile बनाने के लिए X options खरीदना और Y options बेचना शामिल है (जहाँ Y > X)।"
+  },
+  {
+    "id": 48,
+    "question": "To hedge floating rate borrowing, a corporate can:",
+    "options": [
+      "Buy an Interest Rate Cap",
+      "Buy an Interest Rate Floor",
+      "Sell an Interest Rate Cap",
+      "Sell Futures"
+    ],
+    "answer": "Buy an Interest Rate Cap",
+    "hint": "Interest payment पर सीमा (Cap) लगाना।",
+    "explanation": "एक Cap उस interest rate पर ceiling (अधिकतम सीमा) लगाता है जो borrower को चुकाना होता है, यदि floating rates बहुत अधिक बढ़ जाते हैं तो यह उन्हें protect करता है।"
+  },
+  {
+    "id": 49,
+    "question": "To hedge floating rate investments (lending), an investor can:",
+    "options": [
+      "Buy an Interest Rate Floor",
+      "Buy an Interest Rate Cap",
+      "Sell an Interest Rate Floor",
+      "Buy Futures"
+    ],
+    "answer": "Buy an Interest Rate Floor",
+    "hint": "Returns पर निचली सीमा (Floor) तय करना।",
+    "explanation": "एक Floor lender के लिए minimum interest rate return की guarantee देता है, यदि market floating rates बहुत नीचे गिर जाते हैं तो यह उन्हें protect करता है।"
+  },
+  {
+    "id": 50,
+    "question": "Algorithmic trading strategies in IRF often utilize:",
+    "options": [
+      "Technical indicators and statistical arbitrage signals",
+      "Gut feeling",
+      "News headlines only",
+      "Manual order entry"
+    ],
+    "answer": "Technical indicators and statistical arbitrage signals",
+    "hint": "गणित और सांख्यिकी।",
+    "explanation": "Algos (एल्गोरिदम) high speed और volume पर trades execute करने के लिए mathematical models, statistical mean reversion और technical indicators पर निर्भर करते हैं।"
+  }
+]

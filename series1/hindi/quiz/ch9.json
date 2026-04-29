@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "question": "A contract that gives the buyer the right, but not the obligation, to buy a specific quantity of currency at a specific price on a specific date is called a:",
+    "options": ["Call Option", "Put Option", "Futures Contract", "Swap"],
+    "answer": "Call Option",
+    "hint": "खरीदने का अधिकार (Right to Buy)।",
+    "explanation": "एक Call Option होल्डर को underlying asset खरीदने का अधिकार (right) देता है। यदि कीमत उनके अनुकूल (unfavorable) नहीं है, तो वे खरीदने के लिए बाध्य (obligated) नहीं होते।"
+  },
+  {
+    "id": 2,
+    "question": "A contract that gives the buyer the right, but not the obligation, to sell a specific quantity of currency at a specific price is called a:",
+    "options": ["Call Option", "Put Option", "Forward Contract", "Spot Trade"],
+    "answer": "Put Option",
+    "hint": "बेचने का अधिकार (Right to Sell)।",
+    "explanation": "एक Put Option होल्डर को Strike Price पर underlying asset बेचने का अधिकार (right) देता है।"
+  },
+  {
+    "id": 3,
+    "question": "The price at which the option holder can buy or sell the underlying currency is known as the:",
+    "options": ["Spot Price", "Strike Price (Exercise Price)", "Premium", "Future Price"],
+    "answer": "Strike Price (Exercise Price)",
+    "hint": "कॉन्ट्रैक्ट में तय (fixed) की गई कीमत।",
+    "explanation": "Strike Price वह पहले से तय (pre-determined) कीमत है जिस पर option को exercise किया जा सकता है।"
+  },
+  {
+    "id": 4,
+    "question": "The amount paid by the buyer to the seller to acquire the option is called the:",
+    "options": ["Margin", "Premium", "Strike Price", "Brokerage"],
+    "answer": "Premium",
+    "hint": "Option की लागत (cost)।",
+    "explanation": "Premium वह upfront payment (अग्रिम भुगतान) है जो option buyer द्वारा contract के अधिकारों को प्राप्त करने के लिए option seller (writer) को दिया जाता है।"
+  },
+  {
+    "id": 5,
+    "question": "Currency Options traded on NSE/BSE are of which type?",
+    "options": ["American Style", "European Style", "Asian Style", "Bermudan Style"],
+    "answer": "European Style",
+    "hint": "केवल expiry पर exercise होते हैं।",
+    "explanation": "भारत में Exchange-traded currency options 'European Style' के होते हैं, जिसका अर्थ है कि उन्हें केवल expiration date (समाप्ति तिथि) पर ही exercise किया जा सकता है।"
+  },
+  {
+    "id": 6,
+    "question": "If you buy a Call Option, your maximum loss is limited to:",
+    "options": ["Unlimited", "The Strike Price", "The Premium Paid", "The Spot Price"],
+    "answer": "The Premium Paid",
+    "hint": "सीमित नुकसान (Limited downside)।",
+    "explanation": "यदि option नुकसान दे रहा है, तो buyer बस इसे exercise न करने का विकल्प चुन सकता है। इस प्रकार, नुकसान केवल उस premium तक सीमित (limited) रहता है जो पहले ही चुकाया जा चुका है।"
+  },
+  {
+    "id": 7,
+    "question": "If you Sell (Write) a Call Option, your potential loss is:",
+    "options": ["Limited to Premium", "Unlimited", "Limited to Strike Price", "Zero"],
+    "answer": "Unlimited",
+    "hint": "Market अनिश्चित काल तक ऊपर जा सकता है।",
+    "explanation": "यदि market price, strike price से बहुत ऊपर चला जाता है, तो call writer को कम strike price पर बेचना होगा, जिससे उसे संभावित रूप से असीमित नुकसान (unlimited losses) हो सकता है।"
+  },
+  {
+    "id": 8,
+    "question": "A Call Option is 'In-the-Money' (ITM) when:",
+    "options": ["Spot Price > Strike Price", "Spot Price < Strike Price", "Spot Price = Strike Price", "Premium = 0"],
+    "answer": "Spot Price > Strike Price",
+    "hint": "जब market high (Spot) हो तब कम दाम (Strike) पर खरीदना।",
+    "explanation": "एक Call Option तब ITM होता है जब current market price (Spot), Strike price से अधिक होता है, जिसका अर्थ है कि इसमें intrinsic value (वास्तविक मूल्य) है।"
+  },
+  {
+    "id": 9,
+    "question": "A Put Option is 'In-the-Money' (ITM) when:",
+    "options": ["Spot Price > Strike Price", "Spot Price < Strike Price", "Spot Price = Strike Price", "Premium is high"],
+    "answer": "Spot Price < Strike Price",
+    "hint": "जब market low (Spot) हो तब ऊंचे दाम (Strike) पर बेचना।",
+    "explanation": "एक Put Option तब ITM होता है जब Strike Price, Spot Price से अधिक होता है, जिससे होल्डर को market से बेहतर कीमत पर बेचने की अनुमति मिलती है।"
+  },
+  {
+    "id": 10,
+    "question": "Intrinsic Value of an Out-of-the-Money (OTM) option is:",
+    "options": ["Positive", "Negative", "Zero", "Equal to Premium"],
+    "answer": "Zero",
+    "hint": "कोई वास्तविक मूल्य (real value) नहीं।",
+    "explanation": "Intrinsic value कभी negative नहीं हो सकती। यदि कोई option OTM है, तो उसकी intrinsic value शून्य (zero) होती है।"
+  },
+  {
+    "id": 11,
+    "question": "Option Premium = Intrinsic Value + ____________.",
+    "options": ["Time Value", "Spot Value", "Volatility Value", "Strike Value"],
+    "answer": "Time Value",
+    "hint": "बचे हुए समय की कीमत (Value of remaining time)।",
+    "explanation": "Premium दो चीज़ों से मिलकर बनता है: Intrinsic Value (वर्तमान लाभ) और Time Value (भविष्य में लाभ की संभावना)।"
+  },
+  {
+    "id": 12,
+    "question": "Which Greek measures the sensitivity of the option premium to changes in the Spot Price?",
+    "options": ["Delta", "Gamma", "Theta", "Vega"],
+    "answer": "Delta",
+    "hint": "कीमत (price) में बदलाव।",
+    "explanation": "Delta यह दर्शाता है कि underlying asset की कीमत में 1 यूनिट के बदलाव पर option price में कितना बदलाव होगा।"
+  },
+  {
+    "id": 13,
+    "question": "Which Greek measures the sensitivity of the option premium to changes in Volatility?",
+    "options": ["Delta", "Gamma", "Theta", "Vega"],
+    "answer": "Vega",
+    "hint": "V से Volatility।",
+    "explanation": "Vega, implied volatility (अस्थिरता) में बदलाव के जोखिम को मापता है। अधिक volatility आमतौर पर option premiums को बढ़ा देती है।"
+  },
+  {
+    "id": 14,
+    "question": "Which Greek measures the time decay of an option?",
+    "options": ["Delta", "Rho", "Theta", "Gamma"],
+    "answer": "Theta",
+    "hint": "T से Time।",
+    "explanation": "Theta उस दर (rate) को दर्शाता है जिस पर समय बीतने के साथ option अपनी value खो देता है (इसे Time Decay कहते हैं)।"
+  },
+  {
+    "id": 15,
+    "question": "If you expect the USDINR rate to rise moderately, which strategy is most appropriate?",
+    "options": ["Buy Put", "Sell Call", "Buy Call", "Sell Futures aggressively"],
+    "answer": "Buy Call",
+    "hint": "तेज़ी (Bullish) का नज़रिया।",
+    "explanation": "Call option खरीदना आपको सीमित जोखिम (limited risk) के साथ कीमत बढ़ने पर profit कमाने की अनुमति देता है।"
+  },
+  {
+    "id": 16,
+    "question": "What is a 'Straddle' strategy?",
+    "options": ["Buying a Call and a Put at different strike prices", "Buying a Call and a Put at the same strike price and expiry", "Buying a Call and Selling a Put", "Selling a Call and Buying a Future"],
+    "answer": "Buying a Call and a Put at the same strike price and expiry",
+    "hint": "दिशा (direction) पर नहीं, volatility पर दांव लगाना।",
+    "explanation": "Long Straddle में एक ही strike price पर Call और Put दोनों खरीदना शामिल है। यदि market किसी भी दिशा (EITHER direction) में बड़ा movement देता है तो आपको profit होता है।"
+  },
+  {
+    "id": 17,
+    "question": "A 'Strangle' strategy involves:",
+    "options": ["Buying Call and Put at same strike", "Buying OTM Call and OTM Put at different strikes", "Selling ITM Call and Put", "Buying Futures only"],
+    "answer": "Buying OTM Call and OTM Put at different strikes",
+    "hint": "Straddle से सस्ता।",
+    "explanation": "Long Strangle में अलग-अलग strike prices पर Out-of-the-Money Call और Out-of-the-Money Put खरीदना शामिल है। इसे profitable होने के लिए बड़े movement की आवश्यकता होती है, लेकिन इसकी लागत (cost) कम होती है।"
+  },
+  {
+    "id": 18,
+    "question": "The 'Break-even Point' for a Long Call strategy is:",
+    "options": ["Strike Price + Premium", "Strike Price - Premium", "Strike Price only", "Premium only"],
+    "answer": "Strike Price + Premium",
+    "hint": "आपको अपनी लागत (cost) वसूल करनी होगी।",
+    "explanation": "Profit कमाने के लिए, spot price को Strike Price से उतना ऊपर जाना चाहिए जितना आपने premium चुकाया है।"
+  },
+  {
+    "id": 19,
+    "question": "The 'Break-even Point' for a Long Put strategy is:",
+    "options": ["Strike Price + Premium", "Strike Price - Premium", "Strike Price only", "Spot Price"],
+    "answer": "Strike Price - Premium",
+    "hint": "कीमत को strike और cost से नीचे गिरना चाहिए।",
+    "explanation": "Put buyer को profit होने के लिए, spot price को Strike Price में से चुकाए गए premium को घटाने के बाद जो मूल्य आए, उससे नीचे गिरना चाहिए।"
+  },
+  {
+    "id": 20,
+    "question": "Who pays the margin in an Option contract?",
+    "options": ["Only the Buyer", "Only the Seller (Writer)", "Both Buyer and Seller", "Neither"],
+    "answer": "Only the Seller (Writer)",
+    "hint": "नुकसान का जोखिम (risk) किसे है?",
+    "explanation": "Option Buyer पूरा premium अग्रिम (upfront) चुकाता है और उस पर कोई आगे का दायित्व (obligation) नहीं होता। Option Seller जोखिम (risk) में होता है इसलिए उसे margin चुकाना पड़ता है।"
+  },
+  {
+    "id": 21,
+    "question": "An option with a Delta of 0.5 is typically:",
+    "options": ["At-the-Money (ATM)", "Deep In-the-Money", "Deep Out-of-the-Money", "Expired"],
+    "answer": "At-the-Money (ATM)",
+    "hint": "50/50 संभावना (chance)।",
+    "explanation": "ATM options का Delta आमतौर पर 0.5 के करीब होता है, जिसका अर्थ है कि इसके ITM expire होने की लगभग 50% probability (संभावना) है।"
+  },
+  {
+    "id": 22,
+    "question": "If Volatility increases, the value of a Call Option generally:",
+    "options": ["Increases", "Decreases", "Remains same", "Becomes zero"],
+    "answer": "Increases",
+    "hint": "ऊपर जाने के ज़्यादा चांस।",
+    "explanation": "अधिक volatility (अस्थिरता) option के ITM समाप्त होने की probability को बढ़ाती है, जिससे premium बढ़ जाता है (Vega positive होता है)।"
+  },
+  {
+    "id": 23,
+    "question": "If Volatility increases, the value of a Put Option generally:",
+    "options": ["Increases", "Decreases", "Remains same", "Becomes zero"],
+    "answer": "Increases",
+    "hint": "नीचे जाने के ज़्यादा चांस।",
+    "explanation": "Calls और Puts दोनों को उच्च volatility से लाभ होता है क्योंकि यह बड़े अनुकूल (favorable) मूव्स की संभावना को बढ़ाता है।"
+  },
+  {
+    "id": 24,
+    "question": "A 'Covered Call' involves:",
+    "options": ["Buying a Call", "Holding the underlying asset (or Long Future) and Selling a Call", "Selling a Put", "Buying a Put and a Call"],
+    "answer": "Holding the underlying asset (or Long Future) and Selling a Call",
+    "hint": "होल्डिंग पर इनकम (Income) कमाना।",
+    "explanation": "Covered Call writing एक रणनीति है जहाँ आप asset (Long Futures) के मालिक होते हैं और premium income कमाने के लिए एक Call option बेचते हैं, जिससे आपका upside profit सीमित (cap) हो जाता है।"
+  },
+  {
+    "id": 25,
+    "question": "The Put-Call Parity theory defines the relationship between:",
+    "options": ["Call Price, Put Price, Spot Price, Strike Price, and Interest Rate", "Call Price and Future Price only", "USD and INR", "Delta and Gamma"],
+    "answer": "Call Price, Put Price, Spot Price, Strike Price, and Interest Rate",
+    "hint": "सभी variables को जोड़ने वाला समीकरण (Equation)।",
+    "explanation": "Put-Call Parity यह बताती है कि: Call Premium + PV(Strike) = Put Premium + Spot Price (forwards के लिए समायोजित)।"
+  },
+  {
+    "id": 26,
+    "question": "Buying a Call Option is a ___________ strategy.",
+    "options": ["Bullish", "Bearish", "Neutral", "Arbitrage"],
+    "answer": "Bullish",
+    "hint": "कीमत ऊपर जाने की उम्मीद।",
+    "explanation": "आप Call तब खरीदते हैं जब आपको उम्मीद होती है कि market ऊपर जाएगा (Bullish)।"
+  },
+  {
+    "id": 27,
+    "question": "Buying a Put Option is a ___________ strategy.",
+    "options": ["Bullish", "Bearish", "Neutral", "Arbitrage"],
+    "answer": "Bearish",
+    "hint": "कीमत नीचे जाने की उम्मीद।",
+    "explanation": "आप Put तब खरीदते हैं जब आपको उम्मीद होती है कि market नीचे जाएगा (Bearish)।"
+  },
+  {
+    "id": 28,
+    "question": "Selling (Writing) a Call Option is a ___________ strategy.",
+    "options": ["Bullish", "Bearish / Neutral", "Volatile", "Safe"],
+    "answer": "Bearish / Neutral",
+    "hint": "दांव लगाना कि यह ऊपर नहीं जाएगा।",
+    "explanation": "Call बेचने पर लाभ तब होता है जब market सपाट (flat) रहता है या गिरता है (यानी Strike + Premium से नीचे रहता है)।"
+  },
+  {
+    "id": 29,
+    "question": "Selling (Writing) a Put Option is a ___________ strategy.",
+    "options": ["Bullish / Neutral", "Bearish", "Volatile", "Risk-free"],
+    "answer": "Bullish / Neutral",
+    "hint": "दांव लगाना कि यह नीचे नहीं गिरेगा।",
+    "explanation": "Put बेचने पर लाभ तब होता है जब market सपाट (flat) रहता है या ऊपर जाता है (यानी Strike - Premium से ऊपर रहता है)।"
+  },
+  {
+    "id": 30,
+    "question": "The lot size for USDINR Options is:",
+    "options": ["USD 100", "USD 1,000", "USD 10,000", "USD 1 Million"],
+    "answer": "USD 1,000",
+    "hint": "Futures के समान।",
+    "explanation": "भारत में exchange-traded USDINR options के लिए contract size (लॉट साइज़) USD 1,000 है।"
+  },
+  {
+    "id": 31,
+    "question": "Currency Options are settled in:",
+    "options": ["Physical Currency", "Cash (INR)", "Gold", "Foreign Bank Transfer"],
+    "answer": "Cash (INR)",
+    "hint": "Futures की तरह।",
+    "explanation": "NSE/BSE पर Currency options भारतीय रुपये (Indian Rupees) में cash-settled होते हैं।"
+  },
+  {
+    "id": 32,
+    "question": "A 'Bull Call Spread' is created by:",
+    "options": ["Buying a Lower Strike Call and Selling a Higher Strike Call", "Buying a Higher Strike Call and Selling a Lower Strike Call", "Buying a Put and Selling a Call", "Buying two Calls"],
+    "answer": "Buying a Lower Strike Call and Selling a Higher Strike Call",
+    "hint": "लागत बांटें, लाभ सीमित करें।",
+    "explanation": "आप एक Call खरीदते हैं (bullish) और इसे एक सस्ता, higher strike Call (bearish) बेचकर finance करते हैं, जिससे आपका लाभ सीमित (cap) हो जाता है लेकिन लागत कम हो जाती है।"
+  },
+  {
+    "id": 33,
+    "question": "A 'Bear Put Spread' is created by:",
+    "options": ["Buying a Higher Strike Put and Selling a Lower Strike Put", "Buying a Lower Strike Put and Selling a Higher Strike Put", "Buying a Call and Put", "Selling two Puts"],
+    "answer": "Buying a Higher Strike Put and Selling a Lower Strike Put",
+    "hint": "ITM/ATM Put खरीदना, OTM Put बेचना।",
+    "explanation": "आप एक Put खरीदते हैं (bearish) और premium लागत को कम करने के लिए एक lower strike Put बेच देते हैं।"
+  },
+  {
+    "id": 34,
+    "question": "The time value of an option is highest when the option is:",
+    "options": ["At-the-Money (ATM)", "Deep In-the-Money", "Deep Out-of-the-Money", "Expired"],
+    "answer": "At-the-Money (ATM)",
+    "hint": "अधिकतम अनिश्चितता (Maximum uncertainty)।",
+    "explanation": "ATM options के लिए Time value सबसे अधिक होती है क्योंकि यह अनिश्चितता सबसे बड़ी होती है कि यह ITM expire होगा या OTM।"
+  },
+  {
+    "id": 35,
+    "question": "Which of the following affects the option premium?",
+    "options": ["Spot Price", "Time to Expiry", "Volatility", "All of the above"],
+    "answer": "All of the above",
+    "hint": "कई कारक (Multiple factors)।",
+    "explanation": "Option pricing (Black-Scholes model) मुख्य रूप से Spot Price, Strike Price, Time, Volatility और Interest Rates पर निर्भर करता है।"
+  },
+  {
+    "id": 36,
+    "question": "If you hold a Short Straddle (Sell Call + Sell Put at same strike), you expect:",
+    "options": ["High Volatility", "Low Volatility / Range Bound Market", "Market to crash", "Market to boom"],
+    "answer": "Low Volatility / Range Bound Market",
+    "hint": "आपने options बेचे हैं, तो आप शांति (quiet) चाहते हैं।",
+    "explanation": "Short Straddle time decay (Theta) से लाभ कमाता है यदि market, strike price के पास स्थिर (stable) रहता है।"
+  },
+  {
+    "id": 37,
+    "question": "Implied Volatility (IV) represents:",
+    "options": ["Historical volatility", "The market's expectation of future volatility", "The fixed volatility", "Zero volatility"],
+    "answer": "The market's expectation of future volatility",
+    "hint": "कीमत (price) से निहित (Implied)।",
+    "explanation": "IV की गणना वर्तमान option price से की जाती है और यह दर्शाता है कि option के जीवनकाल में market कितनी volatility (अस्थिरता) की उम्मीद कर रहा है।"
+  },
+  {
+    "id": 38,
+    "question": "An option is 'Deep In-the-Money' if it has:",
+    "options": ["High Gamma", "Delta close to 1 (for Call) or -1 (for Put)", "Delta close to 0", "Zero intrinsic value"],
+    "answer": "Delta close to 1 (for Call) or -1 (for Put)",
+    "hint": "Future की तरह व्यवहार करता है।",
+    "explanation": "Deep ITM options underlying asset के साथ लगभग 1-टू-1 मूव करते हैं, इसलिए उनका Delta 1 (या -1) के करीब पहुंच जाता है।"
+  },
+  {
+    "id": 39,
+    "question": "The 'Exercise Style' of Currency Options in India is:",
+    "options": ["European", "American", "Indian", "Asian"],
+    "answer": "European",
+    "hint": "केवल expiry पर।",
+    "explanation": "भारत में Currency Options 'European Style' के रूप में मानकीकृत (Standardized) हैं।"
+  },
+  {
+    "id": 40,
+    "question": "To protect a Long Futures position from a downside move, one should:",
+    "options": ["Buy a Call", "Buy a Put (Protective Put)", "Sell a Put", "Sell a Call"],
+    "answer": "Buy a Put (Protective Put)",
+    "hint": "गिरती कीमतों के खिलाफ बीमा (Insurance)।",
+    "explanation": "Put खरीदने से एक तय कीमत (fixed price) पर बेचने का अधिकार मिलता है, जो market के क्रैश होने पर Long Futures position की रक्षा करता है।"
+  },
+  {
+    "id": 41,
+    "question": "Gamma measures the rate of change of:",
+    "options": ["Premium", "Delta", "Theta", "Vega"],
+    "answer": "Delta",
+    "hint": "त्वरण (Acceleration)।",
+    "explanation": "Gamma यह मापता है कि spot price के बदलने पर Delta कितनी तेज़ी से बदलता है। यह option price का 'curvature' (घुमाव) है।"
+  },
+  {
+    "id": 42,
+    "question": "If interest rates (INR) rise, the Call Option premium generally:",
+    "options": ["Increases", "Decreases", "No change", "Becomes negative"],
+    "answer": "Increases",
+    "hint": "Cost of carry का लॉजिक।",
+    "explanation": "उच्च घरेलू ब्याज दरें (Higher domestic interest rates) forward price को बढ़ाती हैं, जो आमतौर पर Call options की value को बढ़ा देता है (और Puts की value घटा देता है)।"
+  },
+  {
+    "id": 43,
+    "question": "Which strategy has 'Unlimited Risk'?",
+    "options": ["Long Call", "Long Put", "Short Straddle", "Bull Call Spread"],
+    "answer": "Short Straddle",
+    "hint": "Naked options बेचना।",
+    "explanation": "Short Straddle में naked Calls और Puts बेचना शामिल है। यदि market किसी भी दिशा में हिंसक रूप से (violently) चलता है, तो नुकसान असीमित (unlimited) हो सकता है।"
+  },
+  {
+    "id": 44,
+    "question": "The difference between the Bid and Ask price of an option is called:",
+    "options": ["Spread", "Margin", "Haircut", "Premium"],
+    "answer": "Spread",
+    "hint": "लेन-देन की लागत (Transaction cost)।",
+    "explanation": "Bid-Ask Spread तरलता लागत (liquidity cost) को दर्शाता है।"
+  },
+  {
+    "id": 45,
+    "question": "Options that expire 'Out-of-the-Money' are worth:",
+    "options": ["Strike Price", "Zero", "Premium paid", "Spot Price"],
+    "answer": "Zero",
+    "hint": "रद्दी कागज़ (Worthless paper)।",
+    "explanation": "यदि expiry पर किसी option की कोई intrinsic value नहीं है, तो वह बेकार (Zero value) होकर expire हो जाता है।"
+  },
+  {
+    "id": 46,
+    "question": "When you buy an option, you are:",
+    "options": ["Long Volatility", "Short Volatility", "Neutral", "Short Gamma"],
+    "answer": "Long Volatility",
+    "hint": "आप movement (हलचल) चाहते हैं।",
+    "explanation": "Option buyers को आमतौर पर लाभ तब होता है जब market में महत्वपूर्ण उतार-चढ़ाव (volatility) होता है, क्योंकि उनका नुकसान सीमित होता है लेकिन लाभ की कोई सीमा नहीं होती।"
+  },
+  {
+    "id": 47,
+    "question": "Which option has a Strike Price equal to the Spot Price?",
+    "options": ["ITM", "OTM", "ATM", "Deep OTM"],
+    "answer": "ATM",
+    "hint": "At The Money.",
+    "explanation": "At-the-Money (ATM) options का strike price वर्तमान spot price के सबसे करीब (या बराबर) होता है।"
+  },
+  {
+    "id": 48,
+    "question": "A 'Zero Cost Collar' strategy for an exporter (Long Underlying) involves:",
+    "options": ["Buying a Put and Selling a Call to offset the premium", "Buying a Call", "Selling a Put", "Buying a Future"],
+    "answer": "Buying a Put and Selling a Call to offset the premium",
+    "hint": "मुफ्त में सुरक्षा (Protection for free)।",
+    "explanation": "Exporter नुकसान से बचने (downside protection) के लिए एक Put खरीदता है और एक Call बेचकर (upside लाभ को सीमित करके) उसकी फंडिंग करता है, जिसके परिणामस्वरूप net cost शून्य (zero) या बहुत कम हो जाती है।"
+  },
+  {
+    "id": 49,
+    "question": "Rho measures sensitivity to:",
+    "options": ["Time", "Volatility", "Interest Rates", "Spot Price"],
+    "answer": "Interest Rates",
+    "hint": "R से Rates।",
+    "explanation": "Rho जोखिम-मुक्त ब्याज दर (risk-free interest rate) में बदलाव के कारण option premium में होने वाले बदलाव को मापता है।"
+  },
+  {
+    "id": 50,
+    "question": "Can Currency Options be exercised before the expiry date in India?",
+    "options": ["Yes, anytime", "No, they are European style", "Yes, on Fridays", "Only if ITM"],
+    "answer": "No, they are European style",
+    "hint": "अंत तक प्रतीक्षा करें।",
+    "explanation": "चूँकि वे European style options हैं, उन्हें समय से पहले exercise नहीं किया जा सकता; उन्हें केवल market में square off (trade) किया जा सकता है या expiry पर settle किया जा सकता है।"
+  }
+]

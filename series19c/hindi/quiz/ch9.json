@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "What does the 'Two' in the traditional 'Two and Twenty' fee model represent?",
+    "options": [
+      "A 2% entry load on all investments",
+      "An annual 2% management fee based on committed capital or AUM",
+      "A 2% tax on the fund's total profit",
+      "A 2% discount given to early investors"
+    ],
+    "answer": "An annual 2% management fee based on committed capital or AUM",
+    "hint": "यह fee manager की दिन-प्रतिदिन (day-to-day) operational costs को कवर करती है।",
+    "explanation": "Management fee आमतौर पर fund के आकार का एक fixed percentage होती है, जिसका उपयोग salaries, office space और research के भुगतान के लिए किया जाता है।"
+  },
+  {
+    "id": 2,
+    "question": "The 'Twenty' in the 'Two and Twenty' model refers to:",
+    "options": [
+      "20% annual interest on the fund's cash",
+      "20% performance fee (carried interest) on profits generated",
+      "A 20-year lock-in period for all investors",
+      "20 free trades per month"
+    ],
+    "answer": "20% performance fee (carried interest) on profits generated",
+    "hint": "यह manager की 'success fee' है।",
+    "explanation": "Carried interest fund के net profits का वह हिस्सा है जो manager को returns को अधिकतम (maximize) करने के incentive के रूप में प्राप्त होता है।"
+  },
+  {
+    "id": 3,
+    "question": "What is the primary purpose of a 'Hurdle Rate'?",
+    "options": [
+      "To speed up the investment process",
+      "To ensure investors receive a minimum return before the manager earns performance fees",
+      "To limit the number of investors in a fund",
+      "To calculate the total tax of the fund"
+    ],
+    "answer": "To ensure investors receive a minimum return before the manager earns performance fees",
+    "hint": "इसे investors के लिए 'preferred return' के रूप में सोचें।",
+    "explanation": "'Carried interest' profit-sharing mechanism शुरू होने से पहले एक hurdle rate (आमतौर पर 8-12%) को पूरा किया जाना चाहिए।"
+  },
+  {
+    "id": 4,
+    "question": "Which of the following is an 'Operating Expense' of an AIF, separate from the management fee?",
+    "options": [
+      "The manager's personal car lease",
+      "Audit fees, legal fees, and custodian charges",
+      "The cost of the manager's home office",
+      "Marketing for the manager's other funds"
+    ],
+    "answer": "Audit fees, legal fees, and custodian charges",
+    "hint": "ये विशिष्ट (specific) fund entity को चलाने की direct costs हैं।",
+    "explanation": "Operating expenses वास्तविक third-party costs हैं जो fund की legal और regulatory status को बनाए रखने के लिए आवश्यक हैं।"
+  },
+  {
+    "id": 5,
+    "question": "What does 'IRR' stand for in fund performance measurement?",
+    "options": [
+      "Interest Rate Risk",
+      "Internal Rate of Return",
+      "Investment Recovery Ratio",
+      "Incremental Return Range"
+    ],
+    "answer": "Internal Rate of Return",
+    "hint": "यह time value of money और cash flows की timing को ध्यान में रखता है।",
+    "explanation": "IRR वह annualized effective compounded return rate है जो सभी cash flows (आने और जाने वाले) के net present value को शून्य (zero) के बराबर बनाती है।"
+  },
+  {
+    "id": 6,
+    "question": "Why is 'IRR' often criticized as a sole measure of performance for Private Equity?",
+    "options": [
+      "It is too easy to calculate",
+      "It can be sensitive to the timing of early cash flows and may not reflect total cash returned",
+      "It does not account for risk",
+      "It only works for bank fixed deposits"
+    ],
+    "answer": "It can be sensitive to the timing of early cash flows and may not reflect total cash returned",
+    "hint": "यदि total profit कम भी हो, तो एक त्वरित (quick) early exit IRR को बढ़ा (inflate) सकता है।",
+    "explanation": "Managers capital calls में देरी करने के लिए bridge loans का उपयोग करके या winners से बहुत तेज़ी से exit करके IRR के साथ 'game' कर सकते हैं।"
+  },
+  {
+    "id": 7,
+    "question": "What does 'DPI' (Distributed to Paid-In Capital) measure?",
+    "options": [
+      "The total profit expected in the future",
+      "The ratio of actual cash returned to investors compared to capital called",
+      "The daily performance index",
+      "The debt-to-profit ratio"
+    ],
+    "answer": "The ratio of actual cash returned to investors compared to capital called",
+    "hint": "'Real' (असली) पैसा जो investor के बैंक खाते में आ गया है।",
+    "explanation": "DPI एक realization multiple है। 1.0 के DPI का मतलब है कि investor को अपना original capital नकद (cash) में वापस मिल गया है।"
+  },
+  {
+    "id": 8,
+    "question": "What does 'RVPI' (Residual Value to Paid-In Capital) represent?",
+    "options": [
+      "The cash already paid to investors",
+      "The estimated value of the remaining (unrealized) investments in the fund",
+      "The risk-adjusted value of the portfolio",
+      "The tax remaining to be paid"
+    ],
+    "answer": "The estimated value of the remaining (unrealized) investments in the fund",
+    "hint": "Fund द्वारा अभी भी hold की गई चीज़ों की 'paper value'।",
+    "explanation": "RVPI total capital called के सापेक्ष (relative) fund की शेष holdings की current Net Asset Value (NAV) को मापता है।"
+  },
+  {
+    "id": 9,
+    "question": "The sum of 'DPI' and 'RVPI' is known as:",
+    "options": [
+      "IRR",
+      "TVPI (Total Value to Paid-In Capital)",
+      "Alpha",
+      "Sharpe Ratio"
+    ],
+    "answer": "TVPI (Total Value to Paid-In Capital)",
+    "hint": "यह fund के लिए total 'multiple of money' है।",
+    "explanation": "TVPI = (Cash Returned + Remaining Paper Value) / Total Capital Called। यह total potential gain को दर्शाता है।"
+  },
+  {
+    "id": 10,
+    "question": "A 'J-Curve' in AIF performance refers to:",
+    "options": [
+      "A fund that only invests in the Japanese market",
+      "The tendency of funds to show negative returns in early years due to fees/setup costs before turning positive",
+      "A straight line growth curve",
+      "A curve that shows a sudden crash"
+    ],
+    "answer": "The tendency of funds to show negative returns in early years due to fees/setup costs before turning positive",
+    "hint": "'J' अक्षर का आकार।",
+    "explanation": "शुरुआती वर्षों में, fees और startup costs निवेश से होने वाले लाभ (investment gains) को पार कर जाते हैं, जिससे capital appreciation शुरू होने से पहले value में प्रारंभिक गिरावट (initial dip) आती है।"
+  },
+  {
+    "id": 11,
+    "question": "What is 'Carried Interest'?",
+    "options": [
+      "The interest carried over to the next financial year",
+      "The share of profits (usually 20%) that the manager receives",
+      "The interest paid on a fund's debt",
+      "The commission paid to the RTA"
+    ],
+    "answer": "The share of profits (usually 20%) that the manager receives",
+    "hint": "'Carry' (कैरी)।",
+    "explanation": "यह एक incentive fee है जो manager के हितों (interests) को investors के साथ align करती है।"
+  },
+  {
+    "id": 12,
+    "question": "What is the 'Catch-up' provision in a distribution waterfall?",
+    "options": [
+      "A meeting to catch up on fund news",
+      "A clause allowing the manager to receive a higher share of profits until they reach their 20% total profit share",
+      "A penalty for late payment of capital calls",
+      "The process of catching up to the benchmark"
+    ],
+    "answer": "A clause allowing the manager to receive a higher share of profits until they reach their 20% total profit share",
+    "hint": "यह hurdle पूरा होने के बाद होता है।",
+    "explanation": "एक बार जब investors को उनका capital और hurdle मिल जाता है, तो manager अब तक बांटे गए total profits का अपना सहमत प्रतिशत (agreed percentage) पाने के लिए 'catches up' (बराबरी) करता है।"
+  },
+  {
+    "id": 13,
+    "question": "In a 'Hard Hurdle' structure:",
+    "options": [
+      "The manager gets paid only on the return above the hurdle",
+      "The manager is paid on the entire return once the hurdle is met",
+      "The hurdle rate is 20%",
+      "There is no performance fee"
+    ],
+    "answer": "The manager gets paid only on the return above the hurdle",
+    "hint": "Manager के लिए high fee कमाना कठिन होता है।",
+    "explanation": "Hard hurdle में, investor के लिए base return (hurdle) का कड़ाई से (strictly) बचाव किया जाता है।"
+  },
+  {
+    "id": 14,
+    "question": "In a 'Soft Hurdle' structure with a catch-up:",
+    "options": [
+      "The hurdle is optional",
+      "Once the hurdle is met, the manager is entitled to fees on the entire return",
+      "The manager is only paid if the market is soft",
+      "Fees are calculated daily"
+    ],
+    "answer": "Once the hurdle is met, the manager is entitled to fees on the entire return",
+    "hint": "Hurdle केवल total profit sharing को खोलने के लिए एक 'gate' (द्वार) है।",
+    "explanation": "Soft hurdle manager को minimum threshold पार करने के बाद total profit पर अपना 20% कमाने की अनुमति देता है।"
+  },
+  {
+    "id": 15,
+    "question": "What is 'Clawback'?",
+    "options": [
+      "The manager's right to take more money later",
+      "The obligation of the manager to return excess performance fees if the fund's overall performance drops later",
+      "A tax refund from the government",
+      "The act of closing the fund"
+    ],
+    "answer": "The obligation of the manager to return excess performance fees if the fund's overall performance drops later",
+    "hint": "शुरुआती 'lucky' जीत के लिए अधिक भुगतान (overpayment) को रोकता है।",
+    "explanation": "Clawback यह सुनिश्चित करके investors की रक्षा करता है कि manager की total carry, total fund lifecycle performance से मेल खाती है।"
+  },
+  {
+    "id": 16,
+    "question": "Which metric is the best indicator of a fund's actual cash-on-cash performance for an investor?",
+    "options": [
+      "Management Fee",
+      "DPI",
+      "RVPI",
+      "AUM"
+    ],
+    "answer": "DPI",
+    "hint": "Distributions बनाम Paid-in।",
+    "explanation": "DPI यह दर्शाता है कि जितना पैसा लगाया गया था उसकी तुलना में कितना actual hard cash वापस किया गया है।"
+  },
+  {
+    "id": 17,
+    "question": "What is 'Net IRR'?",
+    "options": [
+      "The IRR before fees",
+      "The IRR calculated after deducting management fees, expenses, and carried interest",
+      "The IRR of only the successful deals",
+      "The IRR including taxes"
+    ],
+    "answer": "The IRR calculated after deducting management fees, expenses, and carried interest",
+    "hint": "Investor को वास्तव में क्या प्राप्त होता है।",
+    "explanation": "Net IRR वह performance metric है जो वास्तव में investors के लिए मायने रखता है क्योंकि यह सभी leakage (fees/expenses) को ध्यान में रखता है।"
+  },
+  {
+    "id": 18,
+    "question": "A TVPI of 2.5x means:",
+    "options": [
+      "The fund returned 2.5% per year",
+      "The total value (cash returned + paper value) is 2.5 times the capital invested",
+      "The fund lost 2.5% of its value",
+      "The manager is paid 2.5% in fees"
+    ],
+    "answer": "The total value (cash returned + paper value) is 2.5 times the capital invested",
+    "hint": "पैसे का एक 'multiple' (गुना)।",
+    "explanation": "यह इंगित (indicates) करता है कि निवेश किए गए प्रत्येक 1 रुपये (INR 1) के लिए, fund वर्तमान में 2.5 रुपये की value का प्रतिनिधित्व करता है।"
+  },
+  {
+    "id": 19,
+    "question": "Management fees in the later years of a close-ended AIF are often based on ________ instead of committed capital.",
+    "options": [
+      "Total Profit",
+      "Invested Capital (Cost of active investments)",
+      "The manager's salary",
+      "Zero"
+    ],
+    "answer": "Invested Capital (Cost of active investments)",
+    "hint": "जैसे-जैसे fund assets बेचता है, fee base सिकुड़ना (shrink) चाहिए।",
+    "explanation": "'Investment Period' समाप्त होने के बाद, fees आमतौर पर कम हो जाती हैं या केवल 'live' deals में बचे हुए capital पर ही charge की जाती हैं।"
+  },
+  {
+    "id": 20,
+    "question": "What is 'Benchmark' in fund performance?",
+    "options": [
+      "A seat in the office",
+      "A standard (like a market index or peer group) used to compare the fund's performance",
+      "The maximum return possible",
+      "The minimum tax rate"
+    ],
+    "answer": "A standard (like a market index or peer group) used to compare the fund's performance",
+    "hint": "हराने (beat) के लिए 'target' (लक्ष्य)।",
+    "explanation": "Benchmarking निवेशकों को यह निर्धारित (determine) करने में मदद करता है कि क्या manager अन्य विकल्पों की तुलना में value (Alpha) जोड़ रहा है।"
+  },
+  {
+    "id": 21,
+    "question": "High-Water Mark (HWM) is most commonly used in which category of AIFs?",
+    "options": [
+      "Category I",
+      "Category II",
+      "Category III (Hedge Funds)",
+      "Angel Funds"
+    ],
+    "answer": "Category III (Hedge Funds)",
+    "hint": "उन funds के लिए उपयोग किया जाता है जिनमें frequent (दैनिक/मासिक) NAV calculations होते हैं।",
+    "explanation": "HWM सुनिश्चित करता है कि hedge fund managers को केवल new gains पर भुगतान मिले, न कि पिछले नुकसान (losses) की भरपाई के लिए।"
+  },
+  {
+    "id": 22,
+    "question": "What is 'Gross IRR'?",
+    "options": [
+      "The IRR including taxes",
+      "The IRR of the underlying portfolio companies before fund-level fees and expenses",
+      "A very low IRR",
+      "The IRR of the worst deal"
+    ],
+    "answer": "The IRR of the underlying portfolio companies before fund-level fees and expenses",
+    "hint": "Investments की raw performance।",
+    "explanation": "Gross IRR deals चुनने में manager के skill को दर्शाता है, जबकि Net IRR investor के actual outcome को दर्शाता है।"
+  },
+  {
+    "id": 23,
+    "question": "The difference between Gross IRR and Net IRR is known as the:",
+    "options": [
+      "Alpha",
+      "Fee Drag (or Friction)",
+      "Sharpe Ratio",
+      "Standard Deviation"
+    ],
+    "answer": "Fee Drag (or Friction)",
+    "hint": "Costs के कारण होने वाला 'leakage' (रिसाव)।",
+    "explanation": "यह 'drag' (खिंचाव), management fees, performance fees और operating expenses के कुल प्रभाव (impact) का प्रतिनिधित्व करता है।"
+  },
+  {
+    "id": 24,
+    "question": "Performance benchmarking for AIFs in India is mandatory as per:",
+    "options": [
+      "Income Tax Act",
+      "SEBI Guidelines",
+      "Companies Act",
+      "RBI Circular"
+    ],
+    "answer": "SEBI Guidelines",
+    "hint": "Market regulator का शासनादेश (mandate)।",
+    "explanation": "SEBI ने AIF industry में पारदर्शिता (transparency) लाने के लिए standardized benchmarking शुरू किया है।"
+  },
+  {
+    "id": 25,
+    "question": "Which of the following is a 'Realization Event' in an AIF?",
+    "options": [
+      "Hiring a new employee",
+      "An IPO or trade sale of an investee company",
+      "The end of the financial year",
+      "Sending a newsletter"
+    ],
+    "answer": "An IPO or trade sale of an investee company",
+    "hint": "जब paper value वास्तविक (actual) cash में बदल जाती है।",
+    "explanation": "Realization event तब होता है जब fund किसी asset को बेचता है और investors को वितरित (distribute) करने के लिए cash proceeds प्राप्त करता है।"
+  },
+  {
+    "id": 26,
+    "question": "What is 'Drawdown' in the context of AIF fees?",
+    "options": [
+      "A decrease in fees",
+      "The calling of committed capital from investors",
+      "A refund of fees",
+      "The closure of a fund"
+    ],
+    "answer": "The calling of committed capital from investors",
+    "hint": "'Capital Call'।",
+    "explanation": "Fees की गणना अक्सर first drawdown या first closing की तारीख से की जाती है।"
+  },
+  {
+    "id": 27,
+    "question": "The 'Placement Fee' or 'Distribution Fee' is usually paid to:",
+    "options": [
+      "The Auditor",
+      "Intermediaries (Bankers/Wealth Managers) who bring investors to the fund",
+      "The Investee company",
+      "SEBI"
+    ],
+    "answer": "Intermediaries (Bankers/Wealth Managers) who bring investors to the fund",
+    "hint": "'Sales' (बिक्री) कमीशन।",
+    "explanation": "Placement agents को संभावित LPs (limited partners) के लिए fund की marketing करने के लिए fee का भुगतान किया जाता है।"
+  },
+  {
+    "id": 28,
+    "question": "What is the 'Public Market Equivalent' (PME) metric?",
+    "options": [
+      "The name of a new index",
+      "A method to compare a private fund's performance to a public index like the Nifty 50",
+      "A type of government bond",
+      "The price of gold"
+    ],
+    "answer": "A method to compare a private fund's performance to a public index like the Nifty 50",
+    "hint": "Apples (Private) की तुलना Oranges (Public) से करना।",
+    "explanation": "PME investors को यह समझने में मदद करता है कि क्या AIF में पैसा lock करने के बजाय stock market में निवेश करना उनके लिए बेहतर होता।"
+  },
+  {
+    "id": 29,
+    "question": "A 'Whole-of-Fund' waterfall means the manager gets carry only after:",
+    "options": [
+      "The first deal is sold",
+      "Investors receive their entire capital commitment back from all deals",
+      "The manager says so",
+      "Every year ends"
+    ],
+    "answer": "Investors receive their entire capital commitment back from all deals",
+    "hint": "Investor-friendly (निवेशक-अनुकूल) waterfall।",
+    "explanation": "इसे 'European Waterfall' भी कहा जाता है, जहाँ manager द्वारा लाभ का कोई भी हिस्सा लेने से पहले पूरे fund का capital वापस किया जाता है।"
+  },
+  {
+    "id": 30,
+    "question": "A 'Deal-by-Deal' waterfall means the manager earns carry:",
+    "options": [
+      "Only at the very end of the fund",
+      "On each individual successful investment, regardless of other losses in the fund",
+      "Once a month",
+      "Only if they work hard"
+    ],
+    "answer": "On each individual successful investment, regardless of other losses in the fund",
+    "hint": "Manager-friendly waterfall (American style)।",
+    "explanation": "हालांकि अमेरिका में यह आम है, लेकिन यह investors के लिए अधिक risk वाला है, यही कारण है कि यहाँ 'Clawback' provisions आवश्यक हैं।"
+  },
+  {
+    "id": 31,
+    "question": "What is 'Skin in the Game' in an AIF?",
+    "options": [
+      "The manager's physical fitness",
+      "The Sponsor/Manager's own capital investment in the fund",
+      "The tax paid on luxury goods",
+      "The total debt of the fund"
+    ],
+    "answer": "The Sponsor/Manager's own capital investment in the fund",
+    "hint": "यह सुनिश्चित करने के लिए कि यदि investors हारते हैं तो वे भी हारें।",
+    "explanation": "SEBI के अनुसार sponsors को fund में निरंतर हित (continuing interest - जैसे 2.5% या 5%) बनाए रखना आवश्यक है।"
+  },
+  {
+    "id": 32,
+    "question": "What is 'Dry Powder'?",
+    "options": [
+      "Money spent on office supplies",
+      "Uncalled capital commitments available for future investments",
+      "A fund that has lost its value",
+      "Profit that hasn't been taxed"
+    ],
+    "answer": "Uncalled capital commitments available for future investments",
+    "hint": "Fund का 'ammunition' (गोला-बारूद)।",
+    "explanation": "Dry powder नए assets खरीदने के लिए manager के पास मौजूद potential 'firepower' का प्रतिनिधित्व करता है।"
+  },
+  {
+    "id": 33,
+    "question": "What does a Sharpe Ratio measure for a Category III AIF?",
+    "options": [
+      "Total return",
+      "Risk-adjusted return (Excess return over risk-free rate per unit of volatility)",
+      "The number of trades",
+      "The manager's age"
+    ],
+    "answer": "Risk-adjusted return (Excess return over risk-free rate per unit of volatility)",
+    "hint": "उच्चतर (Higher) बेहतर है।",
+    "explanation": "यह निर्धारित (determine) करने में मदद करता है कि क्या AIF का higher returns कौशल (skill) के कारण है या केवल अत्यधिक (excessive) risks लेने के कारण है।"
+  },
+  {
+    "id": 34,
+    "question": "The 'Management Fee' is usually GST ________.",
+    "options": [
+      "Exempt",
+      "Applicable",
+      "Zero-rated",
+      "Optional"
+    ],
+    "answer": "Applicable",
+    "hint": "यह एक service fee है।",
+    "explanation": "भारत में, management fees को supply of services माना जाता है और इस पर GST (आमतौर पर 18%) लगता है।"
+  },
+  {
+    "id": 35,
+    "question": "What is 'NAV' (Net Asset Value)?",
+    "options": [
+      "The total profit of the fund",
+      "Total Assets minus Total Liabilities, divided by the number of units",
+      "The price of the manager's desk",
+      "The tax rate on the fund"
+    ],
+    "answer": "Total Assets minus Total Liabilities, divided by the number of units",
+    "hint": "प्रति unit 'price' (कीमत)।",
+    "explanation": "NAV एक investor को fund में उनकी व्यक्तिगत हिस्सेदारी (individual stake) का current market value बताता है।"
+  },
+  {
+    "id": 36,
+    "question": "A 'Performance Fee' is typically calculated on ________ basis for Category III AIFs.",
+    "options": [
+      "Daily",
+      "Quarterly or Annual",
+      "Decade",
+      "Once at the end of life"
+    ],
+    "answer": "Quarterly or Annual",
+    "hint": "आमतौर पर audit या valuation cycle से मेल खाता है।",
+    "explanation": "Category III funds में आमतौर पर high-water marks होते हैं और वे साल में एक बार performance fees को crystallize करते हैं।"
+  },
+  {
+    "id": 37,
+    "question": "Which provider usually handles the calculation of the NAV and fees for an AIF?",
+    "options": [
+      "The Sponsor",
+      "The Fund Administrator or RTA",
+      "The local Bank",
+      "The Investee company"
+    ],
+    "answer": "The Fund Administrator or RTA",
+    "hint": "'Middle-office' या 'Back-office'।",
+    "explanation": "हालांकि manager इसकी देखरेख (oversees) करता है, लेकिन सटीकता (accuracy) सुनिश्चित करने के लिए specialized fund accountants सटीक संख्याओं की गणना करते हैं।"
+  },
+  {
+    "id": 38,
+    "question": "What is 'Crystallization' of fees?",
+    "options": [
+      "Turning money into crystals",
+      "The point at which a performance fee is officially earned and becomes payable to the manager",
+      "The closing of the fund",
+      "A tax audit"
+    ],
+    "answer": "The point at which a performance fee is officially earned and becomes payable to the manager",
+    "hint": "जब 'paper profit share' manager के लिए 'real cash' में बदल जाता है।",
+    "explanation": "Crystallization आमतौर पर सालाना या किसी investor के exit होने पर होता है।"
+  },
+  {
+    "id": 39,
+    "question": "What is the 'Expense Ratio'?",
+    "options": [
+      "The total return divided by expenses",
+      "The percentage of fund assets used to cover operating and management costs",
+      "The tax paid on expenses",
+      "The cost of the manager's office"
+    ],
+    "answer": "The percentage of fund assets used to cover operating and management costs",
+    "hint": "Investment की 'Cost' (लागत)।",
+    "explanation": "एक कम expense ratio आम तौर पर investor के लिए बेहतर होता है क्योंकि इससे higher net returns प्राप्त होते हैं।"
+  },
+  {
+    "id": 40,
+    "question": "In AIF reporting, 'Since Inception' returns refer to:",
+    "options": [
+      "Returns of only this year",
+      "The performance from the very first day the fund started until today",
+      "Future predicted returns",
+      "The manager's career returns"
+    ],
+    "answer": "The performance from the very first day the fund started until today",
+    "hint": "Fund का पूरा जीवन (whole life)।",
+    "explanation": "यह fund के track record का एक long-term view प्रदान करता है।"
+  },
+  {
+    "id": 41,
+    "question": "What does a 'Multiple of Invested Capital' (MOIC) of 3.0x mean?",
+    "options": [
+      "The fund grew by 3%",
+      "The fund's value is 3 times the amount of money put into deals",
+      "The fund has 3 investors",
+      "The manager is paid 3% fees"
+    ],
+    "answer": "The fund's value is 3 times the amount of money put into deals",
+    "hint": "TVPI का एक सरल संस्करण (simpler version) जो केवल लगाए गए पैसे पर केंद्रित है।",
+    "explanation": "MOIC एक आम metric है जिसका उपयोग यह देखने के लिए किया जाता है कि manager ने खर्च किए गए cash से कितनी 'gross' value बनाई है।"
+  },
+  {
+    "id": 42,
+    "question": "In a distribution waterfall, who gets paid FIRST?",
+    "options": [
+      "The Manager (Performance fee)",
+      "The Investors (Capital Return)",
+      "The Sponsor (Profit share)",
+      "The Auditor"
+    ],
+    "answer": "The Investors (Capital Return)",
+    "hint": "Capital पर return से पहले capital की वापसी।",
+    "explanation": "Standard practice यह है कि manager द्वारा लाभ (profits) में हिस्सा लेना शुरू करने से पहले investor का original पैसा वापस कर दिया जाए।"
+  },
+  {
+    "id": 43,
+    "question": "Which of the following describes 'Management Fee Offset'?",
+    "options": [
+      "The manager not being paid",
+      "Reducing the management fee by the amount of other fees (like board fees) the manager earns from investee companies",
+      "Paying fees in installments",
+      "Using debt to pay fees"
+    ],
+    "answer": "Reducing the management fee by the amount of other fees (like board fees) the manager earns from investee companies",
+    "hint": "Manager द्वारा 'double-dipping' (दोहरे लाभ) को रोकता है।",
+    "explanation": "यदि कोई manager उन कंपनियों से extra fees कमाता है जिनमें fund निवेश करता है, तो उन fees का उपयोग अक्सर fund के investors के बिल (लागत) को कम करने के लिए किया जाता है।"
+  },
+  {
+    "id": 44,
+    "question": "What is the 'Investment Period'?",
+    "options": [
+      "The entire life of the fund",
+      "The early years (usually 3-5) during which the manager can make new investments",
+      "The time it takes to sign a contract",
+      "The time spent at a board meeting"
+    ],
+    "answer": "The early years (usually 3-5) during which the manager can make new investments",
+    "hint": "'Buying' (खरीददारी) चरण (phase)।",
+    "explanation": "इस अवधि के समाप्त होने के बाद, manager आमतौर पर capital का उपयोग केवल follow-on investments या expenses का भुगतान करने के लिए कर सकता है, नए deals के लिए नहीं।"
+  },
+  {
+    "id": 45,
+    "question": "Performance-based fees in Category I and II AIFs are usually calculated on ________ basis.",
+    "options": [
+      "Unrealized (Paper) Profit",
+      "Realized (Cash) Profit",
+      "Total Assets",
+      "Committed Capital"
+    ],
+    "answer": "Realized (Cash) Profit",
+    "hint": "जब cash आता है तो manager को भुगतान किया जाता है।",
+    "explanation": "चूँकि ये funds illiquid हैं, इसलिए यह standard है कि exit होने और cash उपलब्ध होने पर ही carry का भुगतान किया जाए।"
+  },
+  {
+    "id": 46,
+    "question": "Which of the following reduces the TVPI of a fund?",
+    "options": [
+      "A portfolio company going bankrupt",
+      "A portfolio company going IPO",
+      "Collecting more capital calls",
+      "Distributing cash to investors"
+    ],
+    "answer": "A portfolio company going bankrupt",
+    "hint": "Value का नुकसान (Loss)।",
+    "explanation": "Asset value का कोई भी स्थायी नुकसान (permanent loss) सीधे fund के total value multiple को कम करता है।"
+  },
+  {
+    "id": 47,
+    "question": "What is a 'Side Pocket'?",
+    "options": [
+      "The manager's pocket",
+      "A separate account within a fund used to isolate illiquid or 'stressed' assets",
+      "A hidden fee",
+      "An extra investor"
+    ],
+    "answer": "A separate account within a fund used to isolate illiquid or 'stressed' assets",
+    "hint": "खराब या फंसी हुई (stuck) assets को 'park' करने के लिए उपयोग किया जाता है ताकि main fund जारी रह सके।",
+    "explanation": "Side pocketing यह सुनिश्चित करती है कि नए या बाहर निकलने वाले (exiting) investors उन assets से अनुचित रूप से प्रभावित (unfairly impacted) न हों जिनकी value तय करना या बेचना मुश्किल है।"
+  },
+  {
+    "id": 48,
+    "question": "Why is 'Time-Weighted Return' (TWR) used for Category III AIFs (Hedge Funds)?",
+    "options": [
+      "Because they only invest in watches",
+      "To measure the manager's performance without the impact of the timing of investor inflows/outflows",
+      "Because it is the easiest math",
+      "Because SEBI says so"
+    ],
+    "answer": "To measure the manager's performance without the impact of the timing of investor inflows/outflows",
+    "hint": "Manager के skill पर केंद्रित है, न कि investors की timing पर।",
+    "explanation": "TWR उन open-ended funds के लिए standard है जहाँ investors अलग-अलग समय पर प्रवेश/निकास (enter/exit) कर सकते हैं।"
+  },
+  {
+    "id": 49,
+    "question": "Which document lists the exact fee percentages and distribution waterfall?",
+    "options": [
+      "The Newspaper",
+      "The Private Placement Memorandum (PPM)",
+      "The manager's LinkedIn profile",
+      "The bank statement"
+    ],
+    "answer": "The Private Placement Memorandum (PPM)",
+    "hint": "Fund की 'legal bible' (कानूनी ग्रंथ)।",
+    "explanation": "PPM कानूनी रूप से बाध्यकारी (legally binding) disclosure document है जिसे हर investor को पढ़ना और sign करना चाहिए।"
+  },
+  {
+    "id": 50,
+    "question": "What is the 'Exit Load'?",
+    "options": [
+      "The weight of the documents when leaving",
+      "A fee charged to an investor for withdrawing money from the fund before a certain time",
+      "The profit made at exit",
+      "The tax paid when selling"
+    ],
+    "answer": "A fee charged to an investor for withdrawing money from the fund before a certain time",
+    "hint": "Open-ended Category III funds में आम है।",
+    "explanation": "Exit loads short-term trading को हतोत्साहित (discourage) करते हैं और exiting investor को भुगतान करने के लिए assets को liquidate करने की लागत (costs) को कवर करने में मदद करते हैं।"
+  }
+]

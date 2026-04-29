@@ -1,0 +1,79 @@
+{
+  "course": "NISM Series XXI-B: Portfolio Managers Certification Examination",
+  "unit_number": 16,
+  "unit_name": "Introduction to Capital Market Theory",
+  "weightage": "5 Marks",
+  "overview": "Capital Market Theory (CMT), Modern Portfolio Theory (MPT) का तार्किक विस्तार (logical extension) है। जहाँ MPT एक individual को बताता है कि portfolio कैसे बनाया जाए, वहीं CMT यह देखता है कि जब हर कोई उन नियमों का पालन करता है तो *पूरा market* assets की कीमत (price) कैसे तय करता है। यह unit प्रसिद्ध Capital Asset Pricing Model (CAPM) का परिचय देता है, जो हमें यह समझने में मदद करता है कि कुछ stocks दूसरों की तुलना में अधिक returns क्यों देते हैं। NISM exam के लिए, आपको CML और SML के बीच के अंतर में महारत हासिल करनी होगी और systematic risk को मापने वाले 'Beta' के concept को समझना होगा।",
+  
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Capital Market Line (CML)",
+      "basic_meaning": "वह line जो 'efficient' portfolios के लिए total risk और expected return के बीच संबंध (relationship) दिखाती है।",
+      "detailed_explanation": "जब हम mix में एक **Risk-Free Asset** (जैसे Govt Bond) पेश करते हैं, तो CML 'नया' efficient frontier बन जाता है। \n- **The Risk-Free Point:** यह line Y-axis पर Risk-Free Rate ($R_f$) से शुरू होती है। \n- **The Market Portfolio:** यह line मूल MPT efficient frontier को 'Market Portfolio' point ($M$) पर छूती है (touch करती है)। \n- **Lending and Borrowing:** Investors अब इस सीधी line (straight line) पर किसी भी point तक पहुँचने के लिए पैसे lend (उधार देना - bonds खरीदना) या borrow (उधार लेना - leverage) कर सकते हैं। \n- **Total Risk:** CML X-axis पर **Standard Deviation** का उपयोग करता है क्योंकि यह पूरे, diversified portfolios पर लागू होता है।",
+      "why_this_is_important": "यह हमें बताता है कि हर किसी को एक ही 'Market Portfolio' hold करना चाहिए और सिर्फ अपनी risk tolerance के आधार पर अपने cash levels को बदलना चाहिए।",
+      "formula": "लागू नहीं (Not Applicable)",
+      "formula_explanation": "लागू नहीं (Not Applicable)",
+      "step_by_step_calculation_example": "लागू नहीं (Not Applicable)",
+      "real_life_indian_example": "अगर India में risk-free rate 7% (G-Sec) है, तो CML वहाँ से शुरू होता है। अगर कोई manager Nifty 50 index खरीदता है और उसमें कुछ G-Secs जोड़ता है, तो वे CML के साथ आगे बढ़ रहे हैं।",
+      "exam_traps": [
+        "CML केवल **Efficient Portfolios** पर लागू होता है। यह individual stocks पर लागू नहीं होता क्योंकि उनमें unsystematic risk होता है।",
+        "X-axis को लेकर confuse होना। CML के लिए, यह हमेशा **Standard Deviation** (Total Risk) होता है।"
+      ],
+      "memory_trick": "CML = Comprehensive (Total) Risk for Portfolios."
+    },
+    {
+      "concept": "2. Security Market Line (SML)",
+      "basic_meaning": "वह line जो किसी भी security या portfolio के लिए 'Systematic Risk' (Beta) और return के बीच संबंध दिखाती है।",
+      "detailed_explanation": "SML **Capital Asset Pricing Model (CAPM)** का graphical version है। \n- **Applicability:** CML के विपरीत, SML **हर** security पर लागू होता है, चाहे वह एक single stock हो या पूरा portfolio। \n- **X-Axis:** यह risk को मापने के लिए **Beta** का उपयोग करता है। \n- **Pricing:** एक efficient market में, हर stock को इस line पर होना चाहिए। अगर कोई stock line के *ऊपर (above)* है, तो वह 'Undervalued' (सस्ता) है (अपने risk के लिए अधिक return दे रहा है)। अगर *नीचे (below)* है, तो यह 'Overvalued' (महंगा) है।",
+      "why_this_is_important": "यह check करने के लिए इस्तेमाल किया जाने वाला primary tool है कि किसी stock का price उसके risk के आधार पर 'fair' (उचित) है या नहीं।",
+      "formula": "Required Return = R_f + Beta × (R_m - R_f)",
+      "formula_explanation": "आप Risk-Free rate PLUS एक premium के हक़दार हैं, जो इस बात पर आधारित है कि आपका stock market के प्रति कितना react करता है (Beta)।",
+      "step_by_step_calculation_example": "Risk-Free Rate ($R_f$) = 7%. Market Return ($R_m$) = 12%. Stock Beta = 1.2.\nRequired Return = 7% + 1.2 × (12% - 7%) \n= 7% + 1.2 × (5%) \n= 7% + 6% = 13%. \nMeaning: अगर stock केवल 11% दे रहा है, तो यह overvalued है और आपको इसे नहीं खरीदना चाहिए।",
+      "real_life_indian_example": "High-growth tech stocks में अक्सर high Beta (जैसे, 1.5) होता है, इसलिए SML के अनुसार, उन्हें low Beta (जैसे, 0.7) वाले एक stable FMCG stock की तुलना में बहुत अधिक returns देने होंगे।",
+      "exam_traps": [
+        "यह सोचना कि SML केवल portfolios के लिए है। नहीं, SML **Individual Securities** के लिए भी है।",
+        "X-axis को लेकर confuse होना। SML के लिए, यह हमेशा **Beta** होता है।"
+      ],
+      "memory_trick": "SML = Specific stocks/securities."
+    },
+    {
+      "concept": "3. Understanding Beta ($\\beta$)",
+      "basic_meaning": "इस बात का माप कि जब पूरा market move करता है तो कोई stock कितना move करता है।",
+      "detailed_explanation": "Beta **Systematic Risk** को मापता है—वह risk जिसे आप diversify करके नहीं हटा सकते। \n- **$\\beta = 1.0$:** Stock बिल्कुल market के साथ move करता है (जैसे, एक Index Fund)। \n- **$\\beta > 1.0$:** 'Aggressive' (आक्रामक) stock। यह market से ज्यादा volatile है (जैसे, Banking या Tech)। \n- **$\\beta < 1.0$:** 'Defensive' (रक्षात्मक) stock। यह market से कम volatile है (जैसे, Pharma या FMCG)। \n- **$\\beta = 0$:** Asset का market से कोई संबंध नहीं है (जैसे, Cash या Risk-free bond)।",
+      "why_this_is_important": "यह एकमात्र risk है जिसे market वास्तव में extra returns के साथ 'reward' (ईनाम) देता है।",
+      "formula": "लागू नहीं (Not Applicable)",
+      "formula_explanation": "लागू नहीं (Not Applicable)",
+      "step_by_step_calculation_example": "अगर Nifty 10% गिरता है, तो 1.5 Beta वाले stock के 15% गिरने की उम्मीद है। अगर Nifty 10% बढ़ता है, तो इसके 15% बढ़ने की उम्मीद है।",
+      "real_life_indian_example": "Tata Motors जैसे stocks में अक्सर high Betas होते हैं, जबकि HUL या ITC जैसे stocks में अक्सर lower Betas होते हैं।",
+      "exam_traps": [
+        "यह सोचना कि Beta total risk मापता है। यह केवल **Systematic (Market) Risk** को मापता है।",
+        "यह मान लेना कि negative Beta असंभव है। यह rare है, लेकिन कुछ assets (जैसे कुछ 'inverse' ETFs) में negative Beta हो सकता है।"
+      ],
+      "memory_trick": "Beta = Benchmarking to Market."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "CML vs. SML",
+      "clear_explanation": "**CML:** X-axis पर Standard Deviation (Total Risk) का उपयोग करता है और केवल efficient portfolios पर लागू होता है। \n**SML:** Beta (Systematic Risk) का उपयोग करता है और सभी individual stocks और portfolios पर लागू होता है।"
+    },
+    {
+      "difference_between": "Lending Portfolio vs. Borrowing Portfolio",
+      "clear_explanation": "**Lending portfolio:** वह है जहाँ आप कुछ पैसा $R_f$ (Govt Bonds) में और कुछ market में लगाते हैं। \n**Borrowing portfolio:** वह है जहाँ आप $R_f$ पर पैसा उधार लेकर market का 100% से *अधिक* खरीदते हैं (Leverage)।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "CML (Standard Deviation) बनाम SML (Beta) के लिए X-axis की पहचान करना।",
+    "CAPM formula का उपयोग करके Required Return calculate करना।",
+    "यह समझना कि market द्वारा केवल Systematic Risk (Beta) को ही reward दिया जाता है।",
+    "SML के ऊपर (above) या नीचे (below) स्थित stock की interpretation."
+  ],
+  "quick_revision_summary": [
+    "CMT यह समझाता है कि risk किसी भी asset की 'fair' (उचित) कीमत कैसे तय करता है।",
+    "CML: Total Risk, केवल efficient portfolios के लिए।",
+    "SML: Systematic Risk (Beta), सभी securities के लिए।",
+    "CAPM Formula: $E(R) = R_f + \\beta(R_m - R_f)$।",
+    "Beta = 1 market है; Beta > 1 aggressive है; Beta < 1 defensive है।",
+    "Market आपको 'Unsystematic Risk' के लिए कोई reward नहीं देता है क्योंकि आप इसे free में diversify कर सकते थे।"
+  ]
+}

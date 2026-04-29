@@ -1,0 +1,652 @@
+[
+  {
+    "id": 4001,
+    "question": "What is the primary objective of any investment?",
+    "options": [
+      "To pay maximum taxes",
+      "To keep money safe under a mattress",
+      "To generate a return on capital employed",
+      "To lose money quickly"
+    ],
+    "answer": "To generate a return on capital employed",
+    "hint": "आप खर्च (spend) करने के बजाय invest क्यों करते हैं?",
+    "explanation": "Investing का मूल लक्ष्य (fundamental goal) समय के साथ income या profit (return) generate करने की उम्मीद के साथ capital को deploy करना है।"
+  },
+  {
+    "id": 4002,
+    "question": "The relationship between Risk and Return is generally:",
+    "options": [
+      "Inversely proportional (Higher Risk, Lower Return)",
+      "Directly proportional (Higher Risk, Higher Expected Return)",
+      "Unrelated",
+      "Always negative"
+    ],
+    "answer": "Directly proportional (Higher Risk, Higher Expected Return)",
+    "hint": "High risk, high...",
+    "explanation": "Finance में, higher potential returns आमतौर पर higher risk से जुड़े होते हैं। Investors additional uncertainty (अनिश्चितता) लेने के लिए एक risk premium की मांग करते हैं।"
+  },
+  {
+    "id": 4003,
+    "question": "What is 'Systematic Risk'?",
+    "options": [
+      "Risk specific to a company (e.g., strike)",
+      "Risk inherent to the entire market (e.g., inflation, war)",
+      "Risk of a system failure",
+      "Risk of accounting fraud"
+    ],
+    "answer": "Risk inherent to the entire market (e.g., inflation, war)",
+    "hint": "यह पूरे 'system' को प्रभावित करता है।",
+    "explanation": "Systematic Risk (Market Risk) समग्र (overall) market को प्रभावित करता है और इसे diversify नहीं किया जा सकता है। इसके उदाहरणों में interest rate में बदलाव, inflation और recessions शामिल हैं।"
+  },
+  {
+    "id": 4004,
+    "question": "What is 'Unsystematic Risk'?",
+    "options": [
+      "Market-wide risk",
+      "Risk specific to a company or industry",
+      "Global economic risk",
+      "Political risk"
+    ],
+    "answer": "Risk specific to a company or industry",
+    "hint": "यह specific है, system-wide नहीं।",
+    "explanation": "Unsystematic Risk किसी एकल (single) company या industry के लिए specific होता है (जैसे, CEO का इस्तीफा देना, product recall)। इसे diversification के माध्यम से कम किया जा सकता है।"
+  },
+  {
+    "id": 4005,
+    "question": "Which of the following can eliminate Unsystematic Risk?",
+    "options": [
+      "Buying only one stock",
+      "Diversification (building a portfolio)",
+      "Hedging with derivatives",
+      "Stopping trading"
+    ],
+    "answer": "Diversification (building a portfolio)",
+    "hint": "अपने सभी अंडे एक ही टोकरी में न रखें (Don't put all your eggs in one basket)।",
+    "explanation": "विभिन्न assets का मिश्रण (mix) रखकर (Diversification), किसी एक specific company के negative performance की भरपाई (offset) दूसरों द्वारा की जा सकती है, जिससे unsystematic risk प्रभावी रूप से समाप्त (eliminate) हो जाता है।"
+  },
+  {
+    "id": 4006,
+    "question": "What is the 'Time Value of Money' (TVM)?",
+    "options": [
+      "Money has no value over time",
+      "Money available today is worth more than the same amount in the future",
+      "Money in the future is worth more than today",
+      "Time is money"
+    ],
+    "answer": "Money available today is worth more than the same amount in the future",
+    "hint": "हाथ में एक पक्षी झाड़ी में दो के बराबर है (A bird in the hand is worth two in the bush)।",
+    "explanation": "TVM (Time Value of Money) यह concept है कि पैसे की एक राशि (sum) अपनी earnings potential (interest/investment) के कारण भविष्य की तारीख की तुलना में वर्तमान (now) में अधिक मूल्यवान (worth more) है।"
+  },
+  {
+    "id": 4007,
+    "question": "What is 'Compounding'?",
+    "options": [
+      "Earning interest only on the principal",
+      "Earning interest on both the principal and accumulated interest",
+      "Adding two numbers",
+      "Reducing the principal"
+    ],
+    "answer": "Earning interest on both the principal and accumulated interest",
+    "hint": "ब्याज पर ब्याज (Interest on interest)।",
+    "explanation": "Compounding वह प्रक्रिया है जहाँ किसी investment की value बढ़ जाती है क्योंकि investment पर होने वाली कमाई, capital gains और interest दोनों, समय बीतने के साथ interest कमाते हैं।"
+  },
+  {
+    "id": 4008,
+    "question": "What is 'Discounting'?",
+    "options": [
+      "Giving a discount on a product",
+      "The process of determining the present value of a future cash flow",
+      "Ignoring bad news",
+      "Reducing the interest rate"
+    ],
+    "answer": "The process of determining the present value of a future cash flow",
+    "hint": "Compounding का उल्टा (Reverse)।",
+    "explanation": "Discounting का उपयोग यह calculate करने के लिए किया जाता है कि discount rate लागू करके भविष्य में मिलने वाली पैसे की राशि आज कितनी मूल्यवान है (Present Value)।"
+  },
+  {
+    "id": 4009,
+    "question": "The formula for Future Value (FV) is:",
+    "options": [
+      "FV = PV / (1 + r)^n",
+      "FV = PV * (1 + r)^n",
+      "FV = PV + r * n",
+      "FV = PV - r"
+    ],
+    "answer": "FV = PV * (1 + r)^n",
+    "hint": "Present Value 'n' periods के लिए 'r' rate से बढ़ती है।",
+    "explanation": "Future Value = Present Value * (1 + interest rate)^number of periods।"
+  },
+  {
+    "id": 4010,
+    "question": "The formula for Present Value (PV) is:",
+    "options": [
+      "PV = FV / (1 + r)^n",
+      "PV = FV * (1 + r)^n",
+      "PV = FV - r",
+      "PV = FV + r"
+    ],
+    "answer": "PV = FV / (1 + r)^n",
+    "hint": "Future Value को वापस discount किया गया।",
+    "explanation": "Present Value = Future Value / (1 + discount rate)^number of periods।"
+  },
+  {
+    "id": 4011,
+    "question": "What is 'Inflation'?",
+    "options": [
+      "A decrease in prices",
+      "The rate at which the general level of prices for goods and services is rising",
+      "An increase in the value of money",
+      "A type of balloon"
+    ],
+    "answer": "The rate at which the general level of prices for goods and services is rising",
+    "hint": "चीजें अधिक महंगी (expensive) हो जाती हैं।",
+    "explanation": "Inflation समय के साथ पैसे की purchasing power को कम कर देता है। जैसे-जैसे कीमतें बढ़ती हैं, currency की प्रत्येक इकाई (unit) से कम सामान (goods) खरीदा जा सकता है।"
+  },
+  {
+    "id": 4012,
+    "question": "What is 'Real Rate of Return'?",
+    "options": [
+      "The return printed on the bond",
+      "The nominal return adjusted for inflation",
+      "The return after taxes",
+      "The return in a dream"
+    ],
+    "answer": "The nominal return adjusted for inflation",
+    "hint": "Purchasing power में आप वास्तव में क्या कमाते हैं।",
+    "explanation": "Real Rate of Return = Nominal Rate - Inflation Rate। यह आपको purchasing power में होने वाली actual वृद्धि (increase) बताता है।"
+  },
+  {
+    "id": 4013,
+    "question": "If your investment earns 10% and inflation is 6%, your Real Rate of Return is approximately:",
+    "options": [
+      "16%",
+      "4%",
+      "10%",
+      "60%"
+    ],
+    "answer": "4%",
+    "hint": "10 में से 6 घटाएं।",
+    "explanation": "Real Return ≈ Nominal Return (10%) - Inflation (6%) = 4%."
+  },
+  {
+    "id": 4014,
+    "question": "What is 'Risk-Free Rate'?",
+    "options": [
+      "The return on a lottery ticket",
+      "The theoretical return of an investment with zero risk (usually government bonds)",
+      "The return on a corporate bond",
+      "0%"
+    ],
+    "answer": "The theoretical return of an investment with zero risk (usually government bonds)",
+    "hint": "Govt bonds को default-free माना जाता है।",
+    "explanation": "Risk-Free Rate शून्य जोखिम (zero risk) वाले investment पर मिलने वाला return है, जिसे आमतौर पर government treasury bills या bonds पर मिलने वाली yield द्वारा दर्शाया जाता है।"
+  },
+  {
+    "id": 4015,
+    "question": "What is 'Risk Premium'?",
+    "options": [
+      "The cost of insurance",
+      "The extra return expected by an investor for taking on risk above the risk-free rate",
+      "A penalty for risky behavior",
+      "The fee paid to a broker"
+    ],
+    "answer": "The extra return expected by an investor for taking on risk above the risk-free rate",
+    "hint": "Risk लेने के लिए 'bonus'।",
+    "explanation": "Risk Premium = Expected Return - Risk-Free Rate। यह investors को investment की uncertainty (अनिश्चितता) के लिए compensate करता है।"
+  },
+  {
+    "id": 4016,
+    "question": "Which of the following is considered a 'Safe Haven' asset?",
+    "options": [
+      "Small-cap stocks",
+      "Cryptocurrency",
+      "Gold",
+      "Junk bonds"
+    ],
+    "answer": "Gold",
+    "hint": "Markets crash होने पर investors यहाँ आते हैं।",
+    "explanation": "Gold को पारंपरिक रूप से एक safe haven asset के रूप में देखा जाता है जो market turbulence (अशांति) या high inflation के समय अपनी value बनाए रखता है।"
+  },
+  {
+    "id": 4017,
+    "question": "What is 'Asset Allocation'?",
+    "options": [
+      "Putting all money in one stock",
+      "Distributing investment capital across different asset classes (Stocks, Bonds, Cash)",
+      "Buying assets for the office",
+      "Allocating shares to employees"
+    ],
+    "answer": "Distributing investment capital across different asset classes (Stocks, Bonds, Cash)",
+    "hint": "Pie को विभाजित करना (Dividing the pie)।",
+    "explanation": "Asset Allocation किसी व्यक्ति के लक्ष्यों, risk tolerance और investment horizon के अनुसार portfolio के assets को विभाजित करके risk और reward को balance करने की रणनीति (strategy) है।"
+  },
+  {
+    "id": 4018,
+    "question": "What is 'Beta' a measure of?",
+    "options": [
+      "Unsystematic Risk",
+      "Systematic Risk",
+      "Total Risk",
+      "No Risk"
+    ],
+    "answer": "Systematic Risk",
+    "hint": "Market से संबंधित volatility।",
+    "explanation": "Beta समग्र market (Systematic Risk) की तुलना में किसी security या portfolio की volatility को मापता है।"
+  },
+  {
+    "id": 4019,
+    "question": "Standard Deviation is a measure of:",
+    "options": [
+      "Return",
+      "Total Risk (Volatility)",
+      "Liquidity",
+      "Dividends"
+    ],
+    "answer": "Total Risk (Volatility)",
+    "hint": "Price average से कितना deviate होता है?",
+    "explanation": "Standard Deviation अपने mean (औसत) के सापेक्ष किसी dataset के फैलाव (dispersion) को मापता है। Finance में, यह किसी investment की total volatility (risk) का प्रतिनिधित्व करता है।"
+  },
+  {
+    "id": 4020,
+    "question": "Which philosophy assumes 'Markets are Efficient'?",
+    "options": [
+      "Technical Analysis",
+      "Efficient Market Hypothesis (EMH)",
+      "Behavioral Finance",
+      "Value Investing"
+    ],
+    "answer": "Efficient Market Hypothesis (EMH)",
+    "hint": "Prices में पहले से ही सभी info शामिल होती है।",
+    "explanation": "EMH कहता है कि asset prices सभी उपलब्ध जानकारी (available information) को दर्शाते हैं। इसलिए, stock picking या market timing के माध्यम से लगातार 'market को हराना' असंभव है।"
+  },
+  {
+    "id": 4021,
+    "question": "Fundamental Analysis primarily focuses on:",
+    "options": [
+      "Price patterns and charts",
+      "Intrinsic value of the business based on financial data",
+      "Astrology",
+      "Volume of trade"
+    ],
+    "answer": "Intrinsic value of the business based on financial data",
+    "hint": "Business के 'fundamentals'।",
+    "explanation": "Fundamental Analysis संबंधित आर्थिक, वित्तीय (financial), और अन्य qualitative और quantitative कारकों की जांच करके किसी security की intrinsic value (आंतरिक मूल्य) को मापने का प्रयास करता है।"
+  },
+  {
+    "id": 4022,
+    "question": "Technical Analysis primarily focuses on:",
+    "options": [
+      "Balance Sheets",
+      "Future earnings predictions",
+      "Historical price and volume data",
+      "Management interviews"
+    ],
+    "answer": "Historical price and volume data",
+    "hint": "Charts और trends।",
+    "explanation": "Technical Analysis पिछले price movements और volume data की जांच के आधार पर भविष्य के price movements का पूर्वानुमान (forecast) लगाता है।"
+  },
+  {
+    "id": 4023,
+    "question": "Quantitative Analysis relies on:",
+    "options": [
+      "Subjective judgment",
+      "Mathematical and statistical modeling",
+      "Gut feeling",
+      "Rumors"
+    ],
+    "answer": "Mathematical and statistical modeling",
+    "hint": "Numbers और algos।",
+    "explanation": "Quantitative Analysis व्यवहार को समझने और परिणामों की भविष्यवाणी (predict) करने के लिए mathematical और statistical modeling, measurement और research का उपयोग करता है।"
+  },
+  {
+    "id": 4024,
+    "question": "What is 'Behavioral Finance'?",
+    "options": [
+      "Finance for well-behaved people",
+      "Study of how psychology influences financial decisions",
+      "Study of market mechanics",
+      "Study of interest rates"
+    ],
+    "answer": "Study of how psychology influences financial decisions",
+    "hint": "पैसे में मानवीय भावनाएं (Human emotions in money)।",
+    "explanation": "Behavioral Finance psychology और economics को जोड़ता है ताकि यह समझाया जा सके कि investors अक्सर irrational (तर्कहीन) financial decisions क्यों लेते हैं (जैसे, herd mentality, डर, लालच)।"
+  },
+  {
+    "id": 4025,
+    "question": "The 'Top-Down' approach starts with:",
+    "options": [
+      "Company Selection",
+      "Economic Analysis",
+      "Industry Analysis",
+      "Technical Analysis"
+    ],
+    "answer": "Economic Analysis",
+    "hint": "सबसे बड़ी तस्वीर (biggest picture) सबसे पहले।",
+    "explanation": "Top-Down analysis Macroeconomy से शुरू होता है, फिर Industry/Sector पर जाता है, और अंत में specific Company पर आता है।"
+  },
+  {
+    "id": 4026,
+    "question": "The 'Bottom-Up' approach starts with:",
+    "options": [
+      "Economic Analysis",
+      "Stock Selection (Company Analysis)",
+      "Sector Analysis",
+      "Global Analysis"
+    ],
+    "answer": "Stock Selection (Company Analysis)",
+    "hint": "Specific ईंट (brick) सबसे पहले।",
+    "explanation": "Bottom-Up investors macroeconomic cycle की परवाह किए बिना individual companies और उनके fundamentals पर focus करते हैं।"
+  },
+  {
+    "id": 4027,
+    "question": "Which of the following is a Macroeconomic Indicator?",
+    "options": [
+      "Company's EPS",
+      "GDP Growth Rate",
+      "Company's Debt",
+      "Employee count"
+    ],
+    "answer": "GDP Growth Rate",
+    "hint": "पूरे देश की economy को मापता है।",
+    "explanation": "Gross Domestic Product (GDP) किसी देश की अर्थव्यवस्था (economy) के स्वास्थ्य का एक प्राथमिक संकेतक (primary indicator) है।"
+  },
+  {
+    "id": 4028,
+    "question": "What is 'Opportunity Cost'?",
+    "options": [
+      "The cost of a lost opportunity",
+      "The benefit foregone by choosing one alternative over another",
+      "The fee paid to find an opportunity",
+      "The cost of training"
+    ],
+    "answer": "The benefit foregone by choosing one alternative over another",
+    "hint": "इसे करने के लिए आपने क्या छोड़ दिया।",
+    "explanation": "Opportunity Cost वह संभावित लाभ (potential benefit) है जो एक investor एक investment विकल्प (alternative) को दूसरे पर चुनते समय खो देता है।"
+  },
+  {
+    "id": 4029,
+    "question": "What is 'Liquidity Risk'?",
+    "options": [
+      "Risk of rain",
+      "Risk that an asset cannot be sold quickly without a significant price discount",
+      "Risk of the company shutting down",
+      "Risk of high taxes"
+    ],
+    "answer": "Risk that an asset cannot be sold quickly without a significant price discount",
+    "hint": "क्या आप इसे तेजी से cash में बदल सकते हैं?",
+    "explanation": "Liquidity risk तब उत्पन्न होता है जब किसी नुकसान (loss) को रोकने या कम करने के लिए किसी investment को पर्याप्त तेज़ी से खरीदा या बेचा नहीं जा सकता।"
+  },
+  {
+    "id": 4030,
+    "question": "Which asset class typically has the highest liquidity?",
+    "options": [
+      "Real Estate",
+      "Private Equity",
+      "Large-cap Public Equities",
+      "Art"
+    ],
+    "answer": "Large-cap Public Equities",
+    "hint": "तुरंत बेचना आसान है।",
+    "explanation": "Large-cap stocks exchanges पर उच्च मात्रा (high volumes) में trade किए जाते हैं, जो उन्हें real estate या art की तुलना में बहुत liquid बनाता है।"
+  },
+  {
+    "id": 4031,
+    "question": "What is 'Correlation'?",
+    "options": [
+      "A measure of how two assets move in relation to each other",
+      "A measure of risk",
+      "A measure of return",
+      "A type of chart"
+    ],
+    "answer": "A measure of how two assets move in relation to each other",
+    "hint": "क्या वे एक साथ चलते हैं या विपरीत (opposite)?",
+    "explanation": "Correlation दो variables के बीच संबंध को मापता है। +1 का अर्थ है कि वे पूरी तरह से एक साथ चलते हैं; -1 का अर्थ है कि वे पूरी तरह से विपरीत चलते हैं।"
+  },
+  {
+    "id": 4032,
+    "question": "To diversify a portfolio effectively, you should add assets with:",
+    "options": [
+      "Correlation of +1",
+      "Low or Negative Correlation",
+      "High Correlation",
+      "No value"
+    ],
+    "answer": "Low or Negative Correlation",
+    "hint": "जब एक zig करता है, तो दूसरे को zag करना चाहिए।",
+    "explanation": "Diversification सबसे अच्छा तब काम करता है जब assets एक ही समय में एक ही दिशा (direction) में नहीं चलते हैं। Low या negative correlation overall portfolio risk को कम करता है।"
+  },
+  {
+    "id": 4033,
+    "question": "What is 'Operating Leverage'?",
+    "options": [
+      "Use of debt",
+      "Use of fixed costs in operations",
+      "Use of machines",
+      "Use of labor"
+    ],
+    "answer": "Use of fixed costs in operations",
+    "hint": "High fixed costs का मतलब है कि sales में छोटी वृद्धि = profit में बड़ी छलांग।",
+    "explanation": "Operating Leverage मापता है कि एक firm या project अपने fixed बनाम variable cost structure के आधार पर revenue बढ़ाकर अपनी operating income को किस हद तक बढ़ा सकता है।"
+  },
+  {
+    "id": 4034,
+    "question": "What is 'Financial Leverage'?",
+    "options": [
+      "Use of debt to finance assets",
+      "Use of equity",
+      "Use of cash",
+      "Use of influence"
+    ],
+    "answer": "Use of debt to finance assets",
+    "hint": "दूसरों के पैसे का उपयोग करना।",
+    "explanation": "Financial Leverage से तात्पर्य assets की खरीद को finance करने के लिए उधार ली गई धनराशि (debt) के उपयोग से है, जिसका लक्ष्य return on equity को बढ़ाना है।"
+  },
+  {
+    "id": 4035,
+    "question": "What is 'Margin of Safety'?",
+    "options": [
+      "A safety helmet",
+      "The difference between the intrinsic value of a stock and its market price",
+      "The stop loss level",
+      "The cash in the bank"
+    ],
+    "answer": "The difference between the intrinsic value of a stock and its market price",
+    "hint": "जो 1 डॉलर के लायक है उसे 60 सेंट में खरीदना।",
+    "explanation": "Benjamin Graham द्वारा प्रचारित (promoted), Margin of Safety risk को कम करने के लिए किसी security को उसकी intrinsic value से भारी छूट (significant discount) पर खरीदने का सिद्धांत है।"
+  },
+  {
+    "id": 4036,
+    "question": "A 'Growth Investor' is willing to pay a high P/E because:",
+    "options": [
+      "They like losing money",
+      "They expect earnings to grow rapidly in the future",
+      "They don't look at P/E",
+      "The stock is cheap"
+    ],
+    "answer": "They expect earnings to grow rapidly in the future",
+    "hint": "Future potential के लिए भुगतान करना।",
+    "explanation": "Growth investors भविष्य की संभावनाओं (future potential) पर ध्यान केंद्रित करते हैं। एक high current P/E तब उचित है यदि 'E' (Earnings) इतनी तेज़ी से बढ़ता है कि बाद में ratio नीचे आ जाए।"
+  },
+  {
+    "id": 4037,
+    "question": "What is 'Value Trap'?",
+    "options": [
+      "A stock that appears cheap (low P/E) but is actually a bad company declining in value",
+      "A good investment",
+      "A trap for bears",
+      "A government bond"
+    ],
+    "answer": "A stock that appears cheap (low P/E) but is actually a bad company declining in value",
+    "hint": "यह एक bargain (सौदा) जैसा दिखता है, लेकिन यह एक trap (जाल) है।",
+    "explanation": "Value Trap तब होता है जब कोई stock valuation metrics के आधार पर सस्ता दिखता है, लेकिन price गिरता रहता है क्योंकि company में fundamental समस्याएं होती हैं।"
+  },
+  {
+    "id": 4038,
+    "question": "What is 'Holding Period Return' (HPR)?",
+    "options": [
+      "The return earned over the period the investment was held",
+      "The return for one day",
+      "The annual return",
+      "The return on hold"
+    ],
+    "answer": "The return earned over the period the investment was held",
+    "hint": "Buy से लेकर sell तक का total return।",
+    "explanation": "HPR किसी asset या portfolio को एक समयावधि (period of time) तक रखने से प्राप्त total return है (Income + Capital Gain)।"
+  },
+  {
+    "id": 4039,
+    "question": "In financial terms, 'Volatility' is synonymous with:",
+    "options": [
+      "Certainty",
+      "Risk",
+      "Profit",
+      "Loss"
+    ],
+    "answer": "Risk",
+    "hint": "ऊपर और नीचे की movement अनिश्चितता (uncertainty) पैदा करती है।",
+    "explanation": "Volatility price fluctuations की मात्रा (magnitude) का प्रतिनिधित्व करती है। Finance में, higher volatility को higher risk के समान माना जाता है।"
+  },
+  {
+    "id": 4040,
+    "question": "Which form of analysis requires studying Porter's Five Forces?",
+    "options": [
+      "Economic Analysis",
+      "Industry / Sector Analysis",
+      "Technical Analysis",
+      "Quantitative Analysis"
+    ],
+    "answer": "Industry / Sector Analysis",
+    "hint": "पांच ताकतें (Five forces) जो किसी industry को आकार देती हैं।",
+    "explanation": "Porter's Five Forces एक framework है जिसका उपयोग किसी specific industry के competitive environment और profitability का विश्लेषण करने के लिए किया जाता है।"
+  },
+  {
+    "id": 4041,
+    "question": "What are Porter's Five Forces?",
+    "options": [
+      "Earth, Wind, Fire, Water, Heart",
+      "Threat of new entrants, Power of suppliers, Power of buyers, Threat of substitutes, Rivalry",
+      "Price, Volume, Interest, Tax, Dividend",
+      "None of the above"
+    ],
+    "answer": "Threat of new entrants, Power of suppliers, Power of buyers, Threat of substitutes, Rivalry",
+    "hint": "Competition, Suppliers, Buyers, Substitutes, Newbies.",
+    "explanation": "ये पाँच ताकतें (five forces) किसी industry की प्रतिस्पर्धी तीव्रता (competitive intensity) और आकर्षण (attractiveness) को निर्धारित करती हैं।"
+  },
+  {
+    "id": 4042,
+    "question": "What is 'SWOT Analysis'?",
+    "options": [
+      "Strengths, Weaknesses, Opportunities, Threats",
+      "Stocks, Warrants, Options, Trade",
+      "Sell, Wait, Own, Trade",
+      "Simple Ways Of Trading"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "hint": "Internal (S, W) और External (O, T)।",
+    "explanation": "SWOT Analysis किसी व्यवसाय (business) से संबंधित Strengths, Weaknesses, Opportunities और Threats की पहचान करने के लिए उपयोग की जाने वाली एक strategic planning तकनीक है।"
+  },
+  {
+    "id": 4043,
+    "question": "Which of the following is a 'Leading Indicator' of the economy?",
+    "options": [
+      "Unemployment Rate (Lagging)",
+      "Stock Market Index",
+      "Inflation (Lagging)",
+      "GDP of last year"
+    ],
+    "answer": "Stock Market Index",
+    "hint": "यह economy के चलने से 'पहले' (before) चलता है।",
+    "explanation": "Stock markets forward-looking होते हैं। वे आम तौर पर economic expansion या contraction की प्रत्याशा (anticipation) में उठते या गिरते हैं, जिससे वे leading indicators बन जाते हैं।"
+  },
+  {
+    "id": 4044,
+    "question": "Which of the following is a 'Lagging Indicator'?",
+    "options": [
+      "Stock Market",
+      "Unemployment Rate",
+      "New Orders",
+      "Building Permits"
+    ],
+    "answer": "Unemployment Rate",
+    "hint": "यह economy के बदलने के 'बाद' (after) बदलता है।",
+    "explanation": "Unemployment (बेरोजगारी) आमतौर पर मंदी (recession) शुरू होने के बाद ही बढ़ती है और recovery शुरू होने के बाद गिरती है, जिससे यह एक lagging indicator बन जाता है।"
+  },
+  {
+    "id": 4045,
+    "question": "What is the 'Fiscal Policy'?",
+    "options": [
+      "Central Bank controlling money supply",
+      "Government using taxation and spending to influence the economy",
+      "Company policy on fitness",
+      "Bank's policy on loans"
+    ],
+    "answer": "Government using taxation and spending to influence the economy",
+    "hint": "Budget, Taxes, Spending.",
+    "explanation": "Fiscal Policy economy को manage करने के लिए taxation और public spending पर सरकार के निर्णयों से संबंधित है।"
+  },
+  {
+    "id": 4046,
+    "question": "What is 'Monetary Policy'?",
+    "options": [
+      "Government spending",
+      "Central Bank (RBI) managing money supply and interest rates",
+      "Stock exchange rules",
+      "Corporate dividend policy"
+    ],
+    "answer": "Central Bank (RBI) managing money supply and interest rates",
+    "hint": "Money, Interest Rates, RBI.",
+    "explanation": "Monetary Policy वह प्रक्रिया (process) है जिसके द्वारा मौद्रिक प्राधिकरण (monetary authority - Central Bank) money supply और interest rates को नियंत्रित करता है।"
+  },
+  {
+    "id": 4047,
+    "question": "When interest rates rise, bond prices:",
+    "options": [
+      "Rise",
+      "Fall",
+      "Stay the same",
+      "Double"
+    ],
+    "answer": "Fall",
+    "hint": "विपरीत संबंध (Inverse relationship)।",
+    "explanation": "Interest rates और bond prices के बीच एक inverse relationship (विपरीत संबंध) होता है। जब rates बढ़ते हैं, तो कम coupons वाले मौजूदा bonds कम आकर्षक (attractive) हो जाते हैं, इसलिए उनकी कीमत (price) गिर जाती है।"
+  },
+  {
+    "id": 4048,
+    "question": "What is 'Reinvestment Risk'?",
+    "options": [
+      "Risk that you cannot reinvest coupons at the same rate",
+      "Risk of losing the principal",
+      "Risk of the market closing",
+      "Risk of too much profit"
+    ],
+    "answer": "Risk that you cannot reinvest coupons at the same rate",
+    "hint": "यदि rates गिरते हैं, तो आप अपने interest को अब high rate पर reinvest नहीं कर सकते।",
+    "explanation": "Reinvestment risk वह risk है कि future cash flows (coupons) को original investment की तुलना में कम interest rate पर reinvest करना होगा।"
+  },
+  {
+    "id": 4049,
+    "question": "A 'Conservative' investor would prioritize:",
+    "options": [
+      "Capital Appreciation",
+      "Capital Preservation",
+      "Speculation",
+      "High Volatility"
+    ],
+    "answer": "Capital Preservation",
+    "hint": "पैसे मत खोना (Don't lose the money)।",
+    "explanation": "Conservative investors high returns की तुलना में अपने मूलधन की सुरक्षा (Capital Preservation) को प्राथमिकता (prioritize) देते हैं।"
+  },
+  {
+    "id": 4050,
+    "question": "What is the 'Sharpe Ratio'?",
+    "options": [
+      "A measure of risk-adjusted return",
+      "A measure of volume",
+      "A measure of market size",
+      "A type of bond"
+    ],
+    "answer": "A measure of risk-adjusted return",
+    "hint": "(Return - Risk Free Rate) / Standard Deviation.",
+    "explanation": "Sharpe Ratio किसी investment के risk के लिए adjust करने के बाद, risk-free asset की तुलना में उसके performance को मापता है। जितना अधिक हो उतना अच्छा है।"
+  }
+]

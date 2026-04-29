@@ -1,0 +1,107 @@
+{
+  "course": "NISM Series XV: Research Analyst",
+  "unit_number": 3,
+  "unit_name": "Terminology in Equity and Debt Markets",
+  "weightage": "2 Marks",
+  "overview": "यह chapter stock market की 'vocabulary' (शब्दावली) सीखने जैसा है। इससे पहले कि आप poetry (Valuation) लिख सकें, आपको शब्द (Terminology) पता होने चाहिए। यह stocks (Equity) और bonds (Debt) का वर्णन करने के लिए उपयोग किए जाने वाले basic terms को समझाता है। आप सीखेंगे कि किसी company के size, उसकी earnings, और bond पर returns को कैसे measure किया जाए। यह सीधे Chapter 8 (Financial Analysis) और Chapter 10 (Valuation Principles) से जुड़ता है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Face Value, Book Value, और Market Value",
+      "basic_meaning": "एक stock की तीन अलग-अलग 'prices' होती हैं जो इस बात पर निर्भर करती हैं कि आप किससे पूछते हैं: Accountant से, Company Registry से, या Market से।",
+      "detailed_explanation": "1. **Face Value (Par Value):** Company शुरू होने पर share certificate पर लिखी गई original value। यह शायद ही कभी बदलती है (जब तक कि Stock Split न हो)। Dividends आमतौर पर Face Value के % के रूप में calculate किए जाते हैं।\n2. **Book Value:** Company की 'Books' (Balance Sheet) के अनुसार company की value। यह Total Assets minus Total Liabilities है। यह 'Net Worth' का प्रतिनिधित्व (represent) करता है।\n3. **Market Value:** वह price जिस पर share अभी stock exchange (NSE/BSE) पर trade कर रहा है। Demand और supply के आधार पर यह हर सेकंड बदलता है।",
+      "why_this_is_important": "Investors अक्सर इनमें confuse हो जाते हैं। आप Market Value पर खरीदते हैं, लेकिन आपको Face Value पर dividends मिलते हैं।",
+      "formula": "Book Value per Share = (Total Equity / Number of Shares)",
+      "formula_explanation": "Total Equity company की Net Worth है।",
+      "step_by_step_calculation_example": "Company A के Assets ₹100 Cr और Liabilities ₹40 Cr हैं। इसके 1 Cr shares हैं। \nStep 1: Net Worth = 100 - 40 = ₹60 Cr. \nStep 2: Book Value per Share = 60 Cr / 1 Cr = ₹60. \nStep 3: यदि Market Price ₹300 है, तो यह 5x Book Value पर trade कर रहा है।",
+      "real_life_indian_example": "Infosys की Face Value ₹5 है। इसकी Market Price लगभग ₹1,500 है। यदि वे 100% dividend declare करते हैं, तो आपको ₹5 (Face Value का 100%) मिलते हैं, न कि ₹1,500!",
+      "exam_traps": [
+        "यह सोचना कि dividend % Market Price पर calculate किया जाता है। यह ALWAYS Face Value पर होता है।",
+        "Book Value को Market Price के साथ confuse करना। वे लगभग कभी समान नहीं होते हैं।"
+      ],
+      "memory_trick": "Face = Paper value; Book = Accountant की value; Market = असली price जो आप pay करते हैं।"
+    },
+    {
+      "concept": "2. Market Capitalization vs. Enterprise Value (EV)",
+      "basic_meaning": "Market Cap shares का price tag है। Enterprise Value पूरे business (इसके debt सहित) का price tag है।",
+      "detailed_explanation": "1. **Market Capitalization (Market Cap):** Shareholders के स्वामित्व वाले सभी shares की कुल value। यह आपको बताता है कि stock market में company कितनी बड़ी है।\n2. **Enterprise Value (EV):** एक घर खरीदने की कल्पना करें। आप seller को payment करते हैं (Market Cap), लेकिन आपको house loan (Debt) भी चुकाना पड़ता है, लेकिन आपको तिजोरी में मिला cash (Cash) रखने को मिलता है। EV theoretical takeover price है।",
+      "why_this_is_important": "विभिन्न debt levels वाली companies की तुलना करने के लिए EV एक बेहतर measure है।",
+      "formula": "EV = Market Cap + Total Debt - Cash & Cash Equivalents",
+      "formula_explanation": "Debt को जोड़ें क्योंकि buyer को इसे लेना पड़ता है। Cash को घटाएं क्योंकि buyer को यह मिलता है।",
+      "step_by_step_calculation_example": "Company B का Market Cap = ₹1,000 Cr. Debt = ₹200 Cr. Cash = ₹50 Cr. \nEV = 1000 + 200 - 50 = ₹1,150 Cr.",
+      "real_life_indian_example": "Tata Motors का Enterprise Value अक्सर इसके Market Cap की तुलना में अधिक होता है क्योंकि इस पर significant debt है। TCS जैसी IT company का EV Market Cap के करीब होता है क्योंकि इस पर लगभग zero debt है।",
+      "exam_traps": [
+        "Cash जोड़ना और Debt घटाना। यह opposite है! Debt जोड़ें, Cash घटाएं।",
+        "यह सोचना कि Market Cap में debt शामिल है। इसमें नहीं होता है।"
+      ],
+      "memory_trick": "EV = पूरे Empire को खरीदने की Cost (Equity + Debt - Cash)।"
+    },
+    {
+      "concept": "3. Earnings Per Share (EPS) और P/E Ratio",
+      "basic_meaning": "EPS profit में आपका हिस्सा है। P/E यह है कि आप उस profit के लिए कितना pay कर रहे हैं।",
+      "detailed_explanation": "1. **EPS:** प्रत्येक share को allocate किया गया company के profit का हिस्सा।\n2. **P/E Ratio:** एक valuation ratio। यह पूछता है: '₹1 की earnings पाने के लिए मैं कितने रुपये pay कर रहा हूँ?' 20 के P/E का मतलब है कि आप company के annual profit के ₹1 पर दावा करने के लिए ₹20 pay करते हैं।",
+      "why_this_is_important": "यह तय करने के लिए P/E सबसे अधिक उपयोग किया जाने वाला metric है कि कोई stock 'Cheap' (सस्ता) है या 'Expensive' (महंगा)।",
+      "formula": "P/E Ratio = Market Price per Share / Earnings Per Share (EPS)",
+      "formula_explanation": "Current price को annual earnings से divide करें।",
+      "step_by_step_calculation_example": "Stock Price = ₹200. Annual Profit = ₹10 Cr. Total Shares = 1 Cr. \nStep 1: EPS = 10 Cr / 1 Cr = ₹10. \nStep 2: P/E = 200 / 10 = 20x.",
+      "real_life_indian_example": "यदि HDFC Bank 20 के P/E पर trade करता है और ICICI Bank 18 के P/E पर trade करता है, तो earnings के आधार पर ICICI relatively 'cheaper' है।",
+      "exam_traps": [
+        "P/E calculation के लिए annual earnings के बजाय quarterly earnings का उपयोग करना। हमेशा Trailing 12 Months (TTM) या Full Year earnings का उपयोग करें।",
+        "यह सोचना कि high P/E का मतलब हमेशा बुरा होता है। इसका मतलब high growth expectations हो सकता है।"
+      ],
+      "memory_trick": "P/E = Price for Earnings."
+    },
+    {
+      "concept": "4. Debt Concepts: Coupon, Yield, और Price",
+      "basic_meaning": "Debt एक loan है। 'Coupon' paper पर लिखी गई interest rate है। 'Yield' वह actual return है जो आपको आपके द्वारा pay किए गए price के आधार पर मिलता है।",
+      "detailed_explanation": "1. **Coupon Rate:** Fixed interest rate जो company bond की Face Value पर pay करती है।\n2. **Current Yield:** यदि आप आज market price पर bond खरीदते हैं तो आपको जो return मिलता है।\n3. **Relationship:** Bond Price और Yield OPPOSITE दिशाओं में चलते हैं। यदि interest rates UP जाते हैं, तो Bond prices DOWN जाते हैं।",
+      "why_this_is_important": "यह inverse relationship fixed income में सबसे महत्वपूर्ण concept है।",
+      "formula": "Current Yield = (Annual Coupon Interest / Current Market Price) * 100",
+      "formula_explanation": "Interest को आपके द्वारा pay किए गए price से divide किया गया।",
+      "step_by_step_calculation_example": "Bond Face Value = ₹1000. Coupon = 10% (₹100 interest). Market Price = ₹800. \nCurrent Yield = (100 / 800) * 100 = 12.5%. \n(ध्यान दें: आपने कम pay किया, इसलिए आपका yield coupon से अधिक है)।",
+      "real_life_indian_example": "यदि RBI interest rates बढ़ाता है, तो मौजूदा G-Sec (Government Security) prices गिर जाएंगे क्योंकि नए bonds higher rates offer करेंगे, जिससे पुराने कम attractive हो जाएंगे।",
+      "exam_traps": [
+        "यह सोचना कि Coupon Rate रोज़ बदलता है। Coupon FIXED होता है। Yield बदलता है।",
+        "Inverse relationship को भूल जाना: Rates Up = Prices Down."
+      ],
+      "memory_trick": "Yield, Price के साथ see-saw की तरह है। एक ऊपर जाता है, दूसरा नीचे आता है।"
+    },
+    {
+      "concept": "5. Beta (Systematic Risk)",
+      "basic_meaning": "Beta मापता है कि market (Nifty/Sensex) की तुलना में कोई stock कितना 'wild' है।",
+      "detailed_explanation": "1. **Beta = 1:** Stock बिल्कुल market की तरह move करता है।\n2. **Beta > 1 (High Beta):** Stock अधिक volatile (Aggressive) है। यदि Market 1% ऊपर जाता है, तो Stock 1.5% ऊपर जाता है।\n3. **Beta < 1 (Low Beta):** Stock stable (Defensive) है। यदि Market 1% crash होता है, तो Stock केवल 0.5% गिरता है।",
+      "why_this_is_important": "यह investors को उनकी risk appetite के आधार पर stocks चुनने में मदद करता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "जब Nifty 1% move करेगा तो Adani Enterprises (High Beta) 5% उछलेगा। जब Nifty 1% move करेगा तो HUL (Low Beta/Defensive) केवल 0.5% move कर सकता है।",
+      "exam_traps": [
+        "यह सोचना कि Beta Total Risk मापता है। नहीं, यह केवल Systematic (Market) Risk मापता है।",
+        "यह सोचना कि negative Beta असंभव है। यह rare (Gold stocks) है, लेकिन संभव है।"
+      ],
+      "memory_trick": "Beta = Bounciness."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Convertible vs Non-Convertible Debentures",
+      "clear_explanation": "Convertible Debentures को एक specific time के बाद Equity Shares में बदला जा सकता है (ownership देते हुए)। Non-Convertible Debentures (NCDs) पूरी तरह से debt रहते हैं और maturity पर cash में चुकाए जाते हैं।"
+    },
+    {
+      "difference_between": "Zero Coupon Bond vs Regular Bond",
+      "clear_explanation": "Regular bonds periodic interest (coupons) pay करते हैं। Zero Coupon bonds life के दौरान ZERO interest pay करते हैं लेकिन deep discount पर बेचे जाते हैं (जैसे, ₹60 पर बेचे गए, ₹100 पर redeemed)। Profit दोनों का अंतर होता है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Current Yield की Calculation (Interest / Market Price)।",
+    "Beta की Interpretation (Aggressive vs Defensive)।",
+    "Interest Rates और Bond Prices के बीच relationship (Inverse)।",
+    "Enterprise Value की Definition."
+  ],
+  "quick_revision_summary": [
+    "Face Value कभी नहीं बदलती (जब तक कि split न हो)। Market Value रोज़ बदलती है।",
+    "EV = Market Cap + Debt - Cash.",
+    "P/E = Price / EPS.",
+    "यदि Rates UP जाते हैं -> Bond Prices DOWN जाते हैं।",
+    "Beta > 1 Aggressive है; Beta < 1 Defensive है।"
+  ]
+}

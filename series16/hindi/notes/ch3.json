@@ -1,0 +1,73 @@
+{
+  "course": "NISM Series XVI: Commodity Derivatives Certification Examination",
+  "unit_number": 3,
+  "unit_name": "Commodity Futures",
+  "weightage": "15%",
+  "overview": "यह चैप्टर सिलेबस का 'इंजन' है। यह समझाता है कि वायदा अनुबंध (futures contracts) वास्तव में कैसे काम करते हैं—मानकीकृत विनिर्देशों (standardized specifications) से लेकर पैसे (मार्जिन) और सामान (डिलीवरी) के लेन-देन तक सब कुछ कवर करता है। NISM परीक्षा के लिए, यह एक हाई-स्कोरिंग (high-scoring) यूनिट है क्योंकि इसमें तकनीकी शब्द (technical terms) और बेसिक गणित (basic math) शामिल हैं जो अक्सर पूछे जाते हैं। यह सीधे चैप्टर 1 में पेश किए गए 'Derivatives' (डेरिवेटिव्स) कॉन्सेप्ट पर आधारित है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Standardized Contract Specifications (मानकीकृत अनुबंध विनिर्देश)",
+      "basic_meaning": "एक वायदा अनुबंध (futures contract) एक कठोर टेम्पलेट (rigid template) की तरह है जहाँ कीमत को छोड़कर सब कुछ तय (fixed) होता है।",
+      "detailed_explanation": "स्पॉट मार्केट (spot market) में, आप गुणवत्ता या मात्रा (quality or quantity) पर बातचीत कर सकते हैं। वायदा (futures) में, एक्सचेंज (जैसे MCX) यह सुनिश्चित करने के लिए इन्हें तय करता है कि हर कोई एक ही चीज़ का व्यापार (trade) करे:\n\n* **Trading Unit (Lot Size):** वह न्यूनतम मात्रा (minimum quantity) जिसका आप व्यापार कर सकते हैं। (उदा., सोना 1 किलो है, कच्चा तेल 100 बैरल है)।\n* **Tick Size:** मूल्य में सबसे छोटी 'कूद' (jump) की अनुमति। (उदा., सोने के लिए ₹1)।\n* **Quality (गुणवत्ता):** कमोडिटी का सटीक ग्रेड (उदा., सोने के लिए 995 शुद्धता)।\n* **Expiry Date (समाप्ति तिथि):** वह दिन जब अनुबंध समाप्त होता है।\n* **Delivery Center (डिलीवरी केंद्र):** विशिष्ट गोदाम (specific warehouse) जहाँ सामान रखा जाता है।",
+      "why_this_is_important": "मानकीकरण (Standardization) वायदा को 'तरल' (liquid) बनाता है, जिसका अर्थ है कि आप उन्हें सेकंडों में खरीद और बेच सकते हैं।",
+      "formula": "Total Contract Value = Price × Trading Unit",
+      "formula_explanation": "अपने व्यापार का पूरा मूल्य (full value) जानने के लिए, बाज़ार मूल्य (market price) को लॉट साइज़ (lot size) से गुणा करें।",
+      "step_by_step_calculation_example": "Scenario: आप कच्चे तेल (Crude Oil) का 1 लॉट खरीदते हैं।\n\n* **Market Price:** ₹6,000 प्रति बैरल।\n* **Trading Unit:** 100 बैरल।\n* **Calculation:** 6,000 × 100 = **₹6,00,000 (Contract Value / अनुबंध मूल्य)**।",
+      "real_life_indian_example": "यदि आप MCX पर 'Gold Petal' का व्यापार करते हैं, तो इकाई 1 ग्राम है। यदि आप 'Gold' (Main) का व्यापार करते हैं, तो इकाई 1 किलो है। आप 1 किलो के अनुबंध में 500 ग्राम नहीं खरीद सकते; आपको एक्सचेंज के लॉट साइज़ का पालन करना होगा।",
+      "exam_traps": [
+        "'Tick Size' को 'Lot Size' के साथ कंफ्यूज करना।",
+        "यह सोचना कि आप समाप्ति तिथि (expiry date) को कस्टमाइज़ कर सकते हैं। केवल फ़ॉरवर्ड्स (forwards) के लिए, वायदा (futures) के लिए नहीं।"
+      ],
+      "memory_trick": "Futures = Fixed (तय)। एक्सचेंज द्वारा सब कुछ तय किया जाता है।"
+    },
+    {
+      "concept": "2. Margins (सुरक्षा जमा / The Security Deposit)",
+      "basic_meaning": "एक बड़े अनुबंध को नियंत्रित करने के लिए आपके द्वारा भुगतान की जाने वाली छोटी अग्रिम राशि (upfront amount)।",
+      "detailed_explanation": "चूँकि वायदा में उच्च मूल्य (high value) शामिल होता है, इसलिए एक्सचेंज यह सुनिश्चित करने के लिए पैसे एकत्र करता है कि यदि आप हार जाते हैं तो आप भाग न जाएं:\n\n* **Initial Margin (प्रारंभिक मार्जिन):** एक पोजीशन खोलने के लिए आवश्यक राशि (आमतौर पर अनुबंध मूल्य का 5-10%)।\n* **Mark-to-Market (MTM):** लाभ/हानि का दैनिक निपटान (daily settlement)। यदि आप आज पैसे हारते हैं, तो यह आज रात आपके खाते से काट लिया जाता है। यदि आप जीतते हैं, तो यह जोड़ दिया जाता है।\n* **Maintenance Margin (रखरखाव मार्जिन):** वह न्यूनतम स्तर (minimum level) जिससे आपका खाता ऊपर रहना चाहिए।",
+      "why_this_is_important": "यह 'लीवरेज' (Leverage) बनाता है—कम पूंजी (little capital) के साथ बड़ा मुनाफा (या नुकसान) कमाने की क्षमता।",
+      "formula": "Leverage = Total Contract Value / Margin Paid",
+      "formula_explanation": "आपके वास्तविक नकद (actual cash) की तुलना में आप कितने गुना अधिक मूल्य (value) नियंत्रित करते हैं।",
+      "step_by_step_calculation_example": "Scenario: सोने का 1 लॉट खरीदें (₹7,00,000 मूल्य)।\n\n* **Initial Margin Required:** 10% (₹70,000)।\n* **Leverage:** 7,00,000 / 70,000 = **10x (10 गुना)**।\n* **Outcome:** यदि सोने की कीमत 1% ऊपर जाती है, तो आप अपने ₹70,000 पर 10% लाभ कमाते हैं।",
+      "real_life_indian_example": "भारत में अधिकांश खुदरा व्यापारी (retail traders) SPAN मार्जिन का उपयोग करते हैं। यदि आपके पास ₹1 लाख है, तो आप लीवरेज का उपयोग करके ₹10 लाख मूल्य के कच्चे तेल (Crude Oil) का व्यापार कर सकते हैं।",
+      "exam_traps": [
+        "मार्जिन को 'शुल्क' (fee) समझना। यह एक जमा राशि (deposit) है; जब आप व्यापार बंद करते हैं तो यह आपको वापस मिल जाता है।",
+        "MTM को नज़रअंदाज़ करना। वायदा में, आप निपटान (settle) के लिए समाप्ति (expiry) तक प्रतीक्षा नहीं करते हैं; यह हर दिन होता है।"
+      ],
+      "memory_trick": "Margin = Multiplier (गुणक)। यह आपकी क्रय शक्ति (buying power) को गुणा करता है।"
+    },
+    {
+      "concept": "3. Convergence of Price (मूल्य का अभिसरण)",
+      "basic_meaning": "जैसे-जैसे अनुबंध समाप्ति (expiry) के करीब आता है, वायदा मूल्य (Futures price) और स्पॉट मूल्य (Spot price) समान (equal) हो जाने चाहिए।",
+      "detailed_explanation": "महीने की शुरुआत में, वायदा स्पॉट (Contango) से अधिक हो सकता है या कम (Backwardation) हो सकता है। हालाँकि, अनुबंध के अंतिम दिन, कोई 'भविष्य' (future) नहीं बचा होता है। इसलिए, अनुबंध को आज माल की वास्तविक नकद कीमत (actual cash price) को दर्शाना चाहिए।",
+      "why_this_is_important": "यही कारण है कि हेजिंग (hedging) काम करती है। यह सुनिश्चित करता है कि पेपर अनुबंध (paper contract) वास्तविक दुनिया की कमोडिटी (real-world commodity) से जुड़ा हुआ है।",
+      "formula": "Basis = Spot Price − Futures Price",
+      "formula_explanation": "नकद बाज़ार (cash market) और एक्सचेंज बाज़ार (exchange market) के बीच का अंतर (gap)। समाप्ति (expiry) पर, बेसिस (Basis) शून्य (Zero) हो जाता है।",
+      "step_by_step_calculation_example": "Scenario: \n* **Day 1:** Spot Gold = ₹70,000; Futures Gold = ₹70,500 (Basis = -₹500)।\n* **Expiry Day:** Spot Gold = ₹71,000; Futures Gold = ₹71,000 (Basis = ₹0)।",
+      "real_life_indian_example": "आर्बिट्रेजर्स (Arbitrageurs) बेसिस (basis) पर नज़र रखते हैं। यदि वायदा मूल्य स्पॉट + भंडारण लागत (storage costs) से बहुत अधिक है, तो वे अंतर को लॉक करने के लिए भौतिक सोना (physical gold) खरीदते हैं और वायदा (futures) बेचते हैं।",
+      "exam_traps": [
+        "यह सोचना कि बेसिस हमेशा सकारात्मक (positive) होता है। यह नकारात्मक (Contango) या सकारात्मक (Backwardation) हो सकता है।",
+        "सूत्र को सही ढंग से याद रखना: यह स्पॉट माइनस वायदा (Spot minus Futures) है।"
+      ],
+      "memory_trick": "Convergence = एक साथ आना (Coming Together)। वे अंत में 'मिलते' हैं।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Cash Settlement बनाम Physical Delivery",
+      "clear_explanation": "* **Cash Settlement (नकद निपटान):** कोई माल (goods) नहीं चलता है। आप बस अपने बैंक खाते में अंतिम लाभ या हानि का भुगतान करते हैं/प्राप्त करते हैं (उदा., इंडेक्स फ्यूचर्स)।\n* **Physical Delivery (भौतिक वितरण):** विक्रेता (seller) को एक्सचेंज वेयरहाउस को वास्तविक कमोडिटी (उदा., सोने की छड़ें) प्रदान करनी होगी, और खरीदार को उन्हें लेने के लिए पूर्ण मूल्य (full value) का भुगतान करना होगा।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "'Open Interest' (बकाया अनुबंधों की कुल संख्या) की परिभाषा।",
+    "'Mark-to-Market' (MTM) लाभ या हानि की गणना।",
+    "'Contango' (Future > Spot) और 'Backwardation' (Spot > Future) को समझना।",
+    "व्यापार की गारंटी देने में क्लीयरिंग कॉरपोरेशन (Clearing Corporation) की भूमिकाएं।"
+  ],
+  "quick_revision_summary": [
+    "वायदा (Futures) एक एक्सचेंज पर व्यापार किए जाने वाले मानकीकृत अनुबंध (standardized contracts) हैं।",
+    "Basis = Spot - Futures (समाप्ति पर शून्य/Zero)।",
+    "MTM लाभ/हानि का दैनिक निपटान (daily settlement) है।",
+    "लीवरेज आपको छोटे मार्जिन के साथ बड़े मूल्य को नियंत्रित करने की अनुमति देता है।",
+    "Open Interest बाज़ार की गहराई/भागीदारी को मापता है।"
+  ]
+}

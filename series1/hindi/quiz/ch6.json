@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "question": "The trading system for currency derivatives in India follows which mechanism?",
+    "options": ["Quote-driven system", "Order-driven system", "Floor-based shouting system", "Bilateral negotiation"],
+    "answer": "Order-driven system",
+    "hint": "कीमतें supply और demand orders द्वारा तय होती हैं।",
+    "explanation": "Indian exchanges एक anonymous, order-driven system का उपयोग करते हैं जहाँ system विशिष्ट नियमों (priority rules) के आधार पर buy और sell orders को match करता है।"
+  },
+  {
+    "id": 2,
+    "question": "In the order matching engine, what is the primary priority for matching orders?",
+    "options": ["Quantity Priority", "Time Priority", "Price Priority", "Client Category Priority"],
+    "answer": "Price Priority",
+    "hint": "Best price हमेशा पहले आता है।",
+    "explanation": "Price सबसे पहली प्राथमिकता (priority) है। ज़्यादा price वाला buy order, कम price वाले buy order से बेहतर होता है; और कम price वाला sell order, ज़्यादा price वाले sell order से बेहतर होता है।"
+  },
+  {
+    "id": 3,
+    "question": "If two orders are placed at the same price, which order will be executed first?",
+    "options": ["The larger order", "The order from a Clearing Member", "The order that entered the system first", "The order with the lower client code"],
+    "answer": "The order that entered the system first",
+    "hint": "एक कतार (queue) के बारे में सोचें।",
+    "explanation": "जब prices बराबर होते हैं, तो system 'Time Priority' को फॉलो करता है, यानी जो order system में पहले आया था उसे पहले match किया जाता है।"
+  },
+  {
+    "id": 4,
+    "question": "What does 'Anonymity' in the trading mechanism mean?",
+    "options": ["Brokers don't know their own clients", "The identity of the counterparty is not revealed to the traders", "The Exchange doesn't know who is trading", "Tax authorities cannot see the trades"],
+    "answer": "The identity of the counterparty is not revealed to the traders",
+    "hint": "छिपी हुई पहचान (Hidden identity)।",
+    "explanation": "Electronic trading में, buyers और sellers को यह नहीं पता होता है कि वे किसके साथ trade कर रहे हैं; risk को manage करने के लिए Clearing Corporation उनके बीच में खड़ी होती है।"
+  },
+  {
+    "id": 5,
+    "question": "What is the 'Tick Size' for USDINR Futures?",
+    "options": ["0.0100", "0.0050", "0.0025", "0.0500"],
+    "answer": "0.0025",
+    "hint": "एक पैसे का चौथाई हिस्सा।",
+    "explanation": "Tick size कीमत में होने वाली न्यूनतम वृद्धि (minimum price increment) है। USDINR के लिए, यह 0.25 पैसे या 0.0025 INR है।"
+  },
+  {
+    "id": 6,
+    "question": "A 'Market Order' is an order to buy or sell at:",
+    "options": ["A specific price only", "The best available price in the market", "The closing price", "The average price of the day"],
+    "answer": "The best available price in the market",
+    "hint": "तुरंत निष्पादन (Immediate execution)।",
+    "explanation": "Market orders में कोई price limit नहीं होती है और वे order book में मौजूद best price पर तुरंत execute हो जाते हैं।"
+  },
+  {
+    "id": 7,
+    "question": "What happens to the unexecuted portion of an 'Immediate or Cancel' (IOC) order?",
+    "options": ["It stays in the order book until the end of the day", "It is automatically cancelled by the system", "It is converted to a Limit Order", "It is executed at the next day's opening"],
+    "answer": "It is automatically cancelled by the system",
+    "hint": "नाम से ही सब स्पष्ट है।",
+    "explanation": "एक IOC order तुरंत execute होना चाहिए। यदि यह पूरी तरह से fill नहीं हो पाता है, तो बचे हुए हिस्से को system से तुरंत हटा (cancel कर) दिया जाता है।"
+  },
+  {
+    "id": 8,
+    "question": "A 'Limit Order' ensures that:",
+    "options": ["The trade is executed immediately", "The trade happens at the specified price or better", "The trade happens only at the closing bell", "No margin is required"],
+    "answer": "The trade happens at the specified price or better",
+    "hint": "कीमत की सीमा (A price boundary)।",
+    "explanation": "Limit order trader को कीमत पर नियंत्रण (control) देता है, यह सुनिश्चित करता है कि वे अपने target price से ज़्यादा में न खरीदें या कम में न बेचें।"
+  },
+  {
+    "id": 9,
+    "question": "The 'Best Bid' refers to:",
+    "options": ["The lowest sell price", "The highest buy price", "The average of all orders", "The price of the last trade"],
+    "answer": "The highest buy price",
+    "hint": "वह buyer जो सबसे ज़्यादा भुगतान करने को तैयार है।",
+    "explanation": "Bid का अर्थ buy side से है। 'Best Bid' वह सबसे अधिक कीमत (highest price) है जो एक buyer देने की पेशकश (offer) कर रहा है।"
+  },
+  {
+    "id": 10,
+    "question": "The 'Best Ask' (or Offer) refers to:",
+    "options": ["The highest sell price", "The lowest sell price", "The best profit margin", "The broker's commission"],
+    "answer": "The lowest sell price",
+    "hint": "वह seller जो सबसे कम में बेचने को तैयार है।",
+    "explanation": "Ask का अर्थ sell side से है। 'Best Ask' वह सबसे कम कीमत (lowest price) है जिस पर कोई seller बेचने की पेशकश कर रहा है।"
+  },
+  {
+    "id": 11,
+    "question": "What is the 'Spread' in the trading screen?",
+    "options": ["The total volume of trades", "The difference between Best Bid and Best Ask", "The brokerage fee", "The daily price range"],
+    "answer": "The difference between Best Bid and Best Ask",
+    "hint": "खरीदने और बेचने के बीच का अंतर (gap)।",
+    "explanation": "Bid-ask spread liquidity का एक मापक (measure) है। एक छोटा (tighter) spread आमतौर पर अधिक liquid market को दर्शाता है।"
+  },
+  {
+    "id": 12,
+    "question": "A 'Stop Loss' order becomes a Market Order when:",
+    "options": ["The broker manually approves it", "The market price hits the Trigger Price", "The exchange closes", "The client loses 50% of margin"],
+    "answer": "The market price hits the Trigger Price",
+    "hint": "एक तय सीमा (threshold) तक पहुँचने पर।",
+    "explanation": "जैसे ही market द्वारा 'Trigger Price' को छुआ या पार किया जाता है, Stop Loss order activate हो जाता है और matching engine को भेज दिया जाता है।"
+  },
+  {
+    "id": 13,
+    "question": "What is 'Market Depth'?",
+    "options": ["The total number of members in the exchange", "The display of the best 5 buy and sell orders", "The total value of the RBI's reserves", "The time it takes to execute a trade"],
+    "answer": "The display of the best 5 buy and sell orders",
+    "hint": "Orders की दिखाई देने वाली परतें (layers)।",
+    "explanation": "Market depth अलग-अलग price levels पर उपलब्ध liquidity को दर्शाता है, जिसमें आमतौर पर टॉप 5 bids और asks दिखाए जाते हैं।"
+  },
+  {
+    "id": 14,
+    "question": "Which entity provides the trading platform (the software and network)?",
+    "options": ["The Clearing Corporation", "The Stock Exchange (e.g., NSE/BSE)", "The RBI", "The SEBI"],
+    "answer": "The Stock Exchange (e.g., NSE/BSE)",
+    "hint": "Trading करने की जगह (venue)।",
+    "explanation": "Stock Exchange ट्रेडिंग फ्लोर/प्लेटफ़ॉर्म के technology provider और regulator के रूप में कार्य करता है।"
+  },
+  {
+    "id": 15,
+    "question": "An order with 'Disclosed Quantity' functionality is used to:",
+    "options": ["Hide the client's name", "Show only a part of the total order size to the market", "Avoid paying taxes", "Ensure the trade is not taxed"],
+    "answer": "Show only a part of the total order size to the market",
+    "hint": "Iceberg order.",
+    "explanation": "Large orders को 'Disclosed Quantity' (जैसे 1000 लॉट के order में सिर्फ 100 लॉट दिखाना) के साथ लगाया जा सकता है ताकि market price पर तुरंत कोई बड़ा प्रभाव (impact) न पड़े।"
+  },
+  {
+    "id": 16,
+    "question": "The status of an order that has been entered but not yet matched is:",
+    "options": ["Executed", "Pending / Open", "Rejected", "Cancelled"],
+    "answer": "Pending / Open",
+    "hint": "Order book में इंतज़ार कर रहा है।",
+    "explanation": "जो orders system में हैं लेकिन जिन्हें अभी तक कोई counterparty (खरीदार/विक्रेता) नहीं मिला है, उन्हें 'Open' या 'Passive' orders माना जाता है।"
+  },
+  {
+    "id": 17,
+    "question": "What is the 'Daily Price Range' (DPR)?",
+    "options": ["The total volume traded", "The operating range within which prices can move for the day", "The difference between today and yesterday's close", "The average interest rate"],
+    "answer": "The operating range within which prices can move for the day",
+    "hint": "Circuit filters.",
+    "explanation": "DPR एक सुरक्षा तंत्र (safety mechanism) है जो यह तय करके अत्यधिक price volatility (उतार-चढ़ाव) को रोकता है कि एक दिन में कीमत कितनी ऊपर या नीचे जा सकती है।"
+  },
+  {
+    "id": 18,
+    "question": "Who can cancel an open order in the system?",
+    "options": ["Only the Exchange", "Only the SEBI", "The user who placed the order (or their broker)", "No one can cancel once entered"],
+    "answer": "The user who placed the order (or their broker)",
+    "hint": "यूज़र का नियंत्रण (User control)।",
+    "explanation": "एक trader किसी भी order को तब तक modify या cancel कर सकता है जब तक वह match/execute नहीं हुआ हो।"
+  },
+  {
+    "id": 19,
+    "question": "What does 'Price Improvement' mean in an order-driven market?",
+    "options": ["When the broker gives a discount", "Executing an order at a better price than the limit price specified", "When the market goes up", "When taxes are reduced"],
+    "answer": "Executing an order at a better price than the limit price specified",
+    "hint": "एक बेहतर डील मिलना।",
+    "explanation": "यदि आप 83.10 पर limit buy लगाते हैं लेकिन कोई seller 83.05 पर उपलब्ध है, तो system आपके trade को 83.05 पर execute करेगा, जिससे आपकी कीमत 'improve' (बेहतर) हो जाएगी।"
+  },
+  {
+    "id": 20,
+    "question": "Which of the following represents a 'Passive Order'?",
+    "options": ["A Market Order", "An order that stays in the book and provides liquidity", "An order that is immediately cancelled", "An order that executes against existing orders"],
+    "answer": "An order that stays in the book and provides liquidity",
+    "hint": "यह दूसरों के आने का इंतज़ार करता है।",
+    "explanation": "Passive orders वे limit orders हैं जो तुरंत match नहीं होते हैं और order book में बैठे रहते हैं, जिससे market depth बनती है।"
+  },
+  {
+    "id": 21,
+    "question": "A 'Day Order' is valid for:",
+    "options": ["24 hours exactly", "Until the end of the current trading session", "Until the user cancels it, even if it takes weeks", "Only for 1 hour"],
+    "answer": "Until the end of the current trading session",
+    "hint": "Market बंद होने पर समाप्त हो जाता है।",
+    "explanation": "By default, currency segment में orders 'Day' orders होते हैं, जिसका अर्थ है कि यदि वे fill (पूरे) नहीं होते हैं तो वे trading day के अंत में expire हो जाते हैं।"
+  },
+  {
+    "id": 22,
+    "question": "What is the 'Order Log'?",
+    "options": ["A list of all brokers", "A record of every order activity (entry, modification, cancellation, execution)", "The contract note", "The profit and loss statement"],
+    "answer": "A record of every order activity (entry, modification, cancellation, execution)",
+    "hint": "ऑडिट ट्रेल (Audit trail)।",
+    "explanation": "Order log एक समय के अनुसार (chronological) रिकॉर्ड है जिसका उपयोग audits और trade execution से संबंधित विवादों (disputes) को सुलझाने के लिए किया जाता है।"
+  },
+  {
+    "id": 23,
+    "question": "What is the primary currency used for quoting USDINR contracts?",
+    "options": ["US Dollars", "Indian Rupees", "Euro", "Special Drawing Rights"],
+    "answer": "Indian Rupees",
+    "hint": "यह पैसों (Paise) में quote किया जाता है।",
+    "explanation": "भारत में Currency contracts को foreign currency की प्रति यूनिट (या JPY के लिए 100 यूनिट) के लिए INR (रुपये) में quote किया जाता है।"
+  },
+  {
+    "id": 24,
+    "question": "The trading system matches an 'Active' Buy order against:",
+    "options": ["The Highest Bid", "The Lowest Ask", "The Average Price", "The Last Traded Price"],
+    "answer": "The Lowest Ask",
+    "hint": "सबसे सस्ते seller से खरीदें।",
+    "explanation": "आने वाला (active) buy order हमेशा सबसे कम उपलब्ध selling price (Best Ask) के साथ match होगा ताकि best execution मिल सके।"
+  },
+  {
+    "id": 25,
+    "question": "What happens when the 'Price Circuit' limit is reached?",
+    "options": ["Trading is permanently stopped", "Trading is halted for a 'cool-off' period or limits are relaxed", "All orders are cancelled", "The broker is penalized"],
+    "answer": "Trading is halted for a 'cool-off' period or limits are relaxed",
+    "hint": "एक अस्थायी ठहराव (temporary pause)।",
+    "explanation": "Circuit filters घबराहट (panic) को रोकने के लिए डिज़ाइन किए गए हैं। जब यह लिमिट आ जाती है, तो exchange trading को रोक सकता है और फिर wider limits के साथ फिर से खोल सकता है।"
+  },
+  {
+    "id": 26,
+    "question": "What is 'Trade-to-Trade' settlement?",
+    "options": ["Netting all trades at the end of the day", "Settling each trade individually without netting (not common in ETCD)", "Trading only on Tuesdays", "Trading without any margin"],
+    "answer": "Settling each trade individually without netting (not common in ETCD)",
+    "hint": "Gross settlement.",
+    "explanation": "Derivatives में, आमतौर पर trades को net किया जाता है, लेकिन 'Trade-to-Trade' का मतलब हर transaction का व्यक्तिगत रूप से (gross) settlement करना है।"
+  },
+  {
+    "id": 27,
+    "question": "What is the purpose of the 'Trade Verification' facility provided by exchanges?",
+    "options": ["To let investors check if their trades were actually executed on the exchange", "To check the broker's bank balance", "To see the RBI's daily rates", "To calculate the next day's profit"],
+    "answer": "To let investors check if their trades were actually executed on the exchange",
+    "hint": "Investor सुरक्षा का एक टूल।",
+    "explanation": "Exchanges एक टूल प्रदान करते हैं जहाँ clients अपनी trade details डालकर यह जांच सकते हैं कि उनके broker ने कहीं कोई 'डब्बा' (fake) trade तो नहीं किया है।"
+  },
+  {
+    "id": 28,
+    "question": "A 'GTC' (Good Till Cancelled) order (where permitted) stays in the system until:",
+    "options": ["The end of the day", "The user cancels it or the contract expires", "The broker closes it", "It makes 10% profit"],
+    "answer": "The user cancels it or the contract expires",
+    "hint": "लंबे समय तक बना रहता है।",
+    "explanation": "GTC orders कई दिनों तक active रहते हैं, Day orders के विपरीत जो रोज़ाना expire हो जाते हैं।"
+  },
+  {
+    "id": 29,
+    "question": "In the symbol 'USDINR26FEB2026', what does the date represent?",
+    "options": ["The day the trade was made", "The expiry date of the contract", "The date the profit is paid", "The date the RBI was founded"],
+    "answer": "The expiry date of the contract",
+    "hint": "जब contract खत्म होता है।",
+    "explanation": "प्रत्येक derivative contract की पहचान उसके underlying asset और उसकी विशिष्ट (specific) expiration date से होती है।"
+  },
+  {
+    "id": 30,
+    "question": "What is the impact of high liquidity on the trading mechanism?",
+    "options": ["Wider spreads and slower execution", "Narrower spreads and faster execution", "Higher taxes", "Fewer trading members"],
+    "answer": "Narrower spreads and faster execution",
+    "hint": "खरीदना और बेचना आसान हो जाता है।",
+    "explanation": "High liquidity का मतलब है कि order book में कई orders हैं, जिससे कीमत (price) को बहुत अधिक हिलाए बिना बड़े volume में trade करना आसान हो जाता है।"
+  },
+  {
+    "id": 31,
+    "question": "What is 'Self-Trade' prevention?",
+    "options": ["Preventing a trader from trading with themselves using two different IDs", "Preventing trading on holidays", "Preventing the broker from taking profit", "Preventing a trade from being cancelled"],
+    "answer": "Preventing a trader from trading with themselves using two different IDs",
+    "hint": "अवैध रूप से (Illegally) volume बढ़ाना।",
+    "explanation": "Exchanges के पास ऐसे तंत्र (mechanisms) होते हैं जो किसी एक entity (व्यक्ति/संस्था) को एक ही trade में buyer और seller दोनों होने से रोकते हैं, जो कि manipulation का एक रूप है।"
+  },
+  {
+    "id": 32,
+    "question": "The 'Opening Price' of the day is usually determined through:",
+    "options": ["The first trade made at 9:00 AM", "A pre-open call auction mechanism", "The RBI's opening quote", "The previous day's average"],
+    "answer": "A pre-open call auction mechanism",
+    "hint": "शुरुआत से पहले Price discovery।",
+    "explanation": "शुरुआती कीमत (equilibrium starting price) खोजने के लिए exchange नियमित (regular) market खुलने से पहले orders को match करने के लिए 'Call Auction' का उपयोग करता है।"
+  },
+  {
+    "id": 33,
+    "question": "A 'GTD' (Good Till Date) order is valid until:",
+    "options": ["The end of the year", "A specific date chosen by the trader", "The next holiday", "The end of the day"],
+    "answer": "A specific date chosen by the trader",
+    "hint": "एक तय दिन पर expire होता है।",
+    "explanation": "GTD trader को यह तय करने की अनुमति देता है कि order कितने दिनों तक order book में active रहना चाहिए।"
+  },
+  {
+    "id": 34,
+    "question": "If a trader enters a Buy order at 83.50 and a Sell order is already at 83.40, the trade happens at:",
+    "options": ["83.50", "83.40", "83.45", "The trade is rejected"],
+    "answer": "83.40",
+    "hint": "Active order, Passive के साथ match होता है।",
+    "explanation": "Order-driven market में, आने वाला (incoming) order पहले से मौजूद (passive) order की price के साथ match होता है। यहाँ मौजूद sell price 83.40 है।"
+  },
+  {
+    "id": 35,
+    "question": "What is the 'Order Book'?",
+    "options": ["A physical diary kept by brokers", "The electronic database of all pending buy and sell orders", "The manual for exchange rules", "The RBI's ledger"],
+    "answer": "The electronic database of all pending buy and sell orders",
+    "hint": "Matching engine का दिल (heart)।",
+    "explanation": "Matching engine price और time के आधार पर buyers और sellers की जोड़ी बनाने (pair करने) के लिए order book का उपयोग करता है।"
+  },
+  {
+    "id": 36,
+    "question": "An 'At-the-Opening' (ATO) order:",
+    "options": ["Is executed at the day's average", "Is meant to be executed during the market opening", "Is only for banks", "Is executed at the end of the day"],
+    "answer": "Is meant to be executed during the market opening",
+    "hint": "दिन की शुरुआत (Start of the day)।",
+    "explanation": "ATO orders विशेष रूप से opening price discovery process में भाग लेने के लिए डिज़ाइन किए गए हैं।"
+  },
+  {
+    "id": 37,
+    "question": "Which of the following can lead to an 'Order Rejection'?",
+    "options": ["Insufficient margin in the account", "Price being outside the DPR", "Contract being expired", "All of the above"],
+    "answer": "All of the above",
+    "hint": "विफल होने (failure) के कई कारण।",
+    "explanation": "Exchange का risk management system किसी order को स्वीकार करने से पहले funds, price limits और contract की वैधता (validity) की जांच करता है।"
+  },
+  {
+    "id": 38,
+    "question": "A 'FOK' (Fill or Kill) order is:",
+    "options": ["An order to execute fully immediately or not at all", "An order to kill the broker", "An order to wait until the price is better", "An order to trade only at 3:30 PM"],
+    "answer": "An order to execute fully immediately or not at all",
+    "hint": "या तो पूरा अभी, या कुछ नहीं।",
+    "explanation": "FOK के लिए आवश्यक है कि पूरी quantity तुरंत fill हो जाए। यदि एक लॉट भी fill नहीं हो सकता, तो पूरा order cancel हो जाता है।"
+  },
+  {
+    "id": 39,
+    "question": "What is the 'Last Traded Price' (LTP)?",
+    "options": ["The price of the very first trade of the day", "The most recent price at which a trade was executed", "The average price of the day", "The RBI's reference rate"],
+    "answer": "The most recent price at which a trade was executed",
+    "hint": "Current market price (मौजूदा बाजार मूल्य)।",
+    "explanation": "LTP सबसे हालिया (recent) transaction की कीमत है और अक्सर लोग इसे ही 'current market price' कहते हैं।"
+  },
+  {
+    "id": 40,
+    "question": "What is the primary role of the 'Matching Engine'?",
+    "options": ["To calculate taxes", "To pair buy and sell orders based on rules", "To provide margin to clients", "To print contract notes"],
+    "answer": "To pair buy and sell orders based on rules",
+    "hint": "जोड़ी बनाने वाला (The matchmaker)।",
+    "explanation": "Matching engine exchange का मुख्य software है जो हर buyer के लिए seller और हर seller के लिए buyer ढूँढ़ता है।"
+  },
+  {
+    "id": 41,
+    "question": "What is the 'Order Book' color coding (conventionally)?",
+    "options": ["Blue for Buy, Red for Sell", "Green for Buy, Red for Sell", "Yellow for Profit, White for Loss", "No specific colors"],
+    "answer": "Blue for Buy, Red for Sell",
+    "hint": "Standard terminal view (NSE)।",
+    "explanation": "आमतौर पर Indian trading terminals पर, Buy orders/quantities को नीले (Blue) रंग में और Sell को लाल (Red) रंग में दिखाया जाता है।"
+  },
+  {
+    "id": 42,
+    "question": "What is the maximum quantity per order limit?",
+    "options": ["Unlimited", "Set by the exchange to prevent system errors and manipulation", "100 lots only", "Decided by the client"],
+    "answer": "Set by the exchange to prevent system errors and manipulation",
+    "hint": "सुरक्षा के लिए एक सीमा (safety cap)।",
+    "explanation": "'Fat Finger' (गलत टाइपिंग) errors या market में अस्थिरता (destabilization) को रोकने के लिए, exchanges एक order के अधिकतम आकार (maximum size) को सीमित करते हैं।"
+  },
+  {
+    "id": 43,
+    "question": "Which order type is best for a trader who wants to hide their entry from the market depth?",
+    "options": ["Limit Order", "Market Order", "Disclosed Quantity Order", "Stop Loss Order"],
+    "answer": "Disclosed Quantity Order",
+    "hint": "आंशिक दृश्यता (Partial visibility)।",
+    "explanation": "Order के केवल एक छोटे हिस्से का खुलासा (disclose) करके, trader अपनी position के वास्तविक आकार (true scale) को अन्य प्रतिभागियों (participants) से छिपा लेता है।"
+  },
+  {
+    "id": 44,
+    "question": "What is 'Slippage'?",
+    "options": ["When the broker forgets to trade", "The difference between the expected price and the actual execution price", "When the market closes early", "A technical glitch in the app"],
+    "answer": "The difference between the expected price and the actual execution price",
+    "hint": "Speed (गति) की कीमत।",
+    "explanation": "Slippage अक्सर volatile markets में market orders के साथ होता है, जहाँ order match होने से पहले ही कीमत (price) बदल जाती है।"
+  },
+  {
+    "id": 45,
+    "question": "In a currency pair 'Base/Quote', which currency's quantity is standardized in the contract?",
+    "options": ["The Quote currency", "The Base currency", "Both", "The Indian Rupee"],
+    "answer": "The Base currency",
+    "hint": "Pair में पहली currency।",
+    "explanation": "USDINR contract में, lot size (1,000) Base currency (USD) को संदर्भित करता है।"
+  },
+  {
+    "id": 46,
+    "question": "What is 'After Market Order' (AMO)?",
+    "options": ["An order that trades only at night", "An order placed outside market hours that gets sent to the exchange when it opens", "An order to trade after the client retires", "An illegal trade"],
+    "answer": "An order placed outside market hours that gets sent to the exchange when it opens",
+    "hint": "पहले से तय की गई एंट्री (Pre-scheduled entry)।",
+    "explanation": "AMOs उन traders को अनुमति देते हैं जो दिन के दौरान व्यस्त होते हैं कि वे अगले दिन के खुलने के लिए अपने orders कतार (queue) में लगा सकें।"
+  },
+  {
+    "id": 47,
+    "question": "What is a 'Trade Modification'?",
+    "options": ["Changing the price of a trade after it is done", "Correcting an error (like client code) after the trade is executed", "Deleting a trade", "Changing the profit amount"],
+    "answer": "Correcting an error (like client code) after the trade is executed",
+    "hint": "गलती सुधारना (Fixing a mistake)।",
+    "explanation": "एक बार trade हो जाने के बाद, price या quantity को नहीं बदला जा सकता, लेकिन गलत client ID जैसी प्रशासनिक (administrative) गलतियों को एक विशिष्ट समय सीमा (window) के भीतर सुधारा जा सकता है।"
+  },
+  {
+    "id": 48,
+    "question": "What is 'Algorithmic Trading'?",
+    "options": ["Trading based on math books", "Trading using automated computer programs with pre-defined rules", "Trading only on calculators", "Manual high-speed trading"],
+    "answer": "Trading using automated computer programs with pre-defined rules",
+    "hint": "Bot ट्रेडिंग।",
+    "explanation": "Algos पहले से तय नियमों के आधार पर, इंसानों की तुलना में बहुत तेज़ी से orders place और manage करने के लिए speed और logic का उपयोग करते हैं।"
+  },
+  {
+    "id": 49,
+    "question": "The 'Volume Weighted Average Price' (VWAP) is used for:",
+    "options": ["Determining the Daily Settlement Price", "Calculating the broker's fee", "Determining the RBI's wealth", "None of the above"],
+    "answer": "Determining the Daily Settlement Price",
+    "hint": "Closing price की कैलकुलेशन।",
+    "explanation": "Exchange daily settlement rate तय करने के लिए दिन के अंत में हुए trades के volume के आधार पर average price (औसत मूल्य) की गणना करता है।"
+  },
+  {
+    "id": 50,
+    "question": "What is the primary benefit of a 'Limit Order' over a 'Market Order'?",
+    "options": ["Guaranteed execution", "Price certainty", "Lower taxes", "No margin required"],
+    "answer": "Price certainty",
+    "hint": "आप अपनी लागत (cost) जानते हैं।",
+    "explanation": "एक limit order यह गारंटी देता है कि आप अपने target price से अधिक भुगतान नहीं करेंगे (या कम प्राप्त नहीं करेंगे), जबकि market order किसी प्रतिकूल (unfavorable) कीमत पर भी execute हो सकता है।"
+  }
+]

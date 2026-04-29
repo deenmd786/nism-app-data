@@ -1,0 +1,652 @@
+[
+  {
+    "id": 21,
+    "question": "An Interest Rate Future (IRF) is a contract to buy or sell a debt instrument at:",
+    "options": [
+      "The current market price today",
+      "A specified future date at a price determined today",
+      "A specified future date at the market price on that future date",
+      "Any date the buyer chooses"
+    ],
+    "answer": "A specified future date at a price determined today",
+    "hint": "Price को future transaction के लिए अभी lock करना।",
+    "explanation": "IRF एक standardized contract है जो किसी underlying debt instrument (जैसे G-Sec) को एक specified future date पर आज तय किए गए price पर buy या sell करने के लिए होता है।"
+  },
+  {
+    "id": 22,
+    "question": "In India, Exchange Traded Interest Rate Futures are regulated by:",
+    "options": [
+      "RBI only",
+      "SEBI only",
+      "Both SEBI and RBI",
+      "Ministry of Finance"
+    ],
+    "answer": "Both SEBI and RBI",
+    "hint": "इसमें securities trading (SEBI) और interest rates/money markets (RBI) शामिल हैं।",
+    "explanation": "SEBI exchanges और brokers को regulate करता है, जबकि RBI underlying interest rate market और banks के participation को regulate करता है। वे coordination में काम करते हैं।"
+  },
+  {
+    "id": 23,
+    "question": "Which of the following is currently the most popular underlying asset for IRFs in India?",
+    "options": [
+      "Corporate Bonds",
+      "Government of India Securities (G-Secs)",
+      "State Development Loans",
+      "Municipal Bonds"
+    ],
+    "answer": "Government of India Securities (G-Secs)",
+    "hint": "देश में सबसे safe और liquid debt.",
+    "explanation": "G-Secs (विशेष रूप से 10-year benchmark) अपनी high liquidity और sovereign guarantee के कारण IRFs के लिए primary underlying assets हैं।"
+  },
+  {
+    "id": 24,
+    "question": "Exchange Traded IRF contracts in India are:",
+    "options": [
+      "Standardized",
+      "Customized",
+      "Negotiated over the phone",
+      "Non-transferable"
+    ],
+    "answer": "Standardized",
+    "hint": "वे stocks की तरह एक exchange पर trade करते हैं।",
+    "explanation": "सभी exchange-traded derivatives की तरह, trading को facilitate करने के लिए IRF contracts में standardized specifications (lot size, expiry, tick size) होते हैं।"
+  },
+  {
+    "id": 25,
+    "question": "The '10-Year G-Sec Futures' contract is typically based on:",
+    "options": [
+      "A single specific 10-year bond",
+      "A basket of eligible 10-year G-Secs",
+      "The average inflation rate",
+      "The repo rate"
+    ],
+    "answer": "A single specific 10-year bond",
+    "hint": "Current contracts अक्सर benchmark को track करते हैं।",
+    "explanation": "जबकि earlier designs एक basket का उपयोग करते थे, modern single-bond futures एक specific underlying security (उदा., current benchmark 10-year G-Sec) को track करते हैं।"
+  },
+  {
+    "id": 26,
+    "question": "What is the typical trading unit (Lot Size) for a G-Sec Futures contract in India?",
+    "options": [
+      "Rs. 2,00,000 face value",
+      "Rs. 2,000 face value",
+      "Rs. 100 face value",
+      "Rs. 5,00,000 face value"
+    ],
+    "answer": "Rs. 2,00,000 face value",
+    "hint": "यह retail participation के लिए एक standard size है।",
+    "explanation": "NSE/BSE पर G-Sec futures के लिए standard contract size अक्सर Rs. 2,00,000 face value होता है।"
+  },
+  {
+    "id": 27,
+    "question": "IRF contracts in India are currently settled:",
+    "options": [
+      "Physically",
+      "In Cash",
+      "In Gold",
+      "In Foreign Currency"
+    ],
+    "answer": "In Cash",
+    "hint": "आपको वास्तव में bonds deliver करने की आवश्यकता नहीं है।",
+    "explanation": "India में Current IRF contracts cash-settled हैं, जिसका अर्थ है कि entry price और settlement price के बीच का difference cash में pay/receive किया जाता है।"
+  },
+  {
+    "id": 28,
+    "question": "The 'Tick Size' (minimum price movement) for G-Sec Futures is typically:",
+    "options": [
+      "Re. 1.00",
+      "Re. 0.25",
+      "Re. 0.0025",
+      "Re. 0.01"
+    ],
+    "answer": "Re. 0.0025",
+    "hint": "यह बहुत fine pricing adjustments की अनुमति देता है।",
+    "explanation": "Tick size आमतौर पर Re. 0.0025 (या 0.25 paise) होता है, जो bond market prices के साथ precise alignment की अनुमति देता है।"
+  },
+  {
+    "id": 29,
+    "question": "The Final Settlement Price (FSP) of a cash-settled 10-Year G-Sec Future is based on:",
+    "options": [
+      "The closing price of the future on the expiry day",
+      "The weighted average price of the underlying bond in the spot market",
+      "A price determined by SEBI",
+      "The opening price of the future"
+    ],
+    "answer": "The weighted average price of the underlying bond in the spot market",
+    "hint": "इसे actual bond price के साथ converge होना चाहिए।",
+    "explanation": "FSP को आमतौर पर expiry day पर NDS-OM (spot) market में underlying bond के weighted average price से derive किया जाता है।"
+  },
+  {
+    "id": 30,
+    "question": "IRF contracts typically expire on:",
+    "options": [
+      "The last Thursday of the month",
+      "The first Monday of the month",
+      "Any day chosen by the buyer",
+      "Every Friday"
+    ],
+    "answer": "The last Thursday of the month",
+    "hint": "Indian derivatives के लिए standard expiry cycle.",
+    "explanation": "Equity derivatives की तरह, IRF contracts आमतौर पर expiry month के last Thursday को expire होते हैं।"
+  },
+  {
+    "id": 31,
+    "question": "If you are 'Long' a G-Sec Future, you profit when:",
+    "options": [
+      "Interest rates rise (Bond prices fall)",
+      "Interest rates fall (Bond prices rise)",
+      "The bond defaults",
+      "Trading volume is low"
+    ],
+    "answer": "Interest rates fall (Bond prices rise)",
+    "hint": "Long का मतलब है कि आपने इसे खरीदा है।",
+    "explanation": "एक long position price increase से profit कमाती है। Interest rates गिरने पर Bond prices बढ़ते हैं।"
+  },
+  {
+    "id": 32,
+    "question": "In the context of physical settlement (if applicable), what is the 'Cheapest-to-Deliver' (CTD) bond?",
+    "options": [
+      "The bond with the lowest coupon",
+      "The bond that maximizes the profit (or minimizes loss) for the seller upon delivery",
+      "The bond with the highest liquidity",
+      "The bond with the shortest maturity"
+    ],
+    "answer": "The bond that maximizes the profit (or minimizes loss) for the seller upon delivery",
+    "hint": "Seller के पास यह choice होती है कि कौन सा bond देना है।",
+    "explanation": "एक basket delivery system में, seller उस bond को choose करेगा जो उनके लिए spot market में futures invoice price के relative खरीदना सबसे सस्ता है।"
+  },
+  {
+    "id": 33,
+    "question": "The 'Conversion Factor' (CF) is used to:",
+    "options": [
+      "Convert the price of a deliverable bond to an equivalent standard notional bond price",
+      "Convert dollars to rupees",
+      "Convert interest rate to price",
+      "Convert long term gains to short term gains"
+    ],
+    "answer": "Convert the price of a deliverable bond to an equivalent standard notional bond price",
+    "hint": "यह different coupons वाले bonds को equalize करता है।",
+    "explanation": "CF deliverable bond के invoice price को futures contract में specified notional bond (आमतौर पर 6% या 7% coupon bond) के comparable बनाने के लिए adjust करता है।"
+  },
+  {
+    "id": 34,
+    "question": "The theoretical price of a G-Sec Future is calculated using:",
+    "options": [
+      "Black-Scholes Model",
+      "Cost of Carry Model",
+      "Binomial Tree Model",
+      "Random Walk Theory"
+    ],
+    "answer": "Cost of Carry Model",
+    "hint": "Spot Price + Cost of Holding - Income.",
+    "explanation": "Cost of Carry model futures price को Spot Price + Financing Cost (Repo rate) - Income (Coupon accrued) के रूप में calculate करता है।"
+  },
+  {
+    "id": 35,
+    "question": "If the 'Repo Rate' (cost of funds) is lower than the 'Current Yield' of the bond:",
+    "options": [
+      "Futures Price will be higher than Spot Price (Contango)",
+      "Futures Price will be lower than Spot Price (Backwardation)",
+      "Futures Price will equal Spot Price",
+      "The market is closed"
+    ],
+    "answer": "Futures Price will be lower than Spot Price (Backwardation)",
+    "hint": "Negative Cost of Carry.",
+    "explanation": "यदि bond पर earned yield इसे खरीदने के लिए पैसे borrow करने की cost से अधिक है, तो 'Cost of Carry' negative है, जिससे futures price spot price से कम हो जाता है।"
+  },
+  {
+    "id": 36,
+    "question": "91-Day T-Bill Futures are quoted in terms of:",
+    "options": [
+      "Price (e.g., Rs. 98.50)",
+      "Yield (e.g., 6.50%)",
+      "100 minus Yield (e.g., 100 - 6.50 = 93.50)",
+      "Premium amount"
+    ],
+    "answer": "100 minus Yield (e.g., 100 - 6.50 = 93.50)",
+    "hint": "Eurodollar futures के समान।",
+    "explanation": "T-Bill futures को एक index value के रूप में quote किया जाता है: 100 minus the annualized yield. यह ensure करता है कि quote price के समान direction में (yield के inverse) move करे।"
+  },
+  {
+    "id": 37,
+    "question": "Initial Margin is calculated based on:",
+    "options": [
+      "Value at Risk (VaR) / SPAN",
+      "Fixed percentage of contract value",
+      "Credit rating of the trader",
+      "Arbitrary decision of the broker"
+    ],
+    "answer": "Value at Risk (VaR) / SPAN",
+    "hint": "यह maximum probable loss को estimate करता है।",
+    "explanation": "Clearing corporations potential 1-day losses को cover करने के लिए required initial margin को calculate करने के लिए VaR पर आधारित SPAN (Standard Portfolio Analysis of Risk) का उपयोग करते हैं।"
+  },
+  {
+    "id": 38,
+    "question": "Calendar Spread Margin applies when:",
+    "options": [
+      "A trader holds a Long position in one month and a Short position in a different month",
+      "A trader holds only Long positions",
+      "A trader holds only Short positions",
+      "A trader trades only on Tuesdays"
+    ],
+    "answer": "A trader holds a Long position in one month and a Short position in a different month",
+    "hint": "Different expiry months में offsetting positions.",
+    "explanation": "Calendar spread margin normal margin से कम होता है क्योंकि समान underlying लेकिन different maturities में opposite positions hold करने से risk कम हो जाता है।"
+  },
+  {
+    "id": 39,
+    "question": "Who is the central counterparty for all IRF trades?",
+    "options": [
+      "The Broker",
+      "The Clearing Corporation (e.g., NSCCL/ICCL)",
+      "The RBI",
+      "The Ministry of Finance"
+    ],
+    "answer": "The Clearing Corporation (e.g., NSCCL/ICCL)",
+    "hint": "वे settlement की guarantee देते हैं।",
+    "explanation": "Clearing Corporation हर seller के लिए buyer और हर buyer के लिए seller के रूप में step in करता है, settlement की guarantee देता है और risk को manage करता है।"
+  },
+  {
+    "id": 40,
+    "question": "Daily Settlement Price (DSP) is used for:",
+    "options": [
+      "Determining the final payout on expiry",
+      "Daily Mark-to-Market (MTM) margin adjustments",
+      "Calculating brokerage",
+      "Identifying the CTD bond"
+    ],
+    "answer": "Daily Mark-to-Market (MTM) margin adjustments",
+    "hint": "यह हर दिन होता है।",
+    "explanation": "DSP का उपयोग daily profits या losses (MTM) को calculate करने के लिए किया जाता है, जिन्हें फिर trader के margin account में debit या credit किया जाता है।"
+  },
+  {
+    "id": 41,
+    "question": "A 'Clean Price' quotation for a bond excludes:",
+    "options": [
+      "Principal",
+      "Accrued Interest",
+      "Brokerage",
+      "Taxes"
+    ],
+    "answer": "Accrued Interest",
+    "hint": "Dirty Price = Clean Price + Accrued Interest.",
+    "explanation": "IRF contracts को आमतौर पर Clean Price terms में quote किया जाता है, जिसका अर्थ है कि accrued interest component quoted price में शामिल नहीं है।"
+  },
+  {
+    "id": 42,
+    "question": "If a trader expects the yield curve to steepen (Long-term rates rise more than Short-term rates), they might:",
+    "options": [
+      "Buy Short-term Futures and Sell Long-term Futures",
+      "Sell Short-term Futures and Buy Long-term Futures",
+      "Buy both",
+      "Sell both"
+    ],
+    "answer": "Buy Short-term Futures and Sell Long-term Futures",
+    "hint": "Long-term rates का बढ़ना = Long-term bond prices का गिरना।",
+    "explanation": "यदि long-term rates बढ़ते हैं, तो long-term bond prices गिरते हैं (Short the future)। यदि short-term rates stable/गिर रहे हैं, तो short-term prices बढ़ते हैं (Buy the future)।"
+  },
+  {
+    "id": 43,
+    "question": "Which of the following participants are allowed to trade in IRF?",
+    "options": [
+      "FPIs (Foreign Portfolio Investors)",
+      "Retail Investors",
+      "Mutual Funds",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "hint": "Market लगभग सभी के लिए खुला है।",
+    "explanation": "India में IRF market Banks, Mutual Funds, Insurance Companies, FPIs, Corporates और Retail Investors सहित participants की एक wide range के लिए खुला है।"
+  },
+  {
+    "id": 44,
+    "question": "Position Limits are imposed by SEBI to:",
+    "options": [
+      "Prevent market manipulation and excessive concentration of risk",
+      "Limit the profit of traders",
+      "Encourage foreign investment",
+      "Reduce tax revenue"
+    ],
+    "answer": "Prevent market manipulation and excessive concentration of risk",
+    "hint": "ताकि एक person market को corner न कर सके।",
+    "explanation": "Position limits ensure करते हैं कि कोई भी single entity ऐसी dominant position hold न करे जो market integrity को disrupt कर सके या systemic risk पैदा कर सके।"
+  },
+  {
+    "id": 45,
+    "question": "The 'Invoice Price' in a physically settled contract is:",
+    "options": [
+      "(Futures Settlement Price * Conversion Factor) + Accrued Interest",
+      "Futures Settlement Price only",
+      "Spot Price + Accrued Interest",
+      "Face Value + Coupon"
+    ],
+    "answer": "(Futures Settlement Price * Conversion Factor) + Accrued Interest",
+    "hint": "Specific bond deliver करने के लिए adjust करता है।",
+    "explanation": "Buyer Invoice Price pay करता है, जो specific bond के conversion factor के लिए futures price को adjust करता है और accrued interest को add करता है।"
+  },
+  {
+    "id": 46,
+    "question": "What happens if a trader holds an IRF contract till expiry?",
+    "options": [
+      "It expires worthless",
+      "It is automatically squared off at the Final Settlement Price",
+      "The trader must pay a penalty",
+      "The trader must renew the contract"
+    ],
+    "answer": "It is automatically squared off at the Final Settlement Price",
+    "hint": "Cash settlement mechanism.",
+    "explanation": "Expiry day पर, underlying market से derive किए गए Final Settlement Price के आधार पर सभी open positions cash में settle हो जाती हैं।"
+  },
+  {
+    "id": 47,
+    "question": "Hedging with IRFs to reduce the duration of a bond portfolio involves:",
+    "options": [
+      "Buying IRF contracts (Long)",
+      "Selling IRF contracts (Short)",
+      "Buying Call Options",
+      "Buying T-Bills"
+    ],
+    "answer": "Selling IRF contracts (Short)",
+    "hint": "आप long bond exposure को offset करना चाहते हैं।",
+    "explanation": "IRFs को sell करना एक negative duration position create करता है। जब इसे एक long bond portfolio (positive duration) के साथ combine किया जाता है, तो यह interest rates के प्रति overall sensitivity को कम कर देता है।"
+  },
+  {
+    "id": 48,
+    "question": "The primary benefit of trading IRFs on an exchange versus OTC markets is:",
+    "options": [
+      "Lower transparency",
+      "Higher counterparty risk",
+      "Centralized clearing and zero counterparty risk",
+      "Customized contracts"
+    ],
+    "answer": "Centralized clearing and zero counterparty risk",
+    "hint": "Clearing House trade की guarantee देता है।",
+    "explanation": "Exchange-traded derivatives एक central counterparty (Clearing Corp) की safety offer करते हैं, जो दूसरे trader के default होने के risk को eliminate कर देता है।"
+  },
+  {
+    "id": 49,
+    "question": "Typically, the maximum tenure for G-Sec Futures contracts available for trading is:",
+    "options": [
+      "1 month only",
+      "Up to 3 months",
+      "Up to 12 months (usually 3 near months)",
+      "5 years"
+    ],
+    "answer": "Up to 12 months (usually 3 near months)",
+    "hint": "Equity futures cycles के समान।",
+    "explanation": "आमतौर पर, exchanges 3 nearest monthly expiries के लिए contracts offer करते हैं।"
+  },
+  {
+    "id": 50,
+    "question": "The 'Basis' in IRF markets is defined as:",
+    "options": [
+      "Spot Price of Bond - Futures Price of Bond",
+      "Futures Price - Spot Price",
+      "Strike Price - Spot Price",
+      "Coupon Rate - Repo Rate"
+    ],
+    "answer": "Spot Price of Bond - Futures Price of Bond",
+    "hint": "Cash और Futures के बीच का difference.",
+    "explanation": "Basis underlying asset के Spot price और उसके Futures price के बीच का difference है। इसे expiry पर zero पर converge होना चाहिए।"
+  },
+  {
+    "id": 51,
+    "question": "If the Basis is positive (Spot > Futures), the market is in:",
+    "options": [
+      "Contango",
+      "Backwardation",
+      "Equilibrium",
+      "Recession"
+    ],
+    "answer": "Backwardation",
+    "hint": "Futures spot से 'back' (पीछे) हैं।",
+    "explanation": "जब Spot Price Futures Price से अधिक होता है, तो market को Backwardation में कहा जाता है (bond markets में common जब cost of carry negative होती है)।"
+  },
+  {
+    "id": 52,
+    "question": "Trading hours for IRF on NSE/BSE are typically:",
+    "options": [
+      "9:00 AM to 5:00 PM",
+      "9:15 AM to 3:30 PM",
+      "9:00 AM to 3:30 PM",
+      "9:00 AM to 5:00 PM (matches underlying market timings)"
+    ],
+    "answer": "9:00 AM to 5:00 PM (matches underlying market timings)",
+    "hint": "यह NDS-OM bond market hours के साथ align होता है।",
+    "explanation": "Efficient pricing और hedging को ensure करने के लिए IRF trading hours (आमतौर पर 9 AM से 5 PM) underlying G-Sec market के साथ aligned होते हैं।"
+  },
+  {
+    "id": 53,
+    "question": "Which Greek letter measures the sensitivity of the IRF price to a change in the yield of the underlying bond?",
+    "options": [
+      "Delta",
+      "DV01 (Dollar Value of 01)",
+      "Gamma",
+      "Theta"
+    ],
+    "answer": "DV01 (Dollar Value of 01)",
+    "hint": "1 basis point change के लिए value में change.",
+    "explanation": "Bond markets में, sensitivity को अक्सर DV01 (या PV01) द्वारा measure किया जाता है, जो yield में 1 basis point (0.01%) change के लिए price change को represent करता है।"
+  },
+  {
+    "id": 54,
+    "question": "To hedge a portfolio of Rs. 10 Crore G-Secs using futures with a lot size of Rs. 2 Lakh, how many lots are roughly needed? (Assuming Hedge Ratio = 1)",
+    "options": [
+      "50 lots",
+      "500 lots",
+      "5 lots",
+      "100 lots"
+    ],
+    "answer": "500 lots",
+    "hint": "10,00,00,000 / 2,00,000.",
+    "explanation": "Total Value / Lot Size = 1,00,00,000 / 2,00,000 = 500 lots."
+  },
+  {
+    "id": 55,
+    "question": "What is 'Extreme Loss Margin' (ELM)?",
+    "options": [
+      "A margin for normal losses",
+      "An additional margin to cover tail risks beyond VaR",
+      "A penalty for trading too much",
+      "The broker's fee"
+    ],
+    "answer": "An additional margin to cover tail risks beyond VaR",
+    "hint": "'Extreme' situations के लिए।",
+    "explanation": "ELM Initial Margin (SPAN) के ऊपर और अधिक collect किया जाता है ताकि उन extreme market movements को cover किया जा सके जिन्हें VaR जैसे statistical models miss कर सकते हैं।"
+  },
+  {
+    "id": 56,
+    "question": "If an investor buys a G-Sec Future at Rs. 98.00 and sells it at Rs. 98.50, the profit per unit is:",
+    "options": [
+      "Rs. 0.50",
+      "Rs. 50",
+      "Rs. 0.05",
+      "Rs. 5.00"
+    ],
+    "answer": "Rs. 0.50",
+    "hint": "Simple subtraction.",
+    "explanation": "Profit = Sell Price - Buy Price = 98.50 - 98.00 = 0.50 per unit of face value."
+  },
+  {
+    "id": 57,
+    "question": "Cross-margining benefit is available between:",
+    "options": [
+      "Equity and Commodity markets",
+      "Stock futures and Index futures",
+      "IRF positions and underlying G-Sec holdings (for institutional investors)",
+      "Real estate and Bonds"
+    ],
+    "answer": "IRF positions and underlying G-Sec holdings (for institutional investors)",
+    "hint": "Cash और futures के बीच risk को offset करना।",
+    "explanation": "Clearing corporations cross-margining benefits offer कर सकते हैं जहाँ cash market (G-Secs) में positions futures market में risk को offset करती हैं, जिससे total margin requirements कम हो जाती हैं।"
+  },
+  {
+    "id": 58,
+    "question": "What is the role of a 'Market Maker' in IRF?",
+    "options": [
+      "To regulate the market",
+      "To provide liquidity by continuously quoting Buy and Sell prices",
+      "To issue the bonds",
+      "To calculate the index"
+    ],
+    "answer": "To provide liquidity by continuously quoting Buy and Sell prices",
+    "hint": "वे market को active 'make' करते हैं।",
+    "explanation": "Market Makers वे entities हैं जो two-way quotes (bid और ask) provide करने के लिए obligated हैं ताकि यह ensure हो सके कि अन्य traders के लिए positions में enter या exit करने के लिए हमेशा liquidity हो।"
+  },
+  {
+    "id": 59,
+    "question": "Implied Repo Rate is:",
+    "options": [
+      "The rate of return earned by buying the cash bond and selling the future",
+      "The official RBI Repo Rate",
+      "The reverse repo rate",
+      "The coupon rate"
+    ],
+    "answer": "The rate of return earned by buying the cash bond and selling the future",
+    "hint": "यह 'locked-in' financing rate है।",
+    "explanation": "Implied Repo Rate वह theoretical return है जिसे एक arbitrageur spot market में underlying bond खरीदकर और simultaneously futures contract को sell करके lock करता है।"
+  },
+  {
+    "id": 60,
+    "question": "If the Implied Repo Rate is significantly higher than the actual market borrowing rate, an arbitrageur would:",
+    "options": [
+      "Buy Spot, Sell Future (Cash and Carry Arbitrage)",
+      "Sell Spot, Buy Future (Reverse Cash and Carry)",
+      "Do nothing",
+      "Buy Call Options"
+    ],
+    "answer": "Buy Spot, Sell Future (Cash and Carry Arbitrage)",
+    "hint": "Asset खरीदें, expensive future बेचें।",
+    "explanation": "यदि future overpriced है (high implied repo), तो आप high return को lock करने के लिए cheap asset (spot) खरीदते हैं और expensive future को sell करते हैं।"
+  },
+  {
+    "id": 61,
+    "question": "A 'Strip' of Interest Rate Futures involves:",
+    "options": [
+      "Removing the coupon from the bond",
+      "Trading a series of futures contracts with successive expiry months",
+      "Selling all assets",
+      "Defaulting on a payment"
+    ],
+    "answer": "Trading a series of futures contracts with successive expiry months",
+    "hint": "उन्हें एक row में line up करना।",
+    "explanation": "एक futures strip में future cash flows की एक stream को hedge करने के लिए sequential delivery months वाले futures contracts को खरीदना या बेचना शामिल है।"
+  },
+  {
+    "id": 62,
+    "question": "Which of the following is a risk of trading IRF?",
+    "options": [
+      "Basis Risk",
+      "Liquidity Risk",
+      "Market Risk",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "hint": "Derivatives में multiple risks होते हैं।",
+    "explanation": "Traders Market Risk (price moves), Basis Risk (imperfect hedging), और Liquidity Risk (positions से exit करने में difficulty) face करते हैं।"
+  },
+  {
+    "id": 63,
+    "question": "NDS-OM stands for:",
+    "options": [
+      "National Derivatives System - Official Market",
+      "Negotiated Dealing System - Order Matching",
+      "New Delhi Stock - Order Market",
+      "National Debt Standard - Open Market"
+    ],
+    "answer": "Negotiated Dealing System - Order Matching",
+    "hint": "वह platform जहाँ G-Secs trade किए जाते हैं।",
+    "explanation": "NDS-OM secondary market में Government Securities की anonymous electronic trading के लिए RBI-owned platform है।"
+  },
+  {
+    "id": 64,
+    "question": "The correlation between the price of the underlying bond and the IRF price is typically:",
+    "options": [
+      "Close to +1",
+      "Close to -1",
+      "Zero",
+      "Unrelated"
+    ],
+    "answer": "Close to +1",
+    "hint": "वे एक साथ move करते हैं।",
+    "explanation": "चूँकि future अपनी value bond से derive करता है, इसलिए उनके prices highly positively correlated (close to +1) होते हैं।"
+  },
+  {
+    "id": 65,
+    "question": "If a bank holds a large portfolio of G-Secs and fears rates will rise, they are:",
+    "options": [
+      "Long Cash, Short Risk",
+      "Long Cash, Long Risk (Need to Short Futures)",
+      "Short Cash, Long Risk",
+      "Neutral"
+    ],
+    "answer": "Long Cash, Long Risk (Need to Short Futures)",
+    "hint": "वे bonds को own करते हैं (Long)।",
+    "explanation": "Bank cash market में Long है। Falling prices (rising rates) के risk को hedge करने के लिए, उन्हें futures में एक Short position लेने की आवश्यकता है।"
+  },
+  {
+    "id": 66,
+    "question": "The 'Notional Coupon' for a standard 10-Year G-Sec future is often assumed to be:",
+    "options": [
+      "6% or 7%",
+      "10%",
+      "0%",
+      "Floating"
+    ],
+    "answer": "6% or 7%",
+    "hint": "Conversion factor calculation के लिए standardized.",
+    "explanation": "Contract specifications आमतौर पर अन्य bonds के लिए conversion factors calculate करने के लिए एक fixed coupon (जैसे, 7% semi-annual) के साथ एक notional bond को define करते हैं।"
+  },
+  {
+    "id": 67,
+    "question": "Brokerage fees for IRF trading are charged by:",
+    "options": [
+      "SEBI",
+      "RBI",
+      "The Trading Member (Broker)",
+      "The Government"
+    ],
+    "answer": "The Trading Member (Broker)",
+    "hint": "Service provider.",
+    "explanation": "Brokerage वह fee है जो broker द्वारा trade को facilitate करने और platform provide करने के लिए charge की जाती है।"
+  },
+  {
+    "id": 68,
+    "question": "STT (Securities Transaction Tax) is currently:",
+    "options": [
+      "Applicable to IRF",
+      "Not applicable to IRF",
+      "Applicable only to buyers",
+      "Applicable only to sellers"
+    ],
+    "answer": "Not applicable to IRF",
+    "hint": "Government bond market participation को encourage करती है।",
+    "explanation": "Bond और currency derivative markets में participation को encourage करने के लिए, STT आमतौर पर IRF transactions (equity futures के विपरीत) पर applicable नहीं होता है।"
+  },
+  {
+    "id": 69,
+    "question": "A 'Stop Loss' order is used to:",
+    "options": [
+      "Limit losses by automatically closing a position if the price hits a certain level",
+      "Stop trading for the day",
+      "Lock in a profit",
+      "Buy at the lowest price"
+    ],
+    "answer": "Limit losses by automatically closing a position if the price hits a certain level",
+    "hint": "यह 'loss' को 'stop' करता है।",
+    "explanation": "एक stop-loss order तब market order बन जाता है जब एक specified price trigger reach हो जाता है, जो traders को उनके downside risk को limit करने में help करता है।"
+  },
+  {
+    "id": 70,
+    "question": "The difference between the Buy Price and Sell Price in the order book is called:",
+    "options": [
+      "Bid-Ask Spread",
+      "Market Depth",
+      "Tick Size",
+      "Volume"
+    ],
+    "answer": "Bid-Ask Spread",
+    "hint": "Liquidity की cost.",
+    "explanation": "Bid-Ask Spread उस highest price जो एक buyer offer करता है और lowest price जो एक seller accept करता है, के बीच का gap है। एक lower spread higher liquidity को indicate करता है।"
+  }
+]

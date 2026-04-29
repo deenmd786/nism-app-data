@@ -1,0 +1,98 @@
+{
+  "course": "NISM Series VIII: Equity Derivatives",
+  "unit_number": 7,
+  "unit_name": "Clearing, Settlement and Risk Management",
+  "weightage": "10 Marks",
+  "overview": "यह chapter बताता है कि जब आप 'Buy' या 'Sell' पर क्लिक करते हैं, उसके बाद क्या होता है। यह इस बात पर focus करता है कि Exchange कैसे सुनिश्चित करता है कि कोई default न करे और पैसों का लेन-देन कैसे होता है। यह परीक्षा का 'Risk Management' हिस्सा है, जिसमें Clearing Corporation, अलग-अलग प्रकार के margins और settlement process को कवर किया गया है।",
+  
+  "complete_concept_explanation": [
+    {
+      "concept": "1. The Clearing Corporation (NSCCL / ICCL)",
+      "basic_meaning": "Clearing Corporation एक 'Middleman' (बिचौलिए) की तरह है जो यह guarantee देता है कि हर trade पूरा किया जाएगा।",
+      "detailed_explanation": "जब कोई trade होता है, तो Clearing Corporation 'Novation' करता है। \n1. यह **हर Seller के लिए Buyer** बन जाता है।\n2. यह **हर Buyer के लिए Seller** बन जाता है।\n3. अगर original buyer भाग जाता है, तब भी Clearing Corporation seller को पैसे देता है। इससे 'Counterparty Risk' खत्म हो जाता है।",
+      "why_this_is_important": "'Novation' शब्द परीक्षा में बहुत बार पूछा जाने वाला keyword है। यह Clearing House के माध्यम से पुराने contract को नए contract से बदलने की कानूनी प्रक्रिया है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "2001 में, भारतीय बाजारों में payment का संकट था। आज, NSE Clearing Corporation (NSCCL) के कारण, भले ही कोई बड़ा broker दिवालिया (bankrupt) हो जाए, आपका individual profit सुरक्षित और guaranteed रहता है।",
+      "exam_traps": [
+        "क्या Exchange trade की guarantee लेता है? तकनीकी रूप से, यह Clearing Corporation (एक subsidiary) है, न कि खुद Exchange.",
+        "Novation trade matching के समय ही होता है।"
+      ],
+      "memory_trick": "CC = Constant Cleaner. (यह risk को clean करता है और सुनिश्चित करता है कि पैसा सही जगह पहुंचे)।"
+    },
+    {
+      "concept": "2. SPAN Margin",
+      "basic_meaning": "यह एक ऐसा system है जिसका उपयोग एक दिन में trader को होने वाले 'worst-case loss' (सबसे बड़े संभावित नुकसान) को कैलकुलेट करने के लिए किया जाता है।",
+      "detailed_explanation": "SPAN का फुल फॉर्म **Standard Portfolio Analysis of Risk** है।\n1. यह केवल व्यक्तिगत स्टॉक्स के बजाय आपके **entire portfolio** (आपके सभी buy और sell एक साथ) को देखता है।\n2. यह जटिल परिदृश्यों (complex scenarios) का उपयोग करता है (उदा. 'क्या होगा अगर Nifty 5% गिर जाए और Volatility 2% बढ़ जाए?') यह तय करने के लिए कि आपको कितना deposit रखना चाहिए।\n3. इसे upfront (trade करने से पहले) कलेक्ट किया जाता है।",
+      "why_this_is_important": "NISM चाहता है कि आपको पता हो कि भारत में derivatives के लिए SPAN 'primary' margin है।",
+      "formula": "Initial Margin = SPAN Margin + Exposure Margin",
+      "formula_explanation": "Total margin risk-based margin (SPAN) और एक extra safety cushion (Exposure) का योग होता है।",
+      "step_by_step_calculation_example": "अगर Nifty के 1 lot के लिए SPAN margin ₹1,00,000 है और Exposure margin ₹20,000 है, तो trade लेने के लिए आपके अकाउंट में ₹1,20,000 होने चाहिए।",
+      "real_life_indian_example": "अगर आप एक 'Call' और एक 'Put' (Straddle) खरीदते हैं, तो SPAN system देखता है कि एक में फायदा होगा जबकि दूसरे में नुकसान, इसलिए यह आपसे अलग-अलग खरीदने की तुलना में कम (LESS) margin चार्ज कर सकता है। इसे 'Portfolio Hedging Benefit' कहा जाता है।",
+      "exam_traps": [
+        "क्या SPAN broker द्वारा calculate किया जाता है? नहीं, यह Exchange/Clearing Corp के software द्वारा calculate किया जाता है।",
+        "क्या Exposure margin SPAN का हिस्सा है? नहीं, यह SPAN के अतिरिक्त (additional) होता है।"
+      ],
+      "memory_trick": "SPAN = 'Scan' (यह risk के लिए आपके पूरे portfolio को scan करता है)।"
+    },
+    {
+      "concept": "3. MTM (Mark-to-Market) Settlement",
+      "basic_meaning": "उस दिन के profit या loss के आधार पर आपके cash balance को adjust करने की daily (दैनिक) प्रक्रिया।",
+      "detailed_explanation": "Derivatives में, P&L केवल 'कागज पर' नहीं होता है। इसे हर दिन CASH में settle किया जाता है।\n1. अगर आपने आज ₹5000 का profit कमाया है, तो Clearing Corp नुकसान उठाने वाले के बैंक से ₹5000 लेता है और अगली सुबह (T+1) तक आपके broker के अकाउंट में डाल देता है।\n2. यदि नुकसान के कारण आपका margin एक निश्चित स्तर से नीचे गिर जाता है, तो आपको 'Margin Call' (और पैसे चुकाएं या बाहर हो जाएं) मिलती है।",
+      "why_this_is_important": "आपको यह जानना होगा कि MTM एक **Cash Settlement** प्रक्रिया है जो हर दिन (DAILY) होती है।",
+      "formula": "MTM = (Current Day Closing Price - Previous Day Closing Price) * Lot Size",
+      "formula_explanation": "प्राइस में बदलाव को कॉन्ट्रैक्ट में शेयर्स की संख्या (Lot Size) से गुणा किया जाता है।",
+      "step_by_step_calculation_example": "Day 1: 20,000 पर Nifty Future Buy किया। 20,100 पर Close हुआ। Lot size 50 है।\n- MTM = (20,100 - 20,000) * 50 = +₹5,000 (यह आपको मिलता है)।\nDay 2: 19,950 पर Close हुआ।\n- MTM = (19,950 - 20,100) * 50 = -₹7,500 (यह आपको देना होगा)।",
+      "real_life_indian_example": "यही कारण है कि हर शाम आपका Zerodha 'Available Funds' बैलेंस बदल जाता है, भले ही आपने अपनी position बेची न हो।",
+      "exam_traps": [
+        "क्या MTM महीने के अंत में settle किया जाता है? नहीं, यह DAILY (रोजाना) settle होता है।",
+        "क्या MTM को ignore किया जा सकता है? नहीं, यह mandatory (अनिवार्य) है।"
+      ],
+      "memory_trick": "MTM = हर दिन 'Money To Me' (या मुझसे)।"
+    },
+    {
+      "concept": "4. Final Settlement",
+      "basic_meaning": "वह settlement जो contract के आखिरी दिन (Expiry) पर होता है।",
+      "detailed_explanation": "भारत में, Equity Derivatives ज्यादातर **Cash Settled** होते हैं।\n1. महीने के आखिरी गुरुवार (Thursday) को contract expire हो जाता है।\n2. कोई भी वास्तव में शेयर देता या लेता नहीं है (Physical delivery अब ज्यादातर विशिष्ट स्टॉक्स के लिए है, लेकिन Index हमेशा cash में होता है)।\n3. Final profit/loss की कैलकुलेशन कैश मार्केट में स्टॉक के 'Closing Price' के आधार पर की जाती है।",
+      "why_this_is_important": "समझें कि 'Futures' का प्राइस final settlement के समय 'Spot' प्राइस के बराबर हो जाता है।",
+      "formula": "Final P&L = (Closing Spot Price - Last MTM Price) * Lot Size",
+      "formula_explanation": "हम कल जहाँ रुके थे और आज का जो final closing price है, उनके बीच का अंतर।",
+      "step_by_step_calculation_example": "आपने कल से Nifty होल्ड किया था (Price 20,100)। आज Expiry है। Nifty Cash market 20,150 पर close होता है।\n- Final Settlement = (20,150 - 20,100) * 50 = +₹2,500.",
+      "real_life_indian_example": "अगर आपके पास कोई Nifty Option है जो गुरुवार को 3:30 PM पर 'Out of the Money' है, तो वह बस ₹0 हो जाता है और आपके portfolio से गायब हो जाता है।",
+      "exam_traps": [
+        "क्या Index options physically settled होते हैं? नहीं, वे हमेशा Cash Settled होते हैं।",
+        "Final settlement के लिए किस प्राइस का उपयोग किया जाता है? कैश मार्केट में **underlying asset के closing price** का।"
+      ],
+      "memory_trick": "Final = The Finish Line."
+    }
+  ],
+
+  "important_differences": [
+    {
+      "difference_between": "Initial Margin vs. Exposure Margin",
+      "clear_explanation": "Initial Margin (SPAN) 'known' volatility risks के लिए है। Exposure margin अनपेक्षित (unexpected) या 'wild' market moves के लिए एक अतिरिक्त 'safety buffer' है।"
+    },
+    {
+      "difference_between": "Trading Member vs. Clearing Member",
+      "clear_explanation": "Trading Member (TM) केवल trades execute कर सकता है। Clearing Member (CM) वह होता है जो वास्तव में एक्सचेंज के साथ पैसों का settlement करता है। एक CM कई TMs के trades settle कर सकता है।"
+    }
+  ],
+
+  "frequently_asked_exam_areas": [
+    "'Novation' और Clearing Corporation की परिभाषा और भूमिका।",
+    "Initial Margin (SPAN + Exposure) के components.",
+    "MTM settlement frequency (Daily).",
+    "Final settlement price (Underlying asset का Closing price).",
+    "'Margin Call' क्या है? (मार्जिन कम होने पर अतिरिक्त फंड की मांग)।"
+  ],
+
+  "quick_revision_summary": [
+    "Clearing Corp Novation के माध्यम से counterparty risk को हटाता है।",
+    "SPAN margin पोर्टफोलियो-आधारित risk कैलकुलेशन है।",
+    "MTM लाभ/हानि (profits/losses) का daily 'cash' मूवमेंट है।",
+    "भारत में सभी Index derivatives Cash Settled होते हैं।",
+    "Expiry पर, Futures price = Spot price हो जाता है।",
+    "Margins चुकाने के लिए Liquid security/Cash का उपयोग किया जाता है।"
+  ]
+}

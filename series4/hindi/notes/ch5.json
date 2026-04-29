@@ -1,0 +1,114 @@
+{
+  "course": "NISM Series IV: Interest Rate Derivatives Certification Examination",
+  "unit_number": 5,
+  "unit_name": "Strategies using Interest Rate Derivatives",
+  "weightage": "15 Marks",
+  "overview": "यह unit 'Practical Application' chapter है। पिछले units में, आपने सीखा कि tools क्या हैं (Futures/Options)। इस unit में, आप सीखेंगे कि real problems को solve करने के लिए उनका HOW (कैसे) उपयोग करना है। तीन main goals हैं: Hedging (risk हटाना), Speculation (profit के लिए risk लेना), और Arbitrage (risk-free profit)। Exam में यहाँ 'Scenario Questions' पूछना बहुत पसंद किया जाता है (जैसे, 'एक treasurer को डर है कि rates बढ़ेंगे, उसे क्या करना चाहिए?').",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Hedging Strategies: Long vs. Short Hedge",
+      "basic_meaning": "Future में होने वाले transaction के लिए आज ही एक price lock करने के लिए derivatives का use करना।",
+      "detailed_explanation": "Hedging एक insurance की तरह है। आप इसे profit कमाने के लिए नहीं करते हैं; आप इसे loss को रोकने के लिए करते हैं।\n\n**1. Short Hedge (Selling Futures):**\n- **Who uses it?** वह व्यक्ति जिसके पास bonds OWN (पास) हैं (या portfolio है) और उसे डर है कि Interest Rates बढ़ेंगे (RISE)।\n- **Logic:** अगर Rates बढ़ते हैं -> Bond Prices गिरते हैं -> Portfolio की value कम हो जाती है।\n- **Action:** आज ही Futures Sell (Short) करें। अगर prices गिरते हैं, तो आपके Short Futures position में profit होता है, जो आपके bonds पर होने वाले loss को cancel कर देता है।\n\n**2. Long Hedge (Buying Futures):**\n- **Who uses it?** वह व्यक्ति जो future में bonds BUY करने का plan बना रहा है (जैसे, अगले महीने cash inflow expect कर रहा है) और उसे डर है कि Interest Rates गिरेंगे (FALL)।\n- **Logic:** अगर Rates गिरते हैं -> Bond Prices बढ़ते हैं -> बाद में buying महँगी हो जाती है।\n- **Action:** आज ही Futures Buy (Long) करें। अगर prices बढ़ते हैं, तो आपका Long Futures profit महँगे bond purchase को subsidize करने में मदद करता है।",
+      "why_this_is_important": "यह derivatives market का primary purpose है। Corporate treasurers रोज़ाना इसका use करते हैं।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Scenario: Mutual Fund Manager के पास 10-Year Bonds के Rs 10 Cr हैं। उसे लगता है कि RBI rates hike करेगा।\nAction: Short Hedge (Sell Futures)।\nResult: Rates Hike -> Bond Prices Rs 50 Lakhs गिर जाते हैं। लेकिन, उसके Short Futures position को Rs 50 Lakhs का gain होता है। \nNet Loss: ZERO.",
+      "real_life_indian_example": "एक insurance company March में Rs 500 Cr के premium inflow की उम्मीद कर रही है। वे इसे G-Secs में invest करना चाहते हैं। उन्हें डर है कि March तक yields गिर जाएँगे (prices बढ़ जाएँगे)। वे current cheaper price को lock करने के लिए आज एक LONG HEDGE करते हैं।",
+      "exam_traps": [
+        "यह सोचना कि 'Long Hedge' का मतलब है कि आप asset own करते हैं। नहीं! Long Hedge का मतलब है कि आप बाद में asset own करना WANT (चाहते) हैं।",
+        "Direction में confuse होना: Fear Rates Up -> Short Hedge. Fear Rates Down -> Long Hedge."
+      ],
+      "memory_trick": "Short Hedge = जो आपके पास HAVE (है) उसे protect करने के लिए अभी Sell करें। Long Hedge = जो आप WANT (चाहते हैं) उसे protect करने के लिए अभी Buy करें।"
+    },
+    {
+      "concept": "2. Speculation Strategies (Trading Views)",
+      "basic_meaning": "पैसे कमाने के लिए interest rates के direction पर bet लगाना।",
+      "detailed_explanation": "Hedgers (जिन्हें safety चाहिए) के विपरीत, Speculators risk चाहते हैं। वे simply RBI/Market के अपने view के आधार पर एक position लेते हैं।\n\n**1. Bullish View (Expect Rates DOWN):**\n- Logic: Rates Down -> Bond Prices UP.\n- Strategy: Bond Futures Buy करें या Call Options Buy करें。\n\n**2. Bearish View (Expect Rates UP):**\n- Logic: Rates Up -> Bond Prices DOWN.\n- Strategy: Bond Futures Sell करें या Put Options Buy करें।",
+      "why_this_is_important": "Speculators market को liquidity provide करते हैं। उनके बिना, hedgers को trade करने के लिए कोई नहीं मिलेगा।",
+      "formula": "Profit = (Exit Price - Entry Price) * Lot Size",
+      "formula_explanation": "Standard profit calculation.",
+      "step_by_step_calculation_example": "View: Inflation high है, RBI repo rate बढ़ाएगा।\nStrategy: Rs 98.00 पर 10-Year Bond Future Sell करें।\nOutcome: RBI rate hike करता है। Bond Future Rs 96.00 तक गिर जाता है।\nProfit: (98 - 96) = Rs 2.00 profit per unit.",
+      "real_life_indian_example": "Budget Day पर, traders बहुत speculation करते हैं। अगर Govt high borrowing (bonds के लिए बुरा) announce करती है, तो traders तुरंत futures Short Sell कर देते हैं।",
+      "exam_traps": [
+        "जब आप Bearish हों तो Call Buy करना। (याद रखें: Bearish on Rates = Bearish on Price = Buy Put/Sell Future)।",
+        "यह सोचना कि speculation profit की guarantee देता है। इसमें high risk होता है।"
+      ],
+      "memory_trick": "Rates Down = Price Up (Buy). Rates Up = Price Down (Sell)."
+    },
+    {
+      "concept": "3. Arbitrage: Cash and Carry",
+      "basic_meaning": "Free money! Spot Market (Real Bonds) और Futures Market के बीच price difference का फायदा उठाना।",
+      "detailed_explanation": "Futures Price की एक 'Theoretical Fair Value' होती है जो Spot Price + Cost of Carry (Interest) पर based होती है।\n\n**Cash and Carry Arbitrage (When Futures are Overpriced):**\n- Situation: Futures Price > (Spot Price + Cost of Carry).\n- Action: Spot Buy करें (Cheap) + Future Sell करें (Expensive)।\n- Result: आप expiry तक bond hold करते हैं और short future के against उसे deliver करते हैं। आप extra price difference को risk-free अपनी pocket में डालते हैं।",
+      "why_this_is_important": "Arbitrageurs market prices को efficient रखते हैं। अगर futures बहुत expensive हो जाते हैं, तो वे उन्हें बेचकर नीचे ले आते हैं।",
+      "formula": "Basis = Spot Price - Futures Price",
+      "formula_explanation": "Arbitrage तब profitable होता है जब Basis carry cost के relative 'weak' या negative हो।",
+      "step_by_step_calculation_example": "1. Spot Price = 100.\n2. 1 month के लिए Interest Cost = 0.50.\n3. Fair Future Price 100.50 होना चाहिए。\n4. Actual Market Future Price = 101.00 (Overpriced!).\n5. Action: 100 पर Spot Buy करें, 101 पर Future Sell करें।\n6. Expiry: आप bond deliver करते हैं। Cost = 100.50. Sale = 101. Profit = 0.50 Risk Free.",
+      "real_life_indian_example": "Large banks milliseconds में इन छोटे gaps को ढूँढने और trades execute करने के लिए algorithms का use करते हैं।",
+      "exam_traps": [
+        "Cash & Carry को Reverse Cash & Carry के साथ confuse करना। Cash & Carry = Buy Spot, Sell Future.",
+        "यह सोचना कि आप bond हमेशा के लिए अपने पास रखते हैं। Arbitrage में, आप इसे expiry पर sell कर देते हैं।"
+      ],
+      "memory_trick": "Cash & Carry = Asset को future तक Carry करें (Buy Spot)।"
+    },
+    {
+      "concept": "4. Hedge Ratio & BPV (Crucial Calculation)",
+      "basic_meaning": "अपने portfolio को पूरी तरह से protect करने के लिए मुझे कितने futures contracts buy/sell करने की आवश्यकता है?",
+      "detailed_explanation": "आप Rs 1 Cr portfolio को सीधे Rs 1 Cr Futures के साथ match नहीं कर सकते क्योंकि उनकी 'sensitivities' (Duration) अलग हो सकती हैं।\n- हम **BPV (Basis Point Value)** का use करते हैं: Yield में 0.01% change होने पर price कितना change होता है।\n\n**Hedge Ratio (HR) = Portfolio का BPV / Futures Contract का BPV**\n\n- Number of Contracts = Hedge Ratio.",
+      "why_this_is_important": "अगर आप ratio गलत निकालते हैं, तो आप या तो under-hedged (अभी भी risky) या over-hedged (नया risk लेना) हो जाते हैं।",
+      "formula": "N = (Portfolio Value * Portfolio Duration) / (Future Price * Future Duration)",
+      "formula_explanation": "यह दोनों sides की sensitivity को balance करता है।",
+      "step_by_step_calculation_example": "Portfolio BPV = Rs 50,000 (अगर rates 1bp move करते हैं तो Portfolio 50k lose करता है)।\nFutures Contract BPV = Rs 2,000 (अगर rates 1bp move करते हैं तो Future 2k gain करता है)।\n\nCalculation:\nNumber of Contracts = 50,000 / 2,000 = 25 Contracts.\n\nAction: Hedge करने के लिए 25 Futures Sell करें।",
+      "real_life_indian_example": "एक bank के पास 5-year और 30-year bonds का mix है। वे 10-year futures को सीधे 1:1 sell नहीं कर सकते। वे sell करने के लिए futures का exact number ढूँढने के लिए weighted duration (BPV) calculate करते हैं।",
+      "exam_traps": [
+        "Portfolio Value को सीधे Futures Value से divide करना। NO! आपको BPV या Duration weighting का use करना ही होगा।",
+        "गलत तरीके से rounding करना। आमतौर पर, nearest whole number पर round करें।"
+      ],
+      "memory_trick": "Big Sensitivity / Small Sensitivity = Number of Contracts."
+    },
+    {
+      "concept": "5. Spread Strategies",
+      "basic_meaning": "उनके बीच बदलते GAP से profit कमाने के लिए एक future buy करना और दूसरा sell करना।",
+      "detailed_explanation": "आपको market direction (Up या Down) की परवाह नहीं है। आप केवल दो contracts के बीच के difference की परवाह करते हैं।\n\n**Calendar Spread:**\n- January Future Buy करें + February Future Sell करें।\n- Logic: आपको लगता है कि Jan और Feb के बीच price gap (spread) change होगा।\n- Naked speculation की तुलना में Lower Risk.",
+      "why_this_is_important": "Conservative traders spreads prefer करते हैं क्योंकि market crashes उन्हें ज्यादा hurt नहीं करते (एक leg हारता है, दूसरा leg जीतता है)।",
+      "formula": "Spread = Near Month का Price - Far Month का Price",
+      "formula_explanation": "Profit spread के narrow (संकीर्ण) या widen (चौड़ा) होने से आता है।",
+      "step_by_step_calculation_example": "Jan Future @ 100 Buy करें। Feb Future @ 101 Sell करें। Spread = -1.\nTarget: आप expect करते हैं कि Spread widen होकर -2 हो जाएगा।\nScenario: Jan 102 पर जाता है, Feb 104 पर जाता है। Spread -2 है। Profit बन गया।",
+      "real_life_indian_example": "Positions को Roll over करना: Near-month futures hold करने वाला trader position को ज़िंदा रखने के लिए उन्हें sell करता है और next-month futures buy करता है।",
+      "exam_traps": [
+        "यह सोचना कि Spread strategies risk-free हैं। वे low risk हैं, zero risk नहीं।",
+        "'Bull Spread' को सिर्फ 'Bullish View' के साथ confuse करना।"
+      ],
+      "memory_trick": "Spread = The Gap. आप Gap को trade करते हैं।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Hedging vs. Speculation",
+      "clear_explanation": "HEDGING risk को कम करना है (Protective Shield)। Goal stability है। || SPECULATION risk लेना है (Sword)। Goal maximum profit है।"
+    },
+    {
+      "difference_between": "Long Hedge vs. Short Hedge",
+      "clear_explanation": "LONG HEDGE में Futures BUY करना शामिल है (falling rates/rising prices के खिलाफ protect करता है)। || SHORT HEDGE में Futures SELL करना शामिल है (rising rates/falling prices के खिलाफ protect करता है)।"
+    },
+    {
+      "difference_between": "Cash & Carry vs. Reverse Cash & Carry",
+      "clear_explanation": "CASH & CARRY: Future Expensive है -> Spot Buy करें, Future Sell करें। || REVERSE CASH & CARRY: Future Cheap है -> Spot Sell करें, Future Buy करें।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "किसी scenario के लिए correct strategy identify करना (जैसे, 'Treasurer को rates बढ़ने की उम्मीद है...').",
+    "BPV (Hedge Ratio) का use करके hedging के लिए Number of Contracts calculate करना।",
+    "Basis की Definition (Spot - Future)।",
+    "Arbitrage में 'Cheapest to Deliver' का Concept.",
+    "Arbitrage condition: जब Futures Price > Spot + Cost of Carry."
+  ],
+  "quick_revision_summary": [
+    "Fear Rates UP -> Futures Sell करें (Short Hedge).",
+    "Fear Rates DOWN -> Futures Buy करें (Long Hedge).",
+    "Hedge Ratio = Portfolio BPV / Future BPV.",
+    "Arbitrage = Price misalignment से Risk-Free profit.",
+    "Calendar Spread = अलग-अलग expiry months trade करें।",
+    "Speculation = Direction पर Betting.",
+    "Arbitrage prices को fair value के साथ aligned रखता है।"
+  ]
+}

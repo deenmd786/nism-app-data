@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "Which system is primarily used for trading Interest Rate Derivatives on NSE?",
+    "options": [
+      "BOLT (BSE On-Line Trading)",
+      "NEAT (National Exchange for Automated Trading)",
+      "NDS-OM",
+      "CORE Banking Solution"
+    ],
+    "answer": "NEAT (National Exchange for Automated Trading)",
+    "hint": "NSE का electronic trading system।",
+    "explanation": "NEAT National Stock Exchange (NSE) द्वारा अपने सभी segments (IRDs सहित) के लिए use किया जाने वाला fully automated screen-based trading system है।"
+  },
+  {
+    "id": 2,
+    "question": "The trading system matches orders based on:",
+    "options": [
+      "Price-Time Priority",
+      "Volume-Time Priority",
+      "Counterparty Identity",
+      "Broker Preference"
+    ],
+    "answer": "Price-Time Priority",
+    "hint": "पहले Best price, फिर first come first serve।",
+    "explanation": "System orders को पहले best price (highest buy, lowest sell) के हिसाब से match करता है और फिर time के हिसाब से (उस price पर किसने पहले order enter किया)।"
+  },
+  {
+    "id": 3,
+    "question": "Which of the following is a 'Limit Order'?",
+    "options": [
+      "An order to buy/sell at the best available market price",
+      "An order to buy/sell at a specified price or better",
+      "An order to cancel a trade",
+      "An order that expires in 5 minutes"
+    ],
+    "answer": "An order to buy/sell at a specified price or better",
+    "hint": "आप एक limit set करते हैं।",
+    "explanation": "एक Limit Order वह maximum price specify करता है जो buyer pay करने को तैयार है या वह minimum price जो seller accept करने को तैयार है।"
+  },
+  {
+    "id": 4,
+    "question": "A 'Market Order' executes at:",
+    "options": [
+      "The best available price currently in the order book",
+      "The closing price of the previous day",
+      "A price determined by the exchange",
+      "The limit price"
+    ],
+    "answer": "The best available price currently in the order book",
+    "hint": "तुरंत (Immediate) execution।",
+    "explanation": "Market Order कोई price specify नहीं करता; यह market में available best price (buy के लिए Ask, sell के लिए Bid) पर तुरंत execute हो जाता है।"
+  },
+  {
+    "id": 5,
+    "question": "What is a 'Stop Loss' order?",
+    "options": [
+      "An order to stop trading",
+      "An order that becomes a Market/Limit order once a specific 'Trigger Price' is reached",
+      "An order to book profit",
+      "An order to freeze the account"
+    ],
+    "answer": "An order that becomes a Market/Limit order once a specific 'Trigger Price' is reached",
+    "hint": "यह एक trigger का इंतज़ार करता है।",
+    "explanation": "Stop Loss order तब तक dormant (निष्क्रिय) रहता है जब तक कि market price specified Trigger Price तक नहीं पहुँच जाता, जिसके बाद यह losses को limit करने के लिए एक regular limit या market order की तरह activate हो जाता है।"
+  },
+  {
+    "id": 6,
+    "question": "An 'Immediate or Cancel' (IOC) order:",
+    "options": [
+      "Must be executed immediately in full or part, and the unfilled portion is cancelled",
+      "Must be executed in full immediately or cancelled completely",
+      "Stays in the system for the day",
+      "Is valid until cancelled by the trader"
+    ],
+    "answer": "Must be executed immediately in full or part, and the unfilled portion is cancelled",
+    "hint": "अभी जो मिल सकता है ले लो। बाकी भूल जाओ।",
+    "explanation": "IOC orders partial execution allow करते हैं। जो हिस्सा तुरंत match नहीं होता, वह instantly cancel हो जाता है और order book में store नहीं होता।"
+  },
+  {
+    "id": 7,
+    "question": "Which entity provides the trading platform for IRDs?",
+    "options": [
+      "SEBI",
+      "Stock Exchanges (NSE/BSE/MSEI)",
+      "Clearing Corporation",
+      "RBI"
+    ],
+    "answer": "Stock Exchanges (NSE/BSE/MSEI)",
+    "hint": "जहाँ buyers और sellers मिलते हैं।",
+    "explanation": "Exchanges (NSE, BSE, MSEI) वह electronic infrastructure और platform provide करते हैं जहाँ trading होती है।"
+  },
+  {
+    "id": 8,
+    "question": "The trading hours for Interest Rate Futures (IRF) usually align with:",
+    "options": [
+      "Equity Market (9:15 AM - 3:30 PM)",
+      "Money Market / G-Sec Market (9:00 AM - 5:00 PM)",
+      "Commodity Market (9:00 AM - 11:30 PM)",
+      "24 hours"
+    ],
+    "answer": "Money Market / G-Sec Market (9:00 AM - 5:00 PM)",
+    "hint": "Underlying के साथ synchronized।",
+    "explanation": "Efficient price discovery और arbitrage ensure करने के लिए, underlying G-Sec market से match करने के लिए IRF trading hours typically सुबह 9:00 बजे से शाम 5:00 बजे तक होते हैं।"
+  },
+  {
+    "id": 9,
+    "question": "A 'Spread Order' involves:",
+    "options": [
+      "Buying one contract and Selling another contract simultaneously",
+      "Buying shares in different companies",
+      "Selling shares to multiple buyers",
+      "Buying bonds at a discount"
+    ],
+    "answer": "Buying one contract and Selling another contract simultaneously",
+    "hint": "Difference पर trade करना।",
+    "explanation": "Spread orders एक trader को price difference पर trade करने के लिए single transaction में दो opposing positions (जैसे, Buy Near Month, Sell Far Month) enter करने allow करते हैं।"
+  },
+  {
+    "id": 10,
+    "question": "The 'Client Code' in an order is mandatory to:",
+    "options": [
+      "Identify the broker",
+      "Identify the specific client for whom the order is placed",
+      "Identify the exchange",
+      "Calculate taxes"
+    ],
+    "answer": "Identify the specific client for whom the order is placed",
+    "hint": "KYC की लिंकिंग।",
+    "explanation": "सही investor के लिए proper tracking, margining, और settlement ensure करने के लिए हर order को एक unique Client Code के साथ tag किया जाना चाहिए।"
+  },
+  {
+    "id": 11,
+    "question": "What happens if a 'Limit Buy Order' is placed at a price higher than the current best seller?",
+    "options": [
+      "It is rejected",
+      "It sits in the order book",
+      "It is executed immediately at the best seller's price (better price for buyer)",
+      "It is executed at the limit price"
+    ],
+    "answer": "It is executed immediately at the best seller's price (better price for buyer)",
+    "hint": "आपको बेहतर deal मिलती है।",
+    "explanation": "अगर आप 100 रुपये pay करने को तैयार हैं लेकिन seller 99 रुपये मांग रहा है, तो system 99 रुपये पर trade execute कर देता है, जिससे आपको बेहतर price मिलती है।"
+  },
+  {
+    "id": 12,
+    "question": "Market participants access the trading system through:",
+    "options": [
+      "Direct wire to SEBI",
+      "Trading Members (Brokers)",
+      "Clearing Banks",
+      "Post Offices"
+    ],
+    "answer": "Trading Members (Brokers)",
+    "hint": "मध्यस्थ (Intermediaries)।",
+    "explanation": "Investors directly exchange को access नहीं कर सकते; उन्हें registered Trading Members (Brokers) के through अपने orders route करने होते हैं।"
+  },
+  {
+    "id": 13,
+    "question": "A 'Day Order' is valid:",
+    "options": [
+      "For 24 hours",
+      "Until the end of the trading session on that day",
+      "For one week",
+      "Until cancelled by the user"
+    ],
+    "answer": "Until the end of the trading session on that day",
+    "hint": "स्टैंडर्ड वैलिडिटी।",
+    "explanation": "जब तक otherwise specify न किया जाए (जैसे IOC), standard orders उसी trading day के लिए valid होते हैं जिस दिन वे place किए जाते हैं। अगर execute नहीं होते, तो market close होने पर वे cancel हो जाते हैं।"
+  },
+  {
+    "id": 14,
+    "question": "Price Bands (Circuit Breakers) in IRF are designed to:",
+    "options": [
+      "Guarantee profits",
+      "Prevent extreme volatility and erroneous trades",
+      "Limit the number of trades",
+      "Fix the interest rate"
+    ],
+    "answer": "Prevent extreme volatility and erroneous trades",
+    "hint": "Cooling off मैकेनिज्म।",
+    "explanation": "Price bands orders को current market price से बहुत दूर की prices पर place होने से रोकते हैं, जिससे fat-finger errors और flash crashes से बचाव होता है।"
+  },
+  {
+    "id": 15,
+    "question": "Typically, the initial dynamic price band for G-Sec Futures is:",
+    "options": [
+      "+/- 10%",
+      "+/- 3% or similar small range",
+      "Unlimited",
+      "+/- 20%"
+    ],
+    "answer": "+/- 3% or similar small range",
+    "hint": "Bonds stocks से कम volatile होते हैं।",
+    "explanation": "चूँकि G-Secs generally equities से कम volatile होते हैं, इसलिए price bands tighter होते हैं (जैसे, base price का +/- 3%), हालाँकि ज़रूरत पड़ने पर इन्हें relax किया जा सकता है।"
+  },
+  {
+    "id": 16,
+    "question": "Which ID is required for all clients to trade in the derivatives market?",
+    "options": [
+      "Aadhaar Number",
+      "UCC (Unique Client Code)",
+      "Passport Number",
+      "Voter ID"
+    ],
+    "answer": "UCC (Unique Client Code)",
+    "hint": "Broker द्वारा assign किया गया।",
+    "explanation": "Broker हर client को एक Unique Client Code (UCC) assign करता है, जो उनके PAN से mapped होता है, ताकि उनके सभी trades track किए जा सकें।"
+  },
+  {
+    "id": 17,
+    "question": "The 'Base Price' for determining price bands on the first day of a new contract is:",
+    "options": [
+      "Zero",
+      "The theoretical price derived from the underlying bond price",
+      "Rs. 100",
+      "The price of the previous month's contract"
+    ],
+    "answer": "The theoretical price derived from the underlying bond price",
+    "hint": "फेयर वैल्यू।",
+    "explanation": "एक नए contract के लिए, exchange underlying bond की spot price और cost of carry के आधार पर एक theoretical price calculate करता है।"
+  },
+  {
+    "id": 18,
+    "question": "A trade execution confirmation slip (Contract Note) must be issued by the broker to the client within:",
+    "options": [
+      "24 hours of the trade",
+      "1 week",
+      "1 month",
+      "Before the trade"
+    ],
+    "answer": "24 hours of the trade",
+    "hint": "स्टैंडर्ड रेगुलेटरी रिक्वायरमेंट।",
+    "explanation": "SEBI regulations mandate करते हैं कि brokers को trade execution के 24 घंटों के अंदर client को एक physical या digital Contract Note issue करना होगा।"
+  },
+  {
+    "id": 19,
+    "question": "Who sets the daily settlement price?",
+    "options": [
+      "The Broker",
+      "The Buyer and Seller",
+      "The Clearing Corporation / Exchange",
+      "RBI"
+    ],
+    "answer": "The Clearing Corporation / Exchange",
+    "hint": "Official क्लोजिंग प्राइस।",
+    "explanation": "Exchange या Clearing Corporation MTM calculations के लिए daily settlement price (आमतौर पर आख़िरी 30 मिनट का weighted average) determine करता है।"
+  },
+  {
+    "id": 20,
+    "question": "Algorithmic Trading (Algo Trading) refers to:",
+    "options": [
+      "Manual trading by experts",
+      "Using computer programs to generate and execute orders based on pre-defined parameters",
+      "Trading in algorithms",
+      "Trading based on rumors"
+    ],
+    "answer": "Using computer programs to generate and execute orders based on pre-defined parameters",
+    "hint": "Automated स्पीड।",
+    "explanation": "Algo trading बिना human intervention के specific instructions (timing, price, quantity) के आधार पर high speed पर orders execute करने के लिए software का use करती है।"
+  },
+  {
+    "id": 21,
+    "question": "Co-location services offered by exchanges allow members to:",
+    "options": [
+      "Place their servers in the exchange premises to reduce latency",
+      "Share office space",
+      "Have lunch together",
+      "Trade after hours"
+    ],
+    "answer": "Place their servers in the exchange premises to reduce latency",
+    "hint": "Speed का फायदा।",
+    "explanation": "Co-location में data transmission time (latency) को minimize करने के लिए member के trading servers को exchange के matching engine वाली building में ही place किया जाता है।"
+  },
+  {
+    "id": 22,
+    "question": "A 'Give-Up' trade involves:",
+    "options": [
+      "A client giving up on a trade",
+      "A trading member executing a trade and passing it to a clearing member for settlement",
+      "The exchange cancelling a trade",
+      "Surrendering profits"
+    ],
+    "answer": "A trading member executing a trade and passing it to a clearing member for settlement",
+    "hint": "Execution और clearing को अलग-अलग करना।",
+    "explanation": "Institutional clients अक्सर trades execute करने के लिए एक broker (Trading Member) का और उन्हें clear और settle करने के लिए दूसरी entity (Clearing Member) का use करते हैं। Trade CM को 'give up' (सौंप) दिया जाता है।"
+  },
+  {
+    "id": 23,
+    "question": "Order modification allows a trader to change:",
+    "options": [
+      "The quantity or price of an unexecuted order",
+      "The underlying asset of an executed order",
+      "The counterparty of an executed order",
+      "The trade date"
+    ],
+    "answer": "The quantity or price of an unexecuted order",
+    "hint": "आप पूरी हो चुकी डील नहीं बदल सकते।",
+    "explanation": "System में केवल वे orders ही modify किए जा सकते हैं जो अभी भी pending (open) हैं। एक बार execute हो जाने के बाद, कोई changes possible नहीं हैं।"
+  },
+  {
+    "id": 24,
+    "question": "If an order is 'Frozen', it means:",
+    "options": [
+      "The computer crashed",
+      "The order size or price is outside standard parameters and requires exchange approval",
+      "The market is closed",
+      "The client is banned"
+    ],
+    "answer": "The order size or price is outside standard parameters and requires exchange approval",
+    "hint": "सेफ्टी चेक।",
+    "explanation": "Accidental market disruption को रोकने के लिए Exchanges ऐसे orders को freeze कर देते हैं जो unusually large होते हैं या जिनकी prices last trade से बहुत दूर होती हैं।"
+  },
+  {
+    "id": 25,
+    "question": "The 'Order Book' displays:",
+    "options": [
+      "Only Buy orders",
+      "Only Sell orders",
+      "The list of all outstanding Buy and Sell orders",
+      "Executed trades only"
+    ],
+    "answer": "The list of all outstanding Buy and Sell orders",
+    "hint": "मार्केट डेप्थ (Market Depth)।",
+    "explanation": "Order book market में मौजूद current demand (bids) और supply (asks) को दिखाता है, जो आमतौर पर top 5 best prices display करता है।"
+  },
+  {
+    "id": 26,
+    "question": "What is 'Market Depth'?",
+    "options": [
+      "The history of the market",
+      "The volume of pending buy and sell orders at different price levels",
+      "The knowledge of the trader",
+      "The depth of the ocean"
+    ],
+    "answer": "The volume of pending buy and sell orders at different price levels",
+    "hint": "लिक्विडिटी इंडिकेटर।",
+    "explanation": "Market depth liquidity को indicate करती है। एक 'deep' market में last traded price के करीब की prices पर orders की large volumes होती हैं, जिससे price को ज़्यादा move किए बिना large trades किए जा सकते हैं।"
+  },
+  {
+    "id": 27,
+    "question": "A 'Disclosed Quantity' order allows a trader to:",
+    "options": [
+      "Reveal their full identity",
+      "Show only a fraction of the total order quantity to the market",
+      "Hide the price",
+      "Trade anonymously"
+    ],
+    "answer": "Show only a fraction of the total order quantity to the market",
+    "hint": "आइसबर्ग आर्डर।",
+    "explanation": "Traders large orders को hide करने के लिए इसका use करते हैं। उदाहरण के लिए, 10,000 lots खरीदना लेकिन market में panic अवॉयड करने के लिए एक बार में सिर्फ 1,000 show करना।"
+  },
+  {
+    "id": 28,
+    "question": "In the NEAT system, the 'Snap Quote' feature provides:",
+    "options": [
+      "Instantaneous market information (Best Bid, Ask, LTP) for a specific security",
+      "A screenshot of the screen",
+      "A news headline",
+      "The broker's phone number"
+    ],
+    "answer": "Instantaneous market information (Best Bid, Ask, LTP) for a specific security",
+    "hint": "Current price का स्नैपशॉट।",
+    "explanation": "Snap Quote एक dealer को किसी specific contract का current market status जल्दी से check करने allow करता है।"
+  },
+  {
+    "id": 29,
+    "question": "The 'Active' order in a matching transaction is:",
+    "options": [
+      "The incoming order that triggers the trade",
+      "The order already sitting in the book (Passive)",
+      "The older order",
+      "The larger order"
+    ],
+    "answer": "The incoming order that triggers the trade",
+    "hint": "एग्रेसर (पहल करने वाला)।",
+    "explanation": "Active order वह होता है जो system में enter करता है और book में बैठे existing (Passive) order के खिलाफ match करता है।"
+  },
+  {
+    "id": 30,
+    "question": "Margins are collected by the Clearing Corporation from:",
+    "options": [
+      "Clients directly",
+      "Clearing Members",
+      "RBI",
+      "Stock Exchanges"
+    ],
+    "answer": "Clearing Members",
+    "hint": "Hierarchy: CC -> CM -> TM -> Client.",
+    "explanation": "Clearing Corporation Clearing Members से margins collect करता है। Clearing Members Trading Members से collect करते हैं, और वे Clients से collect करते हैं।"
+  },
+  {
+    "id": 31,
+    "question": "SPAN (Standard Portfolio Analysis of Risk) is a system used for:",
+    "options": [
+      "Matching orders",
+      "Calculating Initial Margin requirements",
+      "Sending emails",
+      "Tracking dividends"
+    ],
+    "answer": "Calculating Initial Margin requirements",
+    "hint": "रिस्क मैनेजमेंट टूल।",
+    "explanation": "SPAN एक globally accepted methodology है जिसे portfolio के total risk के आधार पर initial margin calculate करने के लिए exchanges द्वारा use किया जाता है।"
+  },
+  {
+    "id": 32,
+    "question": "If a client fails to pay the required margin, the broker has the right to:",
+    "options": [
+      "File a police complaint",
+      "Square off (close) the client's position",
+      "Wait indefinitely",
+      "Pay from their own pocket"
+    ],
+    "answer": "Square off (close) the client's position",
+    "hint": "रिस्क कम करना।",
+    "explanation": "Further losses से बचने के लिए, regulations और member-client agreements broker को client की position liquidate (square off) करने allow करते हैं अगर margin calls पूरी नहीं होती हैं।"
+  },
+  {
+    "id": 33,
+    "question": "Mark-to-Market (MTM) settlement happens:",
+    "options": [
+      "Weekly",
+      "Monthly",
+      "Daily",
+      "Yearly"
+    ],
+    "answer": "Daily",
+    "hint": "T+0 या T+1 के बेसिस पर।",
+    "explanation": "Profits और losses हर trading day के आख़िर में calculate किए जाते हैं, और margin account को daily adjust (debit/credit) किया जाता है।"
+  },
+  {
+    "id": 34,
+    "question": "The 'Exposure Margin' is charged:",
+    "options": [
+      "Over and above the SPAN margin",
+      "Instead of SPAN margin",
+      "Only to foreign investors",
+      "Only on profit"
+    ],
+    "answer": "Over and above the SPAN margin",
+    "hint": "सेफ्टी की एक एक्स्ट्रा लेयर।",
+    "explanation": "Exposure margin एक additional margin है जो उन risks को cover करने के लिए collect किया जाता है जो SPAN के cover से बाहर के extreme market moves से पैदा हो सकते हैं।"
+  },
+  {
+    "id": 35,
+    "question": "Direct Market Access (DMA) allows institutional clients to:",
+    "options": [
+      "Bypass the broker entirely",
+      "Place orders directly into the exchange trading system through the broker's infrastructure",
+      "Trade without margins",
+      "Become an exchange"
+    ],
+    "answer": "Place orders directly into the exchange trading system through the broker's infrastructure",
+    "hint": "Speed और कण्ट्रोल।",
+    "explanation": "DMA clients को order execution पर direct control देता है, broker के manual dealer terminal को bypass करते हुए, हालाँकि यह अभी भी broker के risk management filters से होकर गुज़रता है।"
+  },
+  {
+    "id": 36,
+    "question": "A 'Stop Loss Buy' order is placed:",
+    "options": [
+      "Below the current market price",
+      "Above the current market price",
+      "At the current market price",
+      "At zero"
+    ],
+    "answer": "Above the current market price",
+    "hint": "Short position को प्रोटेक्ट करने के लिए।",
+    "explanation": "अगर आप Short हैं, तो prices बढ़ने पर आपको loss होता है। अगर market rally करता है तो अपने loss को cap (लिमिट) करने के लिए आप current price के ऊपर एक Stop Loss Buy place करते हैं।"
+  },
+  {
+    "id": 37,
+    "question": "A 'Stop Loss Sell' order is placed:",
+    "options": [
+      "Below the current market price",
+      "Above the current market price",
+      "At the current market price",
+      "At infinity"
+    ],
+    "answer": "Below the current market price",
+    "hint": "Long position को प्रोटेक्ट करने के लिए।",
+    "explanation": "अगर आप Long हैं, तो prices गिरने पर आपको loss होता है। अगर market गिरता है तो exit करने के लिए आप current price के नीचे एक Stop Loss Sell place करते हैं।"
+  },
+  {
+    "id": 38,
+    "question": "What is 'Novation' in the context of clearing?",
+    "options": [
+      "Creating a new product",
+      "The Clearing Corporation replacing the original counterparty to become the buyer to every seller and seller to every buyer",
+      "Cancelling a trade",
+      "Listing a new company"
+    ],
+    "answer": "The Clearing Corporation replacing the original counterparty to become the buyer to every seller and seller to every buyer",
+    "hint": "सब्स्टीट्यूशन (बदलना)।",
+    "explanation": "Novation वह legal process है जहाँ CCP (Clearing Corporation) दो trading parties के बीच में आ जाता है, trade को guarantee करता है और positions को net करता है।"
+  },
+  {
+    "id": 39,
+    "question": "The 'Settlement Guarantee Fund' (SGF) is maintained by:",
+    "options": [
+      "SEBI",
+      "RBI",
+      "The Clearing Corporation",
+      "The Investors"
+    ],
+    "answer": "The Clearing Corporation",
+    "hint": "सबसे बड़ा सेफ्टी नेट।",
+    "explanation": "SGF एक corpus (फंड) है जिसका use किसी member के default होने पर settlement obligations pay करने के लिए किया जाता है, ताकि market collapse न हो।"
+  },
+  {
+    "id": 40,
+    "question": "Insider trading regulations apply to:",
+    "options": [
+      "Only Equity markets",
+      "All securities markets including Derivatives",
+      "Only Commodity markets",
+      "Only Foreign investors"
+    ],
+    "answer": "All securities markets including Derivatives",
+    "hint": "हर जगह फेयर प्ले।",
+    "explanation": "Unpublished Price Sensitive Information (UPSI) पर trading करना securities market के सभी segments में illegal है।"
+  },
+  {
+    "id": 41,
+    "question": "Self-Match Prevention (SMP) mechanisms prevent:",
+    "options": [
+      "Two different brokers from trading",
+      "Orders from the same client code matching against each other",
+      "Profitable trades",
+      "Loss making trades"
+    ],
+    "answer": "Orders from the same client code matching against each other",
+    "hint": "वाश ट्रेड्स।",
+    "explanation": "SMP client को खुद से ही buy और sell (wash trades) करने से रोकता है, जो artificially volume को बढ़ा सकता है और prices को manipulate कर सकता है।"
+  },
+  {
+    "id": 42,
+    "question": "The 'Quantity Freeze' limit is:",
+    "options": [
+      "The minimum quantity one can trade",
+      "The maximum quantity allowed per single order without validation",
+      "The total volume of the exchange",
+      "The maximum loss allowed"
+    ],
+    "answer": "The maximum quantity allowed per single order without validation",
+    "hint": "फैट फिंगर चेक।",
+    "explanation": "यह एक risk management parameter है। Freeze quantity से बड़ा कोई भी order block कर दिया जाता है या erroneous (गलत) massive trades को रोकने के लिए special approval की ज़रूरत होती है।"
+  },
+  {
+    "id": 43,
+    "question": "Proprietary Trading (Prop Trading) refers to:",
+    "options": [
+      "A broker trading for their own account",
+      "A broker trading for a client",
+      "A client trading for another client",
+      "Government trading"
+    ],
+    "answer": "A broker trading for their own account",
+    "hint": "खुद का पैसा।",
+    "explanation": "Prop trading में member firm clients से commission कमाने के बजाय profit के लिए trade करने के लिए अपने खुद के capital का use करती है।"
+  },
+  {
+    "id": 44,
+    "question": "Which type of member can clear trades for other trading members?",
+    "options": [
+      "Trading Member (TM)",
+      "Professional Clearing Member (PCM) or Self Clearing Member (SCM)",
+      "Authorized Person",
+      "Sub-broker"
+    ],
+    "answer": "Professional Clearing Member (PCM) or Self Clearing Member (SCM)",
+    "hint": "क्लियरिंग कैपेबिलिटी।",
+    "explanation": "एक Trading Member के पास clearing rights नहीं भी हो सकते हैं। Trades settle करने के लिए उन्हें एक Professional Clearing Member के साथ link होना चाहिए या एक Self Clearing Member होना चाहिए।"
+  },
+  {
+    "id": 45,
+    "question": "Contract months available for trading are usually:",
+    "options": [
+      "Near Month, Next Month, Far Month",
+      "Current Year, Next Year",
+      "Only the current week",
+      "Any month in the next 10 years"
+    ],
+    "answer": "Near Month, Next Month, Far Month",
+    "hint": "3 महीने की साइकिल।",
+    "explanation": "Exchanges typically 3 महीने की cycle चलाते हैं, जिसमें current month (Near), अगले month (Next), और उसके अगले month (Far) में expire होने वाले contracts offer किए जाते हैं।"
+  },
+  {
+    "id": 46,
+    "question": "A 'Good Till Cancelled' (GTC) order:",
+    "options": [
+      "Expires at the end of the day",
+      "Remains in the system for a specified number of days until executed or cancelled",
+      "Is invalid in India",
+      "Is the same as IOC"
+    ],
+    "answer": "Remains in the system for a specified number of days until executed or cancelled",
+    "hint": "कई दिनों तक बना रहता है।",
+    "explanation": "हालाँकि Indian segments में true GTC rare है (अक्सर brokers इसे Good Till Date की तरह simulate करते हैं), लेकिन theoretically यह match होने तक trading sessions में active रहता है।"
+  },
+  {
+    "id": 47,
+    "question": "If a contract expires on a trading holiday:",
+    "options": [
+      "The expiry is moved to the previous trading day",
+      "The expiry is moved to the next trading day",
+      "The contract becomes void",
+      "The expiry happens on the holiday"
+    ],
+    "answer": "The expiry is moved to the previous trading day",
+    "hint": "पहले कर देना।",
+    "explanation": "अगर expiration date किसी holiday पर पड़ती है, तो expiry को typically उसके ठीक पहले वाले trading day पर खिसका (advance कर) दिया जाता है।"
+  },
+  {
+    "id": 48,
+    "question": "Bulk Deals / Block Deals allow:",
+    "options": [
+      "Retail investors to trade small quantities",
+      "Large trades to be executed in a separate window or identified specifically",
+      "Trading without margins",
+      "Tax evasion"
+    ],
+    "answer": "Large trades to be executed in a separate window or identified specifically",
+    "hint": "बड़े प्लेयर्स।",
+    "explanation": "Block deals large transactions होती हैं जिन्हें अक्सर normal market price पर impact minimize करने के लिए एक special trading window में execute किया जाता है।"
+  },
+  {
+    "id": 49,
+    "question": "The 'Turnover' of an exchange refers to:",
+    "options": [
+      "The profit of the exchange",
+      "The total value of all contracts traded in a specific period",
+      "The number of members",
+      "The speed of trading"
+    ],
+    "answer": "The total value of all contracts traded in a specific period",
+    "hint": "Volume * Price.",
+    "explanation": "Turnover दिन/महीने/साल के दौरान platform पर execute किए गए सभी trades की aggregate value है।"
+  },
+  {
+    "id": 50,
+    "question": "Who is responsible for the final settlement of funds and securities?",
+    "options": [
+      "The Exchange",
+      "The Broker",
+      "The Clearing Corporation",
+      "The Depository"
+    ],
+    "answer": "The Clearing Corporation",
+    "hint": "पोस्ट-ट्रेड प्रोसेसिंग।",
+    "explanation": "Clearing Corporation वह central entity है जो ensure करती है कि funds buyers के account से debit हों और sellers को credit हों (और securities/derivatives के लिए इसका उल्टा)।"
+  }
+]

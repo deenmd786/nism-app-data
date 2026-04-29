@@ -1,0 +1,111 @@
+{
+  "course": "NISM Series I: Currency Derivatives",
+  "unit_number": 6,
+  "unit_name": "Exchange Traded Currency Derivatives में Trading Mechanism",
+  "weightage": "10%",
+  "overview": "यह chapter 'हम क्या Trade करते हैं' से हटकर 'हम कैसे Trade करते हैं' पर focus करता है। यह Stock Exchange के वास्तविक mechanism (plumbing/कामकाज) को समझाता है। आप सीखेंगे कि खिलाड़ी कौन हैं (Trading Members, Clearing Members), Exchange का computer system Buyers और Sellers को कैसे मिलाता है (Price-Time Priority), आप किस तरह के अलग-अलग Orders दे सकते हैं (जैसे Market, Limit, या Stop-Loss), और वे सख्त Rules (Position Limits) क्या हैं जो किसी एक व्यक्ति को पूरे Market को नियंत्रित करने से रोकते हैं। यदि आप digital marketplace के बुनियादी logic को समझते हैं, तो यह chapter बहुत practical और अत्यधिक scoring है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Trading System में Entities (TM, CM, TCM, PCM)",
+      "basic_meaning": "आप Currency Future खरीदने के लिए सीधे NSE नहीं जा सकते। आपको एक Broker की आवश्यकता होती है। Exchange की भाषा में, इन brokers को 'Members' कहा जाता है, और उनके पास अलग-अलग शक्तियां होती हैं।",
+      "detailed_explanation": "Membership मुख्य रूप से 4 प्रकार की होती है:\nStep 1: Trading Member (TM): यह आपका standard Broker (जैसे Zerodha या Upstox) है। उनके पास केवल आपके लिए system में Trade punch करने की शक्ति होती है। वे अंतिम funds/accounts को settle नहीं कर सकते। इसके लिए उन्हें एक Clearing Member की आवश्यकता होती है。\nStep 2: Clearing Member (CM): ये entities दैनिक Mark-to-Market (Profit/Loss) की गणना करती हैं और Exchange के साथ cash settle करती हैं।\nStep 3: Trading cum Clearing Member (TCM): एक बड़ा Broker जिसके पास दोनों काम करने की शक्ति होती है। वे Trade भी punch कर सकते हैं और अपने तथा अपने clients के लिए funds भी settle कर सकते हैं।\nStep 4: Professional Clearing Member (PCM): यह आमतौर पर एक बड़ा Bank (जैसे HDFC या ICICI) या Custodian होता है। वे बिल्कुल भी Trade नहीं करते हैं। वे केवल उन Trading Members को Clearing और Settlement सेवाएं प्रदान करते हैं जिनके पास Clearing rights नहीं हैं।",
+      "why_this_is_important": "NISM को PCM (Professional Clearing Member) के बारे में सवाल पूछना पसंद है। आपको पता होना चाहिए कि एक PCM Trades clear करता है लेकिन कभी खुद के लिए Trade नहीं करता।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "पुणे में एक छोटी नई Brokerage firm को TM (Trading Member) license मिलता है। वे Clients बना सकते हैं और NSE पर Order punch कर सकते हैं। लेकिन रोज़ाना करोड़ों रुपये settle करने के लिए उनके पास Capital नहीं है। इसलिए, वे NSE Clearing Corporation के साथ अपने दैनिक Settlement को संभालने के लिए IL&FS (जो एक Professional Clearing Member - PCM के रूप में कार्य करता है) को काम पर रखते हैं।",
+      "exam_traps": [
+        "यह सोचना कि Professional Clearing Member (PCM) एक Super-broker है। गलत! एक PCM zero Trading करता है। वे केवल Clear और Settle करते हैं।",
+        "यह सोचना कि कोई Client सीधे Clearing Corporation के साथ deal कर सकता है। गलत। Clients TM के साथ deal करते हैं, TM CM/TCM/PCM के साथ deal करते हैं, और फिर वे Clearing Corporation के साथ deal करते हैं।"
+      ],
+      "memory_trick": "TM = Only Types (Trade type करता है)। CM = Only Clears (केवल Clear करता है)। TCM = Types and Clears (Type और Clear दोनों करता है)। PCM = Purely Clears Money (पूरी तरह से पैसे Clear करता है, कोई Trading नहीं)।"
+    },
+    {
+      "concept": "2. Order Matching Rules: Price-Time Priority",
+      "basic_meaning": "जब लाखों लोग एक ही समय में 'Buy' और 'Sell' पर click कर रहे होते हैं, तो NSE computer यह कैसे तय करता है कि deal पहले किसे मिलेगी? यह 'Price-Time Priority' नामक एक सख्त Rule का उपयोग करता है।",
+      "detailed_explanation": "Exchange computer पूरी तरह से निष्पक्ष है। यह दो सरल steps का पालन करता है:\nStep 1: Price राजा है। \n- यदि आप एक Buyer हैं, तो System उस Seller की तलाश करेगा जो सबसे Lowest price की पेशकश कर रहा है। \n- यदि आप एक Seller हैं, तो System उस Buyer की तलाश करेगा जो सबसे Highest price की पेशकश कर रहा है।\nStep 2: Time रानी है (Tie-breaker)। \n- क्या होगा अगर 10 Buyers ठीक ₹83.00 की समान Price पर खरीदने को तैयार हों? \n- System ठीक उसी millisecond को देखता है जब Order server पर पहुंचा था। जिस व्यक्ति ने First Order punch किया, उसे Trade मिलता है।",
+      "why_this_is_important": "यह 1-mark का guaranteed theoretical question है। आपको बस Sequence याद रखने की जरूरत है: Price First, Time Second। कभी भी 'Time-Price priority' न चुनें।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Buyer A सुबह 10:00 बजे ₹83.10 पर खरीदना चाहता है।\nBuyer B सुबह 10:05 बजे ₹83.15 पर खरीदना चाहता है।\nBuyer C सुबह 10:01 बजे ₹83.15 पर खरीदना चाहता है।\nQueue में सबसे पहले कौन है? \nRule 1 (Price): Buyer B और C higher bid (₹83.15) लगा रहे हैं, इसलिए Buyer A को पीछे धकेल दिया जाता है।\nRule 2 (Time): B और C के बीच, C ने सुबह 10:01 बजे (B से पहले) Order दिया। \nविजेता: Buyer C को First Priority मिलती है।",
+      "real_life_indian_example": "IRCTC तत्काल पर Train ticket खरीदने के बारे में सोचें। Ticket की Price तय होती है, इसलिए Price Priority मायने नहीं रखती। लेकिन Time Priority ही सब कुछ है! जिस व्यक्ति का click 1 second पहले Server तक पहुंचता है, उसे confirmed ticket मिलता है। Stock Exchange पर, यदि आप बेहतर Price की पेशकश करते हैं, तो आप तत्काल queue को jump कर सकते हैं!",
+      "exam_traps": [
+        "Options में 'Time-Price Priority' चुनना। यह सख्ती से 'Price-Time Priority' है। पैसा पहले बोलता है, Timing tie-breaker है।",
+        "Best Buy Price और Best Sell Price को confuse करना। Best Buy = Highest Bid। Best Sell = Lowest Offer।"
+      ],
+      "memory_trick": "PTP: Price Tops, Time Passes. Price मुख्य Boss है, Time Assistant है।"
+    },
+    {
+      "concept": "3. Orders के प्रकार (Types of Orders: Market, Limit, Stop Loss)",
+      "basic_meaning": "आप केवल 'Buy' पर click नहीं करते हैं। आपको Broker को बताना होता है कि आप कैसे (How) खरीदना चाहते हैं। ये वे Conditions हैं जो आप अपने Order के साथ जोड़ते हैं।",
+      "detailed_explanation": "Step 1: Market Order: आप Broker से कहते हैं, 'मुझे Price की परवाह नहीं है, बस इसे मेरे लिए अभी (Now) Execute कर लो जो भी Price screen पर available है।' यह guarantee देता है कि Trade होगा, लेकिन Price थोड़ी महंगी हो सकती है।\nStep 2: Limit Order: आप Broker से कहते हैं, 'मैं केवल तभी खरीदूंगा जब Price ₹83.00 या उससे नीचे गिरेगी। एक पैसा भी ज्यादा नहीं।' यह आपकी Price की guarantee देता है, लेकिन यदि Market कभी ₹83.00 तक नहीं गिरता है, तो आपका Trade execute नहीं होगा।\nStep 3: Stop-Loss Order: यह एक Safety Net है। आपने पहले ही ₹83.00 पर एक Future खरीद लिया है। आप Broker से कहते हैं, 'अगर Market crash होकर ₹82.50 पर आ जाता है, तो तुरंत मेरी Position sell कर दें और मेरा Loss रोकें।' यह तब तक छिपा रहता है जब तक 'Trigger Price' hit नहीं हो जाता।",
+      "why_this_is_important": "इसका practically रूप से परीक्षण किया जाता है। NISM एक Scenario देगा: 'राहुल USDINR को केवल 82.50 पर ही खरीदना चाहता है। उसे किस प्रकार के Order का उपयोग करना चाहिए?' (उत्तर: Limit Order)।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "आप 1 किलो सोना खरीदना चाहते हैं। \nMarket Order: आप जौहरी के पास जाते हैं और कहते हैं 'मुझे 1 किलो सोना दे दो, आज का जो भी Rate हो लगा लो।'\nLimit Order: आप जौहरी से कहते हैं, 'मुझे तभी बुलाना जब Price ₹60,000 से नीचे आ जाए। मैं उससे ऊपर नहीं खरीदूंगा।'\nStop-Loss: आपने ₹60,000 में सोना खरीदा था। आप जौहरी से कहते हैं, 'अगर Price कभी ₹55,000 तक crash हो जाए, तो जल्दी से मेरा सोना sell कर देना ताकि मुझे ₹5,000 से अधिक का Loss न हो।'",
+      "exam_traps": [
+        "यह सोचना कि Stop-Loss Order का उपयोग नई Position लेने के लिए किया जाता है। इसका उपयोग आमतौर पर आगे के Losses को रोकने के लिए Existing Position को Close करने के लिए किया जाता है।",
+        "Market और Limit Orders को confuse करना। Market = Trade की guarantee, Price की कोई guarantee नहीं। Limit = Price की guarantee, Trade की कोई guarantee नहीं।"
+      ],
+      "memory_trick": "Market = M for 'Make it fast'। Limit = L for 'Laxman Rekha' (लक्ष्मण रेखा - इस रेखा को पार नहीं करूंगा)। Stop-Loss = Safety Belt।"
+    },
+    {
+      "concept": "4. Time Conditions: Day, IOC, GTC",
+      "basic_meaning": "जब आप एक Limit Order देते हैं, तो Broker को आपकी Price के लिए कब तक इंतजार करना चाहिए? आप 'Time Conditions' का उपयोग करके इसे define करते हैं।",
+      "detailed_explanation": "Step 1: Day Order: यह Order पूरे Trading Day (Currency के लिए शाम 5:00 बजे तक) के लिए Valid होता है। यदि शाम 5 बजे तक आपकी Price hit नहीं होती है, तो System automatically Order cancel कर देता है। अधिकांश Retail Orders, Day Orders होते हैं।\nStep 2: IOC (Immediate or Cancel): आप System से कहते हैं, 'अगले 1 millisecond के भीतर मेरे Order को match करो। आप अभी जितनी भी Quantity match कर सकते हैं, करें। Pending Quantity को तुरंत Cancel कर दें।' यह बिल्कुल भी इंतजार नहीं करता है।\nStep 3: GTC (Good Till Cancelled): Order दिनों या हफ्तों तक System में तब तक Active रहता है जब तक कि आपकी Price hit न हो जाए, या जब तक आप इसे manually Cancel न कर दें, या Contract Expire न हो जाए।",
+      "why_this_is_important": "NISM विशेष रूप से IOC की definition का परीक्षण करता है। वे पूछेंगे कि IOC Order के उस हिस्से का क्या होता है जो Unexecuted रह जाता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "आप ₹83.00 पर USDINR के 100 Lots खरीदने के लिए IOC Order देते हैं। \nठीक उसी microsecond में, ₹83.00 पर केवल 40 Lots available हैं। \nSystem तुरंत आपके लिए 40 Lots खरीद लेगा और शेष 60 Lots तुरंत Cancel कर देगा। यह और Sellers के आने का इंतजार नहीं करेगा।",
+      "real_life_indian_example": "Amazon पर Flash Sales (जैसे Redmi phone खरीदना)। आप 'Buy' दबाते हैं। यदि उस second Stock है, तो आपको मिल जाता है। यदि नहीं, तो आपका Order तुरंत Cancel हो जाता है। वह एक IOC Order है। आप Amazon से यह नहीं कह सकते कि 'पूरे दिन कोशिश करते रहो' (keep trying for the whole day)।",
+      "exam_traps": [
+        "यह सोचना कि यदि पूरी Quantity available न हो तो IOC का मतलब है कि पूरा Order cancel हो जाता है। गलत। जो Available portion है वह Execute हो जाता है, केवल Pending portion cancel होता है।",
+        "यह मान लेना कि GTC Orders हमेशा के लिए रहते हैं। जब महीने के अंत में विशिष्ट Future Contract Expire हो जाता है, तो वे automatically cancel हो जाते हैं।"
+      ],
+      "memory_trick": "Day = Today only। IOC = Do it NOW or throw it away। GTC = Keep trying till I say stop।"
+    },
+    {
+      "concept": "5. Position Limits और Unique Client Code (UCC)",
+      "basic_meaning": "Position Limits, SEBI द्वारा निर्धारित सख्त Rules हैं जो किसी एक High Net Worth Individual या Bank को खतरनाक रूप से बड़ी Positions लेकर पूरे Currency Market में Manipulation करने से रोकते हैं। UCC आपका Unique Identity Card है।",
+      "detailed_explanation": "Step 1: Unique Client Code (UCC): कोई भी Anonymously trade नहीं कर सकता है। प्रत्येक Client को UCC प्राप्त करने के लिए अपना PAN Card और KYC details देना होगा। Exchange हर Trade को वापस एक PAN number से Track करता है।\nStep 2: Client Level Limit: एक Retail Client असीमित संख्या में Contracts hold नहीं कर सकता है। SEBI एक Cap तय करता है (जैसे, कुल Open Interest का 6% या 10 million USD, जो भी अधिक हो)।\nStep 3: Trading Member (Broker) Limit: एक Broker की collectively (उनके सभी Clients को मिलाकर) भी एक Limit होती है (जैसे, Open Interest का 15% या 50 million USD)।\nStep 4: Bank Level Limit: Banks की Limits अधिक होती हैं क्योंकि वे वास्तविक बड़े पैमाने पर Forex Trades करते हैं, लेकिन RBI द्वारा उनकी सख्ती से Monitoring भी की जाती है।",
+      "why_this_is_important": "परीक्षा Hierarchy का परीक्षण करेगी: इन Limits को कौन लागू करता है? उत्तर: Exchange और Clearing Corporation। वे यह भी पूछेंगे कि क्या PAN Mandatory है (हां)।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "यदि कोई Billionaire, Indian Rupee को crash करने का फैसला करता है, तो वह USDINR Futures के 1 million Lots खरीदने की कोशिश कर सकता है। NSE System automatically उसके Order को Block कर देगा क्योंकि उसका UCC 'Client Level Position Limit' का उल्लंघन करेगा। हर्षद मेहता Scam के बाद SEBI ने Market में Cornering रोकने के लिए इसे लागू किया था।",
+      "exam_traps": [
+        "यह सोचना कि Position Limits केवल Suggestions हैं। वे Trading Software में embedded Hard Blocks हैं। आप उन्हें Bypass नहीं कर सकते।",
+        "यह सोचना कि Foreign Clients को UCC की आवश्यकता नहीं है। Indian Exchange पर Trade करने वाले Everyone को Valid ID/PAN से जुड़े UCC की आवश्यकता होती है।"
+      ],
+      "memory_trick": "UCC = Universal Catcher Code (यदि आप अपने PAN के माध्यम से Default करते हैं तो Exchange आपको पकड़ लेता है)। Limits = Accidents को रोकने के लिए Car पर लगे Speed Governors।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Limit Order vs Market Order",
+      "clear_explanation": "एक Market Order, Speed को प्राथमिकता देता है; जो भी Price available हो उस पर यह तुरंत Execute होता है, जिसमें खराब Price का Risk होता है। एक Limit Order, Price को प्राथमिकता देता है; यह Guarantee देता है कि आप अपनी निर्धारित Price से अधिक pay नहीं करेंगे, लेकिन यदि Market आपकी Price तक नहीं पहुंचता है तो Trade के Unexecuted रहने का Risk होता है।"
+    },
+    {
+      "difference_between": "Trading Member (TM) vs Professional Clearing Member (PCM)",
+      "clear_explanation": "एक Trading Member (TM) के पास Exchange Platform पर Buy और Sell करने का अधिकार होता है, लेकिन वह Clearing Corporation के साथ Cash का Settlement नहीं कर सकता। एक Professional Clearing Member (PCM - जैसे एक Bank) के पास Funds settle करने और Brokers के लिए Trades की Guarantee देने का अधिकार होता है, लेकिन उसे Platform पर Trade करने की सख्त अनुमति नहीं है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "सही Order Matching Priority की पहचान करना (Price-Time Priority)।",
+    "यह जानना कि एक PCM (Professional Clearing Member) Trade नहीं करता है।",
+    "यह समझना कि एक IOC (Immediate or Cancel) Order, Unexecuted portion के साथ कैसा व्यवहार करता है।",
+    "यह जानना कि Unique Client Code (UCC) generate करने के लिए PAN पूरी तरह से Mandatory है।",
+    "Position Limits के उद्देश्य को समझना (Market Manipulation और Cornering को रोकने के लिए)।"
+  ],
+  "quick_revision_summary": [
+    "PCM Trades clear करता है लेकिन Trade नहीं करता। TM Trade करता है लेकिन Clear नहीं करता।",
+    "Order Matching = Price First, Time Second।",
+    "Market Order = Immediate Execution, अनिश्चित Price।",
+    "Limit Order = Guaranteed Price, अनिश्चित Execution।",
+    "Stop-Loss = Existing Position पर Loss को limit करने के लिए उपयोग किया जाता है।",
+    "IOC = जो Available है उसे तुरंत Execute करें, बाकी को Cancel कर दें।",
+    "UCC Mandatory है और Anonymous Trading को रोकने के लिए PAN से जुड़ा हुआ है।",
+    "Monopolies को रोकने के लिए Client, Trading Member और Bank level पर Position Limits मौजूद हैं।"
+  ]
+}

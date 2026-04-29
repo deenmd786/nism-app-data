@@ -1,0 +1,106 @@
+{
+  "course": "NISM Series XXI-B: Portfolio Managers Certification Examination",
+  "unit_number": 12,
+  "unit_name": "Introduction to Indices (Indices का परिचय)",
+  "weightage": "5 Marks",
+  "overview": "यह chapter 'Market Barometer' या Index के concept को introduce करता है। जैसे thermometer body temperature मापता है, वैसे ही Stock Market Index stock market की 'health' और direction को मापता है। एक Portfolio Manager के लिए, performance benchmark करने के लिए indices सबसे important tools हैं। इस unit में, आप सीखेंगे कि Nifty 50 और Sensex जैसे indices कैसे बनाए जाते हैं, उन्हें calculate करने के अलग-अलग methods क्या हैं, और market trends को track करने के लिए वे क्यों essential हैं।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Stock Market Index क्या है?",
+      "basic_meaning": "एक statistical indicator जो stocks के एक specific group की performance को track करता है।",
+      "detailed_explanation": "एक index किसी particular market या sector को represent करने के लिए चुने गए stocks का एक basket है। हजारों individual stocks को check करने के बजाय, आप index देखकर पता लगाते हैं कि market ऊपर जा रहा है या नीचे। \n- **Representation:** यह total market के एक sample के रूप में काम करता है।\n- **Benchmark:** यह एक standard provide करता है जिससे Portfolio Manager की performance compare की जाती है।\n- **Sentiment:** यह economy में investors के overall mood और confidence को reflect करता है।",
+      "why_this_is_important": "हर single stock को track करना impossible है। Indices market analysis को simplify करते हैं और 'Alpha' calculation के लिए एक baseline provide करते हैं।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "अगर **Nifty 50** 1% ऊपर जाता है, तो इसका generally मतलब है कि भारत की top 50 companies ने उस दिन collectively अच्छा perform किया है।",
+      "exam_traps": [
+        "यह सोचना कि एक index में सभी stocks होते हैं। इसमें केवल एक 'representative' sample होता है।",
+        "यह मानना कि index में सभी stocks की equal importance है। आमतौर पर, बड़ी companies का weight ज़्यादा होता है।"
+      ],
+      "memory_trick": "Index = Market Thermometer."
+    },
+    {
+      "concept": "2. Market Coverage के आधार पर Indices के प्रकार",
+      "basic_meaning": "Indices को उन stocks के 'size' या 'type' के आधार पर categorize किया जाता है जिन्हें वे track करते हैं।",
+      "detailed_explanation": "1. **Broad Market Indices:** ये पूरे market को represent करते हैं। (जैसे, Nifty 50, Nifty 500, S&P BSE SENSEX)।\n2. **Sectoral Indices:** ये किसी specific industry को track करते हैं। (जैसे, Nifty Bank, Nifty IT, Nifty Pharma)।\n3. **Thematic Indices:** ये अलग-अलग sectors में किसी specific investment theme को track करते हैं। (जैसे, Nifty Infrastructure, Nifty ESG)।\n4. **Strategy Indices:** ये volatility या value जैसे specific quantitative parameters के आधार पर design किए जाते हैं। (जैसे, Nifty 50 Low Volatility 30)।",
+      "why_this_is_important": "'Pharma Fund' manage करने वाले Portfolio Manager को general Nifty 50 के बजाय Nifty Pharma index से compare किया जाना चाहिए।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "IT boom के दौरान, Nifty IT index 5% बढ़ सकता है भले ही broad Nifty 50 flat हो।",
+      "exam_traps": [
+        "Sectoral को Thematic के साथ confuse करना। Sectoral एक industry (Banking) है; Thematic कई industries को cover कर सकता है (जैसे, ESG में IT, Pharma, और Energy शामिल हैं)।"
+      ],
+      "memory_trick": "Broad = पूरा जंगल। Sectoral = एक तरह का पेड़। Thematic = छांव में उगने वाले पेड़।"
+    },
+    {
+      "concept": "3. Index Calculation: Free-Float Market Cap Method",
+      "basic_meaning": "केवल public के लिए trade करने के लिए available shares के आधार पर index value calculate करना।",
+      "detailed_explanation": "Nifty और Sensex सहित ज्यादातर modern indices **Free-Float Market Capitalization** method का use करते हैं। \n- **Full Market Cap:** Total shares × Price। इसमें promoters (owners) के shares भी शामिल होते हैं जो trade नहीं होते।\n- **Free-Float Market Cap:** इसमें केवल public द्वारा buy/sell करने के लिए available shares शामिल होते हैं (promoter/government holdings को exclude करता है)।\n\n*Free-Float क्यों use करें?* यह सच्चे 'investible' market को reflect करता है और index को shares के उन बड़े हिस्सों से distort होने से बचाता है जो कभी move नहीं होते।",
+      "why_this_is_important": "यह index construction के लिए global standard है। यह ensure करता है कि index liquid और tradable है।",
+      "formula": "Free-Float Market Cap = Total Shares × Current Price × Free-Float Factor",
+      "formula_explanation": "'Free-Float Factor' एक decimal (जैसे 0.60) है जो public द्वारा hold किए गए shares के percentage को represent करता है।",
+      "step_by_step_calculation_example": "1. Company A Total Market Cap = Rs. 1000 Crores.\n2. Promoters 40% shares own करते हैं (Not tradable)।\n3. Public 60% shares own करती है (Free-Float)।\n4. Free-Float Market Cap = 1000 × 0.60 = Rs. 600 Crores.\n5. Index में company का weight तय करने के लिए केवल इसी 600 Crores का use किया जाएगा।",
+      "real_life_indian_example": "Reliance Industries का market cap बहुत massive है, लेकिन इसका index weight केवल उन shares पर based है जो Ambani family के पास नहीं हैं।",
+      "exam_traps": [
+        "यह सोचना कि index 'Full' market cap use करता है। Indian indices बहुत पहले 'Free-Float' पर switch हो गए थे।",
+        "Price-Weighted indices (जैसे Dow Jones) को Market Cap Weighted indices (जैसे Nifty) के साथ confuse करना।"
+      ],
+      "memory_trick": "Free-Float = केवल वही जो market में 'Floating' (available) है।"
+    },
+    {
+      "concept": "4. Index Maintenance: Rebalancing और Selection Criteria",
+      "basic_meaning": "Index समय के साथ 'fresh' और accurate कैसे रहता है।",
+      "detailed_explanation": "एक index permanent नहीं होता है। इसका periodic रूप से review किया जाता है (आमतौर पर semi-annually)।\n1. **Rebalancing:** Companies के weights को adjust करना क्योंकि उनके prices बदल गए हैं।\n2. **Reconstitution:** 'Losers' को हटाना और 'Winners' को जोड़ना। अगर किसी company का market cap गिर जाता है या वह liquid नहीं रहती, तो उसे Nifty 50 से बाहर कर दिया जाता है और एक बेहतर company द्वारा replace कर दिया जाता है।\n3. **Selection Criteria:** Nifty 50 में होने के लिए, एक stock को highly liquid (low impact cost) होना चाहिए और free-float market cap के हिसाब से सबसे बड़ी कंपनियों में से एक होना चाहिए।",
+      "why_this_is_important": "यह ensure करता है कि index हमेशा economy के current leaders को represent करे, पुरानी, डूबती (dying) कंपनियों को नहीं।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "2024 में, अगर Shriram Finance को Nifty 50 में add किया जाता है और UPL को remove किया जाता है, तो यह periodic rebalancing/reconstitution process का हिस्सा है。",
+      "exam_traps": [
+        "यह सोचना कि rebalancing रोज़ होती है। यह आमतौर पर हर 6 महीने में होती है।",
+        "यह मानना कि Nifty 50 में stocks की गिनती बदलती है। Stocks बदलते हैं, लेकिन गिनती 50 ही रहती है।"
+      ],
+      "memory_trick": "Rebalancing = घर की सफाई करना ताकि केवल सबसे अच्छी चीजें ही रहें।"
+    },
+    {
+      "concept": "5. Impact Cost",
+      "basic_meaning": "जब आप बहुत बड़ी quantity में stock buy/sell करने की कोशिश करते हैं तो price कितना बदलता है, इसका एक measure।",
+      "detailed_explanation": "Impact cost liquidity का 'real' cost है। \n- अगर आप 1 करोड़ रुपये के shares खरीदना चाहते हैं और price 0.5% बढ़ जाता है क्योंकि आपका order बहुत बड़ा था, तो **Impact Cost 0.5% है**।\n- **Low Impact Cost:** High liquidity (price move किए बिना बड़े amounts trade करना आसान है)। Index stocks के लिए mandatory है।\n- **High Impact Cost:** Low liquidity (large investors के लिए खतरनाक)।",
+      "why_this_is_important": "Nifty stocks का impact cost low होना ज़रूरी है (MUST) ताकि institutional investors और Portfolio Managers उन्हें आसानी से trade कर सकें।",
+      "formula": "Impact Cost % = [(Execution Price - Mid-Price) / Mid-Price] × 100",
+      "formula_explanation": "Mid-price best Buy और Sell orders का average है। Execution price वह है जो आपने असल में pay किया।",
+      "step_by_step_calculation_example": "1. Best Buy = 99. Best Sell = 101. \n2. Mid-Price = (99 + 101) / 2 = 100. \n3. आप एक बड़ा order place करते हैं और 100.50 pay करते हैं।\n4. Impact Cost = [(100.50 - 100) / 100] × 100 = 0.5%.",
+      "real_life_indian_example": "TCS जैसे Blue-chip stocks की impact cost बहुत कम होती है, जबकि small-cap 'penny' stocks की impact cost बहुत ज्यादा होती है।",
+      "exam_traps": [
+        "यह सोचना कि Impact Cost एक brokerage fee है। यह नहीं है। यह liquidity की कमी के कारण होने वाला एक price slippage है।"
+      ],
+      "memory_trick": "Impact Cost = छोटे market में बहुत बड़े होने की कीमत।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Price Return Index (PRI) vs. Total Return Index (TRI)",
+      "clear_explanation": "**PRI** केवल stock price changes को track करता है। **TRI** stock price changes के साथ-साथ (PLUS) companies द्वारा दिए गए dividends को भी track करता है। SEBI performance compare करने के लिए TRI का use करना mandate करता है।"
+    },
+    {
+      "difference_between": "Sensex vs. Nifty 50",
+      "clear_explanation": "**Sensex** (BSE) में 30 stocks हैं और इसका base year 1978-79 है। **Nifty 50** (NSE) में 50 stocks हैं और इसका base year 1995 है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Free-Float Market Capitalization की Definition.",
+    "Benchmarking के लिए Total Return Index (TRI) की requirement.",
+    "Liquidity के measure के रूप में Impact Cost का Concept.",
+    "एक अच्छे benchmark के Characteristics (Representative, Investible, Measurable)."
+  ],
+  "quick_revision_summary": [
+    "Indices market barometers और performance benchmarks के रूप में काम करते हैं।",
+    "Nifty और Sensex Free-Float Market Cap weighting method का use करते हैं।",
+    "Rebalancing ensure करती है कि index current market leaders को represent करता रहे।",
+    "PMS performance (Price + Dividends) को compare करने के लिए TRI (Total Return Index) का use किया जाना चाहिए।",
+    "Impact Cost liquidity को मापता है: Low cost = High liquidity.",
+    "Broad, Sectoral, और Thematic indices के तीन main types हैं।"
+  ]
+}

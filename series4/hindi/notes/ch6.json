@@ -1,0 +1,114 @@
+{
+  "course": "NISM Series IV: Interest Rate Derivatives Certification Examination",
+  "unit_number": 6,
+  "unit_name": "Trading Mechanism in Exchange Traded IRD",
+  "weightage": "10 Marks",
+  "overview": "यह chapter financial theory से हटकर असल OPERATIONS पर focus करता है। यह explain करता है कि आप computer screen पर buy और sell कैसे करते हैं। यह market की hierarchy (Trade करने की अनुमति किसे है?), orders के types (Limit vs. Market), और computer द्वारा buyers और sellers को match करने के rules (Price-Time Priority) को cover करता है। यह एक scoring chapter है क्योंकि rules logical और practical हैं।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Market Hierarchy (Who is Who?)",
+      "basic_meaning": "Stock market में command की chain.",
+      "detailed_explanation": "आप सीधे NSE नहीं जा सकते। आपको एक intermediary के through जाना होगा।\n\n1. **Exchange (NSE/BSE):** Platform provide करता है।\n2. **Trading Member (TM):** एक broker (जैसे Zerodha, Angel One) जिसके पास exchange पर orders place करने का right होता है।\n3. **Clearing Member (CM):** एक बड़ी entity जो trades को settle करती है (money/margins handle करती है)। \n   - *Note:* एक TM, CM भी हो सकता है (Self-Clearing Member)। अगर TM, CM नहीं है, तो उन्हें एक 'Professional Clearing Member (PCM)' के साथ tie up करना होगा।\n4. **Client (You):** End investor.",
+      "why_this_is_important": "Exam में पूछा जाता है कि margins pay करने के लिए कौन responsible है। (Answer: Clearing Member Exchange के प्रति responsible है)।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "आप (Client) Kite app पर order place करते हैं। Zerodha (Trading Member) इसे NSE को भेजता है। अगर Zerodha clearing member नहीं है, तो वे Clearing Corp के साथ settlement handle करने के लिए एक custodian bank (PCM) का use करते हैं।",
+      "exam_traps": [
+        "यह सोचना कि Client सीधे NSE पर trade कर सकता है। नहीं, केवल Trading Member कर सकता है।",
+        "TM और CM में confuse होना। TM trade करता है; CM settle (pay) करता है।"
+      ],
+      "memory_trick": "TM = Trader (Action). CM = Cashier (Money)."
+    },
+    {
+      "concept": "2. NEAT System (The Trading Screen)",
+      "basic_meaning": "National Exchange for Automated Trading. वह software जो market चलाता है।",
+      "detailed_explanation": "NSE एक fully automated, screen-based trading system का use करता है जिसे NEAT कहते हैं।\n- **Anonymous:** Buyer नहीं जानता कि seller कौन है, और vice versa. यह bias को रोकता है。\n- **Order Driven:** Prices लोगों द्वारा डाले गए orders से तय होते हैं, न कि 'Market Maker' द्वारा prices quote करने से।",
+      "why_this_is_important": "यह transparency और fairness ensure करता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "जब आप अपने app पर 'Market Depth' (Top 5 Bids और Asks) देखते हैं, तो आप NEAT system की order book देख रहे होते हैं।",
+      "exam_traps": [
+        "यह सोचना कि Exchange price set करता है। Exchange केवल orders MATCH करता है; investors price set करते हैं।",
+        "यह मान लेना कि आप choose कर सकते हैं कि किसे बेचना है। आप नहीं कर सकते।"
+      ],
+      "memory_trick": "NEAT = No Names (Anonymous) + Electronic + Automated."
+    },
+    {
+      "concept": "3. Price-Time Priority (The Golden Rule)",
+      "basic_meaning": "Computer कैसे decide करता है कि किसे पहले trade मिलेगा।",
+      "detailed_explanation": "Matching engine order में दो strict rules follow करता है:\n\n1. **Price Priority:** Best Price जीतता है।\n   - Buyers के लिए: HIGHEST Bid को priority मिलती है।\n   - Sellers के लिए: LOWEST Ask को priority मिलती है。\n\n2. **Time Priority:** अगर prices equal हैं, तो जो order पहले (EARLIER) आया वह जीतता है।",
+      "why_this_is_important": "यह explain करता है कि screen पर price देखने के बाद भी आपका order execute क्यों नहीं हो पाता (कोई और आपसे पहले वहाँ था)।",
+      "formula": "Rank = Best Price > Earliest Time",
+      "formula_explanation": "Simple sorting logic.",
+      "step_by_step_calculation_example": "Bond Future खरीदने के लिए Order Book:\n- Person A: 10:00 AM पर Rs 100.50 Bid करता है।\n- Person B: 10:01 AM पर Rs 100.60 Bid करता है। (Higher Price -> Priority #1)\n- Person C: 10:02 AM पर Rs 100.50 Bid करता है। (A के समान Price, लेकिन बाद में -> Priority #3)\n\nPriority: Person B (Best Price), फिर Person A (Earlier Time), फिर Person C.",
+      "real_life_indian_example": "अगर आप एकदम Last Traded Price पर limit order place करते हैं, तो यह तुरंत fill नहीं भी हो सकता है क्योंकि queue में आपसे पहले 100 लोग हो सकते हैं।",
+      "exam_traps": [
+        "यह सोचना कि Time, Price से ज्यादा important है। Price हमेशा King है।",
+        "यह सोचना कि larger quantity को priority मिलती है। Quantity priority के लिए irrelevant है।"
+      ],
+      "memory_trick": "Best Price first. First Come First Served second."
+    },
+    {
+      "concept": "4. Order Types",
+      "basic_meaning": "Broker को दिए गए instructions.",
+      "detailed_explanation": "1. **Limit Order:** आप Price specify करते हैं। ('100 पर Buy करें')। Trade केवल 100 या उससे बेहतर (कम) पर होता है। Price guarantee करता है, लेकिन Execution नहीं।\n2. **Market Order:** आप price specify नहीं करते। ('जो भी available हो उस पर Buy करें')। Execution guarantee करता है, लेकिन Price नहीं। Illiquid markets में dangerous है।\n3. **Stop Loss Order:** एक order जो किसी specific 'Trigger Price' के cross होने के बाद ही active होता है। Losses limit करने के लिए used.\n4. **IOC (Immediate or Cancel):** अभी जितना fill कर सकते हैं करें, बाकी तुरंत cancel कर दें।",
+      "why_this_is_important": "गलत order type use करने से भारी loss हो सकता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Scenario: Market Price 100 है।\n- Limit Buy @ 98: System में तब तक रहेगा जब तक price 98 तक नहीं गिर जाता।\n- Market Buy: 100 (या अगर 100 चला गया तो 101) पर तुरंत buy करेगा。\n- Stop Loss Sell @ 95: System कुछ नहीं करता। अगर price 95 तक गिरता है, तो यह आपको further loss से बचाने के लिए अचानक Sell order fire कर देता है।",
+      "real_life_indian_example": "Traders 'Stop Loss Market' का use यह ensure करने के लिए करते हैं कि वे एक losing trade से बाहर निकल जाएं चाहे price कुछ भी हो।",
+      "exam_traps": [
+        "Stop Loss Trigger को Limit Price के साथ confuse करना।",
+        "यह सोचना कि Limit Order तुरंत execute हो जाएगा अगर market price बहुत दूर है। (यह तुरंत execute होगा अगर आप market price के ABOVE buy करते हैं, लेकिन best available market price पर)।"
+      ],
+      "memory_trick": "Limit = My Price. Market = Any Price. Stop Loss = Safety Net."
+    },
+    {
+      "concept": "5. Turnover vs. Open Interest",
+      "basic_meaning": "Turnover 'Activity' है। Open Interest 'Commitment' है।",
+      "detailed_explanation": "\n1. **Turnover (Volume):** आज के trades की total value. (Buy + Sell). यह हर दिन zero पर reset हो जाता है।\n2. **Open Interest (OI):** उन contracts की संख्या जो अभी भी 'Open' हैं (squared off नहीं हुए हैं)। यह समय के साथ accumulate होता है।\n   - New Buyer + New Seller = OI बढ़ता है।\n   - Old Buyer, Old Seller को बेचता है = OI घटता है。\n   - Old Buyer, New Buyer को बेचता है = OI Unchanged रहता है।",
+      "why_this_is_important": "OI trend की strength indicate करता है। High OI का मतलब है कि पैसा market में FLOW कर रहा है।",
+      "formula": "Turnover = Traded Quantity * Price",
+      "formula_explanation": "Open Interest = Total Long Positions (या Total Short Positions, दोनों को add नहीं करना है)।",
+      "step_by_step_calculation_example": "Day 1: A 1 lot buy करता है, B 1 lot sell करता है। Volume = 1. OI = 1.\nDay 2: C, A से 1 lot buy करता है (A exit करता है)। Volume = 1. OI = 1 (Position A से C को transfer हो गई)।\nDay 3: C, B को sell करता है (दोनों exit करते हैं)। Volume = 1. OI = 0.",
+      "real_life_indian_example": "RBI policy से पहले, Bond Futures में Open Interest spike होता है क्योंकि traders positions बनाते हैं।",
+      "exam_traps": [
+        "OI calculate करने के लिए Longs + Shorts को add करना। NO! OI केवल मौजूद contracts की संख्या है। (1 Long + 1 Short = 1 Contract OI)।",
+        "यह सोचना कि Volume अगले दिन carry over होता है। Volume daily होता है।"
+      ],
+      "memory_trick": "Volume = Traffic (Cars passing). OI = Parking (Cars staying)."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Limit Order vs. Market Order",
+      "clear_explanation": "LIMIT आपके द्वारा pay किए जाने वाले price की guarantee देता है, लेकिन आपको shares नहीं भी मिल सकते हैं। || MARKET आपको shares मिलने की guarantee देता है, लेकिन आपको बहुत high price pay करना पड़ सकता है।"
+    },
+    {
+      "difference_between": "Stop Loss Buy vs. Stop Loss Sell",
+      "clear_explanation": "SL BUY current price के ऊपर (ABOVE) place किया जाता है (breakout catch करने या short position protect करने के लिए)। || SL SELL current price के नीचे (BELOW) place किया जाता है (long position पर loss limit करने के लिए)।"
+    },
+    {
+      "difference_between": "Active Order vs. Passive Order",
+      "clear_explanation": "ACTIVE (Market) order existing orders को hit करता है (liquidity खाता है)। || PASSIVE (Limit) order hit होने के इंतज़ार में book में बैठा रहता है (liquidity provide करता है)।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Priority Rules: Price First, फिर Time.",
+    "Buyer/seller types के आधार पर Open Interest changes का Calculation.",
+    "Clearing Member का Function (Settlement & Risk Management).",
+    "IOC (Immediate or Cancel) और Day orders के बीच Difference.",
+    "'Market Depth' का Meaning (Best 5 bid/ask prices की list)."
+  ],
+  "quick_revision_summary": [
+    "NEAT trading system है।",
+    "Price Priority > Time Priority.",
+    "Limit Order = Specific Price. Market Order = Best Available Price.",
+    "Stop Loss का use losses limit करने के लिए किया जाता है।",
+    "Trading Member trade करता है; Clearing Member settle करता है।",
+    "Open Interest open contracts की संख्या count करता है।",
+    "Anonymous trading fairness ensure करता है।"
+  ]
+}

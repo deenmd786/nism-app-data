@@ -1,0 +1,125 @@
+{
+  "course": "NISM Series XII: Securities Markets Foundation",
+  "unit_number": 6,
+  "unit_name": "Derivative Markets",
+  "weightage": "10%",
+  "overview": "यह chapter market के सबसे complex लेकिन exciting part को introduce करता है। Derivatives वे instruments हैं जिनका उपयोग risk manage करने (Hedging) या future prices पर bet लगाने (Speculation) के लिए किया जाता है। Exam के लिए, आपको 'Forwards' और 'Futures' के बीच के difference, और 'Call' और 'Put' options की definitions को clearly समझना होगा। लगभग 10 questions expect करें, जिनमें ज़्यादातर definitions और conceptual scenarios होंगे।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. What is a Derivative?",
+      "basic_meaning": "एक financial contract जिसकी अपनी कोई value नहीं होती, बल्कि यह किसी और चीज़ से अपनी value 'derive' (लेता) करता है।",
+      "detailed_explanation": "दही (Curd) के बारे में सोचें। इसका price Milk के price पर depend करता है। अगर Milk महँगा हो जाता है, तो दही महँगा हो जाता है। \n\nइस example में:\n* **Milk** **'Underlying Asset'** है।\n* **Curd** **'Derivative'** है।\n\nStock market में, Underlying Asset कोई Share (Reliance), Index (Nifty), Currency (USD/INR), या Commodity (Gold) हो सकता है। Derivative contract इस underlying asset की movement के आधार पर ऊपर या नीचे move करता है।",
+      "why_this_is_important": "यह foundation है। आप यह जाने बिना derivatives trade नहीं कर सकते कि 'Underlying' का मतलब क्या है।",
+      "formula": "Derivative की Value Underlying के Price पर depend करती है।",
+      "formula_explanation": "अगर Underlying Price UP जाता है, तो Call Option Price UP जाता है।",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Nifty 50 Futures एक derivative है। इसका price Nifty 50 Index की value के आधार पर change होता है।",
+      "exam_traps": [
+        "Derivatives केवल stocks पर ही नहीं, बल्कि Rainfall (Weather derivatives) या Interest Rates जैसी चीज़ों पर भी based हो सकते हैं।",
+        "ये leveraged instruments होते हैं (कम पैसा बड़ी value को control करता है)।"
+      ],
+      "memory_trick": "Derivative = किसी और चीज़ से Derived."
+    },
+    {
+      "concept": "2. Participants in Derivatives Market",
+      "basic_meaning": "Motive के आधार पर तीन तरह के players.",
+      "detailed_explanation": "\n1. **Hedgers:** ये **risk कम** करना चाहते हैं। Example: एक किसान को डर है कि गेहूँ (wheat) के prices गिरेंगे, इसलिए वह price lock करने के लिए आज एक derivative contract बेचता है। वह खुद को 'insure' कर रहा है。\n2. **Speculators:** ये profit कमाने के लिए **risk लेना** चाहते हैं। ये price direction (Up या Down) पर bet लगाते हैं। ये market को liquidity provide करते हैं。\n3. **Arbitrageurs:** ये दो markets के बीच price differences का फायदा उठाकर **risk-free profit** कमाने की कोशिश करते हैं (जैसे, Cash market में सस्ता खरीदना और Futures market में महँगा बेचना)।",
+      "why_this_is_important": "Exam questions एक scenario देंगे और पूछेंगे 'क्या यह व्यक्ति Hedger है या Speculator?'",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Hedger: एक exporter जो Rupee strengthening से बचने के लिए USD futures बेच रहा है। Speculator: एक trader जो market rally expect करके Nifty Call options खरीद रहा है।",
+      "exam_traps": [
+        "Arbitrage risk-less profit है। Speculation में high risk शामिल होता है।",
+        "Indian markets में ज़्यादातर volume Speculators से आता है।"
+      ],
+      "memory_trick": "Hedge = Protect. Speculate = Gamble. Arbitrage = Smart Math."
+    },
+    {
+      "concept": "3. Forward Contracts (OTC)",
+      "basic_meaning": "किसी future date पर एक fixed price पर कुछ खरीदने/बेचने के लिए दो parties के बीच एक private agreement.",
+      "detailed_explanation": "Imagine करें कि आप एक local किसान के साथ अगले महीने ₹50/kg पर 100kg प्याज (onions) खरीदने का agreement करते हैं, चाहे तब market price कुछ भी हो। \n* **Customized:** आप quantity और date decide करते हैं。\n* **OTC (Over The Counter):** यह सीधे दो लोगों के बीच होता है, exchange पर नहीं。\n* **Counterparty Risk:** High risk होता है कि अगर prices ऊपर गए तो किसान भाग सकता है या बेचने से मना कर सकता है।",
+      "why_this_is_important": "यह futures का 'primitive' (पुराना) version है। यह explain करता है कि हमें exchanges की ज़रूरत क्यों है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "एक jeweler का gold importer के साथ अगले हफ्ते fixed rate पर gold खरीदने का agreement करना।",
+      "exam_traps": [
+        "Forward contracts stock exchanges पर trade नहीं होते हैं।",
+        "इनमें high default risk होता है।"
+      ],
+      "memory_trick": "Forward = Face-to-Face (Private)."
+    },
+    {
+      "concept": "4. Futures Contracts (Exchange Traded)",
+      "basic_meaning": "एक Forward contract का standardized version, जो exchange पर trade होता है।",
+      "detailed_explanation": "Forwards के risk को solve करने के लिए, हमारे पास Futures हैं।\n* **Standardized:** Exchange lot size (जैसे, 50 shares) और expiry date (जैसे, महीने का आखिरी Thursday) decide करता है。\n* **Exchange Traded:** आप नहीं जानते कि दूसरी party कौन है। Clearing Corporation trade की guarantee देता है。\n* **Mark-to-Market (MTM):** Profit/Loss रोज़ाना calculate और settle किया जाता है।",
+      "why_this_is_important": "यह सबसे common derivative product है।",
+      "formula": "Future Price = Spot Price + Cost of Carry",
+      "formula_explanation": "Cost of Carry में interest cost और storage cost शामिल होते हैं।",
+      "step_by_step_calculation_example": "Gold का Spot Price: ₹50,000.\n1 महीने का Interest: ₹200.\nFutures Price = 50,000 + 200 = ₹50,200.",
+      "real_life_indian_example": "NSE पर Reliance Futures का 1 lot (250 shares) खरीदना।",
+      "exam_traps": [
+        "Futures legally binding obligations होते हैं। आपको contract fulfill करना ही होगा (या expiry से पहले इसे close करना होगा)।",
+        "Futures trading के लिए Margins mandatory हैं।"
+      ],
+      "memory_trick": "Futures = Forwards + Rules + Safety."
+    },
+    {
+      "concept": "5. Options (Call and Put)",
+      "basic_meaning": "Contracts जो आपको खरीदने या बेचने का **RIGHT** (अधिकार) देते हैं, लेकिन **OBLIGATION** (बाध्यता) नहीं।",
+      "detailed_explanation": "इसे एक घर के लिए 'Token Advance' की तरह सोचें। \n\n1. **Call Option (Right to Buy):** आपको लगता है कि prices **UP** जाएंगे। आप price book करने के लिए एक premium pay करते हैं। अगर price ऊपर जाता है, तो आपको profit होता है। अगर price नीचे जाता है, तो आप बस पीछे हट जाते हैं (केवल premium का loss होता है)।\n2. **Put Option (Right to Sell):** आपको लगता है कि prices **DOWN** जाएंगे। यह एक insurance policy की तरह है। अगर market crash होता है, तो आपके पास high price पर बेचने का right होता है।",
+      "why_this_is_important": "यह concept (Right vs Obligation) derivatives में सबसे ज़्यादा test किया जाने वाला area है।",
+      "formula": "Break-even Point (Call) = Strike Price + Premium",
+      "formula_explanation": "आप तभी profit कमाना शुरू करते हैं जब price (Strike + Premium) को cross करता है।",
+      "step_by_step_calculation_example": "Nifty Call Option Buy करें।\nStrike Price: 18,000.\nPremium Paid: ₹100.\n**Scenario 1:** Nifty 18,200 पर जाता है। Profit = (18200 - 18000) - 100 = ₹100.\n**Scenario 2:** Nifty 17,000 पर जाता है। Loss = Only ₹100 (Premium). आपको बड़ा difference lose नहीं करना पड़ता।",
+      "real_life_indian_example": "अपनी car के लिए insurance खरीदना एक PUT option खरीदने जैसा है। अगर accident होता है (market crash), तो आपको पैसे मिलते हैं। अगर कोई accident नहीं होता, तो आप premium lose कर देते हैं।",
+      "exam_traps": [
+        "Buyer के पास RIGHT होता है। Seller (Writer) के पास OBLIGATION होता है।",
+        "Buyer Premium pay करता है। Seller Premium receive करता है।",
+        "Buyer के लिए Maximum loss = Premium paid. Seller के लिए Maximum loss = Unlimited."
+      ],
+      "memory_trick": "Call = Call Up (Bullish). Put = Put Down (Bearish)."
+    },
+    {
+      "concept": "6. Moneyness (ITM, ATM, OTM)",
+      "basic_meaning": "यह describe करता है कि कोई option वर्तमान में profitable है या नहीं।",
+      "detailed_explanation": "एक **Call Option** (Right to Buy) के लिए: \n* **In The Money (ITM):** Market Price > Strike Price. (Exercise करना profitable है)।\n* **At The Money (ATM):** Market Price = Strike Price.\n* **Out of The Money (OTM):** Market Price < Strike Price. (Loss making, worthless)।",
+      "why_this_is_important": "केवल ITM options में 'Intrinsic Value' होती है। OTM options pure 'Time Value' होते हैं।",
+      "formula": "Intrinsic Value (Call) = Max(0, Spot Price - Strike Price)",
+      "formula_explanation": "Option में अभी जो real value built-in है।",
+      "step_by_step_calculation_example": "Spot Price: ₹105. Strike Price: ₹100.\nCall Option Intrinsic Value = 105 - 100 = ₹5.\nअगर Premium ₹7 है, तो Time Value = 7 - 5 = ₹2.",
+      "real_life_indian_example": "OTM options सस्ते होते हैं (lottery tickets); ITM options महँगे होते हैं।",
+      "exam_traps": [
+        "Intrinsic Value कभी negative नहीं हो सकती। Minimum Zero है।",
+        "Put Options के लिए, ITM तब होता है जब Market Price < Strike Price (Call का Opposite)।"
+      ],
+      "memory_trick": "ITM = In The Money (Profit). OTM = Out of the Money (Loss)."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Futures vs. Options",
+      "clear_explanation": "**Futures:** दोनों parties के पास OBLIGATION होता है। Linear Profit/Loss (अगर market ₹1 move करता है, तो आप ₹1 gain/lose करते हैं)। \n**Options:** Buyer के पास RIGHT होता है, Seller के पास OBLIGATION होता है। Non-linear Payoff (Buyer का loss premium तक limited होता है)।"
+    },
+    {
+      "difference_between": "Exchange Traded vs. OTC",
+      "clear_explanation": "**Exchange Traded (Futures):** Standardized, Regulated, No Default Risk (Clearing Corp guarantee)। \n**OTC (Forwards):** Customized, Unregulated, High Default Risk।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Hedgers, Speculators, Arbitrageurs को identify करना।",
+    "Call/Put के लिए Break-even point का Calculation.",
+    "Rights (Option Buyer) और Obligations (Option Seller) के बीच Difference.",
+    "Futures में Mark-to-Market (MTM) margin concept.",
+    "कौन से contracts standardized हैं? (Futures & Options)."
+  ],
+  "quick_revision_summary": [
+    "Derivative अपनी value Underlying Asset से derive करता है।",
+    "Hedgers risk कम करते हैं; Speculators risk लेते हैं।",
+    "Futures = Obligation; Options = Right (Buyer के लिए)।",
+    "Call Option = Bullish view; Put Option = Bearish view.",
+    "Option Buyer Premium pay करता है; Seller Premium receive करता है।",
+    "Option Buyer के लिए Risk Limited (Premium) है; Seller के लिए Unlimited है।"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "course": "NISM Series XVI: Commodity Derivatives Certification Examination",
+  "unit_number": 6,
+  "unit_name": "Trading Mechanism",
+  "weightage": "10%",
+  "overview": "यह chapter एक्सचेंज के 'how-to' को समझाता है। यह कवर करता है कि वास्तव में कोई ट्रेड कैसे होता है, आप किस तरह के अलग-अलग Orders (जैसे Limit या Market orders) लगा सकते हैं, और इलेक्ट्रॉनिक ट्रेडिंग सिस्टम के नियम क्या हैं। NISM exam के लिए, सदस्यों (members) के पदानुक्रम (hierarchy) और 'Price-Time priority' के नियमों को समझना महत्वपूर्ण है। यह पिछले chapters से इस प्रकार जुड़ता है कि यह दिखाता है कि सैद्धांतिक (theoretical) फ्यूचर्स और ऑप्शंस कॉन्ट्रैक्ट्स का व्यावहारिक (practically) रूप से स्क्रीन पर कैसे ट्रेड किया जाता है।",
+  
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Membership Structure (सदस्यता संरचना)",
+      "basic_meaning": "हर कोई सीधे एक्सचेंज पर ट्रेड नहीं कर सकता; आपको 'Members' नामक 'Gatekeepers' के माध्यम से जाना होगा।",
+      "detailed_explanation": "भारतीय कमोडिटी एक्सचेंजों में, कौन क्या कर सकता है, इसका एक स्पष्ट पदानुक्रम (hierarchy) है:\n\n1. **Trading Member (TM):** अपने स्वयं के खाते (account) पर और अपने ग्राहकों (clients) के लिए ट्रेड कर सकते हैं, लेकिन वे स्वयं धन/माल को 'settle' या clear नहीं कर सकते।\n2. **Trading cum Clearing Member (TCM):** ट्रेड कर सकते हैं और अपने स्वयं के ट्रेडों और अपने ग्राहकों के ट्रेडों को clear/settle भी कर सकते हैं।\n3. **Professional Clearing Member (PCM):** वे आम तौर पर ट्रेड नहीं करते हैं। वे केवल अन्य Trading Members के लिए clearing और settlement सेवाएं प्रदान करते हैं।\n4. **Institutional Clients:** म्यूचुअल फंड या बैंक जैसी बड़ी संस्थाएं जो किसी सदस्य (member) के माध्यम से ट्रेड करती हैं लेकिन उनके अपने विशिष्ट settlement नियम होते हैं।",
+      "why_this_is_important": "यह जानना कि ट्रेड को 'clear' करने की शक्ति किसके पास है, एक अक्सर पूछा जाने वाला परीक्षा प्रश्न है। बाजार की स्थिरता (stability) के लिए यह आवश्यक है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "यदि आप Zerodha जैसे ब्रोकर के साथ खाता खोलते हैं, तो वे एक Trading cum Clearing Member (TCM) हैं। वे आपका ऑर्डर लेते हैं और एक्सचेंज के साथ धन निपटान (money settlement) भी संभालते हैं।",
+      "exam_traps": [
+        "यह सोचना कि एक PCM एक सामान्य ब्रोकर की तरह ट्रेड करता है। PCM आमतौर पर केवल ट्रेड clear करते हैं, वे रिटेल ग्राहकों के लिए खरीद/बिक्री नहीं करते हैं।",
+        "एक Trading Member को एक Clearing Member के साथ भ्रमित (Confusing) करना। केवल एक Clearing Member ही Clearing Corporation के साथ धन का निपटान (settle funds) कर सकता है।"
+      ],
+      "memory_trick": "TM = केवल ट्रेड (Trades only)। TCM = ट्रेड + पैसे क्लियर करता है (Trades + Clears Money)। PCM = प्रोफेशनल मनी क्लियरर (Professional Money Clearer)।"
+    },
+    {
+      "concept": "2. Order Types (Market, Limit, Stop-Loss)",
+      "basic_meaning": "ये वे 'निर्देश' (instructions) हैं जो आप कंप्यूटर को देते हैं कि आप कैसे खरीदना या बेचना चाहते हैं।",
+      "detailed_explanation": "1. **Market Order:** आप सिस्टम से कहते हैं: 'अभी/right now खरीदें/बेचें जो भी सबसे अच्छी कीमत (best price) हो'। निष्पादन (Execution) की गारंटी है, लेकिन कीमत (price) की नहीं।\n2. **Limit Order:** आप सिस्टम से कहते हैं: 'केवल ₹X या उससे कम पर खरीदें' या 'केवल ₹Y या उससे अधिक पर बेचें'। आपको अपनी कीमत (या उससे बेहतर) मिलती है, लेकिन इस बात की कोई गारंटी नहीं है कि यदि बाजार आपकी कीमत पर नहीं आता है तो ट्रेड वास्तव में होगा।\n3. **Stop-Loss Order:** नुकसान (losses) को सीमित (limit) करने के लिए उपयोग किया जाता है। यह तब तक 'छिपा हुआ' (hidden) रहता है जब तक कि बाजार एक निश्चित 'Trigger Price' पर नहीं पहुंच जाता, तब यह एक वास्तविक ऑर्डर बन जाता है।",
+      "why_this_is_important": "ब्रोकर्स को ग्राहकों को इन्हें स्पष्ट रूप से समझाना चाहिए। परीक्षा के लिए, आपको यह जानना होगा कि कौन सा ऑर्डर *निष्पादन (execution)* की गारंटी देता है बनाम कौन सा *कीमत (price)* की गारंटी देता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Scenario: आपने ₹70,000 में सोना खरीदा है। आप अपने नुकसान को ₹500 तक सीमित करना चाहते हैं।\n\n* **Action:** आप ₹69,500 के **Trigger Price** के साथ एक 'Stop-Loss Sell' ऑर्डर देते हैं।\n* **Result:** यदि कीमत ₹69,500 तक गिर जाती है, तो सिस्टम आगे के नुकसान को रोकने के लिए आपके सोने को तुरंत बिक्री (sale) के लिए रख देता है।",
+      "real_life_indian_example": "दिल्ली में एक डे-ट्रेडर ₹6,500 पर क्रूड ऑयल (Crude Oil) खरीदने के लिए एक **Limit Order** दे सकता है, जबकि बाजार ₹6,510 पर है, एक रैली से पहले एक छोटी सी गिरावट की उम्मीद में।",
+      "exam_traps": [
+        "स्टॉप-लॉस ऑर्डर में 'Limit Price' के साथ 'Trigger Price' को भ्रमित (Confusing) करना।",
+        "यह सोचना कि एक Market Order सुरक्षित (safer) है। यह कम-तरलता (low-liquidity) वाले बाजारों में जोखिम भरा हो सकता है क्योंकि आपका ऑर्डर पूरा होने (filled) से पहले कीमत काफी बढ़ सकती है।"
+      ],
+      "memory_trick": "Limit = मेरी कीमत (My Price)। Market = अभी की कीमत (Now Price)। Stop-Loss = निकास द्वार (Exit Door)।"
+    },
+    {
+      "concept": "3. Price-Time Priority",
+      "basic_meaning": "जब कई लोग खरीदना/बेचना चाहते हैं तो एक्सचेंज 'किसे ट्रेड पहले मिलेगा' यह तय करने के लिए जिस नियम का उपयोग करता है।",
+      "detailed_explanation": "मैचिंग इंजन दो सख्त चरणों (strict steps) का पालन करता है:\n1. **Price Priority:** सबसे अच्छी कीमत हमेशा जीतती है। (खरीदारों के लिए उच्चतम बोली लगाने वाला/Highest Bidder, विक्रेताओं के लिए न्यूनतम पूछने वाला/Lowest Asker)।\n2. **Time Priority:** यदि दो लोग *समान* कीमत की पेशकश करते हैं, तो जिस व्यक्ति ने पहले ऑर्डर दिया था उसे ट्रेड मिलता है।",
+      "why_this_is_important": "यह सुनिश्चित करता है कि बाजार निष्पक्ष (fair) और पारदर्शी (transparent) है। यह NISM के लिए एक मुख्य सैद्धांतिक अवधारणा (core theoretical concept) है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Scenario: 3 लोग सोना (Gold) खरीदना चाहते हैं।\n\n* **A:** सुबह 10:00 बजे ₹70,005 की बोली लगाता है।\n* **B:** सुबह 09:55 बजे ₹70,000 की बोली लगाता है।\n* **C:** सुबह 10:01 बजे ₹70,005 की बोली लगाता है।\n\n**Matching Order:**\n1.  **A** को यह सबसे पहले मिलता है (सर्वोत्तम कीमत/Best Price)।\n2.  **C** को यह अगला मिलता है (A के समान कीमत, लेकिन बाद में आया)।\n3.  **B** को यह आखिरी में मिलता है (सबसे खराब कीमत/Worst price)।",
+      "real_life_indian_example": "हाई-फ़्रीक्वेंसी ट्रेडिंग (Algo trading) में, 1 मिलीसेकंड भी तेज़ होने का मतलब लाभदायक ट्रेड (profitable trade) प्राप्त करना या Time Priority के कारण इसे चूक जाना हो सकता है।",
+      "exam_traps": [
+        "यह सोचना कि मात्रा (quantity) मायने रखती है। ऑर्डर का आकार आपकी प्राथमिकता (priority) को नहीं बदलता है; केवल Price और Time ऐसा करते हैं।",
+        "यह भूल जाना कि Price *हमेशा* Time से अधिक महत्वपूर्ण है।"
+      ],
+      "memory_trick": "Price राजा (King) है, Time रानी (Queen) है।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Client Trading vs Proprietary Trading",
+      "clear_explanation": "* **Client Trading:** ब्रोकर किसी ग्राहक (customer/आपके जैसे) के लिए ट्रेड निष्पादित (executes) करता है।\n* **Proprietary (Pro) Trading:** ब्रोकर लाभ कमाने के लिए अपनी *स्वयं* की कंपनी के पैसे का उपयोग करके ट्रेड करता है। ब्रोकर्स को इन खातों (accounts) को सख्ती से अलग रखना चाहिए।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Professional Clearing Member (PCM) की भूमिका को समझना।",
+    "'Day Orders' बनाम 'IOC' (Immediate or Cancel) ऑर्डर्स की पहचान करना।",
+    "ऑर्डर बुक में 'गुमनामी' (Anonymity) की अवधारणा (आप नहीं जानते कि कौन खरीद/बेच रहा है)।",
+    "'Price-Time' प्राथमिकता (priority) का नियम।"
+  ],
+  "quick_revision_summary": [
+    "केवल सदस्यों (TM, TCM, PCM) की सीधी एक्सचेंज तक पहुंच होती है।",
+    "Market ऑर्डर्स गति (speed) की गारंटी देते हैं; Limit ऑर्डर्स कीमत (price) की गारंटी देते हैं।",
+    "Stop-loss ऑर्डर्स जोखिम को नियंत्रित करने के लिए एक स्वचालित निकास (automated exit) के रूप में कार्य करते हैं।",
+    "Order matching = सर्वोत्तम मूल्य (Best Price) + सबसे पहला समय (Earliest Time)।",
+    "व्यापार (trade) के 24 घंटों के भीतर Contract Notes जारी किए जाने चाहिए।"
+  ]
+}

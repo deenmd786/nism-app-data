@@ -1,0 +1,652 @@
+[
+  {
+    "id": 3001,
+    "question": "A futures contract is best described as:",
+    "options": [
+      "A private agreement between two parties",
+      "A standardized, exchange-traded contract to buy or sell an asset",
+      "A contract where terms are negotiated daily",
+      "A contract used only for physical delivery"
+    ],
+    "answer": "A standardized, exchange-traded contract to buy or sell an asset",
+    "hint": "सोचें कि क्या चीज़ इसे Forward contract से अलग बनाती है।",
+    "explanation": "Futures contracts quantity, quality, और delivery के मामले में अत्यधिक standardized होते हैं, और regulated exchanges पर trade किए जाते हैं।"
+  },
+  {
+    "id": 3002,
+    "question": "What does 'Tick Size' represent in a futures contract?",
+    "options": [
+      "The total time left for expiry",
+      "The minimum price fluctuation permitted",
+      "The size of the trading lot",
+      "The interest rate charged"
+    ],
+    "answer": "The minimum price fluctuation permitted",
+    "hint": "यह वह सबसे छोटी 'jump' (उछाल) है जो कोई कीमत screen पर कर सकती है।",
+    "explanation": "Tick size वह minimum increment है जिससे trading hours के दौरान किसी contract की कीमत बदल सकती है।"
+  },
+  {
+    "id": 3003,
+    "question": "Which margin is collected upfront before a trade is executed?",
+    "options": [
+      "Mark-to-Market Margin",
+      "Initial Margin",
+      "Maintenance Margin",
+      "Delivery Margin"
+    ],
+    "answer": "Initial Margin",
+    "hint": "यह एक position खोलने के लिए आवश्यक 'security deposit' है।",
+    "explanation": "Initial margin वह अनिवार्य जमा (mandatory deposit) है जो buyers और sellers दोनों से potential losses के खिलाफ एक कुशन (cushion) प्रदान करने के लिए आवश्यक है।"
+  },
+  {
+    "id": 3004,
+    "question": "What is 'Mark-to-Market' (MTM) settlement?",
+    "options": [
+      "A monthly check of inventory",
+      "The daily adjustment of profit or loss based on closing prices",
+      "Fixing the price of a contract permanently",
+      "The fee paid to the exchange regulator"
+    ],
+    "answer": "The daily adjustment of profit or loss based on closing prices",
+    "hint": "यह सुनिश्चित करता है कि gains और losses हर एक दिन settle किए जाएं।",
+    "explanation": "MTM एक दैनिक प्रक्रिया (daily process) है जहाँ exchange दिन के settlement price के आधार पर trader के account को debit या credit करके gains और losses को settle करता है।"
+  },
+  {
+    "id": 3005,
+    "question": "The total number of outstanding contracts that have not been closed or delivered is known as:",
+    "options": [
+      "Trading Volume",
+      "Open Interest",
+      "Market Capitalization",
+      "Float"
+    ],
+    "answer": "Open Interest",
+    "hint": "यह market में वर्तमान 'active' (सक्रिय) positions का प्रतिनिधित्व करता है।",
+    "explanation": "Open interest दिन के अंत में market participants द्वारा रखे गए futures contracts की कुल संख्या है।"
+  },
+  {
+    "id": 3006,
+    "question": "In futures trading, 'Leverage' allows a trader to:",
+    "options": [
+      "Trade without any risk",
+      "Control a large value of assets with a small amount of capital",
+      "Avoid paying any taxes",
+      "Physically store goods for free"
+    ],
+    "answer": "Control a large value of assets with a small amount of capital",
+    "hint": "यह आपकी investment power के लिए एक multiplier (गुणक) की तरह है।",
+    "explanation": "Leverage कुल value के केवल एक छोटे से हिस्से (margin) का भुगतान करके एक बड़े contract value को trade करने की क्षमता है।"
+  },
+  {
+    "id": 3007,
+    "question": "What happens when a trader's margin account falls below the 'Maintenance Margin' level?",
+    "options": [
+      "The trader gets a bonus",
+      "The exchange closes automatically",
+      "A margin call is issued to top up the account",
+      "The trade is immediately cancelled without loss"
+    ],
+    "answer": "A margin call is issued to top up the account",
+    "hint": "Trader को balance वापस initial margin level पर लाना होगा।",
+    "explanation": "Margin call तब होता है जब नुकसान account balance को एक निश्चित सीमा (threshold) से नीचे कर देता है, जिससे trader को और funds जोड़ने की आवश्यकता होती है।"
+  },
+  {
+    "id": 3008,
+    "question": "What is the 'Basis' in a futures market?",
+    "options": [
+      "Spot Price - Futures Price",
+      "Futures Price - Spot Price",
+      "The total margin percentage",
+      "The storage cost per month"
+    ],
+    "answer": "Spot Price - Futures Price",
+    "hint": "यह cash price और futures price के बीच का अंतर है।",
+    "explanation": "Basis को वर्तमान spot price में से उसी commodity के futures price को घटाकर (minus) परिभाषित किया जाता है।"
+  },
+  {
+    "id": 3009,
+    "question": "Which of the following is NOT a component of a contract specification?",
+    "options": [
+      "Trading Unit",
+      "Expiry Date",
+      "The name of the trader's spouse",
+      "Delivery Center"
+    ],
+    "answer": "The name of the trader's spouse",
+    "hint": "Contract specs मानकीकृत (standardized) होते हैं और सभी पर लागू होते हैं।",
+    "explanation": "Standardized components में unit, tick size, expiry और quality शामिल हैं, लेकिन प्रतिभागियों (participants) की व्यक्तिगत जानकारी कभी नहीं।"
+  },
+  {
+    "id": 3010,
+    "question": "What does a 'Daily Price Limit' (Circuit Filter) do?",
+    "options": [
+      "It limits the number of trades per day",
+      "It prevents prices from moving beyond a specified range in one day",
+      "It sets the minimum price of the commodity",
+      "It limits the number of traders on the exchange"
+    ],
+    "answer": "It prevents prices from moving beyond a specified range in one day",
+    "hint": "यह उच्च अस्थिरता (high volatility) के दौरान 'speed breaker' का काम करता है।",
+    "explanation": "Daily price limits exchange द्वारा चरम, अतार्किक (irrational) price swings को रोकने और एक cooling-off अवधि प्रदान करने के लिए निर्धारित की जाती हैं।"
+  },
+  {
+    "id": 3011,
+    "question": "A 'Long' position in futures means the trader has:",
+    "options": [
+      "Sold a contract",
+      "Bought a contract",
+      "Borrowed money from the exchange",
+      "Held a position for more than a year"
+    ],
+    "answer": "Bought a contract",
+    "hint": "यदि कीमत ऊपर जाती है तो trader को लाभ होता है।",
+    "explanation": "Long position भविष्य में underlying asset को खरीदने का एक समझौता है, इस उम्मीद में कि कीमत बढ़ेगी।"
+  },
+  {
+    "id": 3012,
+    "question": "A 'Short' position in futures means the trader has:",
+    "options": [
+      "Bought a contract",
+      "Sold a contract",
+      "A lack of funds",
+      "Trading for a few minutes only"
+    ],
+    "answer": "Sold a contract",
+    "hint": "यदि कीमत नीचे जाती है तो trader को लाभ होता है।",
+    "explanation": "Short position भविष्य में underlying asset को बेचने का एक समझौता है, इस उम्मीद में कि कीमत गिरेगी।"
+  },
+  {
+    "id": 3013,
+    "question": "What is 'Convergence' in the futures market?",
+    "options": [
+      "The merging of two exchanges",
+      "The process of the futures price moving towards the spot price at expiry",
+      "Two traders making the same profit",
+      "The price of gold and silver moving together"
+    ],
+    "answer": "The process of the futures price moving towards the spot price at expiry",
+    "hint": "जैसे-जैसे delivery की तारीख पास आती है, time value खत्म हो जाती है।",
+    "explanation": "Contract expiration के समय, futures price को spot price के बराबर होना चाहिए; इस प्रक्रिया को convergence कहा जाता है।"
+  },
+  {
+    "id": 3014,
+    "question": "What is the 'Trading Unit' for Gold on MCX (usually)?",
+    "options": [
+      "1 gram",
+      "100 grams",
+      "1 kg",
+      "10 kg"
+    ],
+    "answer": "1 kg",
+    "hint": "यह एक बड़े Gold contract का मानक आकार (standard size) है।",
+    "explanation": "MCX पर standard Gold futures contract में आमतौर पर 1 किलोग्राम की trading unit होती है।"
+  },
+  {
+    "id": 3015,
+    "question": "If you buy 1 lot of Gold at ₹70,000 and the price goes to ₹71,000, your MTM for the day is:",
+    "options": [
+      "Loss of ₹1,000",
+      "Profit of ₹1,000",
+      "Zero",
+      "Profit of ₹10,000"
+    ],
+    "answer": "Profit of ₹1,000 (multiplied by lot size)",
+    "hint": "आपने कम में खरीदा और कीमत अधिक हो गई।",
+    "explanation": "चूंकि कीमत आपकी खरीद मूल्य (purchase price) से ऊपर बढ़ गई है, आपके account में price difference और lot size के आधार पर profit credit किया जाएगा।"
+  },
+  {
+    "id": 3016,
+    "question": "What is the 'Cost of Carry'?",
+    "options": [
+      "The fee to carry physical gold in a pocket",
+      "The sum of storage, insurance, and interest costs",
+      "The brokerage commission",
+      "The cost of transporting goods to the port"
+    ],
+    "answer": "The sum of storage, insurance, and interest costs",
+    "hint": "यह समय के साथ physical asset को 'hold' (रखने) की लागत है।",
+    "explanation": "Cost of carry भविष्य की तारीख तक physical commodity को होल्ड करते समय होने वाली financial और physical लागतों को दर्शाता है।"
+  },
+  {
+    "id": 3017,
+    "question": "In a 'Cash Settled' contract, how is the final obligation met?",
+    "options": [
+      "By delivering physical goods",
+      "By paying or receiving the difference in cash",
+      "By exchanging gold for silver",
+      "By canceling the contract"
+    ],
+    "answer": "By paying or receiving the difference in cash",
+    "hint": "सामान की कोई physical movement नहीं होती है।",
+    "explanation": "Cash-settled contracts को trade price और final settlement price के बीच के अंतर को मौद्रिक रूप (monetary terms) में settle करके अंतिम रूप दिया जाता है।"
+  },
+  {
+    "id": 3018,
+    "question": "What is 'Volume' in trading?",
+    "options": [
+      "The weight of the commodity",
+      "The total number of contracts traded during a specific period",
+      "The loudness of the trading floor",
+      "The amount of water in a warehouse"
+    ],
+    "answer": "The total number of contracts traded during a specific period",
+    "hint": "यह मापता है कि contracts कितनी बार एक हाथ से दूसरे हाथ में गए।",
+    "explanation": "Volume का अर्थ उन contracts की कुल संख्या है जिन्हें एक दिन या एक विशिष्ट timeframe के दौरान खरीदा और बेचा गया था।"
+  },
+  {
+    "id": 3019,
+    "question": "A 'Calendar Spread' involves:",
+    "options": [
+      "Buying gold and selling silver",
+      "Buying a contract for one expiry and selling a contract for a different expiry",
+      "Buying a contract on Monday and selling on Friday",
+      "Trading only on the first day of the month"
+    ],
+    "answer": "Buying a contract for one expiry and selling a contract for a different expiry",
+    "hint": "यह एक रणनीति (strategy) है जिसमें समान commodity लेकिन अलग-अलग महीने शामिल हैं।",
+    "explanation": "A calendar spread (या horizontal spread) एक ही underlying commodity के दो अलग-अलग expiry महीनों में विपरीत positions (opposite positions) लेना है।"
+  },
+  {
+    "id": 3020,
+    "question": "What is the 'Final Settlement Price' usually based on?",
+    "options": [
+      "The opening price of the day",
+      "The average spot price of the last few days",
+      "A price determined by the government",
+      "The price of the next year's contract"
+    ],
+    "answer": "The average spot price of the last few days",
+    "hint": "यह expiry पर physical market में प्रचलित मूल्य (prevailing value) को दर्शाता है।",
+    "explanation": "The final settlement price आम तौर पर औसतन (average) polled spot price (जैसे, पिछले 3 या 5 दिन) होता है ताकि यह सुनिश्चित हो सके कि futures price वास्तविकता (reality) के साथ align हो।"
+  },
+  {
+    "id": 3021,
+    "question": "Why are futures more liquid than forwards?",
+    "options": [
+      "They are more expensive",
+      "They are traded on an exchange with many participants",
+      "They are illegal in some countries",
+      "They are only for farmers"
+    ],
+    "answer": "They are traded on an exchange with many participants",
+    "hint": "Exchanges buyers और sellers की एक बड़ी भीड़ को एक साथ लाते हैं।",
+    "explanation": "Standardization और exchange-based trading उच्च तरलता (high liquidity) की सुविधा प्रदान करते हैं, जिससे positions में प्रवेश करना या बाहर निकलना आसान हो जाता है।"
+  },
+  {
+    "id": 3022,
+    "question": "What is 'Counterparty Risk'?",
+    "options": [
+      "The risk that the exchange closes down",
+      "The risk that the other party in a trade defaults",
+      "The risk of prices falling",
+      "The risk of losing the password"
+    ],
+    "answer": "The risk that the other party in a trade defaults",
+    "hint": "यह वह जोखिम (risk) है कि कोई व्यक्ति वह भुगतान नहीं करता जो उस पर बकाया है।",
+    "explanation": "Futures में, Clearing Corporation हर seller के लिए buyer और हर buyer के लिए seller के रूप में कार्य करके counterparty risk को समाप्त (eliminate) कर देता है।"
+  },
+  {
+    "id": 3023,
+    "question": "Which of these is a 'Delivery-based' settlement?",
+    "options": [
+      "Nifty Index Futures",
+      "Gold Futures on MCX",
+      "Weather Futures",
+      "Interest Rate Futures"
+    ],
+    "answer": "Gold Futures on MCX",
+    "hint": "यदि आप contract hold करते हैं तो आप वास्तव में physical metal प्राप्त कर सकते हैं।",
+    "explanation": "Indian exchanges पर अधिकांश commodity futures physical delivery की अनुमति देते हैं, बशर्ते delivery process का पालन किया जाए।"
+  },
+  {
+    "id": 3024,
+    "question": "What is 'Span Margin'?",
+    "options": [
+      "Margin for small traders",
+      "A risk-based margin system used by exchanges",
+      "The margin paid at the end of the year",
+      "A fixed ₹1000 fee"
+    ],
+    "answer": "A risk-based margin system used by exchanges",
+    "hint": "यह समग्र (overall) portfolio risk के आधार पर margin की गणना करता है।",
+    "explanation": "Standard Portfolio Analysis of Risk (SPAN) एक ऐसा system है जो अधिकतम संभावित नुकसान (maximum probable loss) की गणना करता है जिसका एक portfolio एक दिन में सामना कर सकता है।"
+  },
+  {
+    "id": 3025,
+    "question": "When 'Open Interest' and 'Price' are both rising, it generally indicates:",
+    "options": [
+      "A bearish trend",
+      "A bullish trend with new money entering",
+      "The market is closing",
+      "No one is trading"
+    ],
+    "answer": "A bullish trend with new money entering",
+    "hint": "अधिक लोग 'Long' positions खोल रहे हैं।",
+    "explanation": "Rising open interest के साथ बढ़ती कीमत (rising price) यह बताती है कि नए खरीदार (buyers) बाजार में प्रवेश कर रहे हैं, जो एक मजबूत upward trend की पुष्टि करता है।"
+  },
+  {
+    "id": 3026,
+    "question": "What is the 'Contract Cycle'?",
+    "options": [
+      "The time it takes to sign a paper",
+      "The period for which a contract is available for trading",
+      "A bicycle used by the exchange",
+      "The time between two harvests"
+    ],
+    "answer": "The period for which a contract is available for trading",
+    "hint": "इसमें launch date और expiry date शामिल हैं।",
+    "explanation": "The contract cycle उस अवधि (duration) को परिभाषित करता है जब एक विशिष्ट futures contract trading शुरू करता है और जब तक यह समाप्त (expires) नहीं होता है।"
+  },
+  {
+    "id": 3027,
+    "question": "In the 'T+1' settlement cycle, when are funds settled?",
+    "options": [
+      "Immediately",
+      "On the next working day",
+      "After one week",
+      "At the end of the month"
+    ],
+    "answer": "On the next working day",
+    "hint": "'T' का अर्थ Trade day है।",
+    "explanation": "T+1 का मतलब है कि funds और obligations का settlement trade day के एक business day बाद होता है।"
+  },
+  {
+    "id": 3028,
+    "question": "What is a 'Long Squeeze'?",
+    "options": [
+      "Buyers forcing sellers to pay more",
+      "A rapid price drop forcing long-holders to sell and cut losses",
+      "Buying a very small amount of gold",
+      "None of the above"
+    ],
+    "answer": "A rapid price drop forcing long-holders to sell and cut losses",
+    "hint": "यह short squeeze का उल्टा (opposite) है।",
+    "explanation": "जब कीमतें तेज़ी से गिरती हैं, तो जो लोग 'Long' होते हैं वे घबरा जाते हैं और बेचते हैं, जिससे कीमत और भी नीचे चली जाती है।"
+  },
+  {
+    "id": 3029,
+    "question": "The 'Daily Settlement Price' is usually:",
+    "options": [
+      "The opening price",
+      "The closing price or weighted average price of the last 30 minutes",
+      "The highest price of the day",
+      "The lowest price of the day"
+    ],
+    "answer": "The closing price or weighted average price of the last 30 minutes",
+    "hint": "इसका उपयोग daily MTM की गणना के लिए किया जाता है।",
+    "explanation": "The DSP exchange द्वारा प्रत्येक दिन के अंत में सभी open positions के लिए settle किए जाने वाले profit या loss की गणना करने के लिए निर्धारित किया जाता है।"
+  },
+  {
+    "id": 3030,
+    "question": "What is 'Position Limit' for a member/client?",
+    "options": [
+      "The maximum distance they can travel",
+      "The maximum number of contracts they are allowed to hold",
+      "The maximum profit they can make",
+      "The total number of staff they can hire"
+    ],
+    "answer": "The maximum number of contracts they are allowed to hold",
+    "hint": "यह market cornering (बाज़ार पर एकाधिकार) को रोकने के लिए एक regulatory tool है।",
+    "explanation": "Exchanges यह सीमा (limits) तय करते हैं कि market stability सुनिश्चित करने के लिए एक व्यक्ति या broker के पास कितने open contracts हो सकते हैं।"
+  },
+  {
+    "id": 3031,
+    "question": "What is 'Physical Delivery' in futures?",
+    "options": [
+      "Sending a digital certificate",
+      "The actual transfer of the commodity from a seller to a buyer via a warehouse",
+      "Delivering a printed receipt by post",
+      "Meeting the other trader in person"
+    ],
+    "answer": "The actual transfer of the commodity from a seller to a buyer via a warehouse",
+    "hint": "इसमें 'वास्तविक' (real) commodity शामिल है।",
+    "explanation": "Physical delivery में commodity को एक exchange-approved warehouse से buyer के account में transfer करना (moving) शामिल है।"
+  },
+  {
+    "id": 3032,
+    "question": "A futures price that is lower than the spot price indicates:",
+    "options": [
+      "Contango",
+      "Backwardation",
+      "Convergence",
+      "Arbitrage"
+    ],
+    "answer": "Backwardation",
+    "hint": "यह अक्सर spot market में आपूर्ति की कमी (supply shortage) के दौरान होता है।",
+    "explanation": "Backwardation एक market condition है जहां spot price futures price से अधिक होती है।"
+  },
+  {
+    "id": 3033,
+    "question": "A futures price that is higher than the spot price indicates:",
+    "options": [
+      "Contango",
+      "Backwardation",
+      "Liquidity",
+      "Shortage"
+    ],
+    "answer": "Contango",
+    "hint": "यह storage costs के कारण अधिकांश बाज़ारों की 'सामान्य' (normal) स्थिति है।",
+    "explanation": "Contango एक market condition है जहां futures price spot price से अधिक होती है, जो cost of carry को दर्शाती है।"
+  },
+  {
+    "id": 3034,
+    "question": "What is an 'Intra-day' trader?",
+    "options": [
+      "Someone who holds positions for years",
+      "Someone who opens and closes positions within the same trading day",
+      "A trader who only trades on Sundays",
+      "A warehouse manager"
+    ],
+    "answer": "Someone who opens and closes positions within the same trading day",
+    "hint": "वे कोई 'overnight' risk (रात भर का जोखिम) नहीं लेते हैं।",
+    "explanation": "Intra-day traders दिन के दौरान छोटे price movements से profit कमाने की कोशिश करते हैं और market बंद होने से पहले सभी positions से बाहर निकल जाते हैं (exit)।"
+  },
+  {
+    "id": 3035,
+    "question": "What does 'Lot Size' mean?",
+    "options": [
+      "The size of the parking lot",
+      "The standardized quantity of a commodity in one contract",
+      "The quality of the commodity",
+      "The number of lots available for sale"
+    ],
+    "answer": "The standardized quantity of a commodity in one contract",
+    "hint": "आप आधा lot trade नहीं कर सकते।",
+    "explanation": "Futures निश्चित 'lots' (fixed lots) में trade किए जाते हैं (जैसे, Crude Oil का 1 lot = 100 Barrels)।"
+  },
+  {
+    "id": 3036,
+    "question": "What is 'Expiry'?",
+    "options": [
+      "The day the exchange was built",
+      "The last day on which a contract can be traded",
+      "The date the commodity goes bad",
+      "The day the broker retires"
+    ],
+    "answer": "The last day on which a contract can be traded",
+    "hint": "इस तारीख के बाद, contract का अस्तित्व समाप्त (ceases to exist) हो जाता है।",
+    "explanation": "प्रत्येक futures contract की एक विशिष्ट expiration date होती है, जिसके बाद इसे cash या physical delivery द्वारा settle किया जाता है।"
+  },
+  {
+    "id": 3037,
+    "question": "What is 'Variation Margin'?",
+    "options": [
+      "The same as Initial Margin",
+      "The additional fund needed to cover MTM losses",
+      "The profit made in a year",
+      "A fee paid for changing the contract"
+    ],
+    "answer": "The additional fund needed to cover MTM losses",
+    "hint": "इसे MTM margin payment के रूप में भी जाना जाता है।",
+    "explanation": "Variation margin वह भुगतान है जो किसी सदस्य द्वारा daily MTM losses को cover करने के लिए clearing house को किया जाता है।"
+  },
+  {
+    "id": 3038,
+    "question": "What happens if a trader does not pay the margin call?",
+    "options": [
+      "The exchange gives them a loan",
+      "The broker can liquidate (close) the trader's position",
+      "The trader is sent to jail immediately",
+      "Nothing happens"
+    ],
+    "answer": "The broker can liquidate (close) the trader's position",
+    "hint": "Broker को स्वयं को आगे के नुकसान से बचाना चाहिए।",
+    "explanation": "यदि margin आवश्यकताओं को पूरा नहीं किया जाता है, तो brokers के पास capital के आगे के नुकसान को रोकने के लिए client की position को 'square off' (बंद) करने का अधिकार है।"
+  },
+  {
+    "id": 3039,
+    "question": "Which of the following describes 'Hedging'?",
+    "options": [
+      "Taking a huge risk to get rich quick",
+      "Taking a position in futures to offset the risk of price changes in the physical market",
+      "Trading without looking at the price",
+      "Investing only in gold"
+    ],
+    "answer": "Taking a position in futures to offset the risk of price changes in the physical market",
+    "hint": "यह आपके व्यवसाय के लिए 'insurance' (बीमा) की तरह है।",
+    "explanation": "Hedging एक market में price risk को दूसरे market (जैसे futures) में एक समान और विपरीत (equal and opposite) position लेकर कम करने की प्रथा है।"
+  },
+  {
+    "id": 3040,
+    "question": "What is the 'Spread' in terms of price?",
+    "options": [
+      "The difference between the Bid and Ask (Buy/Sell) price",
+      "The total amount of gold in the world",
+      "The profit made in a trade",
+      "The distance between two warehouses"
+    ],
+    "answer": "The difference between the Bid and Ask (Buy/Sell) price",
+    "hint": "यह transaction cost और तरलता (liquidity) का एक माप (measure) है।",
+    "explanation": "The bid-ask spread उस उच्चतम मूल्य (highest price) जो एक buyer भुगतान करने को तैयार है, और उस न्यूनतम मूल्य (lowest price) जो एक seller स्वीकार करने को तैयार है, के बीच का अंतर है।"
+  },
+  {
+    "id": 3041,
+    "question": "What is a 'Price Band'?",
+    "options": [
+      "A musical group",
+      "A range within which a price is allowed to move in a single day",
+      "A decorative item on the gold bar",
+      "The total value of the contract"
+    ],
+    "answer": "A range within which a price is allowed to move in a single day",
+    "hint": "इसे circuit limit के रूप में भी जाना जाता है।",
+    "explanation": "Price bands अत्यधिक अस्थिरता (extreme volatility) को नियंत्रित करने और एक व्यवस्थित (orderly) बाजार बनाए रखने के लिए exchange द्वारा निर्धारित सीमाएं (limits) हैं।"
+  },
+  {
+    "id": 3042,
+    "question": "In a 'Short' position, if the price increases, the trader faces a:",
+    "options": [
+      "Profit",
+      "Loss",
+      "No change",
+      "Refund"
+    ],
+    "answer": "Loss",
+    "hint": "एक short seller चाहता है कि कीमत गिरे।",
+    "explanation": "चूंकि एक short seller ने कम कीमत पर 'बेचा' (sold) है और उसे अधिक कीमत पर 'वापस खरीदना' (buy back) पड़ता है, इसलिए उन्हें नुकसान होता है।"
+  },
+  {
+    "id": 3043,
+    "question": "What is 'Delivery Margin'?",
+    "options": [
+      "Margin for the delivery truck",
+      "Additional margin required during the delivery period of a contract",
+      "The fee for moving goods",
+      "None of the above"
+    ],
+    "answer": "Additional margin required during the delivery period of a contract",
+    "hint": "इसे तब एकत्र किया जाता है जब contract अपने physical settlement के करीब आता है।",
+    "explanation": "Delivery margin सुरक्षा की एक अतिरिक्त परत (extra layer) है जो एक delivery-based contract के अंतिम कुछ दिनों के दौरान एकत्र की जाती है ताकि यह सुनिश्चित हो सके कि प्रतिभागी अपने दायित्वों को पूरा करें।"
+  },
+  {
+    "id": 3044,
+    "question": "What is the 'Settlement Cycle' for commodity futures in India?",
+    "options": [
+      "Daily",
+      "Weekly",
+      "Monthly",
+      "Only at expiry"
+    ],
+    "answer": "Daily",
+    "hint": "MTM के बारे में सोचें।",
+    "explanation": "जबकि final settlement expiry पर होता है, profits और losses का 'दैनिक' settlement (MTM) प्रत्येक trading day पर होता है।"
+  },
+  {
+    "id": 3045,
+    "question": "What is 'Market Depth'?",
+    "options": [
+      "The distance to the bottom of a gold mine",
+      "The quantity of buy and sell orders at different price levels",
+      "The total number of years an exchange has been open",
+      "The depth of the warehouse floor"
+    ],
+    "answer": "The quantity of buy and sell orders at different price levels",
+    "hint": "यह दर्शाता है कि system में कितने orders 'प्रतीक्षा' (waiting) कर रहे हैं।",
+    "explanation": "Market depth लंबित (pending) buy और sell orders की मात्रा को संदर्भित करता है, जो विभिन्न कीमतों पर बाजार की तरलता और मजबूती का संकेत देता है।"
+  },
+  {
+    "id": 3046,
+    "question": "The person who buys a futures contract is also called the:",
+    "options": [
+      "Short",
+      "Long",
+      "Arbitrageur",
+      "Broker"
+    ],
+    "answer": "Long",
+    "hint": "उनके पास market का 'Long' view है।",
+    "explanation": "एक buyer को 'Going Long' (लॉन्ग जाना) कहा जाता है।"
+  },
+  {
+    "id": 3047,
+    "question": "Which body ensures that all trades are settled correctly?",
+    "options": [
+      "The Police",
+      "The Clearing Corporation",
+      "The Bank of India",
+      "The local municipality"
+    ],
+    "answer": "The Clearing Corporation",
+    "hint": "वे central counterparty के रूप में कार्य करते हैं।",
+    "explanation": "The Clearing Corporation trades को clear करने और settle करने और उनके पूरा होने की गारंटी देने के लिए जिम्मेदार है।"
+  },
+  {
+    "id": 3048,
+    "question": "What is the primary objective of 'Speculators' in the futures market?",
+    "options": [
+      "To buy groceries",
+      "To profit from price movements by taking risk",
+      "To provide physical delivery of goods",
+      "To regulate the exchange"
+    ],
+    "answer": "To profit from price movements by taking risk",
+    "hint": "वे बाजार को तरलता (liquidity) प्रदान करते हैं।",
+    "explanation": "Speculators physical commodity नहीं चाहते हैं; वे इस बात पर सही दांव (betting) लगाकर profit कमाना चाहते हैं कि कीमतें ऊपर जाएंगी या नीचे।"
+  },
+  {
+    "id": 3049,
+    "question": "What is 'Rounding' in MTM?",
+    "options": [
+      "Turning prices into circles",
+      "Rounding off the final profit/loss to the nearest paisa or rupee as per exchange rules",
+      "A way to avoid taxes",
+      "Changing the weight of gold"
+    ],
+    "answer": "Rounding off the final profit/loss to the nearest paisa or rupee as per exchange rules",
+    "hint": "यह एक मानक लेखांकन प्रथा (standard accounting practice) है।",
+    "explanation": "Exchange systems स्वच्छ लेखांकन (clean accounting) को सुविधाजनक बनाने के लिए settlement amounts को अपने आप round off (पूर्णांकित) कर देते हैं।"
+  },
+  {
+    "id": 3050,
+    "question": "If a trader has 10 lots Long and 10 lots Short of the same contract, their net position is:",
+    "options": [
+      "20 lots",
+      "Zero",
+      "10 lots",
+      "Infinite"
+    ],
+    "answer": "Zero",
+    "hint": "समान आकार की विपरीत positions (Opposite positions) एक दूसरे को रद्द (cancel) कर देती हैं।",
+    "explanation": "एक net position की गणना उसी asset के total long positions में से total short positions को घटाकर की जाती है।"
+  }
+]

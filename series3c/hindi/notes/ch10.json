@@ -1,0 +1,85 @@
+{
+  "course": "NISM Series III-C: Securities Intermediaries Compliance (Fund)",
+  "unit_number": 10,
+  "unit_name": "SEBI (KYC Registration Agency) Regulations, 2011",
+  "weightage": "2",
+  "overview": "पुराने दिनों में, यदि आप पांच अलग-अलग brokers के साथ account खोलना चाहते थे, तो आपको अपना ID और address proof पांच बार जमा करना पड़ता था। यह investors के लिए एक सिरदर्द था! इसे हल करने के लिए, SEBI ने KRA (KYC Registration Agency) system बनाया। यह chapter बताता है कि KRA, KYC data के लिए एक central warehouse के रूप में कैसे कार्य करता है, ताकि एक investor को केवल एक बार KYC करना पड़े। एक Compliance Officer के लिए, यह chapter यह समझने के लिए महत्वपूर्ण है कि इन central agencies का उपयोग करके client data को कैसे verify किया जाए और documents को upload/download करने के rules क्या हैं।",
+  
+  "complete_concept_explanation": [
+    {
+      "concept": "1. KYC Registration Agency (KRA) क्या है?",
+      
+      "basic_meaning": "KRA एक SEBI-registered company है जो investor KYC records को एक central database में store और maintain करती है।",
+      
+      "detailed_explanation": "KRA, Intermediary (Broker/Mutual Fund) और Investor के बीच एक middleman है। जब आप अपने KYC documents एक broker को submit करते हैं, तो वे उन्हें सिर्फ एक file में नहीं रखते हैं। उन्हें digital copies को KRA पर upload करना होता है। एक बार जब KRA इस data को verify और store कर लेता है, तो कोई भी अन्य SEBI-registered intermediary इसे access कर सकता है। यह 'centralized' system सुनिश्चित करता है कि securities market में हर बार नया relationship शुरू करने पर investor को KYC process को दोहराना न पड़े।",
+      
+      "why_this_is_important": "Exam Importance: आपको यह जानना होगा कि KRA, KYC के लिए 'central warehouses' हैं। Practical Importance: Compliance Officers को यह सुनिश्चित करना होगा कि SEBI द्वारा निर्धारित time limit के भीतर client data, KRA पर upload हो जाए।",
+      
+      "formula": "Not Applicable",
+      
+      "formula_explanation": "Not Applicable",
+      
+      "step_by_step_calculation_example": "Not Applicable",
+      
+      "real_life_indian_example": "भारत में 5 प्रमुख KRAs हैं: CVL (CDSL Ventures Ltd), NDML (NSDL Database Management Ltd), DotEx (NSE), Karvy, और CAMS। यदि आपने एक बार Zerodha account (जो KRA का उपयोग करता है) के माध्यम से अपना KYC कर लिया है, और बाद में आप Tata Mutual Fund में invest करना चाहते हैं, तो Mutual Fund company आपसे दोबारा documents मांगने के बजाय KRA से आपका existing KYC 'download' कर लेगी।",
+      
+      "exam_traps": [
+        "यह सोचना कि KRA वह है जो client से *मिलता* है। नहीं, Intermediary (Broker) 'In-Person Verification' (IPV) करता है और फिर data को KRA को भेजता है।",
+        "याद रखें: KRA पर किसी investor का KYC status 'Verified', 'On-Hold', या 'Rejected' हो सकता है।"
+      ],
+      
+      "memory_trick": "KRA = 'KYC Records Archive'. यह आपके ID proofs के लिए एक library है।"
+    },
+    {
+      "concept": "2. Intermediaries और KRAs के Obligations (कर्तव्य)",
+      
+      "basic_meaning": "System को सुचारू रूप से चलाने के लिए Brokers/Funds और KRA agencies को जो specific duties निभानी होती हैं।",
+      
+      "detailed_explanation": "Step 1: **Intermediary's Duty**. Broker को 'In-Person Verification' (IPV) करना होता है, original documents collect करने होते हैं, और उन्हें verify करना होता है। उन्हें इस data को **10 working days** के भीतर KRA पर upload करना होता है। Step 2: **KRA's Duty**. एक बार जब KRA को data मिल जाता है, तो उन्हें investor को एक letter या email भेजना होता है ताकि confirm किया जा सके कि उनका KYC register हो गया है। उन्हें यह भी सुनिश्चित करना होता है कि data hackers से safe है। Step 3: **Updating**. यदि कोई investor अपना address बदलता है, तो वह broker को बताता है, जो KRA को update करता है। फिर KRA इस नई information को उन सभी अन्य brokers/funds तक 'push' कर देता है जहां उस investor का account है।",
+      
+      "why_this_is_important": "Exam Importance: '10-day' upload limit एक बहुत ही common numerical question है। Practical Importance: इस deadline को miss करना एक serious compliance failure है।",
+      
+      "formula": "Upload Deadline = T + 10 Days (जहां T वह दिन है जब account खोला गया था)।",
+      
+      "formula_explanation": "Intermediary के पास client के KYC को central system पर upload करने के लिए ठीक 10 working days होते हैं।",
+      
+      "step_by_step_calculation_example": "यदि कोई client सोमवार (Day 0) को account खोलता है, तो Compliance Officer को यह सुनिश्चित करना होगा कि 10-day limit को पूरा करने के लिए (बिना किसी छुट्टी को माने) अगले शुक्रवार तक KYC documents, CVL या NSDL KRA पर upload हो जाएं।",
+      
+      "real_life_indian_example": "जब आप दिल्ली से बैंगलोर जाते हैं और अपने demat account में अपना address update करते हैं, तो आपको KRA (जैसे CVL) से एक message मिलेगा जिसमें लिखा होगा 'Your KYC details have been modified'। यह KRA है जो आपको notify करने के अपने obligation को पूरा कर रहा है।",
+      
+      "exam_traps": [
+        "Exam Trap: 'KRA IPV करता है।' FALSE. Intermediary (वह firm जिसके साथ आप account खोल रहे हैं) IPV के लिए responsible है।",
+        "Intermediary को documents को digitally KRA पर upload करने के बाद भी उनकी physical copies maintain करनी होती हैं।"
+      ],
+      
+      "memory_trick": "Intermediary = Collector (info collect करता है)। KRA = Protector (info store और share करता है)।"
+    }
+  ],
+
+  "important_differences": [
+    {
+      "difference_between": "KRA vs CKYC (Central KYC)",
+      "clear_explanation": "1. Scope: KRA विशेष रूप से Securities Market (SEBI द्वारा regulated) के लिए है। CKYC पूरे financial sector (Banking, Insurance, और Stocks) के लिए है और इसे CERSAI द्वारा manage किया जाता है। 2. Regulation: KRA SEBI Regulations 2011 को follow करता है। CKYC PMLA rules को follow करता है।"
+    },
+    {
+      "difference_between": "KRA में Uploading vs Downloading",
+      "clear_explanation": "1. Uploading: जब कोई 'नया' investor जुड़ता है, तो broker उनका data KRA को भेजता (TO) है। 2. Downloading: जब कोई 'existing' investor किसी नए broker के साथ जुड़ता है, तो broker KRA से data लेता (FROM) है।"
+    }
+  ],
+
+  "frequently_asked_exam_areas": [
+    "Intermediaries के लिए KYC data को KRA पर upload करने की 10-day deadline।",
+    "'In-Person Verification' के लिए कौन जिम्मेदार है (Answer: The Intermediary)।",
+    "KRAs का primary objective (duplication से बचने के लिए KYC का Centralization)।",
+    "Major KRAs के नाम पहचानना (CVL, NDML, DotEx)।"
+  ],
+
+  "quick_revision_summary": [
+    "KRAs investor KYC documents के लिए centralized storehouses हैं।",
+    "Goal: पूरे securities market के लिए One-time KYC।",
+    "Intermediaries को account खुलने के 10 working days के भीतर data upload करना होगा।",
+    "In-Person Verification (IPV) Intermediary का कर्तव्य है, KRA का नहीं।",
+    "KRA को investor का KYC successfully register होने के बाद उन्हें notify करना होगा।",
+    "Intermediaries को फिर से KYC तभी करना होगा जब information में कोई बदलाव हो या profile 'High Risk' हो।"
+  ]
+}

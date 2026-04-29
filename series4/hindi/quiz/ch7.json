@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "The entity responsible for clearing and settlement of all trades executed on the exchange is:",
+    "options": [
+      "The Stock Exchange itself",
+      "The Clearing Corporation (e.g., NCL/ICCL)",
+      "The Depository (NSDL/CDSL)",
+      "The Broker"
+    ],
+    "answer": "The Clearing Corporation (e.g., NCL/ICCL)",
+    "hint": "Post-trade के लिए अलग संस्था (entity)।",
+    "explanation": "Clearing Corporation (जैसे NSE Clearing Ltd या Indian Clearing Corp Ltd) सभी trades को settle करने और risk manage करने के लिए central counterparty के रूप में कार्य करता है।"
+  },
+  {
+    "id": 2,
+    "question": "The process where the Clearing Corporation becomes the buyer to every seller and seller to every buyer is called:",
+    "options": [
+      "Novation",
+      "Arbitrage",
+      "Hedging",
+      "Speculation"
+    ],
+    "answer": "Novation",
+    "hint": "एक नए contract का प्रतिस्थापन (Substitution)।",
+    "explanation": "Novation एक कानूनी प्रक्रिया है जिसमें Clearing Corporation सभी trades के लिए counterparty के रूप में खुद को substitute (बदल) कर लेता है, जिससे किसी एक पार्टी के default होने पर भी settlement की गारंटी मिलती है।"
+  },
+  {
+    "id": 3,
+    "question": "A 'Clearing Member' (CM) is responsible for:",
+    "options": [
+      "Only placing orders",
+      "Clearing and settling trades for themselves and/or other trading members",
+      "Regulating the market",
+      "Issuing securities"
+    ],
+    "answer": "Clearing and settling trades for themselves and/or other trading members",
+    "hint": "वे पैसे और obligations को संभालते हैं।",
+    "explanation": "CMs Clearing Corporation के साथ funds और securities की obligations को settle करते हैं। वे अपने लिए (Self CM) या दूसरों के लिए (Professional CM) clear कर सकते हैं।"
+  },
+  {
+    "id": 4,
+    "question": "Which of the following margin types is collected to cover the potential loss over a one-day horizon (99% confidence)?",
+    "options": [
+      "Initial Margin (SPAN)",
+      "Exposure Margin",
+      "Premium Margin",
+      "Profit Margin"
+    ],
+    "answer": "Initial Margin (SPAN)",
+    "hint": "VaR/SPAN का उपयोग करके गणना की जाती है।",
+    "explanation": "Initial Margin एक दिन के भीतर portfolio में होने वाले सबसे खराब संभावित नुकसान (worst-case loss) पर आधारित होता है, जिसकी गणना SPAN system का उपयोग करके की जाती है।"
+  },
+  {
+    "id": 5,
+    "question": "Mark-to-Market (MTM) Settlement involves:",
+    "options": [
+      "Collecting the full contract value daily",
+      "Settling the difference between the trade price/previous closing price and the current settlement price",
+      "Settling only at the end of the month",
+      "Physical delivery of bonds daily"
+    ],
+    "answer": "Settling the difference between the trade price/previous closing price and the current settlement price",
+    "hint": "दैनिक लाभ/हानि (profit/loss) का समायोजन (adjustment)।",
+    "explanation": "MTM एक daily cash adjustment है जहाँ दिन के price movement के आधार पर member के account में profits credit किए जाते हैं और losses debit किए जाते हैं।"
+  },
+  {
+    "id": 6,
+    "question": "What happens if a Clearing Member fails to pay the MTM loss by the stipulated time?",
+    "options": [
+      "The Exchange forgives the loss",
+      "The Clearing Corporation disables the member's trading terminal and may liquidate positions",
+      "The member is given a 1-year extension",
+      "Nothing happens"
+    ],
+    "answer": "The Clearing Corporation disables the member's trading terminal and may liquidate positions",
+    "hint": "सख्त अनुशासन (Strict discipline)।",
+    "explanation": "MTM pay करने में विफलता (failure) के परिणामस्वरूप default की कार्यवाही शुरू होती है, जिसमें trading access को disable (बंद) करना और बकाया (dues) वसूलने के लिए open positions को square off करना शामिल है।"
+  },
+  {
+    "id": 7,
+    "question": "Final Settlement of Interest Rate Futures in India is currently done:",
+    "options": [
+      "In Cash",
+      "By Physical Delivery of Bonds",
+      "By Delivery of Gold",
+      "By Promissory Notes"
+    ],
+    "answer": "In Cash",
+    "hint": "इसमें Bonds का लेन-देन नहीं होता।",
+    "explanation": "भारत में अधिकांश active IRF contracts cash-settled होते हैं, जिसका अर्थ है कि entry price और final settlement price के बीच का अंतर नकद (cash) में चुकाया/प्राप्त किया जाता है।"
+  },
+  {
+    "id": 8,
+    "question": "The 'Settlement Guarantee Fund' (SGF) is used to:",
+    "options": [
+      "Pay dividends to shareholders",
+      "Guarantee the settlement of trades in case a member defaults",
+      "Fund the exchange's parties",
+      "Pay broker commissions"
+    ],
+    "answer": "Guarantee the settlement of trades in case a member defaults",
+    "hint": "Insurance fund (बीमा निधि)।",
+    "explanation": "SGF, Clearing Corporation द्वारा maintain किया जाने वाला एक कोष (corpus) है जो यह सुनिश्चित करता है कि counterparty के default होने पर भी non-defaulting members को उनका पैसा मिले।"
+  },
+  {
+    "id": 9,
+    "question": "Exposure Margin is charged to:",
+    "options": [
+      "Cover risks beyond what is covered by Initial Margin (Tail Risk)",
+      "Cover broker's operational costs",
+      "Pay SEBI fees",
+      "Discourage trading"
+    ],
+    "answer": "Cover risks beyond what is covered by Initial Margin (Tail Risk)",
+    "hint": "Extra buffer (अतिरिक्त सुरक्षा)।",
+    "explanation": "Exposure Margin अत्यधिक market volatility (अस्थिरता) के खिलाफ एक extra buffer प्रदान करता है, जिसका अनुमान statistical models (जैसे VaR) शायद कम (underestimate) लगा सकते हैं।"
+  },
+  {
+    "id": 10,
+    "question": "A 'Self Clearing Member' (SCM) can clear trades for:",
+    "options": [
+      "Only themselves and their clients",
+      "Any trading member in the market",
+      "Only foreign investors",
+      "Only the exchange"
+    ],
+    "answer": "Only themselves and their clients",
+    "hint": "Self का मतलब खुद का।",
+    "explanation": "एक SCM केवल अपने खुद के proprietary account और अपने registered clients के trades को clear और settle करने के लिए अधिकृत (authorized) होता है, अन्य trading members के लिए नहीं।"
+  },
+  {
+    "id": 11,
+    "question": "A 'Professional Clearing Member' (PCM) typically:",
+    "options": [
+      "Trades heavily for themselves",
+      "Does not trade but clears and settles for other Trading Members",
+      "Is a regulator",
+      "Is an investor"
+    ],
+    "answer": "Does not trade but clears and settles for other Trading Members",
+    "hint": "आमतौर पर कोई बैंक या custodian.",
+    "explanation": "PCMs (अक्सर बैंक) अपने लिए trade नहीं करते हैं, बल्कि वे Trading Members (TMs) और Custodial Participants (CPs) को clearing services प्रदान करते हैं।"
+  },
+  {
+    "id": 12,
+    "question": "The 'Final Settlement Price' for 10-Year G-Sec Futures is based on:",
+    "options": [
+      "The closing price of the future",
+      "The weighted average price of the underlying bond in the spot market (NDS-OM) on expiry day",
+      "The RBI Reference Rate",
+      "The average of the last 3 months"
+    ],
+    "answer": "The weighted average price of the underlying bond in the spot market (NDS-OM) on expiry day",
+    "hint": "Spot price से मिलान (Convergence)।",
+    "explanation": "Convergence सुनिश्चित करने के लिए, final settlement price expiry के दिन cash market (NDS-OM) में underlying bond की वास्तविक trading price के weighted average से निकाला जाता है।"
+  },
+  {
+    "id": 13,
+    "question": "Calendar Spread Margin benefit is given because:",
+    "options": [
+      "Risk is lower when holding offsetting positions in different months",
+      "The exchange wants to promote spreads",
+      "It is a government rule",
+      "Spreads are tax-free"
+    ],
+    "answer": "Risk is lower when holding offsetting positions in different months",
+    "hint": "Correlation (सहसंबंध) risk को कम करता है।",
+    "explanation": "चूंकि near और far month contracts की कीमतें एक साथ चलती हैं, इसलिए एक naked position की तुलना में spread position का risk कम होता है, इसलिए margin requirement कम कर दी जाती है।"
+  },
+  {
+    "id": 14,
+    "question": "Margins can be deposited in the form of:",
+    "options": [
+      "Only Cash",
+      "Cash, Fixed Deposits (FDRs), Bank Guarantees, and Approved Securities",
+      "Real Estate",
+      "Personal Guarantee"
+    ],
+    "answer": "Cash, Fixed Deposits (FDRs), Bank Guarantees, and Approved Securities",
+    "hint": "Liquid assets (तरल संपत्तियां)।",
+    "explanation": "Clearing Corporations नकद (cash), G-Secs, और bank guarantees सहित liquid collateral के मिश्रण को स्वीकार करते हैं, जो haircuts और cash component नियमों के अधीन होते हैं।"
+  },
+  {
+    "id": 15,
+    "question": "The 'Cash Component' requirement for margins usually mandates that:",
+    "options": [
+      "At least 50% of the collateral must be in cash or cash equivalents",
+      "100% must be in cash",
+      "0% needs to be in cash",
+      "Margins are optional"
+    ],
+    "answer": "At least 50% of the collateral must be in cash or cash equivalents",
+    "hint": "Liquidity (तरलता) का नियम।",
+    "explanation": "Immediate liquidity सुनिश्चित करने के लिए, regulation आमतौर पर यह अनिवार्य करता है कि कम से कम 50% liquid assets (margins) नकद (cash) या cash equivalents के रूप में होने चाहिए।"
+  },
+  {
+    "id": 16,
+    "question": "A 'Haircut' on collateral means:",
+    "options": [
+      "A fee paid to the barber",
+      "A percentage deduction from the market value of the security to cover volatility risk",
+      "A penalty for late payment",
+      "A tax deduction"
+    ],
+    "answer": "A percentage deduction from the market value of the security to cover volatility risk",
+    "hint": "वैल्यू में कटौती (Value reduction)।",
+    "explanation": "यदि आप margin के रूप में 100 रुपये का bond जमा करते हैं, तो bond की value गिरने के risk से बचने के लिए CC इसे केवल 90 रुपये (10% haircut) के बराबर मान सकता है।"
+  },
+  {
+    "id": 17,
+    "question": "If a client buys an IRF contract, when do they have to pay the Initial Margin?",
+    "options": [
+      "Upfront (before or at the time of the trade)",
+      "At the end of the month",
+      "Only if they make a loss",
+      "Never"
+    ],
+    "answer": "Upfront (before or at the time of the trade)",
+    "hint": "T+0 (तुरंत)।",
+    "explanation": "Brokers को position के risk को कवर करने के लिए trade से पहले (upfront) ही clients से initial margin लेना आवश्यक है।"
+  },
+  {
+    "id": 18,
+    "question": "The term 'Netting' in clearing refers to:",
+    "options": [
+      "Connecting to the internet",
+      "Offsetting buy and sell positions to determine the net obligation",
+      "Catching defaulters",
+      "Calculating gross turnover"
+    ],
+    "answer": "Offsetting buy and sell positions to determine the net obligation",
+    "hint": "Plus बनाम Minus.",
+    "explanation": "यदि आप 10 lots खरीदते हैं और 8 lots बेचते हैं, तो netting यह सुनिश्चित करती है कि आप केवल अंतर (2 lots) या शुद्ध राशि (net funds) का settlement करें, जिससे efficiency बढ़ती है।"
+  },
+  {
+    "id": 19,
+    "question": "Clearing Banks act as:",
+    "options": [
+      "Lenders to the exchange",
+      "Intermediaries for funds transfer between Clearing Members and the Clearing Corporation",
+      "Market makers",
+      "Regulators"
+    ],
+    "answer": "Intermediaries for funds transfer between Clearing Members and the Clearing Corporation",
+    "hint": "पैसे के लेन-देन का माध्यम।",
+    "explanation": "Designated Clearing Banks settlement के उद्देश्यों के लिए funds के pay-in और pay-out की सुविधा (facilitate) प्रदान करते हैं।"
+  },
+  {
+    "id": 20,
+    "question": "Position Limits prevent:",
+    "options": [
+      "Small investors from trading",
+      "Any single entity from cornering the market or holding excessive risk",
+      "Foreign investment",
+      "Profitable trades"
+    ],
+    "answer": "Any single entity from cornering the market or holding excessive risk",
+    "hint": "एकाधिकार का जोखिम (Concentration risk)।",
+    "explanation": "Market manipulation (हेरफेर) और systemic risk को रोकने के लिए किसी एकल client या member द्वारा रखे जा सकने वाले contracts की संख्या पर limit (सीमा) निर्धारित की जाती है।"
+  },
+  {
+    "id": 21,
+    "question": "Custodial Participant (CP) trades are settled by:",
+    "options": [
+      "The Broker",
+      "The Clearing Member associated with the Custodian",
+      "The Exchange directly",
+      "The CP themselves"
+    ],
+    "answer": "The Clearing Member associated with the Custodian",
+    "hint": "Institutional flow.",
+    "explanation": "Institutions (CPs) एक broker के माध्यम से trades execute करते हैं, लेकिन उन्हें अपने Custodian Clearing Member (PCM) के माध्यम से clear करते हैं।"
+  },
+  {
+    "id": 22,
+    "question": "The 'Give-Up / Take-Up' process is used for:",
+    "options": [
+      "Transferring a trade from the executing broker to the clearing member",
+      "Giving up on a loss",
+      "Taking up a new hobby",
+      "Cancelling a trade"
+    ],
+    "answer": "Transferring a trade from the executing broker to the clearing member",
+    "hint": "Handover (सौंपना)।",
+    "explanation": "Executing broker trade को Clearing Member को 'give up' (सौंप) देता है, जो इसे settle करने की जिम्मेदारी 'take up' (ले) लेता है।"
+  },
+  {
+    "id": 23,
+    "question": "Short-collection of margin from clients attracts:",
+    "options": [
+      "A penalty on the Trading Member",
+      "A reward",
+      "No action",
+      "A warning letter only"
+    ],
+    "answer": "A penalty on the Trading Member",
+    "hint": "नियामक जुर्माना (Regulatory fine)।",
+    "explanation": "Market safety सुनिश्चित करने के लिए, Exchange regulations उन brokers पर जुर्माना (penalty) लगाते हैं जो clients से आवश्यक margin इकट्ठा करने (collect) में विफल रहते हैं।"
+  },
+  {
+    "id": 24,
+    "question": "On the expiry day, all open positions are:",
+    "options": [
+      "Carried forward to next month",
+      "Squared off / Settled at the Final Settlement Price",
+      "Cancelled without value",
+      "Converted to equity"
+    ],
+    "answer": "Squared off / Settled at the Final Settlement Price",
+    "hint": "सफ़र का अंत (The end of the road)।",
+    "explanation": "Expiry के बाद Contracts का अस्तित्व समाप्त हो जाता है। सभी open positions final price के आधार पर financially settle (square off) कर दी जाती हैं।"
+  },
+  {
+    "id": 25,
+    "question": "Stress Testing is performed by the Clearing Corporation to:",
+    "options": [
+      "Test the stress levels of employees",
+      "Evaluate the adequacy of the SGF under extreme hypothetical market scenarios",
+      "Check the speed of the internet",
+      "Test the trading software"
+    ],
+    "answer": "Evaluate the adequacy of the SGF under extreme hypothetical market scenarios",
+    "hint": "क्या होगा यदि market 20% क्रैश हो जाए?",
+    "explanation": "Stress testing यह सुनिश्चित करता है कि गंभीर market shocks का सामना करने के लिए risk resources (margins + SGF) पर्याप्त (sufficient) हैं।"
+  },
+  {
+    "id": 26,
+    "question": "Who bears the risk if a Client defaults on their obligation to the Broker?",
+    "options": [
+      "The Broker (Trading Member)",
+      "The Exchange",
+      "The Clearing Corporation",
+      "SEBI"
+    ],
+    "answer": "The Broker (Trading Member)",
+    "hint": "सुरक्षा की पहली पंक्ति (First line of defense)।",
+    "explanation": "Broker, Clearing Member/Corporation के प्रति जिम्मेदार होता है। यदि client default करता है, तो भी broker को clearing obligation (बकाया) चुकाना ही होगा।"
+  },
+  {
+    "id": 27,
+    "question": "Accrued Interest in the context of settlement refers to:",
+    "options": [
+      "Interest earned on margin deposits",
+      "Interest on the underlying bond that must be accounted for in the settlement price",
+      "Penalty interest",
+      "Broker's interest"
+    ],
+    "answer": "Interest on the underlying bond that must be accounted for in the settlement price",
+    "hint": "Dirty price adjustment.",
+    "explanation": "चूंकि bonds पर रोज़ाना interest (ब्याज) मिलता है, इसलिए settlement calculation (विशेष रूप से physical delivery के लिए) में अक्सर पिछले coupon date के बाद से अर्जित (accrued) ब्याज को शामिल किया जाता है।"
+  },
+  {
+    "id": 28,
+    "question": "The waterfall mechanism for default handling implies:",
+    "options": [
+      "A sequence of resources used to cover a defaulter's loss (Defaulter's margin -> SGF -> etc.)",
+      "Washing away the debt",
+      "A type of trading strategy",
+      "Liquidity flow"
+    ],
+    "answer": "A sequence of resources used to cover a defaulter's loss (Defaulter's margin -> SGF -> etc.)",
+    "hint": "फ़ंड की प्राथमिकता (Priority of funds)।",
+    "explanation": "यह उस क्रम (order) को परिभाषित करता है जिसमें funds का उपयोग किया जाता है: सबसे पहले defaulter का अपना margin, फिर SGF, और अंत में अन्य members का योगदान।"
+  },
+  {
+    "id": 29,
+    "question": "Client Code Modification is permitted:",
+    "options": [
+      "Only for genuine errors within a specific time window",
+      "Anytime the broker wants",
+      "To transfer profits to another account",
+      "Never"
+    ],
+    "answer": "Only for genuine errors within a specific time window",
+    "hint": "Typos को ठीक करने के लिए, मुनाफ़ा (profit) शिफ्ट करने के लिए नहीं।",
+    "explanation": "Modifications पर कड़ी निगरानी रखी जाती है और tax evasion (कर चोरी) या profit shifting को रोकने के लिए केवल वास्तविक data entry errors को सुधारने की अनुमति दी जाती है।"
+  },
+  {
+    "id": 30,
+    "question": "Segregation of funds means:",
+    "options": [
+      "Keeping client funds separate from the broker's own proprietary funds",
+      "Keeping gold separate from cash",
+      "Keeping profit separate from loss",
+      "Keeping foreign money separate"
+    ],
+    "answer": "Keeping client funds separate from the broker's own proprietary funds",
+    "hint": "Client के पैसे की सुरक्षा।",
+    "explanation": "Brokers को client के पैसे को अपने business funds के साथ नहीं मिलाना चाहिए। Client funds का उपयोग केवल client से संबंधित दायित्वों के लिए किया जा सकता है।"
+  },
+  {
+    "id": 31,
+    "question": "Generally, the pay-in of funds for MTM settlement must happen by:",
+    "options": [
+      "T+0 (Same day) or T+1 morning",
+      "T+2",
+      "T+5",
+      "End of the month"
+    ],
+    "answer": "T+0 (Same day) or T+1 morning",
+    "hint": "सख्त समय-सीमा (Strict timelines)।",
+    "explanation": "System की solvency (भुगतान क्षमता) सुनिश्चित करने के लिए, MTM losses का भुगतान तुरंत किया जाना चाहिए, आमतौर पर अगली सुबह (T+1) trading शुरू होने से पहले।"
+  },
+  {
+    "id": 32,
+    "question": "Risk Reduction Mode (RRM) is triggered when:",
+    "options": [
+      "A member utilizes a high percentage (e.g., 90%) of their available collateral",
+      "The market crashes",
+      "The internet is slow",
+      "It rains"
+    ],
+    "answer": "A member utilizes a high percentage (e.g., 90%) of their available collateral",
+    "hint": "Warning zone (चेतावनी क्षेत्र)।",
+    "explanation": "जब कोई member अपनी margin limit का अधिकांश हिस्सा (e.g., 90%) उपयोग कर लेता है, तो RRM ट्रिगर होता है, जिससे वे केवल वही orders दे सकते हैं जो उनकी open position को कम (square off) करते हैं।"
+  },
+  {
+    "id": 33,
+    "question": "In the case of a 'Short Delivery' (if physical settlement exists), the exchange conducts:",
+    "options": [
+      "An Auction",
+      "A Lottery",
+      "A Fine",
+      "A Cancellation"
+    ],
+    "answer": "An Auction",
+    "hint": "Delivery को पूरा करने के लिए market से खरीदना।",
+    "explanation": "यदि कोई seller securities deliver करने में विफल रहता है, तो exchange market से securities खरीदने और उन्हें buyer को सौंपने के लिए एक auction (नीलामी) आयोजित करता है।"
+  },
+  {
+    "id": 34,
+    "question": "FPIs (Foreign Portfolio Investors) have specific position limits usually defined as:",
+    "options": [
+      "A percentage of the total Open Interest of the market",
+      "Unlimited",
+      "Zero",
+      "Same as retail"
+    ],
+    "answer": "A percentage of the total Open Interest of the market",
+    "hint": "Macro prudential limit.",
+    "explanation": "Regulators debt market में विदेशी प्रभुत्व (dominance) को सीमित करने के लिए FPIs के total exposure (उदा. कुल OI का 15%) पर एक limit (कैप) लगाते हैं।"
+  },
+  {
+    "id": 35,
+    "question": "What is 'Close-out'?",
+    "options": [
+      "Closing the shop",
+      "Terminating a contract at a specific price due to default or inability to deliver",
+      "The end of the day",
+      "Executing a market order"
+    ],
+    "answer": "Terminating a contract at a specific price due to default or inability to deliver",
+    "hint": "Forced settlement (मजबूरन निपटान)।",
+    "explanation": "यदि किसी trade को सामान्य रूप से settle नहीं किया जा सकता (उदा. default के कारण), तो इसे CC द्वारा निर्धारित penalty price पर financially 'close out' (समाप्त) कर दिया जाता है।"
+  },
+  {
+    "id": 36,
+    "question": "Which report gives the Clearing Member details of their daily settlement obligation?",
+    "options": [
+      "The Obligation Report / Margin Statement",
+      "The Newspaper",
+      "The Annual Report",
+      "The Contract Note"
+    ],
+    "answer": "The Obligation Report / Margin Statement",
+    "hint": "दैनिक बिल (Daily bill)।",
+    "explanation": "Clearing Corp दैनिक (daily) reports generate करता है जिसमें MTM loss/profit और net margin payable/receivable का पूरा विवरण होता है।"
+  },
+  {
+    "id": 37,
+    "question": "Volatility Scan Range (VSR) is a parameter used in:",
+    "options": [
+      "SPAN Margin calculation",
+      "Brokerage calculation",
+      "Tax calculation",
+      "Interest rate setting"
+    ],
+    "answer": "SPAN Margin calculation",
+    "hint": "Price moves को स्कैन करना।",
+    "explanation": "VSR, SPAN में risk array निर्धारित करने के लिए underlying asset के maximum possible price movement (अधिकतम संभावित मूल्य संचलन) का अनुमान लगाता है।"
+  },
+  {
+    "id": 38,
+    "question": "A 'Direct Payout' to clients means:",
+    "options": [
+      "The Clearing Corp credits funds/securities directly to the Client's account, bypassing the Broker's pool account",
+      "The Broker pays cash",
+      "The Exchange pays dividends",
+      "No taxes are deducted"
+    ],
+    "answer": "The Clearing Corp credits funds/securities directly to the Client's account, bypassing the Broker's pool account",
+    "hint": "Broker द्वारा misuse से सुरक्षा।",
+    "explanation": "Direct payout यह सुनिश्चित करता है कि clients को सीधे उनका बकाया मिले, जिससे broker द्वारा client funds का misuse (दुरुपयोग) करने का risk कम हो जाता है।"
+  },
+  {
+    "id": 39,
+    "question": "Collateral deposited with the Clearing Corporation is re-valued:",
+    "options": [
+      "Daily",
+      "Monthly",
+      "Yearly",
+      "Never"
+    ],
+    "answer": "Daily",
+    "hint": "Market value बदलती रहती है।",
+    "explanation": "गिरवी रखी गई (pledged) securities (जैसे G-Secs) का मूल्य रोज़ाना बदलता है। margin cover पर्याप्त (adequate) रहे यह सुनिश्चित करने के लिए CC उन्हें रोज़ाना re-value करता है।"
+  },
+  {
+    "id": 40,
+    "question": "Interoperability of Clearing Corporations allows:",
+    "options": [
+      "A trader to trade on one exchange and clear through a Clearing Corporation of another exchange",
+      "Trading without money",
+      "Using two computers",
+      "Merging companies"
+    ],
+    "answer": "A trader to trade on one exchange and clear through a Clearing Corporation of another exchange",
+    "hint": "सबके लिए एक ही व्यवस्था (One pot for all)।",
+    "explanation": "यह market participants को कई exchanges के पार अपने clearing और settlement को एक ही Clearing Corporation में जोड़ने (consolidate) की अनुमति देता है, जिससे margin का उपयोग अनुकूलित (optimize) होता है।"
+  },
+  {
+    "id": 41,
+    "question": "Penalty for 'Self-Trade' (Wash Trade) typically involves:",
+    "options": [
+      "Warning or Disciplinary Action",
+      "A bonus",
+      "Tax rebate",
+      "Nothing"
+    ],
+    "answer": "Warning or Disciplinary Action",
+    "hint": "यह manipulative (हेरफेर करने वाला) है।",
+    "explanation": "चूंकि self-trades volume (मात्रा) में हेरफेर कर सकते हैं, इसलिए exchanges उनकी निगरानी करते हैं और penalties या disciplinary action लगा सकते हैं।"
+  },
+  {
+    "id": 42,
+    "question": "The 'Open Interest' limit for a Trading Member is typically:",
+    "options": [
+      "Higher than the Client limit",
+      "Lower than the Client limit",
+      "Same as the Client limit",
+      "Zero"
+    ],
+    "answer": "Higher than the Client limit",
+    "hint": "TM कई clients को संभालता है।",
+    "explanation": "एक Trading Member कई clients को संभालता है, इसलिए उनकी aggregate (कुल) position limit एक individual client की limit से अधिक (उदा. total market OI का 15%) निर्धारित की जाती है।"
+  },
+  {
+    "id": 43,
+    "question": "If a member's net worth falls below the regulatory requirement, the exchange may:",
+    "options": [
+      "Suspend the member's trading rights",
+      "Loan them money",
+      "Ignore it",
+      "Increase their limits"
+    ],
+    "answer": "Suspend the member's trading rights",
+    "hint": "Capital adequacy (पूंजी पर्याप्तता)।",
+    "explanation": "Minimum net worth बनाए रखना एक licensing condition है। इसमें विफलता (failure) पर market integrity की रक्षा के लिए suspension (निलंबन) की कार्रवाई होती है।"
+  },
+  {
+    "id": 44,
+    "question": "Assignment of exercise (for Options) is typically done on a:",
+    "options": [
+      "Random basis",
+      "First in First Out basis",
+      "Last in First Out basis",
+      "Largest position basis"
+    ],
+    "answer": "Random basis",
+    "hint": "निष्पक्षता (Fairness)।",
+    "explanation": "जब किसी option का प्रयोग (exercise) किया जाता है, तो fairness सुनिश्चित करने के लिए Clearing Corporation दायित्व (obligation) को एक short position holder को random basis (यादृच्छिक आधार) पर सौंपता (assign) है।"
+  },
+  {
+    "id": 45,
+    "question": "Immediate Credit of MTM profit is:",
+    "options": [
+      "Usually not given; it is netted against losses or paid out next day",
+      "Given instantly in cash",
+      "Transferred to a Swiss bank",
+      "Used to buy pizza"
+    ],
+    "answer": "Usually not given; it is netted against losses or paid out next day",
+    "hint": "Settlement cycle.",
+    "explanation": "MTM profits को आमतौर पर trading session के दौरान तुरंत नहीं दिया जाता, बल्कि settlement cycle (T+1) में credit किया जाता है, हालांकि वे margin requirements को कम (offset) कर सकते हैं।"
+  },
+  {
+    "id": 46,
+    "question": "Core Settlement Guarantee Fund (Core SGF) contribution comes from:",
+    "options": [
+      "Clearing Corporation, Stock Exchange, and Clearing Members",
+      "Retail investors only",
+      "Government taxes",
+      "Foreign banks"
+    ],
+    "answer": "Clearing Corporation, Stock Exchange, and Clearing Members",
+    "hint": "Skin in the game (सबकी भागीदारी)।",
+    "explanation": "यह सुनिश्चित करने के लिए कि risk management में हर किसी की हिस्सेदारी हो, SGF को Exchange, CC, और Members (penalties/deposits के रूप में) के योगदान द्वारा वित्त पोषित (funded) किया जाता है।"
+  },
+  {
+    "id": 47,
+    "question": "Margins on 'Spread' positions are lower because:",
+    "options": [
+      "The price movement of the two legs is highly correlated",
+      "The exchange likes spread traders",
+      "It involves two trades",
+      "There is no risk"
+    ],
+    "answer": "The price movement of the two legs is highly correlated",
+    "hint": "Net risk कम है।",
+    "explanation": "एक spread में, आप एक में Long और दूसरे में Short होते हैं। यदि market हिलता है, तो एक में फायदा और दूसरे में नुकसान होता है, जो अधिकांश risk को बेअसर (neutralize) कर देता है।"
+  },
+  {
+    "id": 48,
+    "question": "If a Clearing Member defaults, the non-defaulting clients of that member:",
+    "options": [
+      "Are protected via the Porting process (transfer to another CM) or return of funds",
+      "Lose all their money",
+      "Are arrested",
+      "Must become Clearing Members"
+    ],
+    "answer": "Are protected via the Porting process (transfer to another CM) or return of funds",
+    "hint": "Segregation (अलगाव) उन्हें बचाता है।",
+    "explanation": "System को defaulter को अलग (isolate) करने के लिए डिज़ाइन किया गया है। निर्दोष (Innocent) clients की positions को या तो एक healthy member को transfer (ported) कर दिया जाता है या settle करके funds वापस कर दिए जाते हैं।"
+  },
+  {
+    "id": 49,
+    "question": "The time window for Custodians to confirm trades is usually:",
+    "options": [
+      "Until the next morning (T+1) within specified hours",
+      "1 month",
+      "1 year",
+      "5 minutes"
+    ],
+    "answer": "Until the next morning (T+1) within specified hours",
+    "hint": "Settlement से पहले Confirm करें।",
+    "explanation": "Settlement को सक्षम (enable) करने के लिए Custodians को T+1 पर एक specific cut-off time तक brokers द्वारा अपने clients के लिए execute किए गए trades को verify और confirm करना होता है।"
+  },
+  {
+    "id": 50,
+    "question": "SEBI's role in clearing and settlement is to:",
+    "options": [
+      "Set the broad regulatory framework and risk management norms",
+      "Execute trades",
+      "Collect margins physically",
+      "Set interest rates"
+    ],
+    "answer": "Set the broad regulatory framework and risk management norms",
+    "hint": "The boss (सबसे ऊपर)।",
+    "explanation": "SEBI सीधे तौर पर clearing का संचालन (operationalize) नहीं करता है, बल्कि वह regulations (जैसे margin rules, SGF norms, fit and proper criteria) निर्धारित करता है जिनका Clearing Corps को पालन करना अनिवार्य है।"
+  }
+]

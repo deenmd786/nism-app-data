@@ -1,0 +1,95 @@
+{
+  "course": "NISM Series XIX-A: Alternative Investment Funds Managers",
+  "unit_number": 11,
+  "unit_name": "Valuation",
+  "weightage": "5%",
+  "overview": "यह chapter सिलेबस का सबसे तकनीकी (technical) हिस्सा है। चूंकि AIFs निजी (private) कंपनियों में निवेश करते हैं (जिनका कोई दैनिक शेयर मूल्य/daily stock price नहीं होता है), इसलिए 'Valuation' यह अनुमान लगाने की प्रक्रिया है कि कागजों (on paper) पर उन कंपनियों की कीमत क्या है। यह महत्वपूर्ण है क्योंकि फंड का NAV, management fees, और प्रदर्शन रिपोर्ट (performance reports) सभी इन्हीं नंबरों पर निर्भर करते हैं। यह chapter Chapter 10 की 'Monitoring' (निगरानी) को Chapter 6 के 'Performance' (प्रदर्शन) मेट्रिक्स से जोड़ता है।",
+  
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Valuation Approaches (द 3 मेथड्स/The 3 Methods)",
+      "basic_meaning": "एक निजी कंपनी (private company) की कीमत (price) कैलकुलेट करने के तीन अलग-अलग 'लेंस' या तरीके।",
+      "detailed_explanation": "जब कोई कंपनी सूचीबद्ध (listed) नहीं होती है, तो हम इन तीन मानक (standard) दृष्टिकोणों का उपयोग करते हैं:\n\n1. **Market Approach:** 'Comparable' (समान) कंपनियों को देखना। यदि एक समान सूचीबद्ध कंपनी 10x मुनाफे (profit) पर ट्रेड कर रही है, तो हम अपनी निजी कंपनी पर एक समान 'Multiple' लागू करते हैं।\n2. **Income Approach (DCF):** 'Future Cash' (भविष्य की नकदी) पर ध्यान केंद्रित करना। हम अनुमान लगाते हैं कि कंपनी अगले 5-10 वर्षों में कितना नकद कमाएगी और एक ब्याज दर (WACC) का उपयोग करके इसे आज के मूल्य पर 'discount' करते हैं।\n3. **Cost Approach:** 'Assets' (संपत्ति) को देखना। हम आज शुरुआत (scratch) से कंपनी की संपत्ति (भूमि, तकनीक, ब्रांड) बनाने की कुल लागत की गणना करते हैं।\n\n",
+      "why_this_is_important": "परीक्षा के लिए, आपको पता होना चाहिए कि कब किस विधि का उपयोग करना है। उदाहरण के लिए, DCF स्थिर (stable) कंपनियों के लिए सबसे अच्छा है, जबकि Market approach एक हॉट सेक्टर में स्टार्टअप्स के लिए सबसे अच्छा है।",
+      "formula": "Enterprise Value (Market Approach) = Financial Metric (जैसे, EBITDA) x Multiple",
+      "formula_explanation": "किसी कंपनी का लाभ (EBITDA) लें और उसे बाज़ार में समान कंपनियों की कीमत के आधार पर एक 'Multiple' (जैसे 10x या 15x) से गुणा करें।",
+      "step_by_step_calculation_example": "एक निजी SaaS कंपनी का राजस्व (revenue) Rs. 10 Crore है। समान सूचीबद्ध SaaS कंपनियाँ 8x के 'Revenue Multiple' पर ट्रेड कर रही हैं।\n**Calculation:**\nCompany Revenue = 10 Cr\nMultiple = 8x\n**Estimated Valuation (अनुमानित मूल्यांकन):** 10 Cr x 8 = **Rs. 80 Crore**.",
+      "real_life_indian_example": "जब कोई AIF अपने IPO से पहले 'Ola Electric' जैसे असूचीबद्ध (unlisted) स्टार्टअप की Valuation करता है, तो उचित मूल्य (fair price) तय करने के लिए उसने Tesla या Tata Motors जैसे अन्य इलेक्ट्रिक वाहन निर्माताओं की Valuation (Market Approach) को देखा होगा।",
+      "exam_traps": [
+        "Common trap: यह सोचना कि DCF का उपयोग सभी स्टार्टअप्स के लिए किया जाता है। स्टार्टअप्स में अक्सर कोई नकदी प्रवाह (cash flow) नहीं होता है, इसलिए DCF काम नहीं करता है; इसके बजाय Market approach या 'Recent Investment' (हालिया निवेश) मूल्य का उपयोग किया जाता है।",
+        "**Income Approach** भविष्य के बारे में मान्यताओं (assumptions) के प्रति सबसे अधिक संवेदनशील (sensitive) है।"
+      ],
+      "memory_trick": "M-I-C: Market (Peers/समान), Income (Future Cash/भविष्य की नकदी), Cost (Replacement/प्रतिस्थापन)।"
+    },
+    {
+      "concept": "2. Fair Value और IPEV Guidelines",
+      "basic_meaning": "वैश्विक 'Golden Rules' (सुनहरे नियम) यह सुनिश्चित करने के लिए कि Valuation ईमानदार (honest) और मानकीकृत (standardized) है।",
+      "detailed_explanation": "चूंकि निजी मूल्यांकन व्यक्तिपरक (subjective) हो सकता है, उद्योग **International Private Equity and Venture Capital (IPEV)** दिशानिर्देशों का पालन करता है:\n\n1. **Fair Value:** वह कीमत जो एक 'orderly transaction' (व्यवस्थित लेन-देन) (फायर सेल/fire sale नहीं) में किसी संपत्ति को बेचने के लिए प्राप्त होगी।\n2. **Unit of Account:** Valuation फंड द्वारा रखे गए विशिष्ट 'Investment' (निवेश) के लिए किया जाना चाहिए।\n3. **Consistency:** आप केवल बेहतर लाभ (better profit) दिखाने के लिए हर महीने Valuation विधि को बदल नहीं सकते।\n4. **Calibration:** मॉडल को 'calibrated' (कैलिब्रेट) किया जाना चाहिए ताकि पहले दिन, मॉडल का मूल्य भुगतान की गई वास्तविक कीमत (actual price paid) के बराबर हो।",
+      "why_this_is_important": "परीक्षा अक्सर IPEV का फुल फॉर्म और 'Fair Value' की परिभाषा पूछती है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "यदि कोई भारतीय AIF प्रबंधक 'Ontario Teachers' Pension Plan' जैसे वैश्विक निवेशकों (global investors) से पैसा जुटाना चाहता है, तो उन्हें साबित करना होगा कि वे **IPEV guidelines** का पालन करते हैं ताकि वैश्विक निवेशक उन नंबरों पर भरोसा कर सकें।",
+      "exam_traps": [
+        "Fair value 'Book Value' (मूल लागत/original cost) नहीं (NOT) है। यह 'Current' (वर्तमान) बाजार-आधारित मूल्य है।",
+        "IPEV दिशानिर्देश केवल भारत के लिए नहीं, बल्कि विश्व स्तर पर (globally) स्वीकृत हैं।"
+      ],
+      "memory_trick": "Fair Value = 'Honest' (ईमानदार) कीमत। (जो एक इच्छुक खरीदार एक इच्छुक विक्रेता को भुगतान करेगा)।"
+    },
+    {
+      "concept": "3. Regulatory Valuation Requirements (SEBI)",
+      "basic_meaning": "Valuation कितनी बार और किसके द्वारा किया जाना चाहिए, इस पर विशिष्ट भारतीय कानून।",
+      "detailed_explanation": "SEBI के पास भारतीय निवेशकों की सुरक्षा के लिए सख्त नियम हैं:\n\n1. **Frequency (आवृत्ति):** Category I और II AIFs को हर **6 महीने में कम से कम एक बार** अपनी असूचीबद्ध (unlisted) संपत्ति का Valuation करना होगा।\n2. **Independent Valuer (स्वतंत्र मूल्यांकनकर्ता):** Valuation एक **Independent Registered Valuer** (IBBI के साथ पंजीकृत) द्वारा किया जाना चाहिए। प्रबंधक इसे अकेले नहीं कर सकता।\n3. **Category III Reporting:** Open-ended Cat III फंड्स (Hedge Funds) के लिए, NAV की गणना **monthly** (मासिक) की जानी चाहिए।\n4. **Transparency (पारदर्शिता):** Valuation methodology को **PPM** में स्पष्ट रूप से समझाया जाना चाहिए।",
+      "why_this_is_important": "यह 'Valuation Inflation' (मूल्यांकन मुद्रास्फीति) को रोकता है जहाँ एक प्रबंधक अधिक शुल्क (fees) कमाने के लिए फंड के बहुत अच्छा प्रदर्शन करने का नाटक करता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "हर सितंबर और मार्च में, एक भारतीय PE फंड को अपनी पोर्टफोलियो कंपनियों के मूल्य पर हस्ताक्षर (sign off) करने के लिए 'Insolvency and Bankruptcy Board of India' (IBBI) के साथ पंजीकृत एक CA या वैल्यूएशन फर्म को नियुक्त करना चाहिए।",
+      "exam_traps": [
+        "प्रबंधक एक मूल्य का सुझाव (suggest) दे सकता है, लेकिन अंतिम कानूनी फैसला (final legal say) **Independent Valuer** का होता है।",
+        "6 महीने का नियम Cat I और II के लिए है। Cat III मासिक (monthly) है।"
+      ],
+      "memory_trick": "6 Months (Cat I/II), Monthly (Cat III), Independent Valuer (हमेशा/Always)।"
+    },
+    {
+      "concept": "4. Valuation Adjustments (Premiums और Discounts)",
+      "basic_meaning": "'Control' (नियंत्रण) और 'Liquidity' (तरलता) के आधार पर मूल्य (value) जोड़ना या घटाना।",
+      "detailed_explanation": "एक निजी कंपनी (private company) में एक शेयर एक सार्वजनिक कंपनी (public company) में एक शेयर के समान नहीं है। हम इसका उपयोग करके कीमत को एडजस्ट करते हैं:\n\n1. **Control Premium:** यदि AIF के पास 51% (नियंत्रण) है, तो शेयरों का मूल्य अधिक (MORE) होता है क्योंकि वे बड़े निर्णय ले सकते हैं।\n2. **DLOM (Discount for Lack of Marketability - विपणन क्षमता की कमी के लिए छूट):** निजी शेयरों को बेचना मुश्किल है। हम **20-30% मूल्य घटाते (subtract) हैं** क्योंकि वे 'Illiquid' (अतरल) हैं।\n3. **DLOC (Discount for Lack of Control - नियंत्रण की कमी के लिए छूट):** यदि AIF के पास केवल 5% है, तो हम मूल्य घटाते हैं क्योंकि उनके पास कोई शक्ति (power) नहीं है।",
+      "why_this_is_important": "ये एडजस्टमेंट निजी हिस्सेदारी (private stakes) बेचने की 'Real World' (वास्तविक दुनिया) की कठिनाई को दर्शाते हैं।",
+      "formula": "Fair Value = Market Value - DLOM + Control Premium",
+      "formula_explanation": "बेस वैल्यू से शुरू करें, बेचने में कठिन होने के लिए 'penalty' (DLOM) घटाएं, और यदि आपका कंपनी पर नियंत्रण है तो 'bonus' (Control Premium) जोड़ें।",
+      "step_by_step_calculation_example": "पीयर्स (peers) के आधार पर एक कंपनी का मूल्य Rs. 100 प्रति शेयर है। क्योंकि यह असूचीबद्ध (unlisted) है, वैल्यूअर 20% **DLOM** लागू करता है।\n**Calculation:**\nBase Price = 100\nDiscount (20%) = 20\n**Fair Value:** 100 - 20 = **Rs. 80 per share**.",
+      "real_life_indian_example": "किसी स्टार्टअप में 2% की छोटी हिस्सेदारी खरीदने वाला एक AIF एक भारी **DLOC** और **DLOM** लागू करेगा, जिससे इसका मूल्य उससे कम हो जाएगा जो एक संस्थापक (founder - जिसके पास नियंत्रण है) सोच सकता है कि यह इसके लायक है।",
+      "exam_traps": [
+        "Control Premium एक जुड़ाव (ADDITION/+) है। DLOM एक घटाव (SUBTRACTION/-) है।",
+        "DLOM मौजूद है क्योंकि आप NSE की तरह निजी शेयरों को तुरंत (instantly) नहीं बेच सकते।"
+      ],
+      "memory_trick": "Control = Premium (Bonus)। Illiquid = Discount (Penalty)।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Enterprise Value (EV) vs. Equity Value",
+      "clear_explanation": "ENTERPRISE VALUE: संपूर्ण व्यवसाय (entire business) का कुल मूल्य (Equity + Debt - Cash)।\nEQUITY VALUE: वह मूल्य जो केवल (ONLY) शेयरधारकों (shareholders) का है (EV - Debt + Cash)। निवेशक केवल Equity Value खरीदते हैं।"
+    },
+    {
+      "difference_between": "Historical Cost vs. Fair Value",
+      "clear_explanation": "HISTORICAL COST: जो आपने 5 साल पहले भुगतान किया था।\nFAIR VALUE: आज (TODAY) कोई इसके लिए क्या भुगतान करेगा। AIFs को Fair Value की रिपोर्ट करनी चाहिए।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Cat I और II के लिए 6-महीने का Valuation नियम।",
+    "'Income Approach' के हिस्से के रूप में DCF की पहचान करना।",
+    "DLOM (Discount for Lack of Marketability) को परिभाषित करना।",
+    "Independent Registered Valuer (IBBI) की भूमिका।",
+    "IPEV (International Private Equity and Venture Capital Valuation) का पूर्ण रूप (Full form)।"
+  ],
+  "quick_revision_summary": [
+    "Valuation एक 'अनुमान' (Estimate) है, कोई सटीक विज्ञान नहीं।",
+    "3 मुख्य तरीके (Main Ways): Market (Peers), Income (Cash flow), Cost (Assets)।",
+    "Cat I/II = 6 Months आवृत्ति (frequency); Cat III = Monthly (मासिक) आवृत्ति।",
+    "हमेशा एक Independent IBBI-registered valuer का उपयोग करें।",
+    "Fair Value में illiquid (DLOM) होने के लिए छूट शामिल है।",
+    "IPEV दिशानिर्देश वैश्विक मानकीकरण (global standardization) सुनिश्चित करते हैं।"
+  ]
+}

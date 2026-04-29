@@ -1,0 +1,109 @@
+{
+  "course": "NISM Series-XXI-A: Portfolio Management Services (PMS) Distributors Certification Examination",
+  "unit_number": 11,
+  "unit_name": "Taxation",
+  "weightage": "5 Marks",
+  "overview": "यह chapter real-world advice के लिए crucial है। Clients सिर्फ raw profit की नहीं, बल्कि 'Post-Tax' returns की परवाह करते हैं। Syllabus के अनुसार, इसका weightage 5 marks है। PMS और Mutual Funds के बीच key difference यह है कि PMS में, हर single trade के लिए tax liability सीधे investor पर आती है। यह chapter Capital Gains (Short-term vs. Long-term), Dividend taxation, और Bonus Stripping जैसे special transactions को explain करता है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Taxation of Equity Shares (The Core)",
+      "basic_meaning": "जब आप profit के लिए shares बेचते हैं तो आप कितना tax pay करते हैं।",
+      "detailed_explanation": "PMS में, आप shares को directly own करते हैं। जब भी Portfolio Manager कोई share बेचता है, तो आपके लिए एक 'Tax Event' trigger होता है।\n\n**Holding Period (Listed Equity के लिए):**\n- **Short Term:** **12 months या उससे कम** के लिए hold किया गया।\n- **Long Term:** **12 months से ज़्यादा** के लिए hold किया गया।\n\n**Tax Rates (Latest Budget Rules):**\n1. **Short Term Capital Gains (STCG):** **20%** + Cess (अगर STT pay किया गया है) पर tax लगता है।\n2. **Long Term Capital Gains (LTCG):** एक साल में **Rs 1.25 Lakhs** से ज़्यादा के gains पर **12.5%** + Cess tax लगता है। (पहले यह 1 Lakh से ऊपर 10% था)।",
+      "why_this_is_important": "Clients अक्सर PMS में high churn (buying/selling) की शिकायत करते हैं क्योंकि एक साल के लिए hold करने (12.5%) की तुलना में short-term trading ज़्यादा tax (20%) attract करती है।",
+      "formula": "Tax = (Gain - Exemption) * Rate",
+      "formula_explanation": "LTCG के लिए: (Total Gain - 1.25 Lakhs) * 12.5%.",
+      "step_by_step_calculation_example": "आपने Reliance Rs 10 Lakhs में खरीदा। 14 months (Long Term) के बाद Rs 15 Lakhs में बेच दिया।\nProfit = 5 Lakhs.\n\nExempt Gain = 1.25 Lakhs.\nTaxable Gain = 5.00 - 1.25 = 3.75 Lakhs.\nTax = 3.75 Lakhs का 12.5% = Rs 46,875.",
+      "real_life_indian_example": "अगर PMS manager आपके HDFC Bank के shares खरीदने के 6 महीने के अंदर बेच देता है, तो आपको उस profit पर 20% tax pay करना होगा, भले ही आप पैसा withdraw न करें।",
+      "exam_traps": [
+        "STT (Securities Transaction Tax) Capital Gains के लिए एक expense के रूप में deductible नहीं है।",
+        "Rs 1.25 Lakhs की exemption सिर्फ Long Term Gains के लिए valid है, Short Term के लिए नहीं।"
+      ],
+      "memory_trick": "Short Term = 20% (High). Long Term = 12.5% (Low). Cut-off = 1 year."
+    },
+    {
+      "concept": "2. Taxation of Dividends",
+      "basic_meaning": "Companies से मिलने वाले regular cash payouts पर Tax।",
+      "detailed_explanation": "पहले, companies tax pay करती थीं (DDT)। अब, **आप (Investor) tax pay करते हैं**।\n\n1. **Tax Rate:** Dividend income आपकी total income में add हो जाती है और आपके **Marginal Slab Rate** पर tax लगता है (e.g., high earners के लिए 30%)।\n2. **TDS (Tax Deducted at Source):** \n   - अगर एक साल में dividend amount **Rs 5,000** से ज़्यादा है, तो company आपको pay करने से पहले **10% TDS** deduct करती है।\n   - आप अपने returns file करते समय इस TDS credit को claim कर सकते हैं।",
+      "why_this_is_important": "30% tax bracket वाले HNIs के लिए, dividends expensive होते हैं (effectively 30%+ tax)। वे 'Dividend' stocks के बजाय 'Growth' stocks prefer कर सकते हैं।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "आपको ITC से Rs 10,000 dividend मिलता है।\nCompany 10% (Rs 1,000) deduct करती है और आपको Rs 9,000 pay करती है।\nYear-end पर, अगर आप 30% bracket में हैं, तो आपकी total tax liability Rs 3,000 है।\nचूँकि Rs 1,000 पहले ही pay किया जा चुका है, आप बचे हुए Rs 2,000 pay करते हैं।",
+      "real_life_indian_example": "Vedanta Ltd high dividends pay करती है। Vedanta hold करने वाले एक PMS client को अपने bank account में पैसा आता हुआ दिखेगा, लेकिन बाद में उस पर tax pay करना याद रखना होगा।",
+      "exam_traps": [
+        "Dividends 'Income from Other Sources' होते हैं।",
+        "Dividend income से सिर्फ interest expense (20% तक) deduct किया जा सकता है, कोई और expenses नहीं।"
+      ],
+      "memory_trick": "Dividends = Salary. आपके slab पर tax लगता है।"
+    },
+    {
+      "concept": "3. Capital Gains vs. Business Income (Trader vs. Investor)",
+      "basic_meaning": "क्या आप wealth के लिए investing कर रहे हैं या living के लिए trading?",
+      "detailed_explanation": "यह एक grey area है। अगर PMS portfolio को बहुत aggressively churn करता है (daily buy/sell), तो Income Tax Department profits को **'Capital Gains'** के बजाय **'Business Income'** के रूप में classify कर सकता है।\n\n- **Capital Gains:** 12.5% या 20% पर Tax लगता है।\n- **Business Income:** Slab Rate (30% + Surcharge तक) पर Tax लगता है।\n\n**Criteria:** High frequency, short holding period, और 'intent to trade' आमतौर पर Business Income का signal देते हैं।",
+      "why_this_is_important": "PMS clients Capital Gains treatment (lower tax) चाहते हैं। Business income classification उनके लिए एक disaster है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Intraday trading (same day buy और sell) को हमेशा 'Speculative Business Income' माना जाता है, Capital Gains कभी नहीं।",
+      "exam_traps": [
+        "F&O (Derivatives) trading को 'Non-Speculative Business Income' माना जाता है।",
+        "Delivery-based investing आमतौर पर 'Capital Gains' होता है।"
+      ],
+      "memory_trick": "Investment = Fruit (Low tax). Business = Salary (High tax)."
+    },
+    {
+      "concept": "4. Tax Loss Harvesting",
+      "basic_meaning": "किसी winner stock पर tax बचाने के लिए एक loser stock बेचना।",
+      "detailed_explanation": "मान लीजिए TCS (Taxable) को बेचने से आपको Rs 5 Lakhs का profit हुआ है। आपको Yes Bank (Unrealized) पर Rs 2 Lakhs का loss भी है।\n\n**Strategy:** 2 Lakh के loss को 'book' करने के लिए 31st March से पहले Yes Bank को बेच दें।\n\n**Net Taxable Gain:** 5 Lakhs (Profit) - 2 Lakhs (Loss) = 3 Lakhs.\nआपने 2 Lakhs पर tax बचा लिया! यह perfectly legal है।",
+      "why_this_is_important": "PMS managers client के tax bill को कम करने के लिए March में actively ऐसा करते हैं।",
+      "formula": "Net Gain = Total Gain - Total Loss",
+      "formula_explanation": "Losses को gains के against set off किया जा सकता है।",
+      "step_by_step_calculation_example": "LTCG Gain: Rs 5,00,000.\nLTCG Loss booked: Rs 2,00,000.\nNet LTCG: Rs 3,00,000.\nTaxable amount (1.25L exempt के बाद): 1.75 Lakhs.",
+      "real_life_indian_example": "कई investors अपनी tax liability को कम करने के लिए March में अपने 'junk' stocks सिर्फ losses book करने के लिए बेच देते हैं।",
+      "exam_traps": [
+        "Long Term Loss को *सिर्फ* Long Term Gain के against set off किया जा सकता है।",
+        "Short Term Loss को Short Term और Long Term Gain *दोनों* के against set off किया जा सकता है।"
+      ],
+      "memory_trick": "Harvesting = Crop (net profit) की मदद के लिए weeds (losses) को काटना।"
+    },
+    {
+      "concept": "5. Bonus Stripping (The Loophole Closed)",
+      "basic_meaning": "सिर्फ Bonus पाने और 'fake' loss create करने के लिए shares खरीदना।",
+      "detailed_explanation": "पहले कुछ लोग Bonus issue के ठीक पहले shares खरीदते थे।\n- Rs 100 में खरीदा।\n- 1:1 Bonus मिलता है। Price Rs 50 हो जाता है। आपके पास 2 shares हो जाते हैं।\n- Original share को Rs 50 में बेच दिया।\n- **Fake Loss:** Rs 50 per share (100 - 50)।\n- इस loss का use कहीं और tax बचाने के लिए करते थे।\n\n**The Rule (Sec 94(8)):** अगर आप record date से 3 महीने पहले units/shares खरीदते हैं और उन्हें record date के 9 महीने के अंदर बेच देते हैं, तो tax purposes के लिए loss को **IGNORE** कर दिया जाता है।",
+      "why_this_is_important": "Tax evasion (चोरी) को रोकने के लिए। PMS managers को careful रहना चाहिए कि वे accidentally इस provision को trigger न कर दें।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Government की strictness Bonus issues को सिर्फ tax saving के लिए use करने से रोकती है।",
+      "exam_traps": [
+        "Loss को set off करने की allowance नहीं है। इसे hold किए गए bonus shares की cost का हिस्सा माना जाता है।",
+        "यह Mutual Funds और Stocks दोनों पर applicable है।"
+      ],
+      "memory_trick": "Stripping = Tax को strip away (हटाने) की कोशिश करना (Allowed नहीं है)।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "PMS Taxation vs. Mutual Fund Taxation",
+      "clear_explanation": "Mutual Fund में, Fund Manager 100 बार buy/sell करता है, लेकिन आप tax तभी pay करते हैं जब आप Mutual Fund units बेचते हैं। PMS में, जब भी Manager कोई stock बेचता है, तो आपको उस साल tax pay करना पड़ता है। MFs के comparison में PMS tax-inefficient है।"
+    },
+    {
+      "difference_between": "STT vs. TDS",
+      "clear_explanation": "STT (Securities Transaction Tax) exchange पर Transaction (Buy/Sell) पर pay किया जाता है। TDS (Tax Deducted at Source) Income (Dividend/Interest) के आप तक पहुँचने से पहले ही उसमें से deduct कर लिया जाता है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "LTCG threshold (Rs 1.25 Lakhs) और rate (12.5%)।",
+    "STCG rate (20%)।",
+    "Set-off rules: Long term loss Short term gain को set off नहीं कर सकता।",
+    "Dividends का Taxation (Slab rate)।",
+    "Speculative Transaction (Intraday) की Definition।"
+  ],
+  "quick_revision_summary": [
+    "> 12 months के लिए hold की गई Equity = Long Term.",
+    "LTCG Tax = 1.25 Lakhs के ऊपर 12.5%.",
+    "STCG Tax = 20%.",
+    "Dividends पर slab rates पर tax लगता है।",
+    "PMS investors manager द्वारा execute किए गए हर trade पर tax pay करते हैं।",
+    "Losses को 8 सालों तक carry forward किया जा सकता है।"
+  ]
+}

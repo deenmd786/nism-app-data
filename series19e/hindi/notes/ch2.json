@@ -1,0 +1,77 @@
+{
+  "course": "NISM-Series-XIX-E: Alternative Investment Fund Managers (Category III)",
+  "unit_number": 2,
+  "unit_name": "Types of Investments",
+  "weightage": "3% (Chapter 1 और 3 के साथ shared है)",
+  "overview": "यह chapter उन अलग-अलग 'buckets' को explore करता है जहाँ पैसा park किया जा सकता है। NISM exam के लिए, आपको यह समझना होगा कि हर investment में risk, return, और liquidity का एक अलग flavor होता है। यह growth के लिए 'Equity', safety के लिए 'Fixed Income', और 'Derivatives' को introduce करता है—जो कि Category III AIF managers द्वारा hedge या speculate करने के लिए use किए जाने वाले primary tools हैं। आगे के chapters में complex AIF strategies को समझने से पहले इन्हें समझना बहुत ज़रूरी है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Equity (Ownership in a Company)",
+      "basic_meaning": "जब आप equity खरीदते हैं, तो आप company के 'part-owner' (हिस्सेदार) बन जाते हैं। अगर company profit कमाती है, तो आपका फायदा होता है; अगर वह fail होती है, तो आपका नुकसान होता है।",
+      "detailed_explanation": "Equity एक company में 'residual interest' को represent करती है। इसका मतलब है कि company द्वारा अपने bills, taxes, और debt holders को pay करने के बाद, जो कुछ भी बचता है वह equity shareholders का होता है। \nInvestors दो तरह से पैसा कमाते हैं:\n1. Capital Appreciation: ₹100 में खरीदना और ₹150 में बेचना।\n2. Dividends: Company द्वारा अपने profit का एक हिस्सा आपके साथ share करना।\nEquities को आमतौर पर 'High Risk, High Return' माना जाता है क्योंकि इस बात की कोई guarantee नहीं होती कि आपको अपना पैसा वापस मिलेगा।",
+      "why_this_is_important": "Exam में 'risk hierarchy' की आपकी understanding test की जाती है—company के bankruptcy (दिवालिया होने) के case में equity holders को सबसे आखिर में payment मिलता है।",
+      "formula": "Return on Equity (RoE) = (Net Income / Shareholder's Equity) * 100",
+      "formula_explanation": "यह आपको बताता है कि company shareholders के हर 1 रुपये पर कितना profit कमा रही है।",
+      "step_by_step_calculation_example": "अगर एक company की Shareholder's Equity ₹10,00,000 है और वह ₹2,00,000 का Net Income कमाती है:\nStep 1: 2,00,000 को 10,00,000 से divide करें = 0.2\nStep 2: 100 से multiply करें = 20%.\nResult: RoE 20% है।",
+      "real_life_indian_example": "NSE पर Reliance Industries या Infosys के shares खरीदना एक equity investment है। आप उनकी growth में participate करते हैं।",
+      "exam_traps": [
+        "Common mistake: यह सोचना कि equity FD की तरह fixed return देती है। ऐसा बिल्कुल नहीं है।",
+        "Important point: Equity company के लिए 'Permanent Capital' है; जब तक company liquidate नहीं होती, उन्हें यह पैसा आपको वापस नहीं करना होता।"
+      ],
+      "memory_trick": "Equity = 'E' for Everyone's Boss (Owners) लेकिन साथ ही 'E' for Ends of the line (Paid last)."
+    },
+    {
+      "concept": "2. Fixed Income (Debt Instruments)",
+      "basic_meaning": "यह एक loan देने जैसा है। आप अपना पैसा किसी company या government को देते हैं, और वे इसे interest के साथ वापस करने का promise करते हैं।",
+      "detailed_explanation": "Fixed income assets (Bonds, Debentures, G-Secs) 'Contractual Obligations' होते हैं। Borrower को आपको regular intervals पर interest (जिसे 'Coupon' कहा जाता है) pay करना ही होता है। \nयहाँ Key risks ये हैं:\n1. Interest Rate Risk: जब market interest rates ऊपर जाते हैं, तो पुराने bonds का price नीचे चला जाता है।\n2. Credit Risk (Default Risk): यह डर कि borrower आपको पैसा वापस नहीं करेगा।",
+      "why_this_is_important": "AIFs अक्सर steady income के लिए debt का use करते हैं। आपको पता होना चाहिए कि debt, equity से ज़्यादा safe है क्योंकि debt holders को equity holders से पहले pay किया जाता है।",
+      "formula": "Current Yield = (Annual Coupon Payment / Current Market Price) * 100",
+      "formula_explanation": "यह आपको उस price के base पर actual return बताता है जो price आपने आज bond के लिए pay किया है, न कि उस price पर जो उस पर printed है।",
+      "step_by_step_calculation_example": "एक bond की Face Value ₹100 है और वह 10% coupon (₹10) pay करता है। हालाँकि, आप इसे market में ₹110 में खरीदते हैं।\nStep 1: Annual Coupon = ₹10.\nStep 2: Market Price = ₹110.\nStep 3: (10 / 110) * 100 = 9.09%.\nResult: आपकी Current Yield 9.09% है।",
+      "real_life_indian_example": "'Government of India Securities' (G-Secs) में invest करना India में सबसे safe fixed income है। Tata Capital जैसी private company के 'Corporate Bonds' खरीदना थोड़ा ज़्यादा risky है लेकिन यह ज़्यादा interest pay करता है।",
+      "exam_traps": [
+        "Inverse relationship: Interest Rates Up = Bond Prices Down. यह 100% guaranteed exam question topic है।",
+        "'Coupon Rate' (जो start में fixed होता है) को 'Yield' (जो market के साथ हर दिन बदलती है) के साथ confuse न करें।"
+      ],
+      "memory_trick": "Fixed Income = 'F' for Fixed Interest और 'F' for First in Line (Equity से पहले paid)."
+    },
+    {
+      "concept": "3. Derivatives (Futures and Options)",
+      "basic_meaning": "ये ऐसे contracts हैं जो अपनी value किसी और चीज़ (जैसे stock या gold) से 'derive' करते हैं। इनका use insurance (hedging) या gambling (speculation) के लिए किया जाता है।",
+      "detailed_explanation": "Category III AIFs unique हैं क्योंकि वे derivatives का extensively use कर सकते हैं। \n1. Futures: Future date पर किसी fixed price पर stock buy/sell करने का agreement। \n2. Options: यह आपको buy/sell करने का 'Right' (अधिकार) देता है, 'Obligation' (मज़बूरी) नहीं। \nDerivatives 'Leverage' allow करते हैं—आप एक छोटा सा 'Margin' pay करके stock के एक बहुत बड़े amount को control कर सकते हैं। इससे huge profits या huge losses हो सकते हैं।",
+      "why_this_is_important": "Category III AIFs मुख्य रूप से इन complex instruments के use से ही define होते हैं।",
+      "formula": "Not Applicable (Calculations आगे के chapters में आएँगे)",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "अगर AIF manager को डर है कि Nifty गिरेगा, तो वे 'Nifty Futures' sell कर सकते हैं। अगर market गिरता है, तो Futures contract से होने वाला profit उनके stock portfolio में होने वाले loss को offset कर देगा। इसे 'Hedging' कहा जाता है।",
+      "exam_traps": [
+        "एक common question 'Standardization' के बारे में होता है: Futures exchanges पर trade होते हैं और standardized होते हैं; Forwards private और customizable होते हैं।",
+        "याद रखें: Option (Call/Put) buy करने में 'Limited Loss' (सिर्फ premium का) होता है, लेकिन Option sell करने में 'Unlimited Loss' हो सकता है।"
+      ],
+      "memory_trick": "Derivative = 'D' for Derived Value और 'D' for Double-edged sword (High risk/reward)."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Growth Investing vs. Value Investing",
+      "clear_explanation": "**Growth Investing** में ऐसी companies खरीदना शामिल है जो तेज़ी से grow कर रही हैं (high P/E ratio), भले ही वे expensive हों। **Value Investing** में 'bargains' (सस्ते सौदे) ढूँढना शामिल है—ऐसी companies जो currently market द्वारा undervalued हैं (low P/E ratio) लेकिन fundamentally strong हैं।"
+    },
+    {
+      "difference_between": "Listed vs. Unlisted Securities",
+      "clear_explanation": "**Listed securities** stock exchanges (NSE/BSE) पर trade होती हैं और इन्हें बेचना बहुत आसान होता है। **Unlisted securities** (जैसे private companies) exchanges पर trade नहीं होती हैं और 'Illiquid' होती हैं, जिसका मतलब है कि जल्दी से buyer ढूँढना मुश्किल होता है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Interest Rates और Bond Prices के बीच का inverse relationship.",
+    "'Liquidity' की definition—बिना price loss के किसी asset को कितनी जल्दी cash में convert किया जा सकता है।",
+    "Potential returns और risks को बढ़ाने में 'Leverage' का role.",
+    "Assets को risk के हिसाब से rank करना: Cash < Debt < Equity < Derivatives."
+  ],
+  "quick_revision_summary": [
+    "Equity ownership और long-term growth देती है लेकिन safety के मामले में सबसे नीचे आती है।",
+    "Debt (Fixed Income) regular interest देता है और ज़्यादा safer है लेकिन interest rate changes के प्रति sensitive है।",
+    "Derivatives Category III AIFs के लिए hedging और leverage के core tools हैं।",
+    "Commodities (जैसे Gold) और Real Estate 'Physical Assets' हैं जो inflation protection के लिए use होते हैं।",
+    "हमेशा याद रखें: High Liquidity का मतलब आमतौर पर Lower Returns होता है (जैसे Savings Account)।"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "course": "NISM Series III-A: Securities Intermediaries Compliance",
+  "unit_number": 10,
+  "unit_name": "SEBI (KYC Registration Agency) Regulations, 2011",
+  "weightage": "2",
+  "overview": "यह एक छोटा लेकिन बहुत ही practical chapter है। 2011 से पहले, Indian market में invest करना paperwork का एक nightmare था। यदि आप Demat account खोलना चाहते थे, तो आपने अपना PAN और Aadhaar जमा किया। यदि आप उसके बाद mutual fund खरीदना चाहते थे, तो आपको ठीक उन्हीं documents की copies फिर से जमा करनी होती थीं! SEBI ने इसे solve करने के लिए 'KYC Registration Agency' (KRA) की शुरुआत की। Motto बन गया: 'KYC एक बार करें, इसे हर जगह उपयोग करें।' 2% weightage के साथ, 1 या 2 direct questions की अपेक्षा करें, जो आमतौर पर KRA शुरू करने के लिए आवश्यक net worth या documents upload करने की deadline पर focus करते हैं।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. KRA क्या है? ('One-Time KYC' concept)",
+      "basic_meaning": "KRA investor KYC documents के लिए एक centralized, digital storeroom है। यह investors को विभिन्न financial companies में बार-बार एक ही identity और address proof जमा करने से बचाता है।",
+      "detailed_explanation": "KRA को एक विशाल locker की तरह समझें。\nStep 1: आप account खोलने के लिए अपने पहले intermediary (जैसे stockbroker) के पास जाते हैं。\nStep 2: Broker आपके documents collect करता है, आपके original Aadhaar/PAN की जांच करता है, और आपका 'In-Person Verification' (IPV) करता है。\nStep 3: इस data को केवल अपने office में रखने के बजाय, broker आपके digital records KRA पर upload करता है。\nStep 4: अगले साल, यदि आप किसी mutual fund company में जाते हैं, तो वे आपसे फिर से आपके documents नहीं मांगेंगे। वे बस आपका PAN card number डालेंगे, KRA से connect करेंगे, और आपके already-verified KYC details download करेंगे। यह system को अविश्वसनीय रूप से fast और paperless बनाता है।",
+      "why_this_is_important": "Exam perspective: NISM test करेगा कि क्या आप समझते हैं कि KRA KYC के duplication को समाप्त करता है। Practical perspective: यह compliance departments के लिए भारी administrative costs बचाता है।",
+      "formula": "लागू नहीं (Not Applicable)",
+      "formula_explanation": "लागू नहीं",
+      "step_by_step_calculation_example": "लागू नहीं",
+      "real_life_indian_example": "आप Upstox के साथ एक Demat account खोलते हैं। Upstox आपका KYC करता है और इसे CVL (CDSL Ventures Limited) जैसे KRA पर upload करता है। छह महीने बाद, आप SBI Mutual Fund में invest करना चाहते हैं। SBI MF बिना आपसे एक भी paper का टुकड़ा मांगे CVL से आपका 'KYC Compliant' status प्राप्त कर लेगा।",
+      "exam_traps": [
+        "Trap: यह सोचना कि KRA client का original verification करता है। गलत (FALSE)। *Intermediary* (broker/mutual fund) client की physically जांच करने और IPV करने के लिए responsible है। KRA केवल वही *store* करता है जो intermediary upload करता है।",
+        "Trap: यह मानना कि investors अपने स्वयं के documents सीधे KRA website पर upload कर सकते हैं। नहीं, इसे SEBI-registered intermediary के माध्यम से जाना चाहिए।"
+      ],
+      "memory_trick": "KRA = KYC Records Archive (यह केवल records सुरक्षित रूप से store/archive करता है)।"
+    },
+    {
+      "concept": "2. KRA बनने के लिए Eligibility और Net Worth",
+      "basic_meaning": "चूंकि KRAs लाखों भारतीयों का sensitive personal data रखते हैं, इसलिए SEBI किसी को भी इसे खोलने की अनुमति नहीं देता है। आपको strong financial backing और एक clean reputation की आवश्यकता है।",
+      "detailed_explanation": "KRA के रूप में काम करने के लिए SEBI से license प्राप्त करने के लिए, किसी company को strict criteria को पूरा करना होगा:\n1. **कौन apply कर सकता है:** यह किसी stock exchange (जैसे NSE/BSE) या depository (जैसे NSDL/CDSL) की wholly-owned subsidiary होनी चाहिए。\n2. **Net Worth Requirement:** KRA के पास continuous basis पर **₹25 Crores** का minimum net worth होना चाहिए。\n3. **Fit and Proper:** किसी भी अन्य intermediary की तरह, KRA के directors और promoters को 'Fit and Proper' person होना चाहिए (कोई criminal record नहीं, financially sound)।",
+      "why_this_is_important": "₹25 Crores की limit exam के लिए एक highly probable numerical question है।",
+      "formula": "लागू नहीं",
+      "formula_explanation": "लागू नहीं",
+      "step_by_step_calculation_example": "लागू नहीं",
+      "real_life_indian_example": "Depository CDSL ने 'CVL' (CDSL Ventures Limited) नाम की एक अलग subsidiary बनाई। CVL ने ₹25 Crores का net worth maintain किया, SEBI में apply किया, और भारत का पहला और सबसे बड़ा KRA बन गया।",
+      "exam_traps": [
+        "Trap: KRA के लिए required net worth (₹25 Crores) को एक regular stock broker के net worth के साथ confuse करना। हमेशा याद रखें कि KRAs national-level का data संभालते हैं, इसलिए उनकी requirement बहुत अधिक है।",
+        "Trap: यह सोचना कि एक standalone tech startup KRA बन सकता है। वे नहीं बन सकते, जब तक कि वे किसी recognized stock exchange या depository द्वारा backed/owned न हों।"
+      ],
+      "memory_trick": "Records को जीवित रखने (To Keep Records Alive - KRA) के लिए, आपको survive करने के लिए 25 Crores की आवश्यकता है।"
+    },
+    {
+      "concept": "3. Data Uploading और 'Interoperability'",
+      "basic_meaning": "KRA को कितनी तेज़ी से data भेजा जाना चाहिए, और विभिन्न KRAs को एक-दूसरे से कैसे बात करनी चाहिए ताकि investor को कभी भी block का सामना न करना पड़े, इस पर rules।",
+      "detailed_explanation": "1. **The 10-Day Rule:** एक बार जब कोई intermediary (जैसे broker) किसी investor के documents को verify करता है और उनका account खोलता है, तो intermediary के पास KRA system पर original KYC data और scanned documents upload करने के लिए ठीक **10 working days** होते हैं。\n2. **Interoperability:** भारत में कई KRAs (जैसे CVL, NDML, DotEx) हैं। क्या होगा यदि आपके broker ने आपका data CVL पर upload कर दिया, लेकिन जो नया mutual fund आप खरीदना चाहते हैं वह केवल NDML को check करता है?\n    SEBI 'Interoperability' को mandate करता है। इसका मतलब है कि सभी KRAs digitally linked हैं। यदि NDML को आपके PAN के लिए request मिलता है, तो वह चुपचाप CVL से data fetch करेगा और इसे mutual fund को दे देगा। Investor को इस बारे में चिंता करने की आवश्यकता नहीं है कि *कौन सा* KRA उनका data hold करता है।",
+      "why_this_is_important": "आप बहुत संभवतः एक question देखेंगे जिसमें पूछा जाएगा कि intermediaries के पास data upload करने की deadline क्या है। उत्तर 10 working days है।",
+      "formula": "लागू नहीं",
+      "formula_explanation": "लागू नहीं",
+      "step_by_step_calculation_example": "लागू नहीं",
+      "real_life_indian_example": "यदि आप 1 तारीख सोमवार को account खोलते हैं, तो आपके broker की compliance team को यह सुनिश्चित करना होगा कि आपका scanned Aadhaar, PAN और signature 12 तारीख शुक्रवार को या उससे पहले KRA portal पर successfully upload कर दिए जाएं (public holidays exclude करके)।",
+      "exam_traps": [
+        "Trap: यह मानना कि 10 days की limit *KRA* के लिए data process करने के लिए है। नहीं, 10 days की limit *intermediary* के लिए KRA पर data upload करने के लिए है।",
+        "Trap: 'Interoperability' शब्द को न जानना। इसका सीधा सा मतलब है कि विभिन्न KRAs के computer systems एक-दूसरे से बात कर सकते हैं और safely files share कर सकते हैं।"
+      ],
+      "memory_trick": "Interoperability = Inter-connected Operations. Details dispatch करने के लिए 10 days."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Intermediary vs KRA",
+      "clear_explanation": "Intermediary (broker/mutual fund) 'Front Office' है - वे client के साथ interact करते हैं, face-to-face original documents की जांच करते हैं, और initial verification की responsibility लेते हैं। KRA 'Back Office Server' है - वे कभी भी client से नहीं मिलते हैं; वे केवल intermediary द्वारा upload किए गए electronic data को store करते हैं और request किए जाने पर इसे अन्य intermediaries के साथ share करते हैं।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "KRA establish करने के लिए required minimum net worth (₹25 Crores)।",
+    "Intermediary द्वारा KRA पर KYC documents upload करने की deadline (10 working days)।",
+    "कई KRAs के बीच 'Interoperability' की concept को समझना।",
+    "यह जानना कि initial KYC verification करने की ultimate responsibility किसके पास है (Intermediary की, KRA की नहीं)।"
+  ],
+  "quick_revision_summary": [
+    "KRA पूरे SEBI securities market के लिए 'One-Time KYC' को enable बनाता है।",
+    "Investors intermediaries से deal करते हैं; intermediaries KRA से deal करते हैं。",
+    "Intermediaries को documents verify करना होगा और 10 working days के भीतर KRA पर upload करना होगा।",
+    "एक KRA के पास कम से कम ₹25 Crores का net worth होना चाहिए।",
+    "Stock exchanges या depositories की केवल subsidiaries ही KRA बन सकती हैं।",
+    "Interoperability यह सुनिश्चित करती है कि सभी KRAs एक-दूसरे के साथ तुरंत data share करें ताकि investors को परेशानी न हो।",
+    "KRA duplicate paperwork को रोकता है, जिससे सभी के लिए time और cost की बचत होती है।"
+  ]
+}

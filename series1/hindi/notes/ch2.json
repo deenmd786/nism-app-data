@@ -1,0 +1,92 @@
+{
+  "course": "NISM Series I: Currency Derivatives",
+  "unit_number": 2,
+  "unit_name": "Foreign Exchange Derivatives",
+  "weightage": "5%",
+  "overview": "यह चैप्टर 'Derivatives' के concept का परिचय देता है। यूनिट 1 में, हमने बुनियादी currency market के बारे में सीखा था। अब, हम उन विशेष financial contracts (जैसे Forwards, Futures, और Options) के बारे में सीखेंगे जो लोगों को currency की कीमतों में होने वाले बदलावों से खुद को बचाने में मदद करते हैं। भले ही इस यूनिट का परीक्षा में weightage केवल 5% है, लेकिन यह यूनिट 3 और यूनिट 4 के लिए एक मजबूत नींव (core foundation) बनाता है, जिनका कुल weightage 40% है। इस परीक्षा को पास करने के लिए आपको Forwards और Futures के बीच का अंतर पूरी तरह से समझना ही होगा।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Derivative क्या है?",
+      "basic_meaning": "Derivative एक ऐसा financial contract है जिसकी value किसी अन्य चीज़ पर निर्भर करती है (या उससे 'derived' होती है)। उस 'अन्य चीज़' को 'Underlying Asset' कहा जाता है।",
+      "detailed_explanation": "Step 1: दूध और पनीर के बारे में सोचें। पनीर की कीमत पूरी तरह से दूध की कीमत पर निर्भर करती है। अगर दूध महंगा हो जाता है, तो पनीर अपने आप महंगा हो जाता है。\nStep 2: यहाँ, दूध 'Underlying Asset' है और पनीर 'Derivative' है。\nStep 3: Currency market में, 'Underlying Asset' वास्तविक currency pair (जैसे USDINR का spot rate) होता है। और 'Derivative' उस USDINR rate पर आधारित forward, future या option contract होता है।",
+      "why_this_is_important": "परीक्षा के लिए, वे आपसे किसी currency derivative के underlying asset की पहचान करने के लिए कहेंगे। व्यावहारिक रूप से, आप underlying asset को समझे बिना किसी derivative में trade नहीं कर सकते।",
+      "formula": "लागू नहीं (Not Applicable)",
+      "formula_explanation": "लागू नहीं",
+      "step_by_step_calculation_example": "लागू नहीं",
+      "real_life_indian_example": "यदि open market (underlying) में USD का spot price ₹82 से बढ़कर ₹84 हो जाता है, तो National Stock Exchange (NSE) पर trade हो रहे USDINR futures contract (derivative) की कीमत भी तेजी से बढ़ जाएगी।",
+      "exam_traps": [
+        "यह सोचना कि derivative की अपनी खुद की कोई स्वतंत्र value होती है। गलत (False)! इसकी value पूरी तरह से underlying asset पर निर्भर करती है।",
+        "Derivative को वास्तविक asset समझ लेना। USD derivative खरीदने का मतलब यह बिल्कुल नहीं है कि आपके bank account में तुरंत असली अमेरिकी dollar आ जाएंगे।"
+      ],
+      "memory_trick": "Derivative = Dependent (आश्रित)। इसकी अपनी कोई value नहीं होती; यह सिर्फ अपने boss (underlying asset) की नकल करता है।"
+    },
+    {
+      "concept": "2. Forward Contracts",
+      "basic_meaning": "Forward contract दो पार्टियों के बीच भविष्य की एक निश्चित तारीख पर, पहले से तय की गई कीमत पर currency खरीदने या बेचने का एक private और customized समझौता है।",
+      "detailed_explanation": "Step 1: कल्पना करें कि आप एक भारतीय exporter हैं जिन्हें 3 महीने बाद $10,000 मिलने वाले हैं। आपको डर है कि तब तक dollar की कीमत गिर सकती है。\nStep 2: आप अपने bank (जैसे HDFC) के पास जाते हैं और एक private agreement करते हैं: 'मैं आज से ठीक 3 महीने बाद आपको ₹83.00 के rate पर $10,000 बेचूंगा'。\nStep 3: Bank सहमत हो जाता है। यह एक forward contract है। यह एक OTC (Over-The-Counter) product है, जिसका मतलब है कि यह किसी public exchange पर trade नहीं होता है。\nStep 4: क्योंकि यह private है, आप इसमें amount (जैसे $10,452 जैसे विषम नंबर) और सटीक तारीख को अपनी सुविधानुसार customize कर सकते हैं।",
+      "why_this_is_important": "यह परीक्षा के लिए बहुत महत्वपूर्ण है। NISM परीक्षा में OTC/forward contracts से जुड़े risks पर आपके ज्ञान का परीक्षण किया जाता है।",
+      "formula": "लागू नहीं",
+      "formula_explanation": "लागू नहीं",
+      "step_by_step_calculation_example": "लागू नहीं",
+      "real_life_indian_example": "TCS एक UK के client को software देने का contract sign करती है और उसे 45 दिनों में £50,000 का भुगतान किया जाएगा। TCS, SBI को call करती है और आज ही rupee-pound exchange rate को lock करने के लिए 45-day का forward contract बनाती है। यदि कल pound crash भी हो जाता है, तो TCS सुरक्षित है।",
+      "exam_traps": [
+        "Counterparty Risk को नज़रअंदाज़ करना। Forward contract में, क्या होगा यदि bank दिवालिया हो जाए या ग्राहक भाग जाए? इसे Default Risk या Counterparty Risk कहा जाता है, और forwards में यह बहुत अधिक होता है।",
+        "यह सोचना कि forwards NSE/BSE पर trade होते हैं। गलत। ये Over-The-Counter (OTC) होते हैं।"
+      ],
+      "memory_trick": "Forwards एक दर्जी (Tailor) द्वारा सिले गए suit की तरह हैं। ये आपके size (amount/date) के हिसाब से private रूप से बनाए जाते हैं, लेकिन अगर दर्जी आपका कपड़ा लेकर भाग जाए, तो नुकसान आपका होगा (यही Counterparty Risk है)।"
+    },
+    {
+      "concept": "3. Futures Contracts",
+      "basic_meaning": "Futures contract बिल्कुल forward contract की तरह ही होता है, लेकिन यह एक मान्यता प्राप्त stock exchange (जैसे NSE या BSE) पर सार्वजनिक रूप से trade किया जाता है। क्योंकि यह exchange पर होता है, यह पूरी तरह से standardized और सुरक्षित होता है।",
+      "detailed_explanation": "Step 1: Private रूप से bank जाने के बजाय, आप एक broker (जैसे Zerodha) के साथ trading account खोलते हैं और NSE पर खरीदते/बेचते हैं。\nStep 2: Exchange कुछ निश्चित नियम बनाता है। आप मनचाहे amount में trade नहीं कर सकते। USDINR के लिए एक standard lot ठीक $1,000 का होता है。\nStep 3: Expiry date भी fix होती है (आमतौर पर महीने का आखिरी working day)।\nStep 4: यह सुनिश्चित करने के लिए कि कोई भागे नहीं, exchange खरीदारों और विक्रेताओं दोनों से एक safety deposit लेता है। इसे 'Margin' कहा जाता है。\nStep 5: Clearing Corporation एक बिचौलिए के रूप में कार्य करता है और guarantee देता है कि trade settle किया जाएगा।",
+      "why_this_is_important": "यह NISM currency परीक्षा का core है। परीक्षा के अधिकांश प्रश्न futures के इर्द-गिर्द घूमेंगे और पूछेंगे कि वे कैसे standardized और risk-free होते हैं।",
+      "formula": "लागू नहीं",
+      "formula_explanation": "लागू नहीं",
+      "step_by_step_calculation_example": "लागू नहीं",
+      "real_life_indian_example": "पुणे में बैठा एक retail trader सोचता है कि अगले महीने रुपया कमजोर होगा। वह आसानी से forward contract करने के लिए bank नहीं जा सकता। इसके बजाय, वह अपने Zerodha app में log in करता है, एक छोटा सा margin amount देता है, और NSE पर USDINR futures का 1 lot खरीदता है।",
+      "exam_traps": [
+        "OTC को exchange-traded के साथ confuse करना। Futures हमेशा exchange-traded होते हैं।",
+        "यह सोचना कि futures में counterparty risk होता है। गलत। Clearing Corporation हर trade की guarantee देता है, इसलिए counterparty risk शून्य (ZERO) होता है।"
+      ],
+      "memory_trick": "Futures किसी mall से खरीदे गए readymade shirts की तरह हैं। Fixed size (standard lot size), fixed price, बहुत सुरक्षित (mall/exchange द्वारा guaranteed), लेकिन आपको पहले cash counter पर भुगतान करना होगा (margin)।"
+    },
+    {
+      "concept": "4. Options Contracts - Basic Intro",
+      "basic_meaning": "एक option आपको भविष्य में एक निश्चित कीमत पर currency खरीदने या बेचने का अधिकार (RIGHT) देता है, लेकिन दायित्व (obligation) नहीं। इस अधिकार के लिए, आप एक non-refundable fees देते हैं जिसे 'Premium' कहा जाता है।",
+      "detailed_explanation": "Step 1: कल्पना करें कि आप अगले महीने ₹50 लाख में जमीन का एक plot खरीदना चाहते हैं, लेकिन आपको डर है कि कीमत ₹60 लाख तक जा सकती है。\nStep 2: आप आज ही विक्रेता को ₹1 लाख का token amount (premium) देते हैं। समझौता कहता है: 'मेरे पास अगले महीने इस जमीन को ₹50 लाख में खरीदने का अधिकार है। यदि market price ₹40 लाख तक गिर जाता है, तो मैं deal cancel कर दूंगा और अपना ₹1 लाख का token गँवा दूँगा। लेकिन अगर यह ₹60 लाख हो जाता है, तो आपको इसे मुझे ₹50 लाख में ही बेचना होगा'।\nStep 3: Currency markets में, 'Call Options' आपको खरीदने का अधिकार (Right to BUY) देते हैं। 'Put Options' आपको बेचने का अधिकार (Right to SELL) देते हैं。\nStep 4: Forwards और futures के विपरीत, जहाँ आपको trade पूरा करना ही होता है, options आपको यह विकल्प देते हैं कि यदि market आपके खिलाफ जाता है तो आप पीछे हट सकते हैं।",
+      "why_this_is_important": "Real life में options बहुत लोकप्रिय हैं क्योंकि ये आपके नुकसान को केवल चुकाए गए premium तक सीमित कर देते हैं। यह unit केवल उनका परिचय देती है; unit 4 उन्हें विस्तार से cover करती है।",
+      "formula": "लागू नहीं",
+      "formula_explanation": "लागू नहीं",
+      "step_by_step_calculation_example": "लागू नहीं",
+      "real_life_indian_example": "एक importer को अगले महीने $10,000 का भुगतान करना है। वह ₹0.50 प्रति dollar का एक छोटा सा premium देकर ₹83 पर एक USDINR call option (USD खरीदने का अधिकार) खरीदता है। यदि USD ₹85 तक पहुँच जाता है, तो वह अपने option का उपयोग करता है और ₹83 में खरीदता है। यदि USD गिरकर ₹80 हो जाता है, तो वह option को छोड़ देता है और open market से ₹80 में सस्ते में खरीद लेता है।",
+      "exam_traps": [
+        "यह सोचना कि option के buyer को खरीदना/बेचना ही पड़ता है। गलत। यह एक अधिकार (RIGHT) है, दायित्व (obligation) नहीं।",
+        "यह सोचना कि option के seller/writer के पास कोई choice है। गलत! Seller को buyer के फैसले का पालन करना ही पड़ता है। Seller का दायित्व (obligation) होता है।"
+      ],
+      "memory_trick": "Call = Call up to buy (खरीदने का अधिकार)। Put = Put down to sell (बेचने का अधिकार)। Option buyer राजा होता है; वही फैसला करता है।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Forward Contracts vs Futures Contracts",
+      "clear_explanation": "Forwards private (OTC) होते हैं, अत्यधिक customizable होते हैं (कोई भी amount/date), लेकिन इनमें high default risk (counterparty risk) होता है और इनमें किसी standard upfront margin की आवश्यकता नहीं होती है। Futures public (exchange-traded) होते हैं, अत्यधिक standardized होते हैं (fixed lot size/expiry date), इनमें zero default risk होता है (Clearing Corporation की guarantee के कारण), और इनमें सभी के लिए upfront margin deposit जमा करना अनिवार्य होता है।"
+    },
+    {
+      "difference_between": "Futures vs Options",
+      "clear_explanation": "एक futures contract में, भविष्य की तारीख पर trade पूरा करने के लिए दोनों पार्टियां बाध्य (OBLIGATED) होती हैं, चाहे market price कुछ भी हो। एक options contract में, केवल seller बाध्य होता है। Buyer के पास यह चुनने का अधिकार (RIGHT) होता है कि वह trade पूरा करे या अपना शुरुआती premium कुर्बान करके पीछे हट जाए।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Forwards और futures के बीच का अंतर (विशेषकर counterparty risk और standardization के संदर्भ में)।",
+    "किसी विशिष्ट derivative contract के लिए underlying asset की पहचान करना।",
+    "यह समझना कि options buyer को 'अधिकार देते हैं लेकिन दायित्व नहीं' (right but not obligation)।",
+    "यह पहचानना कि default को रोकने के लिए margin, futures की एक अनिवार्य विशेषता है।"
+  ],
+  "quick_revision_summary": [
+    "Derivatives अपनी value एक underlying asset (जैसे वास्तविक currency spot rate) से प्राप्त करते हैं।",
+    "Forwards = OTC market, customized, high counterparty risk.",
+    "Futures = Exchange traded, standardized (fixed lots/dates), zero counterparty risk (Clearing Corporation के कारण)।",
+    "Options = Buyer को एक premium चुकाकर अधिकार (right) मिलता है (दायित्व नहीं)।",
+    "Call Option = Right to Buy. Put Option = Right to Sell."
+  ]
+}

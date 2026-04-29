@@ -1,0 +1,90 @@
+{
+  "course": "NISM Series XXI-B: Portfolio Managers Certification Examination",
+  "unit_number": 10,
+  "unit_name": "Taxation (कराधान)",
+  "weightage": "5 Marks",
+  "overview": "Taxation portfolio management का एक महत्वपूर्ण हिस्सा है क्योंकि client के लिए मायने रखने वाला एकमात्र return 'Net Return' (tax के बाद का profit) है। यह unit बताता है कि भारत में विभिन्न प्रकार के investment gains पर कैसे tax लगता है। आप Short-Term और Long-Term Capital Gains के बारे में सीखेंगे, asset के आधार पर holding periods कैसे बदलते हैं, और Dividends का impact क्या होता है। NISM exam के लिए, clients को tax-efficient तरीके से अपने investments plan करने में मदद करने के लिए आपको इन rules को समझना चाहिए।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Capital Gains: Short-Term vs. Long-Term",
+      "basic_meaning": "किसी investment को बेचने पर हुए profit पर जो tax आप pay करते हैं।",
+      "detailed_explanation": "Capital Gains को इस आधार पर दो प्रकारों में बांटा गया है कि आपने asset को बेचने से पहले कितने समय तक hold किया था:\n1. **Short-Term Capital Gains (STCG):** 'Short' (कम) समय के लिए hold किए गए asset को बेचने से हुआ profit। इन पर आमतौर पर higher rates से tax लगता है।\n2. **Long-Term Capital Gains (LTCG):** 'Long' (लंबे) समय के लिए hold किए गए asset को बेचने से हुआ profit। long-term investing को प्रोत्साहित करने के लिए इन्हें अक्सर lower tax rates या special exemptions मिलते हैं।\n\n'Short' और 'Long' की definition asset के प्रकार (Equity, Debt, या Real Estate) पर निर्भर करती है।",
+      "why_this_is_important": "Holding period जानने से manager को यह सलाह देने में मदद मिलती है कि tax को minimize करने के लिए client को कब बेचना चाहिए।",
+      "formula": "Capital Gain = Sale Price - Cost of Acquisition",
+      "formula_explanation": "आपने जिस price पर asset को बेचा है, उसमें से वह price घटाएं जो आपने उसके लिए pay किया था।",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "यदि आप जनवरी में कोई stock खरीदते हैं और उसी साल जून में बेचते हैं, तो आपका profit STCG है। यदि आप अगले साल फरवरी तक इंतजार करते हैं, तो यह LTCG बन जाता है।",
+      "exam_traps": [
+        "यह सोचना कि सभी assets में LTCG के लिए 1 साल की limit होती है। Equity के लिए 1 साल है, लेकिन Real Estate और Unlisted Shares के लिए 2 साल है, और Debt (April 2023 से पहले खरीदे गए) के लिए 3 साल था।"
+      ],
+      "memory_trick": "Holding Period = आपके investment की 'Age' (उम्र)।"
+    },
+    {
+      "concept": "2. Taxation of Listed Equity (Stocks)",
+      "basic_meaning": "Indian stock exchange पर कमाए गए profits के rules।",
+      "detailed_explanation": "जिन shares पर Securities Transaction Tax (STT) pay किया गया है, उनके लिए:\n- **LTCG के लिए Holding Period:** 12 महीने से अधिक।\n- **LTCG Tax Rate:** एक financial year में Rs. 1 Lakh से अधिक के profits पर 10% (Indexation allowed नहीं है)।\n- **STCG Tax Rate:** Flat 15%.\n- **Dividend Tax:** Dividends को investor की total income में जोड़ा जाता है और उनके applicable slab rate (जैसे, 5%, 20%, या 30%) पर tax लगाया जाता है।",
+      "why_this_is_important": "PMS में Equity सबसे common asset है, इसलिए calculations में इन rates का सबसे अधिक उपयोग किया जाता है।",
+      "formula": "Taxable LTCG = Total LTCG - Rs. 1,00,000",
+      "formula_explanation": "आप केवल उस long-term profit की amount पर 10% tax देते हैं जो एक लाख रुपये से ऊपर है।",
+      "step_by_step_calculation_example": "1. Client stocks को 2 साल तक hold करने के बाद Rs. 1,50,000 profit कमाता है।\n2. Exemption = Rs. 1,00,000.\n3. Taxable Amount = 1,50,000 - 1,00,000 = Rs. 50,000.\n4. Tax (10%) = 50,000 * 10% = Rs. 5,000.",
+      "real_life_indian_example": "एक बच्चे की शिक्षा के लिए fund जुटाने के लिए 14 महीने बाद NSE पर अपने TCS shares बेचना।",
+      "exam_traps": [
+        "Equity LTCG के लिए 1 Lakh exemption को भूल जाना।",
+        "यह सोचना कि dividends अभी भी tax-free हैं। वे अप्रैल 2020 से investor के हाथों में taxable हैं।"
+      ],
+      "memory_trick": "Equity: 1 year / 15% Short / 10% Long (>1L)."
+    },
+    {
+      "concept": "3. Taxation of Debt Instruments",
+      "basic_meaning": "Bonds और Debt Mutual Funds के लिए Tax rules।",
+      "detailed_explanation": "Debt Mutual Funds के rules 1 April, 2023 को काफी बदल गए:\n1. **New Rules (Post-April 2023):** Debt funds (जहां equity < 35% है) से किसी भी profit को 'Short-Term' माना जाता है, चाहे holding period कुछ भी हो। इसे आपकी income में जोड़ा जाता है और आपके slab rate पर tax लगाया जाता है।\n2. **Direct Bonds:** आमतौर पर, interest पर slab rates पर tax लगता है। यदि 1 साल बाद exchange पर बेचा जाता है, तो LTCG 10% (बिना indexation के) है।",
+      "why_this_is_important": "हालिया बदलाव ने पुराने rules की तुलना में debt funds को कम tax-efficient बना दिया, जिससे portfolio strategy पर असर पड़ा है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "30% tax bracket में एक wealthy client liquid fund में invest करता है; जब वे पैसे निकालेंगे तो उन्हें अपने पूरे profit पर 30% tax देना होगा।",
+      "exam_traps": [
+        "पुराने debt fund rules (indexation के साथ 20%) को नए slab-rate rules के साथ confuse करना। Exam के लिए, नए investments के लिए current slab-rate requirement पर focus करें।"
+      ],
+      "memory_trick": "New Debt Funds = कोई LTCG benefit नहीं (हमेशा Slab Rate)।"
+    },
+    {
+      "concept": "4. Indexation Benefit",
+      "basic_meaning": "कम tax देने के लिए inflation (महंगाई) के अनुसार purchase price को adjust करना।",
+      "detailed_explanation": "Inflation पैसे की value कम कर देता है। Indexation आपके investment की 'paper cost' को बढ़ाने के लिए 'Cost Inflation Index' (CII) का उपयोग करता है। यह आपके 'paper profit' को कम कर देता है, जिससे आप कम tax देते हैं। \n- **Applicability:** मुख्य रूप से LTCG calculations के लिए Real Estate और Unlisted Shares के लिए उपयोग किया जाता है।",
+      "why_this_is_important": "यह investor को उन 'gains' पर tax देने से बचाता है जो वास्तव में केवल inflation के कारण हुए थे।",
+      "formula": "Indexed Cost = Purchase Price * (CII of Sale Year / CII of Purchase Year)",
+      "formula_explanation": "Original price को दोनों सालों के बीच के inflation ratio से multiply करें।",
+      "step_by_step_calculation_example": "1. 10 Lakhs में property खरीदी (CII 100 था)।\n2. 25 Lakhs में बेची (CII अब 300 है)।\n3. Indexed Cost = 10 * (300 / 100) = 30 Lakhs.\n4. Result: Technically tax purposes के लिए 5 Lakhs का loss, इसलिए zero LTCG tax!",
+      "real_life_indian_example": "20 वर्षों तक रखे गए family plot को बेचने वाला एक investor tax bill को काफी कम करने के लिए indexation का उपयोग करता है।",
+      "exam_traps": [
+        "Equity LTCG पर indexation apply करने की कोशिश करना। Listed equity के लिए इसकी अनुमति (allowed) नहीं है।"
+      ],
+      "memory_trick": "Indexation = Inflation adjustment = Lower Tax."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Tax Avoidance vs. Tax Evasion",
+      "clear_explanation": "**Tax Avoidance:** Legal planning है (जैसे, ELSS में invest करना)। **Tax Evasion:** Illegal cheating है (जैसे, income छिपाना)।"
+    },
+    {
+      "difference_between": "STCG vs. LTCG",
+      "clear_explanation": "**STCG:** Short holdings के लिए है (slab पर/higher tax लगता है)। **LTCG:** Long holdings के लिए है (lower rates/exemptions मिलते हैं)।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Equity (12 महीने) vs Real Estate (24 महीने) के लिए Holding period।",
+    "Equity के लिए LTCG tax rate (1 Lakh से ऊपर 10%)।",
+    "Dividends की Taxability (2020 से slab rates पर)।",
+    "Equity STCG के लिए 15% flat rate।"
+  ],
+  "quick_revision_summary": [
+    "Equity LTCG (>12 महीने) = Rs. 1 Lakh के profit के ऊपर 10% tax.",
+    "Equity STCG (<12 महीने) = 15% flat tax.",
+    "Dividends पर हमेशा आपके Income Tax Slab rate के हिसाब से tax लगता है।",
+    "New Debt Mutual Fund profits पर हमेशा slab rates के हिसाब से tax लगता है।",
+    "Indexation का उपयोग Real Estate LTCG (20% tax rate) के लिए किया जाता है।",
+    "Portfolio Managers को clients के लिए maximum 'Post-Tax' returns का लक्ष्य रखना चाहिए।"
+  ]
+}

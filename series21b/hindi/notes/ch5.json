@@ -1,0 +1,97 @@
+{
+  "course": "NISM Series XXI-B: Portfolio Managers Certification Examination",
+  "unit_number": 5,
+  "unit_name": "Derivatives (डेरिवेटिव्स)",
+  "weightage": "5 अंक",
+  "overview": "पिछले चैप्टर्स में, हमने शेयरों और बॉन्ड जैसी 'primary' assets के बारे में सीखा। यूनिट 5 'Derivatives' को पेश करता है—जटिल वित्तीय उपकरण (complex financial instruments) जिनका अपना कोई मूल्य नहीं होता है, बल्कि वे इसे किसी अन्य चीज़ (जैसे स्टॉक, इंडेक्स या कमोडिटी) से 'derive' (प्राप्त) करते हैं। Derivative को एक underlying asset (अंतर्निहित संपत्ति) के मूल्य उतार-चढ़ाव पर आधारित एक साइड-बेट (side-bet) या बीमा पॉलिसी (insurance policy) के रूप में सोचें। NISM परीक्षा के लिए, यह यूनिट इस बात पर केंद्रित है कि निवेशक derivatives का उपयोग क्यों करते हैं (Hedging बनाम Speculation) और इसके दो सबसे आम प्रकारों: Futures और Options के तंत्र (mechanics) क्या हैं।",
+  
+  "complete_concept_explanation": [
+    {
+      "concept": "1. What is a Derivative? (डेरिवेटिव क्या है?)",
+      "basic_meaning": "दो पार्टियों के बीच एक अनुबंध (contract) जिसका मूल्य किसी underlying asset (अंतर्निहित संपत्ति) पर निर्भर करता है।",
+      "detailed_explanation": "कल्पना करें कि आप अगले महीने एक हाई-एंड स्मार्टफोन खरीदना चाहते हैं। आपको चिंता है कि कीमत बढ़ जाएगी। आप आज एक दुकानदार के साथ एक अनुबंध (contract) करते हैं कि आप इसे अगले महीने ठीक 50,000 रुपये में खरीदेंगे।\n- अनुबंध (contract) अपने आप में **Derivative** है।\n- स्मार्टफोन **Underlying Asset** है।\n- आपके अनुबंध का मूल्य फोन के बाजार मूल्य के आधार पर बदलता है। यदि फोन की कीमत बढ़कर 60,000 रुपये हो जाती है, तो इसे 50,000 रुपये में खरीदने का आपका 'अधिकार' (right) अब 10,000 रुपये का हो गया है। Derivatives का उपयोग वास्तविक संपत्ति के मालिक हुए बिना जोखिम (risk) को प्रबंधित करने या मुनाफा कमाने के लिए किया जाता है।",
+      "why_this_is_important": "Portfolio managers derivatives का उपयोग क्लाइंट के पोर्टफोलियो को बाजार क्रैश से बचाने (Hedging) या लीवरेज (leverage) के माध्यम से रिटर्न बढ़ाने के लिए करते हैं।",
+      "formula": "लागू नहीं",
+      "formula_explanation": "लागू नहीं",
+      "step_by_step_calculation_example": "लागू नहीं",
+      "real_life_indian_example": "एक किसान अपनी गेहूं की फसल एक बिस्किट कंपनी को 3 महीने बाद एक निश्चित कीमत पर बेचने के लिए सहमत होता है। यह 'Forward Contract' किसान को गेहूं की गिरती कीमतों से बचाता है।",
+      "exam_traps": [
+        "यह सोचना कि derivatives का अपना वास्तविक मूल्य (intrinsic value) होता है। ऐसा नहीं है। यदि underlying asset गायब हो जाता है, तो derivative बेकार (worthless) हो जाता है।",
+        "यह मान लेना कि derivatives केवल शेयरों के लिए हैं। वे ब्याज दरों (interest rates), मुद्राओं (currencies), या यहां तक कि मौसम (weather) पर भी आधारित हो सकते हैं।"
+      ],
+      "memory_trick": "Derivative = Derived Value (प्राप्त मूल्य) (जैसे दही दूध का एक derivative है)।"
+    },
+    {
+      "concept": "2. Futures Contracts (फ्यूचर्स कॉन्ट्रैक्ट्स)",
+      "basic_meaning": "भविष्य की एक निर्धारित तिथि (set future date) पर एक निर्धारित मूल्य (set price) पर किसी संपत्ति को खरीदने या बेचने की बाध्यता (obligation)।",
+      "detailed_explanation": "Future एक मानकीकृत अनुबंध (standardized contract) है जिसका एक्सचेंज (जैसे NSE) पर कारोबार होता है। दोनों पक्षों को अनुबंध पूरा करना ही (MUST) होता है।\n- **Long Position:** आप संपत्ति खरीदने (BUY) के लिए सहमत होते हैं (यदि कीमतें बढ़ती हैं (UP) तो आपको लाभ होता है)।\n- **Short Position:** आप संपत्ति बेचने (SELL) के लिए सहमत होते हैं (यदि कीमतें गिरती हैं (DOWN) तो आपको लाभ होता है)।\n- **Margin:** आप अग्रिम (upfront) पूरी कीमत का भुगतान नहीं करते हैं; आप केवल एक छोटी सुरक्षा जमा (security deposit) का भुगतान करते हैं जिसे Margin कहा जाता है। यह 'Leverage' है—आप बहुत कम पैसे में स्टॉक की एक बड़ी मात्रा को नियंत्रित कर सकते हैं।",
+      "why_this_is_important": "Futures अत्यधिक तरल (highly liquid) होते हैं और भविष्य की अनिश्चितता से बचने के लिए कीमत को 'लॉक' (locking in) करने के लिए उपयोग किए जाते हैं।",
+      "formula": "Profit/Loss = (Selling Price - Buying Price) × Quantity",
+      "formula_explanation": "आपका लाभ (profit) केवल उस मूल्य, जिसे चुकाने के लिए आप सहमत हुए थे, और अंत में जो बाजार मूल्य है, के बीच का अंतर है।",
+      "step_by_step_calculation_example": "1. आप 18,000 पर 1 Nifty Future (lot size 50) खरीदते हैं।\n2. आप मान लीजिए 10% (90,000 रुपये) के मार्जिन का भुगतान करते हैं।\n3. Expiry पर Nifty बढ़कर 18,200 हो जाता है।\n4. गणना: (18,200 - 18,000) × 50 = 10,000 रुपये का लाभ (Profit)।",
+      "real_life_indian_example": "एक ट्रेडर को उम्मीद है कि Reliance के शेयर बढ़ेंगे। शेयर खरीदने के लिए 2.5 लाख रुपये खर्च करने के बजाय, वह समान लाभ प्राप्त करने के लिए 50,000 रुपये के मार्जिन पर एक Reliance Future खरीदता है।",
+      "exam_traps": [
+        "यह भूल जाना कि Futures एक 'Obligation' (बाध्यता) है। यदि कीमत आपके खिलाफ जाती है तो आप पीछे नहीं हट सकते।",
+        "दैनिक 'Mark-to-Market' (MTM) को नज़रअंदाज़ करना। फ्यूचर्स बाजार में हर एक दिन मुनाफे और नुकसान का निपटान (settled) किया जाता है।"
+      ],
+      "memory_trick": "Futures = Forced (मजबूर) (आपको यह करना ही होगा)।"
+    },
+    {
+      "concept": "3. Options: Call and Put (ऑप्शंस: कॉल और पुट)",
+      "basic_meaning": "एक अनुबंध जो आपको व्यापार करने का 'अधिकार' (Right) देता है लेकिन 'बाध्यता' (Obligation) नहीं।",
+      "detailed_explanation": "Options बीमा (insurance) की तरह हैं। आप विकल्प (choice) प्राप्त करने के लिए एक छोटा सा शुल्क (Premium) चुकाते हैं।\n1. **Call Option:** खरीदने का अधिकार (Right to BUY)। इसका उपयोग तब करें जब आपको लगे कि कीमतें बढ़ेंगी (RISE)।\n2. **Put Option:** बेचने का अधिकार (Right to SELL)। इसका उपयोग तब करें जब आपको लगे कि कीमतें गिरेंगी (FALL)।\n- **Premium:** वह कीमत जो आप इस अधिकार के लिए विक्रेता (Writer) को चुकाते हैं।\n- **Strike Price:** वह पूर्व-निश्चित मूल्य (pre-fixed price) जिस पर आप संपत्ति खरीद/बेच सकते हैं।",
+      "why_this_is_important": "Options सीमित नुकसान (केवल भुगतान किया गया प्रीमियम) लेकिन असीमित लाभ क्षमता (unlimited profit potential) की अनुमति देते हैं।",
+      "formula": "Max Loss for Buyer = Premium Paid (भुगतान किया गया प्रीमियम)",
+      "formula_explanation": "यदि बाजार आपके खिलाफ जाता है, तो आप बस अपने option का उपयोग नहीं करते हैं और केवल वही शुल्क खोते हैं जो आपने भुगतान किया था।",
+      "step_by_step_calculation_example": "1. आप 100 रुपये के प्रीमियम (Premium) पर Nifty 18,000 CALL option खरीदते हैं।\n2. यदि Nifty 17,500 पर जाता है: आप exercise नहीं करते हैं। नुकसान (Loss) = 100 रुपये।\n3. यदि Nifty 18,500 पर जाता है: आप exercise करते हैं। लाभ (Profit) = (18,500 - 18,000) - 100 = 400 रुपये।",
+      "real_life_indian_example": "अपने पोर्टफोलियो पर 'Put Option' खरीदना अपने घर के लिए अग्नि बीमा (fire insurance) पॉलिसी खरीदने जैसा है। यदि बाजार क्रैश हो जाता है, तो Put Option का लाभ आपके पोर्टफोलियो के नुकसान की भरपाई (offsets) करता है।",
+      "exam_traps": [
+        "Buyer और Seller के बीच भ्रमित होना। Buyer के पास 'अधिकार' (Right/Choice) होता है, लेकिन Seller के पास 'बाध्यता' (Obligation) होती है (उसे खरीदार की पसंद का पालन करना ही होगा)।",
+        "यह सोचना कि Put Option खरीदार चाहता है कि कीमत ऊपर जाए। नहीं, Put खरीदार को तब लाभ होता है जब कीमत नीचे (DOWN) जाती है।"
+      ],
+      "memory_trick": "Call = संपत्ति को अपने पास बुलाना (Buy)। Put = संपत्ति को दूर रखना (Sell)।"
+    },
+    {
+      "concept": "4. Participants: Hedgers, Speculators, and Arbitrageurs",
+      "basic_meaning": "डेरिवेटिव्स का व्यापार करने वाले तीन प्रकार के लोग।",
+      "detailed_explanation": "1. **Hedgers:** ऐसे लोग जिनके पास संपत्ति है और जो मूल्य जोखिम (price risk) से बचना चाहते हैं (बीमा चाहने वाले)।\n2. **Speculators:** ऐसे लोग जिनके पास संपत्ति नहीं है लेकिन वे मूल्य के अनुमान (price guesses) से लाभ कमाना चाहते हैं (जोखिम लेने वाले)।\n3. **Arbitrageurs:** ऐसे लोग जो दो बाजारों (जैसे, Cash बनाम Futures) के बीच मूल्य अंतर खोजते हैं और जोखिम-मुक्त (risk-free) लाभ कमाते हैं।",
+      "why_this_is_important": "यह बाजार की गतिविधि के पीछे का 'कारण' बताता है। एक स्वस्थ बाजार को तीनों की आवश्यकता होती है।",
+      "formula": "लागू नहीं",
+      "formula_explanation": "लागू नहीं",
+      "step_by_step_calculation_example": "लागू नहीं",
+      "real_life_indian_example": "Arbitrage: नकद बाजार (cash market) में एक स्टॉक 100 रुपये पर कारोबार कर रहा है और इसका Future 102 रुपये पर है। एक arbitrageur स्टॉक खरीदता है और 2 रुपये का लाभ लॉक करने के लिए future बेचता है।",
+      "exam_traps": [
+        "यह मान लेना कि Hedgers भारी मुनाफा कमाना चाहते हैं। Hedgers केवल नुकसान को रोकना चाहते हैं; वे ब्रेक ईवन (break even) से खुश हैं।",
+        "Speculation को Arbitrage के समान सोचना। Speculation में उच्च जोखिम होता है; Arbitrage सैद्धांतिक रूप से जोखिम-मुक्त (risk-free) है।"
+      ],
+      "memory_trick": "Hedger = सुरक्षा (Safety)। Speculator = लाभ (Profit)। Arbitrageur = मुफ्त का भोजन (Free Lunch)।"
+    }
+  ],
+
+  "important_differences": [
+    {
+      "difference_between": "Forwards vs. Futures",
+      "clear_explanation": "Forwards निजी (private), गैर-मानकीकृत (non-standardized) अनुबंध हैं (अधिक जोखिम)। Futures एक एक्सचेंज पर ट्रेड किए जाते हैं, मानकीकृत (standardized) होते हैं, और विनियमित (regulated) होते हैं (कम जोखिम)।"
+    },
+    {
+      "difference_between": "Futures vs. Options",
+      "clear_explanation": "Futures में, दोनों पक्ष प्रदर्शन करने के लिए बाध्य (obligated) हैं। Options में, केवल विक्रेता (seller) बाध्य है; खरीदार (buyer) के पास विकल्प (choice) होता है।"
+    }
+  ],
+
+  "frequently_asked_exam_areas": [
+    "'Underlying Asset' की परिभाषा।",
+    "Call या Put option खरीदार के लिए Profit/Loss की गणना करना।",
+    "Long position (खरीदार) और Short position (विक्रेता) के बीच अंतर।",
+    "'Counterparty Risk' को खत्म करने में Clearing Corporation की भूमिका।"
+  ],
+
+  "quick_revision_summary": [
+    "Derivatives अपना मूल्य एक underlying asset (अंतर्निहित संपत्ति) से प्राप्त करते हैं।",
+    "Futures = Obligation (बाध्यता); Options = Right/Choice (अधिकार/विकल्प)।",
+    "Call Option = Bullish (कीमत ऊपर); Put Option = Bearish (कीमत नीचे)।",
+    "Hedging Portfolio Managers का प्राथमिक उपयोग है (जोखिम में कमी)।",
+    "Derivatives में Leverage लाभ और हानि दोनों को कई गुना बढ़ा सकता है।",
+    "Futures में Margins का भुगतान किया जाता है; Options में Premiums का भुगतान किया जाता है।"
+  ]
+}

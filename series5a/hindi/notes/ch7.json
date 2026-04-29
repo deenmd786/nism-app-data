@@ -1,0 +1,99 @@
+{
+  "course": "NISM Series V-A: Mutual Fund Distributors Certification",
+  "unit_number": 7,
+  "unit_name": "Net Asset Value, Total Expense Ratio और units की Pricing",
+  "weightage": "8 Marks (लगभग 8 Questions)",
+  "overview": "यह syllabus का सबसे mathematical chapter है। यह समझाता है कि Mutual Fund unit की price (NAV) कैसे calculate की जाती है, AMC अपनी services के लिए आपसे कैसे charge करती है (Total Expense Ratio), और आज की price प्राप्त करने के लिए आपको किन specific 'Cut-off' times का पालन करना चाहिए। Exam के numerical section को clear करने के लिए यह chapter बहुत महत्वपूर्ण है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Net Asset Value (NAV)",
+      "basic_meaning": "NAV एक Mutual Fund के एक unit की price है। यह एक scheme के 'Stock Price' की तरह है।",
+      "detailed_explanation": "एक Mutual Fund के पास कई चीजें होती हैं: Shares, Bonds, और Cash। इसके कुछ bills (Expenses) भी होते हैं जिन्हें pay करना होता है। NAV निकालने के लिए, हम सभी holdings की total market value लेते हैं, expenses को subtract करते हैं, और result को investors को issue किए गए total number of units से divide करते हैं। \n\n**Note:** NAV हर business day calculate किया जाना चाहिए और रात 11:00 बजे तक AMFI website पर publish होना चाहिए।",
+      "why_this_is_important": "Investors NAV track करते हैं यह देखने के लिए कि उनका investment बढ़ा है या नहीं। यह सभी buying और selling का basis है।",
+      "formula": "$$NAV = \\frac{\\text{Market Value of Investments} + \\text{Current Assets} - \\text{Current Liabilities}}{\\text{Total Number of Units Outstanding}}$$",
+      "formula_explanation": "Market Value hold किए गए shares/bonds की current price है। Current Assets में cash और dividends due शामिल हैं। Liabilities वे expenses हैं जो अभी तक pay नहीं किए गए हैं। Units Outstanding सभी investors द्वारा hold किए गए total 'slices' (हिस्से) हैं।",
+      "step_by_step_calculation_example": "1. Hold किए गए Shares की Total Value: ₹120 Crores.\n2. Cash in hand: ₹5 Crores.\n3. Pay किए जाने वाले Expenses: ₹2 Crores.\n4. Issue किए गए Total Units: 10 Crore units.\n**Calculation:**\nNet Assets = (120 + 5) - 2 = ₹123 Crores.\nNAV = 123 / 10 = ₹12.30 per unit.",
+      "real_life_indian_example": "यदि Nifty 50 2% ऊपर जाता है, तो 'Nifty Index Fund' की NAV भी उस दिन लगभग 2% ऊपर जाएगी।",
+      "exam_traps": [
+        "यह सोचना कि NAV market hours के दौरान calculate की जाती है (नहीं, यह market close होने के बाद calculate की जाती है)।",
+        "Calculation में liabilities को subtract करना भूल जाना।",
+        "'Net Assets' को 'NAV' के साथ confuse करना (NAV per unit होती है)।"
+      ],
+      "memory_trick": "NAV = (जो हमारे पास है [What we HAVE] - जो हमें देना है [What we OWE]) / Total Units."
+    },
+    {
+      "concept": "2. Total Expense Ratio (TER)",
+      "basic_meaning": "आपके पैसे को manage करने के लिए AMC द्वारा charge की जाने वाली annual percentage fee।",
+      "detailed_explanation": "Fund manage करने में पैसा लगता है: Fund manager की salary, office rent, marketing, और distributor commission। ये costs scheme के assets से deduct किए जाते हैं। \n\n**SEBI Limits:** SEBI ने 'slabs' तय किए हैं। जैसे-जैसे fund का size (AUM) बढ़ता है, TER का percentage कम होना चाहिए। यह सुनिश्चित करता है कि बड़े funds investors के लिए सस्ते हो जाएं।",
+      "why_this_is_important": "Higher TER investor के final return को कम कर देता है। आपको पता होना चाहिए कि Direct Plans में TER कम होता है क्योंकि उनमें distributor commission शामिल नहीं होता है।",
+      "formula": "$$TER = \\left( \\frac{\\text{Total Expenses}}{\\text{Total Assets under Management}} \\right) \\times 100$$",
+      "formula_explanation": "यह cost को manage किए जा रहे total money के percentage के रूप में व्यक्त करता है।",
+      "step_by_step_calculation_example": "1. Fund ₹1,000 Crores manage करता है.\n2. Total annual expenses ₹15 Crores हैं.\n3. Calculation: (15 / 1000) * 100 = 1.5%.\n4. Result: Fund का TER 1.5% per annum है।",
+      "real_life_indian_example": "यदि Regular Plan का TER 2.25% है और Direct Plan का 1.25% है, तो Regular Plan में extra 1% मुख्य रूप से distributor को दिया जाने वाला commission है।",
+      "exam_traps": [
+        "यह सोचना कि TER साल में एक बार charge किया जाता है (यह daily calculate किया जाता है और NAV में reflect होता है)।",
+        "यह मानना कि सभी schemes का TER समान होता है (Equity funds का TER आमतौर पर Debt funds से अधिक होता है)।",
+        "यह मानना कि higher TER का मतलब better management है (वास्तव में, investor के लिए lower TER बेहतर है)।"
+      ],
+      "memory_trick": "TER = 'Free' professional management के लिए 'Fee'।"
+    },
+    {
+      "concept": "3. Cut-off Time और Price Applicability",
+      "basic_meaning": "उस दिन की NAV प्राप्त करने के लिए अपनी application submit करने की deadline।",
+      "detailed_explanation": "यदि आप आज की price चाहते हैं, तो आप आधी रात तक इंतज़ार नहीं कर सकते। SEBI ने एक Cut-off time तय किया है (वर्तमान में अधिकांश funds के लिए दोपहर 3:00 बजे)। \n\n**'Realization of Funds' Rule:** सभी schemes (Equity, Debt, Hybrid) के लिए, investor को उस दिन की NAV मिलेगी जब **पैसा वास्तव में AMC के bank account में पहुँचता है**, बशर्ते यह cut-off time से पहले हो।",
+      "why_this_is_important": "यह exam का एक major area है। यदि कोई client आज cheque देता है लेकिन पैसा 3 दिन बाद AMC तक पहुँचता है, तो उन्हें तीसरे दिन की NAV मिलेगी।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "1. Investor सोमवार को दोपहर 2:00 बजे form submit करता है.\n2. पैसा मंगलवार को दोपहर 1:00 बजे AMC bank पहुँचता है.\n3. Result: Investor को मंगलवार की NAV मिलती है (चूंकि पैसा मंगलवार को दोपहर 3:00 बजे से पहले realize हो गया था)।",
+      "real_life_indian_example": "Payment के लिए UPI का उपयोग करने से immediate realization सुनिश्चित होता है, जिससे यदि आप दोपहर 3:00 बजे से पहले ऐसा करते हैं तो आपको same-day NAV मिल जाती है। एक physical cheque को clear होने में 2 दिन लग सकते हैं।",
+      "exam_traps": [
+        "यह सोचना कि 3:00 PM केवल Liquid Funds के लिए rule है (यह अब लगभग सभी schemes पर लागू होता है)।",
+        "यह भूल जाना कि NAV allot होने के लिए पैसा AMC account में होना MUST है।",
+        "'Submission time' को 'Realization time' के साथ confuse करना।"
+      ],
+      "memory_trick": "No Money = No NAV."
+    },
+    {
+      "concept": "4. Exit Load",
+      "basic_meaning": "जब कोई investor एक निश्चित अवधि (certain period) से पहले पैसा निकालता है (redeems) तो charge की जाने वाली fee।",
+      "detailed_explanation": "Exit loads का उपयोग short-term withdrawals को हतोत्साहित (discourage) करने के लिए किया जाता है। यह पैसा AMC के पास नहीं जाता है; इसे बाकी बचे investors के फायदे के लिए वापस scheme में credit कर दिया जाता है।",
+      "why_this_is_important": "आपको clients को exit loads के बारे में inform करना चाहिए ताकि वे उम्मीद से कम पैसा मिलने पर surprise न हों।",
+      "formula": "$$\\text{Redemption Price} = NAV \\times (1 - \\text{Exit Load})$$",
+      "formula_explanation": "प्रति unit final payout निकालने के लिए load को NAV से subtract किया जाता है।",
+      "step_by_step_calculation_example": "1. NAV ₹100 है.\n2. Exit Load 1% है.\n3. Calculation: 100 - (100 का 1%) = ₹99.\n4. Result: Investor को ₹99 प्रति unit मिलते हैं।",
+      "real_life_indian_example": "कई Equity funds में 'यदि 1 साल के भीतर redeem किया गया तो 1% exit load' होता है। यदि आप 366 दिनों तक रुकते हैं, तो load 0% हो जाता है।",
+      "exam_traps": [
+        "यह सोचना कि AMC exit load अपने पास रखती है (नहीं, यह scheme में ही रहता है)।",
+        "'Switching' पर exit load लागू करना (Switching को redemption माना जाता है, इसलिए exit load आमतौर पर लागू होता है)।",
+        "यह भूल जाना कि exit loads पर GST लागू होता है।"
+      ],
+      "memory_trick": "Exit Load = जल्दी छोड़ने की Penalty (Penalty for leaving early)।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Entry Load बनाम Exit Load",
+      "clear_explanation": "Entry Load: खरीदते समय charge किया जाता है। 2009 से SEBI द्वारा BANNED है।\nExit Load: बेचते समय charge किया जाता है। Short-term trading को हतोत्साहित (discourage) करने के लिए Allowed है।"
+    },
+    {
+      "difference_between": "NAV बनाम AUM",
+      "clear_explanation": "NAV (Net Asset Value): प्रति unit Price (उदा., ₹15.50)।\nAUM (Assets Under Management): Scheme द्वारा manage किया जाने वाला Total money (उदा., ₹5,000 Crores)।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Formula (Net Assets / Units) का उपयोग करके NAV का Calculation।",
+    "3:00 PM cut-off और fund realization के आधार पर NAV की Applicability।",
+    "Redemption price calculation पर Exit Load का Impact।",
+    "NAV कौन publish करता है? (AMCs और AMFI)।",
+    "विभिन्न scheme sizes (Slabs) के लिए TER की Maximum limit।"
+  ],
+  "quick_revision_summary": [
+    "NAV market hours के बाद daily calculate की जाती है।",
+    "TER fund को manage करने की cost है, जिसे NAV से deduct किया जाता है।",
+    "Regular Plans की तुलना में Direct Plans में TER कम और NAV अधिक होती है।",
+    "Same-day NAV के लिए दोपहर 3:00 बजे से पहले Funds realization अनिवार्य (mandatory) है।",
+    "Exit Load एक redemption penalty है जो वापस scheme में जाती है।",
+    "Entry Load Nil (Banned) है।",
+    "Stamp Duty (0.005%) अब सभी MF purchases पर लागू है।"
+  ]
+}

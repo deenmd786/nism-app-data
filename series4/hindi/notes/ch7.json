@@ -1,0 +1,114 @@
+{
+  "course": "NISM Series IV: Interest Rate Derivatives Certification Examination",
+  "unit_number": 7,
+  "unit_name": "Clearing, Settlement and Risk Management of IRD",
+  "weightage": "10 Marks",
+  "overview": "Trading (Unit 6) केवल एक 'Agreement' (समझौता) है। Clearing and Settlement (Unit 7) वास्तव में 'Exchange of Money' (पैसे का लेन-देन) है। यह अध्याय मार्केट के safety mechanisms (सुरक्षा तंत्र) को समझाता है। Exchange यह कैसे सुनिश्चित करता है कि यदि आप profit कमाते हैं, तो आपको वास्तव में भुगतान मिले? इसका उत्तर 'Clearing Corporation' और 'Margins' के सख्त सिस्टम में छिपा है। back-office operations को समझने के लिए यह एक बहुत ही महत्वपूर्ण अध्याय है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. The Clearing Corporation (NSFCC / ICCL)",
+      "basic_meaning": "हर trade का 'Guarantor' (गारंटर)।",
+      "detailed_explanation": "एक OTC market में, यदि सामने वाला व्यक्ति भाग जाता है, तो आप पैसा खो देते हैं। Exchange पर, Clearing Corporation (CC) बीच में आता है।\n- **Process:** एक बार जब स्क्रीन पर trade match हो जाता है, तो CC तकनीकी रूप से 'हर Seller के लिए Buyer' और 'हर Buyer के लिए Seller' बन जाता है।\n- **Benefit:** आपको दूसरे trader पर भरोसा करने की आवश्यकता नहीं है; आपको केवल CC पर भरोसा करने की आवश्यकता है। यह 'Counterparty Risk' को दूर करता है।",
+      "why_this_is_important": "इस mechanism को 'Novation' कहा जाता है, यही कारण है कि exchange-traded markets सुरक्षित होते हैं।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Scenario: आप Mr. X को एक Future बेचते हैं।\nReality: तकनीकी रूप से, आपने इसे National Securities Clearing Corporation Ltd (NSCCL) को बेचा। NSCCL ने इसे Mr. X को बेचा।\nResult: यदि Mr. X default करता है, तो भी NSCCL आपको आपका profit देगा।",
+      "real_life_indian_example": "NSCCL (अब NCL - NSE Clearing Ltd) NSE trades के लिए सभी clearing को संभालता है।",
+      "exam_traps": [
+        "यह सोचना कि Exchange (NSE) trades को settle करता है। नहीं, Clearing Corp (NCL) करता है।",
+        "'Trade Guarantee' को 'Profit Guarantee' समझने की गलती करना। CC settlement की गारंटी देता है, इस बात की नहीं कि आप profit कमाएंगे।"
+      ],
+      "memory_trick": "CC = Counterparty to Complete (the trade)."
+    },
+    {
+      "concept": "2. Margins (The Security Deposit)",
+      "basic_meaning": "वह पैसा जो आपको exchange के पास यह साबित करने के लिए रखना होता है कि आप नुकसान (losses) का भुगतान कर सकते हैं।",
+      "detailed_explanation": "defaults को रोकने के लिए, CC अग्रिम (upfront) पैसा एकत्र करता है। इसके तीन मुख्य प्रकार हैं:\n\n1. **Initial Margin (SPAN Margin):**\n   - कोई position OPEN करने के लिए आवश्यक न्यूनतम राशि (minimum amount)।\n   - 'Value at Risk' (VaR) पर आधारित - मूल रूप से, '1 दिन में सबसे खराब संभावित नुकसान क्या है?'।\n   - Cash या Liquid Assets (जैसे FDs, Shares) में भुगतान किया जाना चाहिए।\n\n2. **Extreme Loss Margin (ELM):**\n   - आपदाओं (जैसे market crash) के लिए extra cushion।\n   - आमतौर पर एक fixed percentage (उदा., 1% या 1.5%)।\n\n3. **Calendar Spread Margin:**\n   - यदि आप एक महीने खरीदते हैं और दूसरे महीने बेचते हैं तो कम margin का लाभ मिलता है (क्योंकि risk cancel out हो जाते हैं)।",
+      "why_this_is_important": "यदि आप margin का भुगतान नहीं करते हैं, तो आपका broker जबरन (forcefully) आपका trade बंद कर देगा।",
+      "formula": "Total Margin = Initial Margin + ELM",
+      "formula_explanation": "यह आपके अकाउंट में 'Block Amount' होता है।",
+      "step_by_step_calculation_example": "आप Bond Futures (Value Rs 2 Lakhs) का 1 lot खरीदना चाहते हैं।\n- Initial Margin (SPAN) = 5% = Rs 10,000.\n- ELM = 1% = Rs 2,000.\n- Total Margin Blocked = Rs 12,000.",
+      "real_life_indian_example": "यदि volatility (अस्थिरता) बढ़ती है (मार्केट risky हो जाता है), तो SPAN margin requirement अपने आप बढ़ (UP) जाती है।",
+      "exam_traps": [
+        "यह सोचना कि Margins केवल Sellers के लिए हैं। Futures में, Buyer और Seller दोनों margin का भुगतान करते हैं।",
+        "Options में, केवल SELLER margin का भुगतान करता है (Buyer Premium का भुगतान करता है)।"
+      ],
+      "memory_trick": "Margin = Skin in the Game."
+    },
+    {
+      "concept": "3. Daily Settlement (Mark-to-Market / MTM)",
+      "basic_meaning": "हर शाम accounts को settle करना।",
+      "detailed_explanation": "Futures में, आप अपना profit/loss देखने के लिए expiry का इंतजार नहीं करते हैं। इसकी गणना रोज़ाना (daily) की जाती है।\n- **Profit:** तुरंत आपके अकाउंट में credit हो जाता है (T+1)।\n- **Loss:** तुरंत आपके अकाउंट से debit हो जाता है।\n- **MTM Margin:** यदि आपको नुकसान होता है और आपका account balance आवश्यक margin से नीचे गिर जाता है, तो आपको एक 'Margin Call' आती है और आपको तुरंत cash डालना होगा।",
+      "why_this_is_important": "नुकसान को जमा होकर एक बड़े default में बदलने से रोकता है।",
+      "formula": "MTM = (Closing Price Today - Closing Price Yesterday) * Quantity",
+      "formula_explanation": "value में दैनिक परिवर्तन (daily change) की गणना करता है।",
+      "step_by_step_calculation_example": "Day 1: 100 पर Buy किया। 102 पर Close हुआ। Profit = Rs 2. (Credited).\nDay 2: 102 पर Open हुआ। 99 पर Close हुआ। Loss = Rs 3. (Debited).\nNet Result: आपने कुल मिलाकर Rs 1 (100 -> 99) का नुकसान किया, लेकिन यह दो steps में settle हुआ।",
+      "real_life_indian_example": "Brokers एक 'SMS Alert' भेजते हैं यदि आपका MTM loss अधिक है, जिसमें आपको अगली सुबह तक funds जमा करने के लिए कहा जाता है।",
+      "exam_traps": [
+        "यह सोचना कि MTM profit 'paper profit' है। नहीं, Futures में, यह 'Real Cash' है जो रोज़ credit होता है।",
+        "MTM settlement price calculation (पिछले 30 मिनट का Weighted Average) को नज़रअंदाज़ करना।"
+      ],
+      "memory_trick": "MTM = Money To Me (or Money To Market) daily."
+    },
+    {
+      "concept": "4. Final Settlement (The Expiry Day)",
+      "basic_meaning": "आखिरी गुरुवार (last Thursday) को contract को बंद करना।",
+      "detailed_explanation": "expiry day पर, सभी open positions बंद कर दी जाती हैं।\n- **Cash Settled (Most common):** आपके entry price और Final Settlement Price के बीच के अंतर का भुगतान किया/प्राप्त किया जाता है।\n- **Final Settlement Price:** यह पिछले 2 घंटों के लिए spot market (आमतौर पर NDS-OM platform) में underlying bond का Weighted Average Price है।",
+      "why_this_is_important": "यह सुनिश्चित करता है कि Futures price अंत में Spot price के साथ converge (समान हो जाए) करे।",
+      "formula": "Final Payoff = (Final Settlement Price - Buy Price) * Lot Size",
+      "formula_explanation": "Standard profit formula.",
+      "step_by_step_calculation_example": "आपने 98 पर खरीदा। आपने expiry तक hold किया।\nNDS-OM पर Final Settlement Price 98.50 है।\nPayoff: (98.50 - 98.00) * 2000 (Lot Size) = Rs 1,000 Profit.",
+      "real_life_indian_example": "RBI reference rates का उपयोग अक्सर T-Bill settlement के लिए किया जाता है。",
+      "exam_traps": [
+        "यह सोचना कि FUTURE के Closing Price का उपयोग किया जाता है। नहीं, Final Settlement के लिए UNDERLYING BOND की कीमत का उपयोग किया जाता है।",
+        "Daily Settlement (पिछले 30 मिनट) को Final Settlement (पिछले 2 घंटे) के साथ confuse करना।"
+      ],
+      "memory_trick": "Final = Finished. Match with the Real (Spot) Market."
+    },
+    {
+      "concept": "5. Corporate Actions (Coupons)",
+      "basic_meaning": "क्या होता है यदि bond ब्याज (interest) देता है जब मैं future hold कर रहा हूँ?",
+      "detailed_explanation": "यदि आप एक Bond Future hold करते हैं, तो आप bond के मालिक (own) नहीं होते हैं। आपको coupon नहीं मिलता है।\n- हालाँकि, जब कोई bond एक coupon का भुगतान करता है, तो उसकी कीमत उस राशि (amount) से गिर जाती है।\n- कीमत में यह अचानक गिरावट Futures buyer के लिए एक अनुचित (unfair) MTM loss का कारण बनेगी।\n- **Adjustment:** Exchange इस coupon drop को account में लेने के लिए Futures price या settlement calculation को adjust करता है ताकि buyer को अनुचित रूप से नुकसान न हो।",
+      "why_this_is_important": "ब्याज भुगतान की तारीखों (interest payment dates) के दौरान निष्पक्षता (fairness) सुनिश्चित करता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "सिस्टम द्वारा स्वचालित रूप से (automatically) संभाला जाता है।",
+      "step_by_step_calculation_example": "Bond Price: 102. Coupon: 4. Ex-Coupon Price: 98.\nबिना adjustment के, Future buyer तुरंत 4 points खो देता है।\nadjustment के साथ, अगले दिन के लिए 'Base Price' को compensate करने के लिए कम कर दिया जाता है।",
+      "real_life_indian_example": "यह शायद ही कभी short-term traders को प्रभावित करता है, लेकिन coupon dates के दौरान hold करने वालों के लिए महत्वपूर्ण है।",
+      "exam_traps": [
+        "यह सोचना कि Futures holders को coupons मिलते हैं। उन्हें कभी नहीं मिलते।",
+        "यह सोचना कि Options holders को dividends/coupons मिलते हैं। उन्हें कभी नहीं मिलते।"
+      ],
+      "memory_trick": "No Ownership = No Coupon."
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Initial Margin vs. MTM Margin",
+      "clear_explanation": "INITIAL MARGIN संभावित भविष्य के नुकसान (Safety) के लिए है। Upfront भुगतान किया जाता है। || MTM MARGIN आज हुए वास्तविक नुकसान (Recovery) के लिए है। Daily भुगतान किया जाता है।"
+    },
+    {
+      "difference_between": "Trading Member (TM) vs. Clearing Member (CM)",
+      "clear_explanation": "TM trades execute करता है (Salesman)। || CM trades settle करता है और margins का भुगतान करता है (Cashier)। एक TM को settle करने के लिए एक CM के माध्यम से जाना चाहिए।"
+    },
+    {
+      "difference_between": "Gross vs. Net Settlement",
+      "clear_explanation": "GROSS का मतलब है कि हर trade अलग-अलग settle होता है (दुर्लभ)। || NET का मतलब है कि सभी buys और sells offset हो जाते हैं, और केवल अंतर (difference) का भुगतान किया जाता है (standard)।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "सभी trades के लिए counterparty कौन है? (Clearing Corporation / NSCCL)।",
+    "कौन सा margin 'worst case' (सबसे खराब स्थिति) परिदृश्य को कवर करता है? (Extreme Loss Margin)।",
+    "Final Settlement Price की गणना कैसे की जाती है? (Underlying Bond का Weighted Average)।",
+    "क्या Futures holders को coupons मिलते हैं? (No)।",
+    "'Novation' क्या है? (मूल counterparty को CC के साथ substitute करना)।"
+  ],
+  "quick_revision_summary": [
+    "Clearing Corp settlement की गारंटी देता है (Novation)।",
+    "Initial Margin (SPAN) + ELM का upfront भुगतान किया जाना चाहिए।",
+    "Margins Volatility (VaR) पर आधारित होते हैं।",
+    "MTM की गणना daily की जाती है।",
+    "Final Settlement Futures को Spot prices के साथ align करता है।",
+    "Futures = Cash Settled (ज़्यादातर)।",
+    "CM Client के प्रति नहीं, बल्कि Exchange के प्रति जिम्मेदार है।"
+  ]
+}

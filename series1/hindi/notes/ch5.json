@@ -1,0 +1,108 @@
+{
+  "course": "NISM Series I: Currency Derivatives",
+  "unit_number": 5,
+  "unit_name": "Exchange Traded Currency Derivatives का उपयोग कर Strategies",
+  "weightage": "10%",
+  "overview": "यह वह Chapter है जहाँ असली Action होता है। Unit 3 और 4 में, आपने सीखा कि Futures और Options क्या होते हैं। Unit 5 में, आप सीखेंगे कि वास्तविक जीवन में उनका असल उपयोग कैसे किया जाता है। हम तीन मुख्य प्रकार के खिलाड़ियों को देखेंगे: Hedgers (जो Security चाहते हैं), Speculators (जो Profit चाहते हैं), और Arbitrageurs (जो Risk-free पैसा चाहते हैं)। परीक्षा में इस Chapter से व्यावहारिक Scenario-based प्रश्न पूछे जाएंगे। वे आपको एक Importer या Exporter की कहानी देंगे और आपसे उन्हें Loss से बचाने के लिए सही Strategy चुनने के लिए कहेंगे।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Futures के साथ Hedging (Importers & Exporters)",
+      "basic_meaning": "Hedging का मतलब है Futures Market में एक ऐसी Position लेना जो वास्तविक दुनिया में आपके Risk के बिल्कुल Opposite हो। यह आपकी कीमत को Lock कर देता है और आपके Business को Currency के उतार-चढ़ाव से बचाता है।",
+      "detailed_explanation": "आइए आप कौन हैं, इसके आधार पर इसे दो सरल Steps में बांटते हैं:\n\nScenario A: Importer (Long Hedge)\nStep 1: एक Importer America से सामान खरीदता है और उसे भविष्य में Dollars चुकाने हैं।\nStep 2: उनका सबसे बड़ा डर: 'क्या होगा अगर Dollar बहुत महंगा हो जाए (रुपया कमजोर हो जाए)?'\nStep 3: Strategy: खरीदारी की कीमत को Lock करने के लिए, Importer आज ही USDINR Futures Buy करेगा। इसे 'Long Hedge' कहा जाता है। यदि Dollar ऊपर जाता है, तो वे वास्तविक दुनिया में अधिक Payment करते हैं, लेकिन वे Futures Market में इसके बराबर Profit कमा लेते हैं।\n\nScenario B: Exporter (Short Hedge)\nStep 1: एक Exporter America को Software बेचता है और भविष्य में Dollar Receive करेगा।\nStep 2: उनका सबसे बड़ा डर: 'क्या होगा यदि Dollar की Value Crash हो जाए (रुपया मजबूत हो जाए)? मुझे कम रुपये मिलेंगे!'\nStep 3: Strategy: बिक्री की कीमत को Lock करने के लिए, Exporter आज USDINR Futures Sell करेगा। इसे 'Short Hedge' कहा जाता है।",
+      "why_this_is_important": "यह परीक्षा में आना तय है। आपको 3-Line की एक Case Study दी जाएगी और पूछा जाएगा कि 'Exporter को क्या करना चाहिए?'। आपको ठीक से पता होना चाहिए कि Buy करना है या Sell।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "एक भारतीय Electronics दुकान $10,000 मूल्य के iPhones Import कर रही है। Payment 1 महीने में देय है। वर्तमान Spot ₹83.00 है। 1-महीने का Future ₹83.20 है।\nडर: Dollar ₹85 तक जा सकता है।\nAction: दुकान का मालिक ₹83.20 पर 1-महीने के USDINR Futures के 10 Lots (10 x $1000) Buy करता है।\nपरिणाम: अगले महीने Spot Market में चाहे कुछ भी हो, उसकी Effective Cost ठीक ₹83.20 प्रति Dollar पर Lock हो गई है।",
+      "real_life_indian_example": "Reliance Industries Crude Oil का Import करती है और Billions of Dollars में Payment करती है। अपने कच्चे माल की Cost में झटके से बचने के लिए, वे भारी मात्रा में USDINR Futures Buy करते हैं (Long Hedge)। Infosys IT Services का Export करती है और Dollar प्राप्त करती है। अपने रुपये के Profit को सुरक्षित करने के लिए, वे USDINR Futures Sell करते हैं (Short Hedge)।",
+      "exam_traps": [
+        "Importer और Exporter के Actions को मिला देना। याद रखें: Importer = USD खरीदने की जरूरत है = Futures Buy करता है। Exporter = USD बेचने की जरूरत है = Futures Sell करता है।",
+        "यह सोचना कि Hedging से Extra Profit मिलता है। गलत। Hedging केवल कीमत तय करके Loss को रोकती है। Security की Guarantee के लिए आप Extra Profit का मौका छोड़ देते हैं।"
+      ],
+      "memory_trick": "Importer = INcoming सामान, OUTgoing Dollar। डर है Dollar UP जाने का। इसलिए, Futures Buy करें (Long)। Exporter = OUTgoing सामान, INcoming Dollar। डर है Dollar DOWN जाने का। इसलिए, Futures Sell करें (Short)।"
+    },
+    {
+      "concept": "2. Options के साथ Hedging (Insurance Strategy)",
+      "basic_meaning": "Futures के साथ Hedging सख्त है—आप बंध जाते हैं। Options के साथ Hedging करना Insurance खरीदने जैसा है। आप बुरी चीजों से सुरक्षित रहते हैं, लेकिन यदि Market आपके पक्ष में जाता है तो आप अभी भी अच्छी चीजों (Profit) का आनंद ले सकते हैं।",
+      "detailed_explanation": "आइए देखें कि Importer और Exporter Options का उपयोग कैसे करते हैं:\n\nScenario A: Importer (Call Option Buy करता है)\nStep 1: Importer को Dollar चुकाने हैं। उन्हें डर है कि Dollar Rise करेगा।\nStep 2: वे एक USDINR Call Option (एक निश्चित Strike Price पर Dollar खरीदने का अधिकार) Buy करते हैं और Premium देते हैं।\nStep 3: यदि Dollar उछलकर ₹86 हो जाता है, तो वे Call Option का Exercise करते हैं और अपने Strike Price (मान लीजिए, ₹83) पर सस्ते में खरीदते हैं।\nStep 4: यदि Dollar Crash होकर ₹80 हो जाता है, तो वे बस Option को Ignore कर देते हैं (केवल Premium का Loss) और Open Market से ₹80 में Super Cheap Dollar खरीदते हैं!\n\nScenario B: Exporter (Put Option Buy करता है)\nStep 1: Exporter को Dollar मिलेंगे। उन्हें डर है कि Dollar Fall करेगा।\nStep 2: वे एक USDINR Put Option (एक निश्चित Strike Price पर Dollar बेचने का अधिकार) Buy करते हैं।\nStep 3: यदि Dollar गिरकर ₹80 हो जाता है, तो वे Put Option का Exercise करते हैं और अपने उच्च Strike Price (मान लीजिए, ₹83) पर बेचते हैं।\nStep 4: यदि Dollar उछलकर ₹86 हो जाता है, तो वे Option को Ignore कर देते हैं और खुशी-खुशी अपने Dollar Open Market में ₹86 में बेच देते हैं।",
+      "why_this_is_important": "परीक्षा परीक्षण करती है कि क्या आप Futures के ऊपर Options के फायदे को समझते हैं। यदि Spot Market बेहतर Deal देता है तो Options आपको Walk Away करने की अनुमति देते हैं।",
+      "formula": "Importer के लिए Effective Cost = चुकाया गया Spot Price (या यदि Exercise किया गया है तो Strike Price) + चुकाया गया Premium",
+      "formula_explanation": "जब एक Importer किसी Option का Exercise करता है, तो उनकी अंतिम Cost वह होती है जो उन्होंने Dollar के लिए चुकाई, साथ ही वह Non-refundable Premium जो उन्होंने Option Ticket के लिए चुकाया।",
+      "step_by_step_calculation_example": "Exporter को $1,000 मिलने की उम्मीद है। वह ₹0.50 का Premium देकर ₹83 के Strike पर Put Option Buy करता है।\nCase 1: Market गिरकर ₹80 हो जाता है। वह Put का Exercise करता है। ₹83 पर बेचता है। उसका Net Value = 83 - 0.50 (Premium) = ₹82.50।\nCase 2: Market चढ़कर ₹85 हो जाता है। वह Put को Ignore कर देता है। Open Market में ₹85 पर बेचता है। उसका Net Value = 85 - 0.50 (Premium) = ₹84.50।",
+      "real_life_indian_example": "Surat में एक Diamond Merchant Belgium से Euros में Payment की उम्मीद कर रहा है। उसे नहीं पता कि Euro ऊपर जाएगा या नीचे, लेकिन वह इसके ₹90 से नीचे जाने का Risk नहीं उठा सकता। वह ₹90 के Strike पर EURINR Put Option Buy करता है। यह पूरी तरह से एक Safety Net (Insurance) के रूप में कार्य करता है।",
+      "exam_traps": [
+        "यह सोचना कि Hedger Options Sell करता है। आमतौर पर, Hedgers 'चुनने का सुरक्षित अधिकार' पाने के लिए Options Buy करते हैं (Premium चुकाते हैं)। Speculators वे होते हैं जो आमतौर पर Options Sell करते हैं।",
+        "अंतिम Effective Price की Calculation करते समय Premium को घटाना/जोड़ना भूल जाना।"
+      ],
+      "memory_trick": "Importer Dollar Buy करना चाहता है = CALL Option Buy करता है। Exporter Dollar Sell करना चाहता है = PUT Option Buy करता है।"
+    },
+    {
+      "concept": "3. Speculation Strategies",
+      "basic_meaning": "Speculators का Dollar से जुड़ा कोई वास्तविक Business नहीं होता है। वे विशुद्ध रूप से Market की Direction का अनुमान लगाकर Profit कमाने के लिए Trading कर रहे हैं।",
+      "detailed_explanation": "Step 1: Bullish View (Market ऊपर जाएगा)। एक Speculator सोचता है कि RBI Interest Rates में कटौती करेगा और USDINR बढ़ेगा। वे या तो Futures Buy करेंगे या Call Options Buy करेंगे। Price बढ़ने पर दोनों Strategies पैसा बनाती हैं।\nStep 2: Bearish View (Market नीचे जाएगा)। एक Speculator सोचता है कि Indian Economy फल-फूल रही है और रुपया बहुत मजबूत होगा (USDINR गिरेगा)। वे या तो Futures Sell करेंगे या Put Options Buy करेंगे। Price नीचे जाने पर दोनों Strategies पैसा बनाती हैं।",
+      "why_this_is_important": "आपको Market View (Bullish/Bearish) को सही Instrument के साथ Map करना होगा।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Delhi में बैठा एक College Student US Election के Results देखता है। उसे लगता है कि Dollar Crash हो जाएगा। वह अपना Broker App खोलता है और USDINR Put Options के 5 Lots Buy कर लेता है। वह एक शुद्ध Speculator है जो Calculated Risk ले रहा है।",
+      "exam_traps": [
+        "Hedging और Speculation को Confuse करना। Hedging = Risk को कम करना। Speculation = Profit के लिए Risk उठाना।"
+      ],
+      "memory_trick": "Bullish (ऊपर) = Buy Future / Buy Call. Bearish (नीचे) = Sell Future / Buy Put."
+    },
+    {
+      "concept": "4. Arbitrage Strategies",
+      "basic_meaning": "Arbitrage का मतलब है दो Markets के बीच Mispricing का पता लगाना और ठीक एक ही समय में एक जगह सस्ता Buy करके और दूसरी जगह महंगा Sell करके 100% Risk-free Profit कमाना।",
+      "detailed_explanation": "Step 1: एक Ideal World में, Future Price = Spot Price + Interest Cost।\nStep 2: कभी-कभी, Panic या High Demand के कारण, Future Price बहुत अधिक उछल जाता है। यह Overpriced हो जाता है।\nStep 3: एक Arbitrageur इसे पकड़ लेता है। वे तुरंत Overpriced Future Contract को Sell कर देते हैं।\nStep 4: ठीक उसी Second, वे रुपये Borrow करते हैं, Spot Market में वास्तविक Dollar Buy करते हैं (जो कि सस्ता है), और Interest कमाने के लिए उन्हें Bank में रखते हैं।\nStep 5: Expiry के दिन, वे Future Contract को Settle करने के लिए अपने पास मौजूद Dollar दे देते हैं। पहले दिन से ही Profit की Guarantee होती है। इसे 'Cash and Carry Arbitrage' कहा जाता है।",
+      "why_this_is_important": "Arbitrageurs महत्वपूर्ण हैं क्योंकि वे Prices को वापस Normal Level पर लाने के लिए मजबूर करते हैं। परीक्षा आपसे पूछेगी कि यदि Futures Overpriced हैं तो एक Arbitrageur क्या करता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "एक बहुत बड़े Bank का Computer Algorithm देखता है कि USDINR Spot ₹83.00 है, लेकिन NSE पर 1-महीने का Future ₹84.00 पर Trade कर रहा है (जो बेतुके ढंग से अधिक है)। Computer तुरंत ₹84 का Future Sell करता है और ₹83 का Spot Buy करता है। यह Milliseconds में प्रति Dollar ₹1 का भारी Risk-free Profit Lock कर लेता है।",
+      "exam_traps": [
+        "यह सोचना कि Arbitrage में Risk होता है। Arbitrage का सख्ती से मतलब Zero Risk है।",
+        "यदि Future Overpriced है -> Future Sell करें, Spot Buy करें। यदि Future Underpriced है -> Future Buy करें, Spot Sell करें।"
+      ],
+      "memory_trick": "Arbitrage = Always Right (हमेशा सही)। आप एक साथ सस्ता वाला Buy करते हैं और महंगा वाला Sell करते हैं।"
+    },
+    {
+      "concept": "5. Volatility Strategies: Straddle और Strangle",
+      "basic_meaning": "कभी-कभी आप जानते हैं कि Market में बहुत बड़ा Movement आने वाला है (Explode), लेकिन आप यह नहीं जानते कि किस Direction में। Straddles और Strangles ऐसे Option Combinations हैं जिनका उपयोग किसी भी दिशा में होने वाले भारी Price Jump से पैसा कमाने के लिए किया जाता है।",
+      "detailed_explanation": "Step 1: Long Straddle: आप एक Call Option Buy करते हैं और बिल्कुल समान Strike Price (SAME Strike Price) और समान Expiry का एक Put Option Buy करते हैं।\nक्यों? यदि Market UP उछलता है, तो आपका Call भारी पैसा बनाता है (Put Zero हो जाता है)। यदि Market DOWN Crash होता है, तो आपका Put भारी पैसा बनाता है (Call Zero हो जाता है)। जब तक यह बड़ा Move करता है, आप जीतते हैं। आपके हारने का एकमात्र तरीका यह है कि Market पूरी तरह से Flat रहे (क्योंकि आपने दो Premiums चुकाए हैं)।\nStep 2: Long Strangle: आप एक Out-of-the-Money (OTM) Call और एक OTM Put Buy करते हैं।\nक्यों? यह बिल्कुल Straddle की तरह है, लेकिन चूंकि आप OTM Options Buy कर रहे हैं, इसलिए Premiums बहुत सस्ते होते हैं। तो शर्त क्या है? Profit कमाने के लिए आपको Market के और भी अधिक Faster और Bigger Movement की आवश्यकता होती है।",
+      "why_this_is_important": "यह परीक्षा का बहुत Popular Question है। आपको Straddle (समान Strike) और Strangle (अलग-अलग Strike) के बीच का Difference पता होना चाहिए।",
+      "formula": "Long Straddle/Strangle के लिए Maximum Loss = चुकाया गया Total Premium (Call Premium + Put Premium)",
+      "formula_explanation": "चूँकि आप दो Options Buy कर रहे हैं, इसलिए आप दो Non-refundable Ticket Fees दे रहे हैं। यदि Market बिल्कुल भी नहीं चलता है, तो दोनों Options बेकार समाप्त हो जाते हैं, और आप दोनों Premiums खो देते हैं।",
+      "step_by_step_calculation_example": "Spot ₹83 है।\nStraddle: 83 Call Buy (Premium ₹0.50) + 83 Put Buy (Premium ₹0.50)। Total Cost = ₹1.00। Profit कमाने के लिए आपको Market के ₹84 से ऊपर या ₹82 से नीचे जाने की आवश्यकता है।\nStrangle: 84 Call Buy (Premium ₹0.20) + 82 Put Buy (Premium ₹0.20)। Total Cost = ₹0.40। यह सस्ता है! लेकिन Profit कमाने के लिए आपको Market के ₹84.40 से ऊपर या ₹81.60 से नीचे जाने की आवश्यकता है।",
+      "real_life_indian_example": "कल Finance Minister द्वारा Union Budget की घोषणा या RBI Governor का Policy Speech है। एक Trader जानता है कि रुपया बेतहाशा झूलेगा लेकिन यह नहीं जानता कि News अच्छी होगी या बुरी। वह आज एक Long Straddle Buy कर लेता है।",
+      "exam_traps": [
+        "Straddle को Strangle के साथ Confuse करना। Straddle = SAME Strike (जैसे, 83 Call Buy + 83 Put Buy)। Strangle = DIFFERENT Strikes (जैसे, 84 Call Buy + 82 Put Buy)।",
+        "यह सोचना कि ये Strategies शांत Market में पैसा बनाती हैं। काम करने के लिए इन्हें सख्ती से High Volatility (बड़े Moves) की आवश्यकता होती है。"
+      ],
+      "memory_trick": "Straddle = घोड़े की सवारी करना (पैर SAME Saddle/Strike पर)। Strangle = दो DIFFERENT तरफ से गला घोंटना (अलग-अलग Strike)।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Futures के साथ Hedging vs Options के साथ Hedging",
+      "clear_explanation": "Futures आपको एक Fixed Price में Lock कर देते हैं; आप Loss से सुरक्षित रहते हैं लेकिन आप Extra Profit की कोई भी संभावना छोड़ देते हैं यदि Market अनुकूल रूप से चलता है। Options Insurance की तरह काम करते हैं; आप Upfront Premium चुकाते हैं और Loss से सुरक्षित रहते हैं, लेकिन यदि Market अनुकूल रूप से चलता है, तो आप बस Option को Ignore कर सकते हैं और Spot Market में Extra Profit ले सकते हैं।"
+    },
+    {
+      "difference_between": "Straddle vs Strangle",
+      "clear_explanation": "दोनों का उपयोग तब किया जाता है जब आप एक बड़े Price Movement की उम्मीद करते हैं लेकिन Direction नहीं जानते। Straddle में बिल्कुल SAME Strike Price पर एक Call और एक Put Buy करना शामिल है (High Cost, Closer Breakeven)। Strangle में DIFFERENT, Out-of-the-Money (OTM) Strike Prices पर एक Call और एक Put Buy करना शामिल है (Low Cost, लेकिन Profit कमाने के लिए बहुत बड़े Price Movement की आवश्यकता होती है)।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "सही Hedge की पहचान करना: Importer Futures/Calls Buy करता है। Exporter Futures Sell करता है/Puts Buy करता है।",
+    "Options का उपयोग करके किसी Importer/Exporter के लिए अंतिम Effective Price की Calculation करना (Premium को शामिल करना याद रखें!)।",
+    "Straddle (Same Strike Call + Put) vs Strangle (Different Strike Call + Put) की पहचान करना।",
+    "एक Arbitrageur के उद्देश्य को समझना (Mispricing से Risk-free Profit)।"
+  ],
+  "quick_revision_summary": [
+    "Hedgers Security चाहते हैं। Speculators Profit चाहते हैं। Arbitrageurs Risk-free Gaps चाहते हैं।",
+    "Importer = Dollar चुकाने हैं = Dollar Rise होने का डर = USD Future Buy करता है या Call Option Buy करता है।",
+    "Exporter = Dollar मिलने हैं = Dollar Fall होने का डर = USD Future Sell करता है या Put Option Buy करता है।",
+    "Arbitrage पूरी तरह से Risk-free होता है और आमतौर पर इसमें Zero Net Investment शामिल होता है।",
+    "Long Straddle = SAME Strike Price पर Call Buy करें + Put Buy करें।",
+    "Long Strangle = DIFFERENT Strike Prices (आमतौर पर OTM) पर Call Buy करें + Put Buy करें।",
+    "Volatility Strategies (Straddle/Strangle) पैसा खो देती हैं यदि Market Flat रहता है।"
+  ]
+}

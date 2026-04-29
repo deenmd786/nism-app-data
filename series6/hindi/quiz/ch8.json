@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "What is the settlement cycle currently followed in the Indian equity spot market?",
+    "options": [
+      "T+0",
+      "T+1",
+      "T+2",
+      "T+5"
+    ],
+    "answer": "T+1",
+    "hint": "हाल ही में T+2 से move हुआ है।",
+    "explanation": "Indian stock exchanges T+1 rolling settlement cycle पर move कर गए हैं, जहाँ trades अगले working day पर settle होते हैं।"
+  },
+  {
+    "id": 2,
+    "question": "The process of delivering securities to the Clearing Corporation to fulfill a sale obligation is called:",
+    "options": [
+      "Pay-in of Securities",
+      "Pay-out of Securities",
+      "Auction",
+      "Bad Delivery"
+    ],
+    "answer": "Pay-in of Securities",
+    "hint": "Shares को 'in' (अंदर) डालना।",
+    "explanation": "Pay-in वह process है जहाँ seller settlement day पर Clearing Corporation (CC) को securities deliver करता है।"
+  },
+  {
+    "id": 3,
+    "question": "The process of receiving securities from the Clearing Corporation against a purchase is called:",
+    "options": [
+      "Pay-in",
+      "Pay-out",
+      "Rectification",
+      "Transmission"
+    ],
+    "answer": "Pay-out",
+    "hint": "Shares को 'out' (बाहर) निकालना।",
+    "explanation": "Pay-out तब होता है जब Clearing Corporation buying broker/investor को securities release करता है।"
+  },
+  {
+    "id": 4,
+    "question": "Which account is used by a Clearing Member to receive securities from clients for Pay-in?",
+    "options": [
+      "Beneficiary Account",
+      "Pool Account / Settlement Account",
+      "Suspense Account",
+      "Current Account"
+    ],
+    "answer": "Pool Account / Settlement Account",
+    "hint": "एक temporary holding area.",
+    "explanation": "Clearing Member CC को deliver करने से पहले selling clients से shares collect करने के लिए अपने Pool Account (या Principal Account) का उपयोग करता है।"
+  },
+  {
+    "id": 5,
+    "question": "The instruction given by an investor to their DP to transfer shares is called:",
+    "options": [
+      "Cheque",
+      "Delivery Instruction Slip (DIS)",
+      "Debit Note",
+      "Contract Note"
+    ],
+    "answer": "Delivery Instruction Slip (DIS)",
+    "hint": "Shares के लिए एक cheque की तरह।",
+    "explanation": "DIS वह standard form है जिसका उपयोग investors अपने demat account से securities के debit को authorize करने के लिए करते हैं।"
+  },
+  {
+    "id": 6,
+    "question": "A trade executed between two investors without involving the stock exchange mechanism is called:",
+    "options": [
+      "On-market trade",
+      "Off-market trade",
+      "Illegal trade",
+      "Insider trade"
+    ],
+    "answer": "Off-market trade",
+    "hint": "Direct transfer.",
+    "explanation": "Off-market trades stock exchange clearing corporation के माध्यम से गए बिना सीधे दो parties (जैसे, gift, private transfer) के बीच settle किए गए transactions हैं।"
+  },
+  {
+    "id": 7,
+    "question": "To execute an Off-market transfer, the investor must specify:",
+    "options": [
+      "The Settlement Number",
+      "The Target Client ID and DP ID",
+      "The Stock Exchange Name",
+      "The Broker Code"
+    ],
+    "answer": "The Target Client ID and DP ID",
+    "hint": "यह कहाँ जा रहा है?",
+    "explanation": "Off-market transfer के लिए, sender को receiver का Target Client ID और Target DP ID provide करना होगा।"
+  },
+  {
+    "id": 8,
+    "question": "Which market type is used for normal trading on the stock exchange?",
+    "options": [
+      "Rolling Settlement",
+      "Auction Market",
+      "Block Deal Window",
+      "Odd Lot Market"
+    ],
+    "answer": "Rolling Settlement",
+    "hint": "हर दिन एक settlement day है।",
+    "explanation": "Rolling Settlement market वह primary market है जहाँ continuous basis पर normal buying और selling होती है।"
+  },
+  {
+    "id": 9,
+    "question": "What is the 'Execution Date' on a Delivery Instruction Slip?",
+    "options": [
+      "The date when the trade happened",
+      "The date when the transfer should take place",
+      "The date when the slip was printed",
+      "The date of account opening"
+    ],
+    "answer": "The date when the transfer should take place",
+    "hint": "Future dated instructions.",
+    "explanation": "Execution Date वह date है जिस दिन DP द्वारा instruction को execute (process) किया जाना है।"
+  },
+  {
+    "id": 10,
+    "question": "If a seller fails to deliver shares for Pay-in, it results in:",
+    "options": [
+      "Shortage / Failure to Deliver",
+      "Surplus",
+      "Penalty only",
+      "Trade Cancellation"
+    ],
+    "answer": "Shortage / Failure to Deliver",
+    "hint": "Auction follow करता है।",
+    "explanation": "Deadline तक securities deliver करने में failure का result shortage होता है, जिससे Clearing Corporation द्वारा auction किया जाता है।"
+  },
+  {
+    "id": 11,
+    "question": "The auction to buy shares for a shortage is conducted by:",
+    "options": [
+      "The Depository",
+      "The Clearing Corporation / Stock Exchange",
+      "The Seller",
+      "The Buyer"
+    ],
+    "answer": "The Clearing Corporation / Stock Exchange",
+    "hint": "Central counterparty की responsibility.",
+    "explanation": "Clearing Corporation buyer को deliver करने के लिए defaulting seller की ओर से shares purchase करने के लिए specific market में एक auction conduct करता है।"
+  },
+  {
+    "id": 12,
+    "question": "What is 'Inter-Depository Transfer'?",
+    "options": [
+      "Transfer between two accounts within NSDL",
+      "Transfer between NSDL and CDSL accounts",
+      "Transfer between two brokers",
+      "Transfer between Equity and Debt"
+    ],
+    "answer": "Transfer between NSDL and CDSL accounts",
+    "hint": "Different depositories के आर-पार।",
+    "explanation": "एक Inter-Depository Transfer (IDT) में securities को एक depository (जैसे, NSDL) के account से दूसरी depository (जैसे, CDSL) के account में transfer करना शामिल है।"
+  },
+  {
+    "id": 13,
+    "question": "For an On-market trade, the DIS must mention the:",
+    "options": [
+      "Target Client ID only",
+      "Market Type and Settlement Number",
+      "Price of the share",
+      "Bank Account Number"
+    ],
+    "answer": "Market Type and Settlement Number",
+    "hint": "Specific trade cycle से link करना।",
+    "explanation": "Market trades के लिए, DIS को यह identify करने के लिए कि कौन सी trade obligation पूरी की जा रही है, Market Type (जैसे, Rolling) और unique Settlement Number specify करना होगा।"
+  },
+  {
+    "id": 14,
+    "question": "What is 'Auto Pay-in' facility?",
+    "options": [
+      "Automatic debit of shares from client account to broker's pool",
+      "Automatic selling of shares",
+      "Automatic buying of shares",
+      "Automatic dividend payment"
+    ],
+    "answer": "Automatic debit of shares from client account to broker's pool",
+    "hint": "Manual DIS submission को कम करता है।",
+    "explanation": "Auto Pay-in DP को broker (POA के माध्यम से) द्वारा provide की गई trade details के आधार पर client के account को automatically debit करने और broker के pool account को credit करने की अनुमति देता है।"
+  },
+  {
+    "id": 15,
+    "question": "In the T+1 cycle, by what time must the investor deliver shares to the broker?",
+    "options": [
+      "By T+2 morning",
+      "By T+1 morning (or usually T evening)",
+      "By T+5",
+      "Anytime"
+    ],
+    "answer": "By T+1 morning (or usually T evening)",
+    "hint": "Market pay-in deadline से पहले।",
+    "explanation": "T+1 पर pay-in deadline को meet करने के लिए, investors को typically T day की evening या T+1 की बहुत early morning तक DIS provide करना या shares available रखना होता है।"
+  },
+  {
+    "id": 16,
+    "question": "What is 'Direct Pay-out'?",
+    "options": [
+      "Shares go from CC to Broker's Pool",
+      "Shares go from CC directly to Client's Beneficiary Account",
+      "Shares go to the RTA",
+      "Shares go to the Bank"
+    ],
+    "answer": "Shares go from CC directly to Client's Beneficiary Account",
+    "hint": "Broker के pool को skip करना।",
+    "explanation": "Direct Pay-out में, Clearing Corporation broker के pool को bypass करते हुए सीधे buying client के beneficiary account में securities का payout credit करता है।"
+  },
+  {
+    "id": 17,
+    "question": "If a client buys shares on Monday (T), when can they sell them?",
+    "options": [
+      "Only after T+2",
+      "Only after receiving delivery (T+1)",
+      "Immediately (BTST - Buy Today Sell Tomorrow)",
+      "After 1 year"
+    ],
+    "answer": "Immediately (BTST - Buy Today Sell Tomorrow)",
+    "hint": "Delivery प्राप्त करने से पहले बेचना।",
+    "explanation": "Investors अपने खरीदे गए shares को delivery प्राप्त करने से पहले (BTST) भी बेच सकते हैं, लेकिन यदि purchase short delivery में result करता है तो वे risk bear करते हैं।"
+  },
+  {
+    "id": 18,
+    "question": "The deadline for Pay-in of securities and funds is set by:",
+    "options": [
+      "The Broker",
+      "The Depository",
+      "The Clearing Corporation",
+      "The Investor"
+    ],
+    "answer": "The Clearing Corporation",
+    "hint": "The central settler.",
+    "explanation": "Clearing Corporation strict timelines (जैसे, T+1 पर 10:30 AM) set करता है जिसके द्वारा members को pay-in complete करना होगा।"
+  },
+  {
+    "id": 19,
+    "question": "Which instruction is used to transfer shares from a Clearing Member's Pool Account to a Client's account?",
+    "options": [
+      "Receipt Instruction",
+      "Delivery Instruction",
+      "Pledge Instruction",
+      "Remat Request"
+    ],
+    "answer": "Delivery Instruction",
+    "hint": "बाहर निकालना (Moving out)।",
+    "explanation": "Clearing Member अपने Pool Account से Client के Beneficiary Account (Pay-out) में shares move करने के लिए एक delivery instruction issue करता है।"
+  },
+  {
+    "id": 20,
+    "question": "Can a DIS be used for both On-market and Off-market trades?",
+    "options": [
+      "No, separate booklets are used",
+      "Yes, the same slip format is used, just checkboxes differ",
+      "Yes, but Off-market requires a stamp",
+      "No, Off-market is verbal"
+    ],
+    "answer": "Yes, the same slip format is used, just checkboxes differ",
+    "hint": "Standard form.",
+    "explanation": "Standard DIS booklet का उपयोग दोनों के लिए किया जा सकता है। Investor 'Market' या 'Off-Market' tick करता है और relevant details (Settlement No. vs Target ID) भरता है।"
+  },
+  {
+    "id": 21,
+    "question": "The 'Deadline Time' for submitting a DIS to the DP is usually:",
+    "options": [
+      "48 hours before execution",
+      "Specifically mentioned by the DP (e.g., 4 PM on T day)",
+      "After the market closes",
+      "Any time"
+    ],
+    "answer": "Specifically mentioned by the DP (e.g., 4 PM on T day)",
+    "hint": "Processing time allow करने के लिए।",
+    "explanation": "DPs next-day execution के लिए DIS accept करने की एक deadline (जैसे, 4 PM या 6 PM) set करते हैं ताकि यह ensure हो सके कि उनके पास इसे system में enter करने का समय है।"
+  },
+  {
+    "id": 22,
+    "question": "What is 'SLB'?",
+    "options": [
+      "Securities Lending and Borrowing",
+      "Stock Listing Board",
+      "Securities Liquidity Bond",
+      "Short Long Board"
+    ],
+    "answer": "Securities Lending and Borrowing",
+    "hint": "Legal short selling mechanism.",
+    "explanation": "SLB एक mechanism है जो investors को fee earn करने के लिए अपनी idle securities lend करने, या delivery obligations को meet करने के लिए securities borrow करने की अनुमति देता है।"
+  },
+  {
+    "id": 23,
+    "question": "In an SLB transaction, who guarantees the return of securities?",
+    "options": [
+      "The Borrower",
+      "The Lender",
+      "The Clearing Corporation",
+      "The Broker"
+    ],
+    "answer": "The Clearing Corporation",
+    "hint": "Central counterparty guarantee.",
+    "explanation": "Clearing Corporation SLB transactions के लिए central counterparty के रूप में कार्य करता है, जो lender को securities की वापसी की guarantee देता है।"
+  },
+  {
+    "id": 24,
+    "question": "A 'Block Deal' is a single trade having a value of more than:",
+    "options": [
+      "Rs. 1 Crore",
+      "Rs. 5 Crores",
+      "Rs. 10 Crores",
+      "Rs. 100 Crores"
+    ],
+    "answer": "Rs. 10 Crores",
+    "hint": "High value single transaction.",
+    "explanation": "Block deals Rs. 10 Crores से अधिक value वाले trades हैं जिन्हें एक separate window में execute किया जाता है।"
+  },
+  {
+    "id": 25,
+    "question": "Does an Off-market trade attract Stamp Duty?",
+    "options": [
+      "No",
+      "Yes, it is levied by the Depository",
+      "Only if it is a gift",
+      "Only if value > 1 Lakh"
+    ],
+    "answer": "Yes, it is levied by the Depository",
+    "hint": "Ownership का Transfer.",
+    "explanation": "July 2020 से, consideration के लिए off-market transfers पर stamp duty applicable है और यह Depository द्वारा collect की जाती है।"
+  },
+  {
+    "id": 26,
+    "question": "The 'Settlement Number' is a unique identifier for:",
+    "options": [
+      "A specific client",
+      "A specific security",
+      "A specific settlement cycle/period",
+      "A specific broker"
+    ],
+    "answer": "A specific settlement cycle/period",
+    "hint": "उदा., 2023051.",
+    "explanation": "Settlement Number (जैसे, N2023123) exchange पर एक specific trading period और settlement cycle को identify करता है।"
+  },
+  {
+    "id": 27,
+    "question": "If a client sells shares but the broker forgets to execute the pay-in, what happens?",
+    "options": [
+      "Nothing",
+      "Short delivery -> Auction -> Penalty",
+      "The broker pays from their pocket",
+      "The client is fined"
+    ],
+    "answer": "Short delivery -> Auction -> Penalty",
+    "hint": "Systematic failure.",
+    "explanation": "यदि shares CC को deliver नहीं किए जाते हैं, तो इसका result short delivery होता है। CC एक auction conduct करता है, और price difference + penalty broker से recover की जाती है (जो client से recover कर सकता है)।"
+  },
+  {
+    "id": 28,
+    "question": "Can shares be transferred from NSDL to CDSL?",
+    "options": [
+      "No",
+      "Yes, using Inter-Depository Transfer",
+      "Only if the company allows",
+      "Only via physical certificates"
+    ],
+    "answer": "Yes, using Inter-Depository Transfer",
+    "hint": "Connectivity exist करती है।",
+    "explanation": "हाँ, Inter-Depository Transfer instruction का उपयोग करके depositories के बीच shares move किए जा सकते हैं।"
+  },
+  {
+    "id": 29,
+    "question": "What is 'Margin Pledge'?",
+    "options": [
+      "Selling shares to pay margin",
+      "Pledging shares in favor of the Broker/CC to meet margin requirements",
+      "Borrowing money",
+      "Freezing shares"
+    ],
+    "answer": "Pledging shares in favor of the Broker/CC to meet margin requirements",
+    "hint": "Shares को trading limits के लिए collateral के रूप में उपयोग करना।",
+    "explanation": "Investors trading के लिए margin requirements को meet करने के लिए Trading Member (Broker) या Clearing Member के favor में अपनी securities pledge कर सकते हैं।"
+  },
+  {
+    "id": 30,
+    "question": "In the case of 'Early Pay-in', the shares are transferred to the CC:",
+    "options": [
+      "On settlement day",
+      "Before the settlement day",
+      "After settlement day",
+      "Never"
+    ],
+    "answer": "Before the settlement day",
+    "hint": "जल्दी (Early)।",
+    "explanation": "Early Pay-in में margin benefits प्राप्त करने के लिए scheduled pay-in time से पहले Clearing Corporation को securities deliver करना शामिल है।"
+  },
+  {
+    "id": 31,
+    "question": "Who provides the 'Transaction Statement' showing the debits and credits?",
+    "options": [
+      "The Broker",
+      "The Depository Participant (DP)",
+      "The Exchange",
+      "The Bank"
+    ],
+    "answer": "The Depository Participant (DP)",
+    "hint": "The account keeper.",
+    "explanation": "DP client को Transaction Statement (SOT) provide करता है, जिसमें सभी transfers (pay-in, pay-out, off-market) की details होती हैं।"
+  },
+  {
+    "id": 32,
+    "question": "Is it possible to cancel a DIS instruction?",
+    "options": [
+      "No, once submitted it is final",
+      "Yes, before the execution date/time",
+      "Yes, even after execution",
+      "Only with court order"
+    ],
+    "answer": "Yes, before the execution date/time",
+    "hint": "Action होने से पहले।",
+    "explanation": "Client execution deadline से पहले cancellation instruction submit करके एक unexecuted instruction को cancel कर सकता है।"
+  },
+  {
+    "id": 33,
+    "question": "The 'CM Pool Account' generally has a zero balance:",
+    "options": [
+      "At the end of every settlement cycle",
+      "Always",
+      "Never",
+      "Only on Sundays"
+    ],
+    "answer": "At the end of every settlement cycle",
+    "hint": "यह एक transit account है।",
+    "explanation": "Pool Account एक transit account है। Clients से प्राप्त shares CC को pay-in किए जाते हैं; CC से प्राप्त shares clients को pay-out किए जाते हैं। Settlement के बाद इसे ideally zero होना चाहिए।"
+  },
+  {
+    "id": 34,
+    "question": "What is 'Speed-e' (NSDL) or 'Easiest' (CDSL)?",
+    "options": [
+      "Fast trading platforms",
+      "Internet-based facilities for submitting DIS electronically",
+      "Banking apps",
+      "Gaming apps"
+    ],
+    "answer": "Internet-based facilities for submitting DIS electronically",
+    "hint": "Online instructions.",
+    "explanation": "ये NSDL और CDSL द्वारा provide की जाने वाली web-based facilities हैं जो clients को online delivery instructions submit करने की अनुमति देती हैं, जिससे physical DIS eliminate हो जाता है।"
+  },
+  {
+    "id": 35,
+    "question": "If a client buys shares but does not pay the broker, the broker can:",
+    "options": [
+      "Keep the shares in their own account (Client Unpaid Securities Account - CUSA)",
+      "Sell the shares to recover dues",
+      "Both A and B",
+      "Nothing"
+    ],
+    "answer": "Both A and B",
+    "hint": "Broker protection.",
+    "explanation": "Broker shares को एक specific 'Client Unpaid Securities Account' (CUSA) में hold कर सकता है और, यदि 5 दिनों के भीतर payment नहीं किया जाता है, तो dues recover करने के लिए उन्हें sell कर सकता है।"
+  },
+  {
+    "id": 36,
+    "question": "Which of the following is required for an 'Off-market' transfer between two NSDL accounts?",
+    "options": [
+      "Inter-Depository Instruction",
+      "Intra-Depository Instruction",
+      "Market Instruction",
+      "Pledge Instruction"
+    ],
+    "answer": "Intra-Depository Instruction",
+    "hint": "एक ही depository के भीतर।",
+    "explanation": "एक ही depository (NSDL से NSDL) के भीतर Transfer एक Intra-Depository transfer है।"
+  },
+  {
+    "id": 37,
+    "question": "The 'Record Date' is important for:",
+    "options": [
+      "Determining the price",
+      "Determining who gets corporate benefits (dividend/bonus)",
+      "Determining the broker",
+      "Determining the tax"
+    ],
+    "answer": "Determining who gets corporate benefits (dividend/bonus)",
+    "hint": "Snapshot date.",
+    "explanation": "Record Date cut-off date है। जिन Investors के नाम इस date पर depository records (Benpos) में दिखाई देते हैं, वे benefits के लिए eligible हैं।"
+  },
+  {
+    "id": 38,
+    "question": "Can a client give a 'Standing Instruction' to receiving credits automatically?",
+    "options": [
+      "Yes",
+      "No",
+      "Only for IPOs",
+      "Only for Debentures"
+    ],
+    "answer": "Yes",
+    "hint": "Convenience.",
+    "explanation": "हाँ, clients receipt instructions की आवश्यकता से बचने के लिए, अपने account में सभी credits को automatically accept करने के लिए एक one-time standing instruction दे सकते हैं।"
+  },
+  {
+    "id": 39,
+    "question": "If a DIS is lost in transit by the client:",
+    "options": [
+      "Anyone can use it",
+      "The client must inform the DP to 'Stop' the series",
+      "The DP is responsible",
+      "Nothing happens"
+    ],
+    "answer": "The client must inform the DP to 'Stop' the series",
+    "hint": "Lost cheque को block करना।",
+    "explanation": "Client को misuse रोकने के लिए lost DIS booklet के specific serial numbers को stop करने के लिए तुरंत DP को inform करना चाहिए।"
+  },
+  {
+    "id": 40,
+    "question": "In a 'Delivery versus Payment' (DVP) scenario (usually institutional), the settlement of funds and securities happens:",
+    "options": [
+      "Separately",
+      "Simultaneously",
+      "Randomly",
+      "Never"
+    ],
+    "answer": "Simultaneously",
+    "hint": "Risk mitigation.",
+    "explanation": "DVP ensure करता है कि securities की delivery केवल तभी हो जब payment किया गया हो (और vice versa), जिससे settlement risk कम हो जाता है।"
+  },
+  {
+    "id": 41,
+    "question": "What is the penalty for 'Short Delivery' in the auction market?",
+    "options": [
+      "No penalty",
+      "Only the price difference",
+      "Price difference + Penalty charge",
+      "Jail term"
+    ],
+    "answer": "Price difference + Penalty charge",
+    "hint": "यह punitive है।",
+    "explanation": "Defaulting seller को difference pay करना होता है यदि auction price higher है, साथ ही Clearing Corporation को penalty charge भी देना होता है।"
+  },
+  {
+    "id": 42,
+    "question": "Can a client transfer shares to their own account in another DP?",
+    "options": [
+      "No",
+      "Yes, it is an Off-market transfer",
+      "Yes, it is a Market transfer",
+      "Only if the broker agrees"
+    ],
+    "answer": "Yes, it is an Off-market transfer",
+    "hint": "अपने स्वयं के assets को move करना।",
+    "explanation": "एक ही person (different DPs के साथ) के दो accounts के बीच shares transfer करना एक off-market transfer है।"
+  },
+  {
+    "id": 43,
+    "question": "The 'Market Type' code for normal rolling settlement is usually:",
+    "options": [
+      "N or Rolling",
+      "A or Auction",
+      "TT or Trade for Trade",
+      "Z or Block"
+    ],
+    "answer": "N or Rolling",
+    "hint": "Normal.",
+    "explanation": "Market types coded होते हैं। 'N' का मतलब आमतौर पर Normal Rolling Settlement होता है।"
+  },
+  {
+    "id": 44,
+    "question": "What happens if the 'Execution Date' on the DIS is a holiday?",
+    "options": [
+      "It is executed on the holiday",
+      "It is executed on the next working day",
+      "It is rejected",
+      "It is cancelled"
+    ],
+    "answer": "It is executed on the next working day",
+    "hint": "Systems holidays पर काम नहीं करते हैं।",
+    "explanation": "Holidays पर execution date वाले instructions अगले working day पर process किए जाते हैं।"
+  },
+  {
+    "id": 45,
+    "question": "For an Inter-Depository Transfer, does the client need to submit DIS to both DPs?",
+    "options": [
+      "Yes",
+      "No, only to the delivering DP",
+      "No, only to the receiving DP",
+      "No, the exchange handles it"
+    ],
+    "answer": "No, only to the delivering DP",
+    "hint": "केवल sender initiate करता है।",
+    "explanation": "Sender अपने DP (delivering DP) को instruction submit करता है। Receiving DP को केवल credit receive होता है।"
+  },
+  {
+    "id": 46,
+    "question": "Securities in the 'Suspense Account' of the company are those:",
+    "options": [
+      "That are suspended from trading",
+      "Pending for demat due to mismatch (e.g. IPO)",
+      "That are fake",
+      "That are pledged"
+    ],
+    "answer": "Pending for demat due to mismatch (e.g. IPO)",
+    "hint": "Unclaimed/Pending.",
+    "explanation": "एक IPO में, यदि demat account details incorrect हैं, तो shares को एक suspense account में credit किया जा सकता है जब तक कि investor details को correct न कर ले।"
+  },
+  {
+    "id": 47,
+    "question": "Can a broker use a client's securities for their own purpose?",
+    "options": [
+      "Yes, always",
+      "No, strict segregation is required",
+      "Yes, if they need money",
+      "Only for 1 day"
+    ],
+    "answer": "No, strict segregation is required",
+    "hint": "SEBI rule.",
+    "explanation": "Brokers को client securities का misuse करने से strictly prohibit किया गया है। उन्हें client assets को proprietary assets से segregate करना होगा।"
+  },
+  {
+    "id": 48,
+    "question": "Pay-in of Funds is the responsibility of:",
+    "options": [
+      "The Depository",
+      "The Clearing Member (Broker)",
+      "The RTA",
+      "The Government"
+    ],
+    "answer": "The Clearing Member (Broker)",
+    "hint": "Money leg.",
+    "explanation": "Clearing Member pay-in के लिए Clearing Corporation के bank account में funds transfer करने के लिए responsible है।"
+  },
+  {
+    "id": 49,
+    "question": "Who acts as the counterparty for all trades in the 'Rolling Settlement'?",
+    "options": [
+      "The Broker",
+      "The Clearing Corporation",
+      "The Buyer/Seller directly",
+      "The Depository"
+    ],
+    "answer": "The Clearing Corporation",
+    "hint": "Novation.",
+    "explanation": "Clearing Corporation settlement की guarantee देते हुए, हर seller के लिए buyer और हर buyer के लिए seller बनने के लिए 'Novation' process का उपयोग करता है।"
+  },
+  {
+    "id": 50,
+    "question": "If a DIS is rejected by the system due to 'Insufficient Balance':",
+    "options": [
+      "The DP pays the difference",
+      "The instruction fails and is not executed",
+      "The system waits for balance",
+      "The account is closed"
+    ],
+    "answer": "The instruction fails and is not executed",
+    "hint": "आप वह transfer नहीं कर सकते जो आपके पास नहीं है।",
+    "explanation": "यदि execution date पर free balance insufficient है, तो instruction fail हो जाता है।"
+  }
+]

@@ -1,0 +1,80 @@
+{
+  "course": "NISM Series III-A: Securities Intermediaries Compliance",
+  "unit_number": 16,
+  "unit_name": "SEBI (Depositories and Participants) Regulations 2018",
+  "weightage": "3%",
+  "overview": "जबकि Chapter 15 ने हमें Depositories के लिए 'Law' दिया था, Chapter 16 हमें इसके लिए 'Rules' देता है कि entities (Depositories और DP) को कैसा behave करना चाहिए। यह chapter day-to-day operations, business में बने रहने के लिए आवश्यक Net Worth, और उन strict timelines के बारे में है जिनका उन्हें पालन करना चाहिए। Exam के लिए, 'Rights and Obligations' और 'Internal Audit' requirements पर focus करें। 3% weightage के साथ, Depository Participant (DP) license बनाए रखने की technicalities पर 3 questions की अपेक्षा करें।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Admission of a Participant",
+      "basic_meaning": "हर business DP नहीं बन सकता। आपको Depository और SEBI द्वारा निर्धारित specific professional और financial criteria को पूरा करना होगा।",
+      "detailed_explanation": "Depository Participant (DP) बनने के लिए, किसी entity को इन steps का पालन करना चाहिए:\n1. **Eligibility:** केवल कुछ institutions जैसे Banks, Public Financial Institutions, State Financial Corporations, Stock Brokers, या Clearing Corporations ही apply कर सकते हैं。\n2. **Application:** Applicant **Depository** (NSDL या CDSL) में apply करता है。\n3. **Evaluation:** Depository यह check करती है कि क्या applicant के पास आवश्यक 'Systems and Procedures' (computers, secure rooms, trained staff) हैं。\n4. **Registration:** एक बार Depository satisfy हो जाने पर, वह SEBI को applicant recommend करती है। SEBI फिर 'Certificate of Registration' grant करता है।\n\n**Net Worth Requirement:** एक Stock Broker को DP के रूप में act करने के लिए, उन्हें generally **₹2 crore** के minimum Net Worth की requirement होती है (Note: यह specific Depository rules के आधार पर vary कर सकता है, लेकिन exam के लिए ₹2 crore standard benchmark है)।",
+      "why_this_is_important": "Exam perspective: NISM अक्सर पूछता है कि कौन सी entities DP बनने के eligible हैं। Practical perspective: एक Compliance Officer को यह ensure करना चाहिए कि DP का Net Worth कभी भी mandatory limit से नीचे न गिरे।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "यदि किसी छोटी stockbroking firm का Net Worth केवल ₹50 lakh है, तो वे DP नहीं बन सकते। Clients के electronic shares को hold करने की responsibility संभालने के लिए उन्हें अपनी capital बढ़ाकर कम से कम ₹2 crore करनी होगी।",
+      "exam_traps": [
+        "Trap: यह सोचना कि एक regular person DP बन सकता है। नहीं, यह एक registered 'Entity' जैसे Bank या Broker होना चाहिए।",
+        "Trap: यह मानना कि DP केवल Depository के साथ registered है। उन्हें SEBI के साथ भी registered होना चाहिए।"
+      ],
+      "memory_trick": "DP = Digital Partner (partner बनने के लिए 2 crore की requirement है)।"
+    },
+    {
+      "concept": "2. Rights and Obligations of Participants",
+      "basic_meaning": "एक बार जब आप DP बन जाते हैं, तो आपके पास investor की digital wealth को protect करने के लिए strict duties (obligations) का एक set होता है।",
+      "detailed_explanation": "एक DP के major obligations में शामिल हैं:\n1. **Agreement with Investor:** प्रत्येक DP को Demat account open करने से पहले investor के साथ एक standard agreement पर sign करना चाहिए। यह investor के rights को define करता है。\n2. **Separate Records:** एक DP को प्रत्येक investor के लिए separate records maintain करना चाहिए। वे 'Client A' के shares को 'Client B' के shares के साथ mix नहीं कर सकते。\n3. **Timely Processing:** यदि कोई investor shares को Demat करना चाहता है, तो DP को इसे **15 days** के भीतर process करना होगा। यदि कोई investor trade करना चाहता है, तो DP को instruction को तुरंत execute करना होगा。\n4. **Statement of Accounts:** DP को regular intervals (यदि transaction हो तो usually monthly) पर investor को एक transaction statement provide करना होगा。\n5. **Reporting:** DP को किसी भी suspicious activity या large scale transfers की report Depository और SEBI को करनी चाहिए।",
+      "why_this_is_important": "NISM Demat processing के लिए '15-day' timeline का test करता है। एक Compliance Officer के रूप में, इस timeline को miss करना audit के दौरान एक serious 'red flag' है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "यदि आप month की 1st तारीख को Demat के लिए अपने physical share certificates HDFC Bank (आपके DP) को submit करते हैं, तो bank की compliance team को यह ensure करना होगा कि उस month की 15th तारीख तक आपके account में electronic credit दिखाई दे।",
+      "exam_traps": [
+        "Demat के लिए 15-day rule अक्सर पूछा जाने वाला question है। इसे '10-day' के KRA upload rule के साथ confuse न करें।",
+        "Trap: यह सोचना कि DP मनचाहा fee charge कर सकता है। यद्यपि उनके पास कुछ freedom है, Depository कुछ service charges पर 'Cap' (limit) set करती है।"
+      ],
+      "memory_trick": "Demat Dream = 15 days (paper को pixels में बदलने का maximum time)।"
+    },
+    {
+      "concept": "3. Internal Audit and Inspection",
+      "basic_meaning": "यह ensure करने के लिए कि वे shares की 'चोरी' या 'misplace' तो नहीं कर रहे हैं, outsiders द्वारा DP की regularly checking की जानी चाहिए।",
+      "detailed_explanation": "1. **Internal Audit:** प्रत्येक DP को अपने operations का internal audit conduct करना चाहिए। यह एक **Chartered Accountant (CA)** या **Company Secretary (CS)** द्वारा किया जाना चाहिए。\n2. **Frequency:** यह audit usually हर **half-yearly** (वर्ष में दो बार) किया जाता है。\n3. **Submission:** Audit report Depository को submit की जानी चाहिए। यदि auditor को कोई mistake मिलती है, तो DP के पास इसे 'Rectify' करने के लिए limited time होता है。\n4. **Inspection by SEBI/Depository:** Internal audit के अलावा, SEBI या Depository किसी भी समय 'Surprise Inspection' कर सकते हैं।",
+      "why_this_is_important": "Exam अक्सर पूछता है 'DP का internal audit कौन कर सकता है?' (CA/CS) और 'frequency क्या है?' (Half-yearly)।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "हर six months में, Angel One जैसे broker को अपने systems की checking करने के लिए एक external CA firm को hire करना चाहिए। CA randomly यह check करेगा कि क्या clients के apps में दिखाए गए shares वास्तव में CDSL में रखे गए records से match करते हैं। यदि कोई mismatch है, तो CA इसे 'Negative Observation' के रूप में report करता है।",
+      "exam_traps": [
+        "Trap: यह सोचना कि केवल CA ही audit कर सकता है। DPs के लिए SEBI rules के तहत, practice में एक CS को भी internal audit conduct करने की permission है।",
+        "Trap: Frequency को confuse करना। DPs के लिए, यह half-yearly है।"
+      ],
+      "memory_trick": "DP Audit = CA या CS, साल में दो बार (H-H: Half-yearly Health-check)।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Depository vs Depository Participant (DP)",
+      "clear_explanation": "Depository (NSDL/CDSL) 'Principal' या main body है जो technology और vault का owner है। DP (Bank/Broker) Depository का 'Agent' है जो directly public के साथ deal करता है। Depository को 'Central Bank' और DP को 'Local Branch' के रूप में सोचें।"
+    },
+    {
+      "difference_between": "Statutory Audit vs Internal Audit",
+      "clear_explanation": "Financial health के लिए Companies Act द्वारा Statutory Audit required है। एक Internal Audit (DPs के लिए SEBI द्वारा mandatory) specifically यह check करता है कि क्या DP depository rules का comply कर रहा है, clients के instructions को properly handle कर रहा है, और share security maintain कर रहा है।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Demat process को complete करने के लिए 15-day timeline।",
+    "Internal Auditor की qualification (CA या CS)।",
+    "DP के रूप में act करने वाले stock broker के लिए minimum Net Worth (₹2 crore)।",
+    "Internal Audit report submit करने की frequency (Half-yearly)।",
+    "DP और investor के बीच 'Standard Agreement' की requirement।"
+  ],
+  "quick_revision_summary": [
+    "DPs investors और Central Depository (NSDL/CDSL) के बीच bridge के रूप में act करते हैं।",
+    "DP बनने के लिए brokers को कम से कम ₹2 crore के Net Worth की requirement होती है।",
+    "Demat requests को 15 days के भीतर process किया जाना चाहिए।",
+    "Internal audits CA या CS द्वारा half-yearly conduct किए जाने चाहिए।",
+    "DPs को clients की securities को separate रखना चाहिए और regular account statements provide करना चाहिए।",
+    "सभी instructions के records को safely preserve किया जाना चाहिए (usually DP rules के अनुसार 5-8 years के लिए)।",
+    "DP के control में किसी भी change के लिए SEBI से prior approval की requirement होती है।"
+  ]
+}

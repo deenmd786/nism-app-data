@@ -1,0 +1,107 @@
+{
+  "course": "NISM Series VI: Depository Operations",
+  "unit_number": 9,
+  "unit_name": "Special Services- Pledge and Hypothecation",
+  "weightage": "10%",
+  "overview": "यह chapter बताता है कि कैसे आप अपने shares को loan लेने के लिए 'security' के रूप में इस्तेमाल कर सकते हैं। Cash के लिए अपने shares बेचने के बजाय, आप उन्हें किसी bank के पास 'Pledge' कर सकते हैं। Shares आपके account में ही रहते हैं लेकिन 'locked' हो जाते हैं ताकि जब तक loan चुकाया न जाए, आप उन्हें बेच न सकें। NISM exam के लिए यह chapter बहुत महत्वपूर्ण है क्योंकि यह borrower (Pledgor) और lender (Pledgee) के legal rights को cover करता है।",
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Pledgor बनाम Pledgee",
+      "basic_meaning": "Borrower (Pledgor) और Lender (Pledgee)।",
+      "detailed_explanation": "एक pledge transaction में, दो parties होती हैं:\n1. **Pledgor (The Investor):** यह आप हैं। आप shares own करते हैं और पैसा borrow करना चाहते हैं। आप अपने assets को 'pledge' कर रहे हैं।\n2. **Pledgee (The Lender):** यह आमतौर पर एक Bank या NBFC (Non-Banking Financial Company) होता है। वे आपको loan देते हैं और guarantee के रूप में आपके shares hold करते हैं।\n\nदोनों Pledgor और Pledgee के पास एक ही depository system में Demat accounts होने चाहिए (हालांकि वे अलग-अलग DPs के पास हो सकते हैं)।",
+      "why_this_is_important": "Exam अक्सर terminology को test करता है। याद रखें: 'OR' = Owner (Pledgor), 'EE' = Entity receiving the pledge (Pledgee)।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Mr. Amit के पास ₹10 Lakhs के Reliance shares हैं। उन्हें medical emergency के लिए पैसे चाहिए लेकिन वे अपने shares बेचना नहीं चाहते। वे ICICI Bank जाते हैं। Mr. Amit **Pledgor** हैं, और ICICI Bank **Pledgee** है।",
+      "exam_traps": [
+        "यह सोचना कि Pledgee तुरंत shares का मालिक बन जाता है। (False. उन्हें केवल तभी बेचने का right मिलता है जब Pledgor default करता है)।",
+        "यह सोचना कि shares Bank के account में चले जाते हैं। (False. एक standard pledge में, वे Pledgor के account में ही रहते हैं लेकिन 'Pledged' के रूप में mark हो जाते हैं)।"
+      ],
+      "memory_trick": "Pledg-OR = Owner. Pledg-EE = Employee/Entity जो security ले रही है।"
+    },
+    {
+      "concept": "2. The Pledge Life Cycle: Creation, Closure, और Invocation",
+      "basic_meaning": "एक pledge कैसे शुरू होता है, normally खत्म होता है, या badly खत्म होता है।",
+      "detailed_explanation": "1. **Creation:** Pledgor एक **Pledge Request Form (PRF)** भरता है। DP shares को 'lock' कर देता है। Pledge को valid होने के लिए Pledgee को इस request को electronically 'Accept' करना होगा।\n2. **Closure (Normal End):** एक बार जब Pledgor loan वापस कर देता है, तो वे closure request करते हैं। Pledgee इसे 'Approve' करता है, और shares 'unlocked' (release) हो जाते हैं।\n3. **Invocation (Bad End):** यदि Pledgor loan चुकाने में fail हो जाता है (default करता है), तो Pledgee pledge को 'Invoke' कर सकता है। इसका मतलब है कि shares Pledgee के account में move हो जाते हैं ताकि वे उन्हें बेच सकें और अपना पैसा recover कर सकें।",
+      "why_this_is_important": "Sequence जानना key है। एक pledge तब तक active नहीं होता जब तक Pledgee इसे 'Accept' नहीं करता। Exam इस बात पर focus करता है कि कौन सा step कौन initiate करता है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "यदि Amit अपना loan चुका देता है, तो ICICI Bank pledge को 'release' कर देता है। यदि Amit भाग जाता है, तो ICICI Bank pledge को 'invoke' करता है और NSE पर उसके Reliance shares बेच देता है।",
+      "exam_traps": [
+        "क्या Pledgor को pledged shares बेचने के लिए Pledgee की permission चाहिए? (हाँ, वे उन्हें तब तक बिल्कुल नहीं बेच सकते जब तक कि पहले pledge close न हो जाए)।",
+        "Pledged shares पर Dividends किसे मिलते हैं? (Pledgor/Original Owner को, bank को नहीं)।"
+      ],
+      "memory_trick": "Create (Request) -> Accept (Active) -> Close (Paid) OR Invoke (Default)।"
+    },
+    {
+      "concept": "3. LTV (Loan to Value) Ratio",
+      "basic_meaning": "Share value का वह percentage जो कोई bank loan के रूप में देने को तैयार है।",
+      "detailed_explanation": "Banks कभी भी share value के 100% के लिए loan नहीं देते क्योंकि share prices हर दिन बदलते हैं। यदि price गिरती है, तो bank security खो देता है। \n\nSEBI और RBI shares के against दिए जाने वाले loan की limits तय करते हैं (आमतौर पर लगभग 50%)।",
+      "why_this_is_important": "यह lender को market volatility से बचाता है। यदि value बहुत ज्यादा गिर जाती है, तो bank और shares की मांग करेगा (Margin Call)।",
+      "formula": "Loan Amount = Value of Shares × LTV %",
+      "formula_explanation": "आपको जो actual पैसा मिलता है वह shares की current market price को bank द्वारा allow किए गए percentage से गुणा (multiply) करके आता है।",
+      "step_by_step_calculation_example": "1. Share Price: ₹1,000.\n2. Number of Shares: 1,000.\n3. Total Value: ₹10,00,000.\n4. LTV Ratio: 50%.\n5. Calculation: 10,00,000 × 0.50 = ₹5,00,000.\n6. Result: Amit को ₹10 Lakhs की value वाले shares के against ₹5 Lakhs का loan मिलता है।",
+      "real_life_indian_example": "यदि Reliance का price ₹1,000 से गिरकर ₹700 हो जाता है, तो bank Amit से 50% ratio बनाए रखने के लिए और shares pledge करने को कह सकता है। इसे 'Margin Call' कहा जाता है।",
+      "exam_traps": [
+        "क्या LTV fixed रहता है? (Percentage fixed हो सकता है, लेकिन stock market के साथ 'Value' हर दिन बदलती है)।"
+      ],
+      "memory_trick": "LTV = Limits The Value you can borrow (आप जो borrow कर सकते हैं उस value को limit करता है)।"
+    },
+    {
+      "concept": "4. Margin Pledge (For Trading)",
+      "basic_meaning": "और stocks खरीदने या F&O trading के लिए limits पाने हेतु अपने broker के पास shares pledge करना।",
+      "detailed_explanation": "वर्तमान SEBI rules के तहत, यदि आप नए trades के लिए अपने existing shares को 'Margin' (collateral) के रूप में इस्तेमाल करना चाहते हैं, तो आपको **Margin Pledge** करना होगा।\n1. Shares आपके Demat account में ही रहते हैं।\n2. आप उन्हें Broker के favor में pledge करते हैं।\n3. Broker फिर उन्हें Clearing Corporation के पास 'Re-pledge' करता है।\n4. यह सुनिश्चित करता है कि आपके shares कभी भी आपके account से बाहर न जाएं, जब तक कि आप default न करें।",
+      "why_this_is_important": "यह exam के लिए एक अपेक्षाकृत नया और बहुत 'hot' topic है। इसने brokers द्वारा client के shares के misuse को रोकने के लिए पुराने 'Power of Attorney' system को replace किया है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "आप Nifty Options trade करना चाहते हैं लेकिन cash नहीं है। आप Zerodha के पास अपने TCS shares pledge करते हैं। Zerodha आपको उन shares की value के आधार पर (एक 'Haircut' या discount के बाद) एक 'Trading Limit' देता है।",
+      "exam_traps": [
+        "क्या Margin Pledge में shares Broker के account में move होते हैं? (नहीं, वे Client के account में 'Pledge' mark के साथ रहते हैं)।",
+        "'Haircut' क्या है? (यह LTV का opposite है। यदि LTV 80% है, तो Haircut 20% है)।"
+      ],
+      "memory_trick": "Margin Pledge = मेरा account, मेरे shares, लेकिन Broker की guarantee।"
+    },
+    {
+      "concept": "5. Hypothecation",
+      "basic_meaning": "Pledge के समान, लेकिन विशेष रूप से Debt securities या specific loan types के लिए उपयोग किया जाता है।",
+      "detailed_explanation": "जहाँ 'Pledge' का उपयोग अधिकांश shares के लिए किया जाता है, वहीं 'Hypothecation' एक समान legal concept है जिसका उपयोग अक्सर 'Debt' instruments (Bonds/Debentures) के लिए किया जाता है। \n\nDepository system में, प्रक्रिया लगभग pledge (Creation, Closure, Invocation) के समान ही होती है, लेकिन यह law के थोड़े अलग sections द्वारा governed होती है। Lender को **Hypothecatee** कहा जाता है।",
+      "why_this_is_important": "Exam पूछ सकता है कि 'Debt' या specific floating assets के लिए विशेष रूप से किस term का उपयोग किया जाता है। सामान्य depository बोलचाल में, लोग terms का interchangeably उपयोग करते हैं, लेकिन technically वे अलग हैं।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "Government Bonds या Corporate Debentures के against loan लेना।",
+      "exam_traps": [
+        "Hypothecation का closure कौन initiate करता है? (Pledgor/Borrower, लेकिन Lender द्वारा इसे confirm किया जाना चाहिए)।"
+      ],
+      "memory_trick": "H-ypothecation, D-ebt के लिए है (कुछ legal contexts में H, D के बाद आता है)।"
+    }
+  ],
+  "important_differences": [
+    {
+      "difference_between": "Creation बनाम Invocation",
+      "clear_explanation": "1. **Creation:** Loan शुरू करना | Shares lock हो जाते हैं | Owner अभी भी Pledgor है।\n2. **Invocation:** Loan contract तोड़ना | Shares Pledgee के account में move हो जाते हैं | केवल default होने पर होता है।"
+    },
+    {
+      "difference_between": "Pledge बनाम Sale",
+      "clear_explanation": "1. **Pledge:** Temporary (अस्थायी) | आप dividends और ownership अपने पास रखते हैं | Shares block हो जाते हैं।\n2. **Sale:** Permanent (स्थायी) | आप dividends और ownership खो देते हैं | Shares transfer हो जाते हैं।"
+    }
+  ],
+  "frequently_asked_exam_areas": [
+    "Pledgor कौन है? (Borrower/Investor)",
+    "क्या कोई Pledgor pledged shares बेच सकता है? (नहीं, pledge close किए बिना नहीं)",
+    "Pledged shares पर Dividends या Bonus shares जैसे Corporate Actions किसे मिलते हैं? (Pledgor को)",
+    "Margin Call क्या है? (Share prices गिरने पर और collateral की request)",
+    "क्या Pledgor और Pledgee का एक ही Depository में होना आवश्यक है? (हाँ, उस system के माध्यम से transaction process होने के लिए)"
+  ],
+  "quick_revision_summary": [
+    "Pledgor = Borrower; Pledgee = Lender.",
+    "Shares 'marked' हो जाते हैं लेकिन borrower के account में ही रहते हैं।",
+    "Dividends और Bonuses Pledgor को मिलते हैं।",
+    "Invocation = Bank आपके shares बेच रहा है क्योंकि आपने payment नहीं किया।",
+    "LTV = आपको कितना loan मिलता है (आमतौर पर 50%)।",
+    "Pledge के लिए 'Request' (Pledgor से) और 'Acceptance' (Pledgee से) दोनों की आवश्यकता होती है।"
+  ]
+}

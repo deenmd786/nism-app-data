@@ -1,0 +1,95 @@
+{
+  "course": "NISM Series XXIV: AML and CFT Provisions in Securities Markets",
+  "unit_number": 3,
+  "unit_name": "The Prevention of Money-laundering (Maintenance of Records) Rules, 2005",
+  "weightage": "8",
+  "overview": "यदि Chapter 2 'Law' था, तो Chapter 3 'Instruction Manual' है। यह chapter उन specific rules को explain करता है जिन्हें Banks, Brokers, और Mutual Funds को daily follow करना चाहिए। यह मुख्य रूप से इस बात पर focus करता है कि कौन से records रखने हैं, client को कैसे verify करना है (KYC), और company के भीतर कौन ज़िम्मेदार है। NISM exam के लिए, आपको reporting timelines और विभिन्न प्रकार की reports की definitions को याद रखना होगा।",
+
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Maintenance of Records of Transactions (Rule 3 & 4)",
+      "basic_meaning": "यह rule companies को ठीक-ठीक बताता है कि उन्हें किन transactions को नोट करना चाहिए और अपनी 'diary' (database) में रखना चाहिए।",
+      "detailed_explanation": "Reporting Entities को निम्नलिखित के records maintain करने होंगे:\n1. **All Cash Transactions**: **₹10 Lakhs** से ऊपर का हर cash deposit या withdrawal।\n2. **Series of Connected Cash Transactions**: यदि कोई client एक महीने में कई छोटे cash deposits करता है जिनका कुल जोड़ **₹10 Lakhs** से अधिक हो जाता है, तो इसे record किया जाना चाहिए।\n3. **All Suspicious Transactions**: कोई भी trade जो 'fishy' (संदिग्ध) लगे, चाहे amount कुछ भी हो (भले ही ₹1)।\n4. **Cross-border Wire Transfers**: India के बाहर भेजा गया या विदेश से प्राप्त किया गया कोई भी electronic money transfer जो **₹5 Lakhs** से अधिक हो।\n5. **Non-Profit Organizations (NPO)**: NPOs द्वारा **₹10 Lakhs** से अधिक की receipts वाले transactions।",
+      "why_this_is_important": "Exam के नज़रिए से, numbers (₹10 Lakhs, ₹5 Lakhs) बहुत महत्वपूर्ण हैं। Practically, यह 'Structuring' को रोकता है जहाँ लोग बड़े पैसे को छोटे टुकड़ों में तोड़कर छिपाने की कोशिश करते हैं।",
+      "formula": "Record = (Transaction Nature + Value + Date + Parties Involved)",
+      "formula_explanation": "Legally complete होने के लिए हर record में ये 4 details होनी चाहिए।",
+      "step_by_step_calculation_example": "यदि कोई client किसी महीने की 1, 5, 10, 15, 20 और 25 तारीख को ₹2 Lakhs cash जमा करता है।\nTotal = ₹2L x 6 = ₹12 Lakhs।\nचूंकि एक महीने के भीतर total > ₹10 Lakhs है, इसलिए broker को इसे 'Connected Series' के रूप में record करना होगा।",
+      "real_life_indian_example": "Surat का एक diamond merchant Belgium में एक supplier को ₹6 Lakhs transfer करता है। चूंकि यह एक cross-border transfer > ₹5 Lakhs है, इसलिए उसके bank को specifically AML purposes के लिए इस wire transfer का एक detailed record maintain करना होगा।",
+      "exam_traps": [
+        "Common Trap: Students सोचते हैं कि 'Suspicious Transactions' को तभी record करने की आवश्यकता है जब वे ₹10 Lakhs से ऊपर हों। NO! Suspicion (संदेह) की कोई limit नहीं होती।",
+        "Confusing Concept: Wire transfers (₹5L) की Cash (₹10L) से अलग limit होती है।",
+        "Record Duration: जैसा कि Chapter 2 में discuss किया गया है, इन्हें 5 साल तक रखा जाना चाहिए।"
+      ],
+      "memory_trick": "Cash is King at 10 (Lakhs), Wire goes further at 5 (Lakhs)."
+    },
+    {
+      "concept": "2. Client Due Diligence (CDD) / KYC (Rule 9)",
+      "basic_meaning": "यह clients को trade करने देने से पहले 'Knowing Your Customer' (अपने ग्राहक को जानने) का process है।",
+      "detailed_explanation": "Every intermediary must verify:\n1. **Identity**: 'Officially Valid Documents' (OVD) जैसे Aadhaar, PAN, Passport, Voter ID का उपयोग करके।\n2. **Beneficial Ownership**: यदि client एक company है, तो आपको यह पता लगाना होगा कि 'वास्तव में' इसका मालिक कौन है (पर्दे के पीछे का इंसान)।\n3. **Ongoing Due Diligence**: आप उन्हें सिर्फ एक बार check नहीं करते। आपको उनके trades पर नज़र रखनी चाहिए ताकि यह सुनिश्चित हो सके कि वे उनकी income profile से match करते हैं।\n**Risk Categorization**: Clients को Low, Medium, या High risk के रूप में mark किया जाना चाहिए।",
+      "why_this_is_important": "यह 'Gatekeeping' rule है। यदि आप अच्छा KYC करते हैं, तो criminals stock market में enter नहीं कर सकते।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "ABC Pvt Ltd' नाम की एक नई company trading account खोलना चाहती है। Broker सिर्फ company के papers नहीं लेता है। वे check करते हैं कि Mr. Rahul के पास 90% shares हैं। Mr. Rahul 'Beneficial Owner' हैं। Broker फिर Mr. Rahul का background check करता है।",
+      "exam_traps": [
+        "Trap: क्या KYC के लिए केवल PAN काफी है? नहीं, आपको address proof के लिए एक OVD की भी आवश्यकता है।",
+        "Trap: क्या आप 'fictitious' (फर्जी) नाम से account खोल सकते हैं? Never!.",
+        "Timing: CDD account खोलते *समय (at the time)* किया जाना चाहिए।"
+      ],
+      "memory_trick": "CDD = Check, Detect, Decide (Check ID, Detect Risk, Decide to open)."
+    },
+    {
+      "concept": "3. Reporting to the Director (FIU-IND) (Rule 7 & 8)",
+      "basic_meaning": "Companies को FIU-IND नामक government unit को specific 'Report Cards' भेजने होते हैं।",
+      "detailed_explanation": "3 main reports होती हैं:\n1. **Cash Transaction Report (CTR)**: हर महीने भेजें यदि cash > ₹10 Lakhs है। **Deadline**: अगले महीने के 15वें दिन तक।\n2. **Suspicious Transaction Report (STR)**: भेजें यदि कोई trade illegal लगता है। **Deadline**: Principal Officer के suspicious होने के satisfy होने के 7 working days के भीतर।\n3. **Counterfeit Currency Report (CCR)**: भेजें यदि कोई fake (जाली) notes का उपयोग करने का प्रयास करता है। **Deadline**: अगले महीने के 15वें दिन तक।",
+      "why_this_is_important": "STR के लिए '7 working days' सबसे common exam question है।",
+      "formula": "STR Deadline = Satisfaction Date + 7 Working Days",
+      "formula_explanation": "एक बार officer कह दे 'Yes, यह fishy है,' तो उनके पास इसे report करने के लिए 7 दिन होते हैं।",
+      "step_by_step_calculation_example": "यदि Broker का officer सोमवार, 2 Feb को confirm करता है कि एक transaction suspicious है। तो उन्हें मंगलवार, 10 Feb तक FIU-IND को STR भेजना होगा (यह मानते हुए कि बीच में कोई holiday नहीं है)।",
+      "real_life_indian_example": "Delhi में एक bank deposit में fake ₹500 notes का एक bundle detect करता है। वे उसी second इसे report नहीं करते हैं। वे महीने भर के ऐसे सभी cases collect करते हैं और अगले महीने की 15 तारीख तक FIU-IND को एक 'CCR' भेजते हैं।",
+      "exam_traps": [
+        "Trap: क्या CTR की deadline 7 दिन है? नहीं, CTR अगले महीने की 15 तारीख तक है। केवल STR में 7-day rule है।",
+        "Tipping Off: आपको client को यह कभी नहीं बताना चाहिए कि आपने उनके खिलाफ STR file की है। यह एक crime है।"
+      ],
+      "memory_trick": "STR Urgent है (7 days)। CTR/CCR Monthly हैं (15th)।"
+    },
+    {
+      "concept": "4. Principal Officer and Designated Director",
+      "basic_meaning": "हर company को AML के लिए ज़िम्मेदार दो specific लोगों को appoint करना होता है।",
+      "detailed_explanation": "1. **Principal Officer (PO)**: आमतौर पर एक officer-level का व्यक्ति जो trades को monitor करता है और FIU-IND को reports (STR/CTR) भेजता है।\n2. **Designated Director**: एक higher-level का व्यक्ति (Director/Managing Partner) जो यह सुनिश्चित करता है कि पूरी company AML rules का पालन करे।\n**Note**: दोनों का FIU-IND के साथ registered होना ज़रूरी है।",
+      "why_this_is_important": "Exam पूछता है कि 'information furnish (प्रदान) करने' के लिए कौन ज़िम्मेदार है। Answer Principal Officer है।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "एक बड़े Mutual Fund house में, Head of Compliance को daily reporting handle करने के लिए 'Principal Officer' नियुक्त किया जाता है, जबकि CEO को 'Designated Director' का नाम दिया जाता है ताकि सरकार को यह दिखाया जा सके कि top management इन नियमों को गंभीरता से लेता है।",
+      "exam_traps": [
+        "Trap: क्या Principal Officer कोई junior clerk हो सकता है? नहीं, उन्हें management level पर होना चाहिए।",
+        "Clarification: PO सरकार को report करता है; Director PO को oversee (निरीक्षण) करता है।"
+      ],
+      "memory_trick": "P.O. = Person for Operations (Daily reporting). D.D. = Decision Director (Overall responsibility)."
+    }
+  ],
+
+  "important_differences": [
+    {
+      "difference_between": "CTR vs. STR",
+      "clear_explanation": "CTR (Cash Transaction Report) एक fixed number (₹10 Lakhs cash) पर आधारित है और monthly report की जाती है। STR (Suspicious Transaction Report) amount की परवाह किए बिना 'feeling/logic' पर आधारित है और इसे 7 दिनों के भीतर report किया जाना चाहिए।"
+    }
+  ],
+
+  "frequently_asked_exam_areas": [
+    "STR report करने की Timeline: 7 working days.",
+    "CTR report करने की Timeline: अगले महीने की 15 तारीख।",
+    "Cross-border Wire Transfer के लिए Threshold: ₹5 Lakhs.",
+    "IPV (In-Person Verification) कौन करता है? Intermediary.",
+    "Record keeping requirements (Rule 3)."
+  ],
+
+  "quick_revision_summary": [
+    "CTR के लिए Cash limit: > ₹10 Lakhs.",
+    "Wire transfer limit: > ₹5 Lakhs.",
+    "STR satisfaction के 7 working days के भीतर report की जाती है।",
+    "सभी clients के लिए Ongoing monitoring ज़रूरी है।",
+    "Principal Officer company और FIU-IND के बीच का bridge (पुल) है।"
+  ]
+}

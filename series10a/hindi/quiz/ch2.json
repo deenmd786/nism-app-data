@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following best explains the core concept of the Time Value of Money (TVM)?",
+    "options": [
+      "Money loses its entire value over a period of 10 years.",
+      "A unit of money received today is worth more than the same unit received in the future.",
+      "The value of money remains exactly the same regardless of when it is received.",
+      "Future money is always more valuable than present money."
+    ],
+    "answer": "A unit of money received today is worth more than the same unit received in the future.",
+    "hint": "Interest कमाने और inflation के प्रभाव के बारे में सोचें।",
+    "explanation": "आज उपलब्ध money को interest कमाने के लिए invest किया जा सकता है, जिससे यह भविष्य में मिलने वाले समान amount से अधिक मूल्यवान हो जाता है। Inflation भी भविष्य के पैसे की purchasing power को कम कर देता है।"
+  },
+  {
+    "id": 2,
+    "question": "The process of calculating the future value of a cash flow by applying a specific interest rate is called:",
+    "options": [
+      "Discounting",
+      "Compounding",
+      "Amortization",
+      "Factoring"
+    ],
+    "answer": "Compounding",
+    "hint": "यह process समय के साथ principal में interest जोड़ता है।",
+    "explanation": "Compounding एक growth rate या interest rate लागू करके money के present amount को future में ले जाने का process है।"
+  },
+  {
+    "id": 3,
+    "question": "The process of determining the present value of a future cash flow is known as:",
+    "options": [
+      "Compounding",
+      "Capitalizing",
+      "Discounting",
+      "Annuity mapping"
+    ],
+    "answer": "Discounting",
+    "hint": "यह process भविष्य के पैसे को समय में पीछे (backward) लाता है।",
+    "explanation": "Discounting, compounding का उल्टा है। इसमें एक specific rate of return के आधार पर भविष्य में मिलने वाले पैसे की current worth (वर्तमान मूल्य) की गणना की जाती है।"
+  },
+  {
+    "id": 4,
+    "question": "If you earn interest only on your initial principal amount, what type of interest is this?",
+    "options": [
+      "Compound Interest",
+      "Simple Interest",
+      "Effective Interest",
+      "Nominal Interest"
+    ],
+    "answer": "Simple Interest",
+    "hint": "इसमें हर period में interest amount समान (constant) रहता है।",
+    "explanation": "Simple interest की गणना केवल principal sum पर की जाती है, जिसका अर्थ है कि कमाए गए interest पर आगे के periods में कोई अतिरिक्त interest नहीं मिलता है।"
+  },
+  {
+    "id": 5,
+    "question": "When interest is calculated on the initial principal and also on the accumulated interest of previous periods, it is called:",
+    "options": [
+      "Simple Interest",
+      "Flat Rate Interest",
+      "Compound Interest",
+      "Real Interest"
+    ],
+    "answer": "Compound Interest",
+    "hint": "इसे अक्सर 'interest पर interest' कहा जाता है।",
+    "explanation": "Compound interest में interest rate को principal के साथ-साथ पहले से जमा हुए interest पर भी लागू किया जाता है, जिससे investment में exponential growth होती है।"
+  },
+  {
+    "id": 6,
+    "question": "Which rule is used as a quick mental math shortcut to estimate how long it takes for an investment to double in value?",
+    "options": [
+      "Rule of 69",
+      "Rule of 72",
+      "Rule of 114",
+      "Rule of 144"
+    ],
+    "answer": "Rule of 72",
+    "hint": "Years निकालने के लिए इस नंबर को interest rate से divide करें।",
+    "explanation": "Rule of 72 एक simple formula है जिसका उपयोग यह अनुमान लगाने के लिए किया जाता है कि किसी दिए गए annual rate of return (72 / rate) पर invest किए गए पैसे को दोगुना (double) होने में कितने साल लगेंगे।"
+  },
+  {
+    "id": 7,
+    "question": "Using the Rule of 72, approximately how many years will it take for an investment to double if the annual interest rate is 8%?",
+    "options": [
+      "7.2 years",
+      "8 years",
+      "9 years",
+      "10 years"
+    ],
+    "answer": "9 years",
+    "hint": "72 को interest rate से divide करें।",
+    "explanation": "Rule of 72 के अनुसार, पैसे को दोगुना होने में लगभग 72 / 8 = 9 साल लगेंगे।"
+  },
+  {
+    "id": 8,
+    "question": "If an investor wants to know how long it will take for their money to triple, which rule of thumb should they use?",
+    "options": [
+      "Rule of 72",
+      "Rule of 114",
+      "Rule of 144",
+      "Rule of 69"
+    ],
+    "answer": "Rule of 114",
+    "hint": "यह नंबर 72 से अधिक लेकिन 144 से कम है।",
+    "explanation": "Rule of 114 का उपयोग किसी investment की value को तीन गुना (triple) होने में लगने वाले समय का अनुमान लगाने के लिए किया जाता है (114 / rate of return)।"
+  },
+  {
+    "id": 9,
+    "question": "To estimate how long it will take an investment to quadruple (grow by 4 times), which rule is applied?",
+    "options": [
+      "Rule of 72",
+      "Rule of 114",
+      "Rule of 144",
+      "Rule of 200"
+    ],
+    "answer": "Rule of 144",
+    "hint": "पैसे को दोगुना करने वाले rule को double कर दें।",
+    "explanation": "Rule of 144 किसी investment को चार गुना (quadruple) होने में लगने वाले समय का अनुमान लगाता है (144 / rate of return)।"
+  },
+  {
+    "id": 10,
+    "question": "What is the standard formula for Future Value (FV) using compound interest, where P is principal, r is rate, and n is number of periods?",
+    "options": [
+      "FV = P * r * n",
+      "FV = P * (1 + r)^n",
+      "FV = P / (1 + r)^n",
+      "FV = P + (r * n)"
+    ],
+    "answer": "FV = P * (1 + r)^n",
+    "hint": "आप principal को time की power वाले growth factor से multiply कर रहे हैं।",
+    "explanation": "Formula FV = P * (1 + r)^n किसी present sum की future value को calculate करता है, जिसे 'n' periods के लिए 'r' rate पर compound किया जाता है।"
+  },
+  {
+    "id": 11,
+    "question": "In the Present Value formula PV = FV / (1 + r)^n, what does the term (1 + r)^n represent?",
+    "options": [
+      "Discount Factor",
+      "Compounding Factor",
+      "Annuity Factor",
+      "Perpetuity Factor"
+    ],
+    "answer": "Compounding Factor",
+    "hint": "जब यह denominator में होता है, तो 1 को इससे divide करने पर discount factor मिलता है।",
+    "explanation": "Term (1 + r)^n अपने आप में compounding factor (या future value interest factor) है। पूरा expression 1 / (1 + r)^n discount factor कहलाता है।"
+  },
+  {
+    "id": 12,
+    "question": "As the discount rate increases, what happens to the Present Value of a future cash flow?",
+    "options": [
+      "It increases",
+      "It decreases",
+      "It remains unchanged",
+      "It becomes negative"
+    ],
+    "answer": "It decreases",
+    "hint": "Higher discount rate का मतलब है कि future money की value आज बहुत कम हो जाएगी।",
+    "explanation": "Discount rate और present value के बीच inverse relationship (उल्टा संबंध) होता है। Higher discount rate future cash flows की present value को कम कर देता है।"
+  },
+  {
+    "id": 13,
+    "question": "If the compounding frequency changes from annual to monthly, what happens to the Future Value of the investment (assuming a positive rate)?",
+    "options": [
+      "It decreases",
+      "It increases",
+      "It remains exactly the same",
+      "It drops to zero"
+    ],
+    "answer": "It increases",
+    "hint": "More frequent compounding का मतलब है कि आपको अपने interest पर जल्दी interest मिलेगा।",
+    "explanation": "Compounding frequency बढ़ाने (जैसे, annual से monthly) से future value बढ़ जाती है क्योंकि interest को principal में अधिक बार calculate करके जोड़ा जाता है।"
+  },
+  {
+    "id": 14,
+    "question": "What is a series of equal, periodic cash flows occurring over a specified number of periods called?",
+    "options": [
+      "Lump sum",
+      "Perpetuity",
+      "Annuity",
+      "Dividend"
+    ],
+    "answer": "Annuity",
+    "hint": "Common examples में SIPs, EMIs और monthly pensions शामिल हैं।",
+    "explanation": "Annuity एक fixed period के लिए regular intervals पर paid या received equal cash flows का एक sequence है।"
+  },
+  {
+    "id": 15,
+    "question": "If annuity payments are made at the END of each period, what is it called?",
+    "options": [
+      "Ordinary Annuity",
+      "Annuity Due",
+      "Perpetuity",
+      "Deferred Annuity"
+    ],
+    "answer": "Ordinary Annuity",
+    "hint": "यह EMI की तरह सबसे standard और 'regular' प्रकार की annuity है।",
+    "explanation": "Ordinary (या regular) annuity में cash flows हर period के अंत (end) में होते हैं।"
+  },
+  {
+    "id": 16,
+    "question": "If annuity payments are made at the BEGINNING of each period, what is it called?",
+    "options": [
+      "Ordinary Annuity",
+      "Annuity Due",
+      "Perpetual Annuity",
+      "Arrears Annuity"
+    ],
+    "answer": "Annuity Due",
+    "hint": "Rent payments के बारे में सोचें, जो आमतौर पर महीने की शुरुआत में 'due' होते हैं।",
+    "explanation": "Annuity due में cash flows हर period की शुरुआत (beginning) में तुरंत होते हैं।"
+  },
+  {
+    "id": 17,
+    "question": "For the same payment amount, interest rate, and time period, which will have a higher Future Value?",
+    "options": [
+      "Ordinary Annuity",
+      "Annuity Due",
+      "Both will have the exact same Future Value",
+      "Depends on the principal amount"
+    ],
+    "answer": "Annuity Due",
+    "hint": "पहले किए गए payments को interest कमाने के लिए अधिक समय मिलता है।",
+    "explanation": "Annuity due की future value अधिक होती है क्योंकि ordinary annuity की तुलना में हर payment को एक अतिरिक्त period के लिए invest किया जाता है, जिससे अधिक interest मिलता है।"
+  },
+  {
+    "id": 18,
+    "question": "How is the Future Value of an Annuity Due related to the Future Value of an Ordinary Annuity?",
+    "options": [
+      "FV of Annuity Due = FV of Ordinary Annuity / (1 + r)",
+      "FV of Annuity Due = FV of Ordinary Annuity * (1 + r)",
+      "FV of Annuity Due = FV of Ordinary Annuity * r",
+      "FV of Annuity Due = FV of Ordinary Annuity - r"
+    ],
+    "answer": "FV of Annuity Due = FV of Ordinary Annuity * (1 + r)",
+    "hint": "आप पूरी series में एक extra compounding period जोड़ते हैं।",
+    "explanation": "चूँकि annuity due में प्रत्येक cash flow एक extra period का interest कमाता है, इसलिए आप बस ordinary annuity value को (1 + r) से multiply करते हैं।"
+  },
+  {
+    "id": 19,
+    "question": "A Systematic Investment Plan (SIP) in a mutual fund is a classic practical example of what TVM concept?",
+    "options": [
+      "Single lump-sum Future Value",
+      "Present Value of a Perpetuity",
+      "Future Value of an Annuity",
+      "Simple Interest calculation"
+    ],
+    "answer": "Future Value of an Annuity",
+    "hint": "भविष्य में एक corpus बनाने के लिए आप समय-समय पर equal amounts invest कर रहे हैं।",
+    "explanation": "SIP में future sum जमा करने के लिए समय के साथ regular, equal investments करना शामिल है, जो Future Value of an Annuity के कॉन्सेप्ट से पूरी तरह मेल खाता है।"
+  },
+  {
+    "id": 20,
+    "question": "An Equated Monthly Installment (EMI) on a loan is an application of which TVM concept?",
+    "options": [
+      "Future Value of a single sum",
+      "Present Value of an Annuity",
+      "Present Value of a Perpetuity",
+      "Future Value of an Annuity"
+    ],
+    "answer": "Present Value of an Annuity",
+    "hint": "आज आपको जो loan amount मिलता है, वह आपके सभी future EMI payments की present value है।",
+    "explanation": "Loan उन series of future EMI payments (एक annuity) की present value है, जिसे loan के interest rate पर discount किया जाता है।"
+  },
+  {
+    "id": 21,
+    "question": "What is a 'Perpetuity' in finance?",
+    "options": [
+      "An annuity that pays only for 10 years",
+      "An annuity where the cash flows continue forever",
+      "A lump sum payment made today",
+      "A bond that never pays interest"
+    ],
+    "answer": "An annuity where the cash flows continue forever",
+    "hint": "इस शब्द का अर्थ ही 'perpetual' या अनंत (infinite) है।",
+    "explanation": "Perpetuity एक विशेष प्रकार की annuity है जो हमेशा (forever) चलती है और identical cash flows की एक continuous, infinite stream प्रदान करती है।"
+  },
+  {
+    "id": 22,
+    "question": "What is the formula for the Present Value of a Perpetuity paying an amount 'PMT' with a discount rate 'r'?",
+    "options": [
+      "PV = PMT * r",
+      "PV = PMT / r",
+      "PV = PMT * (1+r)",
+      "PV = PMT / (1+r)"
+    ],
+    "answer": "PV = PMT / r",
+    "hint": "यह सीधे payment को rate से divide करने पर मिलता है।",
+    "explanation": "Perpetuity की present value की गणना regular cash flow amount (PMT) को required rate of return या discount rate (r) से divide करके की जाती है।"
+  },
+  {
+    "id": 23,
+    "question": "If a preferred stock pays a constant annual dividend of Rs. 100 forever, and your required return is 10%, what is its Present Value?",
+    "options": [
+      "Rs. 1,000",
+      "Rs. 10,000",
+      "Rs. 100",
+      "Rs. 1,100"
+    ],
+    "answer": "Rs. 1,000",
+    "hint": "Perpetuity formula का उपयोग करें: PV = PMT / r.",
+    "explanation": "PV = 100 / 0.10 = 1,000. इस perpetual dividend stream की present value Rs. 1,000 है।"
+  },
+  {
+    "id": 24,
+    "question": "The stated annual interest rate on a financial product, which does not account for intra-year compounding, is called the:",
+    "options": [
+      "Effective Annual Rate (EAR)",
+      "Nominal Interest Rate",
+      "Real Interest Rate",
+      "Discount Rate"
+    ],
+    "answer": "Nominal Interest Rate",
+    "hint": "यह केवल 'नाम मात्र' (in name only) का rate होता है।",
+    "explanation": "Nominal rate (या stated rate) वह annual interest rate है जिसे संस्था द्वारा compounding frequency के प्रभावों पर विचार किए बिना quote किया जाता है।"
+  },
+  {
+    "id": 25,
+    "question": "The actual return earned or paid in a year, which takes into account the effects of compounding frequency, is called the:",
+    "options": [
+      "Nominal Rate",
+      "Simple Rate",
+      "Effective Annual Rate (EAR)",
+      "Perpetual Rate"
+    ],
+    "answer": "Effective Annual Rate (EAR)",
+    "hint": "यह आपके returns की 'effective' (वास्तविक) सच्चाई को दर्शाता है।",
+    "explanation": "Effective Annual Rate (EAR) true annual return को दर्शाता है, जो इस बात को ध्यान में रखता है कि interest को semi-annually, quarterly या monthly compound किया जा सकता है।"
+  },
+  {
+    "id": 26,
+    "question": "If a bank offers an 8% nominal interest rate compounded quarterly, the Effective Annual Rate (EAR) will be:",
+    "options": [
+      "Exactly 8%",
+      "Less than 8%",
+      "Greater than 8%",
+      "Exactly 2%"
+    ],
+    "answer": "Greater than 8%",
+    "hint": "Quarterly compounding का मतलब है कि साल भर interest पर interest कमाना।",
+    "explanation": "चूँकि compounding साल में एक से अधिक बार होती है, इसलिए effective yield हमेशा mathematically stated nominal rate से अधिक होगी।"
+  },
+  {
+    "id": 27,
+    "question": "What is 'Inflation' in the context of Time Value of Money?",
+    "options": [
+      "The increase in the purchasing power of money",
+      "The general increase in prices and fall in the purchasing power of money",
+      "The interest rate charged by the central bank",
+      "The guaranteed return on government bonds"
+    ],
+    "answer": "The general increase in prices and fall in the purchasing power of money",
+    "hint": "समय के साथ चीज़ें महँगी हो जाती हैं।",
+    "explanation": "Inflation पैसे की purchasing power (क्रय शक्ति) को कम कर देता है, जिसका अर्थ है कि भविष्य में पैसे की एक fixed amount से कम goods और services खरीदी जा सकेंगी।"
+  },
+  {
+    "id": 28,
+    "question": "The 'Real Rate of Return' is best described as:",
+    "options": [
+      "The return before taxes are deducted",
+      "The nominal return adjusted for inflation",
+      "The return guaranteed by the bank",
+      "The absolute highest return possible in the market"
+    ],
+    "answer": "The nominal return adjusted for inflation",
+    "hint": "यह आपकी purchasing power में होने वाली वास्तविक (true) वृद्धि को दर्शाता है।",
+    "explanation": "Real rate of return, nominal return में से inflation के प्रभावों को हटा देता है, जिससे purchasing power में actual growth का पता चलता है।"
+  },
+  {
+    "id": 29,
+    "question": "According to the approximate Fisher equation, how is the Real Return calculated?",
+    "options": [
+      "Real Return = Nominal Return + Inflation Rate",
+      "Real Return = Nominal Return * Inflation Rate",
+      "Real Return = Nominal Return - Inflation Rate",
+      "Real Return = Inflation Rate / Nominal Return"
+    ],
+    "answer": "Real Return = Nominal Return - Inflation Rate",
+    "hint": "आपको अपने gains में से बढ़ती कीमतों (prices) के प्रभाव को घटाना होगा।",
+    "explanation": "एक approximation (अनुमान) के रूप में, real rate of return, nominal interest rate और rate of inflation का अंतर होता है।"
+  },
+  {
+    "id": 30,
+    "question": "If your fixed deposit earns 7% annually and the inflation rate is 5%, what is your approximate Real Rate of Return?",
+    "options": [
+      "12%",
+      "7%",
+      "2%",
+      "-2%"
+    ],
+    "answer": "2%",
+    "hint": "Nominal return में से inflation को घटा दें।",
+    "explanation": "Approximate formula का उपयोग करते हुए: 7% (Nominal) - 5% (Inflation) = 2% (Real Return)।"
+  },
+  {
+    "id": 31,
+    "question": "If the inflation rate is higher than your nominal investment return, what happens to your purchasing power?",
+    "options": [
+      "It increases greatly",
+      "It remains exactly the same",
+      "It decreases",
+      "It doubles every 72 years"
+    ],
+    "answer": "It decreases",
+    "hint": "आपका पैसा चीज़ों की कीमतों के बढ़ने की तुलना में धीमी गति से बढ़ रहा है।",
+    "explanation": "यदि inflation आपके returns से अधिक हो जाता है, तो आपका real rate of return negative हो जाता है, जिसका अर्थ है कि समय के साथ आपकी wealth अपनी purchasing power खो रही है।"
+  },
+  {
+    "id": 32,
+    "question": "Which of the following equations represents the exact formula for calculating the Real Rate of Return?",
+    "options": [
+      "(1 + Real Rate) = (1 + Nominal Rate) / (1 + Inflation Rate)",
+      "(1 + Real Rate) = (1 + Nominal Rate) * (1 + Inflation Rate)",
+      "Real Rate = Nominal Rate - Inflation Rate",
+      "Real Rate = (Nominal Rate / Inflation Rate) - 1"
+    ],
+    "answer": "(1 + Real Rate) = (1 + Nominal Rate) / (1 + Inflation Rate)",
+    "hint": "यह सटीक Fisher equation है, जो approximation error से बचाता है।",
+    "explanation": "Nominal rates, real rates और inflation के बीच का exact relationship Fisher equation द्वारा दिया जाता है: (1+r_real) = (1+r_nom) / (1+inflation)।"
+  },
+  {
+    "id": 33,
+    "question": "When planning for retirement, why must an adviser calculate the 'Future Value' of current expenses?",
+    "options": [
+      "To show the client how much they spend today",
+      "To estimate what their living expenses will cost at retirement age due to inflation",
+      "To calculate their current tax bracket",
+      "Because past expenses dictate future returns"
+    ],
+    "answer": "To estimate what their living expenses will cost at retirement age due to inflation",
+    "hint": "आज के Rs. 50,000 से 20 साल बाद वही lifestyle नहीं खरीदी जा सकेगी।",
+    "explanation": "एक adviser TVM का उपयोग करके वर्तमान living costs को भविष्य के लिए project करता है, जिसमें inflation को ध्यान में रखा जाता है ताकि retirement के समय आवश्यक actual corpus का निर्धारण किया जा सके।"
+  },
+  {
+    "id": 34,
+    "question": "What does NPV stand for in capital budgeting and financial planning?",
+    "options": [
+      "Net Principal Value",
+      "Nominal Present Value",
+      "Net Present Value",
+      "Net Perpetual Value"
+    ],
+    "answer": "Net Present Value",
+    "hint": "यह present values की तुलना करके किसी investment की profitability का आकलन करता है।",
+    "explanation": "NPV का मतलब Net Present Value है। यह एक निश्चित अवधि (period) में cash inflows की present value और cash outflows की present value के बीच का अंतर है।"
+  },
+  {
+    "id": 35,
+    "question": "If an investment has a positive Net Present Value (NPV), it generally means:",
+    "options": [
+      "The investment will lose money",
+      "The investment is expected to generate returns higher than the discount rate",
+      "The investment's cash outflows exceed inflows",
+      "The discount rate used was too high"
+    ],
+    "answer": "The investment is expected to generate returns higher than the discount rate",
+    "hint": "Positive NPV value creation (मूल्य निर्माण) का संकेत देता है।",
+    "explanation": "Positive NPV यह दर्शाता है कि projected earnings (present value में discount किए जाने के बाद) अनुमानित costs से अधिक हैं, जिससे यह theoretically एक अच्छा investment बन जाता है।"
+  },
+  {
+    "id": 36,
+    "question": "What is the Internal Rate of Return (IRR)?",
+    "options": [
+      "The inflation rate of the country",
+      "The discount rate that makes the Net Present Value (NPV) of an investment equal to zero",
+      "The bank's prime lending rate",
+      "The nominal rate quoted on a bond"
+    ],
+    "answer": "The discount rate that makes the Net Present Value (NPV) of an investment equal to zero",
+    "hint": "यह break-even discount rate है।",
+    "explanation": "IRR वह specific discount rate है जिस पर सभी future cash inflows का present value ठीक initial investment (outflow) के बराबर होता है, जिससे NPV शून्य (zero) हो जाता है।"
+  },
+  {
+    "id": 37,
+    "question": "When comparing two mutual fund SIPs based on historical cash flows, which metric is most appropriate to evaluate performance?",
+    "options": [
+      "Simple Interest",
+      "Net Present Value (NPV)",
+      "Internal Rate of Return (IRR) / XIRR",
+      "Rule of 72"
+    ],
+    "answer": "Internal Rate of Return (IRR) / XIRR",
+    "hint": "SIPs में अलग-अलग समय पर कई cash flows होते हैं।",
+    "explanation": "IRR (या irregular dates के लिए XIRR) returns की गणना करने का standard method है जब समय के साथ कई cash inflows और outflows होते हैं, जैसे कि SIP में।"
+  },
+  {
+    "id": 38,
+    "question": "If the required rate of return for a client is 12%, and an investment offers an IRR of 14%, should the adviser recommend the investment (ignoring other risks)?",
+    "options": [
+      "No, because the IRR is higher than required",
+      "Yes, because the IRR exceeds the required rate of return",
+      "No, because NPV will be negative",
+      "Yes, but only if it's a simple interest product"
+    ],
+    "answer": "Yes, because the IRR exceeds the required rate of return",
+    "hint": "Higher IRR का मतलब है higher expected returns।",
+    "explanation": "यदि Internal Rate of Return (14%) hurdle rate या required rate of return (12%) से अधिक है, तो investment value जोड़ता है और आमतौर पर इसकी सिफारिश की जाती है।"
+  },
+  {
+    "id": 39,
+    "question": "What happens to the Future Value of a sum if the time horizon (n) is doubled, keeping the interest rate constant?",
+    "options": [
+      "It exactly doubles",
+      "It more than doubles due to compounding",
+      "It halves",
+      "It stays the same"
+    ],
+    "answer": "It more than doubles due to compounding",
+    "hint": "Compound interest एक exponential curve बनाता है, linear नहीं।",
+    "explanation": "Compound interest (interest पर interest) के कारण, time horizon को बढ़ाने से future value exponentially बढ़ जाती है, जिसके परिणामस्वरूप यह दोगुने (double) से भी अधिक हो जाती है।"
+  },
+  {
+    "id": 40,
+    "question": "An individual borrows Rs. 1,00,000 today and agrees to pay it back in 5 years. What TVM factor should the lender use to determine the lump sum repayment amount?",
+    "options": [
+      "Present Value Interest Factor (PVIF)",
+      "Future Value Interest Factor (FVIF)",
+      "Present Value Interest Factor of an Annuity (PVIFA)",
+      "Future Value Interest Factor of an Annuity (FVIFA)"
+    ],
+    "answer": "Future Value Interest Factor (FVIF)",
+    "hint": "Lender भविष्य में एक single sum की value जानना चाहता है।",
+    "explanation": "भविष्य में एक single initial loan sum का repayment amount जानने के लिए, एक single sum के लिए Future Value Interest Factor का उपयोग किया जाता है।"
+  },
+  {
+    "id": 41,
+    "question": "A retirement corpus intended to provide a monthly pension until the death of the investor and their spouse without depleting the principal resembles a:",
+    "options": [
+      "Growing Annuity",
+      "Perpetuity",
+      "Short-term liability",
+      "Simple Interest instrument"
+    ],
+    "answer": "Perpetuity",
+    "hint": "Principal अछूता (untouched) रहता है और अनिश्चित काल तक income generate करता रहता है।",
+    "explanation": "यदि principal कभी समाप्त नहीं होता है और continuous periodic income प्रदान करता है, तो mathematically यह एक perpetuity के समान कार्य करता है।"
+  },
+  {
+    "id": 42,
+    "question": "Compound Annual Growth Rate (CAGR) is fundamentally an application of which TVM formula?",
+    "options": [
+      "Simple interest",
+      "Annuity due",
+      "Future Value of a single cash flow",
+      "NPV"
+    ],
+    "answer": "Future Value of a single cash flow",
+    "hint": "CAGR एक निश्चित वर्षों (years) में एक beginning value और एक ending value को देखता है।",
+    "explanation": "CAGR standard compound interest formula से लिया गया है: FV = PV * (1+r)^n। यह start value (PV), end value (FV), और time (n) दिए जाने पर 'r' के लिए solve करता है।"
+  },
+  {
+    "id": 43,
+    "question": "Why is a rupee received today worth more than a rupee received a year from now, assuming zero inflation?",
+    "options": [
+      "Because of the opportunity cost of lost interest",
+      "Because paper currency degrades physically",
+      "Because banks will charge you a fee",
+      "It is not worth more; it is worth exactly the same without inflation"
+    ],
+    "answer": "Because of the opportunity cost of lost interest",
+    "hint": "Zero inflation होने पर भी, आप इसे invest कर सकते थे।",
+    "explanation": "Zero inflation के बावजूद, opportunity cost के कारण money की time value होती है। आज हाथ में मौजूद पैसे को positive interest कमाने के लिए किसी risk-free asset में invest किया जा सकता है।"
+  },
+  {
+    "id": 44,
+    "question": "In financial calculators and spreadsheets, why is the Present Value (PV) often entered as a negative number when solving for Future Value (FV)?",
+    "options": [
+      "Because present value is always a loss",
+      "To represent a cash outflow (investment)",
+      "Because spreadsheets cannot handle positive numbers",
+      "To subtract taxes automatically"
+    ],
+    "answer": "To represent a cash outflow (investment)",
+    "hint": "यह आपकी जेब से निकलने वाले cash flow की दिशा (direction) को दर्शाता है।",
+    "explanation": "Standard TVM sign convention में, एक investment (आपकी जेब से निकलने वाले पैसे) को negative cash flow माना जाता है, जबकि future return एक positive cash inflow होता है।"
+  },
+  {
+    "id": 45,
+    "question": "If you wish to accumulate Rs. 50 Lakhs in 15 years for a child's education, which TVM concept will help you determine the required monthly SIP?",
+    "options": [
+      "Future Value of a Lump Sum",
+      "Future Value of an Annuity",
+      "Present Value of an Annuity",
+      "Perpetuity"
+    ],
+    "answer": "Future Value of an Annuity",
+    "hint": "आप वह periodic payment खोजना चाहते हैं जिसका परिणाम भविष्य में एक specific sum हो।",
+    "explanation": "आप भविष्य में एक target amount तक पहुँचने के लिए regular monthly payments (annuity) कर रहे हैं। FVA formula में payment variable के लिए solve करने पर SIP amount प्राप्त होगा।"
+  },
+  {
+    "id": 46,
+    "question": "Which variable is NOT required when calculating the Present Value of a single future cash flow?",
+    "options": [
+      "Future Value amount",
+      "Discount Rate",
+      "Time period",
+      "Annuity payment amount"
+    ],
+    "answer": "Annuity payment amount",
+    "hint": "प्रश्न एक 'single' future cash flow को specify करता है।",
+    "explanation": "एक single lump-sum cash flow के लिए, आपको annuity payment amount की आवश्यकता नहीं होती है। आपको केवल FV, rate (r), और time (n) की आवश्यकता होती है।"
+  },
+  {
+    "id": 47,
+    "question": "Continuous compounding means that interest is calculated and added to the principal:",
+    "options": [
+      "Once a year",
+      "Every day",
+      "An infinite number of times per year",
+      "Only at maturity"
+    ],
+    "answer": "An infinite number of times per year",
+    "hint": "यह mathematical constant 'e' का उपयोग करता है।",
+    "explanation": "Continuous compounding उस mathematical limit को दर्शाता है जहाँ interest को लगातार, बहुत ही छोटे (infinitesimally small) intervals पर compound किया जाता है (formula FV = PV * e^(rt) का उपयोग करते हुए)।"
+  },
+  {
+    "id": 48,
+    "question": "A 'Deferred Annuity' is an annuity where:",
+    "options": [
+      "Payments begin immediately",
+      "Payments stop after one year",
+      "The series of payments begins at some future date",
+      "The interest rate is always zero"
+    ],
+    "answer": "The series of payments begins at some future date",
+    "hint": "इसमें payments में देरी (delay) होती है।",
+    "explanation": "Deferred annuity में, initial payment या receipt को एक निश्चित period बीत जाने तक delay या defer कर दिया जाता है (जैसे, retirement pension 60 वर्ष की आयु से शुरू होना)।"
+  },
+  {
+    "id": 49,
+    "question": "When assessing a client's education goal for their child, which rate is most appropriate to use for inflating the current cost of education?",
+    "options": [
+      "Overall CPI inflation",
+      "Education specific inflation rate",
+      "Food inflation rate",
+      "The bank's savings account rate"
+    ],
+    "answer": "Education specific inflation rate",
+    "hint": "विभिन्न sectors अलग-अलग गति से inflate होते हैं।",
+    "explanation": "Education और healthcare में अक्सर सामान्य Consumer Price Index (CPI) की तुलना में बहुत अधिक inflation दरें देखी जाती हैं। Accurate TVM planning के लिए, sector-specific inflation का उपयोग किया जाना चाहिए।"
+  },
+  {
+    "id": 50,
+    "question": "If a financial planner calculates that a client needs Rs. 1 Crore today to fund their entire 30-year retirement, this Rs. 1 Crore represents:",
+    "options": [
+      "Future Value of an Annuity",
+      "Present Value of an Annuity",
+      "Future Value of a Lump Sum",
+      "Nominal Value"
+    ],
+    "answer": "Present Value of an Annuity",
+    "hint": "यह आज आवश्यक वह lump sum है जो भविष्य में withdrawals की एक series प्रदान करेगा।",
+    "explanation": "Retirement की शुरुआत में आवश्यक retirement corpus उन सभी भविष्य के expected withdrawals (annuity) की Present Value है जो retirement के वर्षों के दौरान किए जाएंगे।"
+  }
+]

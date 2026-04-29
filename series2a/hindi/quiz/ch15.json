@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "question": "In the context of an RTA, who is the 'Client'?",
+    "options": ["The Stock Exchange", "The Issuer Company", "The SEBI", "The RBI"],
+    "answer": "The Issuer Company",
+    "hint": "RTA को कंपनी द्वारा काम पर रखा जाता है।",
+    "explanation": "यद्यपि RTAs निवेशकों की सेवा करते हैं, लेकिन उनका कानूनी ग्राहक (legal client) वह कंपनी (Issuer) है जिसने उन्हें अपनी रजिस्ट्री (registry) का प्रबंधन करने के लिए नियुक्त किया है।"
+  },
+  {
+    "id": 2,
+    "question": "What is the primary goal of client servicing for an RTA?",
+    "options": ["To increase the company's stock price", "To provide prompt and efficient service to investors on behalf of the issuer", "To sell insurance products", "To manage the company's marketing"],
+    "answer": "To provide prompt and efficient service to investors on behalf of the issuer",
+    "hint": "निवेशक संतुष्टि (investor satisfaction) पर ध्यान दें।",
+    "explanation": "RTAs कंपनी और उसके शेयरधारकों के बीच पुल (bridge) के रूप में कार्य करते हैं, और सभी प्रशासनिक प्रश्नों (administrative queries) को संभालते हैं।"
+  },
+  {
+    "id": 3,
+    "question": "Which of the following is a standard 'Investor Service' provided by an RTA?",
+    "options": ["Changing bank details and address", "Granting loans", "Providing stock market tips", "Selling new cars"],
+    "answer": "Changing bank details and address",
+    "hint": "स्थिर डेटा (static data) को अपडेट करना।",
+    "explanation": "RTAs शेयरधारकों के व्यक्तिगत और वित्तीय विवरणों को बनाए रखने और अपडेट करने के लिए जिम्मेदार हैं।"
+  },
+  {
+    "id": 4,
+    "question": "What is the 'Turnaround Time' (TAT)?",
+    "options": ["The time taken for a company to rotate its CEO", "The prescribed time within which an RTA must resolve a specific request", "The time the market is open", "The time taken to print a certificate"],
+    "answer": "The prescribed time within which an RTA must resolve a specific request",
+    "hint": "सेवा के लिए समय सीमा (deadline)।",
+    "explanation": "SEBI विभिन्न अनुरोधों के लिए विशिष्ट TAT अनिवार्य करता है (उदाहरण के लिए, demat confirmation के लिए 15 दिन)।"
+  },
+  {
+    "id": 5,
+    "question": "Which document is required from an investor to change their registered address for physical shares?",
+    "options": ["Oral request", "Written request along with a self-attested address proof (like Aadhaar/Passport)", "A letter from a friend", "A copy of the stock price"],
+    "answer": "Written request along with a self-attested address proof (like Aadhaar/Passport)",
+    "hint": "औपचारिक प्रमाण (Formal proof) अनिवार्य है।",
+    "explanation": "धोखाधड़ी को रोकने के लिए, RTAs को रिकॉर्ड अपडेट करने के लिए वैध, सरकार द्वारा जारी पते के प्रमाण (government-issued address proofs) की आवश्यकता होती है।"
+  },
+  {
+    "id": 6,
+    "question": "If an investor loses their physical share certificate, what must they first file?",
+    "options": ["A tax return", "An FIR (First Information Report) with the police", "A complaint with SEBI", "A request to close the company"],
+    "answer": "An FIR (First Information Report) with the police",
+    "hint": "कानूनी दस्तावेज़ के खोने पर पुलिस में रिपोर्ट करना आवश्यक है।",
+    "explanation": "Duplicate certificates के अनुरोध को प्रोसेस करने के लिए RTA के लिए पुलिस रिपोर्ट एक अनिवार्य पूर्व शर्त (mandatory prerequisite) है।"
+  },
+  {
+    "id": 7,
+    "question": "What is an 'Indemnity Bond'?",
+    "options": ["A type of government bond", "A legal undertaking by the investor to compensate the RTA/Company for any loss arising from a duplicate issuance", "A guarantee of profit", "A tax document"],
+    "answer": "A legal undertaking by the investor to compensate the RTA/Company for any loss arising from a duplicate issuance",
+    "hint": "Issuer के लिए 'सुरक्षा' (protection) दस्तावेज़।",
+    "explanation": "चूंकि duplicate जारी करने में जोखिम होता है (यदि पुराना मिल जाता है और उसका दुरुपयोग होता है), इसलिए निवेशक को किसी भी परिणामी कानूनी लागत (legal costs) को वहन करने के लिए सहमत होना चाहिए।"
+  },
+  {
+    "id": 8,
+    "question": "For 'Demat' shareholders, who is responsible for updating address or bank details?",
+    "options": ["The RTA", "The Depository Participant (DP)", "The Stock Exchange", "The Company"],
+    "answer": "The Depository Participant (DP)",
+    "hint": "Demat डेटा स्रोत (खाता खोलने वाले) पर प्रबंधित किया जाता है।",
+    "explanation": "यदि शेयर demat में हैं, तो निवेशक को अपने DP के पास विवरण अपडेट करना होगा। RTA स्वचालित रूप से इसे BenPos फ़ाइल के माध्यम से प्राप्त कर लेता है।"
+  },
+  {
+    "id": 9,
+    "question": "What is 'Signature Verification'?",
+    "options": ["The RTA matching the investor's signature on a request with the records on file", "Printing the signature on shares", "A type of digital ID", "Signing a cheque"],
+    "answer": "The RTA matching the investor's signature on a request with the records on file",
+    "hint": "एक प्राथमिक सुरक्षा जाँच (primary security check)।",
+    "explanation": "भौतिक शेयरों (physical shares) के लिए, हस्ताक्षर प्रमाणीकरण (authentication) का प्राथमिक तरीका है। इसके मेल न खाने (mismatch) पर अनुरोध अस्वीकार (reject) कर दिया जाएगा।"
+  },
+  {
+    "id": 10,
+    "question": "If an investor's signature has changed over the years, they must provide:",
+    "options": ["A new photo", "An affidavit and a fresh signature verified by their bank manager", "A thumb impression only", "A letter from their neighbor"],
+    "answer": "An affidavit and a fresh signature verified by their bank manager",
+    "hint": "Banker's verification मानक है।",
+    "explanation": "उस हस्ताक्षर को अपडेट करने के लिए बैंकर के सत्यापन (attestation) की आवश्यकता होती है जो अब पुराने RTA रिकॉर्ड से मेल नहीं खाता है।"
+  },
+  {
+    "id": 11,
+    "question": "What is the 'Consolidated Account Statement' (CAS)?",
+    "options": ["A report on the broker's health", "A monthly statement sent to investors showing all their holdings across different accounts", "A bill for services", "A tax certificate"],
+    "answer": "A monthly statement sent to investors showing all their holdings across different accounts",
+    "hint": "निवेशक के लिए एक एकीकृत दृष्टिकोण (unified view)।",
+    "explanation": "CAS निवेशकों को अपने पोर्टफोलियो की निगरानी करने और किसी भी अनधिकृत गतिविधि (unauthorized activity) का आसानी से पता लगाने में मदद करता है।"
+  },
+  {
+    "id": 12,
+    "question": "Which portal allows investors to view the status of their complaints against an RTA?",
+    "options": ["NEAT", "SCORES", "SWIFT", "Tally"],
+    "answer": "SCORES",
+    "hint": "SEBI का शिकायत पोर्टल (complaint portal)।",
+    "explanation": "SEBI Complaints Redress System (SCORES) बाजार से संबंधित सभी शिकायतों (grievances) के लिए अनिवार्य प्लेटफ़ॉर्म है।"
+  },
+  {
+    "id": 13,
+    "question": "An RTA should respond to an investor's query within ______ days (standard guideline)?",
+    "options": ["1 day", "7 to 15 days", "6 months", "1 year"],
+    "answer": "7 to 15 days",
+    "hint": "मानक प्रतिक्रिया विंडो (Standard response window)।",
+    "explanation": "जटिलता (complexity) के आधार पर, अधिकांश निवेशक अनुरोधों को 15 कार्य दिवसों (working days) के भीतर संबोधित (addressed) किया जाना चाहिए।"
+  },
+  {
+    "id": 14,
+    "question": "What is 'Unclaimed Dividend'?",
+    "options": ["Dividends that a company refuses to pay", "Dividends that were sent but not received or deposited by the investor", "A special bonus", "Tax paid to the government"],
+    "answer": "Dividends that were sent but not received or deposited by the investor",
+    "hint": "मालिक की प्रतीक्षा कर रहा पैसा (Money waiting for the owner)।",
+    "explanation": "यदि कोई चेक expire हो जाता है या बैंक विवरण गलत हैं, तो dividend कंपनी के खाते में 'unclaimed' (लावारिस) रहता है।"
+  },
+  {
+    "id": 15,
+    "question": "After ______ years, unclaimed dividends must be moved to the IEPF (Investor Education and Protection Fund).",
+    "options": ["1", "3", "7", "10"],
+    "answer": "7",
+    "hint": "'सात साल' का नियम (The 'seven-year' rule)।",
+    "explanation": "यदि कोई पैसा लगातार 7 वर्षों तक लावारिस (unclaimed) रहता है, तो इसे कानूनी रूप से सरकार के IEPF खाते में ले जाना आवश्यक है।"
+  },
+  {
+    "id": 16,
+    "question": "What is the role of the 'Compliance Officer' in an RTA regarding client servicing?",
+    "options": ["To answer phone calls", "To ensure all investor grievances are handled as per SEBI regulations", "To manage the office lunch", "To trade shares"],
+    "answer": "To ensure all investor grievances are handled as per SEBI regulations",
+    "hint": "सेवा में 'कानून' का पालन सुनिश्चित करना।",
+    "explanation": "Compliance Officer शिकायत रजिस्टर की निगरानी करता है और यह सुनिश्चित करता है कि कोई समय सीमा (deadline) न छूटे।"
+  },
+  {
+    "id": 17,
+    "question": "Which of the following is an 'Unfair Trade Practice' in client servicing?",
+    "options": ["Asking for valid documents", "Deliberately ignoring or delaying investor requests", "Sending dividends via ECS", "Updating bank details"],
+    "answer": "Deliberately ignoring or delaying investor requests",
+    "hint": "कर्तव्य में लापरवाही (Negligence of duty)।",
+    "explanation": "समय पर सेवा प्रदान करने में विफलता (failure) या निवेशकों से जानकारी छिपाना Code of Conduct का उल्लंघन है।"
+  },
+  {
+    "id": 18,
+    "question": "What is 'KYC' (Know Your Customer) for an investor?",
+    "options": ["A marketing survey", "A process to verify identity, address, and financial status", "A type of share", "A bank loan"],
+    "answer": "A process to verify identity, address, and financial status",
+    "hint": "पहचान का सत्यापन (Identity verification)।",
+    "explanation": "मनी लॉन्ड्रिंग और पहचान की चोरी (identity theft) को रोकने के लिए सभी वित्तीय लेनदेन (financial transactions) के लिए KYC अनिवार्य है।"
+  },
+  {
+    "id": 19,
+    "question": "In the case of 'Transmission', if there is a nominee, the shares are transferred to:",
+    "options": ["The RTA", "The Nominee", "The eldest child", "The Government"],
+    "answer": "The Nominee",
+    "hint": "नामांकन (Nomination) हस्तांतरण (transfer) को आसान बनाता है।",
+    "explanation": "धारक (holder) की मृत्यु होने पर, नॉमिनी वह पहला व्यक्ति होता है जो अपने नाम पर शेयर स्थानांतरित (transferred) करवाने का हकदार होता है।"
+  },
+  {
+    "id": 20,
+    "question": "Which of the following is NOT a responsibility of an RTA toward investors?",
+    "options": ["Issuing duplicate certificates", "Paying interest on delayed dividends", "Giving advice on which stock to buy", "Processing demat requests"],
+    "answer": "Giving advice on which stock to buy",
+    "hint": "RTAs प्रशासनिक (administrative) हैं, सलाहकार (advisory) नहीं।",
+    "explanation": "एक RTA को कभी भी निवेश सलाह (investment advice) नहीं देनी चाहिए; वे केवल एक रजिस्ट्री और ट्रांसफर एजेंट हैं।"
+  },
+  {
+    "id": 21,
+    "question": "What is 'E-Voting'?",
+    "options": ["Voting for the prime minister online", "Electronic voting on company resolutions during a General Meeting", "A game", "An online lottery"],
+    "answer": "Electronic voting on company resolutions during a General Meeting",
+    "hint": "घर बैठे कॉर्पोरेट प्रशासन (corporate governance) में भाग लेना।",
+    "explanation": "RTAs शेयरधारकों के लिए इलेक्ट्रॉनिक वोटिंग प्लेटफॉर्म (अक्सर NSDL/CDSL द्वारा प्रदान किए गए) की सुविधा प्रदान करते हैं।"
+  },
+  {
+    "id": 22,
+    "question": "What is 'Investor Awareness'?",
+    "options": ["Knowing the broker's name", "Programs and initiatives to educate investors about their rights and responsibilities", "Watching the news", "Knowing the stock price"],
+    "answer": "Programs and initiatives to educate investors about their rights and responsibilities",
+    "hint": "सुरक्षा के लिए शिक्षा (Education for safety)।",
+    "explanation": "जागरूक (Informed) निवेशकों के साथ धोखाधड़ी होने की संभावना कम होती है। SEBI और RTAs नियमित रूप से ये कार्यक्रम आयोजित करते हैं।"
+  },
+  {
+    "id": 23,
+    "question": "Which of the following is a 'Red Flag' in investor servicing?",
+    "options": ["A request to update bank details from an unknown third party", "A request accompanied by self-attested PAN", "Dividend being paid via NEFT", "An email about a bonus issue"],
+    "answer": "A request to update bank details from an unknown third party",
+    "hint": "संभावित धोखाधड़ी चेतावनी (Potential fraud alert)।",
+    "explanation": "RTAs को केवल पंजीकृत निवेशक (registered investor) या उनके कानूनी अधिकृत प्रतिनिधि (legal authorized representative) से सीधे आने वाले अनुरोधों को ही प्रोसेस करना चाहिए।"
+  },
+  {
+    "id": 24,
+    "question": "A 'Stop Mark' is placed on a share certificate record if:",
+    "options": ["The price is too high", "The certificate is reported as lost or stolen", "The company is making a profit", "The investor moves to another city"],
+    "answer": "The certificate is reported as lost or stolen",
+    "hint": "अनधिकृत हस्तांतरण (unauthorized transfer) को रोकना।",
+    "explanation": "'Stop' लगाने से यह सुनिश्चित होता है कि यदि खोया हुआ प्रमाणपत्र हस्तांतरण (transfer) के लिए प्रस्तुत किया जाता है, तो RTA उसे तुरंत अस्वीकार कर देगा।"
+  },
+  {
+    "id": 25,
+    "question": "What is 'Transposition'?",
+    "options": ["Changing the company name", "Changing the order of names in a joint holding to match the demat account", "Selling shares to a bank", "Converting shares to bonds"],
+    "answer": "Changing the order of names in a joint holding to match the demat account",
+    "hint": "Demat के लिए नामों का क्रम (Order of names) मायने रखता है।",
+    "explanation": "यदि भौतिक शेयर में 'A & B' लिखा है, लेकिन demat खाते में 'B & A' है, तो transposition अनुरोध की आवश्यकता होती है।"
+  },
+  {
+    "id": 26,
+    "question": "Which entity provides the 'BenPos' list for client servicing in demat?",
+    "options": ["The Broker", "The Depository", "The RBI", "The Police"],
+    "answer": "The Depository",
+    "hint": "डिजिटल रिकॉर्ड depository में रखे जाते हैं।",
+    "explanation": "RTA, dividends या AGMs के लिए वर्तमान मालिकों (BenPos) की सूची NSDL/CDSL से निकालता (pulls) है।"
+  },
+  {
+    "id": 27,
+    "question": "For a 'Change of Name' (e.g., after marriage), an investor must provide:",
+    "options": ["A verbal request", "A copy of the Gazette Notification or Marriage Certificate", "A new photo only", "A letter from their spouse"],
+    "answer": "A copy of the Gazette Notification or Marriage Certificate",
+    "hint": "नाम परिवर्तन का कानूनी प्रमाण (Legal proof)।",
+    "explanation": "रजिस्ट्री को अपडेट करने के लिए औपचारिक नाम परिवर्तन (Formal name changes) हेतु कानूनी दस्तावेज़ीकरण (legal documentation) की आवश्यकता होती है।"
+  },
+  {
+    "id": 28,
+    "question": "What is the 'Master File'?",
+    "options": ["A file with the CEO's data", "The primary database containing all shareholder details", "A file of old newspapers", "The company's marketing plan"],
+    "answer": "The primary database containing all shareholder details",
+    "hint": "RTA के लिए 'सत्य का स्रोत' (Source of Truth)।",
+    "explanation": "Master File का उपयोग सभी संचार (communications), भुगतानों और corporate actions के लिए किया जाता है।"
+  },
+  {
+    "id": 29,
+    "question": "What is 'Folio Number'?",
+    "options": ["The investor's age", "A unique identification number for a shareholder in the physical registry", "A phone number", "A tax code"],
+    "answer": "A unique identification number for a shareholder in the physical registry",
+    "hint": "भौतिक खाता आईडी (Physical account ID)।",
+    "explanation": "प्रत्येक भौतिक शेयरधारक (physical shareholder) को उनकी होल्डिंग और इतिहास को ट्रैक करने के लिए एक Folio Number सौंपा जाता है।"
+  },
+  {
+    "id": 30,
+    "question": "Which of the following describes 'Investor Grievance'?",
+    "options": ["When an investor makes a profit", "Any complaint or dissatisfaction expressed by an investor regarding the service provided", "Buying more shares", "Selling at a loss"],
+    "answer": "Any complaint or dissatisfaction expressed by an investor regarding the service provided",
+    "hint": "एक औपचारिक शिकायत (A formal complaint)।",
+    "explanation": "शिकायतों (Grievances) को एक रजिस्टर में दर्ज किया जाना चाहिए और बोर्ड तथा नियामकों (regulators) को रिपोर्ट किया जाना चाहिए।"
+  },
+  {
+    "id": 31,
+    "question": "What is 'ECS' or 'NACH' in dividend payments?",
+    "options": ["Extra Cash System", "Electronic clearing systems for direct credit of dividends to bank accounts", "A type of tax", "A courier service"],
+    "answer": "Electronic clearing systems for direct credit of dividends to bank accounts",
+    "hint": "सीधे बैंक में क्रेडिट (Direct bank credit)।",
+    "explanation": "गति और सुरक्षा के लिए भौतिक वारंट (physical warrants) के बजाय इलेक्ट्रॉनिक मोड को प्राथमिकता दी जाती है।"
+  },
+  {
+    "id": 32,
+    "question": "If an investor's dividend warrant is 'Stale' (expired), what should they do?",
+    "options": ["Throw it away", "Submit it to the RTA for revalidation or fresh payment", "Ask for a bonus instead", "Sell it on the market"],
+    "answer": "Submit it to the RTA for revalidation or fresh payment",
+    "hint": "भुगतान का नवीनीकरण (Renewal of payment)।",
+    "explanation": "यदि मूल चेक अपनी वैधता अवधि (validity period) के भीतर नहीं भुनाया (encashed) गया था, तो RTAs dividends को फिर से जारी कर सकते हैं।"
+  },
+  {
+    "id": 33,
+    "question": "What is 'Dormant Account'?",
+    "options": ["An account with high volume", "An account with no activity for a long time", "A newly opened account", "A negative balance account"],
+    "answer": "An account with no activity for a long time",
+    "hint": "निष्क्रिय खाता (Inactive account)।",
+    "explanation": "संभावित धोखाधड़ी (fraud) या 'लावारिस' (unclaimed) स्थिति के लिए dormant खातों की बारीकी से निगरानी की जाती है।"
+  },
+  {
+    "id": 34,
+    "question": "Who is a 'Nominee'?",
+    "options": ["The broker", "The person appointed by the shareholder to receive the securities in the event of their death", "A company director", "A SEBI officer"],
+    "answer": "The person appointed by the shareholder to receive the securities in the event of their death",
+    "hint": "मृत्यु के बाद लाभार्थी (Beneficiary after death)।",
+    "explanation": "नामांकन (Nomination) succession certificate के बिना स्वामित्व (ownership) के सुचारू हस्तांतरण को सुनिश्चित करता है।"
+  },
+  {
+    "id": 35,
+    "question": "What is the 'Code of Ethics' for an RTA?",
+    "options": ["How to dress at work", "A set of guidelines for professional and fair conduct toward investors and clients", "How to make a profit", "A marketing manual"],
+    "answer": "A set of guidelines for professional and fair conduct toward investors and clients",
+    "hint": "नैतिक और व्यावसायिक मानक (Moral and professional standards)।",
+    "explanation": "नैतिकता (Ethics) में ईमानदारी, पारदर्शिता और फर्म के मुनाफे पर निवेशक के अधिकारों (investor rights) को प्राथमिकता देना शामिल है।"
+  },
+  {
+    "id": 36,
+    "question": "A 'Stop Payment' instruction for a dividend warrant is given by the RTA to the:",
+    "options": ["Investor", "Bank", "Police", "SEBI"],
+    "answer": "Bank",
+    "hint": "बैंकिंग निर्देश (Banking instruction)।",
+    "explanation": "यदि कोई warrant खो जाता है, तो RTA नया जारी करने से पहले बैंक को भुगतान रोकने (stop payment) के लिए कहता है।"
+  },
+  {
+    "id": 37,
+    "question": "In 'Joint Holding', who receives the dividend and communications by default?",
+    "options": ["All holders", "The first named holder", "The last named holder", "No one"],
+    "answer": "The first named holder",
+    "hint": "प्राथमिक संपर्क (Primary contact)।",
+    "explanation": "डिफ़ॉल्ट रूप से, पहले धारक (first holder) को सभी प्रशासनिक कार्यों के लिए मुख्य संपर्क माना जाता है।"
+  },
+  {
+    "id": 38,
+    "question": "What is 'In-person Verification' (IPV)?",
+    "options": ["A phone call", "Physically verifying the investor is real and matches their documents", "Reading a book", "A digital signature"],
+    "answer": "Physically verifying the investor is real and matches their documents",
+    "hint": "भौतिक आईडी जांच (Physical ID check)।",
+    "explanation": "IPV, KYC प्रक्रिया में एक महत्वपूर्ण धोखाधड़ी-विरोधी (anti-fraud) उपाय है।"
+  },
+  {
+    "id": 39,
+    "question": "Which of the following is a 'Corporate Benefit'?",
+    "options": ["Bonus Shares", "Dividend", "Right Entitlements", "All of the above"],
+    "answer": "All of the above",
+    "hint": "शेयरधारकों को दी गई अतिरिक्त चीज़ें (Extras)।",
+    "explanation": "RTAs इन सभी लाभों (benefits) के वितरण का प्रबंधन करते हैं।"
+  },
+  {
+    "id": 40,
+    "question": "What is 'Amalgamation' or 'Merger' in client servicing?",
+    "options": ["Closing the company", "When two companies join, requiring the RTA to issue new shares of the combined entity to old shareholders", "Hiring new staff", "Changing the broker"],
+    "answer": "When two companies join, requiring the RTA to issue new shares of the combined entity to old shareholders",
+    "hint": "कंपनियों का समेकन (Consolidation)।",
+    "explanation": "RTAs कॉर्पोरेट विलय (mergers) के दौरान शेयरों के जटिल आदान-प्रदान (complex exchange) को संभालते हैं।"
+  },
+  {
+    "id": 41,
+    "question": "What is 'Data Integrity'?",
+    "options": ["Having a lot of data", "Ensuring the accuracy, consistency, and security of shareholder records", "Selling data to others", "Deleting data every day"],
+    "answer": "Ensuring the accuracy, consistency, and security of shareholder records",
+    "hint": "रिकॉर्ड की गुणवत्ता और सुरक्षा (Quality and safety)।",
+    "explanation": "सही डेटा बनाए रखना 'रजिस्ट्री' का मुख्य कार्य (core job) है।"
+  },
+  {
+    "id": 42,
+    "question": "If an investor is 'Illiterate' and cannot sign, they can use:",
+    "options": ["Nothing", "A Thumb Impression (usually left thumb for males, right for females) verified by a magistrate/banker", "A friend's signature", "A drawing"],
+    "answer": "A Thumb Impression (usually left thumb for males, right for females) verified by a magistrate/banker",
+    "hint": "हस्ताक्षर का सत्यापित विकल्प (Verified alternative)।",
+    "explanation": "RTAs अंगूठे के निशान (thumb impressions) की अनुमति देते हैं यदि उन्हें कानूनी रूप से देखा और सत्यापित किया गया हो।"
+  },
+  {
+    "id": 43,
+    "question": "What is 'Fractional Entitlement' in a bonus issue?",
+    "options": ["Getting zero shares", "When the bonus ratio results in a fraction of a share (e.g., 0.5 shares)", "Extra shares for the CEO", "A type of tax"],
+    "answer": "When the bonus ratio results in a fraction of a share (e.g., 0.5 shares)",
+    "hint": "बचा हुआ गणित (Leftover math)।",
+    "explanation": "चूंकि कंपनियां 0.5 शेयर जारी नहीं कर सकती हैं, इसलिए इन भिन्नों (fractions) को आमतौर पर समेकित (consolidated) करके बेचा जाता है, और नकद (cash) निवेशकों को भुगतान किया जाता है।"
+  },
+  {
+    "id": 44,
+    "question": "What is 'Audit Trail'?",
+    "options": ["Walking in a forest", "A step-by-step record of all changes made to a shareholder's data", "A list of shareholders", "The company's history"],
+    "answer": "A step-by-step record of all changes made to a shareholder's data",
+    "hint": "यह ट्रैक करना कि किसने, क्या और कब बदला।",
+    "explanation": "धोखाधड़ी की जांच करने या त्रुटियों (errors) को सुधारने के लिए एक audit trail आवश्यक है।"
+  },
+  {
+    "id": 45,
+    "question": "The RTA should maintain a 'Grievance Redressal Policy' which must be:",
+    "options": ["Hidden", "Publicly available on their website", "Only for employees", "Only for the government"],
+    "answer": "Publicly available on their website",
+    "hint": "निवेशकों के लिए पारदर्शिता (Transparency)।",
+    "explanation": "निवेशकों को पता होना चाहिए कि यदि वे संतुष्ट नहीं हैं तो शिकायत कैसे और कहाँ करनी है।"
+  },
+  {
+    "id": 46,
+    "question": "What is 'Facilitation' by an RTA?",
+    "options": ["Making things difficult", "Helping investors navigate the processes like demat or transmission", "Buying shares for them", "Providing loans"],
+    "answer": "Helping investors navigate the processes like demat or transmission",
+    "hint": "सहायता (Assistance)।",
+    "explanation": "सर्विसिंग (Servicing) में जटिल कानूनी और तकनीकी चरणों के माध्यम से निवेशकों का मार्गदर्शन करना शामिल है।"
+  },
+  {
+    "id": 47,
+    "question": "Which of the following is an 'Address Proof' for KYC?",
+    "options": ["Library card", "Utility bill (not older than 2-3 months) or Aadhaar", "A self-written note", "A marketing flyer"],
+    "answer": "Utility bill (not older than 2-3 months) or Aadhaar",
+    "hint": "पते के साथ आधिकारिक दस्तावेज (Official document)।",
+    "explanation": "RTAs प्रमाण के रूप में मानक सरकारी आईडी या हाल ही में जारी किए गए बिल स्वीकार करते हैं।"
+  },
+  {
+    "id": 48,
+    "question": "What is 'Promptitude'?",
+    "options": ["Being rude", "Acting with speed and without unnecessary delay", "Being very slow", "Charging high fees"],
+    "answer": "Acting with speed and without unnecessary delay",
+    "hint": "जल्दी से कार्य करना (Acting quickly)।",
+    "explanation": "त्वरित सेवा (Prompt service) RTA code of conduct का एक स्तंभ है।"
+  },
+  {
+    "id": 49,
+    "question": "Can an RTA charge 'Extra' fees for standard services beyond what is agreed with the company?",
+    "options": ["Yes, from investors", "No, standard servicing costs are usually covered by the company's contract", "Only if the investor is rich", "Yes, as a tip"],
+    "answer": "No, standard servicing costs are usually covered by the company's contract",
+    "hint": "शुल्क संरचना (fee structure) का पालन।",
+    "explanation": "RTAs को पता परिवर्तन या लाभांश अपडेट जैसी सेवाओं के लिए निवेशकों से मनमाने ढंग से (arbitrarily) शुल्क नहीं लेना चाहिए।"
+  },
+  {
+    "id": 50,
+    "question": "What is 'Investor Satisfaction'?",
+    "options": ["Making the investor rich", "Ensuring that the investor's needs are met efficiently and professionally", "Giving them free gifts", "Telling them the stock price"],
+    "answer": "Ensuring that the investor's needs are met efficiently and professionally",
+    "hint": "अच्छी सर्विसिंग का अंतिम परिणाम (ultimate outcome)।",
+    "explanation": "अच्छी ग्राहक सेवा से RTA और Issuer कंपनी दोनों के लिए विश्वास (trust) और सकारात्मक प्रतिष्ठा (positive reputation) पैदा होती है।"
+  }
+]

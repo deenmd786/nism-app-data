@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following is the most basic measure of a mutual fund's performance?",
+    "options": [
+      "Expense Ratio",
+      "Return (Capital Appreciation + Dividend)",
+      "AUM Size",
+      "Fund Manager's Age"
+    ],
+    "answer": "Return (Capital Appreciation + Dividend)",
+    "hint": "आपको वापस क्या मिला?",
+    "explanation": "Performance मुख्य रूप से scheme द्वारा generate किए गए total return से मापी जाती है, जिसमें NAV में वृद्धि (capital appreciation) और दिए गए dividends दोनों शामिल होते हैं।"
+  },
+  {
+    "id": 2,
+    "question": "For investment periods of less than 1 year, returns are generally calculated as:",
+    "options": [
+      "Simple Annualized Return",
+      "Absolute Return",
+      "CAGR",
+      "XIRR"
+    ],
+    "answer": "Absolute Return",
+    "hint": "सीधा अंतर (Simple difference)।",
+    "explanation": "छोटी अवधियों (< 1 वर्ष) के लिए, annualizing किए बिना absolute returns (point-to-point) का उपयोग किया जाता है।"
+  },
+  {
+    "id": 3,
+    "question": "CAGR stands for:",
+    "options": [
+      "Calculated Annual Growth Rate",
+      "Compounded Annual Growth Rate",
+      "Cumulative Average Growth Return",
+      "Common Asset Growth Ratio"
+    ],
+    "answer": "Compounded Annual Growth Rate",
+    "hint": "Volatility को smooth करता है।",
+    "explanation": "CAGR (Compounded Annual Growth Rate) एक वर्ष से अधिक की specified अवधि (time period) में निवेश की औसत वार्षिक वृद्धि दर (mean annual growth rate) को मापता है।"
+  },
+  {
+    "id": 4,
+    "question": "Which return metric is best for evaluating SIP investments?",
+    "options": [
+      "Absolute Return",
+      "CAGR",
+      "XIRR",
+      "Simple Interest"
+    ],
+    "answer": "XIRR",
+    "hint": "Multiple cash flows.",
+    "explanation": "XIRR (Extended Internal Rate of Return) का उपयोग तब किया जाता है जब SIP की तरह अलग-अलग समय पर कई cash inflows/outflows (पैसे का आना/जाना) होते हैं।"
+  },
+  {
+    "id": 5,
+    "question": "A 'Benchmark' is used to:",
+    "options": [
+      "Calculate taxes",
+      "Compare the performance of the mutual fund scheme",
+      "Determine the expense ratio",
+      "Set the NAV"
+    ],
+    "answer": "Compare the performance of the mutual fund scheme",
+    "hint": "एक Standard (मानक)।",
+    "explanation": "Benchmark (जैसे Nifty 50) एक मानक (standard) के रूप में कार्य करता है जिसके खिलाफ mutual fund scheme के performance को मापा (measure) जा सकता है।"
+  },
+  {
+    "id": 6,
+    "question": "If a fund generates a return of 15% while its benchmark generates 12%, the fund has:",
+    "options": [
+      "Underperformed",
+      "Outperformed",
+      "Matched the index",
+      "Failed"
+    ],
+    "answer": "Outperformed",
+    "hint": "बेहतर किया (Did better)।",
+    "explanation": "चूंकि fund का return benchmark से अधिक है, इसलिए इसने market को outperform (बेहतर प्रदर्शन) किया है।"
+  },
+  {
+    "id": 7,
+    "question": "SEBI mandates that mutual fund schemes must use which version of the index for benchmarking?",
+    "options": [
+      "Price Return Index (PRI)",
+      "Total Return Index (TRI)",
+      "Weighted Average Index",
+      "Global Index"
+    ],
+    "answer": "Total Return Index (TRI)",
+    "hint": "इसमें dividends भी शामिल होते हैं।",
+    "explanation": "TRI stocks के price movement और अर्जित dividends दोनों को capture करता है, जिससे mutual funds के लिए एक उचित तुलना (fairer comparison) मिलती है।"
+  },
+  {
+    "id": 8,
+    "question": "Which ratio measures the 'Risk-adjusted Return'?",
+    "options": [
+      "P/E Ratio",
+      "Sharpe Ratio",
+      "Expense Ratio",
+      "Turnover Ratio"
+    ],
+    "answer": "Sharpe Ratio",
+    "hint": "प्रति यूनिट risk पर return.",
+    "explanation": "Sharpe Ratio लिए गए जोखिम (standard deviation) की प्रत्येक इकाई (unit) के लिए risk-free rate के ऊपर fund द्वारा generate किए गए excess return की गणना करता है।"
+  },
+  {
+    "id": 9,
+    "question": "A higher Sharpe Ratio indicates:",
+    "options": [
+      "Higher risk",
+      "Better risk-adjusted performance",
+      "Lower returns",
+      "High expense ratio"
+    ],
+    "answer": "Better risk-adjusted performance",
+    "hint": "कम रिस्क में ज्यादा फायदा।",
+    "explanation": "Higher Sharpe Ratio का मतलब है कि fund ने समान स्तर के जोखिम (same level of risk) के लिए अधिक return generate किया।"
+  },
+  {
+    "id": 10,
+    "question": "Standard Deviation is a measure of:",
+    "options": [
+      "Returns",
+      "Volatility / Risk",
+      "Liquidity",
+      "Credit Quality"
+    ],
+    "answer": "Volatility / Risk",
+    "hint": "उतार-चढ़ाव (Ups and downs)।",
+    "explanation": "Standard Deviation mean (औसत) से returns के फैलाव (dispersion) को मापता है; higher SD का मतलब है higher volatility (जोखिम)।"
+  },
+  {
+    "id": 11,
+    "question": "Beta measures the fund's sensitivity to:",
+    "options": [
+      "Interest rate changes only",
+      "Market movements (Benchmark)",
+      "Inflation",
+      "GDP growth"
+    ],
+    "answer": "Market movements (Benchmark)",
+    "hint": "Market के साथ Correlation.",
+    "explanation": "Beta यह दर्शाता है कि market index के संबंध में fund का NAV कितना हिलता (move) है। Beta > 1 का मतलब है कि यह market से अधिक volatile है।"
+  },
+  {
+    "id": 12,
+    "question": "If a fund has a Beta of 1.2, and the market rises by 10%, the fund is expected to rise by:",
+    "options": [
+      "10%",
+      "12%",
+      "8%",
+      "20%"
+    ],
+    "answer": "12%",
+    "hint": "10 का 1.2 गुना।",
+    "explanation": "10% * 1.2 = 12%। Fund से market movement का 1.2 गुना move करने की उम्मीद की जाती है।"
+  },
+  {
+    "id": 13,
+    "question": "The 'Risk-free Rate' is typically represented by the yield on:",
+    "options": [
+      "Corporate Bonds",
+      "Government Treasury Bills (T-Bills)",
+      "Stock Market Index",
+      "Gold"
+    ],
+    "answer": "Government Treasury Bills (T-Bills)",
+    "hint": "सबसे सुरक्षित asset.",
+    "explanation": "Government securities को risk-free माना जाता है क्योंकि उनके पीछे sovereign backing (सरकार की गारंटी) होती है।"
+  },
+  {
+    "id": 14,
+    "question": "Performance of a mutual fund scheme should always be compared with:",
+    "options": [
+      "A scheme from a different category",
+      "Its Peers and Benchmark",
+      "Bank Fixed Deposits only",
+      "Real Estate returns"
+    ],
+    "answer": "Its Peers and Benchmark",
+    "hint": "सेब की तुलना सेब से (Apples to apples)।",
+    "explanation": "समान funds (peers) और designated benchmark के साथ तुलना करने से relative performance की सही तस्वीर मिलती है।"
+  },
+  {
+    "id": 15,
+    "question": "Which of these is NOT a good practice when evaluating performance?",
+    "options": [
+      "Looking at long-term track record",
+      "Comparing with benchmark",
+      "Looking only at the last 1-month return",
+      "Checking risk-adjusted returns"
+    ],
+    "answer": "Looking only at the last 1-month return",
+    "hint": "Short-term बायस।",
+    "explanation": "Short-term returns volatile और भ्रामक (misleading) हो सकते हैं। Long-term consistency (निरंतरता) मुख्य (key) है।"
+  },
+  {
+    "id": 16,
+    "question": "Alpha measures:",
+    "options": [
+      "The market return",
+      "The excess return generated by the fund manager over the benchmark",
+      "The risk of the fund",
+      "The expense ratio"
+    ],
+    "answer": "The excess return generated by the fund manager over the benchmark",
+    "hint": "Manager का कौशल (skill)।",
+    "explanation": "Alpha stock selection के माध्यम से fund manager द्वारा जोड़े गए value को दर्शाता है। Positive alpha का मतलब है outperformance (बेहतर प्रदर्शन)।"
+  },
+  {
+    "id": 17,
+    "question": "If NAV moves from Rs. 10 to Rs. 12 in one year, the absolute return is:",
+    "options": [
+      "20%",
+      "12%",
+      "10%",
+      "2%"
+    ],
+    "answer": "20%",
+    "hint": "(12-10)/10.",
+    "explanation": "Gain (फायदा) 2 रुपये है। Return = (2/10) * 100 = 20%."
+  },
+  {
+    "id": 18,
+    "question": "Which of the following reduces the net return to the investor?",
+    "options": [
+      "Dividends",
+      "Expense Ratio and Exit Loads",
+      "Capital Appreciation",
+      "High Beta"
+    ],
+    "answer": "Expense Ratio and Exit Loads",
+    "hint": "लागत (Costs)।",
+    "explanation": "Expenses और loads ऐसे costs हैं जो fund assets या redemption proceeds (निकासी राशि) से काटे जाते हैं, जिससे investor का net return कम हो जाता है।"
+  },
+  {
+    "id": 19,
+    "question": "Can past performance guarantee future results?",
+    "options": [
+      "Yes, always",
+      "No, never",
+      "Yes, for liquid funds",
+      "Yes, for government schemes"
+    ],
+    "answer": "No, never",
+    "hint": "Standard disclaimer.",
+    "explanation": "Past performance केवल एक संकेतक (indicator) है और future returns की गारंटी नहीं देता है।"
+  },
+  {
+    "id": 20,
+    "question": "A 'Peer Group' comparison involves comparing a Large Cap Fund with:",
+    "options": [
+      "Other Large Cap Funds",
+      "Small Cap Funds",
+      "Debt Funds",
+      "Gold ETFs"
+    ],
+    "answer": "Other Large Cap Funds",
+    "hint": "समान श्रेणी (Similar category)।",
+    "explanation": "सार्थक (meaningful) होने के लिए Funds की तुलना उनकी अपनी श्रेणी (peers) के भीतर ही की जानी चाहिए।"
+  },
+  {
+    "id": 21,
+    "question": "The 'Tracking Error' is a performance measure relevant for:",
+    "options": [
+      "Active Funds",
+      "Index Funds / ETFs",
+      "FMPs",
+      "Liquid Funds"
+    ],
+    "answer": "Index Funds / ETFs",
+    "hint": "यह कितनी अच्छी तरह track करता है।",
+    "explanation": "Tracking error मापता है कि एक index fund अपने benchmark index को कितनी बारीकी से फॉलो करता है। जितना कम हो उतना अच्छा।"
+  },
+  {
+    "id": 22,
+    "question": "Returns from mutual funds are:",
+    "options": [
+      "Fixed",
+      "Market-linked",
+      "Inflation-indexed",
+      "Tax-free always"
+    ],
+    "answer": "Market-linked",
+    "hint": "Market पर निर्भर करता है।",
+    "explanation": "Returns बाजार (market) में underlying securities के performance पर निर्भर करते हैं।"
+  },
+  {
+    "id": 23,
+    "question": "To calculate real rate of return, one must adjust the nominal return for:",
+    "options": [
+      "Expense Ratio",
+      "Inflation",
+      "Tax",
+      "Brokerage"
+    ],
+    "answer": "Inflation",
+    "hint": "क्रय शक्ति (Purchasing power)।",
+    "explanation": "Real Return = Nominal Return - Inflation Rate (महंगाई दर)।"
+  },
+  {
+    "id": 24,
+    "question": "Which of these is a 'Relative Return' measure?",
+    "options": [
+      "The fund earned 15%",
+      "The fund earned 3% more than the Nifty 50",
+      "The fund NAV is Rs. 50",
+      "The dividend was Rs. 2"
+    ],
+    "answer": "The fund earned 3% more than the Nifty 50",
+    "hint": "किसी चीज़ की तुलना में।",
+    "explanation": "Relative return किसी benchmark के खिलाफ fund के performance की तुलना (compare) करता है।"
+  },
+  {
+    "id": 25,
+    "question": "Generally, equity funds are expected to generate returns that:",
+    "options": [
+      "Beat inflation over the long term",
+      "Are lower than FDs",
+      "Are stable every month",
+      "Are tax-free"
+    ],
+    "answer": "Beat inflation over the long term",
+    "hint": "Wealth creation (संपत्ति निर्माण)।",
+    "explanation": "Equity investing का प्राथमिक लक्ष्य (primary goal) लंबे समय (long run) में महंगाई को मात देने वाले (inflation-beating) returns उत्पन्न करना है।"
+  },
+  {
+    "id": 26,
+    "question": "If a fund has a Beta of 0.8, it is considered:",
+    "options": [
+      "More volatile than the market",
+      "Less volatile than the market (Defensive)",
+      "Risk-free",
+      "High return"
+    ],
+    "answer": "Less volatile than the market (Defensive)",
+    "hint": "1 से कम।",
+    "explanation": "1 से कम beta यह दर्शाता है कि fund benchmark index की तुलना में कम volatile (कम उतार-चढ़ाव वाला) है।"
+  },
+  {
+    "id": 27,
+    "question": "Rolling Returns are useful to understand:",
+    "options": [
+      "Performance consistency over different time periods",
+      "Only the best day's return",
+      "The fund manager's salary",
+      "The expense ratio"
+    ],
+    "answer": "Performance consistency over different time periods",
+    "hint": "Start/end point बायस को हटाना।",
+    "explanation": "Rolling returns overlapping periods (जैसे, पिछले 10 वर्षों में हर 3 साल की अवधि) के लिए performance की गणना करते हैं, जो consistency (निरंतरता) को दर्शाता है।"
+  },
+  {
+    "id": 28,
+    "question": "A 'Top Quartile' fund is one that:",
+    "options": [
+      "Ranks in the top 25% of its category",
+      "Ranks in the bottom 25%",
+      "Has the highest expense ratio",
+      "Has the highest NAV"
+    ],
+    "answer": "Ranks in the top 25% of its category",
+    "hint": "समूह (bunch) में सर्वश्रेष्ठ।",
+    "explanation": "Quartiles peer group को चार भागों में बांटते हैं। Top quartile का मतलब है कि fund सर्वश्रेष्ठ प्रदर्शन (best performers) करने वालों में से एक है।"
+  },
+  {
+    "id": 29,
+    "question": "Dividends declared by the fund reduce the:",
+    "options": [
+      "Number of units",
+      "NAV of the scheme",
+      "Expense Ratio",
+      "Benchmark value"
+    ],
+    "answer": "NAV of the scheme",
+    "hint": "पैसा बाहर जाता है।",
+    "explanation": "जब dividend का भुगतान (paid) किया जाता है, तो scheme का NAV उसी हद (extent) तक गिर जाता है।"
+  },
+  {
+    "id": 30,
+    "question": "The 'Information Ratio' measures:",
+    "options": [
+      "Portfolio turnover",
+      "Consistency of generating alpha (excess return)",
+      "Information available in SID",
+      "Marketing spend"
+    ],
+    "answer": "Consistency of generating alpha (excess return)",
+    "hint": "Active return / Tracking error.",
+    "explanation": "यह benchmark के सापेक्ष excess returns (अतिरिक्त रिटर्न) generate करने की portfolio manager की क्षमता (ability) को मापता है, जिसे उन excess returns की volatility के लिए adjust किया जाता है।"
+  },
+  {
+    "id": 31,
+    "question": "Which of these funds would likely have the lowest standard deviation?",
+    "options": [
+      "Small Cap Fund",
+      "Liquid Fund",
+      "Large Cap Fund",
+      "Sector Fund"
+    ],
+    "answer": "Liquid Fund",
+    "hint": "सबसे कम रिस्की (Least risky)।",
+    "explanation": "Liquid funds short-term debt में invest करते हैं और उनके NAV बहुत stable (स्थिर) होते हैं, इसलिए standard deviation बहुत कम होता है।"
+  },
+  {
+    "id": 32,
+    "question": "Sortino Ratio differs from Sharpe Ratio because it considers only:",
+    "options": [
+      "Upside Volatility",
+      "Downside Deviation (Harmful Volatility)",
+      "Total Volatility",
+      "Market Risk"
+    ],
+    "answer": "Downside Deviation (Harmful Volatility)",
+    "hint": "केवल बुरा (bad) risk.",
+    "explanation": "Sortino ratio केवल downside volatility (नुकसान) को दंडित (penalize) करता है, जबकि Sharpe upside और downside दोनों volatility को penalize करता है।"
+  },
+  {
+    "id": 33,
+    "question": "The return of a Debt Fund is primarily driven by:",
+    "options": [
+      "Stock market rallies",
+      "Interest accrual and changes in interest rates",
+      "Gold prices",
+      "Real estate boom"
+    ],
+    "answer": "Interest accrual and changes in interest rates",
+    "hint": "Coupons और yields.",
+    "explanation": "Debt funds interest (coupons) से कमाते हैं और interest rate में बदलाव के कारण होने वाले capital appreciation/depreciation से प्रभावित होते हैं।"
+  },
+  {
+    "id": 34,
+    "question": "Performance advertisements must disclose CAGR for:",
+    "options": [
+      "1 year, 3 years, 5 years, and since inception",
+      "Last 6 months only",
+      "Whatever looks best",
+      "Projected next 3 years"
+    ],
+    "answer": "1 year, 3 years, 5 years, and since inception",
+    "hint": "Standard अवधियां (periods)।",
+    "explanation": "SEBI investors को गुमराह (mislead) होने से बचाने के लिए standardized disclosure periods (मानकीकृत प्रकटीकरण अवधि) की मांग करता है।"
+  },
+  {
+    "id": 35,
+    "question": "If an investor invests Rs. 10,000 and it becomes Rs. 20,000 in 5 years, the CAGR is roughly:",
+    "options": [
+      "100%",
+      "20%",
+      "14.87%",
+      "50%"
+    ],
+    "answer": "14.87%",
+    "hint": "Rule of 72 अनुमान लगाने में मदद करता है।",
+    "explanation": "5 वर्षों में दोगुना (Doubling) होने का मतलब लगभग 14-15% का CAGR है। (72/5 = 14.4)।"
+  },
+  {
+    "id": 36,
+    "question": "For a 'Liquid Fund', returns are often quoted as:",
+    "options": [
+      "7-day, 14-day, and 30-day simple annualized yields",
+      "CAGR only",
+      "Only NAV",
+      "Beta"
+    ],
+    "answer": "7-day, 14-day, and 30-day simple annualized yields",
+    "hint": "Short term पर focus.",
+    "explanation": "Liquid funds की अवधि बहुत कम (very short nature) होने के कारण, अक्सर छोटी अवधियों (7 दिन, आदि) के आधार पर उनके returns को annualized (वार्षिक) किया जाता है।"
+  },
+  {
+    "id": 37,
+    "question": "Exit loads are ignored when calculating:",
+    "options": [
+      "Redemption Value",
+      "NAV",
+      "They are never ignored",
+      "Entry Load"
+    ],
+    "answer": "NAV",
+    "hint": "NAV asset की value है।",
+    "explanation": "NAV assets का मूल्य (value) है। Redemption Price प्राप्त करने के लिए जब investor redeem (पैसा निकालता) करता है, तभी NAV से Exit load काटा जाता है।"
+  },
+  {
+    "id": 38,
+    "question": "Which benchmark is suitable for a Banking Sector Fund?",
+    "options": [
+      "Nifty 50",
+      "Nifty Bank Index",
+      "Crisil Liquid Fund Index",
+      "Gold Index"
+    ],
+    "answer": "Nifty Bank Index",
+    "hint": "Sector specific.",
+    "explanation": "Benchmark को investment universe को दर्शाना चाहिए। एक banking fund की तुलना एक banking index से की जानी चाहिए।"
+  },
+  {
+    "id": 39,
+    "question": "Total Return Index (TRI) is always __________ than Price Return Index (PRI).",
+    "options": [
+      "Lower",
+      "Higher (or equal)",
+      "Unrelated",
+      "More volatile"
+    ],
+    "answer": "Higher (or equal)",
+    "hint": "Price + Dividend.",
+    "explanation": "चूंकि TRI में reinvest किए गए dividends शामिल होते हैं, इसलिए इसकी value हमेशा PRI से अधिक (या बराबर) होती है जो केवल price को track करता है।"
+  },
+  {
+    "id": 40,
+    "question": "If a fund has a negative alpha, it means:",
+    "options": [
+      "It made a loss",
+      "It underperformed its benchmark after adjusting for risk",
+      "It is a debt fund",
+      "It has low beta"
+    ],
+    "answer": "It underperformed its benchmark after adjusting for risk",
+    "hint": "Manager value जोड़ने में विफल (failed) रहा।",
+    "explanation": "Negative alpha का तात्पर्य (implies) है कि manager लिए गए जोखिम के अनुरूप (commensurate) returns generate करने में विफल रहा, और उसने benchmark से कम प्रदर्शन (underperforming) किया।"
+  },
+  {
+    "id": 41,
+    "question": "Expense Ratio is deducted from the fund's assets:",
+    "options": [
+      "Annually",
+      "Daily (accrued)",
+      "Monthly",
+      "Only on exit"
+    ],
+    "answer": "Daily (accrued)",
+    "hint": "हर दिन गिना जाता है (Every day counts)।",
+    "explanation": "Expenses रोज़ाना (daily) accrue (जमा) होते हैं और NAV calculation से काटे जाते हैं।"
+  },
+  {
+    "id": 42,
+    "question": "Which of the following is a 'Risk' metric?",
+    "options": [
+      "Alpha",
+      "Standard Deviation",
+      "CAGR",
+      "Yield to Maturity"
+    ],
+    "answer": "Standard Deviation",
+    "hint": "उतार-चढ़ाव (Volatility)।",
+    "explanation": "Standard deviation risk (जोखिम) को मापता है। Alpha और CAGR return metrics (रिटर्न मापने के पैमाने) हैं।"
+  },
+  {
+    "id": 43,
+    "question": "Yield to Maturity (YTM) is a performance indicator for:",
+    "options": [
+      "Equity Funds",
+      "Debt Funds",
+      "Index Funds",
+      "Gold Funds"
+    ],
+    "answer": "Debt Funds",
+    "hint": "Bond yield.",
+    "explanation": "YTM एक debt portfolio के expected return को दर्शाता है यदि सभी bonds को maturity तक hold किया जाए।"
+  },
+  {
+    "id": 44,
+    "question": "A fund with a Beta of 1.0 is expected to:",
+    "options": [
+      "Move exactly in line with the market",
+      "Double the market return",
+      "Have zero risk",
+      "Be a liquid fund"
+    ],
+    "answer": "Move exactly in line with the market",
+    "hint": "Correlation = 1.",
+    "explanation": "1.0 के Beta का मतलब है कि fund का volatility profile market index के बिल्कुल समान है।"
+  },
+  {
+    "id": 45,
+    "question": "When comparing two funds, if both have the same return, the one with __________ standard deviation is better.",
+    "options": [
+      "Higher",
+      "Lower",
+      "Zero",
+      "Negative"
+    ],
+    "answer": "Lower",
+    "hint": "फायदा समान, दर्द (risk) कम।",
+    "explanation": "यदि returns समान हैं, तो कम risk वाला fund (lower standard deviation) बेहतर (preferable) है।"
+  },
+  {
+    "id": 46,
+    "question": "The 'NAV' stands for:",
+    "options": [
+      "Net Annual Value",
+      "Net Asset Value",
+      "New Asset Value",
+      "Net Actual Volume"
+    ],
+    "answer": "Net Asset Value",
+    "hint": "Assets की value.",
+    "explanation": "NAV scheme द्वारा hold की गई securities की market value (liabilities घटाकर) को कुल units से भाग देकर निकाला जाता है।"
+  },
+  {
+    "id": 47,
+    "question": "If a fund's expense ratio increases, its NAV returns:",
+    "options": [
+      "Increase",
+      "Decrease",
+      "Stay same",
+      "Become zero"
+    ],
+    "answer": "Decrease",
+    "hint": "Cost profit को खा जाता है।",
+    "explanation": "अधिक खर्च (Higher expenses) net assets को कम कर देते हैं, जिससे NAV और returns कम हो जाते हैं।"
+  },
+  {
+    "id": 48,
+    "question": "A 'Composite Benchmark' is used when:",
+    "options": [
+      "The fund invests in a single asset",
+      "The fund invests in a mix of assets (e.g., Hybrid Fund)",
+      "The manager is confused",
+      "It is a foreign fund"
+    ],
+    "answer": "The fund invests in a mix of assets (e.g., Hybrid Fund)",
+    "hint": "Indices का मिश्रण (Mix)।",
+    "explanation": "Hybrid funds (Equity + Debt) के लिए, एक composite benchmark (उदा. 65% Nifty + 35% Bond Index) का उपयोग किया जाता है।"
+  },
+  {
+    "id": 49,
+    "question": "Treynor Ratio uses which risk measure in its denominator?",
+    "options": [
+      "Standard Deviation",
+      "Beta",
+      "Variance",
+      "Alpha"
+    ],
+    "answer": "Beta",
+    "hint": "Systematic risk.",
+    "explanation": "Treynor Ratio systematic risk (Beta) की प्रति इकाई (per unit) excess return को मापता है, Sharpe के विपरीत जो total risk (Standard Deviation) का उपयोग करता है।"
+  },
+  {
+    "id": 50,
+    "question": "Why is 'Since Inception' return important?",
+    "options": [
+      "It shows the return since the fund started",
+      "It is the highest return",
+      "It is required for tax",
+      "It ignores inflation"
+    ],
+    "answer": "It shows the return since the fund started",
+    "hint": "संपूर्ण इतिहास (Total history)।",
+    "explanation": "यह fund के पूरे जीवनकाल (entire lifetime) में उसके performance की एक तस्वीर (picture) प्रदान करता है।"
+  }
+]

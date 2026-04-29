@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "The possibility of a loss occurring due to adverse movement in the price of a security is known as ______.",
+    "options": [
+      "Credit Risk",
+      "Market Risk",
+      "Operational Risk",
+      "Systemic Risk"
+    ],
+    "answer": "Market Risk",
+    "hint": "इसे Price Risk भी कहा जाता है।",
+    "explanation": "Market Risk वह risk है जहाँ market prices (share prices, interest rates) के unfavorable direction में जाने से investor को नुकसान हो सकता है।"
+  },
+  {
+    "id": 2,
+    "question": "The risk that a counterparty will fail to fulfill their obligation to deliver funds or securities is called ______.",
+    "options": [
+      "Counterparty Risk (Credit Risk)",
+      "Liquidity Risk",
+      "Systematic Risk",
+      "Operational Risk"
+    ],
+    "answer": "Counterparty Risk (Credit Risk)",
+    "hint": "सामने वाली party के मुकर जाने का डर।",
+    "explanation": "Counterparty Risk (या Credit Risk) तब होता है जब trade की दूसरी party pay-in के समय funds या securities देने में default कर देती है।"
+  },
+  {
+    "id": 3,
+    "question": "Which of the following risks arises when a security cannot be bought or sold quickly without a significant impact on its price?",
+    "options": [
+      "Market Risk",
+      "Credit Risk",
+      "Liquidity Risk",
+      "Legal Risk"
+    ],
+    "answer": "Liquidity Risk",
+    "hint": "Market में पर्याप्त buyers या sellers नहीं हैं।",
+    "explanation": "Liquidity Risk तब होता है जब market में trading volume कम होता है, और किसी बड़े order को execute करने से price में भारी बदलाव आ जाता है।"
+  },
+  {
+    "id": 4,
+    "question": "Losses resulting from inadequate internal processes, system failures, or human errors fall under ______.",
+    "options": [
+      "Systemic Risk",
+      "Operational Risk",
+      "Market Risk",
+      "Liquidity Risk"
+    ],
+    "answer": "Operational Risk",
+    "hint": "Software crash या typing mistake इसके examples हैं।",
+    "explanation": "Operational Risk broker के internal systems, hardware/software failure, या human error (जैसे गलत price punch करना) के कारण होने वाले नुकसान को कहते हैं।"
+  },
+  {
+    "id": 5,
+    "question": "Which entity primarily bears the responsibility of managing risk and guaranteeing settlement in the stock market?",
+    "options": [
+      "Stock Broker",
+      "Depository",
+      "Clearing Corporation",
+      "Registrar"
+    ],
+    "answer": "Clearing Corporation",
+    "hint": "यह central counterparty (CCP) की तरह काम करता है।",
+    "explanation": "Clearing Corporation trades की guarantee लेता है और market risk, credit risk को manage करने के लिए margin और Settlement Guarantee Fund (SGF) का इस्तेमाल करता है।"
+  },
+  {
+    "id": 6,
+    "question": "A statistical measure that estimates the maximum potential loss on a portfolio over a given time period with a specific confidence level is called ______.",
+    "options": [
+      "Mark to Market (MTM)",
+      "Value at Risk (VaR)",
+      "Standard Deviation",
+      "Beta"
+    ],
+    "answer": "Value at Risk (VaR)",
+    "hint": "यह 'worst-case scenario' loss को estimate करता है।",
+    "explanation": "VaR (Value at Risk) एक risk management tool है जो बताता है कि normal market conditions में एक निश्चित समय में अधिकतम कितना नुकसान हो सकता है (e.g., 99% confidence level)।"
+  },
+  {
+    "id": 7,
+    "question": "In the cash market, which margin covers the maximum historical loss of a stock based on its volatility?",
+    "options": [
+      "Extreme Loss Margin (ELM)",
+      "Mark to Market (MTM) Margin",
+      "VaR Margin",
+      "Delivery Margin"
+    ],
+    "answer": "VaR Margin",
+    "hint": "यह stock की price volatility पर आधारित होता है।",
+    "explanation": "VaR Margin stock की historical price volatility (variance) के आधार पर calculate किया जाता है और यह upfront collect किया जाता है।"
+  },
+  {
+    "id": 8,
+    "question": "Which margin is collected to cover losses that may arise in situations outside the confidence level of the VaR margin (i.e., 'tail risk')?",
+    "options": [
+      "Mark to Market Margin",
+      "Initial Margin",
+      "Extreme Loss Margin (ELM)",
+      "Base Margin"
+    ],
+    "answer": "Extreme Loss Margin (ELM)",
+    "hint": "Market crash जैसी 'extreme' situations के लिए।",
+    "explanation": "Extreme Loss Margin (ELM) VaR margin के ऊपर एक additional margin है जो market के unexpected या extreme price movements को cover करने के लिए लिया जाता है।"
+  },
+  {
+    "id": 9,
+    "question": "The total upfront margin in the cash market segment is a sum of ______.",
+    "options": [
+      "VaR Margin + ELM",
+      "VaR Margin + MTM Margin",
+      "ELM + MTM Margin",
+      "Initial Margin + Exposure Margin"
+    ],
+    "answer": "VaR Margin + ELM",
+    "hint": "Trade execute करने से पहले इन दोनों को collect करना अनिवार्य है।",
+    "explanation": "Equity cash market में Upfront Margin में VaR Margin और Extreme Loss Margin (ELM) दोनों शामिल होते हैं, जिन्हें trade से पहले broker द्वारा collect किया जाना चाहिए।"
+  },
+  {
+    "id": 10,
+    "question": "Mark-to-Market (MTM) margin is calculated based on the difference between the trade price and the ______ of the day.",
+    "options": [
+      "Opening Price",
+      "Closing Price",
+      "Average Price",
+      "Highest Price"
+    ],
+    "answer": "Closing Price",
+    "hint": "दिन खत्म होने पर जो price होता है।",
+    "explanation": "MTM margin day के end में calculate होता है। यह client के trade price और stock की closing price (settlement price) के बीच का difference (notional loss) होता है।"
+  },
+  {
+    "id": 11,
+    "question": "If a broker fails to collect the Upfront Margin from a client, the exchange imposes a ______.",
+    "options": [
+      "Ban on trading for 1 year",
+      "Penalty for short collection of margin",
+      "Margin refund order",
+      "Capital Gains Tax"
+    ],
+    "answer": "Penalty for short collection of margin",
+    "hint": "SEBI के rules के अनुसार fine लगाया जाता है।",
+    "explanation": "Brokers के लिए upfront margin collect करना mandatory है। 'Short margin collection' की report exchange को जाती है और default amount पर penalty लगती है।"
+  },
+  {
+    "id": 12,
+    "question": "To give margin benefit, clearing corporations accept securities as collateral from brokers. However, the value of securities is reduced by a certain percentage known as ______.",
+    "options": [
+      "Discount Rate",
+      "Haircut",
+      "Depreciation",
+      "Margin Call"
+    ],
+    "answer": "Haircut",
+    "hint": "Collateral की value को थोड़ा 'trim' कर दिया जाता है risk cover करने के लिए।",
+    "explanation": "Haircut वह percentage है जिससे collateral (shares) की value को घटाया जाता है ताकि market price गिरने पर clearing corporation को नुकसान न हो।"
+  },
+  {
+    "id": 13,
+    "question": "In the derivatives market (F&O), the margin calculated by the SPAN software based on portfolio risk is called ______.",
+    "options": [
+      "MTM Margin",
+      "Extreme Loss Margin",
+      "Initial Margin",
+      "Delivery Margin"
+    ],
+    "answer": "Initial Margin",
+    "hint": "यह portfolio basis पर calculate होता है।",
+    "explanation": "Derivatives में SPAN (Standard Portfolio Analysis of Risk) system portfolio level पर risk assess करके Initial Margin calculate करता है।"
+  },
+  {
+    "id": 14,
+    "question": "Which margin in the derivatives segment acts similarly to the Extreme Loss Margin (ELM) in the cash segment?",
+    "options": [
+      "Initial Margin",
+      "Exposure Margin",
+      "Mark to Market Margin",
+      "Tender Period Margin"
+    ],
+    "answer": "Exposure Margin",
+    "hint": "यह Initial Margin के ऊपर additional security के लिए होता है।",
+    "explanation": "F&O segment में Initial margin (SPAN) के साथ 'Exposure Margin' भी upfront collect किया जाता है ताकि extreme market volatility को cover किया जा सके।"
+  },
+  {
+    "id": 15,
+    "question": "Mark-to-Market (MTM) losses in the derivatives (Futures) market must be paid by the broker to the clearing corporation by ______.",
+    "options": [
+      "T+2 day",
+      "T+1 day morning (before trading hours)",
+      "T+7 day",
+      "End of the month"
+    ],
+    "answer": "T+1 day morning (before trading hours)",
+    "hint": "अगले दिन market खुलने से पहले settlement करना होता है।",
+    "explanation": "Derivatives segment में MTM loss का payment Clearing Corporation को T+1 day पर trading शुरू होने से पहले (usually morning pay-in) करना अनिवार्य है।"
+  },
+  {
+    "id": 16,
+    "question": "When an investor's open positions cross a specified limit, regulators impose restrictions to prevent market manipulation. These limits are known as ______.",
+    "options": [
+      "Price Bands",
+      "Circuit Breakers",
+      "Position Limits",
+      "Haircuts"
+    ],
+    "answer": "Position Limits",
+    "hint": "एक limit से ज्यादा 'position' hold नहीं कर सकते।",
+    "explanation": "Position limits market concentration को रोकती हैं। यह Client level, Trading Member level, और Market-Wide level पर set की जाती हैं।"
+  },
+  {
+    "id": 17,
+    "question": "MWPL stands for ______.",
+    "options": [
+      "Market Wide Position Limit",
+      "Maximum Wealth Protection Limit",
+      "Margin Weightage Position Limit",
+      "Market Wide Price Limit"
+    ],
+    "answer": "Market Wide Position Limit",
+    "hint": "पूरे market में F&O contracts की maximum limit।",
+    "explanation": "MWPL वह maximum number of open F&O contracts है जो पूरे market (सभी brokers और clients मिलाकर) में किसी specific stock के लिए hold किए जा सकते हैं।"
+  },
+  {
+    "id": 18,
+    "question": "If the open interest of a stock in the derivatives segment crosses 95% of its MWPL, the stock is put into a ______.",
+    "options": [
+      "Circuit Breaker",
+      "Ban Period",
+      "Settlement Mode",
+      "Auction Market"
+    ],
+    "answer": "Ban Period",
+    "hint": "आप नयी positions नहीं बना सकते, सिर्फ पुरानी close कर सकते हैं।",
+    "explanation": "जब Open Interest 95% of MWPL cross करता है, तो stock 'Ban Period' में चला जाता है। इस दौरान traders सिर्फ अपनी existing positions को square off कर सकते हैं, नयी positions नहीं ले सकते।"
+  },
+  {
+    "id": 19,
+    "question": "A stock comes out of the F&O 'Ban Period' when its open interest falls below ______ of the MWPL.",
+    "options": [
+      "95%",
+      "90%",
+      "80%",
+      "50%"
+    ],
+    "answer": "80%",
+    "hint": "Ban हटने के लिए position काफी कम होनी चाहिए।",
+    "explanation": "Stock का Ban Period तब खत्म होता है जब उसका overall Open Interest घटकर MWPL के 80% या उससे नीचे आ जाता है।"
+  },
+  {
+    "id": 20,
+    "question": "Which mechanism halts trading across the entire market to control panic selling or irrational buying?",
+    "options": [
+      "Price Band",
+      "Position Limit",
+      "Index-based Market-Wide Circuit Breaker",
+      "Short Selling Ban"
+    ],
+    "answer": "Index-based Market-Wide Circuit Breaker",
+    "hint": "Nifty या Sensex के भारी गिरावट पर पूरी market रुक जाती है।",
+    "explanation": "Index-based Circuit Breakers तब trigger होते हैं जब Nifty या Sensex में 10%, 15%, या 20% का sudden movement होता है। इससे पूरे market में trading कुछ समय के लिए रुक जाती है।"
+  },
+  {
+    "id": 21,
+    "question": "Market-wide circuit breakers are triggered when the benchmark index (Nifty/Sensex) moves by ______.",
+    "options": [
+      "5%, 10% or 15%",
+      "10%, 15% or 20%",
+      "2%, 5% or 10%",
+      "20%, 30% or 40%"
+    ],
+    "answer": "10%, 15% or 20%",
+    "hint": "SEBI ने तीन stages तय किये हैं।",
+    "explanation": "SEBI guidelines के अनुसार, circuit breakers three stages (10%, 15%, and 20%) में index की movement पर trigger होते हैं, जिससे coordinated trading halt होता है।"
+  },
+  {
+    "id": 22,
+    "question": "If a 10% market-wide circuit breaker is triggered before 1:00 PM, trading is halted for ______.",
+    "options": [
+      "15 minutes",
+      "45 minutes",
+      "1 hour 45 minutes",
+      "Rest of the day"
+    ],
+    "answer": "45 minutes",
+    "hint": "Halt 45 min का होता है, फिर 15 min का pre-open session होता है।",
+    "explanation": "अगर 1:00 PM से पहले index 10% गिरता या चढ़ता है, तो market 45 minutes के लिए halt हो जाता है। (Halt duration trigger time पर depend करता है)।"
+  },
+  {
+    "id": 23,
+    "question": "If a 20% market-wide circuit breaker is triggered at any time of the day, what happens?",
+    "options": [
+      "Trading is halted for 2 hours",
+      "Trading is halted for the remainder of the day",
+      "Only F&O trading is halted",
+      "Trading continues but without margin limits"
+    ],
+    "answer": "Trading is halted for the remainder of the day",
+    "hint": "दिन भर के लिए market बंद।",
+    "explanation": "अगर index किसी भी समय 20% move कर जाता है, तो उस दिन के लिए market में trading पूरी तरह से (remainder of the day) बंद कर दी जाती है।"
+  },
+  {
+    "id": 24,
+    "question": "To prevent extreme price fluctuations in individual stocks, stock exchanges apply ______.",
+    "options": [
+      "VaR Margin",
+      "Price Bands (Circuit Limits)",
+      "Mark to Market",
+      "Index Circuit Breakers"
+    ],
+    "answer": "Price Bands (Circuit Limits)",
+    "hint": "Stock एक दिन में 5%, 10% या 20% से ज्यादा ऊपर-नीचे नहीं जा सकता।",
+    "explanation": "Exchange individual stocks पर daily price bands (e.g., 2%, 5%, 10%, 20%) लगाता है। Stock का price उस दिन के लिए इस band के बाहर trade नहीं कर सकता।"
+  },
+  {
+    "id": 25,
+    "question": "Which of the following stocks DO NOT have daily price bands applied to them in the cash market?",
+    "options": [
+      "Penny stocks",
+      "Stocks on which derivatives (F&O) products are available",
+      "Newly listed stocks",
+      "PSU bank stocks"
+    ],
+    "answer": "Stocks on which derivatives (F&O) products are available",
+    "hint": "F&O stocks में liquidity ज्यादा होती है और Arbitrage के लिए इन्हें open रखा जाता है।",
+    "explanation": "जिन stocks में Futures & Options trading होती है, उन पर cash market में daily fixed price bands नहीं होते, बल्कि dynamic price bands होते हैं जिन्हें exchange जरूरत पड़ने पर relax कर सकता है।"
+  },
+  {
+    "id": 26,
+    "question": "What is the primary purpose of the Core Settlement Guarantee Fund (Core SGF)?",
+    "options": [
+      "To pay dividends to shareholders",
+      "To guarantee settlement of trades if a clearing member defaults",
+      "To provide loans to stock brokers",
+      "To fund the operations of SEBI"
+    ],
+    "answer": "To guarantee settlement of trades if a clearing member defaults",
+    "hint": "Default के समय market को बचाने का fund।",
+    "explanation": "Core SGF एक safety net है। अगर कोई clearing member अपनी pay-in obligation (funds या securities) पूरी करने में default करता है, तो Clearing Corporation इस fund का इस्तेमाल करके settlement guarantee करता है।"
+  },
+  {
+    "id": 27,
+    "question": "Which of the following is NOT a contributor to the Core Settlement Guarantee Fund (Core SGF)?",
+    "options": [
+      "Clearing Corporation",
+      "Stock Exchange",
+      "Clearing Members",
+      "Retail Investors"
+    ],
+    "answer": "Retail Investors",
+    "hint": "SGF market intermediaries का fund है, आम जनता का नहीं।",
+    "explanation": "Core SGF में Clearing Corporation (CC), Stock Exchange, और Clearing Members (CMs) contribute करते हैं। Retail investors इस fund में contribute नहीं करते।"
+  },
+  {
+    "id": 28,
+    "question": "The sequence in which different funds are utilized by the Clearing Corporation in case of a member default is known as the ______.",
+    "options": [
+      "Settlement Cycle",
+      "Default Waterfall",
+      "Risk Algorithm",
+      "Margin Call"
+    ],
+    "answer": "Default Waterfall",
+    "hint": "नुकसान की भरपाई के लिए funds को एक तय क्रम में इस्तेमाल किया जाता है।",
+    "explanation": "Default Waterfall वह predefined sequence है जिसमें defaulter member का margin, Core SGF, और CC के funds को default settlement के लिए use किया जाता है।"
+  },
+  {
+    "id": 29,
+    "question": "In the Default Waterfall, whose funds are utilized FIRST?",
+    "options": [
+      "Exchange's contribution to SGF",
+      "Defaulter Clearing Member's margins and deposits",
+      "Other Non-defaulting members' funds",
+      "Clearing Corporation's reserve fund"
+    ],
+    "answer": "Defaulter Clearing Member's margins and deposits",
+    "hint": "जिसने गलती की है, पहले उसी का पैसा कटेगा।",
+    "explanation": "Default Waterfall में सबसे पहले defaulter clearing member का margin, collateral, और deposits (security deposit) इस्तेमाल किया जाता है।"
+  },
+  {
+    "id": 30,
+    "question": "A broker enters a wrong price with an extra zero (fat-finger error), leading to abnormal trades. The exchange has the power to cancel such trades to protect market integrity. This is known as ______.",
+    "options": [
+      "Novation",
+      "Trade Annulment",
+      "Short Delivery",
+      "Arbitrage"
+    ],
+    "answer": "Trade Annulment",
+    "hint": "Trades को 'cancel' या 'annul' करना।",
+    "explanation": "Trade Annulment exchange का वह power है जहाँ वो system error, fat-finger errors या fraud के कारण हुए abnormal trades को cancel कर सकता है।"
+  },
+  {
+    "id": 31,
+    "question": "When an investor buys shares, the risk that the clearing corporation takes upon itself during novation is primarily ______.",
+    "options": [
+      "That the share price will fall",
+      "That the buying broker will default on paying funds",
+      "That the company will declare bankruptcy",
+      "That the dividend will not be paid"
+    ],
+    "answer": "That the buying broker will default on paying funds",
+    "hint": "Clearing Corporation settlement की जिम्मेदारी लेता है।",
+    "explanation": "Novation में CC seller के लिए buyer बन जाता है। यहाँ CC का primary risk यह है कि buying broker pay-in day पर funds deliver करने में default कर सकता है (Credit Risk)।"
+  },
+  {
+    "id": 32,
+    "question": "Which system is used to test whether the Core SGF is sufficient to handle simultaneous defaults by the top clearing members?",
+    "options": [
+      "Beta Testing",
+      "Stress Testing",
+      "Algorithmic Testing",
+      "Back Testing"
+    ],
+    "answer": "Stress Testing",
+    "hint": "Market को 'stress' में डालकर check करना।",
+    "explanation": "Clearing Corporations daily basis पर 'Stress Testing' करते हैं ताकि extreme market volatility के समय potential risk का अनुमान लगाया जा सके और Core SGF की adequacy check की जा सके।"
+  },
+  {
+    "id": 33,
+    "question": "What is 'Base Minimum Capital' (BMC)?",
+    "options": [
+      "The minimum investment a retail client must make",
+      "The deposit maintained by a broker with the exchange on which no exposure/trading limits are granted",
+      "The minimum capital of a listed company",
+      "The fee paid to SEBI"
+    ],
+    "answer": "The deposit maintained by a broker with the exchange on which no exposure/trading limits are granted",
+    "hint": "Broker का base deposit जो emergency के लिए रखा जाता है।",
+    "explanation": "Base Minimum Capital (BMC) वह minimum deposit है जो हर stock broker को exchange के पास रखना होता है। इसके against broker को कोई margin/trading limit नहीं मिलती।"
+  },
+  {
+    "id": 34,
+    "question": "When a trading member reaches a certain percentage (e.g., 85% or 90%) of their total margin limit, the exchange disables their trading terminal. This state is known as ______.",
+    "options": [
+      "Ban Period",
+      "Risk Reduction Mode (RRM)",
+      "Circuit Breaker",
+      "Default Waterfall"
+    ],
+    "answer": "Risk Reduction Mode (RRM)",
+    "hint": "Risk कम करने के लिए नयी positions बनाने से रोक दिया जाता है।",
+    "explanation": "जब broker का margin utilization limit (usually 90%) cross हो जाता है, तो terminal Risk Reduction Mode (RRM) में चला जाता है। इसमें broker सिर्फ open positions को close कर सकता है, नए fresh orders नहीं डाल सकता।"
+  },
+  {
+    "id": 35,
+    "question": "To manage risk, margin requirements in the F&O segment are generally ______ compared to the cash segment for the same stock.",
+    "options": [
+      "Higher",
+      "Lower",
+      "Exactly the same",
+      "Zero"
+    ],
+    "answer": "Higher",
+    "hint": "F&O में leverage (उधार) ज्यादा होता है, इसलिए risk भी ज्यादा होता है।",
+    "explanation": "Derivatives (F&O) highly leveraged instruments होते हैं, इसलिए exchange risk manage करने के लिए cash segment के मुकाबले derivatives में strict और higher margin (Initial + Exposure) collect करता है।"
+  },
+  {
+    "id": 36,
+    "question": "Which of the following reduces the total margin requirement by offsetting positions in correlated assets?",
+    "options": [
+      "Cross Margining",
+      "Mark to Market",
+      "Short Selling",
+      "Extreme Loss Margin"
+    ],
+    "answer": "Cross Margining",
+    "hint": "Cash और Derivatives market की opposite positions को एक साथ देखना।",
+    "explanation": "Cross Margining benefit तब मिलता है जब client के पास cash और derivatives segment में offsetting positions (e.g., Buy in cash, Sell in Futures) होती हैं, जिससे overall risk और margin requirement कम हो जाती है।"
+  },
+  {
+    "id": 37,
+    "question": "If an investor does an 'Early Pay-in' of securities from their demat account before executing a sell order, what happens to the upfront margin requirement?",
+    "options": [
+      "Margin requirement is doubled",
+      "Margin requirement is waived/reduced",
+      "MTM margin increases",
+      "Positions are shifted to F&O"
+    ],
+    "answer": "Margin requirement is waived/reduced",
+    "hint": "Exchange के पास पहले ही shares पहुँच गए, तो risk खत्म।",
+    "explanation": "अगर investor sell order डालने से पहले (या T day पर) shares exchange को deliver (Early Pay-in) कर देता है, तो CC का delivery risk खत्म हो जाता है और उस trade पर margin नहीं लगता।"
+  },
+  {
+    "id": 38,
+    "question": "The margin system in India is evaluated dynamically and updated multiple times during the trading day. This is done to primarily capture ______.",
+    "options": [
+      "Changes in company fundamentals",
+      "Intraday price volatility",
+      "Global political events",
+      "Currency exchange rates"
+    ],
+    "answer": "Intraday price volatility",
+    "hint": "दिन के दौरान market movements को track करना।",
+    "explanation": "Exchanges intraday basis पर risk manage करने के लिए margin files दिन में कई बार (usually at fixed intervals) update करते हैं ताकि real-time price volatility को cover किया जा सके।"
+  },
+  {
+    "id": 39,
+    "question": "A situation where a failure of one large financial institution causes a domino effect, leading to the collapse of the entire financial system, is called ______.",
+    "options": [
+      "Operational Risk",
+      "Systemic Risk",
+      "Liquidity Risk",
+      "Credit Risk"
+    ],
+    "answer": "Systemic Risk",
+    "hint": "पूरे 'system' का crash होना।",
+    "explanation": "Systemic Risk पूरे financial system के breakdown का risk है, जो अक्सर तब होता है जब एक बड़ा Clearing Member या Bank default करता है और chain reaction शुरू हो जाती है।"
+  },
+  {
+    "id": 40,
+    "question": "To mitigate risk from High-Frequency Trading (HFT) and Algos, SEBI requires exchanges to implement ______.",
+    "options": [
+      "Manual order verification",
+      "Ban on co-location",
+      "Order level checks and penalty for high order-to-trade ratio",
+      "T+5 settlement cycle"
+    ],
+    "answer": "Order level checks and penalty for high order-to-trade ratio",
+    "hint": "Algos बिना trade किये बहुत सारे orders डाल और cancel कर सकते हैं।",
+    "explanation": "Algo/HFT risks को control करने के लिए exchanges order-level risk checks (like value limits, quantity limits) लगाते हैं और बहुत ज्यादा cancel/modify orders पर penalty (High Order-to-Trade ratio penalty) लगाते हैं।"
+  },
+  {
+    "id": 41,
+    "question": "Who is responsible for collecting the VaR margin from the end-client?",
+    "options": [
+      "The Clearing Corporation",
+      "The Depository",
+      "The Stock Broker (Trading Member)",
+      "SEBI"
+    ],
+    "answer": "The Stock Broker (Trading Member)",
+    "hint": "Client directly exchange से deal नहीं करता।",
+    "explanation": "CC broker से margin collect करता है, और Broker की regulatory जिम्मेदारी होती है कि वह अपने client से trade execute करने से पहले upfront margin (VaR + ELM) collect करे।"
+  },
+  {
+    "id": 42,
+    "question": "The system that allows a broker to clear trades executed on any exchange through a single Clearing Corporation is called ______.",
+    "options": [
+      "Algorithmic Trading",
+      "Interoperability",
+      "Co-location",
+      "Dematerialization"
+    ],
+    "answer": "Interoperability",
+    "hint": "CCs के बीच आपस में connection।",
+    "explanation": "Interoperability among clearing corporations brokers को यह सुविधा देती है कि वे NSE पर trade करें और BSE की CC (ICCL) से settle करें, जिससे margin optimization होता है।"
+  },
+  {
+    "id": 43,
+    "question": "In the risk management framework, 'Liquid Assets' provided by brokers as collateral can include ______.",
+    "options": [
+      "Cash, Bank Guarantees, Fixed Deposits, and approved Securities",
+      "Real Estate and Vehicles",
+      "Unlisted shares of private companies",
+      "Promissory Notes from clients"
+    ],
+    "answer": "Cash, Bank Guarantees, Fixed Deposits, and approved Securities",
+    "hint": "वही assets जिन्हें तुरंत cash में बदला जा सके।",
+    "explanation": "CCs margin के रूप में highly liquid assets accept करती हैं जैसे Cash, Fixed Deposits (FDs), Bank Guarantees (BGs), Government Securities, और approved liquid equity shares (with haircut)।"
+  },
+  {
+    "id": 44,
+    "question": "If a stock hits its upper circuit limit for the day, it means ______.",
+    "options": [
+      "There are only buyers and no sellers at that price",
+      "There are only sellers and no buyers at that price",
+      "Trading is halted for 45 minutes",
+      "The stock is delisted"
+    ],
+    "answer": "There are only buyers and no sellers at that price",
+    "hint": "Price max limit पर पहुँच गया है क्योंकि demand बहुत ज्यादा है।",
+    "explanation": "Upper Circuit (Upper Price Band) hit होने का मतलब है कि market में उस stock के लिए सिर्फ buyers (pending buy orders) हैं, लेकिन उस maximum allowed price पर कोई seller बेचने को तैयार नहीं है।"
+  },
+  {
+    "id": 45,
+    "question": "If a stock hits its lower circuit limit, it indicates that ______.",
+    "options": [
+      "There are only buyers and no sellers",
+      "There are only sellers and no buyers at that price",
+      "The company has declared bankruptcy",
+      "Trading moves to the F&O segment"
+    ],
+    "answer": "There are only sellers and no buyers at that price",
+    "hint": "Price minimum limit पर गिर गया है क्योंकि panic selling हो रही है।",
+    "explanation": "Lower circuit hit होने का मतलब है कि sellers बहुत ज्यादा हैं, लेकिन उस lowest allowed price पर कोई भी buyer stock खरीदने को तैयार नहीं है।"
+  },
+  {
+    "id": 46,
+    "question": "Which of the following best defines 'Notional Loss' in the context of MTM margin?",
+    "options": [
+      "Actual loss booked by selling the shares",
+      "Unrealized loss due to price drop on an open position",
+      "Loss of physical share certificates",
+      "Brokerage fees charged by the broker"
+    ],
+    "answer": "Unrealized loss due to price drop on an open position",
+    "hint": "यह loss अभी 'paper' पर है, trade close नहीं हुआ है।",
+    "explanation": "Notional Loss (या Unrealized Loss) तब होता है जब आपकी hold की हुई security का price गिर जाता है, लेकिन आपने उसे अभी बेचा नहीं है। MTM margin इसी loss को cover करने के लिए लिया जाता है।"
+  },
+  {
+    "id": 47,
+    "question": "To manage the risk of physical settlement in derivatives, the exchange starts levying which margin in the days leading up to expiry?",
+    "options": [
+      "Delivery Margin",
+      "Extreme Loss Margin",
+      "MTM Margin",
+      "Base Minimum Capital"
+    ],
+    "answer": "Delivery Margin",
+    "hint": "Expiry के समय shares की actual delivery का risk।",
+    "explanation": "चूँकि stock derivatives अब physically settled होते हैं (shares की actual delivery), exchange expiry week के दौरान ITM (In-The-Money) options और futures पर additional 'Delivery Margin' लगाता है।"
+  },
+  {
+    "id": 48,
+    "question": "A stock broker runs a 'Risk Management System' (RMS) which automatically blocks a client's order if ______.",
+    "options": [
+      "The stock price is going up",
+      "The client has insufficient margin/funds",
+      "The market is in a bull run",
+      "The order is a limit order"
+    ],
+    "answer": "The client has insufficient margin/funds",
+    "hint": "Terminal order को exchange तक जाने ही नहीं देगा।",
+    "explanation": "Broker का RMS software real-time basis पर client का available margin check करता है। अगर funds sufficient नहीं हैं, तो order exchange को भेजने से पहले ही reject हो जाता है।"
+  },
+  {
+    "id": 49,
+    "question": "For calculating capital adequacy, the ratio of Liquid Net Worth to Total Risk margin required should not be less than ______.",
+    "options": [
+      "0.1",
+      "1.0",
+      "5.0",
+      "10.0"
+    ],
+    "answer": "1.0",
+    "hint": "Margin से ज्यादा Net worth होनी चाहिए।",
+    "explanation": "Capital Adequacy norms के अनुसार, किसी भी Clearing Member का Liquid Net Worth उनके द्वारा लिए गए total risk (margin requirement) से हमेशा ज्यादा या बराबर होना चाहिए (Ratio ≥ 1)।"
+  },
+  {
+    "id": 50,
+    "question": "What happens if a broker continually violates position limits or margin requirements?",
+    "options": [
+      "They are given a bonus",
+      "Their trading terminals are disabled and heavy penalties are imposed",
+      "They are promoted to Clearing Member",
+      "Their clients are transferred to a mutual fund"
+    ],
+    "answer": "Their trading terminals are disabled and heavy penalties are imposed",
+    "hint": "SEBI और Exchange strict action लेते हैं।",
+    "explanation": "Risk management rules strict होते हैं। Margin shortfalls या position limit violations पर exchanges monetary penalties लगाते हैं और severity ज्यादा होने पर broker के trading terminals disable कर सकते हैं।"
+  }
+]

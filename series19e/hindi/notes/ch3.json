@@ -1,0 +1,81 @@
+{
+  "course": "NISM-Series-XIX-E: Alternative Investment Fund Managers (Category III)",
+  "unit_number": 3,
+  "unit_name": "Introduction to Modern Portfolio Theory and Capital Market Theory",
+  "weightage": "3% (Chapter 1 और 2 के साथ Shared)",
+  "overview": "यह chapter NISM 19E exam का 'math and logic' (गणित और तर्क) दिल है। यह बताता है कि कैसे अलग-अलग investments को मिलाकर risk को कम किया जा सकता है, वह भी बिना returns को कम किए। आप Harry Markowitz की Modern Portfolio Theory (MPT) और Capital Asset Pricing Model (CAPM) के बारे में सीखेंगे। यह महत्वपूर्ण है क्योंकि Category III AIF managers इन theories का उपयोग 'Efficient Portfolios' बनाने के लिए करते हैं, जिनका लक्ष्य एक specific level के risk के लिए सबसे ज्यादा संभव return पाना होता है।",
+  
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Modern Portfolio Theory (MPT) & Diversification",
+      "basic_meaning": "MPT कहता है: 'अपने सारे अंडे एक ही टोकरी में न रखें (Don't put all your eggs in one basket)।' ऐसे अलग-अलग assets को मिलाकर जो एक ही दिशा में move नहीं करते, आप अपना total risk कम कर सकते हैं।",
+      "detailed_explanation": "Harry Markowitz द्वारा विकसित, MPT individual stocks के बजाय पूरे 'Portfolio' पर focus करता है। \n1. **Correlation:** यह मापता है कि दो assets एक साथ कैसे move करते हैं। यह +1 (बिल्कुल एक साथ move करना) से -1 (विपरीत दिशाओं में move करना) तक होता है। \n2. **Efficient Frontier:** यह एक graph है जो उन बेहतरीन portfolios को दिखाता है जो दिए गए risk level के लिए maximum return देते हैं। \n3. **Diversification:** यदि आप 20 अलग-अलग industries से 20 stocks खरीदते हैं, तो एक (जैसे, Pharma) में बुरी खबर की भरपाई दूसरे (जैसे, IT) में अच्छी खबर से हो सकती है।",
+      "why_this_is_important": "AIF managers इसका उपयोग यह justify करने के लिए करते हैं कि वे assets का mix क्यों रखते हैं। Exam में विशेष रूप से 'Correlation' के बारे में पूछा जाएगा।",
+      "formula": "Basic theory के लिए लागू नहीं (Not Applicable), लेकिन यह जान लें कि 'Standard Deviation' risk को मापता है।",
+      "formula_explanation": "Standard Deviation ($\\sigma$) बताता है कि किसी stock का price अपने average से कितना 'स्विंग' (swing) करता है। Higher swing = Higher risk.",
+      "step_by_step_calculation_example": "लागू नहीं (Not Applicable)",
+      "real_life_indian_example": "यदि आपके पास केवल Tata Motors (Auto) है, तो आपका risk high है। यदि आपके पास Tata Motors + TCS (IT) + HDFC Bank (Banking) है, तो आप diversified हैं। यदि Auto sector धीमा हो जाता है, तो Banking या IT अभी भी अच्छा प्रदर्शन कर सकते हैं, जिससे आपकी total wealth protect होती है।",
+      "exam_traps": [
+        "Exam कह सकता है कि diversification सारे (ALL) risk को खत्म कर देता है। यह FALSE है। यह केवल 'Unsystematic Risk' को हटाता है।",
+        "Trap: 0 के correlation का मतलब है कि कोई relationship नहीं है; -1 का correlation diversification के लिए सबसे अच्छा (BEST) है।"
+      ],
+      "memory_trick": "MPT = 'Mix People Together' (अलग-अलग background के stocks समूह को सुरक्षित रखने में मदद करते हैं)।"
+    },
+    {
+      "concept": "2. Capital Asset Pricing Model (CAPM)",
+      "basic_meaning": "CAPM एक formula है जो आपको ठीक-ठीक बताता है कि किसी stock के risk (Beta) के आधार पर आपको उससे कितने return की उम्मीद करनी चाहिए।",
+      "detailed_explanation": "CAPM risk और return को जोड़ता है। यह कहता है कि एक investor को दो प्रकार के compensation (मुआवजे) की आवश्यकता होती है: \n1. **Time Value of Money:** इसे 'Risk-Free Rate' (जैसे Govt Bond) द्वारा दर्शाया जाता है। \n2. **Risk Premium:** 'Market Risk' लेने के लिए extra return। \nयदि कोई stock market से दोगुना volatile है, तो उसका Beta 2 है। यदि यह market के बिल्कुल साथ move करता है, तो इसका Beta 1 है।",
+      "why_this_is_important": "यह एक high-probability numerical area है। यह managers को यह तय करने में मदद करता है कि किसी stock की कीमत 'fairly priced' है या नहीं।",
+      "formula": "$Expected\\ Return = R_f + \\beta(R_m - R_f)$",
+      "formula_explanation": "Expected Return = Risk-Free Rate + Beta * (Market Return - Risk-Free Rate)। $(R_m - R_f)$ वाले हिस्से को 'Market Risk Premium' कहा जाता है।",
+      "step_by_step_calculation_example": "Scenario: Risk-free rate ($R_f$) 6% है। Market (Nifty) से 12% ($R_m$) देने की उम्मीद है। एक stock का Beta ($\\beta$) 1.5 है।\nStep 1: Market Risk Premium calculate करें (12% - 6% = 6%)।\nStep 2: Beta से गुणा करें (1.5 * 6% = 9%)।\nStep 3: Risk-free rate जोड़ें (6% + 9% = 15%)।\nResult: आपको इस stock से 15% return की उम्मीद करनी चाहिए।",
+      "real_life_indian_example": "यदि आप एक high-growth tech startup stock खरीदते हैं, तो इसका Beta 2.0 (बहुत volatile) हो सकता है। CAPM के अनुसार, 0.5 Beta वाले एक steady utility company stock की तुलना में आपको इससे बहुत अधिक return की मांग करनी चाहिए।",
+      "exam_traps": [
+        "'Market Return' को 'Market Risk Premium' के साथ confuse करना। ध्यान से पढ़ें: यदि question कहता है 'Premium is 5%', तो $R_f$ को फिर से subtract न करें!",
+        "Beta = 1 का मतलब है कि stock बिल्कुल Nifty के साथ move करता है। Beta > 1 'Aggressive' है। Beta < 1 'Defensive' है।"
+      ],
+      "memory_trick": "CAPM = 'Calculate All Price Money' (अपना उचित लाभ खोजने का formula)।"
+    },
+    {
+      "concept": "3. Systematic Risk (Beta) vs. Unsystematic Risk",
+      "basic_meaning": "Beta उस risk को मापता है जिसे आप टाल नहीं सकते (Market Risk)। Unsystematic risk वह है जिसे आप 'diversify' करके हटा सकते हैं।",
+      "detailed_explanation": "1. **Beta ($\\beta$):** Market के overall movement के प्रति किसी stock की sensitivity को मापता है। अगर Nifty 10% ऊपर जाता है और आपका stock 12% ऊपर जाता है, तो आपका Beta 1.2 है। \n2. **Systematic Risk:** इसे Market Risk भी कहा जाता है। इसे Beta द्वारा मापा जाता है। Examples: Inflation, Interest rates, War। \n3. **Unsystematic Risk:** इसे Specific Risk भी कहा जाता है। Examples: Poor management, Labor strike। MPT मानता है कि आपने diversify होकर इसे पहले ही हटा दिया है।",
+      "why_this_is_important": "AIF Category III managers अक्सर derivatives का उपयोग करके 'Zero Beta' या 'Market Neutral' position प्राप्त करने की कोशिश करते हैं।",
+      "formula": "$\\beta = \\frac{Covariance(Stock, Market)}{Variance(Market)}$",
+      "formula_explanation": "मूल रूप से, यह market के dance (उतार-चढ़ाव) की तुलना में stock का dance कितना है, यह बताता है।",
+      "step_by_step_calculation_example": "लागू नहीं (Not Applicable)",
+      "real_life_indian_example": "RBI Repo Rates में बदलाव Systematic Risk है—यह India की हर कंपनी को प्रभावित करता है। गुजरात की एक विशिष्ट chemical factory में आग लगना Unsystematic Risk है।",
+      "exam_traps": [
+        "Question पूछ सकता है: 'Standard Deviation कौन सा risk मापता है?' Answer: Total Risk (दोनों प्रकार)।\n'Beta कौन सा risk मापता है?' Answer: ONLY Systematic Risk.",
+        "याद रखें: एक investor को Unsystematic Risk लेने के लिए reward नहीं दिया जाता है, क्योंकि वे आसानी से diversify करके इससे बच सकते थे।"
+      ],
+      "memory_trick": "Beta = 'Bad market' (Market का 'Bad' behavior आपको कितना प्रभावित करता है)।"
+    }
+  ],
+
+  "important_differences": [
+    {
+      "difference_between": "Capital Market Line (CML) vs. Security Market Line (SML)",
+      "clear_explanation": "**CML:** 'Total Risk' (Standard Deviation) के लिए return को define करता है और पूरे portfolios के लिए उपयोग किया जाता है। \n**SML:** 'Systematic Risk' (Beta) के लिए return को define करता है और individual stocks के लिए उपयोग किया जाता है। SML, CAPM formula का graphical representation है।"
+    },
+    {
+      "difference_between": "Systematic Risk vs. Unsystematic Risk",
+      "clear_explanation": "**Systematic:** बाहरी (external) है और इसे टाला नहीं जा सकता (Beta द्वारा मापा जाता है)। \n**Unsystematic:** आंतरिक (internal)/company-specific है और इसे 15-20 अलग-अलग stocks (Diversification) रखकर हटाया जा सकता है।"
+    }
+  ],
+
+  "frequently_asked_exam_areas": [
+    "CAPM पर Numerical: $Expected\\ Return = R_f + \\beta(R_m - R_f)$.",
+    "Conceptual: जब correlation -1 होता है तो risk का क्या होता है?",
+    "Beta की Definition और Systematic Risk के साथ इसका संबंध।",
+    "Efficient Frontier: इसे portfolios के 'best' set के रूप में पहचानना।"
+  ],
+
+  "quick_revision_summary": [
+    "-1 का Correlation अधिकतम diversification benefit प्रदान करता है।",
+    "Beta Systematic Risk को मापता है; Standard Deviation Total Risk को मापता है।",
+    "CAPM Beta risk के दिए गए स्तर के लिए 'Required' return देता है।",
+    "Efficient Frontier वह जगह है जहाँ आपको अपने पैसे का सबसे अच्छा मूल्य (Return for Risk) मिलता है।",
+    "Diversification केवल company-specific (Unsystematic) समस्याओं को खत्म करता है।"
+  ]
+}

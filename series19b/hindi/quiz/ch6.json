@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "The most common fee structure for Category III AIFs (Hedge Funds) globally is often referred to as:",
+    "options": [
+      "1 and 10",
+      "2 and 20",
+      "Flat 5%",
+      "No fee"
+    ],
+    "answer": "2 and 20",
+    "hint": "2% fixed, 20% variable.",
+    "explanation": "'2 and 20' मॉडल का मतलब है 2% वार्षिक Management Fee और मुनाफे पर 20% Performance Fee (Carried Interest)।"
+  },
+  {
+    "id": 2,
+    "question": "The 'Management Fee' in a Category III AIF is typically calculated as a percentage of:",
+    "options": [
+      "Profits only",
+      "Assets Under Management (AUM) or Capital Committed",
+      "The hurdle rate",
+      "The setup cost"
+    ],
+    "answer": "Assets Under Management (AUM) or Capital Committed",
+    "hint": "Assets को मैनेज करने की फीस।",
+    "explanation": "Management fees एक निश्चित प्रतिशत (जैसे 1-2%) होती है जो AUM या Capital Committed पर ली जाती है ताकि operational costs को कवर किया जा सके, चाहे प्रदर्शन कैसा भी हो।"
+  },
+  {
+    "id": 3,
+    "question": "Which fee is charged only if the fund generates a profit above a certain threshold?",
+    "options": [
+      "Setup Fee",
+      "Management Fee",
+      "Performance Fee (Carried Interest)",
+      "Custody Fee"
+    ],
+    "answer": "Performance Fee (Carried Interest)",
+    "hint": "अच्छे प्रदर्शन के लिए इनाम (Reward)।",
+    "explanation": "Performance Fee (या Carry) मुनाफे का वह हिस्सा है जो manager को सकारात्मक returns (positive returns) उत्पन्न करने के लिए प्रोत्साहन (incentive) के रूप में दिया जाता है।"
+  },
+  {
+    "id": 4,
+    "question": "The 'Hurdle Rate' represents:",
+    "options": [
+      "The maximum fee a manager can charge",
+      "The minimum rate of return the fund must achieve before the manager can charge a performance fee",
+      "The speed limit for trading",
+      "The tax rate"
+    ],
+    "answer": "The minimum rate of return the fund must achieve before the manager can charge a performance fee",
+    "hint": "पार करने के लिए एक बाधा (hurdle)।",
+    "explanation": "Manager द्वारा मुनाफे में हिस्सा लेने से पहले निवेशकों (Investors) को Hurdle Rate (जैसे 10%) के बराबर return मिलना चाहिए।"
+  },
+  {
+    "id": 5,
+    "question": "What is the purpose of a 'High Water Mark' (HWM) clause?",
+    "options": [
+      "To measure the depth of the ocean",
+      "To prevent managers from charging performance fees on the same profit twice (i.e., recovering losses first)",
+      "To ensure fees are always high",
+      "To cap the fund size"
+    ],
+    "answer": "To prevent managers from charging performance fees on the same profit twice (i.e., recovering losses first)",
+    "hint": "खोई हुई value वापस पाना।",
+    "explanation": "HWM यह सुनिश्चित करता है कि यदि कोई fund अपनी value खो देता है (जैसे NAV 100 से गिरकर 90 हो जाता है), तो manager 90 से वापस 100 तक की रिकवरी पर performance fees नहीं ले सकता।"
+  },
+  {
+    "id": 6,
+    "question": "The 'Catch-up' provision allows the manager to:",
+    "options": [
+      "Take a nap",
+      "Receive their share of profits on the hurdle amount once the hurdle is met",
+      "Charge extra management fees",
+      "Close the fund early"
+    ],
+    "answer": "Receive their share of profits on the hurdle amount once the hurdle is met",
+    "hint": "मुनाफे के बंटवारे (split) तक पहुँचना।",
+    "explanation": "Investors को अपना hurdle return मिलने के बाद, manager अगले मुनाफे का 100% लेकर 'catch up' करता है, जब तक कि उनका कुल हिस्सा तय किए गए profit split (जैसे 80:20) के बराबर न हो जाए।"
+  },
+  {
+    "id": 7,
+    "question": "In the context of AIF performance, 'Gross Returns' means:",
+    "options": [
+      "Returns after all fees and taxes",
+      "Returns before deduction of fees and expenses",
+      "Returns adjusted for inflation",
+      "Returns in foreign currency"
+    ],
+    "answer": "Returns before deduction of fees and expenses",
+    "hint": "कच्चा प्रदर्शन (Raw performance)।",
+    "explanation": "Gross returns management fees, carry और अन्य खर्चों की कटौती (deduction) से पहले, पूरी तरह से portfolio पर manager की निवेश कुशलता (investment skill) को दर्शाते हैं।"
+  },
+  {
+    "id": 8,
+    "question": "Which metric is most appropriate for measuring returns of a fund with irregular cash flows (multiple inflows/outflows)?",
+    "options": [
+      "Simple Annualized Return",
+      "CAGR (Compounded Annual Growth Rate)",
+      "XIRR (Extended Internal Rate of Return)",
+      "Absolute Return"
+    ],
+    "answer": "XIRR (Extended Internal Rate of Return)",
+    "hint": "X = अनियमित तारीखें (irregular dates)।",
+    "explanation": "XIRR ऐसे cash flows के schedule के लिए internal rate of return की गणना करता है जो आवश्यक रूप से periodic (नियमित अंतराल पर) न हों।"
+  },
+  {
+    "id": 9,
+    "question": "If a Category III AIF has a 'Soft Hurdle', it means:",
+    "options": [
+      "The hurdle is very easy to beat",
+      "Once the hurdle is met, the manager charges performance fees on the *entire* profit (including the hurdle amount)",
+      "The manager never charges fees",
+      "The hurdle is optional"
+    ],
+    "answer": "Once the hurdle is met, the manager charges performance fees on the *entire* profit (including the hurdle amount)",
+    "hint": "Catch-up इसमें शामिल (implied) है।",
+    "explanation": "Soft Hurdle के साथ, एक बार return सीमा (threshold) को पार कर लेता है, तो performance fee शून्य (zero) से पूरे total return पर लागू होती है। जबकि 'Hard Hurdle' में केवल सीमा (जैसे 10%) से *ऊपर* के return पर फीस लगती है।"
+  },
+  {
+    "id": 10,
+    "question": "Which ratio measures the 'Risk-Adjusted Return' of a fund?",
+    "options": [
+      "P/E Ratio",
+      "Sharpe Ratio",
+      "Dividend Yield",
+      "Expense Ratio"
+    ],
+    "answer": "Sharpe Ratio",
+    "hint": "प्रति यूनिट risk पर मिलने वाला इनाम (Reward)।",
+    "explanation": "Sharpe Ratio किसी investment asset में प्रति यूनिट deviation (risk) पर मिलने वाले excess return को मापता है।"
+  },
+  {
+    "id": 11,
+    "question": "A higher Sharpe Ratio indicates:",
+    "options": [
+      "Higher risk",
+      "Better risk-adjusted performance",
+      "Lower returns",
+      "Higher fees"
+    ],
+    "answer": "Better risk-adjusted performance",
+    "hint": "पैसे की बेहतर कीमत।",
+    "explanation": "उच्च (higher) Sharpe ratio का मतलब है कि fund ने लिए गए प्रत्येक यूनिट risk के लिए अधिक return उत्पन्न किया है।"
+  },
+  {
+    "id": 12,
+    "question": "The 'Sortino Ratio' is different from Sharpe Ratio because it considers:",
+    "options": [
+      "Total volatility",
+      "Only downside deviation (downside risk)",
+      "Only upside volatility",
+      "Only fees"
+    ],
+    "answer": "Only downside deviation (downside risk)",
+    "hint": "यह केवल खराब (bad) volatility को दंडित करता है।",
+    "explanation": "Sortino Ratio केवल downside volatility (नकारात्मक returns) पर केंद्रित है, क्योंकि upside volatility आमतौर पर investor के लिए अच्छी होती है।"
+  },
+  {
+    "id": 13,
+    "question": "Beta (β) measures:",
+    "options": [
+      "The manager's skill",
+      "The fund's sensitivity to market movements",
+      "The fees charged",
+      "The credit rating"
+    ],
+    "answer": "The fund's sensitivity to market movements",
+    "hint": "मार्केट के सापेक्ष volatility।",
+    "explanation": "Beta यह मापता है कि benchmark index के संबंध में fund कितना ऊपर-नीचे होता है। Beta = 1 का मतलब है कि यह मार्केट के साथ चलता है।"
+  },
+  {
+    "id": 14,
+    "question": "Alpha (α) represents:",
+    "options": [
+      "Market return",
+      "Risk-free rate",
+      "Excess return generated by the manager over the benchmark (Active Return)",
+      "Inflation rate"
+    ],
+    "answer": "Excess return generated by the manager over the benchmark (Active Return)",
+    "hint": "Manager की 'बढ़त' (edge)।",
+    "explanation": "Alpha मार्केट (benchmark) returns से स्वतंत्र (independent) होकर manager के प्रदर्शन का माप है।"
+  },
+  {
+    "id": 15,
+    "question": "What is 'Maximum Drawdown' (MDD)?",
+    "options": [
+      "The maximum profit",
+      "The maximum observed loss from a peak to a trough of a portfolio before a new peak is attained",
+      "The maximum fee charged",
+      "The maximum number of investors"
+    ],
+    "answer": "The maximum observed loss from a peak to a trough of a portfolio before a new peak is attained",
+    "hint": "सबसे खराब स्थिति (worst case scenario) में गिरावट।",
+    "explanation": "MDD किसी portfolio की value में peak (उच्चतम स्तर) से bottom (निचले स्तर) तक की सबसे बड़ी एकल गिरावट (single drop) को मापता है, जो downside risk को दर्शाता है।"
+  },
+  {
+    "id": 16,
+    "question": "According to SEBI circulars, benchmarking of AIF performance is:",
+    "options": [
+      "Optional",
+      "Mandatory",
+      "Prohibited",
+      "Only for foreign funds"
+    ],
+    "answer": "Mandatory",
+    "hint": "पारदर्शिता का नियम (Transparency rule)।",
+    "explanation": "पारदर्शिता सुनिश्चित करने के लिए SEBI ने AIFs के लिए अपने प्रदर्शन को किसी उपयुक्त index या peer group के खिलाफ benchmark करना अनिवार्य (mandatory) कर दिया है।"
+  },
+  {
+    "id": 17,
+    "question": "The 'Treynor Ratio' uses which measure of risk in the denominator?",
+    "options": [
+      "Standard Deviation",
+      "Beta",
+      "Alpha",
+      "Variance"
+    ],
+    "answer": "Beta",
+    "hint": "Systematic risk का उपयोग।",
+    "explanation": "Treynor Ratio = (Portfolio Return - Risk Free Rate) / Beta. (जहाँ Sharpe Ratio Standard Deviation का उपयोग करता है)।"
+  },
+  {
+    "id": 18,
+    "question": "Which agency typically provides 'Benchmarking Services' for AIFs in India?",
+    "options": [
+      "CRISIL, NSE Indices, etc.",
+      "The Reserve Bank of India",
+      "The Auditor",
+      "The Custodian"
+    ],
+    "answer": "CRISIL, NSE Indices, etc.",
+    "hint": "Rating एजेंसियां या index प्रदाता (providers)।",
+    "explanation": "AIFs के प्रदर्शन की तुलना करने के लिए benchmarks बनाए रखने हेतु CRISIL या NSE Indices जैसी एजेंसियों को नियुक्त किया जाता है।"
+  },
+  {
+    "id": 19,
+    "question": "Expenses incurred for the formation of the AIF (Setup Costs) are typically amortized over:",
+    "options": [
+      "1 month",
+      "The tenure of the fund or a specific period (e.g., 5 years)",
+      "100 years",
+      "Are not charged to the fund"
+    ],
+    "answer": "The tenure of the fund or a specific period (e.g., 5 years)",
+    "hint": "लागत (cost) को फैलाना।",
+    "explanation": "प्रारंभिक setup expenses को आमतौर पर fund के जीवनकाल (life) या एक निर्धारित अवधि में amortize (फैलाया) किया जाता है ताकि पहले वर्ष के NAV पर बहुत अधिक प्रभाव न पड़े।"
+  },
+  {
+    "id": 20,
+    "question": "The 'Total Expense Ratio' (TER) includes:",
+    "options": [
+      "Only Management Fee",
+      "Management Fee + Operating Expenses (Audit, Custody, Trustee fees, etc.)",
+      "Only Entry Load",
+      "Only Taxes"
+    ],
+    "answer": "Management Fee + Operating Expenses (Audit, Custody, Trustee fees, etc.)",
+    "hint": "Fund चलाने की कुल लागत (total cost)।",
+    "explanation": "TER, fund के प्रबंधन और संचालन से जुड़ी सभी लागतों (आमतौर पर trading costs को छोड़कर) का योग है।"
+  },
+  {
+    "id": 21,
+    "question": "Standard Deviation is a measure of:",
+    "options": [
+      "Return",
+      "Volatility / Total Risk",
+      "Liquidity",
+      "Credit Rating"
+    ],
+    "answer": "Volatility / Total Risk",
+    "hint": "कीमत कितनी तेज़ी से ऊपर-नीचे (swing) होती है।",
+    "explanation": "Standard Deviation किसी डेटा के अपने औसत (mean) से फैलाव को मापता है; finance में, यह volatility या total risk को दर्शाता है।"
+  },
+  {
+    "id": 22,
+    "question": "A 'Clawback' provision allows investors to:",
+    "options": [
+      "Take back performance fees paid to the manager in earlier years if the fund underperforms later",
+      "Claw back their capital instantly",
+      "Charge the manager a fee",
+      "Audit the fund"
+    ],
+    "answer": "Take back performance fees paid to the manager in earlier years if the fund underperforms later",
+    "hint": "बोनस वापस करना।",
+    "explanation": "यदि किसी manager ने पहले वर्ष में carry (परफॉरमेंस फीस) लिया लेकिन दूसरे वर्ष में पैसे खो दिए, तो clawback यह सुनिश्चित करता है कि वे lifetime performance को बराबर करने के लिए निवेशकों को अतिरिक्त carry वापस कर दें।"
+  },
+  {
+    "id": 23,
+    "question": "NAV (Net Asset Value) per unit is calculated as:",
+    "options": [
+      "(Total Assets - Total Liabilities) / Number of Outstanding Units",
+      "(Total Assets + Total Liabilities) / Number of Outstanding Units",
+      "Total Assets / Number of Investors",
+      "Total Profit / Number of Units"
+    ],
+    "answer": "(Total Assets - Total Liabilities) / Number of Outstanding Units",
+    "hint": "प्रति यूनिट (share) शुद्ध मूल्य।",
+    "explanation": "NAV, fund की एक यूनिट के आंतरिक मूल्य (intrinsic value) को दर्शाता है।"
+  },
+  {
+    "id": 24,
+    "question": "Performance attribution analysis helps in identifying:",
+    "options": [
+      "Who the manager is",
+      "Whether returns came from Asset Allocation or Stock Selection",
+      "The tax liability",
+      "The address of the fund"
+    ],
+    "answer": "Whether returns came from Asset Allocation or Stock Selection",
+    "hint": "Return का स्रोत (source)।",
+    "explanation": "Attribution analysis प्रदर्शन को तोड़कर (break down) यह देखता है कि returns सही sectors चुनने (asset allocation) के कारण थे या सही stocks चुनने (stock selection) के कारण।"
+  },
+  {
+    "id": 25,
+    "question": "If a Category III AIF uses significant leverage, its volatility is likely to be:",
+    "options": [
+      "Lower than the benchmark",
+      "Higher than the benchmark",
+      "Zero",
+      "Unchanged"
+    ],
+    "answer": "Higher than the benchmark",
+    "hint": "Leverage हर चीज़ को बढ़ा देता है (magnifies)।",
+    "explanation": "Leverage लाभ और हानि दोनों को बढ़ा (amplify) देता है, जिससे portfolio की volatility (standard deviation) बढ़ जाती है।"
+  },
+  {
+    "id": 26,
+    "question": "The 'Information Ratio' measures:",
+    "options": [
+      "The amount of information the manager has",
+      "Active Return divided by Tracking Error",
+      "Passive return",
+      "Fees paid"
+    ],
+    "answer": "Active Return divided by Tracking Error",
+    "hint": "Outperformance की निरंतरता (Consistency)।",
+    "explanation": "Information Ratio = Alpha / Tracking Error. यह manager की उन returns की निरंतरता (consistency) के सापेक्ष excess returns उत्पन्न करने की क्षमता को मापता है।"
+  },
+  {
+    "id": 27,
+    "question": "Trailing Returns refer to:",
+    "options": [
+      "Returns calculated for a specific past period ending today (e.g., last 1 year, last 3 years)",
+      "Future returns",
+      "Projected returns",
+      "Returns of the worst performer"
+    ],
+    "answer": "Returns calculated for a specific past period ending today (e.g., last 1 year, last 3 years)",
+    "hint": "आज से पीछे की ओर देखना।",
+    "explanation": "Trailing returns वर्तमान तिथि (current date) पर समाप्त होने वाली एक विशिष्ट ऐतिहासिक अवधि (historical window) में प्रदर्शन को मापते हैं।"
+  },
+  {
+    "id": 28,
+    "question": "In a 'Waterfall' distribution structure, which payment typically comes FIRST?",
+    "options": [
+      "Manager's Performance Fee",
+      "Return of Capital to Investors",
+      "Catch-up to Manager",
+      "Bonus to staff"
+    ],
+    "answer": "Return of Capital to Investors",
+    "hint": "निवेशकों को उनका पैसा पहले वापस मिलता है।",
+    "explanation": "मानक waterfall प्राथमिकता इस प्रकार है: 1. Return of Capital (पूंजी की वापसी), 2. Preferred Return (Hurdle), 3. Catch-up, 4. Carried Interest का बंटवारा।"
+  },
+  {
+    "id": 29,
+    "question": "For benchmarking a Long-Short Equity Fund (Cat III), an appropriate benchmark would be:",
+    "options": [
+      "A pure Bond Index",
+      "The Nifty 50 Index (or a composite index blending equity and risk-free rate)",
+      "Real Estate Index",
+      "Gold Price"
+    ],
+    "answer": "The Nifty 50 Index (or a composite index blending equity and risk-free rate)",
+    "hint": "समान चीजों (या hybrids) की तुलना करें।",
+    "explanation": "चूंकि यह equity में निवेश करता है, इसलिए एक equity index या hybrid index (जो इसकी hedged प्रकृति को दर्शाता हो) सबसे उपयुक्त benchmark है।"
+  },
+  {
+    "id": 30,
+    "question": "Entry Load in AIFs is:",
+    "options": [
+      "A fee paid by the investor at the time of subscription",
+      "A fee paid at exit",
+      "A tax",
+      "A refund"
+    ],
+    "answer": "A fee paid by the investor at the time of subscription",
+    "hint": "प्रवेश की लागत (Cost of entry)।",
+    "explanation": "Entry load निवेश राशि से काटी जाने वाली एक अग्रिम फीस (upfront fee) है (हालांकि SEBI ने Mutual Funds में इसे काफी हद तक हतोत्साहित किया है, लेकिन AIF संरचनाओं में यह setup fees के रूप में मौजूद हो सकती है)।"
+  },
+  {
+    "id": 31,
+    "question": "Generally, AIF performance data provided in marketing materials must be:",
+    "options": [
+      "Based on projections",
+      "Audited and net of fees",
+      "Gross of fees always",
+      "Imaginary"
+    ],
+    "answer": "Audited and net of fees",
+    "hint": "विज्ञापन में सच्चाई।",
+    "explanation": "यह सुनिश्चित करने के लिए कि निवेशकों को गुमराह (mislead) न किया जाए, प्रदर्शन डेटा आदर्श रूप से audited होना चाहिए और 'Net of Fees' (जो निवेशक वास्तव में घर ले गया) के रूप में प्रस्तुत किया जाना चाहिए।"
+  },
+  {
+    "id": 32,
+    "question": "What is 'Tracking Error'?",
+    "options": [
+      "A mistake in the back office",
+      "The standard deviation of the difference between the portfolio's returns and the benchmark's returns",
+      "The error in calculating NAV",
+      "The fee paid to the tracker"
+    ],
+    "answer": "The standard deviation of the difference between the portfolio's returns and the benchmark's returns",
+    "hint": "यह index का कितनी बारीकी से पालन करता है।",
+    "explanation": "Tracking error किसी portfolio के price behavior और benchmark के price behavior के बीच के अंतर (divergence) को मापता है।"
+  },
+  {
+    "id": 33,
+    "question": "A 'Lock-up Period' affects fees because:",
+    "options": [
+      "It prevents fees from being charged",
+      "It ensures capital stability, allowing the manager to execute long-term strategies to generate performance fees",
+      "It doubles the fees",
+      "It removes the hurdle rate"
+    ],
+    "answer": "It ensures capital stability, allowing the manager to execute long-term strategies to generate performance fees",
+    "hint": "स्थिरता (Stability) प्रदर्शन में मदद करती है।",
+    "explanation": "Lock-ups निकासी (withdrawals) को रोकते हैं, जिससे manager को अपनी strategy को काम करने देने का समय मिलता है, जो performance fee कमाने के लिए आवश्यक है।"
+  },
+  {
+    "id": 34,
+    "question": "The 'J-Curve' effect on performance implies that in the early years, the IRR is likely to be:",
+    "options": [
+      "Very high",
+      "Negative or low",
+      "Stable",
+      "Infinite"
+    ],
+    "answer": "Negative or low",
+    "hint": "पहले नीचे, फिर ऊपर।",
+    "explanation": "शुरुआती setup costs और फीस के कारण, तथा निवेश को परिपक्व (mature) होने में लगने वाले समय के कारण, शुरुआती returns अक्सर नकारात्मक (negative) होते हैं ('J' का निचला हिस्सा)।"
+  },
+  {
+    "id": 35,
+    "question": "Performance fees are usually crystallized (paid out):",
+    "options": [
+      "Daily",
+      "Annually or upon exit/distribution",
+      "Every 10 years",
+      "Never"
+    ],
+    "answer": "Annually or upon exit/distribution",
+    "hint": "समय-समय पर (periodically) गणना की जाती है।",
+    "explanation": "Carry (परफॉरमेंस फीस) की गणना आमतौर पर सालाना की जाती है और भुगतान किया जाता है (Cat III के लिए mark-to-market gains पर) या किसी exit के realize होने पर।"
+  },
+  {
+    "id": 36,
+    "question": "If a fund has a Beta of 1.5, it is expected to be:",
+    "options": [
+      "Less volatile than the market",
+      "50% more volatile than the market",
+      "Risk free",
+      "A debt fund"
+    ],
+    "answer": "50% more volatile than the market",
+    "hint": "1.0 मार्केट है। 1.5 उससे अधिक है।",
+    "explanation": "1 से अधिक Beta का मतलब है कि यह benchmark की तुलना में उच्च volatility/संवेदनशीलता (sensitivity) रखता है।"
+  },
+  {
+    "id": 37,
+    "question": "Setup fees are usually capped at:",
+    "options": [
+      "10% of corpus",
+      "A specific percentage (e.g., 2-3%) defined in the PPM",
+      "50% of corpus",
+      "Zero"
+    ],
+    "answer": "A specific percentage (e.g., 2-3%) defined in the PPM",
+    "hint": "उचित सीमा (Reasonable limit)।",
+    "explanation": "PPM उन setup expenses पर एक कैप (सीमा) परिभाषित करता है (जैसे 2%) जो fund से चार्ज किए जा सकते हैं।"
+  },
+  {
+    "id": 38,
+    "question": "Comparing a Category III AIF's performance to a Fixed Deposit rate is:",
+    "options": [
+      "Appropriate",
+      "Inappropriate (mismatch of risk and asset class)",
+      "Mandatory",
+      "The best method"
+    ],
+    "answer": "Inappropriate (mismatch of risk and asset class)",
+    "hint": "पूरी तरह से अलग चीजों (Apples to Oranges) की तुलना।",
+    "explanation": "Benchmarks प्रासंगिक (relevant) होने चाहिए। एक high-risk equity hedge fund की तुलना risk-free FD से करना भ्रामक (misleading) है।"
+  },
+  {
+    "id": 39,
+    "question": "Calculation of NAV for Category III AIFs must follow:",
+    "options": [
+      "SEBI (Mutual Fund) Regulations",
+      "Accounting standards and valuation principles specified by SEBI/IBBI",
+      "The manager's guess",
+      "Newspaper prices only"
+    ],
+    "answer": "Accounting standards and valuation principles specified by SEBI/IBBI",
+    "hint": "मानकीकृत नियम (Standardized rules)।",
+    "explanation": "NAV सही fair value को दर्शाए, यह सुनिश्चित करने के लिए Valuation को मानक accounting सिद्धांतों (standard accounting principles) का पालन करना चाहिए।"
+  },
+  {
+    "id": 40,
+    "question": "A 'High Water Mark' ensures that the manager is not rewarded for:",
+    "options": [
+      "Generating new profits",
+      "Volatility (recovering losses)",
+      "Raising capital",
+      "Beating the benchmark"
+    ],
+    "answer": "Volatility (recovering losses)",
+    "hint": "सिर्फ शून्य (zero) पर वापस आना कोई जीत नहीं है।",
+    "explanation": "HWM 'volatility' के लिए भुगतान करने से रोकता है - यानी, पैसे खोना और फिर बस उसकी भरपाई करना।"
+  },
+  {
+    "id": 41,
+    "question": "If the 'Gross Return' is 15% and the 'Net Return' is 12%, the difference is due to:",
+    "options": [
+      "Inflation",
+      "Fees and Expenses",
+      "Market crash",
+      "Alpha"
+    ],
+    "answer": "Fees and Expenses",
+    "hint": "Gross में से Net घटाएं।",
+    "explanation": "Gross (pre-fee) और Net (post-fee) के बीच का अंतर फीस और खर्चों (fees and expenses) की लागत है।"
+  },
+  {
+    "id": 42,
+    "question": "Which returns are more important for a taxable investor?",
+    "options": [
+      "Gross Pre-tax returns",
+      "Net Post-tax returns",
+      "Benchmark returns",
+      "Projected returns"
+    ],
+    "answer": "Net Post-tax returns",
+    "hint": "आप वास्तव में अपने पास क्या रखते हैं।",
+    "explanation": "Investors इस बात की परवाह करते हैं कि फीस और टैक्स के बाद उनकी जेब में क्या आता है।"
+  },
+  {
+    "id": 43,
+    "question": "For a Close-ended fund, performance benchmarking is typically done against:",
+    "options": [
+      "Daily price movements",
+      "Vintage year peer group (funds started in the same year)",
+      "Future funds",
+      "Gold"
+    ],
+    "answer": "Vintage year peer group (funds started in the same year)",
+    "hint": "Class of 2020 की तुलना Class of 2020 से।",
+    "explanation": "एक ही 'Vintage' के funds की तुलना करना यह सुनिश्चित करता है कि उन्होंने अपने deployment phase के दौरान समान बाज़ार स्थितियों (market conditions) का सामना किया था।"
+  },
+  {
+    "id": 44,
+    "question": "Exit Load is typically higher if:",
+    "options": [
+      "The investor exits very early (e.g., within 1 year)",
+      "The investor stays for 10 years",
+      "The fund makes a profit",
+      "The market is up"
+    ],
+    "answer": "The investor exits very early (e.g., within 1 year)",
+    "hint": "जल्दी छोड़ने का जुर्माना (Penalty)।",
+    "explanation": "Exit loads आमतौर पर समय के साथ कम हो जाते हैं (जैसे पहले वर्ष में 2%, दूसरे वर्ष में 1%, उसके बाद 0%) ताकि long-term holding को प्रोत्साहित किया जा सके।"
+  },
+  {
+    "id": 45,
+    "question": "What is 'Churn Rate' (Portfolio Turnover)?",
+    "options": [
+      "How often investors leave",
+      "How frequently assets within the fund are bought and sold",
+      "The speed of the computer",
+      "The fee rate"
+    ],
+    "answer": "How frequently assets within the fund are bought and sold",
+    "hint": "Portfolio को तेज़ी से घुमाना (Spinning)।",
+    "explanation": "Portfolio turnover यह मापता है कि manager underlying assets को कितनी सक्रियता (actively) से खरीदता और बेचता (trade) है।"
+  },
+  {
+    "id": 46,
+    "question": "High portfolio turnover typically leads to:",
+    "options": [
+      "Lower transaction costs",
+      "Higher transaction costs and potentially higher short-term capital gains tax",
+      "No impact",
+      "Guaranteed higher returns"
+    ],
+    "answer": "Higher transaction costs and potentially higher short-term capital gains tax",
+    "hint": "Trading में पैसा खर्च होता है।",
+    "explanation": "अधिक trading का मतलब है अधिक brokerage और impact costs, और संभावित रूप से अधिक short-term टैक्स देनदारियां (tax liabilities)।"
+  },
+  {
+    "id": 47,
+    "question": "The 'Risk-Free Rate' used in Sharpe Ratio calculation in India is typically:",
+    "options": [
+      "The return on gold",
+      "The yield on 10-year Government Bond or T-Bills",
+      "The Nifty return",
+      "Zero"
+    ],
+    "answer": "The yield on 10-year Government Bond or T-Bills",
+    "hint": "संप्रभु उपज (Sovereign yield)।",
+    "explanation": "Government securities (G-Secs) या T-Bills को risk-free assets (जोखिम मुक्त संपत्ति) माना जाता है।"
+  },
+  {
+    "id": 48,
+    "question": "Performance reporting standards (like GIPS) aim to ensure:",
+    "options": [
+      "Managers earn more money",
+      "Fair representation and full disclosure of investment performance",
+      "Secrecy",
+      "Tax evasion"
+    ],
+    "answer": "Fair representation and full disclosure of investment performance",
+    "hint": "Global Investment Performance Standards.",
+    "explanation": "GIPS निवेश के प्रदर्शन (investment performance) की गणना और प्रस्तुति के लिए एक मानकीकृत नैतिक ढांचा (standardized ethical framework) प्रदान करता है ताकि तुलना (comparability) सुनिश्चित की जा सके।"
+  },
+  {
+    "id": 49,
+    "question": "A 'Side Pocket' is created to:",
+    "options": [
+      "Hide profits",
+      "Segregate illiquid or distressed assets from the main portfolio",
+      "Pay the manager extra",
+      "Keep cash"
+    ],
+    "answer": "Segregate illiquid or distressed assets from the main portfolio",
+    "hint": "खराब हिस्से (bad apple) को अलग (quarantine) करना।",
+    "explanation": "Side pocketing fund को खराब/illiquid assets को अलग करने की अनुमति देता है ताकि नए investors उन्हें न खरीदें और मौजूदा investors liquid हिस्से को भुना (redeem) सकें।"
+  },
+  {
+    "id": 50,
+    "question": "Which of the following is an Absolute Return strategy?",
+    "options": [
+      "Index tracking fund",
+      "Long-Short Equity or Market Neutral fund targeting positive returns in all market conditions",
+      "Large Cap Mutual Fund",
+      "ETF"
+    ],
+    "answer": "Long-Short Equity or Market Neutral fund targeting positive returns in all market conditions",
+    "hint": "बाज़ार की दिशा (direction) कुछ भी हो, positive रहना।",
+    "explanation": "Absolute return funds का लक्ष्य पैसा कमाना होता है चाहे मार्केट ऊपर जाए या नीचे, उन relative return funds के विपरीत जो केवल index को हराने (beat) की कोशिश करते हैं।"
+  }
+]

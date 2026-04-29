@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "question": "What is the full form of 'KRA' in the context of SEBI regulations?",
+    "options": [
+      "Know Your Rights Agency",
+      "KYC Registration Agency",
+      "Key Risk Assessment",
+      "Knowledge Resource Association"
+    ],
+    "answer": "KYC Registration Agency",
+    "hint": "Central KYC body.",
+    "explanation": "KRA का मतलब KYC Registration Agency है, जो investors के KYC records maintain करने के लिए SEBI के साथ registered एक body है।"
+  },
+  {
+    "id": 2,
+    "question": "What is the primary purpose of a KRA?",
+    "options": [
+      "To trade shares",
+      "To maintain KYC records of investors centrally",
+      "To regulate stock prices",
+      "To issue PAN cards"
+    ],
+    "answer": "To maintain KYC records of investors centrally",
+    "hint": "Centralized database.",
+    "explanation": "KRAs को KYC records को centralize करने के लिए पेश किया गया था ताकि एक investor को विभिन्न intermediaries को बार-बार documents जमा न करने पड़ें।"
+  },
+  {
+    "id": 3,
+    "question": "If an investor is already KYC compliant with one KRA, do they need to do KYC again for a new broker?",
+    "options": [
+      "Yes, always",
+      "No, they can use the existing KYC status",
+      "Yes, unless they pay a fee",
+      "Only if they change their name"
+    ],
+    "answer": "No, they can use the existing KYC status",
+    "hint": "One-time KYC (एक बार का KYC)।",
+    "explanation": "KRA system का मुख्य लाभ interoperability (पारस्परिकता) है; एक बार किसी SEBI registered intermediary के साथ KYC हो जाने के बाद, यह पूरे market में valid होता है।"
+  },
+  {
+    "id": 4,
+    "question": "Who is responsible for the 'In-Person Verification' (IPV) of the client?",
+    "options": [
+      "The KRA",
+      "The Intermediary (Broker/DP/MF)",
+      "SEBI",
+      "The Bank"
+    ],
+    "answer": "The Intermediary (Broker/DP/MF)",
+    "hint": "वह जो client से मिल रहा है।",
+    "explanation": "Client के साथ बातचीत (interact) करने वाला intermediary In-Person Verification (IPV) करने के लिए ज़िम्मेदार होता है।"
+  },
+  {
+    "id": 5,
+    "question": "After performing KYC, the intermediary must upload the data to the KRA system within:",
+    "options": [
+      "10 days",
+      "As per timelines specified by SEBI (usually T+1 or T+2)",
+      "1 month",
+      "1 year"
+    ],
+    "answer": "As per timelines specified by SEBI (usually T+1 or T+2)",
+    "hint": "Quick upload (त्वरित अपलोड)।",
+    "explanation": "Intermediaries को KYC details और documents तुरंत KRA system में upload करने होते हैं (वर्तमान नियम बहुत सख्त हैं, अक्सर अगले दिन)।"
+  },
+  {
+    "id": 6,
+    "question": "Can a KRA share KYC information with a third party?",
+    "options": [
+      "Yes, anyone",
+      "No, unless it is another registered intermediary or for legal reasons",
+      "Yes, for marketing",
+      "Yes, for a fee"
+    ],
+    "answer": "No, unless it is another registered intermediary or for legal reasons",
+    "hint": "Data privacy.",
+    "explanation": "KYC data गोपनीय (confidential) होता है और इसे केवल registered intermediaries द्वारा client को on-board करने के लिए या regulators द्वारा ही access किया जा सकता है।"
+  },
+  {
+    "id": 7,
+    "question": "What is 'Interoperability' among KRAs?",
+    "options": [
+      "KRAs fighting with each other",
+      "Different KRAs sharing data so an intermediary can fetch records from any KRA",
+      "KRAs merging into one company",
+      "Using different currencies"
+    ],
+    "answer": "Different KRAs sharing data so an intermediary can fetch records from any KRA",
+    "hint": "एक दूसरे से बात करना (Talking to each other)।",
+    "explanation": "Interoperability यह सुनिश्चित करती है कि यदि किसी client का data KRA 'A' के पास है, तो KRA 'B' के साथ registered intermediary भी इसे fetch (प्राप्त) कर सकता है।"
+  },
+  {
+    "id": 8,
+    "question": "To register as a KRA, an applicant must have a net worth of at least:",
+    "options": [
+      "Rs. 1 Crore",
+      "Rs. 25 Crores",
+      "Rs. 100 Crores",
+      "Rs. 50 Lakhs"
+    ],
+    "answer": "Rs. 25 Crores",
+    "hint": "High capital requirement.",
+    "explanation": "Financial stability और infrastructure capability सुनिश्चित करने के लिए एक KRA के लिए net worth की आवश्यकता Rs. 25 Crores है।"
+  },
+  {
+    "id": 9,
+    "question": "Who owns the original KYC documents of the client?",
+    "options": [
+      "The Client",
+      "The Intermediary (initially) / KRA (digitally)",
+      "The Government",
+      "The Police"
+    ],
+    "answer": "The Intermediary (initially) / KRA (digitally)",
+    "hint": "Records का custodian.",
+    "explanation": "Intermediary verification के लिए originals collect करता है, उन्हें scan करता है, और KRA पर upload करता है। KRA उनका repository (भंडार) बन जाता है।"
+  },
+  {
+    "id": 10,
+    "question": "If a client changes their address, whom should they inform?",
+    "options": [
+      "The Post Office",
+      "Any one Intermediary (who will update KRA)",
+      "SEBI directly",
+      "The Police"
+    ],
+    "answer": "Any one Intermediary (who will update KRA)",
+    "hint": "एक बार update करें, सब जगह update हो जाएगा (Update once, update all)।",
+    "explanation": "Client एक intermediary के पास बदलाव का request करता है, जो KRA को update करता है, और KRA सभी जुड़े हुए intermediaries तक यह update पहुँचाता (pushes) है।"
+  },
+  {
+    "id": 11,
+    "question": "Which of these is a registered KRA in India?",
+    "options": [
+      "Facebook",
+      "CDSL Ventures Ltd (CVL)",
+      "Google",
+      "Amazon"
+    ],
+    "answer": "CDSL Ventures Ltd (CVL)",
+    "hint": "Depository की Subsidiary.",
+    "explanation": "CVL, NDML, DotEx (NSE), CAMS, और Karvy registered KRAs के उदाहरण हैं।"
+  },
+  {
+    "id": 12,
+    "question": "Are KRAs responsible for verifying the authenticity of the documents?",
+    "options": [
+      "No, the intermediary is responsible",
+      "Yes, they must independently verify",
+      "Only if the client asks",
+      "No, nobody verifies"
+    ],
+    "answer": "Yes, they must independently verify",
+    "hint": "KRA Validation.",
+    "explanation": "नए नियमों के तहत, KRAs को intermediaries द्वारा upload किए गए records (email/mobile/PAN) को स्वतंत्र रूप से (independently) validate करना होता है ताकि यह सुनिश्चित हो सके कि वे असली (genuine) हैं।"
+  },
+  {
+    "id": 13,
+    "question": "Documents stored by KRA must be in:",
+    "options": [
+      "Physical form only",
+      "Electronic/Digital form",
+      "Audio format",
+      "Video format only"
+    ],
+    "answer": "Electronic/Digital form",
+    "hint": "Digitization.",
+    "explanation": "आसानी से retrieval (पुनर्प्राप्ति) और sharing की सुविधा के लिए KRAs records को electronic form में maintain करते हैं।"
+  },
+  {
+    "id": 14,
+    "question": "If a KRA's registration is cancelled, what happens to the data?",
+    "options": [
+      "It is deleted",
+      "It is transferred to another KRA",
+      "It is printed and burned",
+      "It is given to the public"
+    ],
+    "answer": "It is transferred to another KRA",
+    "hint": "Data continuity (डेटा की निरंतरता)।",
+    "explanation": "SEBI investors के लिए कोई रुकावट (disruption) न हो यह सुनिश्चित करने के लिए records को किसी अन्य registered KRA को transfer करने का निर्देश देता है।"
+  },
+  {
+    "id": 15,
+    "question": "The KRA system helps in preventing:",
+    "options": [
+      "Market crashes",
+      "Money Laundering and duplication of effort",
+      "High taxes",
+      "Broker bankruptcy"
+    ],
+    "answer": "Money Laundering and duplication of effort",
+    "hint": "Efficiency और Safety.",
+    "explanation": "यह clients के लिए duplicate paperwork को रोकता है और money laundering risks को track करने के लिए एक cleaner database बनाता है।"
+  },
+  {
+    "id": 16,
+    "question": "Which entity usually sets up a KRA?",
+    "options": [
+      "Individual Brokers",
+      "Subsidiaries of Stock Exchanges or Depositories",
+      "Foreign Banks",
+      "Local Municipalities"
+    ],
+    "answer": "Subsidiaries of Stock Exchanges or Depositories",
+    "hint": "Infrastructure institutions.",
+    "explanation": "KRAs आमतौर पर BSE, NSE, CDSL, या NSDL जैसे प्रमुख market infrastructure institutions की subsidiaries (सहायक कंपनियां) होती हैं।"
+  },
+  {
+    "id": 17,
+    "question": "Can an intermediary access KYC data of a client they have no relationship with?",
+    "options": [
+      "Yes, data is open",
+      "No, they can only fetch data for a client approaching them",
+      "Yes, if they pay",
+      "Yes, for marketing"
+    ],
+    "answer": "No, they can only fetch data for a client approaching them",
+    "hint": "Privacy rule.",
+    "explanation": "Access प्रतिबंधित (restricted) है; एक intermediary data तभी fetch (प्राप्त) करता है जब कोई client account खोलने के लिए उनसे संपर्क करता है।"
+  },
+  {
+    "id": 18,
+    "question": "What is the consequence if an intermediary uploads fake KYC data?",
+    "options": [
+      "A reward",
+      "Penalties and action by SEBI/KRA",
+      "Nothing",
+      "A warning"
+    ],
+    "answer": "Penalties and action by SEBI/KRA",
+    "hint": "Fraudulent upload.",
+    "explanation": "Fake या गलत data upload करना एक गंभीर उल्लंघन (serious violation) है जिस पर penalties लगती हैं।"
+  },
+  {
+    "id": 19,
+    "question": "The 'KYC Acknowledgement' allows an investor to:",
+    "options": [
+      "Get a loan",
+      "Open accounts with other intermediaries without submitting documents again",
+      "Travel abroad",
+      "Vote"
+    ],
+    "answer": "Open accounts with other intermediaries without submitting documents again",
+    "hint": "KYC का प्रमाण (Proof)।",
+    "explanation": "Acknowledgement इस बात के proof (प्रमाण) के रूप में कार्य करता है कि investor KYC compliant है।"
+  },
+  {
+    "id": 20,
+    "question": "KRA regulations apply to:",
+    "options": [
+      "Banks only",
+      "All SEBI registered intermediaries",
+      "Insurance companies only",
+      "Real estate agents"
+    ],
+    "answer": "All SEBI registered intermediaries",
+    "hint": "Broad scope (व्यापक दायरा)।",
+    "explanation": "Brokers, DPs, Mutual Funds, Portfolio Managers—सभी SEBI intermediaries को KRA system का उपयोग करना चाहिए।"
+  },
+  {
+    "id": 21,
+    "question": "How long must a KRA preserve the original electronic records?",
+    "options": [
+      "1 year",
+      "5 years",
+      "Minimum 5 years (often longer/perpetual)",
+      "10 days"
+    ],
+    "answer": "Minimum 5 years (often longer/perpetual)",
+    "hint": "Standard retention.",
+    "explanation": "अन्य regulations की तरह, records को कम से कम 5 वर्षों तक maintain किया जाना चाहिए।"
+  },
+  {
+    "id": 22,
+    "question": "Is Aadhaar mandatory for KRA KYC?",
+    "options": [
+      "Yes, absolutely",
+      "It is one of the valid OVDs (Officially Valid Documents)",
+      "No, Aadhaar is banned",
+      "Only for foreigners"
+    ],
+    "answer": "It is one of the valid OVDs (Officially Valid Documents)",
+    "hint": "OVD का विकल्प (choice)।",
+    "explanation": "Aadhaar एक पसंदीदा OVD है, लेकिन clients Passport, Voter ID आदि का भी उपयोग कर सकते हैं।"
+  },
+  {
+    "id": 23,
+    "question": "The 'Central KYC Records Registry' (CKYCR) is distinct from KRA because:",
+    "options": [
+      "It is for banks/insurance/securities (all finance)",
+      "It is only for stocks",
+      "It is private",
+      "It is foreign"
+    ],
+    "answer": "It is for banks/insurance/securities (all finance)",
+    "hint": "Cross-sector बनाम SEBI specific.",
+    "explanation": "CKYCR (CERSAI द्वारा प्रबंधित) पूरे financial sector (RBI, IRDAI, SEBI) को cover करता है, जबकि KRA, SEBI-specific है।"
+  },
+  {
+    "id": 24,
+    "question": "If a KRA finds a discrepancy in the documents uploaded by an intermediary, it will:",
+    "options": [
+      "Fix it automatically",
+      "Put the KYC 'On Hold' and inform the intermediary",
+      "Delete the client",
+      "Call the police"
+    ],
+    "answer": "Put the KYC 'On Hold' and inform the intermediary",
+    "hint": "Rejection/Hold.",
+    "explanation": "KRA discrepancy (विसंगति) हल होने तक status को 'On Hold' या 'Rejected' के रूप में mark करता है।"
+  },
+  {
+    "id": 25,
+    "question": "Who conducts the 'Audit' of the KRA systems?",
+    "options": [
+      "The KRA itself",
+      "Independent Auditors / Systems Auditors",
+      "The Clients",
+      "Nobody"
+    ],
+    "answer": "Independent Auditors / Systems Auditors",
+    "hint": "Third party check.",
+    "explanation": "KRAs को independent qualified auditors द्वारा समय-समय पर (periodic) system audits से गुजरना (undergo) पड़ता है।"
+  },
+  {
+    "id": 26,
+    "question": "What is 'e-KYC'?",
+    "options": [
+      "Email KYC",
+      "Electronic KYC (often using Aadhaar)",
+      "Extra KYC",
+      "Easy KYC"
+    ],
+    "answer": "Electronic KYC (often using Aadhaar)",
+    "hint": "Paperless (कागज़ रहित)।",
+    "explanation": "e-KYC client के paperless, digital authentication की अनुमति देता है।"
+  },
+  {
+    "id": 27,
+    "question": "Can a KRA charge fees to the intermediary?",
+    "options": [
+      "No, it is free",
+      "Yes, for uploading and downloading data",
+      "Only to the client",
+      "Only to SEBI"
+    ],
+    "answer": "Yes, for uploading and downloading data",
+    "hint": "Business model.",
+    "explanation": "KRAs KYC records को maintain करने और retrieve (पुनर्प्राप्त) करने की service के लिए intermediaries से शुल्क (charge) लेते हैं।"
+  },
+  {
+    "id": 28,
+    "question": "If a client is 'KYC Non-Compliant', can they trade?",
+    "options": [
+      "Yes, freely",
+      "No, they cannot open an account or trade",
+      "Yes, up to Rs. 1 Lakh",
+      "Yes, on holidays"
+    ],
+    "answer": "No, they cannot open an account or trade",
+    "hint": "Gatekeeper नियम।",
+    "explanation": "Securities market में प्रवेश करने के लिए KYC compliance एक पूर्वापेक्षा (prerequisite) है।"
+  },
+  {
+    "id": 29,
+    "question": "The KRA must ensure that its systems have:",
+    "options": [
+      "Good music",
+      "Disaster Recovery (DR) and Business Continuity Plans (BCP)",
+      "Free Wi-Fi",
+      "Gaming consoles"
+    ],
+    "answer": "Disaster Recovery (DR) and Business Continuity Plans (BCP)",
+    "hint": "System resilience.",
+    "explanation": "KRAs महत्वपूर्ण (critical) infrastructure हैं; यह सुनिश्चित करने के लिए कि data कभी नष्ट न हो, उनके पास मजबूत backups (DR) होने चाहिए।"
+  },
+  {
+    "id": 30,
+    "question": "Who specifies the common KYC form?",
+    "options": [
+      "Each broker makes their own",
+      "SEBI / AMFI",
+      "The Client",
+      "The Printer"
+    ],
+    "answer": "SEBI / AMFI",
+    "hint": "Standardization (मानकीकरण)।",
+    "explanation": "एकसमानता (uniformity) सुनिश्चित करने के लिए, SEBI एक standard KYC format निर्धारित (prescribes) करता है।"
+  },
+  {
+    "id": 31,
+    "question": "Is PAN mandatory for KRA registration?",
+    "options": [
+      "No",
+      "Yes (with few exceptions)",
+      "Optional",
+      "Only for men"
+    ],
+    "answer": "Yes (with few exceptions)",
+    "hint": "The unique key.",
+    "explanation": "Securities market में PAN unique identifier है और KYC के लिए अनिवार्य (mandatory) है (सिक्किम के निवासियों जैसी विशिष्ट छूट प्राप्त श्रेणियों को छोड़कर)।"
+  },
+  {
+    "id": 32,
+    "question": "If a client wants to close their account, does the KRA delete the data immediately?",
+    "options": [
+      "Yes",
+      "No, records are preserved for the statutory period",
+      "Yes, within 24 hours",
+      "Only if the client pays"
+    ],
+    "answer": "No, records are preserved for the statutory period",
+    "hint": "Audit trail.",
+    "explanation": "Account बंद होने के बाद भी, audit/investigation के उद्देश्यों (purposes) के लिए आवश्यक retention period के लिए records रखे जाते हैं।"
+  },
+  {
+    "id": 33,
+    "question": "Which officer at the KRA is responsible for compliance?",
+    "options": [
+      "Compliance Officer",
+      "CEO",
+      "IT Head",
+      "Security Guard"
+    ],
+    "answer": "Compliance Officer",
+    "hint": "अन्य intermediaries के समान ही पद (title)।",
+    "explanation": "SEBI regulations का पालन (adherence) सुनिश्चित करने के लिए KRAs को भी एक Compliance Officer नियुक्त करना चाहिए।"
+  },
+  {
+    "id": 34,
+    "question": "Can a Foreign Portfolio Investor (FPI) use the KRA system?",
+    "options": [
+      "No",
+      "Yes, FPIs are also registered via KRAs (through Custodians)",
+      "Only Indian citizens",
+      "Only NRIs"
+    ],
+    "answer": "Yes, FPIs are also registered via KRAs (through Custodians)",
+    "hint": "Global investors.",
+    "explanation": "Custodians FPIs के लिए KYC करते हैं और KRA system में data upload करते हैं।"
+  },
+  {
+    "id": 35,
+    "question": "What happens if an intermediary fails to upload documents to KRA?",
+    "options": [
+      "Nothing",
+      "It is a regulatory violation",
+      "The client gets free shares",
+      "The KRA uploads it"
+    ],
+    "answer": "It is a regulatory violation",
+    "hint": "Non-compliance (गैर-अनुपालन)।",
+    "explanation": "Data upload करने में विफलता KRA system के उद्देश्य को विफल (defeats) करती है और यह एक दंडनीय उल्लंघन (punishable violation) है।"
+  },
+  {
+    "id": 36,
+    "question": "The KRA verifies the client's:",
+    "options": [
+      "Exam results",
+      "PAN status (with Income Tax database)",
+      "Driving skills",
+      "Cooking skills"
+    ],
+    "answer": "PAN status (with Income Tax database)",
+    "hint": "Validity जाँचना (Checking validity)।",
+    "explanation": "KRAs यह सुनिश्चित करने के लिए Income Tax Department के database से PAN को validate करते हैं कि यह valid है।"
+  },
+  {
+    "id": 37,
+    "question": "If a client's KYC status is 'Verified', a new broker can:",
+    "options": [
+      "Ask for all documents again",
+      "Download the data and open the account immediately",
+      "Reject the client",
+      "Wait for 1 year"
+    ],
+    "answer": "Download the data and open the account immediately",
+    "hint": "Instant on-boarding.",
+    "explanation": "एक 'Verified' status नए broker को बस data fetch करने और संबंध (relationship) शुरू करने की अनुमति देता है।"
+  },
+  {
+    "id": 38,
+    "question": "Can a KRA operate without a certificate of registration from SEBI?",
+    "options": [
+      "Yes",
+      "No",
+      "Maybe",
+      "Only on weekends"
+    ],
+    "answer": "No",
+    "hint": "Mandatory license.",
+    "explanation": "SEBI registration के बिना KRA के रूप में काम करना अवैध (illegal) है।"
+  },
+  {
+    "id": 39,
+    "question": "The 'Rights and Obligations' document is:",
+    "options": [
+      "Optional",
+      "Provided to the client during KYC/Account opening",
+      "Secret",
+      "Only for the broker"
+    ],
+    "answer": "Provided to the client during KYC/Account opening",
+    "hint": "Client awareness (जागरूकता)।",
+    "explanation": "Investors को KRA और trading प्रक्रिया के संबंध में उनके Rights and Obligations की एक प्रति (copy) दी जानी चाहिए।"
+  },
+  {
+    "id": 40,
+    "question": "KRA systems must be capable of interacting with:",
+    "options": [
+      "Other KRAs",
+      "Depository Systems",
+      "Stock Exchange Systems",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "hint": "Connected ecosystem.",
+    "explanation": "KRA system market infrastructure के केंद्र में बैठता है और exchanges, depositories, और अन्य KRAs से जुड़ता है।"
+  },
+  {
+    "id": 41,
+    "question": "If a KRA is found guilty of negligence, SEBI can:",
+    "options": [
+      "Ignore it",
+      "Suspend or Cancel its registration",
+      "Promote it",
+      "Give it an award"
+    ],
+    "answer": "Suspend or Cancel its registration",
+    "hint": "Regulatory action.",
+    "explanation": "SEBI के पास KRA का license cancel करने की शक्ति है यदि वह data की सुरक्षा करने या नियमों का पालन करने में विफल रहता है।"
+  },
+  {
+    "id": 42,
+    "question": "Can a Sub-Broker perform KRA upload directly?",
+    "options": [
+      "Yes",
+      "No, usually done through the Main Broker",
+      "Only if they have internet",
+      "Only if they are large"
+    ],
+    "answer": "No, usually done through the Main Broker",
+    "hint": "Member के माध्यम से।",
+    "explanation": "आमतौर पर, registered trading member (Main Broker) KRA upload को संभालता है, हालाँकि sub-brokers collection में सहायता करते हैं।"
+  },
+  {
+    "id": 43,
+    "question": "The validation of Email and Mobile number by KRA is done via:",
+    "options": [
+      "Postcards",
+      "OTP (One Time Password) / Link",
+      "Phone call",
+      "Visit to home"
+    ],
+    "answer": "OTP (One Time Password) / Link",
+    "hint": "Digital check.",
+    "explanation": "KRAs यह पुष्टि (confirm) करने के लिए client के mobile/email पर एक OTP या verification link भेजते हैं कि वे active हैं और client के ही हैं।"
+  },
+  {
+    "id": 44,
+    "question": "Who bears the ultimate liability for KYC compliance of the client?",
+    "options": [
+      "The KRA only",
+      "The Intermediary who on-boarded the client",
+      "The Government",
+      "The Client"
+    ],
+    "answer": "The Intermediary who on-boarded the client",
+    "hint": "Frontline जिम्मेदारी।",
+    "explanation": "जबकि KRA record maintain करता है, intermediary initial due diligence और IPV के लिए ज़िम्मेदार है।"
+  },
+  {
+    "id": 45,
+    "question": "Can a KRA outsource its core function of maintaining records?",
+    "options": [
+      "Yes, fully",
+      "No, core functions cannot be outsourced",
+      "Yes, to a foreign country",
+      "Yes, to a freelancer"
+    ],
+    "answer": "No, core functions cannot be outsourced",
+    "hint": "Control retention (नियंत्रण बनाए रखना)।",
+    "explanation": "Risk से बचने के लिए data maintenance और decision making जैसे Core functions को outsource नहीं किया जा सकता है।"
+  },
+  {
+    "id": 46,
+    "question": "What is the 'modification' process in KRA?",
+    "options": [
+      "Changing the broker",
+      "Updating client details (address/phone)",
+      "Changing the stock price",
+      "Buying new shares"
+    ],
+    "answer": "Updating client details (address/phone)",
+    "hint": "Info में बदलाव।",
+    "explanation": "Modification में client द्वारा प्रदान किए गए नए details के साथ central record को update करना शामिल है।"
+  },
+  {
+    "id": 47,
+    "question": "If a client is an 'NRI', what additional document is often needed for KYC?",
+    "options": [
+      "Gym card",
+      "Passport and Foreign Address Proof",
+      "Library card",
+      "Bus ticket"
+    ],
+    "answer": "Passport and Foreign Address Proof",
+    "hint": "Status का प्रमाण (Proof)।",
+    "explanation": "NRIs को अपना Passport और अपने विदेशी पते (foreign address) का proof प्रदान करना होगा।"
+  },
+  {
+    "id": 48,
+    "question": "The 'Basic Services Demat Account' (BSDA) has:",
+    "options": [
+      "Stricter KYC",
+      "Same KYC norms",
+      "No KYC",
+      "Double KYC"
+    ],
+    "answer": "Same KYC norms",
+    "hint": "KYC universal है।",
+    "explanation": "KYC requirements आम तौर पर समान होती हैं, हालांकि account के features भिन्न (differ) होते हैं।"
+  },
+  {
+    "id": 49,
+    "question": "Which form is used for KRA registration of an 'Individual'?",
+    "options": [
+      "Form 1",
+      "KYC Application Form for Individuals",
+      "Form A",
+      "Form Z"
+    ],
+    "answer": "KYC Application Form for Individuals",
+    "hint": "विशिष्ट (Specific) form.",
+    "explanation": "Individuals और Non-Individuals (Corporates) के लिए अलग-अलग standard KYC forms हैं।"
+  },
+  {
+    "id": 50,
+    "question": "Why was the KRA system introduced?",
+    "options": [
+      "To increase paperwork",
+      "To create a 'One KYC' experience for investors",
+      "To slow down account opening",
+      "To charge more fees"
+    ],
+    "answer": "To create a 'One KYC' experience for investors",
+    "hint": "Ease of doing business (व्यापार करने में आसानी)।",
+    "explanation": "इसका लक्ष्य (goal) documents को बार-बार जमा करने की आवश्यकता को दूर करके investor के जीवन को सरल (simplify) बनाना था।"
+  }
+]
