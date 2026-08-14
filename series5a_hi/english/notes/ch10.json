@@ -1,0 +1,101 @@
+{
+  "course": "NISM Series V-A: Mutual Fund Distributors Certification",
+  "unit_number": 10,
+  "unit_name": "Risk, Return and Performance of Funds",
+  "weightage": "7 Marks (लगभग 7 Questions)",
+  "overview": "यह chapter किसी fund की 'Health' और 'Danger' को measure करने के बारे में है। आप सिर्फ returns नहीं देख सकते; आपको यह भी देखना होगा कि उन returns को पाने के लिए manager ने कितना risk लिया है। आप 'Standard Deviation' और 'Beta' जैसे key risk measures के बारे में सीखेंगे, और अलग-अलग types के returns (Absolute, CAGR, XIRR) कैसे calculate करते हैं, यह जानेंगे।",
+  
+  "complete_concept_explanation": [
+    {
+      "concept": "1. Risk को समझना (The Price of Returns)",
+      "basic_meaning": "Risk वह possibility है कि आपके actual returns आपके expected returns से अलग होंगे।",
+      "detailed_explanation": "Mutual Funds में, risk का मतलब सिर्फ 'पैसे खोना' नहीं है। यह NAV का 'fluctuation' (Volatility) है। \n1. **Equity Risk:** Company की performance या general market mood के कारण prices गिरते हैं।\n2. **Interest Rate Risk:** जब economy में interest rates UP जाते हैं, तो existing bonds (और Debt fund NAVs) के price DOWN जाते हैं。\n3. **Credit Risk (Default Risk):** यह chance कि company Debt fund को loan/interest वापस pay करने में fail हो जाएगी।\n4. **Liquidity Risk:** Redeeming investors को पैसे वापस देने के लिए किसी security को जल्दी से बेच न पाना।",
+      "why_this_is_important": "एक distributor के रूप में, आपको fund के risk को investor की risk profile (appetite) से match करना होगा।",
+      "formula": "Not Applicable",
+      "formula_explanation": "Not Applicable",
+      "step_by_step_calculation_example": "Not Applicable",
+      "real_life_indian_example": "अगर RBI अचानक interest rates बढ़ा देता है, तो आपके 10-year Gilt Fund (Debt) के NAV में गिरावट देखने को मिलेगी। इसे 'Interest Rate Risk' कहते हैं।",
+      "exam_traps": [
+        "यह सोचना कि Debt funds में कोई risk नहीं होता (उनमें Interest Rate और Credit Risk होता है)।",
+        "Interest Rate Risk को Credit Risk के साथ confuse करना (Interest rate G-Secs/Govt Bonds को affect करता है; Credit risk Corporate Bonds को affect करता है)।"
+      ],
+      "memory_trick": "Risk = Future की Uncertainty।"
+    },
+    {
+      "concept": "2. Risk को Measure करना (Standard Deviation & Beta)",
+      "basic_meaning": "अपने average या market के comparison में fund कितना 'jump around' करता है?",
+      "detailed_explanation": "1. **Standard Deviation (Total Risk):** यह measure करता है कि fund के returns उसके खुद के average से कितना deviate करते हैं। Higher SD = Higher Volatility (ज्यादा बड़े jumps)।\n2. **Beta (Market Risk):** यह measure करता है कि Benchmark (जैसे Nifty) के comparison में fund कैसे move करता है। \n   - Beta = 1: Fund बिल्कुल market के साथ move करता है।\n   - Beta > 1: Fund 'Aggressive' है (अगर Nifty 10% ऊपर जाता है, तो fund 12% ऊपर जा सकता है)।\n   - Beta < 1: Fund 'Defensive' है (अगर Nifty 10% गिरता है, तो fund सिर्फ 8% गिर सकता है)।",
+      "why_this_is_important": "जो investors 'safety' चाहते हैं, उन्हें low Standard Deviation और Beta < 1 देखना चाहिए।",
+      "formula": "Not Applicable (Exam के लिए Calculation required नहीं है)",
+      "formula_explanation": "SD total variance measure करता है; Beta market के प्रति sensitivity measure करता है।",
+      "step_by_step_calculation_example": "अगर Fund A का Beta 1.5 है, और Nifty 50 1% बढ़ता है, तो Fund A के 1.5% बढ़ने की expectation होती है।",
+      "real_life_indian_example": "एक 'Small Cap' fund का Standard Deviation आमतौर पर 'Large Cap' fund से ज्यादा होता है क्योंकि small company के stock prices ज्यादा violently jump करते हैं।",
+      "exam_traps": [
+        "यह सोचना कि Beta Total Risk measure करता है (नहीं, SD Total Risk measure करता है; Beta सिर्फ Market Risk measure करता है)।",
+        "यह मानना कि 0 Beta का मतलब कोई risk नहीं है (इसका मतलब सिर्फ यह है कि यह market के साथ move नहीं करता, इसमें company-specific risk अभी भी हो सकता है)।"
+      ],
+      "memory_trick": "SD = Fund के Mood Swings. Beta = Market Leader को follow करना।"
+    },
+    {
+      "concept": "3. Types of Returns (Absolute, CAGR, XIRR)",
+      "basic_meaning": "Client को यह बताने के अलग-अलग तरीके कि उन्होंने कितना कमाया।",
+      "detailed_explanation": "1. **Simple (Absolute) Return:** 1 साल से कम (LESS than 1 year) के periods के लिए use होता है। यह सिर्फ percentage growth है।\n2. **CAGR (Compound Annual Growth Rate):** 1 साल से ज्यादा (MORE than 1 year) के periods के लिए use होता है। यह assume करता है कि आपके profit ने भी हर साल profit कमाया (Compounding)।\n3. **XIRR (Internal Rate of Return):** SIPs के लिए use होता है। चूँकि आप अलग-अलग समय पर अलग-अलग amounts invest करते हैं, इसलिए CAGR use नहीं किया जा सकता। Regular monthly investments के लिए XIRR सबसे accurate है।",
+      "why_this_is_important": "SEBI mandate करता है कि 1, 3, 5-year performance के लिए CAGR और <1 year के लिए Absolute return use किया जाए।",
+      "formula": "$$CAGR = \\left( \\left( \\frac{\\text{Final Value}}{\\text{Initial Value}} \\right)^{\\frac{1}{n}} \\right) - 1$$",
+      "formula_explanation": "n number of years है। यह formula सालों के return को 'smooth' कर देता है।",
+      "step_by_step_calculation_example": "1. ₹10,000 invest करें। \n2. 2 साल बाद, Value = ₹12,100. \n3. Step: (12100 / 10000) = 1.21. \n4. Step: 1.21 का Square root (क्योंकि 2 साल हैं) = 1.1. \n5. 1.1 - 1 = 0.1 या 10%.\n**Result:** CAGR 10% है।",
+      "real_life_indian_example": "अगर आप Groww या Zerodha जैसे app में अपना SIP statement check करते हैं, तो जो percentage आप देखते हैं वह आमतौर पर 'XIRR' होता है क्योंकि आपका पैसा अलग-अलग dates पर गया था।",
+      "exam_traps": [
+        "3-year performance के लिए Simple Return use करना (CAGR use करना चाहिए)।",
+        "यह भूल जाना कि CAGR dividends के reinvestment को assume करता है।",
+        "'Total Return' (जिसमें dividends शामिल हैं) को 'Price Return' (सिर्फ NAV increase) के साथ confuse करना।"
+      ],
+      "memory_trick": "CAGR = Smooth Average. XIRR = SIP King."
+    },
+    {
+      "concept": "4. Performance Ratios (Sharpe Ratio & Alpha)",
+      "basic_meaning": "क्या manager ने skill से return कमाया या सिर्फ high risk लेकर?",
+      "detailed_explanation": "1. **Sharpe Ratio:** यह 'Risk-Adjusted Return' measure करता है। यह दिखाता है कि लिए गए risk (Standard Deviation) की हर unit के लिए आपको कितना 'extra' return मिला। \n   - **Higher Sharpe Ratio = Better Fund.**\n2. **Alpha:** यह manager की 'Skill' measure करता है। यह benchmark के OVER AND ABOVE (ऊपर) generate किया गया return है। \n   - अगर market ने 10% दिया और fund ने 12% दिया, तो Alpha +2% है।",
+      "why_this_is_important": "15% return और low risk वाला fund 15% return और बहुत high risk वाले fund से बेहतर है। Sharpe ratio इसे identify करने में मदद करता है।",
+      "formula": "$$\\text{Sharpe Ratio} = \\frac{\\text{Fund Return} - \\text{Risk Free Rate}}{\\text{Standard Deviation}}$$",
+      "formula_explanation": "Risk-free rate आमतौर पर वह होता है जो आपको Govt Treasury bill (safe money) में मिलता है। हम risk लेकर कमाए गए 'extra' return को देखने के लिए इसे subtract करते हैं।",
+      "step_by_step_calculation_example": "1. Fund Return = 15%.\n2. Bank FD (Risk Free) = 6%.\n3. Standard Deviation (Risk) = 9%.\n4. Calculation: (15 - 6) / 9 = 9 / 9 = 1.0.\n**Result:** Sharpe Ratio 1.0 है।",
+      "real_life_indian_example": "दो funds 12% return देते हैं। Fund A का Sharpe 0.8 है, Fund B का 1.2 है। Fund B को choose करें क्योंकि इसने कम stress (lower risk) के साथ same return दिया।",
+      "exam_traps": [
+        "यह सोचना कि higher Standard Deviation अच्छा है (नहीं, higher Sharpe अच्छा है, lower SD safer है)।",
+        "Alpha को Beta के साथ confuse करना (Beta market movement है; Alpha outperformance है)।"
+      ],
+      "memory_trick": "Sharpe = Smartness (Efficiency). Alpha = Added Value (Skill)."
+    }
+  ],
+
+  "important_differences": [
+    {
+      "difference_between": "Standard Deviation vs. Beta",
+      "clear_explanation": "SD: Total volatility (internal) measure करता है। High SD का मतलब है कि fund एक roller coaster की तरह है।\nBeta: Market (external) के प्रति sensitivity measure करता है। High Beta का मतलब है कि यह Nifty के moves पर strongly react करता है।"
+    },
+    {
+      "difference_between": "Absolute Return vs. CAGR",
+      "clear_explanation": "Absolute: Total growth percentage (जैसे, 4 साल में 50%)। इसमें time factor नहीं होता।\nCAGR: Yearly growth percentage (जैसे, ~11% per year)। इसमें time factor शामिल होता है।"
+    }
+  ],
+
+  "frequently_asked_exam_areas": [
+    "Simple Return vs. CAGR का Calculation।",
+    "कौन सा ratio risk-adjusted performance measure करता है? (Sharpe Ratio)।",
+    "1.2 Beta का क्या मतलब है? (Aggressive, market से 20% ज्यादा move करता है)।",
+    "SIP के लिए कौन सा return measure use होता है? (XIRR)।",
+    "Debt funds को affect करने वाले factors (Interest rates & Credit spreads)।",
+    "Alpha की Definition (Benchmark के ऊपर extra return)।"
+  ],
+
+  "quick_revision_summary": [
+    "Risk NAV की volatility है।",
+    "Equity funds में Market Risk होता है; Debt funds में Interest Rate और Credit Risk होता है।",
+    "Standard Deviation total risk measure करता है।",
+    "Beta market-related risk measure करता है।",
+    "> 1 year के returns report करने के लिए CAGR standard है।",
+    "SIP performance के लिए XIRR mandatory है।",
+    "Investor के लिए higher Sharpe Ratio हमेशा बेहतर होता है।"
+  ]
+}
